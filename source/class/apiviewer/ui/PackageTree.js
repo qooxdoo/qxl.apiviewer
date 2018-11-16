@@ -112,7 +112,7 @@ qx.Class.define("apiviewer.ui.PackageTree",
         name += nameParts[nameIndex];
         var treeNode = this._classTreeNodeHash[name];
         if (!treeNode)
-          return null;
+          return qx.Promise.resolve(false);
         treeNode.setOpen(true);
         return treeNode.loading
           .then(() => {
@@ -176,9 +176,12 @@ qx.Class.define("apiviewer.ui.PackageTree",
       var PackageTree = apiviewer.ui.PackageTree;
 
       var packagesDoc = docNode.getPackages();
-      for (var i=0; i<packagesDoc.length; i++)
-      {
-        var packageDoc = packagesDoc[i];
+      packagesDoc.sort((l, r) => {
+        l = l.getFullName();
+        r = r.getFullName();
+        return l < r ? -1 : l > r ? 1 : 0;
+      });
+      packagesDoc.forEach(packageDoc => {
         var iconUrl = apiviewer.TreeUtil.getIconUrl(packageDoc);
         var segs = packageDoc.getName().split('.');
         var packageTreeNode = new qx.ui.tree.TreeFolder(segs[segs.length - 1]);
@@ -192,13 +195,19 @@ qx.Class.define("apiviewer.ui.PackageTree",
 
         // Register the tree node
         this._classTreeNodeHash[packageDoc.getFullName()] = packageTreeNode;
-      }
+      });
 
       treeNode.loading = docNode.loadDependedClasses().then(classes => {
+        classes.sort((l, r) => {
+          l = l.getFullName();
+          r = r.getFullName();
+          return l < r ? -1 : l > r ? 1 : 0;
+        });
         console.log("docNode=" + docNode.classname);
         classes.forEach(classDoc => {
           var iconUrl = apiviewer.TreeUtil.getIconUrl(classDoc);
-          var classTreeNode = new qx.ui.tree.TreeFolder(classDoc.getName());
+          var segs = classDoc.getName().split('.');
+          var classTreeNode = new qx.ui.tree.TreeFolder(segs[segs.length - 1]);
           classTreeNode.setIcon(iconUrl);
           classTreeNode.setUserData("nodeName", classDoc.getFullName());
           classTreeNode.treeType = PackageTree.PACKAGE_TREE;

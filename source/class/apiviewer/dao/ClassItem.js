@@ -60,6 +60,10 @@ qx.Class.define("apiviewer.dao.ClassItem",
     {
       return this._name;
     },
+    
+    getFullName: function() {
+      return this.getClass().getFullName() + "#" + this._name;
+    },
 
 
     /**

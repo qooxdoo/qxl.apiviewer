@@ -47,8 +47,9 @@ qx.Class.define("apiviewer.dao.Node", {
      */
     getDescription : function()
     {
-      if (this._jsdoc["@description"])
-        return this._jsdoc["@description"].map(item => item.body).join("\n");
+      var arr = this._jsdoc["@description"];
+      if (arr && arr.length)
+        return arr[arr.length - 1].body;
       return "";
     },
 

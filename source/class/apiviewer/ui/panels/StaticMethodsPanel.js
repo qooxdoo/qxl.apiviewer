@@ -20,7 +20,7 @@
 ************************************************************************ */
 
 qx.Class.define("apiviewer.ui.panels.StaticMethodsPanel", {
-  extend: apiviewer.ui.panels.MethodPanel,
+  extend: apiviewer.ui.panels.AbstractMethodPanel,
 
   construct: function() {
     this.base(arguments, "Static Members", [ "apiviewer/image/method_public18.gif","apiviewer/image/overlay_static18.gif" ]);

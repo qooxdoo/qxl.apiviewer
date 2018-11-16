@@ -23,7 +23,7 @@ qx.Class.define("apiviewer.ui.panels.MethodPanel", {
   extend: apiviewer.ui.panels.AbstractMethodPanel,
 
   construct: function() {
-    this.base(arguments, "Members", "apiviewer/image/member18.gif");
+    this.base(arguments, "Members", "apiviewer/image/method_public18.gif");
   },
 
   members : {

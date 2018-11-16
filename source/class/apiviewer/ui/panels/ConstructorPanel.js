@@ -20,7 +20,7 @@
 ************************************************************************ */
 
 qx.Class.define("apiviewer.ui.panels.ConstructorPanel", {
-  extend: apiviewer.ui.panels.MethodPanel,
+  extend: apiviewer.ui.panels.AbstractMethodPanel,
 
   construct: function() {
     this.base(arguments, "Constructor", "apiviewer/image/constructor18.gif");

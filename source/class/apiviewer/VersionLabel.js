@@ -20,7 +20,7 @@
  * Slightly extended form of a @{qx.ui.basic.Label}, to include a version/
  * revision string of qooxdoo.
  */
-qx.Class.define("qxc.ui.versionlabel.VersionLabel",
+qx.Class.define("apiviewer.VersionLabel",
 {
   extend : qx.ui.basic.Label,
 

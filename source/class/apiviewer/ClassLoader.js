@@ -48,8 +48,9 @@ qx.Class.define("apiviewer.ClassLoader", {
     getClassOrPackage: function(name) {
       if (name) {
         var cls = apiviewer.dao.Class.getClassByName(name);
-        if (cls)
-          return cls;
+        if (cls) {
+          return apiviewer.dao.Class.isNativeObject(cls) ? null : cls;
+        }
       }
       var pkg = apiviewer.dao.Package.getPackage(name);
       return pkg;

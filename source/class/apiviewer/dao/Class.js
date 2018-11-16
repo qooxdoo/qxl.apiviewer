@@ -54,6 +54,7 @@ qx.Class.define("apiviewer.dao.Class",
     _mixins: null,
     
     _loadingPromise: null,
+    _loaded: false,
     
     /**
      * Loads the class
@@ -69,9 +70,16 @@ qx.Class.define("apiviewer.dao.Class",
         .then(content => {
           var meta = eval("(" + content + ")");
           return this._initMeta(meta)
-            .then(() => this);
+            .then(() => {
+              this._loaded = true;
+              return this;
+            });
         })
         .catch(e => reject(new Error("Couldn't load file: " + url)));
+    },
+    
+    isLoaded: function() {
+      return this._loaded;
     },
   
     /**
@@ -81,6 +89,8 @@ qx.Class.define("apiviewer.dao.Class",
      */
     _initMeta: function(meta) {
       this.base(arguments, meta);
+      
+      this._jsdoc = meta.clazz.jsdoc || {};
       
       this._construct = meta.construct ? [ new apiviewer.dao.Method(meta.construct, this, "construct") ] : [];
       this._destruct = meta.destruct ? [ new apiviewer.dao.Method(meta.destruct, this, "destruct") ] : [];
@@ -536,12 +546,9 @@ qx.Class.define("apiviewer.dao.Class",
     getAllInterfaces : function(includeSuperClasses) {
       var interfaceNodes = [];
 
-      var ifaceRecurser = ifaceNode =>{
+      let ifaceRecurser = ifaceNode => {
         interfaceNodes.push(ifaceNode);
-        var superIfaces = ifaceNode.getSuperInterfaces();
-        for (var i=0; i<superIfaces.length; i++) {
-          ifaceRecurser(superIfaces[i].getName());
-        }
+        ifaceNode.getSuperInterfaces().forEach(ifaceRecurser);
       }
 
       var classNodes = includeSuperClasses ? this.getClassHierarchy() : [this];

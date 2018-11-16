@@ -6,7 +6,9 @@
 			"name": "apiviewer",
 			"title": "Qooxdoo API Viewer",
 			"outputPath": "apiviewer",
-			"writeIndexHtmlToRoot": false
+			"writeIndexHtmlToRoot": false,
+			"include": [ "qx.*", "apiviewer.*" ],
+			"exclude": [ "qx.test.*", "qx.module.Blocker", "qx.module.Placement" ]
 		}
 	],
 	

@@ -28,12 +28,10 @@ qx.Class.define("apiviewer.ui.panels.ClassPanel",
    * and interfaces
    *
    * @param labelText {String} the label text describing the node type.
-   * @param type {String} One of "class", "mixin" or "interface"
    */
-  construct : function(labelText, type)
+  construct : function(labelText)
   {
     this.base(arguments, labelText);
-    this.setType(type);
   },
 
 

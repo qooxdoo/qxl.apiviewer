@@ -637,15 +637,19 @@ qx.Class.define("apiviewer.ui.panels.InfoPanel", {
           if (!classNode || !classNode.classname || classNode.getPackage().getName() !== "") {
             // The class name has no package -> Use the same package as the
             // current class
-            var name = packageBaseClass.getName();
-            var packageName;
             if (packageBaseClass instanceof apiviewer.dao.Package) {
-              packageName = packageBaseClass.getFullName();
+              className = packageBaseClass.getFullName() + "." + className;
             } else {
-              var fullName = packageBaseClass.getFullName();
-              packageName = fullName.substring(0, fullName.length - name.length - 1);
+              let fullName = packageBaseClass.getFullName();
+              let pos = fullName.lastIndexOf('.');
+              let baseClassname = fullName.substring(pos + 1);
+              if (baseClassname == className) {
+                className = fullName;
+                classNode = packageBaseClass;
+              } else {
+                className = fullName.substring(0, pos + 1) + className;
+              }
             }
-            className = packageName + "." + className;
           }
         }
 
@@ -661,7 +665,11 @@ qx.Class.define("apiviewer.ui.panels.InfoPanel", {
             classNode = apiviewer.dao.Class.getClassByName(className);
           }
 
-          if (classNode) {
+          // If the class is not loaded, then itemNode is not available - the only side effect of which is that
+          //  the icon is not available.  However, this is acceptable because the only time the classes might
+          //  not be loaded will be if referenced from within comments and where the class is not a dependent
+          //  class, in which cases icons are not needed.
+          if (classNode && classNode.isLoaded()) {
             var itemNode;
 
             if (itemName) {
@@ -696,7 +704,7 @@ qx.Class.define("apiviewer.ui.panels.InfoPanel", {
               itemNode = classNode;
             }
             
-            if (!(itemNode instanceof apiviewer.dao.Package)) {
+            if (itemNode && !(itemNode instanceof apiviewer.dao.Package)) {
               className = itemNode.getFullName();
             }
           }
@@ -706,11 +714,11 @@ qx.Class.define("apiviewer.ui.panels.InfoPanel", {
         itemNode = linkText;
         
         if (itemNode instanceof apiviewer.dao.Class) {
-          className = itemNode.getFullName();
+          className = label = itemNode.getFullName();
           
         } else if (itemNode instanceof apiviewer.dao.ClassItem) {
           className = itemNode.getClass().getName();
-          itemName = itemNode.getFullName();
+          itemName = label = itemNode.getFullName();
         }
       }
 
@@ -728,7 +736,7 @@ qx.Class.define("apiviewer.ui.panels.InfoPanel", {
       // Create a real bookmarkable link
       // NOTE: The onclick-handler must be added by HTML code. If it
       // is added using the DOM element then the href is followed.
-      var fullItemName = className + (itemName ? itemName : "");
+      var fullItemName = itemNode ? itemNode.getFullName() : classNode ? classNode.getFullName() : className;
       var protocol, host, pathname;
 
       // Opera 10.5 loses the reference to "window"
