@@ -5,17 +5,19 @@
    http://qooxdoo.org
 
    Copyright:
-     2004-2007 1&1 Internet AG, Germany, http://www.1and1.org
+     2004-2008 1&1 Internet AG, Germany, http://www.1und1.de
      2006 STZ-IDA, Germany, http://www.stz-ida.de
+     2018 Zenesis Limited, http://www.zenesis.com
 
    License:
      MIT: https://opensource.org/licenses/MIT
      See the LICENSE file in the project's top-level directory for details.
 
    Authors:
-   * Jonathan Weiß (jonathan_rass)
+     * John Spackman (johnspackman)
+     * Jonathan Weiß (jonathan_rass)
 
-************************************************************************* */
+************************************************************************ */
 
 /**
  * Extends the default qooxdoo appearance theme.

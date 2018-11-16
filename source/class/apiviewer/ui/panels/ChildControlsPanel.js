@@ -6,6 +6,7 @@
 
    Copyright:
      2004-2010 1&1 Internet AG, Germany, http://www.1und1.de
+     2018 Zenesis Limited, http://www.zenesis.com
 
    License:
      MIT: https://opensource.org/licenses/MIT
@@ -17,6 +18,7 @@
      * Andreas Ecker (ecker)
      * Fabian Jakobs (fjakobs)
      * Daniel Wagner (d_wagner)
+     * John Spackman (johnspackman) of Zenesis Ltd (http://www.zenesis.com)
 
 ************************************************************************ */
 
