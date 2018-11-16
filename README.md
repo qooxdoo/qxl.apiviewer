@@ -3,6 +3,8 @@
 The is the API Viewer contrib for Qooxdoo; this initial release is just a self contained API viewer application, the next 
 version will include support for adding this API viewer to your own application via the `qx` command.
 
+** NOTE ** You MUST have the `qxcompiler` from my [johnspackman/qooxdoo-compiler/api-viewer](https://github.com/johnspackman/qooxdoo-compiler/tree/api-viewer) branch for this to work  
+
 ## Simple testing
 Clone this repo and compile it:
 
