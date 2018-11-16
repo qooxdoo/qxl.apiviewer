@@ -1,0 +1,41 @@
+{
+	"applications": [
+		{
+			"class": "apiviewer.Application",
+			"theme": "apiviewer.Theme",
+			"name": "apiviewer",
+			"title": "Qooxdoo API Viewer",
+			"outputPath": "apiviewer",
+			"writeIndexHtmlToRoot": false
+		}
+	],
+	
+	/** Libraries */
+	"libraries": [
+		"../qooxdoo/framework",
+		"."
+	],
+	
+	/** Targets */
+	"targets": [
+		{
+			"type": "source",
+			"outputPath": "source-output",
+			"writeCompileInfo": true
+		}
+	],
+	
+	"defaultTarget": "source",
+	
+	"locales": [
+		"en"
+	],
+	
+	"path-mappings": {
+	   "../qooxdoo": "/qooxdoo"
+	},
+	
+	"serve": {
+	   "listenPort": 8082
+	}
+}
