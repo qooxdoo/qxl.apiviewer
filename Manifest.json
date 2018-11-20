@@ -23,7 +23,7 @@
 				"email": "Adrian DOT Olaru AT 1and1 DOT ro"
 			}
 		],
-		"version": "0.1.3",
+		"version": "0.1.4",
 		"qooxdoo-range": ">=6.0.0 || 6.0.0-alpha",
 		"sourceViewUri": "https://github.com/qooxdoo/qooxdoo-api-viewer/blob/%{qxGitBranch}/source/class/%{classFilePath}#L%{lineNumber}"
 	},
@@ -33,7 +33,16 @@
 		"class": "source/class",
 		"resource": "source/resource",
 		"translation": "source/translation",
-		"type": "add-in"
+		"type": "add-in",
+		"application": {
+            "class": "apiviewer.Application",
+            "theme": "apiviewer.Theme",
+            "name": "apiviewer",
+            "title": "Qooxdoo API Viewer",
+            "outputPath": "apiviewer",
+            "include": [ "qx.*", "apiviewer.*" ],
+            "exclude": [ "qx.test.*", "qx.module.Blocker", "qx.module.Placement" ]
+		}
 	}
 }
 
