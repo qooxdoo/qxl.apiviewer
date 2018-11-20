@@ -23,10 +23,8 @@
 				"email": "Adrian DOT Olaru AT 1and1 DOT ro"
 			}
 		],
-		"version": "0.1.0",
-		"qooxdoo-versions": [
-			"6.0.0"
-		],
+		"version": "0.1.1",
+		"qooxdoo-range": ">=6.0.0",
 		"sourceViewUri": "https://github.com/qooxdoo/qooxdoo-api-viewer/blob/%{qxGitBranch}/source/class/%{classFilePath}#L%{lineNumber}"
 	},
 	"provides": {
