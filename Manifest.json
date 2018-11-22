@@ -1,48 +1,53 @@
 {
-	"info": {
-		"name": "Qooxdoo API Viewer",
-		"summary": "A viewer application to browse generated API documentation of qooxdoo classes",
-		"description": "The Api Viewer lets you browse API documentation generated from Javascript source comments. It supports many specifics of qooxdoo classes like inheritance, properties and private members.",
-		"keywords": [
-			"API",
-			"class browser"
-		],
-		"homepage": "https://github.com/qooxdoo/qooxdoo-api-viewer",
-		"license": "MIT",
-		"authors": [
-			{
-				"name": "John Spackman (johnspackman)",
-				"email": "john.spackman@zenesis.com"
-			},
-			{
-				"name": "Daniel Wagner (dwagner)",
-				"email": "daniel DOT wagner AT 1und1 DOT de"
-			},
-			{
-				"name": "Adrian Olaru (adrianolaru)",
-				"email": "Adrian DOT Olaru AT 1and1 DOT ro"
-			}
-		],
-		"version": "0.1.5",
-		"qooxdoo-range": ">=6.0.0 || 6.0.0-alpha",
-		"sourceViewUri": "https://github.com/qooxdoo/qooxdoo-api-viewer/blob/%{qxGitBranch}/source/class/%{classFilePath}#L%{lineNumber}"
-	},
-	"provides": {
-		"namespace": "apiviewer",
-		"encoding": "utf-8",
-		"class": "source/class",
-		"resource": "source/resource",
-		"translation": "source/translation",
-		"type": "add-in",
-		"application": {
-            "class": "apiviewer.Application",
-            "theme": "apiviewer.Theme",
-            "name": "apiviewer",
-            "title": "Qooxdoo API Viewer",
-            "outputPath": "apiviewer",
-            "include": [ "qx.*" ],
-            "exclude": [ "qx.test.*", "qx.module.Blocker", "qx.module.Placement" ]
-		}
-	}
+  "info": {
+    "name": "Qooxdoo API Viewer",
+    "summary": "A viewer application to browse generated API documentation of qooxdoo classes",
+    "description": "The Api Viewer lets you browse API documentation generated from Javascript source comments. It supports many specifics of qooxdoo classes like inheritance, properties and private members.",
+    "keywords": [
+      "API",
+      "class browser"
+    ],
+    "homepage": "https://github.com/qooxdoo/qooxdoo-api-viewer",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "John Spackman (johnspackman)",
+        "email": "john.spackman@zenesis.com"
+      },
+      {
+        "name": "Daniel Wagner (dwagner)",
+        "email": "daniel DOT wagner AT 1und1 DOT de"
+      },
+      {
+        "name": "Adrian Olaru (adrianolaru)",
+        "email": "Adrian DOT Olaru AT 1and1 DOT ro"
+      }
+    ],
+    "version": "0.1.6",
+    "qooxdoo-range": ">=6.0.0 || 6.0.0-alpha",
+    "sourceViewUri": "https://github.com/qooxdoo/qooxdoo-api-viewer/blob/%{qxGitBranch}/source/class/%{classFilePath}#L%{lineNumber}"
+  },
+  "provides": {
+    "namespace": "apiviewer",
+    "encoding": "utf-8",
+    "class": "source/class",
+    "resource": "source/resource",
+    "translation": "source/translation",
+    "type": "add-in",
+    "application": {
+      "class": "apiviewer.Application",
+      "theme": "apiviewer.Theme",
+      "name": "apiviewer",
+      "title": "Qooxdoo API Viewer",
+      "outputPath": "apiviewer",
+      "include": [
+        "qx.*"
+      ],
+      "exclude": [
+        "qx.test.*",
+        "qx.module.Blocker",
+        "qx.module.Placement"
+      ]
+    }
+  }
 }
-
