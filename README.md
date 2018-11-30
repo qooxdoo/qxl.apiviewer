@@ -10,7 +10,7 @@ $ qx contrib update
 $ qx contrib install qooxdoo/qooxdoo-api-viewer
 $ qx serve 
 ```
-Then start `qx serve` and browse to [http://localhost:8082](http://localhost:8080).  You will see that you now have a new application listed, the "API Viewer", that you can click on the link to run
+Then start `qx serve` and browse to [http://localhost:8080](http://localhost:8080).  You will see that you now have a new application listed, the "API Viewer", that you can click on the link to run
 
 ## Developing API Viewer
 Clone this repo and compile it:
