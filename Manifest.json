@@ -40,6 +40,11 @@
       "name": "apiviewer",
       "title": "Qooxdoo API Viewer",
       "outputPath": "apiviewer",
+      "environment": {
+        "excludeFromAPIViewer": [
+          "apiviewer.*"
+        ]
+      },
       "include": [
         "qx.*"
       ],

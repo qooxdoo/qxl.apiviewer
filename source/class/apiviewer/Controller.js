@@ -279,11 +279,42 @@ qx.Class.define("apiviewer.Controller",
      */
     __setDocTree : function(docTree)
     {
-      var start = new Date();
-      for (var classname in docTree.classInfo) {
-        let info = docTree.classInfo[classname];
-        apiviewer.dao.Class.getClassByName(classname, true);
+		
+      let expandClassnames = function(names) {
+        // Expands a list of class names including wildcards (eg "qx.ui.*") into an
+        // exhaustive list without wildcards
+        let result = {};
+        names.forEach(function(name) {
+          let pos = name.indexOf('*');
+          if (pos < 0) {
+            result[name] = true;
+          } else {
+            let prefix = name.substring(0, pos);
+            for (let classname in docTree.classInfo) {
+              if (classname.startsWith(prefix)) 
+              result[classname] = true;
+            }
+          }
+        });
+        return Object.keys(result);
       }
+    
+      let getRequiredClasses = function() {
+        let result = {};
+        for (let classname in docTree.classInfo) {
+          result[classname] = true;
+        }  
+        expandClassnames(qx.core.Environment.get("excludeFromAPIViewer")).forEach((name) => delete result[name]);
+        
+        // We sort the result so that we can get a consistent ordering for loading classes, otherwise the order in
+        //  which the filing system returns the files can cause classes to be loaded in a lightly different sequence;
+        //  that would not cause a problem, except that the build is not 100% repeatable.
+        return Object.keys(result).sort();
+      }
+        
+      var start = new Date();
+      let classes = getRequiredClasses();
+      classes.forEach(classname => apiviewer.dao.Class.getClassByName(classname, true));
       var rootPackage = apiviewer.dao.Package.getPackage(null);
       var end = new Date();
 
