@@ -26,6 +26,8 @@ qx.Class.define("apiviewer.dao.Node", {
   
   construct: function(meta) {
     this.base(arguments);
+    this._meta = {};
+    this._jsdoc = {};
     if (meta !== undefined)
       this._initMeta(meta);
   },

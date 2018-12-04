@@ -19,36 +19,17 @@
 ************************************************************************ */
 
 qx.Class.define("apiviewer.dao.ChildControl", {
-  extend : qx.core.Object,
+  extend : apiviewer.dao.ClassItem,
 
-  construct : function(meta) {
-    this.base(arguments);
-    this._meta = meta;
+  construct : function(meta, parentClass) {
+    this.base(arguments, meta, parentClass, meta.name);
   },
-
   members : {
-
-    getName: function() {
-      return this._meta.paramName;
-    },
-    
-    getDescription: function() {
-      return this._meta.desc;
-    },
-    
-    getType: function() {
-      return this._type;
-    },
-
-    getTypes : function() {
-      var result = [];
-      if (this._meta.type) {
-        result.push({
-          type : this._meta.type
-        });
-      }
-      return result;
+    getDefaultValue : function() {
+      return "";
     }
   }
+  
 
+  
 });

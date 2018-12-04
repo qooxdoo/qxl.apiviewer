@@ -156,7 +156,7 @@ qx.Class.define("apiviewer.dao.Class",
       let arr = this._jsdoc["@childControl"];
       if (arr) {
         arr.forEach(elem => {
-          this._childControls.push(new apiviewer.dao.ChildControl(elem));
+          this._childControls.push(new apiviewer.dao.ChildControl(elem, this));
         });
       }
       

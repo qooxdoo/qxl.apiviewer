@@ -283,6 +283,9 @@ qx.Class.define("apiviewer.Controller",
       let expandClassnames = function(names) {
         // Expands a list of class names including wildcards (eg "qx.ui.*") into an
         // exhaustive list without wildcards
+        if (!names) {
+            return [];
+        }
         let result = {};
         names.forEach(function(name) {
           let pos = name.indexOf('*');

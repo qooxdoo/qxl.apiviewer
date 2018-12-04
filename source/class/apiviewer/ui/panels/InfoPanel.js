@@ -170,7 +170,7 @@ qx.Class.define("apiviewer.ui.panels.InfoPanel", {
       }
       var html = new qx.util.StringBuilder();
 
-      var inherited = (parentNode != currentDocNode) && parentNode.getType() == "class";
+      var inherited = parentNode && (parentNode != currentDocNode) && parentNode.getType() == "class";
       var iconUrl = apiviewer.TreeUtil.getIconUrl(node, inherited);
 
       // Create the title row
@@ -739,7 +739,7 @@ qx.Class.define("apiviewer.ui.panels.InfoPanel", {
       // Create a real bookmarkable link
       // NOTE: The onclick-handler must be added by HTML code. If it
       // is added using the DOM element then the href is followed.
-      var fullItemName = itemNode ? itemNode.getFullName() : classNode ? classNode.getFullName() : className;
+      var fullItemName = itemNode ? itemNode.getFullName() : classNode && classNode.getFullName ? classNode.getFullName() : className;
       var protocol, host, pathname;
 
       // Opera 10.5 loses the reference to "window"
