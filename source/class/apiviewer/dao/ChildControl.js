@@ -22,7 +22,7 @@ qx.Class.define("apiviewer.dao.ChildControl", {
   extend : apiviewer.dao.ClassItem,
 
   construct : function(meta, parentClass) {
-    this.base(arguments, meta, parentClass, meta.name);
+    this.base(arguments, meta, parentClass, meta.controlName);
   },
   members : {
     getDefaultValue : function() {

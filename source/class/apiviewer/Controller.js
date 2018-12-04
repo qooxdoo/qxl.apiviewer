@@ -78,6 +78,7 @@ qx.Class.define("apiviewer.Controller",
 
   members :
   {
+    apiindex : {},
     __openInNewTab : false,
 
     // overridden
@@ -317,7 +318,64 @@ qx.Class.define("apiviewer.Controller",
         
       var start = new Date();
       let classes = getRequiredClasses();
-      classes.forEach(classname => apiviewer.dao.Class.getClassByName(classname, true));
+
+      this.apiindex.__fullNames__ = [];
+      this.apiindex.__index__ = {};
+      this.apiindex.__types__  = ["doctree", "package", "class", "method_pub", "method_prot", "event", "property_pub", "method_priv", "method_intl", "constant", "childControl"];
+      const TYPES = {
+         "class": 1,
+         "mixin": 1,
+         "theme" : 1,
+         "interface" : 1
+      }
+
+      let addToIndex = function(name, typeIdx, nameIdx) {
+        if (!this.apiindex.__index__[name]) {
+          this.apiindex.__index__[name] = [];
+        }
+        this.apiindex.__index__[name].push([typeIdx, nameIdx]);
+      }.bind(this);
+
+      classes.forEach(async (classname) => {
+        let cls = apiviewer.dao.Class.getClassByName(classname, true);
+        await cls.load();
+        let nameIdx = this.apiindex.__fullNames__.indexOf(cls.getName());
+        if (nameIdx < 0) {
+          nameIdx = this.apiindex.__fullNames__.push(cls.getName()) - 1;
+        }
+        let typeIdx = TYPES[cls.getType()];
+        addToIndex(cls.getName(), typeIdx, nameIdx);
+        typeIdx = 1;
+        addToIndex(cls.getPackageName(), typeIdx, nameIdx);
+        cls.getMethods().forEach(method => {
+           let typeIdx;
+           if (method.isProtected())  
+              typeIdx = 4;
+           else if (method.isPrivate())
+              typeIdx = 7;
+           else
+              typeIdx = 3;
+           addToIndex('#' + method.getName(), typeIdx, nameIdx);
+        });
+        cls.getProperties().forEach(prop => {
+          let typeIdx = 6;
+          addToIndex('#' + prop.getName(), typeIdx, nameIdx);
+       });
+       cls.getConstants().forEach(con => {
+        let typeIdx = 9;
+        addToIndex('#' + con.getName(), typeIdx, nameIdx);
+       });
+       cls.getEvents().forEach(evt => {
+        let typeIdx = 5;
+        addToIndex('#' + evt.getName(), typeIdx, nameIdx);
+       });
+       cls.getChildControls().forEach(ch => {
+        let typeIdx = 10;
+        addToIndex('#' + ch.getName(), typeIdx, nameIdx);
+       });
+              
+
+      });
       var rootPackage = apiviewer.dao.Package.getPackage(null);
       var end = new Date();
 

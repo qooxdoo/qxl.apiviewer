@@ -280,7 +280,7 @@ qx.Class.define("apiviewer.ui.SearchView",
 
 
       // Load index file
-      qx.event.Timer.once(this._load, this, 0);
+//      qx.event.Timer.once(this._load, this, 0);
 
       // Give keyboard focus to the search field
       this.sinput.focus();

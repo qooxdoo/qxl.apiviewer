@@ -70,6 +70,8 @@ qx.Class.define("apiviewer.Application",
       this.viewer = new apiviewer.Viewer();
       this.controller = new apiviewer.Controller();
 
+      this.viewer._searchView.apiindex = this.controller.apiindex;
+
       this.getRoot().add(this.viewer, {edge : 0});
     },
 
