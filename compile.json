@@ -4,20 +4,22 @@
 			"class": "apiviewer.Application",
 			"theme": "apiviewer.Theme",
 			"name": "apiviewer",
-			"title": "Qooxdoo API Viewer",
-			"outputPath": "apiviewer",
-			"writeIndexHtmlToRoot": false,
-			"include": [ "qx.*", "apiviewer.*" ],
-			"exclude": [ "qx.test.*", "qx.module.Blocker", "qx.module.Placement" ]
+			"title": "Qooxdoo API Viewer"
 		}
 	],
-	
+    "include": [
+        "qx.*"
+    ],
+    "exclude": [
+        "qx.test.*",
+        "qx.module.Blocker",
+        "qx.module.Placement"
+    ],
 	/** Targets */
 	"targets": [
 		{
 			"type": "source",
-			"outputPath": "source-output",
-			"writeCompileInfo": true
+			"outputPath": "source-output"
 		}
 	],
 	
@@ -26,12 +28,7 @@
 	"locales": [
 		"en"
 	],
-	
-	"path-mappings": {
-	   "../qooxdoo": "/qooxdoo"
-	},
-	
 	"serve": {
-	   "listenPort": 8082
+	   "listenPort": 8080
 	}
 }
