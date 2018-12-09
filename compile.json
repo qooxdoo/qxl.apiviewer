@@ -1,8 +1,11 @@
 {
+   "environment": {
+    "qx.icontheme": "Tango"
+   },
 	"applications": [
 		{
-			"class": "apiviewer.Application",
-			"theme": "apiviewer.Theme",
+			"class": "qx.app.apiviewer.Application",
+			"theme": "qx.app.apiviewer.Theme",
 			"name": "apiviewer",
 			"title": "Qooxdoo API Viewer"
 		}

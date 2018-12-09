@@ -41,7 +41,7 @@
       "title": "Qooxdoo API Viewer",
       "environment": {
         "excludeFromAPIViewer": [
-          "apiviewer.*"
+          "qx.app.apiviewer.*"
         ]
       },
       "include": [
