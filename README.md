@@ -1,7 +1,6 @@
 # Qooxdoo API Viewer
 
-The is the API Viewer contrib for Qooxdoo; this initial release is just a self contained API viewer application, the next 
-version will include support for adding this API viewer to your own application via the `qx` command.
+The is the API Viewer contrib for Qooxdoo. 
 
 
 ## Adding an API viewer for your own code
