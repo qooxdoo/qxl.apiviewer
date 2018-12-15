@@ -4,25 +4,26 @@
    },
 	"applications": [
 		{
-			"class": "qx.app.apiviewer.Application",
-			"theme": "qx.app.apiviewer.Theme",
+			"class": "qxl.apiviewer.Application",
+			"theme": "qxl.apiviewer.Theme",
 			"name": "apiviewer",
 			"title": "Qooxdoo API Viewer"
 		}
 	],
     "include": [
-        "qx.*"
-    ],
-    "exclude": [
-        "qx.test.*",
-        "qx.module.Blocker",
-        "qx.module.Placement"
+        "qx.*",
+		"q",
+		"qxWeb"
     ],
 	/** Targets */
 	"targets": [
 		{
 			"type": "source",
 			"outputPath": "source-output"
+		}
+		,{
+			"type": "build",
+			"outputPath": "build-output"
 		}
 	],
 	
