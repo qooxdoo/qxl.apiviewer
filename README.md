@@ -16,7 +16,7 @@ Clone this repo and compile it:
 
 ```
     $ git clone https://github.com/qooxdoo/apiviewer
-    $ cd qooxdoo-api-viewer
+    $ cd apiviewer
     $ qx serve
 ```
 Then open [http://localhost:8080](http://localhost:8080)
