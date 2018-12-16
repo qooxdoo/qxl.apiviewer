@@ -7,7 +7,7 @@
       "API",
       "class browser"
     ],
-    "homepage": "https://github.com/qooxdoo/qooxdoo-api-viewer",
+    "homepage": "https://github.com/qooxdoo/apiviewer",
     "license": "MIT",
     "authors": [
       {
@@ -29,7 +29,7 @@
     ],
     "version": "0.1.10",
     "qooxdoo-range": "^6.0.0-alpha",
-    "sourceViewUri": "https://github.com/qooxdoo/qooxdoo-api-viewer/blob/%{qxGitBranch}/source/class/%{classFilePath}#L%{lineNumber}"
+    "sourceViewUri": "https://github.com/qooxdoo/apiviewer/blob/%{qxGitBranch}/source/class/%{classFilePath}#L%{lineNumber}"
   },
   "provides": {
     "namespace": "qxl.apiviewer",
