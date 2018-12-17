@@ -6,7 +6,7 @@ The is the API Viewer contrib for Qooxdoo.
 ## Adding an API viewer for your own code
 ```
 $ qx contrib update
-$ qx contrib install qooxdoo/apiviewer
+$ qx contrib install qooxdoo/qxl.apiviewer
 $ qx serve 
 ```
 Then start `qx serve` and browse to [http://localhost:8080](http://localhost:8080).  You will see that you now have a new application listed, the "API Viewer", that you can click on the link to run
@@ -15,8 +15,8 @@ Then start `qx serve` and browse to [http://localhost:8080](http://localhost:808
 Clone this repo and compile it:
 
 ```
-    $ git clone https://github.com/qooxdoo/apiviewer
-    $ cd apiviewer
+    $ git clone https://github.com/qooxdoo/qxl.apiviewer
+    $ cd qxl.apiviewer
     $ qx serve
 ```
 Then open [http://localhost:8080](http://localhost:8080)
