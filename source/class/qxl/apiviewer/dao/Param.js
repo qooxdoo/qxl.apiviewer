@@ -54,6 +54,9 @@ qx.Class.define("qxl.apiviewer.dao.Param", {
     if (meta.type) {
       this._types = qx.lang.Array.toNativeArray(meta.type)
         .map(type => {
+          if (typeof(type) === "object") {
+            return { type: type.type, arrayDimensions: type.dimensions };
+          }  
           var m = type.match(/^([^[]+)((\[\])+)?$/);
           if (m && m[2]) {
             return { type: m[1], arrayDimensions: m[2].length / 2 };

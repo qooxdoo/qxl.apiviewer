@@ -14,8 +14,13 @@
         "qx.*",
 		"q",
 		"qxWeb"
-    ],
-	/** Targets */
+	],
+	"exclude": [
+		"qx.test.MemoryManagement",
+		"qx.module.Blocker",
+		"qx.module.Placement"
+ ],
+ /** Targets */
 	"targets": [
 		{
 			"type": "source",

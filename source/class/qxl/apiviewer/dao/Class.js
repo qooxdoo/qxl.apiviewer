@@ -77,7 +77,9 @@ qx.Class.define("qxl.apiviewer.dao.Class",
               return this;
             });
         })
-        .catch(e => reject(new Error("Couldn't load file: " + url)));
+        .catch(e => {
+          this.error("Couldn't load file: " + url + " " + e.Message);
+        })  
     },
     
     isLoaded: function() {

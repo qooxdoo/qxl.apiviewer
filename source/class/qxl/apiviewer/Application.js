@@ -31,7 +31,6 @@
  * Your apiviewer application
  *
  * @asset(qxl/apiviewer/*)
- * @deprecated
  */
 qx.Class.define("qxl.apiviewer.Application",
 {

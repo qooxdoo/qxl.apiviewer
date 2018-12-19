@@ -407,7 +407,7 @@ qx.Class.define("qxl.apiviewer.Viewer",
       header.setAppearance("app-header");
 
       var title = new qx.ui.basic.Label("API Documentation");
-      var version = new qxl.apiviewer.VersionLabel();
+      var version = new qxl.versionlabel.VersionLabel();
       version.setFont("default");
 
       header.add(title);

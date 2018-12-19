@@ -25,7 +25,7 @@ qx.Class.define("qxl.apiviewer.dao.Method",
   construct : function(meta, clazz, name) {
     this.base(arguments, meta, clazz, name);
     
-    this._params = (this._jsdoc["@params"] || []).map(item => new qxl.apiviewer.dao.Param(item, this));
+    this._params = (this._jsdoc["@params"] || this._jsdoc["@param"] || []).map(item => new qxl.apiviewer.dao.Param(item, this));
     var arr = this._jsdoc["@return"];
     if (arr && arr.length)
       this._return = new qxl.apiviewer.dao.Param(arr[0], this);
