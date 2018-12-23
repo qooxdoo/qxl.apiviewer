@@ -1,7 +1,9 @@
 {
    "environment": {
     "qx.icontheme": "Tango",
-     "qxl.apiviewer.*"
+    "excludeFromAPIViewer": [
+          "qxl.apiviewer.*"
+     ]
    },
 	"applications": [
 		{
@@ -21,7 +23,6 @@
 		"qx.module.Blocker",
 		"qx.module.Placement"
  ],
- /** Targets */
 	"targets": [
 		{
 			"type": "source",
