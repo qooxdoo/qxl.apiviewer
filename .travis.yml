@@ -1,0 +1,17 @@
+language: node_js
+node_js: "node"
+
+before_install:
+  - npm install qxcompiler -g 
+
+script:
+  - qx compile --target=build -v
+  
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  local-dir: build-output
+  on:
+    branch: master
