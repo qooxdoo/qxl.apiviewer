@@ -4,7 +4,7 @@ The is the API Viewer contrib for Qooxdoo.
 
 ## Online version
 
-http://www.qooxdoo.org/qxl.mobileshowcase/ 
+http://www.qooxdoo.org/qxl.apiviewer/ 
 
 ## Adding an API viewer for your own code
 ```
