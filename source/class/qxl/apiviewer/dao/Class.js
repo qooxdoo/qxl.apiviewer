@@ -692,7 +692,12 @@ qx.Class.define("qxl.apiviewer.dao.Class",
         return qx.Promise.resolve([]);
       var all = qx.lang.Array.toNativeArray(name)
         .filter(name => !qxl.apiviewer.dao.Class._native_classes[name])
-        .map(name => qxl.apiviewer.dao.Class.getClassByName(name).load());
+        .map(name => {
+          let c = qxl.apiviewer.dao.Class.getClassByName(name);
+          if (c) {
+            c.load();
+          }
+        });
       return qx.Promise.all(all);
     },
     

@@ -102,6 +102,9 @@ qx.Class.define("qxl.apiviewer.dao.Param", {
 
     isOptional : function() {
       return !!this._meta.optional;
+    },
+    getDescription : function() {
+      return this._meta.description;
     }
 
   }

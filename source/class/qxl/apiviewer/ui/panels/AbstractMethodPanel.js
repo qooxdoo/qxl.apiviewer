@@ -140,7 +140,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.AbstractMethodPanel",
           for (var i=0; i<params.length; i++)
           {
             var param = params[i];
-            var paramType = param.getType() ? param.getType() : "var";
+            var paramType = param.getTypes() ? param.getTypes() : "var";
             var dims = param.getArrayDimensions();
 
             if (dims)

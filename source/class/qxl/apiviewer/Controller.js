@@ -308,7 +308,15 @@ qx.Class.define("qxl.apiviewer.Controller",
         for (let classname in docTree.classInfo) {
           result[classname] = true;
         }  
-        expandClassnames(qx.core.Environment.get("excludeFromAPIViewer")).forEach((name) => delete result[name]);
+        // We must trick out the compiler.
+        // qx.core.Environment.get('excludeFromAPIViewer') is expanded during compilation and leeds to an compiler
+        // error.r
+        const l = qx.core.Environment.get.bind(qx.core.Environment);
+        let excl = l('excludeFromAPIViewer');
+        if (excl) {
+          expandClassnames(excl).forEach((name) => delete result[name]);
+        }
+        
         
         // We sort the result so that we can get a consistent ordering for loading classes, otherwise the order in
         //  which the filing system returns the files can cause classes to be loaded in a lightly different sequence;

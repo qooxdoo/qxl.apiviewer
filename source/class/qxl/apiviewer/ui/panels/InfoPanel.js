@@ -25,6 +25,8 @@
  * @require(qx.module.event.GestureHandler)
  * @require(qx.module.Attribute)
  * @require(qx.module.event.Native)
+ * 
+ * @ignore(location.*)
  */
 qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
 

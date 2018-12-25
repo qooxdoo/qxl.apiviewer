@@ -36,6 +36,8 @@
  * @asset(qx/icon/Tango/22/apps/utilities-help.png)
  * @asset(qx/icon/Tango/22/apps/utilities-graphics-viewer.png)
  * @asset(qx/icon/Tango/22/actions/media-seek-forward.png)
+ * 
+ * @ignore(location.*)
  */
 qx.Class.define("qxl.apiviewer.Viewer",
 {

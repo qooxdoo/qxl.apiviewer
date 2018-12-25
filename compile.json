@@ -1,10 +1,11 @@
 {
-   "environment": {
+  "environment": {
     "qx.icontheme": "Tango",
     "excludeFromAPIViewer": [
-          "qxl.apiviewer.*"
-     ]
-   },
+			"qxl.*",
+			"q.*"
+    ]
+  },
 	"applications": [
 		{
 			"class": "qxl.apiviewer.Application",
@@ -19,7 +20,7 @@
 		"qxWeb"
 	],
 	"exclude": [
-		"qx.test.MemoryManagement",
+		"qx.test.*",
 		"qx.module.Blocker",
 		"qx.module.Placement"
  ],
