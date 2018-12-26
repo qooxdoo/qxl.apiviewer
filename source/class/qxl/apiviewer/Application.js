@@ -81,7 +81,7 @@ qx.Class.define("qxl.apiviewer.Application",
       this.base(arguments);
 
       // Finally load the data
-      this.controller.load("../db.json");
+      this.controller.load(qx.$$appRoot + "../db.json");
     }
   },
 
