@@ -28,7 +28,6 @@
       }
     ],
     "version": "0.1.12",
-    "qooxdoo-range": "^6.0.0-alpha",
     "sourceViewUri": "https://github.com/qooxdoo/apiviewer/blob/%{qxGitBranch}/source/class/%{classFilePath}#L%{lineNumber}"
   },
   "provides": {
@@ -58,5 +57,9 @@
         "qx.module.Placement"
       ]
     }
+  },
+  "requires": {
+    "qooxdoo-sdk": "^6.0.0-alpha",
+    "qooxdoo/qxl.versionlabel": "^0.1.1"
   }
 }
