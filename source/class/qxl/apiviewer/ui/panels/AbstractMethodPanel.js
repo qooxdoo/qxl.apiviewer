@@ -22,93 +22,91 @@
 ************************************************************************ */
 
 qx.Class.define("qxl.apiviewer.ui.panels.AbstractMethodPanel",
-{
+  {
 
-  extend: qxl.apiviewer.ui.panels.InfoPanel,
+    extend: qxl.apiviewer.ui.panels.InfoPanel,
 
-  construct: function(caption, icon) {
-    this.base(arguments, caption, icon);
-  },
-
-  members : {
-
-    _canShowInherited: function() {
-      return true;
+    construct: function(caption, icon) {
+      this.base(arguments, caption, icon);
     },
-    
-    getPanelItemObjects: function(daoClass, showInherited) {
-      var arr = daoClass.getMethods();
-      if (showInherited)
-        arr = arr.concat(daoClass.getMixinMethods());
-      return arr;
-    },
-        
-    /**
+
+    members : {
+
+      _canShowInherited: function() {
+        return true;
+      },
+
+      getPanelItemObjects: function(daoClass, showInherited) {
+        var arr = daoClass.getMethods();
+        if (showInherited) {
+          arr = arr.concat(daoClass.getMixinMethods());
+        }
+        return arr;
+      },
+
+      /**
      * Get the title HTML for a method
      *
      * @param method {qxl.apiviewer.dao.Method} The method doc node.
      * @return {String} The HTML fragment of the title.
      */
-    getItemTitleHtml : function(method)
-    {
-      if (method.isConstructor()) {
-        var title = method.getClass().getName();
-      } else {
-        title = method.getName();
-      }
-
-      var titleHtml = new qx.util.StringBuilder(qxl.apiviewer.ui.panels.InfoPanel.setTitleClass(method, title));
-
-      // Add the title (the method signature)
-      titleHtml.add('<span class="method-signature"><span class="parenthesis">(</span>');
-
-      var params = method.getParams();
-      for (var i=0; i<params.length; i++)
-      {
-        var param = params[i];
-
-        if (i != 0) {
-          titleHtml.add('<span class="separator">,</span> ');
+      getItemTitleHtml : function(method) {
+        if (method.isConstructor()) {
+          var title = method.getClass().getName();
+        } else {
+          title = method.getName();
         }
 
-        titleHtml.add(
-          '<span class="parameter-type">', qxl.apiviewer.ui.panels.InfoPanel.createTypeHtml(param, "var"),
-          '</span> <code>', param.getName(), '</code>'
-        );
+        var titleHtml = new qx.util.StringBuilder(qxl.apiviewer.ui.panels.InfoPanel.setTitleClass(method, title));
 
-        if (param.isOptional()) {
-          titleHtml.add("?");
+        // Add the title (the method signature)
+        titleHtml.add("<span class=\"method-signature\"><span class=\"parenthesis\">(</span>");
+
+        var params = method.getParams();
+        for (var i=0; i<params.length; i++) {
+          var param = params[i];
+
+          if (i != 0) {
+            titleHtml.add("<span class=\"separator\">,</span> ");
+          }
+
+          titleHtml.add(
+            "<span class=\"parameter-type\">", qxl.apiviewer.ui.panels.InfoPanel.createTypeHtml(param, "var"),
+            "</span> <code>", param.getName(), "</code>"
+          );
+
+          if (param.isOptional()) {
+            titleHtml.add("?");
+          }
         }
-      }
 
-      titleHtml.add('<span class="parenthesis">)</span></span>');
+        titleHtml.add("<span class=\"parenthesis\">)</span></span>");
 
-      return titleHtml.get();
-    },
+        return titleHtml.get();
+      },
 
 
-    /**
+      /**
      * Get the type HTML for a method
      *
      * @param method {qxl.apiviewer.dao.Method} The method doc node.
      * @return {String} The HTML fragment of the type.
      */
-    getItemTypeHtml : function(method)
-    {
-      var typeHtml = new qx.util.StringBuilder();
-      if (method.isAbstract() && method.getClass().isAbstract()) {
-        typeHtml.add("abstract ");
-      }
+      getItemTypeHtml : function(method) {
+        var typeHtml = new qx.util.StringBuilder();
+        if (method.isAbstract() && method.getClass().isAbstract()) {
+          typeHtml.add("abstract ");
+        }
 
-      if (!method.isConstructor()) {
-        typeHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createTypeHtml(method.getReturn(), "void"));
-      }
+        if (!method.isConstructor()) {
+          typeHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createTypeHtml(method.getReturn(), "void"));
+        }
 
-      return typeHtml.get();
-    },
+        return typeHtml.get();
+      },
 
 
-    /**
+      /**
      * Creates the HTML showing the information about a method.
      *
      * @param method {qxl.apiviewer.dao.Method} the doc node of the method.
@@ -116,152 +114,143 @@ qx.Class.define("qxl.apiviewer.ui.panels.AbstractMethodPanel",
      * @param showDetails {Boolean} whether to show the details.
      * @return {String} the HTML showing the information about the method.
      */
-    getItemTextHtml : function(method, currentClassDocNode, showDetails)
-    {
-      var docClass = method.getClass();
+      getItemTextHtml : function(method, currentClassDocNode, showDetails) {
+        var docClass = method.getClass();
 
-      // Add the description
-      var textHtml = new qx.util.StringBuilder()
-      if (method.isConstructor() && !method.getDescription()) {
-        textHtml.add("Creates a new instance of ", docClass.getName(), ".");
-      } else {
-        textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createDescriptionHtml(method, docClass, showDetails));
-      }
+        // Add the description
+        var textHtml = new qx.util.StringBuilder();
+        if (method.isConstructor() && !method.getDescription()) {
+          textHtml.add("Creates a new instance of ", docClass.getName(), ".");
+        } else {
+          textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createDescriptionHtml(method, docClass, showDetails));
+        }
 
-      if (showDetails)
-      {
+        if (showDetails) {
         // Add Parameters
-        var params = method.getParams();
+          var params = method.getParams();
 
-        if (params.length > 0)
-        {
-          textHtml.add('<div class="item-detail-headline">', "Parameters:", '</div>');
+          if (params.length > 0) {
+            textHtml.add("<div class=\"item-detail-headline\">", "Parameters:", "</div>");
 
-          for (var i=0; i<params.length; i++)
-          {
-            var param = params[i];
-            var paramType = param.getTypes() ? param.getTypes() : "var";
-            var dims = param.getArrayDimensions();
+            for (var i=0; i<params.length; i++) {
+              var param = params[i];
+              var paramType = param.getTypes() ? param.getTypes() : "var";
+              var dims = param.getArrayDimensions();
 
-            if (dims)
-            {
-              for (var i=0; i<dims; i++) {
-                paramType += "[]";
+              if (dims) {
+                for (var i=0; i<dims; i++) {
+                  paramType += "[]";
+                }
               }
+
+              var defaultValue = param.getDefaultValue();
+
+              textHtml.add("<div class=\"item-detail-text\">");
+
+              if (defaultValue) {
+                textHtml.add("<span class=\"item-detail-optional\">");
+              }
+
+              textHtml.add("<code>", param.getName(), "</code>");
+
+              if (defaultValue) {
+                textHtml.add(" (" + (param.isOptional() ? "optional; " : "") + "default: ", defaultValue, ") ");
+              } else if (param.isOptional()) {
+                textHtml.add(" (optional) ");
+              }
+              textHtml.add("</span>");
+
+              var desc = param.getDescription();
+
+              if (desc) {
+                textHtml.add(" ", qxl.apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(desc, docClass));
+              }
+
+              textHtml.add("</div>");
             }
+          }
 
-            var defaultValue = param.getDefaultValue();
-
-            textHtml.add('<div class="item-detail-text">');
-
-            if (defaultValue) {
-              textHtml.add('<span class="item-detail-optional">');
-            }
-
-            textHtml.add("<code>", param.getName(), "</code>");
-
-            if (defaultValue) {
-              textHtml.add(" (" + (param.isOptional() ? "optional; " : "") + "default: ", defaultValue, ") ");
-            } else if (param.isOptional()) {
-              textHtml.add(" (optional) ");
-            }
-            textHtml.add("</span>");
-
-            var desc = param.getDescription();
-
+          // Add return value
+          var returnNode = method.getReturn();
+          if (returnNode) {
+            var desc = returnNode.getDescription();
             if (desc) {
-              textHtml.add(" ", qxl.apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(desc, docClass));
+              textHtml.add(
+                "<div class=\"item-detail-headline\">", "Returns:", "</div>",
+                "<div class=\"item-detail-text\">",
+                qxl.apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(desc, docClass),
+                "</div>"
+              );
             }
-
-            textHtml.add('</div>');
           }
-        }
-
-        // Add return value
-        var returnNode = method.getReturn();
-        if (returnNode)
-        {
-          var desc = returnNode.getDescription();
-          if (desc) {
+          var applyToProperties = method.getApplyFor();
+          if (applyToProperties && applyToProperties.length>0) { // gabi check
             textHtml.add(
-              '<div class="item-detail-headline">', "Returns:", '</div>',
-              '<div class="item-detail-text">',
-              qxl.apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(desc, docClass),
-              '</div>'
-            );
-          }
-        }
-        var applyToProperties = method.getApplyFor();
-        if (applyToProperties && applyToProperties.length>0) { // gabi check
-          textHtml.add(
-            '<div class="item-detail-headline">', applyToProperties.length==1 ? "Apply method of property:" : "Apply method of properties:", '</div>',
-            '<div class="item-detail-text">');
-            for(var i=0;i<applyToProperties.length;i++){
+              "<div class=\"item-detail-headline\">", applyToProperties.length==1 ? "Apply method of property:" : "Apply method of properties:", "</div>",
+              "<div class=\"item-detail-text\">");
+            for (var i=0; i<applyToProperties.length; i++) {
               textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(
                 applyToProperties[i], method.getClass(), true, true
-              ),', ');
+              ), ", ");
             }
-            textHtml.add('</div>');
-        }
-
-
-        // Add throws
-        var throwsEntries = method.getThrows();
-        if (throwsEntries.length > 0)
-        {
-          textHtml.add('<div class="item-detail-headline">', "Throws:", '</div>');
-
-          for (var i=0; i<throwsEntries.length; i++)
-          {
-            var throwsEntry = throwsEntries[i];
-            var throwsEntryType = throwsEntry.getType() ? throwsEntry.getType() : throwsEntry.getDefaultType();
-
-            textHtml.add('<div class="item-detail-text">');
-
-            textHtml.add(
-              '<span class="parameter-type">',
-              throwsEntryType === throwsEntry.getDefaultType() ? throwsEntry.getDefaultType() : qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(throwsEntryType),
-              '</span>'
-            );
-
-            var desc = throwsEntry.getDescription();
-
-            if (desc) {
-              textHtml.add(" ", qxl.apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(desc, docClass));
-            }
-
-            textHtml.add('</div>');
+            textHtml.add("</div>");
           }
+
+
+          // Add throws
+          var throwsEntries = method.getThrows();
+          if (throwsEntries.length > 0) {
+            textHtml.add("<div class=\"item-detail-headline\">", "Throws:", "</div>");
+
+            for (var i=0; i<throwsEntries.length; i++) {
+              var throwsEntry = throwsEntries[i];
+              var throwsEntryType = throwsEntry.getType() ? throwsEntry.getType() : throwsEntry.getDefaultType();
+
+              textHtml.add("<div class=\"item-detail-text\">");
+
+              textHtml.add(
+                "<span class=\"parameter-type\">",
+                throwsEntryType === throwsEntry.getDefaultType() ? throwsEntry.getDefaultType() : qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(throwsEntryType),
+                "</span>"
+              );
+
+              var desc = throwsEntry.getDescription();
+
+              if (desc) {
+                textHtml.add(" ", qxl.apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(desc, docClass));
+              }
+
+              textHtml.add("</div>");
+            }
+          }
+
+          textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createAccessHtml(method));
+          textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createIncludedFromHtml(method, currentClassDocNode));
+          textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createOverwriddenFromHtml(method));
+          textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createInheritedFromHtml(method, currentClassDocNode));
+          textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createInfoRequiredByHtml(method));
+          textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createSeeAlsoHtml(method));
+          textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createErrorHtml(method, currentClassDocNode));
+          textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createDeprecationHtml(method, "function"));
+          textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createSourceLinkHtml(method));
         }
 
-        textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createAccessHtml(method));
-        textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createIncludedFromHtml(method, currentClassDocNode));
-        textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createOverwriddenFromHtml(method));
-        textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createInheritedFromHtml(method, currentClassDocNode));
-        textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createInfoRequiredByHtml(method));
-        textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createSeeAlsoHtml(method));
-        textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createErrorHtml(method, currentClassDocNode));
-        textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createDeprecationHtml(method, "function"));
-        textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createSourceLinkHtml(method));
-      }
-
-      return textHtml.get();
-    },
+        return textHtml.get();
+      },
 
 
-    /**
+      /**
      * Checks whether a method has details.
      *
      * @param node {Map} the doc node of the method.
      * @param currentClassDocNode {Map} the doc node of the currently displayed class
      * @return {Boolean} whether the method has details.
      */
-    itemHasDetails : function(node, currentClassDocNode)
-    {
+      itemHasDetails : function(node, currentClassDocNode) {
       // Get the method node that holds the documentation
-      var hasReturn = node.getReturn() && node.getReturn().getDescription();
-      return (
-        node.getClass() != currentClassDocNode ||  // method is inherited
+        var hasReturn = node.getReturn() && node.getReturn().getDescription();
+        return (
+          node.getClass() != currentClassDocNode || // method is inherited
         node.getOverriddenFrom() != null ||
         node.getRequiredBy().length > 0 ||
         node.getParams().length > 0 ||
@@ -273,9 +262,9 @@ qx.Class.define("qxl.apiviewer.ui.panels.AbstractMethodPanel",
         node.getApplyFor() ||
         qxl.apiviewer.ui.panels.InfoPanel.descriptionHasDetails(node) ||
         qxl.apiviewer.ui.ClassViewer.getSourceUri(node)
-      );
+        );
+      }
+
     }
 
-  }
-
-});
+  });

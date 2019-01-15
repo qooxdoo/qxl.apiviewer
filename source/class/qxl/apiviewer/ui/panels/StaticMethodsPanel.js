@@ -25,7 +25,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.StaticMethodsPanel", {
   extend: qxl.apiviewer.ui.panels.AbstractMethodPanel,
 
   construct: function() {
-    this.base(arguments, "Static Members", [ "qxl/apiviewer/image/method_public18.gif","qxl/apiviewer/image/overlay_static18.gif" ]);
+    this.base(arguments, "Static Members", ["qxl/apiviewer/image/method_public18.gif", "qxl/apiviewer/image/overlay_static18.gif"]);
   },
 
   members : {
@@ -33,9 +33,9 @@ qx.Class.define("qxl.apiviewer.ui.panels.StaticMethodsPanel", {
      * @Override
      */
     canDisplayItem: function(dao) {
-      return dao instanceof qxl.apiviewer.dao.Method && dao.isStatic(); 
+      return dao instanceof qxl.apiviewer.dao.Method && dao.isStatic();
     },
-    
+
     getPanelItemObjects: function(daoClass, showInherited) {
       return daoClass.getStatics();
     }

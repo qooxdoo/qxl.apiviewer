@@ -33,33 +33,30 @@
  * @asset(qxl/apiviewer/*)
  */
 qx.Class.define("qxl.apiviewer.Application",
-{
-  extend : qx.application.Standalone,
-
-  construct : function()
   {
-    this.base(arguments);
-    var uri = qx.util.ResourceManager.getInstance().toUri("qxl/apiviewer/css/apiviewer.css");
-    qx.bom.Stylesheet.includeFile(uri);
-  },
+    extend : qx.application.Standalone,
 
-  /*
+    construct : function() {
+      this.base(arguments);
+      var uri = qx.util.ResourceManager.getInstance().toUri("qxl/apiviewer/css/apiviewer.css");
+      qx.bom.Stylesheet.includeFile(uri);
+    },
+
+    /*
   *****************************************************************************
      MEMBERS
   *****************************************************************************
   */
 
-  members :
+    members :
   {
     // overridden
-    main : function()
-    {
+    main : function() {
       // Call super class
       this.base(arguments);
 
       // Add log appenders
-      if (qx.core.Environment.get("qx.debug"))
-      {
+      if (qx.core.Environment.get("qx.debug")) {
         qx.log.appender.Native;
         qx.log.appender.Console;
       }
@@ -76,8 +73,7 @@ qx.Class.define("qxl.apiviewer.Application",
 
 
     // overridden
-    finalize : function()
-    {
+    finalize : function() {
       this.base(arguments);
 
       // Finally load the data
@@ -86,14 +82,13 @@ qx.Class.define("qxl.apiviewer.Application",
   },
 
 
-  /*
+    /*
   *****************************************************************************
      DESTRUCTOR
   *****************************************************************************
   */
 
-  destruct : function()
-  {
-    this._disposeObjects("viewer", "controller");
-  }
-});
+    destruct : function() {
+      this._disposeObjects("viewer", "controller");
+    }
+  });

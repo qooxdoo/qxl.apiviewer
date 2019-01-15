@@ -24,7 +24,7 @@
 qx.Class.define("qxl.apiviewer.ui.panels.EventPanel", {
 
   extend: qxl.apiviewer.ui.panels.InfoPanel,
-  
+
   construct: function() {
     this.base(arguments, "Events", "qxl/apiviewer/image/event18.gif");
   },
@@ -36,20 +36,21 @@ qx.Class.define("qxl.apiviewer.ui.panels.EventPanel", {
      * @Override
      */
     canDisplayItem: function(dao) {
-      return dao instanceof qxl.apiviewer.dao.Event; 
+      return dao instanceof qxl.apiviewer.dao.Event;
     },
-    
+
     _canShowInherited: function() {
       return true;
     },
-    
+
     getPanelItemObjects: function(daoClass, showInherited) {
       var arr = daoClass.getEvents();
-      if (showInherited)
+      if (showInherited) {
         arr = arr.concat(daoClass.getMixinEvents());
+      }
       return arr;
     },
-        
+
     /**
      * Checks whether an event has details.
      *
@@ -67,15 +68,13 @@ qx.Class.define("qxl.apiviewer.ui.panels.EventPanel", {
     },
 
 
-    getItemTypeHtml : function(node)
-    {
+    getItemTypeHtml : function(node) {
       return qxl.apiviewer.ui.panels.InfoPanel.createTypeHtml(node, "var");
     },
 
 
-    getItemTitleHtml : function(node)
-    {
-       return qxl.apiviewer.ui.panels.InfoPanel.setTitleClass(node, node.getName());
+    getItemTitleHtml : function(node) {
+      return qxl.apiviewer.ui.panels.InfoPanel.setTitleClass(node, node.getName());
     },
 
 
@@ -87,21 +86,18 @@ qx.Class.define("qxl.apiviewer.ui.panels.EventPanel", {
      * @param showDetails {Boolean} whether to show the details.
      * @return {String} the HTML showing the information about the event.
      */
-    getItemTextHtml : function(node, currentClassDocNode, showDetails)
-    {
+    getItemTextHtml : function(node, currentClassDocNode, showDetails) {
       // Add the description
       var textHtml = new qx.util.StringBuilder(qxl.apiviewer.ui.panels.InfoPanel.createDescriptionHtml(node, node.getClass(), showDetails));
 
-      if (showDetails)
-      {
+      if (showDetails) {
         textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createInheritedFromHtml(node, currentClassDocNode));
         textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createSeeAlsoHtml(node));
         textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createErrorHtml(node, currentClassDocNode));
         textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createDeprecationHtml(node, "event"));
-
       }
 
-      return textHtml.get()
+      return textHtml.get();
     }
 
   }

@@ -29,7 +29,7 @@ qx.Class.define("qxl.apiviewer.dao.ChildControl", {
       return "";
     }
   }
-  
 
-  
+
+
 });

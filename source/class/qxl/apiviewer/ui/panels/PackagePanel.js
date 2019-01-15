@@ -22,52 +22,45 @@
 ************************************************************************ */
 
 qx.Class.define("qxl.apiviewer.ui.panels.PackagePanel",
-{
-  extend: qxl.apiviewer.ui.panels.InfoPanel,
+  {
+    extend: qxl.apiviewer.ui.panels.InfoPanel,
 
-  members :
+    members :
   {
     /**
      * @Override
      */
     canDisplayItem: function(dao) {
-      return dao instanceof qxl.apiviewer.dao.Package; 
+      return dao instanceof qxl.apiviewer.dao.Package;
     },
-    
+
     getPanelItemObjects: function(daoClass, showInherited) {
       return daoClass.getPackages();
     },
-        
-    getItemTypeHtml : function(node)
-    {
+
+    getItemTypeHtml : function(node) {
       return qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(node.getFullName(), null, false, true);
     },
 
-    getItemTitleHtml : function(node)
-    {
+    getItemTitleHtml : function(node) {
       return node.getFullName();
     },
 
 
-    getItemTextHtml : function(node, getDocNode, showDetails)
-    {
-      if (showDetails)
-      {
+    getItemTextHtml : function(node, getDocNode, showDetails) {
+      if (showDetails) {
         return qxl.apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(node.getDescription(), node);
-      } else {
-        return qxl.apiviewer.ui.panels.InfoPanel.createDescriptionHtml(node, node.getPackage(), showDetails);
       }
+      return qxl.apiviewer.ui.panels.InfoPanel.createDescriptionHtml(node, node.getPackage(), showDetails);
     },
 
 
-    getItemTooltip : function(classNode, currentClassDocNode)
-    {
+    getItemTooltip : function(classNode, currentClassDocNode) {
       return "Package";
     },
 
 
-    itemHasDetails : function(node, currentClassDocNode)
-    {
+    itemHasDetails : function(node, currentClassDocNode) {
       return qxl.apiviewer.ui.panels.InfoPanel.descriptionHasDetails(node);
     },
 
@@ -78,8 +71,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.PackagePanel",
      * @param classViewer {qxl.apiviewer.ui.ClassViewer} parent class viewer widget.
      * @param currentClassDocNode {qxl.apiviewer.dao.Class} the currently displayed class
      */
-    update : function(classViewer, currentClassDocNode)
-    {
+    update : function(classViewer, currentClassDocNode) {
       if (!this.getElement()) {
         return;
       }
@@ -98,4 +90,4 @@ qx.Class.define("qxl.apiviewer.ui.panels.PackagePanel",
 
   }
 
-});
+  });

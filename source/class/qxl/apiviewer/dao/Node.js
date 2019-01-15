@@ -23,13 +23,14 @@
  */
 qx.Class.define("qxl.apiviewer.dao.Node", {
   extend : qx.core.Object,
-  
+
   construct: function(meta) {
     this.base(arguments);
     this._meta = {};
     this._jsdoc = {};
-    if (meta !== undefined)
+    if (meta !== undefined) {
       this._initMeta(meta);
+    }
   },
 
   members :
@@ -43,116 +44,107 @@ qx.Class.define("qxl.apiviewer.dao.Node", {
       this._jsdoc = meta.jsdoc || {};
       this._errors = [];
     },
-    
+
     /**
      * Get description
-     * 
+     *
      * @return {String} description
      */
-    getDescription : function()
-    {
+    getDescription : function() {
       var arr = this._jsdoc["@description"];
-      if (arr && arr.length)
+      if (arr && arr.length) {
         return arr[arr.length - 1].body;
+      }
       return "";
     },
 
 
     /**
      * Get a list of errors of this item.
-     * 
+     *
      * @return {Map[]} errors of this item.
      */
-    getErrors : function()
-    {
+    getErrors : function() {
       return this._errors;
     },
 
 
     /**
      * Get the line number of this item in the source file
-     * 
+     *
      * @return {Integer|null} line number or <code>null</code> if unknown
      */
-    getLineNumber : function()
-    {
+    getLineNumber : function() {
       return this._meta.location ? this._meta.location.start.line : null;
     },
 
 
     /**
      * Get whether the node is deprecated.
-     * 
+     *
      * @return {Boolean} whether the node is deprecated.
      */
-    isDeprecated : function()
-    {
+    isDeprecated : function() {
       return this._jsdoc["@deprecated"] !== undefined;
     },
 
 
     /**
      * Get the text of the deprecation message.
-     * 
+     *
      * @return {String} the deprecation message.
      */
-    getDeprecationText : function()
-    {
+    getDeprecationText : function() {
       return (this.isDeprecated() && this._jsdoc["@deprecated"].body) || "";
     },
 
 
     /**
      * Get whether the node is internal.
-     * 
+     *
      * @return {Boolean} whether the node is internal.
      */
-    isInternal : function()
-    {
+    isInternal : function() {
       return this._jsdoc["@internal"] !== undefined;
     },
 
 
     /**
      * Get whether the node is private.
-     * 
+     *
      * @return {Boolean} whether the node is private.
      */
-    isPrivate : function()
-    {
+    isPrivate : function() {
       return this._meta.access == "private";
     },
 
 
     /**
      * Get whether the node is protected.
-     * 
+     *
      * @return {Boolean} whether the node is protected.
      */
-    isProtected : function()
-    {
+    isProtected : function() {
       return this._meta.access == "protected";
     },
 
 
     /**
      * Get whether the node is property generated.
-     * 
+     *
      * @return {Boolean} whether the node is property generated.
      */
-    isPropertyGenerated : function()
-    {
-      return !!this._meta.property;
+    isPropertyGenerated : function() {
+      return Boolean(this._meta.property);
     },
 
 
     /**
      * Get whether the node is public.
-     * 
+     *
      * @return {Boolean} Whether the node is public.
      */
-    isPublic : function()
-    {
+    isPublic : function() {
       return (
         !this.isPrivate() &&
         !this.isProtected() &&
@@ -163,13 +155,12 @@ qx.Class.define("qxl.apiviewer.dao.Node", {
 
     /**
      * Get whether the node has a warning.
-     * 
+     *
      * @return {Boolean} whether the node has a warning.
      */
-     hasWarning : function()
-     {
-       return this._meta.hasWarning || false;
-     },
+    hasWarning : function() {
+      return this._meta.hasWarning || false;
+    },
 
 
     /**

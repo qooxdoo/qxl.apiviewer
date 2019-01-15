@@ -27,41 +27,40 @@
  * Shows the package details.
  */
 qx.Class.define("qxl.apiviewer.ui.PackageViewer",
-{
-  extend : qxl.apiviewer.ui.AbstractViewer,
+  {
+    extend : qxl.apiviewer.ui.AbstractViewer,
 
 
 
 
-  /*
+    /*
   *****************************************************************************
      CONSTRUCTOR
   *****************************************************************************
   */
 
-  construct : function()
-  {
-    this.base(arguments);
-    this.addInfoPanel(new qxl.apiviewer.ui.panels.ClassPanel("class").set({ type: "class" }));
-    this.addInfoPanel(new qxl.apiviewer.ui.panels.ClassPanel("interface").set({ type: "interface" }));
-    this.addInfoPanel(new qxl.apiviewer.ui.panels.ClassPanel("mixin").set({ type: "mixin" }));
-    this.addInfoPanel(new qxl.apiviewer.ui.panels.PackagePanel("packages"));
+    construct : function() {
+      this.base(arguments);
+      this.addInfoPanel(new qxl.apiviewer.ui.panels.ClassPanel("class").set({type: "class"}));
+      this.addInfoPanel(new qxl.apiviewer.ui.panels.ClassPanel("interface").set({type: "interface"}));
+      this.addInfoPanel(new qxl.apiviewer.ui.panels.ClassPanel("mixin").set({type: "mixin"}));
+      this.addInfoPanel(new qxl.apiviewer.ui.panels.PackagePanel("packages"));
 
-    this.getContentElement().setAttribute("class", "ClassViewer");
+      this.getContentElement().setAttribute("class", "ClassViewer");
 
-    this._init(qxl.apiviewer.dao.Package.getPackage(null));
-  },
-
+      this._init(qxl.apiviewer.dao.Package.getPackage(null));
+    },
 
 
 
-  /*
+
+    /*
   *****************************************************************************
      MEMBERS
   *****************************************************************************
   */
 
-  members :
+    members :
   {
 
     /**
@@ -70,33 +69,30 @@ qx.Class.define("qxl.apiviewer.ui.PackageViewer",
      * @param classNode {qxl.apiviewer.dao.Package} the package documentation node for the title
      * @return {String} HTML fragment of the title
      */
-    _getTitleHtml : function(classNode)
-    {
+    _getTitleHtml : function(classNode) {
       var vHtml = "";
 
       // Title
-      vHtml += '<small>package</small>';
+      vHtml += "<small>package</small>";
       vHtml += classNode.getFullName();
       return vHtml;
     },
 
-    _getTocHtml : function(classNode)
-    {
-      return document.createTextNode('');
+    _getTocHtml : function(classNode) {
+      return document.createTextNode("");
     },
 
-    _getDescriptionHtml : function(classNode)
-    {
+    _getDescriptionHtml : function(classNode) {
       var descHtml = new qx.util.StringBuilder();
       var desc = classNode.getDescription();
       if (desc != "") {
         descHtml.add(
-          '<div class="class-description">',
+          "<div class=\"class-description\">",
           qxl.apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(desc, classNode),
-          '</div>');
+          "</div>");
       }
       return qx.Promise.resolve(descHtml.get());
     }
 
   }
-});
+  });

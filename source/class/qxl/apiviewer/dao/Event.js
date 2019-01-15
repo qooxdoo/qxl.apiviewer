@@ -28,20 +28,19 @@ qx.Class.define("qxl.apiviewer.dao.Event", {
 
   members : {
 
-    getType : function () {
+    getType : function() {
       return qxl.apiviewer.dao.Class.getClassByName(this._type);
     },
 
-    getTypes : function () {
+    getTypes : function() {
       if (this._type) {
         return [{
           type: this._type
-        }]
-      } else {
-        return [];
+        }];
       }
+      return [];
     },
-    
+
     /**
      * @Override
      */

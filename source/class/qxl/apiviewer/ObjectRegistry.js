@@ -18,13 +18,12 @@
 
 ************************************************************************ */
 qx.Class.define("qxl.apiviewer.ObjectRegistry",
-{
-  statics :
+  {
+    statics :
   {
     __objectDb : {},
 
-    register : function(object)
-    {
+    register : function(object) {
       var hash = qx.core.ObjectRegistry.toHashCode(object);
       this.__objectDb[hash] = object;
     },
@@ -34,4 +33,4 @@ qx.Class.define("qxl.apiviewer.ObjectRegistry",
     }
   }
 
-});
+  });

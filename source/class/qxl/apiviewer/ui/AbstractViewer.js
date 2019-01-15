@@ -23,34 +23,33 @@
 ************************************************************************ */
 
 qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
-{
-  type : "abstract",
-  extend : qx.ui.embed.Html,
-
-  construct : function()
   {
-    this.base(arguments);
+    type : "abstract",
+    extend : qx.ui.embed.Html,
 
-    this._infoPanelHash = {};
-    this._infoPanels = [];
+    construct : function() {
+      this.base(arguments);
 
-    this.setOverflowX("auto");
-    this.setOverflowY("auto");
+      this._infoPanelHash = {};
+      this._infoPanels = [];
 
-    this.getContentElement().setStyle("-webkit-overflow-scrolling", "touch");
-    this.getContentElement().setStyle("touch-action", "pan-y");
-    this.getContentElement().setStyle("-ms-touch-action", "pan-y");
+      this.setOverflowX("auto");
+      this.setOverflowY("auto");
 
-    this.setAppearance("detailviewer");
+      this.getContentElement().setStyle("-webkit-overflow-scrolling", "touch");
+      this.getContentElement().setStyle("touch-action", "pan-y");
+      this.getContentElement().setStyle("-ms-touch-action", "pan-y");
 
-    this._infoPanelHash = {};
-    this._infoPanels = [];
+      this.setAppearance("detailviewer");
 
-    qxl.apiviewer.ObjectRegistry.register(this);
-  },
+      this._infoPanelHash = {};
+      this._infoPanels = [];
+
+      qxl.apiviewer.ObjectRegistry.register(this);
+    },
 
 
-  properties :
+    properties :
   {
     /** The class to display */
     docNode : {
@@ -104,7 +103,7 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
   },
 
 
-  statics :
+    statics :
   {
 
     /**
@@ -112,12 +111,10 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
      *
      * @param el {Element} Root element
      */
-    fixLinks : function(el)
-    {
+    fixLinks : function(el) {
       var a = el.getElementsByTagName("a");
 
-      for (var i=0; i<a.length; i++)
-      {
+      for (var i=0; i<a.length; i++) {
         if (typeof a[i].href == "string" && a[i].href.indexOf("http://") == 0) {
           a[i].target = "_blank";
         }
@@ -125,8 +122,7 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
     },
 
 
-    highlightCode : function(el)
-    {
+    highlightCode : function(el) {
       var pres = el.getElementsByTagName("pre");
 
       for (var i=0; i<pres.length; i++) {
@@ -141,7 +137,7 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
           // existing pre element with the wrapper element.
           var preWrapper = document.createElement("div");
           var content = element.textContent || element.innerText;
-          preWrapper.innerHTML = '<pre class="javascript">' + qx.dev.Tokenizer.javaScriptToHtml(content, true) + '</pre>';
+          preWrapper.innerHTML = "<pre class=\"javascript\">" + qx.dev.Tokenizer.javaScriptToHtml(content, true) + "</pre>";
           element.parentNode.replaceChild(preWrapper, element);
         } else {
           element.innerHTML = qx.dev.Tokenizer.javaScriptToHtml(element.textContent);
@@ -152,45 +148,43 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
   },
 
 
-  members :
+    members :
   {
     _infoPanelHash : null,
     _infoPanels : null,
 
-    _init : function(pkg){
+    _init : function(pkg) {
       this.__initHtml();
 
       this.addListenerOnce("appear", () => this._syncHtml());
     },
 
-    __initHtml : function()
-    {
+    __initHtml : function() {
       var html = new qx.util.StringBuilder();
 
-      html.add('<div style="padding:24px;">');
+      html.add("<div style=\"padding:24px;\">");
 
       // Add title
-      html.add('<h1></h1>');
+      html.add("<h1></h1>");
 
       // Add TOC
-      html.add('<div class="tocContainer"></div>');
+      html.add("<div class=\"tocContainer\"></div>");
 
       // Add description
-      html.add('<div>', '</div>');
+      html.add("<div>", "</div>");
 
       // render panels
       var panels = this.getPanels();
 
-      for (var i=0; i<panels.length; i++)
-      {
+      for (var i=0; i<panels.length; i++) {
         var panel = panels[i];
         html.add(panel.getPanelHtml(this));
       }
 
-      html.add('</div>');
+      html.add("</div>");
 
       this.setHtml(html.get());
-   },
+    },
 
     /**
      * Returns the HTML fragment for the title
@@ -199,19 +193,16 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
      * @param classNode {qxl.apiviewer.dao.Class} the class documentation node for the title
      * @return {String} HTML fragment of the title
      */
-    _getTitleHtml : function(classNode)
-    {
+    _getTitleHtml : function(classNode) {
       throw new Error("Abstract method called!");
     },
 
-    _getTocHtml : function(classNode)
-    {
+    _getTocHtml : function(classNode) {
       throw new Error("Abstract method called!");
     },
 
 
-    _getDescriptionHtml : function(classNode)
-    {
+    _getDescriptionHtml : function(classNode) {
       throw new Error("Abstract method called!");
     },
 
@@ -221,8 +212,7 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
      * HtmlEmbed element initialization routine.
      *
      */
-    _syncHtml : function()
-    {
+    _syncHtml : function() {
       var oldTitleElem = this._titleElem;
       var element = this.getContentElement().getDomElement().firstChild;
       var divArr = element.childNodes;
@@ -234,8 +224,7 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
       this._tocElem = divArr[1];
       this._classDescElem = divArr[2];
 
-      for (var i=0; i<panels.length; i++)
-      {
+      for (var i=0; i<panels.length; i++) {
         var panel = panels[i];
         panel.setElement(divArr[i+3]);
       }
@@ -246,8 +235,7 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
     },
 
 
-    addInfoPanel : function(panel)
-    {
+    addInfoPanel : function(panel) {
       this._infoPanelHash[panel.toHashCode()] = panel;
       this._infoPanels.push(panel);
     },
@@ -258,21 +246,20 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
     },
 
 
-    getPanelFromHashCode : function(hashCode)
-    {
+    getPanelFromHashCode : function(hashCode) {
       return this._infoPanelHash[hashCode];
     },
 
 
     /**
      * Updates all info panels
-     * 
+     *
      * @return {qx.Promise}
      */
-    _updatePanels : function()
-    {
-      if (!this.getDocNode())
+    _updatePanels : function() {
+      if (!this.getDocNode()) {
         return qx.Promise.resolve();
+      }
       qxl.apiviewer.LoadingIndicator.getInstance().show();
       var panels = this.getPanels();
       var all = panels.map(panel => panel.update(this, this.getDocNode()));
@@ -283,12 +270,13 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
     /**
      * Updates all info panels and TOC with items reflecting appearance/disappearance of panels
      * due to inherited members
-     * 
+     *
      * @return {qx.Promise}
      */
-    _updatePanelsWithInheritedMembers : function(){
-      if (!this.getDocNode())
+    _updatePanelsWithInheritedMembers : function() {
+      if (!this.getDocNode()) {
         return qx.Promise.resolve();
+      }
       return this._updatePanels()
         .then(() => {
           if (this._tocElem) {
@@ -304,17 +292,15 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
      *
      * @param classNode {qxl.apiviewer.dao.Class} the doc node of the class to show.
      */
-    _applyDocNode : function(classNode)
-    {
-      if (!this._titleElem)
-      {
+    _applyDocNode : function(classNode) {
+      if (!this._titleElem) {
         return;
       }
 
       this._titleElem.innerHTML = this._getTitleHtml(classNode);
       qx.dom.Element.empty(this._tocElem);
       this._tocElem.appendChild(this._getTocHtml(classNode));
-      
+
       return this._getDescriptionHtml(classNode)
         .then(html => {
           this._classDescElem.innerHTML = html;
@@ -336,19 +322,15 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
      * @param panelHashCode {Integer} hash code of the panel object.
      * @return {qx.Promise}
      */
-    togglePanelVisibility : function(panel)
-    {
-      try
-      {
+    togglePanelVisibility : function(panel) {
+      try {
         panel.setIsOpen(!panel.getIsOpen());
 
         var imgElem = panel.getTitleElement().getElementsByTagName("img")[0];
-        imgElem.src = qx.util.ResourceManager.getInstance().toUri(panel.getIsOpen() ? 'qxl/apiviewer/image/close.gif' : 'qxl/apiviewer/image/open.gif');
+        imgElem.src = qx.util.ResourceManager.getInstance().toUri(panel.getIsOpen() ? "qxl/apiviewer/image/close.gif" : "qxl/apiviewer/image/open.gif");
 
         return panel.update(this, this.getDocNode());
-      }
-      catch(exc)
-      {
+      } catch (exc) {
         this.error("Toggling info body failed", exc);
       }
     },
@@ -359,29 +341,29 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
      * @param nodeArr {qxl.apiviewer.dao.ClassItem[]} array of class items
      */
     sortItems : function(nodeArr) {
-      
-      let WEIGHT = [ "qxl.apiviewer.dao.Package", "qxl.apiviewer.dao.Class" ];
-      
+      let WEIGHT = ["qxl.apiviewer.dao.Package", "qxl.apiviewer.dao.Class"];
+
       // Sort the nodeArr by name
       // Move protected methods to the end
       nodeArr.sort((obj1, obj2) => {
-        
         if (obj1.classname != obj2.classname) {
           var w1 = WEIGHT.indexOf(obj1.classname);
           var w2 = WEIGHT.indexOf(obj2.classname);
-          if (w1 < 0)
+          if (w1 < 0) {
             w1 = 999;
-          if (w2 < 0)
+          }
+          if (w2 < 0) {
             w2 = 999;
+          }
           return w1 < w2 ? -1 : w1 > w2 ? 1 : 0;
         }
-        
+
         if (obj1 instanceof qxl.apiviewer.dao.Package) {
           var n1 = obj1.getFullName().toLowerCase();
           var n2 = obj2.getFullName().toLowerCase();
           return n1 < n2 ? -1 : n1 > n2 ? 1 : 0;
         }
-        
+
         var sum1 = 0;
         if (obj1.isInternal()) {
           sum1 += 4;
@@ -404,18 +386,15 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
           sum2 += 1;
         }
 
-        if (sum1 == sum2)
-        {
+        if (sum1 == sum2) {
           var name1 = obj1.getName();
           var name2 = obj2.getName();
 
           return name1.toLowerCase() < name2.toLowerCase() ? -1 : 1;
         }
-        else
-        {
-          return sum1 - sum2;
-        }
+
+        return sum1 - sum2;
       });
     }
   }
-});
+  });

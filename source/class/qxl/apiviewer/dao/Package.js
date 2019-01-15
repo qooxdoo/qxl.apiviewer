@@ -65,7 +65,7 @@ qx.Class.define("qxl.apiviewer.dao.Package", {
     addClass: function(clazz) {
       this._classes[clazz.getFullName()] = clazz;
     },
-    
+
     getClassByName: function(name) {
       return this._classes[name];
     },
@@ -77,23 +77,23 @@ qx.Class.define("qxl.apiviewer.dao.Package", {
     addPackage: function(pkg) {
       this._packages[pkg.getFullName()] = pkg;
     },
-    
+
     loadDependedClasses: function() {
       return qxl.apiviewer.ClassLoader.loadClassList(this.getClasses());
     },
-    
+
     hasWarning: function() {
       return false;
     }
 
   },
-  
+
   statics: {
     __rootPackage: null,
-    
+
     /**
      * Locates a package by name
-     * 
+     *
      * @param name {String} package name, null or "" for top level
      * @return {Package?}
      */
@@ -105,35 +105,37 @@ qx.Class.define("qxl.apiviewer.dao.Package", {
       if (!name) {
         return root;
       }
-      
+
       var current = root;
-      var segs = name.split('.');
-      
+      var segs = name.split(".");
+
       var parentName = "";
       for (var i = 0; i < segs.length; i++) {
         var tmp = current.getPackageByName(parentName + segs[i]);
         if (!tmp) {
-          if (!create)
+          if (!create) {
             return null;
+          }
           tmp = new qxl.apiviewer.dao.Package(i == 0 ? segs[i] : current.getFullName() + "." + segs[i]);
         }
         current = tmp;
         parentName += segs[i] + ".";
       }
-      
+
       return current;
     },
 
     /**
      * Returns the package that a given package or class is a direct child of
-     * 
+     *
      * @param name {String} the name
      * @return {Package} the package
      */
     getParentPackage: function(name) {
-      if (!name)
+      if (!name) {
         throw new Error("Cannot get the parent package of a root package");
-      var pos = name.lastIndexOf('.');
+      }
+      var pos = name.lastIndexOf(".");
       if (pos < 0) {
         return qxl.apiviewer.dao.Package.__rootPackage;
       }

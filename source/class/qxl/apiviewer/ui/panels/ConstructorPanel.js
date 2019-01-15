@@ -33,12 +33,12 @@ qx.Class.define("qxl.apiviewer.ui.panels.ConstructorPanel", {
      * @Override
      */
     canDisplayItem: function(dao) {
-      return dao instanceof qxl.apiviewer.dao.Method && dao.getName() == "construct"; 
+      return dao instanceof qxl.apiviewer.dao.Method && dao.getName() == "construct";
     },
-    
+
     getPanelItemObjects: function(daoClass, showInherited) {
       return daoClass.getConstructor();
-    },
-        
+    }
+
   }
 });

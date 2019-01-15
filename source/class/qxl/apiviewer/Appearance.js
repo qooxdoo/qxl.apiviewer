@@ -23,16 +23,15 @@
  * Extends the default qooxdoo appearance theme.
  */
 qx.Theme.define("qxl.apiviewer.Appearance",
-{
-  title: "Theme for API Viewer",
-  extend : qx.theme.indigo.Appearance,
+  {
+    title: "Theme for API Viewer",
+    extend : qx.theme.indigo.Appearance,
 
-  appearances :
+    appearances :
   {
     "toggleview" :
     {
-      style : function(states)
-      {
+      style : function(states) {
         return {
           width : 240,
           decorator : "main"
@@ -42,13 +41,12 @@ qx.Theme.define("qxl.apiviewer.Appearance",
 
     "detailviewer" :
     {
-      style : function(states)
-      {
+      style : function(states) {
         return {
           backgroundColor : "white",
           decorator : "main",
           padding : [10, 0, 10, 0]
-        }
+        };
       }
     },
 
@@ -57,10 +55,9 @@ qx.Theme.define("qxl.apiviewer.Appearance",
       include : "scrollarea",
       alias : "scrollarea",
 
-      style : function(states)
-      {
+      style : function(states) {
         return {
-          contentPadding : [ 10, 10, 10, 10 ],
+          contentPadding : [10, 10, 10, 10],
           backgroundColor: "white"
         };
       }
@@ -68,8 +65,7 @@ qx.Theme.define("qxl.apiviewer.Appearance",
 
     "legendview-label-important" :
     {
-      style : function(states)
-      {
+      style : function(states) {
         return {
           textColor: "#134275",
           font : "bold"
@@ -79,8 +75,7 @@ qx.Theme.define("qxl.apiviewer.Appearance",
 
     "legendview-label" :
     {
-      style : function(states)
-      {
+      style : function(states) {
         return {
           textColor: "#134275"
         };
@@ -89,18 +84,16 @@ qx.Theme.define("qxl.apiviewer.Appearance",
 
     "tabview" :
     {
-      style : function(states)
-      {
+      style : function(states) {
         return {
           contentPadding : 0
-        }
+        };
       }
     },
 
     "tabview/pane" :
     {
-      style : function(states)
-      {
+      style : function(states) {
         return {
           minHeight : 100,
 
@@ -112,4 +105,4 @@ qx.Theme.define("qxl.apiviewer.Appearance",
       }
     }
   }
-});
+  });

@@ -19,15 +19,14 @@
 ************************************************************************ */
 
 qx.Class.define("qxl.apiviewer.dao.ThrowsEntry",
-{
-  extend : qxl.apiviewer.dao.ClassItem,
-
-  construct : function(classDocNode, parentClass, method)
   {
-    this.base(arguments, classDocNode, parentClass);
-  },
+    extend : qxl.apiviewer.dao.ClassItem,
 
-  members :
+    construct : function(classDocNode, parentClass, method) {
+      this.base(arguments, classDocNode, parentClass);
+    },
+
+    members :
   {
 
     getType : function() {
@@ -38,11 +37,10 @@ qx.Class.define("qxl.apiviewer.dao.ThrowsEntry",
       return "Error";
     },
 
-    getDescription : function()
-    {
+    getDescription : function() {
       return this._docNode.attributes.text;
     }
 
   }
 
-});
+  });

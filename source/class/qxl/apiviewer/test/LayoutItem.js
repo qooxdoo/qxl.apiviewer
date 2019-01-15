@@ -1,8 +1,8 @@
 qx.Class.define("qxl.apiviewer.test.LayoutItem",
-{
-  extend : qx.core.Object,
+  {
+    extend : qx.core.Object,
 
-  members :
+    members :
   {
     /**
      * Renders a separator between two children
@@ -15,4 +15,4 @@ qx.Class.define("qxl.apiviewer.test.LayoutItem",
       // empty template
     }
   }
-});
+  });

@@ -37,13 +37,13 @@ qx.Class.define("qxl.apiviewer.ui.panels.ChildControlsPanel", {
      * @Override
      */
     canDisplayItem: function(dao) {
-      return dao instanceof qxl.apiviewer.dao.ChildControl; 
+      return dao instanceof qxl.apiviewer.dao.ChildControl;
     },
-    
+
     getPanelItemObjects: function(daoClass, showInherited) {
       return daoClass.getChildControls();
     },
-        
+
     getItemTypeHtml : function(node, currentClassDocNode) {
       return qxl.apiviewer.ui.panels.InfoPanel.createTypeHtml(node, "var", true);
     },
@@ -59,12 +59,12 @@ qx.Class.define("qxl.apiviewer.ui.panels.ChildControlsPanel", {
 
       if (showDetails) {
         textHtml.add(
-          '<div class="item-detail-headline">', "Default value:", '</div>',
-          '<div class="item-detail-text">',
-          '<code>',
+          "<div class=\"item-detail-headline\">", "Default value:", "</div>",
+          "<div class=\"item-detail-text\">",
+          "<code>",
           (node.getDefaultValue() ? node.getDefaultValue() : "null"),
-          '</code>',
-          '</div>'
+          "</code>",
+          "</div>"
         );
       }
 

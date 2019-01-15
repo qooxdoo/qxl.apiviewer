@@ -18,9 +18,9 @@
 
 ************************************************************************ */
 qx.Mixin.define("qxl.apiviewer.MWidgetRegistry",
-{
+  {
 
-  properties :
+    properties :
   {
     id : {
       check : "String",
@@ -30,10 +30,9 @@ qx.Mixin.define("qxl.apiviewer.MWidgetRegistry",
     }
   },
 
-  members :
+    members :
   {
-    _applyId : function(id, oldId)
-    {
+    _applyId : function(id, oldId) {
       var statics = qxl.apiviewer.MWidgetRegistry;
       if (oldId) {
         statics.unregister(this, oldId);
@@ -43,14 +42,13 @@ qx.Mixin.define("qxl.apiviewer.MWidgetRegistry",
       }
     },
 
-    getWidgetById : function(id)
-    {
+    getWidgetById : function(id) {
       return qxl.apiviewer.MWidgetRegistry.getWidgetById(id);
     }
 
   },
 
-  statics :
+    statics :
   {
     __objectDb : {},
 
@@ -60,8 +58,7 @@ qx.Mixin.define("qxl.apiviewer.MWidgetRegistry",
      * @param id {String} the id of the widget
      * @return {qx.ui.core.Widget} the widget.
      */
-    getWidgetById : function(id)
-    {
+    getWidgetById : function(id) {
       return this.__objectDb[id];
     },
 
@@ -72,22 +69,20 @@ qx.Mixin.define("qxl.apiviewer.MWidgetRegistry",
      * @param widget {qx.ui.core.Widget} the widget to register
      * @param id {String} the id of the widget.
      */
-    register : function(object, id)
-    {
+    register : function(object, id) {
       if (this.__objectDb[id]) {
         throw new Error("An object with the id '"+id+"' already exists.");
       }
       this.__objectDb[id] = object;
     },
 
-    unregister : function(object, id)
-    {
+    unregister : function(object, id) {
       if (this.__objectDb[id] !== object) {
         throw new Error("The object is not registered with the id '"+id+"'.");
       }
-      delete(this.__objectDb[id]);
+      delete (this.__objectDb[id]);
     }
 
   }
 
-});
+  });

@@ -23,13 +23,13 @@
  * The GUI is defined in {@link Viewer}.
  */
 qx.Class.define("qxl.apiviewer.ui.tabview.PackagePage",
-{
-  extend : qxl.apiviewer.ui.tabview.AbstractPage,
+  {
+    extend : qxl.apiviewer.ui.tabview.AbstractPage,
 
-  members :
+    members :
   {
     _createViewer : function() {
       return new qxl.apiviewer.ui.PackageViewer();
     }
   }
-});
+  });

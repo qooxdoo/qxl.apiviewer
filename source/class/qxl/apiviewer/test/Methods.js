@@ -1,8 +1,8 @@
 qx.Class.define("qxl.apiviewer.test.Methods",
-{
-  extend : Object,
+  {
+    extend : Object,
 
-  members :
+    members :
   {
     // shadowed keys
     toString : function() {},
@@ -11,4 +11,4 @@ qx.Class.define("qxl.apiviewer.test.Methods",
     hasOwnProperty : function() {},
     toLocaleString : function() {}
   }
-});
+  });

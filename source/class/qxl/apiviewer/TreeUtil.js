@@ -25,32 +25,32 @@
  * @ignore(qxl.apiviewer.dao)
  */
 qx.Class.define("qxl.apiviewer.TreeUtil",
-{
-  extend : qx.core.Object,
+  {
+    extend : qx.core.Object,
 
 
 
 
-  /*
+    /*
   *****************************************************************************
      CONSTRUCTOR
   *****************************************************************************
   */
 
-  construct : function() {
-    this.base(arguments);
-  },
+    construct : function() {
+      this.base(arguments);
+    },
 
 
 
 
-  /*
+    /*
   *****************************************************************************
      STATICS
   *****************************************************************************
   */
 
-  statics :
+    statics :
   {
     /**
      * Gets the child of a doc node having a certain type.
@@ -60,12 +60,9 @@ qx.Class.define("qxl.apiviewer.TreeUtil",
      * @return {Map} the wanted child or <code>null</code> if <code>docNode</code>
      *           is <code>null</code> or has no such child.
      */
-    getChild : function(docNode, childType)
-    {
-      if (docNode != null && docNode.children != null)
-      {
-        for (var i=0; i<docNode.children.length; i++)
-        {
+    getChild : function(docNode, childType) {
+      if (docNode != null && docNode.children != null) {
+        for (var i=0; i<docNode.children.length; i++) {
           if (docNode.children[i].type == childType) {
             return docNode.children[i];
           }
@@ -84,12 +81,9 @@ qx.Class.define("qxl.apiviewer.TreeUtil",
      * @param attributeValue {String} the value of the attribute the wanted child must have.
      * @return {Map} the wanted child or <code>code</code> if there is no such child.
      */
-    getChildByAttribute : function(docNode, attributeName, attributeValue)
-    {
-      if (docNode.children != null)
-      {
-        for (var i=0; i<docNode.children.length; i++)
-        {
+    getChildByAttribute : function(docNode, attributeName, attributeValue) {
+      if (docNode.children != null) {
+        for (var i=0; i<docNode.children.length; i++) {
           var node = docNode.children[i];
 
           if (node.attributes && node.attributes[attributeName] == attributeValue) {
@@ -111,19 +105,14 @@ qx.Class.define("qxl.apiviewer.TreeUtil",
      *           (in case of an overlay icon).
      * @throws {Error} If node is of an unknown type.
      */
-    getIconUrl : function(node, inherited)
-    {
+    getIconUrl : function(node, inherited) {
       var constName;
       var dao = qxl.apiviewer.dao;
 
-      if (node instanceof dao.Package)
-      {
+      if (node instanceof dao.Package) {
         constName = "ICON_PACKAGE";
-      }
-      else if (node instanceof dao.Class)
-      {
-        switch (node.getType())
-        {
+      } else if (node instanceof dao.Class) {
+        switch (node.getType()) {
           case "mixin":
             constName = "ICON_MIXIN";
             break;
@@ -142,9 +131,7 @@ qx.Class.define("qxl.apiviewer.TreeUtil",
               constName += "_SINGLETON";
             }
         }
-      }
-      else if (node instanceof dao.Property)
-      {
+      } else if (node instanceof dao.Property) {
         constName = "ICON_PROPERTY";
         if (node.isPublic()) {
           constName += "_PUB";
@@ -158,13 +145,9 @@ qx.Class.define("qxl.apiviewer.TreeUtil",
         if (node.isThemeable()) {
           constName += "_THEMEABLE";
         }
-      }
-      else if (node instanceof dao.Event)
-      {
+      } else if (node instanceof dao.Event) {
         constName = "ICON_EVENT";
-      }
-      else if (node instanceof dao.Method)
-      {
+      } else if (node instanceof dao.Method) {
         if (node.isConstructor()) {
           var constName = "ICON_CTOR";
         } else {
@@ -189,17 +172,11 @@ qx.Class.define("qxl.apiviewer.TreeUtil",
         if (node.getClass().getType() == "mixin") {
           constName += "_MIXIN";
         }
-      }
-      else if (node instanceof dao.Constant)
-      {
+      } else if (node instanceof dao.Constant) {
         constName = "ICON_CONSTANT";
-      }
-      else if (node instanceof dao.ChildControl)
-      {
+      } else if (node instanceof dao.ChildControl) {
         constName = "ICON_CHILDCONTROL";
-      }
-      else
-      {
+      } else {
         throw new Error("Unknown node type: " + node.type);
       }
 
@@ -209,8 +186,7 @@ qx.Class.define("qxl.apiviewer.TreeUtil",
       }
       */
 
-      if (node instanceof dao.ClassItem)
-      {
+      if (node instanceof dao.ClassItem) {
         if (inherited) {
           constName += "_INHERITED";
         } else if (node.getOverriddenFrom && node.getOverriddenFrom()) {
@@ -230,8 +206,7 @@ qx.Class.define("qxl.apiviewer.TreeUtil",
     },
 
 
-    iconNameToIconPath : function(iconName)
-    {
+    iconNameToIconPath : function(iconName) {
       var iconUrl = qxl.apiviewer.TreeUtil[iconName];
 
       if (!iconUrl) {
@@ -252,14 +227,13 @@ qx.Class.define("qxl.apiviewer.TreeUtil",
         if (iconUrl[0] == null) {
           throw new Error("Unknown img constant: " + itemName);
         }
-        for(var i=startIndex; i<iconParts.length; i++) {
+        for (var i=startIndex; i<iconParts.length; i++) {
           var iconPart = qxl.apiviewer.TreeUtil["OVERLAY_" + iconParts[i]];
           if (iconPart == null) {
             throw new Error("Unknown img constant: OVERLAY_" + iconParts[i]);
           }
           iconUrl.push(iconPart);
         }
-
       }
       return iconUrl;
     },
@@ -396,58 +370,57 @@ qx.Class.define("qxl.apiviewer.TreeUtil",
   },
 
 
-  /*
+    /*
   *****************************************************************************
      DEFER
   *****************************************************************************
   */
 
-  defer : function(statics, members, properties)
-  {
+    defer : function(statics, members, properties) {
     /** {string[]} images to preload */
-    statics.PRELOAD_IMAGES = [
-      statics.ICON_INFO,
-      statics.ICON_SEARCH,
-      statics.OVERLAY_ABSTRACT,
-      statics.OVERLAY_ERROR,
-      statics.OVERLAY_INHERITED,
-      statics.OVERLAY_OVERRIDDEN,
-      statics.OVERLAY_STATIC,
-      statics.OVERLAY_WARN,
-      statics.OVERLAY_MIXIN,
-      statics.OVERLAY_THEMEABLE,
-      statics.ICON_PACKAGE,
-      statics.ICON_PACKAGE_WARN,
-      statics.ICON_CLASS,
-      statics.ICON_CLASS_WARN,
-      statics.ICON_CLASS_ERROR,
-      statics.ICON_CLASS_STATIC,
-      statics.ICON_CLASS_STATIC_WARN,
-      statics.ICON_CLASS_STATIC_ERROR,
-      statics.ICON_CLASS_ABSTRACT,
-      statics.ICON_CLASS_ABSTRACT_WARN,
-      statics.ICON_CLASS_ABSTRACT_ERROR,
-      statics.ICON_CLASS_SINGLETON,
-      statics.ICON_CLASS_SINGLETON_WARN,
-      statics.ICON_CLASS_SINGLETON_ERROR,
-      statics.ICON_PROPERTY_PUB,
-      statics.ICON_PROPERTY_PROT,
-      statics.ICON_PROPERTY_PRIV,
-      statics.ICON_PROPERTY_INTERN,
-      statics.ICON_PROPERTY_PUB_THEMEABLE,
-      statics.ICON_EVENT,
-      statics.ICON_INTERFACE,
-      statics.ICON_INTERFACE_WARN,
-      statics.ICON_MIXIN,
-      statics.ICON_MIXIN_WARN,
-      statics.ICON_METHOD_PUB,
-      statics.ICON_METHOD_PUB_INHERITED,
-      statics.ICON_CTOR,
-      statics.ICON_METHOD_PROT,
-      statics.ICON_METHOD_PRIV,
-      statics.ICON_METHOD_INTERN,
-      statics.ICON_CONSTANT,
-      statics.ICON_CHILDCONTROL
-    ];
-  }
-});
+      statics.PRELOAD_IMAGES = [
+        statics.ICON_INFO,
+        statics.ICON_SEARCH,
+        statics.OVERLAY_ABSTRACT,
+        statics.OVERLAY_ERROR,
+        statics.OVERLAY_INHERITED,
+        statics.OVERLAY_OVERRIDDEN,
+        statics.OVERLAY_STATIC,
+        statics.OVERLAY_WARN,
+        statics.OVERLAY_MIXIN,
+        statics.OVERLAY_THEMEABLE,
+        statics.ICON_PACKAGE,
+        statics.ICON_PACKAGE_WARN,
+        statics.ICON_CLASS,
+        statics.ICON_CLASS_WARN,
+        statics.ICON_CLASS_ERROR,
+        statics.ICON_CLASS_STATIC,
+        statics.ICON_CLASS_STATIC_WARN,
+        statics.ICON_CLASS_STATIC_ERROR,
+        statics.ICON_CLASS_ABSTRACT,
+        statics.ICON_CLASS_ABSTRACT_WARN,
+        statics.ICON_CLASS_ABSTRACT_ERROR,
+        statics.ICON_CLASS_SINGLETON,
+        statics.ICON_CLASS_SINGLETON_WARN,
+        statics.ICON_CLASS_SINGLETON_ERROR,
+        statics.ICON_PROPERTY_PUB,
+        statics.ICON_PROPERTY_PROT,
+        statics.ICON_PROPERTY_PRIV,
+        statics.ICON_PROPERTY_INTERN,
+        statics.ICON_PROPERTY_PUB_THEMEABLE,
+        statics.ICON_EVENT,
+        statics.ICON_INTERFACE,
+        statics.ICON_INTERFACE_WARN,
+        statics.ICON_MIXIN,
+        statics.ICON_MIXIN_WARN,
+        statics.ICON_METHOD_PUB,
+        statics.ICON_METHOD_PUB_INHERITED,
+        statics.ICON_CTOR,
+        statics.ICON_METHOD_PROT,
+        statics.ICON_METHOD_PRIV,
+        statics.ICON_METHOD_INTERN,
+        statics.ICON_CONSTANT,
+        statics.ICON_CHILDCONTROL
+      ];
+    }
+  });

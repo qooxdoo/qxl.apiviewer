@@ -19,28 +19,27 @@
 ************************************************************************ */
 
 qx.Class.define("qxl.apiviewer.ui.tabview.AbstractPage",
-{
-  extend : qx.ui.tabview.Page,
-  type : "abstract",
-
-  construct : function()
   {
-    this.base(arguments);
+    extend : qx.ui.tabview.Page,
+    type : "abstract",
 
-    this.setLayout(new qx.ui.layout.Canvas());
-    this.setShowCloseButton(true);
+    construct : function() {
+      this.base(arguments);
 
-    this._bindings = [];
+      this.setLayout(new qx.ui.layout.Canvas());
+      this.setShowCloseButton(true);
 
-    this._viewer = this._createViewer();
-    // while using edge 0, we need to set the padding to 0 as well [BUG #4688]
-    this.add(this._viewer, {edge : 0});
-    this.setPadding(0);
+      this._bindings = [];
 
-    this.__bindViewer(this._viewer);
-  },
+      this._viewer = this._createViewer();
+      // while using edge 0, we need to set the padding to 0 as well [BUG #4688]
+      this.add(this._viewer, {edge : 0});
+      this.setPadding(0);
 
-  properties :
+      this.__bindViewer(this._viewer);
+    },
+
+    properties :
   {
     classNode :
     {
@@ -49,18 +48,17 @@ qx.Class.define("qxl.apiviewer.ui.tabview.AbstractPage",
     }
   },
 
-  members :
+    members :
   {
     _viewer : null,
 
     _bindings : null,
 
-    _createViewer : function () {
+    _createViewer : function() {
       throw new Error("Abstract method call!");
     },
 
-    _applyClassNode : function(value, old)
-    {
+    _applyClassNode : function(value, old) {
       return this._viewer.setDocNodeAsync(value)
         .then(() => {
           this.setLabel(value.getFullName());
@@ -73,8 +71,7 @@ qx.Class.define("qxl.apiviewer.ui.tabview.AbstractPage",
         });
     },
 
-    __bindViewer : function(viewer)
-    {
+    __bindViewer : function(viewer) {
       var uiModel = qxl.apiviewer.UiModel.getInstance();
       var bindings = this._bindings;
 
@@ -86,23 +83,20 @@ qx.Class.define("qxl.apiviewer.ui.tabview.AbstractPage",
       bindings.push(uiModel.bind("showInternal", viewer, "showInternal"));
     },
 
-    __removeBinding : function()
-    {
+    __removeBinding : function() {
       var uiModel = qxl.apiviewer.UiModel.getInstance();
       var bindings = this._bindings;
 
-      while (bindings.length > 0)
-      {
+      while (bindings.length > 0) {
         var id = bindings.pop();
         uiModel.removeBinding(id);
       }
     }
   },
 
-  destruct : function()
-  {
-    this.__removeBinding();
-    this._viewer.destroy();
-    this._viewer = null;
-  }
-});
+    destruct : function() {
+      this.__removeBinding();
+      this._viewer.destroy();
+      this._viewer = null;
+    }
+  });

@@ -21,10 +21,10 @@
  * Contemporary Theme
  */
 qx.Theme.define("qxl.apiviewer.Theme",
-{
-  title : "APIViewer theme",
+  {
+    title : "APIViewer theme",
 
-  meta :
+    meta :
   {
     color : qx.theme.indigo.Color,
     decoration : qx.theme.indigo.Decoration,
@@ -32,4 +32,4 @@ qx.Theme.define("qxl.apiviewer.Theme",
     appearance : qxl.apiviewer.Appearance,
     icon : qx.theme.icon.Tango
   }
-});
+  });

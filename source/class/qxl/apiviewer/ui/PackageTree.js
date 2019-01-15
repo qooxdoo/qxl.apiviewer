@@ -27,50 +27,48 @@
  * The package tree.
  */
 qx.Class.define("qxl.apiviewer.ui.PackageTree",
-{
-  extend : qx.ui.tree.Tree,
-
-
-  construct : function()
   {
-    this.base(arguments, "Documentation");
-
-    this.setDecorator(null);
-    this.setPadding(0);
-
-    this.__root = new qx.ui.tree.TreeFolder("Packages");
-    this.__root.setOpen(true);
-    this.setRoot(this.__root);
-    this.setSelection([this.__root]);
-
-    // TODO: Is this workaround still needed?
-    // Workaround: Since navigating in qx.ui.tree.Tree doesn't work, we've to
-    // maintain a hash that keeps the tree nodes for class names
-    this._classTreeNodeHash = {};
-  },
+    extend : qx.ui.tree.Tree,
 
 
-  /*
+    construct : function() {
+      this.base(arguments, "Documentation");
+
+      this.setDecorator(null);
+      this.setPadding(0);
+
+      this.__root = new qx.ui.tree.TreeFolder("Packages");
+      this.__root.setOpen(true);
+      this.setRoot(this.__root);
+      this.setSelection([this.__root]);
+
+      // TODO: Is this workaround still needed?
+      // Workaround: Since navigating in qx.ui.tree.Tree doesn't work, we've to
+      // maintain a hash that keeps the tree nodes for class names
+      this._classTreeNodeHash = {};
+    },
+
+
+    /*
    * ****************************************************************************
    * MEMBERS
    * ****************************************************************************
    */
 
-  members :
+    members :
   {
 
     __root : null,
 
     /**
      * Updates the tree on the left.
-     * 
+     *
      * @param docTree
      *          {qxl.apiviewer.dao.Package} the documentation tree to use for
      *          updating.
      * @return {void}
      */
-    setTreeData : function(docTree)
-    {
+    setTreeData : function(docTree) {
       this._docTree = docTree;
 
       // Fill the packages tree
@@ -85,7 +83,7 @@ qx.Class.define("qxl.apiviewer.ui.PackageTree",
 
     /**
      * Selects a certain class.
-     * 
+     *
      * @param className {String} the name of the class to show.
      * @async
      * @return {Boolean} Whether the class name was valid and could be selected.
@@ -97,52 +95,54 @@ qx.Class.define("qxl.apiviewer.ui.PackageTree",
         this._wantedClassName = className;
         return qx.Promise.resolve(true);
       }
-      
+
       if (!className) {
         this.__root.setOpen(true);
         this.setSelection([this.__root]);
         this.scrollChildIntoView(this.__root);
         return qx.Promise.resolve(true);
       }
-      
+
       var nameParts = className.split(".");
       var name = "";
       var nameIndex = 0;
-      
+
       let next = () => {
-        if (nameIndex > 0)
+        if (nameIndex > 0) {
           name += ".";
+        }
         name += nameParts[nameIndex];
         var treeNode = this._classTreeNodeHash[name];
-        if (!treeNode)
+        if (!treeNode) {
           return qx.Promise.resolve(false);
+        }
         treeNode.setOpen(true);
         return treeNode.loading
           .then(() => {
             nameIndex++;
-            if (nameIndex < nameParts.length)
+            if (nameIndex < nameParts.length) {
               return next();
+            }
             return treeNode;
           });
-      }
-      
+      };
+
       return next()
         .then(treeNode => {
           if (treeNode) {
             this.setSelection([treeNode]);
             this.scrollChildIntoView(treeNode);
             return true;
-          } else {
-            this.setSelection([]);
-            return false;
           }
+          this.setSelection([]);
+          return false;
         });
     },
 
 
     /**
      * Create a callback which loads the child nodes of a tree folder
-     * 
+     *
      * @param packageTreeNode
      *          {qx.ui.tree.TreeFolder} the package tree folder.
      * @param packageDoc
@@ -151,22 +151,21 @@ qx.Class.define("qxl.apiviewer.ui.PackageTree",
      *          {var} current depth in the tree
      * @return {Function} the opener callback function
      */
-    __getPackageNodeOpener : function (packageTreeNode, packageDoc, depth) {
+    __getPackageNodeOpener : function(packageTreeNode, packageDoc, depth) {
       var self = this;
       return function() {
-        if (!packageTreeNode.loaded)
-        {
+        if (!packageTreeNode.loaded) {
           self.__fillPackageNode(packageTreeNode, packageDoc, depth + 1);
           packageTreeNode.setOpenSymbolMode("always");
         }
-      }
+      };
     },
 
 
     /**
      * Fills a package tree node with tree nodes for the sub packages and
      * classes.
-     * 
+     *
      * @param treeNode
      *          {qx.ui.tree.TreeFolder} the package tree node.
      * @param docNode
@@ -174,8 +173,7 @@ qx.Class.define("qxl.apiviewer.ui.PackageTree",
      * @param depth
      *          {var} current depth in the tree
      */
-    __fillPackageNode : function(treeNode, docNode, depth)
-    {
+    __fillPackageNode : function(treeNode, docNode, depth) {
       var PackageTree = qxl.apiviewer.ui.PackageTree;
 
       var packagesDoc = docNode.getPackages();
@@ -186,7 +184,7 @@ qx.Class.define("qxl.apiviewer.ui.PackageTree",
       });
       packagesDoc.forEach(packageDoc => {
         var iconUrl = qxl.apiviewer.TreeUtil.getIconUrl(packageDoc);
-        var segs = packageDoc.getName().split('.');
+        var segs = packageDoc.getName().split(".");
         var packageTreeNode = new qx.ui.tree.TreeFolder(segs[segs.length - 1]);
         packageTreeNode.setIcon(iconUrl);
         packageTreeNode.setOpenSymbolMode("always");
@@ -209,7 +207,7 @@ qx.Class.define("qxl.apiviewer.ui.PackageTree",
         console.log("docNode=" + docNode.classname);
         classes.forEach(classDoc => {
           var iconUrl = qxl.apiviewer.TreeUtil.getIconUrl(classDoc);
-          var segs = classDoc.getName().split('.');
+          var segs = classDoc.getName().split(".");
           var classTreeNode = new qx.ui.tree.TreeFolder(segs[segs.length - 1]);
           classTreeNode.setIcon(iconUrl);
           classTreeNode.setUserData("nodeName", classDoc.getFullName());
@@ -229,15 +227,14 @@ qx.Class.define("qxl.apiviewer.ui.PackageTree",
   },
 
 
-  /*
+    /*
    * ****************************************************************************
    * DESTRUCTOR
    * ****************************************************************************
    */
 
-  destruct : function()
-  {
-    this._docTree = this._classTreeNodeHash = null;
-    this._disposeObjects("__root")
-  }
-});
+    destruct : function() {
+      this._docTree = this._classTreeNodeHash = null;
+      this._disposeObjects("__root");
+    }
+  });

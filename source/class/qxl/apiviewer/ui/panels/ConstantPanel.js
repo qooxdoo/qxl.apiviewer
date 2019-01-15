@@ -34,13 +34,13 @@ qx.Class.define("qxl.apiviewer.ui.panels.ConstantPanel", {
      * @Override
      */
     canDisplayItem: function(dao) {
-      return dao instanceof qxl.apiviewer.dao.Constant; 
+      return dao instanceof qxl.apiviewer.dao.Constant;
     },
-    
+
     getPanelItemObjects: function(daoClass, showInherited) {
       return daoClass.getConstants();
     },
-        
+
     /**
      * Checks whether a constant has details.
      *
@@ -58,15 +58,13 @@ qx.Class.define("qxl.apiviewer.ui.panels.ConstantPanel", {
     },
 
 
-    getItemTypeHtml : function(node)
-    {
+    getItemTypeHtml : function(node) {
       return qxl.apiviewer.ui.panels.InfoPanel.createTypeHtml(node, "var");
     },
 
 
-    getItemTitleHtml : function(node)
-    {
-       return qxl.apiviewer.ui.panels.InfoPanel.setTitleClass(node, node.getName());
+    getItemTitleHtml : function(node) {
+      return qxl.apiviewer.ui.panels.InfoPanel.setTitleClass(node, node.getName());
     },
 
 
@@ -78,13 +76,10 @@ qx.Class.define("qxl.apiviewer.ui.panels.ConstantPanel", {
      * @param showDetails {Boolean} whether to show the details.
      * @return {String} the HTML showing the information about the constant.
      */
-    getItemTextHtml : function(node, currentClassDocNode, showDetails)
-    {
-
+    getItemTextHtml : function(node, currentClassDocNode, showDetails) {
       var textHtml = qxl.apiviewer.ui.panels.InfoPanel.createDescriptionHtml(node, node.getClass(), showDetails);
 
-      if (showDetails)
-      {
+      if (showDetails) {
         textHtml += this.__createConstantValueHtml(node);
         textHtml += qxl.apiviewer.ui.panels.InfoPanel.createSeeAlsoHtml(node);
         textHtml += qxl.apiviewer.ui.panels.InfoPanel.createErrorHtml(node, currentClassDocNode);
@@ -102,7 +97,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.ConstantPanel", {
      * @return {Boolean} whether the constant provides a value
      */
     __hasConstantValueHtml : function(node) {
-      return node.getValue() ? true : false;
+      return Boolean(node.getValue());
     },
 
 
@@ -112,8 +107,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.ConstantPanel", {
      * @param node {Map} the doc node of the item.
      * @return {String} the HTML showing the value of the constant
      */
-    __createConstantValueHtml : function(node)
-    {
+    __createConstantValueHtml : function(node) {
       if (this.__hasConstantValueHtml(node)) {
         var value = node.getValue();
         if (typeof value !== "string") {
@@ -121,15 +115,14 @@ qx.Class.define("qxl.apiviewer.ui.panels.ConstantPanel", {
         }
         value = qx.bom.String.escape(value);
         var html = new qx.util.StringBuilder(
-          '<div class="item-detail-headline">', "Value: ",
-          '</div>', '<div class="item-detail-text">',
+          "<div class=\"item-detail-headline\">", "Value: ",
+          "</div>", "<div class=\"item-detail-text\">",
           value,
-          '</div>'
-        )
+          "</div>"
+        );
         return html.get();
-      } else {
-        return "";
       }
+      return "";
     }
 
   }

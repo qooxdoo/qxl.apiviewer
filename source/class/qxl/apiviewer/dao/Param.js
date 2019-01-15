@@ -20,9 +20,9 @@
 
 /**
  * Represents a parameter or return type, taken from JSDoc meta data
- * 
+ *
  * Example data:
- * 
+ *
         "@param": [
           {
             "name": "@param",
@@ -50,20 +50,22 @@ qx.Class.define("qxl.apiviewer.dao.Param", {
     this.base(arguments);
     this._meta = meta;
     this._method = method;
-    this._types = [ { type: "var" } ];
+    this._types = [{type: "var"}];
     if (meta.type) {
       this._types = qx.lang.Array.toNativeArray(meta.type)
         .map(type => {
-          if (typeof(type) === "object") {
-            return { type: type.type, arrayDimensions: type.dimensions };
-          }  
+          if (typeof (type) === "object") {
+            return {type: type.type,
+              arrayDimensions: type.dimensions};
+          }
           var m = type.match(/^([^[]+)((\[\])+)?$/);
           if (m && m[2]) {
-            return { type: m[1], arrayDimensions: m[2].length / 2 };
+            return {type: m[1],
+              arrayDimensions: m[2].length / 2};
           }
-          return { type: type };
+          return {type: type};
         });
-    } 
+    }
   },
 
   members : {
@@ -71,23 +73,23 @@ qx.Class.define("qxl.apiviewer.dao.Param", {
     _meta: null,
     _types: null,
     _arrayDimensions: 0,
-    
+
     getMethod: function() {
       return this._method;
     },
-    
+
     getClass: function() {
       return this._method.getClass();
     },
-    
+
     getName: function() {
       return this._meta.paramName;
     },
-    
+
     getDescription: function() {
       return this._meta.desc;
     },
-    
+
     getTypes: function() {
       return this._types;
     },
@@ -101,7 +103,7 @@ qx.Class.define("qxl.apiviewer.dao.Param", {
     },
 
     isOptional : function() {
-      return !!this._meta.optional;
+      return Boolean(this._meta.optional);
     },
     getDescription : function() {
       return this._meta.description;

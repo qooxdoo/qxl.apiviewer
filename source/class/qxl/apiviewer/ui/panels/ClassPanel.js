@@ -22,22 +22,21 @@
 ************************************************************************ */
 
 qx.Class.define("qxl.apiviewer.ui.panels.ClassPanel",
-{
-  extend: qxl.apiviewer.ui.panels.InfoPanel,
+  {
+    extend: qxl.apiviewer.ui.panels.InfoPanel,
 
-  /**
+    /**
    * Creates class panel. An class panel shows information about classes, mixins
    * and interfaces
    *
    * @param labelText {String} the label text describing the node type.
    */
-  construct : function(labelText)
-  {
-    this.base(arguments, labelText);
-  },
+    construct : function(labelText) {
+      this.base(arguments, labelText);
+    },
 
 
-  properties :
+    properties :
   {
     type : {
       init: "class",
@@ -46,41 +45,36 @@ qx.Class.define("qxl.apiviewer.ui.panels.ClassPanel",
   },
 
 
-  members :
+    members :
   {
     /**
      * @Override
      */
     canDisplayItem: function(dao) {
-      if (!(dao instanceof qxl.apiviewer.dao.Class))
+      if (!(dao instanceof qxl.apiviewer.dao.Class)) {
         return false;
-      return dao.getType() == this.getType(); 
+      }
+      return dao.getType() == this.getType();
     },
-    
-    getItemTypeHtml : function(node)
-    {
+
+    getItemTypeHtml : function(node) {
       return qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(node.getName(), node, false, true);
     },
 
-    getItemTitleHtml : function(node)
-    {
+    getItemTitleHtml : function(node) {
       return node.getFullName();
     },
 
 
-    getItemTextHtml : function(node, getDocNode, showDetails)
-    {
-      if (showDetails)
-      {
+    getItemTextHtml : function(node, getDocNode, showDetails) {
+      if (showDetails) {
         return qxl.apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(node.getDescription(), node);
-      } else {
-        return qxl.apiviewer.ui.panels.InfoPanel.createDescriptionHtml(node, node, showDetails);
       }
+      return qxl.apiviewer.ui.panels.InfoPanel.createDescriptionHtml(node, node, showDetails);
     },
 
 
-    getItemTooltip : function(classNode, currentClassDocNode)
-    {
+    getItemTooltip : function(classNode, currentClassDocNode) {
       if (classNode.isAbstract()) {
         var tooltip ="Abstract ";
       } else if (classNode.isStatic()) {
@@ -90,13 +84,12 @@ qx.Class.define("qxl.apiviewer.ui.panels.ClassPanel",
       } else {
         var tooltip = "";
       }
-      switch (classNode.getType())
-      {
-        case "mixin" :
+      switch (classNode.getType()) {
+        case "mixin":
           tooltip += "Mixin";
           break;
 
-        case "interface" :
+        case "interface":
           tooltip += "Interface";
           break;
 
@@ -108,8 +101,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.ClassPanel",
     },
 
 
-    itemHasDetails : function(node, currentClassDocNode)
-    {
+    itemHasDetails : function(node, currentClassDocNode) {
       return qxl.apiviewer.ui.panels.InfoPanel.descriptionHasDetails(node);
     },
 
@@ -131,29 +123,27 @@ qx.Class.define("qxl.apiviewer.ui.panels.ClassPanel",
         .then(classes => {
           var nodeArr = [];
           var clType;
-          for (var i=0; i<classes.length; i++)
-          {
+          for (var i=0; i<classes.length; i++) {
             clType = classes[i].getType();
-  
+
             // Normalize pseudo-classes (for the user this detail is often not relevant)
             if (clType === "bootstrap" || clType === "list") {
               clType = "class";
             }
-  
+
             if (clType === this.getType()) {
               nodeArr.push(classes[i]);
             }
           }
-  
-          if (nodeArr && nodeArr.length > 0)
-          {
+
+          if (nodeArr && nodeArr.length > 0) {
             classViewer.sortItems(nodeArr);
           }
-  
+
           this._displayNodes(nodeArr, currentClassDocNode);
         });
     }
 
   }
 
-});
+  });

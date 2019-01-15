@@ -22,22 +22,21 @@
  * This Class wraps the access to the documentation data of a class item.
  */
 qx.Class.define("qxl.apiviewer.dao.ClassItem",
-{
-  extend : qxl.apiviewer.dao.Node,
+  {
+    extend : qxl.apiviewer.dao.Node,
 
-  /**
+    /**
    * @param classDocNode {Map} class documentation node
    * @param parentClass {qxl.apiviewer.dao.Class} reference to the class this item belongs to
    * @param name {String} name of the list in the JSON structure of the class
    */
-  construct : function(meta, parentClass, name)
-  {
-    this.base(arguments, meta);
-    this._class = parentClass;
-    this._name = name;
-  },
+    construct : function(meta, parentClass, name) {
+      this.base(arguments, meta);
+      this._class = parentClass;
+      this._name = name;
+    },
 
-  members :
+    members :
   {
     _class: null,
     _name: null,
@@ -47,8 +46,7 @@ qx.Class.define("qxl.apiviewer.dao.ClassItem",
      *
      * @return {qxl.apiviewer.dao.Class} the class this item belongs to
      */
-    getClass : function()
-    {
+    getClass : function() {
       return this._class;
     },
 
@@ -58,11 +56,10 @@ qx.Class.define("qxl.apiviewer.dao.ClassItem",
      *
      * @return {String} name of the item
      */
-    getName : function()
-    {
+    getName : function() {
       return this._name;
     },
-    
+
     getFullName: function() {
       return this.getClass().getFullName() + "#" + this._name;
     },
@@ -72,22 +69,22 @@ qx.Class.define("qxl.apiviewer.dao.ClassItem",
      * Get the types of the item.
      *
      * @return {Map[]} Array of types of the item. A type has the keys 'type' and 'dimensions', where
-     * dimensions is the number of array dimensions (eg "Integer[][]" has a type of "Integer" and 
+     * dimensions is the number of array dimensions (eg "Integer[][]" has a type of "Integer" and
      * dimensions of 2, and "Integer" has type if "Integer" but dimensions is undefined
      */
-    getTypes : function()
-    {
+    getTypes : function() {
       var result = [];
       var arr = this._jsdoc["@param"];
       if (arr) {
         arr.map(item => {
           var result = {
-              type: item.type
+            type: item.type
           };
           if (result.type) {
             var dims = result.type.match(/\[\]/g);
-            if (dims)
+            if (dims) {
               result.dimensions = dims.length;
+            }
           }
           return result;
         });
@@ -101,8 +98,7 @@ qx.Class.define("qxl.apiviewer.dao.ClassItem",
      *
      * @return {String[]} A list of all references declared using the "see" attribute.
      */
-    getSee : function()
-    {
+    getSee : function() {
       return (this._jsdoc["@see"]||[]).map(item => item.body);
     },
 
@@ -112,8 +108,7 @@ qx.Class.define("qxl.apiviewer.dao.ClassItem",
      *
      * @return {ClassItem} the overwridden class item
      */
-    getOverriddenFrom : function()
-    {
+    getOverriddenFrom : function() {
       return this._meta.overriddenFrom ? qxl.apiviewer.dao.Class.getClassByName(this._meta.overriddenFrom) : null;
     },
 
@@ -134,8 +129,7 @@ qx.Class.define("qxl.apiviewer.dao.ClassItem",
      *
      * @return {qxl.apiviewer.dao.Class} The interface this item is required by.
      */
-    getRequiredBy : function()
-    {
+    getRequiredBy : function() {
       if (this._requiredBy) {
         return this._requiredBy;
       }
@@ -154,15 +148,14 @@ qx.Class.define("qxl.apiviewer.dao.ClassItem",
   },
 
 
-  /*
+    /*
    *****************************************************************************
       DESTRUCTOR
    *****************************************************************************
    */
 
-  destruct : function()
-  {
-    this._class = this._itemDocNode = this._requiredBy = this._see =
+    destruct : function() {
+      this._class = this._itemDocNode = this._requiredBy = this._see =
       this._types = null;
-  }
-});
+    }
+  });

@@ -1,9 +1,9 @@
 qx.Class.define("qxl.apiviewer.UiModel",
-{
-  extend : qx.core.Object,
-  type : "singleton",
+  {
+    extend : qx.core.Object,
+    type : "singleton",
 
-  properties :
+    properties :
   {
     /** whether to display inherited items */
     showInherited :
@@ -53,4 +53,4 @@ qx.Class.define("qxl.apiviewer.UiModel",
       event : "changeShowInternal"
     }
   }
-});
+  });
