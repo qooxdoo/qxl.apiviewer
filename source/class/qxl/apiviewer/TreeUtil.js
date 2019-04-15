@@ -177,7 +177,7 @@ qx.Class.define("qxl.apiviewer.TreeUtil",
       } else if (node instanceof dao.ChildControl) {
         constName = "ICON_CHILDCONTROL";
       } else {
-        throw new Error("Unknown node type: " + node.type);
+//        throw new Error("Unknown node type: " + (node.type || node.name));
       }
 
       /*
@@ -198,7 +198,7 @@ qx.Class.define("qxl.apiviewer.TreeUtil",
         }
       }
 
-      if (node.hasWarning()) {
+      if (node.hasWarning?node.hasWarning():false) {
         constName += "_WARN";
       }
 
@@ -207,6 +207,9 @@ qx.Class.define("qxl.apiviewer.TreeUtil",
 
 
     iconNameToIconPath : function(iconName) {
+      if (!iconName) {
+        return "";
+      }
       var iconUrl = qxl.apiviewer.TreeUtil[iconName];
 
       if (!iconUrl) {

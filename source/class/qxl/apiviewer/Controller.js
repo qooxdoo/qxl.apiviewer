@@ -91,21 +91,32 @@ qx.Class.define("qxl.apiviewer.Controller",
      * @param apidata {Object} all the apidata from the enviroment.
      */
     loadFromEnv : function(apidata) {
-      var start = new Date();
-      for (var classname of apidata.classes) {
-        qxl.apiviewer.dao.Class.getClassByName(classname, true);
-      }
-      var rootPackage = qxl.apiviewer.dao.Package.getPackage(null);
-      var end = new Date();
-      if (qx.core.Environment.get("qx.debug")) {
-        this.debug("Time to build data tree: " + (end.getTime() - start.getTime()) + "ms");
-      }
-      var start = new Date();
-      this._tree.setTreeData(rootPackage);
-      var end = new Date();
-      if (qx.core.Environment.get("qx.debug")) {
-        this.debug("Time to update tree: " + (end.getTime() - start.getTime()) + "ms");
-      }
+      setTimeout(() => {
+        var start = new Date();
+        for (var classname of apidata.classes) {
+          qxl.apiviewer.dao.Class.getClassByName(classname, true);
+        }
+        var rootPackage = qxl.apiviewer.dao.Package.getPackage(null);
+        var end = new Date();
+        if (qx.core.Environment.get("qx.debug")) {
+          this.debug("Time to build data tree: " + (end.getTime() - start.getTime()) + "ms");
+        }
+        var start = new Date();
+        this._tree.setTreeData(rootPackage);
+        var end = new Date();
+        if (qx.core.Environment.get("qx.debug")) {
+          this.debug("Time to update tree: " + (end.getTime() - start.getTime()) + "ms");
+        }
+        setTimeout(() => {
+          // Handle bookmarks
+          var state = this._history.getState();
+          if (state) {
+            this.__selectItem(this.__decodeState(state));
+          } else {
+            this.__selectItem("");
+          }
+        });
+      });
     },  
       /**
      * Loads the API doc tree from a URL. The URL must point to a JSON encoded

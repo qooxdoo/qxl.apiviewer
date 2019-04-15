@@ -712,7 +712,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
             }
 
             if (itemNode && !(itemNode instanceof qxl.apiviewer.dao.Package)) {
-              className = itemNode.getFullName();
+              className = itemNode.getFullName?itemNode.getFullName():itemNode.name;
             }
           }
         }
@@ -741,7 +741,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
       // Create a real bookmarkable link
       // NOTE: The onclick-handler must be added by HTML code. If it
       // is added using the DOM element then the href is followed.
-      var fullItemName = itemNode ? itemNode.getFullName() : classNode && classNode.getFullName ? classNode.getFullName() : className;
+      var fullItemName = (itemNode && itemNode.getFullName)? itemNode.getFullName() : classNode && classNode.getFullName ? classNode.getFullName() : className;
       var protocol, host, pathname;
 
       // Opera 10.5 loses the reference to "window"
