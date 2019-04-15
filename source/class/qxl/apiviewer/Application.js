@@ -60,24 +60,25 @@ qx.Class.define("qxl.apiviewer.Application",
         qx.log.appender.Native;
         qx.log.appender.Console;
       }
-
       qx.Class.include(qx.ui.core.Widget, qxl.apiviewer.MWidgetRegistry);
-
       this.viewer = new qxl.apiviewer.Viewer();
       this.controller = new qxl.apiviewer.Controller();
-
-      this.viewer._searchView.apiindex = this.controller.apiindex;
-
+      // set variables for later usage.
       this.getRoot().add(this.viewer, {edge : 0});
     },
-
 
     // overridden
     finalize : function() {
       this.base(arguments);
-
       // Finally load the data
-      this.controller.load(qx.$$appRoot + "../db.json");
+      let apidata = qx.core.Environment.get("apiviewer");
+      // controller.apiindex will be filled in controller.load
+      this.viewer._searchView.apiindex = apidata?apidata.apiindex:this.controller.apiindex;
+      if (apidata) {
+        this.controller.loadFromEnv(apidata);
+      } else {
+        this.controller.load(qx.$$appRoot + "../db.json");
+      }  
     }
   },
 

@@ -85,12 +85,34 @@ qx.Class.define("qxl.apiviewer.Controller",
     $$logCategory : "application",
 
     /**
+     * Loads the API doc tree from the enviroment
+     * doc tree.
+     * 
+     * @param apidata {Object} all the apidata from the enviroment.
+     */
+    loadFromEnv : function(apidata) {
+      var start = new Date();
+      for (var classname of apidata.classes) {
+        qxl.apiviewer.dao.Class.getClassByName(classname, true);
+      }
+      var rootPackage = qxl.apiviewer.dao.Package.getPackage(null);
+      var end = new Date();
+      if (qx.core.Environment.get("qx.debug")) {
+        this.debug("Time to build data tree: " + (end.getTime() - start.getTime()) + "ms");
+      }
+      var start = new Date();
+      this._tree.setTreeData(rootPackage);
+      var end = new Date();
+      if (qx.core.Environment.get("qx.debug")) {
+        this.debug("Time to update tree: " + (end.getTime() - start.getTime()) + "ms");
+      }
+    },  
+      /**
      * Loads the API doc tree from a URL. The URL must point to a JSON encoded
      * doc tree.
      * 
      * @lint ignoreDeprecated(eval,alert)
      * @param url {String} the URL.
-     * @async
      */
     load : function(url) {
       var loadStart = new Date();
@@ -111,8 +133,8 @@ qx.Class.define("qxl.apiviewer.Controller",
           }
 
           // give the browser a chance to update its UI before doing more
-          setTimeout(() => {
-            this.__setDocTree(treeData);
+          setTimeout(async () => {
+            await this.__setDocTree(treeData);
 
             setTimeout(() => {
               // Handle bookmarks
@@ -278,10 +300,10 @@ qx.Class.define("qxl.apiviewer.Controller",
      * @param docTree
      *          {qxl.apiviewer.dao.Package} root node of the documentation tree
      */
-    __setDocTree : function(docTree)
+    __setDocTree : async function(docTree)
     {
 		
-      let expandClassnames = function(names) {
+      function expandClassnames(names) {
         // Expands a list of class names including wildcards (eg "qx.ui.*") into an
         // exhaustive list without wildcards
         if (!names) {
@@ -303,14 +325,14 @@ qx.Class.define("qxl.apiviewer.Controller",
         return Object.keys(result);
       }
     
-      let getRequiredClasses = function() {
+      function getRequiredClasses() {
         let result = {};
         for (let classname in docTree.classInfo) {
           result[classname] = true;
         }  
         // We must trick out the compiler.
         // qx.core.Environment.get('excludeFromAPIViewer') is expanded during compilation and leeds to an compiler
-        // error.r
+        // error.
         const l = qx.core.Environment.get.bind(qx.core.Environment);
         let excl = l('excludeFromAPIViewer');
         if (excl) {
@@ -326,7 +348,12 @@ qx.Class.define("qxl.apiviewer.Controller",
         
       var start = new Date();
       let classes = getRequiredClasses();
+      var end = new Date();
+      if (qx.core.Environment.get("qx.debug")) {
+        this.debug("Time to build data tree: " + (end.getTime() - start.getTime()) + "ms");
+      }
 
+      var start = new Date();
       this.apiindex.__fullNames__ = [];
       this.apiindex.__index__ = {};
       this.apiindex.__types__  = ["doctree", "package", "class", "method_pub", "method_prot", "event", "property_pub", "method_priv", "method_intl", "constant", "childControl"];
@@ -344,8 +371,13 @@ qx.Class.define("qxl.apiviewer.Controller",
         this.apiindex.__index__[name].push([typeIdx, nameIdx]);
       }.bind(this);
 
-      classes.forEach(async (classname) => {
-        let cls = qxl.apiviewer.dao.Class.getClassByName(classname, true);
+      for (classname of classes)  {
+        let cls;
+        try {
+           cls = qxl.apiviewer.dao.Class.getClassByName(classname, true);
+        } catch (e) {
+          continue; 
+        }
         await cls.load();
         let nameIdx = this.apiindex.__fullNames__.indexOf(cls.getName());
         if (nameIdx < 0) {
@@ -381,17 +413,14 @@ qx.Class.define("qxl.apiviewer.Controller",
         let typeIdx = 10;
         addToIndex('#' + ch.getName(), typeIdx, nameIdx);
        });
-              
-
-      });
-      var rootPackage = qxl.apiviewer.dao.Package.getPackage(null);
+      }
       var end = new Date();
-
       if (qx.core.Environment.get("qx.debug")) {
-        this.debug("Time to build data tree: " + (end.getTime() - start.getTime()) + "ms");
+        this.debug("Time to build index data: " + (end.getTime() - start.getTime()) + "ms");
       }
 
       var start = new Date();
+      var rootPackage = qxl.apiviewer.dao.Package.getPackage(null);
       this._tree.setTreeData(rootPackage);
       var end = new Date();
 

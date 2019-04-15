@@ -1,11 +1,11 @@
 {
-  "environment": {
-    "qx.icontheme": "Tango",
-    "excludeFromAPIViewer": [
+	"environment": {
+		"qx.icontheme": "Tango",
+		"excludeFromAPIViewer": [
 			"qxl.*",
 			"q.*"
-    ]
-  },
+		]
+	},
 	"applications": [
 		{
 			"class": "qxl.apiviewer.Application",
@@ -14,8 +14,8 @@
 			"title": "Qooxdoo API Viewer"
 		}
 	],
-    "include": [
-        "qx.*",
+	"include": [
+		"qx.*",
 		"q",
 		"qxWeb"
 	],
@@ -23,24 +23,32 @@
 		"qx.test.*",
 		"qx.module.Blocker",
 		"qx.module.Placement"
- ],
+	],
 	"targets": [
 		{
 			"type": "source",
-			"outputPath": "source-output"
-		}
-		,{
+			"outputPath": "compiled/source",
+			"bundle": {
+				"include": "qx.*"
+			},
+			"babelOptions": {
+				"targets": {
+					"edge": "18",
+					"chrome": "73",
+					"firefox": "66"
+				}
+			}
+		},
+		{
 			"type": "build",
-			"outputPath": "build-output"
+			"outputPath": "compiled/build"
 		}
 	],
-	
 	"defaultTarget": "source",
-	
 	"locales": [
 		"en"
 	],
 	"serve": {
-	   "listenPort": 8080
+		"listenPort": 8080
 	}
 }
