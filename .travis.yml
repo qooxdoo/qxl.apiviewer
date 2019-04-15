@@ -15,6 +15,6 @@ deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
-  local-dir: build-output
+  local-dir: compiled/build
   on:
     branch: master
