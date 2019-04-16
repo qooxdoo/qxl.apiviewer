@@ -49,10 +49,10 @@ qx.Class.define("qxl.apiviewer.dao.Package", {
       if (this._loadingPromise) {
         return this._loadingPromise;
       }
-      var url = qxl.apiviewer.ClassLoader.getBaseUri() + "/transpiled/" + this._packageName.replace(/\./g, "/") + "/__init__.js";
+      var url = qxl.apiviewer.ClassLoader.getBaseUri() + "/transpiled/" + this._packageName.replace(/\./g, "/") + "/package.txt";
       return this._loadingPromise = qxl.apiviewer.RequestUtil.get(url)
         .then(content => {
-          this._initMeta(content);
+          this._desc = content;
           this._loaded = true;
         })
         .catch(e => {
@@ -113,15 +113,6 @@ qx.Class.define("qxl.apiviewer.dao.Package", {
       return false;
     },
 
-    /**
-     * Loads meta data
-     *
-     */
-    _initMeta: function (meta) {
-      if (meta) {
-       this._desc = meta.replace(/\//g, '').replace(/\*/g, '').replace(/[\n\r]/g, ' ').replace(/ /g, ' ').trim();
-      } 
-    }
   },
 
   statics: {

@@ -4,7 +4,6 @@ function compile(data, callback) {
 
   qx.Class.define("qxl.apiviewer.RequestUtil", {
     extend: qx.core.Object,
-
     statics: {
       get: function (url, opts) {
         return new qx.Promise((resolve, reject) => {
@@ -18,6 +17,7 @@ function compile(data, callback) {
       }
     }
   });
+
 
   this.addListener("checkEnvironment", e => new qx.Promise(fullfiled => {
     if (this.argv.verbose) {
@@ -78,6 +78,19 @@ function compile(data, callback) {
       return Object.keys(result).sort();
     }
 
+    function walkSync(currentDirPath, callback) {
+      var fs = require('fs'),
+        path = require('path');
+      fs.readdirSync(currentDirPath).forEach(function (name) {
+        var filePath = path.join(currentDirPath, name);
+        var stat = fs.statSync(filePath);
+        if (stat.isFile()) {
+          callback(filePath, stat);
+        } else if (stat.isDirectory()) {
+          walkSync(filePath, callback);
+        }
+      });
+    }
 
     env.apiviewer = {};
     env.apiviewer.classes = [];
@@ -157,9 +170,20 @@ function compile(data, callback) {
       qx.Promise.map(libs, (lib) => {
         const src = path.join(lib.getRootDir(), lib.getSourcePath());
         const dest = path.join(process.cwd(), data.target.outputPath, "transpiled");
-        debugger;
-        return qx.tool.compiler.files.Utils.sync(src, dest, (from, to) => {
-          return path.basename(from) === "__init__.js";
+        walkSync(src, (file) => {
+          if (path.basename(file) === "__init__.js") {
+            let d = path.join(dest, path.dirname(path.relative(src, file)));
+            if (fs.existsSync(d)) {
+              d = path.join(d, "package.txt");
+              var meta = fs.readFileSync(file, {
+                encoding: "utf8"
+              });
+              meta = meta.replace(/\//g, '').replace(/\*/g, '').replace(/[\n\r]/g, ' ').replace(/ /g, ' ').trim();
+              fs.writeFileSync(d, meta, {
+                encoding: "utf8"
+              });
+            }
+          }
         });
       }).then(() => {
         fullfiled();
