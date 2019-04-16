@@ -182,20 +182,22 @@ qx.Class.define("qxl.apiviewer.ui.PackageTree",
         r = r.getFullName();
         return l < r ? -1 : l > r ? 1 : 0;
       });
-      packagesDoc.forEach(packageDoc => {
-        var iconUrl = qxl.apiviewer.TreeUtil.getIconUrl(packageDoc);
-        var segs = packageDoc.getName().split(".");
-        var packageTreeNode = new qx.ui.tree.TreeFolder(segs[segs.length - 1]);
-        packageTreeNode.setIcon(iconUrl);
-        packageTreeNode.setOpenSymbolMode("always");
-        packageTreeNode.setUserData("nodeName", packageDoc.getFullName());
-        treeNode.add(packageTreeNode);
-
-        // defer adding of child nodes
-        packageTreeNode.addListener("changeOpen", this.__getPackageNodeOpener(packageTreeNode, packageDoc, depth + 1), this);
-
-        // Register the tree node
-        this._classTreeNodeHash[packageDoc.getFullName()] = packageTreeNode;
+      qx.Promise.map(packagesDoc, (packageDoc) => {
+        packageDoc.load().then(() => {
+          var iconUrl = qxl.apiviewer.TreeUtil.getIconUrl(packageDoc);
+          var segs = packageDoc.getName().split(".");
+          var packageTreeNode = new qx.ui.tree.TreeFolder(segs[segs.length - 1]);
+          packageTreeNode.setIcon(iconUrl);
+          packageTreeNode.setOpenSymbolMode("always");
+          packageTreeNode.setUserData("nodeName", packageDoc.getFullName());
+          treeNode.add(packageTreeNode);
+  
+          // defer adding of child nodes
+          packageTreeNode.addListener("changeOpen", this.__getPackageNodeOpener(packageTreeNode, packageDoc, depth + 1), this);
+  
+          // Register the tree node
+          this._classTreeNodeHash[packageDoc.getFullName()] = packageTreeNode;
+        });
       });
 
       treeNode.loading = docNode.loadDependedClasses().then(classes => {

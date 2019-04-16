@@ -21,7 +21,7 @@
 qx.Class.define("qxl.apiviewer.dao.Package", {
   extend: qx.core.Object,
 
-  construct: function(packageName) {
+  construct: function (packageName) {
     this.base(arguments);
     this._packageName = packageName;
     this._classes = {};
@@ -37,55 +37,91 @@ qx.Class.define("qxl.apiviewer.dao.Package", {
     _parentPackage: null,
     _classes: null,
     _packages: null,
+    _loadingPromise: null,
+    _loaded: false,
 
-    getName: function() {
+    /**
+     * Loads the class
+     *
+     * @return {Promise}
+     */
+    load: function () {
+      if (this._loadingPromise) {
+        return this._loadingPromise;
+      }
+      var url = qxl.apiviewer.ClassLoader.getBaseUri() + "/transpiled/" + this._packageName.replace(/\./g, "/") + "/__init__.js";
+      return this._loadingPromise = qxl.apiviewer.RequestUtil.get(url)
+        .then(content => {
+          this._initMeta(content);
+          this._loaded = true;
+        })
+        .catch(e => {
+          console.error("Couldn't load file: " + url + " " + e.message);
+          this._loaded = true;
+        });
+    },
+
+    isLoaded: function () {
+      return this._loaded;
+    },
+
+    getName: function () {
       return this._packageName;
     },
 
-    getFullName: function() {
+    getFullName: function () {
       return this._packageName;
     },
 
-    getDescription: function() {
+    getDescription: function () {
       return this._desc || "";
     },
 
-    getClasses: function() {
+    getClasses: function () {
       return Object.values(this._classes);
     },
 
-    getPackages: function() {
+    getPackages: function () {
       return Object.values(this._packages);
     },
 
-    getPackage: function() {
+    getPackage: function () {
       return this._parentPackage;
     },
 
-    addClass: function(clazz) {
+    addClass: function (clazz) {
       this._classes[clazz.getFullName()] = clazz;
     },
 
-    getClassByName: function(name) {
+    getClassByName: function (name) {
       return this._classes[name];
     },
 
-    getPackageByName: function(name) {
+    getPackageByName: function (name) {
       return this._packages[name];
     },
 
-    addPackage: function(pkg) {
+    addPackage: function (pkg) {
       this._packages[pkg.getFullName()] = pkg;
     },
 
-    loadDependedClasses: function() {
+    loadDependedClasses: function () {
       return qxl.apiviewer.ClassLoader.loadClassList(this.getClasses());
     },
 
-    hasWarning: function() {
+    hasWarning: function () {
       return false;
-    }
+    },
 
+    /**
+     * Loads meta data
+     *
+     */
+    _initMeta: function (meta) {
+      if (meta) {
+       this._desc = meta.replace(/\//g, '').replace(/\*/g, '').replace(/[\n\r]/g, ' ').replace(/ /g, ' ').trim();
+      } 
+    }
   },
 
   statics: {
@@ -97,7 +133,7 @@ qx.Class.define("qxl.apiviewer.dao.Package", {
      * @param name {String} package name, null or "" for top level
      * @return {Package?}
      */
-    getPackage: function(name, create) {
+    getPackage: function (name, create) {
       var root = qxl.apiviewer.dao.Package.__rootPackage;
       if (!root) {
         root = qxl.apiviewer.dao.Package.__rootPackage = new qxl.apiviewer.dao.Package("");
@@ -131,7 +167,7 @@ qx.Class.define("qxl.apiviewer.dao.Package", {
      * @param name {String} the name
      * @return {Package} the package
      */
-    getParentPackage: function(name) {
+    getParentPackage: function (name) {
       if (!name) {
         throw new Error("Cannot get the parent package of a root package");
       }

@@ -72,13 +72,8 @@ qx.Class.define("qxl.apiviewer.Application",
       this.base(arguments);
       // Finally load the data
       let apidata = qx.core.Environment.get("apiviewer");
-      // controller.apiindex will be filled in controller.load
-      this.viewer._searchView.apiindex = apidata?apidata.apiindex:this.controller.apiindex;
-      if (apidata) {
-        this.controller.loadFromEnv(apidata);
-      } else {
-        this.controller.load(qx.$$appRoot + "../db.json");
-      }  
+      this.viewer._searchView.apiindex = apidata.apiindex;
+      this.controller.load(apidata);
     }
   },
 

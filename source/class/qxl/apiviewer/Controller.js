@@ -78,7 +78,6 @@ qx.Class.define("qxl.apiviewer.Controller",
 
   members :
   {
-    apiindex : {},
     __openInNewTab : false,
 
     // overridden
@@ -90,7 +89,7 @@ qx.Class.define("qxl.apiviewer.Controller",
      * 
      * @param apidata {Object} all the apidata from the enviroment.
      */
-    loadFromEnv : function(apidata) {
+    load : function(apidata) {
       setTimeout(() => {
         var start = new Date();
         for (var classname of apidata.classes) {
@@ -118,64 +117,6 @@ qx.Class.define("qxl.apiviewer.Controller",
         });
       });
     },  
-      /**
-     * Loads the API doc tree from a URL. The URL must point to a JSON encoded
-     * doc tree.
-     * 
-     * @lint ignoreDeprecated(eval,alert)
-     * @param url {String} the URL.
-     */
-    load : function(url) {
-      var loadStart = new Date();
-      qxl.apiviewer.RequestUtil.get(url)
-        .then(content => {
-          var loadEnd = new Date();
-
-          if (qx.core.Environment.get("qx.debug")) {
-            this.debug("Time to load data from server: " + (loadEnd.getTime() - loadStart.getTime()) + "ms");
-          }
-
-          var start = new Date();
-          var treeData = eval("(" + content + ")");
-          var end = new Date();
-
-          if (qx.core.Environment.get("qx.debug")) {
-            this.debug("Time to eval tree data: " + (end.getTime() - start.getTime()) + "ms");
-          }
-
-          // give the browser a chance to update its UI before doing more
-          setTimeout(async () => {
-            await this.__setDocTree(treeData);
-
-            setTimeout(() => {
-              // Handle bookmarks
-              var state = this._history.getState();
-              if (state) {
-                this.__selectItem(this.__decodeState(state));
-              } else {
-                this.__selectItem("");
-                // Open the package node if it has child packages
-                /*
-                if (depth < qx.core.Environment.get("qxl.apiviewer.initialTreeDepth") && packageDoc.getPackages().length > 0) {
-                  packageTreeNode.setOpen(true);
-                }
-                */
-
-              }
-            });
-          });
-        })
-        .catch(err => {
-          this.error("Couldn't load file: " + url);
-          if (window.location.protocol == "file:") {
-            alert("Failed to load API data from the file system.\n\n" +
-                  "The security settings of your browser may prohibit AJAX " +
-                  "when using the file protocol. Please try the http protocol " +
-                  "instead.");
-          }
-        });
-    },
-
 
     /**
      * binds the events of the TabView controller
@@ -305,143 +246,6 @@ qx.Class.define("qxl.apiviewer.Controller",
     },
 
 
-    /**
-     * Loads the documentation tree.
-     * 
-     * @param docTree
-     *          {qxl.apiviewer.dao.Package} root node of the documentation tree
-     */
-    __setDocTree : async function(docTree)
-    {
-		
-      function expandClassnames(names) {
-        // Expands a list of class names including wildcards (eg "qx.ui.*") into an
-        // exhaustive list without wildcards
-        if (!names) {
-            return [];
-        }
-        let result = {};
-        names.forEach(function(name) {
-          let pos = name.indexOf('*');
-          if (pos < 0) {
-            result[name] = true;
-          } else {
-            let prefix = name.substring(0, pos);
-            for (let classname in docTree.classInfo) {
-              if (classname.startsWith(prefix)) 
-              result[classname] = true;
-            }
-          }
-        });
-        return Object.keys(result);
-      }
-    
-      function getRequiredClasses() {
-        let result = {};
-        for (let classname in docTree.classInfo) {
-          result[classname] = true;
-        }  
-        // We must trick out the compiler.
-        // qx.core.Environment.get('excludeFromAPIViewer') is expanded during compilation and leeds to an compiler
-        // error.
-        const l = qx.core.Environment.get.bind(qx.core.Environment);
-        let excl = l('excludeFromAPIViewer');
-        if (excl) {
-          expandClassnames(excl).forEach((name) => delete result[name]);
-        }
-        
-        
-        // We sort the result so that we can get a consistent ordering for loading classes, otherwise the order in
-        //  which the filing system returns the files can cause classes to be loaded in a lightly different sequence;
-        //  that would not cause a problem, except that the build is not 100% repeatable.
-        return Object.keys(result).sort();
-      }
-        
-      var start = new Date();
-      let classes = getRequiredClasses();
-      var end = new Date();
-      if (qx.core.Environment.get("qx.debug")) {
-        this.debug("Time to build data tree: " + (end.getTime() - start.getTime()) + "ms");
-      }
-
-      var start = new Date();
-      this.apiindex.__fullNames__ = [];
-      this.apiindex.__index__ = {};
-      this.apiindex.__types__  = ["doctree", "package", "class", "method_pub", "method_prot", "event", "property_pub", "method_priv", "method_intl", "constant", "childControl"];
-      const TYPES = {
-         "class": 1,
-         "mixin": 1,
-         "theme" : 1,
-         "interface" : 1
-      }
-
-      let addToIndex = function(name, typeIdx, nameIdx) {
-        if (!this.apiindex.__index__[name]) {
-          this.apiindex.__index__[name] = [];
-        }
-        this.apiindex.__index__[name].push([typeIdx, nameIdx]);
-      }.bind(this);
-
-      for (classname of classes)  {
-        let cls;
-        try {
-           cls = qxl.apiviewer.dao.Class.getClassByName(classname, true);
-        } catch (e) {
-          continue; 
-        }
-        await cls.load();
-        let nameIdx = this.apiindex.__fullNames__.indexOf(cls.getName());
-        if (nameIdx < 0) {
-          nameIdx = this.apiindex.__fullNames__.push(cls.getName()) - 1;
-        }
-        let typeIdx = TYPES[cls.getType()];
-        addToIndex(cls.getName(), typeIdx, nameIdx);
-        typeIdx = 1;
-        addToIndex(cls.getPackageName(), typeIdx, nameIdx);
-        cls.getMethods().forEach(method => {
-           let typeIdx;
-           if (method.isProtected())  
-              typeIdx = 4;
-           else if (method.isPrivate())
-              typeIdx = 7;
-           else
-              typeIdx = 3;
-           addToIndex('#' + method.getName(), typeIdx, nameIdx);
-        });
-        cls.getProperties().forEach(prop => {
-          let typeIdx = 6;
-          addToIndex('#' + prop.getName(), typeIdx, nameIdx);
-       });
-       cls.getConstants().forEach(con => {
-        let typeIdx = 9;
-        addToIndex('#' + con.getName(), typeIdx, nameIdx);
-       });
-       cls.getEvents().forEach(evt => {
-        let typeIdx = 5;
-        addToIndex('#' + evt.getName(), typeIdx, nameIdx);
-       });
-       cls.getChildControls().forEach(ch => {
-        let typeIdx = 10;
-        addToIndex('#' + ch.getName(), typeIdx, nameIdx);
-       });
-      }
-      var end = new Date();
-      if (qx.core.Environment.get("qx.debug")) {
-        this.debug("Time to build index data: " + (end.getTime() - start.getTime()) + "ms");
-      }
-
-      var start = new Date();
-      var rootPackage = qxl.apiviewer.dao.Package.getPackage(null);
-      this._tree.setTreeData(rootPackage);
-      var end = new Date();
-
-      if (qx.core.Environment.get("qx.debug")) {
-        this.debug("Time to update tree: " + (end.getTime() - start.getTime()) + "ms");
-      }
-
-      return true;
-    },
-
 
     /**
      * Push the class to the browser history
@@ -552,7 +356,6 @@ qx.Class.define("qxl.apiviewer.Controller",
     }
 
   },
-
 
 
   /*

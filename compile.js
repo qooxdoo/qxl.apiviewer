@@ -22,8 +22,8 @@ function compile(data, callback) {
   this.addListener("checkEnvironment", e => new qx.Promise(fullfiled => {
     if (this.argv.verbose) {
       console.log(`start analyse for apiviewer`);
-    } 
-//    debugger;
+    }
+    debugger;
     let lib = this._getMaker().getAnalyser().findLibrary("qxl.apiviewer");
     const folder = path.join(lib.getRootDir(), lib.getSourcePath(), "qxl/apiviewer/dao");
     // preload depend classes
@@ -112,7 +112,7 @@ function compile(data, callback) {
       return cls.load().then(() => {
         if (this.argv.verbose) {
           console.log(`analyse ${cls.getName()}`);
-        } 
+        }
         env.apiviewer.classes.push(cls.getName());
         let nameIdx = env.apiviewer.apiindex.__fullNames__.indexOf(cls.getName());
         if (nameIdx < 0) {
@@ -152,8 +152,18 @@ function compile(data, callback) {
     }).then(() => {
       if (this.argv.verbose) {
         console.log(`analysing done`);
-      } 
-      fullfiled();
+      }
+      let libs = this._getMaker().getAnalyser().getLibraries();
+      qx.Promise.map(libs, (lib) => {
+        const src = path.join(lib.getRootDir(), lib.getSourcePath());
+        const dest = path.join(process.cwd(), data.target.outputPath, "transpiled");
+        debugger;
+        return qx.tool.compiler.files.Utils.sync(src, dest, (from, to) => {
+          return path.basename(from) === "__init__.js";
+        });
+      }).then(() => {
+        fullfiled();
+      });
     });
   }));
   callback(null, data);

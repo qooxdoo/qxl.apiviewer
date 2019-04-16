@@ -32,11 +32,7 @@
 				"include": "qx.*"
 			},
 			"babelOptions": {
-				"targets": {
-					"edge": "18",
-					"chrome": "73",
-					"firefox": "66"
-				}
+				"targets": "edge >=18, chrome >= 73, firefox >= 66"
 			}
 		},
 		{
