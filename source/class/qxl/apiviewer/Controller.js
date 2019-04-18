@@ -35,10 +35,14 @@ qx.Class.define("qxl.apiviewer.Controller",
    * CONSTRUCTOR
    * ****************************************************************************
    */
-
+  /*
+   * @ignore qx.$$appRoot
+   */
   /**
    * @param widgetRegistry
    *          {Viewer} the GUI
+   * 
+   * 
    */
   construct : function(widgetRegistry)
   {
