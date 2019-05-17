@@ -1,4 +1,6 @@
 function compile(data, callback) {
+  debugger;
+  const qx = require("@qooxdoo/framework");
   const fs = require("fs");
   const path = require("path");
 
@@ -19,12 +21,12 @@ function compile(data, callback) {
   });
 
 
-  this.addListener("checkEnvironment", e => new qx.Promise(fullfiled => {
-    if (this.argv.verbose) {
+  compiler.command.addListener("checkEnvironment", e => new qx.Promise(fullfiled => {
+    if (compiler.command.argv.verbose) {
       console.log(`start analyse for apiviewer`);
     }
     debugger;
-    let lib = this._getMaker().getAnalyser().findLibrary("qxl.apiviewer");
+    let lib = compiler.command._getMaker().getAnalyser().findLibrary("qxl.apiviewer");
     const folder = path.join(lib.getRootDir(), lib.getSourcePath(), "qxl/apiviewer/dao");
     // preload depend classes
     require(path.join(folder, "Node.js"));
@@ -40,7 +42,7 @@ function compile(data, callback) {
 
     let env = e.getData().environment;
     let excludeFromAPIViewer = env.excludeFromAPIViewer;
-    let classInfo = this._getMaker().getAnalyser().getDatabase().classInfo;
+    let classInfo = compiler.command._getMaker().getAnalyser().getDatabase().classInfo;
 
     function expandClassnames(names) {
       // Expands a list of class names including wildcards (eg "qx.ui.*") into an
@@ -123,7 +125,7 @@ function compile(data, callback) {
         return;
       }
       return cls.load().then(() => {
-        if (this.argv.verbose) {
+        if (compiler.command.argv.verbose) {
           console.log(`analyse ${cls.getName()}`);
         }
         env.apiviewer.classes.push(cls.getName());
@@ -163,10 +165,10 @@ function compile(data, callback) {
         });
       });
     }).then(() => {
-      if (this.argv.verbose) {
+      if (compiler.command.argv.verbose) {
         console.log(`analysing done`);
       }
-      let libs = this._getMaker().getAnalyser().getLibraries();
+      let libs = compiler.command._getMaker().getAnalyser().getLibraries();
       qx.Promise.map(libs, (lib) => {
         const src = path.join(lib.getRootDir(), lib.getSourcePath());
         const dest = path.join(process.cwd(), data.target.outputPath, "transpiled");
