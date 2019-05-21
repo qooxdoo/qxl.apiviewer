@@ -1,9 +1,7 @@
-function compile(data, callback) {
-  debugger;
-  const qx = require("@qooxdoo/framework");
+module.exports = function(compiler) {
   const fs = require("fs");
   const path = require("path");
-
+  
   qx.Class.define("qxl.apiviewer.RequestUtil", {
     extend: qx.core.Object,
     statics: {
@@ -19,8 +17,8 @@ function compile(data, callback) {
       }
     }
   });
-
-
+  
+  
   compiler.command.addListener("checkEnvironment", e => new qx.Promise(fullfiled => {
     if (compiler.command.argv.verbose) {
       console.log(`start analyse for apiviewer`);
@@ -38,12 +36,12 @@ function compile(data, callback) {
       }
     });
     require(path.join(lib.getRootDir(), lib.getSourcePath(), "qxl/apiviewer/ClassLoader.js"));
-    qxl.apiviewer.ClassLoader.setBaseUri(path.join(process.cwd(), data.target.outputPath));
-
+    qxl.apiviewer.ClassLoader.setBaseUri(path.join(process.cwd(), compiler.inputData.target.outputPath));
+  
     let env = e.getData().environment;
     let excludeFromAPIViewer = env.excludeFromAPIViewer;
     let classInfo = compiler.command._getMaker().getAnalyser().getDatabase().classInfo;
-
+  
     function expandClassnames(names) {
       // Expands a list of class names including wildcards (eg "qx.ui.*") into an
       // exhaustive list without wildcards
@@ -65,7 +63,7 @@ function compile(data, callback) {
       });
       return Object.keys(result);
     }
-
+  
     function getRequiredClasses() {
       let result = {};
       for (let classname in classInfo) {
@@ -79,7 +77,7 @@ function compile(data, callback) {
       //  that would not cause a problem, except that the build is not 100% repeatable.
       return Object.keys(result).sort();
     }
-
+  
     function walkSync(currentDirPath, callback) {
       var fs = require('fs'),
         path = require('path');
@@ -93,28 +91,28 @@ function compile(data, callback) {
         }
       });
     }
-
+  
     env.apiviewer = {};
     env.apiviewer.classes = [];
     env.apiviewer.apiindex = {};
     env.apiviewer.apiindex.__fullNames__ = [];
     env.apiviewer.apiindex.__index__ = {};
     env.apiviewer.apiindex.__types__ = ["doctree", "package", "class", "method_pub", "method_prot", "event", "property_pub", "method_priv", "method_intl", "constant", "childControl"];
-
+  
     const TYPES = {
       "class": 1,
       "mixin": 1,
       "theme": 1,
       "interface": 1
     }
-
+  
     function addToIndex(name, typeIdx, nameIdx) {
       if (!env.apiviewer.apiindex.__index__[name]) {
         env.apiviewer.apiindex.__index__[name] = [];
       }
       env.apiviewer.apiindex.__index__[name].push([typeIdx, nameIdx]);
     };
-
+  
     let classes = getRequiredClasses();
     qx.Promise.map(classes, (classname) => {
       let cls;
@@ -171,7 +169,7 @@ function compile(data, callback) {
       let libs = compiler.command._getMaker().getAnalyser().getLibraries();
       qx.Promise.map(libs, (lib) => {
         const src = path.join(lib.getRootDir(), lib.getSourcePath());
-        const dest = path.join(process.cwd(), data.target.outputPath, "transpiled");
+        const dest = path.join(process.cwd(), compiler.inputData.target.outputPath, "transpiled");
         walkSync(src, (file) => {
           if (path.basename(file) === "__init__.js") {
             let d = path.join(dest, path.dirname(path.relative(src, file)));
@@ -192,5 +190,7 @@ function compile(data, callback) {
       });
     });
   }));
-  callback(null, data);
-}
+  
+  return compiler.inputData;
+};
+
