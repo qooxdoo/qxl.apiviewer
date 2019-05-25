@@ -1,4 +1,5 @@
 {
+  "$schema": "https://raw.githubusercontent.com/qooxdoo/qooxdoo-compiler/master/resource/schema/v1/Manifest.json",
   "info": {
     "name": "Qooxdoo API Viewer",
     "summary": "A viewer application to browse generated API documentation of qooxdoo classes",
@@ -36,7 +37,6 @@
     "class": "source/class",
     "resource": "source/resource",
     "translation": "source/translation",
-    "type": "application",
     "application": {
       "class": "qxl.apiviewer.Application",
       "theme": "qxl.apiviewer.Theme",
