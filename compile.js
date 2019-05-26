@@ -40,6 +40,7 @@ module.exports = function(compiler) {
   
     let env = e.getData().environment;
     let excludeFromAPIViewer = env.excludeFromAPIViewer;
+    let includeToAPIViewer = env.includeToAPIViewer;
     let classInfo = compiler.command._getMaker().getAnalyser().getDatabase().classInfo;
   
     function expandClassnames(names) {
@@ -69,8 +70,16 @@ module.exports = function(compiler) {
       for (let classname in classInfo) {
         result[classname] = true;
       }
+      let includes = [];
+      if (includeToAPIViewer) {
+        includes = expandClassnames(includeToAPIViewer);
+      }  
       if (excludeFromAPIViewer) {
-        expandClassnames(excludeFromAPIViewer).forEach(name => delete result[name]);
+        expandClassnames(excludeFromAPIViewer).forEach(name => {
+             if(!includes.includes(name)) {
+               delete result[name];
+             }  
+        });
       }
       // We sort the result so that we can get a consistent ordering for loading classes, otherwise the order in
       //  which the filing system returns the files can cause classes to be loaded in a lightly different sequence;
