@@ -23,7 +23,6 @@ module.exports = function(compiler) {
     if (compiler.command.argv.verbose) {
       console.log(`start analyse for apiviewer`);
     }
-    debugger;
     let lib = compiler.command._getMaker().getAnalyser().findLibrary("qxl.apiviewer");
     const folder = path.join(lib.getRootDir(), lib.getSourcePath(), "qxl/apiviewer/dao");
     // preload depend classes
