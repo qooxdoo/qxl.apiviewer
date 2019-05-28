@@ -20,10 +20,14 @@ module.exports = function(compiler) {
   
   
   compiler.command.addListener("checkEnvironment", e => new qx.Promise(fullfiled => {
-    if (compiler.command.argv.verbose) {
-      console.log(`start analyse for apiviewer`);
+    let app = e.getData().application.getName();
+    if (app !== "apiviewer") {
+      fullfiled();
+      return;
     }
-    debugger;
+    if (compiler.command.argv.verbose) {
+      console.log(`start analyse for ${app}`);
+    }
     let lib = compiler.command._getMaker().getAnalyser().findLibrary("qxl.apiviewer");
     const folder = path.join(lib.getRootDir(), lib.getSourcePath(), "qxl/apiviewer/dao");
     // preload depend classes
