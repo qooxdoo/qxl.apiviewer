@@ -1,4 +1,0 @@
-/**
- * qxl.apiviewer.test package
- *
- */
