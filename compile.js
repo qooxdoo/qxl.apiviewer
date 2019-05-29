@@ -21,7 +21,8 @@ module.exports = function(compiler) {
   
   compiler.command.addListener("checkEnvironment", e => new qx.Promise(fullfiled => {
     let app = e.getData().application.getName();
-    if (app !== "apiviewer") {
+	let className = e.getData().application.getClassName();
+    if (className !== "qxl.apiviewer.Application") {
       fullfiled();
       return;
     }
