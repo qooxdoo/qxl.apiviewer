@@ -164,7 +164,7 @@ qx.Class.define("qxl.apiviewer.dao.Package", {
       }
       var pos = name.lastIndexOf(".");
       if (pos < 0) {
-        return qxl.apiviewer.dao.Package.__rootPackage;
+        return qxl.apiviewer.dao.Package.getPackage("");
       }
       var parentName = name.substring(0, pos);
       return qxl.apiviewer.dao.Package.getPackage(parentName, true);
