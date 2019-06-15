@@ -17,17 +17,17 @@ qx.Class.define("qxl.apiviewer.RequestUtil", {
   }
 });
 
-qx.Class.define("qxl.apiviewer.compile.LibraryConfig", {
-  extend: qx.tool.cli.config.LibraryConfig,
+qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
+  extend: qx.tool.cli.api.LibraryApi,
   
   members: {
     async load() {
-      let command = this.getCompilerConfig().getCommand();
+      let command = this.getCompilerApi().getCommand();
       command.addListener("checkEnvironment", e => this._appCompiling(e.getData().application, e.getData().environment));
     },
     
     _appCompiling(application, environment) {
-      let command = this.getCompilerConfig().getCommand();
+      let command = this.getCompilerApi().getCommand();
       let maker = command._getMaker();
       let analyser = maker.getAnalyser();
       let target = maker.getTarget();
@@ -222,5 +222,5 @@ qx.Class.define("qxl.apiviewer.compile.LibraryConfig", {
 });
 
 module.exports = {
-    LibraryConfig: qxl.apiviewer.compile.LibraryConfig
+    LibraryApi: qxl.apiviewer.compile.LibraryApi
 };
