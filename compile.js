@@ -19,19 +19,19 @@ qx.Class.define("qxl.apiviewer.RequestUtil", {
 
 qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
   extend: qx.tool.cli.api.LibraryApi,
-  
+
   members: {
     async load() {
       let command = this.getCompilerApi().getCommand();
       command.addListener("checkEnvironment", e => this._appCompiling(e.getData().application, e.getData().environment));
     },
-    
+
     _appCompiling(application, environment) {
       let command = this.getCompilerApi().getCommand();
-      let maker = command._getMaker();
+      let maker = command.getMaker();
       let analyser = maker.getAnalyser();
       let target = maker.getTarget();
-      
+
       return new qx.Promise(fullfiled => {
         let app = application.getName();
         let className = application.getClassName();
@@ -55,12 +55,12 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
         });
         require(path.join(lib.getRootDir(), lib.getSourcePath(), "qxl/apiviewer/ClassLoader.js"));
         qxl.apiviewer.ClassLoader.setBaseUri(target.getOutputDir());
-      
+
         let env = environment;
         let excludeFromAPIViewer = env.excludeFromAPIViewer;
         let includeToAPIViewer = env.includeToAPIViewer;
         let classInfo = analyser.getDatabase().classInfo;
-      
+
         function expandClassnames(names) {
           // Expands a list of class names including wildcards (eg "qx.ui.*") into an
           // exhaustive list without wildcards
@@ -82,7 +82,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           });
           return Object.keys(result);
         }
-      
+
         function getRequiredClasses() {
           let result = {};
           for (let classname in classInfo) {
@@ -91,12 +91,12 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           let includes = [];
           if (includeToAPIViewer) {
             includes = expandClassnames(includeToAPIViewer);
-          }  
+          }
           if (excludeFromAPIViewer) {
             expandClassnames(excludeFromAPIViewer).forEach(name => {
                  if(!includes.includes(name)) {
                    delete result[name];
-                 }  
+                 }
             });
           }
           // We sort the result so that we can get a consistent ordering for loading classes, otherwise the order in
@@ -104,7 +104,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           //  that would not cause a problem, except that the build is not 100% repeatable.
           return Object.keys(result).sort();
         }
-      
+
         function walkSync(currentDirPath, callback) {
           var fs = require('fs'),
             path = require('path');
@@ -118,28 +118,28 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
             }
           });
         }
-      
+
         env.apiviewer = {};
         env.apiviewer.classes = [];
         env.apiviewer.apiindex = {};
         env.apiviewer.apiindex.__fullNames__ = [];
         env.apiviewer.apiindex.__index__ = {};
         env.apiviewer.apiindex.__types__ = ["doctree", "package", "class", "method_pub", "method_prot", "event", "property_pub", "method_priv", "method_intl", "constant", "childControl"];
-      
+
         const TYPES = {
           "class": 1,
           "mixin": 1,
           "theme": 1,
           "interface": 1
         }
-      
+
         function addToIndex(name, typeIdx, nameIdx) {
           if (!env.apiviewer.apiindex.__index__[name]) {
             env.apiviewer.apiindex.__index__[name] = [];
           }
           env.apiviewer.apiindex.__index__[name].push([typeIdx, nameIdx]);
         };
-      
+
         let classes = getRequiredClasses();
         qx.Promise.map(classes, (classname) => {
           let cls;
