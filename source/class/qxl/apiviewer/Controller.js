@@ -26,7 +26,7 @@
  * Implements the dynamic behavior of the API viewer. The GUI is defined in
  * {@link Viewer}.
  *
- * @ignore qx.$$appRoot
+ * @ignore (qx.$$appRoot)
  * 
  */
 qx.Class.define("qxl.apiviewer.Controller",
