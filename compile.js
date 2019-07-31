@@ -99,10 +99,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
                  }
             });
           }
-          // We sort the result so that we can get a consistent ordering for loading classes, otherwise the order in
-          //  which the filing system returns the files can cause classes to be loaded in a lightly different sequence;
-          //  that would not cause a problem, except that the build is not 100% repeatable.
-          return Object.keys(result).sort();
+          return Object.keys(result);
         }
 
         function walkSync(currentDirPath, callback) {
@@ -140,7 +137,11 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           env.apiviewer.apiindex.__index__[name].push([typeIdx, nameIdx]);
         };
 
+        // We sort the result so that we can get a consistent ordering for loading classes, otherwise the order in
+        //  which the filing system returns the files can cause classes to be loaded in a lightly different sequence;
+        //  that would not cause a problem, except that the build is not 100% repeatable.
         let classes = getRequiredClasses();
+		classes.sort();
         qx.Promise.map(classes, (classname) => {
           let cls;
           try {
@@ -193,6 +194,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           if (command.argv.verbose) {
             console.log(`analysing done`);
           }
+          env.apiviewer.classes.sort();
           let libs = analyser.getLibraries();
           qx.Promise.map(libs, (lib) => {
             const src = path.join(lib.getRootDir(), lib.getSourcePath());
