@@ -3,9 +3,11 @@ node_js: "node"
 
 before_script:
   - npm install @qooxdoo/compiler 
+    if: branch = master
 
 script:
   - npx qx compile --target=build -v
+    if: branch = master
   
 
 deploy:
