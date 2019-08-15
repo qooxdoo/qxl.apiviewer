@@ -28,7 +28,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
 
     _appCompiling(application, environment) {
       let command = this.getCompilerApi().getCommand();
-      let maker = command.getMaker();
+      let maker = command.getMakersForApp(application.getName())[0];
       let analyser = maker.getAnalyser();
       let target = maker.getTarget();
 
