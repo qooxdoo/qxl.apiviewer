@@ -566,7 +566,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
       };
 
       var classNodes = includeSuperClasses ? this.getClassHierarchy() : [this];
-      classNodes.forEach(classNode => classNode.getInterfaces().forEach(ifaceRecurser));
+      classNodes.forEach(classNode => (classNode.getInterfaces() || []).forEach(ifaceRecurser));
 
       return interfaceNodes;
     },
