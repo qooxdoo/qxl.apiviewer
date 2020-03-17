@@ -294,7 +294,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
 
       for (var classIndex = 0; classIndex < classes.length; classIndex++) {
         var currClassNode = classes[classIndex];
-        this.getPanelItemObjects(currClassNode).forEach(item => {
+        this.getPanelItemObjects(currClassNode, showInherited || showIncluded).forEach(item => {
           var name = item.getName();
           if (fromClassHash[name] === undefined) {
             result.push(item);
