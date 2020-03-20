@@ -49,7 +49,7 @@ qx.Class.define("qxl.apiviewer.dao.Package", {
       if (this._loadingPromise) {
         return this._loadingPromise;
       }
-      var url = qxl.apiviewer.ClassLoader.getBaseUri() + "/transpiled/" + this._packageName.replace(/\./g, "/") + "/package.txt";
+      var url = qxl.apiviewer.ClassLoader.getBaseUri() + "/transpiled/" + this._packageName.replace(/\./g, "/") + "/package.html";
       return this._loadingPromise = qxl.apiviewer.RequestUtil.get(url)
         .then(content => {
           this._desc = content;
