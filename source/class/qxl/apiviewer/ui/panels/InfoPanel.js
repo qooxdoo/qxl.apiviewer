@@ -780,7 +780,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
           if (seeAlsoLinks.length != 0) {
             seeAlsoLinks.add(", ");
           }
-          var link = this.createItemLinkHtml(see[i], node.getClass());
+          var link = this.createItemLinkHtml(see[i], node);
           if (link.indexOf("http") === 0) {
             link = "<a target='_blank' href='" + link + "'>" + link + "</a>";
           }

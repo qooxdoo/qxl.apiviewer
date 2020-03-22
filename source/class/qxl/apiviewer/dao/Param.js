@@ -22,11 +22,23 @@
  * Represents a parameter or return type, taken from JSDoc meta data
  *
  * Example data:
- *
+ *      qooxdoo style
         "@param": [
           {
             "name": "@param",
             "body": "options {Map?null} Optional layout data for widget.",
+            "paramName": "options",
+            "description": " Optional layout data for widget.",
+            "optional": true,
+            "defaultValue": "null",
+            "type": "Map"
+          }
+        ],
+        jsdoc style
+        "@param": [
+          {
+            "name": "@param",
+            "body": "{Map?null} options Optional layout data for widget.",
             "paramName": "options",
             "description": " Optional layout data for widget.",
             "optional": true,
