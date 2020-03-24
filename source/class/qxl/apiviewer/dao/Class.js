@@ -497,7 +497,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      * @return {String[]} A list of all references declared using the "see" attribute.
      */
     getSee: function () {
-      return (this._jsdoc["@see"] || []).map(item => item.body);
+      return (this._jsdoc["@see"] || []).map(item => (item.body + (item.docComment || "")));
     },
 
     getErrors: function () {

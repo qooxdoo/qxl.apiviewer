@@ -27,6 +27,7 @@
           {
             "name": "@param",
             "body": "options {Map?null} Optional layout data for widget.",
+            "docComment": "",
             "paramName": "options",
             "description": " Optional layout data for widget.",
             "optional": true,
@@ -39,6 +40,7 @@
           {
             "name": "@param",
             "body": "{Map?null} options Optional layout data for widget.",
+            "docComment": "",
             "paramName": "options",
             "description": " Optional layout data for widget.",
             "optional": true,
@@ -50,6 +52,7 @@
           {
             "name": "@return",
             "body": "{Integer} The index position or <code>-1</code> when\nthe given widget is no child of this layout.",
+            "docComment": "",
             "type": "Integer",
             "desc": " The index position or <code>-1</code> when\nthe given widget is no child of this layout."
           }
@@ -98,10 +101,6 @@ qx.Class.define("qxl.apiviewer.dao.Param", {
       return this._meta.paramName;
     },
 
-    getDescription: function() {
-      return this._meta.desc;
-    },
-
     getTypes: function() {
       return this._types;
     },
@@ -118,7 +117,7 @@ qx.Class.define("qxl.apiviewer.dao.Param", {
       return Boolean(this._meta.optional);
     },
     getDescription : function() {
-      return this._meta.description;
+      return (this._meta.description || this._meta.body) + (this._meta.docComment || "");
     }
 
   }
