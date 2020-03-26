@@ -27,7 +27,6 @@
           {
             "name": "@param",
             "body": "options {Map?null} Optional layout data for widget.",
-            "docComment": "",
             "paramName": "options",
             "description": " Optional layout data for widget.",
             "optional": true,
@@ -40,7 +39,6 @@
           {
             "name": "@param",
             "body": "{Map?null} options Optional layout data for widget.",
-            "docComment": "",
             "paramName": "options",
             "description": " Optional layout data for widget.",
             "optional": true,
@@ -117,7 +115,7 @@ qx.Class.define("qxl.apiviewer.dao.Param", {
       return Boolean(this._meta.optional);
     },
     getDescription : function() {
-      return (this._meta.description || this._meta.body) + (this._meta.docComment || "");
+      return (this._meta.description || this._meta.body);
     }
 
   }
