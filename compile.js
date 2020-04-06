@@ -23,7 +23,9 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
   members: {
     async load() {
       let command = this.getCompilerApi().getCommand();
-      command.addListener("checkEnvironment", e => this._appCompiling(e.getData().application, e.getData().environment));
+      if (command instanceof qx.tool.cli.commands.Compile) {
+        command.addListener("checkEnvironment", e => this._appCompiling(e.getData().application, e.getData().environment));
+      }
     },
 
     _appCompiling(application, environment) {
