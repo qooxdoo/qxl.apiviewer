@@ -23,12 +23,14 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
   members: {
     async load() {
       let command = this.getCompilerApi().getCommand();
-      command.addListener("checkEnvironment", e => this._appCompiling(e.getData().application, e.getData().environment));
+      if (command instanceof qx.tool.cli.commands.Compile) {
+        command.addListener("checkEnvironment", e => this._appCompiling(e.getData().application, e.getData().environment));
+      }
     },
 
     _appCompiling(application, environment) {
       let command = this.getCompilerApi().getCommand();
-      let maker = command.getMaker();
+      let maker = command.getMakersForApp(application.getName())[0];
       let analyser = maker.getAnalyser();
       let target = maker.getTarget();
 
@@ -141,7 +143,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
         //  which the filing system returns the files can cause classes to be loaded in a lightly different sequence;
         //  that would not cause a problem, except that the build is not 100% repeatable.
         let classes = getRequiredClasses();
-		classes.sort();
+		    classes.sort();
         qx.Promise.map(classes, (classname) => {
           let cls;
           try {
@@ -203,11 +205,14 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
               if (path.basename(file) === "__init__.js") {
                 let d = path.join(dest, path.dirname(path.relative(src, file)));
                 if (fs.existsSync(d)) {
-                  d = path.join(d, "package.txt");
+                  d = path.join(d, "package.html");
                   var meta = fs.readFileSync(file, {
                     encoding: "utf8"
                   });
-                  meta = meta.replace(/\//g, '').replace(/\*/g, '').replace(/[\n\r]/g, ' ').replace(/ /g, ' ').trim();
+                  meta = meta.replace(/^\s*\/\*/mg, "");
+                  meta = meta.replace(/^\s*\*\//mg, "");
+                  meta = qx.tool.compiler.jsdoc.Parser.parseComment(meta);
+                  meta = meta["@description"][0].body;
                   fs.writeFileSync(d, meta, {
                     encoding: "utf8"
                   });

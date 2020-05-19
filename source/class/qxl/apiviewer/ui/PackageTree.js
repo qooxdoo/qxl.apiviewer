@@ -13,12 +13,13 @@
      See the LICENSE file in the project's top-level directory for details.
 
    Authors:
-     * Til Schneider (til132)
+     * Til Schneider    (til132)
      * Sebastian Werner (wpbasti)
-     * Andreas Ecker (ecker)
-     * Fabian Jakobs (fjakobs)
-     * Jonathan Weiß (jonathan_rass)
-     * John Spackman (johnspackman)
+     * Andreas Ecker    (ecker)
+     * Fabian Jakobs    (fjakobs)
+     * Jonathan Weiß    (jonathan_rass)
+     * John Spackman    (johnspackman)
+     * Henner Kollmann  (hkollmann)
 
 ************************************************************************ */
 
@@ -155,6 +156,7 @@ qx.Class.define("qxl.apiviewer.ui.PackageTree",
       var self = this;
       return function() {
         if (!packageTreeNode.loaded) {
+          packageTreeNode.loaded = true;          
           self.__fillPackageNode(packageTreeNode, packageDoc, depth + 1);
           packageTreeNode.setOpenSymbolMode("always");
         }
@@ -183,21 +185,20 @@ qx.Class.define("qxl.apiviewer.ui.PackageTree",
         return l < r ? -1 : l > r ? 1 : 0;
       });
       qx.Promise.map(packagesDoc, (packageDoc) => {
-        packageDoc.load().then(() => {
-          var iconUrl = qxl.apiviewer.TreeUtil.getIconUrl(packageDoc);
-          var segs = packageDoc.getName().split(".");
-          var packageTreeNode = new qx.ui.tree.TreeFolder(segs[segs.length - 1]);
-          packageTreeNode.setIcon(iconUrl);
-          packageTreeNode.setOpenSymbolMode("always");
-          packageTreeNode.setUserData("nodeName", packageDoc.getFullName());
-          treeNode.add(packageTreeNode);
-  
-          // defer adding of child nodes
-          packageTreeNode.addListener("changeOpen", this.__getPackageNodeOpener(packageTreeNode, packageDoc, depth + 1), this);
-  
-          // Register the tree node
-          this._classTreeNodeHash[packageDoc.getFullName()] = packageTreeNode;
-        });
+        var iconUrl = qxl.apiviewer.TreeUtil.getIconUrl(packageDoc);
+        var segs = packageDoc.getName().split(".");
+        var packageTreeNode = new qx.ui.tree.TreeFolder(segs[segs.length - 1]);
+        packageTreeNode.setIcon(iconUrl);
+        packageTreeNode.setOpenSymbolMode("always");
+        packageTreeNode.setUserData("nodeName", packageDoc.getFullName());
+        treeNode.add(packageTreeNode);
+
+        // defer adding of child nodes
+        packageTreeNode.addListener("changeOpen", this.__getPackageNodeOpener(packageTreeNode, packageDoc, depth + 1), this);
+
+        // Register the tree node
+        this._classTreeNodeHash[packageDoc.getFullName()] = packageTreeNode;
+        return packageDoc.load();
       });
 
       treeNode.loading = docNode.loadDependedClasses().then(classes => {
@@ -206,7 +207,6 @@ qx.Class.define("qxl.apiviewer.ui.PackageTree",
           r = r.getFullName();
           return l < r ? -1 : l > r ? 1 : 0;
         });
-        console.log("docNode=" + docNode.classname);
         classes.forEach(classDoc => {
           var iconUrl = qxl.apiviewer.TreeUtil.getIconUrl(classDoc);
           var segs = classDoc.getName().split(".");
@@ -220,7 +220,6 @@ qx.Class.define("qxl.apiviewer.ui.PackageTree",
 
           // Register the tree node
           this._classTreeNodeHash[classDoc.getFullName()] = classTreeNode;
-          treeNode.loaded = true;
         });
         return null;
       });

@@ -294,7 +294,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
 
       for (var classIndex = 0; classIndex < classes.length; classIndex++) {
         var currClassNode = classes[classIndex];
-        this.getPanelItemObjects(currClassNode).forEach(item => {
+        this.getPanelItemObjects(currClassNode, showInherited || showIncluded).forEach(item => {
           var name = item.getName();
           if (fromClassHash[name] === undefined) {
             result.push(item);
@@ -780,7 +780,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
           if (seeAlsoLinks.length != 0) {
             seeAlsoLinks.add(", ");
           }
-          var link = this.createItemLinkHtml(see[i], node.getClass());
+          var link = this.createItemLinkHtml(see[i], node);
           if (link.indexOf("http") === 0) {
             link = "<a target='_blank' href='" + link + "'>" + link + "</a>";
           }

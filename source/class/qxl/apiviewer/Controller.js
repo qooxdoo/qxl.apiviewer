@@ -26,8 +26,6 @@
  * Implements the dynamic behavior of the API viewer. The GUI is defined in
  * {@link Viewer}.
  *
- * @ignore (qx.$$appRoot)
- * 
  */
 qx.Class.define("qxl.apiviewer.Controller",
 {
@@ -41,9 +39,9 @@ qx.Class.define("qxl.apiviewer.Controller",
   /**
    * @param widgetRegistry
    *          {Viewer} the GUI
-   * 
-   * 
    */
+  
+  // @ignore (qx.$$appRoot)
   construct : function(widgetRegistry)
   {
     this.base(arguments);

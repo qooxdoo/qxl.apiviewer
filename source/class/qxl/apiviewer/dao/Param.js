@@ -22,7 +22,7 @@
  * Represents a parameter or return type, taken from JSDoc meta data
  *
  * Example data:
- *
+ *      qooxdoo style
         "@param": [
           {
             "name": "@param",
@@ -34,10 +34,23 @@
             "type": "Map"
           }
         ],
+        jsdoc style
+        "@param": [
+          {
+            "name": "@param",
+            "body": "{Map?null} options Optional layout data for widget.",
+            "paramName": "options",
+            "description": " Optional layout data for widget.",
+            "optional": true,
+            "defaultValue": "null",
+            "type": "Map"
+          }
+        ],
         "@return": [
           {
             "name": "@return",
             "body": "{Integer} The index position or <code>-1</code> when\nthe given widget is no child of this layout.",
+            "docComment": "",
             "type": "Integer",
             "desc": " The index position or <code>-1</code> when\nthe given widget is no child of this layout."
           }
@@ -86,10 +99,6 @@ qx.Class.define("qxl.apiviewer.dao.Param", {
       return this._meta.paramName;
     },
 
-    getDescription: function() {
-      return this._meta.desc;
-    },
-
     getTypes: function() {
       return this._types;
     },
@@ -106,7 +115,7 @@ qx.Class.define("qxl.apiviewer.dao.Param", {
       return Boolean(this._meta.optional);
     },
     getDescription : function() {
-      return this._meta.description;
+      return (this._meta.description || this._meta.body);
     }
 
   }

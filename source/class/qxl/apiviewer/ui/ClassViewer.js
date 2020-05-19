@@ -343,7 +343,7 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer",
       var lastTocItem = null;
 
       this.getPanels().forEach(panel => {
-        var items = panel.getPanelItemObjects(this.getDocNode(), this.getShowInherited());
+        var items = panel.getPanelItemObjects(this.getDocNode(), this.getShowInherited() || this.getShowIncluded());
         if (items.length == 0) {
           return;
         }

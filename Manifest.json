@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/qooxdoo/qooxdoo-compiler/master/resource/schema/v1/Manifest.json",
+  "$schema": "https://qooxdoo.org/schema/Manifest-1-0-0.json",
   "info": {
     "name": "Qooxdoo API Viewer",
     "summary": "A viewer application to browse generated API documentation of qooxdoo classes",
@@ -28,7 +28,7 @@
         "email": "Henner DOT Kollmann AT gmx DOT de"
       }
     ],
-    "version": "1.0.0-beta.5",
+    "version": "1.0.3",
     "sourceViewUri": "https://github.com/qooxdoo/apiviewer/blob/%{qxGitBranch}/source/class/%{classFilePath}#L%{lineNumber}"
   },
   "provides": {
