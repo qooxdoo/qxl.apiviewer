@@ -617,6 +617,67 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
       return null;
     },
 
+    /**
+     * Get an array of class items matching the given list name. Known list names are:
+     * <ul>
+     *   <li>events</li>
+     *   <li>constructor</li>
+     *   <li>properties</li>
+     *   <li>methods</li>
+     *   <li>methods-static</li>
+     *   <li>constants</li>
+     *   <li>appearances</li>
+     *   <li>superInterfaces</li>
+     *   <li>superMixins</li>
+     * </li>
+     *
+     * @param listName {String} name of the item list
+     * @return {apiviewer.dao.ClassItem[]} item list
+     */
+    getItemList : function(listName)
+    {
+      var methodMap =
+      {
+        "events" : "getEvents",
+        "constructor": "getConstructor",
+        "properties" : "getProperties",
+        "methods" : "getMembers",
+        "methods-static" : "getStatics",
+        "constants" : "getConstants",
+//        "appearances" : "getAppearances",
+        "superInterfaces" : "getSuperInterfaces",
+        "superMixins" : "getSuperMixins",
+        "childControls" : "getChildControls"
+      };
+
+      if (listName == "constructor") {
+        return this.getConstructor() ? [this.getConstructor()] : [];
+      } else {
+        return this[methodMap[listName]]();
+      }
+    },
+
+
+    /**
+     * Get a class item by the item list name and the item name.
+     * Valid item list names aer documented at {@link #getItemList}.
+     * .
+     * @param listName {String} name of the item list.
+     * @param itemName {String} name of the class item.
+     * @return {apiviewer.dao.ClassItem} the matching class item.
+     */
+    getItemByListAndName : function(listName, itemName)
+    {
+      var list = this.getItemList(listName);
+      for (var j=0; j<list.length; j++)
+      {
+        if (itemName == list[j].getName()) {
+          return list[j];
+        }
+      }
+    },
+
+
     loadDependedClasses: function () {
       return qxl.apiviewer.ClassLoader.loadClassList(this.getDependedClasses());
     },

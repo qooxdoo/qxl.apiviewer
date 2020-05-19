@@ -403,9 +403,9 @@ qx.Class.define("qxl.apiviewer.ui.SearchView",
 
       var mo = new RegExp(svalue, (/^.*[A-Z].*$/).test(svalue) ? "" : "i");
 
-      var index = this.apiindex.__index__;
-      var fullNames = this.apiindex.__fullNames__;
-      var types = this.apiindex.__types__;
+      var index = this.apiindex.index;
+      var fullNames = this.apiindex.fullNames;
+      var types = this.apiindex.types;
 
       var namespaceFilter = this.namespaceTextField.getValue() != null ? this.namespaceTextField.getValue().trim() : "";
       var namespaceRegexp = new RegExp(".*");

@@ -623,9 +623,8 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer",
         itemNode = this.getDocNode().getConstructor();
       } else if (itemName.indexOf("!")!=-1) {
         var parts = itemName.split("!");
-        let upname = "get" + qx.lang.String.firstUp(nameMap[parts[1]]);
-        itemNode = this.getDocNode()[upname](parts[0]);
-        if (!itemNode) {
+        itemNode = this.getDocNode().getItemByListAndName(nameMap[parts[1]], parts[0]);
+      if (!itemNode) {
           itemNode = this.getDocNode().getItem(parts[0]);
         }
       } else {

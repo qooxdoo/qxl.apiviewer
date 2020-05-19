@@ -121,9 +121,9 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
         env.apiviewer = {};
         env.apiviewer.classes = [];
         env.apiviewer.apiindex = {};
-        env.apiviewer.apiindex.__fullNames__ = [];
-        env.apiviewer.apiindex.__index__ = {};
-        env.apiviewer.apiindex.__types__ = ["doctree", "package", "class", "method_pub", "method_prot", "event", "property_pub", "method_priv", "method_intl", "constant", "childControl"];
+        env.apiviewer.apiindex.fullNames = [];
+        env.apiviewer.apiindex.index = {};
+        env.apiviewer.apiindex.types = ["doctree", "package", "class", "method_pub", "method_prot", "event", "property_pub", "method_priv", "method_intl", "constant", "childControl"];
 
         const TYPES = {
           "class": 1,
@@ -133,10 +133,10 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
         }
 
         function addToIndex(name, typeIdx, nameIdx) {
-          if (!env.apiviewer.apiindex.__index__[name]) {
-            env.apiviewer.apiindex.__index__[name] = [];
+          if (!env.apiviewer.apiindex.index[name]) {
+            env.apiviewer.apiindex.index[name] = [];
           }
-          env.apiviewer.apiindex.__index__[name].push([typeIdx, nameIdx]);
+          env.apiviewer.apiindex.index[name].push([typeIdx, nameIdx]);
         };
 
         // We sort the result so that we can get a consistent ordering for loading classes, otherwise the order in
@@ -157,9 +157,9 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
               console.log(`analyse ${cls.getName()}`);
             }
             env.apiviewer.classes.push(cls.getName());
-            let nameIdx = env.apiviewer.apiindex.__fullNames__.indexOf(cls.getName());
+            let nameIdx = env.apiviewer.apiindex.fullNames.indexOf(cls.getName());
             if (nameIdx < 0) {
-              nameIdx = env.apiviewer.apiindex.__fullNames__.push(cls.getName()) - 1;
+              nameIdx = env.apiviewer.apiindex.fullNames.push(cls.getName()) - 1;
             }
             let typeIdx = TYPES[cls.getType()];
             addToIndex(cls.getName(), typeIdx, nameIdx);
