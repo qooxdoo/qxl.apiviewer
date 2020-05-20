@@ -96,7 +96,7 @@ qx.Class.define("qxl.apiviewer.dao.Method",
      * @Override
      */
       isRequiredByInterface : function(iface) {
-        return iface.getMethods().some(method => method.getName() == this.getName());
+        return (iface.getMethods() || []).some(method => method.getName() == this.getName());
       }
     }
   });

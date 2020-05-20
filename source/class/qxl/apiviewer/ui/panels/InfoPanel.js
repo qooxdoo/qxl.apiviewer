@@ -685,7 +685,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
           //  the icon is not available.  However, this is acceptable because the only time the classes might
           //  not be loaded will be if referenced from within comments and where the class is not a dependent
           //  class, in which cases icons are not needed.
-          if (classNode && classNode.isLoaded()) {
+          if (classNode && classNode.isLoaded && classNode.isLoaded()) {
             var itemNode;
 
             if (itemName) {

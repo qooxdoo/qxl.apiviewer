@@ -129,20 +129,6 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
         }
       }
 
-      this._properties = [];
-      this._mixinProperties = [];
-      if (meta.properties) {
-        for (let name in meta.properties) {
-          let data = meta.properties[name];
-          let obj = new qxl.apiviewer.dao.Property(data, this, name);
-          if (data.mixin) {
-            this._mixinProperties.push(obj);
-          } else {
-            this._properties.push(obj);
-          }
-        }
-      }
-
       this._events = [];
       this._mixinEvents = [];
       if (meta.events) {
@@ -156,6 +142,45 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
           }
         }
       }
+
+
+      this._properties = [];
+      this._mixinProperties = [];
+      if (meta.properties) {
+        for (let name in meta.properties) {
+          let data = meta.properties[name];
+          let obj = new qxl.apiviewer.dao.Property(data, this, name);
+          if (data.mixin) {
+            this._mixinProperties.push(obj);
+          } else {
+            this._properties.push(obj);
+          }
+          let evt = obj.getEvent();
+          if (evt) {
+            if (data.mixin) {
+              let cl = obj.getOverriddenFrom();
+              // TODO: load overridden data
+            };
+            let objE = new qxl.apiviewer.dao.Event({
+              location: obj.location,
+              name: evt,
+              type: "qx.event.type.Data",
+              jsdoc: {
+                "@description": [{name : "@description",
+                  body: `Fired on change of the property {@link #${name}}`
+                }]
+              }
+
+            }, this);
+            if (data.mixin) {
+              this._mixinEvents.push(objE);
+            } else {
+              this._events.push(objE);
+            }
+          }
+        }
+      }
+
 
       this._childControls = [];
       let arr = this._jsdoc["@childControl"];
@@ -562,12 +587,14 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
 
       let ifaceRecurser = ifaceNode => {
         interfaceNodes.push(ifaceNode);
-        ifaceNode.getSuperInterfaces().forEach(ifaceRecurser);
+        (ifaceNode.getSuperInterfaces() || []).forEach(ifaceRecurser);
       };
 
       var classNodes = includeSuperClasses ? this.getClassHierarchy() : [this];
-      classNodes.forEach(classNode => (classNode.getInterfaces() || []).forEach(ifaceRecurser));
-
+      classNodes.forEach(classNode => {
+        (classNode.getInterfaces() || []).forEach(ifaceRecurser)
+      });
+      
       return interfaceNodes;
     },
 
@@ -697,10 +724,10 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
 
         foundClasses.push(clazz);
         clazz.getSuperClass() && findClasses(clazz.getSuperClass());
-        clazz.getMixins().forEach(() => findClasses);
-        clazz.getSuperMixins().forEach(() => findClasses);
-        clazz.getInterfaces().forEach(() => findClasses);
-        clazz.getSuperInterfaces().forEach(() => findClasses);
+        (clazz.getMixins() || []).forEach(() => findClasses);
+        (clazz.getSuperMixins()|| []).forEach(() => findClasses);
+        (clazz.getInterfaces()|| []).forEach(() => findClasses);
+        (clazz.getSuperInterfaces()|| []).forEach(() => findClasses);
       }
 
       findClasses(this);
