@@ -19,7 +19,7 @@ jobs:
         run: npm install @qooxdoo/compiler --no-save
 
       - name: Build
-        run:  npx qx deploy --out=./html  --clean --source-maps
+        run:  npx qx deploy --out=./html  --clean 
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
