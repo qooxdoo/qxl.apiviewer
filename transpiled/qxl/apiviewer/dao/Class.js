@@ -16,8 +16,8 @@
       "qxl.apiviewer.RequestUtil": {},
       "qxl.apiviewer.dao.Method": {},
       "qxl.apiviewer.dao.Constant": {},
-      "qxl.apiviewer.dao.Property": {},
       "qxl.apiviewer.dao.Event": {},
+      "qxl.apiviewer.dao.Property": {},
       "qxl.apiviewer.dao.ChildControl": {},
       "qx.Promise": {},
       "qx.lang.Array": {}
@@ -158,36 +158,64 @@
           }
         }
 
-        this._properties = [];
-        this._mixinProperties = [];
-
-        if (meta.properties) {
-          for (var _name2 in meta.properties) {
-            var _data2 = meta.properties[_name2];
-
-            var _obj = new qxl.apiviewer.dao.Property(_data2, this, _name2);
-
-            if (_data2.mixin) {
-              this._mixinProperties.push(_obj);
-            } else {
-              this._properties.push(_obj);
-            }
-          }
-        }
-
         this._events = [];
         this._mixinEvents = [];
 
         if (meta.events) {
-          for (var _name3 in meta.events) {
-            var _data3 = meta.events[_name3];
+          for (var _name2 in meta.events) {
+            var _data2 = meta.events[_name2];
 
-            var _obj2 = new qxl.apiviewer.dao.Event(_data3, this);
+            var _obj = new qxl.apiviewer.dao.Event(_data2, this);
+
+            if (_data2.mixin) {
+              this._mixinEvents.push(_obj);
+            } else {
+              this._events.push(_obj);
+            }
+          }
+        }
+
+        this._properties = [];
+        this._mixinProperties = [];
+
+        if (meta.properties) {
+          for (var _name3 in meta.properties) {
+            var _data3 = meta.properties[_name3];
+
+            var _obj2 = new qxl.apiviewer.dao.Property(_data3, this, _name3);
 
             if (_data3.mixin) {
-              this._mixinEvents.push(_obj2);
+              this._mixinProperties.push(_obj2);
             } else {
-              this._events.push(_obj2);
+              this._properties.push(_obj2);
+            }
+
+            var evt = _obj2.getEvent();
+
+            if (evt) {
+              if (_data3.mixin) {
+                var cl = _obj2.getOverriddenFrom(); // TODO: load overridden data
+
+              }
+
+              ;
+              var objE = new qxl.apiviewer.dao.Event({
+                location: _obj2.location,
+                name: evt,
+                type: "qx.event.type.Data",
+                jsdoc: {
+                  "@description": [{
+                    name: "@description",
+                    body: "Fired on change of the property {@link #".concat(_name3, "}")
+                  }]
+                }
+              }, this);
+
+              if (_data3.mixin) {
+                this._mixinEvents.push(objE);
+              } else {
+                this._events.push(objE);
+              }
             }
           }
         }
@@ -611,12 +639,12 @@
 
         var ifaceRecurser = function ifaceRecurser(ifaceNode) {
           interfaceNodes.push(ifaceNode);
-          ifaceNode.getSuperInterfaces().forEach(ifaceRecurser);
+          (ifaceNode.getSuperInterfaces() || []).forEach(ifaceRecurser);
         };
 
         var classNodes = includeSuperClasses ? this.getClassHierarchy() : [this];
         classNodes.forEach(function (classNode) {
-          return (classNode.getInterfaces() || []).forEach(ifaceRecurser);
+          (classNode.getInterfaces() || []).forEach(ifaceRecurser);
         });
         return interfaceNodes;
       },
@@ -736,16 +764,16 @@
           clazz.load().then(function () {});
           foundClasses.push(clazz);
           clazz.getSuperClass() && findClasses(clazz.getSuperClass());
-          clazz.getMixins().forEach(function () {
+          (clazz.getMixins() || []).forEach(function () {
             return findClasses;
           });
-          clazz.getSuperMixins().forEach(function () {
+          (clazz.getSuperMixins() || []).forEach(function () {
             return findClasses;
           });
-          clazz.getInterfaces().forEach(function () {
+          (clazz.getInterfaces() || []).forEach(function () {
             return findClasses;
           });
-          clazz.getSuperInterfaces().forEach(function () {
+          (clazz.getSuperInterfaces() || []).forEach(function () {
             return findClasses;
           });
         }
@@ -846,4 +874,4 @@
   qxl.apiviewer.dao.Class.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Class.js.map?dt=1589975455842
+//# sourceMappingURL=Class.js.map?dt=1589989558075

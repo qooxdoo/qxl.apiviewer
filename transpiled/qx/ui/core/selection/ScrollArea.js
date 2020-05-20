@@ -189,4 +189,4 @@
   qx.ui.core.selection.ScrollArea.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=ScrollArea.js.map?dt=1589975438196
+//# sourceMappingURL=ScrollArea.js.map?dt=1589989542214

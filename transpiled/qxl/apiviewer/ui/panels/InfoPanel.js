@@ -715,7 +715,7 @@
             //  class, in which cases icons are not needed.
 
 
-            if (classNode && classNode.isLoaded()) {
+            if (classNode && classNode.isLoaded && classNode.isLoaded()) {
               var itemNode;
 
               if (itemName) {
@@ -1297,4 +1297,4 @@
   qxl.apiviewer.ui.panels.InfoPanel.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=InfoPanel.js.map?dt=1589975456951
+//# sourceMappingURL=InfoPanel.js.map?dt=1589989558906

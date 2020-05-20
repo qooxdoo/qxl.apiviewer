@@ -113,7 +113,7 @@
       isRequiredByInterface: function isRequiredByInterface(iface) {
         var _this2 = this;
 
-        return iface.getMethods().some(function (method) {
+        return (iface.getMethods() || []).some(function (method) {
           return method.getName() == _this2.getName();
         });
       }
@@ -122,4 +122,4 @@
   qxl.apiviewer.dao.Method.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Method.js.map?dt=1589975456099
+//# sourceMappingURL=Method.js.map?dt=1589989558302

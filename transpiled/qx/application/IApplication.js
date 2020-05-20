@@ -65,4 +65,4 @@
   qx.application.IApplication.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=IApplication.js.map?dt=1589975417183
+//# sourceMappingURL=IApplication.js.map?dt=1589989523886
