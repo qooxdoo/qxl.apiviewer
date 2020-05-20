@@ -69,6 +69,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
       var url = qxl.apiviewer.ClassLoader.getBaseUri() + "/transpiled/" + this._className.replace(/\./g, "/") + ".json";
       return this._loadingPromise = qxl.apiviewer.RequestUtil.get(url)
         .then(content => {
+          /* eslint-disable-next-line no-eval */
           var meta = eval("(" + content + ")");
           return this._initMeta(meta)
             .then(() => {
@@ -170,7 +171,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
         return p.then(classes => {
           classes.forEach(item => {
             all.push(item);
-          })
+          });
           return classes;
         });
       }
@@ -538,7 +539,6 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      *         interface.
      */
     getInterfaceHierarchy: function () {
-      var currentClass = this;
       var result = [];
 
       function add(currentClass) {
@@ -634,8 +634,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      * @param listName {String} name of the item list
      * @return {apiviewer.dao.ClassItem[]} item list
      */
-    getItemList : function(listName)
-    {
+    getItemList : function(listName) {
       var methodMap =
       {
         "events" : "getEvents",
@@ -652,9 +651,8 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
 
       if (listName == "constructor") {
         return this.getConstructor() ? [this.getConstructor()] : [];
-      } else {
+      } 
         return this[methodMap[listName]]();
-      }
     },
 
 
@@ -666,15 +664,14 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      * @param itemName {String} name of the class item.
      * @return {apiviewer.dao.ClassItem} the matching class item.
      */
-    getItemByListAndName : function(listName, itemName)
-    {
+    getItemByListAndName : function(listName, itemName) {
       var list = this.getItemList(listName);
-      for (var j=0; j<list.length; j++)
-      {
+      for (var j=0; j<list.length; j++) {
         if (itemName == list[j].getName()) {
           return list[j];
         }
       }
+      return null;
     },
 
 
@@ -691,21 +688,19 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      */
     getDependedClasses: function () {
       let foundClasses = [];
-
       function findClasses(clazz) {
         if (qxl.apiviewer.dao.Class.isNativeObject(clazz)) {
           return;
         }
-        return clazz.load().then(() => {
-
+        clazz.load().then(() => {
         });
 
         foundClasses.push(clazz);
         clazz.getSuperClass() && findClasses(clazz.getSuperClass());
-        clazz.getMixins().forEach(mixin => findClasses);
-        clazz.getSuperMixins().forEach(mixin => findClasses);
-        clazz.getInterfaces().forEach(mixin => findClasses);
-        clazz.getSuperInterfaces().forEach(mixin => findClasses);
+        clazz.getMixins().forEach(() => findClasses);
+        clazz.getSuperMixins().forEach(() => findClasses);
+        clazz.getInterfaces().forEach(() => findClasses);
+        clazz.getSuperInterfaces().forEach(() => findClasses);
       }
 
       findClasses(this);

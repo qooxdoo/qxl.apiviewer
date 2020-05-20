@@ -18,6 +18,7 @@
      * Andreas Ecker (ecker)
      * Fabian Jakobs (fjakobs)
      * John Spackman (johnspackman) of Zenesis Ltd (http://www.zenesis.com)
+     * Henner Kollmann (hkollmann)
 
 ************************************************************************ */
 
@@ -165,10 +166,11 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
      * @return {String} the HTML showing the information about the method.
      */
     getItemHtml: function(node, currentDocNode, showDetails) {
+      var parentNode;
       if ((node instanceof qxl.apiviewer.dao.Class) || node instanceof qxl.apiviewer.dao.Package) {
-        var parentNode = node.getPackage();
+        parentNode = node.getPackage();
       } else {
-        var parentNode = node.getClass();
+        parentNode = node.getClass();
       }
       var html = new qx.util.StringBuilder();
 
@@ -378,7 +380,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
      */
     update: function(classViewer, currentClassDocNode) {
       if (!this.getElement()) {
-        return;
+        return qx.Promise.resolve(true);
       }
 
       return this.setDocNodeAsync(currentClassDocNode)
@@ -426,8 +428,14 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
      * @return {Element} the HTML element showing the details of the item.
      * @ignore(getElementsByTagName)
      */
+
     getItemElement: function(name) {
-      var elemArr = this.getBodyElement().getElementsByTagName("TBODY")[0].childNodes;
+      var body = this.getBodyElement();
+      var elem = body.getElementsByTagName("TBODY")[0];
+      if (!elem) {
+        return null;
+      }
+      var elemArr = elem.childNodes;
 
       for (var i = 0; i < elemArr.length; i++) {
         // ARRG, should be implemented in a more fault-tolerant way
@@ -437,6 +445,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
           return elemArr[i].childNodes[3].childNodes[1];
         }
       }
+      return null;
     },
 
     /**
@@ -573,7 +582,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
       var hit;
       var lastPos = 0;
 
-      while ((hit = linkRegex.exec(description)) != null) {
+      while ((hit = linkRegex.exec(description))) {
         // Add the text before the link
         html.add(description.substring(lastPos, hit.index) + this.createItemLinkHtml(hit[1], packageBaseClass));
 
@@ -604,7 +613,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
      */
     createItemLinkHtml: function(linkText, packageBaseClass, useIcon, useShortName) {
       var classNode = null;
-      if (useIcon == null) {
+      if (!useIcon) {
         useIcon = true;
       }
 
@@ -625,7 +634,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
         // Separate item name from label
         var hit = this.ITEM_SPEC_REGEX.exec(linkText);
 
-        if (hit == null) {
+        if (!hit) {
           // Malformed item name
           return linkText;
         }
@@ -634,9 +643,9 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
         label = hit[6];
 
         // Make the item name absolute
-        if (className == null || className.length == 0) {
+        if (!className || className.length == 0) {
           // This is a relative link to a method -> Add the current class
-          className = packageBaseClass.getFullName();
+          className = packageBaseClass.getClass ? packageBaseClass.getClass().getFullName() + itemName: packageBaseClass.getFullName();
         } else if (packageBaseClass && className.indexOf(".") == -1) {
           classNode = qxl.apiviewer.dao.Class.getClassByName(className);
 
@@ -661,7 +670,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
         }
 
         // Get the node info
-        if (label == null || label.length == 0) {
+        if (!label || label.length == 0) {
           // We have no label -> Use the item name as label
           label = hit[1];
         }
@@ -741,8 +750,12 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
       // Create a real bookmarkable link
       // NOTE: The onclick-handler must be added by HTML code. If it
       // is added using the DOM element then the href is followed.
+//      var fullItemName = className + (itemName ? itemName : "");
+        /* eslint-disable-next-line max-statements-per-line */
       var fullItemName = (itemNode && itemNode.getFullName)? itemNode.getFullName() : classNode && classNode.getFullName ? classNode.getFullName() : className;
-      var protocol, host, pathname;
+      var protocol; 
+      var host; 
+      var pathname;
 
       // Opera 10.5 loses the reference to "window"
       // See http://bugzilla.qooxdoo.org/show_bug.cgi?id=3516 for details
@@ -856,9 +869,8 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
                   "#" + node.getName()), "</div>");
           return html.get();
         }
-      } else {
-        return "";
       }
+      return "";
     },
 
     /**
@@ -930,8 +942,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
         ret = ret.substr(0, pos + 4);
 
         var hit = this.SENTENCE_END_REGEX.exec(ret);
-
-        if (hit != null) {
+        if (hit) {
           ret = text.substring(0, hit.index + hit[0].length - 1) + "</p>";
         }
       }
@@ -969,12 +980,14 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
      * @return {String} the HTML showing the type.
      */
     createTypeHtml: function(typeNode, defaultType, useShortName) {
-      if (useShortName == null) {
+      if (!useShortName) {
         useShortName = true;
       }
 
       var types = [];
-      var typeDimensions, typeName, linkText;
+      var typeDimensions; 
+      var typeName; 
+      var linkText;
 
       if (typeNode) {
         types = typeNode.getTypes();

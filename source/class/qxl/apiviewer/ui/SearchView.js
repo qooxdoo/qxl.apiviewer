@@ -14,6 +14,7 @@
    Authors:
      * Stefan Kloiber (skloiber)
      * Jonathan Weiß (jonathan_rass)
+     * Henner Kollmann (hkollmann)
 
 ************************************************************************ */
 
@@ -302,7 +303,7 @@ qx.Class.define("qxl.apiviewer.ui.SearchView",
      */
     _searchResult : function(svalue) {
       // Trim search string
-      var svalue = svalue.trim();
+      svalue = svalue.trim();
 
       // Hide the note if text is typed into to search field.
       //      if (svalue.length > 0) {
@@ -335,6 +336,7 @@ qx.Class.define("qxl.apiviewer.ui.SearchView",
 
       try {
         var search = this._validateInput(svalue);
+        /* eslint-disable-next-line no-new */
         new RegExp(search[0]);
       } catch (ex) {
         // Reset the result list
@@ -407,7 +409,7 @@ qx.Class.define("qxl.apiviewer.ui.SearchView",
       var fullNames = this.apiindex.fullNames;
       var types = this.apiindex.types;
 
-      var namespaceFilter = this.namespaceTextField.getValue() != null ? this.namespaceTextField.getValue().trim() : "";
+      var namespaceFilter = this.namespaceTextField.getValue() ? this.namespaceTextField.getValue().trim() : "";
       var namespaceRegexp = new RegExp(".*");
       if (namespaceFilter.length > 0) {
         try {
@@ -421,7 +423,7 @@ qx.Class.define("qxl.apiviewer.ui.SearchView",
       for (var key in index) {
         if (mo.test(key)) {
           if (spath) {
-            for (var i=0, l=index[key].length; i<l; i++) {
+            for (let i=0, l=index[key].length; i<l; i++) {
               var fullname = fullNames[index[key][i][1]];
               if (namespaceRegexp && namespaceRegexp.test(fullname)) {
                 if (new RegExp(spath, "i").test(fullname)) {
@@ -434,7 +436,7 @@ qx.Class.define("qxl.apiviewer.ui.SearchView",
               }
             }
           } else {
-            for (var i=0, l=index[key].length; i<l; i++) {
+            for (let i=0, l=index[key].length; i<l; i++) {
               elemtype = types[index[key][i][0]].toUpperCase();
               fullname = fullNames[index[key][i][1]];
 
@@ -568,6 +570,7 @@ qx.Class.define("qxl.apiviewer.ui.SearchView",
       req.setTimeout(30000); // 30 sec
       req.setProhibitCaching(false);
       req.addListener("completed", function(evt) {
+        /* eslint-disable-next-line no-eval */
         this.apiindex = eval("(" + evt.getContent() + ")");
         if (this.__searchTerm) {
           setTimeout(function() {
@@ -604,13 +607,9 @@ qx.Class.define("qxl.apiviewer.ui.SearchView",
         // Display protected stated items
         if (/protected/.test(itemType)) {
           uiModel.setShowProtected(true);
-        }
-        // Display private stated items
-        else if (/private/.test(itemType)) {
+        } else if (/private/.test(itemType)) { // Display private stated items
           uiModel.setShowPrivate(true);
-        }
-        // Display internal stated items
-        else if (/internal/.test(itemType)) {
+        } else if (/internal/.test(itemType)) { // Display internal stated items
           uiModel.setShowInternal(true);
         }
         // Highlight item

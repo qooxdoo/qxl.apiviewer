@@ -19,6 +19,7 @@
      * Fabian Jakobs (fjakobs)
      * Jonathan Weiß (jonathan_rass)
      * John Spackman (johnspackman)
+     * Henner Kollmann (hkollmann)
 
 ************************************************************************ */
 
@@ -147,15 +148,19 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
 
   },
 
+  events :
+  {
+    "synced" : "qx.event.type.Event"
+  },
 
-    members :
+   members :
   {
     _infoPanelHash : null,
     _infoPanels : null,
+    __valid: false,
 
     _init : function(pkg) {
       this.__initHtml();
-
       this.addListenerOnce("appear", () => this._syncHtml());
     },
 
@@ -212,7 +217,7 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
      * HtmlEmbed element initialization routine.
      *
      */
-    _syncHtml : function() {
+    _syncHtml : async function() {
       var oldTitleElem = this._titleElem;
       var element = this.getContentElement().getDomElement().firstChild;
       var divArr = element.childNodes;
@@ -230,11 +235,16 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
       }
 
       if (oldTitleElem !== this._titleElem && this.getDocNode()) {
-        this._applyDocNode(this.getDocNode());
+        await this._applyDocNode(this.getDocNode());
       }
+      this.__valid = true;
+      this.fireEvent("synced");
     },
 
-
+    isValid: function() {
+       return this.__valid;
+    },
+    
     addInfoPanel : function(panel) {
       this._infoPanelHash[panel.toHashCode()] = panel;
       this._infoPanels.push(panel);
@@ -294,7 +304,7 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
      */
     _applyDocNode : function(classNode) {
       if (!this._titleElem) {
-        return;
+        return null;
       }
 
       this._titleElem.innerHTML = this._getTitleHtml(classNode);
@@ -333,6 +343,7 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
       } catch (exc) {
         this.error("Toggling info body failed", exc);
       }
+      return null;
     },
 
     /**

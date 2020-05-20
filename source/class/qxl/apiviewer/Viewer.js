@@ -115,7 +115,7 @@ qx.Class.define("qxl.apiviewer.Viewer",
 
       this.__toggleGroup.addListener("changeSelection", function(e) {
         var selected = e.getData()[0];
-        var show = selected != null ? selected.getUserData("value") : null;
+        var show = selected ? selected.getUserData("value") : null;
         switch (show) {
           case "packages":
             stack.setSelection([treeWidget]);
@@ -182,7 +182,7 @@ qx.Class.define("qxl.apiviewer.Viewer",
 
       toolbar.addSpacer();
 
-      var part = new qx.ui.toolbar.Part();
+      part = new qx.ui.toolbar.Part();
       toolbar.add(part);
 
       var expandBtn = new qx.ui.toolbar.CheckBox(this.tr("Properties"), "qxl/apiviewer/image/property18.gif");
@@ -295,7 +295,7 @@ qx.Class.define("qxl.apiviewer.Viewer",
 
         if (!cachedItem) {
           if (toolbarItem instanceof qx.ui.toolbar.RadioButton) {
-            var cachedItem = new qx.ui.menu.RadioButton(toolbarItem.getLabel());
+            cachedItem = new qx.ui.menu.RadioButton(toolbarItem.getLabel());
             // bidirectional binding takes care of everything
             toolbarItem.bind("value", cachedItem, "value");
             cachedItem.bind("value", toolbarItem, "value");

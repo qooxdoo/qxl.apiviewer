@@ -15,8 +15,10 @@
    Authors:
      * John Spackman (johnspackman)
      * Fabian Jakobs (fjakobs)
+     * Henner Kollmann (hkollmann)
 
-************************************************************************ */qx.Class.define("qxl.apiviewer.TabViewController",
+************************************************************************ */
+qx.Class.define("qxl.apiviewer.TabViewController",
   {
     extend : qx.core.Object,
 
@@ -41,6 +43,17 @@
 
     members :
   {
+
+    isLoaded: function(callback) {
+      var page = this._tabView.getSelection()[0];
+      var child = page.getChildren()[0];
+      if (child.isValid()) {
+        callback();
+        return;
+      }
+      child.addListenerOnce("synced", callback);
+    },
+
     showTabView : function() {
       this._tabView.show();
     },
@@ -55,12 +68,10 @@
     },
 
     showItem : function(itemName) {
-      qx.ui.core.queue.Manager.flush();
-
       var page = this._tabView.getSelection()[0];
       page.setUserData("itemName", itemName);
-
-      return page.getChildren()[0].showItem(itemName);
+      var child = page.getChildren()[0];
+      return child.showItem(itemName);
     },
 
     openPackage : function(classNode, newTab) {
@@ -81,6 +92,7 @@
       }
 
       if (!currentPage) {
+        /* eslint-disable-next-line new-cap */
         currentPage = new clazz(classNode);
         this._tabView.add(currentPage);
       }
@@ -88,8 +100,7 @@
       this._tabView.setSelection([currentPage]);
 
       currentPage.setUserData("itemName", null);
-      return currentPage.setClassNodeAsync(classNode)
-        .then(() => qxl.apiviewer.LoadingIndicator.getInstance().hide());
+      return currentPage.setClassNodeAsync(classNode);
     },
 
     __onChangeSelection : function(event) {

@@ -61,7 +61,7 @@ qx.Class.define("qxl.apiviewer.TreeUtil",
      *           is <code>null</code> or has no such child.
      */
     getChild : function(docNode, childType) {
-      if (docNode != null && docNode.children != null) {
+      if (docNode && docNode.children) {
         for (var i=0; i<docNode.children.length; i++) {
           if (docNode.children[i].type == childType) {
             return docNode.children[i];
@@ -82,7 +82,7 @@ qx.Class.define("qxl.apiviewer.TreeUtil",
      * @return {Map} the wanted child or <code>code</code> if there is no such child.
      */
     getChildByAttribute : function(docNode, attributeName, attributeValue) {
-      if (docNode.children != null) {
+      if (docNode.children) {
         for (var i=0; i<docNode.children.length; i++) {
           var node = docNode.children[i];
 
@@ -149,7 +149,7 @@ qx.Class.define("qxl.apiviewer.TreeUtil",
         constName = "ICON_EVENT";
       } else if (node instanceof dao.Method) {
         if (node.isConstructor()) {
-          var constName = "ICON_CTOR";
+          constName = "ICON_CTOR";
         } else {
           constName = "ICON_METHOD";
           if (node.isPublic()) {
@@ -227,12 +227,12 @@ qx.Class.define("qxl.apiviewer.TreeUtil",
           startIndex = 2;
         }
         iconUrl = [qxl.apiviewer.TreeUtil[itemName]];
-        if (iconUrl[0] == null) {
+        if (iconUrl[0] === null) {
           throw new Error("Unknown img constant: " + itemName);
         }
         for (var i=startIndex; i<iconParts.length; i++) {
           var iconPart = qxl.apiviewer.TreeUtil["OVERLAY_" + iconParts[i]];
-          if (iconPart == null) {
+          if (iconPart === null) {
             throw new Error("Unknown img constant: OVERLAY_" + iconParts[i]);
           }
           iconUrl.push(iconPart);

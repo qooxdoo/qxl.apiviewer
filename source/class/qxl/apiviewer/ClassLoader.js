@@ -38,7 +38,7 @@ qx.Class.define("qxl.apiviewer.ClassLoader", {
     loadClassList: function(classes, callback, self) {
       if (!classes.length) {
         callback && callback.call(self||this, []);
-        return new qx.Promise.resolve([]);
+        return qx.Promise.resolve([]);
       }
 
       var all = classes.map(clazz => clazz.load());

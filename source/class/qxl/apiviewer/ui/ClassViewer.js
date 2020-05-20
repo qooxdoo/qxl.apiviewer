@@ -19,6 +19,7 @@
      * Fabian Jakobs (fjakobs)
      * Jonathan Weiß (jonathan_rass)
      * John Spackman (johnspackman)
+     * Henner Kollmann (hkollmann)
 
 ************************************************************************ */
 
@@ -197,9 +198,9 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer",
       var style;
 
       if (qx.core.Environment.get("engine.name") == "webkit") {
-        html = "<span style=\"display:inline;position:relative;top:-2px;width:" + width + "px;height:" + height + "px" + ((styleAttributes == null) ? "" : (";" + styleAttributes)) + "\">";
+        html = "<span style=\"display:inline;position:relative;top:-2px;width:" + width + "px;height:" + height + "px" + (styleAttributes ? (";" + styleAttributes): "") + "\">";
       } else {
-        html = "<span style=\"display:inline-block;display:inline;padding-right:18px;position:relative;top:-2px;left:0;width:" + width + "px;height:" + height + "px" + ((styleAttributes == null) ? "" : (";" + styleAttributes)) + "\">";
+        html = "<span style=\"display:inline-block;display:inline;padding-right:18px;position:relative;top:-2px;left:0;width:" + width + "px;height:" + height + "px" + (styleAttributes ? (";" + styleAttributes):"") + "\">";
       }
 
       if (qx.core.Environment.get("engine.name") == "webkit") {
@@ -213,7 +214,7 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer",
       for (var i=0; i<imgUrlArr.length; i++) {
         html += "<img";
 
-        if (toolTip != null) {
+        if (toolTip) {
           html += " title=\"" + toolTip + "\"";
         }
 
@@ -366,8 +367,7 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer",
                 this.togglePanelVisibility(panel);
               }
             }).bind(this);
-          }).bind(this)
-          (items[0]), false);
+          }).bind(this)(items[0]), false);
         var textSpan = qx.dom.Element.create("span");
         if (panel instanceof qxl.apiviewer.ui.panels.StaticMethodsPanel && qx.core.Environment.get("engine.name") == "webkit") {
           qx.bom.element.Style.set(textSpan, "margin-left", "25px");
@@ -568,7 +568,7 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer",
 
       // show nothing if we don't have a hierarchy
       if (hierarchy.length <= 1) {
-        return;
+        return html;
       }
 
       html.add("<h2>", "Inheritance hierarchy:", "</h2>");
@@ -604,7 +604,6 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer",
      */
     showItem : function(itemName) {
       var itemNode;
-
       var nameMap = {
         "event": "events",
         "method_public": "methods",
@@ -700,9 +699,7 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer",
         // Check for internals
         if (itemNode.isInternal()) {
           uiModel.setShowInternal(true);
-        }
-        // Check for protected
-        else if (itemNode.isProtected()) {
+        } else if (itemNode.isProtected()) { // Check for protected
           uiModel.setShowProtected(true);
         }
       }
@@ -723,6 +720,7 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer",
           return panel;
         }
       }
+      return null;
     }
   },
 

@@ -73,7 +73,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.PackagePanel",
      */
     update : function(classViewer, currentClassDocNode) {
       if (!this.getElement()) {
-        return;
+        return qx.Promise.resolve(false);
       }
 
       return this.setDocNodeAsync(currentClassDocNode)

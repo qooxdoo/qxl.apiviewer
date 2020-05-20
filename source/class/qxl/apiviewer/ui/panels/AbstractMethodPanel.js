@@ -131,18 +131,17 @@ qx.Class.define("qxl.apiviewer.ui.panels.AbstractMethodPanel",
 
           if (params.length > 0) {
             textHtml.add("<div class=\"item-detail-headline\">", "Parameters:", "</div>");
-
-            for (var i=0; i<params.length; i++) {
+            for (let i=0; i<params.length; i++) {
               var param = params[i];
-              var paramType = param.getTypes() ? param.getTypes() : "var";
+              /*
+              var paramType = "";
               var dims = param.getArrayDimensions();
-
               if (dims) {
-                for (var i=0; i<dims; i++) {
+                for (let i=0; i<dims; i++) {
                   paramType += "[]";
                 }
               }
-
+              */
               var defaultValue = param.getDefaultValue();
 
               textHtml.add("<div class=\"item-detail-text\">");
@@ -173,7 +172,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.AbstractMethodPanel",
           // Add return value
           var returnNode = method.getReturn();
           if (returnNode) {
-            var desc = returnNode.getDescription();
+            desc = returnNode.getDescription();
             if (desc) {
               textHtml.add(
                 "<div class=\"item-detail-headline\">", "Returns:", "</div>",
@@ -188,7 +187,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.AbstractMethodPanel",
             textHtml.add(
               "<div class=\"item-detail-headline\">", applyToProperties.length==1 ? "Apply method of property:" : "Apply method of properties:", "</div>",
               "<div class=\"item-detail-text\">");
-            for (var i=0; i<applyToProperties.length; i++) {
+            for (let i=0; i<applyToProperties.length; i++) {
               textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(
                 applyToProperties[i], method.getClass(), true, true
               ), ", ");
@@ -201,8 +200,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.AbstractMethodPanel",
           var throwsEntries = method.getThrows();
           if (throwsEntries.length > 0) {
             textHtml.add("<div class=\"item-detail-headline\">", "Throws:", "</div>");
-
-            for (var i=0; i<throwsEntries.length; i++) {
+            for (let i=0; i<throwsEntries.length; i++) {
               var throwsEntry = throwsEntries[i];
               var throwsEntryType = throwsEntry.getType() ? throwsEntry.getType() : throwsEntry.getDefaultType();
 
@@ -213,13 +211,10 @@ qx.Class.define("qxl.apiviewer.ui.panels.AbstractMethodPanel",
                 throwsEntryType === throwsEntry.getDefaultType() ? throwsEntry.getDefaultType() : qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(throwsEntryType),
                 "</span>"
               );
-
-              var desc = throwsEntry.getDescription();
-
+              desc = throwsEntry.getDescription();
               if (desc) {
                 textHtml.add(" ", qxl.apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(desc, docClass));
               }
-
               textHtml.add("</div>");
             }
           }
@@ -251,7 +246,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.AbstractMethodPanel",
         var hasReturn = node.getReturn() && node.getReturn().getDescription();
         return (
           node.getClass() != currentClassDocNode || // method is inherited
-        node.getOverriddenFrom() != null ||
+        !node.getOverriddenFrom() ||
         node.getRequiredBy().length > 0 ||
         node.getParams().length > 0 ||
         node.getThrows().length > 0 ||

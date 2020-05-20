@@ -42,8 +42,6 @@ qx.Class.define("qxl.apiviewer.ui.PackageTree",
       this.__root.setOpen(true);
       this.setRoot(this.__root);
       this.setSelection([this.__root]);
-
-      // TODO: Is this workaround still needed?
       // Workaround: Since navigating in qx.ui.tree.Tree doesn't work, we've to
       // maintain a hash that keeps the tree nodes for class names
       this._classTreeNodeHash = {};
@@ -90,7 +88,7 @@ qx.Class.define("qxl.apiviewer.ui.PackageTree",
      * @return {Boolean} Whether the class name was valid and could be selected.
      */
     selectTreeNodeByClassName : function(className) {
-      if (this._docTree == null) {
+      if (!this._docTree) {
         // The doc tree has not been loaded yet
         // -> Remember the wanted class and show when loading is done
         this._wantedClassName = className;
@@ -184,7 +182,7 @@ qx.Class.define("qxl.apiviewer.ui.PackageTree",
         r = r.getFullName();
         return l < r ? -1 : l > r ? 1 : 0;
       });
-      qx.Promise.map(packagesDoc, (packageDoc) => {
+      qx.Promise.map(packagesDoc, packageDoc => {
         var iconUrl = qxl.apiviewer.TreeUtil.getIconUrl(packageDoc);
         var segs = packageDoc.getName().split(".");
         var packageTreeNode = new qx.ui.tree.TreeFolder(segs[segs.length - 1]);

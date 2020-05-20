@@ -30,7 +30,7 @@ qx.Class.define("qxl.apiviewer.dao.Method",
       if (arr && arr.length) {
         this._return = new qxl.apiviewer.dao.Param(arr[0], this);
       }
-      var arr = this._jsdoc["@throws"];
+      arr = this._jsdoc["@throws"];
       this._throws = (arr && arr.length) ? new qxl.apiviewer.dao.Param(arr[0], this) : [];
 
       if (meta.property) {

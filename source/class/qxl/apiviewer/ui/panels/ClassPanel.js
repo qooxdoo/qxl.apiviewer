@@ -75,14 +75,15 @@ qx.Class.define("qxl.apiviewer.ui.panels.ClassPanel",
 
 
     getItemTooltip : function(classNode, currentClassDocNode) {
+      var tooltip;
       if (classNode.isAbstract()) {
-        var tooltip ="Abstract ";
+        tooltip ="Abstract ";
       } else if (classNode.isStatic()) {
-        var tooltip = "Static ";
+        tooltip = "Static ";
       } else if (classNode.isSingleton()) {
-        var tooltip = "Singleton ";
+        tooltip = "Singleton ";
       } else {
-        var tooltip = "";
+        tooltip = "";
       }
       switch (classNode.getType()) {
         case "mixin":
@@ -115,7 +116,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.ClassPanel",
      */
     update : function(classViewer, currentClassDocNode) {
       if (!this.getElement()) {
-        return;
+        return qx.Promise.resolve(true);
       }
 
       return this.setDocNodeAsync(currentClassDocNode)

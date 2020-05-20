@@ -146,7 +146,8 @@ qx.Class.define("qxl.apiviewer.ui.LegendView",
 
 
       var length = this.__legend.length;
-      var entry, imageUrl;
+      var entry; 
+      var imageUrl;
 
       for (var i=0; i<length; i++) {
         entry = this.__legend[i];

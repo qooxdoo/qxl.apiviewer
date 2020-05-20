@@ -50,5 +50,11 @@
 	],
 	"serve": {
 		"listenPort": 8080
-	}
+	},
+    "eslintConfig": {
+        "parserOptions": {
+            "ecmaVersion": 2018
+        }
+    }
+	
 }

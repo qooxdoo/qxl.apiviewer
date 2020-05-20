@@ -56,7 +56,7 @@ qx.Class.define("qxl.apiviewer.dao.Package", {
           this._loaded = true;
         })
         .catch(e => {
-          console.error("Couldn't load file: " + url + " " + e.message);
+          this.error("Couldn't load file: " + url + " " + e.message);
           this._loaded = true;
         });
     },
@@ -111,7 +111,7 @@ qx.Class.define("qxl.apiviewer.dao.Package", {
 
     hasWarning: function () {
       return false;
-    },
+    }
 
   },
 
