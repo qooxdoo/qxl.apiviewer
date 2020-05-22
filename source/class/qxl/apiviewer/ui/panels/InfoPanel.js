@@ -472,7 +472,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
 
         var fromClassNode = fromClassName ? qxl.apiviewer.dao.Class.getClassByName(fromClassName) : this.getDocNode();
         var node = null;
-        for (var arr = this.getPanelItemObjects(fromClassNode), i = 0; i < arr.length && !node; i++) {
+        for (var arr = this.getPanelItemObjects(fromClassNode, true), i = 0; i < arr.length && !node; i++) {
           var tmp = arr[i];
           if (tmp.getName() == itemName) {
             node = tmp;
@@ -752,7 +752,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
       // is added using the DOM element then the href is followed.
 //      var fullItemName = className + (itemName ? itemName : "");
         /* eslint-disable-next-line max-statements-per-line */
-      var fullItemName = (itemNode && itemNode.getFullName)? itemNode.getFullName() : classNode && classNode.getFullName ? classNode.getFullName() : className;
+      var fullItemName = (itemNode && itemNode.getFullName)? itemNode.getFullName() : classNode && classNode.getFullName ? classNode.getFullName() + itemName : className;
       var protocol; 
       var host; 
       var pathname;
@@ -825,9 +825,15 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
      */
     createInheritedFromHtml: function(node, currentClassDocNode) {
       if (node.getClass().getType() != "mixin" && node.getClass() != currentClassDocNode) {
-        var html = new qx.util.StringBuilder("<div class=\"item-detail-headline\">", "Inherited from:", "</div>",
+        let html = new qx.util.StringBuilder("<div class=\"item-detail-headline\">", "Inherited from:", "</div>",
           "<div class=\"item-detail-text\">", qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(node.getClass().getFullName() + "#" +
                 node.getName()), "</div>");
+        return html.get();
+      }
+      let over = node.getOverriddenFrom();
+      if (over) {
+        let html = new qx.util.StringBuilder("<div class=\"item-detail-headline\">", "Defined in Mixin:", "</div>",
+          "<div class=\"item-detail-text\">", qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(over.getFullName() + "#" + node.getName()), "</div>");
         return html.get();
       }
       return "";

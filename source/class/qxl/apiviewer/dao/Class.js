@@ -157,20 +157,16 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
           }
           let evt = obj.getEvent();
           if (evt) {
-            if (data.mixin) {
-              let cl = obj.getOverriddenFrom();
-              // TODO: load overridden data
-            };
             let objE = new qxl.apiviewer.dao.Event({
               location: obj.location,
               name: evt,
               type: "qx.event.type.Data",
               jsdoc: {
-                "@description": [{name : "@description",
-                  body: `Fired on change of the property {@link #${name}}`
+                "@description": [{
+                  name : "@description",
+                  body: `Fired on change of the property {@link ${data.overriddenFrom  || ""}#${name} ${name}}`
                 }]
               }
-
             }, this);
             if (data.mixin) {
               this._mixinEvents.push(objE);
@@ -685,7 +681,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
 
     /**
      * Get a class item by the item list name and the item name.
-     * Valid item list names aer documented at {@link #getItemList}.
+     * Valid item list names are documented at {@link #getItemList}.
      * .
      * @param listName {String} name of the item list.
      * @param itemName {String} name of the class item.
