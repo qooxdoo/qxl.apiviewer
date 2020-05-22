@@ -504,7 +504,7 @@
           var fromClassNode = fromClassName ? qxl.apiviewer.dao.Class.getClassByName(fromClassName) : this.getDocNode();
           var node = null;
 
-          for (var arr = this.getPanelItemObjects(fromClassNode), i = 0; i < arr.length && !node; i++) {
+          for (var arr = this.getPanelItemObjects(fromClassNode, true), i = 0; i < arr.length && !node; i++) {
             var tmp = arr[i];
 
             if (tmp.getName() == itemName) {
@@ -788,7 +788,7 @@
         /* eslint-disable-next-line max-statements-per-line */
 
 
-        var fullItemName = itemNode && itemNode.getFullName ? itemNode.getFullName() : classNode && classNode.getFullName ? classNode.getFullName() : className;
+        var fullItemName = itemNode && itemNode.getFullName ? itemNode.getFullName() : classNode && classNode.getFullName ? classNode.getFullName() + itemName : className;
         var protocol;
         var host;
         var pathname; // Opera 10.5 loses the reference to "window"
@@ -861,6 +861,14 @@
         if (node.getClass().getType() != "mixin" && node.getClass() != currentClassDocNode) {
           var html = new qx.util.StringBuilder("<div class=\"item-detail-headline\">", "Inherited from:", "</div>", "<div class=\"item-detail-text\">", qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(node.getClass().getFullName() + "#" + node.getName()), "</div>");
           return html.get();
+        }
+
+        var over = node.getOverriddenFrom();
+
+        if (over) {
+          var _html = new qx.util.StringBuilder("<div class=\"item-detail-headline\">", "Defined in Mixin:", "</div>", "<div class=\"item-detail-text\">", qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(over.getFullName() + "#" + node.getName()), "</div>");
+
+          return _html.get();
         }
 
         return "";
@@ -1297,4 +1305,4 @@
   qxl.apiviewer.ui.panels.InfoPanel.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=InfoPanel.js.map?dt=1589989558906
+//# sourceMappingURL=InfoPanel.js.map?dt=1590153715822

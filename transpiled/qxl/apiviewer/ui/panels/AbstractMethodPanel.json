@@ -329,7 +329,15 @@
       "inherited": true,
       "access": "public",
       "overriddenFrom": "qxl.apiviewer.ui.panels.InfoPanel",
-      "property": "reset"
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>qxOwner</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
+          }
+        ]
+      }
     },
     "getQxObjectId": {
       "type": "function",
@@ -388,7 +396,15 @@
       "inherited": true,
       "access": "public",
       "overriddenFrom": "qxl.apiviewer.ui.panels.InfoPanel",
-      "property": "reset"
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>qxObjectId</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
+          }
+        ]
+      }
     },
     "getElement": {
       "type": "function",
@@ -449,7 +465,15 @@
       "inherited": true,
       "access": "public",
       "overriddenFrom": "qxl.apiviewer.ui.panels.InfoPanel",
-      "property": "reset"
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>element</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #element}."
+          }
+        ]
+      }
     },
     "getIsOpen": {
       "type": "function",
@@ -535,7 +559,15 @@
       "inherited": true,
       "access": "public",
       "overriddenFrom": "qxl.apiviewer.ui.panels.InfoPanel",
-      "property": "reset"
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>isOpen</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #isOpen}."
+          }
+        ]
+      }
     },
     "getDocNode": {
       "type": "function",
@@ -596,7 +628,15 @@
       "inherited": true,
       "access": "public",
       "overriddenFrom": "qxl.apiviewer.ui.panels.InfoPanel",
-      "property": "reset"
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>docNode</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #docNode}."
+          }
+        ]
+      }
     },
     "getDocNodeAsync": {
       "type": "function",

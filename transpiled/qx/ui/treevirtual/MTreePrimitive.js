@@ -187,4 +187,4 @@
   qx.ui.treevirtual.MTreePrimitive.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=MTreePrimitive.js.map?dt=1589989553199
+//# sourceMappingURL=MTreePrimitive.js.map?dt=1590153710954

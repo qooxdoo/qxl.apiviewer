@@ -106,4 +106,4 @@
   qx.ui.tree.core.FolderOpenButton.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=FolderOpenButton.js.map?dt=1589989552880
+//# sourceMappingURL=FolderOpenButton.js.map?dt=1590153710696

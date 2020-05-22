@@ -123,4 +123,4 @@
   qx.event.dispatch.Direct.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Direct.js.map?dt=1589989532485
+//# sourceMappingURL=Direct.js.map?dt=1590153692712

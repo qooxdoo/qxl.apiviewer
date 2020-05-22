@@ -193,12 +193,6 @@
             var evt = _obj2.getEvent();
 
             if (evt) {
-              if (_data3.mixin) {
-                var cl = _obj2.getOverriddenFrom(); // TODO: load overridden data
-
-              }
-
-              ;
               var objE = new qxl.apiviewer.dao.Event({
                 location: _obj2.location,
                 name: evt,
@@ -206,7 +200,7 @@
                 jsdoc: {
                   "@description": [{
                     name: "@description",
-                    body: "Fired on change of the property {@link #".concat(_name3, "}")
+                    body: "Fired on change of the property {@link ".concat(_data3.overriddenFrom || "", "#").concat(_name3, " ").concat(_name3, "}")
                   }]
                 }
               }, this);
@@ -725,7 +719,7 @@
 
       /**
        * Get a class item by the item list name and the item name.
-       * Valid item list names aer documented at {@link #getItemList}.
+       * Valid item list names are documented at {@link #getItemList}.
        * .
        * @param listName {String} name of the item list.
        * @param itemName {String} name of the class item.
@@ -874,4 +868,4 @@
   qxl.apiviewer.dao.Class.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Class.js.map?dt=1589989558075
+//# sourceMappingURL=Class.js.map?dt=1590153715063
