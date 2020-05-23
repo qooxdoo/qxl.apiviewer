@@ -19,18 +19,13 @@ jobs:
         uses: microsoft/playwright-github-action@v1
 
       - name: Install NPM Dependencies
-        run: npm install @qooxdoo/compiler playwright --no-save --no-package-lock
+        run: npm install @qooxdoo/compiler --no-save --no-package-lock
 
       - name: Build API Viewer
         run:  npx qx compile --target=build -v --clean
 
       - name: Run Tests
-        run: |
-          (npx qx serve -t=build & ) | while read output; do
-            echo "$output"
-            if [[ $output == *"Web server started"* ]]; then break; fi;
-          done
-          node browser-tests.js
+        run: npx qx test --target=build -v 
 
       - name: Deploy API Viewer
         uses: peaceiris/actions-gh-pages@v3

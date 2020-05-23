@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const assert = require('assert').strict;
 
 qx.Class.define("qxl.apiviewer.RequestUtil", {
   extend: qx.core.Object,
@@ -24,11 +25,15 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
     async load() {
       let command = this.getCompilerApi().getCommand();
       if (command instanceof qx.tool.cli.commands.Compile) {
-        command.addListener("checkEnvironment", e => this._appCompiling(e.getData().application, e.getData().environment));
+        command.addListener("checkEnvironment", e => this.__appCompiling(e.getData().application, e.getData().environment));
       }
+      if (command instanceof qx.tool.cli.commands.Test) {
+        command.addListener("runTests", this.__appTesting, this);
+     }
+
     },
 
-    _appCompiling(application, environment) {
+    __appCompiling(application, environment) {
       let command = this.getCompilerApi().getCommand();
       let maker = command.getMakersForApp(application.getName())[0];
       let analyser = maker.getAnalyser();
@@ -224,7 +229,56 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           });
         });
       });
+    },
+
+
+   // Test application in headless Chrome and Firefox
+   // see https://github.com/microsoft/playwright/blob/master/docs/api.md
+   __appTesting : async function (data) {
+      let result = data.getData?data.getData():{};
+      let nodes = ["Packages", "data", "ui"];
+      let href = `http://localhost:8080/`;
+
+      return new qx.Promise(async (resolve) => {
+        const playwright = this.require('playwright');
+        try {
+          for (const browserType of ['chromium', 'firefox' /*, 'webkit'*/]) {
+            console.info("Running test in " + browserType);
+            const launchArgs = {
+              args: ['--no-sandbox', '--disable-setuid-sandbox']
+            };
+            const browser = await playwright[browserType].launch(launchArgs);
+            const context = await browser.newContext();
+            const page = await context.newPage();
+            page.on("pageerror", exception => {
+              qx.tool.compiler.Console.error("Error on page " + page.url());
+              result.errorCode = 1;
+              resolve();
+            });
+            await page.goto(href);
+            let url = page.url();
+            for (const node of nodes) {
+              qx.tool.compiler.Console.info(` >>> Clicking on node '${node}'`);
+              await page.click(`.qx-main >> text=${node}`);
+              for (let i=0; i<10; i++) {
+                await page.keyboard.press("ArrowDown");
+                await page.waitForTimeout(500);
+                // assert that url hash has changed
+                assert.notEqual(page.url(), url);
+                url = page.url();
+                qx.tool.compiler.Console.log( " - " + url);             }
+            }
+            await browser.close();
+          }
+          resolve();
+        } catch (e) {
+          qx.tool.compiler.Console.error(e);
+          result.errorCode = 1;
+          resolve();
+        }
+      });
     }
+
   }
 });
 
