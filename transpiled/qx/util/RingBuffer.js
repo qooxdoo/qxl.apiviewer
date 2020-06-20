@@ -218,4 +218,4 @@
   qx.util.RingBuffer.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=RingBuffer.js.map?dt=1590225863690
+//# sourceMappingURL=RingBuffer.js.map?dt=1592642684889

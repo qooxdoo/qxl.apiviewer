@@ -854,8 +854,8 @@
         } else {
           try {
             this._setResponse(this._getParsedResponse());
-          } catch (e) {} // ignore if it does not work
-          // A remote error failure
+          } catch (e) {// ignore if it does not work
+          } // A remote error failure
 
 
           if (this.getStatus() !== 0) {
@@ -990,4 +990,4 @@
   qx.io.request.AbstractRequest.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=AbstractRequest.js.map?dt=1590225836865
+//# sourceMappingURL=AbstractRequest.js.map?dt=1592642657577

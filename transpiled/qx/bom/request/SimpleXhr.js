@@ -678,8 +678,8 @@
         } else {
           try {
             this._setResponse(this.__P_62_1.parse(response, contentType));
-          } catch (e) {} // ignore if it does not work
-          // A remote error failure
+          } catch (e) {// ignore if it does not work
+          } // A remote error failure
 
 
           if (this._transport.status !== 0) {
@@ -731,4 +731,4 @@
   qx.bom.request.SimpleXhr.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=SimpleXhr.js.map?dt=1590225826317
+//# sourceMappingURL=SimpleXhr.js.map?dt=1592642646941

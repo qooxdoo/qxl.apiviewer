@@ -184,8 +184,8 @@
           constName = "ICON_CONSTANT";
         } else if (node instanceof dao.ChildControl) {
           constName = "ICON_CHILDCONTROL";
-        } else {} //        throw new Error("Unknown node type: " + (node.type || node.name));
-
+        } else {//        throw new Error("Unknown node type: " + (node.type || node.name));
+        }
         /*
         if (node.attributes.isMixin) {
           constName += "_MIXIN";
@@ -392,4 +392,4 @@
   qxl.apiviewer.TreeUtil.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=TreeUtil.js.map?dt=1590225866120
+//# sourceMappingURL=TreeUtil.js.map?dt=1592642687347

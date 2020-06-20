@@ -139,4 +139,4 @@
   qx.locale.MTranslation.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=MTranslation.js.map?dt=1590225837977
+//# sourceMappingURL=MTranslation.js.map?dt=1592642658781

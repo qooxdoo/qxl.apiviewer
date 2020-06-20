@@ -145,4 +145,4 @@
   qx.bom.NativeHistory.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=NativeHistory.js.map?dt=1590225822352
+//# sourceMappingURL=NativeHistory.js.map?dt=1592642642767

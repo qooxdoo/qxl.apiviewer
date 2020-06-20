@@ -131,4 +131,4 @@
   qx.log.appender.NodeConsole.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=NodeConsole.js.map?dt=1590225838415
+//# sourceMappingURL=NodeConsole.js.map?dt=1592642659199

@@ -844,8 +844,8 @@
                 if (document.selection) {
                   document.selection.empty();
                 }
-              } catch (ex) {} // ignore 'Unknown runtime error'
-              // The unselectable attribute stops focussing as well.
+              } catch (ex) {// ignore 'Unknown runtime error'
+              } // The unselectable attribute stops focussing as well.
               // Do this manually.
 
 
@@ -1201,4 +1201,4 @@
   qx.event.handler.Focus.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Focus.js.map?dt=1590225833165
+//# sourceMappingURL=Focus.js.map?dt=1592642653675

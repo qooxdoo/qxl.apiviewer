@@ -153,4 +153,4 @@
   qx.ui.tree.core.IVirtualTree.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=IVirtualTree.js.map?dt=1590225859429
+//# sourceMappingURL=IVirtualTree.js.map?dt=1592642680245
