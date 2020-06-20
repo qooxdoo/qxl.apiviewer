@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Build, Test and Deploy
 on:
   # run when the master branch is updated
   push:
@@ -8,20 +8,26 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-18.04
-    if: "!contains(github.event.head_commit.message, 'ci skip')"
+    if: "!(github.event.head_commit && contains(github.event.head_commit.message, 'ci skip'))"
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
           persist-credentials: false
 
-      - name: Install
-        run: npm install @qooxdoo/compiler --no-save
+      - name: Install Playwright Dependencies
+        uses: microsoft/playwright-github-action@v1
 
-      - name: Build
+      - name: Install NPM Dependencies
+        run: npm install @qooxdoo/compiler --no-save --no-package-lock
+
+      - name: Build API Viewer
         run:  npx qx compile --target=build -v --clean
 
-      - name: Deploy
+      - name: Run Tests
+        run: npx qx test --target=build -v 
+
+      - name: Deploy API Viewer
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
