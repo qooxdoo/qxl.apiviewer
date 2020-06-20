@@ -28,7 +28,7 @@
         "email": "Henner DOT Kollmann AT gmx DOT de"
       }
     ],
-    "version": "1.0.4",
+    "version": "1.0.5",
     "sourceViewUri": "https://github.com/qooxdoo/apiviewer/blob/%{qxGitBranch}/source/class/%{classFilePath}#L%{lineNumber}"
   },
   "provides": {
@@ -48,8 +48,7 @@
         "excludeFromAPIViewer": [
           "qxl.apiviewer.*"
         ],
-        "includeToAPIViewer": [
-        ]
+        "includeToAPIViewer": []
       },
       "include": [
         "qx.*"
