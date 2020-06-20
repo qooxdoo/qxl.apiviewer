@@ -26,8 +26,11 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
       if (command instanceof qx.tool.cli.commands.Compile) {
         command.addListener("checkEnvironment", e => this.__appCompiling(e.getData().application, e.getData().environment));
       }
+      if (command instanceof qx.tool.cli.commands.Test) {
+        command.addListener("runTests", this.__appTesting, this);
+      }
     },
-    
+
     __appCompiling(application, environment) {
       let className = application.getClassName();
       if (className !== "qxl.apiviewer.Application") {
@@ -98,9 +101,9 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           }
           if (excludeFromAPIViewer) {
             expandClassnames(excludeFromAPIViewer).forEach(name => {
-                 if(!includes.includes(name)) {
-                   delete result[name];
-                 }
+              if (!includes.includes(name)) {
+                delete result[name];
+              }
             });
           }
           return Object.keys(result);
@@ -145,7 +148,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
         //  which the filing system returns the files can cause classes to be loaded in a lightly different sequence;
         //  that would not cause a problem, except that the build is not 100% repeatable.
         let classes = getRequiredClasses();
-		    classes.sort();
+        classes.sort();
         qx.Promise.map(classes, (classname) => {
           let cls;
           try {
@@ -156,7 +159,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           }
           return cls.load().then(async () => {
             let src = cls.getMetaFile();
-            let dest = path.relative(qxl.apiviewer.ClassLoader.getBaseUri() + "/transpiled", src); 
+            let dest = path.relative(qxl.apiviewer.ClassLoader.getBaseUri() + "/transpiled", src);
             dest = path.join(outputDir, dest);
             await qx.tool.utils.files.Utils.copyFile(src, dest);
             if (command.argv.verbose) {
@@ -230,10 +233,59 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           });
         });
       });
+    },
+    // Test application in headless Chrome and Firefox
+    // see https://github.com/microsoft/playwright/blob/master/docs/api.md
+    __appTesting: async function (data) {
+      let result = data.getData ? data.getData() : {};
+      let nodes = ["Packages", "data", "ui"];
+      let href = `http://localhost:8080/`;
+
+      return new qx.Promise(async (resolve) => {
+        const playwright = this.require('playwright');
+        try {
+          for (const browserType of ['chromium', 'firefox' /*, 'webkit'*/]) {
+            console.info("Running test in " + browserType);
+            const launchArgs = {
+              args: ['--no-sandbox', '--disable-setuid-sandbox']
+            };
+            const browser = await playwright[browserType].launch(launchArgs);
+            const context = await browser.newContext();
+            const page = await context.newPage();
+            page.on("pageerror", exception => {
+              qx.tool.compiler.Console.error("Error on page " + page.url());
+              result.errorCode = 1;		  
+// WAIT FOR NEW COMPILER          result.setErrorCode(1);
+              resolve();
+            });
+            await page.goto(href);
+            let url = page.url();
+            for (const node of nodes) {
+              qx.tool.compiler.Console.info(` >>> Clicking on node '${node}'`);
+              await page.click(`.qx-main >> text=${node}`);
+              for (let i = 0; i < 10; i++) {
+                await page.keyboard.press("ArrowDown");
+                await page.waitForTimeout(500);
+                // assert that url hash has changed
+                assert.notEqual(page.url(), url);
+                url = page.url();
+                qx.tool.compiler.Console.log(" - " + url);
+              }
+            }
+            await browser.close();
+          }
+          resolve();
+        } catch (e) {
+          qx.tool.compiler.Console.error(e);
+          result.errorCode = 1;		  
+// WAIT FOR NEW COMPILER          result.setErrorCode(1);
+          resolve();
+        }
+      });
     }
   }
 });
 
 module.exports = {
-    LibraryApi: qxl.apiviewer.compile.LibraryApi
+  LibraryApi: qxl.apiviewer.compile.LibraryApi
 };
