@@ -51,7 +51,7 @@ qx.Class.define("qxl.apiviewer.Controller",
     this._titlePrefix = "API Documentation";
     document.title = this._titlePrefix;
 
-    qxl.apiviewer.ClassLoader.setBaseUri(qx.$$appRoot + "../resource/");
+    qxl.apiviewer.ClassLoader.setBaseUri(`${qx.$$appRoot}../resource/${qxl.apiviewer.ClassLoader.RESOURCEPATH}/`);
 
     this._detailLoader = this._widgetRegistry.getWidgetById("detail_loader");
     this._tabViewController = new qxl.apiviewer.TabViewController(this._widgetRegistry);

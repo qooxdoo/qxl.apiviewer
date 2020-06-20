@@ -26,6 +26,8 @@ qx.Class.define("qxl.apiviewer.ClassLoader", {
 
   statics: {
     __baseUri: null,
+    
+    RESOURCEPATH: null,
 
     setBaseUri: function(baseUri) {
       this.__baseUri = baseUri;
@@ -57,6 +59,10 @@ qx.Class.define("qxl.apiviewer.ClassLoader", {
       var pkg = qxl.apiviewer.dao.Package.getPackage(name);
       return pkg;
     }
+  },
+  defer: function(statics) {
+    statics.RESOURCEPATH = "apidata";
   }
+
 
 });

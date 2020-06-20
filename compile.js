@@ -37,15 +37,11 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
       if (className !== "qxl.apiviewer.Application") {
         return qx.Promise.resolve();
       }
-
       let command = this.getCompilerApi().getCommand();
       let appToScan = environment.buildApiForApp || application.getName();
       let maker = command.getMakersForApp(appToScan)[0];
       let analyser = maker.getAnalyser();
       let target = maker.getTarget();
-
-      let outputDir = command.getMakersForApp(application.getName())[0].getTarget().getOutputDir();
-      outputDir = path.join(outputDir, "resource", "transpiled");
 
       return new qx.Promise(fullfiled => {
         if (command.argv.verbose) {
@@ -63,7 +59,11 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           }
         });
         require(path.join(lib.getRootDir(), lib.getSourcePath(), "qxl/apiviewer/ClassLoader.js"));
-        qxl.apiviewer.ClassLoader.setBaseUri(target.getOutputDir());
+  
+        let outputDir = command.getMakersForApp(application.getName())[0].getTarget().getOutputDir();
+        outputDir = path.join(outputDir, "resource", qxl.apiviewer.ClassLoader.RESOURCEPATH);
+  
+        qxl.apiviewer.ClassLoader.setBaseUri(path.join(target.getOutputDir(), "transpiled") + path.sep);
         let env = environment;
         let excludeFromAPIViewer = env.excludeFromAPIViewer;
         let includeToAPIViewer = env.includeToAPIViewer;
@@ -160,7 +160,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           }
           return cls.load().then(async () => {
             let src = cls.getMetaFile();
-            let dest = path.relative(qxl.apiviewer.ClassLoader.getBaseUri() + "/transpiled", src);
+            let dest = path.relative(qxl.apiviewer.ClassLoader.getBaseUri(), src);
             dest = path.join(outputDir, dest);
             await qx.tool.utils.files.Utils.copyFile(src, dest);
             if (command.argv.verbose) {
@@ -235,6 +235,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
         });
       });
     },
+
     // Test application in headless Chrome and Firefox
     // see https://github.com/microsoft/playwright/blob/master/docs/api.md
     __appTesting: async function (data) {
