@@ -41,7 +41,8 @@
 		},
 		{
 			"type": "build",
-			"outputPath": "compiled/build"
+			"outputPath": "compiled/build",
+			"deployPath": "html"
 		}
 	],
 	"defaultTarget": "source",

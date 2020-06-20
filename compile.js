@@ -1,6 +1,5 @@
 const fs = require("fs");
 const path = require("path");
-const assert = require('assert').strict;
 
 qx.Class.define("qxl.apiviewer.RequestUtil", {
   extend: qx.core.Object,
@@ -22,32 +21,31 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
   extend: qx.tool.cli.api.LibraryApi,
 
   members: {
-    async load() {
+    load() {
       let command = this.getCompilerApi().getCommand();
       if (command instanceof qx.tool.cli.commands.Compile) {
         command.addListener("checkEnvironment", e => this.__appCompiling(e.getData().application, e.getData().environment));
       }
-      if (command instanceof qx.tool.cli.commands.Test) {
-        command.addListener("runTests", this.__appTesting, this);
-     }
-
     },
-
+    
     __appCompiling(application, environment) {
+      let className = application.getClassName();
+      if (className !== "qxl.apiviewer.Application") {
+        return qx.Promise.resolve();
+      }
+
       let command = this.getCompilerApi().getCommand();
-      let maker = command.getMakersForApp(application.getName())[0];
+      let appToScan = environment.buildApiForApp || application.getName();
+      let maker = command.getMakersForApp(appToScan)[0];
       let analyser = maker.getAnalyser();
       let target = maker.getTarget();
 
+      let outputDir = command.getMakersForApp(application.getName())[0].getTarget().getOutputDir();
+      outputDir = path.join(outputDir, "resource", "transpiled");
+
       return new qx.Promise(fullfiled => {
-        let app = application.getName();
-        let className = application.getClassName();
-        if (className !== "qxl.apiviewer.Application") {
-          fullfiled();
-          return;
-        }
         if (command.argv.verbose) {
-          console.log(`start analyse for ${app}`);
+          console.log(`start analyse for ${appToScan}`);
         }
         let lib = analyser.findLibrary("qxl.apiviewer");
         const folder = path.join(lib.getRootDir(), lib.getSourcePath(), "qxl/apiviewer/dao");
@@ -62,7 +60,6 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
         });
         require(path.join(lib.getRootDir(), lib.getSourcePath(), "qxl/apiviewer/ClassLoader.js"));
         qxl.apiviewer.ClassLoader.setBaseUri(target.getOutputDir());
-
         let env = environment;
         let excludeFromAPIViewer = env.excludeFromAPIViewer;
         let includeToAPIViewer = env.includeToAPIViewer;
@@ -157,7 +154,11 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
             console.error(`${e.message}`);
             return;
           }
-          return cls.load().then(() => {
+          return cls.load().then(async () => {
+            let src = cls.getMetaFile();
+            let dest = path.relative(qxl.apiviewer.ClassLoader.getBaseUri() + "/transpiled", src); 
+            dest = path.join(outputDir, dest);
+            await qx.tool.utils.files.Utils.copyFile(src, dest);
             if (command.argv.verbose) {
               console.log(`analyse ${cls.getName()}`);
             }
@@ -203,10 +204,10 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           }
           env.apiviewer.classes.sort();
           let libs = analyser.getLibraries();
-          qx.Promise.map(libs, (lib) => {
+          qx.Promise.map(libs, async (lib) => {
             const src = path.join(lib.getRootDir(), lib.getSourcePath());
-            const dest = path.join(target.getOutputDir(), "transpiled");
-            walkSync(src, (file) => {
+            const dest = outputDir;
+            walkSync(src, async (file) => {
               if (path.basename(file) === "__init__.js") {
                 let d = path.join(dest, path.dirname(path.relative(src, file)));
                 if (fs.existsSync(d)) {
@@ -229,56 +230,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           });
         });
       });
-    },
-
-
-   // Test application in headless Chrome and Firefox
-   // see https://github.com/microsoft/playwright/blob/master/docs/api.md
-   __appTesting : async function (data) {
-      let result = data.getData?data.getData():{};
-      let nodes = ["Packages", "data", "ui"];
-      let href = `http://localhost:8080/`;
-
-      return new qx.Promise(async (resolve) => {
-        const playwright = this.require('playwright');
-        try {
-          for (const browserType of ['chromium', 'firefox' /*, 'webkit'*/]) {
-            console.info("Running test in " + browserType);
-            const launchArgs = {
-              args: ['--no-sandbox', '--disable-setuid-sandbox']
-            };
-            const browser = await playwright[browserType].launch(launchArgs);
-            const context = await browser.newContext();
-            const page = await context.newPage();
-            page.on("pageerror", exception => {
-              qx.tool.compiler.Console.error("Error on page " + page.url());
-              result.errorCode = 1;
-              resolve();
-            });
-            await page.goto(href);
-            let url = page.url();
-            for (const node of nodes) {
-              qx.tool.compiler.Console.info(` >>> Clicking on node '${node}'`);
-              await page.click(`.qx-main >> text=${node}`);
-              for (let i=0; i<10; i++) {
-                await page.keyboard.press("ArrowDown");
-                await page.waitForTimeout(500);
-                // assert that url hash has changed
-                assert.notEqual(page.url(), url);
-                url = page.url();
-                qx.tool.compiler.Console.log( " - " + url);             }
-            }
-            await browser.close();
-          }
-          resolve();
-        } catch (e) {
-          qx.tool.compiler.Console.error(e);
-          result.errorCode = 1;
-          resolve();
-        }
-      });
     }
-
   }
 });
 

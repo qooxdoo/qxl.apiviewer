@@ -56,6 +56,15 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
     _loadingPromise: null,
     _loaded: false,
 
+    __url: null,
+
+    /**
+     * retrieves the meta file name + path
+     */
+    getMetaFile: function() {
+       return this.__url;
+    },
+
     /**
      * Loads the class
      *
@@ -66,7 +75,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
         return this._loadingPromise;
       }
 
-      var url = qxl.apiviewer.ClassLoader.getBaseUri() + "/transpiled/" + this._className.replace(/\./g, "/") + ".json";
+      var url = this.__url = qxl.apiviewer.ClassLoader.getBaseUri() + "transpiled/" + this._className.replace(/\./g, "/") + ".json";
       return this._loadingPromise = qxl.apiviewer.RequestUtil.get(url)
         .then(content => {
           /* eslint-disable-next-line no-eval */
