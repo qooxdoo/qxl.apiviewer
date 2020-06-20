@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const assert = require('assert').strict;
 
 qx.Class.define("qxl.apiviewer.RequestUtil", {
   extend: qx.core.Object,
