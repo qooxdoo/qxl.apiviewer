@@ -1,61 +1,60 @@
 {
   "$schema": "https://qooxdoo.org/schema/compile-1-0-0.json",
-	"environment": {
-		"qx.icontheme": "Tango",
-		"excludeFromAPIViewer": [
-			"qxl.*",
-			"q.*"
-		]
-	},
-	"applications": [
-		{
-			"class": "qxl.apiviewer.Application",
-			"theme": "qxl.apiviewer.Theme",
-			"name": "apiviewer",
-			"title": "Qooxdoo API Viewer",
-			"bootPath": "source/boot"
-		}
-	],
-	"include": [
-		"qx.*",
-		"q",
-		"qxWeb"
-	],
-	"exclude": [
-		"qx.test.*",
-		"qx.module.Blocker",
-		"qx.module.Placement"
-	],
-	"targets": [
-		{
-			"type": "source",
-			"outputPath": "compiled/source",
-			"bundle": {
-				"include": [
-					"qx.*"
-				]
-			},
-			"babelOptions": {
-				"targets": "edge >=18, chrome >= 73, firefox >= 66"
-			}
-		},
-		{
-			"type": "build",
-			"outputPath": "compiled/build",
-			"deployPath": "html"
-		}
-	],
-	"defaultTarget": "source",
-	"locales": [
-		"en"
-	],
-	"serve": {
-		"listenPort": 8080
-	},
-    "eslintConfig": {
-        "parserOptions": {
-            "ecmaVersion": 2018
-        }
+  "environment": {
+    "qx.icontheme": "Tango",
+    "qxl.apiviewer.exclude": [
+      "qxl.*",
+      "q.*"
+    ]
+  },
+  "applications": [
+    {
+      "class": "qxl.apiviewer.Application",
+      "theme": "qxl.apiviewer.Theme",
+      "name": "apiviewer",
+      "title": "Qooxdoo API Viewer",
+      "bootPath": "source/boot"
     }
-	
+  ],
+  "include": [
+    "qx.*",
+    "q",
+    "qxWeb"
+  ],
+  "exclude": [
+    "qx.test.*",
+    "qx.module.Blocker",
+    "qx.module.Placement"
+  ],
+  "targets": [
+    {
+      "type": "source",
+      "outputPath": "compiled/source",
+      "bundle": {
+        "include": [
+          "qx.*"
+        ]
+      },
+      "babelOptions": {
+        "targets": "edge >=18, chrome >= 73, firefox >= 66"
+      }
+    },
+    {
+      "type": "build",
+      "outputPath": "compiled/build",
+      "deployPath": "html"
+    }
+  ],
+  "defaultTarget": "source",
+  "locales": [
+    "en"
+  ],
+  "serve": {
+    "listenPort": 8080
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 2018
+    }
+  }
 }
