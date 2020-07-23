@@ -44,11 +44,11 @@
       "title": "Qooxdoo API Viewer",
       "environment": {
         "qx.icontheme": "Tango",
-        "buildApiForApp": "",
-        "excludeFromAPIViewer": [
+        "qxl.apiviewer.applicationName": "",
+        "qxl.apiviewer.exclude": [
           "qxl.apiviewer.*"
         ],
-        "includeToAPIViewer": []
+        "qxl.apiviewer.include": []
       },
       "include": [
         "qx.*"

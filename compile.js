@@ -39,7 +39,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
         return qx.Promise.resolve();
       }
       let command = this.getCompilerApi().getCommand();
-      let appToScan = environment.buildApiForApp || application.getName();
+      let appToScan = environment.buildApiForApp || environment["qxl.apiviewer.applicationName"] || application.getName();
       let maker = command.getMakersForApp(appToScan)[0];
       let analyser = maker.getAnalyser();
       let target = maker.getTarget();
@@ -60,14 +60,14 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           }
         });
         require(path.join(lib.getRootDir(), lib.getSourcePath(), "qxl/apiviewer/ClassLoader.js"));
-  
+
         let outputDir = command.getMakersForApp(application.getName())[0].getTarget().getOutputDir();
         outputDir = path.join(outputDir, "resource", qxl.apiviewer.ClassLoader.RESOURCEPATH);
-  
+
         qxl.apiviewer.ClassLoader.setBaseUri(path.join(target.getOutputDir(), "transpiled") + path.sep);
         let env = environment;
-        let excludeFromAPIViewer = env.excludeFromAPIViewer;
-        let includeToAPIViewer = env.includeToAPIViewer;
+        let excludeFromAPIViewer = env.excludeFromAPIViewer || env["qxl.apiviewer.exclude"];
+        let includeToAPIViewer = env.includeToAPIViewer || env["qxl.apiviewer.include"];
         let classInfo = analyser.getDatabase().classInfo;
 
         function expandClassnames(names) {
@@ -83,7 +83,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
               result[name] = true;
             } else {
               let prefix = name.substring(0, pos);
-              for (let classname in classInfo) {
+              for (let classname of Object.getOwnPropertyNames(classInfo)) {
                 if (classname.startsWith(prefix))
                   result[classname] = true;
               }
@@ -94,7 +94,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
 
         function getRequiredClasses() {
           let result = {};
-          for (let classname in classInfo) {
+          for (let classname of Object.getOwnPropertyNames(classInfo)) {
             result[classname] = true;
           }
           let includes = [];
@@ -257,7 +257,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
             const page = await context.newPage();
             page.on("pageerror", exception => {
               qx.tool.compiler.Console.error("Error on page " + page.url());
-              result.errorCode = 1;		  
+              result.errorCode = 1;
 // WAIT FOR NEW COMPILER          result.setErrorCode(1);
               resolve();
             });
@@ -280,7 +280,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           resolve();
         } catch (e) {
           qx.tool.compiler.Console.error(e);
-          result.errorCode = 1;		  
+          result.errorCode = 1;
 // WAIT FOR NEW COMPILER          result.setErrorCode(1);
           resolve();
         }
