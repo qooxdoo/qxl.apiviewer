@@ -29,7 +29,9 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
       }
       if (command instanceof qx.tool.cli.commands.Test) {
         command.addListener("runTests", this.__appTesting, this);
-        command.setNeedsServer(true);
+        if (command.setNeedsServer) {
+          command.setNeedsServer(true);
+        }
       }
     },
 
