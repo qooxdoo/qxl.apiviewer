@@ -23,12 +23,13 @@ qx.Class.define("qxl.apiviewer.compile.CompilerApi", {
 
   members: {
     async load() {
-      this.addListener("changeCommand", () => {
+      this.addListener("changeCommand", function () {
         let command = this.getCommand();
         if (command instanceof qx.tool.cli.commands.Test) {
           command.addListener("runTests", this.__appTesting, this);
+          command.setNeedsServer(true);
         }
-      });
+      }, this);
       return this.base(arguments);
     },
 
@@ -39,7 +40,7 @@ qx.Class.define("qxl.apiviewer.compile.CompilerApi", {
       let nodes = ["Packages", "data", "ui"];
       let href = `http://localhost:8080/`;
 
-      return new qx.Promise(async (resolve) => {
+      return new qx.Promise(async function (resolve) {
         const playwright = this.require('playwright');
         try {
           for (const browserType of ['chromium', 'firefox' /*, 'webkit'*/]) {
@@ -52,8 +53,12 @@ qx.Class.define("qxl.apiviewer.compile.CompilerApi", {
             const page = await context.newPage();
             page.on("pageerror", exception => {
               qx.tool.compiler.Console.error("Error on page " + page.url());
-              result.errorCode = 1;
-              // WAIT FOR NEW COMPILER          result.setErrorCode(1);
+              if (result.setErrorCode) {
+                result.setErrorCode(1);
+              } else {
+                // wait for new compiler
+                result.errorCode = 1;
+              }
               resolve();
             });
             await page.goto(href);
@@ -75,11 +80,15 @@ qx.Class.define("qxl.apiviewer.compile.CompilerApi", {
           resolve();
         } catch (e) {
           qx.tool.compiler.Console.error(e);
-          result.errorCode = 1;
-          // WAIT FOR NEW COMPILER          result.setErrorCode(1);
+          if (result.setErrorCode) {
+            result.setErrorCode(1);
+          } else {
+            // wait for new compiler
+            result.errorCode = 1;
+          }
           resolve();
         }
-      });
+      }, this);
     }
   }
 });
@@ -88,11 +97,12 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
   extend: qx.tool.cli.api.LibraryApi,
 
   members: {
-    load() {
+    async load() {
       let command = this.getCompilerApi().getCommand();
       if (command instanceof qx.tool.cli.commands.Compile) {
         command.addListener("checkEnvironment", e => this.__appCompiling(e.getData().application, e.getData().environment));
       }
+      return this.base(arguments);
     },
 
     __appCompiling(application, environment) {
