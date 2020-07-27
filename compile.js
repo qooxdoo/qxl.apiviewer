@@ -107,38 +107,20 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
       return this.base(arguments);
     },
 
-    __appCompiling(application, environment) {
-      let className = application.getClassName();
-      if (className !== "qxl.apiviewer.Application") {
-        return qx.Promise.resolve();
-      }
-      let command = this.getCompilerApi().getCommand();
-      let appToScan = environment.buildApiForApp || environment["qxl.apiviewer.applicationName"] || application.getName();
-      let maker = command.getMakersForApp(appToScan)[0];
-      let analyser = maker.getAnalyser();
-      let target = maker.getTarget();
 
+    __scanApp(appToScan, outputDir, environment) {
       return new qx.Promise(fullfiled => {
+        let command = this.getCompilerApi().getCommand();
         if (command.argv.verbose) {
           console.log(`start analyse for ${appToScan}`);
         }
-        let lib = analyser.findLibrary("qxl.apiviewer");
-        const folder = path.join(lib.getRootDir(), lib.getSourcePath(), "qxl/apiviewer/dao");
-        // preload depend classes
-        require(path.join(folder, "Node.js"));
-        require(path.join(folder, "ClassItem.js"));
-        // load the rest
-        fs.readdirSync(folder).forEach(file => {
-          if (path.extname(file) === ".js") {
-            require(path.join(folder, file));
-          }
-        });
-        require(path.join(lib.getRootDir(), lib.getSourcePath(), "qxl/apiviewer/ClassLoader.js"));
-
-        let outputDir = command.getMakersForApp(application.getName())[0].getTarget().getOutputDir();
-        outputDir = path.join(outputDir, "resource", qxl.apiviewer.ClassLoader.RESOURCEPATH);
-
-        qxl.apiviewer.ClassLoader.setBaseUri(path.join(target.getOutputDir(), "transpiled") + path.sep);
+        let maker = command.getMakersForApp(appToScan)[0];
+        let analyser = maker.getAnalyser();
+        let target = maker.getTarget();
+        let outDir = target.getOutputDir();
+        qxl.apiviewer.ClassLoader.setBaseUri(path.join(outDir, "transpiled") + path.sep);
+  
+  
         let env = environment;
         let excludeFromAPIViewer = env.excludeFromAPIViewer || env["qxl.apiviewer.exclude"];
         let includeToAPIViewer = env.includeToAPIViewer || env["qxl.apiviewer.include"];
@@ -199,13 +181,6 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           });
         }
 
-        env.apiviewer = {};
-        env.apiviewer.classes = [];
-        env.apiviewer.apiindex = {};
-        env.apiviewer.apiindex.fullNames = [];
-        env.apiviewer.apiindex.index = {};
-        env.apiviewer.apiindex.types = ["doctree", "package", "class", "method_pub", "method_prot", "event", "property_pub", "method_priv", "method_intl", "constant", "childControl"];
-
         const TYPES = {
           "class": 1,
           "mixin": 1,
@@ -231,6 +206,9 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
             cls = qxl.apiviewer.dao.Class.getClassByName(classname, true);
           } catch (e) {
             console.error(`${e.message}`);
+            return;
+          }
+          if (cls.isLoaded()) {
             return;
           }
           return cls.load().then(async () => {
@@ -281,7 +259,6 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           if (command.argv.verbose) {
             console.log(`analysing done`);
           }
-          env.apiviewer.classes.sort();
           let libs = analyser.getLibraries();
           qx.Promise.map(libs, async (lib) => {
             const src = path.join(lib.getRootDir(), lib.getSourcePath());
@@ -309,6 +286,54 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           });
         });
       });
+    },
+
+    async __appCompiling(application, environment) {
+      let className = application.getClassName();
+      if (className !== "qxl.apiviewer.Application") {
+        return qx.Promise.resolve();
+      }
+
+      let command = this.getCompilerApi().getCommand();
+      let maker = command.getMakersForApp(application.getName())[0];
+      let analyser = maker.getAnalyser();
+      let target = maker.getTarget();
+      let lib = analyser.findLibrary("qxl.apiviewer");
+      const folder = path.join(lib.getRootDir(), lib.getSourcePath(), "qxl/apiviewer/dao");
+      // preload depend classes
+      require(path.join(folder, "Node.js"));
+      require(path.join(folder, "ClassItem.js"));
+      // load the rest
+      fs.readdirSync(folder).forEach(file => {
+        if (path.extname(file) === ".js") {
+          require(path.join(folder, file));
+        }
+      });
+      require(path.join(lib.getRootDir(), lib.getSourcePath(), "qxl/apiviewer/ClassLoader.js"));
+      let outputDir = target.getOutputDir();
+      outputDir = path.join(outputDir, "resource", qxl.apiviewer.ClassLoader.RESOURCEPATH);
+
+      environment.apiviewer = {};
+      environment.apiviewer.classes = [];
+      environment.apiviewer.apiindex = {};
+      environment.apiviewer.apiindex.fullNames = [];
+      environment.apiviewer.apiindex.index = {};
+      environment.apiviewer.apiindex.types = ["doctree", "package", "class", "method_pub", "method_prot", "event", "property_pub", "method_priv", "method_intl", "constant", "childControl"];
+
+    let appsToScan = environment["qxl.apiviewer.applications"] || [];
+      if (appsToScan.length === 0) {
+        let appToScan = environment.buildApiForApp || environment["qxl.apiviewer.applicationName"] || "";
+        if (appToScan) {
+          appsToScan.push(appToScan);
+        }
+      }
+      if (appsToScan.length === 0) {
+        appsToScan.push(application.getName());
+      }
+      for (let i = 0; i < appsToScan.length; i++) {
+        await this.__scanApp(appsToScan[i], outputDir, environment);
+      }
+      environment.apiviewer.classes.sort();
     }
   }
 });

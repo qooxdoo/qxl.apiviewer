@@ -25,6 +25,8 @@ map in `compile.json`:
 
 ```json5
   "environment": {
+    // list of applications to scan
+    "qxl.apiviewer.applications": [],
     // name of app for which to create the API Viewer, defaults to first application
     "qxl.apiviewer.applicationName": "",
     // array of classes which should be excluded
