@@ -27,7 +27,9 @@ qx.Class.define("qxl.apiviewer.compile.CompilerApi", {
         let command = this.getCommand();
         if (command instanceof qx.tool.cli.commands.Test) {
           command.addListener("runTests", this.__appTesting, this);
-          command.setNeedsServer(true);
+          if (command.setNeedsServer) {
+            command.setNeedsServer(true);
+          }
         }
       }, this);
       return this.base(arguments);
