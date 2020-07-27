@@ -105,13 +105,9 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
       return this.base(arguments);
     },
 
-    __appCompiling(application, environment) {
-      let className = application.getClassName();
-      if (className !== "qxl.apiviewer.Application") {
-        return qx.Promise.resolve();
-      }
+
+    __scanApp(appToScan, application, environment) {
       let command = this.getCompilerApi().getCommand();
-      let appToScan = environment.buildApiForApp || environment["qxl.apiviewer.applicationName"] || application.getName();
       let maker = command.getMakersForApp(appToScan)[0];
       let analyser = maker.getAnalyser();
       let target = maker.getTarget();
@@ -197,13 +193,6 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           });
         }
 
-        env.apiviewer = {};
-        env.apiviewer.classes = [];
-        env.apiviewer.apiindex = {};
-        env.apiviewer.apiindex.fullNames = [];
-        env.apiviewer.apiindex.index = {};
-        env.apiviewer.apiindex.types = ["doctree", "package", "class", "method_pub", "method_prot", "event", "property_pub", "method_priv", "method_intl", "constant", "childControl"];
-
         const TYPES = {
           "class": 1,
           "mixin": 1,
@@ -279,7 +268,6 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           if (command.argv.verbose) {
             console.log(`analysing done`);
           }
-          env.apiviewer.classes.sort();
           let libs = analyser.getLibraries();
           qx.Promise.map(libs, async (lib) => {
             const src = path.join(lib.getRootDir(), lib.getSourcePath());
@@ -307,6 +295,32 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           });
         });
       });
+    },
+
+    async __appCompiling(application, environment) {
+      let className = application.getClassName();
+      if (className !== "qxl.apiviewer.Application") {
+        return qx.Promise.resolve();
+      }
+      environment.apiviewer = {};
+      environment.apiviewer.classes = [];
+      environment.apiviewer.apiindex = {};
+      environment.apiviewer.apiindex.fullNames = [];
+      environment.apiviewer.apiindex.index = {};
+      environment.apiviewer.apiindex.types = ["doctree", "package", "class", "method_pub", "method_prot", "event", "property_pub", "method_priv", "method_intl", "constant", "childControl"];
+      let appsToScan = environment["qxl.apiviewer.applications"] || [];
+      if (appsToScan.length === 0) {
+        let appToScan = environment.buildApiForApp || environment["qxl.apiviewer.applicationName"] || "";
+        if (appToScan) {
+          appsToScan.push(appToScan);
+        }
+      }
+      if (appsToScan.length === 0) {
+        appsToScan.push(application.getName());
+      }
+      let apps = appsToScan.map(app => this.__scanApp(app, application, environment));
+      Promise.all(apps);
+      environment.apiviewer.classes.sort();
     }
   }
 });
