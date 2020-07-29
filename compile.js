@@ -54,7 +54,7 @@ qx.Class.define("qxl.apiviewer.compile.CompilerApi", {
             const context = await browser.newContext();
             const page = await context.newPage();
             page.on("pageerror", exception => {
-              qx.tool.compiler.Console.error("Error on page " + page.url());
+              qx.tool.compiler.Console.error(`Error on page ${page.url()}: ${exception}`);
               if (result.setErrorCode) {
                 result.setErrorCode(1);
               } else {
