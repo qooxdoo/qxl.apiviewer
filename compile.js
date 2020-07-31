@@ -43,8 +43,8 @@ qx.Class.define("qxl.apiviewer.compile.CompilerApi", {
       let href = `http://localhost:8080/`;
 
       return new qx.Promise(async function (resolve) {
-        const playwright = this.require('playwright');
         try {
+          const playwright = this.require('playwright');
           for (const browserType of ['chromium', 'firefox' /*, 'webkit'*/]) {
             console.info("Running test in " + browserType);
             const launchArgs = {
@@ -55,11 +55,11 @@ qx.Class.define("qxl.apiviewer.compile.CompilerApi", {
             const page = await context.newPage();
             page.on("pageerror", exception => {
               qx.tool.compiler.Console.error(`Error on page ${page.url()}: ${exception}`);
-              if (result.setErrorCode) {
-                result.setErrorCode(1);
+              if (result.setExitCode) {
+                result.setExitCode(1);
               } else {
                 // wait for new compiler
-                result.errorCode = 1;
+                result.exitCode = 1;
               }
               resolve();
             });
@@ -82,11 +82,11 @@ qx.Class.define("qxl.apiviewer.compile.CompilerApi", {
           resolve();
         } catch (e) {
           qx.tool.compiler.Console.error(e);
-          if (result.setErrorCode) {
-            result.setErrorCode(1);
+          if (result.setExitCode) {
+            result.setExitCode(1);
           } else {
             // wait for new compiler
-            result.errorCode = 1;
+            result.exitCode = 1;
           }
           resolve();
         }
