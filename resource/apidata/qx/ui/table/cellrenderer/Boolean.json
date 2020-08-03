@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 201,
+        "line": 192,
         "column": 3
       }
     },
@@ -230,62 +230,14 @@
         "iconFalse"
       ]
     },
-    "_insetY": {
-      "location": {
-        "start": {
-          "line": 123,
-          "column": 4
-        },
-        "end": {
-          "line": 123,
-          "column": 15
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>overridden</p>"
-          }
-        ]
-      },
-      "type": "variable",
-      "access": "protected"
-    },
-    "_getCellStyle": {
-      "location": {
-        "start": {
-          "line": 126,
-          "column": 4
-        },
-        "end": {
-          "line": 128,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>overridden</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected",
-      "overriddenFrom": "qx.ui.table.cellrenderer.Abstract",
-      "appearsIn": [
-        "qx.ui.table.cellrenderer.Abstract"
-      ]
-    },
     "_identifyImage": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 123,
           "column": 4
         },
         "end": {
-          "line": 183,
+          "line": 174,
           "column": 5
         }
       },
@@ -712,11 +664,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 192,
+        "line": 183,
         "column": 13
       },
       "end": {
-        "line": 200,
+        "line": 191,
         "column": 3
       }
     },

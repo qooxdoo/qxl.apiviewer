@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 896,
+        "line": 905,
         "column": 3
       }
     },
@@ -38,7 +38,7 @@
         "column": 14
       },
       "end": {
-        "line": 223,
+        "line": 226,
         "column": 3
       }
     },
@@ -80,11 +80,11 @@
     "treeOpenWithContent": {
       "location": {
         "start": {
-          "line": 243,
+          "line": 246,
           "column": 4
         },
         "end": {
-          "line": 243,
+          "line": 246,
           "column": 48
         }
       },
@@ -102,11 +102,11 @@
     "treeOpenWhileEmpty": {
       "location": {
         "start": {
-          "line": 252,
+          "line": 255,
           "column": 4
         },
         "end": {
-          "line": 252,
+          "line": 255,
           "column": 48
         }
       },
@@ -124,11 +124,11 @@
     "treeClose": {
       "location": {
         "start": {
-          "line": 261,
+          "line": 264,
           "column": 4
         },
         "end": {
-          "line": 261,
+          "line": 264,
           "column": 48
         }
       },
@@ -146,11 +146,11 @@
     "changeSelection": {
       "location": {
         "start": {
-          "line": 270,
+          "line": 273,
           "column": 4
         },
         "end": {
-          "line": 270,
+          "line": 273,
           "column": 48
         }
       },
@@ -170,11 +170,11 @@
     "SelectionMode": {
       "location": {
         "start": {
-          "line": 302,
+          "line": 305,
           "column": 4
         },
         "end": {
-          "line": 314,
+          "line": 317,
           "column": 5
         }
       },
@@ -194,11 +194,11 @@
     "openCloseClickSelectsRow": {
       "location": {
         "start": {
-          "line": 332,
+          "line": 335,
           "column": 4
         },
         "end": {
-          "line": 336,
+          "line": 339,
           "column": 5
         }
       },
@@ -219,11 +219,11 @@
     "appearance": {
       "location": {
         "start": {
-          "line": 338,
+          "line": 341,
           "column": 4
         },
         "end": {
-          "line": 342,
+          "line": 345,
           "column": 5
         }
       },
@@ -237,17 +237,34 @@
         "qx.ui.table.Table": "class",
         "qx.ui.core.Widget": "class"
       }
+    },
+    "allowNodeEdit": {
+      "location": {
+        "start": {
+          "line": 347,
+          "column": 4
+        },
+        "end": {
+          "line": 351,
+          "column": 5
+        }
+      },
+      "name": "allowNodeEdit",
+      "propertyType": "new",
+      "init": false,
+      "check": "Boolean",
+      "defaultValue": false
     }
   },
   "members": {
     "getDataModel": {
       "location": {
         "start": {
-          "line": 361,
+          "line": 370,
           "column": 4
         },
         "end": {
-          "line": 364,
+          "line": 373,
           "column": 5
         }
       },
@@ -273,11 +290,11 @@
     "setUseTreeLines": {
       "location": {
         "start": {
-          "line": 378,
+          "line": 387,
           "column": 4
         },
         "end": {
-          "line": 398,
+          "line": 407,
           "column": 5
         }
       },
@@ -304,11 +321,11 @@
     "getUseTreeLines": {
       "location": {
         "start": {
-          "line": 408,
+          "line": 417,
           "column": 4
         },
         "end": {
-          "line": 413,
+          "line": 422,
           "column": 5
         }
       },
@@ -334,11 +351,11 @@
     "setAlwaysShowOpenCloseSymbol": {
       "location": {
         "start": {
-          "line": 425,
+          "line": 434,
           "column": 4
         },
         "end": {
-          "line": 445,
+          "line": 454,
           "column": 5
         }
       },
@@ -365,11 +382,11 @@
     "setExcludeFirstLevelTreeLines": {
       "location": {
         "start": {
-          "line": 457,
+          "line": 466,
           "column": 4
         },
         "end": {
-          "line": 477,
+          "line": 486,
           "column": 5
         }
       },
@@ -396,11 +413,11 @@
     "getExcludeFirstLevelTreeLines": {
       "location": {
         "start": {
-          "line": 489,
+          "line": 498,
           "column": 4
         },
         "end": {
-          "line": 494,
+          "line": 503,
           "column": 5
         }
       },
@@ -426,11 +443,11 @@
     "getAlwaysShowOpenCloseSymbol": {
       "location": {
         "start": {
-          "line": 505,
+          "line": 514,
           "column": 4
         },
         "end": {
-          "line": 510,
+          "line": 519,
           "column": 5
         }
       },
@@ -456,11 +473,11 @@
     "setSelectionMode": {
       "location": {
         "start": {
-          "line": 533,
+          "line": 542,
           "column": 4
         },
         "end": {
-          "line": 536,
+          "line": 545,
           "column": 5
         }
       },
@@ -487,11 +504,11 @@
     "getSelectionMode": {
       "location": {
         "start": {
-          "line": 545,
+          "line": 554,
           "column": 4
         },
         "end": {
-          "line": 548,
+          "line": 557,
           "column": 5
         }
       },
@@ -517,11 +534,11 @@
     "getHierarchy": {
       "location": {
         "start": {
-          "line": 568,
+          "line": 577,
           "column": 4
         },
         "end": {
-          "line": 610,
+          "line": 619,
           "column": 5
         }
       },
@@ -559,11 +576,11 @@
     "getSelectedNodes": {
       "location": {
         "start": {
-          "line": 619,
+          "line": 628,
           "column": 4
         },
         "end": {
-          "line": 622,
+          "line": 631,
           "column": 5
         }
       },
@@ -589,11 +606,11 @@
     "_onKeyPress": {
       "location": {
         "start": {
-          "line": 635,
+          "line": 644,
           "column": 4
         },
         "end": {
-          "line": 809,
+          "line": 818,
           "column": 5
         }
       },
@@ -624,11 +641,11 @@
     "_onSelectionChanged": {
       "location": {
         "start": {
-          "line": 819,
+          "line": 828,
           "column": 4
         },
         "end": {
-          "line": 836,
+          "line": 845,
           "column": 5
         }
       },
@@ -659,11 +676,11 @@
     "_calculateSelectedNodes": {
       "location": {
         "start": {
-          "line": 851,
+          "line": 860,
           "column": 4
         },
         "end": {
-          "line": 874,
+          "line": 883,
           "column": 5
         }
       },
@@ -689,11 +706,11 @@
     "setOverflow": {
       "location": {
         "start": {
-          "line": 887,
+          "line": 896,
           "column": 4
         },
         "end": {
-          "line": 894,
+          "line": 903,
           "column": 5
         }
       },
@@ -6341,6 +6358,100 @@
         ]
       }
     },
+    "getResetSelectionOnTapBelowRows": {
+      "type": "function",
+      "name": "getResetSelectionOnTapBelowRows",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.ui.table.Table",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>resetSelectionOnTapBelowRows</code>.\n\nFor further details take a look at the property definition: {@link #resetSelectionOnTapBelowRows}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "Boolean",
+            "desc": "Returns the value for resetSelectionOnTapBelowRows"
+          }
+        ]
+      }
+    },
+    "isResetSelectionOnTapBelowRows": {
+      "type": "function",
+      "name": "isResetSelectionOnTapBelowRows",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.ui.table.Table",
+      "property": "is",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>resetSelectionOnTapBelowRows</code>.\n\nFor further details take a look at the property definition: {@link #resetSelectionOnTapBelowRows}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "Boolean",
+            "desc": "Returns the value for resetSelectionOnTapBelowRows"
+          }
+        ]
+      }
+    },
+    "setResetSelectionOnTapBelowRows": {
+      "type": "function",
+      "name": "setResetSelectionOnTapBelowRows",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.ui.table.Table",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>resetSelectionOnTapBelowRows</code>.\n\nFor further details take a look at the property definition: {@link #resetSelectionOnTapBelowRows}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "Boolean",
+            "paramName": "value",
+            "desc": "Value for resetSelectionOnTapBelowRows"
+          }
+        ]
+      }
+    },
+    "resetResetSelectionOnTapBelowRows": {
+      "type": "function",
+      "name": "resetResetSelectionOnTapBelowRows",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.ui.table.Table",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>resetSelectionOnTapBelowRows</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #resetSelectionOnTapBelowRows}."
+          }
+        ]
+      }
+    },
     "getDataRowRenderer": {
       "type": "function",
       "name": "getDataRowRenderer",
@@ -7211,6 +7322,96 @@
           {
             "name": "@description",
             "body": "Resets the user value of the property <code>openCloseClickSelectsRow</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #openCloseClickSelectsRow}."
+          }
+        ]
+      }
+    },
+    "getAllowNodeEdit": {
+      "type": "function",
+      "name": "getAllowNodeEdit",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>allowNodeEdit</code>.\n\nFor further details take a look at the property definition: {@link #allowNodeEdit}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "Boolean",
+            "desc": "Returns the value for allowNodeEdit"
+          }
+        ]
+      }
+    },
+    "isAllowNodeEdit": {
+      "type": "function",
+      "name": "isAllowNodeEdit",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "is",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>allowNodeEdit</code>.\n\nFor further details take a look at the property definition: {@link #allowNodeEdit}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "Boolean",
+            "desc": "Returns the value for allowNodeEdit"
+          }
+        ]
+      }
+    },
+    "setAllowNodeEdit": {
+      "type": "function",
+      "name": "setAllowNodeEdit",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>allowNodeEdit</code>.\n\nFor further details take a look at the property definition: {@link #allowNodeEdit}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "Boolean",
+            "paramName": "value",
+            "desc": "Value for allowNodeEdit"
+          }
+        ]
+      }
+    },
+    "resetAllowNodeEdit": {
+      "type": "function",
+      "name": "resetAllowNodeEdit",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>allowNodeEdit</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #allowNodeEdit}."
           }
         ]
       }

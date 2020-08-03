@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 102,
+        "line": 141,
         "column": 3
       }
     },
@@ -173,16 +173,68 @@
       },
       "type": "function",
       "access": "public"
+    },
+    "assign": {
+      "location": {
+        "start": {
+          "line": 96,
+          "column": 4
+        },
+        "end": {
+          "line": 117,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Copies all enumerable own properties from one or more source objects to a target object..\n <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign\">MDN web docs: Object.assign()</a></p>"
+          }
+        ],
+        "@signature": [
+          {
+            "name": "@signature",
+            "body": "function(target,varArgs)"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "target {Object} The target object - what to apply the sources’ properties to, which is returned after it is modified.",
+            "paramName": "target",
+            "description": " The target object - what to apply the sources’ properties to, which is returned after it is modified.",
+            "type": "qx.lang.normalize.Object"
+          },
+          {
+            "name": "@param",
+            "body": "sources {Object} The source object(s) - objects containing the properties you want to apply.",
+            "paramName": "sources",
+            "description": " The source object(s) - objects containing the properties you want to apply.",
+            "type": "qx.lang.normalize.Object"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Object} The target object.",
+            "type": "qx.lang.normalize.Object",
+            "description": " The target object."
+          }
+        ]
+      },
+      "type": "function",
+      "access": "public"
     }
   },
   "defer": {
     "location": {
       "start": {
-        "line": 86,
+        "line": 120,
         "column": 10
       },
       "end": {
-        "line": 101,
+        "line": 140,
         "column": 3
       }
     },

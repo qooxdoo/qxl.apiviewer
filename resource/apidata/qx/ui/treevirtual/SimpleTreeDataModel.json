@@ -11,11 +11,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 86,
+        "line": 87,
         "column": 0
       },
       "end": {
-        "line": 1211,
+        "line": 1213,
         "column": 3
       }
     },
@@ -27,7 +27,7 @@
         },
         {
           "name": "@description",
-          "body": "<p>A simple tree data model used as the table model\n The object structure of a single node of the tree is:\n </p>\n<pre class='javascript'>\n {\n\n\n   type           : qx.ui.treevirtual.MTreePrimitive.Type.LEAF,\n   parentNodeId   : 23,\n   label          : \"My Documents\",\n   bSelected      : true,\n   bOpened        : true,\n   bHideOpenClose : false,\n   icon           : \"images/folder.gif\",\n   iconSelected   : \"images/folder_selected.gif\",\n   cellStyle      : \"background-color:cyan\"\n   labelStyle     : \"background-color:red;color:white\"\n\n   columnData     : [\n                      null,\n                      \"text of column 1\",\n                      \"text of column 2\"\n                    ],\n\n   data           : {\n                      application :\n                      {\n\n                          foo: \"bar\",\n                          ...\n                      },\n                      MDragAndDropSupport :\n                      {\n\n\n\n\n\n                      },\n                      ...\n                    },\n\n\n\n\n\n   nodeId         : 42,\n   children       : [ ],\n   level          : 2,\n   bFirstChild    : true,\n   lastChild      : [ false ],\n\n\n\n }\n </pre>"
+          "body": "<p>A simple tree data model used as the table model\n The object structure of a single node of the tree is:\n </p>\n<pre class='javascript'>\n {\n\n\n   type           : qx.ui.treevirtual.MTreePrimitive.Type.LEAF,\n   parentNodeId   : 23,\n   label          : \"My Documents\",\n   bSelected      : true,\n   bOpened        : true,\n   bHideOpenClose : false,\n   icon           : \"images/folder.gif\",\n   iconSelected   : \"images/folder_selected.gif\",\n   cellStyle      : \"background-color:cyan\"\n   labelStyle     : \"background-color:red;color:white\"\n\n   columnData     : [\n                      null,\n                      \"text of column 1\",\n                      \"text of column 2\"\n                    ],\n\n   data           : {\n                      application :\n                      {\n\n                          foo: \"bar\",\n                          ...\n                      },\n                      MDragAndDropSupport :\n                      {\n\n\n\n\n\n                      },\n                      ...\n                    },\n\n\n\n\n\n   nodeId         : 42,\n   children       : [ ],\n   level          : 2,\n   labelPos       : 40,\n   bFirstChild    : true,\n   lastChild      : [ false ],\n\n\n\n }\n </pre>"
         }
       ]
     }
@@ -36,11 +36,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 99,
+        "line": 100,
         "column": 14
       },
       "end": {
-        "line": 120,
+        "line": 121,
         "column": 3
       }
     },
@@ -57,11 +57,11 @@
     "filter": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 133,
           "column": 4
         },
         "end": {
-          "line": 137,
+          "line": 138,
           "column": 5
         }
       },
@@ -117,11 +117,11 @@
     "__tree": {
       "location": {
         "start": {
-          "line": 150,
+          "line": 151,
           "column": 4
         },
         "end": {
-          "line": 150,
+          "line": 151,
           "column": 27
         }
       },
@@ -131,11 +131,11 @@
     "__editableColArr": {
       "location": {
         "start": {
-          "line": 151,
+          "line": 152,
           "column": 4
         },
         "end": {
-          "line": 151,
+          "line": 152,
           "column": 27
         }
       },
@@ -145,11 +145,11 @@
     "__tempTreeData": {
       "location": {
         "start": {
-          "line": 152,
+          "line": 153,
           "column": 4
         },
         "end": {
-          "line": 152,
+          "line": 153,
           "column": 25
         }
       },
@@ -159,11 +159,11 @@
     "__recalculateLastChildFlags": {
       "location": {
         "start": {
-          "line": 153,
+          "line": 154,
           "column": 4
         },
         "end": {
-          "line": 153,
+          "line": 154,
           "column": 38
         }
       },
@@ -173,11 +173,11 @@
     "_rowArr": {
       "location": {
         "start": {
-          "line": 156,
+          "line": 157,
           "column": 4
         },
         "end": {
-          "line": 156,
+          "line": 157,
           "column": 18
         }
       },
@@ -195,11 +195,11 @@
     "_nodeArr": {
       "location": {
         "start": {
-          "line": 159,
+          "line": 160,
           "column": 4
         },
         "end": {
-          "line": 159,
+          "line": 160,
           "column": 19
         }
       },
@@ -217,11 +217,11 @@
     "_nodeRowMap": {
       "location": {
         "start": {
-          "line": 166,
+          "line": 167,
           "column": 4
         },
         "end": {
-          "line": 166,
+          "line": 167,
           "column": 22
         }
       },
@@ -239,11 +239,11 @@
     "_treeColumn": {
       "location": {
         "start": {
-          "line": 169,
+          "line": 170,
           "column": 4
         },
         "end": {
-          "line": 169,
+          "line": 170,
           "column": 22
         }
       },
@@ -261,11 +261,11 @@
     "_selections": {
       "location": {
         "start": {
-          "line": 172,
+          "line": 173,
           "column": 4
         },
         "end": {
-          "line": 172,
+          "line": 173,
           "column": 22
         }
       },
@@ -283,11 +283,11 @@
     "setTree": {
       "location": {
         "start": {
-          "line": 181,
+          "line": 182,
           "column": 4
         },
         "end": {
-          "line": 184,
+          "line": 185,
           "column": 5
         }
       },
@@ -314,11 +314,11 @@
     "getTree": {
       "location": {
         "start": {
-          "line": 191,
+          "line": 192,
           "column": 4
         },
         "end": {
-          "line": 194,
+          "line": 195,
           "column": 5
         }
       },
@@ -344,11 +344,11 @@
     "setEditable": {
       "location": {
         "start": {
-          "line": 203,
+          "line": 204,
           "column": 4
         },
         "end": {
-          "line": 213,
+          "line": 214,
           "column": 5
         }
       },
@@ -375,11 +375,11 @@
     "setColumnEditable": {
       "location": {
         "start": {
-          "line": 226,
+          "line": 227,
           "column": 4
         },
         "end": {
-          "line": 239,
+          "line": 240,
           "column": 5
         }
       },
@@ -413,7 +413,7 @@
     "isColumnEditable": {
       "location": {
         "start": {
-          "line": 242,
+          "line": 243,
           "column": 4
         },
         "end": {
@@ -737,7 +737,7 @@
           "column": 4
         },
         "end": {
-          "line": 402,
+          "line": 404,
           "column": 5
         }
       },
@@ -760,11 +760,11 @@
     "getNode": {
       "location": {
         "start": {
-          "line": 419,
+          "line": 421,
           "column": 4
         },
         "end": {
-          "line": 430,
+          "line": 432,
           "column": 5
         }
       },
@@ -807,11 +807,11 @@
     "addBranch": {
       "location": {
         "start": {
-          "line": 461,
+          "line": 463,
           "column": 4
         },
         "end": {
-          "line": 477,
+          "line": 479,
           "column": 5
         }
       },
@@ -881,11 +881,11 @@
     "addLeaf": {
       "location": {
         "start": {
-          "line": 499,
+          "line": 501,
           "column": 4
         },
         "end": {
-          "line": 513,
+          "line": 515,
           "column": 5
         }
       },
@@ -941,11 +941,11 @@
     "prune": {
       "location": {
         "start": {
-          "line": 532,
+          "line": 534,
           "column": 4
         },
         "end": {
-          "line": 576,
+          "line": 578,
           "column": 5
         }
       },
@@ -990,11 +990,11 @@
     "move": {
       "location": {
         "start": {
-          "line": 596,
+          "line": 598,
           "column": 4
         },
         "end": {
-          "line": 652,
+          "line": 654,
           "column": 5
         }
       },
@@ -1054,11 +1054,11 @@
     "__inorder": {
       "location": {
         "start": {
-          "line": 663,
+          "line": 665,
           "column": 4
         },
         "end": {
-          "line": 765,
+          "line": 767,
           "column": 5
         }
       },
@@ -1092,11 +1092,11 @@
     "__calculateLastChildFlags": {
       "location": {
         "start": {
-          "line": 776,
+          "line": 778,
           "column": 4
         },
         "end": {
-          "line": 792,
+          "line": 794,
           "column": 5
         }
       },
@@ -1123,11 +1123,11 @@
     "__setLastChildFlag": {
       "location": {
         "start": {
-          "line": 801,
+          "line": 803,
           "column": 4
         },
         "end": {
-          "line": 816,
+          "line": 818,
           "column": 5
         }
       },
@@ -1161,11 +1161,11 @@
     "__render": {
       "location": {
         "start": {
-          "line": 822,
+          "line": 824,
           "column": 4
         },
         "end": {
-          "line": 863,
+          "line": 865,
           "column": 5
         }
       },
@@ -1183,11 +1183,11 @@
     "setData": {
       "location": {
         "start": {
-          "line": 887,
+          "line": 889,
           "column": 4
         },
         "end": {
-          "line": 911,
+          "line": 913,
           "column": 5
         }
       },
@@ -1225,11 +1225,11 @@
     "getData": {
       "location": {
         "start": {
-          "line": 922,
+          "line": 924,
           "column": 4
         },
         "end": {
-          "line": 925,
+          "line": 927,
           "column": 5
         }
       },
@@ -1255,11 +1255,11 @@
     "clearData": {
       "location": {
         "start": {
-          "line": 932,
+          "line": 934,
           "column": 4
         },
         "end": {
-          "line": 936,
+          "line": 938,
           "column": 5
         }
       },
@@ -1277,11 +1277,11 @@
     "setColumnData": {
       "location": {
         "start": {
-          "line": 954,
+          "line": 956,
           "column": 4
         },
         "end": {
-          "line": 957,
+          "line": 959,
           "column": 5
         }
       },
@@ -1322,11 +1322,11 @@
     "getColumnData": {
       "location": {
         "start": {
-          "line": 973,
+          "line": 975,
           "column": 4
         },
         "end": {
-          "line": 976,
+          "line": 978,
           "column": 5
         }
       },
@@ -1368,11 +1368,11 @@
     "setState": {
       "location": {
         "start": {
-          "line": 995,
+          "line": 997,
           "column": 4
         },
         "end": {
-          "line": 1112,
+          "line": 1114,
           "column": 5
         }
       },
@@ -1417,11 +1417,11 @@
     "getNodeRowMap": {
       "location": {
         "start": {
-          "line": 1123,
+          "line": 1125,
           "column": 4
         },
         "end": {
-          "line": 1126,
+          "line": 1128,
           "column": 5
         }
       },
@@ -1447,11 +1447,11 @@
     "getRowFromNodeId": {
       "location": {
         "start": {
-          "line": 1136,
+          "line": 1138,
           "column": 4
         },
         "end": {
-          "line": 1139,
+          "line": 1141,
           "column": 5
         }
       },
@@ -1486,11 +1486,11 @@
     "getNodeFromRow": {
       "location": {
         "start": {
-          "line": 1148,
+          "line": 1150,
           "column": 4
         },
         "end": {
-          "line": 1151,
+          "line": 1153,
           "column": 5
         }
       },
@@ -1525,11 +1525,11 @@
     "_clearSelections": {
       "location": {
         "start": {
-          "line": 1160,
+          "line": 1162,
           "column": 4
         },
         "end": {
-          "line": 1170,
+          "line": 1172,
           "column": 5
         }
       },
@@ -1547,11 +1547,11 @@
     "getSelectedNodes": {
       "location": {
         "start": {
-          "line": 1179,
+          "line": 1181,
           "column": 4
         },
         "end": {
-          "line": 1189,
+          "line": 1191,
           "column": 5
         }
       },
@@ -1577,11 +1577,11 @@
     "_applyFilter": {
       "location": {
         "start": {
-          "line": 1193,
+          "line": 1195,
           "column": 4
         },
         "end": {
-          "line": 1196,
+          "line": 1198,
           "column": 5
         }
       },
@@ -1805,11 +1805,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 1199,
+        "line": 1201,
         "column": 13
       },
       "end": {
-        "line": 1203,
+        "line": 1205,
         "column": 3
       }
     },
@@ -1818,11 +1818,11 @@
   "defer": {
     "location": {
       "start": {
-        "line": 1205,
+        "line": 1207,
         "column": 10
       },
       "end": {
-        "line": 1210,
+        "line": 1212,
         "column": 3
       }
     },

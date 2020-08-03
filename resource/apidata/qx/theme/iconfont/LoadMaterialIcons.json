@@ -1,0 +1,57 @@
+{
+  "className": "qx.theme.iconfont.LoadMaterialIcons",
+  "packageName": "qx.theme.iconfont",
+  "name": "LoadMaterialIcons",
+  "superClass": null,
+  "interfaces": [],
+  "mixins": [],
+  "functionName": null,
+  "clazz": {
+    "location": {
+      "start": {
+        "line": 28,
+        "column": 0
+      },
+      "end": {
+        "line": 28,
+        "column": 59
+      }
+    },
+    "jsdoc": {
+      "@description": [
+        {
+          "name": "@description",
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2020 OETIKER+PARTNER AG\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tobias Oetiker (oetiker)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
+        },
+        {
+          "name": "@description",
+          "body": "<p>A dummy class to trigger the compiler to copy the MaterialIcons font files</p>"
+        },
+        {
+          "name": "@description",
+          "body": ""
+        }
+      ],
+      "@asset": [
+        {
+          "name": "@asset",
+          "body": "qx/iconfont/MaterialIcons/materialicons-v50.ttf"
+        },
+        {
+          "name": "@asset",
+          "body": "qx/iconfont/MaterialIcons/materialicons-v50.woff2"
+        },
+        {
+          "name": "@asset",
+          "body": "qx/iconfont/MaterialIcons/materialicons-v50.woff"
+        },
+        {
+          "name": "@asset",
+          "body": "qx/iconfont/MaterialIcons/materialicons-v50.eot"
+        }
+      ]
+    }
+  },
+  "type": "class",
+  "descendants": []
+}

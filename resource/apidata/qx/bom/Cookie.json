@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 153,
+        "line": 158,
         "column": 3
       }
     },
@@ -78,11 +78,11 @@
     "set": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 94,
           "column": 4
         },
         "end": {
-          "line": 120,
+          "line": 125,
           "column": 5
         }
       },
@@ -143,6 +143,15 @@
             "optional": true,
             "defaultValue": "null",
             "type": "Boolean"
+          },
+          {
+            "name": "@param",
+            "body": "sameSite {String?null} sameSite value. (Lax, Strict, None)",
+            "paramName": "sameSite",
+            "description": " sameSite value. (Lax, Strict, None)",
+            "optional": true,
+            "defaultValue": "null",
+            "type": "String"
           }
         ]
       },
@@ -152,11 +161,11 @@
     "del": {
       "location": {
         "start": {
-          "line": 130,
+          "line": 135,
           "column": 4
         },
         "end": {
-          "line": 151,
+          "line": 156,
           "column": 5
         }
       },

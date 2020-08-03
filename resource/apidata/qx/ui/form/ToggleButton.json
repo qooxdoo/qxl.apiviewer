@@ -100,8 +100,8 @@
       "name": "appearance",
       "propertyType": "new",
       "refine": true,
-      "init": "button",
-      "defaultValue": "button",
+      "init": "toggle-button",
+      "defaultValue": "toggle-button",
       "overriddenFrom": "qx.ui.basic.Atom",
       "appearsIn": {
         "qx.ui.basic.Atom": "class",
