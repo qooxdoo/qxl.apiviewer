@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 743,
+        "line": 766,
         "column": 3
       }
     },
@@ -692,6 +692,52 @@
       "type": "function",
       "access": "protected"
     },
+    "getOpenCloseButtonPosition": {
+      "location": {
+        "start": {
+          "line": 751,
+          "column": 4
+        },
+        "end": {
+          "line": 760,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Determine the position in the cell of the open/close button image</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "table {Table}\n   The column of indentation being requested, zero-relative",
+            "paramName": "table",
+            "description": "\n   The column of indentation being requested, zero-relative",
+            "type": "Table"
+          },
+          {
+            "name": "@param",
+            "body": "node {Node}\n   The node being displayed in the row.  The properties of a node are\n   described in {@link qx.ui.treevirtual.SimpleTreeDataModel}",
+            "paramName": "node",
+            "description": "\n   The node being displayed in the row.  The properties of a node are\n   described in {@link qx.ui.treevirtual.SimpleTreeDataModel}",
+            "type": "Node"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Object} Position of the Open/Close Button",
+            "type": "Object",
+            "description": " Position of the Open/Close Button"
+          }
+        ]
+      },
+      "type": "function",
+      "access": "public"
+    },
     "getQxOwner": {
       "type": "function",
       "name": "getQxOwner",
@@ -1171,11 +1217,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 740,
+        "line": 763,
         "column": 13
       },
       "end": {
-        "line": 742,
+        "line": 765,
         "column": 3
       }
     },

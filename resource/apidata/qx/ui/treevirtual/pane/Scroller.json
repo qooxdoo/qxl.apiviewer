@@ -1,8 +1,8 @@
 {
-  "className": "qx.ui.table.pane.Scroller",
-  "packageName": "qx.ui.table.pane",
+  "className": "qx.ui.treevirtual.pane.Scroller",
+  "packageName": "qx.ui.treevirtual.pane",
   "name": "Scroller",
-  "superClass": "qx.ui.core.Widget",
+  "superClass": "qx.ui.table.pane.Scroller",
   "interfaces": [],
   "mixins": [
     "qx.ui.core.scroll.MScrollBarFactory"
@@ -11,11 +11,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 34,
+        "line": 25,
         "column": 0
       },
       "end": {
-        "line": 2483,
+        "line": 73,
         "column": 3
       }
     },
@@ -23,2587 +23,25 @@
       "@description": [
         {
           "name": "@description",
-          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n Jonathan Weiß (jonathan_rass)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2020 Tartan Solutions, Inc, http://www.tartansolutions.com\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Patrick Buxton\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "<p>Shows a whole meta column. This includes a {@link Header},\n a {@link Pane} and the needed scroll bars. This class handles the\n virtual scrolling and does all the pointer event handling.</p>"
-        }
-      ],
-      "@childControl": [
-        {
-          "name": "@childControl",
-          "body": "header {qx.ui.table.pane.Header} header pane",
-          "controlName": "header",
-          "description": "header pane",
-          "type": "qx.ui.table.pane.Header"
-        },
-        {
-          "name": "@childControl",
-          "body": "pane {qx.ui.table.pane.Pane} table pane to show the data",
-          "controlName": "pane",
-          "description": "table pane to show the data",
-          "type": "qx.ui.table.pane.Pane"
-        },
-        {
-          "name": "@childControl",
-          "body": "focus-indicator {qx.ui.table.pane.FocusIndicator} shows the current focused cell",
-          "controlName": "focus-indicator",
-          "description": "shows the current focused cell",
-          "type": "qx.ui.table.pane.FocusIndicator"
-        },
-        {
-          "name": "@childControl",
-          "body": "resize-line {qx.ui.core.Widget} resize line widget",
-          "controlName": "resize-line",
-          "description": "resize line widget",
-          "type": "qx.ui.core.Widget"
-        },
-        {
-          "name": "@childControl",
-          "body": "scrollbar-x {qx.ui.core.scroll.ScrollBar?qx.ui.core.scroll.NativeScrollBar}\n               horizontal scrollbar widget (depends on the \"qx.nativeScrollBars\" setting which implementation is used)",
-          "controlName": "scrollbar-x",
-          "description": "horizontal scrollbar widget (depends on the \"qx.nativeScrollBars\" setting which implementation is used)",
-          "type": "qx.ui.core.scroll.ScrollBar?qx.ui.core.scroll.NativeScrollBar"
-        },
-        {
-          "name": "@childControl",
-          "body": "scrollbar-y {qx.ui.core.scroll.ScrollBar?qx.ui.core.scroll.NativeScrollBar}\n               vertical scrollbar widget (depends on the \"qx.nativeScrollBars\" setting which implementation is used)",
-          "controlName": "scrollbar-y",
-          "description": "vertical scrollbar widget (depends on the \"qx.nativeScrollBars\" setting which implementation is used)",
-          "type": "qx.ui.core.scroll.ScrollBar?qx.ui.core.scroll.NativeScrollBar"
+          "body": "<p>An overridden pane Scroller for the treevirtual to allow capture of\n the mouse dblclick event in the tree column. To prevent starting an\n edit when the tree node editing is turned on and the open/close button\n is tapped quickly</p>"
         }
       ]
     }
   },
   "type": "class",
-  "construct": {
-    "location": {
-      "start": {
-        "line": 50,
-        "column": 14
-      },
-      "end": {
-        "line": 128,
-        "column": 3
-      }
-    },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
-        },
-        {
-          "name": "@description",
-          "body": ""
-        }
-      ],
-      "@param": [
-        {
-          "name": "@param",
-          "body": "table {qx.ui.table.Table} the table the scroller belongs to.",
-          "paramName": "table",
-          "description": " the table the scroller belongs to.",
-          "type": "qx.ui.table.Table"
-        }
-      ]
-    }
-  },
-  "statics": {
-    "MIN_COLUMN_WIDTH": {
-      "location": {
-        "start": {
-          "line": 143,
-          "column": 4
-        },
-        "end": {
-          "line": 143,
-          "column": 33
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": ""
-          }
-        ],
-        "@type": [
-          {
-            "name": "@type",
-            "body": "{int} The minimum width a column could get in pixels."
-          }
-        ]
-      },
-      "type": "variable",
-      "access": "public"
-    },
-    "RESIZE_REGION_RADIUS": {
-      "location": {
-        "start": {
-          "line": 146,
-          "column": 4
-        },
-        "end": {
-          "line": 146,
-          "column": 32
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": ""
-          }
-        ],
-        "@type": [
-          {
-            "name": "@type",
-            "body": "{int} The radius of the resize region in pixels."
-          }
-        ]
-      },
-      "type": "variable",
-      "access": "public"
-    },
-    "TAP_TOLERANCE": {
-      "location": {
-        "start": {
-          "line": 153,
-          "column": 4
-        },
-        "end": {
-          "line": 153,
-          "column": 30
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>(int) The number of pixels the pointer may move between pointer down and pointer up\n in order to count as a tap.</p>"
-          }
-        ]
-      },
-      "type": "variable",
-      "access": "public"
-    },
-    "HORIZONTAL_SCROLLBAR": {
-      "location": {
-        "start": {
-          "line": 162,
-          "column": 4
-        },
-        "end": {
-          "line": 162,
-          "column": 32
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>(int) The mask for the horizontal scroll bar.\n May be combined with {@link #VERTICAL_SCROLLBAR}.</p>"
-          }
-        ],
-        "@see": [
-          {
-            "name": "@see",
-            "body": "#getNeededScrollBars"
-          }
-        ]
-      },
-      "type": "variable",
-      "access": "public"
-    },
-    "VERTICAL_SCROLLBAR": {
-      "location": {
-        "start": {
-          "line": 171,
-          "column": 4
-        },
-        "end": {
-          "line": 171,
-          "column": 32
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>(int) The mask for the vertical scroll bar.\n May be combined with {@link #HORIZONTAL_SCROLLBAR}.</p>"
-          }
-        ],
-        "@see": [
-          {
-            "name": "@see",
-            "body": "#getNeededScrollBars"
-          }
-        ]
-      },
-      "type": "variable",
-      "access": "public"
-    }
-  },
-  "events": {
-    "changeScrollY": {
-      "location": {
-        "start": {
-          "line": 186,
-          "column": 4
-        },
-        "end": {
-          "line": 186,
-          "column": 42
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Dispatched if the pane is scrolled horizontally</p>"
-          }
-        ]
-      },
-      "name": "changeScrollY",
-      "type": "qx.event.type.Data"
-    },
-    "changeScrollX": {
-      "location": {
-        "start": {
-          "line": 189,
-          "column": 4
-        },
-        "end": {
-          "line": 189,
-          "column": 42
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Dispatched if the pane is scrolled vertically</p>"
-          }
-        ]
-      },
-      "name": "changeScrollX",
-      "type": "qx.event.type.Data"
-    },
-    "cellTap": {
-      "location": {
-        "start": {
-          "line": 192,
-          "column": 4
-        },
-        "end": {
-          "line": 192,
-          "column": 44
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>See {@link qx.ui.table.Table#cellTap}.</p>"
-          }
-        ]
-      },
-      "name": "cellTap",
-      "type": "qx.ui.table.pane.CellEvent"
-    },
-    "cellDbltap": {
-      "location": {
-        "start": {
-          "line": 195,
-          "column": 4
-        },
-        "end": {
-          "line": 195,
-          "column": 47
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<ul>\n<li>See {@link qx.ui.table.Table#cellDbltap}.</li>\n</ul>"
-          }
-        ]
-      },
-      "name": "cellDbltap",
-      "type": "qx.ui.table.pane.CellEvent"
-    },
-    "cellContextmenu": {
-      "location": {
-        "start": {
-          "line": 198,
-          "column": 4
-        },
-        "end": {
-          "line": 198,
-          "column": 52
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>See {@link qx.ui.table.Table#cellContextmenu}.</p>"
-          }
-        ]
-      },
-      "name": "cellContextmenu",
-      "type": "qx.ui.table.pane.CellEvent"
-    },
-    "beforeSort": {
-      "location": {
-        "start": {
-          "line": 201,
-          "column": 4
-        },
-        "end": {
-          "line": 201,
-          "column": 39
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Dispatched when a sortable header was tapped</p>"
-          }
-        ]
-      },
-      "name": "beforeSort",
-      "type": "qx.event.type.Data"
-    }
-  },
-  "properties": {
-    "horizontalScrollBarVisible": {
-      "location": {
-        "start": {
-          "line": 222,
-          "column": 4
-        },
-        "end": {
-          "line": 229,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Whether to show the horizontal scroll bar. This is a tri-state\n value. <code>true</code> means show the scroll bar; <code>false</code> means exclude it; null\n means hide it so it retains its space but doesn't show a scroll bar.</p>"
-          }
-        ]
-      },
-      "name": "horizontalScrollBarVisible",
-      "propertyType": "new",
-      "event": "changeHorizontalScrollBarVisible",
-      "apply": "_applyHorizontalScrollBarVisible",
-      "nullable": true,
-      "init": false,
-      "allowNull": true,
-      "check": "Boolean",
-      "defaultValue": false
-    },
-    "verticalScrollBarVisible": {
-      "location": {
-        "start": {
-          "line": 232,
-          "column": 4
-        },
-        "end": {
-          "line": 238,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Whether to show the vertical scroll bar</p>"
-          }
-        ]
-      },
-      "name": "verticalScrollBarVisible",
-      "propertyType": "new",
-      "event": "changeVerticalScrollBarVisible",
-      "apply": "_applyVerticalScrollBarVisible",
-      "init": false,
-      "check": "Boolean",
-      "defaultValue": false
-    },
-    "tablePaneModel": {
-      "location": {
-        "start": {
-          "line": 241,
-          "column": 4
-        },
-        "end": {
-          "line": 246,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>The table pane model.</p>"
-          }
-        ]
-      },
-      "name": "tablePaneModel",
-      "propertyType": "new",
-      "event": "changeTablePaneModel",
-      "apply": "_applyTablePaneModel",
-      "check": "qx.ui.table.pane.Model"
-    },
-    "liveResize": {
-      "location": {
-        "start": {
-          "line": 253,
-          "column": 4
-        },
-        "end": {
-          "line": 257,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Whether column resize should be live. If false, during resize only a line is\n shown and the real resize happens when the user releases the pointer button.</p>"
-          }
-        ]
-      },
-      "name": "liveResize",
-      "propertyType": "new",
-      "init": false,
-      "check": "Boolean",
-      "defaultValue": false
-    },
-    "focusCellOnPointerMove": {
-      "location": {
-        "start": {
-          "line": 264,
-          "column": 4
-        },
-        "end": {
-          "line": 268,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Whether the focus should moved when the pointer is moved over a cell. If false\n the focus is only moved on pointer taps.</p>"
-          }
-        ]
-      },
-      "name": "focusCellOnPointerMove",
-      "propertyType": "new",
-      "init": false,
-      "check": "Boolean",
-      "defaultValue": false
-    },
-    "selectBeforeFocus": {
-      "location": {
-        "start": {
-          "line": 278,
-          "column": 4
-        },
-        "end": {
-          "line": 282,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Whether to handle selections via the selection manager before setting the\n focus.  The traditional behavior is to handle selections after setting the\n focus, but setting the focus means redrawing portions of the table, and\n some subclasses may want to modify the data to be displayed based on the\n selection.</p>"
-          }
-        ]
-      },
-      "name": "selectBeforeFocus",
-      "propertyType": "new",
-      "init": false,
-      "check": "Boolean",
-      "defaultValue": false
-    },
-    "showCellFocusIndicator": {
-      "location": {
-        "start": {
-          "line": 288,
-          "column": 4
-        },
-        "end": {
-          "line": 293,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Whether the cell focus indicator should be shown</p>"
-          }
-        ]
-      },
-      "name": "showCellFocusIndicator",
-      "propertyType": "new",
-      "apply": "_applyShowCellFocusIndicator",
-      "init": true,
-      "check": "Boolean",
-      "defaultValue": true
-    },
-    "contextMenuFromDataCellsOnly": {
-      "location": {
-        "start": {
-          "line": 305,
-          "column": 4
-        },
-        "end": {
-          "line": 309,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>By default, the \"cellContextmenu\" event is fired only when a data cell\n is right-clicked. It is not fired when a right-click occurs in the\n empty area of the table below the last data row. By turning on this\n property, \"cellContextMenu\" events will also be generated when a\n right-click occurs in that empty area. In such a case, row identifier\n in the event data will be null, so event handlers can check (row ===\n null) to handle this case.</p>"
-          }
-        ]
-      },
-      "name": "contextMenuFromDataCellsOnly",
-      "propertyType": "new",
-      "init": true,
-      "check": "Boolean",
-      "defaultValue": true
-    },
-    "resetSelectionOnHeaderTap": {
-      "location": {
-        "start": {
-          "line": 319,
-          "column": 4
-        },
-        "end": {
-          "line": 323,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Whether to reset the selection when a header cell is tapped. Since\n most data models do not have provisions to retain a selection after\n sorting, the default is to reset the selection in this case. Some data\n models, however, do have the capability to retain the selection, so\n when using those, this property should be set to false.</p>"
-          }
-        ]
-      },
-      "name": "resetSelectionOnHeaderTap",
-      "propertyType": "new",
-      "init": true,
-      "check": "Boolean",
-      "defaultValue": true
-    },
-    "resetSelectionOnTapBelowRows": {
-      "location": {
-        "start": {
-          "line": 329,
-          "column": 4
-        },
-        "end": {
-          "line": 333,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Whether to reset the selection when the unpopulated table area is tapped.\n The default is false which keeps the behaviour as before</p>"
-          }
-        ]
-      },
-      "name": "resetSelectionOnTapBelowRows",
-      "propertyType": "new",
-      "init": false,
-      "check": "Boolean",
-      "defaultValue": false
-    },
-    "scrollTimeout": {
-      "location": {
-        "start": {
-          "line": 340,
-          "column": 4
-        },
-        "end": {
-          "line": 345,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Interval time (in milliseconds) for the table update timer.\n Setting this to 0 clears the timer.</p>"
-          }
-        ]
-      },
-      "name": "scrollTimeout",
-      "propertyType": "new",
-      "apply": "_applyScrollTimeout",
-      "init": 100,
-      "check": "Integer",
-      "defaultValue": 100
-    },
-    "appearance": {
-      "location": {
-        "start": {
-          "line": 348,
-          "column": 4
-        },
-        "end": {
-          "line": 352,
-          "column": 5
-        }
-      },
-      "name": "appearance",
-      "propertyType": "new",
-      "refine": true,
-      "init": "table-scroller",
-      "defaultValue": "table-scroller",
-      "overriddenFrom": "qx.ui.core.Widget",
-      "appearsIn": {
-        "qx.ui.core.Widget": "class"
-      }
-    }
-  },
   "members": {
-    "__lastRowCount": {
-      "location": {
-        "start": {
-          "line": 366,
-          "column": 4
-        },
-        "end": {
-          "line": 366,
-          "column": 25
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__table": {
-      "location": {
-        "start": {
-          "line": 367,
-          "column": 4
-        },
-        "end": {
-          "line": 367,
-          "column": 18
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__updateInterval": {
-      "location": {
-        "start": {
-          "line": 369,
-          "column": 4
-        },
-        "end": {
-          "line": 369,
-          "column": 27
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__updateContentPlanned": {
-      "location": {
-        "start": {
-          "line": 370,
-          "column": 4
-        },
-        "end": {
-          "line": 370,
-          "column": 33
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__onintervalWrapper": {
-      "location": {
-        "start": {
-          "line": 371,
-          "column": 4
-        },
-        "end": {
-          "line": 371,
-          "column": 30
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "_moveColumn": {
-      "location": {
-        "start": {
-          "line": 373,
-          "column": 4
-        },
-        "end": {
-          "line": 373,
-          "column": 22
-        }
-      },
-      "type": "variable",
-      "access": "protected"
-    },
-    "__lastMoveColPos": {
-      "location": {
-        "start": {
-          "line": 374,
-          "column": 4
-        },
-        "end": {
-          "line": 374,
-          "column": 27
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "_lastMoveTargetX": {
-      "location": {
-        "start": {
-          "line": 375,
-          "column": 4
-        },
-        "end": {
-          "line": 375,
-          "column": 27
-        }
-      },
-      "type": "variable",
-      "access": "protected"
-    },
-    "_lastMoveTargetScroller": {
-      "location": {
-        "start": {
-          "line": 376,
-          "column": 4
-        },
-        "end": {
-          "line": 376,
-          "column": 34
-        }
-      },
-      "type": "variable",
-      "access": "protected"
-    },
-    "__lastMovePointerPageX": {
-      "location": {
-        "start": {
-          "line": 377,
-          "column": 4
-        },
-        "end": {
-          "line": 377,
-          "column": 33
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__resizeColumn": {
-      "location": {
-        "start": {
-          "line": 379,
-          "column": 4
-        },
-        "end": {
-          "line": 379,
-          "column": 25
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__lastResizePointerPageX": {
-      "location": {
-        "start": {
-          "line": 380,
-          "column": 4
-        },
-        "end": {
-          "line": 380,
-          "column": 35
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__lastResizeWidth": {
-      "location": {
-        "start": {
-          "line": 381,
-          "column": 4
-        },
-        "end": {
-          "line": 381,
-          "column": 28
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__lastPointerDownCell": {
-      "location": {
-        "start": {
-          "line": 383,
-          "column": 4
-        },
-        "end": {
-          "line": 383,
-          "column": 32
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__firedTapEvent": {
-      "location": {
-        "start": {
-          "line": 384,
-          "column": 4
-        },
-        "end": {
-          "line": 384,
-          "column": 27
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__ignoreTap": {
-      "location": {
-        "start": {
-          "line": 385,
-          "column": 4
-        },
-        "end": {
-          "line": 385,
-          "column": 22
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__lastPointerPageX": {
-      "location": {
-        "start": {
-          "line": 386,
-          "column": 4
-        },
-        "end": {
-          "line": 386,
-          "column": 29
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__lastPointerPageY": {
-      "location": {
-        "start": {
-          "line": 387,
-          "column": 4
-        },
-        "end": {
-          "line": 387,
-          "column": 29
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__focusedCol": {
-      "location": {
-        "start": {
-          "line": 389,
-          "column": 4
-        },
-        "end": {
-          "line": 389,
-          "column": 23
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__focusedRow": {
-      "location": {
-        "start": {
-          "line": 390,
-          "column": 4
-        },
-        "end": {
-          "line": 390,
-          "column": 23
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "_cellEditor": {
-      "location": {
-        "start": {
-          "line": 392,
-          "column": 4
-        },
-        "end": {
-          "line": 392,
-          "column": 22
-        }
-      },
-      "type": "variable",
-      "access": "protected"
-    },
-    "__cellEditorFactory": {
-      "location": {
-        "start": {
-          "line": 393,
-          "column": 4
-        },
-        "end": {
-          "line": 393,
-          "column": 30
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__topRightWidget": {
-      "location": {
-        "start": {
-          "line": 395,
-          "column": 4
-        },
-        "end": {
-          "line": 395,
-          "column": 27
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__horScrollBar": {
-      "location": {
-        "start": {
-          "line": 396,
-          "column": 4
-        },
-        "end": {
-          "line": 396,
-          "column": 25
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__verScrollBar": {
-      "location": {
-        "start": {
-          "line": 397,
-          "column": 4
-        },
-        "end": {
-          "line": 397,
-          "column": 25
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__header": {
-      "location": {
-        "start": {
-          "line": 398,
-          "column": 4
-        },
-        "end": {
-          "line": 398,
-          "column": 19
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "_headerClipper": {
-      "location": {
-        "start": {
-          "line": 399,
-          "column": 4
-        },
-        "end": {
-          "line": 399,
-          "column": 25
-        }
-      },
-      "type": "variable",
-      "access": "protected"
-    },
-    "__tablePane": {
-      "location": {
-        "start": {
-          "line": 400,
-          "column": 4
-        },
-        "end": {
-          "line": 400,
-          "column": 22
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "_paneClipper": {
-      "location": {
-        "start": {
-          "line": 401,
-          "column": 4
-        },
-        "end": {
-          "line": 401,
-          "column": 23
-        }
-      },
-      "type": "variable",
-      "access": "protected"
-    },
-    "__clipperContainer": {
-      "location": {
-        "start": {
-          "line": 402,
-          "column": 4
-        },
-        "end": {
-          "line": 402,
-          "column": 29
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__focusIndicator": {
-      "location": {
-        "start": {
-          "line": 403,
-          "column": 4
-        },
-        "end": {
-          "line": 403,
-          "column": 27
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__top": {
-      "location": {
-        "start": {
-          "line": 404,
-          "column": 4
-        },
-        "end": {
-          "line": 404,
-          "column": 16
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__timer": {
-      "location": {
-        "start": {
-          "line": 406,
-          "column": 4
-        },
-        "end": {
-          "line": 406,
-          "column": 18
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__focusIndicatorPointerDownListener": {
-      "location": {
-        "start": {
-          "line": 408,
-          "column": 2
-        },
-        "end": {
-          "line": 408,
-          "column": 43
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "getPaneInsetRight": {
-      "location": {
-        "start": {
-          "line": 417,
-          "column": 4
-        },
-        "end": {
-          "line": 431,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>The right inset of the pane. The right inset is the maximum of the\n top right widget width and the scrollbar width (if visible).</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Integer} The right inset of the pane",
-            "type": "Integer",
-            "description": " The right inset of the pane"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "setPaneWidth": {
-      "location": {
-        "start": {
-          "line": 439,
-          "column": 4
-        },
-        "end": {
-          "line": 445,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Set the pane's width</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "width {Integer} The pane's width",
-            "paramName": "width",
-            "description": " The pane's width",
-            "type": "Integer"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "_createChildControlImpl": {
-      "location": {
-        "start": {
-          "line": 449,
-          "column": 4
-        },
-        "end": {
-          "line": 507,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>overridden</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected",
-      "overriddenFrom": "qx.ui.core.Widget",
-      "appearsIn": [
-        "qx.ui.core.Widget"
-      ]
-    },
-    "_applyHorizontalScrollBarVisible": {
-      "location": {
-        "start": {
-          "line": 511,
-          "column": 4
-        },
-        "end": {
-          "line": 520,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>property modifier</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected",
-      "applyFor": [
-        "horizontalScrollBarVisible"
-      ]
-    },
-    "_applyVerticalScrollBarVisible": {
-      "location": {
-        "start": {
-          "line": 524,
-          "column": 4
-        },
-        "end": {
-          "line": 526,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>property modifier</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected",
-      "applyFor": [
-        "verticalScrollBarVisible"
-      ]
-    },
-    "_applyTablePaneModel": {
-      "location": {
-        "start": {
-          "line": 530,
-          "column": 4
-        },
-        "end": {
-          "line": 537,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>property modifier</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected",
-      "applyFor": [
-        "tablePaneModel"
-      ]
-    },
-    "_applyShowCellFocusIndicator": {
-      "location": {
-        "start": {
-          "line": 541,
-          "column": 4
-        },
-        "end": {
-          "line": 552,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>property modifier</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected",
-      "applyFor": [
-        "showCellFocusIndicator"
-      ]
-    },
-    "getScrollY": {
-      "location": {
-        "start": {
-          "line": 560,
-          "column": 4
-        },
-        "end": {
-          "line": 562,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Get the current position of the vertical scroll bar.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Integer} The current scroll position.",
-            "type": "Integer",
-            "description": " The current scroll position."
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "setScrollY": {
-      "location": {
-        "start": {
-          "line": 572,
-          "column": 4
-        },
-        "end": {
-          "line": 578,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Set the current position of the vertical scroll bar.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "scrollY {Integer} The new scroll position.",
-            "paramName": "scrollY",
-            "description": " The new scroll position.",
-            "type": "Integer"
-          },
-          {
-            "name": "@param",
-            "body": "renderSync {Boolean?false} Whether the table update should be\n     performed synchronously.",
-            "paramName": "renderSync",
-            "description": " Whether the table update should be\n     performed synchronously.",
-            "optional": true,
-            "defaultValue": "false",
-            "type": "Boolean"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "getScrollX": {
-      "location": {
-        "start": {
-          "line": 586,
-          "column": 4
-        },
-        "end": {
-          "line": 588,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Get the current position of the vertical scroll bar.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Integer} The current scroll position.",
-            "type": "Integer",
-            "description": " The current scroll position."
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "setScrollX": {
-      "location": {
-        "start": {
-          "line": 596,
-          "column": 4
-        },
-        "end": {
-          "line": 598,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Set the current position of the vertical scroll bar.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "scrollX {Integer} The new scroll position.",
-            "paramName": "scrollX",
-            "description": " The new scroll position.",
-            "type": "Integer"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "getTable": {
-      "location": {
-        "start": {
-          "line": 606,
-          "column": 4
-        },
-        "end": {
-          "line": 608,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the table this scroller belongs to.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.ui.table.Table} the table.",
-            "type": "qx.ui.table.Table",
-            "description": " the table."
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "_createPaneClipper": {
-      "location": {
-        "start": {
-          "line": 616,
-          "column": 4
-        },
-        "end": {
-          "line": 619,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Creates and returns an instance of pane clipper.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.ui.table.pane.Clipper} pane clipper.",
-            "type": "qx.ui.table.pane.Clipper",
-            "description": " pane clipper."
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_createHeaderClipper": {
-      "location": {
-        "start": {
-          "line": 627,
-          "column": 4
-        },
-        "end": {
-          "line": 630,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Creates and returns an instance of header clipper.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.ui.table.pane.Clipper} pane clipper.",
-            "type": "qx.ui.table.pane.Clipper",
-            "description": " pane clipper."
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "onColVisibilityChanged": {
-      "location": {
-        "start": {
-          "line": 636,
-          "column": 4
-        },
-        "end": {
-          "line": 640,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler. Called when the visibility of a column has changed.</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "setColumnWidth": {
-      "location": {
-        "start": {
-          "line": 649,
-          "column": 4
-        },
-        "end": {
-          "line": 663,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Sets the column width.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "col {Integer} the column to change the width for.",
-            "paramName": "col",
-            "description": " the column to change the width for.",
-            "type": "Integer"
-          },
-          {
-            "name": "@param",
-            "body": "width {Integer} the new width.",
-            "paramName": "width",
-            "description": " the new width.",
-            "type": "Integer"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "onColOrderChanged": {
-      "location": {
-        "start": {
-          "line": 670,
-          "column": 4
-        },
-        "end": {
-          "line": 676,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler. Called when the column order has changed.</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "onTableModelDataChanged": {
-      "location": {
-        "start": {
-          "line": 687,
-          "column": 4
-        },
-        "end": {
-          "line": 711,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler. Called when the table model has changed.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "firstRow {Integer} The index of the first row that has changed.",
-            "paramName": "firstRow",
-            "description": " The index of the first row that has changed.",
-            "type": "Integer"
-          },
-          {
-            "name": "@param",
-            "body": "lastRow {Integer} The index of the last row that has changed.",
-            "paramName": "lastRow",
-            "description": " The index of the last row that has changed.",
-            "type": "Integer"
-          },
-          {
-            "name": "@param",
-            "body": "firstColumn {Integer} The model index of the first column that has changed.",
-            "paramName": "firstColumn",
-            "description": " The model index of the first column that has changed.",
-            "type": "Integer"
-          },
-          {
-            "name": "@param",
-            "body": "lastColumn {Integer} The model index of the last column that has changed.",
-            "paramName": "lastColumn",
-            "description": " The model index of the last column that has changed.",
-            "type": "Integer"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "onSelectionChanged": {
-      "location": {
-        "start": {
-          "line": 717,
-          "column": 4
-        },
-        "end": {
-          "line": 719,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler. Called when the selection has changed.</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "onFocusChanged": {
-      "location": {
-        "start": {
-          "line": 725,
-          "column": 4
-        },
-        "end": {
-          "line": 727,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler. Called when the table gets or looses the focus.</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "onTableModelMetaDataChanged": {
-      "location": {
-        "start": {
-          "line": 734,
-          "column": 4
-        },
-        "end": {
-          "line": 738,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler. Called when the table model meta data has changed.</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "_onPaneModelChanged": {
-      "location": {
-        "start": {
-          "line": 744,
-          "column": 4
-        },
-        "end": {
-          "line": 748,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler. Called when the pane model has changed.</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_onResizePane": {
-      "location": {
-        "start": {
-          "line": 754,
-          "column": 4
-        },
-        "end": {
-          "line": 763,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event listener for the pane clipper's resize event</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "updateHorScrollBarMaximum": {
-      "location": {
-        "start": {
-          "line": 770,
-          "column": 4
-        },
-        "end": {
-          "line": 797,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Updates the maximum of the horizontal scroll bar, so it corresponds to the\n total width of the columns in the table pane.</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "updateVerScrollBarMaximum": {
-      "location": {
-        "start": {
-          "line": 804,
-          "column": 4
-        },
-        "end": {
-          "line": 839,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Updates the maximum of the vertical scroll bar, so it corresponds to the\n number of rows in the table.</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "onKeepFirstVisibleRowCompleteChanged": {
-      "location": {
-        "start": {
-          "line": 846,
-          "column": 4
-        },
-        "end": {
-          "line": 850,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler. Called when the table property \"keepFirstVisibleRowComplete\"\n changed.</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "_onAppear": {
-      "location": {
-        "start": {
-          "line": 856,
-          "column": 4
-        },
-        "end": {
-          "line": 859,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler for the scroller's appear event</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_onDisappear": {
-      "location": {
-        "start": {
-          "line": 865,
-          "column": 4
-        },
-        "end": {
-          "line": 869,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler for the disappear event</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_onScrollX": {
-      "location": {
-        "start": {
-          "line": 877,
-          "column": 4
-        },
-        "end": {
-          "line": 884,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler. Called when the horizontal scroll bar moved.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {Map} the event.",
-            "paramName": "e",
-            "description": " the event.",
-            "type": "Map"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "__inOnScrollY": {
-      "location": {
-        "start": {
-          "line": 892,
-          "column": 4
-        },
-        "end": {
-          "line": 892,
-          "column": 25
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler. Called when the vertical scroll bar moved.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {Map} the event.",
-            "paramName": "e",
-            "description": " the event.",
-            "type": "Map"
-          }
-        ]
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "_onScrollY": {
-      "location": {
-        "start": {
-          "line": 893,
-          "column": 4
-        },
-        "end": {
-          "line": 913,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_onRoll": {
-      "location": {
-        "start": {
-          "line": 921,
-          "column": 4
-        },
-        "end": {
-          "line": 963,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler. Called when the user moved the mouse wheel.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {qx.event.type.Roll} the event.",
-            "paramName": "e",
-            "description": " the event.",
-            "type": "qx.event.type.Roll"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "__isAtEdge": {
-      "location": {
-        "start": {
-          "line": 972,
-          "column": 4
-        },
-        "end": {
-          "line": 975,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Checks if the table has been scrolled.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "scrollBar {qx.ui.core.scroll.IScrollBar} The scrollbar to check",
-            "paramName": "scrollBar",
-            "description": " The scrollbar to check",
-            "type": "qx.ui.core.scroll.IScrollBar"
-          },
-          {
-            "name": "@param",
-            "body": "delta {Number} The scroll delta.",
-            "paramName": "delta",
-            "description": " The scroll delta.",
-            "type": "Number"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Boolean} <code>true</code>, if the scrolling is a the edge",
-            "type": "Boolean",
-            "description": " <code>true</code>, if the scrolling is a the edge"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "private"
-    },
-    "__handleResizeColumn": {
-      "location": {
-        "start": {
-          "line": 983,
-          "column": 4
-        },
-        "end": {
-          "line": 1002,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Common column resize logic.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "pageX {Integer} the current pointer x position.",
-            "paramName": "pageX",
-            "description": " the current pointer x position.",
-            "type": "Integer"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "private"
-    },
-    "__handleMoveColumn": {
-      "location": {
-        "start": {
-          "line": 1011,
-          "column": 4
-        },
-        "end": {
-          "line": 1041,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Common column move logic.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "pageX {Integer} the current pointer x position.",
-            "paramName": "pageX",
-            "description": " the current pointer x position.",
-            "type": "Integer"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "private"
-    },
-    "_onPointermoveHeader": {
-      "location": {
-        "start": {
-          "line": 1049,
-          "column": 4
-        },
-        "end": {
-          "line": 1103,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler. Called when the user moved the pointer over the header.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {Map} the event.",
-            "paramName": "e",
-            "description": " the event.",
-            "type": "Map"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_onPointermovePane": {
-      "location": {
-        "start": {
-          "line": 1111,
-          "column": 4
-        },
-        "end": {
-          "line": 1150,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler. Called when the user moved the pointer over the pane.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {Map} the event.",
-            "paramName": "e",
-            "description": " the event.",
-            "type": "Map"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_onPointerdownHeader": {
-      "location": {
-        "start": {
-          "line": 1158,
-          "column": 4
-        },
-        "end": {
-          "line": 1184,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler. Called when the user pressed a pointer button over the header.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {Map} the event.",
-            "paramName": "e",
-            "description": " the event.",
-            "type": "Map"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_startResizeHeader": {
-      "location": {
-        "start": {
-          "line": 1193,
-          "column": 4
-        },
-        "end": {
-          "line": 1202,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Start a resize session of the header.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "resizeCol {Integer} the column index",
-            "paramName": "resizeCol",
-            "description": " the column index",
-            "type": "Integer"
-          },
-          {
-            "name": "@param",
-            "body": "pageX {Integer} x coordinate of the pointer event",
-            "paramName": "pageX",
-            "description": " x coordinate of the pointer event",
-            "type": "Integer"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_startMoveHeader": {
-      "location": {
-        "start": {
-          "line": 1211,
-          "column": 4
-        },
-        "end": {
-          "line": 1218,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Start a move session of the header.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "moveCol {Integer} the column index",
-            "paramName": "moveCol",
-            "description": " the column index",
-            "type": "Integer"
-          },
-          {
-            "name": "@param",
-            "body": "pageX {Integer} x coordinate of the pointer event",
-            "paramName": "pageX",
-            "description": " x coordinate of the pointer event",
-            "type": "Integer"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_onPointerdownPane": {
-      "location": {
-        "start": {
-          "line": 1227,
-          "column": 4
-        },
-        "end": {
-          "line": 1281,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler. Called when the user pressed a pointer button over the pane.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {Map} the event.",
-            "paramName": "e",
-            "description": " the event.",
-            "type": "Map"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_onPointerupFocusIndicator": {
-      "location": {
-        "start": {
-          "line": 1289,
-          "column": 4
-        },
-        "end": {
-          "line": 1312,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler for the focus indicator's pointerup event</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {qx.event.type.Pointer} The pointer event",
-            "paramName": "e",
-            "description": " The pointer event",
-            "type": "qx.event.type.Pointer"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_onChangeCaptureHeader": {
-      "location": {
-        "start": {
-          "line": 1322,
-          "column": 4
-        },
-        "end": {
-          "line": 1331,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler. Called when the event capturing of the header changed.\n Stops/finishes an active header resize/move session if it lost capturing\n during the session to stay in a stable state.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {qx.event.type.Data} The data event",
-            "paramName": "e",
-            "description": " The data event",
-            "type": "qx.event.type.Data"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_stopResizeHeader": {
-      "location": {
-        "start": {
-          "line": 1338,
-          "column": 4
-        },
-        "end": {
-          "line": 1355,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Stop a resize session of the header.</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_stopMoveHeader": {
-      "location": {
-        "start": {
-          "line": 1362,
-          "column": 4
-        },
-        "end": {
-          "line": 1404,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Stop a move session of the header.</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_onPointerupHeader": {
-      "location": {
-        "start": {
-          "line": 1412,
-          "column": 4
-        },
-        "end": {
-          "line": 1431,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler. Called when the user released a pointer button over the header.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {Map} the event.",
-            "paramName": "e",
-            "description": " the event.",
-            "type": "Map"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_onTapHeader": {
-      "location": {
-        "start": {
-          "line": 1439,
-          "column": 4
-        },
-        "end": {
-          "line": 1494,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler. Called when the user tapped a pointer button over the header.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {Map} the event.",
-            "paramName": "e",
-            "description": " the event.",
-            "type": "Map"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_onTapPane": {
-      "location": {
-        "start": {
-          "line": 1502,
-          "column": 4
-        },
-        "end": {
-          "line": 1549,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler. Called when the user tapped a pointer button over the pane.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {Map} the event.",
-            "paramName": "e",
-            "description": " the event.",
-            "type": "Map"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_onContextMenu": {
-      "location": {
-        "start": {
-          "line": 1557,
-          "column": 4
-        },
-        "end": {
-          "line": 1607,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler. Called when a context menu is invoked in a cell.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {qx.event.type.Pointer} the event.",
-            "paramName": "e",
-            "description": " the event.",
-            "type": "qx.event.type.Pointer"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_onContextMenuOpen": {
-      "location": {
-        "start": {
-          "line": 1611,
-          "column": 4
-        },
-        "end": {
-          "line": 1618,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>overridden</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected",
-      "overriddenFrom": "qx.ui.core.Widget",
-      "appearsIn": [
-        "qx.ui.core.Widget"
-      ]
-    },
     "_onDbltapPane": {
       "location": {
         "start": {
-          "line": 1626,
+          "line": 43,
           "column": 4
         },
         "end": {
-          "line": 1641,
+          "line": 71,
           "column": 5
         }
       },
@@ -2625,1069 +63,11 @@
         ]
       },
       "type": "function",
-      "access": "protected"
-    },
-    "_onPointerout": {
-      "location": {
-        "start": {
-          "line": 1649,
-          "column": 4
-        },
-        "end": {
-          "line": 1672,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler. Called when the pointer moved out.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {Map} the event.",
-            "paramName": "e",
-            "description": " the event.",
-            "type": "Map"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_showResizeLine": {
-      "location": {
-        "start": {
-          "line": 1681,
-          "column": 4
-        },
-        "end": {
-          "line": 1690,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Shows the resize line.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "x {Integer} the position where to show the line (in pixels, relative to\n      the left side of the pane).",
-            "paramName": "x",
-            "description": " the position where to show the line (in pixels, relative to\n      the left side of the pane).",
-            "type": "Integer"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_hideResizeLine": {
-      "location": {
-        "start": {
-          "line": 1696,
-          "column": 4
-        },
-        "end": {
-          "line": 1698,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Hides the resize line.</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "showColumnMoveFeedback": {
-      "location": {
-        "start": {
-          "line": 1707,
-          "column": 4
-        },
-        "end": {
-          "line": 1744,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Shows the feedback shown while a column is moved by the user.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "pageX {Integer} the x position of the pointer in the page (in pixels).",
-            "paramName": "pageX",
-            "description": " the x position of the pointer in the page (in pixels).",
-            "type": "Integer"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Integer} the visible x position of the column in the whole table.",
-            "type": "Integer",
-            "description": " the visible x position of the column in the whole table."
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "hideColumnMoveFeedback": {
-      "location": {
-        "start": {
-          "line": 1750,
-          "column": 4
-        },
-        "end": {
-          "line": 1752,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Hides the feedback shown while a column is moved by the user.</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "_focusCellAtPagePos": {
-      "location": {
-        "start": {
-          "line": 1763,
-          "column": 4
-        },
-        "end": {
-          "line": 1773,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Sets the focus to the cell that's located at the page position\n <code>pageX</code>/<code>pageY</code>. If there is no cell at that position,\n nothing happens.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "pageX {Integer} the x position in the page (in pixels).",
-            "paramName": "pageX",
-            "description": " the x position in the page (in pixels).",
-            "type": "Integer"
-          },
-          {
-            "name": "@param",
-            "body": "pageY {Integer} the y position in the page (in pixels).",
-            "paramName": "pageY",
-            "description": " the y position in the page (in pixels).",
-            "type": "Integer"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "setFocusedCell": {
-      "location": {
-        "start": {
-          "line": 1782,
-          "column": 4
-        },
-        "end": {
-          "line": 1793,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Sets the currently focused cell.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "col {Integer} the model index of the focused cell's column.",
-            "paramName": "col",
-            "description": " the model index of the focused cell's column.",
-            "type": "Integer"
-          },
-          {
-            "name": "@param",
-            "body": "row {Integer} the model index of the focused cell's row.",
-            "paramName": "row",
-            "description": " the model index of the focused cell's row.",
-            "type": "Integer"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "getFocusedColumn": {
-      "location": {
-        "start": {
-          "line": 1801,
-          "column": 4
-        },
-        "end": {
-          "line": 1803,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the column of currently focused cell.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Integer} the model index of the focused cell's column.",
-            "type": "Integer",
-            "description": " the model index of the focused cell's column."
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "getFocusedRow": {
-      "location": {
-        "start": {
-          "line": 1811,
-          "column": 4
-        },
-        "end": {
-          "line": 1813,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the row of currently focused cell.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Integer} the model index of the focused cell's column.",
-            "type": "Integer",
-            "description": " the model index of the focused cell's column."
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "scrollCellVisible": {
-      "location": {
-        "start": {
-          "line": 1822,
-          "column": 4
-        },
-        "end": {
-          "line": 1858,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Scrolls a cell visible.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "col {Integer} the model index of the column the cell belongs to.",
-            "paramName": "col",
-            "description": " the model index of the column the cell belongs to.",
-            "type": "Integer"
-          },
-          {
-            "name": "@param",
-            "body": "row {Integer} the model index of the row the cell belongs to.",
-            "paramName": "row",
-            "description": " the model index of the row the cell belongs to.",
-            "type": "Integer"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "isEditing": {
-      "location": {
-        "start": {
-          "line": 1866,
-          "column": 4
-        },
-        "end": {
-          "line": 1868,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns whether currently a cell is editing.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{var} whether currently a cell is editing.",
-            "type": "var",
-            "description": " whether currently a cell is editing."
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "startEditing": {
-      "location": {
-        "start": {
-          "line": 1878,
-          "column": 4
-        },
-        "end": {
-          "line": 1975,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Starts editing the currently focused cell. Does nothing if already\n editing, if the column is not editable, or if the cell editor for the\n column ascertains that the particular cell is not editable.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Boolean} whether editing was started",
-            "type": "Boolean",
-            "description": " whether editing was started"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "stopEditing": {
-      "location": {
-        "start": {
-          "line": 1981,
-          "column": 4
-        },
-        "end": {
-          "line": 1991,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Stops editing and writes the editor's value to the model.</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "flushEditor": {
-      "location": {
-        "start": {
-          "line": 2000,
-          "column": 4
-        },
-        "end": {
-          "line": 2023,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Writes the editor's value to the model</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "cancel {Boolean ? false} Whether to also cancel\n      editing before firing the 'dateEdited' event.",
-            "paramName": "cancel",
-            "description": " Whether to also cancel\n      editing before firing the 'dateEdited' event.",
-            "optional": true,
-            "defaultValue": "false",
-            "type": "Boolean"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "cancelEditing": {
-      "location": {
-        "start": {
-          "line": 2029,
-          "column": 4
-        },
-        "end": {
-          "line": 2047,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Stops editing without writing the editor's value to the model.</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "_onCellEditorModalWindowClose": {
-      "location": {
-        "start": {
-          "line": 2055,
-          "column": 4
-        },
-        "end": {
-          "line": 2057,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler. Called when the modal window of the cell editor closes.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {Map} the event.",
-            "paramName": "e",
-            "description": " the event.",
-            "type": "Map"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_getColumnForPageX": {
-      "location": {
-        "start": {
-          "line": 2067,
-          "column": 4
-        },
-        "end": {
-          "line": 2086,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the model index of the column the pointer is over or null if the pointer\n is not over a column.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "pageX {Integer} the x position of the pointer in the page (in pixels).",
-            "paramName": "pageX",
-            "description": " the x position of the pointer in the page (in pixels).",
-            "type": "Integer"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Integer} the model index of the column the pointer is over.",
-            "type": "Integer",
-            "description": " the model index of the column the pointer is over."
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_getResizeColumnForPageX": {
-      "location": {
-        "start": {
-          "line": 2096,
-          "column": 4
-        },
-        "end": {
-          "line": 2118,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the model index of the column that should be resized when dragging\n starts here. Returns -1 if the pointer is in no resize region of any column.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "pageX {Integer} the x position of the pointer in the page (in pixels).",
-            "paramName": "pageX",
-            "description": " the x position of the pointer in the page (in pixels).",
-            "type": "Integer"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Integer} the column index.",
-            "type": "Integer",
-            "description": " the column index."
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_getRowForPagePos": {
-      "location": {
-        "start": {
-          "line": 2129,
-          "column": 4
-        },
-        "end": {
-          "line": 2171,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the model index of the row the pointer is currently over. Returns -1 if\n the pointer is over the header. Returns null if the pointer is not over any\n column.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "pageX {Integer} the pointer x position in the page.",
-            "paramName": "pageX",
-            "description": " the pointer x position in the page.",
-            "type": "Integer"
-          },
-          {
-            "name": "@param",
-            "body": "pageY {Integer} the pointer y position in the page.",
-            "paramName": "pageY",
-            "description": " the pointer y position in the page.",
-            "type": "Integer"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Integer} the model index of the row the pointer is currently over.",
-            "type": "Integer",
-            "description": " the model index of the row the pointer is currently over."
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "setTopRightWidget": {
-      "location": {
-        "start": {
-          "line": 2182,
-          "column": 4
-        },
-        "end": {
-          "line": 2195,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Sets the widget that should be shown in the top right corner.\n The widget will not be disposed, when this table scroller is disposed. So the\n caller has to dispose it.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "widget {qx.ui.core.Widget} The widget to set. May be null.",
-            "paramName": "widget",
-            "description": " The widget to set. May be null.",
-            "type": "qx.ui.core.Widget"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "getTopRightWidget": {
-      "location": {
-        "start": {
-          "line": 2203,
-          "column": 4
-        },
-        "end": {
-          "line": 2205,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Get the top right widget</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.ui.core.Widget} The top right widget.",
-            "type": "qx.ui.core.Widget",
-            "description": " The top right widget."
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "getHeader": {
-      "location": {
-        "start": {
-          "line": 2213,
-          "column": 4
-        },
-        "end": {
-          "line": 2215,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the header.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.ui.table.pane.Header} the header.",
-            "type": "qx.ui.table.pane.Header",
-            "description": " the header."
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "getTablePane": {
-      "location": {
-        "start": {
-          "line": 2223,
-          "column": 4
-        },
-        "end": {
-          "line": 2225,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the table pane.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.ui.table.pane.Pane} the table pane.",
-            "type": "qx.ui.table.pane.Pane",
-            "description": " the table pane."
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "getVerticalScrollBarWidth": {
-      "location": {
-        "start": {
-          "line": 2235,
-          "column": 4
-        },
-        "end": {
-          "line": 2239,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Get the rendered width of the vertical scroll bar. The return value is\n <code>0</code> if the scroll bar is invisible or not yet rendered.</p>"
-          }
-        ],
-        "@internal": [
-          {
-            "name": "@internal",
-            "body": ""
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Integer} The width of the vertical scroll bar",
-            "type": "Integer",
-            "description": " The width of the vertical scroll bar"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "getNeededScrollBars": {
-      "location": {
-        "start": {
-          "line": 2253,
-          "column": 4
-        },
-        "end": {
-          "line": 2306,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns which scrollbars are needed.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "forceHorizontal {Boolean ? false} Whether to show the horizontal\n      scrollbar always.",
-            "paramName": "forceHorizontal",
-            "description": " Whether to show the horizontal\n      scrollbar always.",
-            "optional": true,
-            "defaultValue": "false",
-            "type": "Boolean"
-          },
-          {
-            "name": "@param",
-            "body": "preventVertical {Boolean ? false} Whether to show the vertical scrollbar\n      never.",
-            "paramName": "preventVertical",
-            "description": " Whether to show the vertical scrollbar\n      never.",
-            "optional": true,
-            "defaultValue": "false",
-            "type": "Boolean"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Integer} which scrollbars are needed. This may be any combination of\n      {@link #HORIZONTAL_SCROLLBAR} or {@link #VERTICAL_SCROLLBAR}\n      (combined by OR).",
-            "type": "Integer",
-            "description": " which scrollbars are needed. This may be any combination of\n      {@link #HORIZONTAL_SCROLLBAR} or {@link #VERTICAL_SCROLLBAR}\n      (combined by OR)."
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "getPaneClipper": {
-      "location": {
-        "start": {
-          "line": 2316,
-          "column": 4
-        },
-        "end": {
-          "line": 2319,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Return the pane clipper. It is sometimes required for special activities\n such as tracking events for drag&amp;drop.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.ui.table.pane.Clipper}\n   The pane clipper for this scroller.",
-            "type": "qx.ui.table.pane.Clipper",
-            "description": "\n   The pane clipper for this scroller."
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "getScrollAreaContainer": {
-      "location": {
-        "start": {
-          "line": 2330,
-          "column": 4
-        },
-        "end": {
-          "line": 2332,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the scroll area container widget (which enables more precise\n operations e.g. bounds retrieval for drag session scrolling).</p>"
-          }
-        ],
-        "@see": [
-          {
-            "name": "@see",
-            "body": "qx.ui.core.MDragDropScrolling#_getBounds"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.ui.table.pane.Clipper}\n   The pane clipper for this scroller.",
-            "type": "qx.ui.table.pane.Clipper",
-            "description": "\n   The pane clipper for this scroller."
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "_applyScrollTimeout": {
-      "location": {
-        "start": {
-          "line": 2336,
-          "column": 4
-        },
-        "end": {
-          "line": 2338,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>property apply method</p>"
-          }
-        ]
-      },
-      "type": "function",
       "access": "protected",
-      "applyFor": [
-        "scrollTimeout"
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
+      "appearsIn": [
+        "qx.ui.table.pane.Scroller"
       ]
-    },
-    "_startInterval": {
-      "location": {
-        "start": {
-          "line": 2346,
-          "column": 4
-        },
-        "end": {
-          "line": 2350,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Starts the current running interval</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "timeout {Integer} The timeout between two table updates",
-            "paramName": "timeout",
-            "description": " The timeout between two table updates",
-            "type": "Integer"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_stopInterval": {
-      "location": {
-        "start": {
-          "line": 2356,
-          "column": 4
-        },
-        "end": {
-          "line": 2359,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>stops the current running interval</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_postponedUpdateContent": {
-      "location": {
-        "start": {
-          "line": 2367,
-          "column": 4
-        },
-        "end": {
-          "line": 2371,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Does a postponed update of the content.</p>"
-          }
-        ],
-        "@see": [
-          {
-            "name": "@see",
-            "body": "#_updateContent"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_oninterval": {
-      "location": {
-        "start": {
-          "line": 2381,
-          "column": 4
-        },
-        "end": {
-          "line": 2388,
-          "column": 6
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Timer event handler. Periodically checks whether a table update is\n required. The update interval is controlled by the {@link #scrollTimeout}\n property.</p>"
-          }
-        ],
-        "@signature": [
-          {
-            "name": "@signature",
-            "body": "function()"
-          }
-        ]
-      },
-      "type": "variable",
-      "access": "protected"
-    },
-    "_updateContent": {
-      "location": {
-        "start": {
-          "line": 2395,
-          "column": 4
-        },
-        "end": {
-          "line": 2439,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Updates the content. Sets the right section the table pane should show and\n does the scrolling.</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
-    },
-    "_updateFocusIndicator": {
-      "location": {
-        "start": {
-          "line": 2445,
-          "column": 4
-        },
-        "end": {
-          "line": 2454,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Updates the location and the visibility of the focus indicator.</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "protected"
     },
     "_createScrollBar": {
       "type": "function",
@@ -3732,7 +112,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -3757,7 +137,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -3783,7 +163,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -3801,7 +181,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -3825,7 +205,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -3850,7 +230,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -3868,7 +248,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -3893,7 +273,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -3919,7 +299,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -3937,7 +317,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -3962,7 +342,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -3988,7 +368,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -4006,7 +386,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -4031,7 +411,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -4057,7 +437,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -4075,7 +455,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -4100,7 +480,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -4126,7 +506,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -4144,7 +524,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -4169,7 +549,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -4195,7 +575,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -4213,7 +593,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -4238,7 +618,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -4264,7 +644,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -4282,7 +662,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -4307,7 +687,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "is",
       "jsdoc": {
         "@description": [
@@ -4332,7 +712,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -4358,7 +738,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -4376,7 +756,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -4401,7 +781,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "is",
       "jsdoc": {
         "@description": [
@@ -4426,7 +806,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -4452,7 +832,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -4470,7 +850,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -4495,7 +875,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "is",
       "jsdoc": {
         "@description": [
@@ -4520,7 +900,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -4546,7 +926,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -4564,7 +944,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -4589,7 +969,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "is",
       "jsdoc": {
         "@description": [
@@ -4614,7 +994,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -4640,7 +1020,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -4658,7 +1038,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -4683,7 +1063,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -4709,7 +1089,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -4727,7 +1107,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -4752,7 +1132,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -4778,7 +1158,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -4796,7 +1176,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -4821,7 +1201,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -4847,7 +1227,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -4865,7 +1245,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -4890,7 +1270,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -4916,7 +1296,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -4934,7 +1314,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -4959,7 +1339,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -4985,7 +1365,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -5003,7 +1383,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -5028,7 +1408,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -5054,7 +1434,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -5072,7 +1452,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -5097,7 +1477,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -5123,7 +1503,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -5141,7 +1521,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -5166,7 +1546,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -5192,7 +1572,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -5210,7 +1590,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -5235,7 +1615,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -5261,7 +1641,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -5279,7 +1659,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -5304,7 +1684,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -5330,7 +1710,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -5348,7 +1728,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -5373,7 +1753,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -5399,7 +1779,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -5417,7 +1797,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -5442,7 +1822,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -5468,7 +1848,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -5486,7 +1866,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -5511,7 +1891,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -5537,7 +1917,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -5555,7 +1935,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -5580,7 +1960,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -5606,7 +1986,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -5624,7 +2004,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -5649,7 +2029,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -5675,7 +2055,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -5693,7 +2073,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -5718,7 +2098,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -5744,7 +2124,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -5762,7 +2142,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -5787,7 +2167,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -5813,7 +2193,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -5831,7 +2211,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -5856,7 +2236,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -5882,7 +2262,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -5900,7 +2280,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -5925,7 +2305,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -5951,7 +2331,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -5969,7 +2349,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -5994,7 +2374,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -6020,7 +2400,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -6038,7 +2418,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -6063,7 +2443,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -6089,7 +2469,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -6107,7 +2487,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -6132,7 +2512,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -6158,7 +2538,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -6176,7 +2556,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -6201,7 +2581,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -6227,7 +2607,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -6245,7 +2625,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -6270,7 +2650,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -6296,7 +2676,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -6314,7 +2694,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -6339,7 +2719,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "is",
       "jsdoc": {
         "@description": [
@@ -6364,7 +2744,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -6390,7 +2770,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -6408,7 +2788,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -6433,7 +2813,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "is",
       "jsdoc": {
         "@description": [
@@ -6458,7 +2838,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -6484,7 +2864,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -6502,7 +2882,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -6527,7 +2907,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -6553,7 +2933,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -6571,7 +2951,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -6596,7 +2976,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "is",
       "jsdoc": {
         "@description": [
@@ -6621,7 +3001,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -6647,7 +3027,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -6665,7 +3045,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -6690,7 +3070,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "is",
       "jsdoc": {
         "@description": [
@@ -6715,7 +3095,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -6741,7 +3121,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -6759,7 +3139,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -6784,7 +3164,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -6810,7 +3190,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -6828,7 +3208,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -6853,7 +3233,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "is",
       "jsdoc": {
         "@description": [
@@ -6878,7 +3258,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -6904,7 +3284,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -6922,7 +3302,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -6947,7 +3327,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "is",
       "jsdoc": {
         "@description": [
@@ -6972,7 +3352,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -6998,7 +3378,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -7016,7 +3396,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -7041,7 +3421,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "is",
       "jsdoc": {
         "@description": [
@@ -7066,7 +3446,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -7092,7 +3472,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -7110,7 +3490,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -7135,7 +3515,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "is",
       "jsdoc": {
         "@description": [
@@ -7160,7 +3540,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -7186,7 +3566,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -7204,7 +3584,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -7229,7 +3609,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "is",
       "jsdoc": {
         "@description": [
@@ -7254,7 +3634,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -7280,7 +3660,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -7298,7 +3678,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -7323,7 +3703,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "is",
       "jsdoc": {
         "@description": [
@@ -7348,7 +3728,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -7374,7 +3754,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -7392,7 +3772,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -7417,7 +3797,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -7443,7 +3823,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -7461,7 +3841,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -7486,7 +3866,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "is",
       "jsdoc": {
         "@description": [
@@ -7511,7 +3891,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -7537,7 +3917,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -7555,7 +3935,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -7580,7 +3960,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -7606,7 +3986,7 @@
       "mixin": false,
       "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -7622,8 +4002,9 @@
       "name": "getHorizontalScrollBarVisible",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -7646,8 +4027,9 @@
       "name": "isHorizontalScrollBarVisible",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "is",
       "jsdoc": {
         "@description": [
@@ -7670,8 +4052,9 @@
       "name": "setHorizontalScrollBarVisible",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -7695,8 +4078,9 @@
       "name": "resetHorizontalScrollBarVisible",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -7712,8 +4096,9 @@
       "name": "getVerticalScrollBarVisible",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -7736,8 +4121,9 @@
       "name": "isVerticalScrollBarVisible",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "is",
       "jsdoc": {
         "@description": [
@@ -7760,8 +4146,9 @@
       "name": "setVerticalScrollBarVisible",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -7785,8 +4172,9 @@
       "name": "resetVerticalScrollBarVisible",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -7802,8 +4190,9 @@
       "name": "getTablePaneModel",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -7826,8 +4215,9 @@
       "name": "setTablePaneModel",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -7851,8 +4241,9 @@
       "name": "resetTablePaneModel",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -7868,8 +4259,9 @@
       "name": "getLiveResize",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -7892,8 +4284,9 @@
       "name": "isLiveResize",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "is",
       "jsdoc": {
         "@description": [
@@ -7916,8 +4309,9 @@
       "name": "setLiveResize",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -7941,8 +4335,9 @@
       "name": "resetLiveResize",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -7958,8 +4353,9 @@
       "name": "getFocusCellOnPointerMove",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -7982,8 +4378,9 @@
       "name": "isFocusCellOnPointerMove",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "is",
       "jsdoc": {
         "@description": [
@@ -8006,8 +4403,9 @@
       "name": "setFocusCellOnPointerMove",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -8031,8 +4429,9 @@
       "name": "resetFocusCellOnPointerMove",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -8048,8 +4447,9 @@
       "name": "getSelectBeforeFocus",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -8072,8 +4472,9 @@
       "name": "isSelectBeforeFocus",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "is",
       "jsdoc": {
         "@description": [
@@ -8096,8 +4497,9 @@
       "name": "setSelectBeforeFocus",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -8121,8 +4523,9 @@
       "name": "resetSelectBeforeFocus",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -8138,8 +4541,9 @@
       "name": "getShowCellFocusIndicator",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -8162,8 +4566,9 @@
       "name": "isShowCellFocusIndicator",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "is",
       "jsdoc": {
         "@description": [
@@ -8186,8 +4591,9 @@
       "name": "setShowCellFocusIndicator",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -8211,8 +4617,9 @@
       "name": "resetShowCellFocusIndicator",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -8228,8 +4635,9 @@
       "name": "getContextMenuFromDataCellsOnly",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -8252,8 +4660,9 @@
       "name": "isContextMenuFromDataCellsOnly",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "is",
       "jsdoc": {
         "@description": [
@@ -8276,8 +4685,9 @@
       "name": "setContextMenuFromDataCellsOnly",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -8301,8 +4711,9 @@
       "name": "resetContextMenuFromDataCellsOnly",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -8318,8 +4729,9 @@
       "name": "getResetSelectionOnHeaderTap",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -8342,8 +4754,9 @@
       "name": "isResetSelectionOnHeaderTap",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "is",
       "jsdoc": {
         "@description": [
@@ -8366,8 +4779,9 @@
       "name": "setResetSelectionOnHeaderTap",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -8391,8 +4805,9 @@
       "name": "resetResetSelectionOnHeaderTap",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -8408,8 +4823,9 @@
       "name": "getResetSelectionOnTapBelowRows",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -8432,8 +4848,9 @@
       "name": "isResetSelectionOnTapBelowRows",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "is",
       "jsdoc": {
         "@description": [
@@ -8456,8 +4873,9 @@
       "name": "setResetSelectionOnTapBelowRows",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -8481,8 +4899,9 @@
       "name": "resetResetSelectionOnTapBelowRows",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -8498,8 +4917,9 @@
       "name": "getScrollTimeout",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "get",
       "jsdoc": {
         "@description": [
@@ -8522,8 +4942,9 @@
       "name": "setScrollTimeout",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "set",
       "jsdoc": {
         "@description": [
@@ -8547,8 +4968,9 @@
       "name": "resetScrollTimeout",
       "abstract": false,
       "mixin": false,
-      "inherited": false,
+      "inherited": true,
       "access": "public",
+      "overriddenFrom": "qx.ui.table.pane.Scroller",
       "property": "reset",
       "jsdoc": {
         "@description": [
@@ -8560,27 +4982,5 @@
       }
     }
   },
-  "destruct": {
-    "location": {
-      "start": {
-        "line": 2466,
-        "column": 13
-      },
-      "end": {
-        "line": 2482,
-        "column": 3
-      }
-    },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
-        }
-      ]
-    }
-  },
-  "descendants": [
-    "qx.ui.treevirtual.pane.Scroller"
-  ]
+  "descendants": []
 }

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 905,
+        "line": 947,
         "column": 3
       }
     },
@@ -34,11 +34,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 100,
+        "line": 111,
         "column": 14
       },
       "end": {
-        "line": 226,
+        "line": 243,
         "column": 3
       }
     },
@@ -66,9 +66,9 @@
         },
         {
           "name": "@param",
-          "body": "custom {Map ? null}\n   A map provided (typically) by subclasses, to override the various\n   supplemental classes allocated within this constructor.  For normal\n   usage, this parameter may be omitted.  Each property must be an object\n   instance or a function which returns an object instance, as indicated by\n   the defaults listed here:\n   <dl>\n     <dt>initiallyHiddenColumns</dt>\n       <dd>\n         {Array?}\n         A list of column numbers that should be initially invisible. Any\n         column not mentioned will be initially visible, and if no array\n         is provided, all columns will be initially visible.\n       </dd>\n     <dt>dataModel</dt>\n       <dd>new qx.ui.treevirtual.SimpleTreeDataModel()</dd>\n     <dt>treeDataCellRenderer</dt>\n       <dd>\n         Instance of {@link qx.ui.treevirtual.SimpleTreeDataCellRenderer}.\n         Custom data cell renderer for the tree column.\n       </dd>\n     <dt>treeColumn</dt>\n       <dd>\n         The column number in which the tree is to reside, i.e., which\n         column uses the SimpleTreeDataCellRenderer or a subclass of it.\n       </dd>\n     <dt>defaultDataCellRenderer</dt>\n       <dd>\n         Instance of {@link qx.ui.treevirtual.DefaultDataCellRenderer}.\n         Custom data cell renderer for all columns other than the tree\n         column.\n       </dd>\n     <dt>dataRowRenderer</dt>\n       <dd>new qx.ui.treevirtual.SimpleTreeDataRowRenderer()</dd>\n     <dt>selectionManager</dt>\n       <dd><pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.treevirtual.SelectionManager(obj);\n         }\n       </pre></dd>\n     <dt>tableColumnModel</dt>\n       <dd><pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.table.columnmodel.Resize(obj);\n         }\n       </pre></dd>\n   </dl>",
+          "body": "custom {Map ? null}\n   A map provided (typically) by subclasses, to override the various\n   supplemental classes allocated within this constructor.  For normal\n   usage, this parameter may be omitted.  Each property must be an object\n   instance or a function which returns an object instance, as indicated by\n   the defaults listed here:\n   <dl>\n     <dt>initiallyHiddenColumns</dt>\n       <dd>\n         {Array?}\n         A list of column numbers that should be initially invisible. Any\n         column not mentioned will be initially visible, and if no array\n         is provided, all columns will be initially visible.\n       </dd>\n     <dt>dataModel</dt>\n       <dd>new qx.ui.treevirtual.SimpleTreeDataModel()</dd>\n     <dt>treeDataCellRenderer</dt>\n       <dd>\n         Instance of {@link qx.ui.treevirtual.SimpleTreeDataCellRenderer}.\n         Custom data cell renderer for the tree column.\n       </dd>\n     <dt>treeColumn</dt>\n       <dd>\n         The column number in which the tree is to reside, i.e., which\n         column uses the SimpleTreeDataCellRenderer or a subclass of it.\n       </dd>\n     <dt>defaultDataCellRenderer</dt>\n       <dd>\n         Instance of {@link qx.ui.treevirtual.DefaultDataCellRenderer}.\n         Custom data cell renderer for all columns other than the tree\n         column.\n       </dd>\n     <dt>dataRowRenderer</dt>\n       <dd>new qx.ui.treevirtual.SimpleTreeDataRowRenderer()</dd>\n     <dt>selectionManager</dt>\n       <dd><pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.treevirtual.SelectionManager(obj);\n         }\n       </pre></dd>\n     <dt>tableColumnModel</dt>\n       <dd><pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.table.columnmodel.Resize(obj);\n         }\n       </pre></dd>\n     <dt>tablePaneScroller</dt>\n       <dd>\n         Instance of {@link qx.ui.treevirtual.pane.Scroller}.\n         Custom table pane scroller for the tree\n         <pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.table.columnmodel.Resize(obj);\n         }\n       </pre>\n       </dd>\n   </dl>",
           "paramName": "custom",
-          "description": "\n   A map provided (typically) by subclasses, to override the various\n   supplemental classes allocated within this constructor.  For normal\n   usage, this parameter may be omitted.  Each property must be an object\n   instance or a function which returns an object instance, as indicated by\n   the defaults listed here:\n   <dl>\n     <dt>initiallyHiddenColumns</dt>\n       <dd>\n         {Array?}\n         A list of column numbers that should be initially invisible. Any\n         column not mentioned will be initially visible, and if no array\n         is provided, all columns will be initially visible.\n       </dd>\n     <dt>dataModel</dt>\n       <dd>new qx.ui.treevirtual.SimpleTreeDataModel()</dd>\n     <dt>treeDataCellRenderer</dt>\n       <dd>\n         Instance of {@link qx.ui.treevirtual.SimpleTreeDataCellRenderer}.\n         Custom data cell renderer for the tree column.\n       </dd>\n     <dt>treeColumn</dt>\n       <dd>\n         The column number in which the tree is to reside, i.e., which\n         column uses the SimpleTreeDataCellRenderer or a subclass of it.\n       </dd>\n     <dt>defaultDataCellRenderer</dt>\n       <dd>\n         Instance of {@link qx.ui.treevirtual.DefaultDataCellRenderer}.\n         Custom data cell renderer for all columns other than the tree\n         column.\n       </dd>\n     <dt>dataRowRenderer</dt>\n       <dd>new qx.ui.treevirtual.SimpleTreeDataRowRenderer()</dd>\n     <dt>selectionManager</dt>\n       <dd><pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.treevirtual.SelectionManager(obj);\n         }\n       </pre></dd>\n     <dt>tableColumnModel</dt>\n       <dd><pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.table.columnmodel.Resize(obj);\n         }\n       </pre></dd>\n   </dl>",
+          "description": "\n   A map provided (typically) by subclasses, to override the various\n   supplemental classes allocated within this constructor.  For normal\n   usage, this parameter may be omitted.  Each property must be an object\n   instance or a function which returns an object instance, as indicated by\n   the defaults listed here:\n   <dl>\n     <dt>initiallyHiddenColumns</dt>\n       <dd>\n         {Array?}\n         A list of column numbers that should be initially invisible. Any\n         column not mentioned will be initially visible, and if no array\n         is provided, all columns will be initially visible.\n       </dd>\n     <dt>dataModel</dt>\n       <dd>new qx.ui.treevirtual.SimpleTreeDataModel()</dd>\n     <dt>treeDataCellRenderer</dt>\n       <dd>\n         Instance of {@link qx.ui.treevirtual.SimpleTreeDataCellRenderer}.\n         Custom data cell renderer for the tree column.\n       </dd>\n     <dt>treeColumn</dt>\n       <dd>\n         The column number in which the tree is to reside, i.e., which\n         column uses the SimpleTreeDataCellRenderer or a subclass of it.\n       </dd>\n     <dt>defaultDataCellRenderer</dt>\n       <dd>\n         Instance of {@link qx.ui.treevirtual.DefaultDataCellRenderer}.\n         Custom data cell renderer for all columns other than the tree\n         column.\n       </dd>\n     <dt>dataRowRenderer</dt>\n       <dd>new qx.ui.treevirtual.SimpleTreeDataRowRenderer()</dd>\n     <dt>selectionManager</dt>\n       <dd><pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.treevirtual.SelectionManager(obj);\n         }\n       </pre></dd>\n     <dt>tableColumnModel</dt>\n       <dd><pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.table.columnmodel.Resize(obj);\n         }\n       </pre></dd>\n     <dt>tablePaneScroller</dt>\n       <dd>\n         Instance of {@link qx.ui.treevirtual.pane.Scroller}.\n         Custom table pane scroller for the tree\n         <pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.table.columnmodel.Resize(obj);\n         }\n       </pre>\n       </dd>\n   </dl>",
           "optional": true,
           "defaultValue": "null",
           "type": "Map"
@@ -80,11 +80,11 @@
     "treeOpenWithContent": {
       "location": {
         "start": {
-          "line": 246,
+          "line": 263,
           "column": 4
         },
         "end": {
-          "line": 246,
+          "line": 263,
           "column": 48
         }
       },
@@ -102,11 +102,11 @@
     "treeOpenWhileEmpty": {
       "location": {
         "start": {
-          "line": 255,
+          "line": 272,
           "column": 4
         },
         "end": {
-          "line": 255,
+          "line": 272,
           "column": 48
         }
       },
@@ -124,11 +124,11 @@
     "treeClose": {
       "location": {
         "start": {
-          "line": 264,
+          "line": 281,
           "column": 4
         },
         "end": {
-          "line": 264,
+          "line": 281,
           "column": 48
         }
       },
@@ -146,11 +146,11 @@
     "changeSelection": {
       "location": {
         "start": {
-          "line": 273,
+          "line": 290,
           "column": 4
         },
         "end": {
-          "line": 273,
+          "line": 290,
           "column": 48
         }
       },
@@ -170,11 +170,11 @@
     "SelectionMode": {
       "location": {
         "start": {
-          "line": 305,
+          "line": 322,
           "column": 4
         },
         "end": {
-          "line": 317,
+          "line": 334,
           "column": 5
         }
       },
@@ -194,11 +194,11 @@
     "openCloseClickSelectsRow": {
       "location": {
         "start": {
-          "line": 335,
+          "line": 352,
           "column": 4
         },
         "end": {
-          "line": 339,
+          "line": 356,
           "column": 5
         }
       },
@@ -219,11 +219,11 @@
     "appearance": {
       "location": {
         "start": {
-          "line": 341,
+          "line": 358,
           "column": 4
         },
         "end": {
-          "line": 345,
+          "line": 362,
           "column": 5
         }
       },
@@ -241,11 +241,11 @@
     "allowNodeEdit": {
       "location": {
         "start": {
-          "line": 347,
+          "line": 364,
           "column": 4
         },
         "end": {
-          "line": 351,
+          "line": 368,
           "column": 5
         }
       },
@@ -260,11 +260,11 @@
     "getDataModel": {
       "location": {
         "start": {
-          "line": 370,
+          "line": 387,
           "column": 4
         },
         "end": {
-          "line": 373,
+          "line": 390,
           "column": 5
         }
       },
@@ -290,11 +290,11 @@
     "setUseTreeLines": {
       "location": {
         "start": {
-          "line": 387,
+          "line": 404,
           "column": 4
         },
         "end": {
-          "line": 407,
+          "line": 424,
           "column": 5
         }
       },
@@ -321,11 +321,11 @@
     "getUseTreeLines": {
       "location": {
         "start": {
-          "line": 417,
+          "line": 434,
           "column": 4
         },
         "end": {
-          "line": 422,
+          "line": 439,
           "column": 5
         }
       },
@@ -351,11 +351,11 @@
     "setAlwaysShowOpenCloseSymbol": {
       "location": {
         "start": {
-          "line": 434,
+          "line": 451,
           "column": 4
         },
         "end": {
-          "line": 454,
+          "line": 471,
           "column": 5
         }
       },
@@ -382,11 +382,11 @@
     "setExcludeFirstLevelTreeLines": {
       "location": {
         "start": {
-          "line": 466,
+          "line": 483,
           "column": 4
         },
         "end": {
-          "line": 486,
+          "line": 503,
           "column": 5
         }
       },
@@ -413,11 +413,11 @@
     "getExcludeFirstLevelTreeLines": {
       "location": {
         "start": {
-          "line": 498,
+          "line": 515,
           "column": 4
         },
         "end": {
-          "line": 503,
+          "line": 520,
           "column": 5
         }
       },
@@ -443,11 +443,11 @@
     "getAlwaysShowOpenCloseSymbol": {
       "location": {
         "start": {
-          "line": 514,
+          "line": 531,
           "column": 4
         },
         "end": {
-          "line": 519,
+          "line": 536,
           "column": 5
         }
       },
@@ -470,14 +470,44 @@
       "type": "function",
       "access": "public"
     },
-    "setSelectionMode": {
+    "getOpenCloseButtonPosition": {
       "location": {
         "start": {
-          "line": 542,
+          "line": 544,
           "column": 4
         },
         "end": {
-          "line": 545,
+          "line": 561,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns the position of the open/close button for a node</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Object} The position of the open/close button within the tree row",
+            "type": "Object",
+            "description": " The position of the open/close button within the tree row"
+          }
+        ]
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "setSelectionMode": {
+      "location": {
+        "start": {
+          "line": 584,
+          "column": 4
+        },
+        "end": {
+          "line": 587,
           "column": 5
         }
       },
@@ -504,11 +534,11 @@
     "getSelectionMode": {
       "location": {
         "start": {
-          "line": 554,
+          "line": 596,
           "column": 4
         },
         "end": {
-          "line": 557,
+          "line": 599,
           "column": 5
         }
       },
@@ -534,11 +564,11 @@
     "getHierarchy": {
       "location": {
         "start": {
-          "line": 577,
+          "line": 619,
           "column": 4
         },
         "end": {
-          "line": 619,
+          "line": 661,
           "column": 5
         }
       },
@@ -576,11 +606,11 @@
     "getSelectedNodes": {
       "location": {
         "start": {
-          "line": 628,
+          "line": 670,
           "column": 4
         },
         "end": {
-          "line": 631,
+          "line": 673,
           "column": 5
         }
       },
@@ -603,14 +633,14 @@
       "type": "function",
       "access": "public"
     },
-    "_onKeyPress": {
+    "_onKeyDown": {
       "location": {
         "start": {
-          "line": 644,
+          "line": 686,
           "column": 4
         },
         "end": {
-          "line": 818,
+          "line": 860,
           "column": 5
         }
       },
@@ -641,11 +671,11 @@
     "_onSelectionChanged": {
       "location": {
         "start": {
-          "line": 828,
+          "line": 870,
           "column": 4
         },
         "end": {
-          "line": 845,
+          "line": 887,
           "column": 5
         }
       },
@@ -676,11 +706,11 @@
     "_calculateSelectedNodes": {
       "location": {
         "start": {
-          "line": 860,
+          "line": 902,
           "column": 4
         },
         "end": {
-          "line": 883,
+          "line": 925,
           "column": 5
         }
       },
@@ -706,11 +736,11 @@
     "setOverflow": {
       "location": {
         "start": {
-          "line": 896,
+          "line": 938,
           "column": 4
         },
         "end": {
-          "line": 903,
+          "line": 945,
           "column": 5
         }
       },
