@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 55,
+        "line": 56,
         "column": 0
       },
       "end": {
-        "line": 101,
+        "line": 102,
         "column": 3
       }
     },
@@ -39,6 +39,12 @@
           "name": "@asset",
           "body": "qx/static/empty.pdf"
         }
+      ],
+      "@ignore": [
+        {
+          "name": "@ignore",
+          "body": "$.browser"
+        }
       ]
     }
   },
@@ -47,11 +53,11 @@
     "getPdfjs": {
       "location": {
         "start": {
-          "line": 66,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 68,
+          "line": 69,
           "column": 5
         }
       },
@@ -91,11 +97,11 @@
     "__isAvailable": {
       "location": {
         "start": {
-          "line": 76,
+          "line": 77,
           "column": 4
         },
         "end": {
-          "line": 85,
+          "line": 86,
           "column": 5
         }
       },
@@ -129,11 +135,11 @@
     "__getPluginDetect": {
       "location": {
         "start": {
-          "line": 92,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 92,
+          "line": 93,
           "column": 27
         }
       },
@@ -160,11 +166,11 @@
   "defer": {
     "location": {
       "start": {
-        "line": 98,
+        "line": 99,
         "column": 10
       },
       "end": {
-        "line": 100,
+        "line": 101,
         "column": 3
       }
     },
