@@ -70,7 +70,7 @@ qx.Class.define("qxl.apiviewer.compile.CompilerApi", {
               await page.click(`.qx-main >> text=${node}`);
               for (let i = 0; i < 10; i++) {
                 await page.keyboard.press("ArrowDown");
-                await page.waitForTimeout(500);
+                await page.waitForTimeout(1000);
                 // assert that url hash has changed
                 assert.notEqual(page.url(), url);
                 url = page.url();
