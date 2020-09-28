@@ -21,10 +21,6 @@
       "@description": [
         {
           "name": "@description",
-          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n David Perez Carmona (david-perez)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
-        },
-        {
-          "name": "@description",
           "body": "<p>A data cell renderer for the tree column of a simple tree\n This cell renderer has provisions for subclasses to easily extend the\n appearance of the tree. If the tree should contain images, labels,\n etc. before the indentation, the subclass should override the method\n _addExtraContentBeforeIndentation(). Similarly, content can be added before\n the icon by overriding _addExtraContentBeforeIcon(), and before the label\n by overriding _addExtraContentBeforeLabel().\n Each of these overridden methods that calls _addImage() can provide, as\n part of the map passed to _addImage(), a member called \"tooltip\" which\n contains the tool tip to present when the mouse is hovered over the image.\n If this class is subclassed to form a new cell renderer, an instance of it\n must be provided, via the 'custom' parameter, to the TreeVirtual\n constructor.</p>"
         }
       ]
@@ -243,14 +239,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>overridden</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "protected",
       "overriddenFrom": "qx.ui.table.cellrenderer.Abstract",
@@ -269,14 +258,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>overridden</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "protected",
       "overriddenFrom": "qx.ui.table.cellrenderer.Abstract",
@@ -295,14 +277,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>overridden</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "protected",
       "overriddenFrom": "qx.ui.table.cellrenderer.Abstract",

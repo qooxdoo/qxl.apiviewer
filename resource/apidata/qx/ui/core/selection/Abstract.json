@@ -21,10 +21,6 @@
       "@description": [
         {
           "name": "@description",
-          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
-        },
-        {
-          "name": "@description",
           "body": "<p>Generic selection manager to bring rich desktop like selection behavior\n to widgets and low-level interactive controls.\n The selection handling supports both Shift and Ctrl/Meta modifies like\n known from native applications.</p>"
         }
       ]
@@ -45,14 +41,7 @@
         "column": 3
       }
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
-        }
-      ]
-    }
+    "jsdoc": {}
   },
   "events": {
     "changeSelection": {
@@ -485,18 +474,7 @@
           "column": 28
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>A flag that signals an user interaction, which means the selection change</p>"
-          },
-          {
-            "name": "@description",
-            "body": "<p>was triggered by pointer or keyboard [BUG #3344]</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "variable",
       "access": "protected"
     },
@@ -527,10 +505,6 @@
       },
       "jsdoc": {
         "@description": [
-          {
-            "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n  USER APIS\n---------------------------------------------------------------------------\n</code></pre>"
-          },
           {
             "name": "@description",
             "body": "<p>Returns the selection context. One of <code>tap</code>,\n <code>quick</code>, <code>drag</code> or <code>key</code> or\n <code>null</code>.</p>"
@@ -950,10 +924,6 @@
         "@description": [
           {
             "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n  LEAD/ANCHOR SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
-          },
-          {
-            "name": "@description",
             "body": "<p>Sets the lead item. Generally the item which was last modified\n by the user (tapped on etc.)</p>"
           }
         ],
@@ -1074,10 +1044,6 @@
       },
       "jsdoc": {
         "@description": [
-          {
-            "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n  BASIC SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
-          },
           {
             "name": "@description",
             "body": "<p>Whether the given item is selectable.</p>"
@@ -1286,10 +1252,6 @@
         "@description": [
           {
             "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n  DIMENSION AND LOCATION\n---------------------------------------------------------------------------\n</code></pre>"
-          },
-          {
-            "name": "@description",
             "body": "<p>Returns the location of the container</p>"
           }
         ],
@@ -1428,10 +1390,6 @@
         "@description": [
           {
             "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n  SCROLL SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
-          },
-          {
-            "name": "@description",
             "body": "<p>Returns the scroll position of the container.</p>"
           }
         ],
@@ -1529,10 +1487,6 @@
       },
       "jsdoc": {
         "@description": [
-          {
-            "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n  QUERY SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
-          },
           {
             "name": "@description",
             "body": "<p>Returns all selectable items of the container.</p>"
@@ -1762,18 +1716,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n  PROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------\n</code></pre>"
-          },
-          {
-            "name": "@description",
-            "body": "<p>property apply</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "protected",
       "applyFor": [
@@ -1793,10 +1736,6 @@
       },
       "jsdoc": {
         "@description": [
-          {
-            "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n  POINTER SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
-          },
           {
             "name": "@description",
             "body": "<p>This method should be connected to the <code>pointerover</code> event\n of the managed object.</p>"
@@ -2016,10 +1955,6 @@
         "@description": [
           {
             "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n  POINTER SUPPORT INTERNALS\n---------------------------------------------------------------------------\n</code></pre>"
-          },
-          {
-            "name": "@description",
             "body": "<p>Stops all timers, release capture etc. to cleanup drag selection</p>"
           }
         ]
@@ -2095,10 +2030,6 @@
         "@description": [
           {
             "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n  KEYBOARD SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
-          },
-          {
-            "name": "@description",
             "body": ""
           }
         ],
@@ -2162,10 +2093,6 @@
       },
       "jsdoc": {
         "@description": [
-          {
-            "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n  SUPPORT FOR ITEM RANGES\n---------------------------------------------------------------------------\n</code></pre>"
-          },
           {
             "name": "@description",
             "body": "<p>Adds all items to the selection</p>"
@@ -2328,10 +2255,6 @@
         "@description": [
           {
             "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n  SINGLE ITEM QUERY AND MODIFICATION\n---------------------------------------------------------------------------\n</code></pre>"
-          },
-          {
-            "name": "@description",
             "body": "<p>Returns the first selected item. Only makes sense\n when using manager in single selection mode.</p>"
           }
         ],
@@ -2391,10 +2314,6 @@
       },
       "jsdoc": {
         "@description": [
-          {
-            "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n  MODIFY ITEM SELECTION\n---------------------------------------------------------------------------\n</code></pre>"
-          },
           {
             "name": "@description",
             "body": "<p>Adds an item to the current selection.</p>"
@@ -2970,14 +2889,7 @@
         "column": 3
       }
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
-        }
-      ]
-    }
+    "jsdoc": {}
   },
   "descendants": [
     "qx.ui.core.selection.Widget",

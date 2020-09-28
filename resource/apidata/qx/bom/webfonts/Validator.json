@@ -21,10 +21,6 @@
       "@description": [
         {
           "name": "@description",
-          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
-        },
-        {
-          "name": "@description",
           "body": "<p>Checks whether a given font is available on the document and fires events\n accordingly.\n This class does not need to be disposed, unless you want to abort the validation\n early</p>"
         }
       ]
@@ -44,10 +40,6 @@
     },
     "jsdoc": {
       "@description": [
-        {
-          "name": "@description",
-          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
-        },
         {
           "name": "@description",
           "body": ""
@@ -380,10 +372,6 @@
         "@description": [
           {
             "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n  PUBLIC API\n---------------------------------------------------------------------------\n</code></pre>"
-          },
-          {
-            "name": "@description",
             "body": "<p>Validates the font</p>"
           }
         ]
@@ -404,10 +392,6 @@
       },
       "jsdoc": {
         "@description": [
-          {
-            "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n  PROTECTED API\n---------------------------------------------------------------------------\n</code></pre>"
-          },
           {
             "name": "@description",
             "body": "<p>Removes the helper elements from the DOM</p>"
@@ -535,14 +519,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>property apply</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "protected",
       "applyFor": [
@@ -562,10 +539,6 @@
       },
       "jsdoc": {
         "@description": [
-          {
-            "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n  PRIVATE API\n---------------------------------------------------------------------------\n</code></pre>"
-          },
           {
             "name": "@description",
             "body": "<p>Creates the default helper elements and gets their widths</p>"
@@ -4079,14 +4052,7 @@
         "column": 3
       }
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
-        }
-      ]
-    }
+    "jsdoc": {}
   },
   "descendants": []
 }

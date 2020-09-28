@@ -21,10 +21,6 @@
       "@description": [
         {
           "name": "@description",
-          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
-        },
-        {
-          "name": "@description",
           "body": "<p>This class is used to define mixins (similar to mixins in Ruby).\n Mixins are collections of code and variables, which can be merged into\n other classes. They are similar to classes but don't support inheritance.\n See the description of the {@link #define} method how a mixin is defined.</p>"
         }
       ],
@@ -51,10 +47,6 @@
       },
       "jsdoc": {
         "@description": [
-          {
-            "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n   PUBLIC API\n---------------------------------------------------------------------------\n</code></pre>"
-          },
           {
             "name": "@description",
             "body": "<p>Define a new mixin.\n Example:\n </p>\n<pre class='javascript'>\n qx.Mixin.define(\"name\",\n {\n   include: [SuperMixins],\n   properties: {\n     tabIndex: {type: \"number\", init: -1}\n   },\n   members:\n   {\n     prop1: \"foo\",\n     meth1: function() {},\n     meth2: function() {}\n   }\n });\n </pre>"
@@ -353,10 +345,6 @@
       },
       "jsdoc": {
         "@description": [
-          {
-            "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n   PRIVATE/INTERNAL API\n---------------------------------------------------------------------------\n</code></pre>"
-          },
           {
             "name": "@description",
             "body": "<p>This method will be attached to all mixins to return\n a nice identifier for them.</p>"

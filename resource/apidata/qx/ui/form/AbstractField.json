@@ -26,10 +26,6 @@
       "@description": [
         {
           "name": "@description",
-          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
-        },
-        {
-          "name": "@description",
           "body": "<p>This is a basic form field with common functionality for\n {@link TextArea} and {@link TextField}.\n On every keystroke the value is synchronized with the\n value of the textfield. Value changes can be monitored by listening to the\n {@link #input} or {@link #changeValue} events, respectively.</p>"
         }
       ]
@@ -100,10 +96,6 @@
       "@description": [
         {
           "name": "@description",
-          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
-        },
-        {
-          "name": "@description",
           "body": ""
         }
       ],
@@ -162,6 +154,70 @@
       },
       "name": "changeValue",
       "type": "qx.event.type.Data"
+    },
+    "changeEnabled": {
+      "type": "event",
+      "name": "changeEnabled",
+      "abstract": true,
+      "mixin": false,
+      "access": "public",
+      "overriddenFrom": "qx.ui.form.IForm",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Fired when the enabled state was modified</p>"
+          }
+        ]
+      }
+    },
+    "changeValid": {
+      "type": "event",
+      "name": "changeValid",
+      "abstract": true,
+      "mixin": false,
+      "access": "public",
+      "overriddenFrom": "qx.ui.form.IForm",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Fired when the valid state was modified</p>"
+          }
+        ]
+      }
+    },
+    "changeInvalidMessage": {
+      "type": "event",
+      "name": "changeInvalidMessage",
+      "abstract": true,
+      "mixin": false,
+      "access": "public",
+      "overriddenFrom": "qx.ui.form.IForm",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Fired when the invalidMessage was modified</p>"
+          }
+        ]
+      }
+    },
+    "changeRequired": {
+      "type": "event",
+      "name": "changeRequired",
+      "abstract": true,
+      "mixin": false,
+      "access": "public",
+      "overriddenFrom": "qx.ui.form.IForm",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Fired when the required was modified</p>"
+          }
+        ]
+      }
     }
   },
   "properties": {
@@ -234,14 +290,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>overridden</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "name": "selectable",
       "propertyType": "new",
       "refine": true,
@@ -263,14 +312,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>overridden</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "name": "focusable",
       "propertyType": "new",
       "refine": true,
@@ -585,18 +627,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n  WIDGET API\n---------------------------------------------------------------------------\n</code></pre>"
-          },
-          {
-            "name": "@description",
-            "body": "<p>overridden</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "public",
       "overriddenFrom": "qx.ui.core.Widget",
@@ -645,14 +676,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>overridden</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "public",
       "overriddenFrom": "qx.ui.core.Widget",
@@ -710,14 +734,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>overridden</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "protected",
       "overriddenFrom": "qx.ui.core.Widget",
@@ -736,14 +753,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>overridden</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "protected",
       "overriddenFrom": "qx.ui.core.Widget",
@@ -764,10 +774,6 @@
       },
       "jsdoc": {
         "@description": [
-          {
-            "name": "@description",
-            "body": "<p>default text sizes</p>"
-          },
           {
             "name": "@description",
             "body": ""
@@ -794,14 +800,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>overridden</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "protected",
       "overriddenFrom": "qx.ui.core.Widget",
@@ -820,14 +819,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>overridden</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "protected",
       "overriddenFrom": "qx.ui.core.Widget",
@@ -846,14 +838,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>overridden</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "protected",
       "overriddenFrom": "qx.ui.core.Widget",
@@ -872,14 +857,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>property apply</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "protected",
       "applyFor": [
@@ -897,14 +875,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>property transform</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "protected"
     },
@@ -919,14 +890,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>overridden</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "public",
       "overriddenFrom": "qx.ui.core.Widget",
@@ -977,10 +941,6 @@
       },
       "jsdoc": {
         "@description": [
-          {
-            "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENTS\n---------------------------------------------------------------------------\n</code></pre>"
-          },
           {
             "name": "@description",
             "body": "<p>Event listener for native input events. Redirects the event\n to the widget. Also checks for the filter and max length.</p>"
@@ -1074,10 +1034,6 @@
       },
       "jsdoc": {
         "@description": [
-          {
-            "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n  TEXTFIELD VALUE API\n---------------------------------------------------------------------------\n</code></pre>"
-          },
           {
             "name": "@description",
             "body": "<p>Sets the value of the textfield to the given value.</p>"
@@ -1207,10 +1163,6 @@
       },
       "jsdoc": {
         "@description": [
-          {
-            "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n  TEXTFIELD SELECTION API\n---------------------------------------------------------------------------\n</code></pre>"
-          },
           {
             "name": "@description",
             "body": "<p>Returns the current selection.\n This method only works if the widget is already created and\n added to the document.</p>"
@@ -1411,18 +1363,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n  PLACEHOLDER HELPERS\n---------------------------------------------------------------------------\n</code></pre>"
-          },
-          {
-            "name": "@description",
-            "body": "<p>overridden</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "public",
       "overriddenFrom": "qx.ui.core.Widget",
@@ -1589,14 +1530,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>overridden</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "protected",
       "overriddenFrom": "qx.ui.core.Widget",
@@ -1653,18 +1587,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n  PROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------\n</code></pre>"
-          },
-          {
-            "name": "@description",
-            "body": "<p>property apply</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "protected",
       "applyFor": [
@@ -1682,14 +1605,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>property apply</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "protected",
       "applyFor": [
@@ -1707,14 +1623,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>property apply</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "protected",
       "applyFor": [
@@ -1732,10 +1641,6 @@
       "property": "set",
       "jsdoc": {
         "@description": [
-          {
-            "name": "@description",
-            "body": "<pre><code>---------------------------------------------------------------------------\n  ENABLED PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
-          },
           {
             "name": "@description",
             "body": "<p>Set the enabled state of the widget.</p>"
@@ -1982,14 +1887,7 @@
       "inherited": true,
       "access": "protected",
       "overriddenFrom": "qx.ui.form.MForm",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>apply method</p>"
-          }
-        ]
-      }
+      "jsdoc": {}
     },
     "__onChangeLocale": {
       "type": "function",
@@ -3065,31 +2963,6 @@
         ]
       }
     },
-    "getAllowStretchX": {
-      "type": "function",
-      "name": "getAllowStretchX",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>allowStretchX</code>.\n\nFor further details take a look at the property definition: {@link #allowStretchX}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "any",
-            "desc": "Returns the value for allowStretchX"
-          }
-        ]
-      }
-    },
     "setAllowStretchX": {
       "type": "function",
       "name": "setAllowStretchX",
@@ -3130,31 +3003,6 @@
           {
             "name": "@description",
             "body": "Resets the user value of the property <code>allowStretchX</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #allowStretchX}."
-          }
-        ]
-      }
-    },
-    "getAllowStretchY": {
-      "type": "function",
-      "name": "getAllowStretchY",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>allowStretchY</code>.\n\nFor further details take a look at the property definition: {@link #allowStretchY}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "any",
-            "desc": "Returns the value for allowStretchY"
           }
         ]
       }
@@ -3475,31 +3323,6 @@
           {
             "name": "@description",
             "body": "Resets the user value of the property <code>marginLeft</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #marginLeft}."
-          }
-        ]
-      }
-    },
-    "getMargin": {
-      "type": "function",
-      "name": "getMargin",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>margin</code>.\n\nFor further details take a look at the property definition: {@link #margin}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "any",
-            "desc": "Returns the value for margin"
           }
         ]
       }
@@ -3958,31 +3781,6 @@
           {
             "name": "@description",
             "body": "Resets the user value of the property <code>paddingLeft</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #paddingLeft}."
-          }
-        ]
-      }
-    },
-    "getPadding": {
-      "type": "function",
-      "name": "getPadding",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.ui.core.Widget",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>padding</code>.\n\nFor further details take a look at the property definition: {@link #padding}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "any",
-            "desc": "Returns the value for padding"
           }
         ]
       }
@@ -6515,14 +6313,7 @@
         "column": 3
       }
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
-        }
-      ]
-    }
+    "jsdoc": {}
   },
   "descendants": [
     "qx.ui.form.TextArea",

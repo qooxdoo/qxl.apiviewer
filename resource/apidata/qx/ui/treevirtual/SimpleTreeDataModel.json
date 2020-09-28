@@ -23,10 +23,6 @@
       "@description": [
         {
           "name": "@description",
-          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007-2010 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
-        },
-        {
-          "name": "@description",
           "body": "<p>A simple tree data model used as the table model\n The object structure of a single node of the tree is:\n </p>\n<pre class='javascript'>\n {\n\n\n   type           : qx.ui.treevirtual.MTreePrimitive.Type.LEAF,\n   parentNodeId   : 23,\n   label          : \"My Documents\",\n   bSelected      : true,\n   bOpened        : true,\n   bHideOpenClose : false,\n   bCanEdit       : true,\n   icon           : \"images/folder.gif\",\n   iconSelected   : \"images/folder_selected.gif\",\n   cellStyle      : \"background-color:cyan\"\n   labelStyle     : \"background-color:red;color:white\"\n\n   columnData     : [\n                      null,\n                      \"text of column 1\",\n                      \"text of column 2\"\n                    ],\n\n   data           : {\n                      application :\n                      {\n\n                          foo: \"bar\",\n                          ...\n                      },\n                      MDragAndDropSupport :\n                      {\n\n\n\n\n\n                      },\n                      ...\n                    },\n\n\n\n\n\n   nodeId         : 42,\n   children       : [ ],\n   level          : 2,\n   labelPos       : 40,\n   bFirstChild    : true,\n   lastChild      : [ false ],\n\n\n\n }\n </pre>"
         }
       ]
@@ -44,14 +40,7 @@
         "column": 3
       }
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
-        }
-      ]
-    }
+    "jsdoc": {}
   },
   "properties": {
     "filter": {
@@ -421,14 +410,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>overridden</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "public",
       "overriddenFrom": "qx.ui.table.model.Abstract",
@@ -448,14 +430,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>overridden</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "public",
       "overriddenFrom": "qx.ui.table.model.Abstract",
@@ -622,14 +597,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>overridden</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "public",
       "overriddenFrom": "qx.ui.table.model.Abstract",
@@ -649,14 +617,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>overridden</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "public",
       "overriddenFrom": "qx.ui.table.model.Abstract",
@@ -741,14 +702,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>overridden</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "public",
       "overriddenFrom": "qx.ui.table.model.Abstract",
@@ -1585,14 +1539,7 @@
           "column": 5
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>property apply</p>"
-          }
-        ]
-      },
+      "jsdoc": {},
       "type": "function",
       "access": "protected",
       "applyFor": [
@@ -1867,5 +1814,6 @@
     },
     "jsdoc": {}
   },
+  "events": {},
   "descendants": []
 }

@@ -21,10 +21,6 @@
       "@description": [
         {
           "name": "@description",
-          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2014 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   Authors:\n Cajus Pollmeier (cajus)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
-        },
-        {
-          "name": "@description",
           "body": "<p>This class offers a constant API over the Notification Spec:\n http://www.w3.org/TR/notifications/\n It forwards all the browsers support if supported.\n<em>Example</em>\n </p>\n<pre class=\"javascript\">\n var notifications = qx.bom.Notification.getInstance();\n var button = new qx.ui.form.Button(\"Notify me!\");\n button.addListener(\"execute\", function() {\n   notifications.show(\"Information\", \"Hey there!\", \"icon/64/status/dialog-information.png\", 5000);\n });\n\n button.setEnabled(qx.core.Environment.get(\"html.notification\"));\n </pre>\n<pre><code>*Note**\n</code></pre>\n<p>A notification can only be sent if the user allows these notifications to\n be shown. <code>qx.bom.Notification</code> automatically tries to\n trigger a browser dialog which asks the user for permission.\n But there is a restriction: the dialog will only show up if it is triggered\n by code that is running inside a request handler for an interactive browser\n event like a mouse click or a keyboard interaction.\n For real life applications this means that you may add a <code>request()</code>\n call i.e. to your applications login button to let the browser ask for\n permission initially. After that happened and the user decided to\n accept these notifications, they can be sent any time without the\n need to be inside of event handlers.</p>"
         }
       ],
@@ -91,10 +87,6 @@
     },
     "jsdoc": {
       "@description": [
-        {
-          "name": "@description",
-          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
-        },
         {
           "name": "@description",
           "body": "<p>This is a singleton. Use <code>getInstance()</code> to get an instance.</p>"
