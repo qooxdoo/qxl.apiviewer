@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 157,
+        "line": 165,
         "column": 3
       }
     },
@@ -190,11 +190,11 @@
     "moveToCell": {
       "location": {
         "start": {
-          "line": 87,
+          "line": 88,
           "column": 4
         },
         "end": {
-          "line": 151,
+          "line": 159,
           "column": 5
         }
       },
@@ -223,6 +223,15 @@
             "optional": true,
             "defaultValue": "null",
             "type": "Integer"
+          },
+          {
+            "name": "@param",
+            "body": "editing {Boolean?null} Whether or not the cell is being edited",
+            "paramName": "editing",
+            "description": " Whether or not the cell is being edited",
+            "optional": true,
+            "defaultValue": "null",
+            "type": "Boolean"
           }
         ]
       },
@@ -4257,11 +4266,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 154,
+        "line": 162,
         "column": 13
       },
       "end": {
-        "line": 156,
+        "line": 164,
         "column": 3
       }
     },
