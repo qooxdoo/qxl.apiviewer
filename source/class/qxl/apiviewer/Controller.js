@@ -40,9 +40,10 @@ qx.Class.define("qxl.apiviewer.Controller",
   /**
    * @param widgetRegistry
    *          {Viewer} the GUI
+   *
+   * @ignore (qx.$$appRoot)
+   *
    */
-  
-  // @ignore (qx.$$appRoot)
   construct : function(widgetRegistry) {
     this.base(arguments);
 

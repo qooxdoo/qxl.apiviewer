@@ -60,7 +60,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.EventPanel", {
      */
     itemHasDetails : function(node, currentClassDocNode) {
       return (
-        node.getClass() != currentClassDocNode || // event is inherited
+        node.getOverriddenFrom() || // event is inherited
         node.getSee().length > 0 ||
         node.getErrors().length > 0 ||
         qxl.apiviewer.ui.panels.InfoPanel.descriptionHasDetails(node)
