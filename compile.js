@@ -119,8 +119,8 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
         let target = maker.getTarget();
         let outDir = target.getOutputDir();
         qxl.apiviewer.ClassLoader.setBaseUri(path.join(outDir, "transpiled") + path.sep);
-  
-  
+
+
         let env = environment;
         let excludeFromAPIViewer = env.excludeFromAPIViewer || env["qxl.apiviewer.exclude"];
         let includeToAPIViewer = env.includeToAPIViewer || env["qxl.apiviewer.include"];
@@ -274,10 +274,12 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
                   meta = meta.replace(/^\s*\/\*/mg, "");
                   meta = meta.replace(/^\s*\*\//mg, "");
                   meta = qx.tool.compiler.jsdoc.Parser.parseComment(meta);
-                  meta = meta["@description"][0].body;
-                  fs.writeFileSync(d, meta, {
-                    encoding: "utf8"
-                  });
+                  if (meta && Array.isArray(meta["@description"]) && meta["@description"].length) {
+                    meta = meta["@description"][0].body;
+                    fs.writeFileSync(d, meta, {
+                      encoding: "utf8"
+                    });
+                  }
                 }
               }
             });
