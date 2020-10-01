@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 738,
+        "line": 784,
         "column": 3
       }
     },
@@ -617,7 +617,7 @@
           "column": 4
         },
         "end": {
-          "line": 288,
+          "line": 292,
           "column": 5
         }
       },
@@ -665,11 +665,11 @@
     "onTableModelMetaDataChanged": {
       "location": {
         "start": {
-          "line": 295,
+          "line": 299,
           "column": 4
         },
         "end": {
-          "line": 297,
+          "line": 301,
           "column": 5
         }
       },
@@ -687,11 +687,11 @@
     "_applyMaxCacheLines": {
       "location": {
         "start": {
-          "line": 301,
+          "line": 305,
           "column": 4
         },
         "end": {
-          "line": 306,
+          "line": 310,
           "column": 5
         }
       },
@@ -705,11 +705,11 @@
     "__rowCacheClear": {
       "location": {
         "start": {
-          "line": 312,
+          "line": 316,
           "column": 4
         },
         "end": {
-          "line": 316,
+          "line": 320,
           "column": 5
         }
       },
@@ -727,11 +727,11 @@
     "__rowCacheGet": {
       "location": {
         "start": {
-          "line": 328,
+          "line": 332,
           "column": 4
         },
         "end": {
-          "line": 335,
+          "line": 339,
           "column": 5
         }
       },
@@ -780,11 +780,11 @@
     "__rowCacheSet": {
       "location": {
         "start": {
-          "line": 346,
+          "line": 350,
           "column": 4
         },
         "end": {
-          "line": 359,
+          "line": 363,
           "column": 5
         }
       },
@@ -832,11 +832,11 @@
     "updateContent": {
       "location": {
         "start": {
-          "line": 372,
+          "line": 376,
           "column": 4
         },
         "end": {
-          "line": 385,
+          "line": 391,
           "column": 5
         }
       },
@@ -892,11 +892,11 @@
     "_updateRowStyles": {
       "location": {
         "start": {
-          "line": 396,
+          "line": 402,
           "column": 4
         },
         "end": {
-          "line": 446,
+          "line": 452,
           "column": 5
         }
       },
@@ -928,11 +928,11 @@
     "_getRowsHtml": {
       "location": {
         "start": {
-          "line": 456,
+          "line": 462,
           "column": 4
         },
         "end": {
-          "line": 574,
+          "line": 580,
           "column": 5
         }
       },
@@ -974,11 +974,11 @@
     "_scrollContent": {
       "location": {
         "start": {
-          "line": 583,
+          "line": 589,
           "column": 4
         },
         "end": {
-          "line": 656,
+          "line": 662,
           "column": 5
         }
       },
@@ -1002,14 +1002,28 @@
       "type": "function",
       "access": "protected"
     },
-    "_updateAllRows": {
+    "_updateSingleRow": {
       "location": {
         "start": {
-          "line": 662,
+          "line": 664,
           "column": 4
         },
         "end": {
-          "line": 721,
+          "line": 703,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "protected"
+    },
+    "_updateAllRows": {
+      "location": {
+        "start": {
+          "line": 708,
+          "column": 4
+        },
+        "end": {
+          "line": 767,
           "column": 5
         }
       },
@@ -5018,11 +5032,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 734,
+        "line": 780,
         "column": 13
       },
       "end": {
-        "line": 737,
+        "line": 783,
         "column": 3
       }
     },
