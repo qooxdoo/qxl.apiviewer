@@ -1189,9 +1189,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "newPositions {Integer[]} Array mapping the index of a column in table model to its wanted overall\n                            position on screen (both zero based). If the table models holds\n                            col0, col1, col2 and col3 and you give [1,3,2,0], the new column order\n                            will be col3, col0, col2, col1",
+            "body": "newPositions {Integer[]} Array mapping the index of a column in table model to its wanted overall\n                            position on screen (both zero based). If the table models holds\n                            col0, col1, col2 and col3 and you give [1,3,2,0], the new column order\n                            will be col1, col3, col2, col0",
             "paramName": "newPositions",
-            "description": " Array mapping the index of a column in table model to its wanted overall\n                            position on screen (both zero based). If the table models holds\n                            col0, col1, col2 and col3 and you give [1,3,2,0], the new column order\n                            will be col3, col0, col2, col1",
+            "description": " Array mapping the index of a column in table model to its wanted overall\n                            position on screen (both zero based). If the table models holds\n                            col0, col1, col2 and col3 and you give [1,3,2,0], the new column order\n                            will be col1, col3, col2, col0",
             "type": "Integer[]"
           }
         ]
