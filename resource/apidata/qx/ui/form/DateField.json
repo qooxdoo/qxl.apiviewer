@@ -19,7 +19,7 @@
         "column": 0
       },
       "end": {
-        "line": 609,
+        "line": 618,
         "column": 3
       }
     },
@@ -940,6 +940,25 @@
         },
         "end": {
           "line": 596,
+          "column": 5
+        }
+      },
+      "jsdoc": {},
+      "type": "function",
+      "access": "public",
+      "overriddenFrom": "qx.ui.core.Widget",
+      "appearsIn": [
+        "qx.ui.core.Widget"
+      ]
+    },
+    "tabFocus": {
+      "location": {
+        "start": {
+          "line": 599,
+          "column": 4
+        },
+        "end": {
+          "line": 605,
           "column": 5
         }
       },
@@ -5639,11 +5658,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 600,
+        "line": 609,
         "column": 13
       },
       "end": {
-        "line": 608,
+        "line": 617,
         "column": 3
       }
     },
