@@ -115,6 +115,10 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           console.log(`start analyse for ${appToScan}`);
         }
         let maker = command.getMakersForApp(appToScan)[0];
+        if (!maker) {
+          console.error(`could not find a maker for application ${appToScan}`);
+          return;
+        }
         let analyser = maker.getAnalyser();
         let target = maker.getTarget();
         let outDir = target.getOutputDir();
