@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 414,
+        "line": 436,
         "column": 3
       }
     },
@@ -982,14 +982,86 @@
       "type": "function",
       "access": "public"
     },
-    "getBigInt": {
+    "getStringCodePointAt": {
       "location": {
         "start": {
-          "line": 323,
+          "line": 322,
           "column": 4
         },
         "end": {
-          "line": 325,
+          "line": 324,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Checks if 'codePointAt' is supported on the String object.</p>"
+          }
+        ],
+        "@internal": [
+          {
+            "name": "@internal",
+            "body": ""
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} <code>true</code>, if the method is available.",
+            "type": "Boolean",
+            "description": " <code>true</code>, if the method is available."
+          }
+        ]
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "getStringFromCodePoint": {
+      "location": {
+        "start": {
+          "line": 332,
+          "column": 4
+        },
+        "end": {
+          "line": 334,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Checks if 'fromCodePoint' is supported on the String object.</p>"
+          }
+        ],
+        "@internal": [
+          {
+            "name": "@internal",
+            "body": ""
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} <code>true</code>, if the method is available.",
+            "type": "Boolean",
+            "description": " <code>true</code>, if the method is available."
+          }
+        ]
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "getBigInt": {
+      "location": {
+        "start": {
+          "line": 343,
+          "column": 4
+        },
+        "end": {
+          "line": 345,
           "column": 5
         }
       },
@@ -1027,11 +1099,11 @@
     "getBigIntToLocaleString": {
       "location": {
         "start": {
-          "line": 337,
+          "line": 357,
           "column": 4
         },
         "end": {
-          "line": 342,
+          "line": 362,
           "column": 5
         }
       },
@@ -1073,11 +1145,11 @@
     "getPromiseNative": {
       "location": {
         "start": {
-          "line": 348,
+          "line": 368,
           "column": 4
         },
         "end": {
-          "line": 350,
+          "line": 370,
           "column": 5
         }
       },
@@ -1095,11 +1167,11 @@
     "getEpsilon": {
       "location": {
         "start": {
-          "line": 355,
+          "line": 375,
           "column": 4
         },
         "end": {
-          "line": 357,
+          "line": 377,
           "column": 5
         }
       },
@@ -1118,11 +1190,11 @@
   "defer": {
     "location": {
       "start": {
-        "line": 361,
+        "line": 381,
         "column": 10
       },
       "end": {
-        "line": 413,
+        "line": 435,
         "column": 3
       }
     },
