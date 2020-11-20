@@ -46,7 +46,7 @@ qx.Class.define("qxl.apiviewer.compile.CompilerApi", {
         try {
           const playwright = this.require('playwright');
           for (const browserType of ['chromium', 'firefox' /*, 'webkit'*/]) {
-            console.info("Running test in " + browserType);
+            console.info("APIVIEWER: Running test in " + browserType);
             const launchArgs = {
               args: ['--no-sandbox', '--disable-setuid-sandbox']
             };
@@ -112,11 +112,11 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
       return new qx.Promise(fullfiled => {
         let command = this.getCompilerApi().getCommand();
         if (command.argv.verbose) {
-          console.log(`start analyse for ${appToScan}`);
+          console.log(`APIVIEWER: start analyse for ${appToScan}`);
         }
         let maker = command.getMakersForApp(appToScan)[0];
         if (!maker) {
-          console.error(`could not find a maker for application ${appToScan}`);
+          console.error(`APIVIEWER: could not find a maker for application ${appToScan}`);
           return;
         }
         let analyser = maker.getAnalyser();
@@ -126,8 +126,15 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
 
 
         let env = environment;
-        let excludeFromAPIViewer = env.excludeFromAPIViewer || env["qxl.apiviewer.exclude"];
-        let includeToAPIViewer = env.includeToAPIViewer || env["qxl.apiviewer.include"];
+        let excludeFromAPIViewer =  env["qxl.apiviewer.exclude"] || env.excludeFromAPIViewer;
+        if (env.excludeFromAPIViewer) {
+            console.error(`excludeFromAPIViewer is deprecated, use qxl.apiviewer.exclude instead`);
+		}
+		
+        let includeToAPIViewer = env["qxl.apiviewer.include"] || env.includeToAPIViewer;
+        if (env.includeFromAPIViewer) {
+            console.error(`includeFromAPIViewer is deprecated, use qxl.apiviewer.include instead`);
+		}
         let classInfo = analyser.getDatabase().classInfo;
 
         function expandClassnames(names) {
@@ -209,7 +216,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           try {
             cls = qxl.apiviewer.dao.Class.getClassByName(classname, true);
           } catch (e) {
-            console.error(`${e.message}`);
+            console.error(`APIVIEWER: ${e.message}`);
             return;
           }
           if (cls.isLoaded()) {
@@ -221,7 +228,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
             dest = path.join(outputDir, dest);
             await qx.tool.utils.files.Utils.copyFile(src, dest);
             if (command.argv.verbose) {
-              console.log(`analyse ${cls.getName()}`);
+              console.log(`APIVIEWER: analyse ${cls.getName()}`);
             }
             env.apiviewer.classes.push(cls.getName());
             let nameIdx = env.apiviewer.apiindex.fullNames.indexOf(cls.getName());
@@ -261,7 +268,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           });
         }).then(() => {
           if (command.argv.verbose) {
-            console.log(`analysing done`);
+            console.log(`APIVIEWER: analysing done`);
           }
           let libs = analyser.getLibraries();
           qx.Promise.map(libs, async (lib) => {
