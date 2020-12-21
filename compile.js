@@ -103,13 +103,13 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
       let command = this.getCompilerApi().getCommand();
       if (command instanceof qx.tool.cli.commands.Compile) {
         let apps = [];
-        command.addListener("checkEnvironment", e => apps.push({ 
-            application: e.getData().application, 
-            environment: e.getData().environment
-          }));
+        command.addListener("checkEnvironment", e => apps.push({
+          application: e.getData().application,
+          environment: e.getData().environment
+        }));
         command.addListener("writtenApplications", async () => {
-          for (var i = 0; i < apps.length; i++) {
-            await this.__appCompiling(apps[i].application, apps[i].environment);
+          for await (let app of apps) {
+            this.__appCompiling(app.application, app.environment);
           }
         });
       }
@@ -135,15 +135,15 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
 
 
         let env = environment;
-        let excludeFromAPIViewer =  env["qxl.apiviewer.exclude"] || env.excludeFromAPIViewer;
+        let excludeFromAPIViewer = env["qxl.apiviewer.exclude"] || env.excludeFromAPIViewer;
         if (env.excludeFromAPIViewer) {
-            console.error(`excludeFromAPIViewer is deprecated, use qxl.apiviewer.exclude instead`);
-		    }
-		
+          console.error(`excludeFromAPIViewer is deprecated, use qxl.apiviewer.exclude instead`);
+        }
+
         let includeToAPIViewer = env["qxl.apiviewer.include"] || env.includeToAPIViewer;
         if (env.includeFromAPIViewer) {
-            console.error(`includeFromAPIViewer is deprecated, use qxl.apiviewer.include instead`);
-		    }
+          console.error(`includeFromAPIViewer is deprecated, use qxl.apiviewer.include instead`);
+        }
         let classInfo = analyser.getDatabase().classInfo;
 
         function expandClassnames(names) {
@@ -280,10 +280,10 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
             console.log(`APIVIEWER: analysing done`);
           }
           let libs = analyser.getLibraries();
-          return qx.Promise.map(libs, async (lib) => {
+          qx.Promise.map(libs, (lib) => {
             const src = path.join(lib.getRootDir(), lib.getSourcePath());
             const dest = outputDir;
-            walkSync(src, async (file) => {
+            walkSync(src, (file) => {
               if (path.basename(file) === "__init__.js") {
                 let d = path.join(dest, path.dirname(path.relative(src, file)));
                 if (fs.existsSync(d)) {
