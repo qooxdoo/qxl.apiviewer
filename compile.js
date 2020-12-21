@@ -102,7 +102,16 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
     async load() {
       let command = this.getCompilerApi().getCommand();
       if (command instanceof qx.tool.cli.commands.Compile) {
-        command.addListener("checkEnvironment", e => this.__appCompiling(e.getData().application, e.getData().environment));
+        let apps = [];
+        command.addListener("checkEnvironment", e => apps.push({ 
+            application: e.getData().application, 
+            environment: e.getData().environment
+          }));
+        command.addListener("writtenApplications", async () => {
+          for (var i = 0; i < apps.length; i++) {
+            await this.__appCompiling(apps[i].application, apps[i].environment);
+          }
+        });
       }
       return this.base(arguments);
     },
@@ -129,12 +138,12 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
         let excludeFromAPIViewer =  env["qxl.apiviewer.exclude"] || env.excludeFromAPIViewer;
         if (env.excludeFromAPIViewer) {
             console.error(`excludeFromAPIViewer is deprecated, use qxl.apiviewer.exclude instead`);
-		}
+		    }
 		
         let includeToAPIViewer = env["qxl.apiviewer.include"] || env.includeToAPIViewer;
         if (env.includeFromAPIViewer) {
             console.error(`includeFromAPIViewer is deprecated, use qxl.apiviewer.include instead`);
-		}
+		    }
         let classInfo = analyser.getDatabase().classInfo;
 
         function expandClassnames(names) {
@@ -207,7 +216,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
         };
 
         // We sort the result so that we can get a consistent ordering for loading classes, otherwise the order in
-        //  which the filing system returns the files can cause classes to be loaded in a lightly different sequence;
+        //  which the filing system returns the files can cause classes to be loaded in a slightly different sequence;
         //  that would not cause a problem, except that the build is not 100% repeatable.
         let classes = getRequiredClasses();
         classes.sort();
@@ -271,7 +280,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
             console.log(`APIVIEWER: analysing done`);
           }
           let libs = analyser.getLibraries();
-          qx.Promise.map(libs, async (lib) => {
+          return qx.Promise.map(libs, async (lib) => {
             const src = path.join(lib.getRootDir(), lib.getSourcePath());
             const dest = outputDir;
             walkSync(src, async (file) => {
@@ -304,7 +313,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
     async __appCompiling(application, environment) {
       let className = application.getClassName();
       if (className !== "qxl.apiviewer.Application") {
-        return qx.Promise.resolve();
+        return;
       }
 
       let command = this.getCompilerApi().getCommand();
@@ -333,7 +342,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
       environment.apiviewer.apiindex.index = {};
       environment.apiviewer.apiindex.types = ["doctree", "package", "class", "method_pub", "method_prot", "event", "property_pub", "method_priv", "method_intl", "constant", "childControl"];
 
-    let appsToScan = environment["qxl.apiviewer.applications"] || [];
+      let appsToScan = environment["qxl.apiviewer.applications"] || [];
       if (appsToScan.length === 0) {
         let appToScan = environment.buildApiForApp || environment["qxl.apiviewer.applicationName"] || "";
         if (appToScan) {
