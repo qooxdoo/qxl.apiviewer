@@ -86,7 +86,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "define": {
       "location": {
@@ -1329,7 +1329,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__staticAllowedKeys": {
       "location": {
@@ -1357,7 +1357,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__validateConfig": {
       "location": {
@@ -1401,7 +1401,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__validateAbstractInterfaces": {
       "location": {
@@ -1438,7 +1438,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__attachAnno": {
       "location": {
@@ -1490,7 +1490,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__createClass": {
       "location": {
@@ -1571,7 +1571,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__addEvents": {
       "location": {
@@ -1618,7 +1618,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__addProperties": {
       "location": {
@@ -1665,7 +1665,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__validateProperty": {
       "location": {
@@ -1725,7 +1725,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__addMembers": {
       "location": {
@@ -1790,7 +1790,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__mixinMemberWrapper": {
       "location": {
@@ -1836,7 +1836,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__addInterface": {
       "location": {
@@ -1874,7 +1874,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__addMixin": {
       "location": {
@@ -1919,7 +1919,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__createDefaultConstructor": {
       "location": {
@@ -1949,7 +1949,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__wrapConstructor": {
       "location": {
@@ -2002,7 +2002,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     }
   },
   "defer": {

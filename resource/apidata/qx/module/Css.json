@@ -242,7 +242,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__getDisplayDefault": {
       "location": {
@@ -289,7 +289,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__swap": {
       "location": {
@@ -349,7 +349,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "includeStylesheet": {
       "location": {

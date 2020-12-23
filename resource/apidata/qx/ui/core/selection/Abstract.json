@@ -195,7 +195,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__scrollStepY": {
       "location": {
@@ -209,7 +209,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__scrollTimer": {
       "location": {
@@ -223,7 +223,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__frameScroll": {
       "location": {
@@ -237,7 +237,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__lastRelX": {
       "location": {
@@ -251,7 +251,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__lastRelY": {
       "location": {
@@ -265,7 +265,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__frameLocation": {
       "location": {
@@ -279,7 +279,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__dragStartX": {
       "location": {
@@ -293,7 +293,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__dragStartY": {
       "location": {
@@ -307,7 +307,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__inCapture": {
       "location": {
@@ -321,7 +321,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__pointerX": {
       "location": {
@@ -335,7 +335,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__pointerY": {
       "location": {
@@ -349,7 +349,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__moveDirectionX": {
       "location": {
@@ -363,7 +363,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__moveDirectionY": {
       "location": {
@@ -377,7 +377,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__selectionModified": {
       "location": {
@@ -391,7 +391,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__selectionContext": {
       "location": {
@@ -405,7 +405,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__leadItem": {
       "location": {
@@ -419,7 +419,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__selection": {
       "location": {
@@ -433,7 +433,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__anchorItem": {
       "location": {
@@ -447,7 +447,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__pointerDownOnSelected": {
       "location": {
@@ -461,7 +461,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_userInteraction": {
       "location": {
@@ -490,7 +490,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "getSelectionContext": {
       "location": {
@@ -2047,7 +2047,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "handleKeyPress": {
       "location": {
@@ -2238,7 +2238,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_getSelectedItem": {
       "location": {

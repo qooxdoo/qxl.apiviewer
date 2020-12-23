@@ -115,7 +115,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__editableColArr": {
       "location": {
@@ -129,7 +129,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__tempTreeData": {
       "location": {
@@ -143,7 +143,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__recalculateLastChildFlags": {
       "location": {
@@ -157,7 +157,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_rowArr": {
       "location": {
@@ -1041,7 +1041,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__calculateLastChildFlags": {
       "location": {
@@ -1072,7 +1072,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__setLastChildFlag": {
       "location": {
@@ -1110,7 +1110,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__render": {
       "location": {
@@ -1132,7 +1132,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "setData": {
       "location": {

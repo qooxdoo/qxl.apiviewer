@@ -54,7 +54,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__defaultSize": {
       "location": {
@@ -82,7 +82,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__knownImageTypesRegExp": {
       "location": {
@@ -110,7 +110,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__dataUrlRegExp": {
       "location": {
@@ -138,7 +138,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "isLoaded": {
       "location": {
@@ -511,7 +511,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__onLoadHandler": {
       "location": {
@@ -562,7 +562,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "dispose": {
       "location": {

@@ -105,7 +105,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__external": {
       "location": {
@@ -127,7 +127,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "then": {
       "location": {
@@ -767,7 +767,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__getPendingExternal": {
       "location": {
@@ -789,7 +789,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "resolve": {
       "location": {
@@ -1230,7 +1230,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.core.MLogging",
       "jsdoc": {
         "@description": [
@@ -2080,7 +2080,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.core.MObjectId",
       "jsdoc": {
         "@description": [
@@ -2279,7 +2279,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.core.MObjectId",
       "jsdoc": {
         "@description": [
@@ -4202,7 +4202,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "resolve": {
       "location": {
@@ -4900,7 +4900,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__initialized": {
       "location": {
@@ -4922,7 +4922,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__initialize": {
       "location": {
@@ -4944,7 +4944,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__onUnhandledRejection": {
       "location": {
@@ -4972,7 +4972,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__wrap": {
       "location": {
@@ -5008,7 +5008,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__bindArgs": {
       "location": {
@@ -5052,7 +5052,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__callStaticMethod": {
       "location": {
@@ -5106,7 +5106,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__mapArgs": {
       "location": {
@@ -5128,7 +5128,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     }
   },
   "defer": {

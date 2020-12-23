@@ -195,7 +195,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "compute": {
       "location": {
@@ -290,7 +290,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__keepAlign": {
       "location": {
@@ -304,7 +304,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__bestFit": {
       "location": {
@@ -318,7 +318,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__getAxis": {
       "location": {
@@ -357,7 +357,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     }
   },
   "members": {
@@ -373,7 +373,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "compute": {
       "location": {
@@ -463,7 +463,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__getPositionY": {
       "location": {
@@ -493,7 +493,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "getQxOwner": {
       "type": "function",

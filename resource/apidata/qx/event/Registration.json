@@ -62,7 +62,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "getManager": {
       "location": {
@@ -659,7 +659,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "fireEvent": {
       "location": {
@@ -869,7 +869,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "fireNonBubblingEvent": {
       "location": {
@@ -1121,7 +1121,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "addHandler": {
       "location": {
@@ -1218,7 +1218,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "addDispatcher": {
       "location": {

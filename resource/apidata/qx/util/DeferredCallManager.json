@@ -58,7 +58,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__currentQueue": {
       "location": {
@@ -72,7 +72,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__calls": {
       "location": {
@@ -86,7 +86,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__hasCalls": {
       "location": {
@@ -100,7 +100,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__timeoutWrapper": {
       "location": {
@@ -114,7 +114,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "schedule": {
       "location": {
@@ -226,7 +226,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "getQxOwner": {
       "type": "function",

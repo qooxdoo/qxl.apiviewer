@@ -260,7 +260,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__bRendering": {
       "location": {
@@ -274,7 +274,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__t1": {
       "location": {
@@ -288,7 +288,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__initialNumElements": {
       "location": {
@@ -302,7 +302,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__bInitialRenderComplete": {
       "location": {
@@ -316,7 +316,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__structure": {
       "location": {
@@ -330,7 +330,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "getStructure": {
       "location": {
@@ -523,7 +523,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__createStateRendererData": {
       "location": {
@@ -553,7 +553,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__dataAvailable": {
       "location": {
@@ -584,7 +584,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "getQxOwner": {
       "type": "function",

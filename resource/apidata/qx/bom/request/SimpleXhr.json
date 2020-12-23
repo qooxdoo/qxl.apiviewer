@@ -1074,7 +1074,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__requestData": {
       "location": {
@@ -1096,7 +1096,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__method": {
       "location": {
@@ -1118,7 +1118,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__url": {
       "location": {
@@ -1140,7 +1140,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__response": {
       "location": {
@@ -1162,7 +1162,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__parser": {
       "location": {
@@ -1184,7 +1184,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__cache": {
       "location": {
@@ -1206,7 +1206,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__timeout": {
       "location": {
@@ -1228,7 +1228,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__disposed": {
       "location": {
@@ -1250,7 +1250,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "addListenerOnce": {
       "location": {
@@ -1410,7 +1410,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_onLoadEnd": {
       "location": {

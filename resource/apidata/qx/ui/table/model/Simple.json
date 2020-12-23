@@ -340,7 +340,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__sortableColArr": {
       "location": {
@@ -354,7 +354,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__sortMethods": {
       "location": {
@@ -368,7 +368,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__sortColumnIndex": {
       "location": {
@@ -382,7 +382,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__sortAscending": {
       "location": {
@@ -396,7 +396,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "getRowData": {
       "location": {

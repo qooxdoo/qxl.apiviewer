@@ -389,7 +389,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__emitter": {
       "location": {
@@ -403,7 +403,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__gesture": {
       "location": {
@@ -417,7 +417,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__eventName": {
       "location": {
@@ -431,7 +431,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__primaryTarget": {
       "location": {
@@ -445,7 +445,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__isMultiPointerGesture": {
       "location": {
@@ -459,7 +459,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__initialAngle": {
       "location": {
@@ -473,7 +473,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__lastTap": {
       "location": {
@@ -487,7 +487,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__rollImpulseId": {
       "location": {
@@ -501,7 +501,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__stopMomentum": {
       "location": {
@@ -515,7 +515,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__initialDistance": {
       "location": {
@@ -529,7 +529,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__momentum": {
       "location": {
@@ -543,7 +543,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__rollEvents": {
       "location": {
@@ -557,7 +557,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__rollEventsCountStart": {
       "location": {
@@ -571,7 +571,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__rollEventsCount": {
       "location": {
@@ -585,7 +585,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__touchPadDetectionPerformed": {
       "location": {
@@ -599,7 +599,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__lastRollEventTime": {
       "location": {
@@ -613,7 +613,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_initObserver": {
       "location": {
@@ -1025,7 +1025,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_calcAngle": {
       "location": {
@@ -1191,7 +1191,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_getDeltaCoordinates": {
       "location": {
@@ -1362,7 +1362,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__fireTrack": {
       "location": {
@@ -1407,7 +1407,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__fireRollEvent": {
       "location": {
@@ -1452,7 +1452,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__performAdaptativeRollScrolling": {
       "location": {
@@ -1483,7 +1483,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__endTouchPadDetection": {
       "location": {
@@ -1505,7 +1505,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_isTouchPadDetectionEnabled": {
       "location": {
@@ -1624,7 +1624,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__firePinch": {
       "location": {
@@ -1662,7 +1662,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__fireLongTap": {
       "location": {
@@ -1700,7 +1700,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__stopLongTapTimer": {
       "location": {
@@ -1731,7 +1731,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "dispose": {
       "location": {

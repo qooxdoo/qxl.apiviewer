@@ -92,7 +92,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__moveFrame": {
       "location": {
@@ -106,7 +106,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__dragRange": {
       "location": {
@@ -120,7 +120,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__dragLeft": {
       "location": {
@@ -134,7 +134,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__dragTop": {
       "location": {
@@ -148,7 +148,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__parentLeft": {
       "location": {
@@ -162,7 +162,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__parentTop": {
       "location": {
@@ -176,7 +176,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__blockerAdded": {
       "location": {
@@ -190,7 +190,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__oldBlockerColor": {
       "location": {
@@ -204,7 +204,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__oldBlockerOpacity": {
       "location": {
@@ -218,7 +218,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_activateMoveHandle": {
       "location": {
@@ -279,7 +279,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__showMoveFrame": {
       "location": {
@@ -301,7 +301,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__computeMoveCoordinates": {
       "location": {
@@ -340,7 +340,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_onMoveRoll": {
       "location": {
@@ -495,7 +495,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "getMovable": {
       "type": "function",

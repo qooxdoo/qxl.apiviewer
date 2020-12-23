@@ -55,7 +55,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__log": {
       "location": {
@@ -69,7 +69,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__cmd": {
       "location": {
@@ -83,7 +83,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__lastCommand": {
       "location": {
@@ -97,7 +97,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "init": {
       "location": {
@@ -222,7 +222,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__visible": {
       "location": {
@@ -250,7 +250,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "toggle": {
       "location": {
@@ -322,7 +322,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "execute": {
       "location": {
@@ -375,7 +375,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__onKeyPress": {
       "location": {
@@ -406,7 +406,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     }
   },
   "defer": {

@@ -409,7 +409,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__lookupTable": {
       "location": {
@@ -423,7 +423,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__onUpdate": {
       "location": {
@@ -437,7 +437,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__boundProperties": {
       "location": {
@@ -451,7 +451,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__boundPropertiesReverse": {
       "location": {
@@ -465,7 +465,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__syncTargetSelection": {
       "location": {
@@ -479,7 +479,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__syncModelSelection": {
       "location": {
@@ -493,7 +493,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "update": {
       "location": {
@@ -847,7 +847,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_applyModel": {
       "location": {
@@ -963,7 +963,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__changeModel": {
       "location": {
@@ -985,7 +985,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "syncWidget": {
       "location": {
@@ -1035,7 +1035,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__moveChangeListenerAtTheEnd": {
       "location": {
@@ -1057,7 +1057,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_createItem": {
       "location": {
@@ -1118,7 +1118,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__removeItem": {
       "location": {
@@ -1140,7 +1140,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "getVisibleModels": {
       "location": {
@@ -1474,7 +1474,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_setConfigureItem": {
       "location": {
@@ -1654,7 +1654,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__buildUpLookupTable": {
       "location": {
@@ -1676,7 +1676,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__lookup": {
       "location": {
@@ -1715,7 +1715,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "setSelection": {
       "type": "function",
@@ -1904,7 +1904,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.data.controller.MSelection",
       "jsdoc": {
         "@description": [
@@ -1994,7 +1994,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.data.controller.MSelection",
       "jsdoc": {
         "@description": [
@@ -2019,7 +2019,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.data.controller.MSelection",
       "jsdoc": {
         "@description": [
@@ -2044,7 +2044,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.data.controller.MSelection",
       "jsdoc": {
         "@description": [
@@ -2070,7 +2070,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.data.controller.MSelection",
       "jsdoc": {
         "@description": [

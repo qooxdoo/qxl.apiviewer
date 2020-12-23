@@ -82,7 +82,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__arguments": {
       "location": {
@@ -96,7 +96,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__firstRow": {
       "location": {
@@ -110,7 +110,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__firstColumn": {
       "location": {
@@ -124,7 +124,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__rowSizes": {
       "location": {
@@ -138,7 +138,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__columnSizes": {
       "location": {
@@ -152,7 +152,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "getFirstRow": {
       "location": {

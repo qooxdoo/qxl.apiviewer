@@ -223,7 +223,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__value": {
       "location": {
@@ -237,7 +237,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__labelUnchecked": {
       "location": {
@@ -251,7 +251,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__labelChecked": {
       "location": {
@@ -265,7 +265,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__lastToggleTimestamp": {
       "location": {
@@ -279,7 +279,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_getChild": {
       "location": {
@@ -1133,7 +1133,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.mobile.form.MValue",
       "jsdoc": {
         "@description": [
@@ -1263,7 +1263,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.form.MForm",
       "jsdoc": {
         "@description": [

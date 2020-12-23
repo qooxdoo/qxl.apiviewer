@@ -497,7 +497,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__knobLocation": {
       "location": {
@@ -511,7 +511,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__knobSize": {
       "location": {
@@ -525,7 +525,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__dragMode": {
       "location": {
@@ -539,7 +539,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__dragOffset": {
       "location": {
@@ -553,7 +553,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__trackingMode": {
       "location": {
@@ -567,7 +567,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__trackingDirection": {
       "location": {
@@ -581,7 +581,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__trackingEnd": {
       "location": {
@@ -595,7 +595,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__timer": {
       "location": {
@@ -609,7 +609,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__dragTimer": {
       "location": {
@@ -624,7 +624,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__lastValueEvent": {
       "location": {
@@ -638,7 +638,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__dragValue": {
       "location": {
@@ -652,7 +652,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__scrollAnimationframe": {
       "location": {
@@ -666,7 +666,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_forwardStates": {
       "location": {
@@ -1040,7 +1040,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__slidingSpace": {
       "location": {
@@ -1068,7 +1068,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__computeTrackingEnd": {
       "location": {
@@ -1099,7 +1099,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_positionToValue": {
       "location": {
@@ -1588,7 +1588,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__animateTo": {
       "location": {
@@ -1626,7 +1626,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_applyOrientation": {
       "location": {
@@ -2283,7 +2283,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.form.MForm",
       "jsdoc": {
         "@description": [

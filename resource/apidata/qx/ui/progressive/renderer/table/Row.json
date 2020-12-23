@@ -83,7 +83,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__padding": {
       "location": {
@@ -111,7 +111,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__tableCellStyleSheet": {
       "location": {
@@ -139,7 +139,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     }
   },
   "properties": {
@@ -213,7 +213,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__name": {
       "location": {
@@ -227,7 +227,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__hash": {
       "location": {
@@ -241,7 +241,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__columnWidths": {
       "location": {
@@ -255,7 +255,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__renderers": {
       "location": {
@@ -269,7 +269,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__defaultCellRenderer": {
       "location": {
@@ -283,7 +283,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__colors": {
       "location": {
@@ -297,7 +297,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__layout": {
       "location": {
@@ -311,7 +311,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__linkColors": {
       "location": {
@@ -333,7 +333,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "join": {
       "location": {

@@ -175,7 +175,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "refresh": {
       "location": {
@@ -213,7 +213,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__targets": {
       "location": {
@@ -227,7 +227,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "canHandleEvent": {
       "location": {

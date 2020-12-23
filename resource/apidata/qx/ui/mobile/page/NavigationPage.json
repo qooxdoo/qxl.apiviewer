@@ -408,7 +408,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__actionButton": {
       "location": {
@@ -422,7 +422,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__content": {
       "location": {
@@ -436,7 +436,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__scrollContainer": {
       "location": {
@@ -450,7 +450,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__title": {
       "location": {
@@ -464,7 +464,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__leftContainer": {
       "location": {
@@ -478,7 +478,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__rightContainer": {
       "location": {
@@ -492,7 +492,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "getTitleWidget": {
       "location": {

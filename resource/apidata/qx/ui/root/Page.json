@@ -69,7 +69,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__doc": {
       "location": {
@@ -83,7 +83,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_createContentElement": {
       "location": {
@@ -153,7 +153,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "supportsMaximize": {
       "location": {

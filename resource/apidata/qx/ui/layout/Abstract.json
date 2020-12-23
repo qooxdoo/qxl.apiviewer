@@ -57,7 +57,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_invalidChildrenCache": {
       "location": {
@@ -113,7 +113,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "invalidateLayoutCache": {
       "location": {

@@ -345,7 +345,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__startState": {
       "location": {
@@ -359,7 +359,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__eventQueue": {
       "location": {
@@ -373,7 +373,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__blockedEvents": {
       "location": {
@@ -387,7 +387,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__savedStates": {
       "location": {
@@ -401,7 +401,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__friendlyToObject": {
       "location": {
@@ -415,7 +415,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__friendlyToHash": {
       "location": {
@@ -429,7 +429,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__hashToFriendly": {
       "location": {
@@ -443,7 +443,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__groupToFriendly": {
       "location": {
@@ -457,7 +457,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__friendlyToGroups": {
       "location": {
@@ -471,7 +471,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__bEventProcessingInProgress": {
       "location": {
@@ -485,7 +485,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__bTerminated": {
       "location": {
@@ -499,7 +499,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "isTerminated": {
       "location": {
@@ -1203,7 +1203,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__run": {
       "location": {
@@ -1274,7 +1274,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "getQxOwner": {
       "type": "function",

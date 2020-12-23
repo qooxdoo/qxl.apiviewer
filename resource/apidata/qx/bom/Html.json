@@ -85,7 +85,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__convertMap": {
       "location": {
@@ -113,7 +113,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "fixEmptyTags": {
       "location": {
@@ -198,7 +198,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "clean": {
       "location": {

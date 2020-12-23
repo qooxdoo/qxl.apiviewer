@@ -229,7 +229,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__orientationNormalizer": {
       "location": {
@@ -244,7 +244,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "getOrientation": {
       "location": {

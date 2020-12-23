@@ -148,7 +148,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__LOADED": {
       "location": {
@@ -170,7 +170,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     }
   },
   "members": {
@@ -194,7 +194,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__started": {
       "location": {
@@ -216,7 +216,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "start": {
       "location": {
@@ -268,7 +268,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "getQxOwner": {
       "type": "function",

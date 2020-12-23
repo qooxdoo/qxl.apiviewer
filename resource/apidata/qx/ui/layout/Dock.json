@@ -294,7 +294,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__edges": {
       "location": {
@@ -308,7 +308,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "verifyLayoutProperty": {
       "location": {
@@ -375,7 +375,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__alignMap": {
       "location": {
@@ -409,7 +409,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__rebuildCache": {
       "location": {
@@ -431,7 +431,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "renderLayout": {
       "location": {

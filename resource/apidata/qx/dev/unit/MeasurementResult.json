@@ -90,7 +90,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__iterations": {
       "location": {
@@ -104,7 +104,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__ownTime": {
       "location": {
@@ -118,7 +118,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__renderTime": {
       "location": {
@@ -132,7 +132,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "getData": {
       "location": {

@@ -92,7 +92,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_checksMap": {
       "location": {
@@ -386,7 +386,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "filter": {
       "location": {
@@ -648,7 +648,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__importFromUrl": {
       "location": {
@@ -670,7 +670,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__createCheck": {
       "location": {
@@ -709,7 +709,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     }
   },
   "defer": {

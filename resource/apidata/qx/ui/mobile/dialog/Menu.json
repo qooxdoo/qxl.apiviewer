@@ -279,7 +279,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__clearButton": {
       "location": {
@@ -293,7 +293,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__listScroller": {
       "location": {
@@ -307,7 +307,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__menuContainer": {
       "location": {
@@ -321,7 +321,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "show": {
       "location": {
@@ -606,7 +606,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__onClearButtonTap": {
       "location": {
@@ -628,7 +628,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_applySelectedIndex": {
       "location": {

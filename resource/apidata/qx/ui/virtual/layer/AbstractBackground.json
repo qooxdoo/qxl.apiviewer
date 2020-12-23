@@ -136,7 +136,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__colorOdd": {
       "location": {
@@ -150,7 +150,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__customColors": {
       "location": {
@@ -164,7 +164,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__decorators": {
       "location": {
@@ -178,7 +178,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "setColor": {
       "location": {

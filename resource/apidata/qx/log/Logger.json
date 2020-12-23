@@ -47,7 +47,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "setLevel": {
       "location": {
@@ -197,7 +197,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__appendersByName": {
       "location": {
@@ -225,7 +225,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__filters": {
       "location": {
@@ -253,7 +253,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__id": {
       "location": {
@@ -281,7 +281,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "register": {
       "location": {
@@ -917,7 +917,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__levels": {
       "location": {
@@ -945,7 +945,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__appendersCache": {
       "location": {
@@ -973,7 +973,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__getLoggerName": {
       "location": {
@@ -1012,7 +1012,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "isLoggerEnabled": {
       "location": {
@@ -1096,7 +1096,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__getAppenders": {
       "location": {
@@ -1142,7 +1142,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__detect": {
       "location": {
@@ -1181,7 +1181,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__serialize": {
       "location": {
@@ -1229,7 +1229,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     }
   },
   "defer": {

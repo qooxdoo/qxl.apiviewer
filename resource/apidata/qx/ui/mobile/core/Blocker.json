@@ -128,7 +128,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "show": {
       "location": {
@@ -307,7 +307,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__unregisterEventListener": {
       "location": {
@@ -329,7 +329,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "tr": {
       "type": "function",

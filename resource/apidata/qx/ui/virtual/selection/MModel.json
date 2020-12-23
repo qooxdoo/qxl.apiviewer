@@ -236,7 +236,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__ignoreManagerChangeSelection": {
       "location": {
@@ -264,7 +264,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__selection": {
       "location": {
@@ -278,7 +278,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "setValue": {
       "location": {
@@ -767,7 +767,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__replaceSelection": {
       "location": {
@@ -798,7 +798,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__isSelectionEquals": {
       "location": {
@@ -828,7 +828,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_applyDefaultSelection": {
       "location": {

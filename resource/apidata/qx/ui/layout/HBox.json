@@ -263,7 +263,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__flexs": {
       "location": {
@@ -277,7 +277,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__enableFlex": {
       "location": {
@@ -291,7 +291,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__children": {
       "location": {
@@ -305,7 +305,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_applyReversed": {
       "location": {
@@ -345,7 +345,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "verifyLayoutProperty": {
       "location": {

@@ -448,7 +448,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__transformOnentry": {
       "location": {
@@ -495,7 +495,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__transformOnexit": {
       "location": {
@@ -542,7 +542,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__transformEvents": {
       "location": {
@@ -589,7 +589,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__transformAutoActionsBeforeOnentry": {
       "location": {
@@ -628,7 +628,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__transformAutoActionsAfterOnentry": {
       "location": {
@@ -667,7 +667,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__transformAutoActionsBeforeOnexit": {
       "location": {
@@ -706,7 +706,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__transformAutoActionsAfterOnexit": {
       "location": {
@@ -745,7 +745,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__bindIfFunction": {
       "location": {
@@ -794,7 +794,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "addTransition": {
       "location": {

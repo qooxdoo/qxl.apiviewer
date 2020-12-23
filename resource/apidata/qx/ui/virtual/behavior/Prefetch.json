@@ -174,7 +174,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__prefetchY": {
       "location": {
@@ -188,7 +188,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__timer": {
       "location": {
@@ -202,7 +202,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__onScrollXId": {
       "location": {
@@ -216,7 +216,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__onScrollYId": {
       "location": {
@@ -230,7 +230,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "setPrefetchX": {
       "location": {

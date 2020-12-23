@@ -288,7 +288,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_createChildControlImpl": {
       "location": {
@@ -671,7 +671,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.core.MExecutable",
       "jsdoc": {
         "@description": [

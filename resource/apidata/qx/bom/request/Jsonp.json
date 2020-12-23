@@ -139,7 +139,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__callbackParam": {
       "location": {
@@ -167,7 +167,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__callbackName": {
       "location": {
@@ -195,7 +195,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__callbackCalled": {
       "location": {
@@ -223,7 +223,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__customCallbackCreated": {
       "location": {
@@ -251,7 +251,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__generatedUrl": {
       "location": {
@@ -279,7 +279,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__disposed": {
       "location": {
@@ -307,7 +307,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__prefix": {
       "location": {
@@ -329,7 +329,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "open": {
       "location": {
@@ -620,7 +620,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__callBase": {
       "location": {
@@ -658,7 +658,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__generateId": {
       "location": {
@@ -680,7 +680,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     }
   },
   "events": {},

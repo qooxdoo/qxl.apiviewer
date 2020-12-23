@@ -93,7 +93,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__semaphore": {
       "location": {
@@ -107,7 +107,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__executeListenerId": {
       "location": {
@@ -121,7 +121,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_bindableProperties": {
       "location": {
@@ -208,7 +208,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_applyCommand": {
       "location": {

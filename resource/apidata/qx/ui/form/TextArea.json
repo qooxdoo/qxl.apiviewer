@@ -198,7 +198,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__areaHeight": {
       "location": {
@@ -212,7 +212,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__originalAreaHeight": {
       "location": {
@@ -226,7 +226,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "setValue": {
       "location": {
@@ -331,7 +331,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_getAreaHeight": {
       "location": {
@@ -452,7 +452,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__createAreaClone": {
       "location": {
@@ -482,7 +482,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__scrollCloneToBottom": {
       "location": {
@@ -513,7 +513,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_createInputElement": {
       "location": {
@@ -627,7 +627,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__warnAutoSizeAndHeight": {
       "location": {
@@ -649,7 +649,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_getContentHint": {
       "location": {

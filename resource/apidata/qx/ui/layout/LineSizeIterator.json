@@ -82,7 +82,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__spacing": {
       "location": {
@@ -96,7 +96,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__hasMoreLines": {
       "location": {
@@ -110,7 +110,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__childIndex": {
       "location": {
@@ -124,7 +124,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "computeNextLine": {
       "location": {
@@ -202,7 +202,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "hasMoreLines": {
       "location": {

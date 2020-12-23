@@ -100,7 +100,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "getDefaultItemSize": {
       "location": {
@@ -351,7 +351,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__findRangeByPosition": {
       "location": {
@@ -390,7 +390,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "getItemAtPosition": {
       "location": {
@@ -471,7 +471,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "getItemPosition": {
       "location": {

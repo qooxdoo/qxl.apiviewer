@@ -284,7 +284,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "setValue": {
       "location": {
@@ -686,7 +686,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_applyBarPosition": {
       "location": {

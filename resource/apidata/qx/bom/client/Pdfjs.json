@@ -126,7 +126,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__getPluginDetect": {
       "location": {
@@ -156,7 +156,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     }
   },
   "defer": {

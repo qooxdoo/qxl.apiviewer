@@ -113,7 +113,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__getCollectionFromArgument": {
       "location": {
@@ -158,7 +158,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__getInnermostElement": {
       "location": {
@@ -203,7 +203,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__getElementArray": {
       "location": {
@@ -257,7 +257,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "create": {
       "location": {

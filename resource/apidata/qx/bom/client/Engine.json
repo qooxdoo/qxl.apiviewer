@@ -134,7 +134,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__isWebkit": {
       "location": {
@@ -164,7 +164,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__isGecko": {
       "location": {
@@ -194,7 +194,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__isMshtml": {
       "location": {
@@ -224,7 +224,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__isWindowsPhone": {
       "location": {
@@ -254,7 +254,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     }
   },
   "defer": {

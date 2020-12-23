@@ -60,7 +60,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__units": {
       "location": {
@@ -82,7 +82,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__transitionKeys": {
       "location": {
@@ -104,7 +104,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "animate": {
       "location": {
@@ -311,7 +311,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__normalizeKeyFrameTransforms": {
       "location": {
@@ -350,7 +350,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__calculateDelta": {
       "location": {
@@ -424,7 +424,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__getUnit": {
       "location": {
@@ -463,7 +463,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__getNextValue": {
       "location": {
@@ -523,7 +523,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "play": {
       "location": {
@@ -707,7 +707,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__applyStyles": {
       "location": {
@@ -745,7 +745,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__getStepTime": {
       "location": {
@@ -791,7 +791,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__getOrderedKeys": {
       "location": {
@@ -830,7 +830,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     }
   },
   "descendants": []

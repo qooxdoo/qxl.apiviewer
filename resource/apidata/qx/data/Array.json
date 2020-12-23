@@ -195,7 +195,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "concat": {
       "location": {
@@ -1728,7 +1728,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__updateEventPropagation": {
       "location": {
@@ -1766,7 +1766,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_applyEventPropagation": {
       "type": "function",
@@ -1854,7 +1854,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.data.marshal.MEventBubbling",
       "jsdoc": {
         "@description": [

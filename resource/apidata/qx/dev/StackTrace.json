@@ -247,7 +247,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__fileNameToClassNameDefault": {
       "location": {
@@ -286,7 +286,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__formatStackTrace": {
       "location": {
@@ -325,7 +325,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     }
   },
   "defer": {

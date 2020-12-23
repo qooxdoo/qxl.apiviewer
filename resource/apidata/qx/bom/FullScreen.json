@@ -126,7 +126,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__fullscreenElementAttr": {
       "location": {
@@ -140,7 +140,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__requestMethodName": {
       "location": {
@@ -154,7 +154,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__cancelMethodName": {
       "location": {
@@ -168,7 +168,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__eventName": {
       "location": {
@@ -182,7 +182,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__checkAttributeNames": {
       "location": {
@@ -204,7 +204,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "isFullScreen": {
       "location": {

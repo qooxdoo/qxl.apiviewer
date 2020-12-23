@@ -272,7 +272,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__transformNextState": {
       "location": {
@@ -311,7 +311,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__transformAutoActionsBeforeOntransition": {
       "location": {
@@ -350,7 +350,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__transformAutoActionsAfterOntransition": {
       "location": {
@@ -389,7 +389,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__transformOntransition": {
       "location": {
@@ -428,7 +428,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__bindIfFunction": {
       "location": {
@@ -477,7 +477,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "getQxOwner": {
       "type": "function",

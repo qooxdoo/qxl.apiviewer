@@ -548,7 +548,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__pageUpMode": {
       "location": {
@@ -570,7 +570,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__pageDownMode": {
       "location": {
@@ -592,7 +592,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_createChildControlImpl": {
       "location": {
@@ -2207,7 +2207,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.form.MForm",
       "jsdoc": {
         "@description": [

@@ -223,7 +223,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__childrenContainer": {
       "location": {
@@ -237,7 +237,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__percentageTop": {
       "location": {
@@ -251,7 +251,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__anchor": {
       "location": {
@@ -265,7 +265,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__widget": {
       "location": {
@@ -279,7 +279,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__titleWidget": {
       "location": {
@@ -293,7 +293,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__lastPopupDimension": {
       "location": {
@@ -307,7 +307,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_updatePosition": {
       "location": {
@@ -599,7 +599,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__unregisterEventListener": {
       "location": {
@@ -621,7 +621,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_initializeChild": {
       "location": {

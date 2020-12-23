@@ -130,7 +130,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__xDirs": {
       "location": {
@@ -144,7 +144,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__yDirs": {
       "location": {
@@ -158,7 +158,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_findScrollableParent": {
       "location": {
@@ -681,7 +681,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__onDragend": {
       "location": {
@@ -712,7 +712,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "getDragScrollThresholdX": {
       "type": "function",

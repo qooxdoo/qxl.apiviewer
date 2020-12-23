@@ -305,7 +305,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__isInitialized": {
       "location": {
@@ -319,7 +319,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__domReady": {
       "location": {
@@ -333,7 +333,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__loaded": {
       "location": {
@@ -347,7 +347,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__isUnloaded": {
       "location": {
@@ -361,7 +361,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__fireReady": {
       "location": {
@@ -383,7 +383,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__fireAppInstanceInitialized": {
       "location": {
@@ -405,7 +405,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "isApplicationReady": {
       "location": {
@@ -553,7 +553,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_onNativeUnload": {
       "location": {
@@ -597,7 +597,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "getQxOwner": {
       "type": "function",

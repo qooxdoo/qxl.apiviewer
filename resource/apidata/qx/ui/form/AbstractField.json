@@ -56,7 +56,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__addPlaceholderRules": {
       "location": {
@@ -78,7 +78,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     }
   },
   "construct": {
@@ -530,7 +530,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_placeholder": {
       "location": {
@@ -558,7 +558,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__oldInputValue": {
       "location": {
@@ -572,7 +572,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__useQxPlaceholder": {
       "location": {
@@ -586,7 +586,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__font": {
       "location": {
@@ -600,7 +600,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__webfontListenerId": {
       "location": {
@@ -614,7 +614,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "getFocusElement": {
       "location": {
@@ -787,7 +787,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_getContentHint": {
       "location": {
@@ -1019,7 +1019,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "setValue": {
       "location": {
@@ -1895,7 +1895,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.form.MForm",
       "jsdoc": {
         "@description": [

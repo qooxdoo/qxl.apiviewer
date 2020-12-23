@@ -112,7 +112,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__iconUrlFalse": {
       "location": {
@@ -126,7 +126,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__numericAllowed": {
       "location": {
@@ -140,7 +140,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__conditions": {
       "location": {
@@ -154,7 +154,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__defaultTextAlign": {
       "location": {
@@ -168,7 +168,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__defaultColor": {
       "location": {
@@ -182,7 +182,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__defaultFontStyle": {
       "location": {
@@ -196,7 +196,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__defaultFontWeight": {
       "location": {
@@ -210,7 +210,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__resolveImages": {
       "location": {
@@ -232,7 +232,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_identifyImage": {
       "location": {

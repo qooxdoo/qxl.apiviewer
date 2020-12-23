@@ -70,7 +70,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__session": {
       "location": {
@@ -84,7 +84,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "getLocal": {
       "location": {
@@ -173,7 +173,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "getStorage": {
       "location": {

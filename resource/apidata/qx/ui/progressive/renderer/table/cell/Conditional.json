@@ -90,7 +90,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__betweenAllowed": {
       "location": {
@@ -104,7 +104,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__conditions": {
       "location": {
@@ -118,7 +118,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__defaultTextAlign": {
       "location": {
@@ -132,7 +132,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__defaultColor": {
       "location": {
@@ -146,7 +146,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__defaultFontStyle": {
       "location": {
@@ -160,7 +160,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__defaultFontWeight": {
       "location": {
@@ -174,7 +174,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__applyFormatting": {
       "location": {
@@ -212,7 +212,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "addNumericCondition": {
       "location": {

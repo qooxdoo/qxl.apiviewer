@@ -198,7 +198,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__onMoveEventWrapper": {
       "location": {
@@ -212,7 +212,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__onWheelEventWrapper": {
       "location": {
@@ -226,7 +226,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__lastEventType": {
       "location": {
@@ -240,7 +240,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__lastMouseDownTarget": {
       "location": {
@@ -254,7 +254,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__manager": {
       "location": {
@@ -268,7 +268,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__window": {
       "location": {
@@ -282,7 +282,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__root": {
       "location": {
@@ -296,7 +296,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__preventNextClick": {
       "location": {
@@ -310,7 +310,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "canHandleEvent": {
       "location": {
@@ -404,7 +404,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "preventNextClick": {
       "location": {
@@ -762,7 +762,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__doubleClickFixPre": {
       "location": {
@@ -813,7 +813,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__differentTargetClickFixPost": {
       "location": {
@@ -864,7 +864,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "getQxOwner": {
       "type": "function",

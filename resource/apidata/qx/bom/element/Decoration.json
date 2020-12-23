@@ -82,7 +82,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__alphaFixRepeats": {
       "location": {
@@ -110,7 +110,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__repeatToTagname": {
       "location": {
@@ -138,7 +138,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "update": {
       "location": {
@@ -393,7 +393,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__getDimension": {
       "location": {
@@ -432,7 +432,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "processAlphaFix": {
       "location": {
@@ -538,7 +538,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__processScaleXScaleY": {
       "location": {
@@ -591,7 +591,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__getStylesForClippedScaleX": {
       "location": {
@@ -644,7 +644,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__getStylesForClippedScaleY": {
       "location": {
@@ -697,7 +697,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__processRepeats": {
       "location": {
@@ -750,7 +750,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__getStylesForSingleRepeat": {
       "location": {
@@ -795,7 +795,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__checkForPotentialClippedImage": {
       "location": {
@@ -826,7 +826,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     }
   },
   "descendants": []

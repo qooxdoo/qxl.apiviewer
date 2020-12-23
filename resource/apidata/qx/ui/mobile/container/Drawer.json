@@ -343,7 +343,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__parent": {
       "location": {
@@ -357,7 +357,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__transitionEnabled": {
       "location": {
@@ -371,7 +371,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__inTransition": {
       "location": {
@@ -385,7 +385,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_applyOrientation": {
       "location": {

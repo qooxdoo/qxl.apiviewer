@@ -390,7 +390,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__removeListeners": {
       "location": {
@@ -421,7 +421,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "tearDown": {
       "location": {

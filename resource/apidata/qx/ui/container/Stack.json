@@ -253,7 +253,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_afterAddChild": {
       "location": {
@@ -617,7 +617,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.core.MSingleSelectionHandling",
       "jsdoc": {
         "@description": [

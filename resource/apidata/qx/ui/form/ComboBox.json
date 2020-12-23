@@ -152,7 +152,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__onInputId": {
       "location": {
@@ -166,7 +166,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_applyPlaceholder": {
       "location": {

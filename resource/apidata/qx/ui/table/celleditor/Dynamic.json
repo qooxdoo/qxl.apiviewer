@@ -132,7 +132,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__infos": {
       "location": {
@@ -146,7 +146,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "createCellEditor": {
       "location": {

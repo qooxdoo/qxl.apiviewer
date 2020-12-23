@@ -722,7 +722,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__lookupTableForGroup": {
       "location": {
@@ -750,7 +750,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__groupHashMap": {
       "location": {
@@ -778,7 +778,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__groupStringsUsed": {
       "location": {
@@ -806,7 +806,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__groupObjectsUsed": {
       "location": {
@@ -834,7 +834,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__defaultGroupUsed": {
       "location": {
@@ -862,7 +862,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__defaultGroups": {
       "location": {
@@ -876,7 +876,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__deferredLayerUpdate": {
       "location": {
@@ -890,7 +890,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "refresh": {
       "location": {
@@ -1580,7 +1580,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__updateGroupRowHeight": {
       "location": {
@@ -1602,7 +1602,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__buildUpLookupTable": {
       "location": {
@@ -1624,7 +1624,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_runDelegateFilter": {
       "location": {
@@ -1759,7 +1759,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__createLookupFromGroup": {
       "location": {
@@ -1789,7 +1789,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__getUniqueGroupName": {
       "location": {
@@ -1831,7 +1831,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__checkGroupStructure": {
       "location": {
@@ -1853,7 +1853,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_setRowItemSize": {
       "location": {
@@ -2256,7 +2256,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.virtual.selection.MModel",
       "jsdoc": {
         "@description": [
@@ -2273,7 +2273,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.virtual.selection.MModel",
       "jsdoc": {
         "@description": [
@@ -2299,7 +2299,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.virtual.selection.MModel",
       "jsdoc": {
         "@description": [

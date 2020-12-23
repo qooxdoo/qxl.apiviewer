@@ -561,7 +561,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__currentServerSuffix": {
       "location": {
@@ -575,7 +575,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "createRequest": {
       "location": {

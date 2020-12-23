@@ -603,7 +603,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__getEventSpecificTouches": {
       "location": {
@@ -633,7 +633,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_isTouchEnd": {
       "location": {

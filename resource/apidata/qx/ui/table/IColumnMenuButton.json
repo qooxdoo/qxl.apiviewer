@@ -29,11 +29,16 @@
   "type": "interface",
   "properties": {
     "menu": {
-      "type": "property",
-      "name": "menu",
-      "abstract": true,
-      "mixin": false,
-      "access": "public",
+      "location": {
+        "start": {
+          "line": 29,
+          "column": 4
+        },
+        "end": {
+          "line": 29,
+          "column": 14
+        }
+      },
       "jsdoc": {
         "@description": [
           {
@@ -41,7 +46,9 @@
             "body": "<p>The menu which is displayed when this button is pressed.</p>"
           }
         ]
-      }
+      },
+      "name": "menu",
+      "propertyType": "new"
     }
   },
   "members": {

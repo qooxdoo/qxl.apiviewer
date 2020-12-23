@@ -114,7 +114,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__computeEditOperations": {
       "location": {
@@ -167,7 +167,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "getEditOperations": {
       "location": {

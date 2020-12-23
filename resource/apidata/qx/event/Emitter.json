@@ -48,7 +48,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     }
   },
   "members": {
@@ -64,7 +64,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__any": {
       "location": {
@@ -78,7 +78,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "on": {
       "location": {
@@ -630,7 +630,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     }
   },
   "descendants": [

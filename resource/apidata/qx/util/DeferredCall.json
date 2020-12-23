@@ -84,7 +84,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__context": {
       "location": {
@@ -98,7 +98,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__manager": {
       "location": {
@@ -112,7 +112,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "cancel": {
       "location": {

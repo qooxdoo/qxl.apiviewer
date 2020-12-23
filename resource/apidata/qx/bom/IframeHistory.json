@@ -61,7 +61,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__iframeReady": {
       "location": {
@@ -75,7 +75,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__writeStateTimner": {
       "location": {
@@ -89,7 +89,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__dontApplyState": {
       "location": {
@@ -103,7 +103,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__locationState": {
       "location": {
@@ -117,7 +117,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_setInitialState": {
       "location": {
@@ -334,7 +334,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__initTimer": {
       "location": {
@@ -356,7 +356,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__onHashChange": {
       "location": {
@@ -387,7 +387,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__storeLocationState": {
       "location": {
@@ -426,7 +426,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__isCurrentLocationState": {
       "location": {
@@ -465,7 +465,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__initIframe": {
       "location": {
@@ -498,7 +498,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__createIframe": {
       "location": {
@@ -528,7 +528,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__waitForIFrame": {
       "location": {
@@ -575,7 +575,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "getQxOwner": {
       "type": "function",

@@ -72,7 +72,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__entriesStored": {
       "location": {
@@ -87,7 +87,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__isMarkActive": {
       "location": {
@@ -102,7 +102,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__entriesStoredSinceMark": {
       "location": {
@@ -117,7 +117,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__entries": {
       "location": {
@@ -132,7 +132,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__maxEntries": {
       "location": {
@@ -147,7 +147,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "setMaxEntries": {
       "location": {
@@ -459,7 +459,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     }
   },
   "descendants": [

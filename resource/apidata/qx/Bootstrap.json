@@ -615,7 +615,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "addPendingDefer": {
       "location": {
@@ -885,7 +885,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "keys": {
       "location": {
@@ -970,7 +970,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "bind": {
       "location": {

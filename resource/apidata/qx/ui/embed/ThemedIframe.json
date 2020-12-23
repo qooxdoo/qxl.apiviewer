@@ -197,7 +197,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__iframeObserverId": {
       "location": {
@@ -211,7 +211,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_getIframeElement": {
       "location": {

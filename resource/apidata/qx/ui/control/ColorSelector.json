@@ -533,7 +533,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__presetTable": {
       "location": {
@@ -567,7 +567,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__capture": {
       "location": {
@@ -595,7 +595,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__brightnessSubtract": {
       "location": {
@@ -623,7 +623,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__hueSaturationSubtractTop": {
       "location": {
@@ -651,7 +651,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__hueSaturationSubtractLeft": {
       "location": {
@@ -679,7 +679,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__nullValue": {
       "location": {
@@ -694,7 +694,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__preventChangeValueEvent": {
       "location": {
@@ -709,7 +709,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_createChildControlImpl": {
       "location": {
@@ -848,7 +848,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_applyRed": {
       "location": {

@@ -152,7 +152,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "then": {
       "location": {
@@ -244,7 +244,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "reject": {
       "location": {
@@ -314,7 +314,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__catcher": {
       "location": {
@@ -345,7 +345,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "catch": {
       "location": {

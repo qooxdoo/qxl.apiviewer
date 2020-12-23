@@ -65,7 +65,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_createScrollElement": {
       "location": {
@@ -288,7 +288,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__createScrollInstance": {
       "location": {
@@ -324,7 +324,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_getDefaultScrollProperties": {
       "location": {
@@ -376,7 +376,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__unregisterEventListeners": {
       "location": {
@@ -398,7 +398,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__onScrollLoaded": {
       "location": {
@@ -429,7 +429,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_setScroll": {
       "location": {

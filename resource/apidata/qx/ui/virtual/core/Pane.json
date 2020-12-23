@@ -278,7 +278,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__columnConfig": {
       "location": {
@@ -292,7 +292,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__scrollTop": {
       "location": {
@@ -306,7 +306,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__scrollLeft": {
       "location": {
@@ -320,7 +320,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__paneHeight": {
       "location": {
@@ -334,7 +334,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__paneWidth": {
       "location": {
@@ -348,7 +348,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__layerWindow": {
       "location": {
@@ -362,7 +362,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__jobs": {
       "location": {
@@ -376,7 +376,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__layerContainer": {
       "location": {
@@ -390,7 +390,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__layers": {
       "location": {
@@ -404,7 +404,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__dontFireUpdate": {
       "location": {
@@ -418,7 +418,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__columnSizes": {
       "location": {
@@ -432,7 +432,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__rowSizes": {
       "location": {
@@ -446,7 +446,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__pointerDownCoords": {
       "location": {
@@ -460,7 +460,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "getRowConfig": {
       "location": {
@@ -1331,7 +1331,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "syncWidget": {
       "location": {
@@ -1440,7 +1440,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "fullUpdate": {
       "location": {

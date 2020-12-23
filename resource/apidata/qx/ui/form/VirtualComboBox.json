@@ -276,7 +276,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__textFieldBindId": {
       "location": {
@@ -304,7 +304,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__selection": {
       "location": {
@@ -332,7 +332,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__ignoreChangeSelection": {
       "location": {
@@ -360,7 +360,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "getTextSelection": {
       "location": {
@@ -689,7 +689,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_applyPlaceholder": {
       "location": {
@@ -729,7 +729,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__convertValue": {
       "location": {
@@ -768,7 +768,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "setValue": {
       "type": "function",
@@ -1117,7 +1117,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.form.MForm",
       "jsdoc": {
         "@description": [

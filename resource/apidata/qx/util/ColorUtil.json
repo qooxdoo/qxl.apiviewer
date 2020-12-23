@@ -814,7 +814,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__rgbaStringToRgb": {
       "location": {
@@ -844,7 +844,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__hexShortStringToRgb": {
       "location": {
@@ -874,7 +874,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__hex3StringToRgb": {
       "location": {
@@ -904,7 +904,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__hex6StringToRgb": {
       "location": {
@@ -934,7 +934,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__hexLongStringToRgb": {
       "location": {
@@ -964,7 +964,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "hex3StringToRgb": {
       "location": {
@@ -1366,7 +1366,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "scale": {
       "location": {

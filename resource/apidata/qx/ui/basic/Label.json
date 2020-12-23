@@ -380,7 +380,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__invalidContentSize": {
       "location": {
@@ -394,7 +394,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__tapListenerId": {
       "location": {
@@ -408,7 +408,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__webfontListenerId": {
       "location": {
@@ -422,7 +422,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_getContentHint": {
       "location": {
@@ -588,7 +588,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_applyFont": {
       "location": {
@@ -648,7 +648,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__fixEllipsis": {
       "location": {
@@ -670,7 +670,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_applyBuddy": {
       "location": {

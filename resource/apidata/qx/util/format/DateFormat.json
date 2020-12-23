@@ -256,7 +256,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__initialLocale": {
       "location": {
@@ -270,7 +270,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__format": {
       "location": {
@@ -284,7 +284,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__parseFeed": {
       "location": {
@@ -298,7 +298,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__parseRules": {
       "location": {
@@ -312,7 +312,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__formatTree": {
       "location": {
@@ -326,7 +326,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__UTC": {
       "location": {
@@ -340,7 +340,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__fillNumber": {
       "location": {
@@ -386,7 +386,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__getDayInYear": {
       "location": {
@@ -425,7 +425,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__thursdayOfSameWeek": {
       "location": {
@@ -464,7 +464,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__getWeekInYear": {
       "location": {
@@ -503,7 +503,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__getWeekInMonth": {
       "location": {
@@ -542,7 +542,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__getWeekYear": {
       "location": {
@@ -581,7 +581,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__isLeapYear": {
       "location": {
@@ -620,7 +620,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__getMonthAndDayFromDayOfYear": {
       "location": {
@@ -666,7 +666,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__getYearFromWeekYearAndMonth": {
       "location": {
@@ -719,7 +719,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "setLocale": {
       "location": {
@@ -910,7 +910,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__initParseFeed": {
       "location": {
@@ -940,7 +940,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__isRuleForWildcard": {
       "location": {
@@ -993,7 +993,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__initParseRules": {
       "location": {
@@ -1015,7 +1015,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "getQxOwner": {
       "type": "function",

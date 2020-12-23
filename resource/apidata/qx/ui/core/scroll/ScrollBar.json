@@ -319,7 +319,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__originalMinSize": {
       "location": {
@@ -333,7 +333,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_computeSizeHint": {
       "location": {

@@ -250,7 +250,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__label": {
       "location": {
@@ -264,7 +264,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__icon": {
       "location": {
@@ -278,7 +278,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__childrenContainer": {
       "location": {
@@ -292,7 +292,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_applyIconPosition": {
       "location": {
@@ -402,7 +402,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "getIconWidget": {
       "location": {
@@ -578,7 +578,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "tr": {
       "type": "function",

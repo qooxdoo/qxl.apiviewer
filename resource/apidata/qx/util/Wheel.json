@@ -224,7 +224,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__recalculateMultiplicator": {
       "location": {
@@ -246,7 +246,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     }
   },
   "descendants": []

@@ -440,7 +440,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__ignoreListSelection": {
       "location": {
@@ -468,7 +468,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__defaultSelection": {
       "location": {
@@ -496,7 +496,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__cachedMaxListItemWidth": {
       "location": {
@@ -524,7 +524,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "open": {
       "location": {
@@ -711,7 +711,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_onListChangeSelection": {
       "location": {
@@ -773,7 +773,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_onChangeModel": {
       "location": {
@@ -915,7 +915,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__synchronizeSelection": {
       "location": {
@@ -953,7 +953,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_adjustSize": {
       "location": {
@@ -1232,7 +1232,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.core.MPlacement",
       "jsdoc": {
         "@description": [
@@ -1359,7 +1359,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.core.MPlacement",
       "jsdoc": {
         "@description": [

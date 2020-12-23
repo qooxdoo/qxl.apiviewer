@@ -56,7 +56,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__classes": {
       "location": {
@@ -70,7 +70,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__styles": {
       "location": {
@@ -84,7 +84,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "getStylesheet": {
       "location": {
@@ -229,7 +229,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__classCounter": {
       "location": {
@@ -243,7 +243,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "getQxOwner": {
       "type": "function",

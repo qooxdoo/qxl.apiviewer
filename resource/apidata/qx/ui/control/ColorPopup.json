@@ -434,7 +434,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__boxes": {
       "location": {
@@ -448,7 +448,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__colorSelectorWindow": {
       "location": {
@@ -462,7 +462,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__colorSelector": {
       "location": {
@@ -476,7 +476,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__buttonBar": {
       "location": {
@@ -490,7 +490,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__recentTableId": {
       "location": {
@@ -504,7 +504,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__fieldNumber": {
       "location": {
@@ -518,7 +518,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_createChildControlImpl": {
       "location": {
@@ -1043,7 +1043,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.core.MPlacement",
       "jsdoc": {
         "@description": [
@@ -1170,7 +1170,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.core.MPlacement",
       "jsdoc": {
         "@description": [

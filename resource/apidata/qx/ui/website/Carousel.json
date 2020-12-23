@@ -123,7 +123,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__pageContainer": {
       "location": {
@@ -137,7 +137,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__scrollContainer": {
       "location": {
@@ -151,7 +151,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__paginationLabels": {
       "location": {
@@ -165,7 +165,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__startPosLeft": {
       "location": {
@@ -179,7 +179,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__pagination": {
       "location": {
@@ -193,7 +193,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_ie9": {
       "location": {
@@ -221,7 +221,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "init": {
       "location": {

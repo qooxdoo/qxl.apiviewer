@@ -61,7 +61,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__invalidItems": {
       "location": {
@@ -83,7 +83,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "setRenderer": {
       "location": {

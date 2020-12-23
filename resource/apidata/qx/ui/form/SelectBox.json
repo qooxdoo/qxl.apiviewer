@@ -139,7 +139,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_applyRich": {
       "location": {
@@ -315,7 +315,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__updateIcon": {
       "location": {
@@ -337,7 +337,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__updateLabel": {
       "location": {
@@ -359,7 +359,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_onPointerOver": {
       "location": {
@@ -900,7 +900,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.core.MSingleSelectionHandling",
       "jsdoc": {
         "@description": [
@@ -925,7 +925,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.form.MModelSelection",
       "jsdoc": {
         "@description": [
@@ -942,7 +942,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.form.MModelSelection",
       "jsdoc": {
         "@description": [

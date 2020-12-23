@@ -61,7 +61,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__bVirgin": {
       "location": {
@@ -83,7 +83,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__preloadImages": {
       "location": {
@@ -105,7 +105,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     }
   },
   "properties": {
@@ -198,7 +198,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__tm": {
       "location": {
@@ -212,7 +212,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__rm": {
       "location": {
@@ -226,7 +226,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_onChangeTheme": {
       "location": {

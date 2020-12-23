@@ -527,7 +527,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__lastKeyPress": {
       "location": {
@@ -541,7 +541,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__content": {
       "location": {
@@ -569,7 +569,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "SELECTION_MANAGER": {
       "location": {
@@ -1581,7 +1581,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.core.MRemoteChildrenHandling",
       "jsdoc": {
         "@description": [
@@ -2458,7 +2458,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.form.MForm",
       "jsdoc": {
         "@description": [
@@ -2606,7 +2606,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.form.MModelSelection",
       "jsdoc": {
         "@description": [
@@ -2623,7 +2623,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.form.MModelSelection",
       "jsdoc": {
         "@description": [

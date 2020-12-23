@@ -377,7 +377,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__statesKey": {
       "location": {
@@ -405,7 +405,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__states": {
       "location": {
@@ -419,7 +419,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__themeValues": {
       "location": {
@@ -433,7 +433,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__themeStyles": {
       "location": {
@@ -447,7 +447,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__userStyles": {
       "location": {
@@ -461,7 +461,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__userPaddings": {
       "location": {
@@ -475,7 +475,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__themePaddings": {
       "location": {
@@ -489,7 +489,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__isThemed": {
       "location": {
@@ -503,7 +503,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__stylesheet": {
       "location": {
@@ -517,7 +517,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__initializeThemableProperties": {
       "location": {
@@ -539,7 +539,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_getCssProperties": {
       "location": {
@@ -865,7 +865,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__clearThemedPropertyValues": {
       "location": {
@@ -887,7 +887,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__updateThemeableProperties": {
       "location": {
@@ -918,7 +918,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__computeCssClassForStates": {
       "location": {
@@ -940,7 +940,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__cacheThemedValues": {
       "location": {
@@ -962,7 +962,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__applyThemeValues": {
       "location": {
@@ -984,7 +984,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "getStyles": {
       "location": {

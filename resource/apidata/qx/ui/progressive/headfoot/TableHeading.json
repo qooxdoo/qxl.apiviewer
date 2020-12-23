@@ -99,7 +99,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__bCalculateWidths": {
       "location": {
@@ -113,7 +113,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__labels": {
       "location": {
@@ -127,7 +127,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__layout": {
       "location": {
@@ -141,7 +141,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "join": {
       "location": {

@@ -226,7 +226,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_value": {
       "location": {
@@ -887,7 +887,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "dispose": {
       "location": {

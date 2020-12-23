@@ -67,7 +67,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__channelToIdMapping": {
       "location": {
@@ -81,7 +81,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "on": {
       "location": {

@@ -87,7 +87,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__selectable": {
       "location": {
@@ -102,7 +102,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__enabled": {
       "location": {
@@ -116,7 +116,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_createDomElement": {
       "location": {

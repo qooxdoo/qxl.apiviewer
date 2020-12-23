@@ -98,7 +98,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "getNextUniqueId": {
       "location": {
@@ -156,7 +156,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "addGlobalEventMonitor": {
       "location": {
@@ -338,7 +338,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__listeners": {
       "location": {
@@ -352,7 +352,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__dispatchers": {
       "location": {
@@ -366,7 +366,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__disposeWrapper": {
       "location": {
@@ -380,7 +380,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__handlers": {
       "location": {
@@ -394,7 +394,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__handlerCache": {
       "location": {
@@ -408,7 +408,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__window": {
       "location": {
@@ -422,7 +422,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__windowId": {
       "location": {
@@ -436,7 +436,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__blacklist": {
       "location": {
@@ -450,7 +450,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__clearBlackList": {
       "location": {
@@ -464,7 +464,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "getWindow": {
       "location": {
@@ -1047,7 +1047,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "removeListener": {
       "location": {
@@ -1301,7 +1301,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "dispatchEvent": {
       "location": {
@@ -1412,7 +1412,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "isBlacklisted": {
       "location": {

@@ -239,7 +239,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__packages": {
       "location": {
@@ -253,7 +253,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__parts": {
       "location": {
@@ -267,7 +267,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__packageClosureListeners": {
       "location": {
@@ -281,7 +281,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "addToPackage": {
       "location": {
@@ -528,7 +528,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__decodeUris": {
       "location": {
@@ -573,7 +573,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__partListners": {
       "location": {
@@ -588,7 +588,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "addPartListener": {
       "location": {
@@ -706,7 +706,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "addPackageListener": {
       "location": {

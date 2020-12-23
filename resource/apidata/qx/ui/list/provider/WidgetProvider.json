@@ -499,7 +499,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__updateStates": {
       "location": {
@@ -537,7 +537,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "setLabelPath": {
       "type": "function",
@@ -994,7 +994,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.list.core.MWidgetController",
       "jsdoc": {
         "@description": [
@@ -1045,7 +1045,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.list.core.MWidgetController",
       "jsdoc": {
         "@description": [
@@ -1078,7 +1078,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.list.core.MWidgetController",
       "jsdoc": {
         "@description": [

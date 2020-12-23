@@ -97,7 +97,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__uri": {
       "location": {
@@ -111,7 +111,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__lineNumber": {
       "location": {
@@ -125,7 +125,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__columnNumber": {
       "location": {
@@ -139,7 +139,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__sourceException": {
       "location": {
@@ -153,7 +153,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "getUri": {
       "location": {

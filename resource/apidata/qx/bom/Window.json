@@ -48,7 +48,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__blockerWindow": {
       "location": {
@@ -70,7 +70,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__timer": {
       "location": {
@@ -92,7 +92,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__modalOptions": {
       "location": {
@@ -114,7 +114,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__modelessOptions": {
       "location": {
@@ -136,7 +136,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__isCapableToOpenModalWindows": {
       "location": {
@@ -166,7 +166,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "open": {
       "location": {
@@ -295,7 +295,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__checkForUnblocking": {
       "location": {
@@ -317,7 +317,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "getBlocker": {
       "location": {

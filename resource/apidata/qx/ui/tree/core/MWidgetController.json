@@ -223,7 +223,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "bindDefaultProperties": {
       "location": {
@@ -531,7 +531,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__addBinding": {
       "location": {
@@ -569,7 +569,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "__getBindings": {
       "location": {
@@ -608,7 +608,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "getLabelPath": {
       "type": "function",

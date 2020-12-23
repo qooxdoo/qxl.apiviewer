@@ -213,7 +213,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__currentInterval": {
       "location": {
@@ -227,7 +227,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "start": {
       "location": {

@@ -186,7 +186,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__window": {
       "location": {
@@ -200,7 +200,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__onNativeWrapper": {
       "location": {
@@ -214,7 +214,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "canHandleEvent": {
       "location": {

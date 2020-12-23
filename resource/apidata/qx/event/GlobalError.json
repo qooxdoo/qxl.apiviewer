@@ -46,7 +46,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__originalOnError": {
       "location": {
@@ -60,7 +60,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__context": {
       "location": {
@@ -74,7 +74,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__isGlobalErrorHandlingEnabled": {
       "location": {
@@ -104,7 +104,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "setErrorHandler": {
       "location": {
@@ -205,7 +205,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "observeMethod": {
       "location": {

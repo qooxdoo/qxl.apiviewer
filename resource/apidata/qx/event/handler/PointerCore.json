@@ -158,7 +158,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     }
   },
   "construct": {
@@ -211,7 +211,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__emitter": {
       "location": {
@@ -225,7 +225,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__eventNames": {
       "location": {
@@ -239,7 +239,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__nativePointerEvents": {
       "location": {
@@ -253,7 +253,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__wrappedListener": {
       "location": {
@@ -267,7 +267,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__lastButtonState": {
       "location": {
@@ -281,7 +281,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__buttonStates": {
       "location": {
@@ -295,7 +295,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__primaryIdentifier": {
       "location": {
@@ -309,7 +309,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__activeTouches": {
       "location": {
@@ -323,7 +323,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_processedFlag": {
       "location": {

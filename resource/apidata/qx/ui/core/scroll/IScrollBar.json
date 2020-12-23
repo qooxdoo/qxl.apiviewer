@@ -63,11 +63,16 @@
   },
   "properties": {
     "orientation": {
-      "type": "property",
-      "name": "orientation",
-      "abstract": true,
-      "mixin": false,
-      "access": "public",
+      "location": {
+        "start": {
+          "line": 38,
+          "column": 4
+        },
+        "end": {
+          "line": 38,
+          "column": 20
+        }
+      },
       "jsdoc": {
         "@description": [
           {
@@ -75,14 +80,21 @@
             "body": "<p>The scroll bar orientation</p>"
           }
         ]
-      }
+      },
+      "name": "orientation",
+      "propertyType": "new"
     },
     "maximum": {
-      "type": "property",
-      "name": "maximum",
-      "abstract": true,
-      "mixin": false,
-      "access": "public",
+      "location": {
+        "start": {
+          "line": 45,
+          "column": 4
+        },
+        "end": {
+          "line": 45,
+          "column": 16
+        }
+      },
       "jsdoc": {
         "@description": [
           {
@@ -90,14 +102,21 @@
             "body": "<p>The maximum value (difference between available size and\n content size).</p>"
           }
         ]
-      }
+      },
+      "name": "maximum",
+      "propertyType": "new"
     },
     "position": {
-      "type": "property",
-      "name": "position",
-      "abstract": true,
-      "mixin": false,
-      "access": "public",
+      "location": {
+        "start": {
+          "line": 56,
+          "column": 4
+        },
+        "end": {
+          "line": 56,
+          "column": 17
+        }
+      },
       "jsdoc": {
         "@description": [
           {
@@ -105,14 +124,21 @@
             "body": "<p>Position of the scrollbar (which means the scroll left/top of the\n attached area's pane)\n Strictly validates according to {@link #maximum}.\n Does not apply any correction to the incoming value. If you depend\n on this, please use {@link #scrollTo} instead.</p>"
           }
         ]
-      }
+      },
+      "name": "position",
+      "propertyType": "new"
     },
     "knobFactor": {
-      "type": "property",
-      "name": "knobFactor",
-      "abstract": true,
-      "mixin": false,
-      "access": "public",
+      "location": {
+        "start": {
+          "line": 63,
+          "column": 4
+        },
+        "end": {
+          "line": 63,
+          "column": 19
+        }
+      },
       "jsdoc": {
         "@description": [
           {
@@ -120,7 +146,9 @@
             "body": "<p>Factor to apply to the width/height of the knob in relation\n to the dimension of the underlying area.</p>"
           }
         ]
-      }
+      },
+      "name": "knobFactor",
+      "propertyType": "new"
     }
   },
   "members": {

@@ -101,7 +101,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__dynY": {
       "location": {
@@ -115,7 +115,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__elem": {
       "location": {
@@ -129,7 +129,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__initDynamicMode": {
       "location": {
@@ -151,7 +151,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_createContentElement": {
       "location": {

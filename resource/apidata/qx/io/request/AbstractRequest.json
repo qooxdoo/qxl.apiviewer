@@ -482,7 +482,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__onLoadBound": {
       "location": {
@@ -496,7 +496,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__onLoadEndBound": {
       "location": {
@@ -510,7 +510,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__onAbortBound": {
       "location": {
@@ -524,7 +524,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__onTimeoutBound": {
       "location": {
@@ -538,7 +538,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__onErrorBound": {
       "location": {
@@ -552,7 +552,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__response": {
       "location": {
@@ -574,7 +574,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__abort": {
       "location": {
@@ -596,7 +596,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__phase": {
       "location": {
@@ -618,7 +618,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__requestHeaders": {
       "location": {
@@ -640,7 +640,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__requestHeadersDeprecated": {
       "location": {
@@ -662,7 +662,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "_transport": {
       "location": {
@@ -1060,7 +1060,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "setRequestHeader": {
       "location": {
@@ -1611,7 +1611,7 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_onLoad": {
       "location": {

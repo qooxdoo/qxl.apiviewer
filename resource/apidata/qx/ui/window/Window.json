@@ -1093,7 +1093,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__restoredLeft": {
       "location": {
@@ -1121,7 +1121,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__centeringAppearId": {
       "location": {
@@ -1149,7 +1149,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__centeringResizeId": {
       "location": {
@@ -1177,7 +1177,7 @@
         ]
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "getChildrenContainer": {
       "location": {
@@ -1966,7 +1966,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.core.MRemoteChildrenHandling",
       "jsdoc": {
         "@description": [
@@ -2446,7 +2446,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.core.MResizable",
       "jsdoc": {
         "@description": [
@@ -2463,7 +2463,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.core.MResizable",
       "jsdoc": {
         "@description": [
@@ -2497,7 +2497,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.core.MResizable",
       "jsdoc": {
         "@description": [
@@ -2523,7 +2523,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.core.MResizable",
       "jsdoc": {
         "@description": [
@@ -2578,7 +2578,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.core.MResizable",
       "jsdoc": {
         "@description": [
@@ -2604,7 +2604,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.core.MResizable",
       "jsdoc": {
         "@description": [
@@ -2630,7 +2630,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.core.MResizable",
       "jsdoc": {
         "@description": [
@@ -2656,7 +2656,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.core.MResizable",
       "jsdoc": {
         "@description": [
@@ -2682,7 +2682,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.core.MResizable",
       "jsdoc": {
         "@description": [
@@ -3317,7 +3317,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.core.MMovable",
       "jsdoc": {
         "@description": [
@@ -3342,7 +3342,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.core.MMovable",
       "jsdoc": {
         "@description": [
@@ -3359,7 +3359,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.core.MMovable",
       "jsdoc": {
         "@description": [
@@ -3497,7 +3497,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "private",
+      "access": "protected",
       "overriddenFrom": "qx.ui.core.MMovable",
       "jsdoc": {
         "@description": [

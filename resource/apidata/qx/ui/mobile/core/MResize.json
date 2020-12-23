@@ -67,7 +67,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "__lastWidth": {
       "location": {
@@ -81,7 +81,7 @@
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
     },
     "releaseFixedSize": {
       "location": {
