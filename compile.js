@@ -102,16 +102,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
     async load() {
       let command = this.getCompilerApi().getCommand();
       if (command instanceof qx.tool.cli.commands.Compile) {
-        let apps = [];
-        command.addListener("checkEnvironment", e => apps.push({
-          application: e.getData().application,
-          environment: e.getData().environment
-        }));
-        command.addListener("writtenApplications", async () => {
-          for await (let app of apps) {
-            this.__appCompiling(app.application, app.environment);
-          }
-        });
+        command.addListener("checkEnvironment", e => this.__appCompiling(e.getData().application, e.getData().environment));
       }
       return this.base(arguments);
     },
@@ -280,7 +271,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
             console.log(`APIVIEWER: analysing done`);
           }
           let libs = analyser.getLibraries();
-          qx.Promise.map(libs, (lib) => {
+          return qx.Promise.map(libs, (lib) => {
             const src = path.join(lib.getRootDir(), lib.getSourcePath());
             const dest = outputDir;
             walkSync(src, (file) => {
