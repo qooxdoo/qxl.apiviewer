@@ -230,9 +230,9 @@
           },
           {
             "name": "@param",
-            "body": "qxSerializer {Function?} Function used for serializing qooxdoo\n   objects stored in the properties of the object. Check for the type of\n   classes <ou want to serialize and return the serialized value. In all\n   other cases, just return nothing.",
+            "body": "qxSerializer {Function?} Function used for serializing qooxdoo\n   objects stored in the properties of the object. Check for the type of\n   classes you want to serialize and return the serialized value. In all\n   other cases, just return nothing.",
             "paramName": "qxSerializer",
-            "description": " Function used for serializing qooxdoo\n   objects stored in the properties of the object. Check for the type of\n   classes <ou want to serialize and return the serialized value. In all\n   other cases, just return nothing.",
+            "description": " Function used for serializing qooxdoo\n   objects stored in the properties of the object. Check for the type of\n   classes you want to serialize and return the serialized value. In all\n   other cases, just return nothing.",
             "optional": true,
             "type": "Function"
           },
