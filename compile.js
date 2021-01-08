@@ -102,13 +102,16 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
     async load() {
       let command = this.getCompilerApi().getCommand();
       if (command instanceof qx.tool.cli.commands.Compile) {
-        command.addListener("checkEnvironment", e => this.__appCompiling(e.getData().application, e.getData().environment));
+        command.addListener("writingApplication", function(e) {
+           let appMeta = e.getData().appMeta;
+           return this.__appCompiling(appMeta.getApplication(), appMeta.getEnvironment());
+        }, this);
       }
       return this.base(arguments);
     },
 
 
-    __scanApp(appToScan, outputDir, environment) {
+    __scanApp(appToScan, outputDir, env) {
       return new qx.Promise(fullfiled => {
         let command = this.getCompilerApi().getCommand();
         if (command.argv.verbose) {
@@ -125,7 +128,6 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
         qxl.apiviewer.ClassLoader.setBaseUri(path.join(outDir, "transpiled") + path.sep);
 
 
-        let env = environment;
         let excludeFromAPIViewer = env["qxl.apiviewer.exclude"] || env.excludeFromAPIViewer;
         if (env.excludeFromAPIViewer) {
           console.error(`excludeFromAPIViewer is deprecated, use qxl.apiviewer.exclude instead`);
