@@ -266,7 +266,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__minDeleteDistance": {
       "location": {
@@ -280,7 +280,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__isScrollingBlocked": {
       "location": {
@@ -294,7 +294,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__trackElement": {
       "location": {
@@ -308,7 +308,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_getTagName": {
       "location": {
@@ -602,7 +602,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_onChangeLocale": {
       "location": {
@@ -670,7 +670,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__onModelChangeBubble": {
       "location": {
@@ -701,7 +701,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_extractRowsToRender": {
       "location": {
@@ -771,7 +771,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "getListItemHeight": {
       "location": {
@@ -829,7 +829,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "render": {
       "location": {
@@ -927,7 +927,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getGroup": {
       "location": {
@@ -966,7 +966,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "getQxOwner": {
       "type": "function",

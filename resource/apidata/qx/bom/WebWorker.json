@@ -159,7 +159,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__fake": {
       "location": {
@@ -173,7 +173,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__initNative": {
       "location": {
@@ -204,7 +204,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__initFake": {
       "location": {
@@ -241,7 +241,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "postMessage": {
       "location": {
@@ -724,7 +724,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.core.MLogging",
       "jsdoc": {
         "@description": [
@@ -1574,7 +1574,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.core.MObjectId",
       "jsdoc": {
         "@description": [
@@ -1773,7 +1773,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.core.MObjectId",
       "jsdoc": {
         "@description": [

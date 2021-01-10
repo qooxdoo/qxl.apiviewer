@@ -192,7 +192,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__manager": {
       "location": {
@@ -206,7 +206,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__window": {
       "location": {
@@ -220,7 +220,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__root": {
       "location": {
@@ -234,7 +234,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__lastUpDownType": {
       "location": {
@@ -248,7 +248,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__lastKeyCode": {
       "location": {
@@ -262,7 +262,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__inputListeners": {
       "location": {
@@ -276,7 +276,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onKeyPressWrapper": {
       "location": {
@@ -290,7 +290,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "canHandleEvent": {
       "location": {
@@ -476,7 +476,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_initKeyObserver": {
       "location": {
@@ -575,7 +575,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__firefoxInputFix": {
       "location": {
@@ -626,7 +626,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onKeyPress": {
       "location": {
@@ -663,7 +663,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_idealKeyHandler": {
       "location": {

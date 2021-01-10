@@ -69,7 +69,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__item": {
       "location": {
@@ -83,7 +83,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__manager": {
       "location": {
@@ -97,7 +97,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__usedForForm": {
       "location": {
@@ -111,7 +111,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "validate": {
       "location": {

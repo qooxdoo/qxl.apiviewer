@@ -186,7 +186,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__window": {
       "location": {
@@ -200,7 +200,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__nativeEventType": {
       "location": {
@@ -214,7 +214,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_currentOrientation": {
       "location": {
@@ -242,7 +242,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "canHandleEvent": {
       "location": {

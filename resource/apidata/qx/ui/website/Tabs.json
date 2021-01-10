@@ -197,7 +197,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "init": {
       "location": {
@@ -729,7 +729,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__activateTransition": {
       "location": {
@@ -760,7 +760,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "dispose": {
       "location": {

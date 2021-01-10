@@ -345,7 +345,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__searchTimer": {
       "location": {
@@ -373,7 +373,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__bindings": {
       "location": {
@@ -401,7 +401,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "setValue": {
       "location": {
@@ -741,7 +741,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__convertKeyIdentifier": {
       "location": {
@@ -780,7 +780,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_updateSelectionValue": {
       "location": {
@@ -1160,7 +1160,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.form.MForm",
       "jsdoc": {
         "@description": [

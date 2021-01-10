@@ -289,7 +289,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__iconAdded": {
       "location": {
@@ -303,7 +303,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__spacer": {
       "location": {
@@ -317,7 +317,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_addWidgets": {
       "location": {
@@ -630,7 +630,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getUserValueIconOpened": {
       "location": {
@@ -660,7 +660,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__setIconSource": {
       "location": {
@@ -691,7 +691,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "isOpenable": {
       "location": {

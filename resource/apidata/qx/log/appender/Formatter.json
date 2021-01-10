@@ -637,7 +637,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__defaultFormatter": {
       "location": {
@@ -665,7 +665,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "getFormatter": {
       "location": {
@@ -801,7 +801,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     }
   },
   "descendants": []

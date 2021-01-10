@@ -794,7 +794,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__openNodes": {
       "location": {
@@ -822,7 +822,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__nestingLevel": {
       "location": {
@@ -850,7 +850,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__deferredCall": {
       "location": {
@@ -878,7 +878,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_itemWidth": {
       "location": {
@@ -934,7 +934,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__openProperty": {
       "location": {
@@ -962,7 +962,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "syncWidget": {
       "location": {
@@ -1894,7 +1894,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "buildLookupTable": {
       "location": {
@@ -1968,7 +1968,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__openNode": {
       "location": {
@@ -1999,7 +1999,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__openNodeAndAllParents": {
       "location": {
@@ -2045,7 +2045,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__updateRowCount": {
       "location": {
@@ -2067,7 +2067,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "getParent": {
       "location": {
@@ -2143,7 +2143,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getVisibleParent": {
       "location": {
@@ -2173,7 +2173,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "isShowTopLevelOpenCloseIcons": {
       "type": "function",
@@ -2578,7 +2578,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.virtual.selection.MModel",
       "jsdoc": {
         "@description": [
@@ -2595,7 +2595,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.virtual.selection.MModel",
       "jsdoc": {
         "@description": [
@@ -2621,7 +2621,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.virtual.selection.MModel",
       "jsdoc": {
         "@description": [

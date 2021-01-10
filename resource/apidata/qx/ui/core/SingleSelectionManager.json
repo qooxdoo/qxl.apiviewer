@@ -108,7 +108,7 @@
       },
       "name": "allowEmptySelection",
       "propertyType": "new",
-      "apply": "__applyAllowEmptySelection",
+      "apply": "__P_222_1",
       "init": true,
       "check": "Boolean",
       "defaultValue": true
@@ -173,7 +173,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__selectionProvider": {
       "location": {
@@ -201,7 +201,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "getSelected": {
       "location": {
@@ -423,10 +423,7 @@
       },
       "jsdoc": {},
       "type": "function",
-      "access": "protected",
-      "applyFor": [
-        "allowEmptySelection"
-      ]
+      "access": "private"
     },
     "__setSelected": {
       "location": {
@@ -460,7 +457,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__isChildElement": {
       "location": {
@@ -499,7 +496,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "getQxOwner": {
       "type": "function",

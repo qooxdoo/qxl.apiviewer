@@ -120,7 +120,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__captureElement": {
       "location": {
@@ -134,7 +134,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__containerCapture": {
       "location": {
@@ -148,7 +148,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__window": {
       "location": {
@@ -162,7 +162,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_getParent": {
       "location": {
@@ -251,7 +251,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "activateCapture": {
       "location": {

@@ -523,7 +523,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "getFlashElement": {
       "location": {
@@ -910,7 +910,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "getQxOwner": {
       "type": "function",

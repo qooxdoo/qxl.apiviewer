@@ -50,7 +50,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "getPadding": {
       "location": {
@@ -275,7 +275,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_styleBackgroundColor": {
       "type": "function",
@@ -1201,7 +1201,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.decoration.MDoubleBorder",
       "jsdoc": {
         "@description": [
@@ -1227,7 +1227,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.decoration.MDoubleBorder",
       "jsdoc": {
         "@description": [
@@ -1269,7 +1269,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.decoration.MDoubleBorder",
       "jsdoc": {
         "@description": [
@@ -3659,7 +3659,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.decoration.MLinearBackgroundGradient",
       "jsdoc": {
         "@description": [
@@ -3742,7 +3742,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.decoration.MLinearBackgroundGradient",
       "jsdoc": {
         "@description": [
@@ -3825,7 +3825,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.decoration.MLinearBackgroundGradient",
       "jsdoc": {
         "@description": [
@@ -3908,7 +3908,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.decoration.MLinearBackgroundGradient",
       "jsdoc": {
         "@description": [
@@ -3991,7 +3991,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.decoration.MLinearBackgroundGradient",
       "jsdoc": {
         "@description": [
@@ -4575,7 +4575,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.decoration.MBorderImage",
       "jsdoc": {
         "@description": [

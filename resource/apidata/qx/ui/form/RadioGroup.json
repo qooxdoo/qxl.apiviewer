@@ -362,7 +362,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "getItems": {
       "location": {
@@ -779,7 +779,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "getSelection": {
       "type": "function",
@@ -1365,7 +1365,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.core.MSingleSelectionHandling",
       "jsdoc": {
         "@description": [
@@ -1390,7 +1390,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.form.MModelSelection",
       "jsdoc": {
         "@description": [
@@ -1407,7 +1407,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.form.MModelSelection",
       "jsdoc": {
         "@description": [

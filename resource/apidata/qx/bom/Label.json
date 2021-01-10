@@ -54,7 +54,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__prepareText": {
       "location": {
@@ -84,7 +84,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__prepareHtml": {
       "location": {
@@ -114,7 +114,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__createMeasureElement": {
       "location": {
@@ -155,7 +155,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getStyles": {
       "location": {
@@ -196,7 +196,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "create": {
       "location": {
@@ -275,7 +275,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "setSanitizer": {
       "location": {
@@ -535,7 +535,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     }
   },
   "descendants": []

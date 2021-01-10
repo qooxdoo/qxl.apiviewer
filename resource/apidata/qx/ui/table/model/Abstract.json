@@ -126,7 +126,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__columnNameArr": {
       "location": {
@@ -140,7 +140,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__columnIndexMap": {
       "location": {
@@ -154,7 +154,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__internalChange": {
       "location": {
@@ -168,7 +168,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "init": {
       "location": {

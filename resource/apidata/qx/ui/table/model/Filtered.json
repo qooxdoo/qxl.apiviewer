@@ -59,7 +59,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__applyingFilters": {
       "location": {
@@ -73,7 +73,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__filterTypes": {
       "location": {
@@ -87,7 +87,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "getFullArray": {
       "location": {

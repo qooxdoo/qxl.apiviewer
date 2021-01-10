@@ -226,7 +226,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__emitter": {
       "location": {
@@ -240,7 +240,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onTouchEventWrapper": {
       "location": {
@@ -254,7 +254,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__originalTarget": {
       "location": {
@@ -268,7 +268,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__touchStartPosition": {
       "location": {
@@ -282,7 +282,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__startTime": {
       "location": {
@@ -296,7 +296,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__beginScalingDistance": {
       "location": {
@@ -310,7 +310,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__beginRotation": {
       "location": {
@@ -324,7 +324,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__pointers": {
       "location": {
@@ -338,7 +338,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__touchEventNames": {
       "location": {
@@ -352,7 +352,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_initTouchObserver": {
       "location": {
@@ -802,7 +802,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_fireEvent": {
       "location": {

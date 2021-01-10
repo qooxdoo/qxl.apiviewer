@@ -206,7 +206,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__rowData": {
       "location": {
@@ -220,7 +220,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__colData": {
       "location": {
@@ -234,7 +234,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__colSpans": {
       "location": {
@@ -248,7 +248,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__rowSpans": {
       "location": {
@@ -262,7 +262,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__maxRowIndex": {
       "location": {
@@ -276,7 +276,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__maxColIndex": {
       "location": {
@@ -290,7 +290,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__rowHeights": {
       "location": {
@@ -318,7 +318,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__colWidths": {
       "location": {
@@ -346,7 +346,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "verifyLayoutProperty": {
       "location": {
@@ -383,7 +383,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_setRowData": {
       "location": {

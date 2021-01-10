@@ -217,7 +217,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__lastColCount": {
       "location": {
@@ -231,7 +231,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__paneScroller": {
       "location": {
@@ -245,7 +245,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__tableContainer": {
       "location": {
@@ -259,7 +259,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__focusedRow": {
       "location": {
@@ -273,7 +273,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__focusedCol": {
       "location": {
@@ -287,7 +287,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__rowCache": {
       "location": {
@@ -302,7 +302,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__rowCacheCount": {
       "location": {
@@ -316,7 +316,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_applyFirstVisibleRow": {
       "location": {
@@ -722,7 +722,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__rowCacheGet": {
       "location": {
@@ -775,7 +775,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__rowCacheSet": {
       "location": {
@@ -827,7 +827,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "updateContent": {
       "location": {

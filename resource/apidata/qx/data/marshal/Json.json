@@ -155,7 +155,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__jsonToHash": {
       "location": {
@@ -203,7 +203,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__jsonToBestHash": {
       "location": {
@@ -249,7 +249,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "toClass": {
       "location": {
@@ -352,7 +352,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__disposeItem": {
       "location": {
@@ -383,7 +383,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__createInstance": {
       "location": {
@@ -446,7 +446,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__ignore": {
       "location": {
@@ -502,7 +502,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "toModel": {
       "location": {
@@ -620,7 +620,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "getQxOwner": {
       "type": "function",

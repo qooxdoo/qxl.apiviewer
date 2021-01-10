@@ -936,6 +936,7 @@
       "event": "changeId",
       "apply": "_applyId",
       "nullable": true,
+      "transform": "_transformId",
       "allowNull": true,
       "check": "String"
     },
@@ -1277,7 +1278,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__idCounter": {
       "location": {
@@ -1305,7 +1306,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__domUpdatedScheduleId": {
       "location": {
@@ -1333,7 +1334,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "onShutdown": {
       "location": {
@@ -1728,7 +1729,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__contentElement": {
       "location": {
@@ -1742,7 +1743,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__layoutParent": {
       "location": {
@@ -1756,7 +1757,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__children": {
       "location": {
@@ -1770,7 +1771,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__layoutManager": {
       "location": {
@@ -1784,7 +1785,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_getTagName": {
       "location": {
@@ -3228,7 +3229,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "show": {
       "location": {

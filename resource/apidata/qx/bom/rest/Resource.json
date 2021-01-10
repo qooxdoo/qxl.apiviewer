@@ -379,7 +379,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__routes": {
       "location": {
@@ -393,7 +393,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__baseUrl": {
       "location": {
@@ -407,7 +407,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__pollTimers": {
       "location": {
@@ -421,7 +421,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__longPollHandlers": {
       "location": {
@@ -435,7 +435,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__configureRequestCallback": {
       "location": {
@@ -449,7 +449,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__requestHandler": {
       "location": {
@@ -477,7 +477,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__begetRequest": {
       "location": {
@@ -505,7 +505,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "setRequestFactory": {
       "location": {
@@ -754,7 +754,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "map": {
       "location": {
@@ -938,7 +938,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__configureRequest": {
       "location": {
@@ -986,7 +986,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__configureJsonRequest": {
       "location": {
@@ -1034,7 +1034,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "abort": {
       "location": {
@@ -1443,7 +1443,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__declareEvent": {
       "location": {
@@ -1474,7 +1474,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "isDisposed": {
       "location": {

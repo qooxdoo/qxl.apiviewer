@@ -60,7 +60,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__checks": {
       "location": {
@@ -82,7 +82,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__dereference": {
       "location": {
@@ -104,7 +104,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "$$inherit": {
       "location": {
@@ -297,7 +297,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getInheritablesOfClass": {
       "location": {
@@ -336,7 +336,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__createRefresher": {
       "location": {
@@ -375,7 +375,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "attachRefreshInheritables": {
       "location": {
@@ -496,7 +496,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__attachPropertyMethods": {
       "location": {
@@ -541,7 +541,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__shouldBeDereferenced": {
       "location": {
@@ -580,7 +580,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__errors": {
       "location": {
@@ -608,7 +608,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "error": {
       "location": {
@@ -741,7 +741,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__installFunctionFromCode": {
       "location": {
@@ -808,7 +808,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "executeOptimizedGetter": {
       "location": {
@@ -913,7 +913,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__compileGetter": {
       "location": {
@@ -966,7 +966,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "executeOptimizedSetter": {
       "location": {
@@ -1086,7 +1086,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__compileSetter": {
       "location": {
@@ -1146,7 +1146,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getStore": {
       "location": {
@@ -1192,7 +1192,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__emitIsEqualFunction": {
       "location": {
@@ -1244,7 +1244,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__emitSetterPreConditions": {
       "location": {
@@ -1303,7 +1303,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__emitIncomingValueTransformation": {
       "location": {
@@ -1355,7 +1355,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__emitOldNewComparison": {
       "location": {
@@ -1407,7 +1407,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__emitIncomingValueValidation": {
       "location": {
@@ -1472,7 +1472,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__emitStoreValue": {
       "location": {
@@ -1524,7 +1524,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__emitStoreComputedValue": {
       "location": {
@@ -1583,7 +1583,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__emitOldValue": {
       "location": {
@@ -1628,7 +1628,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__emitStoreInheritedPropertyValue": {
       "location": {
@@ -1680,7 +1680,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__emitNormalizeUndefinedValues": {
       "location": {
@@ -1732,7 +1732,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__emitCallCallback": {
       "location": {
@@ -1791,7 +1791,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     }
   },
   "descendants": []

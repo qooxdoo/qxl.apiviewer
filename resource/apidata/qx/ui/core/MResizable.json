@@ -233,7 +233,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__resizeFrame": {
       "location": {
@@ -247,7 +247,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__resizeActive": {
       "location": {
@@ -261,7 +261,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__resizeLeft": {
       "location": {
@@ -275,7 +275,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__resizeTop": {
       "location": {
@@ -289,7 +289,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__resizeStart": {
       "location": {
@@ -303,7 +303,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__resizeRange": {
       "location": {
@@ -317,7 +317,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "RESIZE_TOP": {
       "location": {
@@ -425,7 +425,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__computeResizeResult": {
       "location": {
@@ -464,7 +464,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__resizeCursors": {
       "location": {
@@ -498,7 +498,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__computeResizeMode": {
       "location": {
@@ -529,7 +529,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__computeResizeActive": {
       "location": {
@@ -589,7 +589,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__onResizePointerDown": {
       "location": {
@@ -620,7 +620,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__onResizePointerUp": {
       "location": {
@@ -651,7 +651,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__onResizeLoseCapture": {
       "location": {
@@ -682,7 +682,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__onResizePointerMove": {
       "location": {
@@ -713,7 +713,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__onResizePointerOut": {
       "location": {
@@ -744,7 +744,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "getResizableTop": {
       "type": "function",

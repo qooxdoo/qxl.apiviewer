@@ -141,7 +141,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__selectionArrayListenerId": {
       "location": {
@@ -155,7 +155,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__ownSelection": {
       "location": {
@@ -169,7 +169,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "setValue": {
       "location": {
@@ -329,7 +329,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_changeTargetSelection": {
       "location": {
@@ -447,7 +447,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__targetSupportsSingleSelection": {
       "location": {
@@ -477,7 +477,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__selectItem": {
       "location": {
@@ -508,7 +508,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getSelectableForModel": {
       "location": {
@@ -547,7 +547,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_startSelectionModification": {
       "location": {

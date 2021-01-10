@@ -48,7 +48,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "encode": {
       "location": {
@@ -140,7 +140,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getUTF8StringFromBytes": {
       "location": {
@@ -186,7 +186,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "decode": {
       "location": {

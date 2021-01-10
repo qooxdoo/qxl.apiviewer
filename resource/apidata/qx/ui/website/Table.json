@@ -373,7 +373,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__isDate": {
       "location": {
@@ -412,7 +412,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getIndex": {
       "location": {
@@ -458,7 +458,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getUID": {
       "location": {
@@ -488,7 +488,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__selectionTypes": {
       "location": {
@@ -503,7 +503,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__internalCellClass": {
       "location": {
@@ -518,7 +518,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__internalHeaderClass": {
       "location": {
@@ -533,7 +533,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__internalSelectionClass": {
       "location": {
@@ -548,7 +548,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__internalInputClass": {
       "location": {
@@ -563,7 +563,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__allColumnSelector": {
       "location": {
@@ -578,7 +578,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__dataColName": {
       "location": {
@@ -593,7 +593,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__dataColType": {
       "location": {
@@ -608,7 +608,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__dataSortingKey": {
       "location": {
@@ -623,7 +623,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__modelSortingKey": {
       "location": {
@@ -638,7 +638,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__inputLabelClass": {
       "location": {
@@ -653,7 +653,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__selectedRowClass": {
       "location": {
@@ -668,7 +668,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__ascSortingClass": {
       "location": {
@@ -683,7 +683,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__descSortingClass": {
       "location": {
@@ -698,7 +698,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     }
   },
   "members": {
@@ -714,7 +714,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__columnMeta": {
       "location": {
@@ -728,7 +728,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__sortingFunction": {
       "location": {
@@ -742,7 +742,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__filterFunction": {
       "location": {
@@ -756,7 +756,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__filterFunc": {
       "location": {
@@ -770,7 +770,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__filters": {
       "location": {
@@ -784,7 +784,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__inputName": {
       "location": {
@@ -798,7 +798,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__hovered": {
       "location": {
@@ -812,7 +812,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__sortingData": {
       "location": {
@@ -826,7 +826,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "init": {
       "location": {
@@ -1724,7 +1724,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__filterDom": {
       "location": {
@@ -1771,7 +1771,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "getSortingData": {
       "location": {
@@ -1859,7 +1859,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__createInputs": {
       "location": {
@@ -1898,7 +1898,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__createInput": {
       "location": {
@@ -1943,7 +1943,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__checkColumnExistance": {
       "location": {
@@ -1974,7 +1974,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getHeaderRow": {
       "location": {
@@ -2004,7 +2004,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getColumnMetaData": {
       "location": {
@@ -2043,7 +2043,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__addClassToHeaderAndFooter": {
       "location": {
@@ -2082,7 +2082,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__sortDOM": {
       "location": {
@@ -2121,7 +2121,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__registerEvents": {
       "location": {
@@ -2151,7 +2151,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__selectionRendered": {
       "location": {
@@ -2181,7 +2181,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__processSelection": {
       "location": {
@@ -2220,7 +2220,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__fireEvent": {
       "location": {
@@ -2273,7 +2273,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__detectClickedCell": {
       "location": {
@@ -2312,7 +2312,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__cellHover": {
       "location": {
@@ -2343,7 +2343,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__cellOut": {
       "location": {
@@ -2374,7 +2374,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__applyTemplate": {
       "location": {
@@ -2413,7 +2413,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__deleteRows": {
       "location": {
@@ -2452,7 +2452,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getDataForColumn": {
       "location": {
@@ -2491,7 +2491,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getRoot": {
       "location": {
@@ -2521,7 +2521,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__isRowRendered": {
       "location": {
@@ -2560,7 +2560,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__isCellRendered": {
       "location": {
@@ -2606,7 +2606,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "setSortingClass": {
       "location": {
@@ -2689,7 +2689,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__sort": {
       "location": {
@@ -2735,7 +2735,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_compareNumber": {
       "location": {
@@ -2827,7 +2827,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_compareDate": {
       "location": {
@@ -2972,7 +2972,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getCellValue": {
       "location": {
@@ -3011,7 +3011,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getDataRows": {
       "location": {
@@ -3041,7 +3041,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__defaultColumnSort": {
       "location": {
@@ -3072,7 +3072,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__defaultColumnFilter": {
       "location": {
@@ -3111,7 +3111,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getColumnIndex": {
       "location": {
@@ -3150,7 +3150,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     }
   },
   "defer": {

@@ -293,7 +293,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__pollTimers": {
       "location": {
@@ -307,7 +307,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__routes": {
       "location": {
@@ -321,7 +321,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_getResource": {
       "location": {
@@ -567,7 +567,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "invoke": {
       "location": {
@@ -970,7 +970,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__declareEvent": {
       "location": {
@@ -1001,7 +1001,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "getQxOwner": {
       "type": "function",

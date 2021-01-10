@@ -97,7 +97,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__urls": {
       "location": {
@@ -111,7 +111,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__id": {
       "location": {
@@ -125,7 +125,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__closure": {
       "location": {
@@ -139,7 +139,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__loadWithClosure": {
       "location": {
@@ -153,7 +153,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__timeoutId": {
       "location": {
@@ -167,7 +167,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__notifyPackageResult": {
       "location": {
@@ -181,7 +181,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "getId": {
       "location": {
@@ -462,7 +462,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__importPackageData": {
       "location": {
@@ -499,7 +499,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     }
   },
   "descendants": []

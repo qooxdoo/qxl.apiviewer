@@ -76,7 +76,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__colors": {
       "location": {
@@ -90,7 +90,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__progressBar": {
       "location": {
@@ -104,7 +104,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__percentDone": {
       "location": {
@@ -118,7 +118,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_onChangeTheme": {
       "location": {
@@ -160,7 +160,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "join": {
       "location": {

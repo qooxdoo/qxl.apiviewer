@@ -678,7 +678,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onAfterSlideBarAdd": {
       "location": {
@@ -692,7 +692,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_blocker": {
       "location": {
@@ -999,7 +999,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "getParentMenu": {
       "location": {
@@ -1251,7 +1251,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_assertSlideBar": {
       "location": {
@@ -1509,7 +1509,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.core.MPlacement",
       "jsdoc": {
         "@description": [
@@ -1636,7 +1636,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.core.MPlacement",
       "jsdoc": {
         "@description": [
@@ -2378,7 +2378,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.core.MRemoteChildrenHandling",
       "jsdoc": {
         "@description": [

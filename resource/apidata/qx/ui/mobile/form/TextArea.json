@@ -320,7 +320,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "setValue": {
       "type": "function",
@@ -939,7 +939,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.mobile.form.MValue",
       "jsdoc": {
         "@description": [
@@ -1355,7 +1355,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.form.MForm",
       "jsdoc": {
         "@description": [

@@ -54,7 +54,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__emptyStyles": {
       "location": {
@@ -82,7 +82,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__computePosition": {
       "location": {
@@ -134,7 +134,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "compile": {
       "location": {

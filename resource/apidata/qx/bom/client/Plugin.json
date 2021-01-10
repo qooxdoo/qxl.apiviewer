@@ -168,7 +168,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "getQuicktimeVersion": {
       "location": {
@@ -583,7 +583,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__isAvailable": {
       "location": {
@@ -638,7 +638,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     }
   },
   "defer": {

@@ -248,7 +248,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__valid": {
       "location": {
@@ -262,7 +262,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__asyncResults": {
       "location": {
@@ -276,7 +276,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__syncValid": {
       "location": {
@@ -290,7 +290,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "add": {
       "location": {
@@ -563,7 +563,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__isAsyncValidator": {
       "location": {
@@ -605,7 +605,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__supportsInvalid": {
       "location": {
@@ -644,7 +644,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__supportsSingleSelection": {
       "location": {
@@ -683,7 +683,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__supportsDataBindingSelection": {
       "location": {
@@ -722,7 +722,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_setValid": {
       "location": {
@@ -1037,7 +1037,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "getQxOwner": {
       "type": "function",

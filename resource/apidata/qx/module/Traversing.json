@@ -132,7 +132,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getElementFromArgument": {
       "location": {
@@ -175,7 +175,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getNodeFromArgument": {
       "location": {
@@ -214,7 +214,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getAttributes": {
       "location": {
@@ -253,7 +253,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__hierarchyHelper": {
       "location": {
@@ -319,7 +319,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "isElement": {
       "location": {
@@ -993,7 +993,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "add": {
       "location": {

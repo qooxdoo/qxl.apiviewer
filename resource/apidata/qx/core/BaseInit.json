@@ -40,7 +40,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "getApplication": {
       "location": {
@@ -123,7 +123,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__shutdown": {
       "location": {
@@ -145,7 +145,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     }
   },
   "descendants": []

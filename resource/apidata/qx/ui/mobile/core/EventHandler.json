@@ -157,7 +157,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__scrollLeft": {
       "location": {
@@ -171,7 +171,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__scrollTop": {
       "location": {
@@ -185,7 +185,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__startY": {
       "location": {
@@ -199,7 +199,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__timer": {
       "location": {
@@ -213,7 +213,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onPointerDown": {
       "location": {
@@ -244,7 +244,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__onPointerUp": {
       "location": {
@@ -275,7 +275,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__onPointerMove": {
       "location": {
@@ -306,7 +306,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__cancelActiveStateTimer": {
       "location": {
@@ -328,7 +328,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__removeActiveState": {
       "location": {
@@ -350,7 +350,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     }
   },
   "members": {
@@ -366,7 +366,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "canHandleEvent": {
       "location": {

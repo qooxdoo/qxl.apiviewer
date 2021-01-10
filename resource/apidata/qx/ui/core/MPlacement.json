@@ -40,7 +40,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__direction": {
       "location": {
@@ -54,7 +54,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "setVisibleElement": {
       "location": {
@@ -480,7 +480,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__ptwLiveDisappearListener": {
       "location": {
@@ -494,7 +494,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__ptwLiveUpdateDisappearListener": {
       "location": {
@@ -508,7 +508,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "getLayoutLocation": {
       "location": {
@@ -653,7 +653,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "placeToPointer": {
       "location": {
@@ -814,7 +814,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_place": {
       "location": {

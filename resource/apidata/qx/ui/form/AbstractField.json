@@ -56,7 +56,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__addPlaceholderRules": {
       "location": {
@@ -78,7 +78,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     }
   },
   "construct": {
@@ -395,6 +395,7 @@
       },
       "name": "liveUpdateOnRxMatch",
       "propertyType": "new",
+      "transform": "_string2RegExp",
       "check": "RegExp"
     },
     "placeholder": {
@@ -530,7 +531,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_placeholder": {
       "location": {
@@ -558,7 +559,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__oldInputValue": {
       "location": {
@@ -572,7 +573,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__useQxPlaceholder": {
       "location": {
@@ -586,7 +587,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__font": {
       "location": {
@@ -600,7 +601,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__webfontListenerId": {
       "location": {
@@ -614,7 +615,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "getFocusElement": {
       "location": {
@@ -787,7 +788,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_getContentHint": {
       "location": {
@@ -1019,7 +1020,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "setValue": {
       "location": {
@@ -1895,7 +1896,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.form.MForm",
       "jsdoc": {
         "@description": [

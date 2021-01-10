@@ -141,7 +141,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__focusEvents": {
       "location": {
@@ -175,7 +175,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__ignoreDisabled": {
       "location": {
@@ -209,7 +209,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "canHandleEvent": {
       "location": {

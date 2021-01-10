@@ -69,7 +69,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__moveFeedback": {
       "location": {
@@ -83,7 +83,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__lastPointerOverColumn": {
       "location": {
@@ -97,7 +97,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__blocker": {
       "location": {
@@ -111,7 +111,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "getPaneScroller": {
       "location": {

@@ -193,7 +193,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_createContentElement": {
       "location": {
@@ -234,7 +234,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_applyCanvasWidth": {
       "location": {

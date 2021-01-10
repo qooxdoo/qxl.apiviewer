@@ -54,7 +54,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__lookup": {
       "location": {
@@ -82,7 +82,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__data": {
       "location": {
@@ -110,7 +110,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "remove": {
       "location": {
@@ -219,7 +219,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "add": {
       "location": {

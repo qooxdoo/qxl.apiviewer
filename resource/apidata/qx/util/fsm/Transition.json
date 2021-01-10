@@ -109,7 +109,8 @@
         ]
       },
       "name": "predicate",
-      "propertyType": "new"
+      "propertyType": "new",
+      "transform": "__P_420_1"
     },
     "nextState": {
       "location": {
@@ -133,6 +134,7 @@
       "name": "nextState",
       "propertyType": "new",
       "init": "qx.util.fsm.FiniteStateMachine.StateChange.CURRENT_STATE",
+      "transform": "__P_420_2",
       "defaultValue": "qx.util.fsm.FiniteStateMachine.StateChange.CURRENT_STATE"
     },
     "autoActionsBeforeOntransition": {
@@ -155,7 +157,8 @@
         ]
       },
       "name": "autoActionsBeforeOntransition",
-      "propertyType": "new"
+      "propertyType": "new",
+      "transform": "__P_420_3"
     },
     "autoActionsAfterOntransition": {
       "location": {
@@ -177,7 +180,8 @@
         ]
       },
       "name": "autoActionsAfterOntransition",
-      "propertyType": "new"
+      "propertyType": "new",
+      "transform": "__P_420_4"
     },
     "ontransition": {
       "location": {
@@ -199,7 +203,8 @@
         ]
       },
       "name": "ontransition",
-      "propertyType": "new"
+      "propertyType": "new",
+      "transform": "__P_420_5"
     },
     "qxOwner": {
       "type": "property",
@@ -272,7 +277,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__transformNextState": {
       "location": {
@@ -311,7 +316,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__transformAutoActionsBeforeOntransition": {
       "location": {
@@ -350,7 +355,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__transformAutoActionsAfterOntransition": {
       "location": {
@@ -389,7 +394,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__transformOntransition": {
       "location": {
@@ -428,7 +433,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__bindIfFunction": {
       "location": {
@@ -477,7 +482,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "getQxOwner": {
       "type": "function",

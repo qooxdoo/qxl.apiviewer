@@ -78,7 +78,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__num": {
       "location": {
@@ -124,7 +124,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__computeScroll": {
       "location": {
@@ -163,7 +163,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__computeBody": {
       "location": {
@@ -202,7 +202,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__computeOffset": {
       "location": {
@@ -247,7 +247,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "get": {
       "location": {
@@ -334,7 +334,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "getLeft": {
       "location": {

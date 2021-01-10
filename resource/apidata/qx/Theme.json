@@ -106,7 +106,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__initializeAliases": {
       "location": {
@@ -144,7 +144,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "getAll": {
       "location": {
@@ -357,7 +357,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__convert": {
       "location": {
@@ -395,7 +395,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "$$registry": {
       "location": {
@@ -451,7 +451,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__allowedKeys": {
       "location": {
@@ -479,7 +479,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__metaKeys": {
       "location": {
@@ -507,7 +507,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__validateConfig": {
       "location": {
@@ -559,7 +559,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "patch": {
       "location": {
@@ -676,7 +676,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     }
   },
   "descendants": []

@@ -441,7 +441,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "setChildProperty": {
       "type": "function",
@@ -732,7 +732,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.tree.core.MWidgetController",
       "jsdoc": {
         "@description": [
@@ -776,7 +776,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.tree.core.MWidgetController",
       "jsdoc": {
         "@description": [
@@ -809,7 +809,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.tree.core.MWidgetController",
       "jsdoc": {
         "@description": [

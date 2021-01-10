@@ -251,7 +251,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__focusHandler": {
       "location": {
@@ -265,7 +265,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__mouseCapture": {
       "location": {
@@ -279,7 +279,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_scheduleFlush": {
       "location": {
@@ -362,7 +362,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getCaptureElement": {
       "location": {
@@ -392,7 +392,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__willBecomeInvisible": {
       "location": {
@@ -431,7 +431,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "fromDomElement": {
       "location": {
@@ -487,7 +487,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__element": {
       "location": {
@@ -515,7 +515,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__widget": {
       "location": {
@@ -543,7 +543,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__root": {
       "location": {
@@ -571,7 +571,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__included": {
       "location": {
@@ -599,7 +599,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__visible": {
       "location": {
@@ -627,7 +627,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__lazyScrollIntoViewX": {
       "location": {
@@ -641,7 +641,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__lazyScrollIntoViewY": {
       "location": {
@@ -655,7 +655,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__lazyScrollX": {
       "location": {
@@ -669,7 +669,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__lazyScrollY": {
       "location": {
@@ -683,7 +683,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__styleJobs": {
       "location": {
@@ -697,7 +697,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__attribJobs": {
       "location": {
@@ -711,7 +711,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__propertyJobs": {
       "location": {
@@ -725,7 +725,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__styleValues": {
       "location": {
@@ -739,7 +739,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__attribValues": {
       "location": {
@@ -753,7 +753,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__propertyValues": {
       "location": {
@@ -767,7 +767,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__eventValues": {
       "location": {
@@ -781,7 +781,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__children": {
       "location": {
@@ -795,7 +795,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__modifiedChildren": {
       "location": {
@@ -809,7 +809,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__parent": {
       "location": {
@@ -823,7 +823,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_scheduleChildrenUpdate": {
       "location": {
@@ -968,7 +968,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__flush": {
       "location": {
@@ -990,7 +990,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_insertChildren": {
       "location": {
@@ -1132,7 +1132,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__addChildHelper": {
       "location": {
@@ -1171,7 +1171,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__removeChildHelper": {
       "location": {
@@ -1210,7 +1210,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__moveChildHelper": {
       "location": {
@@ -1249,7 +1249,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "getChildren": {
       "location": {
@@ -2767,7 +2767,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onScroll": {
       "location": {
@@ -2798,7 +2798,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "getTextSelection": {
       "location": {
@@ -3016,7 +3016,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "focus": {
       "location": {

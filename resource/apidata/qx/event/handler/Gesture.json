@@ -220,7 +220,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__window": {
       "location": {
@@ -234,7 +234,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__root": {
       "location": {
@@ -248,7 +248,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__listener": {
       "location": {
@@ -262,7 +262,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onDblClickWrapped": {
       "location": {
@@ -276,7 +276,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__fireRollWrapped": {
       "location": {
@@ -290,7 +290,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "getWindow": {
       "location": {
@@ -605,7 +605,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     }
   },
   "defer": {

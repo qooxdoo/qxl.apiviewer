@@ -152,7 +152,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__lineSizes": {
       "location": {
@@ -174,7 +174,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "isHorizontal": {
       "location": {
@@ -319,7 +319,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "getLineSize": {
       "location": {
@@ -442,7 +442,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__renderVerticalLines": {
       "location": {
@@ -487,7 +487,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_fullUpdate": {
       "location": {

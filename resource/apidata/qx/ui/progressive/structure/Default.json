@@ -92,7 +92,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__footer": {
       "location": {
@@ -106,7 +106,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__nullHeader": {
       "location": {
@@ -120,7 +120,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__nullFooter": {
       "location": {
@@ -134,7 +134,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "applyStructure": {
       "location": {

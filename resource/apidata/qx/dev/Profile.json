@@ -54,7 +54,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__callStack": {
       "location": {
@@ -82,7 +82,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__doProfile": {
       "location": {
@@ -110,7 +110,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__callOverhead": {
       "location": {
@@ -138,7 +138,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__calibrateCount": {
       "location": {
@@ -166,7 +166,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "start": {
       "location": {
@@ -318,7 +318,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__calibrateHelper": {
       "location": {
@@ -340,7 +340,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "normalizeProfileData": {
       "location": {

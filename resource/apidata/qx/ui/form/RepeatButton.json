@@ -248,7 +248,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__timer": {
       "location": {
@@ -262,7 +262,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "press": {
       "location": {
@@ -626,7 +626,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__stopInternalTimer": {
       "location": {
@@ -648,7 +648,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "setCommand": {
       "type": "function",

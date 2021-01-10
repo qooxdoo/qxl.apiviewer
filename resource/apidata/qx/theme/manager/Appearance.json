@@ -131,7 +131,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__styleCache": {
       "location": {
@@ -145,7 +145,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__aliasMap": {
       "location": {
@@ -159,7 +159,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_applyTheme": {
       "location": {
@@ -237,7 +237,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "styleFrom": {
       "location": {

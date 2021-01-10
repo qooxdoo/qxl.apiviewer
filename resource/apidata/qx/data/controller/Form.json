@@ -181,7 +181,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__bindingOptions": {
       "location": {
@@ -195,7 +195,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "addBindingOptions": {
       "location": {
@@ -359,7 +359,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__tearDownBinding": {
       "location": {
@@ -390,7 +390,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__isModelSelectable": {
       "location": {
@@ -429,7 +429,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "getQxOwner": {
       "type": "function",

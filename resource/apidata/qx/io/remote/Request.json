@@ -271,7 +271,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "methodAllowsRequestBody": {
       "location": {
@@ -760,7 +760,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__urlParameters": {
       "location": {
@@ -774,7 +774,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__dataParameters": {
       "location": {
@@ -788,7 +788,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__formFields": {
       "location": {
@@ -802,7 +802,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__seqNum": {
       "location": {
@@ -816,7 +816,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "send": {
       "location": {
@@ -1158,7 +1158,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_onqueued": {
       "location": {

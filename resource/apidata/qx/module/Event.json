@@ -76,7 +76,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__hooks": {
       "location": {
@@ -104,7 +104,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__isReady": {
       "location": {
@@ -118,7 +118,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "ready": {
       "location": {

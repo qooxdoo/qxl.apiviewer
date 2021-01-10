@@ -89,7 +89,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "preload": {
       "location": {
@@ -173,7 +173,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_onPackageLoad": {
       "location": {

@@ -2259,7 +2259,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     }
   },
   "members": {
@@ -2275,7 +2275,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__initialAppearanceApplied": {
       "location": {
@@ -2289,7 +2289,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__toolTipTextListenerId": {
       "location": {
@@ -2303,7 +2303,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__layoutManager": {
       "location": {
@@ -2331,7 +2331,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_getLayout": {
       "location": {
@@ -2462,7 +2462,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "clearSeparators": {
       "location": {
@@ -3008,7 +3008,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_createContentElement": {
       "location": {
@@ -3096,7 +3096,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "getLayoutChildren": {
       "location": {
@@ -3274,7 +3274,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_getChildren": {
       "location": {
@@ -3800,7 +3800,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__removeHelper": {
       "location": {
@@ -3831,7 +3831,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "capture": {
       "location": {
@@ -3975,7 +3975,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_applyDecorator": {
       "location": {
@@ -4184,7 +4184,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "$$stateChanges": {
       "location": {
@@ -4407,7 +4407,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__updateSelector": {
       "location": {
@@ -4435,7 +4435,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "syncAppearance": {
       "location": {
@@ -5498,7 +5498,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_getCreatedChildControls": {
       "location": {

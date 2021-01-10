@@ -285,7 +285,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__colToXPosMap": {
       "location": {
@@ -299,7 +299,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__visibleColumnArr": {
       "location": {
@@ -313,7 +313,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__overallColumnArr": {
       "location": {
@@ -327,7 +327,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__columnDataArr": {
       "location": {
@@ -341,7 +341,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__headerRenderer": {
       "location": {
@@ -355,7 +355,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__dataRenderer": {
       "location": {
@@ -369,7 +369,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__editorFactory": {
       "location": {
@@ -383,7 +383,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "init": {
       "location": {

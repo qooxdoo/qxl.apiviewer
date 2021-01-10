@@ -156,7 +156,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "setCellSpan": {
       "location": {
@@ -268,7 +268,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__updateCellSpanData": {
       "location": {
@@ -320,7 +320,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__updateCellSpanWidgets": {
       "location": {
@@ -342,7 +342,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_fullUpdate": {
       "location": {

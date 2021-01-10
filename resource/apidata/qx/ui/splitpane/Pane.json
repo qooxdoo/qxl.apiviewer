@@ -164,7 +164,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__activeDragSession": {
       "location": {
@@ -178,7 +178,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__lastPointerX": {
       "location": {
@@ -192,7 +192,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__lastPointerY": {
       "location": {
@@ -206,7 +206,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__isHorizontal": {
       "location": {
@@ -220,7 +220,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__beginSize": {
       "location": {
@@ -234,7 +234,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__endSize": {
       "location": {
@@ -248,7 +248,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__children": {
       "location": {
@@ -262,7 +262,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__blocker": {
       "location": {
@@ -276,7 +276,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_createChildControlImpl": {
       "location": {
@@ -326,7 +326,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__createBlocker": {
       "location": {
@@ -357,7 +357,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "getBlocker": {
       "location": {
@@ -485,7 +485,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "add": {
       "location": {
@@ -752,7 +752,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_isActiveDragSession": {
       "location": {

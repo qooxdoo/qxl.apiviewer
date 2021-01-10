@@ -199,7 +199,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__contentPaddingThemedSetter": {
       "location": {
@@ -233,7 +233,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__contentPaddingResetter": {
       "location": {
@@ -267,7 +267,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_applyContentPadding": {
       "location": {

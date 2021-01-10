@@ -282,7 +282,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onNativeMouseUpWrapper": {
       "location": {
@@ -296,7 +296,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onNativeFocusWrapper": {
       "location": {
@@ -310,7 +310,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onNativeBlurWrapper": {
       "location": {
@@ -324,7 +324,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onNativeDragGestureWrapper": {
       "location": {
@@ -338,7 +338,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onNativeSelectStartWrapper": {
       "location": {
@@ -352,7 +352,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onNativeFocusInWrapper": {
       "location": {
@@ -366,7 +366,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onNativeFocusOutWrapper": {
       "location": {
@@ -380,7 +380,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__previousFocus": {
       "location": {
@@ -394,7 +394,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__previousActive": {
       "location": {
@@ -408,7 +408,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__down": {
       "location": {
@@ -422,7 +422,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__up": {
       "location": {
@@ -436,7 +436,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__needsScrollFix": {
       "location": {
@@ -450,7 +450,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__relatedTarget": {
       "location": {
@@ -464,7 +464,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "canHandleEvent": {
       "location": {
@@ -736,7 +736,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_windowFocused": {
       "location": {
@@ -786,7 +786,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__doWindowFocus": {
       "location": {
@@ -808,7 +808,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_initObserver": {
       "location": {
@@ -907,7 +907,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onNativeFocusIn": {
       "location": {
@@ -944,7 +944,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onNativeFocusOut": {
       "location": {
@@ -981,7 +981,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onNativeBlur": {
       "location": {
@@ -1018,7 +1018,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onNativeFocus": {
       "location": {
@@ -1055,7 +1055,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onNativeMouseDown": {
       "location": {
@@ -1092,7 +1092,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onNativeMouseUp": {
       "location": {
@@ -1129,7 +1129,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__getCorrectFocusTarget": {
       "location": {
@@ -1174,7 +1174,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__fixFocus": {
       "location": {
@@ -1219,7 +1219,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onNativeSelectStart": {
       "location": {
@@ -1256,7 +1256,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__isFocusable": {
       "location": {
@@ -1295,7 +1295,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__findFocusableElement": {
       "location": {
@@ -1334,7 +1334,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__findActivatableElement": {
       "location": {
@@ -1373,7 +1373,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__isSelectable": {
       "location": {
@@ -1412,7 +1412,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_applyActive": {
       "location": {

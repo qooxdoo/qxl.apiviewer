@@ -60,7 +60,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_config": {
       "location": {
@@ -452,7 +452,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__setIcon": {
       "location": {
@@ -483,7 +483,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__addInputListener": {
       "location": {
@@ -514,7 +514,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "dispose": {
       "location": {

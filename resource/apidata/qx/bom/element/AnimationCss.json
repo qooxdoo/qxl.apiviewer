@@ -41,7 +41,7 @@
       },
       "jsdoc": {},
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__rulePrefix": {
       "location": {
@@ -55,7 +55,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__id": {
       "location": {
@@ -69,7 +69,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__rules": {
       "location": {
@@ -91,7 +91,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__transitionKeys": {
       "location": {
@@ -113,7 +113,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__cssAnimationKeys": {
       "location": {
@@ -135,7 +135,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "animateReverse": {
       "location": {
@@ -335,7 +335,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__onAnimationIteration": {
       "location": {
@@ -366,7 +366,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__onAnimationEnd": {
       "location": {
@@ -397,7 +397,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__keepFrame": {
       "location": {
@@ -435,7 +435,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__normalizeDesc": {
       "location": {
@@ -466,7 +466,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__validateDesc": {
       "location": {
@@ -503,7 +503,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__addKeyFrames": {
       "location": {
@@ -549,7 +549,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__clearCache": {
       "location": {
@@ -571,7 +571,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     }
   },
   "defer": {

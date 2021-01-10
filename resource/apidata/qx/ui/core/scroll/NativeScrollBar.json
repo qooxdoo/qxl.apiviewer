@@ -241,7 +241,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__scrollPaneElement": {
       "location": {
@@ -255,7 +255,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__requestId": {
       "location": {
@@ -269,7 +269,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__scrollAnimationframe": {
       "location": {
@@ -283,7 +283,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_getScrollPaneElement": {
       "location": {

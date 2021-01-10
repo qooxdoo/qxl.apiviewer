@@ -166,7 +166,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__hideTimer": {
       "location": {
@@ -180,7 +180,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__showTimer": {
       "location": {
@@ -194,7 +194,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__sharedToolTip": {
       "location": {
@@ -208,7 +208,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__sharedErrorToolTip": {
       "location": {
@@ -222,7 +222,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "getSharedTooltip": {
       "location": {
@@ -331,7 +331,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__onHideInterval": {
       "location": {
@@ -362,7 +362,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__onPointerMoveRoot": {
       "location": {
@@ -393,7 +393,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__onPointerOverRoot": {
       "location": {
@@ -424,7 +424,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "showToolTip": {
       "location": {
@@ -489,7 +489,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__onFocusOutRoot": {
       "location": {
@@ -520,7 +520,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "getQxOwner": {
       "type": "function",

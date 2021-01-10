@@ -142,7 +142,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_applyTimeoutInterval": {
       "location": {
@@ -204,7 +204,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__stopTimer": {
       "location": {
@@ -226,7 +226,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "addListener": {
       "location": {

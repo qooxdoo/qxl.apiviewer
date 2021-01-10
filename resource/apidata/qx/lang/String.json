@@ -54,7 +54,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__unicodeFirstLetterInWordRegexp": {
       "location": {
@@ -76,7 +76,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__stringsMap": {
       "location": {
@@ -104,7 +104,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "camelCase": {
       "location": {

@@ -1327,7 +1327,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__async": {
       "location": {
@@ -1355,7 +1355,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onNativeReadyStateChangeBound": {
       "location": {
@@ -1383,7 +1383,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onNativeAbortBound": {
       "location": {
@@ -1411,7 +1411,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onNativeProgressBound": {
       "location": {
@@ -1439,7 +1439,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onUnloadBound": {
       "location": {
@@ -1467,7 +1467,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onTimeoutBound": {
       "location": {
@@ -1495,7 +1495,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__send": {
       "location": {
@@ -1523,7 +1523,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__url": {
       "location": {
@@ -1551,7 +1551,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__abort": {
       "location": {
@@ -1579,7 +1579,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__timeout": {
       "location": {
@@ -1607,7 +1607,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__disposed": {
       "location": {
@@ -1635,7 +1635,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__timerId": {
       "location": {
@@ -1663,7 +1663,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__openError": {
       "location": {
@@ -1691,7 +1691,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__conditional": {
       "location": {
@@ -1719,7 +1719,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__dataTypeWhiteList": {
       "location": {
@@ -1747,7 +1747,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__initNativeXhr": {
       "location": {
@@ -1769,7 +1769,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__onNativeAbort": {
       "location": {
@@ -1791,7 +1791,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__onNativeProgress": {
       "location": {
@@ -1822,7 +1822,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__onNativeReadyStateChange": {
       "location": {
@@ -1844,7 +1844,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__readyStateChange": {
       "location": {
@@ -1866,7 +1866,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__readyStateChangeDone": {
       "location": {
@@ -1888,7 +1888,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__isNetworkError": {
       "location": {
@@ -1918,7 +1918,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__onTimeout": {
       "location": {
@@ -1940,7 +1940,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__normalizeStatus": {
       "location": {
@@ -1962,7 +1962,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__normalizeResponseXML": {
       "location": {
@@ -1984,7 +1984,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__onUnload": {
       "location": {
@@ -2006,7 +2006,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__supportsManyRequests": {
       "location": {
@@ -2036,7 +2036,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__checkDisposed": {
       "location": {
@@ -2058,7 +2058,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     }
   },
   "defer": {

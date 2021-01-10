@@ -48,7 +48,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__bindingsByTarget": {
       "location": {
@@ -70,7 +70,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "bind": {
       "location": {
@@ -178,7 +178,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__setUpTargetBinding": {
       "location": {
@@ -245,7 +245,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "updateTarget": {
       "location": {
@@ -402,7 +402,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__resetTargetValue": {
       "location": {
@@ -440,7 +440,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__setTargetValue": {
       "location": {
@@ -485,7 +485,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getArrayIndex": {
       "location": {
@@ -524,7 +524,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getPropertyChainArray": {
       "location": {
@@ -563,7 +563,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getTargetFromChain": {
       "location": {
@@ -617,7 +617,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__setInitialValue": {
       "location": {
@@ -676,7 +676,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__checkForArrayInPropertyChain": {
       "location": {
@@ -715,7 +715,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__bindEventToProperty": {
       "location": {
@@ -797,7 +797,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__storeBinding": {
       "location": {
@@ -856,7 +856,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__convertValue": {
       "location": {
@@ -931,7 +931,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getEventForProperty": {
       "location": {
@@ -985,7 +985,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__defaultConversion": {
       "location": {
@@ -1031,7 +1031,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "removeBindingFromObject": {
       "location": {

@@ -61,7 +61,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__attachListeners": {
       "location": {
@@ -83,7 +83,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__detatchListeners": {
       "location": {
@@ -105,7 +105,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__onHashChange": {
       "location": {
@@ -127,7 +127,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_readState": {
       "location": {

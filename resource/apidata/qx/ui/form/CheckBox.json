@@ -602,7 +602,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.form.MForm",
       "jsdoc": {
         "@description": [
@@ -945,7 +945,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.core.MExecutable",
       "jsdoc": {
         "@description": [

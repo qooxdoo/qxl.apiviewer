@@ -115,7 +115,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__activeChild": {
       "location": {
@@ -129,7 +129,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__focusedChild": {
       "location": {
@@ -143,7 +143,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__currentRoot": {
       "location": {
@@ -157,7 +157,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "connectTo": {
       "location": {
@@ -582,7 +582,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__findFocusRoot": {
       "location": {
@@ -621,7 +621,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__compareTabOrder": {
       "location": {
@@ -667,7 +667,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getFirstWidget": {
       "location": {
@@ -697,7 +697,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getLastWidget": {
       "location": {
@@ -727,7 +727,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getWidgetAfter": {
       "location": {
@@ -766,7 +766,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getWidgetBefore": {
       "location": {
@@ -805,7 +805,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__collectAllAfter": {
       "location": {
@@ -850,7 +850,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__collectAllBefore": {
       "location": {
@@ -895,7 +895,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getFirst": {
       "location": {
@@ -943,7 +943,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getLast": {
       "location": {
@@ -991,7 +991,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "getQxOwner": {
       "type": "function",

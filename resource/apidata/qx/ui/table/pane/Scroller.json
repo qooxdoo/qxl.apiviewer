@@ -695,7 +695,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__table": {
       "location": {
@@ -709,7 +709,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__updateInterval": {
       "location": {
@@ -723,7 +723,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__updateContentPlanned": {
       "location": {
@@ -737,7 +737,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__onintervalWrapper": {
       "location": {
@@ -751,7 +751,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_moveColumn": {
       "location": {
@@ -779,7 +779,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_lastMoveTargetX": {
       "location": {
@@ -821,7 +821,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__resizeColumn": {
       "location": {
@@ -835,7 +835,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__lastResizePointerPageX": {
       "location": {
@@ -849,7 +849,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__lastResizeWidth": {
       "location": {
@@ -863,7 +863,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__lastPointerDownCell": {
       "location": {
@@ -877,7 +877,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__firedTapEvent": {
       "location": {
@@ -891,7 +891,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__ignoreTap": {
       "location": {
@@ -905,7 +905,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__lastPointerPageX": {
       "location": {
@@ -919,7 +919,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__lastPointerPageY": {
       "location": {
@@ -933,7 +933,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__focusedCol": {
       "location": {
@@ -947,7 +947,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__focusedRow": {
       "location": {
@@ -961,7 +961,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_cellEditor": {
       "location": {
@@ -989,7 +989,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__topRightWidget": {
       "location": {
@@ -1003,7 +1003,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__horScrollBar": {
       "location": {
@@ -1017,7 +1017,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__verScrollBar": {
       "location": {
@@ -1031,7 +1031,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__header": {
       "location": {
@@ -1045,7 +1045,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_headerClipper": {
       "location": {
@@ -1073,7 +1073,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_paneClipper": {
       "location": {
@@ -1101,7 +1101,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__focusIndicator": {
       "location": {
@@ -1115,7 +1115,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__top": {
       "location": {
@@ -1129,7 +1129,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__timer": {
       "location": {
@@ -1143,7 +1143,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__focusIndicatorPointerDownListener": {
       "location": {
@@ -1157,7 +1157,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "getPaneInsetRight": {
       "location": {
@@ -1946,7 +1946,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_onScrollY": {
       "location": {
@@ -2037,7 +2037,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__handleResizeColumn": {
       "location": {
@@ -2068,7 +2068,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__handleMoveColumn": {
       "location": {
@@ -2099,7 +2099,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_onPointermoveHeader": {
       "location": {

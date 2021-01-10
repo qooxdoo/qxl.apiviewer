@@ -69,7 +69,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__forward": {
       "location": {
@@ -83,7 +83,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     }
   },
   "members": {
@@ -99,7 +99,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__messaging": {
       "location": {
@@ -113,7 +113,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__currentGetPath": {
       "location": {
@@ -127,7 +127,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "init": {
       "location": {
@@ -604,7 +604,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_executeGet": {
       "location": {
@@ -928,7 +928,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__replaceCustomData": {
       "location": {
@@ -966,7 +966,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getFromHistory": {
       "location": {
@@ -1005,7 +1005,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "back": {
       "location": {

@@ -284,7 +284,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     }
   },
   "properties": {
@@ -1248,7 +1248,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__focusedRow": {
       "location": {
@@ -1262,7 +1262,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__scrollerParent": {
       "location": {
@@ -1276,7 +1276,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__selectionManager": {
       "location": {
@@ -1290,7 +1290,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__additionalStatusBarText": {
       "location": {
@@ -1304,7 +1304,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__lastRowCount": {
       "location": {
@@ -1318,7 +1318,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__internalChange": {
       "location": {
@@ -1332,7 +1332,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__columnMenuButtons": {
       "location": {
@@ -1346,7 +1346,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__columnModel": {
       "location": {
@@ -1360,7 +1360,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__emptyTableModel": {
       "location": {
@@ -1374,7 +1374,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__hadVerticalScrollBar": {
       "location": {
@@ -1388,7 +1388,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__timer": {
       "location": {
@@ -1402,7 +1402,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_createChildControlImpl": {
       "location": {
@@ -3645,7 +3645,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.core.MDragDropScrolling",
       "jsdoc": {
         "@description": [
@@ -3671,7 +3671,7 @@
       "abstract": false,
       "mixin": true,
       "inherited": true,
-      "access": "protected",
+      "access": "private",
       "overriddenFrom": "qx.ui.core.MDragDropScrolling",
       "jsdoc": {
         "@description": [

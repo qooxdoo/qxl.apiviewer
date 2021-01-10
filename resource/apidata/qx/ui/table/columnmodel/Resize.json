@@ -122,7 +122,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__bInProgress": {
       "location": {
@@ -136,7 +136,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__table": {
       "location": {
@@ -150,7 +150,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_applyBehavior": {
       "location": {

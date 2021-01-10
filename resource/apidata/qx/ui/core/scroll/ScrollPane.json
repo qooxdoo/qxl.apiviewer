@@ -111,6 +111,7 @@
       "event": "scrollX",
       "apply": "_applyScrollX",
       "init": 0,
+      "transform": "_transformScrollX",
       "check": "qx.lang.Type.isNumber(value)&&value>=0&&value<=this.getScrollMaxX()",
       "defaultValue": 0
     },
@@ -138,6 +139,7 @@
       "event": "scrollY",
       "apply": "_applyScrollY",
       "init": 0,
+      "transform": "_transformScrollY",
       "check": "qx.lang.Type.isNumber(value)&&value>=0&&value<=this.getScrollMaxY()",
       "defaultValue": 0
     }
@@ -155,7 +157,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "add": {
       "location": {

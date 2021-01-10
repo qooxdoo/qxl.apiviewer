@@ -355,7 +355,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__height": {
       "location": {
@@ -369,7 +369,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__mode": {
       "location": {
@@ -383,7 +383,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__contentElements": {
       "location": {
@@ -397,7 +397,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__currentContentElement": {
       "location": {
@@ -411,7 +411,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__wrapper": {
       "location": {
@@ -425,7 +425,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__requestId": {
       "location": {
@@ -439,7 +439,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_onChangeTheme": {
       "location": {
@@ -678,7 +678,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getMode": {
       "location": {
@@ -708,7 +708,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__createSuitableContentElement": {
       "location": {
@@ -747,7 +747,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getSuitableContentElement": {
       "location": {
@@ -777,7 +777,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_styleSource": {
       "location": {
@@ -821,7 +821,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__getContentElement": {
       "location": {
@@ -851,7 +851,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__checkForContentElementSwitch": {
       "location": {
@@ -882,7 +882,7 @@
         ]
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__checkForContentElementReplacement": {
       "location": {
@@ -913,7 +913,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__setManagedImage": {
       "location": {
@@ -951,7 +951,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_applyDimension": {
       "location": {
@@ -1007,7 +1007,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__loadUnmanagedImage": {
       "location": {
@@ -1045,7 +1045,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__resetSource": {
       "location": {
@@ -1076,7 +1076,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__setSource": {
       "location": {
@@ -1114,7 +1114,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__loaderCallback": {
       "location": {
@@ -1152,7 +1152,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__updateContentHint": {
       "location": {
@@ -1190,7 +1190,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "tr": {
       "type": "function",

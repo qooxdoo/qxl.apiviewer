@@ -56,7 +56,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__defaultHeight": {
       "location": {
@@ -70,7 +70,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "_aliasManager": {
       "location": {
@@ -123,7 +123,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "__createImage": {
       "location": {
@@ -165,7 +165,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "_identifyImage": {
       "location": {

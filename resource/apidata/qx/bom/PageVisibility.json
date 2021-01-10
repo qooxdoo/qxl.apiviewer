@@ -126,7 +126,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__hiddenAttr": {
       "location": {
@@ -140,7 +140,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__visibilityAttr": {
       "location": {
@@ -154,7 +154,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__eventName": {
       "location": {
@@ -168,7 +168,7 @@
         }
       },
       "type": "variable",
-      "access": "protected"
+      "access": "private"
     },
     "__checkAttributeNames": {
       "location": {
@@ -190,7 +190,7 @@
         ]
       },
       "type": "function",
-      "access": "protected"
+      "access": "private"
     },
     "isHidden": {
       "location": {
