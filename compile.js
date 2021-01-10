@@ -353,10 +353,11 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
       }
       res.classes.sort();
       appMeta.addPreBootCode(`
-if (!window.qxl)
+if (!window.qxl) {
   window.qxl = {};
+}
 qxl.$$apiviewer = 
-${JSON.stringify(res, null, 2)}
+${JSON.stringify(res, null, 2)};
 `);
     }
   }
