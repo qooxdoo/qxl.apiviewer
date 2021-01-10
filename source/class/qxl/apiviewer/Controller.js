@@ -90,12 +90,12 @@ qx.Class.define("qxl.apiviewer.Controller",
      * Loads the API doc tree from the enviroment
      * doc tree.
      * 
-     * @param apidata {Object} all the apidata from the enviroment.
+     * @param classes [] all classes to show
      */
-    load : function(apidata) {
+    load : function(classes) {
       setTimeout(() => {
         var start = new Date();
-        for (var classname of apidata.classes) {
+        for (var classname of classes) {
           qxl.apiviewer.dao.Class.getClassByName(classname, true);
         }
         var rootPackage = qxl.apiviewer.dao.Package.getPackage(null);

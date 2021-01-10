@@ -104,14 +104,14 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
       if (command instanceof qx.tool.cli.commands.Compile) {
         command.addListener("writingApplication", function(e) {
            let appMeta = e.getData().appMeta;
-           return this.__appCompiling(appMeta.getApplication(), appMeta.getEnvironment());
+           return this.__appCompiling(appMeta);
         }, this);
       }
       return this.base(arguments);
     },
 
 
-    __scanApp(appToScan, outputDir, env) {
+    __scanApp(appToScan, outputDir, environment, res) {
       return new qx.Promise(fullfiled => {
         let command = this.getCompilerApi().getCommand();
         if (command.argv.verbose) {
@@ -128,13 +128,13 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
         qxl.apiviewer.ClassLoader.setBaseUri(path.join(outDir, "transpiled") + path.sep);
 
 
-        let excludeFromAPIViewer = env["qxl.apiviewer.exclude"] || env.excludeFromAPIViewer;
-        if (env.excludeFromAPIViewer) {
+        let excludeFromAPIViewer = environment["qxl.apiviewer.exclude"] || environment.excludeFromAPIViewer;
+        if (environment.excludeFromAPIViewer) {
           console.error(`excludeFromAPIViewer is deprecated, use qxl.apiviewer.exclude instead`);
         }
 
-        let includeToAPIViewer = env["qxl.apiviewer.include"] || env.includeToAPIViewer;
-        if (env.includeFromAPIViewer) {
+        let includeToAPIViewer = environment["qxl.apiviewer.include"] || environment.includeToAPIViewer;
+        if (environment.includeFromAPIViewer) {
           console.error(`includeFromAPIViewer is deprecated, use qxl.apiviewer.include instead`);
         }
         let classInfo = analyser.getDatabase().classInfo;
@@ -202,10 +202,10 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
         }
 
         function addToIndex(name, typeIdx, nameIdx) {
-          if (!env.apiviewer.apiindex.index[name]) {
-            env.apiviewer.apiindex.index[name] = [];
+          if (!res.apiindex.index[name]) {
+            res.apiindex.index[name] = [];
           }
-          env.apiviewer.apiindex.index[name].push([typeIdx, nameIdx]);
+          res.apiindex.index[name].push([typeIdx, nameIdx]);
         };
 
         // We sort the result so that we can get a consistent ordering for loading classes, otherwise the order in
@@ -232,10 +232,10 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
             if (command.argv.verbose) {
               console.log(`APIVIEWER: analyse ${cls.getName()}`);
             }
-            env.apiviewer.classes.push(cls.getName());
-            let nameIdx = env.apiviewer.apiindex.fullNames.indexOf(cls.getName());
+            res.classes.push(cls.getName());
+            let nameIdx = res.apiindex.fullNames.indexOf(cls.getName());
             if (nameIdx < 0) {
-              nameIdx = env.apiviewer.apiindex.fullNames.push(cls.getName()) - 1;
+              nameIdx = res.apiindex.fullNames.push(cls.getName()) - 1;
             }
             let typeIdx = TYPES[cls.getType()];
             addToIndex(cls.getName(), typeIdx, nameIdx);
@@ -303,11 +303,13 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
       });
     },
 
-    async __appCompiling(application, environment) {
+    async __appCompiling(appMeta) {
+      let application = appMeta.getApplication();
       let className = application.getClassName();
       if (className !== "qxl.apiviewer.Application") {
         return;
       }
+      let environment = appMeta.getEnvironment();
 
       let command = this.getCompilerApi().getCommand();
       let maker = command.getMakersForApp(application.getName())[0];
@@ -328,12 +330,13 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
       let outputDir = target.getOutputDir();
       outputDir = path.join(outputDir, "resource", qxl.apiviewer.ClassLoader.RESOURCEPATH);
 
-      environment.apiviewer = {};
-      environment.apiviewer.classes = [];
-      environment.apiviewer.apiindex = {};
-      environment.apiviewer.apiindex.fullNames = [];
-      environment.apiviewer.apiindex.index = {};
-      environment.apiviewer.apiindex.types = ["doctree", "package", "class", "method_pub", "method_prot", "event", "property_pub", "method_priv", "method_intl", "constant", "childControl"];
+
+      let res = {};
+      res.classes = [];
+      res.apiindex = {};
+      res.apiindex.fullNames = [];
+      res.apiindex.index = {};
+      res.apiindex.types = ["doctree", "package", "class", "method_pub", "method_prot", "event", "property_pub", "method_priv", "method_intl", "constant", "childControl"];
 
       let appsToScan = environment["qxl.apiviewer.applications"] || [];
       if (appsToScan.length === 0) {
@@ -346,9 +349,15 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
         appsToScan.push(application.getName());
       }
       for (let i = 0; i < appsToScan.length; i++) {
-        await this.__scanApp(appsToScan[i], outputDir, environment);
+        await this.__scanApp(appsToScan[i], outputDir, environment, res);
       }
-      environment.apiviewer.classes.sort();
+      res.classes.sort();
+      appMeta.addPreBootCode(`
+if (!window.qxl)
+  window.qxl = {};
+qxl.$$apiviewer = 
+${JSON.stringify(res, null, 2)}
+`);
     }
   }
 });
