@@ -30,9 +30,9 @@
           "body": "Polyfill"
         }
       ],
-      "@use": [
+      "@require": [
         {
-          "name": "@use",
+          "name": "@require",
           "body": "qx.bom.client.EcmaScript"
         }
       ]
