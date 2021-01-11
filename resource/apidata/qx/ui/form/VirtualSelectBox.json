@@ -16,7 +16,7 @@
         "column": 0
       },
       "end": {
-        "line": 462,
+        "line": 643,
         "column": 3
       }
     },
@@ -60,7 +60,7 @@
         "column": 14
       },
       "end": {
-        "line": 53,
+        "line": 57,
         "column": 3
       }
     },
@@ -70,11 +70,11 @@
     "appearance": {
       "location": {
         "start": {
-          "line": 59,
+          "line": 63,
           "column": 4
         },
         "end": {
-          "line": 63,
+          "line": 67,
           "column": 5
         }
       },
@@ -92,11 +92,11 @@
     "width": {
       "location": {
         "start": {
-          "line": 67,
+          "line": 71,
           "column": 4
         },
         "end": {
-          "line": 71,
+          "line": 75,
           "column": 5
         }
       },
@@ -112,14 +112,40 @@
         "qx.ui.core.LayoutItem": "class"
       }
     },
-    "selection": {
+    "incrementalSearch": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 84,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 89,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Whether or not to use incremental search.\n NOTE: enabling incremental search automatically sets both the child control 'atom' and\n       the list item labels to rich. If the atom was not set to rich before, the label\n       parts before and after the incremental search match and the match itself will be\n       HTML-escaped. If the atom was set to rich before, only the match will be escaped.</p>"
+          }
+        ]
+      },
+      "name": "incrementalSearch",
+      "propertyType": "new",
+      "apply": "_applyIncrementalSearch",
+      "init": false,
+      "check": "Boolean",
+      "defaultValue": false
+    },
+    "selection": {
+      "location": {
+        "start": {
+          "line": 92,
+          "column": 4
+        },
+        "end": {
+          "line": 99,
           "column": 5
         }
       },
@@ -212,11 +238,11 @@
     "changeSelection": {
       "location": {
         "start": {
-          "line": 95,
+          "line": 112,
           "column": 4
         },
         "end": {
-          "line": 95,
+          "line": 112,
           "column": 44
         }
       },
@@ -234,11 +260,11 @@
     "changeValue": {
       "location": {
         "start": {
-          "line": 98,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 98,
+          "line": 115,
           "column": 40
         }
       },
@@ -322,11 +348,11 @@
     "__searchValue": {
       "location": {
         "start": {
-          "line": 105,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 105,
+          "line": 122,
           "column": 22
         }
       },
@@ -350,11 +376,11 @@
     "__searchTimer": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 128,
           "column": 4
         },
         "end": {
-          "line": 111,
+          "line": 128,
           "column": 24
         }
       },
@@ -378,11 +404,11 @@
     "__bindings": {
       "location": {
         "start": {
-          "line": 115,
+          "line": 132,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 132,
           "column": 21
         }
       },
@@ -406,11 +432,11 @@
     "setValue": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 139,
           "column": 4
         },
         "end": {
-          "line": 130,
+          "line": 147,
           "column": 5
         }
       },
@@ -452,11 +478,11 @@
     "getValue": {
       "location": {
         "start": {
-          "line": 136,
+          "line": 153,
           "column": 4
         },
         "end": {
-          "line": 139,
+          "line": 156,
           "column": 5
         }
       },
@@ -486,11 +512,11 @@
     "resetValue": {
       "location": {
         "start": {
-          "line": 142,
+          "line": 159,
           "column": 4
         },
         "end": {
-          "line": 144,
+          "line": 161,
           "column": 5
         }
       },
@@ -504,11 +530,11 @@
     "syncWidget": {
       "location": {
         "start": {
-          "line": 148,
+          "line": 165,
           "column": 4
         },
         "end": {
-          "line": 152,
+          "line": 169,
           "column": 5
         }
       },
@@ -523,11 +549,11 @@
     "_createChildControlImpl": {
       "location": {
         "start": {
-          "line": 163,
+          "line": 180,
           "column": 4
         },
         "end": {
-          "line": 192,
+          "line": 209,
           "column": 5
         }
       },
@@ -543,11 +569,11 @@
     "_getAction": {
       "location": {
         "start": {
-          "line": 196,
+          "line": 213,
           "column": 4
         },
         "end": {
-          "line": 212,
+          "line": 229,
           "column": 5
         }
       },
@@ -562,11 +588,11 @@
     "_addBindings": {
       "location": {
         "start": {
-          "line": 218,
+          "line": 235,
           "column": 4
         },
         "end": {
-          "line": 235,
+          "line": 252,
           "column": 5
         }
       },
@@ -584,11 +610,11 @@
     "_removeBindings": {
       "location": {
         "start": {
-          "line": 242,
+          "line": 259,
           "column": 4
         },
         "end": {
-          "line": 249,
+          "line": 266,
           "column": 5
         }
       },
@@ -606,11 +632,11 @@
     "_handlePointer": {
       "location": {
         "start": {
-          "line": 260,
+          "line": 277,
           "column": 4
         },
         "end": {
-          "line": 268,
+          "line": 285,
           "column": 5
         }
       },
@@ -625,11 +651,11 @@
     "_handleKeyboard": {
       "location": {
         "start": {
-          "line": 272,
+          "line": 289,
           "column": 4
         },
         "end": {
-          "line": 286,
+          "line": 305,
           "column": 5
         }
       },
@@ -644,11 +670,11 @@
     "_onPointerOver": {
       "location": {
         "start": {
-          "line": 300,
+          "line": 319,
           "column": 4
         },
         "end": {
-          "line": 313,
+          "line": 332,
           "column": 5
         }
       },
@@ -675,11 +701,11 @@
     "_onPointerOut": {
       "location": {
         "start": {
-          "line": 327,
+          "line": 346,
           "column": 4
         },
         "end": {
-          "line": 340,
+          "line": 359,
           "column": 5
         }
       },
@@ -706,11 +732,11 @@
     "_applySelection": {
       "location": {
         "start": {
-          "line": 351,
+          "line": 370,
           "column": 4
         },
         "end": {
-          "line": 355,
+          "line": 374,
           "column": 5
         }
       },
@@ -724,11 +750,11 @@
     "__preselect": {
       "location": {
         "start": {
-          "line": 369,
+          "line": 388,
           "column": 4
         },
         "end": {
-          "line": 419,
+          "line": 438,
           "column": 5
         }
       },
@@ -746,11 +772,11 @@
     "__convertKeyIdentifier": {
       "location": {
         "start": {
-          "line": 429,
+          "line": 448,
           "column": 4
         },
         "end": {
-          "line": 436,
+          "line": 455,
           "column": 5
         }
       },
@@ -785,11 +811,11 @@
     "_updateSelectionValue": {
       "location": {
         "start": {
-          "line": 444,
+          "line": 463,
           "column": 4
         },
         "end": {
-          "line": 448,
+          "line": 467,
           "column": 5
         }
       },
@@ -812,6 +838,178 @@
       },
       "type": "function",
       "access": "protected"
+    },
+    "__filterValue": {
+      "location": {
+        "start": {
+          "line": 476,
+          "column": 4
+        },
+        "end": {
+          "line": 476,
+          "column": 24
+        }
+      },
+      "jsdoc": {},
+      "type": "variable",
+      "access": "private"
+    },
+    "__lastMatch": {
+      "location": {
+        "start": {
+          "line": 477,
+          "column": 4
+        },
+        "end": {
+          "line": 477,
+          "column": 20
+        }
+      },
+      "type": "variable",
+      "access": "private"
+    },
+    "__filterUpdateRunning": {
+      "location": {
+        "start": {
+          "line": 478,
+          "column": 4
+        },
+        "end": {
+          "line": 478,
+          "column": 29
+        }
+      },
+      "type": "variable",
+      "access": "private"
+    },
+    "__filterInput": {
+      "location": {
+        "start": {
+          "line": 479,
+          "column": 4
+        },
+        "end": {
+          "line": 479,
+          "column": 24
+        }
+      },
+      "type": "variable",
+      "access": "private"
+    },
+    "__highlightStyle": {
+      "location": {
+        "start": {
+          "line": 480,
+          "column": 4
+        },
+        "end": {
+          "line": 480,
+          "column": 27
+        }
+      },
+      "type": "variable",
+      "access": "private"
+    },
+    "__lastRich": {
+      "location": {
+        "start": {
+          "line": 481,
+          "column": 4
+        },
+        "end": {
+          "line": 481,
+          "column": 22
+        }
+      },
+      "type": "variable",
+      "access": "private"
+    },
+    "__addFilterInput": {
+      "location": {
+        "start": {
+          "line": 483,
+          "column": 4
+        },
+        "end": {
+          "line": 518,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "private"
+    },
+    "__getHighlightStyle": {
+      "location": {
+        "start": {
+          "line": 520,
+          "column": 4
+        },
+        "end": {
+          "line": 534,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "private"
+    },
+    "_highlightFilterValue": {
+      "location": {
+        "start": {
+          "line": 536,
+          "column": 4
+        },
+        "end": {
+          "line": 555,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "protected"
+    },
+    "__updateDelegate": {
+      "location": {
+        "start": {
+          "line": 557,
+          "column": 4
+        },
+        "end": {
+          "line": 592,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "private"
+    },
+    "__initIncrementalSearch": {
+      "location": {
+        "start": {
+          "line": 594,
+          "column": 4
+        },
+        "end": {
+          "line": 616,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "private"
+    },
+    "_applyIncrementalSearch": {
+      "location": {
+        "start": {
+          "line": 618,
+          "column": 4
+        },
+        "end": {
+          "line": 629,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "protected",
+      "applyFor": [
+        "incrementalSearch"
+      ]
     },
     "setSelection": {
       "type": "function",
@@ -5666,16 +5864,106 @@
           }
         ]
       }
+    },
+    "getIncrementalSearch": {
+      "type": "function",
+      "name": "getIncrementalSearch",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>incrementalSearch</code>.\n\nFor further details take a look at the property definition: {@link #incrementalSearch}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "Boolean",
+            "desc": "Returns the value for incrementalSearch"
+          }
+        ]
+      }
+    },
+    "isIncrementalSearch": {
+      "type": "function",
+      "name": "isIncrementalSearch",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "is",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>incrementalSearch</code>.\n\nFor further details take a look at the property definition: {@link #incrementalSearch}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "Boolean",
+            "desc": "Returns the value for incrementalSearch"
+          }
+        ]
+      }
+    },
+    "setIncrementalSearch": {
+      "type": "function",
+      "name": "setIncrementalSearch",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>incrementalSearch</code>.\n\nFor further details take a look at the property definition: {@link #incrementalSearch}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "Boolean",
+            "paramName": "value",
+            "desc": "Value for incrementalSearch"
+          }
+        ]
+      }
+    },
+    "resetIncrementalSearch": {
+      "type": "function",
+      "name": "resetIncrementalSearch",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>incrementalSearch</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #incrementalSearch}."
+          }
+        ]
+      }
     }
   },
   "destruct": {
     "location": {
       "start": {
-        "line": 452,
+        "line": 633,
         "column": 13
       },
       "end": {
-        "line": 461,
+        "line": 642,
         "column": 3
       }
     },
