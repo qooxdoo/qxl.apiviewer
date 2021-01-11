@@ -23,7 +23,7 @@
         "column": 0
       },
       "end": {
-        "line": 476,
+        "line": 540,
         "column": 3
       }
     },
@@ -397,6 +397,33 @@
       "check": "Boolean",
       "defaultValue": true
     },
+    "readOnly": {
+      "location": {
+        "start": {
+          "line": 172,
+          "column": 4
+        },
+        "end": {
+          "line": 178,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Whether the list is read only when enabled</p>"
+          }
+        ]
+      },
+      "name": "readOnly",
+      "propertyType": "new",
+      "event": "changeReadOnly",
+      "apply": "_applyReadOnly",
+      "init": false,
+      "check": "Boolean",
+      "defaultValue": false
+    },
     "selectionMode": {
       "type": "property",
       "name": "selectionMode",
@@ -518,11 +545,11 @@
     "__pressedString": {
       "location": {
         "start": {
-          "line": 182,
+          "line": 191,
           "column": 4
         },
         "end": {
-          "line": 182,
+          "line": 191,
           "column": 26
         }
       },
@@ -532,11 +559,11 @@
     "__lastKeyPress": {
       "location": {
         "start": {
-          "line": 183,
+          "line": 192,
           "column": 4
         },
         "end": {
-          "line": 183,
+          "line": 192,
           "column": 25
         }
       },
@@ -546,11 +573,11 @@
     "__content": {
       "location": {
         "start": {
-          "line": 186,
+          "line": 195,
           "column": 4
         },
         "end": {
-          "line": 186,
+          "line": 195,
           "column": 20
         }
       },
@@ -574,11 +601,11 @@
     "SELECTION_MANAGER": {
       "location": {
         "start": {
-          "line": 189,
+          "line": 198,
           "column": 4
         },
         "end": {
-          "line": 189,
+          "line": 198,
           "column": 55
         }
       },
@@ -602,11 +629,11 @@
     "getChildrenContainer": {
       "location": {
         "start": {
-          "line": 200,
+          "line": 209,
           "column": 4
         },
         "end": {
-          "line": 202,
+          "line": 211,
           "column": 5
         }
       },
@@ -621,11 +648,11 @@
     "_onAddChild": {
       "location": {
         "start": {
-          "line": 209,
+          "line": 218,
           "column": 4
         },
         "end": {
-          "line": 211,
+          "line": 220,
           "column": 5
         }
       },
@@ -652,11 +679,11 @@
     "_onRemoveChild": {
       "location": {
         "start": {
-          "line": 218,
+          "line": 227,
           "column": 4
         },
         "end": {
-          "line": 220,
+          "line": 229,
           "column": 5
         }
       },
@@ -683,11 +710,11 @@
     "handleKeyPress": {
       "location": {
         "start": {
-          "line": 236,
+          "line": 245,
           "column": 4
         },
         "end": {
-          "line": 241,
+          "line": 250,
           "column": 5
         }
       },
@@ -714,11 +741,11 @@
     "_createListItemContainer": {
       "location": {
         "start": {
-          "line": 256,
+          "line": 265,
           "column": 4
         },
         "end": {
-          "line": 258,
+          "line": 267,
           "column": 5
         }
       },
@@ -744,11 +771,11 @@
     "_applyOrientation": {
       "location": {
         "start": {
-          "line": 268,
+          "line": 277,
           "column": 4
         },
         "end": {
-          "line": 291,
+          "line": 300,
           "column": 5
         }
       },
@@ -762,11 +789,11 @@
     "_applySpacing": {
       "location": {
         "start": {
-          "line": 294,
+          "line": 303,
           "column": 4
         },
         "end": {
-          "line": 296,
+          "line": 305,
           "column": 5
         }
       },
@@ -777,14 +804,51 @@
         "spacing"
       ]
     },
-    "_onKeyPress": {
+    "_applyReadOnly": {
       "location": {
         "start": {
-          "line": 312,
+          "line": 308,
           "column": 4
         },
         "end": {
-          "line": 326,
+          "line": 340,
+          "column": 5
+        }
+      },
+      "jsdoc": {},
+      "type": "function",
+      "access": "protected",
+      "applyFor": [
+        "readOnly"
+      ]
+    },
+    "_applyEnabled": {
+      "location": {
+        "start": {
+          "line": 343,
+          "column": 4
+        },
+        "end": {
+          "line": 360,
+          "column": 5
+        }
+      },
+      "jsdoc": {},
+      "type": "function",
+      "access": "protected",
+      "overriddenFrom": "qx.ui.core.Widget",
+      "appearsIn": [
+        "qx.ui.core.Widget"
+      ]
+    },
+    "_onKeyPress": {
+      "location": {
+        "start": {
+          "line": 376,
+          "column": 4
+        },
+        "end": {
+          "line": 390,
           "column": 5
         }
       },
@@ -819,11 +883,11 @@
     "_onKeyInput": {
       "location": {
         "start": {
-          "line": 341,
+          "line": 405,
           "column": 4
         },
         "end": {
-          "line": 372,
+          "line": 436,
           "column": 5
         }
       },
@@ -850,11 +914,11 @@
     "findItemByLabelFuzzy": {
       "location": {
         "start": {
-          "line": 383,
+          "line": 447,
           "column": 4
         },
         "end": {
-          "line": 407,
+          "line": 471,
           "column": 5
         }
       },
@@ -889,11 +953,11 @@
     "findItem": {
       "location": {
         "start": {
-          "line": 416,
+          "line": 480,
           "column": 4
         },
         "end": {
-          "line": 463,
+          "line": 527,
           "column": 5
         }
       },
@@ -6985,16 +7049,106 @@
           }
         ]
       }
+    },
+    "getReadOnly": {
+      "type": "function",
+      "name": "getReadOnly",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>readOnly</code>.\n\nFor further details take a look at the property definition: {@link #readOnly}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "Boolean",
+            "desc": "Returns the value for readOnly"
+          }
+        ]
+      }
+    },
+    "isReadOnly": {
+      "type": "function",
+      "name": "isReadOnly",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "is",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>readOnly</code>.\n\nFor further details take a look at the property definition: {@link #readOnly}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "Boolean",
+            "desc": "Returns the value for readOnly"
+          }
+        ]
+      }
+    },
+    "setReadOnly": {
+      "type": "function",
+      "name": "setReadOnly",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>readOnly</code>.\n\nFor further details take a look at the property definition: {@link #readOnly}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "Boolean",
+            "paramName": "value",
+            "desc": "Value for readOnly"
+          }
+        ]
+      }
+    },
+    "resetReadOnly": {
+      "type": "function",
+      "name": "resetReadOnly",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>readOnly</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #readOnly}."
+          }
+        ]
+      }
     }
   },
   "destruct": {
     "location": {
       "start": {
-        "line": 473,
+        "line": 537,
         "column": 13
       },
       "end": {
-        "line": 475,
+        "line": 539,
         "column": 3
       }
     },
