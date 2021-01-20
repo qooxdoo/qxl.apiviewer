@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 29,
+        "line": 30,
         "column": 0
       },
       "end": {
-        "line": 121,
+        "line": 122,
         "column": 3
       }
     },
@@ -44,6 +44,10 @@
         {
           "name": "@asset",
           "body": "qx/font/Roboto/*.ttf"
+        },
+        {
+          "name": "@asset",
+          "body": "qx/iconfont/MaterialIcons/*"
         }
       ]
     }
