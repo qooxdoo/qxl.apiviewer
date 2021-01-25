@@ -192,8 +192,9 @@
       "refine": true,
       "init": 100,
       "defaultValue": 100,
-      "overriddenFrom": "qx.ui.core.LayoutItem",
+      "overriddenFrom": "qx.ui.core.scroll.AbstractScrollArea",
       "appearsIn": {
+        "qx.ui.core.scroll.AbstractScrollArea": "class",
         "qx.ui.core.LayoutItem": "class"
       }
     },
@@ -214,8 +215,9 @@
       "refine": true,
       "init": 200,
       "defaultValue": 200,
-      "overriddenFrom": "qx.ui.core.LayoutItem",
+      "overriddenFrom": "qx.ui.core.scroll.AbstractScrollArea",
       "appearsIn": {
+        "qx.ui.core.scroll.AbstractScrollArea": "class",
         "qx.ui.core.LayoutItem": "class"
       }
     },
