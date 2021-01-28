@@ -38,7 +38,7 @@ qx.Class.define("qxl.apiviewer.compile.CompilerApi", {
     // Test application in headless Chrome and Firefox
     // see https://github.com/microsoft/playwright/blob/master/docs/api.md
     __appTesting: async function (data) {
-      let result = data.getData ? data.getData() : {};
+      let result = data.getData();
       let nodes = ["Packages", "data", "ui"];
       let href = `http://localhost:8080/`;
 
@@ -55,12 +55,7 @@ qx.Class.define("qxl.apiviewer.compile.CompilerApi", {
             const page = await context.newPage();
             page.on("pageerror", exception => {
               qx.tool.compiler.Console.error(`Error on page ${page.url()}: ${exception}`);
-              if (result.setExitCode) {
-                result.setExitCode(1);
-              } else {
-                // wait for new compiler
-                result.exitCode = 1;
-              }
+              result.setExitCode(1);
               resolve();
             });
             await page.goto(href);
@@ -82,12 +77,7 @@ qx.Class.define("qxl.apiviewer.compile.CompilerApi", {
           resolve();
         } catch (e) {
           qx.tool.compiler.Console.error(e);
-          if (result.setExitCode) {
-            result.setExitCode(1);
-          } else {
-            // wait for new compiler
-            result.exitCode = 1;
-          }
+          result.setExitCode(1);
           resolve();
         }
       }, this);
