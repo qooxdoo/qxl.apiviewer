@@ -949,9 +949,9 @@
         "@throws": [
           {
             "name": "@throws",
-            "body": "{qx.type.BaseError} If the environment setting `qx.promise` is set to false",
+            "body": "{qx.type.BaseError} If the environment setting <code>qx.promise</code> is set to false",
             "type": "qx.type.BaseError",
-            "description": " If the environment setting `qx.promise` is set to false"
+            "description": " If the environment setting <code>qx.promise</code> is set to false"
           }
         ]
       },

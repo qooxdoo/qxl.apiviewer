@@ -1117,7 +1117,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Overrides the MIME type returned by the server\n and must be called before <code>send()</code>.\n Note:</p>\n<ul>\n<li>IE doesn't support this method so in this case an Error is thrown.</li>\n<li>after calling this method <code>getResponseHeader(\"Content-Type\")</code>\nmay return the original (Firefox 23, IE 10, Safari 6) or\nthe overridden content type (Chrome 28+, Opera 15+).</li>\n</ul>"
+            "body": "<p>Overrides the MIME type returned by the server\n and must be called before @send()@.\n Note:</p>\n<ul>\n<li>IE doesn't support this method so in this case an Error is thrown.</li>\n<li>after calling this method @getResponseHeader(\"Content-Type\")@\nmay return the original (Firefox 23, IE 10, Safari 6) or\nthe overridden content type (Chrome 28+, Opera 15+).</li>\n</ul>"
           }
         ],
         "@param": [

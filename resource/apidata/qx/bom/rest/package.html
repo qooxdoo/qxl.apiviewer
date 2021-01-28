@@ -1,4 +1,4 @@
-<p>The <code>qx.bom.rest</code> package consists of only one class: {@link Resource}.
+<p>The @qx.bom.rest@ package consists of only one class: {@link Resource}.
  {@link Resource} allows to encapsulate the specifics of a REST interface.
  Rather than requesting URLs with a specific HTTP method manually, a resource
  representing the remote resource is instantiated and actions are invoked on this resource.
@@ -6,29 +6,29 @@
  There is also {@link qx.io.rest.Resource} which uses {@link Resource} under the hood.
  The main differences between them are:</p>
 <ul>
-<li>The event object available in the listeners (e.g. <code>success()</code>, <code>getSuccess()</code> and <code>getError()</code>) is
+<li>The event object available in the listeners (e.g. @success()@, @getSuccess()@ and @getError()@) is
 a native JavaScript object instead of a qooxdoo object ({@link qx.event.type.Rest}):<ul>
 <li>See {@link qx.io.rest.Resource} vs. {@link Resource}</li>
-<li><code>event.getId()</code> =&gt; <code>event.id</code></li>
-<li><code>event.getRequest()</code> =&gt; <code>event.request</code></li>
-<li><code>event.getAction()</code> =&gt; <code>event.action</code></li>
-<li><code>event.getData()</code> =&gt; <code>event.response</code></li>
-<li><code>event.getPhase()</code> =&gt; <code>---</code> (see below)</li></ul></li>
-<li>Methods which allow request manipulation (e.g. <code>configureRequest()</code>) will operate on an
+<li>@event.getId()@ =&gt; @event.id@</li>
+<li>@event.getRequest()@ =&gt; @event.request@</li>
+<li>@event.getAction()@ =&gt; @event.action@</li>
+<li>@event.getData()@ =&gt; @event.response@</li>
+<li>@event.getPhase()@ =&gt; @---@ (see below)</li></ul></li>
+<li>Methods which allow request manipulation (e.g. @configureRequest()@) will operate on an
 instance of {@link qx.bom.request.SimpleXhr} instead of {@link qx.io.request.Xhr}
 (their API is similar but not identical)</li>
-<li>The method <code>poll()</code> returns no {@link qx.event.Timer} object. There are two new methods
-(<code>stopPollByAction()</code> and <code>restartPollByAction()</code>) available at {@link Resource}
+<li>The method @poll()@ returns no {@link qx.event.Timer} object. There are two new methods
+(@stopPollByAction()@ and @restartPollByAction()@) available at {@link Resource}
 which replace the functionality provided by the Timer object.</li>
 <li>The phase support, which is a more elaborate version of readyState, is not available.
 So use readyState instead.<ul>
 <li>Phases (available only in {@link qx.io.rest.Resource}):<ul>
-<li><code>unsent</code>, <code>opened</code>, <code>sent</code>, <code>loading</code>, <code>load</code>, <code>success</code></li>
-<li><code>abort</code>, <code>timeout</code>, <code>statusError</code></li></ul></li>
+<li>@unsent@, @opened@, @sent@, @loading@, @load@, @success@</li>
+<li>@abort@, @timeout@, @statusError@</li></ul></li>
 <li>readyState (available in {@link Resource} and {@link qx.io.rest.Resource}):<ul>
-<li><code>UNSENT</code></li>
-<li><code>OPENED</code></li>
-<li><code>HEADERS_RECEIVED</code></li>
-<li><code>LOADING</code></li>
-<li><code>DONE</code></li></ul></li></ul></li>
+<li>@UNSENT@</li>
+<li>@OPENED@</li>
+<li>@HEADERS_RECEIVED@</li>
+<li>@LOADING@</li>
+<li>@DONE@</li></ul></li></ul></li>
 </ul>

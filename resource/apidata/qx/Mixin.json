@@ -360,16 +360,16 @@
           },
           {
             "name": "@param",
-            "body": "mixin {Mixin} the mixin that is calling `this.base`",
+            "body": "mixin {Mixin} the mixin that is calling <code>this.base</code>",
             "paramName": "mixin",
-            "description": " the mixin that is calling `this.base`",
+            "description": " the mixin that is calling <code>this.base</code>",
             "type": "qx.Mixin"
           },
           {
             "name": "@param",
-            "body": "methodName {String} the name of the method in `mixin` that is calling `this.base`",
+            "body": "methodName {String} the name of the method in <code>mixin</code> that is calling <code>this.base</code>",
             "paramName": "methodName",
-            "description": " the name of the method in `mixin` that is calling `this.base`",
+            "description": " the name of the method in <code>mixin</code> that is calling <code>this.base</code>",
             "type": "String"
           }
         ],

@@ -86,9 +86,9 @@
           },
           {
             "name": "@param",
-            "body": "fn {Function|Object?} if a function, it's evaluated as a `then`, otherwise\n  it's encapulated in a function for `then`",
+            "body": "fn {Function|Object?} if a function, it's evaluated as a <code>then</code>, otherwise\n  it's encapulated in a function for <code>then</code>",
             "paramName": "fn",
-            "description": " if a function, it's evaluated as a `then`, otherwise\n  it's encapulated in a function for `then`",
+            "description": " if a function, it's evaluated as a <code>then</code>, otherwise\n  it's encapulated in a function for <code>then</code>",
             "optional": true,
             "type": [
               "Function",
@@ -191,9 +191,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.Promise?} the new promise, or the return value from `fn` if no promises are in use",
+            "body": "{qx.Promise?} the new promise, or the return value from <code>fn</code> if no promises are in use",
             "type": "qx.Promise?",
-            "description": " the new promise, or the return value from `fn` if no promises are in use"
+            "description": " the new promise, or the return value from <code>fn</code> if no promises are in use"
           }
         ]
       },
@@ -420,9 +420,9 @@
           },
           {
             "name": "@param",
-            "body": "context {Object?} the `this` for the event handler",
+            "body": "context {Object?} the <code>this</code> for the event handler",
             "paramName": "context",
-            "description": " the `this` for the event handler",
+            "description": " the <code>this</code> for the event handler",
             "optional": true,
             "type": "Object"
           },

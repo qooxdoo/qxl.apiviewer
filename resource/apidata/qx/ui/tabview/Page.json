@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 260,
+        "line": 259,
         "column": 3
       }
     },
@@ -346,11 +346,11 @@
     "getButton": {
       "location": {
         "start": {
-          "line": 256,
+          "line": 255,
           "column": 4
         },
         "end": {
-          "line": 258,
+          "line": 257,
           "column": 5
         }
       },
@@ -359,12 +359,6 @@
           {
             "name": "@description",
             "body": "<p>Returns the button used within this page. This method is used by\n the TabView to access the button.</p>"
-          }
-        ],
-        "@internal": [
-          {
-            "name": "@internal",
-            "body": ""
           }
         ],
         "@return": [
