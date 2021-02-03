@@ -12,11 +12,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 29,
+        "line": 41,
         "column": 0
       },
       "end": {
-        "line": 643,
+        "line": 805,
         "column": 3
       }
     },
@@ -44,9 +44,9 @@
         },
         {
           "name": "@childControl",
-          "body": "arrow {qx.ui.basic.Image} Shows the arrow to open the drop-down\n   list.",
+          "body": "arrow {qx.ui.basic.Image} Shows the arrow to open the drop-down list.\n Item labels are plain text by default. Property <code>rich</code> can be used\n to enable HTML formatting.\n Incremental search can be enabled by setting property <code>incrementalSearch</code>\n to <code>true</code>. Highlightung of the search string is controlled by property\n <code>highlightMode</code>. BEWARE that html highlighting sets property <code>rich</code>\n automatically to <code>true</code>.\n With <code>highlightMode=='html'</code> item label parts and search value are all HTML-escaped.\n If HTML-formatted item labels are used, this might lead to unexpected or undesirable (but save)\n results. In this case you might want to override the various protected methods involved.",
           "controlName": "arrow",
-          "description": "Shows the arrow to open the drop-down\n   list.",
+          "description": "Shows the arrow to open the drop-down list.\n Item labels are plain text by default. Property <code>rich</code> can be used\n to enable HTML formatting.\n Incremental search can be enabled by setting property <code>incrementalSearch</code>\n to <code>true</code>. Highlightung of the search string is controlled by property\n <code>highlightMode</code>. BEWARE that html highlighting sets property <code>rich</code>\n automatically to <code>true</code>.\n With <code>highlightMode=='html'</code> item label parts and search value are all HTML-escaped.\n If HTML-formatted item labels are used, this might lead to unexpected or undesirable (but save)\n results. In this case you might want to override the various protected methods involved.",
           "type": "qx.ui.basic.Image"
         }
       ]
@@ -56,11 +56,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 34,
+        "line": 46,
         "column": 14
       },
       "end": {
-        "line": 57,
+        "line": 74,
         "column": 3
       }
     },
@@ -70,11 +70,11 @@
     "appearance": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 67,
+          "line": 84,
           "column": 5
         }
       },
@@ -92,11 +92,11 @@
     "width": {
       "location": {
         "start": {
-          "line": 71,
+          "line": 88,
           "column": 4
         },
         "end": {
-          "line": 75,
+          "line": 92,
           "column": 5
         }
       },
@@ -115,11 +115,11 @@
     "incrementalSearch": {
       "location": {
         "start": {
-          "line": 84,
+          "line": 97,
           "column": 4
         },
         "end": {
-          "line": 89,
+          "line": 102,
           "column": 5
         }
       },
@@ -127,7 +127,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Whether or not to use incremental search.\n NOTE: enabling incremental search automatically sets both the child control 'atom' and\n       the list item labels to rich. If the atom was not set to rich before, the label\n       parts before and after the incremental search match and the match itself will be\n       HTML-escaped. If the atom was set to rich before, only the match will be escaped.</p>"
+            "body": "<p>Whether or not to use incremental search.</p>"
           }
         ]
       },
@@ -138,14 +138,124 @@
       "check": "Boolean",
       "defaultValue": false
     },
-    "selection": {
+    "plainMarkers": {
       "location": {
         "start": {
-          "line": 92,
+          "line": 107,
           "column": 4
         },
         "end": {
-          "line": 99,
+          "line": 112,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Array of non-HTML strings for opening an closing marker for incremental search highlighting</p>"
+          }
+        ]
+      },
+      "name": "plainMarkers",
+      "propertyType": "new",
+      "apply": "__P_263_5",
+      "init": [
+        "|",
+        "|"
+      ],
+      "check": "Array",
+      "defaultValue": [
+        "|",
+        "|"
+      ]
+    },
+    "htmlMarkers": {
+      "location": {
+        "start": {
+          "line": 118,
+          "column": 4
+        },
+        "end": {
+          "line": 123,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Array of HTML strings for opening an closing marker for incremental search highlighting.\n Initialized from 'list-search-highlight' theme if not set explicitly.</p>"
+          }
+        ]
+      },
+      "name": "htmlMarkers",
+      "propertyType": "new",
+      "apply": "__P_263_5",
+      "check": "Array"
+    },
+    "rich": {
+      "location": {
+        "start": {
+          "line": 128,
+          "column": 4
+        },
+        "end": {
+          "line": 133,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Setting rich to true sets both the select box atom and the list items to rich.</p>"
+          }
+        ]
+      },
+      "name": "rich",
+      "propertyType": "new",
+      "apply": "_applyRich",
+      "check": "Boolean"
+    },
+    "highlightMode": {
+      "location": {
+        "start": {
+          "line": 143,
+          "column": 4
+        },
+        "end": {
+          "line": 148,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Define how to highlight the incremental search string.\n none: no highlighting (this is the default)\n plain: use characters from plainMarkers property\n html: use HTML for highlighting; this automatically calls <code>this.setRich(true)</code> and thus sets item labels to rich as well.</p>"
+          }
+        ]
+      },
+      "name": "highlightMode",
+      "propertyType": "new",
+      "apply": "_applyHighlightMode",
+      "init": "none",
+      "possibleValues": [
+        "plain",
+        "html",
+        "none"
+      ],
+      "defaultValue": "none"
+    },
+    "selection": {
+      "location": {
+        "start": {
+          "line": 151,
+          "column": 4
+        },
+        "end": {
+          "line": 158,
           "column": 5
         }
       },
@@ -238,11 +348,11 @@
     "changeSelection": {
       "location": {
         "start": {
-          "line": 112,
+          "line": 171,
           "column": 4
         },
         "end": {
-          "line": 112,
+          "line": 171,
           "column": 44
         }
       },
@@ -260,11 +370,11 @@
     "changeValue": {
       "location": {
         "start": {
-          "line": 115,
+          "line": 174,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 174,
           "column": 40
         }
       },
@@ -348,11 +458,11 @@
     "__searchValue": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 181,
           "column": 4
         },
         "end": {
-          "line": 122,
+          "line": 181,
           "column": 22
         }
       },
@@ -376,11 +486,11 @@
     "__searchTimer": {
       "location": {
         "start": {
-          "line": 128,
+          "line": 187,
           "column": 4
         },
         "end": {
-          "line": 128,
+          "line": 187,
           "column": 24
         }
       },
@@ -404,11 +514,11 @@
     "__bindings": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 191,
           "column": 4
         },
         "end": {
-          "line": 132,
+          "line": 191,
           "column": 21
         }
       },
@@ -432,11 +542,11 @@
     "setValue": {
       "location": {
         "start": {
-          "line": 139,
+          "line": 198,
           "column": 4
         },
         "end": {
-          "line": 147,
+          "line": 206,
           "column": 5
         }
       },
@@ -478,11 +588,11 @@
     "getValue": {
       "location": {
         "start": {
-          "line": 153,
+          "line": 212,
           "column": 4
         },
         "end": {
-          "line": 156,
+          "line": 215,
           "column": 5
         }
       },
@@ -512,11 +622,11 @@
     "resetValue": {
       "location": {
         "start": {
-          "line": 159,
+          "line": 218,
           "column": 4
         },
         "end": {
-          "line": 161,
+          "line": 220,
           "column": 5
         }
       },
@@ -530,11 +640,11 @@
     "syncWidget": {
       "location": {
         "start": {
-          "line": 165,
+          "line": 224,
           "column": 4
         },
         "end": {
-          "line": 169,
+          "line": 228,
           "column": 5
         }
       },
@@ -549,11 +659,11 @@
     "_createChildControlImpl": {
       "location": {
         "start": {
-          "line": 180,
+          "line": 239,
           "column": 4
         },
         "end": {
-          "line": 209,
+          "line": 268,
           "column": 5
         }
       },
@@ -569,11 +679,11 @@
     "_getAction": {
       "location": {
         "start": {
-          "line": 213,
+          "line": 272,
           "column": 4
         },
         "end": {
-          "line": 229,
+          "line": 288,
           "column": 5
         }
       },
@@ -588,11 +698,11 @@
     "_addBindings": {
       "location": {
         "start": {
-          "line": 235,
+          "line": 294,
           "column": 4
         },
         "end": {
-          "line": 252,
+          "line": 311,
           "column": 5
         }
       },
@@ -610,11 +720,11 @@
     "_removeBindings": {
       "location": {
         "start": {
-          "line": 259,
+          "line": 318,
           "column": 4
         },
         "end": {
-          "line": 266,
+          "line": 325,
           "column": 5
         }
       },
@@ -629,14 +739,33 @@
       "type": "function",
       "access": "protected"
     },
-    "_handlePointer": {
+    "_onBlur": {
       "location": {
         "start": {
-          "line": 277,
+          "line": 334,
           "column": 4
         },
         "end": {
-          "line": 285,
+          "line": 339,
+          "column": 5
+        }
+      },
+      "jsdoc": {},
+      "type": "function",
+      "access": "protected",
+      "overriddenFrom": "qx.ui.form.core.AbstractVirtualBox",
+      "appearsIn": [
+        "qx.ui.form.core.AbstractVirtualBox"
+      ]
+    },
+    "_handlePointer": {
+      "location": {
+        "start": {
+          "line": 342,
+          "column": 4
+        },
+        "end": {
+          "line": 350,
           "column": 5
         }
       },
@@ -651,11 +780,11 @@
     "_handleKeyboard": {
       "location": {
         "start": {
-          "line": 289,
+          "line": 354,
           "column": 4
         },
         "end": {
-          "line": 305,
+          "line": 370,
           "column": 5
         }
       },
@@ -670,11 +799,11 @@
     "_onPointerOver": {
       "location": {
         "start": {
-          "line": 319,
+          "line": 384,
           "column": 4
         },
         "end": {
-          "line": 332,
+          "line": 397,
           "column": 5
         }
       },
@@ -701,11 +830,11 @@
     "_onPointerOut": {
       "location": {
         "start": {
-          "line": 346,
+          "line": 411,
           "column": 4
         },
         "end": {
-          "line": 359,
+          "line": 424,
           "column": 5
         }
       },
@@ -732,11 +861,11 @@
     "_applySelection": {
       "location": {
         "start": {
-          "line": 370,
+          "line": 435,
           "column": 4
         },
         "end": {
-          "line": 374,
+          "line": 439,
           "column": 5
         }
       },
@@ -750,11 +879,11 @@
     "__preselect": {
       "location": {
         "start": {
-          "line": 388,
+          "line": 453,
           "column": 4
         },
         "end": {
-          "line": 438,
+          "line": 503,
           "column": 5
         }
       },
@@ -772,11 +901,11 @@
     "__convertKeyIdentifier": {
       "location": {
         "start": {
-          "line": 448,
+          "line": 513,
           "column": 4
         },
         "end": {
-          "line": 455,
+          "line": 520,
           "column": 5
         }
       },
@@ -811,11 +940,11 @@
     "_updateSelectionValue": {
       "location": {
         "start": {
-          "line": 463,
+          "line": 528,
           "column": 4
         },
         "end": {
-          "line": 467,
+          "line": 532,
           "column": 5
         }
       },
@@ -842,11 +971,11 @@
     "__filterValue": {
       "location": {
         "start": {
-          "line": 476,
+          "line": 541,
           "column": 4
         },
         "end": {
-          "line": 476,
+          "line": 541,
           "column": 24
         }
       },
@@ -857,11 +986,11 @@
     "__lastMatch": {
       "location": {
         "start": {
-          "line": 477,
+          "line": 542,
           "column": 4
         },
         "end": {
-          "line": 477,
+          "line": 542,
           "column": 20
         }
       },
@@ -871,95 +1000,169 @@
     "__filterUpdateRunning": {
       "location": {
         "start": {
-          "line": 478,
+          "line": 544,
           "column": 4
         },
         "end": {
-          "line": 478,
+          "line": 544,
           "column": 29
         }
       },
+      "jsdoc": {},
       "type": "variable",
       "access": "private"
     },
     "__filterInput": {
       "location": {
         "start": {
-          "line": 479,
+          "line": 545,
           "column": 4
         },
         "end": {
-          "line": 479,
+          "line": 545,
           "column": 24
         }
       },
       "type": "variable",
       "access": "private"
     },
-    "__highlightStyle": {
+    "__highlightMarkers": {
       "location": {
         "start": {
-          "line": 480,
+          "line": 546,
           "column": 4
         },
         "end": {
-          "line": 480,
-          "column": 27
+          "line": 546,
+          "column": 30
         }
       },
       "type": "variable",
       "access": "private"
     },
-    "__lastRich": {
+    "_highlightFilterValueFunction": {
       "location": {
         "start": {
-          "line": 481,
+          "line": 548,
           "column": 4
         },
         "end": {
-          "line": 481,
-          "column": 22
+          "line": 548,
+          "column": 40
         }
       },
       "type": "variable",
-      "access": "private"
+      "access": "protected"
+    },
+    "_searchRegExp": {
+      "location": {
+        "start": {
+          "line": 549,
+          "column": 4
+        },
+        "end": {
+          "line": 549,
+          "column": 24
+        }
+      },
+      "type": "variable",
+      "access": "protected"
     },
     "__addFilterInput": {
       "location": {
         "start": {
-          "line": 483,
+          "line": 552,
           "column": 4
         },
         "end": {
-          "line": 518,
+          "line": 590,
           "column": 5
         }
       },
       "type": "function",
       "access": "private"
     },
-    "__getHighlightStyle": {
+    "__getHighlightStyleFromAppearance": {
       "location": {
         "start": {
-          "line": 520,
+          "line": 592,
           "column": 4
         },
         "end": {
-          "line": 534,
+          "line": 613,
           "column": 5
         }
       },
       "type": "function",
       "access": "private"
     },
-    "_highlightFilterValue": {
+    "_searchMatch": {
       "location": {
         "start": {
-          "line": 536,
+          "line": 617,
           "column": 4
         },
         "end": {
-          "line": 555,
+          "line": 619,
+          "column": 5
+        }
+      },
+      "jsdoc": {},
+      "type": "function",
+      "access": "protected"
+    },
+    "_highlightFilterValuePlainFunction": {
+      "location": {
+        "start": {
+          "line": 622,
+          "column": 4
+        },
+        "end": {
+          "line": 630,
+          "column": 5
+        }
+      },
+      "jsdoc": {},
+      "type": "function",
+      "access": "protected"
+    },
+    "_highlightFilterValueHtmlFunction": {
+      "location": {
+        "start": {
+          "line": 633,
+          "column": 4
+        },
+        "end": {
+          "line": 642,
+          "column": 5
+        }
+      },
+      "jsdoc": {},
+      "type": "function",
+      "access": "protected"
+    },
+    "_configureItemRich": {
+      "location": {
+        "start": {
+          "line": 644,
+          "column": 4
+        },
+        "end": {
+          "line": 646,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "protected"
+    },
+    "_configureItemPlain": {
+      "location": {
+        "start": {
+          "line": 648,
+          "column": 4
+        },
+        "end": {
+          "line": 650,
           "column": 5
         }
       },
@@ -969,11 +1172,11 @@
     "__updateDelegate": {
       "location": {
         "start": {
-          "line": 557,
+          "line": 652,
           "column": 4
         },
         "end": {
-          "line": 592,
+          "line": 699,
           "column": 5
         }
       },
@@ -983,11 +1186,77 @@
     "__initIncrementalSearch": {
       "location": {
         "start": {
-          "line": 594,
+          "line": 701,
           "column": 4
         },
         "end": {
-          "line": 616,
+          "line": 723,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "private"
+    },
+    "_applyDelegate": {
+      "location": {
+        "start": {
+          "line": 725,
+          "column": 4
+        },
+        "end": {
+          "line": 733,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "protected",
+      "overriddenFrom": "qx.ui.form.core.AbstractVirtualBox",
+      "appearsIn": [
+        "qx.ui.form.core.AbstractVirtualBox"
+      ]
+    },
+    "_applyRich": {
+      "location": {
+        "start": {
+          "line": 735,
+          "column": 4
+        },
+        "end": {
+          "line": 746,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "protected",
+      "applyFor": [
+        "rich"
+      ]
+    },
+    "_applyHighlightMode": {
+      "location": {
+        "start": {
+          "line": 748,
+          "column": 4
+        },
+        "end": {
+          "line": 765,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "protected",
+      "applyFor": [
+        "highlightMode"
+      ]
+    },
+    "__applyMarkers": {
+      "location": {
+        "start": {
+          "line": 767,
+          "column": 4
+        },
+        "end": {
+          "line": 779,
           "column": 5
         }
       },
@@ -997,11 +1266,11 @@
     "_applyIncrementalSearch": {
       "location": {
         "start": {
-          "line": 618,
+          "line": 781,
           "column": 4
         },
         "end": {
-          "line": 629,
+          "line": 791,
           "column": 5
         }
       },
@@ -5954,16 +6223,304 @@
           }
         ]
       }
+    },
+    "getPlainMarkers": {
+      "type": "function",
+      "name": "getPlainMarkers",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>plainMarkers</code>.\n\nFor further details take a look at the property definition: {@link #plainMarkers}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "Array",
+            "desc": "Returns the value for plainMarkers"
+          }
+        ]
+      }
+    },
+    "setPlainMarkers": {
+      "type": "function",
+      "name": "setPlainMarkers",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>plainMarkers</code>.\n\nFor further details take a look at the property definition: {@link #plainMarkers}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "Array",
+            "paramName": "value",
+            "desc": "Value for plainMarkers"
+          }
+        ]
+      }
+    },
+    "resetPlainMarkers": {
+      "type": "function",
+      "name": "resetPlainMarkers",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>plainMarkers</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #plainMarkers}."
+          }
+        ]
+      }
+    },
+    "getHtmlMarkers": {
+      "type": "function",
+      "name": "getHtmlMarkers",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>htmlMarkers</code>.\n\nFor further details take a look at the property definition: {@link #htmlMarkers}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "Array",
+            "desc": "Returns the value for htmlMarkers"
+          }
+        ]
+      }
+    },
+    "setHtmlMarkers": {
+      "type": "function",
+      "name": "setHtmlMarkers",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>htmlMarkers</code>.\n\nFor further details take a look at the property definition: {@link #htmlMarkers}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "Array",
+            "paramName": "value",
+            "desc": "Value for htmlMarkers"
+          }
+        ]
+      }
+    },
+    "resetHtmlMarkers": {
+      "type": "function",
+      "name": "resetHtmlMarkers",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>htmlMarkers</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #htmlMarkers}."
+          }
+        ]
+      }
+    },
+    "getRich": {
+      "type": "function",
+      "name": "getRich",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>rich</code>.\n\nFor further details take a look at the property definition: {@link #rich}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "Boolean",
+            "desc": "Returns the value for rich"
+          }
+        ]
+      }
+    },
+    "isRich": {
+      "type": "function",
+      "name": "isRich",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "is",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>rich</code>.\n\nFor further details take a look at the property definition: {@link #rich}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "Boolean",
+            "desc": "Returns the value for rich"
+          }
+        ]
+      }
+    },
+    "setRich": {
+      "type": "function",
+      "name": "setRich",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>rich</code>.\n\nFor further details take a look at the property definition: {@link #rich}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "Boolean",
+            "paramName": "value",
+            "desc": "Value for rich"
+          }
+        ]
+      }
+    },
+    "resetRich": {
+      "type": "function",
+      "name": "resetRich",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>rich</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #rich}."
+          }
+        ]
+      }
+    },
+    "getHighlightMode": {
+      "type": "function",
+      "name": "getHighlightMode",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>highlightMode</code>.\n\nFor further details take a look at the property definition: {@link #highlightMode}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "any",
+            "desc": "Returns the value for highlightMode"
+          }
+        ]
+      }
+    },
+    "setHighlightMode": {
+      "type": "function",
+      "name": "setHighlightMode",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>highlightMode</code>.\n\nFor further details take a look at the property definition: {@link #highlightMode}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "any",
+            "paramName": "value",
+            "desc": "Value for highlightMode"
+          }
+        ]
+      }
+    },
+    "resetHighlightMode": {
+      "type": "function",
+      "name": "resetHighlightMode",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>highlightMode</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #highlightMode}."
+          }
+        ]
+      }
     }
   },
   "destruct": {
     "location": {
       "start": {
-        "line": 633,
+        "line": 795,
         "column": 13
       },
       "end": {
-        "line": 642,
+        "line": 804,
         "column": 3
       }
     },
