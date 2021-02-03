@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 257,
+        "line": 256,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 47,
+        "line": 46,
         "column": 14
       },
       "end": {
-        "line": 59,
+        "line": 58,
         "column": 3
       }
     },
@@ -48,9 +48,9 @@
       "@param": [
         {
           "name": "@param",
-          "body": "type {String} The type of the input field. Valid values are\n   <code>text</code>, <code>textarea</code>, <code>select</code>,\n   <code>checkbox</code>, <code>radio</code>, <code>password</code>,\n   <code>hidden</code>, <code>submit</code>, <code>image</code>,\n   <code>file</code>, <code>search</code>, <code>reset</code>,\n   <code>select</code> and <code>textarea</code>.",
+          "body": "type {String} The type of the input field. Valid values are\n   <code>text</code>, <code>textarea</code>, <code>select</code>,\n   <code>checkbox</code>, <code>radio</code>, <code>password</code>,\n   <code>hidden</code>, <code>submit</code>, <code>image</code>,\n   <code>file</code>, <code>search</code>, and <code>reset</code>.",
           "paramName": "type",
-          "description": " The type of the input field. Valid values are\n   <code>text</code>, <code>textarea</code>, <code>select</code>,\n   <code>checkbox</code>, <code>radio</code>, <code>password</code>,\n   <code>hidden</code>, <code>submit</code>, <code>image</code>,\n   <code>file</code>, <code>search</code>, <code>reset</code>,\n   <code>select</code> and <code>textarea</code>.",
+          "description": " The type of the input field. Valid values are\n   <code>text</code>, <code>textarea</code>, <code>select</code>,\n   <code>checkbox</code>, <code>radio</code>, <code>password</code>,\n   <code>hidden</code>, <code>submit</code>, <code>image</code>,\n   <code>file</code>, <code>search</code>, and <code>reset</code>.",
           "type": "String"
         },
         {
@@ -78,11 +78,11 @@
     "__type": {
       "location": {
         "start": {
-          "line": 73,
+          "line": 72,
           "column": 4
         },
         "end": {
-          "line": 73,
+          "line": 72,
           "column": 17
         }
       },
@@ -92,11 +92,11 @@
     "__selectable": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 74,
           "column": 4
         },
         "end": {
-          "line": 75,
+          "line": 74,
           "column": 23
         }
       },
@@ -107,11 +107,11 @@
     "__enabled": {
       "location": {
         "start": {
-          "line": 76,
+          "line": 75,
           "column": 4
         },
         "end": {
-          "line": 76,
+          "line": 75,
           "column": 20
         }
       },
@@ -121,11 +121,11 @@
     "_createDomElement": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 84,
           "column": 4
         },
         "end": {
-          "line": 87,
+          "line": 86,
           "column": 5
         }
       },
@@ -140,11 +140,11 @@
     "_applyProperty": {
       "location": {
         "start": {
-          "line": 91,
+          "line": 90,
           "column": 4
         },
         "end": {
-          "line": 109,
+          "line": 108,
           "column": 5
         }
       },
@@ -159,11 +159,11 @@
     "setEnabled": {
       "location": {
         "start": {
-          "line": 123,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 142,
+          "line": 141,
           "column": 5
         }
       },
@@ -190,11 +190,11 @@
     "setSelectable": {
       "location": {
         "start": {
-          "line": 153,
+          "line": 152,
           "column": 4
         },
         "end": {
-          "line": 167,
+          "line": 166,
           "column": 6
         }
       },
@@ -221,11 +221,11 @@
     "setValue": {
       "location": {
         "start": {
-          "line": 183,
+          "line": 182,
           "column": 4
         },
         "end": {
-          "line": 199,
+          "line": 198,
           "column": 5
         }
       },
@@ -260,11 +260,11 @@
     "getValue": {
       "location": {
         "start": {
-          "line": 207,
+          "line": 206,
           "column": 4
         },
         "end": {
-          "line": 216,
+          "line": 215,
           "column": 5
         }
       },
@@ -290,11 +290,11 @@
     "setWrap": {
       "location": {
         "start": {
-          "line": 229,
+          "line": 228,
           "column": 4
         },
         "end": {
-          "line": 238,
+          "line": 237,
           "column": 5
         }
       },
@@ -338,11 +338,11 @@
     "getWrap": {
       "location": {
         "start": {
-          "line": 248,
+          "line": 247,
           "column": 4
         },
         "end": {
-          "line": 255,
+          "line": 254,
           "column": 5
         }
       },
