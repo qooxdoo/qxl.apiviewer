@@ -101,8 +101,8 @@ qx.Class.define("qxl.apiviewer.Viewer",
 
     /**
      * Creates the button view widget on the left
-     *
      * @param treeWidget {qx.ui.core.Widget} The widget for the "tree" pane
+     * @param searchWidget
      * @param infoWidget {qx.ui.core.Widget} The widget for the "legend" pane
      * @return {qx.ui.tabview.TabView} The configured button view widget
      */

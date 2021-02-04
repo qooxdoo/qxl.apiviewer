@@ -26,10 +26,10 @@ qx.Class.define("qxl.apiviewer.dao.ClassItem",
     extend : qxl.apiviewer.dao.Node,
 
     /**
-   * @param classDocNode {Map} class documentation node
-   * @param parentClass {qxl.apiviewer.dao.Class} reference to the class this item belongs to
-   * @param name {String} name of the list in the JSON structure of the class
-   */
+     * @param meta
+     * @param parentClass {qxl.apiviewer.dao.Class} reference to the class this item belongs to
+     * @param name {String} name of the list in the JSON structure of the class
+     */
     construct : function(meta, parentClass, name) {
       this.base(arguments, meta);
       this._class = parentClass;

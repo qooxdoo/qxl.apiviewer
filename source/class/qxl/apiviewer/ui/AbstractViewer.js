@@ -328,8 +328,7 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
     /**
      * Event handler. Called when the user tapped a button for showing/hiding the
      * body of an info panel.
-     *
-     * @param panelHashCode {Integer} hash code of the panel object.
+     * @param panel
      * @return {qx.Promise}
      */
     togglePanelVisibility : function(panel) {

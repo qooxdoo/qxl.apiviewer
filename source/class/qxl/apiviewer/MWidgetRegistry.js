@@ -65,8 +65,7 @@ qx.Mixin.define("qxl.apiviewer.MWidgetRegistry",
     /**
      * Registers a widget under the given widget id to be used with
      * {@link #getWidgetById}.
-     *
-     * @param widget {qx.ui.core.Widget} the widget to register
+     * @param object
      * @param id {String} the id of the widget.
      */
     register : function(object, id) {

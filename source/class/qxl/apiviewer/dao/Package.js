@@ -120,8 +120,8 @@ qx.Class.define("qxl.apiviewer.dao.Package", {
 
     /**
      * Locates a package by name
-     *
      * @param name {String} package name, null or "" for top level
+     * @param create
      * @return {Package?}
      */
     getPackage: function (name, create) {

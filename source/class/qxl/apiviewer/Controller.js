@@ -253,9 +253,10 @@ qx.Class.define("qxl.apiviewer.Controller",
 
     /**
      * Display information about a class
-     * 
-     * @param classNode
-     *          {qxl.apiviewer.dao.Class} class node to display
+     * @param classNode 
+     * {qxl.apiviewer.dao.Class} class node to display
+     * @param callback
+     * @param self
      */
     _selectClass : async function(classNode, callback, self) {
       this._detailLoader.exclude();

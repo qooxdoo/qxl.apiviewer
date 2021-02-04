@@ -62,6 +62,7 @@ qx.Class.define("qxl.apiviewer.TabViewController",
      * Callback for internal links to other classes/items.
      * This code is called directly from the generated HTML of the
      * class viewer.
+     * @param itemName
      */
     onSelectItem : function(itemName) {
       this.fireDataEvent("classLinkTapped", itemName);

@@ -38,9 +38,9 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
   /**
    * Creates an info panel. An info panel shows the information about one item
    * type (e.g. for public methods).
-   *
-   * @param labelText
-   *          {String} the label text describing the node type.
+   * @param labelText 
+   * {String} the label text describing the node type.
+   * @param icon
    */
   construct: function(labelText, icon) {
     this.base(arguments);
@@ -96,7 +96,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
 
     /**
      * Whether the panel can display the given item node
-     *
+     * @param dao
      * @return {Boolean} Whether the panel can display the given item node
      */
     canDisplayItem: function(dao) {
@@ -157,12 +157,12 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
     /**
      * Creates the HTML showing the information about a class item. The root
      * HTML element must be a table row (&lt;tr&gt;).
-     *
      * @abstract
-     * @param node
-     *          {qxl.apiviewer.dao.ClassItem} the doc node of the item.
-     * @param showDetails
-     *          {Boolean} whether to show the details.
+     * @param node 
+     * {qxl.apiviewer.dao.ClassItem} the doc node of the item.
+     * @param currentDocNode
+     * @param showDetails 
+     * {Boolean} whether to show the details.
      * @return {String} the HTML showing the information about the method.
      */
     getItemHtml: function(node, currentDocNode, showDetails) {
@@ -247,7 +247,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
 
     /**
      * Get the HTML fragment of the info panel
-     *
+     * @param viewer
      * @return {String} HTML fragment of the info panel
      */
     getPanelHtml: function(viewer) {
@@ -266,13 +266,11 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
 
     /**
      * Returns a list of all items to display in the panel
-     *
-     * @param showInherited
-     *          {Boolean} whether to show inherited items
-     * @param currentClassDocNode
-     *          {qxl.apiviewer.dao.Class} the currently displayed class
+     * @param showInherited {Boolean} whether to show inherited items
+     * @param showIncluded
+     * @param daoClass
      * @return {qxl.apiviewer.dao.ClassItem[]} list of all items to display in the
-     *         panel
+     * panel
      */
     _getPanelItems: function(showInherited, showIncluded, daoClass) {
       if (!daoClass) {
@@ -318,15 +316,15 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
 
     /**
      * Filter the item list to display only the desired items.
-     *
-     * @param nodeArr
-     *          {qxl.apiviewer.dao.ClassItem[]} array of class items
-     * @param showProtected
-     *          {Boolean} whether to show protected items
-     * @param showPrivate
-     *          {Boolean} whether to show private items
-     * @param showInternal
-     *          {Boolean} whether to show internal items
+     * @param nodeArr 
+     * {qxl.apiviewer.dao.ClassItem[]} array of class items
+     * @param expandProperties
+     * @param showProtected 
+     * {Boolean} whether to show protected items
+     * @param showPrivate 
+     * {Boolean} whether to show private items
+     * @param showInternal 
+     * {Boolean} whether to show internal items
      * @return {qxl.apiviewer.dao.ClassItem[]} filtered list of items
      */
     __filterItems: function(nodeArr, expandProperties, showProtected, showPrivate, showInternal) {
@@ -451,13 +449,9 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
     /**
      * Event handler. Called when the user clicked a button for showing/hiding
      * the details of an item.
-     *
-     * @param panelHashCode
-     *          {Integer} hash code of the panel object.
-     * @param name
-     *          {String} the name of the item.
-     * @param fromClassName
-     *          {String} the name of the class the item the item was defined in.
+     * @param itemName
+     * @param fromClassName 
+     * {String} the name of the class the item the item was defined in.
      */
     toggleShowItemDetails: function(itemName, fromClassName) {
       try {

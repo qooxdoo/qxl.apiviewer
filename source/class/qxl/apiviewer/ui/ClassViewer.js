@@ -361,7 +361,7 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer",
         q(tocItem).on("tap",
           (function(firstItem) {
             return (function() {
-              this.__enableSection(firstItem, firstItem.getName());
+              this.__enableSection(firstItem);
               qx.bom.element.Scroll.intoView(panel.getTitleElement(), null, "left", "top");
               if (!panel.getIsOpen()) {
                 this.togglePanelVisibility(panel);
@@ -383,6 +383,7 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer",
     },
 
     /**
+     * @param classNode
      * @return {Promise}
      */
     _getDescriptionHtml : function(classNode) {
@@ -635,7 +636,7 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer",
       }
 
       // Show properties, private or protected methods if they are hidden
-      this.__enableSection(itemNode, itemName);
+      this.__enableSection(itemNode);
 
 
       var panel = this._getPanelForItemNode(itemNode);
@@ -672,11 +673,9 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer",
     /**
      * Programatically enables the button to show private, protected function or
      * properties so that the selected item can be shown.
-     *
-     * @param itemName {String} the name of the item to highlight.
-     * @param itemName {String} The doc node of the item
+     * @param itemNode
      */
-    __enableSection : function(itemNode, itemName) {
+    __enableSection : function(itemNode) {
       var uiModel = qxl.apiviewer.UiModel.getInstance();
 
       // Check for property
