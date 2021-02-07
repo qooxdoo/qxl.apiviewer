@@ -28,7 +28,7 @@
         "email": "Henner DOT Kollmann AT gmx DOT de"
       }
     ],
-    "version": "1.0.16",
+    "version": "1.0.17",
     "sourceViewUri": "https://github.com/qooxdoo/apiviewer/blob/%{qxGitBranch}/source/class/%{classFilePath}#L%{lineNumber}"
   },
   "provides": {
@@ -64,5 +64,5 @@
     "@qooxdoo/compiler": "^1.0.0",
     "@qooxdoo/framework": "^6.0.0 || ^7.0.0-beta",
     "qooxdoo/qxl.versionlabel": "^1.0.4"
- }
+  }
 }
