@@ -27,14 +27,6 @@ jobs:
       - name: Run Tests
         run: npx qx test --target=build -v 
 
-      - id: get_dest_dir
-        run: |
-          ref=${{ github.event.client_payload.ref }}
-          echo "ref is ${{ ref }}"
-          dir=$(echo "$ref" | cut -d / -f 3 | cut -d . -f 1-2)
-          echo "::set-output name=destination_dir::$dir"
-          echo "destination dir is ${{ steps.get_dest_dir.outputs.destination_dir }}"
-
       - name: Deploy API Viewer
         uses: peaceiris/actions-gh-pages@v3
         with:
