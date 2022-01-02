@@ -17,6 +17,7 @@ jobs:
           echo "::set-output name=destination_dir::$dir"
           
       - name: output config
+        run: |
           echo "destination version is ${{ steps.get_version.outputs.version }}"
           echo "destination dir is ${{ steps.get_version.outputs.destination_dir }}"
           
