@@ -8,20 +8,21 @@ jobs:
     name: Publish tagged documentation
     runs-on: ubuntu-latest
     steps:
-      - id: get_dest_dir
+      - name: get version
+        id: get_version
         run: |
           ref=${{ github.event.client_payload.ref }}
           echo "ref is ${{ ref }}"
           version=$(echo "$ref" | cut -d . -f 1-2)
           dir=$(echo "$version" | cut -d . -f 1-2)
-          echo "::set-output name=destination_version::$version"
+          echo "::set-output name=version::$version"
           echo "::set-output name=destination_dir::$dir"
-          echo "destination version is ${{ steps.get_dest_dir.outputs.destination_version }}"
-          echo "destination dir is ${{ steps.get_dest_dir.outputs.destination_dir }}"
+          echo "destination version is ${{ steps.get_version.outputs.version }}"
+          echo "destination dir is ${{ steps.get_version.outputs.destination_dir }}"
           
       - name: add compiler
         run: |
-             npm install @qooxdoo/framework@${{ steps.get_dest_dir.outputs.destination_version }}        
+             npm install @qooxdoo/framework@${{ steps.get_version.outputs.version }}        
              npx qx --help || npm install @qooxdoo/compiler
              
       - name: Build API Viewer
@@ -32,6 +33,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./html
-          destination_dir: ${{ steps.get_dest_dir.outputs.destination_dir }}
+          destination_dir: ${{ steps.get_version.outputs.destination_dir }}
 
 
