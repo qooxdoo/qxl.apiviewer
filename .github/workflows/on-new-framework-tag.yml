@@ -11,11 +11,12 @@ jobs:
       - id: get_version
         run: |
           ref=${{ github.event.client_payload.ref }}
-          echo "ref is ${{ ref }}"
           version=$(echo "$ref" | cut -d . -f 1-2)
           dir=$(echo "$version" | cut -d . -f 1-2)
           echo "::set-output name=version::$version"
           echo "::set-output name=destination_dir::$dir"
+          
+      - name: output config
           echo "destination version is ${{ steps.get_version.outputs.version }}"
           echo "destination dir is ${{ steps.get_version.outputs.destination_dir }}"
           
