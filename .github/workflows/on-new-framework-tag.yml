@@ -16,6 +16,11 @@ jobs:
           echo "::set-output name=version::$version"
           echo "::set-output name=destination_dir::$dir"
           
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          
       - name: output config
         run: |
           node --version
