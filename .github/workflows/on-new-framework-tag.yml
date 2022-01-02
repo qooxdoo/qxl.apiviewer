@@ -18,6 +18,8 @@ jobs:
           
       - name: output config
         run: |
+          node --version
+          npm --version
           echo "destination version is ${{ steps.get_version.outputs.version }}"
           echo "destination dir is ${{ steps.get_version.outputs.destination_dir }}"
           
