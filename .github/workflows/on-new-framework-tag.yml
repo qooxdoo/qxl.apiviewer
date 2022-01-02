@@ -8,8 +8,7 @@ jobs:
     name: Publish tagged documentation
     runs-on: ubuntu-latest
     steps:
-      - name: get version
-        id: get_version
+      - id: get_version
         run: |
           ref=${{ github.event.client_payload.ref }}
           echo "ref is ${{ ref }}"
