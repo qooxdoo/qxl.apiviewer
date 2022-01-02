@@ -1,0 +1,1842 @@
+{
+  "className": "qx.tool.compiler.app.Library",
+  "packageName": "qx.tool.compiler.app",
+  "name": "Library",
+  "superClass": "qx.core.Object",
+  "interfaces": [],
+  "mixins": [],
+  "functionName": null,
+  "clazz": {
+    "location": {
+      "start": {
+        "line": 34,
+        "column": 0
+      },
+      "end": {
+        "line": 478,
+        "column": 3
+      }
+    },
+    "jsdoc": {
+      "@description": [
+        {
+          "name": "@description",
+          "body": "<p>A Qooxdoo Library or application; typical usage is to call .loadManifest to configure from\n the library itself</p>"
+        }
+      ]
+    }
+  },
+  "type": "class",
+  "construct": {
+    "location": {
+      "start": {
+        "line": 37,
+        "column": 13
+      },
+      "end": {
+        "line": 42,
+        "column": 3
+      }
+    },
+    "jsdoc": {}
+  },
+  "properties": {
+    "namespace": {
+      "location": {
+        "start": {
+          "line": 46,
+          "column": 4
+        },
+        "end": {
+          "line": 48,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>The namespace of the library</p>"
+          }
+        ]
+      },
+      "name": "namespace",
+      "propertyType": "new",
+      "check": "String"
+    },
+    "version": {
+      "location": {
+        "start": {
+          "line": 51,
+          "column": 4
+        },
+        "end": {
+          "line": 53,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>The version of the library</p>"
+          }
+        ]
+      },
+      "name": "version",
+      "propertyType": "new",
+      "check": "String"
+    },
+    "rootDir": {
+      "location": {
+        "start": {
+          "line": 56,
+          "column": 4
+        },
+        "end": {
+          "line": 59,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>The directory; transformed into an absolute path</p>"
+          }
+        ]
+      },
+      "name": "rootDir",
+      "propertyType": "new",
+      "transform": "_transformRootDir",
+      "check": "String"
+    },
+    "sourcePath": {
+      "location": {
+        "start": {
+          "line": 62,
+          "column": 4
+        },
+        "end": {
+          "line": 65,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>The path to source files, relative to rootDir</p>"
+          }
+        ]
+      },
+      "name": "sourcePath",
+      "propertyType": "new",
+      "init": "source/class",
+      "check": "String",
+      "defaultValue": "source/class"
+    },
+    "transpiledPath": {
+      "location": {
+        "start": {
+          "line": 68,
+          "column": 4
+        },
+        "end": {
+          "line": 71,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>The path to generated transpiled files, relative to rootDir</p>"
+          }
+        ]
+      },
+      "name": "transpiledPath",
+      "propertyType": "new",
+      "init": "source/transpiled",
+      "check": "String",
+      "defaultValue": "source/transpiled"
+    },
+    "libraryInfo": {
+      "location": {
+        "start": {
+          "line": 74,
+          "column": 4
+        },
+        "end": {
+          "line": 76,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>The info section form the Manifest</p>"
+          }
+        ]
+      },
+      "name": "libraryInfo",
+      "propertyType": "new",
+      "check": "Map"
+    },
+    "resourcePath": {
+      "location": {
+        "start": {
+          "line": 79,
+          "column": 4
+        },
+        "end": {
+          "line": 82,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>The path to resource files, relative to rootDir</p>"
+          }
+        ]
+      },
+      "name": "resourcePath",
+      "propertyType": "new",
+      "init": "source/resource",
+      "check": "String",
+      "defaultValue": "source/resource"
+    },
+    "themePath": {
+      "location": {
+        "start": {
+          "line": 85,
+          "column": 4
+        },
+        "end": {
+          "line": 88,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>The path to resource files, relative to rootDir</p>"
+          }
+        ]
+      },
+      "name": "themePath",
+      "propertyType": "new",
+      "init": "source/theme",
+      "check": "String",
+      "defaultValue": "source/theme"
+    },
+    "translationPath": {
+      "location": {
+        "start": {
+          "line": 91,
+          "column": 4
+        },
+        "end": {
+          "line": 94,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>The path to translation files, relative to rootDir</p>"
+          }
+        ]
+      },
+      "name": "translationPath",
+      "propertyType": "new",
+      "init": "source/translation",
+      "check": "String",
+      "defaultValue": "source/translation"
+    },
+    "webFonts": {
+      "location": {
+        "start": {
+          "line": 97,
+          "column": 4
+        },
+        "end": {
+          "line": 101,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>{WebFont[]} List of webfonts provided</p>"
+          }
+        ]
+      },
+      "name": "webFonts",
+      "propertyType": "new",
+      "nullable": true,
+      "allowNull": true,
+      "check": "Array"
+    },
+    "addScript": {
+      "location": {
+        "start": {
+          "line": 104,
+          "column": 4
+        },
+        "end": {
+          "line": 106,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Array of external scripts required by the library</p>"
+          }
+        ]
+      },
+      "name": "addScript",
+      "propertyType": "new"
+    },
+    "addCss": {
+      "location": {
+        "start": {
+          "line": 109,
+          "column": 4
+        },
+        "end": {
+          "line": 111,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Array of external stylesheets required by the library</p>"
+          }
+        ]
+      },
+      "name": "addCss",
+      "propertyType": "new"
+    },
+    "requires": {
+      "location": {
+        "start": {
+          "line": 114,
+          "column": 4
+        },
+        "end": {
+          "line": 116,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Array of requires resources of the library</p>"
+          }
+        ]
+      },
+      "name": "requires",
+      "propertyType": "new"
+    },
+    "qxOwner": {
+      "type": "property",
+      "name": "qxOwner",
+      "abstract": false,
+      "mixin": true,
+      "access": "public",
+      "overriddenFrom": "qx.core.MObjectId",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>The owning object</p>"
+          }
+        ]
+      }
+    },
+    "qxObjectId": {
+      "type": "property",
+      "name": "qxObjectId",
+      "abstract": false,
+      "mixin": true,
+      "access": "public",
+      "overriddenFrom": "qx.core.MObjectId",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>{String} The ID of the object.</p>"
+          }
+        ]
+      }
+    }
+  },
+  "members": {
+    "__knownSymbols": {
+      "location": {
+        "start": {
+          "line": 121,
+          "column": 4
+        },
+        "end": {
+          "line": 121,
+          "column": 24
+        }
+      },
+      "type": "variable",
+      "access": "private"
+    },
+    "__sourceFileExtensions": {
+      "location": {
+        "start": {
+          "line": 122,
+          "column": 4
+        },
+        "end": {
+          "line": 122,
+          "column": 32
+        }
+      },
+      "type": "variable",
+      "access": "private"
+    },
+    "__promiseLoadManifest": {
+      "location": {
+        "start": {
+          "line": 123,
+          "column": 4
+        },
+        "end": {
+          "line": 123,
+          "column": 31
+        }
+      },
+      "type": "variable",
+      "access": "private"
+    },
+    "__environmentChecks": {
+      "location": {
+        "start": {
+          "line": 124,
+          "column": 4
+        },
+        "end": {
+          "line": 124,
+          "column": 29
+        }
+      },
+      "type": "variable",
+      "access": "private"
+    },
+    "_transformRootDir": {
+      "location": {
+        "start": {
+          "line": 132,
+          "column": 4
+        },
+        "end": {
+          "line": 136,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Transform for rootDir; converts it to an absolute path</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "value",
+            "paramName": "value",
+            "type": ""
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{*}",
+            "type": "*",
+            "description": ""
+          }
+        ],
+        "@private": [
+          {
+            "name": "@private",
+            "body": ""
+          }
+        ]
+      },
+      "type": "function",
+      "access": "protected"
+    },
+    "loadManifest": {
+      "location": {
+        "start": {
+          "line": 143,
+          "column": 4
+        },
+        "end": {
+          "line": 148,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Loads the Manifest.json from the directory and uses it to configure\n properties</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "loadFromDir {String} directory",
+            "paramName": "loadFromDir",
+            "description": " directory",
+            "type": "String"
+          }
+        ]
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "__loadManifestImpl": {
+      "location": {
+        "start": {
+          "line": 150,
+          "column": 4
+        },
+        "end": {
+          "line": 238,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "private"
+    },
+    "scanForClasses": {
+      "location": {
+        "start": {
+          "line": 246,
+          "column": 4
+        },
+        "end": {
+          "line": 332,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Scans the filing system looking for classes; there are occasions (ie Qooxdoo's qxWeb module)\n where the class name does not comply with the namespace, this method is used to find those\n files and also to prepopulate the known symbols list</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "cb {Function} (err, classes) returns an array of class names",
+            "paramName": "cb",
+            "description": " (err, classes) returns an array of class names",
+            "type": "Function"
+          }
+        ]
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "getSymbolType": {
+      "location": {
+        "start": {
+          "line": 340,
+          "column": 4
+        },
+        "end": {
+          "line": 404,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Detects the type of a symbol, \"class\", \"resource\", \"package\", \"environment\", or null if not found</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "{String} name"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{{symbolType,name,className}?}",
+            "type": "{symbolType,name,className",
+            "description": "?}"
+          }
+        ]
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "isClass": {
+      "location": {
+        "start": {
+          "line": 412,
+          "column": 4
+        },
+        "end": {
+          "line": 415,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Checks whether the classname is an actual class, in this library</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "classname {String} classname to look for",
+            "paramName": "classname",
+            "description": " classname to look for",
+            "type": "String"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean}",
+            "type": "Boolean",
+            "description": ""
+          }
+        ]
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "getKnownSymbols": {
+      "location": {
+        "start": {
+          "line": 420,
+          "column": 4
+        },
+        "end": {
+          "line": 422,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns all known symbols as a map indexed by symbol name</p>"
+          }
+        ]
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "getSourceFileExtension": {
+      "location": {
+        "start": {
+          "line": 430,
+          "column": 4
+        },
+        "end": {
+          "line": 432,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns the original extension of the class file that implemented the\n given class name.</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "{String} className"
+          }
+        ]
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "getFilename": {
+      "location": {
+        "start": {
+          "line": 440,
+          "column": 4
+        },
+        "end": {
+          "line": 442,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns the full filename for the file within this library</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "filename {String} the filename relative to this library",
+            "paramName": "filename",
+            "description": " the filename relative to this library",
+            "type": "String"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{String} the full filename",
+            "type": "String",
+            "description": " the full filename"
+          }
+        ]
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "getResourceFilename": {
+      "location": {
+        "start": {
+          "line": 450,
+          "column": 4
+        },
+        "end": {
+          "line": 452,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns the full filename for the file within this library's resources</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "filename {String} the filename relative to this library",
+            "paramName": "filename",
+            "description": " the filename relative to this library",
+            "type": "String"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{String} the full filename",
+            "type": "String",
+            "description": " the full filename"
+          }
+        ]
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "getThemeFilename": {
+      "location": {
+        "start": {
+          "line": 460,
+          "column": 4
+        },
+        "end": {
+          "line": 462,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns the full filename for the file within this library's theme</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "filename {String} the filename relative to this library",
+            "paramName": "filename",
+            "description": " the filename relative to this library",
+            "type": "String"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{String} the full filename",
+            "type": "String",
+            "description": " the full filename"
+          }
+        ]
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "getQxOwner": {
+      "type": "function",
+      "name": "getQxOwner",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.core.Object",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "qx.core.Object",
+            "desc": "Returns the value for qxOwner"
+          }
+        ]
+      }
+    },
+    "setQxOwner": {
+      "type": "function",
+      "name": "setQxOwner",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.core.Object",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "qx.core.Object",
+            "paramName": "value",
+            "desc": "Value for qxOwner"
+          }
+        ]
+      }
+    },
+    "resetQxOwner": {
+      "type": "function",
+      "name": "resetQxOwner",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.core.Object",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>qxOwner</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
+          }
+        ]
+      }
+    },
+    "getQxObjectId": {
+      "type": "function",
+      "name": "getQxObjectId",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.core.Object",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "desc": "Returns the value for qxObjectId"
+          }
+        ]
+      }
+    },
+    "setQxObjectId": {
+      "type": "function",
+      "name": "setQxObjectId",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.core.Object",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "paramName": "value",
+            "desc": "Value for qxObjectId"
+          }
+        ]
+      }
+    },
+    "resetQxObjectId": {
+      "type": "function",
+      "name": "resetQxObjectId",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.core.Object",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>qxObjectId</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
+          }
+        ]
+      }
+    },
+    "getNamespace": {
+      "type": "function",
+      "name": "getNamespace",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>namespace</code>.\n\nFor further details take a look at the property definition: {@link #namespace}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "String",
+            "desc": "Returns the value for namespace"
+          }
+        ]
+      }
+    },
+    "setNamespace": {
+      "type": "function",
+      "name": "setNamespace",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>namespace</code>.\n\nFor further details take a look at the property definition: {@link #namespace}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "String",
+            "paramName": "value",
+            "desc": "Value for namespace"
+          }
+        ]
+      }
+    },
+    "resetNamespace": {
+      "type": "function",
+      "name": "resetNamespace",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>namespace</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #namespace}."
+          }
+        ]
+      }
+    },
+    "getVersion": {
+      "type": "function",
+      "name": "getVersion",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>version</code>.\n\nFor further details take a look at the property definition: {@link #version}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "String",
+            "desc": "Returns the value for version"
+          }
+        ]
+      }
+    },
+    "setVersion": {
+      "type": "function",
+      "name": "setVersion",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>version</code>.\n\nFor further details take a look at the property definition: {@link #version}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "String",
+            "paramName": "value",
+            "desc": "Value for version"
+          }
+        ]
+      }
+    },
+    "resetVersion": {
+      "type": "function",
+      "name": "resetVersion",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>version</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #version}."
+          }
+        ]
+      }
+    },
+    "getRootDir": {
+      "type": "function",
+      "name": "getRootDir",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>rootDir</code>.\n\nFor further details take a look at the property definition: {@link #rootDir}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "String",
+            "desc": "Returns the value for rootDir"
+          }
+        ]
+      }
+    },
+    "setRootDir": {
+      "type": "function",
+      "name": "setRootDir",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>rootDir</code>.\n\nFor further details take a look at the property definition: {@link #rootDir}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "String",
+            "paramName": "value",
+            "desc": "Value for rootDir"
+          }
+        ]
+      }
+    },
+    "resetRootDir": {
+      "type": "function",
+      "name": "resetRootDir",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>rootDir</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #rootDir}."
+          }
+        ]
+      }
+    },
+    "getSourcePath": {
+      "type": "function",
+      "name": "getSourcePath",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>sourcePath</code>.\n\nFor further details take a look at the property definition: {@link #sourcePath}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "String",
+            "desc": "Returns the value for sourcePath"
+          }
+        ]
+      }
+    },
+    "setSourcePath": {
+      "type": "function",
+      "name": "setSourcePath",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>sourcePath</code>.\n\nFor further details take a look at the property definition: {@link #sourcePath}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "String",
+            "paramName": "value",
+            "desc": "Value for sourcePath"
+          }
+        ]
+      }
+    },
+    "resetSourcePath": {
+      "type": "function",
+      "name": "resetSourcePath",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>sourcePath</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #sourcePath}."
+          }
+        ]
+      }
+    },
+    "getTranspiledPath": {
+      "type": "function",
+      "name": "getTranspiledPath",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>transpiledPath</code>.\n\nFor further details take a look at the property definition: {@link #transpiledPath}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "String",
+            "desc": "Returns the value for transpiledPath"
+          }
+        ]
+      }
+    },
+    "setTranspiledPath": {
+      "type": "function",
+      "name": "setTranspiledPath",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>transpiledPath</code>.\n\nFor further details take a look at the property definition: {@link #transpiledPath}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "String",
+            "paramName": "value",
+            "desc": "Value for transpiledPath"
+          }
+        ]
+      }
+    },
+    "resetTranspiledPath": {
+      "type": "function",
+      "name": "resetTranspiledPath",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>transpiledPath</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #transpiledPath}."
+          }
+        ]
+      }
+    },
+    "getLibraryInfo": {
+      "type": "function",
+      "name": "getLibraryInfo",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>libraryInfo</code>.\n\nFor further details take a look at the property definition: {@link #libraryInfo}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "Map",
+            "desc": "Returns the value for libraryInfo"
+          }
+        ]
+      }
+    },
+    "setLibraryInfo": {
+      "type": "function",
+      "name": "setLibraryInfo",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>libraryInfo</code>.\n\nFor further details take a look at the property definition: {@link #libraryInfo}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "Map",
+            "paramName": "value",
+            "desc": "Value for libraryInfo"
+          }
+        ]
+      }
+    },
+    "resetLibraryInfo": {
+      "type": "function",
+      "name": "resetLibraryInfo",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>libraryInfo</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #libraryInfo}."
+          }
+        ]
+      }
+    },
+    "getResourcePath": {
+      "type": "function",
+      "name": "getResourcePath",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>resourcePath</code>.\n\nFor further details take a look at the property definition: {@link #resourcePath}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "String",
+            "desc": "Returns the value for resourcePath"
+          }
+        ]
+      }
+    },
+    "setResourcePath": {
+      "type": "function",
+      "name": "setResourcePath",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>resourcePath</code>.\n\nFor further details take a look at the property definition: {@link #resourcePath}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "String",
+            "paramName": "value",
+            "desc": "Value for resourcePath"
+          }
+        ]
+      }
+    },
+    "resetResourcePath": {
+      "type": "function",
+      "name": "resetResourcePath",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>resourcePath</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #resourcePath}."
+          }
+        ]
+      }
+    },
+    "getThemePath": {
+      "type": "function",
+      "name": "getThemePath",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>themePath</code>.\n\nFor further details take a look at the property definition: {@link #themePath}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "String",
+            "desc": "Returns the value for themePath"
+          }
+        ]
+      }
+    },
+    "setThemePath": {
+      "type": "function",
+      "name": "setThemePath",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>themePath</code>.\n\nFor further details take a look at the property definition: {@link #themePath}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "String",
+            "paramName": "value",
+            "desc": "Value for themePath"
+          }
+        ]
+      }
+    },
+    "resetThemePath": {
+      "type": "function",
+      "name": "resetThemePath",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>themePath</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #themePath}."
+          }
+        ]
+      }
+    },
+    "getTranslationPath": {
+      "type": "function",
+      "name": "getTranslationPath",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>translationPath</code>.\n\nFor further details take a look at the property definition: {@link #translationPath}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "String",
+            "desc": "Returns the value for translationPath"
+          }
+        ]
+      }
+    },
+    "setTranslationPath": {
+      "type": "function",
+      "name": "setTranslationPath",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>translationPath</code>.\n\nFor further details take a look at the property definition: {@link #translationPath}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "String",
+            "paramName": "value",
+            "desc": "Value for translationPath"
+          }
+        ]
+      }
+    },
+    "resetTranslationPath": {
+      "type": "function",
+      "name": "resetTranslationPath",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>translationPath</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #translationPath}."
+          }
+        ]
+      }
+    },
+    "getWebFonts": {
+      "type": "function",
+      "name": "getWebFonts",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>webFonts</code>.\n\nFor further details take a look at the property definition: {@link #webFonts}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "Array",
+            "desc": "Returns the value for webFonts"
+          }
+        ]
+      }
+    },
+    "setWebFonts": {
+      "type": "function",
+      "name": "setWebFonts",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>webFonts</code>.\n\nFor further details take a look at the property definition: {@link #webFonts}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "Array",
+            "paramName": "value",
+            "desc": "Value for webFonts"
+          }
+        ]
+      }
+    },
+    "resetWebFonts": {
+      "type": "function",
+      "name": "resetWebFonts",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>webFonts</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #webFonts}."
+          }
+        ]
+      }
+    },
+    "getAddScript": {
+      "type": "function",
+      "name": "getAddScript",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>addScript</code>.\n\nFor further details take a look at the property definition: {@link #addScript}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "any",
+            "desc": "Returns the value for addScript"
+          }
+        ]
+      }
+    },
+    "setAddScript": {
+      "type": "function",
+      "name": "setAddScript",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>addScript</code>.\n\nFor further details take a look at the property definition: {@link #addScript}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "any",
+            "paramName": "value",
+            "desc": "Value for addScript"
+          }
+        ]
+      }
+    },
+    "resetAddScript": {
+      "type": "function",
+      "name": "resetAddScript",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>addScript</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #addScript}."
+          }
+        ]
+      }
+    },
+    "getAddCss": {
+      "type": "function",
+      "name": "getAddCss",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>addCss</code>.\n\nFor further details take a look at the property definition: {@link #addCss}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "any",
+            "desc": "Returns the value for addCss"
+          }
+        ]
+      }
+    },
+    "setAddCss": {
+      "type": "function",
+      "name": "setAddCss",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>addCss</code>.\n\nFor further details take a look at the property definition: {@link #addCss}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "any",
+            "paramName": "value",
+            "desc": "Value for addCss"
+          }
+        ]
+      }
+    },
+    "resetAddCss": {
+      "type": "function",
+      "name": "resetAddCss",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>addCss</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #addCss}."
+          }
+        ]
+      }
+    },
+    "getRequires": {
+      "type": "function",
+      "name": "getRequires",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>requires</code>.\n\nFor further details take a look at the property definition: {@link #requires}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "any",
+            "desc": "Returns the value for requires"
+          }
+        ]
+      }
+    },
+    "setRequires": {
+      "type": "function",
+      "name": "setRequires",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>requires</code>.\n\nFor further details take a look at the property definition: {@link #requires}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "any",
+            "paramName": "value",
+            "desc": "Value for requires"
+          }
+        ]
+      }
+    },
+    "resetRequires": {
+      "type": "function",
+      "name": "resetRequires",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>requires</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #requires}."
+          }
+        ]
+      }
+    }
+  },
+  "statics": {
+    "createLibrary": {
+      "location": {
+        "start": {
+          "line": 472,
+          "column": 4
+        },
+        "end": {
+          "line": 476,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Helper method to create a Library instance and load it's manifest</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "rootDir {String} directory of the library (must contain a Manifest.json)",
+            "paramName": "rootDir",
+            "description": " directory of the library (must contain a Manifest.json)",
+            "type": "String"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Library}",
+            "type": "qx.tool.compiler.app.Library",
+            "description": ""
+          }
+        ]
+      },
+      "type": "function",
+      "access": "public"
+    }
+  },
+  "descendants": []
+}
