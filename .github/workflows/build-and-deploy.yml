@@ -1,5 +1,7 @@
 name: Build, Test and Deploy
 on:
+  workflow_dispatch:
+  
   # run when the master branch is updated
   push:
     branches:
