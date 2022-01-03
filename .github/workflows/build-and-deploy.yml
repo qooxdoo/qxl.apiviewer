@@ -15,12 +15,12 @@ jobs:
     steps:
       - uses: peter-evans/repository-dispatch@v1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.ACTION_TOKEN }}
           event-type: "push-tag"
           client-payload: '{"ref": "refs/tags/latest"}'
 
       - uses: peter-evans/repository-dispatch@v1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.ACTION_TOKEN }}
           event-type: "push-tag"
           client-payload: '{"ref": "refs/tags/v7.0"}'
