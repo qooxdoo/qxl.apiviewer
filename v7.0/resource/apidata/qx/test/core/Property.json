@@ -1,0 +1,732 @@
+{
+  "className": "qx.test.core.Property",
+  "packageName": "qx.test.core",
+  "name": "Property",
+  "superClass": "qx.dev.unit.TestCase",
+  "interfaces": [],
+  "mixins": [],
+  "functionName": null,
+  "clazz": {
+    "location": {
+      "start": {
+        "line": 24,
+        "column": 0
+      },
+      "end": {
+        "line": 969,
+        "column": 3
+      }
+    },
+    "jsdoc": {
+      "@description": [
+        {
+          "name": "@description",
+          "body": ""
+        }
+      ],
+      "@ignore": [
+        {
+          "name": "@ignore",
+          "body": "qx.Node, qx.test.A, qx.test.B, qx.test.clName, qx.test.IForm"
+        },
+        {
+          "name": "@ignore",
+          "body": "qx.TestProperty, qx.Super"
+        }
+      ]
+    }
+  },
+  "type": "class",
+  "members": {
+    "testBasic": {
+      "location": {
+        "start": {
+          "line": 30,
+          "column": 4
+        },
+        "end": {
+          "line": 48,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testBuiltinTypes": {
+      "location": {
+        "start": {
+          "line": 51,
+          "column": 4
+        },
+        "end": {
+          "line": 100,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testInheritance": {
+      "location": {
+        "start": {
+          "line": 103,
+          "column": 4
+        },
+        "end": {
+          "line": 153,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testParent": {
+      "location": {
+        "start": {
+          "line": 156,
+          "column": 4
+        },
+        "end": {
+          "line": 190,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testMultiValues": {
+      "location": {
+        "start": {
+          "line": 193,
+          "column": 4
+        },
+        "end": {
+          "line": 229,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testInitApply": {
+      "location": {
+        "start": {
+          "line": 232,
+          "column": 4
+        },
+        "end": {
+          "line": 256,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testInit": {
+      "location": {
+        "start": {
+          "line": 259,
+          "column": 4
+        },
+        "end": {
+          "line": 275,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testDefinesThanSubClassWithInterface": {
+      "location": {
+        "start": {
+          "line": 277,
+          "column": 4
+        },
+        "end": {
+          "line": 312,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testPropertyNamedClassname": {
+      "location": {
+        "start": {
+          "line": 315,
+          "column": 4
+        },
+        "end": {
+          "line": 325,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testWrongPropertyDefinitions": {
+      "location": {
+        "start": {
+          "line": 328,
+          "column": 4
+        },
+        "end": {
+          "line": 406,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testRecursive": {
+      "location": {
+        "start": {
+          "line": 408,
+          "column": 4
+        },
+        "end": {
+          "line": 443,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testEventWithInitOldData": {
+      "location": {
+        "start": {
+          "line": 446,
+          "column": 4
+        },
+        "end": {
+          "line": 477,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testEventWithoutInitOldData": {
+      "location": {
+        "start": {
+          "line": 480,
+          "column": 4
+        },
+        "end": {
+          "line": 511,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testEventWithInitAndInheritableOldData": {
+      "location": {
+        "start": {
+          "line": 514,
+          "column": 4
+        },
+        "end": {
+          "line": 546,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testEventWithoutInitAndInheritableOldData": {
+      "location": {
+        "start": {
+          "line": 549,
+          "column": 4
+        },
+        "end": {
+          "line": 581,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "__isNegativeZero": {
+      "location": {
+        "start": {
+          "line": 596,
+          "column": 4
+        },
+        "end": {
+          "line": 598,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Check whether the (numeric) value is negative zero (-0)</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "value {number} Value to check",
+            "paramName": "value",
+            "description": " Value to check",
+            "type": "number"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} whether the value is <code>-0</code>",
+            "type": "Boolean",
+            "description": " whether the value is <code>-0</code>"
+          }
+        ]
+      },
+      "type": "function",
+      "access": "private"
+    },
+    "__isPositiveZero": {
+      "location": {
+        "start": {
+          "line": 607,
+          "column": 4
+        },
+        "end": {
+          "line": 609,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Check whether the (numeric) value is positive zero (+0)</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "value {number} Value to check",
+            "paramName": "value",
+            "description": " Value to check",
+            "type": "number"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} whether the value is <code>+0</code>",
+            "type": "Boolean",
+            "description": " whether the value is <code>+0</code>"
+          }
+        ]
+      },
+      "type": "function",
+      "access": "private"
+    },
+    "testWrongIsEqualDefinitions": {
+      "location": {
+        "start": {
+          "line": 612,
+          "column": 4
+        },
+        "end": {
+          "line": 652,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testIsEqualInline": {
+      "location": {
+        "start": {
+          "line": 655,
+          "column": 4
+        },
+        "end": {
+          "line": 696,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testIsEqualFunction": {
+      "location": {
+        "start": {
+          "line": 699,
+          "column": 4
+        },
+        "end": {
+          "line": 740,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testIsEqualMember": {
+      "location": {
+        "start": {
+          "line": 743,
+          "column": 4
+        },
+        "end": {
+          "line": 789,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testIsEqualInlineContext": {
+      "location": {
+        "start": {
+          "line": 792,
+          "column": 4
+        },
+        "end": {
+          "line": 818,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testIsEqualFunctionContext": {
+      "location": {
+        "start": {
+          "line": 821,
+          "column": 4
+        },
+        "end": {
+          "line": 844,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testIsEqualMemberContext": {
+      "location": {
+        "start": {
+          "line": 847,
+          "column": 4
+        },
+        "end": {
+          "line": 873,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testIsEqualBaseClassMember": {
+      "location": {
+        "start": {
+          "line": 876,
+          "column": 4
+        },
+        "end": {
+          "line": 905,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testTransform": {
+      "location": {
+        "start": {
+          "line": 908,
+          "column": 4
+        },
+        "end": {
+          "line": 965,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "getQxOwner": {
+      "type": "function",
+      "name": "getQxOwner",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.TestCase",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "qx.core.Object",
+            "desc": "Returns the value for qxOwner"
+          }
+        ]
+      }
+    },
+    "setQxOwner": {
+      "type": "function",
+      "name": "setQxOwner",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.TestCase",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "qx.core.Object",
+            "paramName": "value",
+            "desc": "Value for qxOwner"
+          }
+        ]
+      }
+    },
+    "resetQxOwner": {
+      "type": "function",
+      "name": "resetQxOwner",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.TestCase",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>qxOwner</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
+          }
+        ]
+      }
+    },
+    "getQxObjectId": {
+      "type": "function",
+      "name": "getQxObjectId",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.TestCase",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "desc": "Returns the value for qxObjectId"
+          }
+        ]
+      }
+    },
+    "setQxObjectId": {
+      "type": "function",
+      "name": "setQxObjectId",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.TestCase",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "paramName": "value",
+            "desc": "Value for qxObjectId"
+          }
+        ]
+      }
+    },
+    "resetQxObjectId": {
+      "type": "function",
+      "name": "resetQxObjectId",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.TestCase",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>qxObjectId</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
+          }
+        ]
+      }
+    },
+    "getTestResult": {
+      "type": "function",
+      "name": "getTestResult",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.TestCase",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>testResult</code>.\n\nFor further details take a look at the property definition: {@link #testResult}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "any",
+            "desc": "Returns the value for testResult"
+          }
+        ]
+      }
+    },
+    "setTestResult": {
+      "type": "function",
+      "name": "setTestResult",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.TestCase",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>testResult</code>.\n\nFor further details take a look at the property definition: {@link #testResult}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "any",
+            "paramName": "value",
+            "desc": "Value for testResult"
+          }
+        ]
+      }
+    },
+    "resetTestResult": {
+      "type": "function",
+      "name": "resetTestResult",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.TestCase",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>testResult</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #testResult}."
+          }
+        ]
+      }
+    },
+    "getTestFunc": {
+      "type": "function",
+      "name": "getTestFunc",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.TestCase",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>testFunc</code>.\n\nFor further details take a look at the property definition: {@link #testFunc}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "any",
+            "desc": "Returns the value for testFunc"
+          }
+        ]
+      }
+    },
+    "setTestFunc": {
+      "type": "function",
+      "name": "setTestFunc",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.TestCase",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>testFunc</code>.\n\nFor further details take a look at the property definition: {@link #testFunc}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "any",
+            "paramName": "value",
+            "desc": "Value for testFunc"
+          }
+        ]
+      }
+    },
+    "resetTestFunc": {
+      "type": "function",
+      "name": "resetTestFunc",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.TestCase",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>testFunc</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #testFunc}."
+          }
+        ]
+      }
+    }
+  },
+  "events": {},
+  "descendants": []
+}

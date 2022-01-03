@@ -197,9 +197,9 @@
     }
   },
   "descendants": [
-    "qx.tool.compiler.jsdoc.ChildControlParser",
     "qx.tool.compiler.jsdoc.ParamParser",
     "qx.tool.compiler.jsdoc.ReturnParser",
-    "qx.tool.compiler.jsdoc.ThrowsParser"
+    "qx.tool.compiler.jsdoc.ThrowsParser",
+    "qx.tool.compiler.jsdoc.ChildControlParser"
   ]
 }
