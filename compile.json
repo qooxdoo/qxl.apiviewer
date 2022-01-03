@@ -60,5 +60,10 @@
   },
   "sass": {
     "compiler": "legacy"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": "2020"
+    }
   }
 }
