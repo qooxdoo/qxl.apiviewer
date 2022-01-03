@@ -1,11 +1,11 @@
 name: Build, Test and Deploy
 on:
-  workflow_dispatch
-
   # run when the master branch is updated
   push:
     branches:
       - master
+
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
