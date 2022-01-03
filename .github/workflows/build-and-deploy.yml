@@ -16,13 +16,11 @@ jobs:
       - uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          repository: "qooxdoo/qxl.apiviewer"
           event-type: "push-tag"
           client-payload: '{"ref": "refs/tags/latest"}'
 
       - uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          repository: "qooxdoo/qxl.apiviewer"
           event-type: "push-tag"
           client-payload: '{"ref": "refs/tags/v7.0"}'
