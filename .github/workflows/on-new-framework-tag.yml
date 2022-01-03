@@ -8,6 +8,9 @@ jobs:
     name: Publish tagged documentation
     runs-on: ubuntu-latest
     steps:
+      - name: Install Playwright Dependencies
+        uses: microsoft/playwright-github-action@v1
+
       - id: get_version
         run: |
           ref=${{ github.event.client_payload.ref }}
@@ -35,6 +38,9 @@ jobs:
              
       - name: Build API Viewer
         run:  npx qx deploy --target=build -v --clean
+        
+      - name: Run Tests
+        run: npx qx test --target=build -v 
 
       - name: Deploy to GH page
         uses: peaceiris/actions-gh-pages@v3

@@ -10,25 +10,17 @@ jobs:
     runs-on: ubuntu-18.04
     if: "!(github.event.head_commit && contains(github.event.head_commit.message, 'ci skip'))"
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+    steps:
+      - uses: peter-evans/repository-dispatch@v1
         with:
-          persist-credentials: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: "https://api.github.com/repos/qooxdoo/qxl.apiviewer/dispatches"
+          event-type: "push-tag"
+          client-payload: '{"ref": "refs/tags/latest"}}'
 
-      - name: Install Playwright Dependencies
-        uses: microsoft/playwright-github-action@v1
-
-      - name: Install NPM Dependencies
-        run: npm install @qooxdoo/compiler --no-save --no-package-lock
-
-      - name: Build API Viewer
-        run:  npx qx deploy --target=build -v --clean
-
-      - name: Run Tests
-        run: npx qx test --target=build -v 
-
-      - name: Deploy API Viewer
-        uses: peaceiris/actions-gh-pages@v3
+      - uses: peter-evans/repository-dispatch@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./html
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: "https://api.github.com/repos/qooxdoo/qxl.apiviewer/dispatches"
+          event-type: "push-tag"
+          client-payload: '{"ref": "refs/tags/v7.0"}}'

@@ -7,6 +7,12 @@
       "q.*"
     ]
   },
+  "ignores": [
+    "require",
+    "process",
+    "loadSass",
+    "__dirname"
+  ],
   "applications": [
     {
       "class": "qxl.apiviewer.Application",
@@ -22,7 +28,7 @@
     "qxWeb"
   ],
   "exclude": [
-    "qx.test.*",
+    "qx.tool.*",
     "qx.module.Blocker",
     "qx.module.Placement"
   ],
@@ -52,9 +58,7 @@
   "serve": {
     "listenPort": 8080
   },
-  "eslintConfig": {
-    "parserOptions": {
-      "ecmaVersion": 2018
-    }
+  "sass": {
+    "compiler": "legacy"
   }
 }
