@@ -19,20 +19,20 @@
       "theme": "qxl.apiviewer.Theme",
       "name": "apiviewer",
       "title": "Qooxdoo API Viewer",
-      "bootPath": "source/boot"
+      "bootPath": "source/boot",
+      "include": [
+        "qx.*",
+        "q",
+        "qxWeb"
+      ],
+      "exclude": [
+        "qx.tool.*",
+        "qx.test.compiler.*",
+        "qx.test.tool.*",
+        "qx.module.Blocker",
+        "qx.module.Placement"
+      ]
     }
-  ],
-  "include": [
-    "qx.*",
-    "q",
-    "qxWeb"
-  ],
-  "exclude": [
-    "qx.tool.*",
-    "qx.test.compiler.*",
-    "qx.test.tool.*",
-    "qx.module.Blocker",
-    "qx.module.Placement"
   ],
   "targets": [
     {
