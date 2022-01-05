@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 867,
+        "line": 906,
         "column": 3
       }
     },
@@ -466,7 +466,35 @@
           "column": 2
         },
         "end": {
-          "line": 815,
+          "line": 811,
+          "column": 3
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testIsoTz": {
+      "location": {
+        "start": {
+          "line": 813,
+          "column": 2
+        },
+        "end": {
+          "line": 832,
+          "column": 3
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testUtc": {
+      "location": {
+        "start": {
+          "line": 834,
+          "column": 2
+        },
+        "end": {
+          "line": 854,
           "column": 3
         }
       },
@@ -476,11 +504,11 @@
     "testChangingLocales": {
       "location": {
         "start": {
-          "line": 817,
+          "line": 856,
           "column": 2
         },
         "end": {
-          "line": 860,
+          "line": 899,
           "column": 3
         }
       },
@@ -490,11 +518,11 @@
     "hasNoEdge": {
       "location": {
         "start": {
-          "line": 862,
+          "line": 901,
           "column": 2
         },
         "end": {
-          "line": 864,
+          "line": 903,
           "column": 3
         }
       },

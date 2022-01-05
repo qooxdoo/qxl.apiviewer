@@ -116,13 +116,27 @@
     "testSyncSourceAfterDOMMove": {
       "location": {
         "start": {
-          "line": 91,
+          "line": 92,
           "column": 4
         },
         "end": {
           "line": 155,
           "column": 5
         }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": ""
+          }
+        ],
+        "@ignore": [
+          {
+            "name": "@ignore",
+            "body": "require"
+          }
+        ]
       },
       "type": "function",
       "access": "public"

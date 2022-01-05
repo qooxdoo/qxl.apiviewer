@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 309,
+        "line": 315,
         "column": 3
       }
     },
@@ -34,7 +34,7 @@
         "column": 14
       },
       "end": {
-        "line": 47,
+        "line": 51,
         "column": 3
       }
     },
@@ -60,11 +60,11 @@
     "modelChanged": {
       "location": {
         "start": {
-          "line": 61,
+          "line": 65,
           "column": 4
         },
         "end": {
-          "line": 61,
+          "line": 65,
           "column": 42
         }
       },
@@ -84,11 +84,11 @@
     "EVENT_TYPE_MODEL_CHANGED": {
       "location": {
         "start": {
-          "line": 76,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 76,
+          "line": 80,
           "column": 45
         }
       },
@@ -114,11 +114,11 @@
     "firstColumnX": {
       "location": {
         "start": {
-          "line": 92,
+          "line": 96,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 101,
           "column": 5
         }
       },
@@ -140,11 +140,11 @@
     "maxColumnCount": {
       "location": {
         "start": {
-          "line": 104,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 109,
+          "line": 113,
           "column": 5
         }
       },
@@ -200,11 +200,11 @@
     "__columnCount": {
       "location": {
         "start": {
-          "line": 123,
+          "line": 127,
           "column": 4
         },
         "end": {
-          "line": 123,
+          "line": 127,
           "column": 24
         }
       },
@@ -214,12 +214,26 @@
     "__tableColumnModel": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 128,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 128,
           "column": 29
+        }
+      },
+      "type": "variable",
+      "access": "private"
+    },
+    "__defferedEventDispatcher": {
+      "location": {
+        "start": {
+          "line": 129,
+          "column": 4
+        },
+        "end": {
+          "line": 129,
+          "column": 36
         }
       },
       "type": "variable",
@@ -228,11 +242,11 @@
     "_applyFirstColumnX": {
       "location": {
         "start": {
-          "line": 128,
+          "line": 133,
           "column": 4
         },
         "end": {
-          "line": 132,
+          "line": 137,
           "column": 5
         }
       },
@@ -246,11 +260,11 @@
     "_applyMaxColumnCount": {
       "location": {
         "start": {
-          "line": 135,
+          "line": 140,
           "column": 4
         },
         "end": {
-          "line": 139,
+          "line": 144,
           "column": 5
         }
       },
@@ -264,11 +278,11 @@
     "setTableColumnModel": {
       "location": {
         "start": {
-          "line": 147,
+          "line": 152,
           "column": 4
         },
         "end": {
-          "line": 157,
+          "line": 162,
           "column": 5
         }
       },
@@ -295,11 +309,11 @@
     "_onColVisibilityChanged": {
       "location": {
         "start": {
-          "line": 165,
+          "line": 170,
           "column": 4
         },
         "end": {
-          "line": 170,
+          "line": 175,
           "column": 5
         }
       },
@@ -326,11 +340,11 @@
     "_onHeaderCellRendererChanged": {
       "location": {
         "start": {
-          "line": 178,
+          "line": 183,
           "column": 4
         },
         "end": {
-          "line": 181,
+          "line": 186,
           "column": 5
         }
       },
@@ -357,11 +371,11 @@
     "getColumnCount": {
       "location": {
         "start": {
-          "line": 189,
+          "line": 194,
           "column": 4
         },
         "end": {
-          "line": 205,
+          "line": 210,
           "column": 5
         }
       },
@@ -387,11 +401,11 @@
     "getColumnAtX": {
       "location": {
         "start": {
-          "line": 214,
+          "line": 219,
           "column": 4
         },
         "end": {
-          "line": 218,
+          "line": 223,
           "column": 5
         }
       },
@@ -426,11 +440,11 @@
     "getX": {
       "location": {
         "start": {
-          "line": 227,
+          "line": 232,
           "column": 4
         },
         "end": {
-          "line": 239,
+          "line": 244,
           "column": 5
         }
       },
@@ -465,11 +479,11 @@
     "getColumnLeft": {
       "location": {
         "start": {
-          "line": 252,
+          "line": 257,
           "column": 4
         },
         "end": {
-          "line": 269,
+          "line": 274,
           "column": 5
         }
       },
@@ -504,11 +518,11 @@
     "getTotalWidth": {
       "location": {
         "start": {
-          "line": 277,
+          "line": 282,
           "column": 4
         },
         "end": {
-          "line": 289,
+          "line": 294,
           "column": 5
         }
       },
@@ -803,11 +817,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 301,
+        "line": 306,
         "column": 13
       },
       "end": {
-        "line": 308,
+        "line": 314,
         "column": 3
       }
     },
