@@ -11,11 +11,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 27,
+        "line": 28,
         "column": 0
       },
       "end": {
-        "line": 1016,
+        "line": 1019,
         "column": 3
       }
     },
@@ -33,11 +33,11 @@
     "handles": {
       "location": {
         "start": {
-          "line": 46,
+          "line": 47,
           "column": 4
         },
         "end": {
-          "line": 54,
+          "line": 55,
           "column": 5
         }
       },
@@ -61,11 +61,11 @@
     "createRequestObject": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 66,
           "column": 4
         },
         "end": {
-          "line": 89,
+          "line": 92,
           "column": 6
         }
       },
@@ -89,6 +89,12 @@
             "name": "@signature",
             "body": "function()"
           }
+        ],
+        "@ignore": [
+          {
+            "name": "@ignore",
+            "body": "XMLHttpRequest"
+          }
         ]
       },
       "type": "variable",
@@ -97,11 +103,11 @@
     "isSupported": {
       "location": {
         "start": {
-          "line": 97,
+          "line": 100,
           "column": 4
         },
         "end": {
-          "line": 99,
+          "line": 102,
           "column": 5
         }
       },
@@ -127,11 +133,11 @@
     "__timeout": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 106,
           "column": 4
         },
         "end": {
-          "line": 103,
+          "line": 106,
           "column": 16
         }
       },
@@ -149,11 +155,11 @@
     "setTimeout": {
       "location": {
         "start": {
-          "line": 113,
+          "line": 116,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 118,
           "column": 5
         }
       },
@@ -177,11 +183,11 @@
     "getTimeout": {
       "location": {
         "start": {
-          "line": 121,
+          "line": 124,
           "column": 4
         },
         "end": {
-          "line": 123,
+          "line": 126,
           "column": 5
         }
       },
@@ -201,11 +207,11 @@
     "parseJson": {
       "location": {
         "start": {
-          "line": 142,
+          "line": 145,
           "column": 4
         },
         "end": {
-          "line": 146,
+          "line": 149,
           "column": 5
         }
       },
@@ -228,11 +234,11 @@
     "__localRequest": {
       "location": {
         "start": {
-          "line": 164,
+          "line": 167,
           "column": 4
         },
         "end": {
-          "line": 164,
+          "line": 167,
           "column": 26
         }
       },
@@ -243,11 +249,11 @@
     "__lastReadyState": {
       "location": {
         "start": {
-          "line": 165,
+          "line": 168,
           "column": 4
         },
         "end": {
-          "line": 165,
+          "line": 168,
           "column": 24
         }
       },
@@ -257,11 +263,11 @@
     "__request": {
       "location": {
         "start": {
-          "line": 166,
+          "line": 169,
           "column": 4
         },
         "end": {
-          "line": 166,
+          "line": 169,
           "column": 20
         }
       },
@@ -271,11 +277,11 @@
     "getRequest": {
       "location": {
         "start": {
-          "line": 174,
+          "line": 177,
           "column": 4
         },
         "end": {
-          "line": 183,
+          "line": 186,
           "column": 5
         }
       },
@@ -301,11 +307,11 @@
     "send": {
       "location": {
         "start": {
-          "line": 198,
+          "line": 201,
           "column": 4
         },
         "end": {
-          "line": 401,
+          "line": 404,
           "column": 5
         }
       },
@@ -327,11 +333,11 @@
     "failedLocally": {
       "location": {
         "start": {
-          "line": 411,
+          "line": 414,
           "column": 4
         },
         "end": {
-          "line": 421,
+          "line": 424,
           "column": 5
         }
       },
@@ -349,11 +355,11 @@
     "_onreadystatechange": {
       "location": {
         "start": {
-          "line": 439,
+          "line": 442,
           "column": 4
         },
         "end": {
-          "line": 489,
+          "line": 492,
           "column": 6
         }
       },
@@ -386,11 +392,11 @@
     "getReadyState": {
       "location": {
         "start": {
-          "line": 507,
+          "line": 510,
           "column": 4
         },
         "end": {
-          "line": 516,
+          "line": 519,
           "column": 5
         }
       },
@@ -416,11 +422,11 @@
     "setRequestHeader": {
       "location": {
         "start": {
-          "line": 533,
+          "line": 536,
           "column": 4
         },
         "end": {
-          "line": 535,
+          "line": 538,
           "column": 5
         }
       },
@@ -458,11 +464,11 @@
     "getResponseHeader": {
       "location": {
         "start": {
-          "line": 563,
+          "line": 566,
           "column": 4
         },
         "end": {
-          "line": 572,
+          "line": 575,
           "column": 5
         }
       },
@@ -501,11 +507,11 @@
     "getStringResponseHeaders": {
       "location": {
         "start": {
-          "line": 580,
+          "line": 583,
           "column": 4
         },
         "end": {
-          "line": 595,
+          "line": 598,
           "column": 5
         }
       },
@@ -531,11 +537,11 @@
     "getResponseHeaders": {
       "location": {
         "start": {
-          "line": 603,
+          "line": 606,
           "column": 4
         },
         "end": {
-          "line": 623,
+          "line": 626,
           "column": 5
         }
       },
@@ -565,11 +571,11 @@
     "getStatusCode": {
       "location": {
         "start": {
-          "line": 639,
+          "line": 642,
           "column": 4
         },
         "end": {
-          "line": 655,
+          "line": 658,
           "column": 5
         }
       },
@@ -599,11 +605,11 @@
     "getStatusText": {
       "location": {
         "start": {
-          "line": 664,
+          "line": 667,
           "column": 4
         },
         "end": {
-          "line": 673,
+          "line": 676,
           "column": 5
         }
       },
@@ -633,11 +639,11 @@
     "getResponseText": {
       "location": {
         "start": {
-          "line": 691,
+          "line": 694,
           "column": 4
         },
         "end": {
-          "line": 705,
+          "line": 708,
           "column": 5
         }
       },
@@ -667,11 +673,11 @@
     "getResponseXml": {
       "location": {
         "start": {
-          "line": 716,
+          "line": 719,
           "column": 4
         },
         "end": {
-          "line": 759,
+          "line": 762,
           "column": 5
         }
       },
@@ -709,11 +715,11 @@
     "getFetchedLength": {
       "location": {
         "start": {
-          "line": 767,
+          "line": 770,
           "column": 4
         },
         "end": {
-          "line": 771,
+          "line": 774,
           "column": 5
         }
       },
@@ -743,11 +749,11 @@
     "getResponseContent": {
       "location": {
         "start": {
-          "line": 779,
+          "line": 782,
           "column": 4
         },
         "end": {
-          "line": 903,
+          "line": 906,
           "column": 5
         }
       },
@@ -773,11 +779,11 @@
     "_applyState": {
       "location": {
         "start": {
-          "line": 921,
+          "line": 924,
           "column": 4
         },
         "end": {
-          "line": 966,
+          "line": 969,
           "column": 5
         }
       },
@@ -1920,11 +1926,11 @@
   "defer": {
     "location": {
       "start": {
-        "line": 977,
+        "line": 980,
         "column": 10
       },
       "end": {
-        "line": 982,
+        "line": 985,
         "column": 3
       }
     },
@@ -1933,11 +1939,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 993,
+        "line": 996,
         "column": 13
       },
       "end": {
-        "line": 1015,
+        "line": 1018,
         "column": 3
       }
     },

@@ -4,7 +4,9 @@
   "name": "RequestIframe",
   "superClass": "qx.test.io.remote.AbstractRequest",
   "interfaces": [],
-  "mixins": [],
+  "mixins": [
+    "qx.dev.unit.MRequirements"
+  ],
   "functionName": null,
   "clazz": {
     "location": {
@@ -13,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 99,
+        "line": 105,
         "column": 3
       }
     },
@@ -34,14 +36,32 @@
   },
   "type": "class",
   "members": {
-    "_createRequest": {
+    "setUp": {
       "location": {
         "start": {
           "line": 33,
           "column": 4
         },
         "end": {
-          "line": 38,
+          "line": 36,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public",
+      "overriddenFrom": "qx.test.io.remote.AbstractRequest",
+      "appearsIn": [
+        "qx.test.io.remote.AbstractRequest"
+      ]
+    },
+    "_createRequest": {
+      "location": {
+        "start": {
+          "line": 39,
+          "column": 4
+        },
+        "end": {
+          "line": 44,
           "column": 5
         }
       },
@@ -56,11 +76,11 @@
     "testAsynchronous": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 46,
           "column": 4
         },
         "end": {
-          "line": 87,
+          "line": 93,
           "column": 5
         }
       },
@@ -74,16 +94,487 @@
     "testAsynchronousSingle": {
       "location": {
         "start": {
-          "line": 89,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 103,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
+    },
+    "hasHttp": {
+      "type": "function",
+      "name": "hasHttp",
+      "abstract": false,
+      "mixin": true,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.MRequirements",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Checks if the application has been loaded over HTTP.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} <code>true</code> if HTTP is currently used",
+            "type": "Boolean",
+            "description": " <code>true</code> if HTTP is currently used"
+          }
+        ]
+      }
+    },
+    "hasPhp": {
+      "type": "function",
+      "name": "hasPhp",
+      "abstract": false,
+      "mixin": true,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.MRequirements",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Checks if the server supports PHP.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} <code>true</code> if PHP is supported by the backend",
+            "type": "Boolean",
+            "description": " <code>true</code> if PHP is supported by the backend"
+          }
+        ]
+      }
+    },
+    "hasGuiApp": {
+      "type": "function",
+      "name": "hasGuiApp",
+      "abstract": false,
+      "mixin": true,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.MRequirements",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Checks if the application extends qx.application.Standalone</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} <code>true</code> if the application is a standalone (GUI)\n application",
+            "type": "Boolean",
+            "description": " <code>true</code> if the application is a standalone (GUI)\n application"
+          }
+        ]
+      }
+    },
+    "hasInlineApp": {
+      "type": "function",
+      "name": "hasInlineApp",
+      "abstract": false,
+      "mixin": true,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.MRequirements",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Checks if the application extends qx.application.Inline</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} <code>true</code> if the application is an inline application",
+            "type": "Boolean",
+            "description": " <code>true</code> if the application is an inline application"
+          }
+        ]
+      }
+    },
+    "hasNativeApp": {
+      "type": "function",
+      "name": "hasNativeApp",
+      "abstract": false,
+      "mixin": true,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.MRequirements",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Checks if the application extends qx.application.Native</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} <code>true</code> if the application is a native application",
+            "type": "Boolean",
+            "description": " <code>true</code> if the application is a native application"
+          }
+        ]
+      }
+    },
+    "hasChrome": {
+      "type": "function",
+      "name": "hasChrome",
+      "abstract": false,
+      "mixin": true,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.MRequirements",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Checks if the application is running in Google Chrome</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} <code>true</code> if the browser is Google Chrome",
+            "type": "Boolean",
+            "description": " <code>true</code> if the browser is Google Chrome"
+          }
+        ]
+      }
+    },
+    "hasFirefox": {
+      "type": "function",
+      "name": "hasFirefox",
+      "abstract": false,
+      "mixin": true,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.MRequirements",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Checks if the application is running in Firefox</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} <code>true</code> if the browser is Firefox",
+            "type": "Boolean",
+            "description": " <code>true</code> if the browser is Firefox"
+          }
+        ]
+      }
+    },
+    "hasGecko": {
+      "type": "function",
+      "name": "hasGecko",
+      "abstract": false,
+      "mixin": true,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.MRequirements",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Checks if the application is running in a browser using the Gecko engine</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} <code>true</code> if the browser engine is Mozilla Gecko",
+            "type": "Boolean",
+            "description": " <code>true</code> if the browser engine is Mozilla Gecko"
+          }
+        ]
+      }
+    },
+    "hasIe": {
+      "type": "function",
+      "name": "hasIe",
+      "abstract": false,
+      "mixin": true,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.MRequirements",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Checks if the application is running in Internet Explorer</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} <code>true</code> if the browser is Internet Explorer",
+            "type": "Boolean",
+            "description": " <code>true</code> if the browser is Internet Explorer"
+          }
+        ]
+      }
+    },
+    "hasMshtml": {
+      "type": "function",
+      "name": "hasMshtml",
+      "abstract": false,
+      "mixin": true,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.MRequirements",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Checks if the application is running in a browser using the MSHTML engine</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} <code>true</code> if the browser engine is MSHTML",
+            "type": "Boolean",
+            "description": " <code>true</code> if the browser engine is MSHTML"
+          }
+        ]
+      }
+    },
+    "hasOpera": {
+      "type": "function",
+      "name": "hasOpera",
+      "abstract": false,
+      "mixin": true,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.MRequirements",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Checks if the application is running in a browser using the Opera engine</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} <code>true</code> if the browser engine is Opera",
+            "type": "Boolean",
+            "description": " <code>true</code> if the browser engine is Opera"
+          }
+        ]
+      }
+    },
+    "hasWebkit": {
+      "type": "function",
+      "name": "hasWebkit",
+      "abstract": false,
+      "mixin": true,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.MRequirements",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Checks if the application is running in a browser using the Webkit engine</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} <code>true</code> if the browser engine is Webkit",
+            "type": "Boolean",
+            "description": " <code>true</code> if the browser engine is Webkit"
+          }
+        ]
+      }
+    },
+    "hasNoOsx": {
+      "type": "function",
+      "name": "hasNoOsx",
+      "abstract": false,
+      "mixin": true,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.MRequirements",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Checks if the application is NOT running on OS X</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} <code>true</code> if the operating system is NOT OX X",
+            "type": "Boolean",
+            "description": " <code>true</code> if the operating system is NOT OX X"
+          }
+        ]
+      }
+    },
+    "hasNoWin7": {
+      "type": "function",
+      "name": "hasNoWin7",
+      "abstract": false,
+      "mixin": true,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.MRequirements",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Checks if the application is running on Windows 7</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} <code>false</code> if operating system is Windows 7",
+            "type": "Boolean",
+            "description": " <code>false</code> if operating system is Windows 7"
+          }
+        ]
+      }
+    },
+    "hasNoWin10": {
+      "type": "function",
+      "name": "hasNoWin10",
+      "abstract": false,
+      "mixin": true,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.MRequirements",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Checks if the application is running on Windows 10</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} <code>false</code> if operating system is Windows 10",
+            "type": "Boolean",
+            "description": " <code>false</code> if operating system is Windows 10"
+          }
+        ]
+      }
+    },
+    "hasNoChromeOnLinux": {
+      "type": "function",
+      "name": "hasNoChromeOnLinux",
+      "abstract": false,
+      "mixin": true,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.MRequirements",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Checks if the application is not running in a Google Chrome browser on Linux</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} <code>true</code> if the browser is not Google Chrome on Linux",
+            "type": "Boolean",
+            "description": " <code>true</code> if the browser is not Google Chrome on Linux"
+          }
+        ]
+      }
+    },
+    "hasAsyncFunctions": {
+      "type": "function",
+      "name": "hasAsyncFunctions",
+      "abstract": false,
+      "mixin": true,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.MRequirements",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Checks if the application is running on a client supporting async functions</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} <code>true</code> if the client supports async functions",
+            "type": "Boolean",
+            "description": " <code>true</code> if the client supports async functions"
+          }
+        ]
+      }
+    },
+    "require": {
+      "type": "function",
+      "name": "require",
+      "abstract": false,
+      "mixin": true,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.dev.unit.MRequirements",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Verifies a list of infrastructure requirements by checking for\n corresponding \"has\" methods. If no such method was found,\n {@link qx.core.Environment} will be checked for a key matching the given\n feature name. Note that asynchronous environment checks are not supported!</p>"
+          }
+        ],
+        "@throws": [
+          {
+            "name": "@throws",
+            "body": "{qx.dev.unit.RequirementError} if any requirement check returned\n   <code>false</code>",
+            "type": "qx.dev.unit.RequirementError",
+            "description": " if any requirement check returned\n   <code>false</code>"
+          },
+          {
+            "name": "@throws",
+            "body": "{Error} if no valid check was found for a feature.",
+            "type": "Error",
+            "description": " if no valid check was found for a feature."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "featureList {String[]} List of infrastructure requirements",
+            "paramName": "featureList",
+            "description": " List of infrastructure requirements",
+            "type": "String[]"
+          }
+        ],
+        "@lint": [
+          {
+            "name": "@lint",
+            "body": "environmentNonLiteralKey(feature)"
+          }
+        ]
+      }
     },
     "getQxOwner": {
       "type": "function",
