@@ -283,9 +283,6 @@ qx.Class.define("qxl.apiviewer.ui.SearchView",
       this.add(table, {flex : 1});
 
 
-      // Load index file
-      //      qx.event.Timer.once(this._load, this, 0);
-
       // Give keyboard focus to the search field
       this.sinput.focus();
 
@@ -554,39 +551,6 @@ qx.Class.define("qxl.apiviewer.ui.SearchView",
 
       return aType - bType;
     },
-
-
-
-
-    /**
-     * Load the api index
-     * @lint ignoreDeprecated(eval)
-     */
-    _load : function() {
-      var url = "./script/apiindex.json";
-      var req = new qx.io.remote.Request(url);
-
-      req.setAsynchronous(true);
-      req.setTimeout(30000); // 30 sec
-      req.setProhibitCaching(false);
-      req.addListener("completed", function(evt) {
-        /* eslint-disable-next-line no-eval */
-        this.apiindex = eval("(" + evt.getContent() + ")");
-        if (this.__searchTerm) {
-          setTimeout(function() {
-            this.sinput.setValue(this.__searchTerm);
-            this.__searchTerm = null;
-          }.bind(this), 0);
-        }
-      }, this);
-
-      req.addListener("failed", function(evt) {
-        this.warn("Couldn't load file: " + url);
-      }, this);
-
-      req.send();
-    },
-
 
     /**
      * Display information in the detail frame
