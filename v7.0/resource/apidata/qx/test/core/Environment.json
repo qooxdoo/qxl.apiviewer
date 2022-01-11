@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 24,
+        "line": 23,
         "column": 0
       },
       "end": {
-        "line": 503,
+        "line": 500,
         "column": 3
       }
     },
@@ -27,10 +27,6 @@
       "@require": [
         {
           "name": "@require",
-          "body": "qx.io.remote.Request"
-        },
-        {
-          "name": "@require",
           "body": "qx.ui.core.scroll.MScrollBarFactory"
         }
       ]
@@ -41,11 +37,11 @@
     "testGet": {
       "location": {
         "start": {
-          "line": 33,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 42,
+          "line": 41,
           "column": 5
         }
       },
@@ -56,11 +52,11 @@
     "testGetAsync": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 43,
           "column": 4
         },
         "end": {
-          "line": 62,
+          "line": 61,
           "column": 5
         }
       },
@@ -70,11 +66,11 @@
     "testSelect": {
       "location": {
         "start": {
-          "line": 64,
+          "line": 63,
           "column": 4
         },
         "end": {
-          "line": 78,
+          "line": 77,
           "column": 5
         }
       },
@@ -84,11 +80,11 @@
     "testSelectDefault": {
       "location": {
         "start": {
-          "line": 80,
+          "line": 79,
           "column": 4
         },
         "end": {
-          "line": 94,
+          "line": 93,
           "column": 5
         }
       },
@@ -98,11 +94,11 @@
     "testSelectAsync": {
       "location": {
         "start": {
-          "line": 97,
+          "line": 96,
           "column": 4
         },
         "end": {
-          "line": 118,
+          "line": 117,
           "column": 5
         }
       },
@@ -112,11 +108,11 @@
     "testCache": {
       "location": {
         "start": {
-          "line": 121,
+          "line": 120,
           "column": 4
         },
         "end": {
-          "line": 133,
+          "line": 132,
           "column": 5
         }
       },
@@ -126,11 +122,11 @@
     "testCacheInvalidation": {
       "location": {
         "start": {
-          "line": 135,
+          "line": 134,
           "column": 4
         },
         "end": {
-          "line": 153,
+          "line": 152,
           "column": 5
         }
       },
@@ -140,11 +136,11 @@
     "testAddFunction": {
       "location": {
         "start": {
-          "line": 156,
+          "line": 155,
           "column": 4
         },
         "end": {
-          "line": 166,
+          "line": 165,
           "column": 5
         }
       },
@@ -154,11 +150,11 @@
     "testAddValue": {
       "location": {
         "start": {
-          "line": 169,
+          "line": 168,
           "column": 4
         },
         "end": {
-          "line": 177,
+          "line": 176,
           "column": 5
         }
       },
@@ -168,11 +164,11 @@
     "testAddAsyncFunction": {
       "location": {
         "start": {
-          "line": 180,
+          "line": 179,
           "column": 4
         },
         "end": {
-          "line": 197,
+          "line": 196,
           "column": 5
         }
       },
@@ -182,11 +178,11 @@
     "testFilter": {
       "location": {
         "start": {
-          "line": 200,
+          "line": 199,
           "column": 4
         },
         "end": {
-          "line": 229,
+          "line": 228,
           "column": 5
         }
       },
@@ -196,11 +192,11 @@
     "testEngineName": {
       "location": {
         "start": {
-          "line": 234,
+          "line": 233,
           "column": 4
         },
         "end": {
-          "line": 236,
+          "line": 235,
           "column": 5
         }
       },
@@ -211,11 +207,11 @@
     "testEngineVersion": {
       "location": {
         "start": {
-          "line": 238,
+          "line": 237,
           "column": 4
         },
         "end": {
-          "line": 240,
+          "line": 239,
           "column": 5
         }
       },
@@ -225,11 +221,11 @@
     "testBrowser": {
       "location": {
         "start": {
-          "line": 242,
+          "line": 241,
           "column": 4
         },
         "end": {
-          "line": 248,
+          "line": 247,
           "column": 5
         }
       },
@@ -239,11 +235,11 @@
     "testLocale": {
       "location": {
         "start": {
-          "line": 250,
+          "line": 249,
           "column": 4
         },
         "end": {
-          "line": 252,
+          "line": 251,
           "column": 5
         }
       },
@@ -253,11 +249,11 @@
     "testVariant": {
       "location": {
         "start": {
-          "line": 254,
+          "line": 253,
           "column": 4
         },
         "end": {
-          "line": 257,
+          "line": 256,
           "column": 5
         }
       },
@@ -267,11 +263,11 @@
     "testOS": {
       "location": {
         "start": {
-          "line": 259,
+          "line": 258,
           "column": 4
         },
         "end": {
-          "line": 263,
+          "line": 262,
           "column": 5
         }
       },
@@ -281,11 +277,11 @@
     "testQuicktime": {
       "location": {
         "start": {
-          "line": 265,
+          "line": 264,
           "column": 4
         },
         "end": {
-          "line": 269,
+          "line": 268,
           "column": 5
         }
       },
@@ -295,11 +291,11 @@
     "testSkype": {
       "location": {
         "start": {
-          "line": 271,
+          "line": 270,
           "column": 4
         },
         "end": {
-          "line": 274,
+          "line": 273,
           "column": 5
         }
       },
@@ -309,11 +305,11 @@
     "testWmv": {
       "location": {
         "start": {
-          "line": 276,
+          "line": 275,
           "column": 4
         },
         "end": {
-          "line": 280,
+          "line": 279,
           "column": 5
         }
       },
@@ -323,11 +319,11 @@
     "testDivx": {
       "location": {
         "start": {
-          "line": 282,
+          "line": 281,
           "column": 4
         },
         "end": {
-          "line": 286,
+          "line": 285,
           "column": 5
         }
       },
@@ -337,11 +333,11 @@
     "testSilverlight": {
       "location": {
         "start": {
-          "line": 288,
+          "line": 287,
           "column": 4
         },
         "end": {
-          "line": 292,
+          "line": 291,
           "column": 5
         }
       },
@@ -351,11 +347,11 @@
     "testPdf": {
       "location": {
         "start": {
-          "line": 294,
+          "line": 293,
           "column": 4
         },
         "end": {
-          "line": 299,
+          "line": 298,
           "column": 5
         }
       },
@@ -365,11 +361,11 @@
     "testIO": {
       "location": {
         "start": {
-          "line": 301,
+          "line": 300,
           "column": 4
         },
         "end": {
-          "line": 305,
+          "line": 304,
           "column": 5
         }
       },
@@ -379,11 +375,11 @@
     "testIOXhr": {
       "location": {
         "start": {
-          "line": 307,
+          "line": 306,
           "column": 4
         },
         "end": {
-          "line": 316,
+          "line": 315,
           "column": 5
         }
       },
@@ -393,11 +389,11 @@
     "testHtml": {
       "location": {
         "start": {
-          "line": 318,
+          "line": 317,
           "column": 4
         },
         "end": {
-          "line": 358,
+          "line": 357,
           "column": 5
         }
       },
@@ -407,11 +403,11 @@
     "testXml": {
       "location": {
         "start": {
-          "line": 360,
+          "line": 359,
           "column": 4
         },
         "end": {
-          "line": 372,
+          "line": 371,
           "column": 5
         }
       },
@@ -421,11 +417,11 @@
     "testGears": {
       "location": {
         "start": {
-          "line": 374,
+          "line": 373,
           "column": 4
         },
         "end": {
-          "line": 376,
+          "line": 375,
           "column": 5
         }
       },
@@ -435,11 +431,11 @@
     "testActiveX": {
       "location": {
         "start": {
-          "line": 378,
+          "line": 377,
           "column": 4
         },
         "end": {
-          "line": 380,
+          "line": 379,
           "column": 5
         }
       },
@@ -449,11 +445,11 @@
     "testCss": {
       "location": {
         "start": {
-          "line": 382,
+          "line": 381,
           "column": 4
         },
         "end": {
-          "line": 416,
+          "line": 415,
           "column": 5
         }
       },
@@ -463,11 +459,11 @@
     "testPhoneGap": {
       "location": {
         "start": {
-          "line": 418,
+          "line": 417,
           "column": 4
         },
         "end": {
-          "line": 421,
+          "line": 420,
           "column": 5
         }
       },
@@ -477,11 +473,11 @@
     "testEvent": {
       "location": {
         "start": {
-          "line": 423,
+          "line": 422,
           "column": 4
         },
         "end": {
-          "line": 430,
+          "line": 429,
           "column": 5
         }
       },
@@ -491,11 +487,11 @@
     "testEcmaScript": {
       "location": {
         "start": {
-          "line": 432,
+          "line": 431,
           "column": 4
         },
         "end": {
-          "line": 452,
+          "line": 451,
           "column": 5
         }
       },
@@ -505,11 +501,11 @@
     "testDataUrl": {
       "location": {
         "start": {
-          "line": 454,
+          "line": 453,
           "column": 4
         },
         "end": {
-          "line": 461,
+          "line": 460,
           "column": 5
         }
       },
@@ -519,11 +515,11 @@
     "testDevice": {
       "location": {
         "start": {
-          "line": 463,
+          "line": 462,
           "column": 4
         },
         "end": {
-          "line": 465,
+          "line": 464,
           "column": 5
         }
       },
@@ -533,11 +529,11 @@
     "testDeviceType": {
       "location": {
         "start": {
-          "line": 467,
+          "line": 466,
           "column": 4
         },
         "end": {
-          "line": 469,
+          "line": 468,
           "column": 5
         }
       },
@@ -547,11 +543,11 @@
     "testDevicePixelRatio": {
       "location": {
         "start": {
-          "line": 471,
+          "line": 470,
           "column": 4
         },
         "end": {
-          "line": 473,
+          "line": 472,
           "column": 5
         }
       },
@@ -561,11 +557,11 @@
     "testQx": {
       "location": {
         "start": {
-          "line": 475,
+          "line": 474,
           "column": 4
         },
         "end": {
-          "line": 490,
+          "line": 487,
           "column": 5
         }
       },
@@ -575,11 +571,11 @@
     "testAnimationTransformTransition": {
       "location": {
         "start": {
-          "line": 493,
+          "line": 490,
           "column": 4
         },
         "end": {
-          "line": 501,
+          "line": 498,
           "column": 5
         }
       },

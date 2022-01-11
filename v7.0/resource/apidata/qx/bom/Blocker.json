@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 372,
+        "line": 373,
         "column": 3
       }
     },
@@ -510,7 +510,7 @@
           "column": 4
         },
         "end": {
-          "line": 252,
+          "line": 253,
           "column": 5
         }
       },
@@ -528,11 +528,11 @@
     "__calculateStyles": {
       "location": {
         "start": {
-          "line": 261,
+          "line": 262,
           "column": 4
         },
         "end": {
-          "line": 283,
+          "line": 284,
           "column": 5
         }
       },
@@ -558,11 +558,11 @@
     "__styleAndInsertBlocker": {
       "location": {
         "start": {
-          "line": 291,
+          "line": 292,
           "column": 4
         },
         "end": {
-          "line": 305,
+          "line": 306,
           "column": 5
         }
       },
@@ -589,11 +589,11 @@
     "__removeBlocker": {
       "location": {
         "start": {
-          "line": 311,
+          "line": 312,
           "column": 4
         },
         "end": {
-          "line": 318,
+          "line": 319,
           "column": 5
         }
       },
@@ -611,11 +611,11 @@
     "__onResize": {
       "location": {
         "start": {
-          "line": 327,
+          "line": 328,
           "column": 4
         },
         "end": {
-          "line": 343,
+          "line": 344,
           "column": 5
         }
       },
@@ -642,11 +642,11 @@
     "__resizeBlocker": {
       "location": {
         "start": {
-          "line": 351,
+          "line": 352,
           "column": 4
         },
         "end": {
-          "line": 358,
+          "line": 359,
           "column": 5
         }
       },
@@ -673,11 +673,11 @@
     "__isWholeDocumentBlockTarget": {
       "location": {
         "start": {
-          "line": 366,
+          "line": 367,
           "column": 4
         },
         "end": {
-          "line": 370,
+          "line": 371,
           "column": 5
         }
       },
@@ -1745,11 +1745,11 @@
         "@param": [
           {
             "name": "@param",
-            "body": "data {Map | String} a map of property values. The key is the name of the property.",
+            "body": "data {Object | String} a map of property values. The key is the name of the property.",
             "paramName": "data",
             "description": " a map of property values. The key is the name of the property.",
             "type": [
-              "Map",
+              "Object",
               "String"
             ]
           },

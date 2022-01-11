@@ -2285,11 +2285,11 @@
         "@param": [
           {
             "name": "@param",
-            "body": "data {Map | String} a map of property values. The key is the name of the property.",
+            "body": "data {Object | String} a map of property values. The key is the name of the property.",
             "paramName": "data",
             "description": " a map of property values. The key is the name of the property.",
             "type": [
-              "Map",
+              "Object",
               "String"
             ]
           },
