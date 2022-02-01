@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 264,
+        "line": 245,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 50,
-        "column": 14
+        "line": 48,
+        "column": 2
       },
       "end": {
-        "line": 61,
+        "line": 58,
         "column": 3
       }
     },
@@ -44,11 +44,11 @@
     "defaultCssClass": {
       "location": {
         "start": {
-          "line": 71,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 70,
           "column": 5
         }
       },
@@ -100,12 +100,12 @@
     "update": {
       "location": {
         "start": {
-          "line": 86,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 86,
-          "column": 35
+          "line": 80,
+          "column": 32
         }
       },
       "jsdoc": {
@@ -124,12 +124,12 @@
     "__navigationBar": {
       "location": {
         "start": {
-          "line": 98,
+          "line": 90,
           "column": 4
         },
         "end": {
-          "line": 98,
-          "column": 26
+          "line": 90,
+          "column": 25
         }
       },
       "type": "variable",
@@ -138,12 +138,12 @@
     "__content": {
       "location": {
         "start": {
-          "line": 99,
+          "line": 91,
           "column": 4
         },
         "end": {
-          "line": 99,
-          "column": 20
+          "line": 91,
+          "column": 19
         }
       },
       "type": "variable",
@@ -152,12 +152,12 @@
     "__layout": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 92,
           "column": 4
         },
         "end": {
-          "line": 100,
-          "column": 19
+          "line": 92,
+          "column": 18
         }
       },
       "type": "variable",
@@ -166,11 +166,11 @@
     "add": {
       "location": {
         "start": {
-          "line": 104,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 111,
+          "line": 101,
           "column": 5
         }
       },
@@ -186,11 +186,11 @@
     "remove": {
       "location": {
         "start": {
-          "line": 115,
+          "line": 104,
           "column": 4
         },
         "end": {
-          "line": 121,
+          "line": 109,
           "column": 5
         }
       },
@@ -206,11 +206,11 @@
     "getContent": {
       "location": {
         "start": {
-          "line": 129,
+          "line": 116,
           "column": 4
         },
         "end": {
-          "line": 132,
+          "line": 118,
           "column": 5
         }
       },
@@ -236,11 +236,11 @@
     "getLayout": {
       "location": {
         "start": {
-          "line": 139,
+          "line": 124,
           "column": 4
         },
         "end": {
-          "line": 141,
+          "line": 126,
           "column": 5
         }
       },
@@ -271,11 +271,11 @@
     "getNavigationBar": {
       "location": {
         "start": {
-          "line": 149,
+          "line": 133,
           "column": 4
         },
         "end": {
-          "line": 152,
+          "line": 135,
           "column": 5
         }
       },
@@ -301,11 +301,11 @@
     "_createContent": {
       "location": {
         "start": {
-          "line": 160,
+          "line": 142,
           "column": 4
         },
         "end": {
-          "line": 168,
+          "line": 149,
           "column": 5
         }
       },
@@ -331,11 +331,11 @@
     "_onAnimationStart": {
       "location": {
         "start": {
-          "line": 174,
+          "line": 154,
           "column": 4
         },
         "end": {
-          "line": 176,
+          "line": 156,
           "column": 5
         }
       },
@@ -353,11 +353,11 @@
     "_onAnimationEnd": {
       "location": {
         "start": {
-          "line": 182,
+          "line": 161,
           "column": 4
         },
         "end": {
-          "line": 184,
+          "line": 163,
           "column": 5
         }
       },
@@ -375,11 +375,11 @@
     "_onUpdateLayout": {
       "location": {
         "start": {
-          "line": 192,
+          "line": 170,
           "column": 4
         },
         "end": {
-          "line": 199,
+          "line": 177,
           "column": 5
         }
       },
@@ -406,11 +406,11 @@
     "_update": {
       "location": {
         "start": {
-          "line": 207,
+          "line": 184,
           "column": 4
         },
         "end": {
-          "line": 241,
+          "line": 221,
           "column": 5
         }
       },
@@ -437,11 +437,11 @@
     "_createNavigationBar": {
       "location": {
         "start": {
-          "line": 249,
+          "line": 228,
           "column": 4
         },
         "end": {
-          "line": 252,
+          "line": 230,
           "column": 5
         }
       },
@@ -552,6 +552,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -576,6 +577,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -1645,15 +1647,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 256,
-        "column": 13
+        "line": 233,
+        "column": 2
       },
       "end": {
-        "line": 263,
+        "line": 244,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 558,
+        "line": 522,
         "column": 3
       }
     },
@@ -37,12 +37,12 @@
     "blocked": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 38,
-          "column": 35
+          "line": 35,
+          "column": 34
         }
       },
       "jsdoc": {
@@ -59,12 +59,12 @@
     "unblocked": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 44,
-          "column": 37
+          "line": 40,
+          "column": 36
         }
       },
       "jsdoc": {
@@ -82,11 +82,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 53,
-        "column": 13
+        "line": 48,
+        "column": 2
       },
       "end": {
-        "line": 77,
+        "line": 75,
         "column": 3
       }
     },
@@ -112,11 +112,11 @@
     "color": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 87,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 93,
           "column": 5
         }
       },
@@ -139,11 +139,11 @@
     "opacity": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 98,
           "column": 4
         },
         "end": {
-          "line": 109,
+          "line": 103,
           "column": 5
         }
       },
@@ -166,11 +166,11 @@
     "keepBlockerActive": {
       "location": {
         "start": {
-          "line": 127,
+          "line": 120,
           "column": 4
         },
         "end": {
-          "line": 131,
+          "line": 123,
           "column": 5
         }
       },
@@ -225,12 +225,12 @@
     "__blocker": {
       "location": {
         "start": {
-          "line": 146,
+          "line": 133,
           "column": 4
         },
         "end": {
-          "line": 146,
-          "column": 20
+          "line": 133,
+          "column": 19
         }
       },
       "type": "variable",
@@ -239,12 +239,12 @@
     "__blockerCount": {
       "location": {
         "start": {
-          "line": 147,
+          "line": 134,
           "column": 4
         },
         "end": {
-          "line": 147,
-          "column": 22
+          "line": 134,
+          "column": 21
         }
       },
       "type": "variable",
@@ -253,12 +253,12 @@
     "__activeElements": {
       "location": {
         "start": {
-          "line": 149,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 149,
-          "column": 28
+          "line": 136,
+          "column": 26
         }
       },
       "type": "variable",
@@ -267,12 +267,12 @@
     "__focusElements": {
       "location": {
         "start": {
-          "line": 150,
+          "line": 137,
           "column": 4
         },
         "end": {
-          "line": 150,
-          "column": 28
+          "line": 137,
+          "column": 25
         }
       },
       "type": "variable",
@@ -281,12 +281,12 @@
     "__timer": {
       "location": {
         "start": {
-          "line": 152,
+          "line": 139,
           "column": 4
         },
         "end": {
-          "line": 152,
-          "column": 18
+          "line": 139,
+          "column": 17
         }
       },
       "type": "variable",
@@ -295,12 +295,12 @@
     "_widget": {
       "location": {
         "start": {
-          "line": 154,
+          "line": 141,
           "column": 4
         },
         "end": {
-          "line": 154,
-          "column": 18
+          "line": 141,
+          "column": 17
         }
       },
       "type": "variable",
@@ -309,12 +309,12 @@
     "_isRoot": {
       "location": {
         "start": {
-          "line": 155,
+          "line": 142,
           "column": 4
         },
         "end": {
-          "line": 155,
-          "column": 19
+          "line": 142,
+          "column": 18
         }
       },
       "type": "variable",
@@ -323,12 +323,12 @@
     "__appearListener": {
       "location": {
         "start": {
-          "line": 157,
+          "line": 144,
           "column": 4
         },
         "end": {
-          "line": 157,
-          "column": 27
+          "line": 144,
+          "column": 26
         }
       },
       "type": "variable",
@@ -337,11 +337,11 @@
     "__onBoundsChange": {
       "location": {
         "start": {
-          "line": 165,
+          "line": 151,
           "column": 4
         },
         "end": {
-          "line": 172,
+          "line": 157,
           "column": 5
         }
       },
@@ -368,11 +368,11 @@
     "__onWidgetAppear": {
       "location": {
         "start": {
-          "line": 178,
+          "line": 162,
           "column": 4
         },
         "end": {
-          "line": 186,
+          "line": 172,
           "column": 5
         }
       },
@@ -390,11 +390,11 @@
     "__onWidgetDisappear": {
       "location": {
         "start": {
-          "line": 192,
+          "line": 177,
           "column": 4
         },
         "end": {
-          "line": 198,
+          "line": 182,
           "column": 5
         }
       },
@@ -412,11 +412,11 @@
     "_updateBlockerBounds": {
       "location": {
         "start": {
-          "line": 205,
+          "line": 188,
           "column": 4
         },
         "end": {
-          "line": 213,
+          "line": 195,
           "column": 5
         }
       },
@@ -443,11 +443,11 @@
     "_applyColor": {
       "location": {
         "start": {
-          "line": 217,
+          "line": 198,
           "column": 4
         },
         "end": {
-          "line": 221,
+          "line": 201,
           "column": 5
         }
       },
@@ -461,11 +461,11 @@
     "_applyOpacity": {
       "location": {
         "start": {
-          "line": 225,
+          "line": 204,
           "column": 4
         },
         "end": {
-          "line": 228,
+          "line": 206,
           "column": 5
         }
       },
@@ -479,11 +479,11 @@
     "_onChangeTheme": {
       "location": {
         "start": {
-          "line": 235,
+          "line": 212,
           "column": 4
         },
         "end": {
-          "line": 241,
+          "line": 217,
           "column": 6
         }
       },
@@ -501,17 +501,17 @@
           }
         ]
       },
-      "type": "function",
+      "type": "variable",
       "access": "protected"
     },
     "__setBlockersStyle": {
       "location": {
         "start": {
-          "line": 250,
+          "line": 225,
           "column": 4
         },
         "end": {
-          "line": 258,
+          "line": 232,
           "column": 5
         }
       },
@@ -545,11 +545,11 @@
     "_backupActiveWidget": {
       "location": {
         "start": {
-          "line": 264,
+          "line": 237,
           "column": 4
         },
         "end": {
-          "line": 280,
+          "line": 260,
           "column": 5
         }
       },
@@ -567,11 +567,11 @@
     "_restoreActiveWidget": {
       "location": {
         "start": {
-          "line": 286,
+          "line": 265,
           "column": 4
         },
         "end": {
-          "line": 307,
+          "line": 285,
           "column": 5
         }
       },
@@ -589,11 +589,11 @@
     "__createBlockerElement": {
       "location": {
         "start": {
-          "line": 315,
+          "line": 292,
           "column": 4
         },
         "end": {
-          "line": 317,
+          "line": 294,
           "column": 5
         }
       },
@@ -619,11 +619,11 @@
     "getBlockerElement": {
       "location": {
         "start": {
-          "line": 327,
+          "line": 303,
           "column": 4
         },
         "end": {
-          "line": 346,
+          "line": 320,
           "column": 5
         }
       },
@@ -658,11 +658,11 @@
     "block": {
       "location": {
         "start": {
-          "line": 353,
+          "line": 326,
           "column": 4
         },
         "end": {
-          "line": 356,
+          "line": 328,
           "column": 5
         }
       },
@@ -680,11 +680,11 @@
     "_block": {
       "location": {
         "start": {
-          "line": 365,
+          "line": 336,
           "column": 4
         },
         "end": {
-          "line": 408,
+          "line": 381,
           "column": 5
         }
       },
@@ -718,11 +718,11 @@
     "isBlocked": {
       "location": {
         "start": {
-          "line": 416,
+          "line": 388,
           "column": 4
         },
         "end": {
-          "line": 418,
+          "line": 390,
           "column": 5
         }
       },
@@ -748,11 +748,11 @@
     "unblock": {
       "location": {
         "start": {
-          "line": 426,
+          "line": 397,
           "column": 4
         },
         "end": {
-          "line": 442,
+          "line": 412,
           "column": 5
         }
       },
@@ -770,11 +770,11 @@
     "forceUnblock": {
       "location": {
         "start": {
-          "line": 449,
+          "line": 418,
           "column": 4
         },
         "end": {
-          "line": 462,
+          "line": 430,
           "column": 5
         }
       },
@@ -792,11 +792,11 @@
     "__unblock": {
       "location": {
         "start": {
-          "line": 468,
+          "line": 435,
           "column": 4
         },
         "end": {
-          "line": 480,
+          "line": 446,
           "column": 5
         }
       },
@@ -814,11 +814,11 @@
     "blockContent": {
       "location": {
         "start": {
-          "line": 489,
+          "line": 454,
           "column": 4
         },
         "end": {
-          "line": 491,
+          "line": 456,
           "column": 5
         }
       },
@@ -845,11 +845,11 @@
     "__stopTabEvent": {
       "location": {
         "start": {
-          "line": 499,
+          "line": 463,
           "column": 4
         },
         "end": {
-          "line": 503,
+          "line": 467,
           "column": 5
         }
       },
@@ -876,11 +876,11 @@
     "__activateBlockerElement": {
       "location": {
         "start": {
-          "line": 509,
+          "line": 472,
           "column": 4
         },
         "end": {
-          "line": 526,
+          "line": 491,
           "column": 5
         }
       },
@@ -983,6 +983,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1007,6 +1008,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -1257,11 +1259,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 536,
-        "column": 13
+        "line": 500,
+        "column": 2
       },
       "end": {
-        "line": 557,
+        "line": 521,
         "column": 3
       }
     },

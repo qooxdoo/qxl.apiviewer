@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 343,
+        "line": 326,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "testAdd": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 41,
+          "line": 38,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "testAddSame": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 63,
+          "line": 57,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "testAddOther": {
       "location": {
         "start": {
-          "line": 66,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 89,
+          "line": 84,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "testAddAt": {
       "location": {
         "start": {
-          "line": 92,
+          "line": 86,
           "column": 4
         },
         "end": {
-          "line": 114,
+          "line": 110,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "testAddBefore": {
       "location": {
         "start": {
-          "line": 117,
+          "line": 112,
           "column": 4
         },
         "end": {
-          "line": 146,
+          "line": 142,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testAddAfter": {
       "location": {
         "start": {
-          "line": 149,
+          "line": 144,
           "column": 4
         },
         "end": {
-          "line": 184,
+          "line": 183,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "testDestroy": {
       "location": {
         "start": {
-          "line": 187,
+          "line": 185,
           "column": 4
         },
         "end": {
-          "line": 206,
+          "line": 203,
           "column": 5
         }
       },
@@ -122,11 +122,11 @@
     "testRemove": {
       "location": {
         "start": {
-          "line": 209,
+          "line": 205,
           "column": 4
         },
         "end": {
-          "line": 231,
+          "line": 226,
           "column": 5
         }
       },
@@ -136,11 +136,11 @@
     "testRemoveAt": {
       "location": {
         "start": {
-          "line": 234,
+          "line": 228,
           "column": 4
         },
         "end": {
-          "line": 264,
+          "line": 257,
           "column": 5
         }
       },
@@ -150,11 +150,11 @@
     "testRemoveAll": {
       "location": {
         "start": {
-          "line": 267,
+          "line": 259,
           "column": 4
         },
         "end": {
-          "line": 286,
+          "line": 277,
           "column": 5
         }
       },
@@ -164,11 +164,11 @@
     "testHasChildren": {
       "location": {
         "start": {
-          "line": 289,
+          "line": 279,
           "column": 4
         },
         "end": {
-          "line": 306,
+          "line": 295,
           "column": 5
         }
       },
@@ -178,11 +178,11 @@
     "testIndexOf": {
       "location": {
         "start": {
-          "line": 309,
+          "line": 297,
           "column": 4
         },
         "end": {
-          "line": 328,
+          "line": 315,
           "column": 5
         }
       },
@@ -192,11 +192,11 @@
     "_assertChildren": {
       "location": {
         "start": {
-          "line": 331,
+          "line": 317,
           "column": 4
         },
         "end": {
-          "line": 339,
+          "line": 324,
           "column": 5
         }
       },
@@ -291,6 +291,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -315,6 +316,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

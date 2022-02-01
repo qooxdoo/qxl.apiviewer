@@ -11,11 +11,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 20,
+        "line": 19,
         "column": 0
       },
       "end": {
-        "line": 48,
+        "line": 45,
         "column": 3
       }
     },
@@ -26,11 +26,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 29,
+          "line": 26,
           "column": 5
         }
       },
@@ -40,7 +40,21 @@
     "testVisibilityState": {
       "location": {
         "start": {
+          "line": 28,
+          "column": 4
+        },
+        "end": {
           "line": 32,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testHidden": {
+      "location": {
+        "start": {
+          "line": 34,
           "column": 4
         },
         "end": {
@@ -51,28 +65,14 @@
       "type": "function",
       "access": "public"
     },
-    "testHidden": {
-      "location": {
-        "start": {
-          "line": 39,
-          "column": 4
-        },
-        "end": {
-          "line": 41,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
     "testGetInstance": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 46,
+          "line": 43,
           "column": 5
         }
       },
@@ -759,6 +759,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -783,6 +784,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

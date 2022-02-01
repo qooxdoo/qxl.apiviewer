@@ -19,7 +19,7 @@
         "column": 0
       },
       "end": {
-        "line": 633,
+        "line": 592,
         "column": 3
       }
     },
@@ -66,8 +66,8 @@
   "construct": {
     "location": {
       "start": {
-        "line": 59,
-        "column": 14
+        "line": 52,
+        "column": 2
       },
       "end": {
         "line": 91,
@@ -80,12 +80,12 @@
     "changeValue": {
       "location": {
         "start": {
-          "line": 108,
+          "line": 104,
           "column": 4
         },
         "end": {
-          "line": 108,
-          "column": 40
+          "line": 104,
+          "column": 37
         }
       },
       "jsdoc": {
@@ -168,11 +168,11 @@
     "dateFormat": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 128,
+          "line": 118,
           "column": 5
         }
       },
@@ -192,11 +192,11 @@
     "placeholder": {
       "location": {
         "start": {
-          "line": 135,
+          "line": 125,
           "column": 4
         },
         "end": {
-          "line": 140,
+          "line": 129,
           "column": 5
         }
       },
@@ -218,11 +218,11 @@
     "appearance": {
       "location": {
         "start": {
-          "line": 143,
+          "line": 132,
           "column": 4
         },
         "end": {
-          "line": 147,
+          "line": 135,
           "column": 5
         }
       },
@@ -240,11 +240,11 @@
     "focusable": {
       "location": {
         "start": {
-          "line": 150,
+          "line": 138,
           "column": 4
         },
         "end": {
-          "line": 154,
+          "line": 141,
           "column": 5
         }
       },
@@ -262,11 +262,11 @@
     "width": {
       "location": {
         "start": {
-          "line": 157,
+          "line": 144,
           "column": 4
         },
         "end": {
-          "line": 161,
+          "line": 147,
           "column": 5
         }
       },
@@ -354,12 +354,12 @@
     "__dateFormat": {
       "location": {
         "start": {
-          "line": 175,
+          "line": 157,
           "column": 4
         },
         "end": {
-          "line": 175,
-          "column": 23
+          "line": 157,
+          "column": 22
         }
       },
       "type": "variable",
@@ -368,12 +368,12 @@
     "__formatter": {
       "location": {
         "start": {
-          "line": 176,
+          "line": 158,
           "column": 4
         },
         "end": {
-          "line": 176,
-          "column": 22
+          "line": 158,
+          "column": 21
         }
       },
       "type": "variable",
@@ -382,11 +382,11 @@
     "getDefaultDateFormatter": {
       "location": {
         "start": {
-          "line": 183,
+          "line": 165,
           "column": 4
         },
         "end": {
-          "line": 199,
+          "line": 184,
           "column": 5
         }
       },
@@ -414,12 +414,12 @@
     "__localeListenerId": {
       "location": {
         "start": {
-          "line": 213,
+          "line": 194,
           "column": 4
         },
         "end": {
-          "line": 213,
-          "column": 29
+          "line": 194,
+          "column": 28
         }
       },
       "type": "variable",
@@ -428,11 +428,11 @@
     "_forwardStates": {
       "location": {
         "start": {
-          "line": 219,
+          "line": 199,
           "column": 4
         },
         "end": {
-          "line": 222,
+          "line": 202,
           "column": 5
         }
       },
@@ -456,11 +456,11 @@
     "_setDefaultDateFormat": {
       "location": {
         "start": {
-          "line": 235,
+          "line": 214,
           "column": 4
         },
         "end": {
-          "line": 237,
+          "line": 216,
           "column": 5
         }
       },
@@ -478,11 +478,11 @@
     "_addLocaleChangeListener": {
       "location": {
         "start": {
-          "line": 245,
+          "line": 223,
           "column": 4
         },
         "end": {
-          "line": 254,
+          "line": 234,
           "column": 5
         }
       },
@@ -500,11 +500,11 @@
     "setValue": {
       "location": {
         "start": {
-          "line": 271,
+          "line": 249,
           "column": 4
         },
         "end": {
-          "line": 280,
+          "line": 257,
           "column": 5
         }
       },
@@ -536,11 +536,11 @@
     "getValue": {
       "location": {
         "start": {
-          "line": 290,
+          "line": 266,
           "column": 4
         },
         "end": {
-          "line": 304,
+          "line": 279,
           "column": 5
         }
       },
@@ -571,11 +571,11 @@
     "resetValue": {
       "location": {
         "start": {
-          "line": 311,
+          "line": 285,
           "column": 4
         },
         "end": {
-          "line": 320,
+          "line": 293,
           "column": 5
         }
       },
@@ -598,11 +598,11 @@
     "open": {
       "location": {
         "start": {
-          "line": 332,
+          "line": 304,
           "column": 4
         },
         "end": {
-          "line": 338,
+          "line": 309,
           "column": 5
         }
       },
@@ -620,11 +620,11 @@
     "close": {
       "location": {
         "start": {
-          "line": 344,
+          "line": 314,
           "column": 4
         },
         "end": {
-          "line": 346,
+          "line": 316,
           "column": 5
         }
       },
@@ -642,11 +642,11 @@
     "toggle": {
       "location": {
         "start": {
-          "line": 352,
+          "line": 321,
           "column": 4
         },
         "end": {
-          "line": 360,
+          "line": 328,
           "column": 5
         }
       },
@@ -664,11 +664,11 @@
     "_applyDateFormat": {
       "location": {
         "start": {
-          "line": 370,
+          "line": 337,
           "column": 4
         },
         "end": {
-          "line": 390,
+          "line": 354,
           "column": 5
         }
       },
@@ -682,11 +682,11 @@
     "_applyPlaceholder": {
       "location": {
         "start": {
-          "line": 394,
+          "line": 357,
           "column": 4
         },
         "end": {
-          "line": 396,
+          "line": 359,
           "column": 5
         }
       },
@@ -700,11 +700,11 @@
     "_createChildControlImpl": {
       "location": {
         "start": {
-          "line": 406,
+          "line": 368,
           "column": 4
         },
         "end": {
-          "line": 447,
+          "line": 417,
           "column": 5
         }
       },
@@ -719,11 +719,11 @@
     "_onChangeDate": {
       "location": {
         "start": {
-          "line": 463,
+          "line": 430,
           "column": 4
         },
         "end": {
-          "line": 471,
+          "line": 437,
           "column": 5
         }
       },
@@ -750,11 +750,11 @@
     "_onTap": {
       "location": {
         "start": {
-          "line": 479,
+          "line": 444,
           "column": 4
         },
         "end": {
-          "line": 481,
+          "line": 446,
           "column": 5
         }
       },
@@ -781,11 +781,11 @@
     "_onBlur": {
       "location": {
         "start": {
-          "line": 489,
+          "line": 453,
           "column": 4
         },
         "end": {
-          "line": 491,
+          "line": 455,
           "column": 5
         }
       },
@@ -812,11 +812,11 @@
     "_onKeyPress": {
       "location": {
         "start": {
-          "line": 502,
+          "line": 465,
           "column": 4
         },
         "end": {
-          "line": 534,
+          "line": 499,
           "column": 5
         }
       },
@@ -843,11 +843,11 @@
     "_onPopupChangeVisibility": {
       "location": {
         "start": {
-          "line": 542,
+          "line": 506,
           "column": 4
         },
         "end": {
-          "line": 556,
+          "line": 520,
           "column": 5
         }
       },
@@ -874,11 +874,11 @@
     "_onTextFieldChangeValue": {
       "location": {
         "start": {
-          "line": 565,
+          "line": 528,
           "column": 4
         },
         "end": {
-          "line": 577,
+          "line": 538,
           "column": 5
         }
       },
@@ -905,11 +905,11 @@
     "isEmpty": {
       "location": {
         "start": {
-          "line": 585,
+          "line": 545,
           "column": 4
         },
         "end": {
-          "line": 589,
+          "line": 548,
           "column": 5
         }
       },
@@ -935,11 +935,11 @@
     "focus": {
       "location": {
         "start": {
-          "line": 592,
+          "line": 551,
           "column": 4
         },
         "end": {
-          "line": 596,
+          "line": 554,
           "column": 5
         }
       },
@@ -954,11 +954,11 @@
     "tabFocus": {
       "location": {
         "start": {
-          "line": 599,
+          "line": 557,
           "column": 4
         },
         "end": {
-          "line": 605,
+          "line": 562,
           "column": 5
         }
       },
@@ -973,11 +973,11 @@
     "setAriaLabel": {
       "location": {
         "start": {
-          "line": 608,
+          "line": 565,
           "column": 4
         },
         "end": {
-          "line": 610,
+          "line": 567,
           "column": 5
         }
       },
@@ -992,11 +992,11 @@
     "addAriaLabelledBy": {
       "location": {
         "start": {
-          "line": 613,
+          "line": 570,
           "column": 4
         },
         "end": {
-          "line": 615,
+          "line": 572,
           "column": 5
         }
       },
@@ -1011,11 +1011,11 @@
     "addAriaDescribedBy": {
       "location": {
         "start": {
-          "line": 618,
+          "line": 575,
           "column": 4
         },
         "end": {
-          "line": 620,
+          "line": 579,
           "column": 5
         }
       },
@@ -1690,38 +1690,6 @@
       "overriddenFrom": "qx.ui.form.MForm",
       "jsdoc": {}
     },
-    "__onChangeLocale": {
-      "type": "function",
-      "name": "__onChangeLocale",
-      "abstract": false,
-      "mixin": true,
-      "inherited": true,
-      "access": "private",
-      "overriddenFrom": "qx.ui.form.MForm",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Locale change event handler</p>"
-          }
-        ],
-        "@signature": [
-          {
-            "name": "@signature",
-            "body": "function(e)"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {Event} the change event",
-            "paramName": "e",
-            "description": " the change event",
-            "type": "Event"
-          }
-        ]
-      }
-    },
     "isValid": {
       "type": "function",
       "name": "isValid",
@@ -1926,6 +1894,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1950,6 +1919,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -5715,15 +5685,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 624,
-        "column": 13
+        "line": 582,
+        "column": 2
       },
       "end": {
-        "line": 632,
+        "line": 591,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

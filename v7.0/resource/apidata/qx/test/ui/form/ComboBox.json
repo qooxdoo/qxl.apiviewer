@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 106,
+        "line": 120,
         "column": 3
       }
     },
@@ -26,11 +26,11 @@
     "testWithSetValueWithArbitraryValue": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 43,
+          "line": 47,
           "column": 5
         }
       },
@@ -40,11 +40,11 @@
     "testWithSetValueWith": {
       "location": {
         "start": {
-          "line": 45,
+          "line": 49,
           "column": 4
         },
         "end": {
-          "line": 69,
+          "line": 79,
           "column": 5
         }
       },
@@ -54,11 +54,11 @@
     "testWithoutSetValue": {
       "location": {
         "start": {
-          "line": 71,
+          "line": 81,
           "column": 4
         },
         "end": {
-          "line": 88,
+          "line": 104,
           "column": 5
         }
       },
@@ -68,11 +68,11 @@
     "__createComboBox": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 106,
           "column": 4
         },
         "end": {
-          "line": 103,
+          "line": 118,
           "column": 5
         }
       },
@@ -759,6 +759,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -783,6 +784,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

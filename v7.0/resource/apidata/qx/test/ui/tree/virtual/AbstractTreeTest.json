@@ -16,7 +16,7 @@
         "column": 0
       },
       "end": {
-        "line": 236,
+        "line": 201,
         "column": 3
       }
     },
@@ -46,26 +46,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 33,
-        "column": 14
+        "line": 29,
+        "column": 2
       },
       "end": {
-        "line": 110,
+        "line": 94,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "members": {
     "tree": {
       "location": {
         "start": {
-          "line": 115,
+          "line": 97,
           "column": 4
         },
         "end": {
-          "line": 115,
-          "column": 15
+          "line": 97,
+          "column": 14
         }
       },
       "type": "variable",
@@ -74,11 +73,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 118,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 104,
           "column": 5
         }
       },
@@ -92,11 +91,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 127,
+          "line": 106,
           "column": 4
         },
         "end": {
-          "line": 138,
+          "line": 116,
           "column": 5
         }
       },
@@ -110,11 +109,11 @@
     "createModel": {
       "location": {
         "start": {
-          "line": 141,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 147,
+          "line": 123,
           "column": 5
         }
       },
@@ -124,11 +123,11 @@
     "createModelAndSetModel": {
       "location": {
         "start": {
-          "line": 150,
+          "line": 125,
           "column": 4
         },
         "end": {
-          "line": 157,
+          "line": 131,
           "column": 5
         }
       },
@@ -138,11 +137,11 @@
     "getVisibleItemsFrom": {
       "location": {
         "start": {
-          "line": 160,
+          "line": 133,
           "column": 4
         },
         "end": {
-          "line": 180,
+          "line": 149,
           "column": 5
         }
       },
@@ -152,11 +151,11 @@
     "_createNodes": {
       "location": {
         "start": {
-          "line": 190,
+          "line": 157,
           "column": 4
         },
         "end": {
-          "line": 202,
+          "line": 170,
           "column": 5
         }
       },
@@ -167,11 +166,11 @@
     "_createLeafs": {
       "location": {
         "start": {
-          "line": 205,
+          "line": 172,
           "column": 4
         },
         "end": {
-          "line": 212,
+          "line": 180,
           "column": 5
         }
       },
@@ -181,11 +180,11 @@
     "__getPrefix": {
       "location": {
         "start": {
-          "line": 215,
+          "line": 182,
           "column": 4
         },
         "end": {
-          "line": 223,
+          "line": 189,
           "column": 5
         }
       },
@@ -890,6 +889,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -914,6 +914,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -1080,15 +1081,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 227,
-        "column": 13
+        "line": 192,
+        "column": 2
       },
       "end": {
-        "line": 235,
+        "line": 200,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {},
   "descendants": [

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 31,
+        "line": 30,
         "column": 3
       }
     },
@@ -24,12 +24,12 @@
     "__handler": {
       "location": {
         "start": {
-          "line": 24,
+          "line": 22,
           "column": 4
         },
         "end": {
           "line": 24,
-          "column": 93
+          "column": 5
         }
       },
       "type": "variable",
@@ -38,11 +38,11 @@
     "testIsOnline": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 26,
           "column": 4
         },
         "end": {
-          "line": 29,
+          "line": 28,
           "column": 5
         }
       },
@@ -137,6 +137,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -161,6 +162,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

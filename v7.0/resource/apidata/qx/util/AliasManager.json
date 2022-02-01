@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 193,
+        "line": 174,
         "column": 3
       }
     },
@@ -33,11 +33,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 59,
-        "column": 14
+        "line": 55,
+        "column": 2
       },
       "end": {
-        "line": 68,
+        "line": 63,
         "column": 3
       }
     },
@@ -47,12 +47,12 @@
     "__aliases": {
       "location": {
         "start": {
-          "line": 82,
+          "line": 72,
           "column": 4
         },
         "end": {
-          "line": 82,
-          "column": 20
+          "line": 72,
+          "column": 19
         }
       },
       "type": "variable",
@@ -61,11 +61,11 @@
     "_preprocess": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 110,
           "column": 5
         }
       },
@@ -100,11 +100,11 @@
     "add": {
       "location": {
         "start": {
-          "line": 128,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 144,
+          "line": 131,
           "column": 5
         }
       },
@@ -138,11 +138,11 @@
     "remove": {
       "location": {
         "start": {
-          "line": 152,
+          "line": 138,
           "column": 4
         },
         "end": {
-          "line": 158,
+          "line": 143,
           "column": 5
         }
       },
@@ -169,11 +169,11 @@
     "resolve": {
       "location": {
         "start": {
-          "line": 167,
+          "line": 151,
           "column": 4
         },
         "end": {
-          "line": 176,
+          "line": 159,
           "column": 5
         }
       },
@@ -212,11 +212,11 @@
     "getAliases": {
       "location": {
         "start": {
-          "line": 184,
+          "line": 166,
           "column": 4
         },
         "end": {
-          "line": 191,
+          "line": 172,
           "column": 5
         }
       },
@@ -327,6 +327,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -351,6 +352,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

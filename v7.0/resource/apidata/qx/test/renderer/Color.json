@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 93,
+        "line": 66,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "testValidColors": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 43,
+          "line": 42,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "testInvalidColors": {
       "location": {
         "start": {
-          "line": 45,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 73,
+          "line": 64,
           "column": 5
         }
       },
@@ -137,6 +137,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -161,6 +162,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

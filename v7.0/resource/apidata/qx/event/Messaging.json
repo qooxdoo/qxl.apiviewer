@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 260,
+        "line": 267,
         "column": 3
       }
     },
@@ -30,26 +30,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 44,
-        "column": 14
+        "line": 43,
+        "column": 2
       },
       "end": {
-        "line": 49,
+        "line": 47,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "members": {
     "_listener": {
       "location": {
         "start": {
-          "line": 54,
+          "line": 50,
           "column": 4
         },
         "end": {
-          "line": 54,
-          "column": 20
+          "line": 50,
+          "column": 19
         }
       },
       "type": "variable",
@@ -58,12 +57,12 @@
     "__listenerIdCount": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 55,
-          "column": 28
+          "line": 51,
+          "column": 27
         }
       },
       "type": "variable",
@@ -72,12 +71,12 @@
     "__channelToIdMapping": {
       "location": {
         "start": {
-          "line": 56,
+          "line": 52,
           "column": 4
         },
         "end": {
-          "line": 56,
-          "column": 31
+          "line": 52,
+          "column": 30
         }
       },
       "type": "variable",
@@ -86,11 +85,11 @@
     "on": {
       "location": {
         "start": {
-          "line": 69,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 71,
+          "line": 66,
           "column": 5
         }
       },
@@ -151,11 +150,11 @@
     "onAny": {
       "location": {
         "start": {
-          "line": 84,
+          "line": 77,
           "column": 4
         },
         "end": {
-          "line": 86,
+          "line": 79,
           "column": 5
         }
       },
@@ -209,11 +208,11 @@
     "_addListener": {
       "location": {
         "start": {
-          "line": 98,
+          "line": 90,
           "column": 4
         },
         "end": {
-          "line": 118,
+          "line": 115,
           "column": 5
         }
       },
@@ -274,11 +273,11 @@
     "remove": {
       "location": {
         "start": {
-          "line": 126,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 131,
+          "line": 127,
           "column": 5
         }
       },
@@ -305,11 +304,11 @@
     "has": {
       "location": {
         "start": {
-          "line": 141,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 156,
+          "line": 150,
           "column": 5
         }
       },
@@ -351,11 +350,11 @@
     "emit": {
       "location": {
         "start": {
-          "line": 166,
+          "line": 160,
           "column": 4
         },
         "end": {
-          "line": 168,
+          "line": 162,
           "column": 5
         }
       },
@@ -403,11 +402,11 @@
     "_emit": {
       "location": {
         "start": {
-          "line": 180,
+          "line": 173,
           "column": 4
         },
         "end": {
-          "line": 193,
+          "line": 197,
           "column": 5
         }
       },
@@ -455,11 +454,11 @@
     "_emitListeners": {
       "location": {
         "start": {
-          "line": 208,
+          "line": 211,
           "column": 4
         },
         "end": {
-          "line": 220,
+          "line": 227,
           "column": 5
         }
       },
@@ -522,11 +521,11 @@
     "_emitRoute": {
       "location": {
         "start": {
-          "line": 235,
+          "line": 241,
           "column": 4
         },
         "end": {
-          "line": 258,
+          "line": 265,
           "column": 5
         }
       },

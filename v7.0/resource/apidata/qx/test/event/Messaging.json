@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 158,
+        "line": 175,
         "column": 3
       }
     },
@@ -26,12 +26,12 @@
     "__m": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 25,
-          "column": 14
+          "line": 24,
+          "column": 13
         }
       },
       "type": "variable",
@@ -40,11 +40,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 26,
           "column": 4
         },
         "end": {
-          "line": 29,
+          "line": 28,
           "column": 5
         }
       },
@@ -54,11 +54,11 @@
     "testTwoChannels": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 30,
           "column": 4
         },
         "end": {
-          "line": 49,
+          "line": 58,
           "column": 5
         }
       },
@@ -68,11 +68,11 @@
     "testGet": {
       "location": {
         "start": {
-          "line": 52,
+          "line": 60,
           "column": 4
         },
         "end": {
-          "line": 61,
+          "line": 73,
           "column": 5
         }
       },
@@ -82,11 +82,11 @@
     "testRegExp": {
       "location": {
         "start": {
-          "line": 64,
+          "line": 75,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 89,
           "column": 5
         }
       },
@@ -96,11 +96,11 @@
     "testGetAll": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 91,
           "column": 4
         },
         "end": {
-          "line": 83,
+          "line": 97,
           "column": 5
         }
       },
@@ -110,21 +110,7 @@
     "testAny": {
       "location": {
         "start": {
-          "line": 86,
-          "column": 4
-        },
-        "end": {
-          "line": 92,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testTwice": {
-      "location": {
-        "start": {
-          "line": 95,
+          "line": 99,
           "column": 4
         },
         "end": {
@@ -135,14 +121,28 @@
       "type": "function",
       "access": "public"
     },
-    "testParam": {
+    "testTwice": {
       "location": {
         "start": {
-          "line": 108,
+          "line": 107,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 121,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testParam": {
+      "location": {
+        "start": {
+          "line": 123,
+          "column": 4
+        },
+        "end": {
+          "line": 136,
           "column": 5
         }
       },
@@ -152,11 +152,11 @@
     "testMultipleParam": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 138,
           "column": 4
         },
         "end": {
-          "line": 131,
+          "line": 149,
           "column": 5
         }
       },
@@ -166,11 +166,11 @@
     "testRemove": {
       "location": {
         "start": {
-          "line": 134,
+          "line": 151,
           "column": 4
         },
         "end": {
-          "line": 143,
+          "line": 160,
           "column": 5
         }
       },
@@ -180,11 +180,11 @@
     "testHas": {
       "location": {
         "start": {
-          "line": 145,
+          "line": 162,
           "column": 4
         },
         "end": {
-          "line": 156,
+          "line": 173,
           "column": 5
         }
       },
@@ -871,6 +871,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -895,6 +896,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

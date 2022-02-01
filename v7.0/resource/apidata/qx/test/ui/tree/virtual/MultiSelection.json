@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 171,
+        "line": 200,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 30,
+          "line": 27,
           "column": 5
         }
       },
@@ -43,11 +43,11 @@
     "testSelection": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 60,
+          "line": 63,
           "column": 5
         }
       },
@@ -57,11 +57,11 @@
     "testSelectionByUserInteraction": {
       "location": {
         "start": {
-          "line": 62,
+          "line": 65,
           "column": 4
         },
         "end": {
-          "line": 88,
+          "line": 96,
           "column": 5
         }
       },
@@ -71,11 +71,11 @@
     "testSelectionEventByUserInteraction": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 98,
           "column": 4
         },
         "end": {
-          "line": 125,
+          "line": 144,
           "column": 5
         }
       },
@@ -85,11 +85,11 @@
     "testSelectionAfterCloseParentNode": {
       "location": {
         "start": {
-          "line": 127,
+          "line": 146,
           "column": 4
         },
         "end": {
-          "line": 169,
+          "line": 198,
           "column": 5
         }
       },
@@ -184,6 +184,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -208,6 +209,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 259,
+        "line": 250,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 48,
-        "column": 14
+        "line": 47,
+        "column": 2
       },
       "end": {
-        "line": 61,
+        "line": 59,
         "column": 3
       }
     },
@@ -80,11 +80,11 @@
     "model": {
       "location": {
         "start": {
-          "line": 66,
+          "line": 63,
           "column": 4
         },
         "end": {
-          "line": 73,
+          "line": 69,
           "column": 5
         }
       },
@@ -107,11 +107,11 @@
     "target": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 72,
           "column": 4
         },
         "end": {
-          "line": 85,
+          "line": 79,
           "column": 5
         }
       },
@@ -134,11 +134,11 @@
     "templateId": {
       "location": {
         "start": {
-          "line": 92,
+          "line": 85,
           "column": 4
         },
         "end": {
-          "line": 98,
+          "line": 90,
           "column": 5
         }
       },
@@ -160,11 +160,11 @@
     "delegate": {
       "location": {
         "start": {
-          "line": 106,
+          "line": 97,
           "column": 4
         },
         "end": {
-          "line": 112,
+          "line": 102,
           "column": 5
         }
       },
@@ -220,12 +220,12 @@
     "__changeModelListenerId": {
       "location": {
         "start": {
-          "line": 118,
+          "line": 106,
           "column": 4
         },
         "end": {
-          "line": 118,
-          "column": 34
+          "line": 106,
+          "column": 33
         }
       },
       "type": "variable",
@@ -234,12 +234,12 @@
     "__changeBubbleModelListenerId": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 107,
           "column": 4
         },
         "end": {
-          "line": 119,
-          "column": 40
+          "line": 107,
+          "column": 39
         }
       },
       "type": "variable",
@@ -248,11 +248,11 @@
     "_applyModel": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 110,
           "column": 4
         },
         "end": {
-          "line": 152,
+          "line": 147,
           "column": 5
         }
       },
@@ -266,11 +266,11 @@
     "_applyTarget": {
       "location": {
         "start": {
-          "line": 156,
+          "line": 150,
           "column": 4
         },
         "end": {
-          "line": 158,
+          "line": 152,
           "column": 5
         }
       },
@@ -284,11 +284,11 @@
     "_applyTemplateId": {
       "location": {
         "start": {
-          "line": 162,
+          "line": 155,
           "column": 4
         },
         "end": {
-          "line": 164,
+          "line": 157,
           "column": 5
         }
       },
@@ -302,11 +302,11 @@
     "_applyDelegate": {
       "location": {
         "start": {
-          "line": 168,
+          "line": 160,
           "column": 4
         },
         "end": {
-          "line": 170,
+          "line": 162,
           "column": 5
         }
       },
@@ -320,11 +320,11 @@
     "__emptyTarget": {
       "location": {
         "start": {
-          "line": 176,
+          "line": 167,
           "column": 4
         },
         "end": {
-          "line": 184,
+          "line": 175,
           "column": 5
         }
       },
@@ -342,11 +342,11 @@
     "update": {
       "location": {
         "start": {
-          "line": 196,
+          "line": 186,
           "column": 4
         },
         "end": {
-          "line": 257,
+          "line": 248,
           "column": 5
         }
       },
@@ -449,6 +449,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -473,6 +474,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

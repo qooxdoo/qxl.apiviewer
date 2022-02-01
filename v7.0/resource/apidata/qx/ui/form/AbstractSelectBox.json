@@ -18,7 +18,7 @@
         "column": 0
       },
       "end": {
-        "line": 381,
+        "line": 359,
         "column": 3
       }
     },
@@ -54,11 +54,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 49,
-        "column": 14
+        "line": 43,
+        "column": 2
       },
       "end": {
-        "line": 70,
+        "line": 63,
         "column": 3
       }
     },
@@ -68,11 +68,11 @@
     "focusable": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 73,
           "column": 4
         },
         "end": {
-          "line": 87,
+          "line": 76,
           "column": 5
         }
       },
@@ -90,11 +90,11 @@
     "width": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 79,
           "column": 4
         },
         "end": {
-          "line": 94,
+          "line": 82,
           "column": 5
         }
       },
@@ -112,11 +112,11 @@
     "maxListHeight": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 88,
           "column": 4
         },
         "end": {
-          "line": 106,
+          "line": 93,
           "column": 5
         }
       },
@@ -140,11 +140,11 @@
     "format": {
       "location": {
         "start": {
-          "line": 112,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 105,
           "column": 5
         }
       },
@@ -159,8 +159,10 @@
       "name": "format",
       "propertyType": "new",
       "nullable": true,
+      "init": "[[ ObjectMethod Function ]]",
       "allowNull": true,
-      "check": "Function"
+      "check": "Function",
+      "defaultValue": "[[ ObjectMethod Function ]]"
     },
     "valid": {
       "type": "property",
@@ -235,11 +237,11 @@
     "_createChildControlImpl": {
       "location": {
         "start": {
-          "line": 133,
+          "line": 116,
           "column": 4
         },
         "end": {
-          "line": 172,
+          "line": 166,
           "column": 5
         }
       },
@@ -254,11 +256,11 @@
     "_applyMaxListHeight": {
       "location": {
         "start": {
-          "line": 183,
+          "line": 175,
           "column": 4
         },
         "end": {
-          "line": 185,
+          "line": 177,
           "column": 5
         }
       },
@@ -272,11 +274,11 @@
     "getChildrenContainer": {
       "location": {
         "start": {
-          "line": 199,
+          "line": 189,
           "column": 4
         },
         "end": {
-          "line": 201,
+          "line": 191,
           "column": 5
         }
       },
@@ -306,11 +308,11 @@
     "open": {
       "location": {
         "start": {
-          "line": 214,
+          "line": 202,
           "column": 4
         },
         "end": {
-          "line": 220,
+          "line": 207,
           "column": 5
         }
       },
@@ -328,11 +330,11 @@
     "close": {
       "location": {
         "start": {
-          "line": 226,
+          "line": 212,
           "column": 4
         },
         "end": {
-          "line": 228,
+          "line": 214,
           "column": 5
         }
       },
@@ -350,11 +352,11 @@
     "toggle": {
       "location": {
         "start": {
-          "line": 234,
+          "line": 219,
           "column": 4
         },
         "end": {
-          "line": 242,
+          "line": 226,
           "column": 5
         }
       },
@@ -372,11 +374,11 @@
     "_defaultFormat": {
       "location": {
         "start": {
-          "line": 260,
+          "line": 242,
           "column": 4
         },
         "end": {
-          "line": 271,
+          "line": 252,
           "column": 5
         }
       },
@@ -411,11 +413,11 @@
     "_onBlur": {
       "location": {
         "start": {
-          "line": 285,
+          "line": 265,
           "column": 4
         },
         "end": {
-          "line": 288,
+          "line": 267,
           "column": 5
         }
       },
@@ -442,11 +444,11 @@
     "_onKeyPress": {
       "location": {
         "start": {
-          "line": 296,
+          "line": 274,
           "column": 4
         },
         "end": {
-          "line": 319,
+          "line": 300,
           "column": 5
         }
       },
@@ -473,11 +475,11 @@
     "_onResize": {
       "location": {
         "start": {
-          "line": 327,
+          "line": 307,
           "column": 4
         },
         "end": {
-          "line": 329,
+          "line": 309,
           "column": 5
         }
       },
@@ -504,11 +506,11 @@
     "_onListAddItem": {
       "location": {
         "start": {
-          "line": 336,
-          "column": 5
+          "line": 316,
+          "column": 4
         },
         "end": {
-          "line": 346,
+          "line": 326,
           "column": 5
         }
       },
@@ -535,11 +537,11 @@
     "_onListChangeSelection": {
       "location": {
         "start": {
-          "line": 353,
+          "line": 333,
           "column": 4
         },
         "end": {
-          "line": 355,
+          "line": 335,
           "column": 5
         }
       },
@@ -566,11 +568,11 @@
     "_onListPointerDown": {
       "location": {
         "start": {
-          "line": 363,
+          "line": 342,
           "column": 4
         },
         "end": {
-          "line": 365,
+          "line": 344,
           "column": 5
         }
       },
@@ -597,11 +599,11 @@
     "_onPopupChangeVisibility": {
       "location": {
         "start": {
-          "line": 373,
+          "line": 351,
           "column": 4
         },
         "end": {
-          "line": 379,
+          "line": 357,
           "column": 5
         }
       },
@@ -1288,38 +1290,6 @@
       "overriddenFrom": "qx.ui.form.MForm",
       "jsdoc": {}
     },
-    "__onChangeLocale": {
-      "type": "function",
-      "name": "__onChangeLocale",
-      "abstract": false,
-      "mixin": true,
-      "inherited": true,
-      "access": "private",
-      "overriddenFrom": "qx.ui.form.MForm",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Locale change event handler</p>"
-          }
-        ],
-        "@signature": [
-          {
-            "name": "@signature",
-            "body": "function(e)"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {Event} the change event",
-            "paramName": "e",
-            "description": " the change event",
-            "type": "Event"
-          }
-        ]
-      }
-    },
     "isValid": {
       "type": "function",
       "name": "isValid",
@@ -1524,6 +1494,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1548,6 +1519,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

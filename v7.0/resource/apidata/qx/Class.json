@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 1769,
+        "line": 1895,
         "column": 3
       }
     },
@@ -69,12 +69,12 @@
     "__Property": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 83,
           "column": 4
         },
         "end": {
           "line": 85,
-          "column": 85
+          "column": 12
         }
       },
       "jsdoc": {
@@ -145,7 +145,7 @@
           "column": 4
         },
         "end": {
-          "line": 297,
+          "line": 306,
           "column": 5
         }
       },
@@ -185,11 +185,11 @@
     "undefine": {
       "location": {
         "start": {
-          "line": 305,
+          "line": 313,
           "column": 4
         },
         "end": {
-          "line": 330,
+          "line": 338,
           "column": 5
         }
       },
@@ -216,12 +216,12 @@
     "isDefined": {
       "location": {
         "start": {
-          "line": 340,
+          "line": 347,
           "column": 4
         },
         "end": {
-          "line": 340,
-          "column": 45
+          "line": 347,
+          "column": 44
         }
       },
       "jsdoc": {
@@ -261,11 +261,11 @@
     "getTotalNumber": {
       "location": {
         "start": {
-          "line": 348,
+          "line": 354,
           "column": 4
         },
         "end": {
-          "line": 350,
+          "line": 356,
           "column": 5
         }
       },
@@ -291,12 +291,12 @@
     "getByName": {
       "location": {
         "start": {
-          "line": 360,
+          "line": 365,
           "column": 4
         },
         "end": {
-          "line": 360,
-          "column": 38
+          "line": 365,
+          "column": 37
         }
       },
       "jsdoc": {
@@ -336,11 +336,11 @@
     "include": {
       "location": {
         "start": {
-          "line": 371,
+          "line": 375,
           "column": 4
         },
         "end": {
-          "line": 383,
+          "line": 389,
           "column": 5
         }
       },
@@ -374,11 +374,11 @@
     "patch": {
       "location": {
         "start": {
-          "line": 400,
+          "line": 405,
           "column": 4
         },
         "end": {
-          "line": 413,
+          "line": 420,
           "column": 5
         }
       },
@@ -420,11 +420,11 @@
     "isClass": {
       "location": {
         "start": {
-          "line": 422,
+          "line": 428,
           "column": 4
         },
         "end": {
-          "line": 424,
+          "line": 430,
           "column": 5
         }
       },
@@ -460,11 +460,11 @@
     "isSubClassOf": {
       "location": {
         "start": {
-          "line": 435,
+          "line": 440,
           "column": 4
         },
         "end": {
-          "line": 450,
+          "line": 454,
           "column": 5
         }
       },
@@ -506,12 +506,12 @@
     "getPropertyDefinition": {
       "location": {
         "start": {
-          "line": 462,
+          "line": 465,
           "column": 4
         },
         "end": {
-          "line": 462,
-          "column": 64
+          "line": 465,
+          "column": 63
         }
       },
       "jsdoc": {
@@ -558,7 +558,7 @@
     "getProperties": {
       "location": {
         "start": {
-          "line": 471,
+          "line": 473,
           "column": 4
         },
         "end": {
@@ -597,11 +597,11 @@
     "getByProperty": {
       "location": {
         "start": {
-          "line": 497,
+          "line": 496,
           "column": 4
         },
         "end": {
-          "line": 509,
+          "line": 506,
           "column": 5
         }
       },
@@ -643,12 +643,12 @@
     "hasProperty": {
       "location": {
         "start": {
-          "line": 520,
+          "line": 516,
           "column": 4
         },
         "end": {
-          "line": 520,
-          "column": 44
+          "line": 516,
+          "column": 43
         }
       },
       "jsdoc": {
@@ -695,12 +695,12 @@
     "getEventType": {
       "location": {
         "start": {
-          "line": 532,
+          "line": 527,
           "column": 4
         },
         "end": {
-          "line": 532,
-          "column": 46
+          "line": 527,
+          "column": 45
         }
       },
       "jsdoc": {
@@ -747,12 +747,12 @@
     "supportsEvent": {
       "location": {
         "start": {
-          "line": 543,
+          "line": 537,
           "column": 4
         },
         "end": {
-          "line": 543,
-          "column": 48
+          "line": 537,
+          "column": 47
         }
       },
       "jsdoc": {
@@ -799,11 +799,11 @@
     "hasOwnMixin": {
       "location": {
         "start": {
-          "line": 553,
+          "line": 546,
           "column": 4
         },
         "end": {
-          "line": 555,
+          "line": 548,
           "column": 5
         }
       },
@@ -845,11 +845,11 @@
     "getByMixin": {
       "location": {
         "start": {
-          "line": 567,
+          "line": 559,
           "column": 4
         },
         "end": {
-          "line": 589,
+          "line": 577,
           "column": 5
         }
       },
@@ -891,12 +891,12 @@
     "getMixins": {
       "location": {
         "start": {
-          "line": 599,
+          "line": 586,
           "column": 4
         },
         "end": {
-          "line": 599,
-          "column": 40
+          "line": 586,
+          "column": 39
         }
       },
       "jsdoc": {
@@ -936,11 +936,11 @@
     "hasMixin": {
       "location": {
         "start": {
-          "line": 609,
+          "line": 595,
           "column": 4
         },
         "end": {
-          "line": 611,
+          "line": 597,
           "column": 5
         }
       },
@@ -982,11 +982,11 @@
     "hasOwnInterface": {
       "location": {
         "start": {
-          "line": 625,
+          "line": 610,
           "column": 4
         },
         "end": {
-          "line": 627,
+          "line": 612,
           "column": 5
         }
       },
@@ -1028,12 +1028,12 @@
     "getByInterface": {
       "location": {
         "start": {
-          "line": 640,
+          "line": 624,
           "column": 4
         },
         "end": {
-          "line": 640,
-          "column": 50
+          "line": 624,
+          "column": 49
         }
       },
       "jsdoc": {
@@ -1080,11 +1080,11 @@
     "getInterfaces": {
       "location": {
         "start": {
-          "line": 649,
+          "line": 632,
           "column": 4
         },
         "end": {
-          "line": 663,
+          "line": 644,
           "column": 5
         }
       },
@@ -1119,12 +1119,12 @@
     "hasInterface": {
       "location": {
         "start": {
-          "line": 679,
+          "line": 659,
           "column": 4
         },
         "end": {
-          "line": 679,
-          "column": 46
+          "line": 659,
+          "column": 45
         }
       },
       "jsdoc": {
@@ -1171,11 +1171,11 @@
     "implementsInterface": {
       "location": {
         "start": {
-          "line": 693,
+          "line": 672,
           "column": 4
         },
         "end": {
-          "line": 710,
+          "line": 688,
           "column": 5
         }
       },
@@ -1217,11 +1217,11 @@
     "getInstance": {
       "location": {
         "start": {
-          "line": 719,
+          "line": 696,
           "column": 4
         },
         "end": {
-          "line": 736,
+          "line": 713,
           "column": 5
         }
       },
@@ -1253,11 +1253,11 @@
     "getSubclasses": {
       "location": {
         "start": {
-          "line": 746,
+          "line": 722,
           "column": 4
         },
         "end": {
-          "line": 762,
+          "line": 737,
           "column": 5
         }
       },
@@ -1292,11 +1292,11 @@
     "genericToString": {
       "location": {
         "start": {
-          "line": 779,
+          "line": 752,
           "column": 4
         },
         "end": {
-          "line": 781,
+          "line": 754,
           "column": 5
         }
       },
@@ -1328,12 +1328,12 @@
     "$$registry": {
       "location": {
         "start": {
-          "line": 785,
+          "line": 757,
           "column": 4
         },
         "end": {
-          "line": 785,
-          "column": 40
+          "line": 757,
+          "column": 39
         }
       },
       "jsdoc": {
@@ -1350,11 +1350,11 @@
     "__allowedKeys": {
       "location": {
         "start": {
-          "line": 789,
+          "line": 760,
           "column": 4
         },
         "end": {
-          "line": 811,
+          "line": 780,
           "column": 6
         }
       },
@@ -1378,11 +1378,11 @@
     "__staticAllowedKeys": {
       "location": {
         "start": {
-          "line": 815,
+          "line": 783,
           "column": 4
         },
         "end": {
-          "line": 827,
+          "line": 793,
           "column": 6
         }
       },
@@ -1406,11 +1406,11 @@
     "__validateConfig": {
       "location": {
         "start": {
-          "line": 837,
+          "line": 802,
           "column": 4
         },
         "end": {
-          "line": 964,
+          "line": 1018,
           "column": 6
         }
       },
@@ -1444,17 +1444,17 @@
           }
         ]
       },
-      "type": "function",
+      "type": "variable",
       "access": "private"
     },
     "__validateAbstractInterfaces": {
       "location": {
         "start": {
-          "line": 973,
+          "line": 1026,
           "column": 4
         },
         "end": {
-          "line": 996,
+          "line": 1045,
           "column": 6
         }
       },
@@ -1481,17 +1481,17 @@
           }
         ]
       },
-      "type": "function",
+      "type": "variable",
       "access": "private"
     },
     "__attachAnno": {
       "location": {
         "start": {
-          "line": 1007,
+          "line": 1055,
           "column": 4
         },
         "end": {
-          "line": 1027,
+          "line": 1074,
           "column": 5
         }
       },
@@ -1539,11 +1539,11 @@
     "__createClass": {
       "location": {
         "start": {
-          "line": 1042,
+          "line": 1088,
           "column": 4
         },
         "end": {
-          "line": 1169,
+          "line": 1217,
           "column": 5
         }
       },
@@ -1620,11 +1620,11 @@
     "__addEvents": {
       "location": {
         "start": {
-          "line": 1189,
+          "line": 1232,
           "column": 4
         },
         "end": {
-          "line": 1226,
+          "line": 1282,
           "column": 5
         }
       },
@@ -1667,11 +1667,11 @@
     "__addProperties": {
       "location": {
         "start": {
-          "line": 1237,
+          "line": 1292,
           "column": 4
         },
         "end": {
-          "line": 1316,
+          "line": 1367,
           "column": 5
         }
       },
@@ -1714,11 +1714,11 @@
     "__validateProperty": {
       "location": {
         "start": {
-          "line": 1327,
+          "line": 1378,
           "column": 4
         },
         "end": {
-          "line": 1406,
+          "line": 1528,
           "column": 6
         }
       },
@@ -1774,11 +1774,11 @@
     "__addMembers": {
       "location": {
         "start": {
-          "line": 1420,
+          "line": 1541,
           "column": 4
         },
         "end": {
-          "line": 1508,
+          "line": 1650,
           "column": 5
         }
       },
@@ -1839,11 +1839,11 @@
     "__mixinMemberWrapper": {
       "location": {
         "start": {
-          "line": 1519,
+          "line": 1660,
           "column": 4
         },
         "end": {
-          "line": 1540,
+          "line": 1678,
           "column": 5
         }
       },
@@ -1885,11 +1885,11 @@
     "__addInterface": {
       "location": {
         "start": {
-          "line": 1549,
+          "line": 1686,
           "column": 4
         },
         "end": {
-          "line": 1582,
+          "line": 1720,
           "column": 5
         }
       },
@@ -1923,11 +1923,11 @@
     "__addMixin": {
       "location": {
         "start": {
-          "line": 1592,
+          "line": 1729,
           "column": 4
         },
         "end": {
-          "line": 1640,
+          "line": 1771,
           "column": 5
         }
       },
@@ -1968,11 +1968,11 @@
     "__createDefaultConstructor": {
       "location": {
         "start": {
-          "line": 1658,
+          "line": 1785,
           "column": 4
         },
         "end": {
-          "line": 1665,
+          "line": 1791,
           "column": 5
         }
       },
@@ -1998,11 +1998,11 @@
     "__wrapConstructor": {
       "location": {
         "start": {
-          "line": 1677,
+          "line": 1802,
           "column": 4
         },
         "end": {
-          "line": 1747,
+          "line": 1873,
           "column": 5
         }
       },
@@ -2052,15 +2052,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 1750,
-        "column": 10
+        "line": 1876,
+        "column": 2
       },
       "end": {
-        "line": 1768,
+        "line": 1894,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

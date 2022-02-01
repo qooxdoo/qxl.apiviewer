@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 205,
+        "line": 215,
         "column": 3
       }
     },
@@ -34,11 +34,11 @@
     "__registeredObjects": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 28,
+          "line": 27,
           "column": 29
         }
       },
@@ -48,11 +48,11 @@
     "__registeredIdHashes": {
       "location": {
         "start": {
-          "line": 29,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 29,
+          "line": 28,
           "column": 30
         }
       },
@@ -62,11 +62,11 @@
     "_createQxObject": {
       "location": {
         "start": {
-          "line": 34,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 38,
+          "line": 37,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "_createQxObjectImpl": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 42,
           "column": 4
         },
         "end": {
-          "line": 57,
+          "line": 56,
           "column": 5
         }
       },
@@ -126,11 +126,11 @@
     "getAbsoluteIdOf": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 74,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 126,
           "column": 5
         }
       },
@@ -173,11 +173,11 @@
     "register": {
       "location": {
         "start": {
-          "line": 126,
+          "line": 137,
           "column": 4
         },
         "end": {
-          "line": 137,
+          "line": 148,
           "column": 5
         }
       },
@@ -212,11 +212,11 @@
     "unregister": {
       "location": {
         "start": {
-          "line": 145,
+          "line": 156,
           "column": 4
         },
         "end": {
-          "line": 170,
+          "line": 181,
           "column": 5
         }
       },
@@ -254,11 +254,11 @@
     "getRegisteredObjects": {
       "location": {
         "start": {
-          "line": 177,
+          "line": 188,
           "column": 4
         },
         "end": {
-          "line": 179,
+          "line": 190,
           "column": 5
         }
       },
@@ -334,69 +334,6 @@
             "body": "{var} Returns the internal id for that binding. This can be used\n   for referencing the binding e.g. for removing. This is not an atomic\n   id so you can't you use it as a hash-map index.",
             "type": "var",
             "description": " Returns the internal id for that binding. This can be used\n   for referencing the binding e.g. for removing. This is not an atomic\n   id so you can't you use it as a hash-map index."
-          }
-        ],
-        "@throws": [
-          {
-            "name": "@throws",
-            "body": "{qx.core.AssertionError} If the event is no data event or\n   there is no property definition for object and property (source and\n   target).",
-            "type": "qx.core.AssertionError",
-            "description": " If the event is no data event or\n   there is no property definition for object and property (source and\n   target)."
-          }
-        ]
-      }
-    },
-    "bindAsync": {
-      "type": "function",
-      "name": "bindAsync",
-      "abstract": false,
-      "mixin": true,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.data.MBinding",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>The bind method delegates the call to the\n {@link qx.data.SingleValueBinding#bind} function. As source, the current\n object (this) will be used.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "sourcePropertyChain {String} The property chain which represents\n   the source property.",
-            "paramName": "sourcePropertyChain",
-            "description": " The property chain which represents\n   the source property.",
-            "type": "String"
-          },
-          {
-            "name": "@param",
-            "body": "targetObject {qx.core.Object} The object which the source should\n   be bind to.",
-            "paramName": "targetObject",
-            "description": " The object which the source should\n   be bind to.",
-            "type": "qx.core.Object"
-          },
-          {
-            "name": "@param",
-            "body": "targetProperty {String} The property name of the target object.",
-            "paramName": "targetProperty",
-            "description": " The property name of the target object.",
-            "type": "String"
-          },
-          {
-            "name": "@param",
-            "body": "options {Map} A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
-            "paramName": "options",
-            "description": " A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
-            "type": "Map"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.Promise} A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index.",
-            "type": "qx.Promise",
-            "description": " A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index."
           }
         ],
         "@throws": [
@@ -1779,6 +1716,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1802,6 +1740,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -3490,11 +3429,11 @@
     "getQxObject": {
       "location": {
         "start": {
-          "line": 190,
+          "line": 200,
           "column": 4
         },
         "end": {
-          "line": 192,
+          "line": 202,
           "column": 5
         }
       },
@@ -3529,11 +3468,11 @@
     "getAbsoluteIdOf": {
       "location": {
         "start": {
-          "line": 201,
+          "line": 211,
           "column": 4
         },
         "end": {
-          "line": 203,
+          "line": 213,
           "column": 5
         }
       },

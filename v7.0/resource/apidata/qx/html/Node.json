@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 1898,
+        "line": 1838,
         "column": 3
       }
     },
@@ -38,11 +38,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 48,
-        "column": 14
+        "line": 46,
+        "column": 2
       },
       "end": {
-        "line": 52,
+        "line": 49,
         "column": 3
       }
     },
@@ -68,11 +68,11 @@
     "fromDomNode": {
       "location": {
         "start": {
-          "line": 73,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 79,
+          "line": 72,
           "column": 5
         }
       },
@@ -107,11 +107,11 @@
     "toVirtualNode": {
       "location": {
         "start": {
-          "line": 88,
+          "line": 81,
           "column": 4
         },
         "end": {
-          "line": 96,
+          "line": 93,
           "column": 5
         }
       },
@@ -145,11 +145,11 @@
     "visible": {
       "location": {
         "start": {
-          "line": 121,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 127,
+          "line": 121,
           "column": 5
         }
       },
@@ -214,12 +214,12 @@
     "_nodeName": {
       "location": {
         "start": {
-          "line": 148,
+          "line": 138,
           "column": 4
         },
         "end": {
-          "line": 148,
-          "column": 20
+          "line": 138,
+          "column": 19
         }
       },
       "jsdoc": {
@@ -242,12 +242,12 @@
     "_domNode": {
       "location": {
         "start": {
-          "line": 151,
+          "line": 141,
           "column": 4
         },
         "end": {
-          "line": 151,
-          "column": 19
+          "line": 141,
+          "column": 18
         }
       },
       "jsdoc": {
@@ -270,12 +270,12 @@
     "_parent": {
       "location": {
         "start": {
-          "line": 154,
+          "line": 144,
           "column": 4
         },
         "end": {
-          "line": 154,
-          "column": 18
+          "line": 144,
+          "column": 17
         }
       },
       "jsdoc": {
@@ -298,12 +298,12 @@
     "_qxObject": {
       "location": {
         "start": {
-          "line": 157,
+          "line": 147,
           "column": 4
         },
         "end": {
-          "line": 157,
-          "column": 20
+          "line": 147,
+          "column": 19
         }
       },
       "jsdoc": {
@@ -326,12 +326,12 @@
     "_included": {
       "location": {
         "start": {
-          "line": 160,
+          "line": 150,
           "column": 4
         },
         "end": {
-          "line": 160,
-          "column": 20
+          "line": 150,
+          "column": 19
         }
       },
       "jsdoc": {
@@ -354,12 +354,12 @@
     "_children": {
       "location": {
         "start": {
-          "line": 162,
+          "line": 152,
           "column": 4
         },
         "end": {
-          "line": 162,
-          "column": 20
+          "line": 152,
+          "column": 19
         }
       },
       "type": "variable",
@@ -368,12 +368,12 @@
     "_modifiedChildren": {
       "location": {
         "start": {
-          "line": 163,
+          "line": 153,
           "column": 4
         },
         "end": {
-          "line": 163,
-          "column": 28
+          "line": 153,
+          "column": 27
         }
       },
       "type": "variable",
@@ -382,12 +382,12 @@
     "_propertyJobs": {
       "location": {
         "start": {
-          "line": 165,
+          "line": 155,
           "column": 4
         },
         "end": {
-          "line": 165,
-          "column": 24
+          "line": 155,
+          "column": 23
         }
       },
       "type": "variable",
@@ -396,12 +396,12 @@
     "_properties": {
       "location": {
         "start": {
-          "line": 166,
+          "line": 156,
           "column": 4
         },
         "end": {
-          "line": 166,
-          "column": 22
+          "line": 156,
+          "column": 21
         }
       },
       "type": "variable",
@@ -410,11 +410,11 @@
     "__eventValues": {
       "location": {
         "start": {
-          "line": 169,
+          "line": 159,
           "column": 4
         },
         "end": {
-          "line": 169,
+          "line": 159,
           "column": 23
         }
       },
@@ -438,11 +438,11 @@
     "connectObject": {
       "location": {
         "start": {
-          "line": 178,
+          "line": 167,
           "column": 4
         },
         "end": {
-          "line": 197,
+          "line": 191,
           "column": 5
         }
       },
@@ -469,11 +469,11 @@
     "disconnectObject": {
       "location": {
         "start": {
-          "line": 206,
+          "line": 199,
           "column": 4
         },
         "end": {
-          "line": 225,
+          "line": 221,
           "column": 5
         }
       },
@@ -500,11 +500,11 @@
     "_createDomElement": {
       "location": {
         "start": {
-          "line": 232,
+          "line": 228,
           "column": 4
         },
         "end": {
-          "line": 234,
+          "line": 232,
           "column": 5
         }
       },
@@ -530,11 +530,11 @@
     "serialize": {
       "location": {
         "start": {
-          "line": 246,
+          "line": 244,
           "column": 4
         },
         "end": {
-          "line": 277,
+          "line": 275,
           "column": 5
         }
       },
@@ -570,7 +570,7 @@
     "_serializeImpl": {
       "location": {
         "start": {
-          "line": 285,
+          "line": 283,
           "column": 4
         },
         "end": {
@@ -605,7 +605,7 @@
           "column": 4
         },
         "end": {
-          "line": 398,
+          "line": 400,
           "column": 5
         }
       },
@@ -632,11 +632,11 @@
     "_useNodeImpl": {
       "location": {
         "start": {
-          "line": 406,
+          "line": 408,
           "column": 4
         },
         "end": {
-          "line": 451,
+          "line": 455,
           "column": 5
         }
       },
@@ -670,11 +670,11 @@
     "_connectDomNode": {
       "location": {
         "start": {
-          "line": 459,
+          "line": 463,
           "column": 4
         },
         "end": {
-          "line": 473,
+          "line": 480,
           "column": 5
         }
       },
@@ -701,11 +701,11 @@
     "isInDocument": {
       "location": {
         "start": {
-          "line": 481,
+          "line": 487,
           "column": 4
         },
         "end": {
-          "line": 490,
+          "line": 500,
           "column": 5
         }
       },
@@ -731,11 +731,11 @@
     "updateObjectId": {
       "location": {
         "start": {
-          "line": 496,
+          "line": 505,
           "column": 4
         },
         "end": {
-          "line": 506,
+          "line": 515,
           "column": 5
         }
       },
@@ -753,11 +753,11 @@
     "_cascadeQxObjectIdChanges": {
       "location": {
         "start": {
-          "line": 508,
+          "line": 517,
           "column": 4
         },
         "end": {
-          "line": 513,
+          "line": 522,
           "column": 5
         }
       },
@@ -772,11 +772,11 @@
     "_scheduleChildrenUpdate": {
       "location": {
         "start": {
-          "line": 526,
+          "line": 534,
           "column": 4
         },
         "end": {
-          "line": 536,
+          "line": 545,
           "column": 5
         }
       },
@@ -794,11 +794,11 @@
     "_flush": {
       "location": {
         "start": {
-          "line": 546,
+          "line": 554,
           "column": 4
         },
         "end": {
-          "line": 548,
+          "line": 556,
           "column": 5
         }
       },
@@ -822,7 +822,7 @@
     "flush": {
       "location": {
         "start": {
-          "line": 555,
+          "line": 562,
           "column": 4
         },
         "end": {
@@ -908,7 +908,7 @@
           "column": 4
         },
         "end": {
-          "line": 657,
+          "line": 655,
           "column": 5
         }
       },
@@ -934,11 +934,11 @@
     "_insertChildren": {
       "location": {
         "start": {
-          "line": 676,
+          "line": 670,
           "column": 4
         },
         "end": {
-          "line": 709,
+          "line": 697,
           "column": 5
         }
       },
@@ -956,11 +956,11 @@
     "_syncChildren": {
       "location": {
         "start": {
-          "line": 718,
+          "line": 705,
           "column": 4
         },
         "end": {
-          "line": 794,
+          "line": 774,
           "column": 5
         }
       },
@@ -978,11 +978,11 @@
     "_copyData": {
       "location": {
         "start": {
-          "line": 807,
+          "line": 786,
           "column": 4
         },
         "end": {
-          "line": 846,
+          "line": 823,
           "column": 5
         }
       },
@@ -1016,11 +1016,11 @@
     "_syncData": {
       "location": {
         "start": {
-          "line": 855,
+          "line": 831,
           "column": 4
         },
         "end": {
-          "line": 869,
+          "line": 844,
           "column": 5
         }
       },
@@ -1038,11 +1038,11 @@
     "_addChildImpl": {
       "location": {
         "start": {
-          "line": 891,
+          "line": 859,
           "column": 4
         },
         "end": {
-          "line": 918,
+          "line": 885,
           "column": 5
         }
       },
@@ -1077,11 +1077,11 @@
     "_removeChildImpl": {
       "location": {
         "start": {
-          "line": 928,
+          "line": 894,
           "column": 4
         },
         "end": {
-          "line": 941,
+          "line": 906,
           "column": 5
         }
       },
@@ -1116,11 +1116,11 @@
     "_moveChildImpl": {
       "location": {
         "start": {
-          "line": 951,
+          "line": 915,
           "column": 4
         },
         "end": {
-          "line": 961,
+          "line": 924,
           "column": 5
         }
       },
@@ -1155,11 +1155,11 @@
     "getChildren": {
       "location": {
         "start": {
-          "line": 981,
+          "line": 941,
           "column": 4
         },
         "end": {
-          "line": 983,
+          "line": 943,
           "column": 5
         }
       },
@@ -1185,11 +1185,11 @@
     "getChild": {
       "location": {
         "start": {
-          "line": 993,
+          "line": 952,
           "column": 4
         },
         "end": {
-          "line": 997,
+          "line": 955,
           "column": 5
         }
       },
@@ -1224,11 +1224,11 @@
     "hasChildren": {
       "location": {
         "start": {
-          "line": 1005,
+          "line": 962,
           "column": 4
         },
         "end": {
-          "line": 1009,
+          "line": 965,
           "column": 5
         }
       },
@@ -1254,11 +1254,11 @@
     "indexOf": {
       "location": {
         "start": {
-          "line": 1019,
+          "line": 974,
           "column": 4
         },
         "end": {
-          "line": 1023,
+          "line": 977,
           "column": 5
         }
       },
@@ -1293,11 +1293,11 @@
     "hasChild": {
       "location": {
         "start": {
-          "line": 1033,
+          "line": 986,
           "column": 4
         },
         "end": {
-          "line": 1037,
+          "line": 989,
           "column": 5
         }
       },
@@ -1332,11 +1332,11 @@
     "add": {
       "location": {
         "start": {
-          "line": 1046,
+          "line": 997,
           "column": 4
         },
         "end": {
-          "line": 1062,
+          "line": 1013,
           "column": 5
         }
       },
@@ -1371,11 +1371,11 @@
     "addAt": {
       "location": {
         "start": {
-          "line": 1074,
+          "line": 1024,
           "column": 4
         },
         "end": {
-          "line": 1081,
+          "line": 1030,
           "column": 5
         }
       },
@@ -1417,11 +1417,11 @@
     "remove": {
       "location": {
         "start": {
-          "line": 1090,
+          "line": 1038,
           "column": 4
         },
         "end": {
-          "line": 1111,
+          "line": 1059,
           "column": 5
         }
       },
@@ -1456,11 +1456,11 @@
     "removeAt": {
       "location": {
         "start": {
-          "line": 1121,
+          "line": 1068,
           "column": 4
         },
         "end": {
-          "line": 1138,
+          "line": 1084,
           "column": 5
         }
       },
@@ -1495,11 +1495,11 @@
     "removeAll": {
       "location": {
         "start": {
-          "line": 1146,
+          "line": 1091,
           "column": 4
         },
         "end": {
-          "line": 1161,
+          "line": 1104,
           "column": 5
         }
       },
@@ -1525,11 +1525,11 @@
     "getParent": {
       "location": {
         "start": {
-          "line": 1179,
+          "line": 1117,
           "column": 4
         },
         "end": {
-          "line": 1181,
+          "line": 1119,
           "column": 5
         }
       },
@@ -1555,11 +1555,11 @@
     "insertInto": {
       "location": {
         "start": {
-          "line": 1193,
+          "line": 1130,
           "column": 4
         },
         "end": {
-          "line": 1204,
+          "line": 1140,
           "column": 5
         }
       },
@@ -1603,11 +1603,11 @@
     "insertBefore": {
       "location": {
         "start": {
-          "line": 1213,
+          "line": 1148,
           "column": 4
         },
         "end": {
-          "line": 1221,
+          "line": 1155,
           "column": 5
         }
       },
@@ -1642,11 +1642,11 @@
     "insertAfter": {
       "location": {
         "start": {
-          "line": 1230,
+          "line": 1163,
           "column": 4
         },
         "end": {
-          "line": 1238,
+          "line": 1170,
           "column": 5
         }
       },
@@ -1681,11 +1681,11 @@
     "moveTo": {
       "location": {
         "start": {
-          "line": 1249,
+          "line": 1180,
           "column": 4
         },
         "end": {
-          "line": 1267,
+          "line": 1197,
           "column": 5
         }
       },
@@ -1728,11 +1728,11 @@
     "moveBefore": {
       "location": {
         "start": {
-          "line": 1276,
+          "line": 1205,
           "column": 4
         },
         "end": {
-          "line": 1280,
+          "line": 1208,
           "column": 5
         }
       },
@@ -1767,11 +1767,11 @@
     "moveAfter": {
       "location": {
         "start": {
-          "line": 1289,
+          "line": 1216,
           "column": 4
         },
         "end": {
-          "line": 1293,
+          "line": 1219,
           "column": 5
         }
       },
@@ -1806,11 +1806,11 @@
     "free": {
       "location": {
         "start": {
-          "line": 1301,
+          "line": 1226,
           "column": 4
         },
         "end": {
-          "line": 1316,
+          "line": 1240,
           "column": 5
         }
       },
@@ -1836,11 +1836,11 @@
     "getDomElement": {
       "location": {
         "start": {
-          "line": 1338,
+          "line": 1257,
           "column": 4
         },
         "end": {
-          "line": 1343,
+          "line": 1262,
           "column": 5
         }
       },
@@ -1876,11 +1876,11 @@
     "getNodeName": {
       "location": {
         "start": {
-          "line": 1351,
+          "line": 1269,
           "column": 4
         },
         "end": {
-          "line": 1353,
+          "line": 1271,
           "column": 5
         }
       },
@@ -1906,11 +1906,11 @@
     "setNodeName": {
       "location": {
         "start": {
-          "line": 1360,
+          "line": 1278,
           "column": 4
         },
         "end": {
-          "line": 1365,
+          "line": 1288,
           "column": 5
         }
       },
@@ -1937,11 +1937,11 @@
     "include": {
       "location": {
         "start": {
-          "line": 1383,
+          "line": 1302,
           "column": 4
         },
         "end": {
-          "line": 1396,
+          "line": 1314,
           "column": 5
         }
       },
@@ -1967,11 +1967,11 @@
     "exclude": {
       "location": {
         "start": {
-          "line": 1405,
+          "line": 1322,
           "column": 4
         },
         "end": {
-          "line": 1418,
+          "line": 1334,
           "column": 5
         }
       },
@@ -1997,11 +1997,11 @@
     "isIncluded": {
       "location": {
         "start": {
-          "line": 1426,
+          "line": 1341,
           "column": 4
         },
         "end": {
-          "line": 1428,
+          "line": 1343,
           "column": 5
         }
       },
@@ -2027,11 +2027,11 @@
     "_applyVisible": {
       "location": {
         "start": {
-          "line": 1433,
+          "line": 1348,
           "column": 4
         },
         "end": {
-          "line": 1435,
+          "line": 1350,
           "column": 5
         }
       },
@@ -2052,11 +2052,11 @@
     "registerProperty": {
       "location": {
         "start": {
-          "line": 1462,
+          "line": 1376,
           "column": 4
         },
         "end": {
-          "line": 1481,
+          "line": 1410,
           "column": 5
         }
       },
@@ -2107,11 +2107,11 @@
     "_applyProperty": {
       "location": {
         "start": {
-          "line": 1501,
+          "line": 1428,
           "column": 4
         },
         "end": {
-          "line": 1503,
+          "line": 1430,
           "column": 5
         }
       },
@@ -2165,11 +2165,11 @@
     "_setProperty": {
       "location": {
         "start": {
-          "line": 1515,
+          "line": 1441,
           "column": 4
         },
         "end": {
-          "line": 1550,
+          "line": 1476,
           "column": 5
         }
       },
@@ -2220,11 +2220,11 @@
     "_removeProperty": {
       "location": {
         "start": {
-          "line": 1561,
+          "line": 1486,
           "column": 4
         },
         "end": {
-          "line": 1563,
+          "line": 1488,
           "column": 5
         }
       },
@@ -2268,11 +2268,11 @@
     "_getProperty": {
       "location": {
         "start": {
-          "line": 1573,
+          "line": 1497,
           "column": 4
         },
         "end": {
-          "line": 1589,
+          "line": 1513,
           "column": 5
         }
       },
@@ -2316,11 +2316,11 @@
     "addListener": {
       "location": {
         "start": {
-          "line": 1615,
+          "line": 1535,
           "column": 4
         },
         "end": {
-          "line": 1673,
+          "line": 1601,
           "column": 5
         }
       },
@@ -2385,11 +2385,11 @@
     "removeListener": {
       "location": {
         "start": {
-          "line": 1685,
+          "line": 1612,
           "column": 4
         },
         "end": {
-          "line": 1744,
+          "line": 1683,
           "column": 5
         }
       },
@@ -2452,11 +2452,11 @@
     "removeListenerById": {
       "location": {
         "start": {
-          "line": 1754,
+          "line": 1692,
           "column": 4
         },
         "end": {
-          "line": 1776,
+          "line": 1715,
           "column": 5
         }
       },
@@ -2496,11 +2496,11 @@
     "hasListener": {
       "location": {
         "start": {
-          "line": 1787,
+          "line": 1725,
           "column": 4
         },
         "end": {
-          "line": 1824,
+          "line": 1760,
           "column": 5
         }
       },
@@ -2549,11 +2549,11 @@
     "getListeners": {
       "location": {
         "start": {
-          "line": 1839,
+          "line": 1774,
           "column": 4
         },
         "end": {
-          "line": 1861,
+          "line": 1803,
           "column": 5
         }
       },
@@ -2664,6 +2664,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -2688,6 +2689,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -2806,11 +2808,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 1874,
-        "column": 13
+        "line": 1812,
+        "column": 2
       },
       "end": {
-        "line": 1897,
+        "line": 1837,
         "column": 3
       }
     },

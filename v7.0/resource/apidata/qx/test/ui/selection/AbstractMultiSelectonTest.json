@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 249,
+        "line": 332,
         "column": 3
       }
     },
@@ -27,11 +27,11 @@
     "testSetSelectionWithTooMuchElements": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 29,
+          "line": 26,
           "column": 5
         }
       },
@@ -45,11 +45,11 @@
     "testSetSelection": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 46,
+          "line": 42,
           "column": 5
         }
       },
@@ -64,11 +64,11 @@
     "testSetSelectionOverrideWithLess": {
       "location": {
         "start": {
-          "line": 48,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 76,
+          "line": 75,
           "column": 5
         }
       },
@@ -78,11 +78,11 @@
     "testSelectAll": {
       "location": {
         "start": {
-          "line": 78,
+          "line": 77,
           "column": 4
         },
         "end": {
-          "line": 104,
+          "line": 120,
           "column": 5
         }
       },
@@ -92,11 +92,11 @@
     "testAddToSelection": {
       "location": {
         "start": {
-          "line": 106,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 132,
+          "line": 165,
           "column": 5
         }
       },
@@ -106,11 +106,11 @@
     "testAddToSelectionWithNotChildElement": {
       "location": {
         "start": {
-          "line": 134,
+          "line": 167,
           "column": 4
         },
         "end": {
-          "line": 145,
+          "line": 182,
           "column": 5
         }
       },
@@ -120,11 +120,11 @@
     "testRemoveFromSelection": {
       "location": {
         "start": {
-          "line": 147,
+          "line": 184,
           "column": 4
         },
         "end": {
-          "line": 170,
+          "line": 218,
           "column": 5
         }
       },
@@ -134,11 +134,11 @@
     "testRemoveFromSelectionWithNotChildElement": {
       "location": {
         "start": {
-          "line": 172,
+          "line": 220,
           "column": 4
         },
         "end": {
-          "line": 183,
+          "line": 235,
           "column": 5
         }
       },
@@ -148,11 +148,11 @@
     "testRemoveFromSelectionWithNotSelectedElement": {
       "location": {
         "start": {
-          "line": 185,
+          "line": 237,
           "column": 4
         },
         "end": {
-          "line": 193,
+          "line": 250,
           "column": 5
         }
       },
@@ -162,11 +162,11 @@
     "testInvertSelection": {
       "location": {
         "start": {
-          "line": 195,
+          "line": 252,
           "column": 4
         },
         "end": {
-          "line": 211,
+          "line": 279,
           "column": 5
         }
       },
@@ -176,11 +176,11 @@
     "testInvertSelectionWithErrors": {
       "location": {
         "start": {
-          "line": 213,
+          "line": 281,
           "column": 4
         },
         "end": {
-          "line": 222,
+          "line": 294,
           "column": 5
         }
       },
@@ -190,11 +190,11 @@
     "testInvertSelectionWithDisabledChildElements": {
       "location": {
         "start": {
-          "line": 224,
+          "line": 296,
           "column": 4
         },
         "end": {
-          "line": 247,
+          "line": 330,
           "column": 5
         }
       },
@@ -289,6 +289,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -313,6 +314,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

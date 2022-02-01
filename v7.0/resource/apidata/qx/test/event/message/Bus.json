@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 247,
+        "line": 287,
         "column": 3
       }
     },
@@ -24,12 +24,12 @@
     "__subscriberOne": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 26,
-          "column": 26
+          "line": 23,
+          "column": 25
         }
       },
       "type": "variable",
@@ -38,12 +38,12 @@
     "__subscriberTwo": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 27,
-          "column": 26
+          "line": 24,
+          "column": 25
         }
       },
       "type": "variable",
@@ -52,12 +52,12 @@
     "__subscriberThree": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 28,
-          "column": 28
+          "line": 25,
+          "column": 27
         }
       },
       "type": "variable",
@@ -66,11 +66,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 34,
+          "line": 31,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 48,
+          "line": 44,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testDispatch": {
       "location": {
         "start": {
-          "line": 51,
+          "line": 46,
           "column": 4
         },
         "end": {
-          "line": 77,
+          "line": 83,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "testDispatchWithDisposed": {
       "location": {
         "start": {
-          "line": 79,
+          "line": 85,
           "column": 4
         },
         "end": {
-          "line": 106,
+          "line": 123,
           "column": 5
         }
       },
@@ -122,11 +122,11 @@
     "testWildcard": {
       "location": {
         "start": {
-          "line": 109,
+          "line": 126,
           "column": 4
         },
         "end": {
-          "line": 138,
+          "line": 168,
           "column": 5
         }
       },
@@ -137,11 +137,11 @@
     "testRegex": {
       "location": {
         "start": {
-          "line": 140,
+          "line": 170,
           "column": 4
         },
         "end": {
-          "line": 157,
+          "line": 194,
           "column": 5
         }
       },
@@ -151,11 +151,11 @@
     "testSubscribeOnce": {
       "location": {
         "start": {
-          "line": 159,
+          "line": 196,
           "column": 4
         },
         "end": {
-          "line": 177,
+          "line": 221,
           "column": 5
         }
       },
@@ -165,11 +165,11 @@
     "testUnsubscribe": {
       "location": {
         "start": {
-          "line": 181,
+          "line": 224,
           "column": 4
         },
         "end": {
-          "line": 204,
+          "line": 245,
           "column": 5
         }
       },
@@ -180,11 +180,11 @@
     "testUnsubscribeAll": {
       "location": {
         "start": {
-          "line": 206,
+          "line": 247,
           "column": 4
         },
         "end": {
-          "line": 229,
+          "line": 269,
           "column": 5
         }
       },
@@ -194,11 +194,11 @@
     "testWrongDispatch": {
       "location": {
         "start": {
-          "line": 231,
+          "line": 271,
           "column": 4
         },
         "end": {
-          "line": 245,
+          "line": 285,
           "column": 5
         }
       },
@@ -293,6 +293,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -317,6 +318,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

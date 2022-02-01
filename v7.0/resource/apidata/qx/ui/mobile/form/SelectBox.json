@@ -22,7 +22,7 @@
         "column": 0
       },
       "end": {
-        "line": 389,
+        "line": 362,
         "column": 3
       }
     },
@@ -39,11 +39,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 76,
-        "column": 14
+        "line": 71,
+        "column": 2
       },
       "end": {
-        "line": 95,
+        "line": 93,
         "column": 3
       }
     },
@@ -53,12 +53,12 @@
     "changeSelection": {
       "location": {
         "start": {
-          "line": 108,
+          "line": 104,
           "column": 4
         },
         "end": {
-          "line": 108,
-          "column": 42
+          "line": 104,
+          "column": 41
         }
       },
       "jsdoc": {
@@ -189,11 +189,11 @@
     "defaultCssClass": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 126,
+          "line": 118,
           "column": 5
         }
       },
@@ -211,11 +211,11 @@
     "activatable": {
       "location": {
         "start": {
-          "line": 130,
+          "line": 121,
           "column": 4
         },
         "end": {
-          "line": 134,
+          "line": 124,
           "column": 5
         }
       },
@@ -233,11 +233,11 @@
     "nullable": {
       "location": {
         "start": {
-          "line": 140,
+          "line": 129,
           "column": 4
         },
         "end": {
-          "line": 145,
+          "line": 133,
           "column": 5
         }
       },
@@ -259,11 +259,11 @@
     "model": {
       "location": {
         "start": {
-          "line": 151,
+          "line": 138,
           "column": 4
         },
         "end": {
-          "line": 158,
+          "line": 144,
           "column": 5
         }
       },
@@ -286,11 +286,11 @@
     "selection": {
       "location": {
         "start": {
-          "line": 164,
+          "line": 149,
           "column": 4
         },
         "end": {
-          "line": 170,
+          "line": 154,
           "column": 5
         }
       },
@@ -445,12 +445,12 @@
     "__selectionDialog": {
       "location": {
         "start": {
-          "line": 176,
+          "line": 158,
           "column": 4
         },
         "end": {
-          "line": 176,
-          "column": 28
+          "line": 158,
+          "column": 27
         }
       },
       "type": "variable",
@@ -459,11 +459,11 @@
     "_getTagName": {
       "location": {
         "start": {
-          "line": 180,
+          "line": 161,
           "column": 4
         },
         "end": {
-          "line": 184,
+          "line": 164,
           "column": 5
         }
       },
@@ -478,11 +478,11 @@
     "_createSelectionDialog": {
       "location": {
         "start": {
-          "line": 192,
+          "line": 171,
           "column": 4
         },
         "end": {
-          "line": 203,
+          "line": 182,
           "column": 5
         }
       },
@@ -508,11 +508,11 @@
     "getSelectionDialog": {
       "location": {
         "start": {
-          "line": 210,
+          "line": 188,
           "column": 4
         },
         "end": {
-          "line": 212,
+          "line": 190,
           "column": 5
         }
       },
@@ -538,11 +538,11 @@
     "setDialogTitle": {
       "location": {
         "start": {
-          "line": 219,
+          "line": 196,
           "column": 4
         },
         "end": {
-          "line": 221,
+          "line": 198,
           "column": 5
         }
       },
@@ -569,11 +569,11 @@
     "setClearButtonLabel": {
       "location": {
         "start": {
-          "line": 228,
+          "line": 204,
           "column": 4
         },
         "end": {
-          "line": 230,
+          "line": 206,
           "column": 5
         }
       },
@@ -600,11 +600,11 @@
     "_setValue": {
       "location": {
         "start": {
-          "line": 237,
+          "line": 212,
           "column": 4
         },
         "end": {
-          "line": 253,
+          "line": 228,
           "column": 5
         }
       },
@@ -631,11 +631,11 @@
     "_getValue": {
       "location": {
         "start": {
-          "line": 261,
+          "line": 235,
           "column": 4
         },
         "end": {
-          "line": 263,
+          "line": 237,
           "column": 5
         }
       },
@@ -661,11 +661,11 @@
     "_render": {
       "location": {
         "start": {
-          "line": 270,
+          "line": 243,
           "column": 4
         },
         "end": {
-          "line": 277,
+          "line": 250,
           "column": 5
         }
       },
@@ -683,11 +683,11 @@
     "_applyModel": {
       "location": {
         "start": {
-          "line": 285,
+          "line": 257,
           "column": 4
         },
         "end": {
-          "line": 292,
+          "line": 264,
           "column": 5
         }
       },
@@ -725,11 +725,11 @@
     "__showSelectionDialog": {
       "location": {
         "start": {
-          "line": 298,
+          "line": 269,
           "column": 4
         },
         "end": {
-          "line": 305,
+          "line": 276,
           "column": 5
         }
       },
@@ -747,11 +747,11 @@
     "_onChangeSelection": {
       "location": {
         "start": {
-          "line": 312,
+          "line": 282,
           "column": 4
         },
         "end": {
-          "line": 315,
+          "line": 285,
           "column": 5
         }
       },
@@ -778,11 +778,11 @@
     "_onTap": {
       "location": {
         "start": {
-          "line": 322,
+          "line": 291,
           "column": 4
         },
         "end": {
-          "line": 328,
+          "line": 297,
           "column": 5
         }
       },
@@ -809,11 +809,11 @@
     "_validateSelection": {
       "location": {
         "start": {
-          "line": 335,
+          "line": 303,
           "column": 4
         },
         "end": {
-          "line": 360,
+          "line": 330,
           "column": 5
         }
       },
@@ -840,11 +840,11 @@
     "_applySelection": {
       "location": {
         "start": {
-          "line": 364,
+          "line": 333,
           "column": 4
         },
         "end": {
-          "line": 369,
+          "line": 341,
           "column": 5
         }
       },
@@ -858,11 +858,11 @@
     "_applyNullable": {
       "location": {
         "start": {
-          "line": 373,
+          "line": 344,
           "column": 4
         },
         "end": {
-          "line": 376,
+          "line": 347,
           "column": 5
         }
       },
@@ -1609,38 +1609,6 @@
       "overriddenFrom": "qx.ui.form.MForm",
       "jsdoc": {}
     },
-    "__onChangeLocale": {
-      "type": "function",
-      "name": "__onChangeLocale",
-      "abstract": false,
-      "mixin": true,
-      "inherited": true,
-      "access": "private",
-      "overriddenFrom": "qx.ui.form.MForm",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Locale change event handler</p>"
-          }
-        ],
-        "@signature": [
-          {
-            "name": "@signature",
-            "body": "function(e)"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {Event} the change event",
-            "paramName": "e",
-            "description": " the change event",
-            "type": "Event"
-          }
-        ]
-      }
-    },
     "isValid": {
       "type": "function",
       "name": "isValid",
@@ -2256,6 +2224,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -2280,6 +2249,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -3454,15 +3424,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 380,
-        "column": 13
+        "line": 350,
+        "column": 2
       },
       "end": {
-        "line": 388,
+        "line": 361,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

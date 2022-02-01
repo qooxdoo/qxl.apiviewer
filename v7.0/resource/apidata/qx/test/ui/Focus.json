@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 360,
+        "line": 313,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "getContainer": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 37,
+          "line": 33,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 60,
+          "line": 54,
           "column": 5
         }
       },
@@ -56,11 +56,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 56,
           "column": 4
         },
         "end": {
-          "line": 80,
+          "line": 71,
           "column": 5
         }
       },
@@ -74,11 +74,11 @@
     "addInput": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 73,
           "column": 4
         },
         "end": {
-          "line": 85,
+          "line": 75,
           "column": 5
         }
       },
@@ -88,11 +88,11 @@
     "addReferenceInput": {
       "location": {
         "start": {
-          "line": 88,
+          "line": 77,
           "column": 4
         },
         "end": {
-          "line": 90,
+          "line": 79,
           "column": 5
         }
       },
@@ -102,11 +102,11 @@
     "onRefBlur": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 81,
           "column": 4
         },
         "end": {
-          "line": 96,
+          "line": 83,
           "column": 5
         }
       },
@@ -116,7 +116,35 @@
     "onInputFocus": {
       "location": {
         "start": {
-          "line": 99,
+          "line": 85,
+          "column": 4
+        },
+        "end": {
+          "line": 87,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "onInputBlur": {
+      "location": {
+        "start": {
+          "line": 89,
+          "column": 4
+        },
+        "end": {
+          "line": 91,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testNotInsertedBeforeFlush": {
+      "location": {
+        "start": {
+          "line": 93,
           "column": 4
         },
         "end": {
@@ -127,42 +155,14 @@
       "type": "function",
       "access": "public"
     },
-    "onInputBlur": {
-      "location": {
-        "start": {
-          "line": 105,
-          "column": 4
-        },
-        "end": {
-          "line": 108,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testNotInsertedBeforeFlush": {
-      "location": {
-        "start": {
-          "line": 111,
-          "column": 4
-        },
-        "end": {
-          "line": 121,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
     "testExcludedBeforeFlush": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 104,
           "column": 4
         },
         "end": {
-          "line": 136,
+          "line": 115,
           "column": 5
         }
       },
@@ -172,11 +172,11 @@
     "testHiddenBeforeFlush": {
       "location": {
         "start": {
-          "line": 139,
+          "line": 117,
           "column": 4
         },
         "end": {
-          "line": 151,
+          "line": 128,
           "column": 5
         }
       },
@@ -186,11 +186,11 @@
     "testNotInsertedAfterFlush": {
       "location": {
         "start": {
-          "line": 154,
+          "line": 130,
           "column": 4
         },
         "end": {
-          "line": 169,
+          "line": 144,
           "column": 5
         }
       },
@@ -200,11 +200,11 @@
     "testExcludedAfterFlush": {
       "location": {
         "start": {
-          "line": 172,
+          "line": 146,
           "column": 4
         },
         "end": {
-          "line": 189,
+          "line": 162,
           "column": 5
         }
       },
@@ -214,11 +214,11 @@
     "testHiddenAfterFlush": {
       "location": {
         "start": {
-          "line": 192,
+          "line": 164,
           "column": 4
         },
         "end": {
-          "line": 209,
+          "line": 180,
           "column": 5
         }
       },
@@ -228,12 +228,12 @@
     "testInsertedBeforeFlush": {
       "location": {
         "start": {
-          "line": 212,
-          "column": 5
+          "line": 182,
+          "column": 4
         },
         "end": {
-          "line": 221,
-          "column": 6
+          "line": 190,
+          "column": 5
         }
       },
       "type": "function",
@@ -242,11 +242,11 @@
     "testFocusRemoveBeforeFlush": {
       "location": {
         "start": {
-          "line": 224,
+          "line": 192,
           "column": 4
         },
         "end": {
-          "line": 238,
+          "line": 205,
           "column": 5
         }
       },
@@ -256,11 +256,11 @@
     "testFocusExcludeBeforeFlush": {
       "location": {
         "start": {
-          "line": 241,
+          "line": 207,
           "column": 4
         },
         "end": {
-          "line": 255,
+          "line": 220,
           "column": 5
         }
       },
@@ -270,11 +270,11 @@
     "testFocusHideBeforeFlush": {
       "location": {
         "start": {
-          "line": 258,
+          "line": 222,
           "column": 4
         },
         "end": {
-          "line": 272,
+          "line": 235,
           "column": 5
         }
       },
@@ -284,11 +284,11 @@
     "testInsertedAfterFlush": {
       "location": {
         "start": {
-          "line": 275,
+          "line": 237,
           "column": 4
         },
         "end": {
-          "line": 285,
+          "line": 246,
           "column": 5
         }
       },
@@ -298,11 +298,11 @@
     "testFocusRemoveAfterFlush": {
       "location": {
         "start": {
-          "line": 288,
+          "line": 248,
           "column": 4
         },
         "end": {
-          "line": 302,
+          "line": 261,
           "column": 5
         }
       },
@@ -312,11 +312,11 @@
     "testFocusExcludeAfterFlush": {
       "location": {
         "start": {
-          "line": 305,
+          "line": 263,
           "column": 4
         },
         "end": {
-          "line": 320,
+          "line": 277,
           "column": 5
         }
       },
@@ -326,11 +326,11 @@
     "testFocusHideAfterFlush": {
       "location": {
         "start": {
-          "line": 323,
+          "line": 279,
           "column": 4
         },
         "end": {
-          "line": 338,
+          "line": 293,
           "column": 5
         }
       },
@@ -340,11 +340,11 @@
     "testFocusComboBox": {
       "location": {
         "start": {
-          "line": 341,
+          "line": 295,
           "column": 4
         },
         "end": {
-          "line": 353,
+          "line": 307,
           "column": 5
         }
       },
@@ -439,6 +439,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -463,6 +464,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -629,15 +631,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 357,
-        "column": 13
+        "line": 310,
+        "column": 2
       },
       "end": {
-        "line": 359,
+        "line": 312,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {},
   "descendants": []

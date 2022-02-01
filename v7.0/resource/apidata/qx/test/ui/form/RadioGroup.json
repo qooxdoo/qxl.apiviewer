@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 152,
+        "line": 156,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 24,
+          "line": 22,
           "column": 4
         },
         "end": {
-          "line": 39,
+          "line": 35,
           "column": 5
         }
       },
@@ -42,11 +42,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 41,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 54,
+          "line": 48,
           "column": 5
         }
       },
@@ -60,11 +60,11 @@
     "testHiddenRadioButtons": {
       "location": {
         "start": {
-          "line": 56,
+          "line": 50,
           "column": 4
         },
         "end": {
-          "line": 80,
+          "line": 90,
           "column": 5
         }
       },
@@ -74,11 +74,11 @@
     "testAlteredGroupProperty": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 150,
+          "line": 154,
           "column": 5
         }
       },
@@ -187,6 +187,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -211,6 +212,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

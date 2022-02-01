@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 323,
+        "line": 355,
         "column": 3
       }
     },
@@ -31,12 +31,12 @@
     "registerTransport": {
       "location": {
         "start": {
-          "line": 29,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 29,
-          "column": 72
+          "line": 28,
+          "column": 71
         }
       },
       "jsdoc": {},
@@ -48,12 +48,12 @@
     "outgoingRequest": {
       "location": {
         "start": {
-          "line": 39,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 39,
-          "column": 43
+          "line": 38,
+          "column": 41
         }
       },
       "jsdoc": {
@@ -70,12 +70,12 @@
     "error": {
       "location": {
         "start": {
-          "line": 48,
+          "line": 47,
           "column": 4
         },
         "end": {
-          "line": 48,
-          "column": 34
+          "line": 47,
+          "column": 31
         }
       },
       "jsdoc": {
@@ -92,12 +92,12 @@
     "incomingRequest": {
       "location": {
         "start": {
-          "line": 56,
+          "line": 55,
           "column": 4
         },
         "end": {
-          "line": 56,
-          "column": 44
+          "line": 55,
+          "column": 41
         }
       },
       "jsdoc": {
@@ -115,11 +115,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 69,
-        "column": 14
+        "line": 68,
+        "column": 2
       },
       "end": {
-        "line": 83,
+        "line": 85,
         "column": 3
       }
     },
@@ -164,7 +164,7 @@
     "methodPrefix": {
       "location": {
         "start": {
-          "line": 91,
+          "line": 92,
           "column": 4
         },
         "end": {
@@ -246,12 +246,12 @@
     "__requests": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 109,
           "column": 4
         },
         "end": {
-          "line": 111,
-          "column": 21
+          "line": 109,
+          "column": 20
         }
       },
       "jsdoc": {
@@ -268,11 +268,11 @@
     "_prependMethodPrefix": {
       "location": {
         "start": {
-          "line": 120,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 127,
+          "line": 125,
           "column": 5
         }
       },
@@ -310,11 +310,11 @@
     "_throwTransportException": {
       "location": {
         "start": {
-          "line": 135,
+          "line": 133,
           "column": 4
         },
         "end": {
-          "line": 143,
+          "line": 141,
           "column": 5
         }
       },
@@ -346,11 +346,11 @@
     "send": {
       "location": {
         "start": {
-          "line": 153,
+          "line": 151,
           "column": 4
         },
         "end": {
-          "line": 181,
+          "line": 195,
           "column": 5
         }
       },
@@ -382,11 +382,11 @@
     "sendRequest": {
       "location": {
         "start": {
-          "line": 191,
+          "line": 205,
           "column": 4
         },
         "end": {
-          "line": 195,
+          "line": 213,
           "column": 5
         }
       },
@@ -422,11 +422,11 @@
     "sendNotification": {
       "location": {
         "start": {
-          "line": 204,
+          "line": 222,
           "column": 4
         },
         "end": {
-          "line": 207,
+          "line": 229,
           "column": 5
         }
       },
@@ -462,11 +462,11 @@
     "sendBatch": {
       "location": {
         "start": {
-          "line": 215,
+          "line": 237,
           "column": 4
         },
         "end": {
-          "line": 222,
+          "line": 248,
           "column": 5
         }
       },
@@ -498,11 +498,11 @@
     "handleIncoming": {
       "location": {
         "start": {
-          "line": 228,
+          "line": 254,
           "column": 4
         },
         "end": {
-          "line": 247,
+          "line": 273,
           "column": 5
         }
       },
@@ -529,11 +529,11 @@
     "_cleanup": {
       "location": {
         "start": {
-          "line": 254,
+          "line": 280,
           "column": 4
         },
         "end": {
-          "line": 256,
+          "line": 282,
           "column": 5
         }
       },
@@ -563,11 +563,11 @@
     "handleMessage": {
       "location": {
         "start": {
-          "line": 262,
+          "line": 288,
           "column": 4
         },
         "end": {
-          "line": 317,
+          "line": 349,
           "column": 5
         }
       },
@@ -682,6 +682,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -706,6 +707,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

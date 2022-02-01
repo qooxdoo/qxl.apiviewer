@@ -16,7 +16,7 @@
         "column": 0
       },
       "end": {
-        "line": 318,
+        "line": 311,
         "column": 3
       }
     },
@@ -33,11 +33,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 41,
-        "column": 14
+        "line": 39,
+        "column": 2
       },
       "end": {
-        "line": 63,
+        "line": 60,
         "column": 3
       }
     },
@@ -71,11 +71,11 @@
     "minimumIntegerDigits": {
       "location": {
         "start": {
-          "line": 78,
+          "line": 73,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 76,
           "column": 5
         }
       },
@@ -96,11 +96,11 @@
     "maximumIntegerDigits": {
       "location": {
         "start": {
-          "line": 89,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 93,
+          "line": 85,
           "column": 5
         }
       },
@@ -121,11 +121,11 @@
     "minimumFractionDigits": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 91,
           "column": 4
         },
         "end": {
-          "line": 104,
+          "line": 94,
           "column": 5
         }
       },
@@ -146,11 +146,11 @@
     "maximumFractionDigits": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 100,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 103,
           "column": 5
         }
       },
@@ -171,11 +171,11 @@
     "groupingUsed": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 106,
           "column": 4
         },
         "end": {
-          "line": 123,
+          "line": 109,
           "column": 5
         }
       },
@@ -196,11 +196,11 @@
     "prefix": {
       "location": {
         "start": {
-          "line": 127,
+          "line": 112,
           "column": 4
         },
         "end": {
-          "line": 132,
+          "line": 116,
           "column": 5
         }
       },
@@ -222,11 +222,11 @@
     "postfix": {
       "location": {
         "start": {
-          "line": 136,
+          "line": 119,
           "column": 4
         },
         "end": {
-          "line": 141,
+          "line": 123,
           "column": 5
         }
       },
@@ -248,11 +248,11 @@
     "locale": {
       "location": {
         "start": {
-          "line": 144,
+          "line": 126,
           "column": 4
         },
         "end": {
-          "line": 149,
+          "line": 130,
           "column": 5
         }
       },
@@ -306,11 +306,11 @@
     "format": {
       "location": {
         "start": {
-          "line": 170,
+          "line": 146,
           "column": 4
         },
         "end": {
-          "line": 258,
+          "line": 244,
           "column": 5
         }
       },
@@ -349,11 +349,11 @@
     "parse": {
       "location": {
         "start": {
-          "line": 268,
+          "line": 253,
           "column": 4
         },
         "end": {
-          "line": 309,
+          "line": 303,
           "column": 5
         }
       },
@@ -485,6 +485,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -509,6 +510,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -1089,15 +1091,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 313,
-        "column": 12
+        "line": 306,
+        "column": 2
       },
       "end": {
-        "line": 317,
+        "line": 310,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 619,
+        "line": 695,
         "column": 3
       }
     },
@@ -41,11 +41,11 @@
     "testCreation": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 48,
+          "line": 110,
           "column": 5
         }
       },
@@ -55,11 +55,11 @@
     "testCreationWithParams": {
       "location": {
         "start": {
-          "line": 51,
+          "line": 112,
           "column": 4
         },
         "end": {
-          "line": 63,
+          "line": 138,
           "column": 5
         }
       },
@@ -69,11 +69,11 @@
     "testSetItemHeight": {
       "location": {
         "start": {
-          "line": 66,
+          "line": 140,
           "column": 4
         },
         "end": {
-          "line": 70,
+          "line": 146,
           "column": 5
         }
       },
@@ -83,11 +83,11 @@
     "testSetModel": {
       "location": {
         "start": {
-          "line": 73,
+          "line": 148,
           "column": 4
         },
         "end": {
-          "line": 77,
+          "line": 151,
           "column": 5
         }
       },
@@ -97,11 +97,11 @@
     "testResetModel": {
       "location": {
         "start": {
-          "line": 80,
+          "line": 153,
           "column": 4
         },
         "end": {
-          "line": 88,
+          "line": 160,
           "column": 5
         }
       },
@@ -111,11 +111,11 @@
     "testExceptionOnSetModel": {
       "location": {
         "start": {
-          "line": 91,
+          "line": 162,
           "column": 4
         },
         "end": {
-          "line": 100,
+          "line": 175,
           "column": 5
         }
       },
@@ -125,11 +125,11 @@
     "testBuildLookupTable": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 177,
           "column": 4
         },
         "end": {
-          "line": 111,
+          "line": 184,
           "column": 5
         }
       },
@@ -139,11 +139,11 @@
     "testBuildLookupTableWithOpenNodes": {
       "location": {
         "start": {
-          "line": 114,
+          "line": 186,
           "column": 4
         },
         "end": {
-          "line": 129,
+          "line": 201,
           "column": 5
         }
       },
@@ -153,11 +153,11 @@
     "testBuildLookupTableWithRemovedNodes": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 203,
           "column": 4
         },
         "end": {
-          "line": 150,
+          "line": 221,
           "column": 5
         }
       },
@@ -167,11 +167,11 @@
     "testBuildLookupTableWithClosedRoot": {
       "location": {
         "start": {
-          "line": 153,
+          "line": 223,
           "column": 4
         },
         "end": {
-          "line": 159,
+          "line": 228,
           "column": 5
         }
       },
@@ -181,11 +181,11 @@
     "testBuildLookupTableWithNoModel": {
       "location": {
         "start": {
-          "line": 162,
+          "line": 230,
           "column": 4
         },
         "end": {
-          "line": 168,
+          "line": 235,
           "column": 5
         }
       },
@@ -195,11 +195,11 @@
     "testBuildLookupTableOnModelChange": {
       "location": {
         "start": {
-          "line": 171,
+          "line": 237,
           "column": 4
         },
         "end": {
-          "line": 189,
+          "line": 252,
           "column": 5
         }
       },
@@ -209,11 +209,11 @@
     "testBuildLookupTableWithHiddenRoot": {
       "location": {
         "start": {
-          "line": 192,
+          "line": 254,
           "column": 4
         },
         "end": {
-          "line": 200,
+          "line": 261,
           "column": 5
         }
       },
@@ -223,11 +223,11 @@
     "testBuildLookupWithoutLeafs": {
       "location": {
         "start": {
-          "line": 203,
+          "line": 263,
           "column": 4
         },
         "end": {
-          "line": 227,
+          "line": 283,
           "column": 5
         }
       },
@@ -237,11 +237,11 @@
     "__testBuildLookupTable": {
       "location": {
         "start": {
-          "line": 230,
+          "line": 285,
           "column": 4
         },
         "end": {
-          "line": 234,
+          "line": 291,
           "column": 5
         }
       },
@@ -251,11 +251,11 @@
     "testChangeBubblesAddChild": {
       "location": {
         "start": {
-          "line": 237,
+          "line": 293,
           "column": 4
         },
         "end": {
-          "line": 249,
+          "line": 304,
           "column": 5
         }
       },
@@ -265,11 +265,11 @@
     "testChangeBubblesReplaceChildren": {
       "location": {
         "start": {
-          "line": 252,
+          "line": 306,
           "column": 4
         },
         "end": {
-          "line": 270,
+          "line": 326,
           "column": 5
         }
       },
@@ -279,11 +279,11 @@
     "testChangeBubblesRemoveItems": {
       "location": {
         "start": {
-          "line": 273,
+          "line": 328,
           "column": 4
         },
         "end": {
-          "line": 285,
+          "line": 339,
           "column": 5
         }
       },
@@ -293,63 +293,7 @@
     "testChangeBubblesChangeProperty": {
       "location": {
         "start": {
-          "line": 288,
-          "column": 4
-        },
-        "end": {
-          "line": 298,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testNoChangeBubblesAddChild": {
-      "location": {
-        "start": {
-          "line": 301,
-          "column": 4
-        },
-        "end": {
-          "line": 310,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testGetOpenNodes": {
-      "location": {
-        "start": {
-          "line": 313,
-          "column": 4
-        },
-        "end": {
-          "line": 317,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testIsNodeOpen": {
-      "location": {
-        "start": {
-          "line": 320,
-          "column": 4
-        },
-        "end": {
-          "line": 333,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testOpenNode": {
-      "location": {
-        "start": {
-          "line": 336,
+          "line": 341,
           "column": 4
         },
         "end": {
@@ -360,14 +304,70 @@
       "type": "function",
       "access": "public"
     },
-    "testCloseNode": {
+    "testNoChangeBubblesAddChild": {
       "location": {
         "start": {
-          "line": 353,
+          "line": 352,
           "column": 4
         },
         "end": {
+          "line": 366,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testGetOpenNodes": {
+      "location": {
+        "start": {
           "line": 368,
+          "column": 4
+        },
+        "end": {
+          "line": 371,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testIsNodeOpen": {
+      "location": {
+        "start": {
+          "line": 373,
+          "column": 4
+        },
+        "end": {
+          "line": 383,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testOpenNode": {
+      "location": {
+        "start": {
+          "line": 385,
+          "column": 4
+        },
+        "end": {
+          "line": 395,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testCloseNode": {
+      "location": {
+        "start": {
+          "line": 397,
+          "column": 4
+        },
+        "end": {
+          "line": 408,
           "column": 5
         }
       },
@@ -377,11 +377,11 @@
     "testCloseNodeWithRoot": {
       "location": {
         "start": {
-          "line": 371,
+          "line": 410,
           "column": 4
         },
         "end": {
-          "line": 386,
+          "line": 421,
           "column": 5
         }
       },
@@ -391,11 +391,11 @@
     "testOpenNodeWithParents": {
       "location": {
         "start": {
-          "line": 389,
+          "line": 423,
           "column": 4
         },
         "end": {
-          "line": 406,
+          "line": 446,
           "column": 5
         }
       },
@@ -405,11 +405,11 @@
     "testIsNode": {
       "location": {
         "start": {
-          "line": 409,
+          "line": 448,
           "column": 4
         },
         "end": {
-          "line": 418,
+          "line": 482,
           "column": 5
         }
       },
@@ -419,11 +419,11 @@
     "testGetLevel": {
       "location": {
         "start": {
-          "line": 421,
+          "line": 484,
           "column": 4
         },
         "end": {
-          "line": 438,
+          "line": 528,
           "column": 5
         }
       },
@@ -433,11 +433,11 @@
     "testGetLevelWithHiddenRoot": {
       "location": {
         "start": {
-          "line": 441,
+          "line": 530,
           "column": 4
         },
         "end": {
-          "line": 454,
+          "line": 542,
           "column": 5
         }
       },
@@ -447,11 +447,11 @@
     "testHasChildren": {
       "location": {
         "start": {
-          "line": 457,
+          "line": 544,
           "column": 4
         },
         "end": {
-          "line": 465,
+          "line": 551,
           "column": 5
         }
       },
@@ -461,11 +461,11 @@
     "testHasChildrenHideLeafs": {
       "location": {
         "start": {
-          "line": 468,
+          "line": 553,
           "column": 4
         },
         "end": {
-          "line": 484,
+          "line": 568,
           "column": 5
         }
       },
@@ -475,11 +475,11 @@
     "testSetOpenModeWithTap": {
       "location": {
         "start": {
-          "line": 487,
+          "line": 570,
           "column": 4
         },
         "end": {
-          "line": 494,
+          "line": 576,
           "column": 5
         }
       },
@@ -489,11 +489,11 @@
     "testSetOpenModeWithNone": {
       "location": {
         "start": {
-          "line": 497,
+          "line": 578,
           "column": 4
         },
         "end": {
-          "line": 504,
+          "line": 584,
           "column": 5
         }
       },
@@ -503,11 +503,11 @@
     "__testOpenMode": {
       "location": {
         "start": {
-          "line": 507,
+          "line": 586,
           "column": 4
         },
         "end": {
-          "line": 520,
+          "line": 599,
           "column": 5
         }
       },
@@ -517,11 +517,11 @@
     "testFilter": {
       "location": {
         "start": {
-          "line": 523,
+          "line": 601,
           "column": 4
         },
         "end": {
-          "line": 552,
+          "line": 629,
           "column": 5
         }
       },
@@ -531,11 +531,11 @@
     "testOpenNodeWithoutScrolling": {
       "location": {
         "start": {
-          "line": 555,
+          "line": 631,
           "column": 4
         },
         "end": {
-          "line": 582,
+          "line": 665,
           "column": 5
         }
       },
@@ -545,11 +545,11 @@
     "__getRowFrom": {
       "location": {
         "start": {
-          "line": 592,
+          "line": 673,
           "column": 4
         },
         "end": {
-          "line": 594,
+          "line": 675,
           "column": 5
         }
       },
@@ -560,11 +560,11 @@
     "__openNodes": {
       "location": {
         "start": {
-          "line": 604,
+          "line": 683,
           "column": 4
         },
         "end": {
-          "line": 609,
+          "line": 687,
           "column": 5
         }
       },
@@ -575,11 +575,11 @@
     "__disposeChildren": {
       "location": {
         "start": {
-          "line": 612,
+          "line": 689,
           "column": 4
         },
         "end": {
-          "line": 617,
+          "line": 693,
           "column": 5
         }
       },
@@ -674,6 +674,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -698,6 +699,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

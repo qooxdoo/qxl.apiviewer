@@ -20,7 +20,7 @@
         "column": 0
       },
       "end": {
-        "line": 272,
+        "line": 233,
         "column": 3
       }
     },
@@ -53,11 +53,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 51,
-        "column": 14
+        "line": 49,
+        "column": 2
       },
       "end": {
-        "line": 69,
+        "line": 66,
         "column": 3
       }
     },
@@ -94,11 +94,11 @@
     "appearance": {
       "location": {
         "start": {
-          "line": 82,
+          "line": 75,
           "column": 4
         },
         "end": {
-          "line": 86,
+          "line": 78,
           "column": 5
         }
       },
@@ -116,11 +116,11 @@
     "legend": {
       "location": {
         "start": {
-          "line": 92,
+          "line": 84,
           "column": 4
         },
         "end": {
-          "line": 98,
+          "line": 89,
           "column": 5
         }
       },
@@ -143,11 +143,11 @@
     "legendPosition": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 94,
           "column": 4
         },
         "end": {
-          "line": 109,
+          "line": 99,
           "column": 5
         }
       },
@@ -323,11 +323,11 @@
     "_forwardStates": {
       "location": {
         "start": {
-          "line": 128,
+          "line": 113,
           "column": 4
         },
         "end": {
-          "line": 131,
+          "line": 115,
           "column": 5
         }
       },
@@ -351,11 +351,11 @@
     "_createChildControlImpl": {
       "location": {
         "start": {
-          "line": 135,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 154,
+          "line": 135,
           "column": 5
         }
       },
@@ -370,11 +370,11 @@
     "_getContentPaddingTarget": {
       "location": {
         "start": {
-          "line": 162,
+          "line": 142,
           "column": 4
         },
         "end": {
-          "line": 164,
+          "line": 144,
           "column": 5
         }
       },
@@ -400,11 +400,11 @@
     "_applyLegend": {
       "location": {
         "start": {
-          "line": 174,
+          "line": 153,
           "column": 4
         },
         "end": {
-          "line": 187,
+          "line": 162,
           "column": 5
         }
       },
@@ -418,11 +418,11 @@
     "_applyLegendPosition": {
       "location": {
         "start": {
-          "line": 194,
+          "line": 168,
           "column": 4
         },
         "end": {
-          "line": 199,
+          "line": 172,
           "column": 5
         }
       },
@@ -443,11 +443,11 @@
     "_repositionFrame": {
       "location": {
         "start": {
-          "line": 206,
+          "line": 178,
           "column": 4
         },
         "end": {
-          "line": 220,
+          "line": 191,
           "column": 5
         }
       },
@@ -465,11 +465,11 @@
     "getChildrenContainer": {
       "location": {
         "start": {
-          "line": 239,
+          "line": 205,
           "column": 4
         },
         "end": {
-          "line": 241,
+          "line": 207,
           "column": 5
         }
       },
@@ -499,11 +499,11 @@
     "setIcon": {
       "location": {
         "start": {
-          "line": 258,
+          "line": 220,
           "column": 4
         },
         "end": {
-          "line": 260,
+          "line": 222,
           "column": 5
         }
       },
@@ -530,11 +530,11 @@
     "getIcon": {
       "location": {
         "start": {
-          "line": 268,
+          "line": 229,
           "column": 4
         },
         "end": {
-          "line": 270,
+          "line": 231,
           "column": 5
         }
       },
@@ -1617,38 +1617,6 @@
       "overriddenFrom": "qx.ui.form.MForm",
       "jsdoc": {}
     },
-    "__onChangeLocale": {
-      "type": "function",
-      "name": "__onChangeLocale",
-      "abstract": false,
-      "mixin": true,
-      "inherited": true,
-      "access": "private",
-      "overriddenFrom": "qx.ui.form.MForm",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Locale change event handler</p>"
-          }
-        ],
-        "@signature": [
-          {
-            "name": "@signature",
-            "body": "function(e)"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {Event} the change event",
-            "paramName": "e",
-            "description": " the change event",
-            "type": "Event"
-          }
-        ]
-      }
-    },
     "isValid": {
       "type": "function",
       "name": "isValid",
@@ -1859,6 +1827,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1883,6 +1852,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

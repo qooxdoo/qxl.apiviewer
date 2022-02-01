@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 103,
+        "line": 100,
         "column": 3
       }
     },
@@ -31,11 +31,11 @@
     "request": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 33,
+          "line": 31,
           "column": 5
         }
       },
@@ -54,11 +54,11 @@
     "action": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 36,
           "column": 4
         },
         "end": {
-          "line": 40,
+          "line": 38,
           "column": 5
         }
       },
@@ -77,11 +77,11 @@
     "phase": {
       "location": {
         "start": {
-          "line": 45,
+          "line": 43,
           "column": 4
         },
         "end": {
-          "line": 47,
+          "line": 45,
           "column": 5
         }
       },
@@ -100,11 +100,11 @@
     "id": {
       "location": {
         "start": {
-          "line": 52,
+          "line": 50,
           "column": 4
         },
         "end": {
-          "line": 54,
+          "line": 52,
           "column": 5
         }
       },
@@ -157,11 +157,11 @@
     "init": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 72,
           "column": 4
         },
         "end": {
-          "line": 84,
+          "line": 81,
           "column": 5
         }
       },
@@ -240,11 +240,11 @@
     "clone": {
       "location": {
         "start": {
-          "line": 95,
+          "line": 92,
           "column": 4
         },
         "end": {
-          "line": 101,
+          "line": 98,
           "column": 5
         }
       },
@@ -372,6 +372,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -396,6 +397,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

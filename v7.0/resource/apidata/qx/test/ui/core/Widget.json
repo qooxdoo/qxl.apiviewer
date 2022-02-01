@@ -16,7 +16,7 @@
         "column": 0
       },
       "end": {
-        "line": 486,
+        "line": 491,
         "column": 3
       }
     },
@@ -40,11 +40,11 @@
     "testIsTabable": {
       "location": {
         "start": {
-          "line": 29,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 45,
+          "line": 51,
           "column": 5
         }
       },
@@ -54,11 +54,11 @@
     "testIsSeeableDepth0AfterFlush": {
       "location": {
         "start": {
-          "line": 48,
+          "line": 53,
           "column": 4
         },
         "end": {
-          "line": 62,
+          "line": 66,
           "column": 5
         }
       },
@@ -68,11 +68,11 @@
     "testIsSeeableDepth1AfterFlush": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 68,
           "column": 4
         },
         "end": {
-          "line": 85,
+          "line": 87,
           "column": 5
         }
       },
@@ -82,7 +82,7 @@
     "testIsSeeableDepth2AfterFlush": {
       "location": {
         "start": {
-          "line": 88,
+          "line": 89,
           "column": 4
         },
         "end": {
@@ -96,11 +96,11 @@
     "testIsSeeableDepth0": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 128,
+          "line": 127,
           "column": 5
         }
       },
@@ -110,11 +110,11 @@
     "testIsSeeableDepth1": {
       "location": {
         "start": {
-          "line": 131,
+          "line": 129,
           "column": 4
         },
         "end": {
-          "line": 147,
+          "line": 144,
           "column": 5
         }
       },
@@ -124,11 +124,11 @@
     "testIsSeeableDepth2": {
       "location": {
         "start": {
-          "line": 150,
+          "line": 146,
           "column": 4
         },
         "end": {
-          "line": 174,
+          "line": 169,
           "column": 5
         }
       },
@@ -138,7 +138,21 @@
     "testIsSeeableDepth0AfterFlushExclude": {
       "location": {
         "start": {
-          "line": 176,
+          "line": 171,
+          "column": 4
+        },
+        "end": {
+          "line": 184,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testIsSeeableNotInRoot": {
+      "location": {
+        "start": {
+          "line": 186,
           "column": 4
         },
         "end": {
@@ -149,28 +163,14 @@
       "type": "function",
       "access": "public"
     },
-    "testIsSeeableNotInRoot": {
-      "location": {
-        "start": {
-          "line": 193,
-          "column": 4
-        },
-        "end": {
-          "line": 198,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
     "testScrollChildIntoViewChangesScheduled": {
       "location": {
         "start": {
-          "line": 200,
+          "line": 192,
           "column": 4
         },
         "end": {
-          "line": 248,
+          "line": 253,
           "column": 5
         }
       },
@@ -180,11 +180,11 @@
     "testLazyScrollChildIntoViewY": {
       "location": {
         "start": {
-          "line": 250,
+          "line": 255,
           "column": 4
         },
         "end": {
-          "line": 296,
+          "line": 311,
           "column": 5
         }
       },
@@ -194,11 +194,11 @@
     "testReleaseChildControl": {
       "location": {
         "start": {
-          "line": 299,
+          "line": 313,
           "column": 4
         },
         "end": {
-          "line": 322,
+          "line": 336,
           "column": 5
         }
       },
@@ -208,11 +208,11 @@
     "testChildGetSubcontrolId": {
       "location": {
         "start": {
-          "line": 324,
+          "line": 338,
           "column": 4
         },
         "end": {
-          "line": 357,
+          "line": 368,
           "column": 5
         }
       },
@@ -222,11 +222,11 @@
     "testCreateChildControlHash": {
       "location": {
         "start": {
-          "line": 360,
+          "line": 370,
           "column": 4
         },
         "end": {
-          "line": 382,
+          "line": 392,
           "column": 5
         }
       },
@@ -236,11 +236,11 @@
     "testComputeSizeHintMinWidthBiggerMax": {
       "location": {
         "start": {
-          "line": 385,
+          "line": 394,
           "column": 4
         },
         "end": {
-          "line": 397,
+          "line": 406,
           "column": 5
         }
       },
@@ -250,11 +250,11 @@
     "testComputeSizeHintMinHeightBiggerMax": {
       "location": {
         "start": {
-          "line": 400,
+          "line": 408,
           "column": 4
         },
         "end": {
-          "line": 412,
+          "line": 420,
           "column": 5
         }
       },
@@ -264,11 +264,11 @@
     "testComputeSizeHintMaxWidthSmallerMin": {
       "location": {
         "start": {
-          "line": 415,
+          "line": 422,
           "column": 4
         },
         "end": {
-          "line": 427,
+          "line": 434,
           "column": 5
         }
       },
@@ -278,11 +278,11 @@
     "testComputeSizeHintMaxHeightSmallerMin": {
       "location": {
         "start": {
-          "line": 430,
+          "line": 436,
           "column": 4
         },
         "end": {
-          "line": 442,
+          "line": 448,
           "column": 5
         }
       },
@@ -292,11 +292,11 @@
     "testAddUndefined": {
       "location": {
         "start": {
-          "line": 445,
+          "line": 450,
           "column": 4
         },
         "end": {
-          "line": 458,
+          "line": 464,
           "column": 5
         }
       },
@@ -306,11 +306,11 @@
     "testAddNoWidget": {
       "location": {
         "start": {
-          "line": 461,
+          "line": 466,
           "column": 4
         },
         "end": {
-          "line": 474,
+          "line": 480,
           "column": 5
         }
       },
@@ -320,11 +320,11 @@
     "testAddWidget": {
       "location": {
         "start": {
-          "line": 477,
+          "line": 482,
           "column": 4
         },
         "end": {
-          "line": 484,
+          "line": 489,
           "column": 5
         }
       },
@@ -1482,6 +1482,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1506,6 +1507,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

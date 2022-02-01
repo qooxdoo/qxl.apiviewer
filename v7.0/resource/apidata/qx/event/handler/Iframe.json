@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 128,
+        "line": 114,
         "column": 3
       }
     },
@@ -33,12 +33,12 @@
     "PRIORITY": {
       "location": {
         "start": {
-          "line": 41,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 41,
-          "column": 52
+          "line": 35,
+          "column": 51
         }
       },
       "jsdoc": {
@@ -61,11 +61,11 @@
     "SUPPORTED_TYPES": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 47,
+          "line": 41,
           "column": 5
         }
       },
@@ -89,12 +89,12 @@
     "TARGET_CHECK": {
       "location": {
         "start": {
-          "line": 50,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 50,
-          "column": 56
+          "line": 44,
+          "column": 55
         }
       },
       "jsdoc": {
@@ -117,12 +117,12 @@
     "IGNORE_CAN_HANDLE": {
       "location": {
         "start": {
-          "line": 53,
+          "line": 47,
           "column": 4
         },
         "end": {
-          "line": 53,
-          "column": 29
+          "line": 47,
+          "column": 28
         }
       },
       "jsdoc": {
@@ -145,11 +145,11 @@
     "onevent": {
       "location": {
         "start": {
-          "line": 62,
+          "line": 56,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 73,
           "column": 6
         }
       },
@@ -190,11 +190,11 @@
     "canHandleEvent": {
       "location": {
         "start": {
-          "line": 96,
+          "line": 90,
           "column": 4
         },
         "end": {
-          "line": 98,
+          "line": 92,
           "column": 5
         }
       },
@@ -209,11 +209,11 @@
     "registerEvent": {
       "location": {
         "start": {
-          "line": 102,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 104,
+          "line": 97,
           "column": 5
         }
       },
@@ -228,11 +228,11 @@
     "unregisterEvent": {
       "location": {
         "start": {
-          "line": 108,
+          "line": 100,
           "column": 4
         },
         "end": {
-          "line": 110,
+          "line": 102,
           "column": 5
         }
       },
@@ -332,6 +332,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -356,6 +357,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -384,11 +386,11 @@
   "defer": {
     "location": {
       "start": {
-        "line": 125,
-        "column": 10
+        "line": 111,
+        "column": 2
       },
       "end": {
-        "line": 127,
+        "line": 113,
         "column": 3
       }
     },

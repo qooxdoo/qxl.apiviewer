@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 51,
+        "line": 50,
         "column": 0
       },
       "end": {
-        "line": 207,
+        "line": 190,
         "column": 3
       }
     },
@@ -39,11 +39,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 60,
-        "column": 13
+        "line": 57,
+        "column": 2
       },
       "end": {
-        "line": 75,
+        "line": 71,
         "column": 3
       }
     },
@@ -80,11 +80,11 @@
     "appearance": {
       "location": {
         "start": {
-          "line": 80,
+          "line": 74,
           "column": 4
         },
         "end": {
-          "line": 84,
+          "line": 77,
           "column": 5
         }
       },
@@ -101,11 +101,11 @@
     "maximum": {
       "location": {
         "start": {
-          "line": 87,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 92,
+          "line": 84,
           "column": 5
         }
       },
@@ -127,11 +127,11 @@
     "value": {
       "location": {
         "start": {
-          "line": 95,
+          "line": 87,
           "column": 4
         },
         "end": {
-          "line": 100,
+          "line": 91,
           "column": 5
         }
       },
@@ -155,11 +155,11 @@
     "complete": {
       "location": {
         "start": {
-          "line": 109,
+          "line": 98,
           "column": 4
         },
         "end": {
-          "line": 109,
+          "line": 98,
           "column": 35
         }
       },
@@ -177,11 +177,11 @@
     "change": {
       "location": {
         "start": {
-          "line": 115,
+          "line": 103,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 103,
           "column": 32
         }
       },
@@ -201,11 +201,11 @@
     "_applyValue": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 143,
+          "line": 129,
           "column": 5
         }
       },
@@ -219,11 +219,11 @@
     "_applyMaximum": {
       "location": {
         "start": {
-          "line": 147,
+          "line": 132,
           "column": 4
         },
         "end": {
-          "line": 166,
+          "line": 151,
           "column": 5
         }
       },
@@ -237,11 +237,11 @@
     "_createChildControlImpl": {
       "location": {
         "start": {
-          "line": 170,
+          "line": 154,
           "column": 4
         },
         "end": {
-          "line": 181,
+          "line": 165,
           "column": 5
         }
       },
@@ -256,11 +256,11 @@
     "_changeProgress": {
       "location": {
         "start": {
-          "line": 189,
+          "line": 172,
           "column": 4
         },
         "end": {
-          "line": 205,
+          "line": 188,
           "column": 5
         }
       },
@@ -372,6 +372,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -396,6 +397,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

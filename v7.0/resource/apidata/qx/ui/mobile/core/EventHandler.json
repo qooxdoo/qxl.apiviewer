@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 399,
+        "line": 419,
         "column": 3
       }
     },
@@ -50,11 +50,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 40,
-        "column": 14
+        "line": 37,
+        "column": 2
       },
       "end": {
-        "line": 45,
+        "line": 41,
         "column": 3
       }
     },
@@ -64,12 +64,12 @@
     "PRIORITY": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 58,
-          "column": 51
+          "line": 51,
+          "column": 50
         }
       },
       "jsdoc": {
@@ -92,11 +92,11 @@
     "SUPPORTED_TYPES": {
       "location": {
         "start": {
-          "line": 61,
+          "line": 54,
           "column": 4
         },
         "end": {
-          "line": 136,
+          "line": 128,
           "column": 5
         }
       },
@@ -120,12 +120,12 @@
     "IGNORE_CAN_HANDLE": {
       "location": {
         "start": {
-          "line": 139,
+          "line": 131,
           "column": 4
         },
         "end": {
-          "line": 139,
-          "column": 29
+          "line": 131,
+          "column": 28
         }
       },
       "jsdoc": {
@@ -148,12 +148,12 @@
     "__activeTarget": {
       "location": {
         "start": {
-          "line": 141,
+          "line": 133,
           "column": 4
         },
         "end": {
-          "line": 141,
-          "column": 25
+          "line": 133,
+          "column": 24
         }
       },
       "type": "variable",
@@ -162,12 +162,12 @@
     "__scrollLeft": {
       "location": {
         "start": {
-          "line": 142,
+          "line": 134,
           "column": 4
         },
         "end": {
-          "line": 142,
-          "column": 23
+          "line": 134,
+          "column": 22
         }
       },
       "type": "variable",
@@ -176,12 +176,12 @@
     "__scrollTop": {
       "location": {
         "start": {
-          "line": 143,
+          "line": 135,
           "column": 4
         },
         "end": {
-          "line": 143,
-          "column": 22
+          "line": 135,
+          "column": 21
         }
       },
       "type": "variable",
@@ -190,12 +190,12 @@
     "__startY": {
       "location": {
         "start": {
-          "line": 144,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 144,
-          "column": 19
+          "line": 136,
+          "column": 18
         }
       },
       "type": "variable",
@@ -204,12 +204,12 @@
     "__timer": {
       "location": {
         "start": {
-          "line": 145,
+          "line": 137,
           "column": 4
         },
         "end": {
-          "line": 145,
-          "column": 18
+          "line": 137,
+          "column": 17
         }
       },
       "type": "variable",
@@ -218,11 +218,11 @@
     "__onPointerDown": {
       "location": {
         "start": {
-          "line": 155,
+          "line": 146,
           "column": 4
         },
         "end": {
-          "line": 184,
+          "line": 181,
           "column": 5
         }
       },
@@ -249,11 +249,11 @@
     "__onPointerUp": {
       "location": {
         "start": {
-          "line": 193,
+          "line": 189,
           "column": 4
         },
         "end": {
-          "line": 196,
+          "line": 191,
           "column": 5
         }
       },
@@ -280,11 +280,11 @@
     "__onPointerMove": {
       "location": {
         "start": {
-          "line": 206,
+          "line": 200,
           "column": 4
         },
         "end": {
-          "line": 225,
+          "line": 224,
           "column": 5
         }
       },
@@ -311,11 +311,11 @@
     "__cancelActiveStateTimer": {
       "location": {
         "start": {
-          "line": 231,
+          "line": 229,
           "column": 4
         },
         "end": {
-          "line": 238,
+          "line": 235,
           "column": 5
         }
       },
@@ -333,11 +333,11 @@
     "__removeActiveState": {
       "location": {
         "start": {
-          "line": 244,
+          "line": 240,
           "column": 4
         },
         "end": {
-          "line": 253,
+          "line": 248,
           "column": 5
         }
       },
@@ -357,12 +357,12 @@
     "__manager": {
       "location": {
         "start": {
-          "line": 267,
+          "line": 258,
           "column": 4
         },
         "end": {
-          "line": 267,
-          "column": 20
+          "line": 258,
+          "column": 19
         }
       },
       "type": "variable",
@@ -371,11 +371,11 @@
     "canHandleEvent": {
       "location": {
         "start": {
-          "line": 271,
+          "line": 261,
           "column": 4
         },
         "end": {
-          "line": 273,
+          "line": 263,
           "column": 5
         }
       },
@@ -390,11 +390,11 @@
     "registerEvent": {
       "location": {
         "start": {
-          "line": 277,
+          "line": 266,
           "column": 4
         },
         "end": {
-          "line": 281,
+          "line": 275,
           "column": 5
         }
       },
@@ -409,11 +409,11 @@
     "unregisterEvent": {
       "location": {
         "start": {
-          "line": 285,
+          "line": 278,
           "column": 4
         },
         "end": {
-          "line": 289,
+          "line": 287,
           "column": 5
         }
       },
@@ -428,11 +428,11 @@
     "_dispatchEvent": {
       "location": {
         "start": {
-          "line": 297,
+          "line": 294,
           "column": 4
         },
         "end": {
-          "line": 366,
+          "line": 374,
           "column": 5
         }
       },
@@ -544,6 +544,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -568,6 +569,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -596,11 +598,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 378,
-        "column": 13
+        "line": 383,
+        "column": 2
       },
       "end": {
-        "line": 380,
+        "line": 385,
         "column": 3
       }
     },
@@ -609,11 +611,11 @@
   "defer": {
     "location": {
       "start": {
-        "line": 391,
-        "column": 10
+        "line": 393,
+        "column": 2
       },
       "end": {
-        "line": 398,
+        "line": 418,
         "column": 3
       }
     },

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 120,
+        "line": 111,
         "column": 3
       }
     },
@@ -36,11 +36,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 47,
-        "column": 14
+        "line": 44,
+        "column": 2
       },
       "end": {
-        "line": 54,
+        "line": 50,
         "column": 3
       }
     },
@@ -75,12 +75,12 @@
     "__callback": {
       "location": {
         "start": {
-          "line": 67,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 67,
-          "column": 21
+          "line": 59,
+          "column": 20
         }
       },
       "type": "variable",
@@ -89,12 +89,12 @@
     "__context": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 60,
           "column": 4
         },
         "end": {
-          "line": 68,
-          "column": 20
+          "line": 60,
+          "column": 19
         }
       },
       "type": "variable",
@@ -103,12 +103,12 @@
     "__manager": {
       "location": {
         "start": {
-          "line": 69,
+          "line": 61,
           "column": 4
         },
         "end": {
-          "line": 69,
-          "column": 20
+          "line": 61,
+          "column": 19
         }
       },
       "type": "variable",
@@ -117,11 +117,11 @@
     "cancel": {
       "location": {
         "start": {
-          "line": 74,
+          "line": 66,
           "column": 4
         },
         "end": {
-          "line": 76,
+          "line": 68,
           "column": 5
         }
       },
@@ -139,11 +139,11 @@
     "schedule": {
       "location": {
         "start": {
-          "line": 82,
+          "line": 73,
           "column": 4
         },
         "end": {
-          "line": 84,
+          "line": 75,
           "column": 5
         }
       },
@@ -161,11 +161,11 @@
     "call": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 104,
+          "line": 98,
           "column": 5
         }
       },
@@ -268,6 +268,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -292,6 +293,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -320,11 +322,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 115,
-        "column": 13
+        "line": 107,
+        "column": 2
       },
       "end": {
-        "line": 119,
+        "line": 110,
         "column": 3
       }
     },

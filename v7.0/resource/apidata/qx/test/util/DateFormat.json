@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 906,
+        "line": 1137,
         "column": 3
       }
     },
@@ -26,12 +26,12 @@
     "__dates": {
       "location": {
         "start": {
-          "line": 29,
-          "column": 2
+          "line": 26,
+          "column": 4
         },
         "end": {
-          "line": 55,
-          "column": 3
+          "line": 84,
+          "column": 5
         }
       },
       "jsdoc": {},
@@ -41,11 +41,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 57,
+          "line": 86,
           "column": 4
         },
         "end": {
-          "line": 59,
+          "line": 88,
           "column": 5
         }
       },
@@ -55,11 +55,11 @@
     "__fillNumber": {
       "location": {
         "start": {
-          "line": 61,
+          "line": 90,
           "column": 4
         },
         "end": {
-          "line": 70,
+          "line": 98,
           "column": 5
         }
       },
@@ -69,11 +69,11 @@
     "__getExpectedYear": {
       "location": {
         "start": {
-          "line": 72,
+          "line": 100,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 108,
           "column": 5
         }
       },
@@ -83,11 +83,11 @@
     "_testDateParse": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 110,
           "column": 4
         },
         "end": {
-          "line": 100,
+          "line": 126,
           "column": 5
         }
       },
@@ -97,11 +97,11 @@
     "testDateParse": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 128,
           "column": 4
         },
         "end": {
-          "line": 123,
+          "line": 145,
           "column": 5
         }
       },
@@ -111,11 +111,11 @@
     "testInvalidDate": {
       "location": {
         "start": {
-          "line": 125,
+          "line": 147,
           "column": 4
         },
         "end": {
-          "line": 138,
+          "line": 159,
           "column": 5
         }
       },
@@ -125,11 +125,11 @@
     "testWeeksInDateParsing": {
       "location": {
         "start": {
-          "line": 140,
+          "line": 161,
           "column": 4
         },
         "end": {
-          "line": 192,
+          "line": 242,
           "column": 5
         }
       },
@@ -139,11 +139,11 @@
     "testTimeZone": {
       "location": {
         "start": {
-          "line": 194,
+          "line": 244,
           "column": 4
         },
         "end": {
-          "line": 217,
+          "line": 281,
           "column": 5
         }
       },
@@ -153,11 +153,11 @@
     "testLocalizedDates": {
       "location": {
         "start": {
-          "line": 219,
+          "line": 283,
           "column": 4
         },
         "end": {
-          "line": 249,
+          "line": 311,
           "column": 5
         }
       },
@@ -167,11 +167,11 @@
     "testPattern_y_": {
       "location": {
         "start": {
-          "line": 251,
+          "line": 313,
           "column": 4
         },
         "end": {
-          "line": 303,
+          "line": 364,
           "column": 5
         }
       },
@@ -181,11 +181,11 @@
     "testPattern_M_": {
       "location": {
         "start": {
-          "line": 305,
+          "line": 366,
           "column": 4
         },
         "end": {
-          "line": 334,
+          "line": 429,
           "column": 5
         }
       },
@@ -195,11 +195,11 @@
     "testPattern_L_": {
       "location": {
         "start": {
-          "line": 336,
+          "line": 431,
           "column": 4
         },
         "end": {
-          "line": 361,
+          "line": 488,
           "column": 5
         }
       },
@@ -209,11 +209,11 @@
     "testPattern_w_": {
       "location": {
         "start": {
-          "line": 363,
+          "line": 490,
           "column": 4
         },
         "end": {
-          "line": 381,
+          "line": 506,
           "column": 5
         }
       },
@@ -223,11 +223,11 @@
     "testPattern_d_": {
       "location": {
         "start": {
-          "line": 383,
+          "line": 508,
           "column": 4
         },
         "end": {
-          "line": 398,
+          "line": 521,
           "column": 5
         }
       },
@@ -237,11 +237,11 @@
     "testPattern_D_": {
       "location": {
         "start": {
-          "line": 400,
+          "line": 523,
           "column": 4
         },
         "end": {
-          "line": 433,
+          "line": 553,
           "column": 5
         }
       },
@@ -251,11 +251,11 @@
     "testPattern_E_": {
       "location": {
         "start": {
-          "line": 435,
+          "line": 555,
           "column": 4
         },
         "end": {
-          "line": 465,
+          "line": 647,
           "column": 5
         }
       },
@@ -265,11 +265,11 @@
     "testPattern_c_": {
       "location": {
         "start": {
-          "line": 467,
+          "line": 649,
           "column": 4
         },
         "end": {
-          "line": 499,
+          "line": 716,
           "column": 5
         }
       },
@@ -279,11 +279,11 @@
     "testPattern_e_": {
       "location": {
         "start": {
-          "line": 501,
+          "line": 718,
           "column": 4
         },
         "end": {
-          "line": 531,
+          "line": 777,
           "column": 5
         }
       },
@@ -293,11 +293,11 @@
     "testPattern_e_parse": {
       "location": {
         "start": {
-          "line": 533,
+          "line": 779,
           "column": 4
         },
         "end": {
-          "line": 566,
+          "line": 811,
           "column": 5
         }
       },
@@ -307,11 +307,11 @@
     "testPattern_a_": {
       "location": {
         "start": {
-          "line": 568,
+          "line": 813,
           "column": 4
         },
         "end": {
-          "line": 580,
+          "line": 829,
           "column": 5
         }
       },
@@ -321,11 +321,11 @@
     "testPattern_h_": {
       "location": {
         "start": {
-          "line": 582,
+          "line": 831,
           "column": 4
         },
         "end": {
-          "line": 601,
+          "line": 847,
           "column": 5
         }
       },
@@ -335,11 +335,11 @@
     "testPattern_H_": {
       "location": {
         "start": {
-          "line": 603,
+          "line": 849,
           "column": 4
         },
         "end": {
-          "line": 622,
+          "line": 865,
           "column": 5
         }
       },
@@ -349,11 +349,11 @@
     "testPattern_k_": {
       "location": {
         "start": {
-          "line": 624,
+          "line": 867,
           "column": 4
         },
         "end": {
-          "line": 643,
+          "line": 883,
           "column": 5
         }
       },
@@ -363,11 +363,11 @@
     "testPattern_K_": {
       "location": {
         "start": {
-          "line": 645,
+          "line": 885,
           "column": 4
         },
         "end": {
-          "line": 664,
+          "line": 901,
           "column": 5
         }
       },
@@ -377,11 +377,11 @@
     "testPattern_m_": {
       "location": {
         "start": {
-          "line": 666,
+          "line": 903,
           "column": 4
         },
         "end": {
-          "line": 682,
+          "line": 917,
           "column": 5
         }
       },
@@ -391,11 +391,11 @@
     "testPattern_s_": {
       "location": {
         "start": {
-          "line": 684,
+          "line": 919,
           "column": 4
         },
         "end": {
-          "line": 700,
+          "line": 933,
           "column": 5
         }
       },
@@ -405,11 +405,11 @@
     "testPattern_S_": {
       "location": {
         "start": {
-          "line": 702,
+          "line": 935,
           "column": 4
         },
         "end": {
-          "line": 728,
+          "line": 959,
           "column": 5
         }
       },
@@ -419,11 +419,11 @@
     "testPattern_z_": {
       "location": {
         "start": {
-          "line": 733,
+          "line": 964,
           "column": 4
         },
         "end": {
-          "line": 759,
+          "line": 993,
           "column": 5
         }
       },
@@ -434,12 +434,12 @@
     "testPattern_G_": {
       "location": {
         "start": {
-          "line": 762,
+          "line": 995,
           "column": 4
         },
         "end": {
-          "line": 786,
-          "column": 3
+          "line": 1016,
+          "column": 5
         }
       },
       "type": "function",
@@ -448,12 +448,12 @@
     "_testIsoMasks": {
       "location": {
         "start": {
-          "line": 788,
-          "column": 2
+          "line": 1018,
+          "column": 4
         },
         "end": {
-          "line": 798,
-          "column": 3
+          "line": 1031,
+          "column": 5
         }
       },
       "type": "function",
@@ -462,12 +462,12 @@
     "testIsoMasks": {
       "location": {
         "start": {
-          "line": 800,
-          "column": 2
+          "line": 1033,
+          "column": 4
         },
         "end": {
-          "line": 811,
-          "column": 3
+          "line": 1042,
+          "column": 5
         }
       },
       "type": "function",
@@ -476,12 +476,12 @@
     "testIsoTz": {
       "location": {
         "start": {
-          "line": 813,
-          "column": 2
+          "line": 1044,
+          "column": 4
         },
         "end": {
-          "line": 832,
-          "column": 3
+          "line": 1063,
+          "column": 5
         }
       },
       "type": "function",
@@ -490,12 +490,12 @@
     "testUtc": {
       "location": {
         "start": {
-          "line": 834,
-          "column": 2
+          "line": 1065,
+          "column": 4
         },
         "end": {
-          "line": 854,
-          "column": 3
+          "line": 1084,
+          "column": 5
         }
       },
       "type": "function",
@@ -504,12 +504,12 @@
     "testChangingLocales": {
       "location": {
         "start": {
-          "line": 856,
-          "column": 2
+          "line": 1086,
+          "column": 4
         },
         "end": {
-          "line": 899,
-          "column": 3
+          "line": 1131,
+          "column": 5
         }
       },
       "type": "function",
@@ -518,12 +518,12 @@
     "hasNoEdge": {
       "location": {
         "start": {
-          "line": 901,
-          "column": 2
+          "line": 1133,
+          "column": 4
         },
         "end": {
-          "line": 903,
-          "column": 3
+          "line": 1135,
+          "column": 5
         }
       },
       "type": "function",
@@ -1088,6 +1088,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1112,6 +1113,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

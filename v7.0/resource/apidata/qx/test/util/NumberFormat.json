@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 234,
+        "line": 223,
         "column": 3
       }
     },
@@ -24,12 +24,12 @@
     "__nf": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 25,
-          "column": 15
+          "line": 23,
+          "column": 14
         }
       },
       "type": "variable",
@@ -38,12 +38,12 @@
     "__oldLocale": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 26,
-          "column": 22
+          "line": 24,
+          "column": 21
         }
       },
       "type": "variable",
@@ -52,11 +52,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 26,
           "column": 4
         },
         "end": {
-          "line": 35,
+          "line": 33,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 41,
+          "line": 38,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "testNumberFormatConstructor": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 84,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testNumberFormat": {
       "location": {
         "start": {
-          "line": 99,
+          "line": 86,
           "column": 4
         },
         "end": {
-          "line": 122,
+          "line": 108,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "testNumberParse": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 110,
           "column": 4
         },
         "end": {
-          "line": 167,
+          "line": 150,
           "column": 5
         }
       },
@@ -122,11 +122,11 @@
     "testLocaleSwitch": {
       "location": {
         "start": {
-          "line": 169,
+          "line": 152,
           "column": 4
         },
         "end": {
-          "line": 190,
+          "line": 175,
           "column": 5
         }
       },
@@ -136,11 +136,11 @@
     "testNumberFormatChange": {
       "location": {
         "start": {
-          "line": 192,
+          "line": 177,
           "column": 4
         },
         "end": {
-          "line": 211,
+          "line": 198,
           "column": 5
         }
       },
@@ -150,11 +150,11 @@
     "testParseWithPrefixOrPostfix": {
       "location": {
         "start": {
-          "line": 213,
+          "line": 200,
           "column": 4
         },
         "end": {
-          "line": 232,
+          "line": 221,
           "column": 5
         }
       },
@@ -249,6 +249,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -273,6 +274,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

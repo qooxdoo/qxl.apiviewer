@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 616,
+        "line": 759,
         "column": 3
       }
     },
@@ -26,12 +26,12 @@
     "testObject": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 25,
-          "column": 21
+          "line": 23,
+          "column": 20
         }
       },
       "type": "variable",
@@ -40,12 +40,12 @@
     "array": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 28,
-          "column": 16
+          "line": 25,
+          "column": 15
         }
       },
       "type": "variable",
@@ -54,11 +54,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 36,
+          "line": 31,
           "column": 5
         }
       },
@@ -68,11 +68,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 39,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 44,
+          "line": 37,
           "column": 5
         }
       },
@@ -82,11 +82,11 @@
     "testRootArray": {
       "location": {
         "start": {
-          "line": 47,
+          "line": 39,
           "column": 4
         },
         "end": {
-          "line": 60,
+          "line": 58,
           "column": 5
         }
       },
@@ -96,11 +96,11 @@
     "testAppend": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 60,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 87,
           "column": 5
         }
       },
@@ -110,11 +110,11 @@
     "testAppendOne": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 89,
           "column": 4
         },
         "end": {
-          "line": 104,
+          "line": 116,
           "column": 5
         }
       },
@@ -124,11 +124,11 @@
     "testBubbleAfterAppend": {
       "location": {
         "start": {
-          "line": 106,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 125,
+          "line": 143,
           "column": 5
         }
       },
@@ -138,11 +138,11 @@
     "testInsertAfter": {
       "location": {
         "start": {
-          "line": 128,
+          "line": 145,
           "column": 4
         },
         "end": {
-          "line": 147,
+          "line": 172,
           "column": 5
         }
       },
@@ -152,11 +152,11 @@
     "testInsertAt": {
       "location": {
         "start": {
-          "line": 150,
+          "line": 174,
           "column": 4
         },
         "end": {
-          "line": 169,
+          "line": 201,
           "column": 5
         }
       },
@@ -166,11 +166,11 @@
     "testInsertBefore": {
       "location": {
         "start": {
-          "line": 172,
+          "line": 203,
           "column": 4
         },
         "end": {
-          "line": 191,
+          "line": 230,
           "column": 5
         }
       },
@@ -180,11 +180,11 @@
     "testPop": {
       "location": {
         "start": {
-          "line": 194,
+          "line": 232,
           "column": 4
         },
         "end": {
-          "line": 213,
+          "line": 259,
           "column": 5
         }
       },
@@ -194,11 +194,11 @@
     "testPush": {
       "location": {
         "start": {
-          "line": 216,
+          "line": 261,
           "column": 4
         },
         "end": {
-          "line": 235,
+          "line": 288,
           "column": 5
         }
       },
@@ -208,11 +208,11 @@
     "testRemove": {
       "location": {
         "start": {
-          "line": 238,
+          "line": 290,
           "column": 4
         },
         "end": {
-          "line": 257,
+          "line": 317,
           "column": 5
         }
       },
@@ -222,49 +222,7 @@
     "testRemoveAll": {
       "location": {
         "start": {
-          "line": 260,
-          "column": 4
-        },
-        "end": {
-          "line": 279,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testRemoveAt": {
-      "location": {
-        "start": {
-          "line": 282,
-          "column": 4
-        },
-        "end": {
-          "line": 301,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testReverse": {
-      "location": {
-        "start": {
-          "line": 304,
-          "column": 4
-        },
-        "end": {
-          "line": 324,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testSetItem": {
-      "location": {
-        "start": {
-          "line": 327,
+          "line": 319,
           "column": 4
         },
         "end": {
@@ -275,14 +233,56 @@
       "type": "function",
       "access": "public"
     },
-    "testShift": {
+    "testRemoveAt": {
       "location": {
         "start": {
-          "line": 349,
+          "line": 348,
           "column": 4
         },
         "end": {
-          "line": 368,
+          "line": 375,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testReverse": {
+      "location": {
+        "start": {
+          "line": 377,
+          "column": 4
+        },
+        "end": {
+          "line": 404,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testSetItem": {
+      "location": {
+        "start": {
+          "line": 406,
+          "column": 4
+        },
+        "end": {
+          "line": 433,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testShift": {
+      "location": {
+        "start": {
+          "line": 435,
+          "column": 4
+        },
+        "end": {
+          "line": 462,
           "column": 5
         }
       },
@@ -292,11 +292,11 @@
     "testSort": {
       "location": {
         "start": {
-          "line": 371,
+          "line": 464,
           "column": 4
         },
         "end": {
-          "line": 392,
+          "line": 493,
           "column": 5
         }
       },
@@ -306,11 +306,11 @@
     "testSortSecondTime": {
       "location": {
         "start": {
-          "line": 395,
+          "line": 495,
           "column": 4
         },
         "end": {
-          "line": 426,
+          "line": 539,
           "column": 5
         }
       },
@@ -320,11 +320,11 @@
     "testSplice": {
       "location": {
         "start": {
-          "line": 429,
+          "line": 541,
           "column": 4
         },
         "end": {
-          "line": 448,
+          "line": 568,
           "column": 5
         }
       },
@@ -334,11 +334,11 @@
     "testSpliceRemoveOnly": {
       "location": {
         "start": {
-          "line": 451,
+          "line": 570,
           "column": 4
         },
         "end": {
-          "line": 470,
+          "line": 597,
           "column": 5
         }
       },
@@ -348,11 +348,11 @@
     "testUnshift": {
       "location": {
         "start": {
-          "line": 473,
+          "line": 599,
           "column": 4
         },
         "end": {
-          "line": 492,
+          "line": 626,
           "column": 5
         }
       },
@@ -362,11 +362,11 @@
     "testShiftAndSet": {
       "location": {
         "start": {
-          "line": 495,
+          "line": 628,
           "column": 4
         },
         "end": {
-          "line": 516,
+          "line": 650,
           "column": 5
         }
       },
@@ -376,11 +376,11 @@
     "testReverseAndSet": {
       "location": {
         "start": {
-          "line": 519,
+          "line": 652,
           "column": 4
         },
         "end": {
-          "line": 540,
+          "line": 674,
           "column": 5
         }
       },
@@ -390,11 +390,11 @@
     "testUnshiftAndSet": {
       "location": {
         "start": {
-          "line": 543,
+          "line": 676,
           "column": 4
         },
         "end": {
-          "line": 564,
+          "line": 698,
           "column": 5
         }
       },
@@ -404,11 +404,11 @@
     "testSortAndSet": {
       "location": {
         "start": {
-          "line": 566,
+          "line": 700,
           "column": 4
         },
         "end": {
-          "line": 590,
+          "line": 729,
           "column": 5
         }
       },
@@ -418,11 +418,11 @@
     "testSpliceAndSet": {
       "location": {
         "start": {
-          "line": 593,
+          "line": 731,
           "column": 4
         },
         "end": {
-          "line": 614,
+          "line": 757,
           "column": 5
         }
       },
@@ -1109,6 +1109,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1133,6 +1134,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

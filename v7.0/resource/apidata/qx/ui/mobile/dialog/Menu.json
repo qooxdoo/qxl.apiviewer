@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 386,
+        "line": 375,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 49,
-        "column": 14
+        "line": 47,
+        "column": 2
       },
       "end": {
-        "line": 73,
+        "line": 70,
         "column": 3
       }
     },
@@ -69,12 +69,12 @@
     "changeSelection": {
       "location": {
         "start": {
-          "line": 87,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 87,
-          "column": 42
+          "line": 82,
+          "column": 41
         }
       },
       "jsdoc": {
@@ -93,11 +93,11 @@
     "defaultCssClass": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 104,
+          "line": 96,
           "column": 5
         }
       },
@@ -116,11 +116,11 @@
     "selectedItemClass": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 102,
           "column": 4
         },
         "end": {
-          "line": 114,
+          "line": 104,
           "column": 5
         }
       },
@@ -140,11 +140,11 @@
     "unselectedItemClass": {
       "location": {
         "start": {
-          "line": 121,
+          "line": 110,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 112,
           "column": 5
         }
       },
@@ -164,11 +164,11 @@
     "nullable": {
       "location": {
         "start": {
-          "line": 131,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 136,
+          "line": 122,
           "column": 5
         }
       },
@@ -190,11 +190,11 @@
     "clearButtonLabel": {
       "location": {
         "start": {
-          "line": 143,
+          "line": 128,
           "column": 4
         },
         "end": {
-          "line": 148,
+          "line": 132,
           "column": 5
         }
       },
@@ -216,11 +216,11 @@
     "selectedIndex": {
       "location": {
         "start": {
-          "line": 154,
+          "line": 137,
           "column": 4
         },
         "end": {
-          "line": 159,
+          "line": 141,
           "column": 5
         }
       },
@@ -242,11 +242,11 @@
     "visibleListItems": {
       "location": {
         "start": {
-          "line": 165,
+          "line": 146,
           "column": 4
         },
         "end": {
-          "line": 170,
+          "line": 150,
           "column": 5
         }
       },
@@ -270,11 +270,11 @@
     "__selectionList": {
       "location": {
         "start": {
-          "line": 182,
+          "line": 160,
           "column": 4
         },
         "end": {
-          "line": 182,
+          "line": 160,
           "column": 25
         }
       },
@@ -284,12 +284,12 @@
     "__clearButton": {
       "location": {
         "start": {
-          "line": 183,
+          "line": 161,
           "column": 4
         },
         "end": {
-          "line": 183,
-          "column": 24
+          "line": 161,
+          "column": 23
         }
       },
       "type": "variable",
@@ -298,12 +298,12 @@
     "__listScroller": {
       "location": {
         "start": {
-          "line": 184,
+          "line": 162,
           "column": 4
         },
         "end": {
-          "line": 184,
-          "column": 25
+          "line": 162,
+          "column": 24
         }
       },
       "type": "variable",
@@ -312,12 +312,12 @@
     "__menuContainer": {
       "location": {
         "start": {
-          "line": 185,
+          "line": 163,
           "column": 4
         },
         "end": {
-          "line": 185,
-          "column": 26
+          "line": 163,
+          "column": 25
         }
       },
       "type": "variable",
@@ -326,11 +326,11 @@
     "show": {
       "location": {
         "start": {
-          "line": 189,
+          "line": 166,
           "column": 4
         },
         "end": {
-          "line": 193,
+          "line": 170,
           "column": 5
         }
       },
@@ -346,11 +346,11 @@
     "_createClearButton": {
       "location": {
         "start": {
-          "line": 201,
+          "line": 177,
           "column": 4
         },
         "end": {
-          "line": 206,
+          "line": 185,
           "column": 5
         }
       },
@@ -376,11 +376,11 @@
     "_createListScroller": {
       "location": {
         "start": {
-          "line": 214,
+          "line": 192,
           "column": 4
         },
         "end": {
-          "line": 221,
+          "line": 203,
           "column": 5
         }
       },
@@ -415,11 +415,11 @@
     "_getListScroller": {
       "location": {
         "start": {
-          "line": 228,
+          "line": 209,
           "column": 4
         },
         "end": {
-          "line": 230,
+          "line": 211,
           "column": 5
         }
       },
@@ -445,11 +445,11 @@
     "_updatePosition": {
       "location": {
         "start": {
-          "line": 234,
+          "line": 214,
           "column": 4
         },
         "end": {
-          "line": 247,
+          "line": 235,
           "column": 5
         }
       },
@@ -467,11 +467,11 @@
     "_createSelectionList": {
       "location": {
         "start": {
-          "line": 255,
+          "line": 242,
           "column": 4
         },
         "end": {
-          "line": 279,
+          "line": 270,
           "column": 5
         }
       },
@@ -497,11 +497,11 @@
     "getSelectionList": {
       "location": {
         "start": {
-          "line": 286,
+          "line": 276,
           "column": 4
         },
         "end": {
-          "line": 288,
+          "line": 278,
           "column": 5
         }
       },
@@ -527,11 +527,11 @@
     "_onSelectionListTap": {
       "location": {
         "start": {
-          "line": 292,
+          "line": 281,
           "column": 4
         },
         "end": {
-          "line": 294,
+          "line": 283,
           "column": 5
         }
       },
@@ -549,11 +549,11 @@
     "setItems": {
       "location": {
         "start": {
-          "line": 301,
+          "line": 289,
           "column": 4
         },
         "end": {
-          "line": 306,
+          "line": 294,
           "column": 5
         }
       },
@@ -580,11 +580,11 @@
     "__onListChangeSelection": {
       "location": {
         "start": {
-          "line": 313,
+          "line": 300,
           "column": 4
         },
         "end": {
-          "line": 315,
+          "line": 302,
           "column": 5
         }
       },
@@ -611,11 +611,11 @@
     "__onClearButtonTap": {
       "location": {
         "start": {
-          "line": 321,
+          "line": 307,
           "column": 4
         },
         "end": {
-          "line": 324,
+          "line": 310,
           "column": 5
         }
       },
@@ -633,11 +633,11 @@
     "_applySelectedIndex": {
       "location": {
         "start": {
-          "line": 328,
+          "line": 313,
           "column": 4
         },
         "end": {
-          "line": 337,
+          "line": 325,
           "column": 5
         }
       },
@@ -651,11 +651,11 @@
     "_applyNullable": {
       "location": {
         "start": {
-          "line": 341,
+          "line": 328,
           "column": 4
         },
         "end": {
-          "line": 347,
+          "line": 334,
           "column": 5
         }
       },
@@ -669,11 +669,11 @@
     "_applyClearButtonLabel": {
       "location": {
         "start": {
-          "line": 351,
+          "line": 337,
           "column": 4
         },
         "end": {
-          "line": 353,
+          "line": 339,
           "column": 5
         }
       },
@@ -687,11 +687,11 @@
     "_render": {
       "location": {
         "start": {
-          "line": 359,
+          "line": 344,
           "column": 4
         },
         "end": {
-          "line": 363,
+          "line": 348,
           "column": 5
         }
       },
@@ -709,11 +709,11 @@
     "scrollToItem": {
       "location": {
         "start": {
-          "line": 370,
+          "line": 354,
           "column": 4
         },
         "end": {
-          "line": 376,
+          "line": 363,
           "column": 5
         }
       },
@@ -825,6 +825,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -849,6 +850,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -2650,15 +2652,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 380,
-        "column": 13
+        "line": 366,
+        "column": 2
       },
       "end": {
-        "line": 384,
+        "line": 374,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 97,
+        "line": 86,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "testTwiceClickForm": {
       "location": {
         "start": {
-          "line": 24,
+          "line": 22,
           "column": 4
         },
         "end": {
-          "line": 28,
+          "line": 26,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "testTwiceClickMenu": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 35,
+          "line": 32,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "testTwiceClickToolbar": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 34,
           "column": 4
         },
         "end": {
-          "line": 42,
+          "line": 38,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "__testTwiceClick": {
       "location": {
         "start": {
-          "line": 45,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 54,
+          "line": 49,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "testTwiceClickEmptySelectionForm": {
       "location": {
         "start": {
-          "line": 59,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 63,
+          "line": 55,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testTwiceClickEmptySelectionMenu": {
       "location": {
         "start": {
-          "line": 66,
+          "line": 57,
           "column": 4
         },
         "end": {
-          "line": 70,
+          "line": 61,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "testTwiceClickEmptySelectionToolbar": {
       "location": {
         "start": {
-          "line": 73,
+          "line": 63,
           "column": 4
         },
         "end": {
-          "line": 77,
+          "line": 67,
           "column": 5
         }
       },
@@ -122,11 +122,11 @@
     "__testTwiceClickEmptySelection": {
       "location": {
         "start": {
-          "line": 80,
+          "line": 69,
           "column": 4
         },
         "end": {
-          "line": 95,
+          "line": 84,
           "column": 5
         }
       },
@@ -221,6 +221,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -245,6 +246,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

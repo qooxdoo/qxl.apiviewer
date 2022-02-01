@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 304,
+        "line": 314,
         "column": 3
       }
     },
@@ -50,7 +50,7 @@
         },
         "end": {
           "line": 31,
-          "column": 32
+          "column": 29
         }
       },
       "jsdoc": {
@@ -72,7 +72,7 @@
         },
         "end": {
           "line": 34,
-          "column": 36
+          "column": 33
         }
       },
       "jsdoc": {
@@ -94,7 +94,7 @@
         },
         "end": {
           "line": 37,
-          "column": 30
+          "column": 27
         }
       },
       "jsdoc": {
@@ -113,12 +113,12 @@
     "_fadeOut": {
       "location": {
         "start": {
-          "line": 45,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 48,
-          "column": 6
+          "line": 52,
+          "column": 5
         }
       },
       "jsdoc": {
@@ -135,12 +135,12 @@
     "_fadeIn": {
       "location": {
         "start": {
-          "line": 54,
+          "line": 57,
           "column": 4
         },
         "end": {
-          "line": 57,
-          "column": 6
+          "line": 65,
+          "column": 5
         }
       },
       "jsdoc": {
@@ -157,11 +157,11 @@
     "_animate": {
       "location": {
         "start": {
-          "line": 67,
+          "line": 74,
           "column": 4
         },
         "end": {
-          "line": 102,
+          "line": 121,
           "column": 5
         }
       },
@@ -205,11 +205,11 @@
     "getAnimationHandles": {
       "location": {
         "start": {
-          "line": 114,
+          "line": 132,
           "column": 4
         },
         "end": {
-          "line": 120,
+          "line": 138,
           "column": 5
         }
       },
@@ -241,11 +241,11 @@
     "animate": {
       "location": {
         "start": {
-          "line": 157,
+          "line": 174,
           "column": 4
         },
         "end": {
-          "line": 160,
+          "line": 177,
           "column": 5
         }
       },
@@ -294,11 +294,11 @@
     "animateReverse": {
       "location": {
         "start": {
-          "line": 172,
+          "line": 188,
           "column": 4
         },
         "end": {
-          "line": 175,
+          "line": 191,
           "column": 5
         }
       },
@@ -347,11 +347,11 @@
     "play": {
       "location": {
         "start": {
-          "line": 184,
+          "line": 199,
           "column": 4
         },
         "end": {
-          "line": 192,
+          "line": 207,
           "column": 5
         }
       },
@@ -383,11 +383,11 @@
     "pause": {
       "location": {
         "start": {
-          "line": 201,
+          "line": 215,
           "column": 4
         },
         "end": {
-          "line": 210,
+          "line": 224,
           "column": 5
         }
       },
@@ -419,11 +419,11 @@
     "stop": {
       "location": {
         "start": {
-          "line": 218,
+          "line": 231,
           "column": 4
         },
         "end": {
-          "line": 227,
+          "line": 240,
           "column": 5
         }
       },
@@ -455,11 +455,11 @@
     "isPlaying": {
       "location": {
         "start": {
-          "line": 235,
+          "line": 247,
           "column": 4
         },
         "end": {
-          "line": 244,
+          "line": 256,
           "column": 5
         }
       },
@@ -491,11 +491,11 @@
     "isEnded": {
       "location": {
         "start": {
-          "line": 252,
+          "line": 263,
           "column": 4
         },
         "end": {
-          "line": 261,
+          "line": 272,
           "column": 5
         }
       },
@@ -527,11 +527,11 @@
     "fadeIn": {
       "location": {
         "start": {
-          "line": 270,
+          "line": 280,
           "column": 4
         },
         "end": {
-          "line": 274,
+          "line": 284,
           "column": 5
         }
       },
@@ -573,11 +573,11 @@
     "fadeOut": {
       "location": {
         "start": {
-          "line": 283,
+          "line": 292,
           "column": 4
         },
         "end": {
-          "line": 285,
+          "line": 294,
           "column": 5
         }
       },
@@ -620,15 +620,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 289,
-        "column": 10
+        "line": 297,
+        "column": 2
       },
       "end": {
-        "line": 303,
+        "line": 313,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

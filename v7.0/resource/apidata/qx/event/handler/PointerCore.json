@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 493,
+        "line": 571,
         "column": 3
       }
     },
@@ -43,11 +43,11 @@
     "MOUSE_TO_POINTER_MAPPING": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 31,
           "column": 4
         },
         "end": {
-          "line": 38,
+          "line": 37,
           "column": 5
         }
       },
@@ -57,11 +57,11 @@
     "TOUCH_TO_POINTER_MAPPING": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 39,
           "column": 4
         },
         "end": {
-          "line": 45,
+          "line": 44,
           "column": 5
         }
       },
@@ -71,11 +71,11 @@
     "MSPOINTER_TO_POINTER_MAPPING": {
       "location": {
         "start": {
-          "line": 47,
+          "line": 46,
           "column": 4
         },
         "end": {
-          "line": 56,
+          "line": 55,
           "column": 5
         }
       },
@@ -85,11 +85,11 @@
     "POINTER_TO_GESTURE_MAPPING": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 57,
           "column": 4
         },
         "end": {
-          "line": 63,
+          "line": 62,
           "column": 5
         }
       },
@@ -99,32 +99,18 @@
     "LEFT_BUTTON": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 66,
-          "column": 67
+          "line": 68,
+          "column": 11
         }
       },
       "type": "variable",
       "access": "public"
     },
     "SIM_MOUSE_DISTANCE": {
-      "location": {
-        "start": {
-          "line": 68,
-          "column": 4
-        },
-        "end": {
-          "line": 68,
-          "column": 27
-        }
-      },
-      "type": "variable",
-      "access": "public"
-    },
-    "SIM_MOUSE_DELAY": {
       "location": {
         "start": {
           "line": 70,
@@ -138,15 +124,29 @@
       "type": "variable",
       "access": "public"
     },
-    "__lastTouch": {
+    "SIM_MOUSE_DELAY": {
       "location": {
         "start": {
-          "line": 79,
+          "line": 72,
           "column": 4
         },
         "end": {
-          "line": 79,
-          "column": 22
+          "line": 72,
+          "column": 25
+        }
+      },
+      "type": "variable",
+      "access": "public"
+    },
+    "__lastTouch": {
+      "location": {
+        "start": {
+          "line": 81,
+          "column": 4
+        },
+        "end": {
+          "line": 81,
+          "column": 21
         }
       },
       "jsdoc": {
@@ -164,11 +164,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 89,
-        "column": 14
+        "line": 91,
+        "column": 2
       },
       "end": {
-        "line": 128,
+        "line": 160,
         "column": 3
       }
     },
@@ -202,12 +202,12 @@
     "__defaultTarget": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 163,
           "column": 4
         },
         "end": {
-          "line": 132,
-          "column": 26
+          "line": 163,
+          "column": 25
         }
       },
       "type": "variable",
@@ -216,12 +216,12 @@
     "__emitter": {
       "location": {
         "start": {
-          "line": 133,
+          "line": 164,
           "column": 4
         },
         "end": {
-          "line": 133,
-          "column": 20
+          "line": 164,
+          "column": 19
         }
       },
       "type": "variable",
@@ -230,12 +230,12 @@
     "__eventNames": {
       "location": {
         "start": {
-          "line": 134,
+          "line": 165,
           "column": 4
         },
         "end": {
-          "line": 134,
-          "column": 23
+          "line": 165,
+          "column": 22
         }
       },
       "type": "variable",
@@ -244,12 +244,12 @@
     "__nativePointerEvents": {
       "location": {
         "start": {
-          "line": 135,
+          "line": 166,
           "column": 4
         },
         "end": {
-          "line": 135,
-          "column": 33
+          "line": 166,
+          "column": 32
         }
       },
       "type": "variable",
@@ -258,12 +258,12 @@
     "__wrappedListener": {
       "location": {
         "start": {
-          "line": 136,
+          "line": 167,
           "column": 4
         },
         "end": {
-          "line": 136,
-          "column": 28
+          "line": 167,
+          "column": 27
         }
       },
       "type": "variable",
@@ -272,12 +272,12 @@
     "__lastButtonState": {
       "location": {
         "start": {
-          "line": 137,
+          "line": 168,
           "column": 4
         },
         "end": {
-          "line": 137,
-          "column": 25
+          "line": 168,
+          "column": 24
         }
       },
       "type": "variable",
@@ -286,12 +286,12 @@
     "__buttonStates": {
       "location": {
         "start": {
-          "line": 138,
+          "line": 169,
           "column": 4
         },
         "end": {
-          "line": 138,
-          "column": 25
+          "line": 169,
+          "column": 24
         }
       },
       "type": "variable",
@@ -300,12 +300,12 @@
     "__primaryIdentifier": {
       "location": {
         "start": {
-          "line": 139,
+          "line": 170,
           "column": 4
         },
         "end": {
-          "line": 139,
-          "column": 30
+          "line": 170,
+          "column": 29
         }
       },
       "type": "variable",
@@ -314,12 +314,12 @@
     "__activeTouches": {
       "location": {
         "start": {
-          "line": 140,
+          "line": 171,
           "column": 4
         },
         "end": {
-          "line": 140,
-          "column": 26
+          "line": 171,
+          "column": 25
         }
       },
       "type": "variable",
@@ -328,12 +328,12 @@
     "_processedFlag": {
       "location": {
         "start": {
-          "line": 141,
+          "line": 172,
           "column": 4
         },
         "end": {
-          "line": 141,
-          "column": 25
+          "line": 172,
+          "column": 24
         }
       },
       "type": "variable",
@@ -342,11 +342,11 @@
     "_initPointerObserver": {
       "location": {
         "start": {
-          "line": 146,
+          "line": 177,
           "column": 4
         },
         "end": {
-          "line": 148,
+          "line": 179,
           "column": 5
         }
       },
@@ -364,11 +364,11 @@
     "_initObserver": {
       "location": {
         "start": {
-          "line": 157,
+          "line": 187,
           "column": 4
         },
         "end": {
-          "line": 169,
+          "line": 205,
           "column": 5
         }
       },
@@ -402,11 +402,11 @@
     "_onPointerEvent": {
       "location": {
         "start": {
-          "line": 175,
+          "line": 211,
           "column": 4
         },
         "end": {
-          "line": 190,
+          "line": 230,
           "column": 5
         }
       },
@@ -433,11 +433,11 @@
     "_onTouchEvent": {
       "location": {
         "start": {
-          "line": 197,
+          "line": 236,
           "column": 4
         },
         "end": {
-          "line": 286,
+          "line": 344,
           "column": 5
         }
       },
@@ -464,11 +464,11 @@
     "_onMouseEvent": {
       "location": {
         "start": {
-          "line": 293,
+          "line": 350,
           "column": 4
         },
         "end": {
-          "line": 350,
+          "line": 420,
           "column": 5
         }
       },
@@ -495,11 +495,11 @@
     "_determineActiveTouches": {
       "location": {
         "start": {
-          "line": 358,
+          "line": 427,
           "column": 4
         },
         "end": {
-          "line": 381,
+          "line": 452,
           "column": 5
         }
       },
@@ -533,11 +533,11 @@
     "_isSimulatedMouseEvent": {
       "location": {
         "start": {
-          "line": 391,
+          "line": 461,
           "column": 4
         },
         "end": {
-          "line": 405,
+          "line": 475,
           "column": 5
         }
       },
@@ -579,11 +579,11 @@
     "_stopObserver": {
       "location": {
         "start": {
-          "line": 411,
+          "line": 480,
           "column": 4
         },
         "end": {
-          "line": 415,
+          "line": 488,
           "column": 5
         }
       },
@@ -601,11 +601,11 @@
     "_fireEvent": {
       "location": {
         "start": {
-          "line": 425,
+          "line": 498,
           "column": 4
         },
         "end": {
-          "line": 483,
+          "line": 561,
           "column": 5
         }
       },
@@ -658,11 +658,11 @@
     "dispose": {
       "location": {
         "start": {
-          "line": 488,
+          "line": 566,
           "column": 4
         },
         "end": {
-          "line": 491,
+          "line": 569,
           "column": 5
         }
       },

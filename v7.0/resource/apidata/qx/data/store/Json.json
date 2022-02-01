@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 344,
+        "line": 330,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 58,
-        "column": 14
+        "line": 56,
+        "column": 2
       },
       "end": {
-        "line": 70,
+        "line": 66,
         "column": 3
       }
     },
@@ -72,12 +72,12 @@
     "loaded": {
       "location": {
         "start": {
-          "line": 79,
+          "line": 73,
           "column": 4
         },
         "end": {
-          "line": 79,
-          "column": 35
+          "line": 73,
+          "column": 32
         }
       },
       "jsdoc": {
@@ -94,12 +94,12 @@
     "parseError": {
       "location": {
         "start": {
-          "line": 86,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 86,
-          "column": 39
+          "line": 80,
+          "column": 36
         }
       },
       "jsdoc": {
@@ -116,12 +116,12 @@
     "error": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 87,
           "column": 4
         },
         "end": {
-          "line": 93,
-          "column": 34
+          "line": 87,
+          "column": 31
         }
       },
       "jsdoc": {
@@ -140,11 +140,11 @@
     "model": {
       "location": {
         "start": {
-          "line": 102,
+          "line": 94,
           "column": 4
         },
         "end": {
-          "line": 105,
+          "line": 97,
           "column": 5
         }
       },
@@ -165,11 +165,11 @@
     "state": {
       "location": {
         "start": {
-          "line": 113,
+          "line": 104,
           "column": 4
         },
         "end": {
-          "line": 120,
+          "line": 118,
           "column": 5
         }
       },
@@ -200,11 +200,11 @@
     "url": {
       "location": {
         "start": {
-          "line": 126,
+          "line": 123,
           "column": 4
         },
         "end": {
-          "line": 131,
+          "line": 128,
           "column": 5
         }
       },
@@ -261,12 +261,12 @@
     "_marshaler": {
       "location": {
         "start": {
-          "line": 137,
+          "line": 132,
           "column": 4
         },
         "end": {
-          "line": 137,
-          "column": 21
+          "line": 132,
+          "column": 20
         }
       },
       "type": "variable",
@@ -275,12 +275,12 @@
     "_delegate": {
       "location": {
         "start": {
-          "line": 138,
+          "line": 133,
           "column": 4
         },
         "end": {
-          "line": 138,
-          "column": 20
+          "line": 133,
+          "column": 19
         }
       },
       "type": "variable",
@@ -289,12 +289,12 @@
     "__request": {
       "location": {
         "start": {
-          "line": 140,
+          "line": 135,
           "column": 4
         },
         "end": {
-          "line": 140,
-          "column": 20
+          "line": 135,
+          "column": 19
         }
       },
       "type": "variable",
@@ -303,11 +303,11 @@
     "_applyUrl": {
       "location": {
         "start": {
-          "line": 143,
+          "line": 138,
           "column": 4
         },
         "end": {
-          "line": 151,
+          "line": 146,
           "column": 5
         }
       },
@@ -321,11 +321,11 @@
     "_getRequest": {
       "location": {
         "start": {
-          "line": 158,
+          "line": 153,
           "column": 4
         },
         "end": {
-          "line": 160,
+          "line": 155,
           "column": 5
         }
       },
@@ -351,11 +351,11 @@
     "_setRequest": {
       "location": {
         "start": {
-          "line": 168,
+          "line": 162,
           "column": 4
         },
         "end": {
-          "line": 170,
+          "line": 164,
           "column": 5
         }
       },
@@ -382,11 +382,11 @@
     "_createRequest": {
       "location": {
         "start": {
-          "line": 181,
+          "line": 174,
           "column": 4
         },
         "end": {
-          "line": 215,
+          "line": 208,
           "column": 5
         }
       },
@@ -413,11 +413,11 @@
     "_onChangePhase": {
       "location": {
         "start": {
-          "line": 225,
+          "line": 217,
           "column": 4
         },
         "end": {
-          "line": 244,
+          "line": 236,
           "column": 5
         }
       },
@@ -444,11 +444,11 @@
     "_onFail": {
       "location": {
         "start": {
-          "line": 252,
+          "line": 243,
           "column": 4
         },
         "end": {
-          "line": 255,
+          "line": 246,
           "column": 5
         }
       },
@@ -475,11 +475,11 @@
     "_onParseError": {
       "location": {
         "start": {
-          "line": 265,
+          "line": 255,
           "column": 4
         },
         "end": {
-          "line": 267,
+          "line": 257,
           "column": 5
         }
       },
@@ -506,11 +506,11 @@
     "_onSuccess": {
       "location": {
         "start": {
-          "line": 277,
+          "line": 266,
           "column": 4
         },
         "end": {
-          "line": 313,
+          "line": 301,
           "column": 5
         }
       },
@@ -537,11 +537,11 @@
     "reload": {
       "location": {
         "start": {
-          "line": 319,
+          "line": 306,
           "column": 4
         },
         "end": {
-          "line": 324,
+          "line": 311,
           "column": 5
         }
       },
@@ -644,6 +644,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -668,6 +669,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -894,11 +896,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 333,
-        "column": 13
+        "line": 320,
+        "column": 2
       },
       "end": {
-        "line": 343,
+        "line": 329,
         "column": 3
       }
     },

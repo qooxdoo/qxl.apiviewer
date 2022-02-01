@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 176,
+        "line": 156,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 45,
-        "column": 14
+        "line": 42,
+        "column": 2
       },
       "end": {
-        "line": 57,
+        "line": 53,
         "column": 3
       }
     },
@@ -80,12 +80,12 @@
     "testFunction": {
       "location": {
         "start": {
-          "line": 71,
+          "line": 63,
           "column": 4
         },
         "end": {
-          "line": 71,
-          "column": 41
+          "line": 63,
+          "column": 39
         }
       },
       "jsdoc": {
@@ -103,12 +103,12 @@
     "name": {
       "location": {
         "start": {
-          "line": 74,
+          "line": 66,
           "column": 4
         },
         "end": {
-          "line": 74,
-          "column": 31
+          "line": 66,
+          "column": 29
         }
       },
       "jsdoc": {
@@ -126,11 +126,11 @@
     "className": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 69,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 72,
           "column": 5
         }
       },
@@ -151,11 +151,11 @@
     "testClass": {
       "location": {
         "start": {
-          "line": 84,
+          "line": 75,
           "column": 4
         },
         "end": {
-          "line": 88,
+          "line": 78,
           "column": 5
         }
       },
@@ -208,11 +208,11 @@
     "run": {
       "location": {
         "start": {
-          "line": 107,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 142,
+          "line": 125,
           "column": 5
         }
       },
@@ -239,11 +239,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 147,
+          "line": 130,
           "column": 4
         },
         "end": {
-          "line": 153,
+          "line": 135,
           "column": 5
         }
       },
@@ -261,11 +261,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 158,
+          "line": 140,
           "column": 4
         },
         "end": {
-          "line": 164,
+          "line": 145,
           "column": 5
         }
       },
@@ -283,11 +283,11 @@
     "getFullName": {
       "location": {
         "start": {
-          "line": 172,
+          "line": 152,
           "column": 4
         },
         "end": {
-          "line": 174,
+          "line": 154,
           "column": 5
         }
       },
@@ -398,6 +398,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -422,6 +423,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

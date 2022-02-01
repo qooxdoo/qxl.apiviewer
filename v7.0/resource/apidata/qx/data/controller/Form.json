@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 391,
+        "line": 403,
         "column": 3
       }
     },
@@ -32,11 +32,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 60,
-        "column": 14
+        "line": 59,
+        "column": 2
       },
       "end": {
-        "line": 74,
+        "line": 72,
         "column": 3
       }
     },
@@ -84,11 +84,11 @@
     "model": {
       "location": {
         "start": {
-          "line": 80,
+          "line": 76,
           "column": 4
         },
         "end": {
-          "line": 87,
+          "line": 82,
           "column": 5
         }
       },
@@ -111,11 +111,11 @@
     "target": {
       "location": {
         "start": {
-          "line": 91,
+          "line": 85,
           "column": 4
         },
         "end": {
-          "line": 99,
+          "line": 92,
           "column": 5
         }
       },
@@ -172,12 +172,12 @@
     "__objectController": {
       "location": {
         "start": {
-          "line": 105,
+          "line": 96,
           "column": 4
         },
         "end": {
-          "line": 105,
-          "column": 29
+          "line": 96,
+          "column": 28
         }
       },
       "type": "variable",
@@ -186,12 +186,12 @@
     "__bindingOptions": {
       "location": {
         "start": {
-          "line": 106,
+          "line": 97,
           "column": 4
         },
         "end": {
-          "line": 106,
-          "column": 27
+          "line": 97,
+          "column": 26
         }
       },
       "type": "variable",
@@ -200,11 +200,11 @@
     "addBindingOptions": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 114,
           "column": 4
         },
         "end": {
-          "line": 144,
+          "line": 139,
           "column": 5
         }
       },
@@ -245,11 +245,11 @@
     "createModel": {
       "location": {
         "start": {
-          "line": 157,
+          "line": 151,
           "column": 4
         },
         "end": {
-          "line": 202,
+          "line": 196,
           "column": 5
         }
       },
@@ -284,11 +284,11 @@
     "updateModel": {
       "location": {
         "start": {
-          "line": 212,
+          "line": 205,
           "column": 4
         },
         "end": {
-          "line": 231,
+          "line": 229,
           "column": 5
         }
       },
@@ -306,11 +306,11 @@
     "_applyTarget": {
       "location": {
         "start": {
-          "line": 235,
+          "line": 232,
           "column": 4
         },
         "end": {
-          "line": 250,
+          "line": 247,
           "column": 5
         }
       },
@@ -324,11 +324,11 @@
     "_applyModel": {
       "location": {
         "start": {
-          "line": 254,
+          "line": 250,
           "column": 4
         },
         "end": {
-          "line": 291,
+          "line": 286,
           "column": 5
         }
       },
@@ -342,11 +342,11 @@
     "__setUpBinding": {
       "location": {
         "start": {
-          "line": 299,
+          "line": 293,
           "column": 4
         },
         "end": {
-          "line": 333,
+          "line": 347,
           "column": 5
         }
       },
@@ -364,11 +364,11 @@
     "__tearDownBinding": {
       "location": {
         "start": {
-          "line": 342,
+          "line": 355,
           "column": 4
         },
         "end": {
-          "line": 358,
+          "line": 372,
           "column": 5
         }
       },
@@ -395,11 +395,11 @@
     "__isModelSelectable": {
       "location": {
         "start": {
-          "line": 370,
+          "line": 383,
           "column": 4
         },
         "end": {
-          "line": 373,
+          "line": 388,
           "column": 5
         }
       },
@@ -519,6 +519,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -543,6 +544,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -703,12 +705,12 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 385,
-        "column": 14
+        "line": 397,
+        "column": 2
       },
       "end": {
-        "line": 390,
-        "column": 4
+        "line": 402,
+        "column": 3
       }
     },
     "jsdoc": {}

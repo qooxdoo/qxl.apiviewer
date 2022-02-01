@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 151,
+        "line": 174,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 34,
-        "column": 14
+        "line": 32,
+        "column": 2
       },
       "end": {
-        "line": 97,
+        "line": 100,
         "column": 3
       }
     },
@@ -44,12 +44,12 @@
     "_cardAnimationsMap": {
       "location": {
         "start": {
-          "line": 102,
+          "line": 103,
           "column": 4
         },
         "end": {
-          "line": 102,
-          "column": 29
+          "line": 103,
+          "column": 28
         }
       },
       "type": "variable",
@@ -62,7 +62,7 @@
           "column": 4
         },
         "end": {
-          "line": 135,
+          "line": 160,
           "column": 5
         }
       },
@@ -111,11 +111,11 @@
     "getMap": {
       "location": {
         "start": {
-          "line": 142,
+          "line": 166,
           "column": 4
         },
         "end": {
-          "line": 144,
+          "line": 168,
           "column": 5
         }
       },
@@ -226,6 +226,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -250,6 +251,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -278,15 +280,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 148,
-        "column": 13
+        "line": 171,
+        "column": 2
       },
       "end": {
-        "line": 150,
+        "line": 173,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

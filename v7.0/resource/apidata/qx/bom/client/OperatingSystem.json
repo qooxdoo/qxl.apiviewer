@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 267,
+        "line": 250,
         "column": 3
       }
     },
@@ -43,11 +43,11 @@
     "getName": {
       "location": {
         "start": {
-          "line": 39,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 100,
           "column": 5
         }
       },
@@ -85,11 +85,11 @@
     "__ids": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 103,
           "column": 4
         },
         "end": {
-          "line": 175,
+          "line": 154,
           "column": 5
         }
       },
@@ -107,11 +107,11 @@
     "getVersion": {
       "location": {
         "start": {
-          "line": 185,
+          "line": 163,
           "column": 4
         },
         "end": {
-          "line": 197,
+          "line": 179,
           "column": 5
         }
       },
@@ -143,11 +143,11 @@
     "__getVersionForDesktopOs": {
       "location": {
         "start": {
-          "line": 205,
+          "line": 186,
           "column": 4
         },
         "end": {
-          "line": 219,
+          "line": 200,
           "column": 5
         }
       },
@@ -182,11 +182,11 @@
     "__getVersionForMobileOs": {
       "location": {
         "start": {
-          "line": 227,
+          "line": 207,
           "column": 4
         },
         "end": {
-          "line": 260,
+          "line": 243,
           "column": 5
         }
       },
@@ -222,15 +222,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 263,
-        "column": 10
+        "line": 246,
+        "column": 2
       },
       "end": {
-        "line": 266,
+        "line": 249,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

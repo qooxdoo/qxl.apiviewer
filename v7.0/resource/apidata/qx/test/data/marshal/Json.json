@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 1122,
+        "line": 1507,
         "column": 3
       }
     },
@@ -57,12 +57,12 @@
     "__marshaler": {
       "location": {
         "start": {
-          "line": 34,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 34,
-          "column": 22
+          "line": 32,
+          "column": 21
         }
       },
       "type": "variable",
@@ -71,12 +71,12 @@
     "__data": {
       "location": {
         "start": {
-          "line": 35,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 35,
-          "column": 17
+          "line": 33,
+          "column": 16
         }
       },
       "type": "variable",
@@ -85,12 +85,12 @@
     "__propertyNames": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 34,
           "column": 4
         },
         "end": {
-          "line": 36,
-          "column": 26
+          "line": 34,
+          "column": 25
         }
       },
       "type": "variable",
@@ -99,11 +99,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 36,
           "column": 4
         },
         "end": {
-          "line": 43,
+          "line": 41,
           "column": 5
         }
       },
@@ -113,11 +113,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 46,
+          "line": 43,
           "column": 4
         },
         "end": {
-          "line": 56,
+          "line": 53,
           "column": 5
         }
       },
@@ -127,11 +127,11 @@
     "test$$member": {
       "location": {
         "start": {
-          "line": 59,
+          "line": 55,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 82,
           "column": 5
         }
       },
@@ -141,11 +141,11 @@
     "testLocalizedString": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 84,
           "column": 4
         },
         "end": {
-          "line": 88,
+          "line": 95,
           "column": 5
         }
       },
@@ -155,11 +155,11 @@
     "testClassCreationSingle": {
       "location": {
         "start": {
-          "line": 91,
+          "line": 97,
           "column": 4
         },
         "end": {
-          "line": 105,
+          "line": 124,
           "column": 5
         }
       },
@@ -169,11 +169,11 @@
     "testClassCreationArray": {
       "location": {
         "start": {
-          "line": 108,
+          "line": 126,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 140,
           "column": 5
         }
       },
@@ -183,11 +183,11 @@
     "testClassCreationObject": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 142,
           "column": 4
         },
         "end": {
-          "line": 137,
+          "line": 163,
           "column": 5
         }
       },
@@ -197,11 +197,11 @@
     "testClassCreationArrayWithObject": {
       "location": {
         "start": {
-          "line": 140,
+          "line": 165,
           "column": 4
         },
         "end": {
-          "line": 154,
+          "line": 186,
           "column": 5
         }
       },
@@ -211,11 +211,11 @@
     "testClassCreationAllSmoke": {
       "location": {
         "start": {
-          "line": 157,
+          "line": 188,
           "column": 4
         },
         "end": {
-          "line": 160,
+          "line": 199,
           "column": 5
         }
       },
@@ -225,11 +225,11 @@
     "testModelWithNumber": {
       "location": {
         "start": {
-          "line": 163,
+          "line": 201,
           "column": 4
         },
         "end": {
-          "line": 175,
+          "line": 213,
           "column": 5
         }
       },
@@ -239,11 +239,11 @@
     "testModelWithBoolean": {
       "location": {
         "start": {
-          "line": 178,
+          "line": 215,
           "column": 4
         },
         "end": {
-          "line": 189,
+          "line": 226,
           "column": 5
         }
       },
@@ -253,11 +253,11 @@
     "testModelWithString": {
       "location": {
         "start": {
-          "line": 192,
+          "line": 228,
           "column": 4
         },
         "end": {
-          "line": 203,
+          "line": 239,
           "column": 5
         }
       },
@@ -267,11 +267,11 @@
     "testModelWithPrimitive": {
       "location": {
         "start": {
-          "line": 206,
+          "line": 241,
           "column": 4
         },
         "end": {
-          "line": 218,
+          "line": 253,
           "column": 5
         }
       },
@@ -281,11 +281,11 @@
     "testModelWithArrayPrimitive": {
       "location": {
         "start": {
-          "line": 221,
+          "line": 255,
           "column": 4
         },
         "end": {
-          "line": 236,
+          "line": 270,
           "column": 5
         }
       },
@@ -295,11 +295,11 @@
     "testModelWithArrayArray": {
       "location": {
         "start": {
-          "line": 239,
+          "line": 272,
           "column": 4
         },
         "end": {
-          "line": 261,
+          "line": 310,
           "column": 5
         }
       },
@@ -309,11 +309,11 @@
     "testModelWithObjectPrimitive": {
       "location": {
         "start": {
-          "line": 264,
+          "line": 312,
           "column": 4
         },
         "end": {
-          "line": 282,
+          "line": 330,
           "column": 5
         }
       },
@@ -323,11 +323,11 @@
     "testModelWithObjectArray": {
       "location": {
         "start": {
-          "line": 285,
+          "line": 332,
           "column": 4
         },
         "end": {
-          "line": 301,
+          "line": 348,
           "column": 5
         }
       },
@@ -337,11 +337,11 @@
     "testModelWithArrayObject": {
       "location": {
         "start": {
-          "line": 304,
+          "line": 350,
           "column": 4
         },
         "end": {
-          "line": 324,
+          "line": 385,
           "column": 5
         }
       },
@@ -351,11 +351,11 @@
     "testModelWithObjectObject": {
       "location": {
         "start": {
-          "line": 327,
+          "line": 387,
           "column": 4
         },
         "end": {
-          "line": 337,
+          "line": 402,
           "column": 5
         }
       },
@@ -365,11 +365,11 @@
     "testModelWithAllSmoke": {
       "location": {
         "start": {
-          "line": 340,
+          "line": 404,
           "column": 4
         },
         "end": {
-          "line": 349,
+          "line": 418,
           "column": 5
         }
       },
@@ -379,77 +379,7 @@
     "testBubbleEventsDepth1": {
       "location": {
         "start": {
-          "line": 352,
-          "column": 4
-        },
-        "end": {
-          "line": 382,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testBubbleEventsDepth2": {
-      "location": {
-        "start": {
-          "line": 385,
-          "column": 4
-        },
-        "end": {
-          "line": 415,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testBubbleEventsDepth3": {
-      "location": {
-        "start": {
-          "line": 418,
-          "column": 4
-        },
-        "end": {
-          "line": 437,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testBubbleEventsArrayDepth1": {
-      "location": {
-        "start": {
-          "line": 440,
-          "column": 4
-        },
-        "end": {
-          "line": 459,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testBubbleEventsArrayDepth2": {
-      "location": {
-        "start": {
-          "line": 462,
-          "column": 4
-        },
-        "end": {
-          "line": 480,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testBubbleEventsArrayDepthAlot": {
-      "location": {
-        "start": {
-          "line": 483,
+          "line": 420,
           "column": 4
         },
         "end": {
@@ -460,14 +390,84 @@
       "type": "function",
       "access": "public"
     },
-    "testBubbleEventsArrayDepthAlotMix": {
+    "testBubbleEventsDepth2": {
       "location": {
         "start": {
-          "line": 504,
+          "line": 503,
           "column": 4
         },
         "end": {
-          "line": 522,
+          "line": 579,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testBubbleEventsDepth3": {
+      "location": {
+        "start": {
+          "line": 581,
+          "column": 4
+        },
+        "end": {
+          "line": 626,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testBubbleEventsArrayDepth1": {
+      "location": {
+        "start": {
+          "line": 628,
+          "column": 4
+        },
+        "end": {
+          "line": 667,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testBubbleEventsArrayDepth2": {
+      "location": {
+        "start": {
+          "line": 669,
+          "column": 4
+        },
+        "end": {
+          "line": 708,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testBubbleEventsArrayDepthAlot": {
+      "location": {
+        "start": {
+          "line": 710,
+          "column": 4
+        },
+        "end": {
+          "line": 749,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testBubbleEventsArrayDepthAlotMix": {
+      "location": {
+        "start": {
+          "line": 751,
+          "column": 4
+        },
+        "end": {
+          "line": 798,
           "column": 5
         }
       },
@@ -477,11 +477,11 @@
     "testBubbleEventsArrayLong": {
       "location": {
         "start": {
-          "line": 525,
+          "line": 800,
           "column": 4
         },
         "end": {
-          "line": 543,
+          "line": 839,
           "column": 5
         }
       },
@@ -491,11 +491,11 @@
     "testBubbleEventsArrayReorder": {
       "location": {
         "start": {
-          "line": 546,
+          "line": 841,
           "column": 4
         },
         "end": {
-          "line": 566,
+          "line": 882,
           "column": 5
         }
       },
@@ -505,11 +505,11 @@
     "testBubbleEventsWithRemove": {
       "location": {
         "start": {
-          "line": 569,
+          "line": 884,
           "column": 4
         },
         "end": {
-          "line": 600,
+          "line": 924,
           "column": 5
         }
       },
@@ -519,11 +519,11 @@
     "test model with and without bubble": {
       "location": {
         "start": {
-          "line": 603,
+          "line": 926,
           "column": 4
         },
         "end": {
-          "line": 638,
+          "line": 982,
           "column": 5
         }
       },
@@ -533,11 +533,11 @@
     "test toClass() toModel() match/mismatch": {
       "location": {
         "start": {
-          "line": 641,
+          "line": 984,
           "column": 4
         },
         "end": {
-          "line": 677,
+          "line": 1023,
           "column": 5
         }
       },
@@ -547,11 +547,11 @@
     "testAddValidationRule": {
       "location": {
         "start": {
-          "line": 680,
+          "line": 1025,
           "column": 4
         },
         "end": {
-          "line": 723,
+          "line": 1073,
           "column": 5
         }
       },
@@ -561,11 +561,11 @@
     "testCustomValidator": {
       "location": {
         "start": {
-          "line": 725,
+          "line": 1075,
           "column": 4
         },
         "end": {
-          "line": 741,
+          "line": 1100,
           "column": 5
         }
       },
@@ -575,11 +575,11 @@
     "testQooxdooObject": {
       "location": {
         "start": {
-          "line": 744,
+          "line": 1102,
           "column": 4
         },
         "end": {
-          "line": 757,
+          "line": 1114,
           "column": 5
         }
       },
@@ -589,11 +589,11 @@
     "testDisposeListModel": {
       "location": {
         "start": {
-          "line": 760,
+          "line": 1116,
           "column": 4
         },
         "end": {
-          "line": 765,
+          "line": 1121,
           "column": 5
         }
       },
@@ -603,11 +603,11 @@
     "testValidIdentifier": {
       "location": {
         "start": {
-          "line": 768,
+          "line": 1123,
           "column": 4
         },
         "end": {
-          "line": 799,
+          "line": 1174,
           "column": 5
         }
       },
@@ -617,11 +617,11 @@
     "testGetModelClass": {
       "location": {
         "start": {
-          "line": 805,
+          "line": 1179,
           "column": 4
         },
         "end": {
-          "line": 833,
+          "line": 1209,
           "column": 5
         }
       },
@@ -645,11 +645,11 @@
     "testGetModelClassDepth": {
       "location": {
         "start": {
-          "line": 836,
+          "line": 1211,
           "column": 4
         },
         "end": {
-          "line": 866,
+          "line": 1243,
           "column": 5
         }
       },
@@ -659,11 +659,11 @@
     "testGetModelClassIgnore": {
       "location": {
         "start": {
-          "line": 869,
+          "line": 1245,
           "column": 4
         },
         "end": {
-          "line": 896,
+          "line": 1274,
           "column": 5
         }
       },
@@ -673,11 +673,11 @@
     "testGetModelSuperClass": {
       "location": {
         "start": {
-          "line": 899,
+          "line": 1276,
           "column": 4
         },
         "end": {
-          "line": 922,
+          "line": 1301,
           "column": 5
         }
       },
@@ -687,11 +687,11 @@
     "testGetModelMixins": {
       "location": {
         "start": {
-          "line": 925,
+          "line": 1303,
           "column": 4
         },
         "end": {
-          "line": 948,
+          "line": 1328,
           "column": 5
         }
       },
@@ -701,11 +701,11 @@
     "testGetPropertyMapping": {
       "location": {
         "start": {
-          "line": 951,
+          "line": 1330,
           "column": 4
         },
         "end": {
-          "line": 966,
+          "line": 1347,
           "column": 5
         }
       },
@@ -715,11 +715,11 @@
     "testIgnoreParent": {
       "location": {
         "start": {
-          "line": 969,
+          "line": 1349,
           "column": 4
         },
         "end": {
-          "line": 992,
+          "line": 1374,
           "column": 5
         }
       },
@@ -729,11 +729,11 @@
     "testIgnoreDepth": {
       "location": {
         "start": {
-          "line": 995,
+          "line": 1376,
           "column": 4
         },
         "end": {
-          "line": 1013,
+          "line": 1396,
           "column": 5
         }
       },
@@ -743,11 +743,11 @@
     "testIgnoreProperties": {
       "location": {
         "start": {
-          "line": 1017,
+          "line": 1398,
           "column": 4
         },
         "end": {
-          "line": 1036,
+          "line": 1419,
           "column": 5
         }
       },
@@ -757,11 +757,11 @@
     "testBubbleSpliceRemoveAndAdd": {
       "location": {
         "start": {
-          "line": 1039,
+          "line": 1421,
           "column": 4
         },
         "end": {
-          "line": 1051,
+          "line": 1433,
           "column": 5
         }
       },
@@ -771,11 +771,11 @@
     "testGetArrayClassSimple": {
       "location": {
         "start": {
-          "line": 1054,
+          "line": 1435,
           "column": 4
         },
         "end": {
-          "line": 1077,
+          "line": 1460,
           "column": 5
         }
       },
@@ -785,11 +785,11 @@
     "testGetArrayClassAdvanced": {
       "location": {
         "start": {
-          "line": 1080,
+          "line": 1462,
           "column": 4
         },
         "end": {
-          "line": 1120,
+          "line": 1505,
           "column": 5
         }
       },
@@ -1476,6 +1476,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1500,6 +1501,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

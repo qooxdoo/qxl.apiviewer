@@ -12,11 +12,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 20,
+        "line": 19,
         "column": 0
       },
       "end": {
-        "line": 97,
+        "line": 110,
         "column": 3
       }
     },
@@ -27,11 +27,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 32,
+          "line": 26,
           "column": 5
         }
       },
@@ -41,7 +41,7 @@
     "test: emulated requestIdleCallback": {
       "location": {
         "start": {
-          "line": 35,
+          "line": 28,
           "column": 4
         },
         "end": {
@@ -59,7 +59,7 @@
           "column": 4
         },
         "end": {
-          "line": 64,
+          "line": 71,
           "column": 5
         }
       },
@@ -69,11 +69,11 @@
     "test: native requestIdleCallback": {
       "location": {
         "start": {
-          "line": 67,
+          "line": 73,
           "column": 4
         },
         "end": {
-          "line": 80,
+          "line": 90,
           "column": 5
         }
       },
@@ -83,11 +83,11 @@
     "test: native cancelIdleCallback": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 92,
           "column": 4
         },
         "end": {
-          "line": 95,
+          "line": 108,
           "column": 5
         }
       },
@@ -1245,6 +1245,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1269,6 +1270,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

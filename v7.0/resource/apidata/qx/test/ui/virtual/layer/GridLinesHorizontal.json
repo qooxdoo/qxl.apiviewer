@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 37,
+        "line": 34,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "_createLayer": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 28,
+          "line": 26,
           "column": 5
         }
       },
@@ -42,11 +42,11 @@
     "_assertCells": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 35,
+          "line": 32,
           "column": 5
         }
       },
@@ -145,6 +145,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -169,6 +170,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

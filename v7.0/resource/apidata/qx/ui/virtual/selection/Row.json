@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 24,
+        "line": 23,
         "column": 0
       },
       "end": {
-        "line": 231,
+        "line": 199,
         "column": 3
       }
     },
@@ -31,11 +31,11 @@
     "_getItemCount": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 39,
           "column": 4
         },
         "end": {
-          "line": 45,
+          "line": 41,
           "column": 5
         }
       },
@@ -61,11 +61,11 @@
     "_getSelectableFromPointerEvent": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 50,
           "column": 4
         },
         "end": {
-          "line": 67,
+          "line": 61,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "getSelectables": {
       "location": {
         "start": {
-          "line": 71,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 83,
+          "line": 74,
           "column": 5
         }
       },
@@ -99,11 +99,11 @@
     "_getSelectableRange": {
       "location": {
         "start": {
-          "line": 87,
+          "line": 77,
           "column": 4
         },
         "end": {
-          "line": 101,
+          "line": 89,
           "column": 5
         }
       },
@@ -118,11 +118,11 @@
     "_getFirstSelectable": {
       "location": {
         "start": {
-          "line": 105,
+          "line": 92,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 100,
           "column": 5
         }
       },
@@ -137,11 +137,11 @@
     "_getLastSelectable": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 103,
           "column": 4
         },
         "end": {
-          "line": 129,
+          "line": 111,
           "column": 5
         }
       },
@@ -156,11 +156,11 @@
     "_getRelatedSelectable": {
       "location": {
         "start": {
-          "line": 133,
+          "line": 114,
           "column": 4
         },
         "end": {
-          "line": 159,
+          "line": 133,
           "column": 5
         }
       },
@@ -175,11 +175,11 @@
     "_getPage": {
       "location": {
         "start": {
-          "line": 163,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 190,
+          "line": 164,
           "column": 5
         }
       },
@@ -194,11 +194,11 @@
     "_selectableToHashCode": {
       "location": {
         "start": {
-          "line": 194,
+          "line": 167,
           "column": 4
         },
         "end": {
-          "line": 196,
+          "line": 169,
           "column": 5
         }
       },
@@ -213,11 +213,11 @@
     "_scrollItemIntoView": {
       "location": {
         "start": {
-          "line": 200,
+          "line": 172,
           "column": 4
         },
         "end": {
-          "line": 204,
+          "line": 176,
           "column": 5
         }
       },
@@ -232,11 +232,11 @@
     "_getSelectableLocationX": {
       "location": {
         "start": {
-          "line": 208,
+          "line": 179,
           "column": 4
         },
         "end": {
-          "line": 214,
+          "line": 184,
           "column": 5
         }
       },
@@ -251,11 +251,11 @@
     "_getSelectableLocationY": {
       "location": {
         "start": {
-          "line": 218,
+          "line": 187,
           "column": 4
         },
         "end": {
-          "line": 229,
+          "line": 197,
           "column": 5
         }
       },
@@ -355,6 +355,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -379,6 +380,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

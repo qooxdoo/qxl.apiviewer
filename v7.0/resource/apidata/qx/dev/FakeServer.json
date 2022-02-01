@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 280,
+        "line": 283,
         "column": 3
       }
     },
@@ -30,26 +30,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 62,
-        "column": 14
+        "line": 61,
+        "column": 2
       },
       "end": {
-        "line": 73,
+        "line": 74,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "statics": {
     "$$instance": {
       "location": {
         "start": {
-          "line": 76,
+          "line": 77,
           "column": 4
         },
         "end": {
-          "line": 76,
-          "column": 21
+          "line": 77,
+          "column": 20
         }
       },
       "type": "variable",
@@ -58,12 +57,12 @@
     "$$allowconstruct": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 78,
           "column": 4
         },
         "end": {
-          "line": 77,
-          "column": 28
+          "line": 78,
+          "column": 27
         }
       },
       "type": "variable",
@@ -72,11 +71,11 @@
     "getInstance": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 86,
           "column": 4
         },
         "end": {
-          "line": 95,
+          "line": 94,
           "column": 5
         }
       },
@@ -110,12 +109,12 @@
     "__sinon": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 98,
           "column": 4
         },
         "end": {
-          "line": 100,
-          "column": 18
+          "line": 98,
+          "column": 17
         }
       },
       "type": "variable",
@@ -124,12 +123,12 @@
     "__fakeServer": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 101,
-          "column": 23
+          "line": 99,
+          "column": 22
         }
       },
       "type": "variable",
@@ -138,12 +137,12 @@
     "__responses": {
       "location": {
         "start": {
-          "line": 102,
+          "line": 100,
           "column": 4
         },
         "end": {
-          "line": 102,
-          "column": 22
+          "line": 100,
+          "column": 21
         }
       },
       "type": "variable",
@@ -152,12 +151,12 @@
     "__filter": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 103,
-          "column": 19
+          "line": 101,
+          "column": 18
         }
       },
       "type": "variable",
@@ -166,11 +165,11 @@
     "configure": {
       "location": {
         "start": {
-          "line": 130,
+          "line": 128,
           "column": 4
         },
         "end": {
-          "line": 147,
+          "line": 148,
           "column": 5
         }
       },
@@ -228,11 +227,11 @@
     "removeFilter": {
       "location": {
         "start": {
-          "line": 174,
+          "line": 173,
           "column": 4
         },
         "end": {
-          "line": 176,
+          "line": 175,
           "column": 5
         }
       },
@@ -259,11 +258,11 @@
     "removeResponse": {
       "location": {
         "start": {
-          "line": 184,
+          "line": 182,
           "column": 4
         },
         "end": {
-          "line": 198,
+          "line": 207,
           "column": 5
         }
       },
@@ -300,11 +299,11 @@
     "respondWith": {
       "location": {
         "start": {
-          "line": 209,
+          "line": 217,
           "column": 4
         },
         "end": {
-          "line": 211,
+          "line": 219,
           "column": 5
         }
       },
@@ -349,11 +348,11 @@
     "getFakeServer": {
       "location": {
         "start": {
-          "line": 219,
+          "line": 226,
           "column": 4
         },
         "end": {
-          "line": 227,
+          "line": 234,
           "column": 5
         }
       },
@@ -379,11 +378,11 @@
     "restore": {
       "location": {
         "start": {
-          "line": 233,
+          "line": 239,
           "column": 4
         },
         "end": {
-          "line": 239,
+          "line": 245,
           "column": 5
         }
       },
@@ -401,11 +400,11 @@
     "_getRegExp": {
       "location": {
         "start": {
-          "line": 249,
+          "line": 254,
           "column": 4
         },
         "end": {
-          "line": 252,
+          "line": 257,
           "column": 5
         }
       },
@@ -440,11 +439,11 @@
     "__getCombinedFilter": {
       "location": {
         "start": {
-          "line": 260,
+          "line": 264,
           "column": 4
         },
         "end": {
-          "line": 272,
+          "line": 276,
           "column": 5
         }
       },
@@ -471,15 +470,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 275,
-        "column": 12
+        "line": 279,
+        "column": 2
       },
       "end": {
-        "line": 278,
+        "line": 282,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

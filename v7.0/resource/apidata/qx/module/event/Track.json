@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 81,
+        "line": 80,
         "column": 3
       }
     },
@@ -43,12 +43,12 @@
     "TYPES": {
       "location": {
         "start": {
-          "line": 34,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 34,
-          "column": 21
+          "line": 33,
+          "column": 20
         }
       },
       "jsdoc": {
@@ -65,12 +65,12 @@
     "BIND_METHODS": {
       "location": {
         "start": {
-          "line": 37,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 37,
-          "column": 33
+          "line": 35,
+          "column": 30
         }
       },
       "type": "variable",
@@ -79,11 +79,11 @@
     "getDelta": {
       "location": {
         "start": {
-          "line": 47,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 49,
+          "line": 46,
           "column": 5
         }
       },
@@ -109,11 +109,11 @@
     "normalize": {
       "location": {
         "start": {
-          "line": 61,
+          "line": 57,
           "column": 4
         },
         "end": {
-          "line": 75,
+          "line": 71,
           "column": 5
         }
       },
@@ -162,15 +162,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 78,
-        "column": 10
+        "line": 74,
+        "column": 2
       },
       "end": {
-        "line": 80,
+        "line": 79,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

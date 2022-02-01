@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 49,
+        "line": 45,
         "column": 3
       }
     },
@@ -31,11 +31,11 @@
     "stop": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 34,
+          "line": 31,
           "column": 5
         }
       },
@@ -51,11 +51,11 @@
     "getWheelDelta": {
       "location": {
         "start": {
-          "line": 45,
+          "line": 41,
           "column": 4
         },
         "end": {
-          "line": 47,
+          "line": 43,
           "column": 5
         }
       },
@@ -176,6 +176,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -200,6 +201,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

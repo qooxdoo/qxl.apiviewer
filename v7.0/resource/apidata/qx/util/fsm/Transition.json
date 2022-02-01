@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 435,
+        "line": 413,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 130,
-        "column": 14
+        "line": 128,
+        "column": 2
       },
       "end": {
-        "line": 191,
+        "line": 199,
         "column": 3
       }
     },
@@ -67,11 +67,11 @@
     "name": {
       "location": {
         "start": {
-          "line": 199,
+          "line": 205,
           "column": 4
         },
         "end": {
-          "line": 203,
+          "line": 208,
           "column": 5
         }
       },
@@ -92,11 +92,11 @@
     "predicate": {
       "location": {
         "start": {
-          "line": 212,
+          "line": 216,
           "column": 4
         },
         "end": {
-          "line": 220,
+          "line": 222,
           "column": 5
         }
       },
@@ -110,12 +110,14 @@
       },
       "name": "predicate",
       "propertyType": "new",
-      "transform": "__P_587_1"
+      "init": "[[ ObjectMethod Function ]]",
+      "transform": "__P_589_1",
+      "defaultValue": "[[ ObjectMethod Function ]]"
     },
     "nextState": {
       "location": {
         "start": {
-          "line": 230,
+          "line": 231,
           "column": 4
         },
         "end": {
@@ -134,17 +136,17 @@
       "name": "nextState",
       "propertyType": "new",
       "init": "qx.util.fsm.FiniteStateMachine.StateChange.CURRENT_STATE",
-      "transform": "__P_587_2",
+      "transform": "__P_589_2",
       "defaultValue": "qx.util.fsm.FiniteStateMachine.StateChange.CURRENT_STATE"
     },
     "autoActionsBeforeOntransition": {
       "location": {
         "start": {
-          "line": 244,
+          "line": 243,
           "column": 4
         },
         "end": {
-          "line": 248,
+          "line": 246,
           "column": 5
         }
       },
@@ -158,16 +160,18 @@
       },
       "name": "autoActionsBeforeOntransition",
       "propertyType": "new",
-      "transform": "__P_587_3"
+      "init": "[[ ObjectMethod Function ]]",
+      "transform": "__P_589_3",
+      "defaultValue": "[[ ObjectMethod Function ]]"
     },
     "autoActionsAfterOntransition": {
       "location": {
         "start": {
-          "line": 258,
+          "line": 255,
           "column": 4
         },
         "end": {
-          "line": 262,
+          "line": 258,
           "column": 5
         }
       },
@@ -181,16 +185,18 @@
       },
       "name": "autoActionsAfterOntransition",
       "propertyType": "new",
-      "transform": "__P_587_4"
+      "init": "[[ ObjectMethod Function ]]",
+      "transform": "__P_589_4",
+      "defaultValue": "[[ ObjectMethod Function ]]"
     },
     "ontransition": {
       "location": {
         "start": {
-          "line": 271,
+          "line": 266,
           "column": 4
         },
         "end": {
-          "line": 275,
+          "line": 269,
           "column": 5
         }
       },
@@ -204,7 +210,9 @@
       },
       "name": "ontransition",
       "propertyType": "new",
-      "transform": "__P_587_5"
+      "init": "[[ ObjectMethod Function ]]",
+      "transform": "__P_589_5",
+      "defaultValue": "[[ ObjectMethod Function ]]"
     },
     "qxOwner": {
       "type": "property",
@@ -243,11 +251,11 @@
     "__transformPredicate": {
       "location": {
         "start": {
-          "line": 287,
+          "line": 279,
           "column": 4
         },
         "end": {
-          "line": 314,
+          "line": 301,
           "column": 5
         }
       },
@@ -282,11 +290,11 @@
     "__transformNextState": {
       "location": {
         "start": {
-          "line": 323,
+          "line": 309,
           "column": 4
         },
         "end": {
-          "line": 351,
+          "line": 336,
           "column": 5
         }
       },
@@ -321,11 +329,11 @@
     "__transformAutoActionsBeforeOntransition": {
       "location": {
         "start": {
-          "line": 360,
+          "line": 344,
           "column": 4
         },
         "end": {
-          "line": 367,
+          "line": 350,
           "column": 5
         }
       },
@@ -360,11 +368,11 @@
     "__transformAutoActionsAfterOntransition": {
       "location": {
         "start": {
-          "line": 375,
+          "line": 358,
           "column": 4
         },
         "end": {
-          "line": 382,
+          "line": 364,
           "column": 5
         }
       },
@@ -399,11 +407,11 @@
     "__transformOntransition": {
       "location": {
         "start": {
-          "line": 390,
+          "line": 372,
           "column": 4
         },
         "end": {
-          "line": 407,
+          "line": 387,
           "column": 5
         }
       },
@@ -438,11 +446,11 @@
     "__bindIfFunction": {
       "location": {
         "start": {
-          "line": 423,
+          "line": 403,
           "column": 4
         },
         "end": {
-          "line": 433,
+          "line": 411,
           "column": 5
         }
       },
@@ -572,6 +580,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -596,6 +605,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

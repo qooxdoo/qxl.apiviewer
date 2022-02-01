@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 36,
+        "line": 35,
         "column": 0
       },
       "end": {
-        "line": 158,
+        "line": 153,
         "column": 3
       }
     },
@@ -33,26 +33,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 42,
-        "column": 13
+        "line": 39,
+        "column": 2
       },
       "end": {
-        "line": 44,
+        "line": 41,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {
     "position": {
       "location": {
         "start": {
-          "line": 50,
+          "line": 45,
           "column": 4
         },
         "end": {
-          "line": 50,
-          "column": 43
+          "line": 45,
+          "column": 41
         }
       },
       "jsdoc": {
@@ -69,12 +68,12 @@
     "error": {
       "location": {
         "start": {
-          "line": 53,
+          "line": 48,
           "column": 4
         },
         "end": {
-          "line": 53,
-          "column": 33
+          "line": 48,
+          "column": 31
         }
       },
       "jsdoc": {
@@ -93,11 +92,11 @@
     "_watchId": {
       "location": {
         "start": {
-          "line": 59,
+          "line": 52,
           "column": 4
         },
         "end": {
-          "line": 59,
+          "line": 52,
           "column": 18
         }
       },
@@ -107,11 +106,11 @@
     "_geolocation": {
       "location": {
         "start": {
-          "line": 60,
+          "line": 53,
           "column": 4
         },
         "end": {
-          "line": 60,
+          "line": 53,
           "column": 22
         }
       },
@@ -121,11 +120,11 @@
     "getCurrentPosition": {
       "location": {
         "start": {
-          "line": 71,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 96,
+          "line": 93,
           "column": 5
         }
       },
@@ -166,11 +165,11 @@
     "startWatchPosition": {
       "location": {
         "start": {
-          "line": 108,
+          "line": 104,
           "column": 4
         },
         "end": {
-          "line": 120,
+          "line": 119,
           "column": 5
         }
       },
@@ -211,11 +210,11 @@
     "stopWatchPosition": {
       "location": {
         "start": {
-          "line": 126,
+          "line": 124,
           "column": 4
         },
         "end": {
-          "line": 131,
+          "line": 129,
           "column": 5
         }
       },
@@ -233,11 +232,11 @@
     "_successHandler": {
       "location": {
         "start": {
-          "line": 139,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 141,
+          "line": 138,
           "column": 5
         }
       },
@@ -264,11 +263,11 @@
     "_errorHandler": {
       "location": {
         "start": {
-          "line": 149,
+          "line": 145,
           "column": 4
         },
         "end": {
-          "line": 151,
+          "line": 147,
           "column": 5
         }
       },
@@ -345,69 +344,6 @@
             "body": "{var} Returns the internal id for that binding. This can be used\n   for referencing the binding e.g. for removing. This is not an atomic\n   id so you can't you use it as a hash-map index.",
             "type": "var",
             "description": " Returns the internal id for that binding. This can be used\n   for referencing the binding e.g. for removing. This is not an atomic\n   id so you can't you use it as a hash-map index."
-          }
-        ],
-        "@throws": [
-          {
-            "name": "@throws",
-            "body": "{qx.core.AssertionError} If the event is no data event or\n   there is no property definition for object and property (source and\n   target).",
-            "type": "qx.core.AssertionError",
-            "description": " If the event is no data event or\n   there is no property definition for object and property (source and\n   target)."
-          }
-        ]
-      }
-    },
-    "bindAsync": {
-      "type": "function",
-      "name": "bindAsync",
-      "abstract": false,
-      "mixin": true,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.data.MBinding",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>The bind method delegates the call to the\n {@link qx.data.SingleValueBinding#bind} function. As source, the current\n object (this) will be used.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "sourcePropertyChain {String} The property chain which represents\n   the source property.",
-            "paramName": "sourcePropertyChain",
-            "description": " The property chain which represents\n   the source property.",
-            "type": "String"
-          },
-          {
-            "name": "@param",
-            "body": "targetObject {qx.core.Object} The object which the source should\n   be bind to.",
-            "paramName": "targetObject",
-            "description": " The object which the source should\n   be bind to.",
-            "type": "qx.core.Object"
-          },
-          {
-            "name": "@param",
-            "body": "targetProperty {String} The property name of the target object.",
-            "paramName": "targetProperty",
-            "description": " The property name of the target object.",
-            "type": "String"
-          },
-          {
-            "name": "@param",
-            "body": "options {Map} A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
-            "paramName": "options",
-            "description": " A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
-            "type": "Map"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.Promise} A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index.",
-            "type": "qx.Promise",
-            "description": " A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index."
           }
         ],
         "@throws": [
@@ -1858,6 +1794,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1881,6 +1818,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -3568,15 +3506,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 155,
-        "column": 12
+        "line": 150,
+        "column": 2
       },
       "end": {
-        "line": 157,
+        "line": 152,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

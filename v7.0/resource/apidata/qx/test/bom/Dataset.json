@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 85,
+        "line": 73,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 32,
+          "line": 29,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 35,
+          "line": 31,
           "column": 4
         },
         "end": {
-          "line": 37,
+          "line": 33,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "testSetAttribute": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 48,
+          "line": 41,
           "column": 5
         }
       },
@@ -66,7 +66,21 @@
     "testSetAttributeWithUndefinedValue": {
       "location": {
         "start": {
-          "line": 51,
+          "line": 43,
+          "column": 4
+        },
+        "end": {
+          "line": 53,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testGetAttribute": {
+      "location": {
+        "start": {
+          "line": 55,
           "column": 4
         },
         "end": {
@@ -77,28 +91,14 @@
       "type": "function",
       "access": "public"
     },
-    "testGetAttribute": {
-      "location": {
-        "start": {
-          "line": 65,
-          "column": 4
-        },
-        "end": {
-          "line": 73,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
     "testRemoveAttribute": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 83,
+          "line": 71,
           "column": 5
         }
       },
@@ -193,6 +193,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -217,6 +218,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

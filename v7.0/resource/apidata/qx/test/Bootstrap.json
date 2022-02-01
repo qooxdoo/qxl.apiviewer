@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 417,
+        "line": 391,
         "column": 3
       }
     },
@@ -45,11 +45,11 @@
     "testDefineAnonymous": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 47,
+          "line": 49,
           "column": 5
         }
       },
@@ -59,11 +59,11 @@
     "testClassnameProperty": {
       "location": {
         "start": {
-          "line": 50,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 61,
+          "line": 62,
           "column": 5
         }
       },
@@ -105,7 +105,7 @@
           "column": 4
         },
         "end": {
-          "line": 132,
+          "line": 134,
           "column": 5
         }
       },
@@ -115,11 +115,11 @@
     "test: define class with constructor": {
       "location": {
         "start": {
-          "line": 134,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 151,
+          "line": 154,
           "column": 5
         }
       },
@@ -129,11 +129,11 @@
     "test: define bootstrap class, which extends 'Error'": {
       "location": {
         "start": {
-          "line": 154,
+          "line": 156,
           "column": 4
         },
         "end": {
-          "line": 164,
+          "line": 165,
           "column": 5
         }
       },
@@ -147,7 +147,7 @@
           "column": 4
         },
         "end": {
-          "line": 179,
+          "line": 178,
           "column": 5
         }
       },
@@ -157,11 +157,11 @@
     "test: extend from null should extend Object": {
       "location": {
         "start": {
-          "line": 182,
+          "line": 180,
           "column": 4
         },
         "end": {
-          "line": 193,
+          "line": 190,
           "column": 5
         }
       },
@@ -171,11 +171,11 @@
     "test: extend from Bootstrap class": {
       "location": {
         "start": {
-          "line": 196,
+          "line": 192,
           "column": 4
         },
         "end": {
-          "line": 215,
+          "line": 210,
           "column": 5
         }
       },
@@ -185,11 +185,11 @@
     "test: extended Bootstap class should append members to the prototype": {
       "location": {
         "start": {
-          "line": 218,
+          "line": 212,
           "column": 4
         },
         "end": {
-          "line": 245,
+          "line": 238,
           "column": 5
         }
       },
@@ -199,11 +199,11 @@
     "test: superclass calls aka basecalls (constructor and methods)": {
       "location": {
         "start": {
-          "line": 247,
+          "line": 240,
           "column": 4
         },
         "end": {
-          "line": 327,
+          "line": 311,
           "column": 5
         }
       },
@@ -213,11 +213,11 @@
     "testFunctionWrap": {
       "location": {
         "start": {
-          "line": 329,
+          "line": 313,
           "column": 4
         },
         "end": {
-          "line": 357,
+          "line": 339,
           "column": 5
         }
       },
@@ -227,11 +227,11 @@
     "testBindWithUndefinedArguments": {
       "location": {
         "start": {
-          "line": 360,
+          "line": 341,
           "column": 4
         },
         "end": {
-          "line": 368,
+          "line": 348,
           "column": 5
         }
       },
@@ -241,11 +241,11 @@
     "testDefineShadowedMembers": {
       "location": {
         "start": {
-          "line": 371,
+          "line": 350,
           "column": 4
         },
         "end": {
-          "line": 393,
+          "line": 370,
           "column": 5
         }
       },
@@ -255,11 +255,11 @@
     "testDefineShadowedStatics": {
       "location": {
         "start": {
-          "line": 396,
+          "line": 372,
           "column": 4
         },
         "end": {
-          "line": 415,
+          "line": 389,
           "column": 5
         }
       },
@@ -354,6 +354,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -378,6 +379,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

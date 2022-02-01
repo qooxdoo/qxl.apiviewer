@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 201,
+        "line": 266,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "testQxWidget": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 50,
+          "line": 63,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "testQxObject": {
       "location": {
         "start": {
-          "line": 53,
+          "line": 65,
           "column": 4
         },
         "end": {
-          "line": 76,
+          "line": 102,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "testCSSColor": {
       "location": {
         "start": {
-          "line": 79,
+          "line": 104,
           "column": 4
         },
         "end": {
-          "line": 104,
+          "line": 148,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "testAssertElement": {
       "location": {
         "start": {
-          "line": 107,
+          "line": 150,
           "column": 4
         },
         "end": {
-          "line": 130,
+          "line": 191,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "testAssertArgumentsCount": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 193,
           "column": 4
         },
         "end": {
-          "line": 139,
+          "line": 204,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testAssertEventFired": {
       "location": {
         "start": {
-          "line": 142,
+          "line": 206,
           "column": 4
         },
         "end": {
-          "line": 156,
+          "line": 219,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "testAssertEqualsFloat": {
       "location": {
         "start": {
-          "line": 158,
+          "line": 221,
           "column": 4
         },
         "end": {
-          "line": 177,
+          "line": 241,
           "column": 5
         }
       },
@@ -122,11 +122,11 @@
     "testAssertNotEqualsFloat": {
       "location": {
         "start": {
-          "line": 179,
+          "line": 243,
           "column": 4
         },
         "end": {
-          "line": 199,
+          "line": 264,
           "column": 5
         }
       },
@@ -221,6 +221,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -245,6 +246,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 326,
+        "line": 348,
         "column": 3
       }
     },
@@ -24,12 +24,12 @@
     "__container": {
       "location": {
         "start": {
-          "line": 24,
+          "line": 22,
           "column": 4
         },
         "end": {
-          "line": 24,
-          "column": 22
+          "line": 22,
+          "column": 21
         }
       },
       "type": "variable",
@@ -38,12 +38,12 @@
     "__toolbar": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 25,
-          "column": 20
+          "line": 23,
+          "column": 19
         }
       },
       "type": "variable",
@@ -52,12 +52,12 @@
     "__b1": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 26,
-          "column": 15
+          "line": 24,
+          "column": 14
         }
       },
       "type": "variable",
@@ -66,12 +66,12 @@
     "__b2": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 27,
-          "column": 15
+          "line": 25,
+          "column": 14
         }
       },
       "type": "variable",
@@ -80,12 +80,12 @@
     "__b3": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 26,
           "column": 4
         },
         "end": {
-          "line": 28,
-          "column": 15
+          "line": 26,
+          "column": 14
         }
       },
       "type": "variable",
@@ -94,12 +94,12 @@
     "__indicator": {
       "location": {
         "start": {
-          "line": 29,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 29,
-          "column": 22
+          "line": 27,
+          "column": 21
         }
       },
       "type": "variable",
@@ -108,11 +108,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 46,
+          "line": 43,
           "column": 5
         }
       },
@@ -126,11 +126,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 49,
+          "line": 45,
           "column": 4
         },
         "end": {
-          "line": 60,
+          "line": 57,
           "column": 5
         }
       },
@@ -144,11 +144,11 @@
     "__addButtons": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 67,
+          "line": 63,
           "column": 5
         }
       },
@@ -158,11 +158,11 @@
     "testShow": {
       "location": {
         "start": {
-          "line": 70,
+          "line": 65,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 77,
           "column": 5
         }
       },
@@ -172,11 +172,11 @@
     "testSpacing": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 79,
           "column": 4
         },
         "end": {
-          "line": 91,
+          "line": 85,
           "column": 5
         }
       },
@@ -186,11 +186,11 @@
     "testSpacer": {
       "location": {
         "start": {
-          "line": 94,
+          "line": 87,
           "column": 4
         },
         "end": {
-          "line": 98,
+          "line": 92,
           "column": 5
         }
       },
@@ -200,11 +200,11 @@
     "testHideItem": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 94,
           "column": 4
         },
         "end": {
-          "line": 116,
+          "line": 113,
           "column": 5
         }
       },
@@ -214,11 +214,11 @@
     "testShowItem": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 134,
+          "line": 138,
           "column": 5
         }
       },
@@ -228,11 +228,11 @@
     "testHideItemPriority": {
       "location": {
         "start": {
-          "line": 137,
+          "line": 140,
           "column": 4
         },
         "end": {
-          "line": 153,
+          "line": 160,
           "column": 5
         }
       },
@@ -242,11 +242,11 @@
     "testShowItemPriority": {
       "location": {
         "start": {
-          "line": 156,
+          "line": 162,
           "column": 4
         },
         "end": {
-          "line": 173,
+          "line": 184,
           "column": 5
         }
       },
@@ -256,11 +256,11 @@
     "testShowIndicator": {
       "location": {
         "start": {
-          "line": 176,
+          "line": 186,
           "column": 4
         },
         "end": {
-          "line": 196,
+          "line": 209,
           "column": 5
         }
       },
@@ -270,11 +270,11 @@
     "testHideIndicator": {
       "location": {
         "start": {
-          "line": 199,
+          "line": 211,
           "column": 4
         },
         "end": {
-          "line": 222,
+          "line": 237,
           "column": 5
         }
       },
@@ -284,21 +284,7 @@
     "testShowIndicatorHuge": {
       "location": {
         "start": {
-          "line": 225,
-          "column": 4
-        },
-        "end": {
-          "line": 249,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testHideItemRemoved": {
-      "location": {
-        "start": {
-          "line": 252,
+          "line": 239,
           "column": 4
         },
         "end": {
@@ -309,14 +295,28 @@
       "type": "function",
       "access": "public"
     },
-    "testShowItemRemoved": {
+    "testHideItemRemoved": {
       "location": {
         "start": {
-          "line": 269,
+          "line": 268,
           "column": 4
         },
         "end": {
-          "line": 305,
+          "line": 281,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testShowItemRemoved": {
+      "location": {
+        "start": {
+          "line": 283,
+          "column": 4
+        },
+        "end": {
+          "line": 322,
           "column": 5
         }
       },
@@ -326,11 +326,11 @@
     "testAddItem": {
       "location": {
         "start": {
-          "line": 307,
+          "line": 324,
           "column": 4
         },
         "end": {
-          "line": 324,
+          "line": 346,
           "column": 5
         }
       },
@@ -425,6 +425,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -449,6 +450,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

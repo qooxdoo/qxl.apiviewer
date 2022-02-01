@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 76,
+        "line": 82,
         "column": 3
       }
     },
@@ -26,11 +26,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 24,
+          "line": 22,
           "column": 4
         },
         "end": {
-          "line": 29,
+          "line": 26,
           "column": 5
         }
       },
@@ -40,7 +40,7 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 28,
           "column": 4
         },
         "end": {
@@ -58,7 +58,7 @@
           "column": 4
         },
         "end": {
-          "line": 56,
+          "line": 59,
           "column": 5
         }
       },
@@ -68,11 +68,11 @@
     "testInvalidFont": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 61,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 80,
           "column": 5
         }
       },
@@ -638,6 +638,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -662,6 +663,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

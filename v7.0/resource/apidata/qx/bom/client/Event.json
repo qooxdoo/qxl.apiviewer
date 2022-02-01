@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 258,
+        "line": 270,
         "column": 3
       }
     },
@@ -37,11 +37,11 @@
     "getTouch": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 36,
           "column": 4
         },
         "end": {
-          "line": 40,
+          "line": 38,
           "column": 5
         }
       },
@@ -73,11 +73,11 @@
     "getMsPointer": {
       "location": {
         "start": {
-          "line": 49,
+          "line": 46,
           "column": 4
         },
         "end": {
-          "line": 64,
+          "line": 60,
           "column": 5
         }
       },
@@ -109,11 +109,11 @@
     "getHelp": {
       "location": {
         "start": {
-          "line": 73,
+          "line": 68,
           "column": 4
         },
         "end": {
-          "line": 76,
+          "line": 70,
           "column": 5
         }
       },
@@ -145,11 +145,11 @@
     "getHashChange": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 78,
           "column": 4
         },
         "end": {
-          "line": 93,
+          "line": 89,
           "column": 5
         }
       },
@@ -181,11 +181,11 @@
     "getDispatchEvent": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 102,
+          "line": 97,
           "column": 5
         }
       },
@@ -211,11 +211,11 @@
     "getCustomEvent": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 105,
           "column": 4
         },
         "end": {
-          "line": 121,
+          "line": 115,
           "column": 5
         }
       },
@@ -241,11 +241,11 @@
     "getMouseEvent": {
       "location": {
         "start": {
-          "line": 129,
+          "line": 123,
           "column": 4
         },
         "end": {
-          "line": 139,
+          "line": 133,
           "column": 5
         }
       },
@@ -271,11 +271,11 @@
     "getMouseCreateEvent": {
       "location": {
         "start": {
-          "line": 146,
+          "line": 140,
           "column": 4
         },
         "end": {
-          "line": 164,
+          "line": 173,
           "column": 5
         }
       },
@@ -301,11 +301,11 @@
     "getMouseWheel": {
       "location": {
         "start": {
-          "line": 172,
+          "line": 181,
           "column": 4
         },
         "end": {
-          "line": 198,
+          "line": 207,
           "column": 5
         }
       },
@@ -342,11 +342,11 @@
     "getAuxclickEvent": {
       "location": {
         "start": {
-          "line": 207,
+          "line": 216,
           "column": 4
         },
         "end": {
-          "line": 215,
+          "line": 223,
           "column": 5
         }
       },
@@ -372,11 +372,11 @@
     "getPassive": {
       "location": {
         "start": {
-          "line": 220,
+          "line": 228,
           "column": 4
         },
         "end": {
-          "line": 241,
+          "line": 250,
           "column": 5
         }
       },
@@ -395,15 +395,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 245,
-        "column": 10
+        "line": 253,
+        "column": 2
       },
       "end": {
-        "line": 257,
+        "line": 269,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

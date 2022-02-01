@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 176,
+        "line": 161,
         "column": 3
       }
     },
@@ -97,11 +97,11 @@
     "setEnabled": {
       "location": {
         "start": {
-          "line": 66,
+          "line": 62,
           "column": 4
         },
         "end": {
-          "line": 68,
+          "line": 64,
           "column": 5
         }
       },
@@ -128,12 +128,12 @@
     "getEnabled": {
       "location": {
         "start": {
-          "line": 76,
+          "line": 71,
           "column": 4
         },
         "end": {
-          "line": 76,
-          "column": 30
+          "line": 71,
+          "column": 19
         }
       },
       "jsdoc": {
@@ -158,11 +158,11 @@
     "setRequired": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 84,
           "column": 4
         },
         "end": {
-          "line": 92,
+          "line": 86,
           "column": 5
         }
       },
@@ -189,12 +189,12 @@
     "getRequired": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 100,
-          "column": 31
+          "line": 93,
+          "column": 20
         }
       },
       "jsdoc": {
@@ -219,11 +219,11 @@
     "setValid": {
       "location": {
         "start": {
-          "line": 114,
+          "line": 106,
           "column": 4
         },
         "end": {
-          "line": 116,
+          "line": 108,
           "column": 5
         }
       },
@@ -250,12 +250,12 @@
     "getValid": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 124,
-          "column": 28
+          "line": 115,
+          "column": 17
         }
       },
       "jsdoc": {
@@ -280,11 +280,11 @@
     "setInvalidMessage": {
       "location": {
         "start": {
-          "line": 138,
+          "line": 128,
           "column": 4
         },
         "end": {
-          "line": 140,
+          "line": 130,
           "column": 5
         }
       },
@@ -311,12 +311,12 @@
     "getInvalidMessage": {
       "location": {
         "start": {
-          "line": 148,
+          "line": 137,
           "column": 4
         },
         "end": {
-          "line": 148,
-          "column": 37
+          "line": 137,
+          "column": 26
         }
       },
       "jsdoc": {
@@ -341,11 +341,11 @@
     "setRequiredInvalidMessage": {
       "location": {
         "start": {
-          "line": 163,
+          "line": 150,
           "column": 4
         },
         "end": {
-          "line": 165,
+          "line": 152,
           "column": 5
         }
       },
@@ -372,12 +372,12 @@
     "getRequiredInvalidMessage": {
       "location": {
         "start": {
-          "line": 173,
+          "line": 159,
           "column": 4
         },
         "end": {
-          "line": 173,
-          "column": 45
+          "line": 159,
+          "column": 34
         }
       },
       "jsdoc": {

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 128,
+        "line": 120,
         "column": 3
       }
     },
@@ -82,11 +82,11 @@
     "hyphenate": {
       "location": {
         "start": {
-          "line": 46,
+          "line": 45,
           "column": 4
         },
         "end": {
-          "line": 48,
+          "line": 47,
           "column": 5
         }
       },
@@ -127,12 +127,12 @@
     "firstUp": {
       "location": {
         "start": {
-          "line": 59,
+          "line": 57,
           "column": 4
         },
         "end": {
-          "line": 59,
-          "column": 36
+          "line": 57,
+          "column": 35
         }
       },
       "jsdoc": {
@@ -178,12 +178,12 @@
     "firstLow": {
       "location": {
         "start": {
-          "line": 70,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 70,
-          "column": 38
+          "line": 67,
+          "column": 37
         }
       },
       "jsdoc": {
@@ -229,11 +229,11 @@
     "startsWith": {
       "location": {
         "start": {
-          "line": 82,
+          "line": 78,
           "column": 4
         },
         "end": {
-          "line": 84,
+          "line": 80,
           "column": 5
         }
       },
@@ -287,11 +287,11 @@
     "endsWith": {
       "location": {
         "start": {
-          "line": 96,
+          "line": 91,
           "column": 4
         },
         "end": {
-          "line": 98,
+          "line": 93,
           "column": 5
         }
       },
@@ -345,12 +345,12 @@
     "escapeRegexpChars": {
       "location": {
         "start": {
-          "line": 109,
+          "line": 103,
           "column": 4
         },
         "end": {
-          "line": 109,
-          "column": 56
+          "line": 103,
+          "column": 55
         }
       },
       "jsdoc": {
@@ -396,12 +396,12 @@
     "escapeHtml": {
       "location": {
         "start": {
-          "line": 121,
+          "line": 114,
           "column": 4
         },
         "end": {
-          "line": 121,
-          "column": 37
+          "line": 114,
+          "column": 36
         }
       },
       "jsdoc": {
@@ -448,15 +448,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 125,
-        "column": 10
+        "line": 117,
+        "column": 2
       },
       "end": {
-        "line": 127,
+        "line": 119,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

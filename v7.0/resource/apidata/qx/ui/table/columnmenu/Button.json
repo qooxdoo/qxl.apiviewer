@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 111,
+        "line": 101,
         "column": 3
       }
     },
@@ -32,11 +32,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 32,
-        "column": 14
+        "line": 31,
+        "column": 2
       },
       "end": {
-        "line": 38,
+        "line": 36,
         "column": 3
       }
     },
@@ -53,12 +53,12 @@
     "__columnMenuButtons": {
       "location": {
         "start": {
-          "line": 42,
+          "line": 39,
           "column": 4
         },
         "end": {
-          "line": 42,
-          "column": 30
+          "line": 39,
+          "column": 29
         }
       },
       "type": "variable",
@@ -67,12 +67,12 @@
     "__blocker": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 43,
-          "column": 20
+          "line": 40,
+          "column": 19
         }
       },
       "type": "variable",
@@ -81,11 +81,11 @@
     "factory": {
       "location": {
         "start": {
-          "line": 46,
+          "line": 43,
           "column": 4
         },
         "end": {
-          "line": 76,
+          "line": 70,
           "column": 5
         }
       },
@@ -100,11 +100,11 @@
     "getBlocker": {
       "location": {
         "start": {
-          "line": 84,
+          "line": 77,
           "column": 4
         },
         "end": {
-          "line": 86,
+          "line": 79,
           "column": 5
         }
       },
@@ -130,11 +130,11 @@
     "empty": {
       "location": {
         "start": {
-          "line": 89,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 98,
+          "line": 89,
           "column": 5
         }
       },
@@ -374,6 +374,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -398,6 +399,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -4615,11 +4617,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 107,
-        "column": 12
+        "line": 98,
+        "column": 2
       },
       "end": {
-        "line": 109,
+        "line": 100,
         "column": 3
       }
     },

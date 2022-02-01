@@ -17,7 +17,7 @@
         "column": 0
       },
       "end": {
-        "line": 287,
+        "line": 266,
         "column": 3
       }
     },
@@ -28,12 +28,12 @@
     "open": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 27,
-          "column": 31
+          "line": 25,
+          "column": 30
         }
       },
       "name": "open",
@@ -42,12 +42,12 @@
     "close": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 26,
           "column": 4
         },
         "end": {
-          "line": 28,
-          "column": 32
+          "line": 26,
+          "column": 31
         }
       },
       "name": "close",
@@ -58,11 +58,11 @@
     "openProperty": {
       "location": {
         "start": {
-          "line": 33,
+          "line": 30,
           "column": 4
         },
         "end": {
-          "line": 36,
+          "line": 33,
           "column": 5
         }
       },
@@ -75,12 +75,12 @@
     "model": {
       "location": {
         "start": {
-          "line": 41,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 41,
-          "column": 16
+          "line": 37,
+          "column": 15
         }
       },
       "type": "variable",
@@ -89,12 +89,12 @@
     "controller": {
       "location": {
         "start": {
-          "line": 42,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 42,
-          "column": 21
+          "line": 38,
+          "column": 20
         }
       },
       "type": "variable",
@@ -103,12 +103,12 @@
     "nodesOpen": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 39,
           "column": 4
         },
         "end": {
-          "line": 43,
-          "column": 20
+          "line": 39,
+          "column": 19
         }
       },
       "type": "variable",
@@ -117,11 +117,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 45,
+          "line": 41,
           "column": 4
         },
         "end": {
-          "line": 125,
+          "line": 127,
           "column": 5
         }
       },
@@ -131,7 +131,7 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 128,
+          "line": 129,
           "column": 4
         },
         "end": {
@@ -145,11 +145,11 @@
     "testModelToTree": {
       "location": {
         "start": {
-          "line": 138,
+          "line": 137,
           "column": 4
         },
         "end": {
-          "line": 172,
+          "line": 170,
           "column": 5
         }
       },
@@ -159,11 +159,11 @@
     "testTreeToModel": {
       "location": {
         "start": {
-          "line": 175,
+          "line": 172,
           "column": 4
         },
         "end": {
-          "line": 215,
+          "line": 211,
           "column": 5
         }
       },
@@ -173,11 +173,11 @@
     "isShowTopLevelOpenCloseIcons": {
       "location": {
         "start": {
-          "line": 224,
+          "line": 219,
           "column": 4
         },
         "end": {
-          "line": 226,
+          "line": 221,
           "column": 5
         }
       },
@@ -192,11 +192,11 @@
     "isShowLeafs": {
       "location": {
         "start": {
-          "line": 229,
+          "line": 223,
           "column": 4
         },
         "end": {
-          "line": 231,
+          "line": 225,
           "column": 5
         }
       },
@@ -206,11 +206,11 @@
     "getSelection": {
       "location": {
         "start": {
-          "line": 234,
+          "line": 227,
           "column": 4
         },
         "end": {
-          "line": 237,
+          "line": 229,
           "column": 5
         }
       },
@@ -234,11 +234,11 @@
     "getLookupTable": {
       "location": {
         "start": {
-          "line": 240,
+          "line": 231,
           "column": 4
         },
         "end": {
-          "line": 243,
+          "line": 233,
           "column": 5
         }
       },
@@ -262,11 +262,11 @@
     "isNode": {
       "location": {
         "start": {
-          "line": 246,
+          "line": 235,
           "column": 4
         },
         "end": {
-          "line": 249,
+          "line": 237,
           "column": 5
         }
       },
@@ -299,11 +299,11 @@
     "isNodeOpen": {
       "location": {
         "start": {
-          "line": 252,
+          "line": 239,
           "column": 4
         },
         "end": {
-          "line": 255,
+          "line": 241,
           "column": 5
         }
       },
@@ -336,11 +336,11 @@
     "getLevel": {
       "location": {
         "start": {
-          "line": 258,
+          "line": 243,
           "column": 4
         },
         "end": {
-          "line": 261,
+          "line": 245,
           "column": 5
         }
       },
@@ -373,11 +373,11 @@
     "hasChildren": {
       "location": {
         "start": {
-          "line": 264,
+          "line": 247,
           "column": 4
         },
         "end": {
-          "line": 267,
+          "line": 249,
           "column": 5
         }
       },
@@ -410,11 +410,11 @@
     "openNode": {
       "location": {
         "start": {
-          "line": 269,
+          "line": 251,
           "column": 4
         },
         "end": {
-          "line": 272,
+          "line": 253,
           "column": 5
         }
       },
@@ -439,11 +439,11 @@
     "closeNode": {
       "location": {
         "start": {
-          "line": 274,
+          "line": 255,
           "column": 4
         },
         "end": {
-          "line": 277,
+          "line": 257,
           "column": 5
         }
       },
@@ -468,12 +468,12 @@
     "openNodeWithoutScrolling": {
       "location": {
         "start": {
-          "line": 279,
+          "line": 259,
           "column": 4
         },
         "end": {
-          "line": 279,
-          "column": 48
+          "line": 259,
+          "column": 37
         }
       },
       "type": "function",
@@ -497,12 +497,12 @@
     "closeNodeWithoutScrolling": {
       "location": {
         "start": {
-          "line": 280,
+          "line": 260,
           "column": 4
         },
         "end": {
-          "line": 280,
-          "column": 49
+          "line": 260,
+          "column": 38
         }
       },
       "type": "function",
@@ -526,11 +526,11 @@
     "refresh": {
       "location": {
         "start": {
-          "line": 282,
+          "line": 262,
           "column": 4
         },
         "end": {
-          "line": 285,
+          "line": 264,
           "column": 5
         }
       },
@@ -1217,6 +1217,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1241,6 +1242,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 87,
+        "line": 98,
         "column": 3
       }
     },
@@ -39,25 +39,7 @@
     "_getSrc": {
       "location": {
         "start": {
-          "line": 35,
-          "column": 4
-        },
-        "end": {
-          "line": 43,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "protected",
-      "overriddenFrom": "qx.test.bom.media.MediaTestCase",
-      "appearsIn": [
-        "qx.test.bom.media.MediaTestCase"
-      ]
-    },
-    "_createMedia": {
-      "location": {
-        "start": {
-          "line": 45,
+          "line": 33,
           "column": 4
         },
         "end": {
@@ -72,7 +54,7 @@
         "qx.test.bom.media.MediaTestCase"
       ]
     },
-    "_checkFeature": {
+    "_createMedia": {
       "location": {
         "start": {
           "line": 49,
@@ -90,7 +72,7 @@
         "qx.test.bom.media.MediaTestCase"
       ]
     },
-    "hasVideo": {
+    "_checkFeature": {
       "location": {
         "start": {
           "line": 53,
@@ -102,16 +84,34 @@
         }
       },
       "type": "function",
+      "access": "protected",
+      "overriddenFrom": "qx.test.bom.media.MediaTestCase",
+      "appearsIn": [
+        "qx.test.bom.media.MediaTestCase"
+      ]
+    },
+    "hasVideo": {
+      "location": {
+        "start": {
+          "line": 57,
+          "column": 4
+        },
+        "end": {
+          "line": 59,
+          "column": 5
+        }
+      },
+      "type": "function",
       "access": "public"
     },
     "testWidth": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 61,
           "column": 4
         },
         "end": {
-          "line": 61,
+          "line": 64,
           "column": 5
         }
       },
@@ -121,11 +121,11 @@
     "testHeight": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 66,
           "column": 4
         },
         "end": {
-          "line": 66,
+          "line": 69,
           "column": 5
         }
       },
@@ -135,11 +135,11 @@
     "testVideoWidthAndHeight": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 71,
           "column": 4
         },
         "end": {
-          "line": 85,
+          "line": 96,
           "column": 5
         }
       },
@@ -705,6 +705,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -729,6 +730,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 202,
+        "line": 216,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 29,
+          "line": 26,
           "column": 5
         }
       },
@@ -43,11 +43,11 @@
     "createModelData": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 40,
+          "line": 36,
           "column": 5
         }
       },
@@ -61,11 +61,11 @@
     "testSelection": {
       "location": {
         "start": {
-          "line": 42,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 70,
+          "line": 72,
           "column": 5
         }
       },
@@ -75,11 +75,11 @@
     "testSelectionByUserInteraction": {
       "location": {
         "start": {
-          "line": 72,
+          "line": 74,
           "column": 4
         },
         "end": {
-          "line": 101,
+          "line": 108,
           "column": 5
         }
       },
@@ -89,11 +89,11 @@
     "testSelectionEventByUserInteraction": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 110,
           "column": 4
         },
         "end": {
-          "line": 141,
+          "line": 159,
           "column": 5
         }
       },
@@ -103,11 +103,11 @@
     "testSelectionWithSorter": {
       "location": {
         "start": {
-          "line": 143,
+          "line": 161,
           "column": 4
         },
         "end": {
-          "line": 152,
+          "line": 169,
           "column": 5
         }
       },
@@ -117,11 +117,11 @@
     "testOneSelection": {
       "location": {
         "start": {
-          "line": 154,
+          "line": 171,
           "column": 4
         },
         "end": {
-          "line": 164,
+          "line": 180,
           "column": 5
         }
       },
@@ -131,11 +131,11 @@
     "testOneSelectionByChangingModel": {
       "location": {
         "start": {
-          "line": 166,
+          "line": 182,
           "column": 4
         },
         "end": {
-          "line": 184,
+          "line": 199,
           "column": 5
         }
       },
@@ -145,11 +145,11 @@
     "testOneSelectionWithEmptyModel": {
       "location": {
         "start": {
-          "line": 186,
+          "line": 201,
           "column": 4
         },
         "end": {
-          "line": 200,
+          "line": 214,
           "column": 5
         }
       },
@@ -244,6 +244,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -268,6 +269,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

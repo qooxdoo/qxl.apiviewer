@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 197,
+        "line": 183,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 36,
-        "column": 14
+        "line": 32,
+        "column": 2
       },
       "end": {
-        "line": 51,
+        "line": 48,
         "column": 3
       }
     },
@@ -44,11 +44,11 @@
     "iconTrue": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 60,
           "column": 4
         },
         "end": {
-          "line": 70,
+          "line": 64,
           "column": 5
         }
       },
@@ -70,11 +70,11 @@
     "iconFalse": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 69,
           "column": 4
         },
         "end": {
-          "line": 80,
+          "line": 73,
           "column": 5
         }
       },
@@ -98,12 +98,12 @@
     "__iconUrlTrue": {
       "location": {
         "start": {
-          "line": 92,
+          "line": 83,
           "column": 4
         },
         "end": {
-          "line": 92,
-          "column": 24
+          "line": 83,
+          "column": 23
         }
       },
       "type": "variable",
@@ -112,12 +112,12 @@
     "__iconUrlFalse": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 84,
           "column": 4
         },
         "end": {
-          "line": 93,
-          "column": 26
+          "line": 84,
+          "column": 25
         }
       },
       "type": "variable",
@@ -126,12 +126,12 @@
     "__aliasManager": {
       "location": {
         "start": {
-          "line": 94,
+          "line": 85,
           "column": 4
         },
         "end": {
-          "line": 94,
-          "column": 25
+          "line": 85,
+          "column": 24
         }
       },
       "type": "variable",
@@ -140,11 +140,11 @@
     "_onChangeTheme": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 91,
           "column": 4
         },
         "end": {
-          "line": 108,
+          "line": 97,
           "column": 6
         }
       },
@@ -162,21 +162,17 @@
           }
         ]
       },
-      "type": "function",
-      "access": "protected",
-      "overriddenFrom": "qx.ui.table.cellrenderer.Abstract",
-      "appearsIn": [
-        "qx.ui.table.cellrenderer.Abstract"
-      ]
+      "type": "variable",
+      "access": "protected"
     },
     "_applyIconTrue": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 100,
           "column": 4
         },
         "end": {
-          "line": 113,
+          "line": 102,
           "column": 5
         }
       },
@@ -190,11 +186,11 @@
     "_applyIconFalse": {
       "location": {
         "start": {
-          "line": 117,
+          "line": 105,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 107,
           "column": 5
         }
       },
@@ -208,11 +204,11 @@
     "_identifyImage": {
       "location": {
         "start": {
-          "line": 123,
+          "line": 110,
           "column": 4
         },
         "end": {
-          "line": 179,
+          "line": 163,
           "column": 5
         }
       },
@@ -312,6 +308,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -336,6 +333,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -448,6 +446,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for repeat"
           }
         ]
@@ -472,6 +471,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for repeat"
           }
@@ -632,11 +632,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 188,
-        "column": 13
+        "line": 172,
+        "column": 2
       },
       "end": {
-        "line": 196,
+        "line": 182,
         "column": 3
       }
     },

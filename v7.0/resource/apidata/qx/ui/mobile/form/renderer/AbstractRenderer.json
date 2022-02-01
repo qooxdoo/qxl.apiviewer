@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 145,
+        "line": 138,
         "column": 3
       }
     },
@@ -35,11 +35,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 42,
-        "column": 14
+        "line": 41,
+        "column": 2
       },
       "end": {
-        "line": 50,
+        "line": 48,
         "column": 3
       }
     },
@@ -65,11 +65,11 @@
     "defaultCssClass": {
       "location": {
         "start": {
-          "line": 61,
+          "line": 58,
           "column": 4
         },
         "end": {
-          "line": 65,
+          "line": 61,
           "column": 5
         }
       },
@@ -89,12 +89,12 @@
     "_form": {
       "location": {
         "start": {
-          "line": 76,
+          "line": 71,
           "column": 4
         },
         "end": {
-          "line": 76,
-          "column": 16
+          "line": 71,
+          "column": 15
         }
       },
       "type": "variable",
@@ -103,11 +103,11 @@
     "_onFormChange": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 77,
           "column": 4
         },
         "end": {
-          "line": 87,
+          "line": 81,
           "column": 5
         }
       },
@@ -125,11 +125,11 @@
     "_render": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 86,
           "column": 4
         },
         "end": {
-          "line": 111,
+          "line": 107,
           "column": 5
         }
       },
@@ -145,6 +145,25 @@
       "access": "protected"
     },
     "addItems": {
+      "location": {
+        "start": {
+          "line": 110,
+          "column": 4
+        },
+        "end": {
+          "line": 112,
+          "column": 5
+        }
+      },
+      "jsdoc": {},
+      "type": "function",
+      "access": "public",
+      "overriddenFrom": "qx.ui.form.renderer.IFormRenderer",
+      "appearsIn": [
+        "qx.ui.form.renderer.IFormRenderer"
+      ]
+    },
+    "addButton": {
       "location": {
         "start": {
           "line": 115,
@@ -163,33 +182,14 @@
         "qx.ui.form.renderer.IFormRenderer"
       ]
     },
-    "addButton": {
-      "location": {
-        "start": {
-          "line": 121,
-          "column": 4
-        },
-        "end": {
-          "line": 123,
-          "column": 5
-        }
-      },
-      "jsdoc": {},
-      "type": "function",
-      "access": "public",
-      "overriddenFrom": "qx.ui.form.renderer.IFormRenderer",
-      "appearsIn": [
-        "qx.ui.form.renderer.IFormRenderer"
-      ]
-    },
     "showErrorForItem": {
       "location": {
         "start": {
-          "line": 130,
+          "line": 124,
           "column": 4
         },
         "end": {
-          "line": 132,
+          "line": 126,
           "column": 5
         }
       },
@@ -216,11 +216,11 @@
     "resetForm": {
       "location": {
         "start": {
-          "line": 140,
+          "line": 134,
           "column": 4
         },
         "end": {
-          "line": 142,
+          "line": 136,
           "column": 5
         }
       },
@@ -323,6 +323,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -347,6 +348,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

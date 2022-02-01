@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 49,
+        "line": 48,
         "column": 0
       },
       "end": {
-        "line": 360,
+        "line": 389,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 63,
-        "column": 14
+        "line": 60,
+        "column": 2
       },
       "end": {
-        "line": 75,
+        "line": 71,
         "column": 3
       }
     },
@@ -62,11 +62,11 @@
     "model": {
       "location": {
         "start": {
-          "line": 88,
+          "line": 81,
           "column": 4
         },
         "end": {
-          "line": 95,
+          "line": 87,
           "column": 5
         }
       },
@@ -123,12 +123,12 @@
     "__targets": {
       "location": {
         "start": {
-          "line": 109,
+          "line": 98,
           "column": 4
         },
         "end": {
-          "line": 109,
-          "column": 20
+          "line": 98,
+          "column": 19
         }
       },
       "jsdoc": {},
@@ -138,12 +138,12 @@
     "__bindings": {
       "location": {
         "start": {
-          "line": 110,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 110,
-          "column": 21
+          "line": 99,
+          "column": 20
         }
       },
       "type": "variable",
@@ -152,11 +152,11 @@
     "_applyModel": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 166,
+          "line": 167,
           "column": 5
         }
       },
@@ -203,7 +203,7 @@
           "column": 4
         },
         "end": {
-          "line": 208,
+          "line": 219,
           "column": 5
         }
       },
@@ -271,11 +271,11 @@
     "__addTarget": {
       "location": {
         "start": {
-          "line": 234,
+          "line": 244,
           "column": 4
         },
         "end": {
-          "line": 264,
+          "line": 289,
           "column": 5
         }
       },
@@ -343,11 +343,11 @@
     "removeTarget": {
       "location": {
         "start": {
-          "line": 277,
+          "line": 302,
           "column": 4
         },
         "end": {
-          "line": 292,
+          "line": 320,
           "column": 5
         }
       },
@@ -388,11 +388,11 @@
     "__removeTargetFrom": {
       "location": {
         "start": {
-          "line": 310,
+          "line": 337,
           "column": 4
         },
         "end": {
-          "line": 344,
+          "line": 374,
           "column": 5
         }
       },
@@ -525,6 +525,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -549,6 +550,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -643,11 +645,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 354,
-        "column": 13
+        "line": 383,
+        "column": 2
       },
       "end": {
-        "line": 359,
+        "line": 388,
         "column": 3
       }
     },

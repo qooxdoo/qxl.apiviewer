@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 1048,
+        "line": 1063,
         "column": 3
       }
     },
@@ -53,10 +53,10 @@
     "location": {
       "start": {
         "line": 83,
-        "column": 13
+        "column": 2
       },
       "end": {
-        "line": 117,
+        "line": 120,
         "column": 3
       }
     },
@@ -89,11 +89,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 122,
-        "column": 12
+        "line": 125,
+        "column": 2
       },
       "end": {
-        "line": 125,
+        "line": 128,
         "column": 3
       }
     },
@@ -110,11 +110,11 @@
     "__p": {
       "location": {
         "start": {
-          "line": 129,
+          "line": 132,
           "column": 4
         },
         "end": {
-          "line": 129,
+          "line": 132,
           "column": 13
         }
       },
@@ -132,11 +132,11 @@
     "__external": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 135,
           "column": 4
         },
         "end": {
-          "line": 132,
+          "line": 135,
           "column": 20
         }
       },
@@ -154,11 +154,11 @@
     "then": {
       "location": {
         "start": {
-          "line": 152,
+          "line": 153,
           "column": 4
         },
         "end": {
-          "line": 154,
+          "line": 155,
           "column": 5
         }
       },
@@ -201,11 +201,11 @@
     "catch": {
       "location": {
         "start": {
-          "line": 166,
+          "line": 167,
           "column": 4
         },
         "end": {
-          "line": 168,
+          "line": 169,
           "column": 5
         }
       },
@@ -241,11 +241,11 @@
     "bind": {
       "location": {
         "start": {
-          "line": 184,
+          "line": 183,
           "column": 4
         },
         "end": {
-          "line": 186,
+          "line": 185,
           "column": 5
         }
       },
@@ -284,11 +284,11 @@
     "spread": {
       "location": {
         "start": {
-          "line": 210,
+          "line": 209,
           "column": 4
         },
         "end": {
-          "line": 212,
+          "line": 211,
           "column": 5
         }
       },
@@ -323,11 +323,11 @@
     "finally": {
       "location": {
         "start": {
-          "line": 222,
+          "line": 221,
           "column": 4
         },
         "end": {
-          "line": 224,
+          "line": 223,
           "column": 5
         }
       },
@@ -363,11 +363,11 @@
     "cancel": {
       "location": {
         "start": {
-          "line": 229,
+          "line": 228,
           "column": 4
         },
         "end": {
-          "line": 231,
+          "line": 230,
           "column": 5
         }
       },
@@ -385,11 +385,11 @@
     "all": {
       "location": {
         "start": {
-          "line": 241,
+          "line": 240,
           "column": 4
         },
         "end": {
-          "line": 243,
+          "line": 242,
           "column": 5
         }
       },
@@ -415,11 +415,11 @@
     "race": {
       "location": {
         "start": {
-          "line": 253,
+          "line": 252,
           "column": 4
         },
         "end": {
-          "line": 255,
+          "line": 254,
           "column": 5
         }
       },
@@ -445,11 +445,11 @@
     "any": {
       "location": {
         "start": {
-          "line": 264,
+          "line": 263,
           "column": 4
         },
         "end": {
-          "line": 266,
+          "line": 265,
           "column": 5
         }
       },
@@ -475,11 +475,11 @@
     "some": {
       "location": {
         "start": {
-          "line": 277,
+          "line": 276,
           "column": 4
         },
         "end": {
-          "line": 279,
+          "line": 278,
           "column": 5
         }
       },
@@ -518,11 +518,11 @@
     "forEach": {
       "location": {
         "start": {
-          "line": 295,
+          "line": 294,
           "column": 4
         },
         "end": {
-          "line": 297,
+          "line": 296,
           "column": 5
         }
       },
@@ -564,11 +564,11 @@
     "filter": {
       "location": {
         "start": {
-          "line": 309,
+          "line": 308,
           "column": 4
         },
         "end": {
-          "line": 311,
+          "line": 310,
           "column": 5
         }
       },
@@ -618,11 +618,11 @@
     "map": {
       "location": {
         "start": {
-          "line": 332,
+          "line": 331,
           "column": 4
         },
         "end": {
-          "line": 334,
+          "line": 333,
           "column": 5
         }
       },
@@ -672,11 +672,11 @@
     "mapSeries": {
       "location": {
         "start": {
-          "line": 353,
+          "line": 352,
           "column": 4
         },
         "end": {
-          "line": 355,
+          "line": 354,
           "column": 5
         }
       },
@@ -718,11 +718,11 @@
     "reduce": {
       "location": {
         "start": {
-          "line": 379,
+          "line": 378,
           "column": 4
         },
         "end": {
-          "line": 381,
+          "line": 380,
           "column": 5
         }
       },
@@ -772,11 +772,11 @@
     "__externalPromise": {
       "location": {
         "start": {
-          "line": 386,
+          "line": 385,
           "column": 4
         },
         "end": {
-          "line": 388,
+          "line": 387,
           "column": 5
         }
       },
@@ -794,11 +794,11 @@
     "__getPendingExternal": {
       "location": {
         "start": {
-          "line": 393,
+          "line": 392,
           "column": 4
         },
         "end": {
-          "line": 402,
+          "line": 401,
           "column": 5
         }
       },
@@ -816,11 +816,11 @@
     "resolve": {
       "location": {
         "start": {
-          "line": 407,
+          "line": 406,
           "column": 4
         },
         "end": {
-          "line": 409,
+          "line": 408,
           "column": 5
         }
       },
@@ -838,11 +838,11 @@
     "reject": {
       "location": {
         "start": {
-          "line": 414,
+          "line": 413,
           "column": 4
         },
         "end": {
-          "line": 416,
+          "line": 415,
           "column": 5
         }
       },
@@ -860,7 +860,7 @@
     "_callIterableMethod": {
       "location": {
         "start": {
-          "line": 431,
+          "line": 426,
           "column": 4
         },
         "end": {
@@ -928,69 +928,6 @@
       },
       "type": "function",
       "access": "public"
-    },
-    "bindAsync": {
-      "type": "function",
-      "name": "bindAsync",
-      "abstract": false,
-      "mixin": true,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.data.MBinding",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>The bind method delegates the call to the\n {@link qx.data.SingleValueBinding#bind} function. As source, the current\n object (this) will be used.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "sourcePropertyChain {String} The property chain which represents\n   the source property.",
-            "paramName": "sourcePropertyChain",
-            "description": " The property chain which represents\n   the source property.",
-            "type": "String"
-          },
-          {
-            "name": "@param",
-            "body": "targetObject {qx.core.Object} The object which the source should\n   be bind to.",
-            "paramName": "targetObject",
-            "description": " The object which the source should\n   be bind to.",
-            "type": "qx.core.Object"
-          },
-          {
-            "name": "@param",
-            "body": "targetProperty {String} The property name of the target object.",
-            "paramName": "targetProperty",
-            "description": " The property name of the target object.",
-            "type": "String"
-          },
-          {
-            "name": "@param",
-            "body": "options {Map} A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
-            "paramName": "options",
-            "description": " A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
-            "type": "Map"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.Promise} A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index.",
-            "type": "qx.Promise",
-            "description": " A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index."
-          }
-        ],
-        "@throws": [
-          {
-            "name": "@throws",
-            "body": "{qx.core.AssertionError} If the event is no data event or\n   there is no property definition for object and property (source and\n   target).",
-            "type": "qx.core.AssertionError",
-            "description": " If the event is no data event or\n   there is no property definition for object and property (source and\n   target)."
-          }
-        ]
-      }
     },
     "removeBinding": {
       "type": "function",
@@ -2430,6 +2367,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -2453,6 +2391,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -4141,11 +4080,11 @@
     "Bluebird": {
       "location": {
         "start": {
-          "line": 465,
+          "line": 464,
           "column": 4
         },
         "end": {
-          "line": 465,
+          "line": 464,
           "column": 18
         }
       },
@@ -4163,11 +4102,11 @@
     "Native": {
       "location": {
         "start": {
-          "line": 468,
+          "line": 467,
           "column": 4
         },
         "end": {
-          "line": 468,
+          "line": 467,
           "column": 16
         }
       },
@@ -4185,11 +4124,11 @@
     "Promise": {
       "location": {
         "start": {
-          "line": 471,
+          "line": 470,
           "column": 4
         },
         "end": {
-          "line": 471,
+          "line": 470,
           "column": 17
         }
       },
@@ -4207,11 +4146,11 @@
     "__DEFAULT_ERROR": {
       "location": {
         "start": {
-          "line": 476,
+          "line": 475,
           "column": 4
         },
         "end": {
-          "line": 476,
+          "line": 475,
           "column": 47
         }
       },
@@ -4229,11 +4168,11 @@
     "isPromise": {
       "location": {
         "start": {
-          "line": 501,
+          "line": 499,
           "column": 4
         },
         "end": {
-          "line": 512,
+          "line": 515,
           "column": 5
         }
       },
@@ -4271,11 +4210,11 @@
     "resolve": {
       "location": {
         "start": {
-          "line": 525,
+          "line": 528,
           "column": 4
         },
         "end": {
-          "line": 536,
+          "line": 539,
           "column": 5
         }
       },
@@ -4315,11 +4254,11 @@
     "reject": {
       "location": {
         "start": {
-          "line": 544,
+          "line": 547,
           "column": 4
         },
         "end": {
-          "line": 557,
+          "line": 560,
           "column": 5
         }
       },
@@ -4363,11 +4302,11 @@
     "allOf": {
       "location": {
         "start": {
-          "line": 567,
+          "line": 570,
           "column": 4
         },
         "end": {
-          "line": 586,
+          "line": 588,
           "column": 5
         }
       },
@@ -4402,11 +4341,11 @@
     "all": {
       "location": {
         "start": {
-          "line": 596,
+          "line": 598,
           "column": 4
         },
         "end": {
-          "line": 598,
+          "line": 600,
           "column": 5
         }
       },
@@ -4441,11 +4380,11 @@
     "race": {
       "location": {
         "start": {
-          "line": 606,
+          "line": 608,
           "column": 4
         },
         "end": {
-          "line": 608,
+          "line": 610,
           "column": 5
         }
       },
@@ -4891,11 +4830,11 @@
     "promisify": {
       "location": {
         "start": {
-          "line": 898,
+          "line": 897,
           "column": 4
         },
         "end": {
-          "line": 900,
+          "line": 899,
           "column": 5
         }
       },
@@ -4938,11 +4877,11 @@
     "__attachBluebird": {
       "location": {
         "start": {
-          "line": 914,
+          "line": 911,
           "column": 4
         },
         "end": {
-          "line": 921,
+          "line": 918,
           "column": 5
         }
       },
@@ -4969,11 +4908,11 @@
     "__initialized": {
       "location": {
         "start": {
-          "line": 924,
+          "line": 921,
           "column": 4
         },
         "end": {
-          "line": 924,
+          "line": 921,
           "column": 24
         }
       },
@@ -4991,11 +4930,11 @@
     "__initialize": {
       "location": {
         "start": {
-          "line": 929,
+          "line": 926,
           "column": 4
         },
         "end": {
-          "line": 943,
+          "line": 950,
           "column": 5
         }
       },
@@ -5013,11 +4952,11 @@
     "__onUnhandledRejection": {
       "location": {
         "start": {
-          "line": 949,
+          "line": 956,
           "column": 4
         },
         "end": {
-          "line": 963,
+          "line": 975,
           "column": 5
         }
       },
@@ -5041,11 +4980,11 @@
     "__wrap": {
       "location": {
         "start": {
-          "line": 970,
+          "line": 982,
           "column": 4
         },
         "end": {
-          "line": 979,
+          "line": 991,
           "column": 5
         }
       },
@@ -5077,11 +5016,11 @@
     "__bindArgs": {
       "location": {
         "start": {
-          "line": 990,
+          "line": 1002,
           "column": 4
         },
         "end": {
-          "line": 1007,
+          "line": 1019,
           "column": 5
         }
       },
@@ -5121,11 +5060,11 @@
     "__callStaticMethod": {
       "location": {
         "start": {
-          "line": 1016,
+          "line": 1028,
           "column": 4
         },
         "end": {
-          "line": 1019,
+          "line": 1036,
           "column": 5
         }
       },
@@ -5175,11 +5114,11 @@
     "__mapArgs": {
       "location": {
         "start": {
-          "line": 1025,
+          "line": 1042,
           "column": 4
         },
         "end": {
-          "line": 1039,
+          "line": 1054,
           "column": 5
         }
       },
@@ -5198,15 +5137,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 1042,
-        "column": 9
+        "line": 1057,
+        "column": 2
       },
       "end": {
-        "line": 1047,
+        "line": 1062,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

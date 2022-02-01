@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 214,
+        "line": 245,
         "column": 3
       }
     },
@@ -37,11 +37,11 @@
     "getImageElement": {
       "location": {
         "start": {
-          "line": 34,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 36,
+          "line": 34,
           "column": 5
         }
       },
@@ -59,11 +59,11 @@
     "getTitleElement": {
       "location": {
         "start": {
-          "line": 42,
+          "line": 39,
           "column": 4
         },
         "end": {
-          "line": 44,
+          "line": 42,
           "column": 5
         }
       },
@@ -81,11 +81,11 @@
     "getSubtitleElement": {
       "location": {
         "start": {
-          "line": 50,
+          "line": 47,
           "column": 4
         },
         "end": {
-          "line": 52,
+          "line": 50,
           "column": 5
         }
       },
@@ -103,11 +103,11 @@
     "__createModel": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 52,
           "column": 4
         },
         "end": {
-          "line": 64,
+          "line": 85,
           "column": 5
         }
       },
@@ -117,11 +117,11 @@
     "__createList": {
       "location": {
         "start": {
-          "line": 67,
+          "line": 87,
           "column": 4
         },
         "end": {
-          "line": 76,
+          "line": 99,
           "column": 5
         }
       },
@@ -131,11 +131,11 @@
     "__configureItemFunction": {
       "location": {
         "start": {
-          "line": 79,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 84,
+          "line": 105,
           "column": 5
         }
       },
@@ -145,11 +145,11 @@
     "__assertItemsAndModelLength": {
       "location": {
         "start": {
-          "line": 87,
+          "line": 107,
           "column": 4
         },
         "end": {
-          "line": 90,
+          "line": 110,
           "column": 5
         }
       },
@@ -159,11 +159,11 @@
     "__cleanUp": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 112,
           "column": 4
         },
         "end": {
-          "line": 100,
+          "line": 119,
           "column": 5
         }
       },
@@ -173,11 +173,11 @@
     "testCreate": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 121,
           "column": 4
         },
         "end": {
-          "line": 108,
+          "line": 125,
           "column": 5
         }
       },
@@ -187,11 +187,11 @@
     "testCustomRenderer": {
       "location": {
         "start": {
-          "line": 112,
+          "line": 127,
           "column": 4
         },
         "end": {
-          "line": 118,
+          "line": 133,
           "column": 5
         }
       },
@@ -201,11 +201,11 @@
     "testSetModelNull": {
       "location": {
         "start": {
-          "line": 121,
+          "line": 135,
           "column": 4
         },
         "end": {
-          "line": 131,
+          "line": 144,
           "column": 5
         }
       },
@@ -215,11 +215,11 @@
     "testModelChangeRemove": {
       "location": {
         "start": {
-          "line": 134,
+          "line": 146,
           "column": 4
         },
         "end": {
-          "line": 143,
+          "line": 154,
           "column": 5
         }
       },
@@ -229,11 +229,11 @@
     "testModelChangeEdit": {
       "location": {
         "start": {
-          "line": 146,
+          "line": 156,
           "column": 4
         },
         "end": {
-          "line": 160,
+          "line": 174,
           "column": 5
         }
       },
@@ -243,11 +243,11 @@
     "testModelChangeStringLength": {
       "location": {
         "start": {
-          "line": 164,
+          "line": 177,
           "column": 4
         },
         "end": {
-          "line": 189,
+          "line": 206,
           "column": 5
         }
       },
@@ -265,11 +265,11 @@
     "testModelChangeAdd": {
       "location": {
         "start": {
-          "line": 192,
+          "line": 208,
           "column": 4
         },
         "end": {
-          "line": 201,
+          "line": 221,
           "column": 5
         }
       },
@@ -279,11 +279,11 @@
     "testExtractRowsToRender": {
       "location": {
         "start": {
-          "line": 203,
+          "line": 223,
           "column": 4
         },
         "end": {
-          "line": 212,
+          "line": 243,
           "column": 5
         }
       },
@@ -378,6 +378,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -402,6 +403,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

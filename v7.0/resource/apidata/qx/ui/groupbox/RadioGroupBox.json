@@ -20,7 +20,7 @@
         "column": 0
       },
       "end": {
-        "line": 240,
+        "line": 210,
         "column": 3
       }
     },
@@ -47,11 +47,11 @@
     "appearance": {
       "location": {
         "start": {
-          "line": 47,
+          "line": 45,
           "column": 4
         },
         "end": {
-          "line": 51,
+          "line": 48,
           "column": 5
         }
       },
@@ -89,12 +89,12 @@
     "changeValue": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 65,
-          "column": 40
+          "line": 59,
+          "column": 37
         }
       },
       "jsdoc": {
@@ -111,12 +111,12 @@
     "execute": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 62,
           "column": 4
         },
         "end": {
-          "line": 68,
-          "column": 37
+          "line": 62,
+          "column": 34
         }
       },
       "jsdoc": {
@@ -151,11 +151,11 @@
     "_createChildControlImpl": {
       "location": {
         "start": {
-          "line": 88,
+          "line": 79,
           "column": 4
         },
         "end": {
-          "line": 107,
+          "line": 95,
           "column": 5
         }
       },
@@ -171,11 +171,11 @@
     "_applyEnabled": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 98,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 102,
           "column": 5
         }
       },
@@ -190,11 +190,11 @@
     "_onExecute": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 134,
+          "line": 117,
           "column": 5
         }
       },
@@ -221,11 +221,11 @@
     "_onRadioChangeValue": {
       "location": {
         "start": {
-          "line": 142,
+          "line": 124,
           "column": 4
         },
         "end": {
-          "line": 151,
+          "line": 132,
           "column": 5
         }
       },
@@ -252,11 +252,11 @@
     "execute": {
       "location": {
         "start": {
-          "line": 162,
+          "line": 141,
           "column": 4
         },
         "end": {
-          "line": 164,
+          "line": 143,
           "column": 5
         }
       },
@@ -271,11 +271,11 @@
     "setCommand": {
       "location": {
         "start": {
-          "line": 168,
+          "line": 146,
           "column": 4
         },
         "end": {
-          "line": 170,
+          "line": 148,
           "column": 5
         }
       },
@@ -290,11 +290,11 @@
     "getCommand": {
       "location": {
         "start": {
-          "line": 174,
+          "line": 151,
           "column": 4
         },
         "end": {
-          "line": 176,
+          "line": 153,
           "column": 5
         }
       },
@@ -309,11 +309,11 @@
     "getGroup": {
       "location": {
         "start": {
-          "line": 184,
+          "line": 160,
           "column": 4
         },
         "end": {
-          "line": 186,
+          "line": 162,
           "column": 5
         }
       },
@@ -343,11 +343,11 @@
     "setGroup": {
       "location": {
         "start": {
-          "line": 194,
+          "line": 169,
           "column": 4
         },
         "end": {
-          "line": 200,
+          "line": 174,
           "column": 5
         }
       },
@@ -378,11 +378,11 @@
     "getValue": {
       "location": {
         "start": {
-          "line": 208,
+          "line": 181,
           "column": 4
         },
         "end": {
-          "line": 210,
+          "line": 183,
           "column": 5
         }
       },
@@ -414,11 +414,11 @@
     "setValue": {
       "location": {
         "start": {
-          "line": 218,
+          "line": 190,
           "column": 4
         },
         "end": {
-          "line": 220,
+          "line": 192,
           "column": 5
         }
       },
@@ -451,11 +451,11 @@
     "resetValue": {
       "location": {
         "start": {
-          "line": 226,
+          "line": 197,
           "column": 4
         },
         "end": {
-          "line": 228,
+          "line": 199,
           "column": 5
         }
       },
@@ -478,11 +478,11 @@
     "getLabel": {
       "location": {
         "start": {
-          "line": 236,
+          "line": 206,
           "column": 4
         },
         "end": {
-          "line": 238,
+          "line": 208,
           "column": 5
         }
       },
@@ -1381,6 +1381,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1405,6 +1406,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

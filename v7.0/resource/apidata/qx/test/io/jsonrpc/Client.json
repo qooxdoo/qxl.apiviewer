@@ -16,7 +16,7 @@
         "column": 0
       },
       "end": {
-        "line": 267,
+        "line": 333,
         "column": 3
       }
     },
@@ -34,11 +34,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 34,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 39,
+          "line": 34,
           "column": 5
         }
       },
@@ -48,11 +48,11 @@
     "setUpRequest": {
       "location": {
         "start": {
-          "line": 41,
+          "line": 36,
           "column": 4
         },
         "end": {
-          "line": 45,
+          "line": 40,
           "column": 5
         }
       },
@@ -62,7 +62,7 @@
     "setUpFakeTransport": {
       "location": {
         "start": {
-          "line": 47,
+          "line": 42,
           "column": 4
         },
         "end": {
@@ -94,7 +94,7 @@
           "column": 4
         },
         "end": {
-          "line": 76,
+          "line": 78,
           "column": 5
         }
       },
@@ -121,11 +121,11 @@
     "assertExceptionThrown": {
       "location": {
         "start": {
-          "line": 84,
+          "line": 86,
           "column": 4
         },
         "end": {
-          "line": 121,
+          "line": 134,
           "column": 5
         }
       },
@@ -159,11 +159,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 123,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 126,
+          "line": 139,
           "column": 5
         }
       },
@@ -173,11 +173,11 @@
     "resetId": {
       "location": {
         "start": {
-          "line": 128,
+          "line": 141,
           "column": 4
         },
         "end": {
-          "line": 130,
+          "line": 143,
           "column": 5
         }
       },
@@ -187,11 +187,11 @@
     "test: Bearer authentication": {
       "location": {
         "start": {
-          "line": 136,
+          "line": 149,
           "column": 4
         },
         "end": {
-          "line": 150,
+          "line": 167,
           "column": 5
         }
       },
@@ -202,11 +202,11 @@
     "test: throw on invalid response id": {
       "location": {
         "start": {
-          "line": 156,
+          "line": 173,
           "column": 4
         },
         "end": {
-          "line": 160,
+          "line": 185,
           "column": 5
         }
       },
@@ -217,11 +217,11 @@
     "test: throw on duplicate response id": {
       "location": {
         "start": {
-          "line": 162,
+          "line": 187,
           "column": 4
         },
         "end": {
-          "line": 169,
+          "line": 198,
           "column": 5
         }
       },
@@ -231,11 +231,11 @@
     "test: call jsonrpc method and receive response with single result": {
       "location": {
         "start": {
-          "line": 171,
+          "line": 200,
           "column": 4
         },
         "end": {
-          "line": 182,
+          "line": 215,
           "column": 5
         }
       },
@@ -245,11 +245,11 @@
     "test: call jsonrpc method and receive batched response": {
       "location": {
         "start": {
-          "line": 184,
+          "line": 217,
           "column": 4
         },
         "end": {
-          "line": 199,
+          "line": 232,
           "column": 5
         }
       },
@@ -259,11 +259,11 @@
     "test: call jsonrpc method and expect error on invalid reponse ": {
       "location": {
         "start": {
-          "line": 201,
+          "line": 234,
           "column": 4
         },
         "end": {
-          "line": 203,
+          "line": 239,
           "column": 5
         }
       },
@@ -273,11 +273,11 @@
     "test: call jsonrpc method and expect error on invalid reponse - missing result": {
       "location": {
         "start": {
-          "line": 205,
+          "line": 241,
           "column": 4
         },
         "end": {
-          "line": 207,
+          "line": 243,
           "column": 5
         }
       },
@@ -287,11 +287,11 @@
     "test: call jsonrpc method and expect error response": {
       "location": {
         "start": {
-          "line": 209,
+          "line": 245,
           "column": 4
         },
         "end": {
-          "line": 213,
+          "line": 254,
           "column": 5
         }
       },
@@ -301,11 +301,11 @@
     "test: send batched requests": {
       "location": {
         "start": {
-          "line": 215,
+          "line": 256,
           "column": 4
         },
         "end": {
-          "line": 245,
+          "line": 300,
           "column": 5
         }
       },
@@ -315,11 +315,11 @@
     "test: receive jsonrpc requests from server": {
       "location": {
         "start": {
-          "line": 247,
+          "line": 302,
           "column": 4
         },
         "end": {
-          "line": 265,
+          "line": 331,
           "column": 5
         }
       },
@@ -1068,6 +1068,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1092,6 +1093,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

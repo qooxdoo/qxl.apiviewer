@@ -13,8 +13,8 @@
         "column": 0
       },
       "end": {
-        "line": 224,
-        "column": 5
+        "line": 249,
+        "column": 3
       }
     },
     "jsdoc": {
@@ -37,12 +37,12 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 28,
-          "column": 6
+          "line": 26,
+          "column": 4
         },
         "end": {
-          "line": 30,
-          "column": 7
+          "line": 28,
+          "column": 5
         }
       },
       "type": "function",
@@ -51,12 +51,12 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 32,
-          "column": 6
+          "line": 30,
+          "column": 4
         },
         "end": {
-          "line": 36,
-          "column": 7
+          "line": 34,
+          "column": 5
         }
       },
       "type": "function",
@@ -65,12 +65,12 @@
     "testExtendTheme": {
       "location": {
         "start": {
-          "line": 38,
-          "column": 6
+          "line": 36,
+          "column": 4
         },
         "end": {
-          "line": 55,
-          "column": 7
+          "line": 56,
+          "column": 5
         }
       },
       "type": "function",
@@ -80,11 +80,11 @@
       "location": {
         "start": {
           "line": 58,
-          "column": 6
+          "column": 4
         },
         "end": {
-          "line": 75,
-          "column": 7
+          "line": 78,
+          "column": 5
         }
       },
       "type": "function",
@@ -93,12 +93,12 @@
     "testIncludeInvalidTheme": {
       "location": {
         "start": {
-          "line": 78,
-          "column": 6
+          "line": 80,
+          "column": 4
         },
         "end": {
-          "line": 99,
-          "column": 7
+          "line": 109,
+          "column": 5
         }
       },
       "type": "function",
@@ -107,12 +107,12 @@
     "testPatchTheme": {
       "location": {
         "start": {
-          "line": 102,
-          "column": 6
+          "line": 111,
+          "column": 4
         },
         "end": {
-          "line": 123,
-          "column": 7
+          "line": 135,
+          "column": 5
         }
       },
       "type": "function",
@@ -121,12 +121,12 @@
     "testPatchInvalidTheme": {
       "location": {
         "start": {
-          "line": 126,
-          "column": 6
+          "line": 137,
+          "column": 4
         },
         "end": {
-          "line": 147,
-          "column": 7
+          "line": 166,
+          "column": 5
         }
       },
       "type": "function",
@@ -135,12 +135,12 @@
     "testIncludeThemeWithIncludes": {
       "location": {
         "start": {
-          "line": 150,
-          "column": 6
+          "line": 168,
+          "column": 4
         },
         "end": {
-          "line": 172,
-          "column": 7
+          "line": 193,
+          "column": 5
         }
       },
       "type": "function",
@@ -149,12 +149,12 @@
     "testDoubleExtend": {
       "location": {
         "start": {
-          "line": 175,
-          "column": 6
+          "line": 195,
+          "column": 4
         },
         "end": {
-          "line": 197,
-          "column": 7
+          "line": 220,
+          "column": 5
         }
       },
       "type": "function",
@@ -163,12 +163,12 @@
     "testExtendThemeWithIncludes": {
       "location": {
         "start": {
-          "line": 200,
-          "column": 6
+          "line": 222,
+          "column": 4
         },
         "end": {
-          "line": 222,
-          "column": 7
+          "line": 247,
+          "column": 5
         }
       },
       "type": "function",
@@ -262,6 +262,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -286,6 +287,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

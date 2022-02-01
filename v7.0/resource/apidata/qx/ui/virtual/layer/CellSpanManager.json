@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 447,
+        "line": 425,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 35,
-        "column": 14
+        "line": 34,
+        "column": 2
       },
       "end": {
-        "line": 54,
+        "line": 51,
         "column": 3
       }
     },
@@ -67,11 +67,11 @@
     "addCell": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 70,
           "column": 4
         },
         "end": {
-          "line": 85,
+          "line": 80,
           "column": 5
         }
       },
@@ -126,11 +126,11 @@
     "removeCell": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 87,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 90,
           "column": 5
         }
       },
@@ -157,11 +157,11 @@
     "_invalidateSortCache": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 105,
+          "line": 97,
           "column": 5
         }
       },
@@ -179,11 +179,11 @@
     "_getSortedCells": {
       "location": {
         "start": {
-          "line": 115,
+          "line": 106,
           "column": 4
         },
         "end": {
-          "line": 125,
+          "line": 115,
           "column": 5
         }
       },
@@ -218,11 +218,11 @@
     "_findCellsInRange": {
       "location": {
         "start": {
-          "line": 138,
+          "line": 127,
           "column": 4
         },
         "end": {
-          "line": 181,
+          "line": 164,
           "column": 5
         }
       },
@@ -271,11 +271,11 @@
     "findCellsInWindow": {
       "location": {
         "start": {
-          "line": 195,
+          "line": 177,
           "column": 4
         },
         "end": {
-          "line": 230,
+          "line": 209,
           "column": 5
         }
       },
@@ -331,11 +331,11 @@
     "__intersectionAsArray": {
       "location": {
         "start": {
-          "line": 241,
+          "line": 219,
           "column": 4
         },
         "end": {
-          "line": 251,
+          "line": 227,
           "column": 5
         }
       },
@@ -377,11 +377,11 @@
     "_onRowConfigChange": {
       "location": {
         "start": {
-          "line": 259,
+          "line": 234,
           "column": 4
         },
         "end": {
-          "line": 261,
+          "line": 236,
           "column": 5
         }
       },
@@ -408,11 +408,11 @@
     "_onColumnConfigChange": {
       "location": {
         "start": {
-          "line": 269,
+          "line": 243,
           "column": 4
         },
         "end": {
-          "line": 271,
+          "line": 245,
           "column": 5
         }
       },
@@ -439,11 +439,11 @@
     "_invalidatePositionCache": {
       "location": {
         "start": {
-          "line": 277,
+          "line": 250,
           "column": 4
         },
         "end": {
-          "line": 281,
+          "line": 253,
           "column": 5
         }
       },
@@ -461,11 +461,11 @@
     "_getRowPosition": {
       "location": {
         "start": {
-          "line": 290,
+          "line": 261,
           "column": 4
         },
         "end": {
-          "line": 299,
+          "line": 269,
           "column": 5
         }
       },
@@ -500,11 +500,11 @@
     "_getColumnPosition": {
       "location": {
         "start": {
-          "line": 308,
+          "line": 277,
           "column": 4
         },
         "end": {
-          "line": 317,
+          "line": 286,
           "column": 5
         }
       },
@@ -539,11 +539,11 @@
     "_getSingleCellBounds": {
       "location": {
         "start": {
-          "line": 330,
+          "line": 298,
           "column": 4
         },
         "end": {
-          "line": 358,
+          "line": 325,
           "column": 5
         }
       },
@@ -592,11 +592,11 @@
     "getCellBounds": {
       "location": {
         "start": {
-          "line": 369,
+          "line": 335,
           "column": 4
         },
         "end": {
-          "line": 379,
+          "line": 347,
           "column": 5
         }
       },
@@ -645,11 +645,11 @@
     "computeCellSpanMap": {
       "location": {
         "start": {
-          "line": 395,
+          "line": 362,
           "column": 4
         },
         "end": {
-          "line": 435,
+          "line": 406,
           "column": 5
         }
       },
@@ -797,6 +797,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -821,6 +822,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -849,15 +851,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 439,
-        "column": 13
+        "line": 409,
+        "column": 2
       },
       "end": {
-        "line": 446,
+        "line": 424,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

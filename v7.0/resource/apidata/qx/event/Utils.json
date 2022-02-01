@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 340,
+        "line": 353,
         "column": 3
       }
     },
@@ -65,7 +65,7 @@
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 86,
           "column": 6
         }
       },
@@ -105,17 +105,17 @@
           }
         ]
       },
-      "type": "function",
+      "type": "variable",
       "access": "public"
     },
     "__push": {
       "location": {
         "start": {
-          "line": 91,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 106,
+          "line": 110,
           "column": 5
         }
       },
@@ -157,11 +157,11 @@
     "then": {
       "location": {
         "start": {
-          "line": 115,
+          "line": 119,
           "column": 4
         },
         "end": {
-          "line": 165,
+          "line": 171,
           "column": 6
         }
       },
@@ -197,17 +197,17 @@
           }
         ]
       },
-      "type": "function",
+      "type": "variable",
       "access": "public"
     },
     "__thenPromise": {
       "location": {
         "start": {
-          "line": 174,
+          "line": 180,
           "column": 4
         },
         "end": {
-          "line": 184,
+          "line": 193,
           "column": 5
         }
       },
@@ -249,11 +249,11 @@
     "reject": {
       "location": {
         "start": {
-          "line": 193,
+          "line": 202,
           "column": 4
         },
         "end": {
-          "line": 204,
+          "line": 213,
           "column": 5
         }
       },
@@ -288,11 +288,11 @@
     "__addCatcher": {
       "location": {
         "start": {
-          "line": 211,
+          "line": 220,
           "column": 4
         },
         "end": {
-          "line": 218,
+          "line": 231,
           "column": 5
         }
       },
@@ -319,11 +319,11 @@
     "__catcher": {
       "location": {
         "start": {
-          "line": 227,
+          "line": 240,
           "column": 4
         },
         "end": {
-          "line": 235,
+          "line": 248,
           "column": 5
         }
       },
@@ -350,11 +350,11 @@
     "catch": {
       "location": {
         "start": {
-          "line": 247,
+          "line": 260,
           "column": 4
         },
         "end": {
-          "line": 270,
+          "line": 283,
           "column": 5
         }
       },
@@ -388,11 +388,11 @@
     "callListener": {
       "location": {
         "start": {
-          "line": 281,
+          "line": 294,
           "column": 4
         },
         "end": {
-          "line": 290,
+          "line": 303,
           "column": 5
         }
       },
@@ -449,11 +449,11 @@
     "series": {
       "location": {
         "start": {
-          "line": 301,
+          "line": 314,
           "column": 4
         },
         "end": {
-          "line": 338,
+          "line": 351,
           "column": 6
         }
       },
@@ -498,7 +498,7 @@
           }
         ]
       },
-      "type": "function",
+      "type": "variable",
       "access": "public"
     }
   },
@@ -591,6 +591,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -615,6 +616,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

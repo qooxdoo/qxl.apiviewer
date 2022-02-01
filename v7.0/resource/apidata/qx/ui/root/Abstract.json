@@ -17,7 +17,7 @@
         "column": 0
       },
       "end": {
-        "line": 311,
+        "line": 294,
         "column": 3
       }
     },
@@ -37,11 +37,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 43,
-        "column": 14
+        "line": 39,
+        "column": 2
       },
       "end": {
-        "line": 56,
+        "line": 51,
         "column": 3
       }
     },
@@ -51,11 +51,11 @@
     "appearance": {
       "location": {
         "start": {
-          "line": 70,
+          "line": 61,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 64,
           "column": 5
         }
       },
@@ -73,11 +73,11 @@
     "enabled": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 70,
           "column": 5
         }
       },
@@ -95,11 +95,11 @@
     "focusable": {
       "location": {
         "start": {
-          "line": 84,
+          "line": 73,
           "column": 4
         },
         "end": {
-          "line": 88,
+          "line": 76,
           "column": 5
         }
       },
@@ -117,11 +117,11 @@
     "globalCursor": {
       "location": {
         "start": {
-          "line": 117,
+          "line": 105,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 111,
           "column": 5
         }
       },
@@ -145,11 +145,11 @@
     "nativeContextMenu": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 136,
+          "line": 121,
           "column": 5
         }
       },
@@ -174,11 +174,11 @@
     "nativeHelp": {
       "location": {
         "start": {
-          "line": 144,
+          "line": 128,
           "column": 4
         },
         "end": {
-          "line": 149,
+          "line": 132,
           "column": 5
         }
       },
@@ -251,12 +251,12 @@
     "__globalCursorStyleSheet": {
       "location": {
         "start": {
-          "line": 164,
+          "line": 142,
           "column": 4
         },
         "end": {
-          "line": 164,
-          "column": 35
+          "line": 142,
+          "column": 34
         }
       },
       "type": "variable",
@@ -265,11 +265,11 @@
     "isRootWidget": {
       "location": {
         "start": {
-          "line": 167,
+          "line": 145,
           "column": 4
         },
         "end": {
-          "line": 169,
+          "line": 147,
           "column": 5
         }
       },
@@ -284,11 +284,11 @@
     "getLayout": {
       "location": {
         "start": {
-          "line": 177,
+          "line": 154,
           "column": 4
         },
         "end": {
-          "line": 179,
+          "line": 156,
           "column": 5
         }
       },
@@ -314,11 +314,11 @@
     "_applyGlobalCursor": {
       "location": {
         "start": {
-          "line": 183,
+          "line": 159,
           "column": 4
         },
         "end": {
-          "line": 206,
+          "line": 185,
           "column": 6
         }
       },
@@ -332,11 +332,11 @@
     "_applyNativeContextMenu": {
       "location": {
         "start": {
-          "line": 210,
+          "line": 188,
           "column": 4
         },
         "end": {
-          "line": 217,
+          "line": 199,
           "column": 5
         }
       },
@@ -351,11 +351,11 @@
     "_onNativeContextMenu": {
       "location": {
         "start": {
-          "line": 225,
+          "line": 206,
           "column": 4
         },
         "end": {
-          "line": 231,
+          "line": 211,
           "column": 5
         }
       },
@@ -382,11 +382,11 @@
     "__preventScrollWhenFocused": {
       "location": {
         "start": {
-          "line": 239,
+          "line": 218,
           "column": 4
         },
         "end": {
-          "line": 269,
+          "line": 255,
           "column": 5
         }
       },
@@ -413,11 +413,11 @@
     "_applyNativeHelp": {
       "location": {
         "start": {
-          "line": 273,
+          "line": 258,
           "column": 4
         },
         "end": {
-          "line": 284,
+          "line": 272,
           "column": 5
         }
       },
@@ -1506,6 +1506,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1530,6 +1531,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -5370,11 +5372,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 295,
-        "column": 13
+        "line": 281,
+        "column": 2
       },
       "end": {
-        "line": 297,
+        "line": 283,
         "column": 3
       }
     },
@@ -5383,11 +5385,11 @@
   "defer": {
     "location": {
       "start": {
-        "line": 308,
-        "column": 10
+        "line": 291,
+        "column": 2
       },
       "end": {
-        "line": 310,
+        "line": 293,
         "column": 3
       }
     },

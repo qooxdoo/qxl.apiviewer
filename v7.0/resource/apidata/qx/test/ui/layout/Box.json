@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 88,
+        "line": 89,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 28,
+          "line": 26,
           "column": 5
         }
       },
@@ -42,11 +42,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 33,
+          "line": 31,
           "column": 5
         }
       },
@@ -60,11 +60,11 @@
     "__testExclude": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 71,
+          "line": 75,
           "column": 5
         }
       },
@@ -74,11 +74,11 @@
     "testExcludeHBox": {
       "location": {
         "start": {
-          "line": 74,
+          "line": 77,
           "column": 4
         },
         "end": {
-          "line": 79,
+          "line": 81,
           "column": 5
         }
       },
@@ -88,11 +88,11 @@
     "testExcludeVBox": {
       "location": {
         "start": {
-          "line": 81,
+          "line": 83,
           "column": 4
         },
         "end": {
-          "line": 86,
+          "line": 87,
           "column": 5
         }
       },
@@ -187,6 +187,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -211,6 +212,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

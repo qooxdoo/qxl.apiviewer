@@ -11,11 +11,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 25,
+        "line": 24,
         "column": 0
       },
       "end": {
-        "line": 364,
+        "line": 328,
         "column": 3
       }
     },
@@ -32,11 +32,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 38,
-        "column": 14
+        "line": 33,
+        "column": 2
       },
       "end": {
-        "line": 52,
+        "line": 46,
         "column": 3
       }
     },
@@ -62,12 +62,12 @@
     "anonymous": {
       "location": {
         "start": {
-          "line": 64,
-          "column": 5
+          "line": 56,
+          "column": 4
         },
         "end": {
-          "line": 68,
-          "column": 6
+          "line": 59,
+          "column": 5
         }
       },
       "jsdoc": {},
@@ -87,12 +87,12 @@
     "updated": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 77,
-          "column": 35
+          "line": 67,
+          "column": 34
         }
       },
       "jsdoc": {
@@ -111,12 +111,12 @@
     "__spacerPool": {
       "location": {
         "start": {
-          "line": 89,
-          "column": 5
+          "line": 77,
+          "column": 4
         },
         "end": {
-          "line": 89,
-          "column": 24
+          "line": 77,
+          "column": 22
         }
       },
       "type": "variable",
@@ -125,12 +125,12 @@
     "getRenderedCellWidget": {
       "location": {
         "start": {
-          "line": 100,
-          "column": 5
+          "line": 88,
+          "column": 4
         },
         "end": {
-          "line": 129,
-          "column": 6
+          "line": 116,
+          "column": 5
         }
       },
       "jsdoc": {
@@ -171,11 +171,11 @@
     "_getSpacer": {
       "location": {
         "start": {
-          "line": 137,
+          "line": 123,
           "column": 4
         },
         "end": {
-          "line": 146,
+          "line": 130,
           "column": 5
         }
       },
@@ -201,11 +201,11 @@
     "_activateNotEmptyChild": {
       "location": {
         "start": {
-          "line": 153,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 168,
+          "line": 153,
           "column": 5
         }
       },
@@ -232,11 +232,11 @@
     "_fullUpdate": {
       "location": {
         "start": {
-          "line": 172,
+          "line": 156,
           "column": 4
         },
         "end": {
-          "line": 222,
+          "line": 204,
           "column": 5
         }
       },
@@ -251,11 +251,11 @@
     "_updateLayerWindow": {
       "location": {
         "start": {
-          "line": 225,
+          "line": 206,
           "column": 4
         },
         "end": {
-          "line": 352,
+          "line": 317,
           "column": 5
         }
       },
@@ -716,6 +716,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -740,6 +741,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -4424,15 +4426,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 355,
-        "column": 13
+        "line": 320,
+        "column": 2
       },
       "end": {
-        "line": 363,
+        "line": 327,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

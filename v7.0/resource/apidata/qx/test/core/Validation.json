@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 268,
+        "line": 541,
         "column": 3
       }
     },
@@ -36,25 +36,24 @@
   "construct": {
     "location": {
       "start": {
-        "line": 28,
-        "column": 14
+        "line": 26,
+        "column": 2
       },
       "end": {
-        "line": 98,
+        "line": 95,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "members": {
     "testNumber": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 98,
           "column": 4
         },
         "end": {
-          "line": 120,
+          "line": 137,
           "column": 5
         }
       },
@@ -64,11 +63,11 @@
     "testEmail": {
       "location": {
         "start": {
-          "line": 123,
+          "line": 139,
           "column": 4
         },
         "end": {
-          "line": 140,
+          "line": 203,
           "column": 5
         }
       },
@@ -78,11 +77,11 @@
     "testString": {
       "location": {
         "start": {
-          "line": 143,
+          "line": 205,
           "column": 4
         },
         "end": {
-          "line": 158,
+          "line": 255,
           "column": 5
         }
       },
@@ -92,11 +91,11 @@
     "testUrl": {
       "location": {
         "start": {
-          "line": 160,
+          "line": 257,
           "column": 4
         },
         "end": {
-          "line": 178,
+          "line": 325,
           "column": 5
         }
       },
@@ -106,11 +105,11 @@
     "testColor": {
       "location": {
         "start": {
-          "line": 180,
+          "line": 327,
           "column": 4
         },
         "end": {
-          "line": 198,
+          "line": 383,
           "column": 5
         }
       },
@@ -120,11 +119,11 @@
     "testRange": {
       "location": {
         "start": {
-          "line": 201,
+          "line": 385,
           "column": 4
         },
         "end": {
-          "line": 216,
+          "line": 418,
           "column": 5
         }
       },
@@ -134,11 +133,11 @@
     "testInArray": {
       "location": {
         "start": {
-          "line": 219,
+          "line": 420,
           "column": 4
         },
         "end": {
-          "line": 233,
+          "line": 456,
           "column": 5
         }
       },
@@ -148,11 +147,11 @@
     "testCustom": {
       "location": {
         "start": {
-          "line": 235,
+          "line": 458,
           "column": 4
         },
         "end": {
-          "line": 248,
+          "line": 501,
           "column": 5
         }
       },
@@ -162,11 +161,11 @@
     "testRegExp": {
       "location": {
         "start": {
-          "line": 252,
+          "line": 503,
           "column": 4
         },
         "end": {
-          "line": 266,
+          "line": 539,
           "column": 5
         }
       },
@@ -261,6 +260,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -285,6 +285,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

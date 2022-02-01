@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 1109,
+        "line": 1945,
         "column": 3
       }
     },
@@ -46,25 +46,24 @@
   "construct": {
     "location": {
       "start": {
-        "line": 30,
-        "column": 14
+        "line": 29,
+        "column": 2
       },
       "end": {
-        "line": 103,
+        "line": 99,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "members": {
     "__tree": {
       "location": {
         "start": {
-          "line": 109,
+          "line": 102,
           "column": 4
         },
         "end": {
-          "line": 109,
+          "line": 102,
           "column": 16
         }
       },
@@ -74,11 +73,11 @@
     "__model": {
       "location": {
         "start": {
-          "line": 110,
+          "line": 103,
           "column": 4
         },
         "end": {
-          "line": 110,
+          "line": 103,
           "column": 17
         }
       },
@@ -88,11 +87,11 @@
     "__controller": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 104,
           "column": 4
         },
         "end": {
-          "line": 111,
+          "line": 104,
           "column": 22
         }
       },
@@ -102,11 +101,11 @@
     "__a": {
       "location": {
         "start": {
-          "line": 113,
+          "line": 106,
           "column": 4
         },
         "end": {
-          "line": 113,
+          "line": 106,
           "column": 13
         }
       },
@@ -116,11 +115,11 @@
     "__b": {
       "location": {
         "start": {
-          "line": 114,
+          "line": 107,
           "column": 4
         },
         "end": {
-          "line": 114,
+          "line": 107,
           "column": 13
         }
       },
@@ -130,11 +129,11 @@
     "__c": {
       "location": {
         "start": {
-          "line": 115,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 108,
           "column": 13
         }
       },
@@ -144,11 +143,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 117,
+          "line": 110,
           "column": 4
         },
         "end": {
-          "line": 163,
+          "line": 161,
           "column": 5
         }
       },
@@ -158,11 +157,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 166,
+          "line": 163,
           "column": 4
         },
         "end": {
-          "line": 174,
+          "line": 170,
           "column": 5
         }
       },
@@ -172,11 +171,11 @@
     "testRemoveBindingsRecursive": {
       "location": {
         "start": {
-          "line": 177,
+          "line": 172,
           "column": 4
         },
         "end": {
-          "line": 196,
+          "line": 195,
           "column": 5
         }
       },
@@ -186,11 +185,11 @@
     "testModelChange": {
       "location": {
         "start": {
-          "line": 199,
+          "line": 197,
           "column": 4
         },
         "end": {
-          "line": 216,
+          "line": 214,
           "column": 5
         }
       },
@@ -200,11 +199,11 @@
     "testFolderCreation": {
       "location": {
         "start": {
-          "line": 219,
+          "line": 216,
           "column": 4
         },
         "end": {
-          "line": 225,
+          "line": 233,
           "column": 5
         }
       },
@@ -214,11 +213,11 @@
     "testFolderLabelInitial": {
       "location": {
         "start": {
-          "line": 228,
+          "line": 235,
           "column": 4
         },
         "end": {
-          "line": 234,
+          "line": 260,
           "column": 5
         }
       },
@@ -228,11 +227,11 @@
     "testFolderLabelChangeName": {
       "location": {
         "start": {
-          "line": 237,
+          "line": 262,
           "column": 4
         },
         "end": {
-          "line": 248,
+          "line": 292,
           "column": 5
         }
       },
@@ -242,11 +241,11 @@
     "testFolderLabelPropertyChange": {
       "location": {
         "start": {
-          "line": 251,
+          "line": 294,
           "column": 4
         },
         "end": {
-          "line": 259,
+          "line": 321,
           "column": 5
         }
       },
@@ -256,11 +255,11 @@
     "testChildPush": {
       "location": {
         "start": {
-          "line": 262,
+          "line": 323,
           "column": 4
         },
         "end": {
-          "line": 274,
+          "line": 359,
           "column": 5
         }
       },
@@ -270,11 +269,11 @@
     "testChildPop": {
       "location": {
         "start": {
-          "line": 277,
+          "line": 361,
           "column": 4
         },
         "end": {
-          "line": 285,
+          "line": 387,
           "column": 5
         }
       },
@@ -284,11 +283,11 @@
     "testChildShift": {
       "location": {
         "start": {
-          "line": 287,
+          "line": 389,
           "column": 4
         },
         "end": {
-          "line": 295,
+          "line": 415,
           "column": 5
         }
       },
@@ -298,11 +297,11 @@
     "testChildUnshift": {
       "location": {
         "start": {
-          "line": 298,
+          "line": 417,
           "column": 4
         },
         "end": {
-          "line": 310,
+          "line": 453,
           "column": 5
         }
       },
@@ -312,11 +311,11 @@
     "testTreeDeep": {
       "location": {
         "start": {
-          "line": 313,
+          "line": 455,
           "column": 4
         },
         "end": {
-          "line": 336,
+          "line": 502,
           "column": 5
         }
       },
@@ -326,189 +325,7 @@
     "testBig": {
       "location": {
         "start": {
-          "line": 339,
-          "column": 4
-        },
-        "end": {
-          "line": 379,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testChildReverse": {
-      "location": {
-        "start": {
-          "line": 382,
-          "column": 4
-        },
-        "end": {
-          "line": 389,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testChangeChildPath": {
-      "location": {
-        "start": {
-          "line": 392,
-          "column": 4
-        },
-        "end": {
-          "line": 399,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testChangeTarget": {
-      "location": {
-        "start": {
-          "line": 402,
-          "column": 4
-        },
-        "end": {
-          "line": 417,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testChangeModel": {
-      "location": {
-        "start": {
-          "line": 420,
-          "column": 4
-        },
-        "end": {
-          "line": 441,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testIconPath": {
-      "location": {
-        "start": {
-          "line": 444,
-          "column": 4
-        },
-        "end": {
-          "line": 449,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testIconPathChange": {
-      "location": {
-        "start": {
-          "line": 452,
-          "column": 4
-        },
-        "end": {
-          "line": 461,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testIconChange": {
-      "location": {
-        "start": {
-          "line": 463,
-          "column": 4
-        },
-        "end": {
-          "line": 475,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testSelection": {
-      "location": {
-        "start": {
-          "line": 478,
-          "column": 4
-        },
-        "end": {
-          "line": 495,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testSelectionBackMultiple": {
-      "location": {
-        "start": {
-          "line": 498,
-          "column": 4
-        },
-        "end": {
-          "line": 511,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testSelectionAfterDelete": {
-      "location": {
-        "start": {
-          "line": 514,
-          "column": 4
-        },
-        "end": {
-          "line": 537,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testSelectInvisible": {
-      "location": {
-        "start": {
-          "line": 540,
-          "column": 4
-        },
-        "end": {
-          "line": 546,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testLabelOptions": {
-      "location": {
-        "start": {
-          "line": 549,
-          "column": 4
-        },
-        "end": {
-          "line": 567,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testIconOptions": {
-      "location": {
-        "start": {
-          "line": 570,
+          "line": 504,
           "column": 4
         },
         "end": {
@@ -519,178 +336,150 @@
       "type": "function",
       "access": "public"
     },
-    "testItemWithoutChildren": {
+    "testChildReverse": {
       "location": {
         "start": {
-          "line": 596,
+          "line": 595,
           "column": 4
         },
         "end": {
-          "line": 627,
+          "line": 616,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "testSetLateModel": {
+    "testChangeChildPath": {
       "location": {
         "start": {
-          "line": 630,
+          "line": 618,
           "column": 4
         },
         "end": {
-          "line": 642,
+          "line": 639,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "testSetLateTarget": {
+    "testChangeTarget": {
       "location": {
         "start": {
-          "line": 645,
+          "line": 641,
           "column": 4
         },
         "end": {
-          "line": 657,
+          "line": 670,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "testSetLateTargetAndModel": {
+    "testChangeModel": {
       "location": {
         "start": {
-          "line": 660,
+          "line": 672,
           "column": 4
         },
         "end": {
-          "line": 685,
+          "line": 702,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "testSetLateChildPath": {
+    "testIconPath": {
       "location": {
         "start": {
-          "line": 688,
+          "line": 704,
           "column": 4
         },
         "end": {
-          "line": 700,
+          "line": 728,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "testSetLateLabelPath": {
+    "testIconPathChange": {
       "location": {
         "start": {
-          "line": 703,
+          "line": 730,
           "column": 4
         },
         "end": {
-          "line": 715,
+          "line": 758,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "testSetLateAll": {
+    "testIconChange": {
       "location": {
         "start": {
-          "line": 718,
+          "line": 760,
           "column": 4
         },
         "end": {
-          "line": 734,
+          "line": 791,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "testDelegateConfigure": {
+    "testSelection": {
       "location": {
         "start": {
-          "line": 737,
+          "line": 793,
           "column": 4
         },
         "end": {
-          "line": 754,
+          "line": 827,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "testDelegateConfigureLate": {
+    "testSelectionBackMultiple": {
       "location": {
         "start": {
-          "line": 757,
+          "line": 829,
           "column": 4
         },
         "end": {
-          "line": 780,
+          "line": 851,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "testDelegateCreateLate": {
+    "testSelectionAfterDelete": {
       "location": {
         "start": {
-          "line": 783,
+          "line": 853,
           "column": 4
         },
         "end": {
-          "line": 804,
+          "line": 888,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "testDelegateCreateFirst": {
+    "testSelectInvisible": {
       "location": {
         "start": {
-          "line": 807,
-          "column": 4
-        },
-        "end": {
-          "line": 840,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testDelegateBindLate": {
-      "location": {
-        "start": {
-          "line": 843,
-          "column": 4
-        },
-        "end": {
-          "line": 866,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testDelegateBindFirst": {
-      "location": {
-        "start": {
-          "line": 870,
+          "line": 890,
           "column": 4
         },
         "end": {
@@ -701,14 +490,224 @@
       "type": "function",
       "access": "public"
     },
-    "testDelegateBindPropertyReverse": {
+    "testLabelOptions": {
       "location": {
         "start": {
-          "line": 903,
+          "line": 902,
           "column": 4
         },
         "end": {
-          "line": 936,
+          "line": 945,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testIconOptions": {
+      "location": {
+        "start": {
+          "line": 947,
+          "column": 4
+        },
+        "end": {
+          "line": 994,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testItemWithoutChildren": {
+      "location": {
+        "start": {
+          "line": 996,
+          "column": 4
+        },
+        "end": {
+          "line": 1049,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testSetLateModel": {
+      "location": {
+        "start": {
+          "line": 1051,
+          "column": 4
+        },
+        "end": {
+          "line": 1087,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testSetLateTarget": {
+      "location": {
+        "start": {
+          "line": 1089,
+          "column": 4
+        },
+        "end": {
+          "line": 1125,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testSetLateTargetAndModel": {
+      "location": {
+        "start": {
+          "line": 1127,
+          "column": 4
+        },
+        "end": {
+          "line": 1200,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testSetLateChildPath": {
+      "location": {
+        "start": {
+          "line": 1202,
+          "column": 4
+        },
+        "end": {
+          "line": 1238,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testSetLateLabelPath": {
+      "location": {
+        "start": {
+          "line": 1240,
+          "column": 4
+        },
+        "end": {
+          "line": 1275,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testSetLateAll": {
+      "location": {
+        "start": {
+          "line": 1277,
+          "column": 4
+        },
+        "end": {
+          "line": 1312,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testDelegateConfigure": {
+      "location": {
+        "start": {
+          "line": 1314,
+          "column": 4
+        },
+        "end": {
+          "line": 1346,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testDelegateConfigureLate": {
+      "location": {
+        "start": {
+          "line": 1348,
+          "column": 4
+        },
+        "end": {
+          "line": 1390,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testDelegateCreateLate": {
+      "location": {
+        "start": {
+          "line": 1392,
+          "column": 4
+        },
+        "end": {
+          "line": 1448,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testDelegateCreateFirst": {
+      "location": {
+        "start": {
+          "line": 1450,
+          "column": 4
+        },
+        "end": {
+          "line": 1516,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testDelegateBindLate": {
+      "location": {
+        "start": {
+          "line": 1518,
+          "column": 4
+        },
+        "end": {
+          "line": 1584,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testDelegateBindFirst": {
+      "location": {
+        "start": {
+          "line": 1586,
+          "column": 4
+        },
+        "end": {
+          "line": 1659,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testDelegateBindPropertyReverse": {
+      "location": {
+        "start": {
+          "line": 1661,
+          "column": 4
+        },
+        "end": {
+          "line": 1729,
           "column": 5
         }
       },
@@ -718,11 +717,11 @@
     "testDelegateAddItem": {
       "location": {
         "start": {
-          "line": 939,
+          "line": 1731,
           "column": 4
         },
         "end": {
-          "line": 953,
+          "line": 1745,
           "column": 5
         }
       },
@@ -732,11 +731,11 @@
     "testResetModel": {
       "location": {
         "start": {
-          "line": 956,
+          "line": 1747,
           "column": 4
         },
         "end": {
-          "line": 959,
+          "line": 1750,
           "column": 5
         }
       },
@@ -746,11 +745,11 @@
     "testChangeChildrenArray": {
       "location": {
         "start": {
-          "line": 962,
+          "line": 1752,
           "column": 4
         },
         "end": {
-          "line": 988,
+          "line": 1792,
           "column": 5
         }
       },
@@ -760,11 +759,11 @@
     "testInheritedChildren": {
       "location": {
         "start": {
-          "line": 991,
+          "line": 1794,
           "column": 4
         },
         "end": {
-          "line": 1050,
+          "line": 1876,
           "column": 5
         }
       },
@@ -774,11 +773,11 @@
     "testRemoveEvents": {
       "location": {
         "start": {
-          "line": 1053,
+          "line": 1878,
           "column": 4
         },
         "end": {
-          "line": 1079,
+          "line": 1907,
           "column": 5
         }
       },
@@ -788,11 +787,11 @@
     "testBindItemDouble": {
       "location": {
         "start": {
-          "line": 1082,
+          "line": 1909,
           "column": 4
         },
         "end": {
-          "line": 1093,
+          "line": 1925,
           "column": 5
         }
       },
@@ -802,11 +801,11 @@
     "testBindItemDoubleReverse": {
       "location": {
         "start": {
-          "line": 1096,
+          "line": 1927,
           "column": 4
         },
         "end": {
-          "line": 1107,
+          "line": 1943,
           "column": 5
         }
       },
@@ -1493,6 +1492,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1517,6 +1517,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

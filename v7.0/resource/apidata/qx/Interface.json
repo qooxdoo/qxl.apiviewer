@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 660,
+        "line": 692,
         "column": 3
       }
     },
@@ -37,11 +37,11 @@
     "define": {
       "location": {
         "start": {
-          "line": 95,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 150,
+          "line": 147,
           "column": 5
         }
       },
@@ -85,11 +85,11 @@
     "getByName": {
       "location": {
         "start": {
-          "line": 159,
+          "line": 155,
           "column": 4
         },
         "end": {
-          "line": 161,
+          "line": 157,
           "column": 5
         }
       },
@@ -124,11 +124,11 @@
     "isDefined": {
       "location": {
         "start": {
-          "line": 170,
+          "line": 165,
           "column": 4
         },
         "end": {
-          "line": 172,
+          "line": 167,
           "column": 5
         }
       },
@@ -163,11 +163,11 @@
     "getTotalNumber": {
       "location": {
         "start": {
-          "line": 180,
+          "line": 174,
           "column": 4
         },
         "end": {
-          "line": 182,
+          "line": 176,
           "column": 5
         }
       },
@@ -193,11 +193,11 @@
     "flatten": {
       "location": {
         "start": {
-          "line": 192,
+          "line": 185,
           "column": 4
         },
         "end": {
-          "line": 209,
+          "line": 200,
           "column": 5
         }
       },
@@ -234,11 +234,11 @@
     "__checkMembers": {
       "location": {
         "start": {
-          "line": 224,
+          "line": 214,
           "column": 4
         },
         "end": {
-          "line": 280,
+          "line": 281,
           "column": 5
         }
       },
@@ -307,7 +307,7 @@
           "column": 4
         },
         "end": {
-          "line": 313,
+          "line": 319,
           "column": 5
         }
       },
@@ -349,11 +349,11 @@
     "__checkProperties": {
       "location": {
         "start": {
-          "line": 325,
+          "line": 330,
           "column": 4
         },
         "end": {
-          "line": 344,
+          "line": 351,
           "column": 5
         }
       },
@@ -402,11 +402,11 @@
     "__checkEvents": {
       "location": {
         "start": {
-          "line": 356,
+          "line": 362,
           "column": 4
         },
         "end": {
-          "line": 375,
+          "line": 383,
           "column": 5
         }
       },
@@ -455,11 +455,11 @@
     "assertObject": {
       "location": {
         "start": {
-          "line": 386,
+          "line": 393,
           "column": 4
         },
         "end": {
-          "line": 401,
+          "line": 406,
           "column": 5
         }
       },
@@ -493,11 +493,11 @@
     "assert": {
       "location": {
         "start": {
-          "line": 412,
+          "line": 416,
           "column": 4
         },
         "end": {
-          "line": 426,
+          "line": 428,
           "column": 5
         }
       },
@@ -540,11 +540,11 @@
     "objectImplements": {
       "location": {
         "start": {
-          "line": 437,
+          "line": 438,
           "column": 4
         },
         "end": {
-          "line": 458,
+          "line": 459,
           "column": 5
         }
       },
@@ -590,7 +590,7 @@
           "column": 4
         },
         "end": {
-          "line": 488,
+          "line": 489,
           "column": 5
         }
       },
@@ -632,11 +632,11 @@
     "genericToString": {
       "location": {
         "start": {
-          "line": 505,
+          "line": 504,
           "column": 4
         },
         "end": {
-          "line": 507,
+          "line": 506,
           "column": 5
         }
       },
@@ -668,12 +668,12 @@
     "$$registry": {
       "location": {
         "start": {
-          "line": 511,
+          "line": 509,
           "column": 4
         },
         "end": {
-          "line": 511,
-          "column": 19
+          "line": 509,
+          "column": 18
         }
       },
       "jsdoc": {
@@ -690,11 +690,11 @@
     "__wrapInterfaceMember": {
       "location": {
         "start": {
-          "line": 527,
+          "line": 524,
           "column": 4
         },
         "end": {
-          "line": 551,
+          "line": 545,
           "column": 6
         }
       },
@@ -750,17 +750,17 @@
           }
         ]
       },
-      "type": "function",
+      "type": "variable",
       "access": "private"
     },
     "__allowedKeys": {
       "location": {
         "start": {
-          "line": 555,
+          "line": 548,
           "column": 4
         },
         "end": {
-          "line": 567,
+          "line": 558,
           "column": 6
         }
       },
@@ -784,11 +784,11 @@
     "__validateConfig": {
       "location": {
         "start": {
-          "line": 577,
+          "line": 567,
           "column": 4
         },
         "end": {
-          "line": 658,
+          "line": 690,
           "column": 6
         }
       },
@@ -822,7 +822,7 @@
           }
         ]
       },
-      "type": "function",
+      "type": "variable",
       "access": "private"
     }
   },

@@ -50,7 +50,7 @@
         },
         "end": {
           "line": 33,
-          "column": 52
+          "column": 51
         }
       },
       "jsdoc": {
@@ -106,7 +106,7 @@
         },
         "end": {
           "line": 62,
-          "column": 56
+          "column": 55
         }
       },
       "jsdoc": {
@@ -134,7 +134,7 @@
         },
         "end": {
           "line": 65,
-          "column": 29
+          "column": 28
         }
       },
       "jsdoc": {
@@ -338,6 +338,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -362,6 +363,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

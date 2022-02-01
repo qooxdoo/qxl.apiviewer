@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 20,
+        "line": 19,
         "column": 0
       },
       "end": {
-        "line": 66,
+        "line": 57,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "test: stop() should prevent default and stop propagation": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 40,
+          "line": 35,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "test: stop() cannot prevent default on non cancelable events": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 52,
+          "line": 45,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "test: stop() cannot stop propagation on a non bubbling event": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 47,
           "column": 4
         },
         "end": {
-          "line": 64,
+          "line": 55,
           "column": 5
         }
       },
@@ -151,6 +151,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -175,6 +176,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

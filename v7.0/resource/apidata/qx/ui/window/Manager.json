@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 192,
+        "line": 166,
         "column": 3
       }
     },
@@ -33,12 +33,12 @@
     "__desktop": {
       "location": {
         "start": {
-          "line": 37,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 37,
-          "column": 20
+          "line": 33,
+          "column": 19
         }
       },
       "type": "variable",
@@ -47,11 +47,11 @@
     "setDesktop": {
       "location": {
         "start": {
-          "line": 41,
+          "line": 36,
           "column": 4
         },
         "end": {
-          "line": 54,
+          "line": 47,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "getDesktop": {
       "location": {
         "start": {
-          "line": 62,
+          "line": 54,
           "column": 4
         },
         "end": {
-          "line": 64,
+          "line": 56,
           "column": 5
         }
       },
@@ -96,11 +96,11 @@
     "changeActiveWindow": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 76,
+          "line": 67,
           "column": 5
         }
       },
@@ -115,12 +115,12 @@
     "_minZIndex": {
       "location": {
         "start": {
-          "line": 80,
+          "line": 70,
           "column": 4
         },
         "end": {
-          "line": 80,
-          "column": 20
+          "line": 70,
+          "column": 19
         }
       },
       "jsdoc": {
@@ -143,11 +143,11 @@
     "updateStack": {
       "location": {
         "start": {
-          "line": 84,
+          "line": 73,
           "column": 4
         },
         "end": {
-          "line": 89,
+          "line": 77,
           "column": 5
         }
       },
@@ -162,11 +162,11 @@
     "syncWidget": {
       "location": {
         "start": {
-          "line": 96,
+          "line": 83,
           "column": 4
         },
         "end": {
-          "line": 148,
+          "line": 132,
           "column": 5
         }
       },
@@ -184,11 +184,11 @@
     "bringToFront": {
       "location": {
         "start": {
-          "line": 152,
+          "line": 135,
           "column": 4
         },
         "end": {
-          "line": 162,
+          "line": 143,
           "column": 5
         }
       },
@@ -203,11 +203,11 @@
     "sendToBack": {
       "location": {
         "start": {
-          "line": 166,
+          "line": 146,
           "column": 4
         },
         "end": {
-          "line": 176,
+          "line": 154,
           "column": 5
         }
       },
@@ -307,6 +307,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -331,6 +332,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -359,11 +361,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 189,
-        "column": 13
+        "line": 163,
+        "column": 2
       },
       "end": {
-        "line": 191,
+        "line": 165,
         "column": 3
       }
     },

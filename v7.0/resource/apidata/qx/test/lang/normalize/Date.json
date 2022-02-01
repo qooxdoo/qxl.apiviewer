@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 99,
+        "line": 282,
         "column": 3
       }
     },
@@ -37,11 +37,11 @@
     "test parse()": {
       "location": {
         "start": {
-          "line": 29,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 280,
           "column": 5
         }
       },
@@ -136,6 +136,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -160,6 +161,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 248,
+        "line": 253,
         "column": 3
       }
     },
@@ -41,25 +41,24 @@
   "construct": {
     "location": {
       "start": {
-        "line": 32,
-        "column": 14
+        "line": 31,
+        "column": 2
       },
       "end": {
-        "line": 49,
+        "line": 48,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "properties": {
     "defaultCellStyle": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 55,
           "column": 4
         },
         "end": {
-          "line": 63,
+          "line": 59,
           "column": 5
         }
       },
@@ -114,11 +113,11 @@
     "_onChangeTheme": {
       "location": {
         "start": {
-          "line": 73,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 76,
           "column": 6
         }
       },
@@ -136,18 +135,18 @@
           }
         ]
       },
-      "type": "function",
+      "type": "variable",
       "access": "protected"
     },
     "_insetX": {
       "location": {
         "start": {
-          "line": 89,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 89,
-          "column": 19
+          "line": 82,
+          "column": 22
         }
       },
       "jsdoc": {
@@ -164,12 +163,12 @@
     "_insetY": {
       "location": {
         "start": {
-          "line": 95,
+          "line": 88,
           "column": 4
         },
         "end": {
-          "line": 95,
-          "column": 15
+          "line": 88,
+          "column": 14
         }
       },
       "jsdoc": {
@@ -186,11 +185,11 @@
     "_createStyleSheet": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 128,
+          "line": 122,
           "column": 5
         }
       },
@@ -208,11 +207,11 @@
     "_getCellClass": {
       "location": {
         "start": {
-          "line": 139,
+          "line": 132,
           "column": 4
         },
         "end": {
-          "line": 141,
+          "line": 134,
           "column": 5
         }
       },
@@ -247,11 +246,11 @@
     "_getCellStyle": {
       "location": {
         "start": {
-          "line": 154,
+          "line": 146,
           "column": 4
         },
         "end": {
-          "line": 156,
+          "line": 148,
           "column": 5
         }
       },
@@ -286,11 +285,11 @@
     "_getCellAttributes": {
       "location": {
         "start": {
-          "line": 169,
+          "line": 160,
           "column": 4
         },
         "end": {
-          "line": 174,
+          "line": 173,
           "column": 5
         }
       },
@@ -325,11 +324,11 @@
     "_getContentHtml": {
       "location": {
         "start": {
-          "line": 186,
+          "line": 184,
           "column": 4
         },
         "end": {
-          "line": 188,
+          "line": 186,
           "column": 5
         }
       },
@@ -364,11 +363,11 @@
     "_getCellSizeStyle": {
       "location": {
         "start": {
-          "line": 202,
+          "line": 199,
           "column": 4
         },
         "end": {
-          "line": 215,
+          "line": 210,
           "column": 5
         }
       },
@@ -424,11 +423,11 @@
     "createDataCellHtml": {
       "location": {
         "start": {
-          "line": 219,
+          "line": 213,
           "column": 4
         },
         "end": {
-          "line": 235,
+          "line": 240,
           "column": 5
         }
       },
@@ -528,6 +527,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -552,6 +552,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -646,15 +647,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 240,
-        "column": 13
+        "line": 243,
+        "column": 2
       },
       "end": {
-        "line": 247,
+        "line": 252,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": [
     "qx.ui.table.cellrenderer.AbstractImage",

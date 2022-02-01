@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 168,
+        "line": 146,
         "column": 3
       }
     },
@@ -31,12 +31,12 @@
     "STYLEFLAG_ALIGN_RIGHT": {
       "location": {
         "start": {
-          "line": 35,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 35,
-          "column": 29
+          "line": 32,
+          "column": 28
         }
       },
       "type": "variable",
@@ -45,12 +45,12 @@
     "STYLEFLAG_BOLD": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 36,
-          "column": 22
+          "line": 33,
+          "column": 21
         }
       },
       "type": "variable",
@@ -59,12 +59,12 @@
     "STYLEFLAG_ITALIC": {
       "location": {
         "start": {
-          "line": 37,
+          "line": 34,
           "column": 4
         },
         "end": {
-          "line": 37,
-          "column": 24
+          "line": 34,
+          "column": 23
         }
       },
       "type": "variable",
@@ -73,12 +73,12 @@
     "_numberFormat": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 38,
-          "column": 24
+          "line": 35,
+          "column": 23
         }
       },
       "type": "variable",
@@ -89,11 +89,11 @@
     "useAutoAlign": {
       "location": {
         "start": {
-          "line": 56,
+          "line": 49,
           "column": 4
         },
         "end": {
-          "line": 60,
+          "line": 52,
           "column": 5
         }
       },
@@ -116,11 +116,11 @@
     "_getStyleFlags": {
       "location": {
         "start": {
-          "line": 81,
+          "line": 69,
           "column": 4
         },
         "end": {
-          "line": 90,
+          "line": 76,
           "column": 5
         }
       },
@@ -155,11 +155,11 @@
     "_getCellClass": {
       "location": {
         "start": {
-          "line": 94,
+          "line": 79,
           "column": 4
         },
         "end": {
-          "line": 116,
+          "line": 102,
           "column": 5
         }
       },
@@ -174,11 +174,11 @@
     "_getContentHtml": {
       "location": {
         "start": {
-          "line": 120,
+          "line": 105,
           "column": 4
         },
         "end": {
-          "line": 122,
+          "line": 107,
           "column": 5
         }
       },
@@ -193,11 +193,11 @@
     "_formatValue": {
       "location": {
         "start": {
-          "line": 133,
+          "line": 117,
           "column": 4
         },
         "end": {
-          "line": 165,
+          "line": 144,
           "column": 5
         }
       },
@@ -317,6 +317,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -341,6 +342,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

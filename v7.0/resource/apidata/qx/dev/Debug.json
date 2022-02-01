@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 484,
+        "line": 465,
         "column": 3
       }
     },
@@ -53,12 +53,12 @@
     "disposeProfilingActive": {
       "location": {
         "start": {
-          "line": 37,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 37,
-          "column": 34
+          "line": 35,
+          "column": 33
         }
       },
       "jsdoc": {
@@ -81,11 +81,11 @@
     "debugObject": {
       "location": {
         "start": {
-          "line": 54,
+          "line": 52,
           "column": 4
         },
         "end": {
-          "line": 62,
+          "line": 58,
           "column": 5
         }
       },
@@ -131,11 +131,11 @@
     "debugObjectToString": {
       "location": {
         "start": {
-          "line": 87,
+          "line": 83,
           "column": 4
         },
         "end": {
-          "line": 231,
+          "line": 192,
           "column": 5
         }
       },
@@ -204,11 +204,11 @@
     "getFunctionName": {
       "location": {
         "start": {
-          "line": 245,
+          "line": 205,
           "column": 4
         },
         "end": {
-          "line": 280,
+          "line": 238,
           "column": 5
         }
       },
@@ -252,11 +252,11 @@
     "debugProperties": {
       "location": {
         "start": {
-          "line": 296,
+          "line": 253,
           "column": 4
         },
         "end": {
-          "line": 349,
+          "line": 319,
           "column": 5
         }
       },
@@ -313,11 +313,11 @@
     "startDisposeProfiling": {
       "location": {
         "start": {
-          "line": 360,
+          "line": 329,
           "column": 4
         },
         "end": {
-          "line": 368,
+          "line": 337,
           "column": 6
         }
       },
@@ -337,17 +337,17 @@
           }
         ]
       },
-      "type": "function",
+      "type": "variable",
       "access": "public"
     },
     "stopDisposeProfiling": {
       "location": {
         "start": {
-          "line": 386,
+          "line": 354,
           "column": 4
         },
         "end": {
-          "line": 403,
+          "line": 377,
           "column": 6
         }
       },
@@ -382,17 +382,17 @@
           }
         ]
       },
-      "type": "function",
+      "type": "variable",
       "access": "public"
     },
     "showDisposeProfiling": {
       "location": {
         "start": {
-          "line": 421,
+          "line": 395,
           "column": 4
         },
         "end": {
-          "line": 482,
+          "line": 463,
           "column": 6
         }
       },
@@ -427,7 +427,7 @@
           }
         ]
       },
-      "type": "function",
+      "type": "variable",
       "access": "public"
     }
   },

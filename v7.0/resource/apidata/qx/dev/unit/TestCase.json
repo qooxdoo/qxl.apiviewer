@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 226,
+        "line": 215,
         "column": 3
       }
     },
@@ -33,12 +33,12 @@
     "assertionFailed": {
       "location": {
         "start": {
-          "line": 37,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 37,
-          "column": 42
+          "line": 35,
+          "column": 41
         }
       },
       "jsdoc": {
@@ -57,11 +57,11 @@
     "testResult": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 46,
+          "line": 42,
           "column": 5
         }
       },
@@ -79,11 +79,11 @@
     "testFunc": {
       "location": {
         "start": {
-          "line": 48,
+          "line": 45,
           "column": 4
         },
         "end": {
-          "line": 51,
+          "line": 47,
           "column": 5
         }
       },
@@ -135,12 +135,12 @@
     "__autoDispose": {
       "location": {
         "start": {
-          "line": 56,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 56,
-          "column": 24
+          "line": 51,
+          "column": 23
         }
       },
       "type": "variable",
@@ -149,11 +149,11 @@
     "isDebugOn": {
       "location": {
         "start": {
-          "line": 64,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 66,
+          "line": 61,
           "column": 5
         }
       },
@@ -179,12 +179,12 @@
     "hasDebug": {
       "location": {
         "start": {
-          "line": 72,
-          "column": 3
+          "line": 67,
+          "column": 4
         },
         "end": {
-          "line": 74,
-          "column": 4
+          "line": 69,
+          "column": 5
         }
       },
       "jsdoc": {
@@ -201,11 +201,11 @@
     "wait": {
       "location": {
         "start": {
-          "line": 87,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 89,
+          "line": 82,
           "column": 5
         }
       },
@@ -252,11 +252,11 @@
     "resume": {
       "location": {
         "start": {
-          "line": 108,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 116,
+          "line": 108,
           "column": 5
         }
       },
@@ -300,11 +300,11 @@
     "resumeSetUp": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 116,
           "column": 4
         },
         "end": {
-          "line": 142,
+          "line": 133,
           "column": 5
         }
       },
@@ -330,11 +330,11 @@
     "resumeHandler": {
       "location": {
         "start": {
-          "line": 163,
+          "line": 153,
           "column": 4
         },
         "end": {
-          "line": 178,
+          "line": 173,
           "column": 5
         }
       },
@@ -377,11 +377,11 @@
     "skip": {
       "location": {
         "start": {
-          "line": 186,
+          "line": 180,
           "column": 4
         },
         "end": {
-          "line": 189,
+          "line": 182,
           "column": 5
         }
       },
@@ -411,11 +411,11 @@
     "addAutoDispose": {
       "location": {
         "start": {
-          "line": 198,
+          "line": 190,
           "column": 4
         },
         "end": {
-          "line": 204,
+          "line": 195,
           "column": 5
         }
       },
@@ -442,11 +442,11 @@
     "doAutoDispose": {
       "location": {
         "start": {
-          "line": 209,
+          "line": 200,
           "column": 4
         },
         "end": {
-          "line": 224,
+          "line": 213,
           "column": 5
         }
       },
@@ -2209,6 +2209,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -2233,6 +2234,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

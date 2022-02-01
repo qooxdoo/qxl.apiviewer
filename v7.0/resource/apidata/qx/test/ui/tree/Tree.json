@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 275,
+        "line": 296,
         "column": 3
       }
     },
@@ -24,12 +24,12 @@
     "_tree": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 25,
-          "column": 16
+          "line": 23,
+          "column": 15
         }
       },
       "type": "variable",
@@ -38,11 +38,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 38,
+          "line": 35,
           "column": 5
         }
       },
@@ -56,11 +56,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 44,
+          "line": 40,
           "column": 5
         }
       },
@@ -74,11 +74,11 @@
     "testGetPreviousSiblingOf": {
       "location": {
         "start": {
-          "line": 46,
+          "line": 42,
           "column": 4
         },
         "end": {
-          "line": 60,
+          "line": 55,
           "column": 5
         }
       },
@@ -88,11 +88,11 @@
     "testGetNextSiblingOf": {
       "location": {
         "start": {
-          "line": 62,
+          "line": 57,
           "column": 4
         },
         "end": {
-          "line": 76,
+          "line": 70,
           "column": 5
         }
       },
@@ -102,11 +102,11 @@
     "testGetNextNodeOf": {
       "location": {
         "start": {
-          "line": 78,
+          "line": 72,
           "column": 4
         },
         "end": {
-          "line": 93,
+          "line": 86,
           "column": 5
         }
       },
@@ -116,11 +116,11 @@
     "testGetNextNodeOfInvisible": {
       "location": {
         "start": {
-          "line": 95,
+          "line": 88,
           "column": 4
         },
         "end": {
-          "line": 111,
+          "line": 103,
           "column": 5
         }
       },
@@ -130,11 +130,11 @@
     "testGetPreviousNodeOf": {
       "location": {
         "start": {
-          "line": 113,
+          "line": 105,
           "column": 4
         },
         "end": {
-          "line": 128,
+          "line": 119,
           "column": 5
         }
       },
@@ -144,11 +144,11 @@
     "testGetPreviousNodeOfInvisible": {
       "location": {
         "start": {
-          "line": 130,
+          "line": 121,
           "column": 4
         },
         "end": {
-          "line": 146,
+          "line": 136,
           "column": 5
         }
       },
@@ -158,11 +158,11 @@
     "testAddBefore": {
       "location": {
         "start": {
-          "line": 148,
+          "line": 138,
           "column": 4
         },
         "end": {
-          "line": 174,
+          "line": 172,
           "column": 5
         }
       },
@@ -172,11 +172,11 @@
     "testAddAfter": {
       "location": {
         "start": {
-          "line": 176,
+          "line": 174,
           "column": 4
         },
         "end": {
-          "line": 202,
+          "line": 208,
           "column": 5
         }
       },
@@ -186,11 +186,11 @@
     "testChangeOrderWithAddBefore": {
       "location": {
         "start": {
-          "line": 204,
+          "line": 210,
           "column": 4
         },
         "end": {
-          "line": 231,
+          "line": 245,
           "column": 5
         }
       },
@@ -200,11 +200,11 @@
     "testChangeOrderWithAddAfter": {
       "location": {
         "start": {
-          "line": 233,
+          "line": 247,
           "column": 4
         },
         "end": {
-          "line": 260,
+          "line": 282,
           "column": 5
         }
       },
@@ -214,11 +214,11 @@
     "__printChildren": {
       "location": {
         "start": {
-          "line": 262,
+          "line": 284,
           "column": 4
         },
         "end": {
-          "line": 273,
+          "line": 294,
           "column": 5
         }
       },
@@ -313,6 +313,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -337,6 +338,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

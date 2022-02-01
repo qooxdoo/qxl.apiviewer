@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 1010,
+        "line": 1309,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 32,
+          "line": 29,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 35,
+          "line": 31,
           "column": 4
         },
         "end": {
-          "line": 41,
+          "line": 36,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "testHasListenerNoFlush": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 57,
+          "line": 50,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "testHasListenerFlush": {
       "location": {
         "start": {
-          "line": 60,
+          "line": 52,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 65,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "testAddListener": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 111,
+          "line": 99,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testRemoveListenerById": {
       "location": {
         "start": {
-          "line": 114,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 142,
+          "line": 128,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "testAddListenerOnce": {
       "location": {
         "start": {
-          "line": 145,
+          "line": 130,
           "column": 4
         },
         "end": {
-          "line": 166,
+          "line": 161,
           "column": 5
         }
       },
@@ -122,11 +122,11 @@
     "testText": {
       "location": {
         "start": {
-          "line": 169,
+          "line": 163,
           "column": 4
         },
         "end": {
-          "line": 219,
+          "line": 222,
           "column": 5
         }
       },
@@ -136,11 +136,11 @@
     "testBasics": {
       "location": {
         "start": {
-          "line": 222,
+          "line": 224,
           "column": 4
         },
         "end": {
-          "line": 546,
+          "line": 681,
           "column": 5
         }
       },
@@ -150,11 +150,11 @@
     "testExclude": {
       "location": {
         "start": {
-          "line": 550,
+          "line": 683,
           "column": 4
         },
         "end": {
-          "line": 767,
+          "line": 1017,
           "column": 5
         }
       },
@@ -164,11 +164,11 @@
     "testVisibility": {
       "location": {
         "start": {
-          "line": 770,
+          "line": 1019,
           "column": 4
         },
         "end": {
-          "line": 914,
+          "line": 1221,
           "column": 5
         }
       },
@@ -178,11 +178,11 @@
     "testResetStyles": {
       "location": {
         "start": {
-          "line": 917,
+          "line": 1223,
           "column": 4
         },
         "end": {
-          "line": 940,
+          "line": 1245,
           "column": 5
         }
       },
@@ -192,11 +192,11 @@
     "testGetTextSelection": {
       "location": {
         "start": {
-          "line": 943,
+          "line": 1247,
           "column": 4
         },
         "end": {
-          "line": 956,
+          "line": 1259,
           "column": 5
         }
       },
@@ -206,11 +206,11 @@
     "testSetTextSelection": {
       "location": {
         "start": {
-          "line": 959,
+          "line": 1261,
           "column": 4
         },
         "end": {
-          "line": 975,
+          "line": 1276,
           "column": 5
         }
       },
@@ -220,11 +220,11 @@
     "testClearTextSelection": {
       "location": {
         "start": {
-          "line": 977,
+          "line": 1278,
           "column": 4
         },
         "end": {
-          "line": 993,
+          "line": 1293,
           "column": 5
         }
       },
@@ -234,11 +234,11 @@
     "testSelectAllText": {
       "location": {
         "start": {
-          "line": 995,
+          "line": 1295,
           "column": 4
         },
         "end": {
-          "line": 1008,
+          "line": 1307,
           "column": 5
         }
       },
@@ -333,6 +333,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -357,6 +358,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

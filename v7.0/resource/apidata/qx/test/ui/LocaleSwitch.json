@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 124,
+        "line": 120,
         "column": 3
       }
     },
@@ -25,25 +25,24 @@
   "construct": {
     "location": {
       "start": {
-        "line": 25,
-        "column": 14
+        "line": 23,
+        "column": 2
       },
       "end": {
-        "line": 29,
+        "line": 26,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "members": {
     "manager": {
       "location": {
         "start": {
-          "line": 35,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 35,
+          "line": 29,
           "column": 17
         }
       },
@@ -53,12 +52,12 @@
     "__translationAdded": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 30,
           "column": 4
         },
         "end": {
-          "line": 36,
-          "column": 29
+          "line": 30,
+          "column": 28
         }
       },
       "type": "variable",
@@ -67,7 +66,25 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 32,
+          "column": 4
+        },
+        "end": {
+          "line": 58,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public",
+      "overriddenFrom": "qx.test.ui.LayoutTestCase",
+      "appearsIn": [
+        "qx.test.ui.LayoutTestCase"
+      ]
+    },
+    "tearDown": {
+      "location": {
+        "start": {
+          "line": 60,
           "column": 4
         },
         "end": {
@@ -82,32 +99,14 @@
         "qx.test.ui.LayoutTestCase"
       ]
     },
-    "tearDown": {
+    "testCommandInMenuButton": {
       "location": {
         "start": {
           "line": 64,
           "column": 4
         },
         "end": {
-          "line": 66,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public",
-      "overriddenFrom": "qx.test.ui.LayoutTestCase",
-      "appearsIn": [
-        "qx.test.ui.LayoutTestCase"
-      ]
-    },
-    "testCommandInMenuButton": {
-      "location": {
-        "start": {
-          "line": 69,
-          "column": 4
-        },
-        "end": {
-          "line": 81,
+          "line": 82,
           "column": 5
         }
       },
@@ -121,7 +120,7 @@
           "column": 4
         },
         "end": {
-          "line": 106,
+          "line": 105,
           "column": 5
         }
       },
@@ -131,11 +130,11 @@
     "testToolTipText": {
       "location": {
         "start": {
-          "line": 109,
+          "line": 107,
           "column": 4
         },
         "end": {
-          "line": 122,
+          "line": 118,
           "column": 5
         }
       },
@@ -474,6 +473,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -498,6 +498,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 192,
+        "line": 175,
         "column": 3
       }
     }
@@ -25,11 +25,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 9,
+          "line": 6,
           "column": 4
         },
         "end": {
-          "line": 16,
+          "line": 12,
           "column": 5
         }
       },
@@ -39,11 +39,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 19,
+          "line": 14,
           "column": 4
         },
         "end": {
-          "line": 29,
+          "line": 23,
           "column": 5
         }
       },
@@ -53,12 +53,12 @@
     "CREATE_ITERATIONS": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 32,
-          "column": 28
+          "line": 25,
+          "column": 27
         }
       },
       "type": "variable",
@@ -67,12 +67,12 @@
     "RESIZE_ITERATIONS": {
       "location": {
         "start": {
-          "line": 33,
+          "line": 26,
           "column": 4
         },
         "end": {
-          "line": 33,
-          "column": 27
+          "line": 26,
+          "column": 26
         }
       },
       "type": "variable",
@@ -81,12 +81,12 @@
     "DISPOSE_ITERATIONS": {
       "location": {
         "start": {
-          "line": 34,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 34,
-          "column": 29
+          "line": 27,
+          "column": 28
         }
       },
       "type": "variable",
@@ -95,11 +95,11 @@
     "_createElement": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 38,
+          "line": 31,
           "column": 5
         }
       },
@@ -109,11 +109,11 @@
     "testCreate": {
       "location": {
         "start": {
-          "line": 41,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 58,
+          "line": 49,
           "column": 5
         }
       },
@@ -123,11 +123,11 @@
     "flush": {
       "location": {
         "start": {
-          "line": 61,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 63,
+          "line": 53,
           "column": 5
         }
       },
@@ -137,11 +137,11 @@
     "testRender": {
       "location": {
         "start": {
-          "line": 66,
+          "line": 55,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 70,
           "column": 5
         }
       },
@@ -151,11 +151,11 @@
     "testResizeAndFlush": {
       "location": {
         "start": {
-          "line": 84,
+          "line": 72,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 106,
           "column": 5
         }
       },
@@ -165,11 +165,11 @@
     "testRemove": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 141,
+          "line": 127,
           "column": 5
         }
       },
@@ -179,11 +179,11 @@
     "testDisposeNonRendered": {
       "location": {
         "start": {
-          "line": 144,
+          "line": 129,
           "column": 4
         },
         "end": {
-          "line": 163,
+          "line": 148,
           "column": 5
         }
       },
@@ -193,11 +193,11 @@
     "testDisposeRendered": {
       "location": {
         "start": {
-          "line": 166,
+          "line": 150,
           "column": 4
         },
         "end": {
-          "line": 190,
+          "line": 173,
           "column": 5
         }
       },
@@ -504,6 +504,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -528,6 +529,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

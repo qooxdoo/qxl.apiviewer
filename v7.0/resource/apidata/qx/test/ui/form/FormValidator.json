@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 1086,
+        "line": 1236,
         "column": 3
       }
     },
@@ -23,18 +23,45 @@
   "construct": {
     "location": {
       "start": {
-        "line": 22,
-        "column": 14
+        "line": 21,
+        "column": 2
       },
       "end": {
-        "line": 24,
+        "line": 23,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "members": {
     "__username": {
+      "location": {
+        "start": {
+          "line": 26,
+          "column": 4
+        },
+        "end": {
+          "line": 26,
+          "column": 20
+        }
+      },
+      "type": "variable",
+      "access": "private"
+    },
+    "__password1": {
+      "location": {
+        "start": {
+          "line": 27,
+          "column": 4
+        },
+        "end": {
+          "line": 27,
+          "column": 21
+        }
+      },
+      "type": "variable",
+      "access": "private"
+    },
+    "__password2": {
       "location": {
         "start": {
           "line": 28,
@@ -48,43 +75,15 @@
       "type": "variable",
       "access": "private"
     },
-    "__password1": {
-      "location": {
-        "start": {
-          "line": 29,
-          "column": 4
-        },
-        "end": {
-          "line": 29,
-          "column": 22
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__password2": {
-      "location": {
-        "start": {
-          "line": 30,
-          "column": 4
-        },
-        "end": {
-          "line": 30,
-          "column": 22
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
     "__manager": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 31,
-          "column": 20
+          "line": 29,
+          "column": 19
         }
       },
       "type": "variable",
@@ -93,11 +92,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 33,
+          "line": 31,
           "column": 4
         },
         "end": {
-          "line": 38,
+          "line": 36,
           "column": 5
         }
       },
@@ -111,11 +110,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 45,
+          "line": 43,
           "column": 5
         }
       },
@@ -129,11 +128,11 @@
     "__notEmptyValidator": {
       "location": {
         "start": {
-          "line": 49,
+          "line": 46,
           "column": 4
         },
         "end": {
-          "line": 55,
+          "line": 53,
           "column": 5
         }
       },
@@ -144,11 +143,11 @@
     "__notEmptyValidatorError": {
       "location": {
         "start": {
-          "line": 57,
+          "line": 55,
           "column": 4
         },
         "end": {
-          "line": 63,
+          "line": 60,
           "column": 5
         }
       },
@@ -158,11 +157,11 @@
     "__asyncValidator": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 62,
           "column": 4
         },
         "end": {
-          "line": 70,
+          "line": 67,
           "column": 5
         }
       },
@@ -172,11 +171,11 @@
     "testSyncContext": {
       "location": {
         "start": {
-          "line": 74,
+          "line": 70,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 81,
           "column": 5
         }
       },
@@ -187,11 +186,11 @@
     "testSync2Context": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 83,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 102,
           "column": 5
         }
       },
@@ -201,11 +200,11 @@
     "testAsyncContext": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 104,
           "column": 4
         },
         "end": {
-          "line": 114,
+          "line": 118,
           "column": 5
         }
       },
@@ -215,11 +214,11 @@
     "testAsync2Context": {
       "location": {
         "start": {
-          "line": 117,
+          "line": 120,
           "column": 4
         },
         "end": {
-          "line": 139,
+          "line": 143,
           "column": 5
         }
       },
@@ -229,11 +228,11 @@
     "testSyncFormContext": {
       "location": {
         "start": {
-          "line": 142,
+          "line": 145,
           "column": 4
         },
         "end": {
-          "line": 151,
+          "line": 153,
           "column": 5
         }
       },
@@ -243,11 +242,11 @@
     "testAsyncFormContext": {
       "location": {
         "start": {
-          "line": 154,
+          "line": 155,
           "column": 4
         },
         "end": {
-          "line": 166,
+          "line": 168,
           "column": 5
         }
       },
@@ -257,11 +256,11 @@
     "testSyncSelfContained1NotNull": {
       "location": {
         "start": {
-          "line": 171,
+          "line": 172,
           "column": 4
         },
         "end": {
-          "line": 198,
+          "line": 199,
           "column": 5
         }
       },
@@ -286,11 +285,11 @@
     "testSyncSelfContained1NotNullEvents": {
       "location": {
         "start": {
-          "line": 227,
+          "line": 226,
           "column": 4
         },
         "end": {
-          "line": 247,
+          "line": 256,
           "column": 5
         }
       },
@@ -300,11 +299,11 @@
     "__testSyncSelfContained3NotNull": {
       "location": {
         "start": {
-          "line": 250,
+          "line": 258,
           "column": 4
         },
         "end": {
-          "line": 305,
+          "line": 312,
           "column": 5
         }
       },
@@ -314,11 +313,11 @@
     "testSyncSelfContained3NotNull": {
       "location": {
         "start": {
-          "line": 308,
+          "line": 314,
           "column": 4
         },
         "end": {
-          "line": 310,
+          "line": 316,
           "column": 5
         }
       },
@@ -328,11 +327,11 @@
     "testSyncSelfContained3NotNullError": {
       "location": {
         "start": {
-          "line": 313,
+          "line": 318,
           "column": 4
         },
         "end": {
-          "line": 315,
+          "line": 320,
           "column": 5
         }
       },
@@ -342,11 +341,11 @@
     "__testSyncRelatedNoIndividual": {
       "location": {
         "start": {
-          "line": 322,
+          "line": 326,
           "column": 4
         },
         "end": {
-          "line": 343,
+          "line": 347,
           "column": 5
         }
       },
@@ -357,11 +356,11 @@
     "testSyncRelatedNoIndividual": {
       "location": {
         "start": {
-          "line": 346,
+          "line": 349,
           "column": 4
         },
         "end": {
-          "line": 354,
+          "line": 357,
           "column": 5
         }
       },
@@ -371,11 +370,11 @@
     "testSyncRelatedNoIndividualError": {
       "location": {
         "start": {
-          "line": 357,
+          "line": 359,
           "column": 4
         },
         "end": {
-          "line": 363,
+          "line": 365,
           "column": 5
         }
       },
@@ -385,7 +384,7 @@
     "testSyncRelatedWithIndividual": {
       "location": {
         "start": {
-          "line": 366,
+          "line": 367,
           "column": 4
         },
         "end": {
@@ -399,11 +398,11 @@
     "testRequired": {
       "location": {
         "start": {
-          "line": 427,
+          "line": 426,
           "column": 4
         },
         "end": {
-          "line": 462,
+          "line": 461,
           "column": 5
         }
       },
@@ -414,11 +413,11 @@
     "testRequiredFieldMessage": {
       "location": {
         "start": {
-          "line": 465,
+          "line": 463,
           "column": 4
         },
         "end": {
-          "line": 484,
+          "line": 482,
           "column": 5
         }
       },
@@ -428,11 +427,11 @@
     "testRequiredNumberZero": {
       "location": {
         "start": {
-          "line": 487,
+          "line": 484,
           "column": 4
         },
         "end": {
-          "line": 503,
+          "line": 500,
           "column": 5
         }
       },
@@ -442,11 +441,11 @@
     "testAsyncSelfContained1NotNullFail": {
       "location": {
         "start": {
-          "line": 511,
+          "line": 506,
           "column": 4
         },
         "end": {
-          "line": 528,
+          "line": 529,
           "column": 5
         }
       },
@@ -461,7 +460,7 @@
           "column": 4
         },
         "end": {
-          "line": 548,
+          "line": 554,
           "column": 5
         }
       },
@@ -471,11 +470,11 @@
     "testAsyncSelfContained3NotNullFail": {
       "location": {
         "start": {
-          "line": 551,
+          "line": 556,
           "column": 4
         },
         "end": {
-          "line": 580,
+          "line": 597,
           "column": 5
         }
       },
@@ -485,11 +484,11 @@
     "testAsyncSelfContained3NotNull": {
       "location": {
         "start": {
-          "line": 583,
+          "line": 599,
           "column": 4
         },
         "end": {
-          "line": 608,
+          "line": 636,
           "column": 5
         }
       },
@@ -499,11 +498,11 @@
     "testAsyncSelfContained2NotNullFailMixed": {
       "location": {
         "start": {
-          "line": 611,
+          "line": 638,
           "column": 4
         },
         "end": {
-          "line": 651,
+          "line": 688,
           "column": 5
         }
       },
@@ -513,11 +512,11 @@
     "testAsyncSelfContained3NotNullHalfFail": {
       "location": {
         "start": {
-          "line": 654,
+          "line": 690,
           "column": 4
         },
         "end": {
-          "line": 682,
+          "line": 730,
           "column": 5
         }
       },
@@ -527,11 +526,11 @@
     "testAsyncRelated3NotNullFail": {
       "location": {
         "start": {
-          "line": 690,
+          "line": 736,
           "column": 4
         },
         "end": {
-          "line": 724,
+          "line": 787,
           "column": 5
         }
       },
@@ -542,11 +541,11 @@
     "testAsyncRelated3NotNull": {
       "location": {
         "start": {
-          "line": 727,
+          "line": 789,
           "column": 4
         },
         "end": {
-          "line": 762,
+          "line": 840,
           "column": 5
         }
       },
@@ -556,11 +555,11 @@
     "testMixedSelfContained3NotNullAsyncFail": {
       "location": {
         "start": {
-          "line": 769,
+          "line": 845,
           "column": 4
         },
         "end": {
-          "line": 792,
+          "line": 874,
           "column": 5
         }
       },
@@ -571,11 +570,11 @@
     "testMixedSelfContained3NotNullSyncFail": {
       "location": {
         "start": {
-          "line": 795,
+          "line": 876,
           "column": 4
         },
         "end": {
-          "line": 818,
+          "line": 905,
           "column": 5
         }
       },
@@ -585,11 +584,11 @@
     "testMixedSelfContained3NotNullSync": {
       "location": {
         "start": {
-          "line": 821,
+          "line": 907,
           "column": 4
         },
         "end": {
-          "line": 845,
+          "line": 937,
           "column": 5
         }
       },
@@ -599,11 +598,11 @@
     "testMixedSelfContained2SyncRequired": {
       "location": {
         "start": {
-          "line": 848,
+          "line": 939,
           "column": 4
         },
         "end": {
-          "line": 869,
+          "line": 966,
           "column": 5
         }
       },
@@ -613,11 +612,11 @@
     "testMixedRelated3NotNull": {
       "location": {
         "start": {
-          "line": 875,
+          "line": 970,
           "column": 4
         },
         "end": {
-          "line": 909,
+          "line": 1017,
           "column": 5
         }
       },
@@ -628,11 +627,11 @@
     "testMixedRelated3NotNullSyncFail": {
       "location": {
         "start": {
-          "line": 912,
+          "line": 1019,
           "column": 4
         },
         "end": {
-          "line": 945,
+          "line": 1065,
           "column": 5
         }
       },
@@ -642,11 +641,11 @@
     "testMixedRelated3NotNullAsyncFail": {
       "location": {
         "start": {
-          "line": 947,
+          "line": 1067,
           "column": 4
         },
         "end": {
-          "line": 980,
+          "line": 1113,
           "column": 5
         }
       },
@@ -656,11 +655,11 @@
     "testMixedRelated3NotNullAsyncFormFail": {
       "location": {
         "start": {
-          "line": 982,
+          "line": 1115,
           "column": 4
         },
         "end": {
-          "line": 1016,
+          "line": 1162,
           "column": 5
         }
       },
@@ -670,11 +669,11 @@
     "testAddWrong": {
       "location": {
         "start": {
-          "line": 1021,
+          "line": 1167,
           "column": 4
         },
         "end": {
-          "line": 1032,
+          "line": 1177,
           "column": 5
         }
       },
@@ -685,11 +684,11 @@
     "testAddSelectBoxWithValidator": {
       "location": {
         "start": {
-          "line": 1034,
+          "line": 1179,
           "column": 4
         },
         "end": {
-          "line": 1040,
+          "line": 1185,
           "column": 5
         }
       },
@@ -699,11 +698,11 @@
     "testRemove": {
       "location": {
         "start": {
-          "line": 1044,
+          "line": 1189,
           "column": 4
         },
         "end": {
-          "line": 1051,
+          "line": 1204,
           "column": 5
         }
       },
@@ -714,11 +713,11 @@
     "testGetItems": {
       "location": {
         "start": {
-          "line": 1056,
+          "line": 1208,
           "column": 4
         },
         "end": {
-          "line": 1063,
+          "line": 1215,
           "column": 5
         }
       },
@@ -729,11 +728,11 @@
     "testValidateDataBindingSelection": {
       "location": {
         "start": {
-          "line": 1068,
+          "line": 1219,
           "column": 4
         },
         "end": {
-          "line": 1083,
+          "line": 1234,
           "column": 5
         }
       },
@@ -829,6 +828,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -853,6 +853,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 96,
+        "line": 97,
         "column": 3
       }
     },
@@ -27,11 +27,11 @@
     "_storage": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 26,
+          "line": 24,
           "column": 18
         }
       },
@@ -41,11 +41,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 26,
           "column": 4
         },
         "end": {
-          "line": 31,
+          "line": 29,
           "column": 5
         }
       },
@@ -55,11 +55,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 33,
+          "line": 31,
           "column": 4
         },
         "end": {
-          "line": 35,
+          "line": 33,
           "column": 5
         }
       },
@@ -69,11 +69,11 @@
     "testItem": {
       "location": {
         "start": {
-          "line": 37,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 55,
+          "line": 53,
           "column": 5
         }
       },
@@ -83,11 +83,11 @@
     "testGetKey": {
       "location": {
         "start": {
-          "line": 57,
+          "line": 55,
           "column": 4
         },
         "end": {
-          "line": 61,
+          "line": 62,
           "column": 5
         }
       },
@@ -97,11 +97,11 @@
     "testLength": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 71,
+          "line": 72,
           "column": 5
         }
       },
@@ -111,11 +111,11 @@
     "testClear": {
       "location": {
         "start": {
-          "line": 73,
+          "line": 74,
           "column": 4
         },
         "end": {
-          "line": 80,
+          "line": 81,
           "column": 5
         }
       },
@@ -125,11 +125,11 @@
     "testForEach": {
       "location": {
         "start": {
-          "line": 82,
+          "line": 83,
           "column": 4
         },
         "end": {
-          "line": 94,
+          "line": 95,
           "column": 5
         }
       },
@@ -224,6 +224,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -248,6 +249,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

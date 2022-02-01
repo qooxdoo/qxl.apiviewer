@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 194,
+        "line": 173,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 51,
-        "column": 14
+        "line": 49,
+        "column": 2
       },
       "end": {
-        "line": 56,
+        "line": 53,
         "column": 3
       }
     },
@@ -44,11 +44,11 @@
     "defaultCssClass": {
       "location": {
         "start": {
-          "line": 70,
+          "line": 63,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 66,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "selection": {
       "location": {
         "start": {
-          "line": 80,
+          "line": 71,
           "column": 4
         },
         "end": {
-          "line": 87,
+          "line": 77,
           "column": 5
         }
       },
@@ -95,11 +95,11 @@
     "_onTap": {
       "location": {
         "start": {
-          "line": 106,
+          "line": 92,
           "column": 4
         },
         "end": {
-          "line": 125,
+          "line": 114,
           "column": 5
         }
       },
@@ -126,11 +126,11 @@
     "_applySelection": {
       "location": {
         "start": {
-          "line": 129,
+          "line": 117,
           "column": 4
         },
         "end": {
-          "line": 143,
+          "line": 130,
           "column": 5
         }
       },
@@ -144,11 +144,11 @@
     "add": {
       "location": {
         "start": {
-          "line": 151,
+          "line": 137,
           "column": 4
         },
         "end": {
-          "line": 158,
+          "line": 143,
           "column": 5
         }
       },
@@ -175,11 +175,11 @@
     "_onChangeView": {
       "location": {
         "start": {
-          "line": 166,
+          "line": 150,
           "column": 4
         },
         "end": {
-          "line": 171,
+          "line": 154,
           "column": 5
         }
       },
@@ -206,11 +206,11 @@
     "remove": {
       "location": {
         "start": {
-          "line": 179,
+          "line": 161,
           "column": 4
         },
         "end": {
-          "line": 186,
+          "line": 167,
           "column": 5
         }
       },
@@ -322,6 +322,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -346,6 +347,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -1481,15 +1483,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 190,
-        "column": 13
+        "line": 170,
+        "column": 2
       },
       "end": {
-        "line": 193,
+        "line": 172,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {},
   "descendants": []

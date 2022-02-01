@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 860,
+        "line": 957,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 41,
+          "line": 40,
           "column": 5
         }
       },
@@ -42,11 +42,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 42,
           "column": 4
         },
         "end": {
-          "line": 49,
+          "line": 46,
           "column": 5
         }
       },
@@ -60,11 +60,11 @@
     "assertUpdateArgs": {
       "location": {
         "start": {
-          "line": 52,
+          "line": 48,
           "column": 4
         },
         "end": {
-          "line": 58,
+          "line": 53,
           "column": 5
         }
       },
@@ -74,11 +74,11 @@
     "assertScrollArgs": {
       "location": {
         "start": {
-          "line": 61,
+          "line": 55,
           "column": 4
         },
         "end": {
-          "line": 67,
+          "line": 60,
           "column": 5
         }
       },
@@ -88,11 +88,11 @@
     "assertScroll": {
       "location": {
         "start": {
-          "line": 70,
+          "line": 62,
           "column": 4
         },
         "end": {
-          "line": 75,
+          "line": 66,
           "column": 5
         }
       },
@@ -102,11 +102,11 @@
     "testConstructor": {
       "location": {
         "start": {
-          "line": 78,
+          "line": 68,
           "column": 4
         },
         "end": {
-          "line": 80,
+          "line": 70,
           "column": 5
         }
       },
@@ -116,7 +116,21 @@
     "testScrollProperties": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 72,
+          "column": 4
+        },
+        "end": {
+          "line": 79,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testGetScrollSize": {
+      "location": {
+        "start": {
+          "line": 81,
           "column": 4
         },
         "end": {
@@ -127,28 +141,14 @@
       "type": "function",
       "access": "public"
     },
-    "testGetScrollSize": {
-      "location": {
-        "start": {
-          "line": 94,
-          "column": 4
-        },
-        "end": {
-          "line": 105,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
     "testLayerAdd": {
       "location": {
         "start": {
-          "line": 108,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 113,
+          "line": 97,
           "column": 5
         }
       },
@@ -158,11 +158,11 @@
     "testUpdateEvent": {
       "location": {
         "start": {
-          "line": 116,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 155,
+          "line": 148,
           "column": 5
         }
       },
@@ -172,11 +172,11 @@
     "testFullUpdate": {
       "location": {
         "start": {
-          "line": 158,
+          "line": 150,
           "column": 4
         },
         "end": {
-          "line": 229,
+          "line": 234,
           "column": 5
         }
       },
@@ -186,11 +186,11 @@
     "testNoRows": {
       "location": {
         "start": {
-          "line": 232,
+          "line": 236,
           "column": 4
         },
         "end": {
-          "line": 257,
+          "line": 260,
           "column": 5
         }
       },
@@ -200,11 +200,11 @@
     "testNoColumns": {
       "location": {
         "start": {
-          "line": 260,
+          "line": 262,
           "column": 4
         },
         "end": {
-          "line": 285,
+          "line": 286,
           "column": 5
         }
       },
@@ -218,7 +218,7 @@
           "column": 4
         },
         "end": {
-          "line": 301,
+          "line": 300,
           "column": 5
         }
       },
@@ -228,11 +228,11 @@
     "testPrefetchYLimitedAtTop": {
       "location": {
         "start": {
-          "line": 304,
+          "line": 302,
           "column": 4
         },
         "end": {
-          "line": 318,
+          "line": 315,
           "column": 5
         }
       },
@@ -242,11 +242,11 @@
     "testPrefetchYAtBottom": {
       "location": {
         "start": {
-          "line": 321,
+          "line": 317,
           "column": 4
         },
         "end": {
-          "line": 335,
+          "line": 330,
           "column": 5
         }
       },
@@ -256,11 +256,11 @@
     "testPrefetchYLimitedAtBottom": {
       "location": {
         "start": {
-          "line": 338,
+          "line": 332,
           "column": 4
         },
         "end": {
-          "line": 352,
+          "line": 345,
           "column": 5
         }
       },
@@ -270,11 +270,11 @@
     "testPrefetchYInMiddle": {
       "location": {
         "start": {
-          "line": 355,
+          "line": 347,
           "column": 4
         },
         "end": {
-          "line": 399,
+          "line": 390,
           "column": 5
         }
       },
@@ -284,11 +284,11 @@
     "testPrefetchXAtLeft": {
       "location": {
         "start": {
-          "line": 402,
+          "line": 392,
           "column": 4
         },
         "end": {
-          "line": 415,
+          "line": 404,
           "column": 5
         }
       },
@@ -298,11 +298,11 @@
     "testPrefetchXLimitedAtLeft": {
       "location": {
         "start": {
-          "line": 418,
+          "line": 406,
           "column": 4
         },
         "end": {
-          "line": 433,
+          "line": 420,
           "column": 5
         }
       },
@@ -312,11 +312,11 @@
     "testPrefetchXAtBottom": {
       "location": {
         "start": {
-          "line": 436,
+          "line": 422,
           "column": 4
         },
         "end": {
-          "line": 451,
+          "line": 436,
           "column": 5
         }
       },
@@ -326,11 +326,11 @@
     "testPrefetchXLimitedAtBottom": {
       "location": {
         "start": {
-          "line": 454,
+          "line": 438,
           "column": 4
         },
         "end": {
-          "line": 469,
+          "line": 452,
           "column": 5
         }
       },
@@ -340,11 +340,11 @@
     "testPrefetchXInMiddle": {
       "location": {
         "start": {
-          "line": 472,
+          "line": 454,
           "column": 4
         },
         "end": {
-          "line": 517,
+          "line": 498,
           "column": 5
         }
       },
@@ -354,11 +354,11 @@
     "testUpdateLayerWindow": {
       "location": {
         "start": {
-          "line": 520,
+          "line": 500,
           "column": 4
         },
         "end": {
-          "line": 581,
+          "line": 574,
           "column": 5
         }
       },
@@ -368,11 +368,11 @@
     "testSrollRowIntoView": {
       "location": {
         "start": {
-          "line": 584,
+          "line": 576,
           "column": 4
         },
         "end": {
-          "line": 604,
+          "line": 596,
           "column": 5
         }
       },
@@ -382,11 +382,11 @@
     "testSrollColumnIntoView": {
       "location": {
         "start": {
-          "line": 607,
+          "line": 598,
           "column": 4
         },
         "end": {
-          "line": 627,
+          "line": 618,
           "column": 5
         }
       },
@@ -396,11 +396,11 @@
     "_testSrollRowIntoViewEdgeCase": {
       "location": {
         "start": {
-          "line": 630,
+          "line": 620,
           "column": 4
         },
         "end": {
-          "line": 650,
+          "line": 640,
           "column": 5
         }
       },
@@ -410,11 +410,11 @@
     "_testSrollColumnIntoViewEdgeCase": {
       "location": {
         "start": {
-          "line": 653,
+          "line": 642,
           "column": 4
         },
         "end": {
-          "line": 673,
+          "line": 662,
           "column": 5
         }
       },
@@ -424,11 +424,11 @@
     "testGetCellAtPosition": {
       "location": {
         "start": {
-          "line": 676,
+          "line": 664,
           "column": 4
         },
         "end": {
-          "line": 690,
+          "line": 684,
           "column": 5
         }
       },
@@ -438,11 +438,11 @@
     "testGetItemAtPositionEmptySpace": {
       "location": {
         "start": {
-          "line": 693,
+          "line": 686,
           "column": 4
         },
         "end": {
-          "line": 706,
+          "line": 702,
           "column": 5
         }
       },
@@ -452,11 +452,11 @@
     "testMouseCellEvents": {
       "location": {
         "start": {
-          "line": 709,
+          "line": 704,
           "column": 4
         },
         "end": {
-          "line": 793,
+          "line": 872,
           "column": 5
         }
       },
@@ -466,11 +466,11 @@
     "test mouse click bug #6695": {
       "location": {
         "start": {
-          "line": 795,
+          "line": 874,
           "column": 4
         },
         "end": {
-          "line": 836,
+          "line": 934,
           "column": 5
         }
       },
@@ -480,11 +480,11 @@
     "testDestroy": {
       "location": {
         "start": {
-          "line": 839,
+          "line": 936,
           "column": 4
         },
         "end": {
-          "line": 854,
+          "line": 951,
           "column": 5
         }
       },
@@ -579,6 +579,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -603,6 +604,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -769,15 +771,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 857,
-        "column": 13
+        "line": 954,
+        "column": 2
       },
       "end": {
-        "line": 859,
+        "line": 956,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {},
   "descendants": []

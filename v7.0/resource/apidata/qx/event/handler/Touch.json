@@ -16,7 +16,7 @@
         "column": 0
       },
       "end": {
-        "line": 231,
+        "line": 215,
         "column": 3
       }
     },
@@ -63,11 +63,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 48,
-        "column": 14
+        "line": 47,
+        "column": 2
       },
       "end": {
-        "line": 56,
+        "line": 54,
         "column": 3
       }
     },
@@ -93,12 +93,12 @@
     "PRIORITY": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 68,
-          "column": 52
+          "line": 64,
+          "column": 51
         }
       },
       "jsdoc": {
@@ -121,11 +121,11 @@
     "SUPPORTED_TYPES": {
       "location": {
         "start": {
-          "line": 71,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 80,
+          "line": 75,
           "column": 5
         }
       },
@@ -149,12 +149,12 @@
     "TARGET_CHECK": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 78,
           "column": 4
         },
         "end": {
-          "line": 83,
-          "column": 97
+          "line": 80,
+          "column": 44
         }
       },
       "jsdoc": {
@@ -177,12 +177,12 @@
     "IGNORE_CAN_HANDLE": {
       "location": {
         "start": {
-          "line": 86,
+          "line": 83,
           "column": 4
         },
         "end": {
-          "line": 86,
-          "column": 28
+          "line": 83,
+          "column": 27
         }
       },
       "jsdoc": {
@@ -205,11 +205,11 @@
     "MOUSE_TO_TOUCH_MAPPING": {
       "location": {
         "start": {
-          "line": 89,
+          "line": 86,
           "column": 4
         },
         "end": {
-          "line": 94,
+          "line": 90,
           "column": 5
         }
       },
@@ -235,12 +235,12 @@
     "__manager": {
       "location": {
         "start": {
-          "line": 109,
+          "line": 100,
           "column": 4
         },
         "end": {
-          "line": 109,
-          "column": 20
+          "line": 100,
+          "column": 19
         }
       },
       "type": "variable",
@@ -249,12 +249,12 @@
     "__window": {
       "location": {
         "start": {
-          "line": 110,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 110,
-          "column": 19
+          "line": 101,
+          "column": 18
         }
       },
       "type": "variable",
@@ -263,12 +263,12 @@
     "__root": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 102,
           "column": 4
         },
         "end": {
-          "line": 111,
-          "column": 17
+          "line": 102,
+          "column": 16
         }
       },
       "type": "variable",
@@ -277,12 +277,12 @@
     "__isInTouch": {
       "location": {
         "start": {
-          "line": 114,
+          "line": 105,
           "column": 4
         },
         "end": {
-          "line": 114,
-          "column": 23
+          "line": 105,
+          "column": 22
         }
       },
       "jsdoc": {},
@@ -292,12 +292,12 @@
     "canHandleEvent": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 114,
           "column": 4
         },
         "end": {
-          "line": 124,
-          "column": 46
+          "line": 114,
+          "column": 35
         }
       },
       "jsdoc": {},
@@ -311,11 +311,11 @@
     "registerEvent": {
       "location": {
         "start": {
-          "line": 127,
+          "line": 117,
           "column": 4
         },
         "end": {
-          "line": 129,
+          "line": 119,
           "column": 5
         }
       },
@@ -330,11 +330,11 @@
     "unregisterEvent": {
       "location": {
         "start": {
-          "line": 133,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 135,
+          "line": 124,
           "column": 5
         }
       },
@@ -349,11 +349,11 @@
     "_fireEvent": {
       "location": {
         "start": {
-          "line": 153,
+          "line": 140,
           "column": 4
         },
         "end": {
-          "line": 173,
+          "line": 163,
           "column": 5
         }
       },
@@ -411,11 +411,11 @@
     "_onTouchEvent": {
       "location": {
         "start": {
-          "line": 188,
+          "line": 177,
           "column": 4
         },
         "end": {
-          "line": 191,
+          "line": 179,
           "column": 6
         }
       },
@@ -448,11 +448,11 @@
     "dispose": {
       "location": {
         "start": {
-          "line": 197,
+          "line": 184,
           "column": 4
         },
         "end": {
-          "line": 201,
+          "line": 187,
           "column": 5
         }
       },
@@ -475,11 +475,11 @@
     "__callBase": {
       "location": {
         "start": {
-          "line": 210,
+          "line": 195,
           "column": 4
         },
         "end": {
-          "line": 212,
+          "line": 197,
           "column": 5
         }
       },
@@ -514,11 +514,11 @@
   "defer": {
     "location": {
       "start": {
-        "line": 222,
-        "column": 10
+        "line": 206,
+        "column": 2
       },
       "end": {
-        "line": 230,
+        "line": 214,
         "column": 3
       }
     },

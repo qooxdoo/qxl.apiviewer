@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 154,
+        "line": 140,
         "column": 3
       }
     },
@@ -24,12 +24,12 @@
     "__formerTheme": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 25,
-          "column": 24
+          "line": 23,
+          "column": 23
         }
       },
       "type": "variable",
@@ -38,11 +38,11 @@
     "__formerListener": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 26,
+          "line": 24,
           "column": 26
         }
       },
@@ -52,11 +52,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 26,
           "column": 4
         },
         "end": {
-          "line": 36,
+          "line": 37,
           "column": 5
         }
       },
@@ -70,7 +70,7 @@
           "column": 4
         },
         "end": {
-          "line": 50,
+          "line": 52,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "testInclude": {
       "location": {
         "start": {
-          "line": 53,
+          "line": 54,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 72,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testResolve": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 74,
           "column": 4
         },
         "end": {
-          "line": 96,
+          "line": 91,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "testResolveSelfReference": {
       "location": {
         "start": {
-          "line": 99,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 117,
+          "line": 109,
           "column": 5
         }
       },
@@ -122,11 +122,11 @@
     "testResolveException": {
       "location": {
         "start": {
-          "line": 120,
+          "line": 111,
           "column": 4
         },
         "end": {
-          "line": 152,
+          "line": 138,
           "column": 5
         }
       },
@@ -221,6 +221,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -245,6 +246,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

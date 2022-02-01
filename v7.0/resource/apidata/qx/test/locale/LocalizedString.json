@@ -27,11 +27,11 @@
     "testTranslation": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 32,
+          "line": 30,
           "column": 5
         }
       },
@@ -41,7 +41,7 @@
     "testLocalizeVsTranslate": {
       "location": {
         "start": {
-          "line": 34,
+          "line": 32,
           "column": 4
         },
         "end": {
@@ -855,6 +855,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -879,6 +880,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -13,8 +13,8 @@
         "column": 0
       },
       "end": {
-        "line": 53,
-        "column": 5
+        "line": 58,
+        "column": 3
       }
     },
     "jsdoc": {}
@@ -24,12 +24,12 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 23,
-          "column": 6
+          "line": 22,
+          "column": 4
         },
         "end": {
-          "line": 35,
-          "column": 7
+          "line": 34,
+          "column": 5
         }
       },
       "type": "function",
@@ -42,12 +42,12 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 37,
-          "column": 6
+          "line": 36,
+          "column": 4
         },
         "end": {
-          "line": 43,
-          "column": 7
+          "line": 42,
+          "column": 5
         }
       },
       "type": "function",
@@ -60,12 +60,12 @@
     "testRemoveAll": {
       "location": {
         "start": {
-          "line": 45,
-          "column": 6
+          "line": 44,
+          "column": 4
         },
         "end": {
-          "line": 51,
-          "column": 7
+          "line": 56,
+          "column": 5
         }
       },
       "type": "function",
@@ -159,6 +159,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -183,6 +184,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

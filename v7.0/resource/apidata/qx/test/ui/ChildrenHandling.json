@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 318,
+        "line": 373,
         "column": 3
       }
     },
@@ -31,11 +31,11 @@
     "assertArrayEquals": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 26,
           "column": 4
         },
         "end": {
-          "line": 37,
+          "line": 34,
           "column": 5
         }
       },
@@ -77,11 +77,11 @@
     "_setChildren": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 36,
           "column": 4
         },
         "end": {
-          "line": 50,
+          "line": 45,
           "column": 5
         }
       },
@@ -91,11 +91,11 @@
     "testRemove": {
       "location": {
         "start": {
-          "line": 53,
+          "line": 47,
           "column": 4
         },
         "end": {
-          "line": 80,
+          "line": 73,
           "column": 5
         }
       },
@@ -105,11 +105,11 @@
     "testRemoveAll": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 75,
           "column": 4
         },
         "end": {
-          "line": 105,
+          "line": 96,
           "column": 5
         }
       },
@@ -119,11 +119,11 @@
     "testRemoveNonChild": {
       "location": {
         "start": {
-          "line": 108,
+          "line": 98,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 108,
           "column": 5
         }
       },
@@ -133,11 +133,11 @@
     "testRemoveAt": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 110,
           "column": 4
         },
         "end": {
-          "line": 168,
+          "line": 162,
           "column": 5
         }
       },
@@ -147,11 +147,11 @@
     "testAddBefore": {
       "location": {
         "start": {
-          "line": 171,
+          "line": 164,
           "column": 4
         },
         "end": {
-          "line": 230,
+          "line": 256,
           "column": 5
         }
       },
@@ -161,11 +161,11 @@
     "testAddAfter": {
       "location": {
         "start": {
-          "line": 233,
+          "line": 258,
           "column": 4
         },
         "end": {
-          "line": 292,
+          "line": 350,
           "column": 5
         }
       },
@@ -175,11 +175,11 @@
     "testDoubleAdd": {
       "location": {
         "start": {
-          "line": 295,
+          "line": 352,
           "column": 4
         },
         "end": {
-          "line": 316,
+          "line": 371,
           "column": 5
         }
       },
@@ -274,6 +274,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -298,6 +299,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

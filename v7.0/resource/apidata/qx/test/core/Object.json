@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 393,
+        "line": 387,
         "column": 3
       }
     },
@@ -39,12 +39,12 @@
     "test": {
       "location": {
         "start": {
-          "line": 29,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 29,
-          "column": 34
+          "line": 27,
+          "column": 31
         }
       },
       "name": "test",
@@ -53,12 +53,12 @@
     "test2": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 31,
-          "column": 35
+          "line": 29,
+          "column": 32
         }
       },
       "name": "test2",
@@ -69,11 +69,11 @@
     "testHasListener": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 54,
+          "line": 50,
           "column": 5
         }
       },
@@ -83,11 +83,11 @@
     "testAddListener": {
       "location": {
         "start": {
-          "line": 57,
+          "line": 52,
           "column": 4
         },
         "end": {
-          "line": 64,
+          "line": 58,
           "column": 5
         }
       },
@@ -97,11 +97,11 @@
     "testAddListenerOnce": {
       "location": {
         "start": {
-          "line": 67,
+          "line": 60,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 66,
           "column": 5
         }
       },
@@ -111,11 +111,11 @@
     "testAddListenerOnceWithSameListener": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 68,
           "column": 4
         },
         "end": {
-          "line": 90,
+          "line": 80,
           "column": 5
         }
       },
@@ -125,11 +125,11 @@
     "testAddListenerOnceWithDifferentContext": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 106,
+          "line": 94,
           "column": 5
         }
       },
@@ -139,11 +139,11 @@
     "testRemoveListenerById": {
       "location": {
         "start": {
-          "line": 109,
+          "line": 96,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 107,
           "column": 5
         }
       },
@@ -153,11 +153,11 @@
     "testRemoveListenerOnceById": {
       "location": {
         "start": {
-          "line": 118,
+          "line": 109,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 120,
           "column": 5
         }
       },
@@ -167,11 +167,11 @@
     "testUserData": {
       "location": {
         "start": {
-          "line": 127,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 139,
+          "line": 133,
           "column": 5
         }
       },
@@ -181,11 +181,11 @@
     "testRemoveListenerByIdAsync": {
       "location": {
         "start": {
-          "line": 142,
+          "line": 135,
           "column": 4
         },
         "end": {
-          "line": 159,
+          "line": 157,
           "column": 5
         }
       },
@@ -195,11 +195,11 @@
     "testFireDataEvent": {
       "location": {
         "start": {
-          "line": 162,
+          "line": 159,
           "column": 4
         },
         "end": {
-          "line": 186,
+          "line": 187,
           "column": 5
         }
       },
@@ -213,7 +213,7 @@
           "column": 4
         },
         "end": {
-          "line": 221,
+          "line": 220,
           "column": 5
         }
       },
@@ -223,11 +223,11 @@
     "testDisposeObject": {
       "location": {
         "start": {
-          "line": 224,
+          "line": 222,
           "column": 4
         },
         "end": {
-          "line": 249,
+          "line": 247,
           "column": 5
         }
       },
@@ -237,11 +237,11 @@
     "testDisposeBindingWithChain": {
       "location": {
         "start": {
-          "line": 252,
+          "line": 249,
           "column": 4
         },
         "end": {
-          "line": 281,
+          "line": 278,
           "column": 5
         }
       },
@@ -251,11 +251,11 @@
     "testDisposeBindingWithSelfChain": {
       "location": {
         "start": {
-          "line": 283,
+          "line": 280,
           "column": 4
         },
         "end": {
-          "line": 317,
+          "line": 315,
           "column": 5
         }
       },
@@ -265,11 +265,11 @@
     "testDisposeBinding": {
       "location": {
         "start": {
-          "line": 320,
+          "line": 317,
           "column": 4
         },
         "end": {
-          "line": 346,
+          "line": 344,
           "column": 5
         }
       },
@@ -279,11 +279,11 @@
     "testDisposeSingletonObject": {
       "location": {
         "start": {
-          "line": 349,
+          "line": 346,
           "column": 4
         },
         "end": {
-          "line": 366,
+          "line": 362,
           "column": 5
         }
       },
@@ -293,11 +293,11 @@
     "testIsPropertyInitialized": {
       "location": {
         "start": {
-          "line": 372,
+          "line": 367,
           "column": 4
         },
         "end": {
-          "line": 391,
+          "line": 385,
           "column": 5
         }
       },
@@ -998,6 +998,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1022,6 +1023,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

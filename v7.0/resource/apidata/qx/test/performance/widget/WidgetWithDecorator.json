@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 20,
+        "line": 18,
         "column": 3
       }
     }
@@ -22,25 +22,24 @@
   "construct": {
     "location": {
       "start": {
-        "line": 5,
-        "column": 14
+        "line": 4,
+        "column": 2
       },
       "end": {
-        "line": 12,
+        "line": 11,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "members": {
     "_createWidget": {
       "location": {
         "start": {
-          "line": 16,
+          "line": 14,
           "column": 4
         },
         "end": {
-          "line": 18,
+          "line": 16,
           "column": 5
         }
       },
@@ -139,6 +138,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -163,6 +163,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

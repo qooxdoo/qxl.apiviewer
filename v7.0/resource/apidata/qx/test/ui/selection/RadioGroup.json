@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 139,
+        "line": 151,
         "column": 3
       }
     },
@@ -24,12 +24,12 @@
     "__radioButtons": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 25,
-          "column": 25
+          "line": 23,
+          "column": 24
         }
       },
       "type": "variable",
@@ -38,11 +38,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 52,
+          "line": 49,
           "column": 5
         }
       },
@@ -56,11 +56,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 54,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 66,
+          "line": 62,
           "column": 5
         }
       },
@@ -74,11 +74,11 @@
     "_getChildren": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 75,
+          "line": 70,
           "column": 5
         }
       },
@@ -92,11 +92,11 @@
     "_createTestElement": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 72,
           "column": 4
         },
         "end": {
-          "line": 79,
+          "line": 74,
           "column": 5
         }
       },
@@ -110,11 +110,11 @@
     "testAllowEmptySelection": {
       "location": {
         "start": {
-          "line": 81,
+          "line": 76,
           "column": 4
         },
         "end": {
-          "line": 91,
+          "line": 89,
           "column": 5
         }
       },
@@ -124,11 +124,11 @@
     "testAdd": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 91,
           "column": 4
         },
         "end": {
-          "line": 104,
+          "line": 105,
           "column": 5
         }
       },
@@ -138,11 +138,11 @@
     "testAddWithAllowEmptySelection": {
       "location": {
         "start": {
-          "line": 106,
+          "line": 107,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 123,
           "column": 5
         }
       },
@@ -152,11 +152,11 @@
     "testSetGroup": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 125,
           "column": 4
         },
         "end": {
-          "line": 137,
+          "line": 149,
           "column": 5
         }
       },
@@ -251,6 +251,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -275,6 +276,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

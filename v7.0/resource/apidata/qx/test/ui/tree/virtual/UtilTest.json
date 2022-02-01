@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 123,
+        "line": 138,
         "column": 3
       }
     },
@@ -24,12 +24,12 @@
     "model": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 25,
-          "column": 16
+          "line": 23,
+          "column": 15
         }
       },
       "type": "variable",
@@ -38,11 +38,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 40,
+          "line": 38,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 47,
+          "line": 43,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "test isNode with nodes and leafs": {
       "location": {
         "start": {
-          "line": 50,
+          "line": 45,
           "column": 4
         },
         "end": {
-          "line": 67,
+          "line": 60,
           "column": 5
         }
       },
@@ -80,7 +80,21 @@
     "test isNode with invalid child property": {
       "location": {
         "start": {
-          "line": 70,
+          "line": 62,
+          "column": 4
+        },
+        "end": {
+          "line": 66,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "test isNode with null calls": {
+      "location": {
+        "start": {
+          "line": 68,
           "column": 4
         },
         "end": {
@@ -91,28 +105,14 @@
       "type": "function",
       "access": "public"
     },
-    "test isNode with null calls": {
-      "location": {
-        "start": {
-          "line": 75,
-          "column": 4
-        },
-        "end": {
-          "line": 80,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
     "test hasChildren with leafs": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 74,
           "column": 4
         },
         "end": {
-          "line": 94,
+          "line": 98,
           "column": 5
         }
       },
@@ -122,11 +122,11 @@
     "test hasChildren and ignore leafs": {
       "location": {
         "start": {
-          "line": 97,
+          "line": 100,
           "column": 4
         },
         "end": {
-          "line": 108,
+          "line": 124,
           "column": 5
         }
       },
@@ -136,11 +136,11 @@
     "test hasChildren with invalid child property": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 126,
           "column": 4
         },
         "end": {
-          "line": 113,
+          "line": 130,
           "column": 5
         }
       },
@@ -150,11 +150,11 @@
     "test hasChildren with null calls": {
       "location": {
         "start": {
-          "line": 116,
+          "line": 132,
           "column": 4
         },
         "end": {
-          "line": 121,
+          "line": 136,
           "column": 5
         }
       },
@@ -249,6 +249,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -273,6 +274,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

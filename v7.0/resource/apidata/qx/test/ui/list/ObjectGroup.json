@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 268,
+        "line": 290,
         "column": 3
       }
     },
@@ -24,12 +24,12 @@
     "__names": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 28,
-          "column": 76
+          "line": 40,
+          "column": 5
         }
       },
       "type": "variable",
@@ -38,12 +38,12 @@
     "__groups": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 42,
           "column": 4
         },
         "end": {
-          "line": 30,
-          "column": 19
+          "line": 42,
+          "column": 18
         }
       },
       "type": "variable",
@@ -52,11 +52,11 @@
     "createModelData": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 55,
+          "line": 66,
           "column": 5
         }
       },
@@ -70,11 +70,11 @@
     "configureList": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 68,
           "column": 4
         },
         "end": {
-          "line": 61,
+          "line": 71,
           "column": 5
         }
       },
@@ -88,11 +88,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 64,
+          "line": 73,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 82,
           "column": 5
         }
       },
@@ -107,11 +107,11 @@
     "testGroup": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 84,
           "column": 4
         },
         "end": {
-          "line": 106,
+          "line": 118,
           "column": 5
         }
       },
@@ -121,11 +121,11 @@
     "testMixWithObjectsAndDefaultGroup": {
       "location": {
         "start": {
-          "line": 108,
+          "line": 120,
           "column": 4
         },
         "end": {
-          "line": 125,
+          "line": 140,
           "column": 5
         }
       },
@@ -135,11 +135,11 @@
     "testMixWithObjectsAndDefaultGroupAsFirstItem": {
       "location": {
         "start": {
-          "line": 128,
+          "line": 142,
           "column": 4
         },
         "end": {
-          "line": 144,
+          "line": 161,
           "column": 5
         }
       },
@@ -149,11 +149,11 @@
     "testMixWithObjectsAndStrings": {
       "location": {
         "start": {
-          "line": 147,
+          "line": 163,
           "column": 4
         },
         "end": {
-          "line": 164,
+          "line": 183,
           "column": 5
         }
       },
@@ -163,11 +163,11 @@
     "testMixWithObjectsStringsAndDefaultGroup": {
       "location": {
         "start": {
-          "line": 167,
+          "line": 185,
           "column": 4
         },
         "end": {
-          "line": 187,
+          "line": 208,
           "column": 5
         }
       },
@@ -177,11 +177,11 @@
     "testGroupWithSorter": {
       "location": {
         "start": {
-          "line": 190,
+          "line": 210,
           "column": 4
         },
         "end": {
-          "line": 233,
+          "line": 258,
           "column": 5
         }
       },
@@ -191,11 +191,11 @@
     "__convertModel": {
       "location": {
         "start": {
-          "line": 235,
+          "line": 260,
           "column": 4
         },
         "end": {
-          "line": 266,
+          "line": 288,
           "column": 5
         }
       },
@@ -290,6 +290,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -314,6 +315,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

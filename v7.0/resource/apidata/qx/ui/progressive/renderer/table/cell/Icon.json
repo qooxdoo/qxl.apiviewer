@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 230,
+        "line": 215,
         "column": 3
       }
     },
@@ -33,11 +33,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 32,
-        "column": 14
+        "line": 30,
+        "column": 2
       },
       "end": {
-        "line": 41,
+        "line": 38,
         "column": 3
       }
     },
@@ -54,12 +54,12 @@
     "__imageBlank": {
       "location": {
         "start": {
-          "line": 49,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 49,
-          "column": 23
+          "line": 44,
+          "column": 22
         }
       },
       "jsdoc": {
@@ -76,11 +76,11 @@
     "getBlankImage": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 52,
           "column": 4
         },
         "end": {
-          "line": 61,
+          "line": 54,
           "column": 5
         }
       },
@@ -106,11 +106,11 @@
     "_identifyImage": {
       "location": {
         "start": {
-          "line": 112,
+          "line": 105,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 107,
           "column": 5
         }
       },
@@ -145,11 +145,11 @@
     "_getCellStyle": {
       "location": {
         "start": {
-          "line": 118,
+          "line": 110,
           "column": 4
         },
         "end": {
-          "line": 125,
+          "line": 116,
           "column": 5
         }
       },
@@ -164,11 +164,11 @@
     "_getContentHtml": {
       "location": {
         "start": {
-          "line": 128,
+          "line": 119,
           "column": 4
         },
         "end": {
-          "line": 186,
+          "line": 175,
           "column": 5
         }
       },
@@ -183,11 +183,11 @@
     "__getImageData": {
       "location": {
         "start": {
-          "line": 206,
+          "line": 195,
           "column": 4
         },
         "end": {
-          "line": 228,
+          "line": 213,
           "column": 5
         }
       },
@@ -307,6 +307,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -331,6 +332,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

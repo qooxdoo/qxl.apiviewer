@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 357,
+        "line": 385,
         "column": 3
       }
     },
@@ -123,11 +123,11 @@
     "checkedIconPath": {
       "location": {
         "start": {
-          "line": 76,
+          "line": 75,
           "column": 4
         },
         "end": {
-          "line": 80,
+          "line": 79,
           "column": 5
         }
       },
@@ -149,11 +149,11 @@
     "checkedLabelOptions": {
       "location": {
         "start": {
-          "line": 87,
+          "line": 85,
           "column": 4
         },
         "end": {
-          "line": 90,
+          "line": 88,
           "column": 5
         }
       },
@@ -174,11 +174,11 @@
     "checkedIconOptions": {
       "location": {
         "start": {
-          "line": 97,
+          "line": 94,
           "column": 4
         },
         "end": {
-          "line": 100,
+          "line": 97,
           "column": 5
         }
       },
@@ -250,11 +250,11 @@
     "_applyChecked": {
       "location": {
         "start": {
-          "line": 104,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 112,
+          "line": 109,
           "column": 5
         }
       },
@@ -267,11 +267,11 @@
     "_createItem": {
       "location": {
         "start": {
-          "line": 117,
+          "line": 114,
           "column": 4
         },
         "end": {
-          "line": 134,
+          "line": 131,
           "column": 5
         }
       },
@@ -299,11 +299,11 @@
     "__onCheckedChange": {
       "location": {
         "start": {
-          "line": 141,
+          "line": 138,
           "column": 4
         },
         "end": {
-          "line": 147,
+          "line": 144,
           "column": 5
         }
       },
@@ -330,11 +330,11 @@
     "update": {
       "location": {
         "start": {
-          "line": 152,
+          "line": 149,
           "column": 4
         },
         "end": {
-          "line": 155,
+          "line": 152,
           "column": 5
         }
       },
@@ -362,11 +362,11 @@
     "_setFilter": {
       "location": {
         "start": {
-          "line": 160,
+          "line": 157,
           "column": 4
         },
         "end": {
-          "line": 164,
+          "line": 161,
           "column": 5
         }
       },
@@ -394,11 +394,11 @@
     "syncWidget": {
       "location": {
         "start": {
-          "line": 169,
+          "line": 166,
           "column": 4
         },
         "end": {
-          "line": 175,
+          "line": 172,
           "column": 5
         }
       },
@@ -426,11 +426,11 @@
     "_applyModel": {
       "location": {
         "start": {
-          "line": 180,
+          "line": 177,
           "column": 4
         },
         "end": {
-          "line": 189,
+          "line": 186,
           "column": 5
         }
       },
@@ -458,11 +458,11 @@
     "_applyTarget": {
       "location": {
         "start": {
-          "line": 194,
+          "line": 191,
           "column": 4
         },
         "end": {
-          "line": 210,
+          "line": 230,
           "column": 5
         }
       },
@@ -490,11 +490,11 @@
     "__onTargetCheckedChange": {
       "location": {
         "start": {
-          "line": 215,
+          "line": 235,
           "column": 4
         },
         "end": {
-          "line": 231,
+          "line": 251,
           "column": 5
         }
       },
@@ -512,11 +512,11 @@
     "__onTargetAttachResultsTag": {
       "location": {
         "start": {
-          "line": 236,
+          "line": 256,
           "column": 4
         },
         "end": {
-          "line": 240,
+          "line": 260,
           "column": 5
         }
       },
@@ -534,11 +534,11 @@
     "__onTargetDetachResultsTag": {
       "location": {
         "start": {
-          "line": 245,
+          "line": 265,
           "column": 4
         },
         "end": {
-          "line": 249,
+          "line": 269,
           "column": 5
         }
       },
@@ -556,11 +556,11 @@
     "__updateTags": {
       "location": {
         "start": {
-          "line": 254,
+          "line": 274,
           "column": 4
         },
         "end": {
-          "line": 264,
+          "line": 284,
           "column": 5
         }
       },
@@ -578,11 +578,11 @@
     "__attachTag": {
       "location": {
         "start": {
-          "line": 272,
+          "line": 292,
           "column": 4
         },
         "end": {
-          "line": 282,
+          "line": 312,
           "column": 5
         }
       },
@@ -616,11 +616,11 @@
     "__detachTag": {
       "location": {
         "start": {
-          "line": 290,
+          "line": 320,
           "column": 4
         },
         "end": {
-          "line": 302,
+          "line": 332,
           "column": 5
         }
       },
@@ -654,11 +654,11 @@
     "_updateChecked": {
       "location": {
         "start": {
-          "line": 307,
+          "line": 337,
           "column": 4
         },
         "end": {
-          "line": 353,
+          "line": 383,
           "column": 5
         }
       },
@@ -1201,6 +1201,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1225,6 +1226,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

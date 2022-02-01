@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 406,
+        "line": 366,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 43,
-        "column": 14
+        "line": 39,
+        "column": 2
       },
       "end": {
-        "line": 67,
+        "line": 61,
         "column": 3
       }
     },
@@ -69,11 +69,11 @@
     "fromString": {
       "location": {
         "start": {
-          "line": 88,
+          "line": 78,
           "column": 4
         },
         "end": {
-          "line": 129,
+          "line": 116,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "fromConfig": {
       "location": {
         "start": {
-          "line": 138,
+          "line": 124,
           "column": 4
         },
         "end": {
-          "line": 143,
+          "line": 128,
           "column": 5
         }
       },
@@ -147,11 +147,11 @@
     "__defaultStyles": {
       "location": {
         "start": {
-          "line": 147,
+          "line": 131,
           "column": 4
         },
         "end": {
-          "line": 158,
+          "line": 141,
           "column": 5
         }
       },
@@ -175,11 +175,11 @@
     "getDefaultStyles": {
       "location": {
         "start": {
-          "line": 169,
+          "line": 151,
           "column": 4
         },
         "end": {
-          "line": 171,
+          "line": 153,
           "column": 5
         }
       },
@@ -207,11 +207,11 @@
     "size": {
       "location": {
         "start": {
-          "line": 186,
+          "line": 164,
           "column": 4
         },
         "end": {
-          "line": 191,
+          "line": 168,
           "column": 5
         }
       },
@@ -233,11 +233,11 @@
     "lineHeight": {
       "location": {
         "start": {
-          "line": 197,
+          "line": 174,
           "column": 4
         },
         "end": {
-          "line": 202,
+          "line": 178,
           "column": 5
         }
       },
@@ -259,11 +259,11 @@
     "comparisonString": {
       "location": {
         "start": {
-          "line": 210,
+          "line": 186,
           "column": 4
         },
         "end": {
-          "line": 215,
+          "line": 190,
           "column": 5
         }
       },
@@ -284,11 +284,11 @@
     "version": {
       "location": {
         "start": {
-          "line": 228,
+          "line": 203,
           "column": 4
         },
         "end": {
-          "line": 235,
+          "line": 212,
           "column": 5
         }
       },
@@ -303,16 +303,17 @@
       "name": "version",
       "propertyType": "new",
       "nullable": true,
-      "allowNull": true
+      "allowNull": true,
+      "check": "[[ ObjectMethod Function ]]"
     },
     "family": {
       "location": {
         "start": {
-          "line": 238,
+          "line": 215,
           "column": 4
         },
         "end": {
-          "line": 243,
+          "line": 219,
           "column": 5
         }
       },
@@ -334,11 +335,11 @@
     "bold": {
       "location": {
         "start": {
-          "line": 246,
+          "line": 222,
           "column": 4
         },
         "end": {
-          "line": 251,
+          "line": 226,
           "column": 5
         }
       },
@@ -360,11 +361,11 @@
     "italic": {
       "location": {
         "start": {
-          "line": 254,
+          "line": 229,
           "column": 4
         },
         "end": {
-          "line": 259,
+          "line": 233,
           "column": 5
         }
       },
@@ -386,11 +387,11 @@
     "decoration": {
       "location": {
         "start": {
-          "line": 262,
+          "line": 236,
           "column": 4
         },
         "end": {
-          "line": 267,
+          "line": 240,
           "column": 5
         }
       },
@@ -416,11 +417,11 @@
     "color": {
       "location": {
         "start": {
-          "line": 270,
+          "line": 243,
           "column": 4
         },
         "end": {
-          "line": 275,
+          "line": 247,
           "column": 5
         }
       },
@@ -442,11 +443,11 @@
     "textShadow": {
       "location": {
         "start": {
-          "line": 278,
+          "line": 250,
           "column": 4
         },
         "end": {
-          "line": 283,
+          "line": 254,
           "column": 5
         }
       },
@@ -468,11 +469,11 @@
     "weight": {
       "location": {
         "start": {
-          "line": 286,
+          "line": 257,
           "column": 4
         },
         "end": {
-          "line": 291,
+          "line": 261,
           "column": 5
         }
       },
@@ -494,11 +495,11 @@
     "letterSpacing": {
       "location": {
         "start": {
-          "line": 294,
+          "line": 264,
           "column": 4
         },
         "end": {
-          "line": 298,
+          "line": 268,
           "column": 5
         }
       },
@@ -554,12 +555,12 @@
     "__lookupMap": {
       "location": {
         "start": {
-          "line": 312,
+          "line": 278,
           "column": 4
         },
         "end": {
-          "line": 312,
-          "column": 22
+          "line": 278,
+          "column": 21
         }
       },
       "type": "variable",
@@ -568,11 +569,11 @@
     "_applySize": {
       "location": {
         "start": {
-          "line": 316,
+          "line": 281,
           "column": 4
         },
         "end": {
-          "line": 318,
+          "line": 283,
           "column": 5
         }
       },
@@ -586,11 +587,11 @@
     "_applyLineHeight": {
       "location": {
         "start": {
-          "line": 321,
+          "line": 285,
           "column": 4
         },
         "end": {
-          "line": 323,
+          "line": 287,
           "column": 5
         }
       },
@@ -603,11 +604,11 @@
     "_applyFamily": {
       "location": {
         "start": {
-          "line": 327,
+          "line": 290,
           "column": 4
         },
         "end": {
-          "line": 350,
+          "line": 311,
           "column": 5
         }
       },
@@ -621,11 +622,11 @@
     "_applyBold": {
       "location": {
         "start": {
-          "line": 354,
+          "line": 314,
           "column": 4
         },
         "end": {
-          "line": 356,
+          "line": 317,
           "column": 5
         }
       },
@@ -639,11 +640,11 @@
     "_applyItalic": {
       "location": {
         "start": {
-          "line": 360,
+          "line": 320,
           "column": 4
         },
         "end": {
-          "line": 362,
+          "line": 323,
           "column": 5
         }
       },
@@ -657,11 +658,11 @@
     "_applyDecoration": {
       "location": {
         "start": {
-          "line": 366,
+          "line": 326,
           "column": 4
         },
         "end": {
-          "line": 368,
+          "line": 328,
           "column": 5
         }
       },
@@ -675,11 +676,11 @@
     "_applyColor": {
       "location": {
         "start": {
-          "line": 371,
+          "line": 331,
           "column": 4
         },
         "end": {
-          "line": 376,
+          "line": 337,
           "column": 5
         }
       },
@@ -693,11 +694,11 @@
     "_applyWeight": {
       "location": {
         "start": {
-          "line": 379,
+          "line": 340,
           "column": 4
         },
         "end": {
-          "line": 381,
+          "line": 342,
           "column": 5
         }
       },
@@ -711,11 +712,11 @@
     "_applyTextShadow": {
       "location": {
         "start": {
-          "line": 384,
+          "line": 345,
           "column": 4
         },
         "end": {
-          "line": 386,
+          "line": 347,
           "column": 5
         }
       },
@@ -729,11 +730,11 @@
     "_applyLetterSpacing": {
       "location": {
         "start": {
-          "line": 389,
+          "line": 350,
           "column": 4
         },
         "end": {
-          "line": 391,
+          "line": 352,
           "column": 5
         }
       },
@@ -747,11 +748,11 @@
     "getStyles": {
       "location": {
         "start": {
-          "line": 402,
+          "line": 362,
           "column": 4
         },
         "end": {
-          "line": 404,
+          "line": 364,
           "column": 5
         }
       },
@@ -827,69 +828,6 @@
             "body": "{var} Returns the internal id for that binding. This can be used\n   for referencing the binding e.g. for removing. This is not an atomic\n   id so you can't you use it as a hash-map index.",
             "type": "var",
             "description": " Returns the internal id for that binding. This can be used\n   for referencing the binding e.g. for removing. This is not an atomic\n   id so you can't you use it as a hash-map index."
-          }
-        ],
-        "@throws": [
-          {
-            "name": "@throws",
-            "body": "{qx.core.AssertionError} If the event is no data event or\n   there is no property definition for object and property (source and\n   target).",
-            "type": "qx.core.AssertionError",
-            "description": " If the event is no data event or\n   there is no property definition for object and property (source and\n   target)."
-          }
-        ]
-      }
-    },
-    "bindAsync": {
-      "type": "function",
-      "name": "bindAsync",
-      "abstract": false,
-      "mixin": true,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.data.MBinding",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>The bind method delegates the call to the\n {@link qx.data.SingleValueBinding#bind} function. As source, the current\n object (this) will be used.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "sourcePropertyChain {String} The property chain which represents\n   the source property.",
-            "paramName": "sourcePropertyChain",
-            "description": " The property chain which represents\n   the source property.",
-            "type": "String"
-          },
-          {
-            "name": "@param",
-            "body": "targetObject {qx.core.Object} The object which the source should\n   be bind to.",
-            "paramName": "targetObject",
-            "description": " The object which the source should\n   be bind to.",
-            "type": "qx.core.Object"
-          },
-          {
-            "name": "@param",
-            "body": "targetProperty {String} The property name of the target object.",
-            "paramName": "targetProperty",
-            "description": " The property name of the target object.",
-            "type": "String"
-          },
-          {
-            "name": "@param",
-            "body": "options {Map} A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
-            "paramName": "options",
-            "description": " A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
-            "type": "Map"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.Promise} A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index.",
-            "type": "qx.Promise",
-            "description": " A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index."
           }
         ],
         "@throws": [
@@ -2340,6 +2278,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -2363,6 +2302,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -4262,6 +4202,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for version"
           }
         ]
@@ -4285,6 +4226,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for version"
           }

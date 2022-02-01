@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 180,
+        "line": 171,
         "column": 3
       }
     },
@@ -34,12 +34,12 @@
     "ROOT": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 32,
-          "column": 15
+          "line": 28,
+          "column": 14
         }
       },
       "type": "variable",
@@ -49,25 +49,24 @@
   "construct": {
     "location": {
       "start": {
-        "line": 36,
-        "column": 14
+        "line": 31,
+        "column": 2
       },
       "end": {
-        "line": 45,
+        "line": 39,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "properties": {
     "defaultCssClass": {
       "location": {
         "start": {
-          "line": 51,
+          "line": 43,
           "column": 4
         },
         "end": {
-          "line": 55,
+          "line": 46,
           "column": 5
         }
       },
@@ -119,12 +118,12 @@
     "__count": {
       "location": {
         "start": {
-          "line": 61,
+          "line": 50,
           "column": 4
         },
         "end": {
-          "line": 61,
-          "column": 15
+          "line": 50,
+          "column": 14
         }
       },
       "type": "variable",
@@ -133,11 +132,11 @@
     "show": {
       "location": {
         "start": {
-          "line": 69,
+          "line": 57,
           "column": 4
         },
         "end": {
-          "line": 78,
+          "line": 64,
           "column": 5
         }
       },
@@ -159,11 +158,11 @@
     "hide": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 70,
           "column": 4
         },
         "end": {
-          "line": 94,
+          "line": 77,
           "column": 5
         }
       },
@@ -185,11 +184,11 @@
     "forceHide": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 83,
           "column": 4
         },
         "end": {
-          "line": 105,
+          "line": 86,
           "column": 5
         }
       },
@@ -207,11 +206,11 @@
     "isShown": {
       "location": {
         "start": {
-          "line": 112,
+          "line": 92,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 94,
           "column": 5
         }
       },
@@ -237,11 +236,11 @@
     "_updateSize": {
       "location": {
         "start": {
-          "line": 121,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 136,
+          "line": 117,
           "column": 5
         }
       },
@@ -259,11 +258,11 @@
     "_onScroll": {
       "location": {
         "start": {
-          "line": 144,
+          "line": 124,
           "column": 4
         },
         "end": {
-          "line": 147,
+          "line": 126,
           "column": 5
         }
       },
@@ -290,11 +289,11 @@
     "__registerEventListener": {
       "location": {
         "start": {
-          "line": 153,
+          "line": 131,
           "column": 4
         },
         "end": {
-          "line": 159,
+          "line": 142,
           "column": 5
         }
       },
@@ -312,11 +311,11 @@
     "__unregisterEventListener": {
       "location": {
         "start": {
-          "line": 165,
+          "line": 147,
           "column": 4
         },
         "end": {
-          "line": 171,
+          "line": 164,
           "column": 5
         }
       },
@@ -663,6 +662,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -687,6 +687,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -1711,15 +1712,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 175,
-        "column": 13
+        "line": 167,
+        "column": 2
       },
       "end": {
-        "line": 179,
+        "line": 170,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {},
   "descendants": []

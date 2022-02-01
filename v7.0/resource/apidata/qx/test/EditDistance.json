@@ -24,11 +24,11 @@
     "assertTransform": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 63,
+          "line": 65,
           "column": 5
         }
       },
@@ -38,7 +38,7 @@
     "testBasics": {
       "location": {
         "start": {
-          "line": 66,
+          "line": 67,
           "column": 4
         },
         "end": {
@@ -137,6 +137,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -161,6 +162,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

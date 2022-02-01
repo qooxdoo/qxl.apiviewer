@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 491,
+        "line": 532,
         "column": 3
       }
     },
@@ -55,7 +55,7 @@
           "column": 4
         },
         "end": {
-          "line": 49,
+          "line": 58,
           "column": 5
         }
       },
@@ -65,11 +65,11 @@
     "testSomeDelayedPromises": {
       "location": {
         "start": {
-          "line": 51,
+          "line": 60,
           "column": 4
         },
         "end": {
-          "line": 75,
+          "line": 89,
           "column": 5
         }
       },
@@ -79,11 +79,11 @@
     "testSomeInstantPromises": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 91,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 116,
           "column": 5
         }
       },
@@ -93,21 +93,7 @@
     "testSomeInstantPromises2": {
       "location": {
         "start": {
-          "line": 99,
-          "column": 4
-        },
-        "end": {
-          "line": 127,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testSomeAbort": {
-      "location": {
-        "start": {
-          "line": 129,
+          "line": 118,
           "column": 4
         },
         "end": {
@@ -118,14 +104,28 @@
       "type": "function",
       "access": "public"
     },
-    "testSomeReject": {
+    "testSomeAbort": {
       "location": {
         "start": {
           "line": 150,
           "column": 4
         },
         "end": {
-          "line": 176,
+          "line": 173,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testSomeReject": {
+      "location": {
+        "start": {
+          "line": 175,
+          "column": 4
+        },
+        "end": {
+          "line": 205,
           "column": 5
         }
       },
@@ -135,11 +135,11 @@
     "testResolveAndReject": {
       "location": {
         "start": {
-          "line": 178,
+          "line": 207,
           "column": 4
         },
         "end": {
-          "line": 211,
+          "line": 242,
           "column": 5
         }
       },
@@ -149,11 +149,11 @@
     "testSeries1": {
       "location": {
         "start": {
-          "line": 213,
+          "line": 244,
           "column": 4
         },
         "end": {
-          "line": 244,
+          "line": 277,
           "column": 5
         }
       },
@@ -163,11 +163,11 @@
     "testSeriesAbort": {
       "location": {
         "start": {
-          "line": 246,
+          "line": 279,
           "column": 4
         },
         "end": {
-          "line": 280,
+          "line": 313,
           "column": 5
         }
       },
@@ -177,11 +177,11 @@
     "testNativePromiseReturns": {
       "location": {
         "start": {
-          "line": 285,
+          "line": 318,
           "column": 4
         },
         "end": {
-          "line": 298,
+          "line": 339,
           "column": 5
         }
       },
@@ -205,11 +205,11 @@
     "testPromiseReturns": {
       "location": {
         "start": {
-          "line": 300,
+          "line": 341,
           "column": 4
         },
         "end": {
-          "line": 328,
+          "line": 369,
           "column": 5
         }
       },
@@ -219,11 +219,11 @@
     "testSeriesReject": {
       "location": {
         "start": {
-          "line": 330,
+          "line": 371,
           "column": 4
         },
         "end": {
-          "line": 361,
+          "line": 402,
           "column": 5
         }
       },
@@ -233,11 +233,11 @@
     "testSeriesRejectNested": {
       "location": {
         "start": {
-          "line": 363,
+          "line": 404,
           "column": 4
         },
         "end": {
-          "line": 403,
+          "line": 444,
           "column": 5
         }
       },
@@ -247,11 +247,11 @@
     "testSeriesNested": {
       "location": {
         "start": {
-          "line": 405,
+          "line": 446,
           "column": 4
         },
         "end": {
-          "line": 446,
+          "line": 487,
           "column": 5
         }
       },
@@ -261,11 +261,11 @@
     "testTrack": {
       "location": {
         "start": {
-          "line": 448,
+          "line": 489,
           "column": 4
         },
         "end": {
-          "line": 489,
+          "line": 530,
           "column": 5
         }
       },
@@ -360,6 +360,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -384,6 +385,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

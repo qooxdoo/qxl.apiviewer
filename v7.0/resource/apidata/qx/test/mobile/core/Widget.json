@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 273,
+        "line": 337,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "testCreate": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 34,
+          "line": 31,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "testNameProperty": {
       "location": {
         "start": {
-          "line": 37,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 48,
+          "line": 43,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "testSetCssClass": {
       "location": {
         "start": {
-          "line": 51,
+          "line": 45,
           "column": 4
         },
         "end": {
-          "line": 77,
+          "line": 70,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "testAddRemoveCssClass": {
       "location": {
         "start": {
-          "line": 80,
+          "line": 72,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 88,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "testAutoId": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 90,
           "column": 4
         },
         "end": {
-          "line": 117,
+          "line": 106,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testWidgetRegistration": {
       "location": {
         "start": {
-          "line": 120,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 129,
+          "line": 116,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "testWidgetRegistrationSameId": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 144,
+          "line": 128,
           "column": 5
         }
       },
@@ -122,11 +122,11 @@
     "testTranslationAvailable": {
       "location": {
         "start": {
-          "line": 147,
+          "line": 130,
           "column": 4
         },
         "end": {
-          "line": 155,
+          "line": 141,
           "column": 5
         }
       },
@@ -136,11 +136,11 @@
     "testDestroy": {
       "location": {
         "start": {
-          "line": 158,
+          "line": 143,
           "column": 4
         },
         "end": {
-          "line": 168,
+          "line": 152,
           "column": 5
         }
       },
@@ -150,11 +150,11 @@
     "testDomUpdatedFired": {
       "location": {
         "start": {
-          "line": 171,
+          "line": 154,
           "column": 4
         },
         "end": {
-          "line": 178,
+          "line": 170,
           "column": 5
         }
       },
@@ -164,11 +164,11 @@
     "testVisibility": {
       "location": {
         "start": {
-          "line": 181,
+          "line": 172,
           "column": 4
         },
         "end": {
-          "line": 211,
+          "line": 238,
           "column": 5
         }
       },
@@ -178,11 +178,11 @@
     "__assertShow": {
       "location": {
         "start": {
-          "line": 214,
+          "line": 240,
           "column": 4
         },
         "end": {
-          "line": 222,
+          "line": 265,
           "column": 5
         }
       },
@@ -192,11 +192,11 @@
     "testEnabled": {
       "location": {
         "start": {
-          "line": 224,
+          "line": 267,
           "column": 4
         },
         "end": {
-          "line": 257,
+          "line": 322,
           "column": 5
         }
       },
@@ -206,11 +206,11 @@
     "testToggleCss": {
       "location": {
         "start": {
-          "line": 260,
+          "line": 324,
           "column": 4
         },
         "end": {
-          "line": 271,
+          "line": 335,
           "column": 5
         }
       },
@@ -305,6 +305,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -329,6 +330,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

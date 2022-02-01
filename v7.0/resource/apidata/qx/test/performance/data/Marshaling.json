@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 100,
+        "line": 95,
         "column": 3
       }
     },
@@ -26,12 +26,12 @@
     "CREATE_ITERATIONS": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 25,
-          "column": 30
+          "line": 23,
+          "column": 29
         }
       },
       "type": "variable",
@@ -40,12 +40,12 @@
     "__objects": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 26,
-          "column": 20
+          "line": 24,
+          "column": 19
         }
       },
       "type": "variable",
@@ -54,12 +54,12 @@
     "__marshaler": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 27,
-          "column": 22
+          "line": 25,
+          "column": 21
         }
       },
       "type": "variable",
@@ -68,11 +68,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 29,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 31,
+          "line": 29,
           "column": 5
         }
       },
@@ -82,11 +82,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 33,
+          "line": 31,
           "column": 4
         },
         "end": {
-          "line": 36,
+          "line": 34,
           "column": 5
         }
       },
@@ -96,11 +96,11 @@
     "testJsonSimpleToClass": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 36,
           "column": 4
         },
         "end": {
-          "line": 55,
+          "line": 52,
           "column": 5
         }
       },
@@ -110,11 +110,11 @@
     "testJsonSimpleToClassWithBubble": {
       "location": {
         "start": {
-          "line": 57,
+          "line": 54,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 70,
           "column": 5
         }
       },
@@ -124,11 +124,11 @@
     "testJsonSimpleToModel": {
       "location": {
         "start": {
-          "line": 76,
+          "line": 72,
           "column": 4
         },
         "end": {
-          "line": 98,
+          "line": 93,
           "column": 5
         }
       },
@@ -435,6 +435,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -459,6 +460,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

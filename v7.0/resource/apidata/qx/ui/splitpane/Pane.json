@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 633,
+        "line": 595,
         "column": 3
       }
     },
@@ -46,11 +46,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 47,
-        "column": 14
+        "line": 43,
+        "column": 2
       },
       "end": {
-        "line": 66,
+        "line": 61,
         "column": 3
       }
     },
@@ -76,11 +76,11 @@
     "appearance": {
       "location": {
         "start": {
-          "line": 80,
+          "line": 71,
           "column": 4
         },
         "end": {
-          "line": 84,
+          "line": 74,
           "column": 5
         }
       },
@@ -98,11 +98,11 @@
     "offset": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 95,
+          "line": 84,
           "column": 5
         }
       },
@@ -124,11 +124,11 @@
     "orientation": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 89,
           "column": 4
         },
         "end": {
-          "line": 105,
+          "line": 93,
           "column": 5
         }
       },
@@ -155,12 +155,12 @@
     "__splitterOffset": {
       "location": {
         "start": {
-          "line": 120,
+          "line": 103,
           "column": 4
         },
         "end": {
-          "line": 120,
-          "column": 27
+          "line": 103,
+          "column": 26
         }
       },
       "type": "variable",
@@ -169,12 +169,12 @@
     "__activeDragSession": {
       "location": {
         "start": {
-          "line": 121,
+          "line": 104,
           "column": 4
         },
         "end": {
-          "line": 121,
-          "column": 31
+          "line": 104,
+          "column": 30
         }
       },
       "type": "variable",
@@ -183,12 +183,12 @@
     "__lastPointerX": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 105,
           "column": 4
         },
         "end": {
-          "line": 122,
-          "column": 25
+          "line": 105,
+          "column": 24
         }
       },
       "type": "variable",
@@ -197,12 +197,12 @@
     "__lastPointerY": {
       "location": {
         "start": {
-          "line": 123,
+          "line": 106,
           "column": 4
         },
         "end": {
-          "line": 123,
-          "column": 25
+          "line": 106,
+          "column": 24
         }
       },
       "type": "variable",
@@ -211,12 +211,12 @@
     "__isHorizontal": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 107,
           "column": 4
         },
         "end": {
-          "line": 124,
-          "column": 25
+          "line": 107,
+          "column": 24
         }
       },
       "type": "variable",
@@ -225,12 +225,12 @@
     "__beginSize": {
       "location": {
         "start": {
-          "line": 125,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 125,
-          "column": 22
+          "line": 108,
+          "column": 21
         }
       },
       "type": "variable",
@@ -239,12 +239,12 @@
     "__endSize": {
       "location": {
         "start": {
-          "line": 126,
+          "line": 109,
           "column": 4
         },
         "end": {
-          "line": 126,
-          "column": 20
+          "line": 109,
+          "column": 19
         }
       },
       "type": "variable",
@@ -253,12 +253,12 @@
     "__children": {
       "location": {
         "start": {
-          "line": 127,
+          "line": 110,
           "column": 4
         },
         "end": {
-          "line": 127,
-          "column": 21
+          "line": 110,
+          "column": 20
         }
       },
       "type": "variable",
@@ -267,12 +267,12 @@
     "__blocker": {
       "location": {
         "start": {
-          "line": 128,
+          "line": 111,
           "column": 4
         },
         "end": {
-          "line": 128,
-          "column": 20
+          "line": 111,
+          "column": 19
         }
       },
       "type": "variable",
@@ -281,11 +281,11 @@
     "_createChildControlImpl": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 114,
           "column": 4
         },
         "end": {
-          "line": 154,
+          "line": 134,
           "column": 5
         }
       },
@@ -300,11 +300,11 @@
     "__onSplitterMove": {
       "location": {
         "start": {
-          "line": 163,
+          "line": 142,
           "column": 4
         },
         "end": {
-          "line": 165,
+          "line": 144,
           "column": 5
         }
       },
@@ -331,11 +331,11 @@
     "__createBlocker": {
       "location": {
         "start": {
-          "line": 174,
+          "line": 152,
           "column": 4
         },
         "end": {
-          "line": 196,
+          "line": 185,
           "column": 5
         }
       },
@@ -362,11 +362,11 @@
     "getBlocker": {
       "location": {
         "start": {
-          "line": 207,
+          "line": 195,
           "column": 4
         },
         "end": {
-          "line": 209,
+          "line": 197,
           "column": 5
         }
       },
@@ -398,11 +398,11 @@
     "_applyOrientation": {
       "location": {
         "start": {
-          "line": 227,
+          "line": 213,
           "column": 4
         },
         "end": {
-          "line": 267,
+          "line": 254,
           "column": 5
         }
       },
@@ -439,11 +439,11 @@
     "_applyOffset": {
       "location": {
         "start": {
-          "line": 271,
+          "line": 257,
           "column": 4
         },
         "end": {
-          "line": 273,
+          "line": 259,
           "column": 5
         }
       },
@@ -457,11 +457,11 @@
     "__setBlockerPosition": {
       "location": {
         "start": {
-          "line": 282,
+          "line": 268,
           "column": 4
         },
         "end": {
-          "line": 331,
+          "line": 317,
           "column": 5
         }
       },
@@ -490,11 +490,11 @@
     "add": {
       "location": {
         "start": {
-          "line": 351,
+          "line": 336,
           "column": 4
         },
         "end": {
-          "line": 359,
+          "line": 343,
           "column": 5
         }
       },
@@ -528,11 +528,11 @@
     "remove": {
       "location": {
         "start": {
-          "line": 367,
+          "line": 350,
           "column": 4
         },
         "end": {
-          "line": 371,
+          "line": 353,
           "column": 5
         }
       },
@@ -559,11 +559,11 @@
     "getChildren": {
       "location": {
         "start": {
-          "line": 379,
+          "line": 360,
           "column": 4
         },
         "end": {
-          "line": 381,
+          "line": 362,
           "column": 5
         }
       },
@@ -589,11 +589,11 @@
     "_onPointerDown": {
       "location": {
         "start": {
-          "line": 397,
+          "line": 377,
           "column": 4
         },
         "end": {
-          "line": 429,
+          "line": 410,
           "column": 5
         }
       },
@@ -620,11 +620,11 @@
     "_onPointerMove": {
       "location": {
         "start": {
-          "line": 437,
+          "line": 417,
           "column": 4
         },
         "end": {
-          "line": 461,
+          "line": 439,
           "column": 5
         }
       },
@@ -651,11 +651,11 @@
     "_onPointerOut": {
       "location": {
         "start": {
-          "line": 469,
+          "line": 446,
           "column": 4
         },
         "end": {
-          "line": 472,
+          "line": 448,
           "column": 5
         }
       },
@@ -682,11 +682,11 @@
     "_onPointerUp": {
       "location": {
         "start": {
-          "line": 482,
+          "line": 457,
           "column": 4
         },
         "end": {
-          "line": 500,
+          "line": 474,
           "column": 5
         }
       },
@@ -713,11 +713,11 @@
     "_finalizeSizes": {
       "location": {
         "start": {
-          "line": 512,
+          "line": 485,
           "column": 4
         },
         "end": {
-          "line": 551,
+          "line": 518,
           "column": 5
         }
       },
@@ -735,11 +735,11 @@
     "__computeSizes": {
       "location": {
         "start": {
-          "line": 557,
+          "line": 523,
           "column": 4
         },
         "end": {
-          "line": 603,
+          "line": 569,
           "column": 5
         }
       },
@@ -757,11 +757,11 @@
     "_isActiveDragSession": {
       "location": {
         "start": {
-          "line": 611,
+          "line": 576,
           "column": 4
         },
         "end": {
-          "line": 613,
+          "line": 578,
           "column": 5
         }
       },
@@ -787,12 +787,12 @@
     "_setLastPointerPosition": {
       "location": {
         "start": {
-          "line": 622,
-          "column": 5
+          "line": 586,
+          "column": 4
         },
         "end": {
-          "line": 626,
-          "column": 6
+          "line": 589,
+          "column": 5
         }
       },
       "jsdoc": {
@@ -910,6 +910,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -934,6 +935,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -4750,15 +4752,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 630,
-        "column": 13
+        "line": 592,
+        "column": 2
       },
       "end": {
-        "line": 632,
+        "line": 594,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {},
   "descendants": []

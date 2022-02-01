@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 95,
+        "line": 93,
         "column": 3
       }
     },
@@ -37,11 +37,11 @@
     "operationName": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 31,
           "column": 4
         },
         "end": {
-          "line": 36,
+          "line": 35,
           "column": 5
         }
       },
@@ -63,11 +63,11 @@
     "query": {
       "location": {
         "start": {
-          "line": 41,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 46,
+          "line": 45,
           "column": 5
         }
       },
@@ -91,11 +91,11 @@
     "variables": {
       "location": {
         "start": {
-          "line": 51,
+          "line": 50,
           "column": 4
         },
         "end": {
-          "line": 57,
+          "line": 56,
           "column": 5
         }
       },
@@ -152,11 +152,11 @@
     "_jsonReplacer": {
       "location": {
         "start": {
-          "line": 66,
+          "line": 65,
           "column": 4
         },
         "end": {
-          "line": 72,
+          "line": 71,
           "column": 5
         }
       },
@@ -166,11 +166,11 @@
     "_transformVariables": {
       "location": {
         "start": {
-          "line": 79,
+          "line": 77,
           "column": 4
         },
         "end": {
-          "line": 85,
+          "line": 83,
           "column": 5
         }
       },
@@ -188,11 +188,11 @@
     "_validateVariables": {
       "location": {
         "start": {
-          "line": 87,
+          "line": 85,
           "column": 4
         },
         "end": {
-          "line": 93,
+          "line": 91,
           "column": 5
         }
       },
@@ -287,6 +287,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -311,6 +312,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

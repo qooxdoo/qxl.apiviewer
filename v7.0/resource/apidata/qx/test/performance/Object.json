@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 52,
+        "line": 46,
         "column": 3
       }
     }
@@ -25,12 +25,12 @@
     "CREATE_ITERATIONS": {
       "location": {
         "start": {
-          "line": 8,
+          "line": 6,
           "column": 4
         },
         "end": {
-          "line": 8,
-          "column": 30
+          "line": 6,
+          "column": 29
         }
       },
       "type": "variable",
@@ -39,11 +39,11 @@
     "testObjectCreate": {
       "location": {
         "start": {
-          "line": 11,
+          "line": 8,
           "column": 4
         },
         "end": {
-          "line": 27,
+          "line": 23,
           "column": 5
         }
       },
@@ -53,11 +53,11 @@
     "testToHashCode": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 50,
+          "line": 44,
           "column": 5
         }
       },
@@ -364,6 +364,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -388,6 +389,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

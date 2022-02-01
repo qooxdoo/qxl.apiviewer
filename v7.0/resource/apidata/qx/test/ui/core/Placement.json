@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 190,
+        "line": 178,
         "column": 3
       }
     },
@@ -24,12 +24,12 @@
     "__nogo": {
       "location": {
         "start": {
-          "line": 24,
+          "line": 22,
           "column": 4
         },
         "end": {
-          "line": 24,
-          "column": 17
+          "line": 22,
+          "column": 16
         }
       },
       "type": "variable",
@@ -38,11 +38,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 36,
+          "line": 35,
           "column": 5
         }
       },
@@ -56,11 +56,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 42,
+          "line": 41,
           "column": 5
         }
       },
@@ -74,11 +74,11 @@
     "__testAlwaysVisibleElement": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 43,
           "column": 4
         },
         "end": {
-          "line": 64,
+          "line": 62,
           "column": 5
         }
       },
@@ -88,11 +88,11 @@
     "testVisibleWithPopoup": {
       "location": {
         "start": {
-          "line": 67,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 71,
+          "line": 68,
           "column": 5
         }
       },
@@ -102,11 +102,11 @@
     "testVisibleWithMenu": {
       "location": {
         "start": {
-          "line": 73,
+          "line": 70,
           "column": 4
         },
         "end": {
-          "line": 77,
+          "line": 74,
           "column": 5
         }
       },
@@ -116,11 +116,11 @@
     "__testAlwaysVisibleElementTooBig": {
       "location": {
         "start": {
-          "line": 80,
+          "line": 76,
           "column": 4
         },
         "end": {
-          "line": 101,
+          "line": 96,
           "column": 5
         }
       },
@@ -128,6 +128,20 @@
       "access": "private"
     },
     "testVisibleWithPopoupTooBig": {
+      "location": {
+        "start": {
+          "line": 98,
+          "column": 4
+        },
+        "end": {
+          "line": 102,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testVisibleWithMenuTooBig": {
       "location": {
         "start": {
           "line": 104,
@@ -141,28 +155,14 @@
       "type": "function",
       "access": "public"
     },
-    "testVisibleWithMenuTooBig": {
+    "__testAlwaysVisibleElementAbove": {
       "location": {
         "start": {
           "line": 110,
           "column": 4
         },
         "end": {
-          "line": 114,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "__testAlwaysVisibleElementAbove": {
-      "location": {
-        "start": {
-          "line": 117,
-          "column": 4
-        },
-        "end": {
-          "line": 139,
+          "line": 131,
           "column": 5
         }
       },
@@ -172,11 +172,11 @@
     "testVisibleWithPopoupAbove": {
       "location": {
         "start": {
-          "line": 142,
+          "line": 133,
           "column": 4
         },
         "end": {
-          "line": 146,
+          "line": 137,
           "column": 5
         }
       },
@@ -186,11 +186,11 @@
     "testVisibleWithMenuAbove": {
       "location": {
         "start": {
-          "line": 148,
+          "line": 139,
           "column": 4
         },
         "end": {
-          "line": 152,
+          "line": 143,
           "column": 5
         }
       },
@@ -200,11 +200,11 @@
     "__testAlwaysVisibleElementBelow": {
       "location": {
         "start": {
-          "line": 155,
+          "line": 145,
           "column": 4
         },
         "end": {
-          "line": 175,
+          "line": 164,
           "column": 5
         }
       },
@@ -214,11 +214,11 @@
     "testVisibleWithPopoupBelow": {
       "location": {
         "start": {
-          "line": 178,
+          "line": 166,
           "column": 4
         },
         "end": {
-          "line": 182,
+          "line": 170,
           "column": 5
         }
       },
@@ -228,11 +228,11 @@
     "testVisibleWithMenuBelow": {
       "location": {
         "start": {
-          "line": 184,
+          "line": 172,
           "column": 4
         },
         "end": {
-          "line": 188,
+          "line": 176,
           "column": 5
         }
       },
@@ -327,6 +327,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -351,6 +352,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

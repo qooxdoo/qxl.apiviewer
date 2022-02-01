@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 165,
+        "line": 158,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 31,
+          "line": 28,
           "column": 5
         }
       },
@@ -43,11 +43,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 34,
+          "line": 30,
           "column": 4
         },
         "end": {
-          "line": 43,
+          "line": 38,
           "column": 5
         }
       },
@@ -62,11 +62,11 @@
     "_createLayer": {
       "location": {
         "start": {
-          "line": 46,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 48,
+          "line": 42,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "getCellWidget": {
       "location": {
         "start": {
-          "line": 51,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 56,
+          "line": 48,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "poolCellWidget": {
       "location": {
         "start": {
-          "line": 59,
+          "line": 50,
           "column": 4
         },
         "end": {
-          "line": 64,
+          "line": 54,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "_assertCells": {
       "location": {
         "start": {
-          "line": 67,
+          "line": 56,
           "column": 4
         },
         "end": {
-          "line": 85,
+          "line": 71,
           "column": 5
         }
       },
@@ -126,11 +126,11 @@
     "testGetRenderedCellWidget": {
       "location": {
         "start": {
-          "line": 88,
+          "line": 73,
           "column": 4
         },
         "end": {
-          "line": 126,
+          "line": 123,
           "column": 5
         }
       },
@@ -140,11 +140,11 @@
     "testEmptyCells": {
       "location": {
         "start": {
-          "line": 129,
+          "line": 125,
           "column": 4
         },
         "end": {
-          "line": 163,
+          "line": 156,
           "column": 5
         }
       },
@@ -239,6 +239,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -263,6 +264,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

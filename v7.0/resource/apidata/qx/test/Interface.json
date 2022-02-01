@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 622,
+        "line": 619,
         "column": 3
       }
     },
@@ -37,7 +37,21 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 26,
+          "column": 4
+        },
+        "end": {
+          "line": 36,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "tearDown": {
+      "location": {
+        "start": {
+          "line": 38,
           "column": 4
         },
         "end": {
@@ -48,28 +62,14 @@
       "type": "function",
       "access": "public"
     },
-    "tearDown": {
-      "location": {
-        "start": {
-          "line": 43,
-          "column": 4
-        },
-        "end": {
-          "line": 45,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
     "testClassImplements": {
       "location": {
         "start": {
-          "line": 48,
+          "line": 42,
           "column": 4
         },
         "end": {
-          "line": 78,
+          "line": 71,
           "column": 5
         }
       },
@@ -79,11 +79,11 @@
     "testEverythingImplemented": {
       "location": {
         "start": {
-          "line": 81,
+          "line": 73,
           "column": 4
         },
         "end": {
-          "line": 105,
+          "line": 98,
           "column": 5
         }
       },
@@ -93,11 +93,11 @@
     "testMissingMembers": {
       "location": {
         "start": {
-          "line": 108,
+          "line": 100,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 118,
           "column": 5
         }
       },
@@ -107,11 +107,11 @@
     "testMissingStatics": {
       "location": {
         "start": {
-          "line": 127,
+          "line": 120,
           "column": 4
         },
         "end": {
-          "line": 144,
+          "line": 139,
           "column": 5
         }
       },
@@ -121,11 +121,11 @@
     "testMissingProperties": {
       "location": {
         "start": {
-          "line": 147,
+          "line": 141,
           "column": 4
         },
         "end": {
-          "line": 168,
+          "line": 163,
           "column": 5
         }
       },
@@ -135,11 +135,11 @@
     "testWithDebug": {
       "location": {
         "start": {
-          "line": 171,
+          "line": 165,
           "column": 4
         },
         "end": {
-          "line": 239,
+          "line": 230,
           "column": 5
         }
       },
@@ -149,11 +149,11 @@
     "testAssertions": {
       "location": {
         "start": {
-          "line": 242,
+          "line": 232,
           "column": 4
         },
         "end": {
-          "line": 335,
+          "line": 346,
           "column": 5
         }
       },
@@ -163,11 +163,11 @@
     "testProperties": {
       "location": {
         "start": {
-          "line": 338,
+          "line": 348,
           "column": 4
         },
         "end": {
-          "line": 406,
+          "line": 403,
           "column": 5
         }
       },
@@ -177,11 +177,11 @@
     "testEvents": {
       "location": {
         "start": {
-          "line": 409,
+          "line": 405,
           "column": 4
         },
         "end": {
-          "line": 440,
+          "line": 429,
           "column": 5
         }
       },
@@ -191,11 +191,11 @@
     "testIncludes": {
       "location": {
         "start": {
-          "line": 443,
+          "line": 431,
           "column": 4
         },
         "end": {
-          "line": 531,
+          "line": 536,
           "column": 5
         }
       },
@@ -205,11 +205,11 @@
     "testAbstractClass": {
       "location": {
         "start": {
-          "line": 538,
+          "line": 542,
           "column": 4
         },
         "end": {
-          "line": 595,
+          "line": 597,
           "column": 5
         }
       },
@@ -227,11 +227,11 @@
     "testGeneratedIsMethods": {
       "location": {
         "start": {
-          "line": 598,
+          "line": 599,
           "column": 4
         },
         "end": {
-          "line": 620,
+          "line": 617,
           "column": 5
         }
       },
@@ -326,6 +326,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -350,6 +351,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 176,
+        "line": 174,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 36,
-        "column": 14
+        "line": 35,
+        "column": 2
       },
       "end": {
-        "line": 82,
+        "line": 79,
         "column": 3
       }
     },
@@ -67,12 +67,12 @@
     "__total": {
       "location": {
         "start": {
-          "line": 86,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 86,
-          "column": 18
+          "line": 82,
+          "column": 17
         }
       },
       "type": "variable",
@@ -81,12 +81,12 @@
     "__colors": {
       "location": {
         "start": {
-          "line": 87,
+          "line": 83,
           "column": 4
         },
         "end": {
-          "line": 87,
-          "column": 19
+          "line": 83,
+          "column": 18
         }
       },
       "type": "variable",
@@ -95,12 +95,12 @@
     "__progressBar": {
       "location": {
         "start": {
-          "line": 88,
+          "line": 84,
           "column": 4
         },
         "end": {
-          "line": 88,
-          "column": 24
+          "line": 84,
+          "column": 23
         }
       },
       "type": "variable",
@@ -109,12 +109,12 @@
     "__percentDone": {
       "location": {
         "start": {
-          "line": 89,
+          "line": 85,
           "column": 4
         },
         "end": {
-          "line": 89,
-          "column": 24
+          "line": 85,
+          "column": 23
         }
       },
       "type": "variable",
@@ -123,11 +123,11 @@
     "_onChangeTheme": {
       "location": {
         "start": {
-          "line": 92,
+          "line": 88,
           "column": 4
         },
         "end": {
-          "line": 95,
+          "line": 91,
           "column": 5
         }
       },
@@ -136,18 +136,17 @@
       "access": "protected",
       "overriddenFrom": "qx.ui.core.Widget",
       "appearsIn": [
-        "qx.ui.core.Widget",
-        "qx.ui.core.LayoutItem"
+        "qx.ui.core.Widget"
       ]
     },
     "__linkColors": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 96,
           "column": 4
         },
         "end": {
-          "line": 114,
+          "line": 118,
           "column": 5
         }
       },
@@ -165,11 +164,11 @@
     "join": {
       "location": {
         "start": {
-          "line": 118,
+          "line": 121,
           "column": 4
         },
         "end": {
-          "line": 165,
+          "line": 166,
           "column": 5
         }
       },
@@ -269,6 +268,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -293,6 +293,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -3977,15 +3978,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 168,
-        "column": 13
+        "line": 169,
+        "column": 2
       },
       "end": {
-        "line": 175,
+        "line": 173,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {},
   "descendants": []

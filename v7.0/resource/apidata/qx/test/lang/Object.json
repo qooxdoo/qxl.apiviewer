@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 322,
+        "line": 332,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "testObject": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 27,
+          "line": 25,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "testEmpty": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 39,
+          "line": 35,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "testIsEmpty": {
       "location": {
         "start": {
-          "line": 42,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 48,
+          "line": 42,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "testGetLength": {
       "location": {
         "start": {
-          "line": 51,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 61,
+          "line": 53,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "testGetKeys": {
       "location": {
         "start": {
-          "line": 64,
+          "line": 55,
           "column": 4
         },
         "end": {
-          "line": 99,
+          "line": 88,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testGetValues": {
       "location": {
         "start": {
-          "line": 102,
+          "line": 90,
           "column": 4
         },
         "end": {
-          "line": 131,
+          "line": 117,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "testMergeWith": {
       "location": {
         "start": {
-          "line": 134,
+          "line": 119,
           "column": 4
         },
         "end": {
-          "line": 143,
+          "line": 128,
           "column": 5
         }
       },
@@ -122,11 +122,11 @@
     "testMergeWithCarefully": {
       "location": {
         "start": {
-          "line": 146,
+          "line": 130,
           "column": 4
         },
         "end": {
-          "line": 155,
+          "line": 139,
           "column": 5
         }
       },
@@ -136,11 +136,11 @@
     "testClone": {
       "location": {
         "start": {
-          "line": 158,
+          "line": 141,
           "column": 4
         },
         "end": {
-          "line": 175,
+          "line": 158,
           "column": 5
         }
       },
@@ -150,11 +150,11 @@
     "testCloneDeep": {
       "location": {
         "start": {
-          "line": 178,
+          "line": 160,
           "column": 4
         },
         "end": {
-          "line": 200,
+          "line": 181,
           "column": 5
         }
       },
@@ -164,11 +164,11 @@
     "testInvert": {
       "location": {
         "start": {
-          "line": 202,
+          "line": 183,
           "column": 4
         },
         "end": {
-          "line": 217,
+          "line": 198,
           "column": 5
         }
       },
@@ -178,11 +178,11 @@
     "testGetKeyFromValue": {
       "location": {
         "start": {
-          "line": 220,
+          "line": 200,
           "column": 4
         },
         "end": {
-          "line": 223,
+          "line": 203,
           "column": 5
         }
       },
@@ -192,11 +192,11 @@
     "testContains": {
       "location": {
         "start": {
-          "line": 226,
+          "line": 205,
           "column": 4
         },
         "end": {
-          "line": 228,
+          "line": 207,
           "column": 5
         }
       },
@@ -206,11 +206,11 @@
     "testFromArray": {
       "location": {
         "start": {
-          "line": 231,
+          "line": 209,
           "column": 4
         },
         "end": {
-          "line": 237,
+          "line": 215,
           "column": 5
         }
       },
@@ -220,11 +220,11 @@
     "testObjectAssertions": {
       "location": {
         "start": {
-          "line": 243,
+          "line": 221,
           "column": 4
         },
         "end": {
-          "line": 257,
+          "line": 234,
           "column": 5
         }
       },
@@ -242,11 +242,11 @@
     "testEquals": {
       "location": {
         "start": {
-          "line": 259,
+          "line": 236,
           "column": 4
         },
         "end": {
-          "line": 319,
+          "line": 330,
           "column": 5
         }
       },
@@ -341,6 +341,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -365,6 +366,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

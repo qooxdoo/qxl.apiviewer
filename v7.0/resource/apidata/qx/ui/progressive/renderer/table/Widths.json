@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 172,
+        "line": 157,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 30,
-        "column": 14
+        "line": 29,
+        "column": 2
       },
       "end": {
-        "line": 41,
+        "line": 38,
         "column": 3
       }
     },
@@ -60,12 +60,12 @@
     "__columnData": {
       "location": {
         "start": {
-          "line": 46,
+          "line": 41,
           "column": 4
         },
         "end": {
-          "line": 46,
-          "column": 23
+          "line": 41,
+          "column": 22
         }
       },
       "type": "variable",
@@ -74,11 +74,11 @@
     "getData": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 50,
           "column": 4
         },
         "end": {
-          "line": 58,
+          "line": 52,
           "column": 5
         }
       },
@@ -104,11 +104,11 @@
     "set": {
       "location": {
         "start": {
-          "line": 74,
+          "line": 68,
           "column": 4
         },
         "end": {
-          "line": 96,
+          "line": 87,
           "column": 5
         }
       },
@@ -147,11 +147,11 @@
     "setWidth": {
       "location": {
         "start": {
-          "line": 114,
+          "line": 105,
           "column": 4
         },
         "end": {
-          "line": 122,
+          "line": 111,
           "column": 5
         }
       },
@@ -196,11 +196,11 @@
     "setMinWidth": {
       "location": {
         "start": {
-          "line": 138,
+          "line": 127,
           "column": 4
         },
         "end": {
-          "line": 146,
+          "line": 133,
           "column": 5
         }
       },
@@ -242,11 +242,11 @@
     "setMaxWidth": {
       "location": {
         "start": {
-          "line": 162,
+          "line": 149,
           "column": 4
         },
         "end": {
-          "line": 170,
+          "line": 155,
           "column": 5
         }
       },
@@ -373,6 +373,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -397,6 +398,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

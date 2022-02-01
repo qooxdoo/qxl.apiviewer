@@ -21,7 +21,7 @@
         "column": 0
       },
       "end": {
-        "line": 245,
+        "line": 209,
         "column": 3
       }
     },
@@ -38,11 +38,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 63,
-        "column": 14
+        "line": 59,
+        "column": 2
       },
       "end": {
-        "line": 80,
+        "line": 75,
         "column": 3
       }
     },
@@ -70,11 +70,11 @@
     "group": {
       "location": {
         "start": {
-          "line": 94,
+          "line": 85,
           "column": 4
         },
         "end": {
-          "line": 99,
+          "line": 89,
           "column": 5
         }
       },
@@ -96,11 +96,11 @@
     "value": {
       "location": {
         "start": {
-          "line": 102,
+          "line": 92,
           "column": 4
         },
         "end": {
-          "line": 109,
+          "line": 98,
           "column": 5
         }
       },
@@ -125,11 +125,11 @@
     "appearance": {
       "location": {
         "start": {
-          "line": 112,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 116,
+          "line": 104,
           "column": 5
         }
       },
@@ -149,11 +149,11 @@
     "allowGrowX": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 107,
           "column": 4
         },
         "end": {
-          "line": 123,
+          "line": 110,
           "column": 5
         }
       },
@@ -258,11 +258,11 @@
     "_forwardStates": {
       "location": {
         "start": {
-          "line": 140,
+          "line": 124,
           "column": 4
         },
         "end": {
-          "line": 146,
+          "line": 129,
           "column": 5
         }
       },
@@ -286,12 +286,12 @@
     "_bindableProperties": {
       "location": {
         "start": {
-          "line": 152,
+          "line": 135,
           "column": 4
         },
         "end": {
-          "line": 159,
-          "column": 5
+          "line": 135,
+          "column": 77
         }
       },
       "jsdoc": {
@@ -314,11 +314,11 @@
     "_applyValue": {
       "location": {
         "start": {
-          "line": 168,
+          "line": 144,
           "column": 4
         },
         "end": {
-          "line": 174,
+          "line": 147,
           "column": 5
         }
       },
@@ -332,11 +332,11 @@
     "_applyGroup": {
       "location": {
         "start": {
-          "line": 178,
+          "line": 150,
           "column": 4
         },
         "end": {
-          "line": 187,
+          "line": 158,
           "column": 5
         }
       },
@@ -357,11 +357,11 @@
     "_onExecute": {
       "location": {
         "start": {
-          "line": 205,
+          "line": 173,
           "column": 4
         },
         "end": {
-          "line": 212,
+          "line": 180,
           "column": 5
         }
       },
@@ -388,11 +388,11 @@
     "_onKeyPress": {
       "location": {
         "start": {
-          "line": 223,
+          "line": 190,
           "column": 4
         },
         "end": {
-          "line": 243,
+          "line": 207,
           "column": 5
         }
       },
@@ -877,38 +877,6 @@
       "overriddenFrom": "qx.ui.form.MForm",
       "jsdoc": {}
     },
-    "__onChangeLocale": {
-      "type": "function",
-      "name": "__onChangeLocale",
-      "abstract": false,
-      "mixin": true,
-      "inherited": true,
-      "access": "private",
-      "overriddenFrom": "qx.ui.form.MForm",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Locale change event handler</p>"
-          }
-        ],
-        "@signature": [
-          {
-            "name": "@signature",
-            "body": "function(e)"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {Event} the change event",
-            "paramName": "e",
-            "description": " the change event",
-            "type": "Event"
-          }
-        ]
-      }
-    },
     "isValid": {
       "type": "function",
       "name": "isValid",
@@ -1200,6 +1168,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1224,6 +1193,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

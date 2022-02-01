@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 505,
+        "line": 473,
         "column": 3
       }
     },
@@ -36,26 +36,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 81,
-        "column": 14
+        "line": 79,
+        "column": 2
       },
       "end": {
-        "line": 99,
+        "line": 95,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "members": {
     "__fullArr": {
       "location": {
         "start": {
-          "line": 104,
+          "line": 98,
           "column": 4
         },
         "end": {
-          "line": 104,
-          "column": 20
+          "line": 98,
+          "column": 19
         }
       },
       "type": "variable",
@@ -64,12 +63,12 @@
     "__applyingFilters": {
       "location": {
         "start": {
-          "line": 105,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 105,
-          "column": 28
+          "line": 99,
+          "column": 27
         }
       },
       "type": "variable",
@@ -78,12 +77,12 @@
     "__filterTypes": {
       "location": {
         "start": {
-          "line": 106,
+          "line": 100,
           "column": 4
         },
         "end": {
-          "line": 106,
-          "column": 24
+          "line": 100,
+          "column": 23
         }
       },
       "type": "variable",
@@ -92,11 +91,11 @@
     "getFullArray": {
       "location": {
         "start": {
-          "line": 112,
+          "line": 106,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 108,
           "column": 5
         }
       },
@@ -122,11 +121,11 @@
     "_js_in_array": {
       "location": {
         "start": {
-          "line": 125,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 136,
+          "line": 128,
           "column": 5
         }
       },
@@ -174,11 +173,11 @@
     "addBetweenFilter": {
       "location": {
         "start": {
-          "line": 159,
+          "line": 150,
           "column": 4
         },
         "end": {
-          "line": 173,
+          "line": 162,
           "column": 5
         }
       },
@@ -234,11 +233,11 @@
     "addNumericFilter": {
       "location": {
         "start": {
-          "line": 193,
+          "line": 181,
           "column": 4
         },
         "end": {
-          "line": 209,
+          "line": 195,
           "column": 5
         }
       },
@@ -287,11 +286,11 @@
     "addRegex": {
       "location": {
         "start": {
-          "line": 228,
+          "line": 213,
           "column": 4
         },
         "end": {
-          "line": 246,
+          "line": 230,
           "column": 5
         }
       },
@@ -340,11 +339,11 @@
     "addNotRegex": {
       "location": {
         "start": {
-          "line": 265,
+          "line": 248,
           "column": 4
         },
         "end": {
-          "line": 283,
+          "line": 265,
           "column": 5
         }
       },
@@ -393,11 +392,11 @@
     "applyFilters": {
       "location": {
         "start": {
-          "line": 289,
+          "line": 270,
           "column": 4
         },
         "end": {
-          "line": 421,
+          "line": 401,
           "column": 5
         }
       },
@@ -415,11 +414,11 @@
     "hideRows": {
       "location": {
         "start": {
-          "line": 437,
+          "line": 416,
           "column": 4
         },
         "end": {
-          "line": 471,
+          "line": 445,
           "column": 5
         }
       },
@@ -462,11 +461,11 @@
     "resetHiddenRows": {
       "location": {
         "start": {
-          "line": 479,
+          "line": 452,
           "column": 4
         },
         "end": {
-          "line": 488,
+          "line": 460,
           "column": 5
         }
       },
@@ -484,11 +483,11 @@
     "setData": {
       "location": {
         "start": {
-          "line": 492,
+          "line": 463,
           "column": 4
         },
         "end": {
-          "line": 497,
+          "line": 467,
           "column": 5
         }
       },
@@ -588,6 +587,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -612,6 +612,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -730,15 +731,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 501,
-        "column": 13
+        "line": 470,
+        "column": 2
       },
       "end": {
-        "line": 504,
+        "line": 472,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {},
   "descendants": []

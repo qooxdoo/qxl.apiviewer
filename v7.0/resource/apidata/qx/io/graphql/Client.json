@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 112,
+        "line": 122,
         "column": 3
       }
     },
@@ -37,12 +37,12 @@
     "registerTransport": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 31,
           "column": 4
         },
         "end": {
-          "line": 32,
-          "column": 72
+          "line": 31,
+          "column": 71
         }
       },
       "type": "variable",
@@ -53,12 +53,12 @@
     "error": {
       "location": {
         "start": {
-          "line": 41,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 41,
-          "column": 34
+          "line": 40,
+          "column": 31
         }
       },
       "jsdoc": {
@@ -76,11 +76,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 50,
-        "column": 13
+        "line": 49,
+        "column": 2
       },
       "end": {
-        "line": 53,
+        "line": 52,
         "column": 3
       }
     },
@@ -109,11 +109,11 @@
     "send": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 61,
           "column": 4
         },
         "end": {
-          "line": 87,
+          "line": 88,
           "column": 5
         }
       },
@@ -148,11 +148,11 @@
     "_handleErrors": {
       "location": {
         "start": {
-          "line": 99,
+          "line": 100,
           "column": 4
         },
         "end": {
-          "line": 106,
+          "line": 116,
           "column": 5
         }
       },
@@ -272,6 +272,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -296,6 +297,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 26,
+        "line": 25,
         "column": 0
       },
       "end": {
-        "line": 336,
+        "line": 407,
         "column": 3
       }
     },
@@ -45,11 +45,11 @@
     "testMixinBasic": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 139,
+          "line": 130,
           "column": 5
         }
       },
@@ -59,11 +59,11 @@
     "testInclude": {
       "location": {
         "start": {
-          "line": 142,
+          "line": 132,
           "column": 4
         },
         "end": {
-          "line": 206,
+          "line": 191,
           "column": 5
         }
       },
@@ -73,11 +73,11 @@
     "testPatchOverwritten": {
       "location": {
         "start": {
-          "line": 208,
+          "line": 193,
           "column": 4
         },
         "end": {
-          "line": 280,
+          "line": 269,
           "column": 5
         }
       },
@@ -87,11 +87,11 @@
     "testPatchConstructors": {
       "location": {
         "start": {
-          "line": 282,
+          "line": 271,
           "column": 4
         },
         "end": {
-          "line": 334,
+          "line": 405,
           "column": 5
         }
       },
@@ -186,6 +186,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -210,6 +211,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

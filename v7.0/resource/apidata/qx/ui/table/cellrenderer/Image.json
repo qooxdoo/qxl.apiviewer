@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 100,
+        "line": 87,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 39,
-        "column": 14
+        "line": 34,
+        "column": 2
       },
       "end": {
-        "line": 52,
+        "line": 46,
         "column": 3
       }
     },
@@ -71,12 +71,12 @@
     "__am": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 55,
           "column": 4
         },
         "end": {
-          "line": 65,
-          "column": 15
+          "line": 55,
+          "column": 14
         }
       },
       "type": "variable",
@@ -85,12 +85,12 @@
     "__imageHeight": {
       "location": {
         "start": {
-          "line": 66,
+          "line": 56,
           "column": 4
         },
         "end": {
-          "line": 66,
-          "column": 22
+          "line": 56,
+          "column": 21
         }
       },
       "type": "variable",
@@ -99,12 +99,12 @@
     "__imageWidth": {
       "location": {
         "start": {
-          "line": 67,
+          "line": 57,
           "column": 4
         },
         "end": {
-          "line": 67,
-          "column": 21
+          "line": 57,
+          "column": 20
         }
       },
       "type": "variable",
@@ -113,11 +113,11 @@
     "_identifyImage": {
       "location": {
         "start": {
-          "line": 71,
+          "line": 60,
           "column": 4
         },
         "end": {
-          "line": 88,
+          "line": 75,
           "column": 5
         }
       },
@@ -217,6 +217,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -241,6 +242,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -353,6 +355,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for repeat"
           }
         ]
@@ -377,6 +380,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for repeat"
           }
@@ -405,11 +409,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 97,
-        "column": 13
+        "line": 84,
+        "column": 2
       },
       "end": {
-        "line": 99,
+        "line": 86,
         "column": 3
       }
     },

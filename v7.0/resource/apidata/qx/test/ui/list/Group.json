@@ -13,8 +13,8 @@
         "column": 0
       },
       "end": {
-        "line": 136,
-        "column": 5
+        "line": 213,
+        "column": 3
       }
     },
     "jsdoc": {}
@@ -23,26 +23,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 22,
-        "column": 15
+        "line": 21,
+        "column": 2
       },
       "end": {
-        "line": 28,
-        "column": 5
+        "line": 41,
+        "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "members": {
     "__names": {
       "location": {
         "start": {
-          "line": 32,
-          "column": 6
+          "line": 44,
+          "column": 4
         },
         "end": {
-          "line": 32,
-          "column": 19
+          "line": 44,
+          "column": 17
         }
       },
       "type": "variable",
@@ -51,12 +50,12 @@
     "createModelData": {
       "location": {
         "start": {
-          "line": 34,
-          "column": 6
+          "line": 46,
+          "column": 4
         },
         "end": {
-          "line": 36,
-          "column": 7
+          "line": 48,
+          "column": 5
         }
       },
       "type": "function",
@@ -69,12 +68,12 @@
     "testGroup": {
       "location": {
         "start": {
-          "line": 39,
-          "column": 6
+          "line": 50,
+          "column": 4
         },
         "end": {
-          "line": 67,
-          "column": 7
+          "line": 100,
+          "column": 5
         }
       },
       "type": "function",
@@ -83,12 +82,12 @@
     "testDefaultGroup": {
       "location": {
         "start": {
-          "line": 69,
-          "column": 6
+          "line": 102,
+          "column": 4
         },
         "end": {
-          "line": 101,
-          "column": 7
+          "line": 156,
+          "column": 5
         }
       },
       "type": "function",
@@ -97,12 +96,12 @@
     "testGroupWithSorter": {
       "location": {
         "start": {
-          "line": 103,
-          "column": 6
+          "line": 158,
+          "column": 4
         },
         "end": {
-          "line": 134,
-          "column": 7
+          "line": 211,
+          "column": 5
         }
       },
       "type": "function",
@@ -196,6 +195,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -220,6 +220,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

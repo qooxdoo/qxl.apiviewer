@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 120,
+        "line": 132,
         "column": 3
       }
     },
@@ -37,11 +37,11 @@
     "__getStylesheet": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 34,
           "column": 4
         },
         "end": {
-          "line": 42,
+          "line": 40,
           "column": 5
         }
       },
@@ -67,11 +67,11 @@
     "getCreateStyleSheet": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 52,
           "column": 4
         },
         "end": {
-          "line": 58,
+          "line": 54,
           "column": 5
         }
       },
@@ -103,11 +103,11 @@
     "getInsertRule": {
       "location": {
         "start": {
-          "line": 67,
+          "line": 62,
           "column": 4
         },
         "end": {
-          "line": 70,
+          "line": 67,
           "column": 5
         }
       },
@@ -139,11 +139,11 @@
     "getDeleteRule": {
       "location": {
         "start": {
-          "line": 79,
+          "line": 75,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 80,
           "column": 5
         }
       },
@@ -175,11 +175,11 @@
     "getAddImport": {
       "location": {
         "start": {
-          "line": 92,
+          "line": 89,
           "column": 4
         },
         "end": {
-          "line": 95,
+          "line": 93,
           "column": 5
         }
       },
@@ -211,11 +211,11 @@
     "getRemoveImport": {
       "location": {
         "start": {
-          "line": 105,
+          "line": 102,
           "column": 4
         },
         "end": {
-          "line": 108,
+          "line": 107,
           "column": 5
         }
       },
@@ -248,15 +248,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 113,
-        "column": 10
+        "line": 110,
+        "column": 2
       },
       "end": {
-        "line": 119,
+        "line": 131,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

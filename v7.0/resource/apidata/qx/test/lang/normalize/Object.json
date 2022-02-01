@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 104,
+        "line": 97,
         "column": 3
       }
     },
@@ -39,11 +39,11 @@
     "testKeysWithExtendObject": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 50,
+          "line": 46,
           "column": 5
         }
       },
@@ -53,11 +53,11 @@
     "testKeys": {
       "location": {
         "start": {
-          "line": 53,
+          "line": 48,
           "column": 4
         },
         "end": {
-          "line": 71,
+          "line": 66,
           "column": 5
         }
       },
@@ -67,11 +67,11 @@
     "testGetValues": {
       "location": {
         "start": {
-          "line": 73,
+          "line": 68,
           "column": 4
         },
         "end": {
-          "line": 102,
+          "line": 95,
           "column": 5
         }
       },
@@ -758,6 +758,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -782,6 +783,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

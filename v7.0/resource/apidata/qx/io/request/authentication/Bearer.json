@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 52,
+        "line": 46,
         "column": 3
       }
     },
@@ -32,11 +32,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 33,
-        "column": 14
+        "line": 31,
+        "column": 2
       },
       "end": {
-        "line": 36,
+        "line": 33,
         "column": 3
       }
     },
@@ -62,12 +62,12 @@
     "__credentials": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 36,
           "column": 4
         },
         "end": {
-          "line": 40,
-          "column": 24
+          "line": 36,
+          "column": 23
         }
       },
       "type": "variable",
@@ -76,11 +76,11 @@
     "getAuthHeaders": {
       "location": {
         "start": {
-          "line": 46,
+          "line": 42,
           "column": 4
         },
         "end": {
-          "line": 50,
+          "line": 44,
           "column": 5
         }
       },
@@ -195,6 +195,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -219,6 +220,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

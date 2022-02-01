@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 555,
+        "line": 596,
         "column": 3
       }
     },
@@ -59,11 +59,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 35,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 37,
+          "line": 35,
           "column": 5
         }
       },
@@ -77,11 +77,11 @@
     "testSwitchScaling": {
       "location": {
         "start": {
-          "line": 39,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 61,
+          "line": 58,
           "column": 5
         }
       },
@@ -91,11 +91,11 @@
     "testSwitchPngToGif": {
       "location": {
         "start": {
-          "line": 64,
+          "line": 60,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 76,
           "column": 5
         }
       },
@@ -105,11 +105,11 @@
     "testSwitchGifToPng": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 78,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 107,
           "column": 5
         }
       },
@@ -119,11 +119,11 @@
     "testSwitchDimension": {
       "location": {
         "start": {
-          "line": 118,
+          "line": 109,
           "column": 4
         },
         "end": {
-          "line": 145,
+          "line": 142,
           "column": 5
         }
       },
@@ -133,11 +133,11 @@
     "testSwitchWithDecorator": {
       "location": {
         "start": {
-          "line": 148,
+          "line": 144,
           "column": 4
         },
         "end": {
-          "line": 165,
+          "line": 160,
           "column": 5
         }
       },
@@ -147,11 +147,11 @@
     "testSwitchWithSelectable": {
       "location": {
         "start": {
-          "line": 168,
+          "line": 162,
           "column": 4
         },
         "end": {
-          "line": 187,
+          "line": 182,
           "column": 5
         }
       },
@@ -161,11 +161,11 @@
     "testFailedEvent": {
       "location": {
         "start": {
-          "line": 190,
+          "line": 184,
           "column": 4
         },
         "end": {
-          "line": 204,
+          "line": 202,
           "column": 5
         }
       },
@@ -175,11 +175,11 @@
     "testLoadedEvent": {
       "location": {
         "start": {
-          "line": 207,
+          "line": 204,
           "column": 4
         },
         "end": {
-          "line": 225,
+          "line": 229,
           "column": 5
         }
       },
@@ -189,11 +189,11 @@
     "test: Abort image loading on changing source": {
       "location": {
         "start": {
-          "line": 228,
+          "line": 231,
           "column": 4
         },
         "end": {
-          "line": 246,
+          "line": 256,
           "column": 5
         }
       },
@@ -203,11 +203,11 @@
     "test: Abort image loading through the ImageLoader": {
       "location": {
         "start": {
-          "line": 249,
+          "line": 258,
           "column": 4
         },
         "end": {
-          "line": 267,
+          "line": 281,
           "column": 5
         }
       },
@@ -217,11 +217,11 @@
     "testLoadedEventForUnmanagedImage": {
       "location": {
         "start": {
-          "line": 270,
+          "line": 283,
           "column": 4
         },
         "end": {
-          "line": 302,
+          "line": 325,
           "column": 5
         }
       },
@@ -231,11 +231,11 @@
     "testLoadedEventForManagedImage": {
       "location": {
         "start": {
-          "line": 305,
+          "line": 327,
           "column": 4
         },
         "end": {
-          "line": 331,
+          "line": 359,
           "column": 5
         }
       },
@@ -245,11 +245,11 @@
     "testAbortedEventForUnmanagedImage": {
       "location": {
         "start": {
-          "line": 334,
+          "line": 361,
           "column": 4
         },
         "end": {
-          "line": 372,
+          "line": 409,
           "column": 5
         }
       },
@@ -259,11 +259,11 @@
     "testWebFontImage": {
       "location": {
         "start": {
-          "line": 374,
+          "line": 411,
           "column": 4
         },
         "end": {
-          "line": 429,
+          "line": 466,
           "column": 5
         }
       },
@@ -273,11 +273,11 @@
     "testHighResImage": {
       "location": {
         "start": {
-          "line": 431,
+          "line": 468,
           "column": 4
         },
         "end": {
-          "line": 454,
+          "line": 493,
           "column": 5
         }
       },
@@ -287,11 +287,11 @@
     "testHighResImageWithDecoratorAndSourceInConstructor": {
       "location": {
         "start": {
-          "line": 456,
+          "line": 495,
           "column": 4
         },
         "end": {
-          "line": 483,
+          "line": 524,
           "column": 5
         }
       },
@@ -301,11 +301,11 @@
     "testHighResImageWithDecoratorAndSourceInSetter": {
       "location": {
         "start": {
-          "line": 485,
+          "line": 526,
           "column": 4
         },
         "end": {
-          "line": 513,
+          "line": 556,
           "column": 5
         }
       },
@@ -315,11 +315,11 @@
     "isFirefox": {
       "location": {
         "start": {
-          "line": 515,
+          "line": 558,
           "column": 4
         },
         "end": {
-          "line": 518,
+          "line": 560,
           "column": 5
         }
       },
@@ -329,11 +329,11 @@
     "_initWebFont": {
       "location": {
         "start": {
-          "line": 523,
+          "line": 565,
           "column": 4
         },
         "end": {
-          "line": 552,
+          "line": 594,
           "column": 5
         }
       },
@@ -1034,6 +1034,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1058,6 +1059,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

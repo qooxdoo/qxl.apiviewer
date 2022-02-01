@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 25,
+        "line": 24,
         "column": 0
       },
       "end": {
-        "line": 246,
+        "line": 218,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 43,
-        "column": 14
+        "line": 40,
+        "column": 2
       },
       "end": {
-        "line": 53,
+        "line": 49,
         "column": 3
       }
     },
@@ -69,12 +69,12 @@
     "_autoScrollIntoView": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 65,
-          "column": 30
+          "line": 59,
+          "column": 29
         }
       },
       "jsdoc": {},
@@ -82,6 +82,25 @@
       "access": "protected"
     },
     "_isSelectable": {
+      "location": {
+        "start": {
+          "line": 68,
+          "column": 4
+        },
+        "end": {
+          "line": 72,
+          "column": 5
+        }
+      },
+      "jsdoc": {},
+      "type": "function",
+      "access": "protected",
+      "overriddenFrom": "qx.ui.core.selection.Abstract",
+      "appearsIn": [
+        "qx.ui.core.selection.Abstract"
+      ]
+    },
+    "_styleSelectable": {
       "location": {
         "start": {
           "line": 75,
@@ -100,33 +119,14 @@
         "qx.ui.core.selection.Abstract"
       ]
     },
-    "_styleSelectable": {
-      "location": {
-        "start": {
-          "line": 83,
-          "column": 4
-        },
-        "end": {
-          "line": 88,
-          "column": 5
-        }
-      },
-      "jsdoc": {},
-      "type": "function",
-      "access": "protected",
-      "overriddenFrom": "qx.ui.core.selection.Abstract",
-      "appearsIn": [
-        "qx.ui.core.selection.Abstract"
-      ]
-    },
     "attachPointerEvents": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 90,
           "column": 4
         },
         "end": {
-          "line": 108,
+          "line": 97,
           "column": 5
         }
       },
@@ -144,11 +144,11 @@
     "detatchPointerEvents": {
       "location": {
         "start": {
-          "line": 116,
+          "line": 104,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 106,
           "column": 5
         }
       },
@@ -172,11 +172,11 @@
     "detachPointerEvents": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 111,
           "column": 4
         },
         "end": {
-          "line": 132,
+          "line": 118,
           "column": 5
         }
       },
@@ -194,11 +194,11 @@
     "attachKeyEvents": {
       "location": {
         "start": {
-          "line": 143,
+          "line": 129,
           "column": 4
         },
         "end": {
-          "line": 145,
+          "line": 131,
           "column": 5
         }
       },
@@ -225,11 +225,11 @@
     "detachKeyEvents": {
       "location": {
         "start": {
-          "line": 153,
+          "line": 138,
           "column": 4
         },
         "end": {
-          "line": 155,
+          "line": 140,
           "column": 5
         }
       },
@@ -256,11 +256,11 @@
     "attachListEvents": {
       "location": {
         "start": {
-          "line": 167,
+          "line": 151,
           "column": 4
         },
         "end": {
-          "line": 171,
+          "line": 154,
           "column": 5
         }
       },
@@ -287,11 +287,11 @@
     "detachListEvents": {
       "location": {
         "start": {
-          "line": 180,
+          "line": 162,
           "column": 4
         },
         "end": {
-          "line": 184,
+          "line": 165,
           "column": 5
         }
       },
@@ -318,11 +318,11 @@
     "_capture": {
       "location": {
         "start": {
-          "line": 194,
+          "line": 174,
           "column": 4
         },
         "end": {
-          "line": 196,
+          "line": 176,
           "column": 5
         }
       },
@@ -337,11 +337,11 @@
     "_releaseCapture": {
       "location": {
         "start": {
-          "line": 200,
+          "line": 179,
           "column": 4
         },
         "end": {
-          "line": 202,
+          "line": 181,
           "column": 5
         }
       },
@@ -356,11 +356,11 @@
     "_getScroll": {
       "location": {
         "start": {
-          "line": 206,
+          "line": 184,
           "column": 4
         },
         "end": {
-          "line": 212,
+          "line": 189,
           "column": 5
         }
       },
@@ -375,11 +375,11 @@
     "_scrollBy": {
       "location": {
         "start": {
-          "line": 216,
+          "line": 192,
           "column": 4
         },
         "end": {
-          "line": 220,
+          "line": 195,
           "column": 5
         }
       },
@@ -394,11 +394,11 @@
     "_getLocation": {
       "location": {
         "start": {
-          "line": 224,
+          "line": 198,
           "column": 4
         },
         "end": {
-          "line": 228,
+          "line": 201,
           "column": 5
         }
       },
@@ -413,11 +413,11 @@
     "_getDimension": {
       "location": {
         "start": {
-          "line": 232,
+          "line": 204,
           "column": 4
         },
         "end": {
-          "line": 234,
+          "line": 206,
           "column": 5
         }
       },
@@ -517,6 +517,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -541,6 +542,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -920,11 +922,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 243,
-        "column": 13
+        "line": 215,
+        "column": 2
       },
       "end": {
-        "line": 245,
+        "line": 217,
         "column": 3
       }
     },

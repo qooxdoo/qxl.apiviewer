@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 1231,
+        "line": 1120,
         "column": 3
       }
     },
@@ -32,11 +32,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 101,
-        "column": 14
+        "line": 99,
+        "column": 2
       },
       "end": {
-        "line": 122,
+        "line": 119,
         "column": 3
       }
     },
@@ -46,11 +46,11 @@
     "filter": {
       "location": {
         "start": {
-          "line": 134,
+          "line": 129,
           "column": 4
         },
         "end": {
-          "line": 139,
+          "line": 133,
           "column": 5
         }
       },
@@ -106,12 +106,12 @@
     "__tree": {
       "location": {
         "start": {
-          "line": 152,
+          "line": 143,
           "column": 4
         },
         "end": {
-          "line": 152,
-          "column": 27
+          "line": 143,
+          "column": 16
         }
       },
       "type": "variable",
@@ -120,12 +120,12 @@
     "__editableColArr": {
       "location": {
         "start": {
-          "line": 153,
+          "line": 144,
           "column": 4
         },
         "end": {
-          "line": 153,
-          "column": 27
+          "line": 144,
+          "column": 26
         }
       },
       "type": "variable",
@@ -134,12 +134,12 @@
     "__tempTreeData": {
       "location": {
         "start": {
-          "line": 154,
+          "line": 145,
           "column": 4
         },
         "end": {
-          "line": 154,
-          "column": 25
+          "line": 145,
+          "column": 24
         }
       },
       "type": "variable",
@@ -148,12 +148,12 @@
     "__recalculateLastChildFlags": {
       "location": {
         "start": {
-          "line": 155,
+          "line": 146,
           "column": 4
         },
         "end": {
-          "line": 155,
-          "column": 38
+          "line": 146,
+          "column": 37
         }
       },
       "type": "variable",
@@ -162,12 +162,12 @@
     "_rowArr": {
       "location": {
         "start": {
-          "line": 158,
+          "line": 149,
           "column": 4
         },
         "end": {
-          "line": 158,
-          "column": 18
+          "line": 149,
+          "column": 17
         }
       },
       "jsdoc": {
@@ -184,12 +184,12 @@
     "_nodeArr": {
       "location": {
         "start": {
-          "line": 161,
+          "line": 152,
           "column": 4
         },
         "end": {
-          "line": 161,
-          "column": 19
+          "line": 152,
+          "column": 18
         }
       },
       "jsdoc": {
@@ -206,12 +206,12 @@
     "_nodeRowMap": {
       "location": {
         "start": {
-          "line": 168,
+          "line": 159,
           "column": 4
         },
         "end": {
-          "line": 168,
-          "column": 22
+          "line": 159,
+          "column": 21
         }
       },
       "jsdoc": {
@@ -228,12 +228,12 @@
     "_treeColumn": {
       "location": {
         "start": {
-          "line": 171,
+          "line": 162,
           "column": 4
         },
         "end": {
-          "line": 171,
-          "column": 22
+          "line": 162,
+          "column": 21
         }
       },
       "jsdoc": {
@@ -250,12 +250,12 @@
     "_selections": {
       "location": {
         "start": {
-          "line": 174,
+          "line": 165,
           "column": 4
         },
         "end": {
-          "line": 174,
-          "column": 22
+          "line": 165,
+          "column": 21
         }
       },
       "jsdoc": {
@@ -272,11 +272,11 @@
     "setTree": {
       "location": {
         "start": {
-          "line": 183,
+          "line": 174,
           "column": 4
         },
         "end": {
-          "line": 186,
+          "line": 176,
           "column": 5
         }
       },
@@ -303,11 +303,11 @@
     "getTree": {
       "location": {
         "start": {
-          "line": 193,
+          "line": 183,
           "column": 4
         },
         "end": {
-          "line": 196,
+          "line": 185,
           "column": 5
         }
       },
@@ -333,11 +333,11 @@
     "setEditable": {
       "location": {
         "start": {
-          "line": 205,
+          "line": 194,
           "column": 4
         },
         "end": {
-          "line": 215,
+          "line": 202,
           "column": 5
         }
       },
@@ -364,11 +364,11 @@
     "setColumnEditable": {
       "location": {
         "start": {
-          "line": 228,
+          "line": 214,
           "column": 4
         },
         "end": {
-          "line": 241,
+          "line": 224,
           "column": 5
         }
       },
@@ -402,11 +402,11 @@
     "isColumnEditable": {
       "location": {
         "start": {
-          "line": 244,
+          "line": 227,
           "column": 4
         },
         "end": {
-          "line": 254,
+          "line": 235,
           "column": 5
         }
       },
@@ -422,11 +422,11 @@
     "isColumnSortable": {
       "location": {
         "start": {
-          "line": 258,
+          "line": 238,
           "column": 4
         },
         "end": {
-          "line": 261,
+          "line": 240,
           "column": 5
         }
       },
@@ -442,11 +442,11 @@
     "sortByColumn": {
       "location": {
         "start": {
-          "line": 271,
+          "line": 249,
           "column": 4
         },
         "end": {
-          "line": 274,
+          "line": 251,
           "column": 5
         }
       },
@@ -493,11 +493,11 @@
     "getSortColumnIndex": {
       "location": {
         "start": {
-          "line": 284,
+          "line": 260,
           "column": 4
         },
         "end": {
-          "line": 287,
+          "line": 262,
           "column": 5
         }
       },
@@ -528,11 +528,11 @@
     "setTreeColumn": {
       "location": {
         "start": {
-          "line": 311,
+          "line": 285,
           "column": 4
         },
         "end": {
-          "line": 314,
+          "line": 287,
           "column": 5
         }
       },
@@ -559,11 +559,11 @@
     "getTreeColumn": {
       "location": {
         "start": {
-          "line": 323,
+          "line": 295,
           "column": 4
         },
         "end": {
-          "line": 326,
+          "line": 297,
           "column": 5
         }
       },
@@ -589,11 +589,11 @@
     "getRowCount": {
       "location": {
         "start": {
-          "line": 329,
+          "line": 300,
           "column": 4
         },
         "end": {
-          "line": 332,
+          "line": 302,
           "column": 5
         }
       },
@@ -609,11 +609,11 @@
     "getRowData": {
       "location": {
         "start": {
-          "line": 335,
+          "line": 305,
           "column": 4
         },
         "end": {
-          "line": 338,
+          "line": 307,
           "column": 5
         }
       },
@@ -629,11 +629,11 @@
     "getValue": {
       "location": {
         "start": {
-          "line": 350,
+          "line": 318,
           "column": 4
         },
         "end": {
-          "line": 369,
+          "line": 346,
           "column": 5
         }
       },
@@ -694,11 +694,11 @@
     "setValue": {
       "location": {
         "start": {
-          "line": 373,
+          "line": 349,
           "column": 4
         },
         "end": {
-          "line": 405,
+          "line": 379,
           "column": 5
         }
       },
@@ -714,11 +714,11 @@
     "getNode": {
       "location": {
         "start": {
-          "line": 422,
+          "line": 395,
           "column": 4
         },
         "end": {
-          "line": 433,
+          "line": 410,
           "column": 5
         }
       },
@@ -761,11 +761,11 @@
     "addBranch": {
       "location": {
         "start": {
-          "line": 464,
+          "line": 440,
           "column": 4
         },
         "end": {
-          "line": 480,
+          "line": 458,
           "column": 5
         }
       },
@@ -835,11 +835,11 @@
     "addLeaf": {
       "location": {
         "start": {
-          "line": 502,
+          "line": 479,
           "column": 4
         },
         "end": {
-          "line": 516,
+          "line": 490,
           "column": 5
         }
       },
@@ -895,11 +895,11 @@
     "prune": {
       "location": {
         "start": {
-          "line": 535,
+          "line": 508,
           "column": 4
         },
         "end": {
-          "line": 579,
+          "line": 542,
           "column": 5
         }
       },
@@ -944,11 +944,11 @@
     "move": {
       "location": {
         "start": {
-          "line": 599,
+          "line": 561,
           "column": 4
         },
         "end": {
-          "line": 655,
+          "line": 604,
           "column": 5
         }
       },
@@ -1008,11 +1008,11 @@
     "__inorder": {
       "location": {
         "start": {
-          "line": 666,
+          "line": 614,
           "column": 4
         },
         "end": {
-          "line": 768,
+          "line": 703,
           "column": 5
         }
       },
@@ -1046,11 +1046,11 @@
     "__calculateLastChildFlags": {
       "location": {
         "start": {
-          "line": 779,
+          "line": 713,
           "column": 4
         },
         "end": {
-          "line": 795,
+          "line": 728,
           "column": 5
         }
       },
@@ -1077,11 +1077,11 @@
     "__setLastChildFlag": {
       "location": {
         "start": {
-          "line": 804,
+          "line": 736,
           "column": 4
         },
         "end": {
-          "line": 819,
+          "line": 749,
           "column": 5
         }
       },
@@ -1115,11 +1115,11 @@
     "__render": {
       "location": {
         "start": {
-          "line": 825,
+          "line": 754,
           "column": 4
         },
         "end": {
-          "line": 866,
+          "line": 792,
           "column": 5
         }
       },
@@ -1137,11 +1137,11 @@
     "setData": {
       "location": {
         "start": {
-          "line": 890,
+          "line": 815,
           "column": 4
         },
         "end": {
-          "line": 914,
+          "line": 837,
           "column": 5
         }
       },
@@ -1179,11 +1179,11 @@
     "getData": {
       "location": {
         "start": {
-          "line": 925,
+          "line": 847,
           "column": 4
         },
         "end": {
-          "line": 928,
+          "line": 849,
           "column": 5
         }
       },
@@ -1209,11 +1209,11 @@
     "clearData": {
       "location": {
         "start": {
-          "line": 935,
+          "line": 855,
           "column": 4
         },
         "end": {
-          "line": 939,
+          "line": 858,
           "column": 5
         }
       },
@@ -1231,11 +1231,11 @@
     "setColumnData": {
       "location": {
         "start": {
-          "line": 957,
+          "line": 875,
           "column": 4
         },
         "end": {
-          "line": 960,
+          "line": 877,
           "column": 5
         }
       },
@@ -1276,11 +1276,11 @@
     "getColumnData": {
       "location": {
         "start": {
-          "line": 976,
+          "line": 892,
           "column": 4
         },
         "end": {
-          "line": 979,
+          "line": 894,
           "column": 5
         }
       },
@@ -1322,11 +1322,11 @@
     "setState": {
       "location": {
         "start": {
-          "line": 998,
+          "line": 912,
           "column": 4
         },
         "end": {
-          "line": 1120,
+          "line": 1017,
           "column": 5
         }
       },
@@ -1371,11 +1371,11 @@
     "getNodeRowMap": {
       "location": {
         "start": {
-          "line": 1131,
+          "line": 1027,
           "column": 4
         },
         "end": {
-          "line": 1134,
+          "line": 1029,
           "column": 5
         }
       },
@@ -1401,11 +1401,11 @@
     "getRowFromNodeId": {
       "location": {
         "start": {
-          "line": 1144,
+          "line": 1039,
           "column": 4
         },
         "end": {
-          "line": 1147,
+          "line": 1041,
           "column": 5
         }
       },
@@ -1440,11 +1440,11 @@
     "getNodeFromRow": {
       "location": {
         "start": {
-          "line": 1156,
+          "line": 1050,
           "column": 4
         },
         "end": {
-          "line": 1159,
+          "line": 1052,
           "column": 5
         }
       },
@@ -1479,11 +1479,11 @@
     "_clearSelections": {
       "location": {
         "start": {
-          "line": 1168,
+          "line": 1060,
           "column": 4
         },
         "end": {
-          "line": 1178,
+          "line": 1068,
           "column": 5
         }
       },
@@ -1501,11 +1501,11 @@
     "getSelectedNodes": {
       "location": {
         "start": {
-          "line": 1187,
+          "line": 1076,
           "column": 4
         },
         "end": {
-          "line": 1197,
+          "line": 1084,
           "column": 5
         }
       },
@@ -1531,11 +1531,11 @@
     "_applyFilter": {
       "location": {
         "start": {
-          "line": 1201,
+          "line": 1087,
           "column": 4
         },
         "end": {
-          "line": 1204,
+          "line": 1089,
           "column": 5
         }
       },
@@ -1549,11 +1549,11 @@
     "isNodeEditable": {
       "location": {
         "start": {
-          "line": 1213,
+          "line": 1098,
           "column": 4
         },
         "end": {
-          "line": 1216,
+          "line": 1102,
           "column": 5
         }
       },
@@ -1673,6 +1673,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1697,6 +1698,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -1791,28 +1793,26 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 1219,
-        "column": 13
+        "line": 1105,
+        "column": 2
       },
       "end": {
-        "line": 1223,
+        "line": 1113,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "defer": {
     "location": {
       "start": {
-        "line": 1225,
-        "column": 10
+        "line": 1115,
+        "column": 2
       },
       "end": {
-        "line": 1230,
+        "line": 1119,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {},
   "descendants": []

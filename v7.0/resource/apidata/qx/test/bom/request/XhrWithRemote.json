@@ -17,7 +17,7 @@
         "column": 0
       },
       "end": {
-        "line": 855,
+        "line": 901,
         "column": 3
       }
     },
@@ -40,26 +40,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 36,
-        "column": 14
+        "line": 37,
+        "column": 2
       },
       "end": {
         "line": 39,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "members": {
     "req": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 42,
           "column": 4
         },
         "end": {
-          "line": 44,
-          "column": 14
+          "line": 42,
+          "column": 13
         }
       },
       "type": "variable",
@@ -68,11 +67,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 46,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 48,
+          "line": 46,
           "column": 5
         }
       },
@@ -82,11 +81,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 50,
+          "line": 48,
           "column": 4
         },
         "end": {
-          "line": 52,
+          "line": 50,
           "column": 5
         }
       },
@@ -96,11 +95,11 @@
     "test: GET with event attribute handler": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 56,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 72,
           "column": 5
         }
       },
@@ -111,11 +110,11 @@
     "test: GET with event": {
       "location": {
         "start": {
-          "line": 76,
+          "line": 74,
           "column": 4
         },
         "end": {
-          "line": 93,
+          "line": 91,
           "column": 5
         }
       },
@@ -125,11 +124,11 @@
     "test: GET XML": {
       "location": {
         "start": {
-          "line": 95,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 112,
+          "line": 113,
           "column": 5
         }
       },
@@ -139,11 +138,11 @@
     "test: handle arbitrary XML": {
       "location": {
         "start": {
-          "line": 114,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 134,
+          "line": 138,
           "column": 5
         }
       },
@@ -153,11 +152,11 @@
     "test: handle invalid XML": {
       "location": {
         "start": {
-          "line": 136,
+          "line": 140,
           "column": 4
         },
         "end": {
-          "line": 153,
+          "line": 157,
           "column": 5
         }
       },
@@ -167,11 +166,11 @@
     "test: POST": {
       "location": {
         "start": {
-          "line": 155,
+          "line": 159,
           "column": 4
         },
         "end": {
-          "line": 174,
+          "line": 178,
           "column": 5
         }
       },
@@ -181,11 +180,11 @@
     "test: have readyState UNSENT": {
       "location": {
         "start": {
-          "line": 176,
+          "line": 180,
           "column": 4
         },
         "end": {
-          "line": 179,
+          "line": 183,
           "column": 5
         }
       },
@@ -195,11 +194,11 @@
     "test: have readyState OPENED": {
       "location": {
         "start": {
-          "line": 181,
+          "line": 185,
           "column": 4
         },
         "end": {
-          "line": 189,
+          "line": 193,
           "column": 5
         }
       },
@@ -209,11 +208,11 @@
     "test: abort pending request": {
       "location": {
         "start": {
-          "line": 191,
+          "line": 195,
           "column": 4
         },
         "end": {
-          "line": 201,
+          "line": 205,
           "column": 5
         }
       },
@@ -223,11 +222,11 @@
     "test: have status 200 when modified": {
       "location": {
         "start": {
-          "line": 203,
+          "line": 207,
           "column": 4
         },
         "end": {
-          "line": 223,
+          "line": 227,
           "column": 5
         }
       },
@@ -237,11 +236,11 @@
     "test: validate freshness": {
       "location": {
         "start": {
-          "line": 225,
+          "line": 229,
           "column": 4
         },
         "end": {
-          "line": 253,
+          "line": 261,
           "column": 5
         }
       },
@@ -251,11 +250,11 @@
     "test: open throws error with insecure method": {
       "location": {
         "start": {
-          "line": 297,
+          "line": 305,
           "column": 4
         },
         "end": {
-          "line": 309,
+          "line": 317,
           "column": 5
         }
       },
@@ -266,11 +265,11 @@
     "test: overrideMimeType content type unchanged": {
       "location": {
         "start": {
-          "line": 311,
+          "line": 319,
           "column": 4
         },
         "end": {
-          "line": 331,
+          "line": 346,
           "column": 5
         }
       },
@@ -280,11 +279,11 @@
     "test: overrideMimeType content type override": {
       "location": {
         "start": {
-          "line": 334,
+          "line": 348,
           "column": 4
         },
         "end": {
-          "line": 356,
+          "line": 373,
           "column": 5
         }
       },
@@ -294,11 +293,11 @@
     "test: progress to readyState DONE": {
       "location": {
         "start": {
-          "line": 360,
+          "line": 377,
           "column": 4
         },
         "end": {
-          "line": 382,
+          "line": 399,
           "column": 5
         }
       },
@@ -309,11 +308,11 @@
     "test: progress to readyState DONE when sync": {
       "location": {
         "start": {
-          "line": 384,
+          "line": 401,
           "column": 4
         },
         "end": {
-          "line": 399,
+          "line": 416,
           "column": 5
         }
       },
@@ -323,11 +322,11 @@
     "test: progress to readyState DONE when from cache": {
       "location": {
         "start": {
-          "line": 401,
+          "line": 418,
           "column": 4
         },
         "end": {
-          "line": 437,
+          "line": 453,
           "column": 5
         }
       },
@@ -337,11 +336,11 @@
     "test: have status 304 when cache is fresh": {
       "location": {
         "start": {
-          "line": 439,
+          "line": 455,
           "column": 4
         },
         "end": {
-          "line": 483,
+          "line": 499,
           "column": 5
         }
       },
@@ -351,11 +350,11 @@
     "test: allow many requests with same object": {
       "location": {
         "start": {
-          "line": 485,
+          "line": 501,
           "column": 4
         },
         "end": {
-          "line": 511,
+          "line": 527,
           "column": 5
         }
       },
@@ -365,11 +364,11 @@
     "test: call onreadystatechange for OPEN": {
       "location": {
         "start": {
-          "line": 517,
+          "line": 533,
           "column": 4
         },
         "end": {
-          "line": 543,
+          "line": 559,
           "column": 5
         }
       },
@@ -380,11 +379,11 @@
     "test: not call onreadystatechange when aborting OPENED": {
       "location": {
         "start": {
-          "line": 545,
+          "line": 561,
           "column": 4
         },
         "end": {
-          "line": 558,
+          "line": 578,
           "column": 5
         }
       },
@@ -394,11 +393,11 @@
     "test: call onreadystatechange when aborting LOADING": {
       "location": {
         "start": {
-          "line": 560,
+          "line": 580,
           "column": 4
         },
         "end": {
-          "line": 583,
+          "line": 603,
           "column": 5
         }
       },
@@ -408,11 +407,11 @@
     "test: call onloadend when aborting LOADING": {
       "location": {
         "start": {
-          "line": 585,
+          "line": 605,
           "column": 4
         },
         "end": {
-          "line": 606,
+          "line": 626,
           "column": 5
         }
       },
@@ -422,11 +421,11 @@
     "test: call onerror on network error": {
       "location": {
         "start": {
-          "line": 612,
+          "line": 632,
           "column": 4
         },
         "end": {
-          "line": 631,
+          "line": 655,
           "column": 5
         }
       },
@@ -437,11 +436,11 @@
     "test: call onerror on file error": {
       "location": {
         "start": {
-          "line": 633,
+          "line": 657,
           "column": 4
         },
         "end": {
-          "line": 649,
+          "line": 673,
           "column": 5
         }
       },
@@ -451,11 +450,11 @@
     "test: throw error on network error when sync": {
       "location": {
         "start": {
-          "line": 651,
+          "line": 675,
           "column": 4
         },
         "end": {
-          "line": 664,
+          "line": 688,
           "column": 5
         }
       },
@@ -465,11 +464,11 @@
     "test: not call ontimeout when DONE and sync": {
       "location": {
         "start": {
-          "line": 670,
+          "line": 694,
           "column": 4
         },
         "end": {
-          "line": 684,
+          "line": 712,
           "column": 5
         }
       },
@@ -480,11 +479,11 @@
     "test: timeout triggers timeout error": {
       "location": {
         "start": {
-          "line": 686,
+          "line": 714,
           "column": 4
         },
         "end": {
-          "line": 715,
+          "line": 747,
           "column": 5
         }
       },
@@ -494,11 +493,11 @@
     "test: timeout not call onabort": {
       "location": {
         "start": {
-          "line": 717,
+          "line": 749,
           "column": 4
         },
         "end": {
-          "line": 737,
+          "line": 769,
           "column": 5
         }
       },
@@ -508,11 +507,11 @@
     "test: call onloadend on network error": {
       "location": {
         "start": {
-          "line": 743,
+          "line": 775,
           "column": 4
         },
         "end": {
-          "line": 760,
+          "line": 796,
           "column": 5
         }
       },
@@ -523,11 +522,11 @@
     "test: call handler in order when request successful": {
       "location": {
         "start": {
-          "line": 766,
+          "line": 802,
           "column": 4
         },
         "end": {
-          "line": 786,
+          "line": 823,
           "column": 5
         }
       },
@@ -538,11 +537,11 @@
     "test: call handler in order when request failed": {
       "location": {
         "start": {
-          "line": 788,
+          "line": 825,
           "column": 4
         },
         "end": {
-          "line": 812,
+          "line": 854,
           "column": 5
         }
       },
@@ -552,11 +551,11 @@
     "test: dispose hard-working": {
       "location": {
         "start": {
-          "line": 818,
+          "line": 860,
           "column": 4
         },
         "end": {
-          "line": 835,
+          "line": 877,
           "column": 5
         }
       },
@@ -567,11 +566,11 @@
     "noCache": {
       "location": {
         "start": {
-          "line": 837,
+          "line": 879,
           "column": 4
         },
         "end": {
-          "line": 839,
+          "line": 881,
           "column": 5
         }
       },
@@ -581,11 +580,11 @@
     "hasNoIe": {
       "location": {
         "start": {
-          "line": 841,
+          "line": 883,
           "column": 4
         },
         "end": {
-          "line": 844,
+          "line": 888,
           "column": 5
         }
       },
@@ -595,11 +594,11 @@
     "hasNoIe9": {
       "location": {
         "start": {
-          "line": 846,
+          "line": 890,
           "column": 4
         },
         "end": {
-          "line": 849,
+          "line": 895,
           "column": 5
         }
       },
@@ -609,11 +608,11 @@
     "hasFile": {
       "location": {
         "start": {
-          "line": 851,
+          "line": 897,
           "column": 4
         },
         "end": {
-          "line": 853,
+          "line": 899,
           "column": 5
         }
       },
@@ -1798,6 +1797,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1822,6 +1822,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

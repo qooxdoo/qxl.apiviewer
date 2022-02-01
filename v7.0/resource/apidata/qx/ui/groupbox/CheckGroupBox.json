@@ -19,7 +19,7 @@
         "column": 0
       },
       "end": {
-        "line": 178,
+        "line": 161,
         "column": 3
       }
     },
@@ -46,11 +46,11 @@
     "appearance": {
       "location": {
         "start": {
-          "line": 37,
+          "line": 39,
           "column": 4
         },
         "end": {
-          "line": 41,
+          "line": 42,
           "column": 5
         }
       },
@@ -241,7 +241,7 @@
         },
         "end": {
           "line": 47,
-          "column": 40
+          "column": 37
         }
       },
       "jsdoc": {
@@ -263,7 +263,7 @@
         },
         "end": {
           "line": 50,
-          "column": 37
+          "column": 34
         }
       },
       "jsdoc": {
@@ -362,11 +362,11 @@
     "_createChildControlImpl": {
       "location": {
         "start": {
-          "line": 62,
+          "line": 61,
           "column": 4
         },
         "end": {
-          "line": 80,
+          "line": 77,
           "column": 5
         }
       },
@@ -382,11 +382,11 @@
     "_applyEnabled": {
       "location": {
         "start": {
-          "line": 84,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 88,
+          "line": 84,
           "column": 5
         }
       },
@@ -401,11 +401,11 @@
     "_onExecute": {
       "location": {
         "start": {
-          "line": 105,
+          "line": 97,
           "column": 4
         },
         "end": {
-          "line": 107,
+          "line": 99,
           "column": 5
         }
       },
@@ -432,11 +432,11 @@
     "_onRadioChangeValue": {
       "location": {
         "start": {
-          "line": 115,
+          "line": 106,
           "column": 4
         },
         "end": {
-          "line": 123,
+          "line": 113,
           "column": 5
         }
       },
@@ -463,11 +463,11 @@
     "execute": {
       "location": {
         "start": {
-          "line": 134,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 136,
+          "line": 124,
           "column": 5
         }
       },
@@ -482,11 +482,11 @@
     "setCommand": {
       "location": {
         "start": {
-          "line": 140,
+          "line": 127,
           "column": 4
         },
         "end": {
-          "line": 142,
+          "line": 129,
           "column": 5
         }
       },
@@ -501,11 +501,11 @@
     "getCommand": {
       "location": {
         "start": {
-          "line": 146,
+          "line": 132,
           "column": 4
         },
         "end": {
-          "line": 148,
+          "line": 134,
           "column": 5
         }
       },
@@ -520,11 +520,11 @@
     "getValue": {
       "location": {
         "start": {
-          "line": 156,
+          "line": 141,
           "column": 4
         },
         "end": {
-          "line": 158,
+          "line": 143,
           "column": 5
         }
       },
@@ -555,11 +555,11 @@
     "setValue": {
       "location": {
         "start": {
-          "line": 166,
+          "line": 150,
           "column": 4
         },
         "end": {
-          "line": 168,
+          "line": 152,
           "column": 5
         }
       },
@@ -591,11 +591,11 @@
     "resetValue": {
       "location": {
         "start": {
-          "line": 174,
+          "line": 157,
           "column": 4
         },
         "end": {
-          "line": 176,
+          "line": 159,
           "column": 5
         }
       },
@@ -1756,38 +1756,6 @@
       "overriddenFrom": "qx.ui.form.MForm",
       "jsdoc": {}
     },
-    "__onChangeLocale": {
-      "type": "function",
-      "name": "__onChangeLocale",
-      "abstract": false,
-      "mixin": true,
-      "inherited": true,
-      "access": "private",
-      "overriddenFrom": "qx.ui.form.MForm",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Locale change event handler</p>"
-          }
-        ],
-        "@signature": [
-          {
-            "name": "@signature",
-            "body": "function(e)"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {Event} the change event",
-            "paramName": "e",
-            "description": " the change event",
-            "type": "Event"
-          }
-        ]
-      }
-    },
     "isValid": {
       "type": "function",
       "name": "isValid",
@@ -1998,6 +1966,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -2022,6 +1991,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

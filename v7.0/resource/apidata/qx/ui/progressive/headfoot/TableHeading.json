@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 172,
+        "line": 160,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 34,
-        "column": 14
+        "line": 33,
+        "column": 2
       },
       "end": {
-        "line": 85,
+        "line": 82,
         "column": 3
       }
     },
@@ -67,11 +67,11 @@
     "appearance": {
       "location": {
         "start": {
-          "line": 89,
+          "line": 85,
           "column": 4
         },
         "end": {
-          "line": 93,
+          "line": 88,
           "column": 5
         }
       },
@@ -90,12 +90,12 @@
     "__columnWidths": {
       "location": {
         "start": {
-          "line": 99,
+          "line": 92,
           "column": 4
         },
         "end": {
-          "line": 99,
-          "column": 29
+          "line": 92,
+          "column": 24
         }
       },
       "type": "variable",
@@ -104,12 +104,12 @@
     "__bCalculateWidths": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 100,
-          "column": 29
+          "line": 93,
+          "column": 28
         }
       },
       "type": "variable",
@@ -118,12 +118,12 @@
     "__labels": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 94,
           "column": 4
         },
         "end": {
-          "line": 101,
-          "column": 29
+          "line": 94,
+          "column": 18
         }
       },
       "type": "variable",
@@ -132,12 +132,12 @@
     "__layout": {
       "location": {
         "start": {
-          "line": 102,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 102,
-          "column": 29
+          "line": 95,
+          "column": 18
         }
       },
       "type": "variable",
@@ -146,11 +146,11 @@
     "join": {
       "location": {
         "start": {
-          "line": 105,
+          "line": 98,
           "column": 4
         },
         "end": {
-          "line": 109,
+          "line": 101,
           "column": 5
         }
       },
@@ -165,11 +165,11 @@
     "getLayoutChildren": {
       "location": {
         "start": {
-          "line": 116,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 126,
+          "line": 114,
           "column": 5
         }
       },
@@ -199,11 +199,11 @@
     "_resizeColumns": {
       "location": {
         "start": {
-          "line": 137,
+          "line": 124,
           "column": 4
         },
         "end": {
-          "line": 162,
+          "line": 152,
           "column": 5
         }
       },
@@ -315,6 +315,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -339,6 +340,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -4023,15 +4025,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 165,
-        "column": 13
+        "line": 155,
+        "column": 2
       },
       "end": {
-        "line": 171,
+        "line": 159,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {},
   "descendants": []

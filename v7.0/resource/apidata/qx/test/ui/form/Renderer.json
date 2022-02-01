@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 128,
+        "line": 134,
         "column": 3
       }
     },
@@ -24,12 +24,12 @@
     "__form": {
       "location": {
         "start": {
-          "line": 24,
+          "line": 22,
           "column": 4
         },
         "end": {
-          "line": 24,
-          "column": 17
+          "line": 22,
+          "column": 16
         }
       },
       "type": "variable",
@@ -38,12 +38,12 @@
     "__b": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 25,
-          "column": 14
+          "line": 23,
+          "column": 13
         }
       },
       "type": "variable",
@@ -52,11 +52,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 32,
+          "line": 29,
           "column": 5
         }
       },
@@ -70,11 +70,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 34,
+          "line": 31,
           "column": 4
         },
         "end": {
-          "line": 37,
+          "line": 34,
           "column": 5
         }
       },
@@ -88,11 +88,11 @@
     "testDisposeSingle": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 36,
           "column": 4
         },
         "end": {
-          "line": 48,
+          "line": 44,
           "column": 5
         }
       },
@@ -102,11 +102,11 @@
     "testDisposeDouble": {
       "location": {
         "start": {
-          "line": 51,
+          "line": 46,
           "column": 4
         },
         "end": {
-          "line": 59,
+          "line": 54,
           "column": 5
         }
       },
@@ -116,11 +116,11 @@
     "__testExclude": {
       "location": {
         "start": {
-          "line": 62,
+          "line": 56,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 67,
           "column": 5
         }
       },
@@ -130,11 +130,11 @@
     "testExcludeSingle": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 69,
           "column": 4
         },
         "end": {
-          "line": 79,
+          "line": 71,
           "column": 5
         }
       },
@@ -144,11 +144,11 @@
     "testExcludeDouble": {
       "location": {
         "start": {
-          "line": 82,
+          "line": 73,
           "column": 4
         },
         "end": {
-          "line": 84,
+          "line": 75,
           "column": 5
         }
       },
@@ -158,11 +158,11 @@
     "__testBindings": {
       "location": {
         "start": {
-          "line": 87,
+          "line": 77,
           "column": 4
         },
         "end": {
-          "line": 116,
+          "line": 124,
           "column": 5
         }
       },
@@ -172,11 +172,11 @@
     "testBindingsSingle": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 126,
           "column": 4
         },
         "end": {
-          "line": 121,
+          "line": 128,
           "column": 5
         }
       },
@@ -186,11 +186,11 @@
     "testBindingsDouble": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 130,
           "column": 4
         },
         "end": {
-          "line": 126,
+          "line": 132,
           "column": 5
         }
       },
@@ -285,6 +285,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -309,6 +310,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

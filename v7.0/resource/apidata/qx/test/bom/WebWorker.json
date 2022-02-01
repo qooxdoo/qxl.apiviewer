@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 30,
+        "line": 28,
         "column": 0
       },
       "end": {
-        "line": 135,
+        "line": 147,
         "column": 3
       }
     },
@@ -37,11 +37,11 @@
     "_url": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 36,
+          "line": 32,
           "column": 14
         }
       },
@@ -51,11 +51,11 @@
     "_worker": {
       "location": {
         "start": {
-          "line": 37,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 37,
+          "line": 33,
           "column": 17
         }
       },
@@ -65,11 +65,11 @@
     "_send": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 34,
           "column": 4
         },
         "end": {
-          "line": 38,
+          "line": 34,
           "column": 15
         }
       },
@@ -79,11 +79,11 @@
     "_isBuggyGecko": {
       "location": {
         "start": {
-          "line": 48,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 53,
+          "line": 50,
           "column": 5
         }
       },
@@ -101,21 +101,7 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 55,
-          "column": 4
-        },
-        "end": {
-          "line": 71,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "tearDown": {
-      "location": {
-        "start": {
-          "line": 73,
+          "line": 52,
           "column": 4
         },
         "end": {
@@ -126,14 +112,28 @@
       "type": "function",
       "access": "public"
     },
-    "testConstructor": {
+    "tearDown": {
       "location": {
         "start": {
           "line": 80,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 85,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testConstructor": {
+      "location": {
+        "start": {
+          "line": 87,
+          "column": 4
+        },
+        "end": {
+          "line": 89,
           "column": 5
         }
       },
@@ -143,11 +143,11 @@
     "testMessageEvent": {
       "location": {
         "start": {
-          "line": 84,
+          "line": 91,
           "column": 4
         },
         "end": {
-          "line": 88,
+          "line": 95,
           "column": 5
         }
       },
@@ -157,35 +157,7 @@
     "testErrorEvent": {
       "location": {
         "start": {
-          "line": 90,
-          "column": 4
-        },
-        "end": {
           "line": 97,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testPostMessageWithNumber": {
-      "location": {
-        "start": {
-          "line": 99,
-          "column": 4
-        },
-        "end": {
-          "line": 103,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testPostMessageWithBoolean": {
-      "location": {
-        "start": {
-          "line": 105,
           "column": 4
         },
         "end": {
@@ -196,7 +168,7 @@
       "type": "function",
       "access": "public"
     },
-    "testPostMessageWithNull": {
+    "testPostMessageWithNumber": {
       "location": {
         "start": {
           "line": 111,
@@ -210,14 +182,42 @@
       "type": "function",
       "access": "public"
     },
-    "testPostMessageWithObject": {
+    "testPostMessageWithBoolean": {
       "location": {
         "start": {
           "line": 117,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 121,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testPostMessageWithNull": {
+      "location": {
+        "start": {
+          "line": 123,
+          "column": 4
+        },
+        "end": {
+          "line": 127,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testPostMessageWithObject": {
+      "location": {
+        "start": {
+          "line": 129,
+          "column": 4
+        },
+        "end": {
+          "line": 136,
           "column": 5
         }
       },
@@ -227,11 +227,11 @@
     "testPostMessageWithArray": {
       "location": {
         "start": {
-          "line": 126,
+          "line": 138,
           "column": 4
         },
         "end": {
-          "line": 133,
+          "line": 145,
           "column": 5
         }
       },
@@ -326,6 +326,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -350,6 +351,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 327,
+        "line": 363,
         "column": 3
       }
     },
@@ -26,12 +26,12 @@
     "__cmd": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 26,
-          "column": 16
+          "line": 24,
+          "column": 15
         }
       },
       "type": "variable",
@@ -40,12 +40,12 @@
     "__button": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 27,
-          "column": 19
+          "line": 25,
+          "column": 18
         }
       },
       "type": "variable",
@@ -54,12 +54,12 @@
     "__toolbarButton": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 26,
           "column": 4
         },
         "end": {
-          "line": 28,
-          "column": 26
+          "line": 26,
+          "column": 25
         }
       },
       "type": "variable",
@@ -68,12 +68,12 @@
     "__menuButton": {
       "location": {
         "start": {
-          "line": 29,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 29,
-          "column": 23
+          "line": 27,
+          "column": 22
         }
       },
       "type": "variable",
@@ -82,11 +82,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 45,
+          "line": 42,
           "column": 5
         }
       },
@@ -96,11 +96,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 48,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 56,
+          "line": 51,
           "column": 5
         }
       },
@@ -110,11 +110,11 @@
     "testLabel": {
       "location": {
         "start": {
-          "line": 59,
+          "line": 53,
           "column": 4
         },
         "end": {
-          "line": 84,
+          "line": 77,
           "column": 5
         }
       },
@@ -124,11 +124,11 @@
     "testEnabled": {
       "location": {
         "start": {
-          "line": 87,
+          "line": 79,
           "column": 4
         },
         "end": {
-          "line": 104,
+          "line": 111,
           "column": 5
         }
       },
@@ -138,11 +138,11 @@
     "testIcon": {
       "location": {
         "start": {
-          "line": 107,
+          "line": 113,
           "column": 4
         },
         "end": {
-          "line": 132,
+          "line": 137,
           "column": 5
         }
       },
@@ -152,11 +152,11 @@
     "testToolTipText": {
       "location": {
         "start": {
-          "line": 135,
+          "line": 139,
           "column": 4
         },
         "end": {
-          "line": 160,
+          "line": 207,
           "column": 5
         }
       },
@@ -166,11 +166,11 @@
     "testRemoveCommand": {
       "location": {
         "start": {
-          "line": 163,
+          "line": 209,
           "column": 4
         },
         "end": {
-          "line": 176,
+          "line": 221,
           "column": 5
         }
       },
@@ -180,11 +180,11 @@
     "testValue": {
       "location": {
         "start": {
-          "line": 179,
+          "line": 223,
           "column": 4
         },
         "end": {
-          "line": 205,
+          "line": 248,
           "column": 5
         }
       },
@@ -194,11 +194,11 @@
     "testMenu": {
       "location": {
         "start": {
-          "line": 208,
+          "line": 250,
           "column": 4
         },
         "end": {
-          "line": 227,
+          "line": 268,
           "column": 5
         }
       },
@@ -208,11 +208,11 @@
     "testInit": {
       "location": {
         "start": {
-          "line": 230,
+          "line": 270,
           "column": 4
         },
         "end": {
-          "line": 250,
+          "line": 289,
           "column": 5
         }
       },
@@ -222,11 +222,11 @@
     "testIconAsToolTipText": {
       "location": {
         "start": {
-          "line": 252,
+          "line": 291,
           "column": 4
         },
         "end": {
-          "line": 264,
+          "line": 303,
           "column": 5
         }
       },
@@ -236,11 +236,11 @@
     "testDestructExecutable": {
       "location": {
         "start": {
-          "line": 267,
+          "line": 305,
           "column": 4
         },
         "end": {
-          "line": 283,
+          "line": 321,
           "column": 5
         }
       },
@@ -250,11 +250,11 @@
     "testFireExecuteCount": {
       "location": {
         "start": {
-          "line": 285,
+          "line": 323,
           "column": 4
         },
         "end": {
-          "line": 310,
+          "line": 346,
           "column": 5
         }
       },
@@ -264,11 +264,11 @@
     "testGetShortcut": {
       "location": {
         "start": {
-          "line": 312,
+          "line": 348,
           "column": 4
         },
         "end": {
-          "line": 317,
+          "line": 353,
           "column": 5
         }
       },
@@ -278,11 +278,11 @@
     "testShortCutToString": {
       "location": {
         "start": {
-          "line": 319,
+          "line": 355,
           "column": 4
         },
         "end": {
-          "line": 325,
+          "line": 361,
           "column": 5
         }
       },
@@ -969,6 +969,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -993,6 +994,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

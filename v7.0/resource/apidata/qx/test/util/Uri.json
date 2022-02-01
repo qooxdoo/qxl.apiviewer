@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 169,
+        "line": 165,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 27,
+          "line": 25,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "test: appendParamsToUrl() with string": {
       "location": {
         "start": {
-          "line": 29,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 36,
+          "line": 34,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "testToParameter": {
       "location": {
         "start": {
-          "line": 39,
+          "line": 36,
           "column": 4
         },
         "end": {
-          "line": 44,
+          "line": 40,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "testToParameterUmlauts": {
       "location": {
         "start": {
-          "line": 46,
+          "line": 42,
           "column": 4
         },
         "end": {
-          "line": 51,
+          "line": 46,
           "column": 5
         }
       },
@@ -80,7 +80,21 @@
     "testToParameterSpaces": {
       "location": {
         "start": {
-          "line": 53,
+          "line": 48,
+          "column": 4
+        },
+        "end": {
+          "line": 52,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testToParameterSpacesPost": {
+      "location": {
+        "start": {
+          "line": 54,
           "column": 4
         },
         "end": {
@@ -91,28 +105,14 @@
       "type": "function",
       "access": "public"
     },
-    "testToParameterSpacesPost": {
+    "testToParameterArray": {
       "location": {
         "start": {
           "line": 60,
           "column": 4
         },
         "end": {
-          "line": 65,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testToParameterArray": {
-      "location": {
-        "start": {
-          "line": 67,
-          "column": 4
-        },
-        "end": {
-          "line": 71,
+          "line": 64,
           "column": 5
         }
       },
@@ -122,11 +122,11 @@
     "test: appendParamsToUrl() with string when existing query": {
       "location": {
         "start": {
-          "line": 74,
+          "line": 66,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 73,
           "column": 5
         }
       },
@@ -136,7 +136,21 @@
     "test: appendParamsToUrl() with map": {
       "location": {
         "start": {
+          "line": 75,
+          "column": 4
+        },
+        "end": {
           "line": 83,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "test: appendParamsToUrl() with undefined": {
+      "location": {
+        "start": {
+          "line": 85,
           "column": 4
         },
         "end": {
@@ -147,7 +161,7 @@
       "type": "function",
       "access": "public"
     },
-    "test: appendParamsToUrl() with undefined": {
+    "test: appendParamsToUrl() with empty map": {
       "location": {
         "start": {
           "line": 93,
@@ -161,28 +175,14 @@
       "type": "function",
       "access": "public"
     },
-    "test: appendParamsToUrl() with empty map": {
+    "test: parseUri()": {
       "location": {
         "start": {
           "line": 101,
           "column": 4
         },
         "end": {
-          "line": 107,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "test: parseUri()": {
-      "location": {
-        "start": {
-          "line": 109,
-          "column": 4
-        },
-        "end": {
-          "line": 120,
+          "line": 112,
           "column": 5
         }
       },
@@ -192,12 +192,12 @@
     "test: parseUri() with ipv6 loopback address": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 114,
           "column": 4
         },
         "end": {
-          "line": 133,
-          "column": 7
+          "line": 125,
+          "column": 5
         }
       },
       "type": "function",
@@ -206,11 +206,11 @@
     "test: parseUri() with ipv6 address": {
       "location": {
         "start": {
-          "line": 135,
-          "column": 6
+          "line": 127,
+          "column": 4
         },
         "end": {
-          "line": 146,
+          "line": 143,
           "column": 5
         }
       },
@@ -220,11 +220,11 @@
     "test: parseUri() with at-sign in query": {
       "location": {
         "start": {
-          "line": 148,
+          "line": 145,
           "column": 4
         },
         "end": {
-          "line": 156,
+          "line": 153,
           "column": 5
         }
       },
@@ -234,11 +234,11 @@
     "test: parseUri() with user name in domain": {
       "location": {
         "start": {
-          "line": 158,
+          "line": 155,
           "column": 4
         },
         "end": {
-          "line": 166,
+          "line": 163,
           "column": 5
         }
       },
@@ -333,6 +333,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -357,6 +358,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

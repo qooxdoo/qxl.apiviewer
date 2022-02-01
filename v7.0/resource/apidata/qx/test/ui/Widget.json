@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 62,
+        "line": 58,
         "column": 3
       }
     },
@@ -24,12 +24,12 @@
     "__widget": {
       "location": {
         "start": {
-          "line": 24,
+          "line": 22,
           "column": 4
         },
         "end": {
-          "line": 24,
-          "column": 19
+          "line": 22,
+          "column": 18
         }
       },
       "type": "variable",
@@ -38,11 +38,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 29,
+          "line": 26,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 34,
+          "line": 30,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "testAddState": {
       "location": {
         "start": {
-          "line": 37,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 40,
+          "line": 35,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "testRemoveState": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 48,
+          "line": 42,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testReplaceState": {
       "location": {
         "start": {
-          "line": 50,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 56,
+          "line": 50,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "testWidgetThatContainsItself": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 52,
           "column": 4
         },
         "end": {
-          "line": 60,
+          "line": 56,
           "column": 5
         }
       },
@@ -207,6 +207,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -231,6 +232,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -16,7 +16,7 @@
         "column": 0
       },
       "end": {
-        "line": 127,
+        "line": 144,
         "column": 3
       }
     },
@@ -48,11 +48,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 33,
+          "line": 30,
           "column": 4
         },
         "end": {
-          "line": 36,
+          "line": 33,
           "column": 5
         }
       },
@@ -62,11 +62,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 40,
+          "line": 37,
           "column": 5
         }
       },
@@ -76,11 +76,11 @@
     "test: invoke action and handle response": {
       "location": {
         "start": {
-          "line": 42,
+          "line": 39,
           "column": 4
         },
         "end": {
-          "line": 56,
+          "line": 57,
           "column": 5
         }
       },
@@ -90,11 +90,11 @@
     "test: invoke action and handle failure": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 71,
+          "line": 76,
           "column": 5
         }
       },
@@ -104,11 +104,11 @@
     "test: poll action": {
       "location": {
         "start": {
-          "line": 73,
+          "line": 78,
           "column": 4
         },
         "end": {
-          "line": 101,
+          "line": 113,
           "column": 5
         }
       },
@@ -118,11 +118,11 @@
     "test: long poll": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 142,
           "column": 5
         }
       },
@@ -715,6 +715,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -739,6 +740,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 436,
+        "line": 456,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 63,
-        "column": 14
+        "line": 61,
+        "column": 2
       },
       "end": {
-        "line": 130,
+        "line": 159,
         "column": 3
       }
     },
@@ -66,11 +66,11 @@
     "appearance": {
       "location": {
         "start": {
-          "line": 136,
+          "line": 163,
           "column": 4
         },
         "end": {
-          "line": 140,
+          "line": 166,
           "column": 5
         }
       },
@@ -88,11 +88,11 @@
     "nativeContextMenu": {
       "location": {
         "start": {
-          "line": 149,
+          "line": 174,
           "column": 4
         },
         "end": {
-          "line": 153,
+          "line": 177,
           "column": 5
         }
       },
@@ -117,11 +117,11 @@
     "nativeHelp": {
       "location": {
         "start": {
-          "line": 164,
+          "line": 187,
           "column": 4
         },
         "end": {
-          "line": 169,
+          "line": 191,
           "column": 5
         }
       },
@@ -143,11 +143,11 @@
     "scrollbar": {
       "location": {
         "start": {
-          "line": 174,
+          "line": 196,
           "column": 4
         },
         "end": {
-          "line": 180,
+          "line": 201,
           "column": 5
         }
       },
@@ -176,12 +176,12 @@
     "__source": {
       "location": {
         "start": {
-          "line": 194,
+          "line": 211,
           "column": 4
         },
         "end": {
-          "line": 194,
-          "column": 19
+          "line": 211,
+          "column": 18
         }
       },
       "type": "variable",
@@ -190,12 +190,12 @@
     "__blockerElement": {
       "location": {
         "start": {
-          "line": 195,
+          "line": 212,
           "column": 4
         },
         "end": {
-          "line": 195,
-          "column": 27
+          "line": 212,
+          "column": 26
         }
       },
       "type": "variable",
@@ -204,11 +204,11 @@
     "renderLayout": {
       "location": {
         "start": {
-          "line": 199,
+          "line": 215,
           "column": 4
         },
         "end": {
-          "line": 212,
+          "line": 227,
           "column": 5
         }
       },
@@ -224,11 +224,11 @@
     "_createContentElement": {
       "location": {
         "start": {
-          "line": 216,
+          "line": 230,
           "column": 4
         },
         "end": {
-          "line": 221,
+          "line": 234,
           "column": 5
         }
       },
@@ -243,11 +243,11 @@
     "_getIframeElement": {
       "location": {
         "start": {
-          "line": 225,
+          "line": 237,
           "column": 4
         },
         "end": {
-          "line": 227,
+          "line": 239,
           "column": 5
         }
       },
@@ -262,11 +262,11 @@
     "_createBlockerElement": {
       "location": {
         "start": {
-          "line": 235,
+          "line": 246,
           "column": 4
         },
         "end": {
-          "line": 244,
+          "line": 254,
           "column": 5
         }
       },
@@ -292,11 +292,11 @@
     "_onIframeLoad": {
       "location": {
         "start": {
-          "line": 252,
+          "line": 261,
           "column": 4
         },
         "end": {
-          "line": 258,
+          "line": 266,
           "column": 5
         }
       },
@@ -323,11 +323,11 @@
     "block": {
       "location": {
         "start": {
-          "line": 275,
+          "line": 280,
           "column": 4
         },
         "end": {
-          "line": 277,
+          "line": 282,
           "column": 5
         }
       },
@@ -345,11 +345,11 @@
     "release": {
       "location": {
         "start": {
-          "line": 284,
+          "line": 288,
           "column": 4
         },
         "end": {
-          "line": 286,
+          "line": 290,
           "column": 5
         }
       },
@@ -367,11 +367,11 @@
     "_applyNativeContextMenu": {
       "location": {
         "start": {
-          "line": 296,
+          "line": 299,
           "column": 4
         },
         "end": {
-          "line": 329,
+          "line": 335,
           "column": 5
         }
       },
@@ -386,11 +386,11 @@
     "_onNativeContextMenu": {
       "location": {
         "start": {
-          "line": 337,
+          "line": 342,
           "column": 4
         },
         "end": {
-          "line": 339,
+          "line": 344,
           "column": 5
         }
       },
@@ -417,11 +417,11 @@
     "_applyNativeHelp": {
       "location": {
         "start": {
-          "line": 343,
+          "line": 347,
           "column": 4
         },
         "end": {
-          "line": 368,
+          "line": 374,
           "column": 5
         }
       },
@@ -435,11 +435,11 @@
     "_syncSourceAfterDOMMove": {
       "location": {
         "start": {
-          "line": 377,
+          "line": 382,
           "column": 4
         },
         "end": {
-          "line": 399,
+          "line": 404,
           "column": 5
         }
       },
@@ -457,11 +457,11 @@
     "_applyScrollbar": {
       "location": {
         "start": {
-          "line": 403,
+          "line": 407,
           "column": 4
         },
         "end": {
-          "line": 405,
+          "line": 409,
           "column": 5
         }
       },
@@ -475,11 +475,11 @@
     "setLayoutParent": {
       "location": {
         "start": {
-          "line": 409,
+          "line": 412,
           "column": 4
         },
         "end": {
-          "line": 415,
+          "line": 417,
           "column": 5
         }
       },
@@ -580,6 +580,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -604,6 +605,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -4582,11 +4584,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 425,
-        "column": 13
+        "line": 426,
+        "column": 2
       },
       "end": {
-        "line": 435,
+        "line": 455,
         "column": 3
       }
     },

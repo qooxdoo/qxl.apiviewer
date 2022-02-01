@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 312,
+        "line": 286,
         "column": 3
       }
     },
@@ -30,25 +30,24 @@
   "construct": {
     "location": {
       "start": {
-        "line": 31,
-        "column": 14
+        "line": 28,
+        "column": 2
       },
       "end": {
-        "line": 38,
+        "line": 34,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "statics": {
     "ONE_LINE_WIDGETS": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 52,
+          "line": 46,
           "column": 5
         }
       },
@@ -74,12 +73,12 @@
     "_rows": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 50,
           "column": 4
         },
         "end": {
-          "line": 58,
-          "column": 16
+          "line": 50,
+          "column": 15
         }
       },
       "type": "variable",
@@ -88,12 +87,12 @@
     "_labels": {
       "location": {
         "start": {
-          "line": 59,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 59,
-          "column": 18
+          "line": 51,
+          "column": 17
         }
       },
       "type": "variable",
@@ -102,11 +101,11 @@
     "_onFormChange": {
       "location": {
         "start": {
-          "line": 62,
+          "line": 53,
           "column": 4
         },
         "end": {
-          "line": 68,
+          "line": 59,
           "column": 5
         }
       },
@@ -120,12 +119,12 @@
     "__errorMessageContainers": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 66,
           "column": 4
         },
         "end": {
-          "line": 75,
-          "column": 35
+          "line": 66,
+          "column": 34
         }
       },
       "jsdoc": {
@@ -142,11 +141,11 @@
     "_getTagName": {
       "location": {
         "start": {
-          "line": 79,
+          "line": 69,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 71,
           "column": 5
         }
       },
@@ -161,11 +160,11 @@
     "_isOneLineWidget": {
       "location": {
         "start": {
-          "line": 92,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 103,
+          "line": 91,
           "column": 5
         }
       },
@@ -200,11 +199,11 @@
     "addItems": {
       "location": {
         "start": {
-          "line": 107,
+          "line": 94,
           "column": 4
         },
         "end": {
-          "line": 144,
+          "line": 129,
           "column": 5
         }
       },
@@ -220,11 +219,11 @@
     "_addToScrollContainer": {
       "location": {
         "start": {
-          "line": 152,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 161,
+          "line": 145,
           "column": 5
         }
       },
@@ -258,11 +257,11 @@
     "_addRow": {
       "location": {
         "start": {
-          "line": 170,
+          "line": 153,
           "column": 4
         },
         "end": {
-          "line": 183,
+          "line": 166,
           "column": 5
         }
       },
@@ -303,11 +302,11 @@
     "_addSeparationRow": {
       "location": {
         "start": {
-          "line": 189,
+          "line": 171,
           "column": 4
         },
         "end": {
-          "line": 194,
+          "line": 176,
           "column": 5
         }
       },
@@ -325,11 +324,11 @@
     "_addGroupHeaderRow": {
       "location": {
         "start": {
-          "line": 200,
+          "line": 181,
           "column": 4
         },
         "end": {
-          "line": 205,
+          "line": 186,
           "column": 5
         }
       },
@@ -347,11 +346,11 @@
     "_addGroupFooterRow": {
       "location": {
         "start": {
-          "line": 211,
+          "line": 191,
           "column": 4
         },
         "end": {
-          "line": 216,
+          "line": 196,
           "column": 5
         }
       },
@@ -369,11 +368,11 @@
     "_addGroupHeader": {
       "location": {
         "start": {
-          "line": 225,
+          "line": 204,
           "column": 4
         },
         "end": {
-          "line": 234,
+          "line": 212,
           "column": 5
         }
       },
@@ -400,11 +399,11 @@
     "addButton": {
       "location": {
         "start": {
-          "line": 238,
+          "line": 215,
           "column": 4
         },
         "end": {
-          "line": 243,
+          "line": 220,
           "column": 5
         }
       },
@@ -420,11 +419,11 @@
     "showErrorForItem": {
       "location": {
         "start": {
-          "line": 247,
+          "line": 223,
           "column": 4
         },
         "end": {
-          "line": 253,
+          "line": 233,
           "column": 5
         }
       },
@@ -439,11 +438,11 @@
     "showItem": {
       "location": {
         "start": {
-          "line": 260,
+          "line": 239,
           "column": 4
         },
         "end": {
-          "line": 262,
+          "line": 241,
           "column": 5
         }
       },
@@ -470,11 +469,11 @@
     "hideItem": {
       "location": {
         "start": {
-          "line": 269,
+          "line": 247,
           "column": 4
         },
         "end": {
-          "line": 271,
+          "line": 249,
           "column": 5
         }
       },
@@ -501,11 +500,11 @@
     "_getParentRow": {
       "location": {
         "start": {
-          "line": 280,
+          "line": 257,
           "column": 4
         },
         "end": {
-          "line": 288,
+          "line": 265,
           "column": 5
         }
       },
@@ -540,11 +539,11 @@
     "resetForm": {
       "location": {
         "start": {
-          "line": 292,
+          "line": 268,
           "column": 4
         },
         "end": {
-          "line": 296,
+          "line": 272,
           "column": 5
         }
       },
@@ -644,6 +643,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -668,6 +668,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -1737,11 +1738,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 306,
-        "column": 13
+        "line": 281,
+        "column": 2
       },
       "end": {
-        "line": 311,
+        "line": 285,
         "column": 3
       }
     },

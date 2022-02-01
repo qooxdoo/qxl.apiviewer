@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 149,
+        "line": 143,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 51,
-        "column": 14
+        "line": 50,
+        "column": 2
       },
       "end": {
-        "line": 56,
+        "line": 54,
         "column": 3
       }
     },
@@ -60,12 +60,12 @@
     "__validatorFunction": {
       "location": {
         "start": {
-          "line": 60,
+          "line": 57,
           "column": 4
         },
         "end": {
-          "line": 60,
-          "column": 30
+          "line": 57,
+          "column": 29
         }
       },
       "type": "variable",
@@ -74,12 +74,12 @@
     "__item": {
       "location": {
         "start": {
-          "line": 61,
+          "line": 58,
           "column": 4
         },
         "end": {
-          "line": 61,
-          "column": 17
+          "line": 58,
+          "column": 16
         }
       },
       "type": "variable",
@@ -88,12 +88,12 @@
     "__manager": {
       "location": {
         "start": {
-          "line": 62,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 62,
-          "column": 20
+          "line": 59,
+          "column": 19
         }
       },
       "type": "variable",
@@ -102,12 +102,12 @@
     "__usedForForm": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 60,
           "column": 4
         },
         "end": {
-          "line": 63,
-          "column": 24
+          "line": 60,
+          "column": 23
         }
       },
       "type": "variable",
@@ -116,11 +116,11 @@
     "validate": {
       "location": {
         "start": {
-          "line": 81,
+          "line": 78,
           "column": 4
         },
         "end": {
-          "line": 89,
+          "line": 86,
           "column": 5
         }
       },
@@ -176,11 +176,11 @@
     "validateForm": {
       "location": {
         "start": {
-          "line": 107,
+          "line": 103,
           "column": 4
         },
         "end": {
-          "line": 111,
+          "line": 107,
           "column": 5
         }
       },
@@ -229,11 +229,11 @@
     "setValid": {
       "location": {
         "start": {
-          "line": 121,
+          "line": 116,
           "column": 4
         },
         "end": {
-          "line": 136,
+          "line": 131,
           "column": 5
         }
       },
@@ -353,6 +353,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -377,6 +378,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -405,11 +407,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 146,
-        "column": 13
+        "line": 140,
+        "column": 2
       },
       "end": {
-        "line": 148,
+        "line": 142,
         "column": 3
       }
     },

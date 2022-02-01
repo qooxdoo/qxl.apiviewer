@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 144,
+        "line": 137,
         "column": 3
       }
     },
@@ -36,26 +36,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 31,
-        "column": 14
+        "line": 29,
+        "column": 2
       },
       "end": {
-        "line": 36,
+        "line": 34,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {
     "start": {
       "location": {
         "start": {
-          "line": 41,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 41,
-          "column": 23
+          "line": 38,
+          "column": 20
         }
       },
       "jsdoc": {
@@ -72,12 +71,12 @@
     "end": {
       "location": {
         "start": {
-          "line": 47,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 47,
-          "column": 21
+          "line": 44,
+          "column": 18
         }
       },
       "jsdoc": {
@@ -94,12 +93,12 @@
     "iteration": {
       "location": {
         "start": {
-          "line": 50,
+          "line": 47,
           "column": 4
         },
         "end": {
-          "line": 50,
-          "column": 27
+          "line": 47,
+          "column": 24
         }
       },
       "jsdoc": {
@@ -118,12 +117,12 @@
     "__playState": {
       "location": {
         "start": {
-          "line": 56,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 56,
-          "column": 22
+          "line": 51,
+          "column": 21
         }
       },
       "type": "variable",
@@ -132,12 +131,12 @@
     "__playing": {
       "location": {
         "start": {
-          "line": 57,
+          "line": 52,
           "column": 4
         },
         "end": {
-          "line": 57,
-          "column": 21
+          "line": 52,
+          "column": 20
         }
       },
       "type": "variable",
@@ -146,12 +145,12 @@
     "__ended": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 53,
           "column": 4
         },
         "end": {
-          "line": 58,
-          "column": 19
+          "line": 53,
+          "column": 18
         }
       },
       "type": "variable",
@@ -160,11 +159,11 @@
     "isPlaying": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 67,
+          "line": 61,
           "column": 5
         }
       },
@@ -190,11 +189,11 @@
     "isEnded": {
       "location": {
         "start": {
-          "line": 74,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 76,
+          "line": 69,
           "column": 5
         }
       },
@@ -220,11 +219,11 @@
     "isPaused": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 75,
           "column": 4
         },
         "end": {
-          "line": 85,
+          "line": 77,
           "column": 5
         }
       },
@@ -250,11 +249,11 @@
     "pause": {
       "location": {
         "start": {
-          "line": 91,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 100,
+          "line": 91,
           "column": 5
         }
       },
@@ -272,11 +271,11 @@
     "play": {
       "location": {
         "start": {
-          "line": 107,
+          "line": 97,
           "column": 4
         },
         "end": {
-          "line": 116,
+          "line": 106,
           "column": 5
         }
       },
@@ -294,11 +293,11 @@
     "stop": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 111,
           "column": 4
         },
         "end": {
-          "line": 134,
+          "line": 127,
           "column": 5
         }
       },
@@ -316,11 +315,11 @@
     "__setEnded": {
       "location": {
         "start": {
-          "line": 139,
+          "line": 132,
           "column": 4
         },
         "end": {
-          "line": 142,
+          "line": 135,
           "column": 5
         }
       },

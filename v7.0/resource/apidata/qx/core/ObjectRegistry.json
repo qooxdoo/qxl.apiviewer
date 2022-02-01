@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 338,
+        "line": 315,
         "column": 3
       }
     },
@@ -37,12 +37,12 @@
     "inShutDown": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 40,
-          "column": 22
+          "line": 38,
+          "column": 21
         }
       },
       "jsdoc": {
@@ -71,12 +71,12 @@
     "__registry": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 41,
           "column": 4
         },
         "end": {
-          "line": 43,
-          "column": 19
+          "line": 41,
+          "column": 18
         }
       },
       "jsdoc": {
@@ -99,12 +99,12 @@
     "__nextHash": {
       "location": {
         "start": {
-          "line": 46,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 46,
-          "column": 18
+          "line": 44,
+          "column": 17
         }
       },
       "jsdoc": {
@@ -127,12 +127,12 @@
     "__postId": {
       "location": {
         "start": {
-          "line": 49,
+          "line": 47,
           "column": 4
         },
         "end": {
-          "line": 49,
-          "column": 17
+          "line": 47,
+          "column": 16
         }
       },
       "jsdoc": {
@@ -155,12 +155,12 @@
     "__stackTraces": {
       "location": {
         "start": {
-          "line": 52,
+          "line": 50,
           "column": 4
         },
         "end": {
-          "line": 52,
-          "column": 22
+          "line": 50,
+          "column": 21
         }
       },
       "jsdoc": {
@@ -183,11 +183,11 @@
     "register": {
       "location": {
         "start": {
-          "line": 66,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 79,
           "column": 5
         }
       },
@@ -214,11 +214,11 @@
     "unregister": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 86,
           "column": 4
         },
         "end": {
-          "line": 104,
+          "line": 98,
           "column": 5
         }
       },
@@ -245,11 +245,11 @@
     "toHashCode": {
       "location": {
         "start": {
-          "line": 114,
+          "line": 107,
           "column": 4
         },
         "end": {
-          "line": 140,
+          "line": 132,
           "column": 5
         }
       },
@@ -284,11 +284,11 @@
     "createHashCode": {
       "location": {
         "start": {
-          "line": 148,
+          "line": 139,
           "column": 4
         },
         "end": {
-          "line": 151,
+          "line": 142,
           "column": 5
         }
       },
@@ -314,11 +314,11 @@
     "clearHashCode": {
       "location": {
         "start": {
-          "line": 159,
+          "line": 149,
           "column": 4
         },
         "end": {
-          "line": 186,
+          "line": 170,
           "column": 5
         }
       },
@@ -345,11 +345,11 @@
     "fromHashCode": {
       "location": {
         "start": {
-          "line": 198,
+          "line": 181,
           "column": 4
         },
         "end": {
-          "line": 204,
+          "line": 192,
           "column": 5
         }
       },
@@ -392,11 +392,11 @@
     "hasHashCode": {
       "location": {
         "start": {
-          "line": 214,
+          "line": 201,
           "column": 4
         },
         "end": {
-          "line": 216,
+          "line": 203,
           "column": 5
         }
       },
@@ -431,11 +431,11 @@
     "shutdown": {
       "location": {
         "start": {
-          "line": 227,
+          "line": 213,
           "column": 4
         },
         "end": {
-          "line": 276,
+          "line": 261,
           "column": 5
         }
       },
@@ -459,11 +459,11 @@
     "getRegistry": {
       "location": {
         "start": {
-          "line": 284,
+          "line": 268,
           "column": 4
         },
         "end": {
-          "line": 286,
+          "line": 270,
           "column": 5
         }
       },
@@ -489,11 +489,11 @@
     "getNextHash": {
       "location": {
         "start": {
-          "line": 295,
+          "line": 278,
           "column": 4
         },
         "end": {
-          "line": 297,
+          "line": 280,
           "column": 5
         }
       },
@@ -525,11 +525,11 @@
     "getPostId": {
       "location": {
         "start": {
-          "line": 306,
+          "line": 288,
           "column": 4
         },
         "end": {
-          "line": 308,
+          "line": 290,
           "column": 5
         }
       },
@@ -561,11 +561,11 @@
     "getStackTraces": {
       "location": {
         "start": {
-          "line": 317,
+          "line": 298,
           "column": 4
         },
         "end": {
-          "line": 319,
+          "line": 300,
           "column": 5
         }
       },
@@ -598,15 +598,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 322,
-        "column": 10
+        "line": 303,
+        "column": 2
       },
       "end": {
-        "line": 337,
+        "line": 314,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

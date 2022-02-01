@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 335,
+        "line": 336,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 72,
-        "column": 13
+        "line": 71,
+        "column": 2
       },
       "end": {
-        "line": 79,
+        "line": 78,
         "column": 3
       }
     },
@@ -69,12 +69,12 @@
     "readyStateChange": {
       "location": {
         "start": {
-          "line": 91,
+          "line": 89,
           "column": 4
         },
         "end": {
-          "line": 91,
-          "column": 45
+          "line": 89,
+          "column": 43
         }
       },
       "jsdoc": {
@@ -91,12 +91,12 @@
     "success": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 98,
           "column": 4
         },
         "end": {
-          "line": 100,
-          "column": 36
+          "line": 98,
+          "column": 34
         }
       },
       "jsdoc": {
@@ -113,12 +113,12 @@
     "load": {
       "location": {
         "start": {
-          "line": 110,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 110,
-          "column": 33
+          "line": 108,
+          "column": 31
         }
       },
       "jsdoc": {
@@ -135,12 +135,12 @@
     "statusError": {
       "location": {
         "start": {
-          "line": 118,
+          "line": 116,
           "column": 4
         },
         "end": {
-          "line": 118,
-          "column": 40
+          "line": 116,
+          "column": 38
         }
       },
       "jsdoc": {
@@ -159,11 +159,11 @@
     "method": {
       "location": {
         "start": {
-          "line": 126,
+          "line": 123,
           "column": 4
         },
         "end": {
-          "line": 128,
+          "line": 125,
           "column": 5
         }
       },
@@ -183,11 +183,11 @@
     "async": {
       "location": {
         "start": {
-          "line": 133,
+          "line": 130,
           "column": 4
         },
         "end": {
-          "line": 136,
+          "line": 133,
           "column": 5
         }
       },
@@ -208,11 +208,11 @@
     "accept": {
       "location": {
         "start": {
-          "line": 148,
+          "line": 145,
           "column": 4
         },
         "end": {
-          "line": 151,
+          "line": 148,
           "column": 5
         }
       },
@@ -233,11 +233,11 @@
     "cache": {
       "location": {
         "start": {
-          "line": 184,
+          "line": 181,
           "column": 4
         },
         "end": {
-          "line": 190,
+          "line": 186,
           "column": 5
         }
       },
@@ -252,6 +252,7 @@
       "name": "cache",
       "propertyType": "new",
       "init": true,
+      "check": "[[ ObjectMethod Function ]]",
       "defaultValue": true
     }
   },
@@ -259,11 +260,11 @@
     "_parser": {
       "location": {
         "start": {
-          "line": 199,
+          "line": 193,
           "column": 4
         },
         "end": {
-          "line": 199,
+          "line": 193,
           "column": 17
         }
       },
@@ -287,11 +288,11 @@
     "_createTransport": {
       "location": {
         "start": {
-          "line": 212,
+          "line": 206,
           "column": 4
         },
         "end": {
-          "line": 214,
+          "line": 208,
           "column": 5
         }
       },
@@ -321,11 +322,11 @@
     "_getConfiguredUrl": {
       "location": {
         "start": {
-          "line": 224,
+          "line": 218,
           "column": 4
         },
         "end": {
-          "line": 239,
+          "line": 235,
           "column": 5
         }
       },
@@ -355,11 +356,11 @@
     "_getConfiguredRequestHeaders": {
       "location": {
         "start": {
-          "line": 242,
+          "line": 238,
           "column": 4
         },
         "end": {
-          "line": 271,
+          "line": 269,
           "column": 5
         }
       },
@@ -374,11 +375,11 @@
     "_getMethod": {
       "location": {
         "start": {
-          "line": 274,
+          "line": 272,
           "column": 4
         },
         "end": {
-          "line": 276,
+          "line": 274,
           "column": 5
         }
       },
@@ -393,11 +394,11 @@
     "_isAsync": {
       "location": {
         "start": {
-          "line": 279,
+          "line": 277,
           "column": 4
         },
         "end": {
-          "line": 281,
+          "line": 279,
           "column": 5
         }
       },
@@ -412,11 +413,11 @@
     "_createResponseParser": {
       "location": {
         "start": {
-          "line": 294,
+          "line": 292,
           "column": 4
         },
         "end": {
-          "line": 296,
+          "line": 294,
           "column": 5
         }
       },
@@ -442,11 +443,11 @@
     "_getParsedResponse": {
       "location": {
         "start": {
-          "line": 303,
+          "line": 301,
           "column": 4
         },
         "end": {
-          "line": 320,
+          "line": 321,
           "column": 5
         }
       },
@@ -476,11 +477,11 @@
     "setParser": {
       "location": {
         "start": {
-          "line": 331,
+          "line": 332,
           "column": 4
         },
         "end": {
-          "line": 333,
+          "line": 334,
           "column": 5
         }
       },
@@ -603,6 +604,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -627,6 +629,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -808,6 +811,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for requestData"
           }
         ]
@@ -832,6 +836,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for requestData"
           }
@@ -1165,6 +1170,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for cache"
           }
         ]
@@ -1188,6 +1194,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for cache"
           }

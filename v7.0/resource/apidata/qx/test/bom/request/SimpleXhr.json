@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 563,
+        "line": 635,
         "column": 3
       }
     },
@@ -26,11 +26,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 30,
+          "line": 27,
           "column": 5
         }
       },
@@ -40,11 +40,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 36,
+          "line": 32,
           "column": 5
         }
       },
@@ -54,11 +54,11 @@
     "test: set/get request header": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 39,
           "column": 4
         },
         "end": {
-          "line": 48,
+          "line": 47,
           "column": 5
         }
       },
@@ -69,11 +69,11 @@
     "test: set/get url": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 54,
           "column": 4
         },
         "end": {
-          "line": 59,
+          "line": 58,
           "column": 5
         }
       },
@@ -84,11 +84,11 @@
     "test: set/get method": {
       "location": {
         "start": {
-          "line": 66,
+          "line": 65,
           "column": 4
         },
         "end": {
-          "line": 70,
+          "line": 69,
           "column": 5
         }
       },
@@ -99,11 +99,11 @@
     "test: set/get request data": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 76,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 80,
           "column": 5
         }
       },
@@ -114,11 +114,11 @@
     "test: set/get response": {
       "location": {
         "start": {
-          "line": 88,
+          "line": 87,
           "column": 4
         },
         "end": {
-          "line": 102,
+          "line": 101,
           "column": 5
         }
       },
@@ -129,11 +129,11 @@
     "test: set/get timeout in millis": {
       "location": {
         "start": {
-          "line": 109,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 111,
+          "line": 110,
           "column": 5
         }
       },
@@ -144,11 +144,11 @@
     "test: use/is caching": {
       "location": {
         "start": {
-          "line": 118,
+          "line": 117,
           "column": 4
         },
         "end": {
-          "line": 121,
+          "line": 120,
           "column": 5
         }
       },
@@ -159,11 +159,11 @@
     "test: set (custom) parser": {
       "location": {
         "start": {
-          "line": 127,
+          "line": 126,
           "column": 4
         },
         "end": {
-          "line": 134,
+          "line": 133,
           "column": 5
         }
       },
@@ -174,11 +174,11 @@
     "test: serialize data": {
       "location": {
         "start": {
-          "line": 140,
+          "line": 139,
           "column": 4
         },
         "end": {
-          "line": 150,
+          "line": 164,
           "column": 5
         }
       },
@@ -189,11 +189,11 @@
     "stubTransportMethods": {
       "location": {
         "start": {
-          "line": 156,
+          "line": 170,
           "column": 4
         },
         "end": {
-          "line": 165,
+          "line": 179,
           "column": 5
         }
       },
@@ -204,21 +204,7 @@
     "test: send() w/ timeout": {
       "location": {
         "start": {
-          "line": 167,
-          "column": 4
-        },
-        "end": {
           "line": 181,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "test: send() w/o data and w/o headers": {
-      "location": {
-        "start": {
-          "line": 183,
           "column": 4
         },
         "end": {
@@ -229,14 +215,28 @@
       "type": "function",
       "access": "public"
     },
-    "test: send() GET w/ data and w/ headers": {
+    "test: send() w/o data and w/o headers": {
       "location": {
         "start": {
           "line": 197,
           "column": 4
         },
         "end": {
-          "line": 213,
+          "line": 209,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "test: send() GET w/ data and w/ headers": {
+      "location": {
+        "start": {
+          "line": 211,
+          "column": 4
+        },
+        "end": {
+          "line": 237,
           "column": 5
         }
       },
@@ -246,11 +246,11 @@
     "test: send() GET w/ enabled caching sets nocache param": {
       "location": {
         "start": {
-          "line": 215,
+          "line": 239,
           "column": 4
         },
         "end": {
-          "line": 229,
+          "line": 259,
           "column": 5
         }
       },
@@ -260,11 +260,11 @@
     "test: send() GET w/ caching header overrides cache prevention": {
       "location": {
         "start": {
-          "line": 231,
+          "line": 261,
           "column": 4
         },
         "end": {
-          "line": 245,
+          "line": 285,
           "column": 5
         }
       },
@@ -274,11 +274,11 @@
     "test: send() POST w/ data (default content-type)": {
       "location": {
         "start": {
-          "line": 247,
+          "line": 287,
           "column": 4
         },
         "end": {
-          "line": 263,
+          "line": 313,
           "column": 5
         }
       },
@@ -288,11 +288,11 @@
     "test: send() POST w/ data (application/json)": {
       "location": {
         "start": {
-          "line": 265,
+          "line": 315,
           "column": 4
         },
         "end": {
-          "line": 281,
+          "line": 336,
           "column": 5
         }
       },
@@ -302,11 +302,11 @@
     "test: send() POST w/ FormData": {
       "location": {
         "start": {
-          "line": 283,
+          "line": 338,
           "column": 4
         },
         "end": {
-          "line": 308,
+          "line": 368,
           "column": 5
         }
       },
@@ -316,11 +316,11 @@
     "test: send() POST w/ Blob": {
       "location": {
         "start": {
-          "line": 311,
+          "line": 370,
           "column": 4
         },
         "end": {
-          "line": 334,
+          "line": 398,
           "column": 5
         }
       },
@@ -330,11 +330,11 @@
     "test: send() POST w/ ArrayBuffer": {
       "location": {
         "start": {
-          "line": 336,
+          "line": 400,
           "column": 4
         },
         "end": {
-          "line": 359,
+          "line": 428,
           "column": 5
         }
       },
@@ -344,11 +344,11 @@
     "test: abort() aborts transport": {
       "location": {
         "start": {
-          "line": 365,
+          "line": 434,
           "column": 4
         },
         "end": {
-          "line": 370,
+          "line": 439,
           "column": 5
         }
       },
@@ -359,11 +359,11 @@
     "test: dispose() disposes transport": {
       "location": {
         "start": {
-          "line": 376,
+          "line": 445,
           "column": 4
         },
         "end": {
-          "line": 378,
+          "line": 447,
           "column": 5
         }
       },
@@ -374,11 +374,11 @@
     "test: addListenerOnce() event handler": {
       "location": {
         "start": {
-          "line": 385,
+          "line": 453,
           "column": 4
         },
         "end": {
-          "line": 397,
+          "line": 465,
           "column": 5
         }
       },
@@ -389,11 +389,11 @@
     "test: _onReadyStateDone() success": {
       "location": {
         "start": {
-          "line": 404,
+          "line": 472,
           "column": 4
         },
         "end": {
-          "line": 423,
+          "line": 491,
           "column": 5
         }
       },
@@ -404,11 +404,11 @@
     "test: _onReadyStateDone() fail w/ response": {
       "location": {
         "start": {
-          "line": 425,
+          "line": 493,
           "column": 4
         },
         "end": {
-          "line": 444,
+          "line": 512,
           "column": 5
         }
       },
@@ -418,11 +418,11 @@
     "test: _onReadyStateDone() fail w/o response": {
       "location": {
         "start": {
-          "line": 446,
+          "line": 514,
           "column": 4
         },
         "end": {
-          "line": 462,
+          "line": 530,
           "column": 5
         }
       },
@@ -432,11 +432,11 @@
     "test: onLoadEnd()": {
       "location": {
         "start": {
-          "line": 468,
+          "line": 536,
           "column": 4
         },
         "end": {
-          "line": 479,
+          "line": 547,
           "column": 5
         }
       },
@@ -447,11 +447,11 @@
     "test: onAbort()": {
       "location": {
         "start": {
-          "line": 485,
+          "line": 553,
           "column": 4
         },
         "end": {
-          "line": 496,
+          "line": 564,
           "column": 5
         }
       },
@@ -462,11 +462,11 @@
     "test: onTimeout()": {
       "location": {
         "start": {
-          "line": 502,
+          "line": 570,
           "column": 4
         },
         "end": {
-          "line": 514,
+          "line": 582,
           "column": 5
         }
       },
@@ -477,11 +477,11 @@
     "test: onError()": {
       "location": {
         "start": {
-          "line": 520,
+          "line": 588,
           "column": 4
         },
         "end": {
-          "line": 532,
+          "line": 600,
           "column": 5
         }
       },
@@ -492,11 +492,11 @@
     "testGetResponseHeaders": {
       "location": {
         "start": {
-          "line": 535,
+          "line": 602,
           "column": 4
         },
         "end": {
-          "line": 561,
+          "line": 633,
           "column": 5
         }
       },
@@ -1183,6 +1183,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1207,6 +1208,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

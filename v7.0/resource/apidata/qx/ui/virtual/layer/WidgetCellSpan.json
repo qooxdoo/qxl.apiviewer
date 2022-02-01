@@ -11,11 +11,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 25,
+        "line": 24,
         "column": 0
       },
       "end": {
-        "line": 325,
+        "line": 324,
         "column": 3
       }
     },
@@ -32,11 +32,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 42,
-        "column": 14
+        "line": 37,
+        "column": 2
       },
       "end": {
-        "line": 58,
+        "line": 57,
         "column": 3
       }
     },
@@ -76,11 +76,11 @@
     "anonymous": {
       "location": {
         "start": {
-          "line": 70,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 70,
           "column": 5
         }
       },
@@ -101,12 +101,12 @@
     "getRenderedCellWidget": {
       "location": {
         "start": {
-          "line": 95,
-          "column": 5
+          "line": 89,
+          "column": 4
         },
         "end": {
-          "line": 126,
-          "column": 6
+          "line": 119,
+          "column": 5
         }
       },
       "jsdoc": {
@@ -147,12 +147,12 @@
     "__spacerPool": {
       "location": {
         "start": {
-          "line": 129,
+          "line": 121,
           "column": 4
         },
         "end": {
-          "line": 129,
-          "column": 23
+          "line": 121,
+          "column": 22
         }
       },
       "type": "variable",
@@ -161,11 +161,11 @@
     "setCellSpan": {
       "location": {
         "start": {
-          "line": 139,
+          "line": 131,
           "column": 4
         },
         "end": {
-          "line": 147,
+          "line": 138,
           "column": 5
         }
       },
@@ -213,11 +213,11 @@
     "_getSpacer": {
       "location": {
         "start": {
-          "line": 155,
+          "line": 145,
           "column": 4
         },
         "end": {
-          "line": 165,
+          "line": 153,
           "column": 5
         }
       },
@@ -243,11 +243,11 @@
     "__getCellProviderForNonSpanningCells": {
       "location": {
         "start": {
-          "line": 173,
+          "line": 160,
           "column": 4
         },
         "end": {
-          "line": 205,
+          "line": 185,
           "column": 5
         }
       },
@@ -273,11 +273,11 @@
     "__updateCellSpanData": {
       "location": {
         "start": {
-          "line": 217,
+          "line": 196,
           "column": 4
         },
         "end": {
-          "line": 245,
+          "line": 226,
           "column": 5
         }
       },
@@ -325,11 +325,11 @@
     "__updateCellSpanWidgets": {
       "location": {
         "start": {
-          "line": 254,
+          "line": 234,
           "column": 4
         },
         "end": {
-          "line": 286,
+          "line": 276,
           "column": 5
         }
       },
@@ -347,11 +347,11 @@
     "_fullUpdate": {
       "location": {
         "start": {
-          "line": 290,
+          "line": 279,
           "column": 4
         },
         "end": {
-          "line": 298,
+          "line": 289,
           "column": 5
         }
       },
@@ -366,11 +366,11 @@
     "_updateLayerWindow": {
       "location": {
         "start": {
-          "line": 302,
+          "line": 292,
           "column": 4
         },
         "end": {
-          "line": 310,
+          "line": 307,
           "column": 5
         }
       },
@@ -800,6 +800,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -824,6 +825,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -4508,15 +4510,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 314,
-        "column": 13
+        "line": 310,
+        "column": 2
       },
       "end": {
-        "line": 324,
+        "line": 323,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {},
   "descendants": []

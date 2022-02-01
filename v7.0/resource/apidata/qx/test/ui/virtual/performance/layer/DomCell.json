@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 73,
+        "line": 79,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "_fullUpdate": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 71,
+          "line": 77,
           "column": 5
         }
       },
@@ -403,6 +403,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -427,6 +428,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

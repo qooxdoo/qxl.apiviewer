@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 134,
+        "line": 133,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "testFlex": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 76,
+          "line": 74,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "testFlexFairness": {
       "location": {
         "start": {
-          "line": 82,
+          "line": 79,
           "column": 4
         },
         "end": {
-          "line": 132,
+          "line": 131,
           "column": 5
         }
       },
@@ -145,6 +145,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -169,6 +170,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

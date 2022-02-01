@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 72,
+        "line": 63,
         "column": 3
       }
     },
@@ -39,11 +39,11 @@
     "test trim()": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 35,
+          "line": 31,
           "column": 5
         }
       },
@@ -53,11 +53,11 @@
     "test startsWith()": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 45,
+          "line": 39,
           "column": 5
         }
       },
@@ -67,11 +67,11 @@
     "test endsWith()": {
       "location": {
         "start": {
-          "line": 48,
+          "line": 41,
           "column": 4
         },
         "end": {
-          "line": 70,
+          "line": 61,
           "column": 5
         }
       },
@@ -758,6 +758,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -782,6 +783,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

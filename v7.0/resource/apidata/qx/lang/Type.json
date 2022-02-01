@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 203,
+        "line": 182,
         "column": 3
       }
     },
@@ -31,12 +31,12 @@
     "getClass": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 34,
           "column": 4
         },
         "end": {
-          "line": 36,
-          "column": 36
+          "line": 34,
+          "column": 35
         }
       },
       "jsdoc": {
@@ -76,12 +76,12 @@
     "isString": {
       "location": {
         "start": {
-          "line": 46,
+          "line": 43,
           "column": 4
         },
         "end": {
-          "line": 46,
-          "column": 36
+          "line": 43,
+          "column": 35
         }
       },
       "jsdoc": {
@@ -121,12 +121,12 @@
     "isArray": {
       "location": {
         "start": {
-          "line": 56,
+          "line": 52,
           "column": 4
         },
         "end": {
-          "line": 56,
-          "column": 34
+          "line": 52,
+          "column": 33
         }
       },
       "jsdoc": {
@@ -166,12 +166,12 @@
     "isObject": {
       "location": {
         "start": {
-          "line": 67,
-          "column": 5
+          "line": 62,
+          "column": 4
         },
         "end": {
-          "line": 67,
-          "column": 37
+          "line": 62,
+          "column": 35
         }
       },
       "jsdoc": {
@@ -211,12 +211,12 @@
     "isFunction": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 71,
           "column": 4
         },
         "end": {
-          "line": 77,
-          "column": 40
+          "line": 71,
+          "column": 39
         }
       },
       "jsdoc": {
@@ -256,12 +256,12 @@
     "isFunctionOrAsyncFunction": {
       "location": {
         "start": {
-          "line": 87,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 87,
-          "column": 70
+          "line": 80,
+          "column": 69
         }
       },
       "jsdoc": {
@@ -301,11 +301,11 @@
     "isRegExp": {
       "location": {
         "start": {
-          "line": 96,
+          "line": 88,
           "column": 4
         },
         "end": {
-          "line": 98,
+          "line": 90,
           "column": 5
         }
       },
@@ -340,11 +340,11 @@
     "isNumber": {
       "location": {
         "start": {
-          "line": 112,
+          "line": 103,
           "column": 4
         },
         "end": {
-          "line": 123,
+          "line": 113,
           "column": 5
         }
       },
@@ -379,11 +379,11 @@
     "isBoolean": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 121,
           "column": 4
         },
         "end": {
-          "line": 144,
+          "line": 131,
           "column": 5
         }
       },
@@ -418,11 +418,11 @@
     "isDate": {
       "location": {
         "start": {
-          "line": 153,
+          "line": 139,
           "column": 4
         },
         "end": {
-          "line": 165,
+          "line": 149,
           "column": 5
         }
       },
@@ -457,11 +457,11 @@
     "isError": {
       "location": {
         "start": {
-          "line": 174,
+          "line": 157,
           "column": 4
         },
         "end": {
-          "line": 186,
+          "line": 167,
           "column": 5
         }
       },
@@ -496,12 +496,12 @@
     "isPromise": {
       "location": {
         "start": {
-          "line": 198,
-          "column": 5
+          "line": 178,
+          "column": 4
         },
         "end": {
-          "line": 201,
-          "column": 6
+          "line": 180,
+          "column": 5
         }
       },
       "jsdoc": {

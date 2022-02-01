@@ -17,7 +17,7 @@
         "column": 0
       },
       "end": {
-        "line": 182,
+        "line": 165,
         "column": 3
       }
     },
@@ -34,11 +34,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 63,
-        "column": 14
+        "line": 62,
+        "column": 2
       },
       "end": {
-        "line": 72,
+        "line": 70,
         "column": 3
       }
     },
@@ -73,11 +73,11 @@
     "appearance": {
       "location": {
         "start": {
-          "line": 78,
+          "line": 74,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 77,
           "column": 5
         }
       },
@@ -96,11 +96,11 @@
     "interval": {
       "location": {
         "start": {
-          "line": 88,
+          "line": 83,
           "column": 4
         },
         "end": {
-          "line": 92,
+          "line": 86,
           "column": 5
         }
       },
@@ -121,11 +121,11 @@
     "firstInterval": {
       "location": {
         "start": {
-          "line": 99,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 103,
+          "line": 96,
           "column": 5
         }
       },
@@ -146,11 +146,11 @@
     "minTimer": {
       "location": {
         "start": {
-          "line": 106,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 110,
+          "line": 102,
           "column": 5
         }
       },
@@ -171,11 +171,11 @@
     "timerDecrease": {
       "location": {
         "start": {
-          "line": 113,
+          "line": 105,
           "column": 4
         },
         "end": {
-          "line": 117,
+          "line": 108,
           "column": 5
         }
       },
@@ -215,12 +215,12 @@
     "__timer": {
       "location": {
         "start": {
-          "line": 123,
+          "line": 112,
           "column": 4
         },
         "end": {
-          "line": 123,
-          "column": 18
+          "line": 112,
+          "column": 17
         }
       },
       "type": "variable",
@@ -229,11 +229,11 @@
     "_onPointerOver": {
       "location": {
         "start": {
-          "line": 131,
+          "line": 119,
           "column": 4
         },
         "end": {
-          "line": 145,
+          "line": 134,
           "column": 5
         }
       },
@@ -260,11 +260,11 @@
     "_onPointerOut": {
       "location": {
         "start": {
-          "line": 153,
+          "line": 141,
           "column": 4
         },
         "end": {
-          "line": 161,
+          "line": 148,
           "column": 5
         }
       },
@@ -291,11 +291,11 @@
     "_onInterval": {
       "location": {
         "start": {
-          "line": 167,
+          "line": 153,
           "column": 4
         },
         "end": {
-          "line": 175,
+          "line": 159,
           "column": 5
         }
       },
@@ -522,6 +522,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -546,6 +547,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -5027,15 +5029,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 179,
-        "column": 13
+        "line": 162,
+        "column": 2
       },
       "end": {
-        "line": 181,
+        "line": 164,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {
     "execute": {

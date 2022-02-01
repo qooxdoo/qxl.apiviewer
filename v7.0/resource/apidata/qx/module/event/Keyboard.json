@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 194,
+        "line": 205,
         "column": 3
       }
     },
@@ -47,12 +47,12 @@
     "TYPES": {
       "location": {
         "start": {
-          "line": 37,
+          "line": 36,
           "column": 4
         },
         "end": {
-          "line": 37,
-          "column": 44
+          "line": 36,
+          "column": 43
         }
       },
       "jsdoc": {
@@ -69,12 +69,12 @@
     "BIND_METHODS": {
       "location": {
         "start": {
-          "line": 45,
+          "line": 43,
           "column": 4
         },
         "end": {
-          "line": 45,
-          "column": 39
+          "line": 43,
+          "column": 38
         }
       },
       "jsdoc": {
@@ -97,11 +97,11 @@
     "getKeyIdentifier": {
       "location": {
         "start": {
-          "line": 99,
+          "line": 96,
           "column": 4
         },
         "end": {
-          "line": 107,
+          "line": 106,
           "column": 5
         }
       },
@@ -127,11 +127,11 @@
     "normalize": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 117,
           "column": 4
         },
         "end": {
-          "line": 131,
+          "line": 130,
           "column": 5
         }
       },
@@ -179,11 +179,11 @@
     "registerInputFix": {
       "location": {
         "start": {
-          "line": 142,
+          "line": 140,
           "column": 4
         },
         "end": {
-          "line": 149,
+          "line": 153,
           "column": 5
         }
       },
@@ -216,11 +216,11 @@
     "unregisterInputFix": {
       "location": {
         "start": {
-          "line": 158,
+          "line": 161,
           "column": 4
         },
         "end": {
-          "line": 163,
+          "line": 166,
           "column": 5
         }
       },
@@ -253,11 +253,11 @@
     "_inputFix": {
       "location": {
         "start": {
-          "line": 171,
+          "line": 173,
           "column": 4
         },
         "end": {
-          "line": 183,
+          "line": 185,
           "column": 5
         }
       },
@@ -285,15 +285,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 186,
-        "column": 10
+        "line": 188,
+        "column": 2
       },
       "end": {
-        "line": 193,
+        "line": 204,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

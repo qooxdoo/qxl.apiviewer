@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 198,
+        "line": 196,
         "column": 3
       }
     },
@@ -24,7 +24,7 @@
     "testGetRowDataAsMap": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
@@ -56,7 +56,7 @@
           "column": 4
         },
         "end": {
-          "line": 66,
+          "line": 65,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "testCustomSortFunction": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 129,
+          "line": 128,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "testCustomSortFunctionArgumentsCalleeColumnIndexDeprecated": {
       "location": {
         "start": {
-          "line": 131,
+          "line": 130,
           "column": 4
         },
         "end": {
-          "line": 195,
+          "line": 194,
           "column": 5
         }
       },
@@ -179,6 +179,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -203,6 +204,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

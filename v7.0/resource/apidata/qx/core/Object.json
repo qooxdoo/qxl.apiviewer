@@ -21,7 +21,7 @@
         "column": 0
       },
       "end": {
-        "line": 535,
+        "line": 506,
         "column": 3
       }
     },
@@ -44,12 +44,12 @@
   "construct": {
     "location": {
       "start": {
-        "line": 56,
-        "column": 14
+        "line": 54,
+        "column": 2
       },
       "end": {
-        "line": 57,
-        "column": 3
+        "line": 54,
+        "column": 16
       }
     },
     "jsdoc": {
@@ -65,12 +65,12 @@
     "$$type": {
       "location": {
         "start": {
-          "line": 71,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 71,
-          "column": 21
+          "line": 64,
+          "column": 20
         }
       },
       "jsdoc": {
@@ -89,12 +89,12 @@
     "__Property": {
       "location": {
         "start": {
-          "line": 87,
+          "line": 74,
           "column": 4
         },
         "end": {
-          "line": 87,
-          "column": 85
+          "line": 76,
+          "column": 12
         }
       },
       "type": "variable",
@@ -103,11 +103,11 @@
     "toHashCode": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 89,
           "column": 4
         },
         "end": {
-          "line": 110,
+          "line": 101,
           "column": 5
         }
       },
@@ -133,11 +133,11 @@
     "toUuid": {
       "location": {
         "start": {
-          "line": 118,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 114,
           "column": 5
         }
       },
@@ -163,11 +163,11 @@
     "setExplicitUuid": {
       "location": {
         "start": {
-          "line": 138,
+          "line": 127,
           "column": 4
         },
         "end": {
-          "line": 143,
+          "line": 132,
           "column": 5
         }
       },
@@ -194,11 +194,11 @@
     "base": {
       "location": {
         "start": {
-          "line": 168,
+          "line": 155,
           "column": 4
         },
         "end": {
-          "line": 190,
+          "line": 175,
           "column": 5
         }
       },
@@ -241,11 +241,11 @@
     "self": {
       "location": {
         "start": {
-          "line": 199,
+          "line": 183,
           "column": 4
         },
         "end": {
-          "line": 201,
+          "line": 185,
           "column": 5
         }
       },
@@ -280,11 +280,11 @@
     "clone": {
       "location": {
         "start": {
-          "line": 221,
+          "line": 201,
           "column": 4
         },
         "end": {
-          "line": 245,
+          "line": 223,
           "column": 5
         }
       },
@@ -310,12 +310,12 @@
     "__userData": {
       "location": {
         "start": {
-          "line": 255,
+          "line": 232,
           "column": 4
         },
         "end": {
-          "line": 255,
-          "column": 21
+          "line": 232,
+          "column": 20
         }
       },
       "jsdoc": {
@@ -338,11 +338,11 @@
     "setUserData": {
       "location": {
         "start": {
-          "line": 264,
+          "line": 240,
           "column": 4
         },
         "end": {
-          "line": 271,
+          "line": 246,
           "column": 5
         }
       },
@@ -376,11 +376,11 @@
     "getUserData": {
       "location": {
         "start": {
-          "line": 280,
+          "line": 254,
           "column": 4
         },
         "end": {
-          "line": 287,
+          "line": 260,
           "column": 5
         }
       },
@@ -415,11 +415,11 @@
     "resetUserData": {
       "location": {
         "start": {
-          "line": 292,
+          "line": 265,
           "column": 4
         },
         "end": {
-          "line": 294,
+          "line": 267,
           "column": 5
         }
       },
@@ -437,11 +437,11 @@
     "isDisposed": {
       "location": {
         "start": {
-          "line": 307,
+          "line": 280,
           "column": 4
         },
         "end": {
-          "line": 309,
+          "line": 282,
           "column": 5
         }
       },
@@ -467,11 +467,11 @@
     "isDisposing": {
       "location": {
         "start": {
-          "line": 318,
+          "line": 290,
           "column": 4
         },
         "end": {
-          "line": 320,
+          "line": 292,
           "column": 5
         }
       },
@@ -497,11 +497,11 @@
     "dispose": {
       "location": {
         "start": {
-          "line": 327,
+          "line": 298,
           "column": 4
         },
         "end": {
-          "line": 413,
+          "line": 393,
           "column": 5
         }
       },
@@ -519,11 +519,11 @@
     "_disposeObjects": {
       "location": {
         "start": {
-          "line": 429,
+          "line": 407,
           "column": 4
         },
         "end": {
-          "line": 431,
+          "line": 409,
           "column": 5
         }
       },
@@ -550,11 +550,11 @@
     "_disposeSingletonObjects": {
       "location": {
         "start": {
-          "line": 440,
+          "line": 417,
           "column": 4
         },
         "end": {
-          "line": 442,
+          "line": 419,
           "column": 5
         }
       },
@@ -581,11 +581,11 @@
     "_disposeArray": {
       "location": {
         "start": {
-          "line": 451,
+          "line": 427,
           "column": 4
         },
         "end": {
-          "line": 453,
+          "line": 429,
           "column": 5
         }
       },
@@ -612,11 +612,11 @@
     "_disposeMap": {
       "location": {
         "start": {
-          "line": 462,
+          "line": 437,
           "column": 4
         },
         "end": {
-          "line": 464,
+          "line": 439,
           "column": 5
         }
       },
@@ -693,69 +693,6 @@
             "body": "{var} Returns the internal id for that binding. This can be used\n   for referencing the binding e.g. for removing. This is not an atomic\n   id so you can't you use it as a hash-map index.",
             "type": "var",
             "description": " Returns the internal id for that binding. This can be used\n   for referencing the binding e.g. for removing. This is not an atomic\n   id so you can't you use it as a hash-map index."
-          }
-        ],
-        "@throws": [
-          {
-            "name": "@throws",
-            "body": "{qx.core.AssertionError} If the event is no data event or\n   there is no property definition for object and property (source and\n   target).",
-            "type": "qx.core.AssertionError",
-            "description": " If the event is no data event or\n   there is no property definition for object and property (source and\n   target)."
-          }
-        ]
-      }
-    },
-    "bindAsync": {
-      "type": "function",
-      "name": "bindAsync",
-      "abstract": false,
-      "mixin": true,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.data.MBinding",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>The bind method delegates the call to the\n {@link qx.data.SingleValueBinding#bind} function. As source, the current\n object (this) will be used.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "sourcePropertyChain {String} The property chain which represents\n   the source property.",
-            "paramName": "sourcePropertyChain",
-            "description": " The property chain which represents\n   the source property.",
-            "type": "String"
-          },
-          {
-            "name": "@param",
-            "body": "targetObject {qx.core.Object} The object which the source should\n   be bind to.",
-            "paramName": "targetObject",
-            "description": " The object which the source should\n   be bind to.",
-            "type": "qx.core.Object"
-          },
-          {
-            "name": "@param",
-            "body": "targetProperty {String} The property name of the target object.",
-            "paramName": "targetProperty",
-            "description": " The property name of the target object.",
-            "type": "String"
-          },
-          {
-            "name": "@param",
-            "body": "options {Map} A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
-            "paramName": "options",
-            "description": " A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
-            "type": "Map"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.Promise} A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index.",
-            "type": "qx.Promise",
-            "description": " A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index."
           }
         ],
         "@throws": [
@@ -2210,6 +2147,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -2234,6 +2172,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -3922,11 +3861,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 488,
-        "column": 13
+        "line": 458,
+        "column": 2
       },
       "end": {
-        "line": 534,
+        "line": 505,
         "column": 3
       }
     },

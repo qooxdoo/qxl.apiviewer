@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 49,
+        "line": 44,
         "column": 3
       }
     },
@@ -37,11 +37,11 @@
     "_createRootWidget": {
       "location": {
         "start": {
-          "line": 45,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 47,
+          "line": 42,
           "column": 5
         }
       },
@@ -150,6 +150,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -174,6 +175,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

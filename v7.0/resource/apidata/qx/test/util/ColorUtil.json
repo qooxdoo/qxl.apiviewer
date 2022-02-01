@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 89,
+        "line": 156,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "testRgbToRgbString": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 33,
+          "line": 44,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "testCssStringToRgb": {
       "location": {
         "start": {
-          "line": 35,
+          "line": 46,
           "column": 4
         },
         "end": {
-          "line": 42,
+          "line": 66,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "testHex3StringToHex6String": {
       "location": {
         "start": {
-          "line": 45,
+          "line": 68,
           "column": 4
         },
         "end": {
-          "line": 52,
+          "line": 97,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "testRgbToHexString": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 61,
+          "line": 115,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "testStringToRgbString": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 117,
           "column": 4
         },
         "end": {
-          "line": 68,
+          "line": 132,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testScale": {
       "location": {
         "start": {
-          "line": 70,
+          "line": 134,
           "column": 4
         },
         "end": {
-          "line": 77,
+          "line": 143,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "testAdjust": {
       "location": {
         "start": {
-          "line": 78,
+          "line": 144,
           "column": 4
         },
         "end": {
-          "line": 86,
+          "line": 154,
           "column": 5
         }
       },
@@ -207,6 +207,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -231,6 +232,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

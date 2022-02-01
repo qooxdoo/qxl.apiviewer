@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 169,
+        "line": 162,
         "column": 3
       }
     },
@@ -34,11 +34,11 @@
     "_getCellStyle": {
       "location": {
         "start": {
-          "line": 99,
+          "line": 96,
           "column": 4
         },
         "end": {
-          "line": 102,
+          "line": 98,
           "column": 5
         }
       },
@@ -73,11 +73,11 @@
     "_getCellExtras": {
       "location": {
         "start": {
-          "line": 116,
+          "line": 112,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 114,
           "column": 5
         }
       },
@@ -112,11 +112,11 @@
     "_getContentHtml": {
       "location": {
         "start": {
-          "line": 131,
+          "line": 126,
           "column": 4
         },
         "end": {
-          "line": 134,
+          "line": 128,
           "column": 5
         }
       },
@@ -151,11 +151,11 @@
     "render": {
       "location": {
         "start": {
-          "line": 147,
+          "line": 141,
           "column": 4
         },
         "end": {
-          "line": 167,
+          "line": 160,
           "column": 5
         }
       },
@@ -275,6 +275,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -299,6 +300,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

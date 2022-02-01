@@ -74,11 +74,11 @@
     "__tranportImpl": {
       "location": {
         "start": {
-          "line": 24,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 24,
+          "line": 23,
           "column": 24
         }
       },
@@ -102,11 +102,11 @@
     "getTransportImpl": {
       "location": {
         "start": {
-          "line": 33,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 38,
+          "line": 37,
           "column": 5
         }
       },
@@ -136,11 +136,11 @@
     "send": {
       "location": {
         "start": {
-          "line": 50,
+          "line": 49,
           "column": 4
         },
         "end": {
-          "line": 57,
+          "line": 56,
           "column": 5
         }
       },
@@ -182,7 +182,7 @@
     "_createTransportImpl": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 62,
           "column": 4
         },
         "end": {
@@ -366,6 +366,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -390,6 +391,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

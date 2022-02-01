@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 183,
+        "line": 197,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "testValue": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 52,
+          "line": 54,
           "column": 5
         }
       },
@@ -38,21 +38,7 @@
     "testNullable": {
       "location": {
         "start": {
-          "line": 54,
-          "column": 4
-        },
-        "end": {
-          "line": 81,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testSelectionNoModel": {
-      "location": {
-        "start": {
-          "line": 83,
+          "line": 56,
           "column": 4
         },
         "end": {
@@ -63,14 +49,28 @@
       "type": "function",
       "access": "public"
     },
-    "testResetValue": {
+    "testSelectionNoModel": {
       "location": {
         "start": {
           "line": 94,
           "column": 4
         },
         "end": {
-          "line": 111,
+          "line": 104,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testResetValue": {
+      "location": {
+        "start": {
+          "line": 106,
+          "column": 4
+        },
+        "end": {
+          "line": 123,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "testResetValueNotNullable": {
       "location": {
         "start": {
-          "line": 113,
+          "line": 125,
           "column": 4
         },
         "end": {
-          "line": 130,
+          "line": 142,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testSelection": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 144,
           "column": 4
         },
         "end": {
-          "line": 181,
+          "line": 195,
           "column": 5
         }
       },
@@ -193,6 +193,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -217,6 +218,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

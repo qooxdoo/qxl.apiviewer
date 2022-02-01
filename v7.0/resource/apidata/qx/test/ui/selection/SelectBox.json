@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 79,
+        "line": 73,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 47,
+          "line": 44,
           "column": 5
         }
       },
@@ -42,11 +42,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 49,
+          "line": 46,
           "column": 4
         },
         "end": {
-          "line": 57,
+          "line": 53,
           "column": 5
         }
       },
@@ -60,11 +60,11 @@
     "testResetSelectionAllowEmpty": {
       "location": {
         "start": {
-          "line": 59,
+          "line": 55,
           "column": 4
         },
         "end": {
-          "line": 64,
+          "line": 59,
           "column": 5
         }
       },
@@ -74,11 +74,11 @@
     "_getChildren": {
       "location": {
         "start": {
-          "line": 66,
+          "line": 61,
           "column": 4
         },
         "end": {
-          "line": 73,
+          "line": 67,
           "column": 5
         }
       },
@@ -92,11 +92,11 @@
     "_createTestElement": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 69,
           "column": 4
         },
         "end": {
-          "line": 77,
+          "line": 71,
           "column": 5
         }
       },
@@ -195,6 +195,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -219,6 +220,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 373,
+        "line": 332,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 38,
-        "column": 14
+        "line": 34,
+        "column": 2
       },
       "end": {
-        "line": 50,
+        "line": 45,
         "column": 3
       }
     },
@@ -60,12 +60,12 @@
     "__paneScroller": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 54,
           "column": 4
         },
         "end": {
-          "line": 65,
-          "column": 25
+          "line": 54,
+          "column": 24
         }
       },
       "type": "variable",
@@ -74,12 +74,12 @@
     "__moveFeedback": {
       "location": {
         "start": {
-          "line": 66,
+          "line": 55,
           "column": 4
         },
         "end": {
-          "line": 66,
-          "column": 25
+          "line": 55,
+          "column": 24
         }
       },
       "type": "variable",
@@ -88,12 +88,12 @@
     "__lastPointerOverColumn": {
       "location": {
         "start": {
-          "line": 67,
+          "line": 56,
           "column": 4
         },
         "end": {
-          "line": 67,
-          "column": 34
+          "line": 56,
+          "column": 33
         }
       },
       "type": "variable",
@@ -102,12 +102,12 @@
     "__blocker": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 57,
           "column": 4
         },
         "end": {
-          "line": 68,
-          "column": 20
+          "line": 57,
+          "column": 19
         }
       },
       "type": "variable",
@@ -116,11 +116,11 @@
     "getPaneScroller": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 77,
+          "line": 66,
           "column": 5
         }
       },
@@ -146,11 +146,11 @@
     "getTable": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 73,
           "column": 4
         },
         "end": {
-          "line": 87,
+          "line": 75,
           "column": 5
         }
       },
@@ -176,11 +176,11 @@
     "getBlocker": {
       "location": {
         "start": {
-          "line": 94,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 96,
+          "line": 84,
           "column": 5
         }
       },
@@ -206,11 +206,11 @@
     "onColOrderChanged": {
       "location": {
         "start": {
-          "line": 102,
+          "line": 90,
           "column": 4
         },
         "end": {
-          "line": 104,
+          "line": 92,
           "column": 5
         }
       },
@@ -228,11 +228,11 @@
     "onPaneModelChanged": {
       "location": {
         "start": {
-          "line": 110,
+          "line": 97,
           "column": 4
         },
         "end": {
-          "line": 112,
+          "line": 99,
           "column": 5
         }
       },
@@ -250,11 +250,11 @@
     "onTableModelMetaDataChanged": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 105,
           "column": 4
         },
         "end": {
-          "line": 121,
+          "line": 107,
           "column": 5
         }
       },
@@ -272,11 +272,11 @@
     "setColumnWidth": {
       "location": {
         "start": {
-          "line": 138,
+          "line": 123,
           "column": 4
         },
         "end": {
-          "line": 145,
+          "line": 129,
           "column": 5
         }
       },
@@ -317,11 +317,11 @@
     "setPointerOverColumn": {
       "location": {
         "start": {
-          "line": 154,
+          "line": 137,
           "column": 4
         },
         "end": {
-          "line": 173,
+          "line": 155,
           "column": 5
         }
       },
@@ -348,11 +348,11 @@
     "getHeaderWidgetAtColumn": {
       "location": {
         "start": {
-          "line": 182,
+          "line": 163,
           "column": 4
         },
         "end": {
-          "line": 186,
+          "line": 166,
           "column": 5
         }
       },
@@ -387,11 +387,11 @@
     "showColumnMoveFeedback": {
       "location": {
         "start": {
-          "line": 196,
+          "line": 175,
           "column": 4
         },
         "end": {
-          "line": 235,
+          "line": 211,
           "column": 5
         }
       },
@@ -425,11 +425,11 @@
     "hideColumnMoveFeedback": {
       "location": {
         "start": {
-          "line": 241,
+          "line": 216,
           "column": 4
         },
         "end": {
-          "line": 248,
+          "line": 221,
           "column": 5
         }
       },
@@ -447,11 +447,11 @@
     "isShowingColumnMoveFeedback": {
       "location": {
         "start": {
-          "line": 257,
+          "line": 229,
           "column": 4
         },
         "end": {
-          "line": 259,
+          "line": 231,
           "column": 5
         }
       },
@@ -477,11 +477,11 @@
     "_updateContent": {
       "location": {
         "start": {
-          "line": 268,
+          "line": 239,
           "column": 4
         },
         "end": {
-          "line": 341,
+          "line": 306,
           "column": 5
         }
       },
@@ -508,11 +508,11 @@
     "_cleanUpCells": {
       "location": {
         "start": {
-          "line": 348,
+          "line": 312,
           "column": 4
         },
         "end": {
-          "line": 357,
+          "line": 319,
           "column": 5
         }
       },
@@ -615,6 +615,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -639,6 +640,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -4323,11 +4325,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 368,
-        "column": 13
+        "line": 328,
+        "column": 2
       },
       "end": {
-        "line": 372,
+        "line": 331,
         "column": 3
       }
     },

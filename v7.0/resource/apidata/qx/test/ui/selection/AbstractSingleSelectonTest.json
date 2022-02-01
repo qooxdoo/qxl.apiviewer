@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 276,
+        "line": 324,
         "column": 3
       }
     },
@@ -27,12 +27,12 @@
     "_widget": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 26,
-          "column": 18
+          "line": 24,
+          "column": 17
         }
       },
       "type": "variable",
@@ -41,12 +41,12 @@
     "_mode": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 26,
           "column": 4
         },
         "end": {
-          "line": 28,
-          "column": 16
+          "line": 26,
+          "column": 15
         }
       },
       "type": "variable",
@@ -55,12 +55,12 @@
     "_selection": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 30,
-          "column": 21
+          "line": 28,
+          "column": 20
         }
       },
       "type": "variable",
@@ -69,12 +69,12 @@
     "_notInSelection": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 30,
           "column": 4
         },
         "end": {
-          "line": 32,
-          "column": 26
+          "line": 30,
+          "column": 25
         }
       },
       "type": "variable",
@@ -83,11 +83,11 @@
     "_getChildren": {
       "location": {
         "start": {
-          "line": 34,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 36,
+          "line": 34,
           "column": 5
         }
       },
@@ -97,11 +97,11 @@
     "_createTestElement": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 36,
           "column": 4
         },
         "end": {
-          "line": 41,
+          "line": 38,
           "column": 5
         }
       },
@@ -111,11 +111,11 @@
     "_assertArrayEquals": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 48,
+          "line": 44,
           "column": 5
         }
       },
@@ -125,11 +125,11 @@
     "testGetSelection": {
       "location": {
         "start": {
-          "line": 50,
+          "line": 46,
           "column": 4
         },
         "end": {
-          "line": 55,
+          "line": 53,
           "column": 5
         }
       },
@@ -139,11 +139,11 @@
     "testSetSelection": {
       "location": {
         "start": {
-          "line": 57,
+          "line": 55,
           "column": 4
         },
         "end": {
-          "line": 60,
+          "line": 57,
           "column": 5
         }
       },
@@ -153,11 +153,11 @@
     "testDisabledSetSelection": {
       "location": {
         "start": {
-          "line": 62,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 66,
+          "line": 62,
           "column": 5
         }
       },
@@ -167,11 +167,11 @@
     "_testSetSelection": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 91,
+          "line": 96,
           "column": 5
         }
       },
@@ -181,21 +181,7 @@
     "testSameSetSelection": {
       "location": {
         "start": {
-          "line": 93,
-          "column": 4
-        },
-        "end": {
-          "line": 104,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testSetSelectionWithNotChildElement": {
-      "location": {
-        "start": {
-          "line": 106,
+          "line": 98,
           "column": 4
         },
         "end": {
@@ -206,14 +192,28 @@
       "type": "function",
       "access": "public"
     },
-    "testSetSelectionWithTooMuchElements": {
+    "testSetSelectionWithNotChildElement": {
       "location": {
         "start": {
           "line": 119,
           "column": 4
         },
         "end": {
-          "line": 129,
+          "line": 134,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testSetSelectionWithTooMuchElements": {
+      "location": {
+        "start": {
+          "line": 136,
+          "column": 4
+        },
+        "end": {
+          "line": 153,
           "column": 5
         }
       },
@@ -223,11 +223,11 @@
     "testResetSelection": {
       "location": {
         "start": {
-          "line": 131,
+          "line": 155,
           "column": 4
         },
         "end": {
-          "line": 159,
+          "line": 196,
           "column": 5
         }
       },
@@ -237,11 +237,11 @@
     "testDisabledResetSelection": {
       "location": {
         "start": {
-          "line": 162,
+          "line": 198,
           "column": 4
         },
         "end": {
-          "line": 166,
+          "line": 201,
           "column": 5
         }
       },
@@ -251,11 +251,11 @@
     "testResetSelectionWithEmptySelection": {
       "location": {
         "start": {
-          "line": 169,
+          "line": 203,
           "column": 4
         },
         "end": {
-          "line": 197,
+          "line": 244,
           "column": 5
         }
       },
@@ -265,63 +265,7 @@
     "testIsSelected": {
       "location": {
         "start": {
-          "line": 199,
-          "column": 4
-        },
-        "end": {
-          "line": 207,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testIsSelectedWithNotChildElement": {
-      "location": {
-        "start": {
-          "line": 209,
-          "column": 4
-        },
-        "end": {
-          "line": 220,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testIsSelectionEmpty": {
-      "location": {
-        "start": {
-          "line": 222,
-          "column": 4
-        },
-        "end": {
-          "line": 237,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testGetSelectables": {
-      "location": {
-        "start": {
-          "line": 239,
-          "column": 4
-        },
-        "end": {
           "line": 246,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testDisabledGetSelectables": {
-      "location": {
-        "start": {
-          "line": 249,
           "column": 4
         },
         "end": {
@@ -332,14 +276,70 @@
       "type": "function",
       "access": "public"
     },
-    "testGetUserSelectables": {
+    "testIsSelectedWithNotChildElement": {
       "location": {
         "start": {
-          "line": 256,
+          "line": 255,
           "column": 4
         },
         "end": {
-          "line": 274,
+          "line": 270,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testIsSelectionEmpty": {
+      "location": {
+        "start": {
+          "line": 272,
+          "column": 4
+        },
+        "end": {
+          "line": 285,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testGetSelectables": {
+      "location": {
+        "start": {
+          "line": 287,
+          "column": 4
+        },
+        "end": {
+          "line": 296,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testDisabledGetSelectables": {
+      "location": {
+        "start": {
+          "line": 298,
+          "column": 4
+        },
+        "end": {
+          "line": 301,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testGetUserSelectables": {
+      "location": {
+        "start": {
+          "line": 303,
+          "column": 4
+        },
+        "end": {
+          "line": 322,
           "column": 5
         }
       },
@@ -434,6 +434,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -458,6 +459,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

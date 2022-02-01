@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 1301,
+        "line": 1334,
         "column": 3
       }
     },
@@ -209,11 +209,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 70,
-        "column": 14
+        "line": 66,
+        "column": 2
       },
       "end": {
-        "line": 80,
+        "line": 75,
         "column": 3
       }
     },
@@ -230,12 +230,12 @@
     "dialogok": {
       "location": {
         "start": {
-          "line": 94,
+          "line": 85,
           "column": 4
         },
         "end": {
-          "line": 94,
-          "column": 42
+          "line": 85,
+          "column": 35
         }
       },
       "jsdoc": {
@@ -252,12 +252,12 @@
     "dialogcancel": {
       "location": {
         "start": {
-          "line": 97,
+          "line": 88,
           "column": 4
         },
         "end": {
-          "line": 97,
-          "column": 42
+          "line": 88,
+          "column": 39
         }
       },
       "jsdoc": {
@@ -274,12 +274,12 @@
     "changeValue": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 91,
           "column": 4
         },
         "end": {
-          "line": 100,
-          "column": 40
+          "line": 91,
+          "column": 37
         }
       },
       "jsdoc": {
@@ -298,11 +298,11 @@
     "appearance": {
       "location": {
         "start": {
-          "line": 115,
+          "line": 102,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 105,
           "column": 5
         }
       },
@@ -320,11 +320,11 @@
     "red": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 127,
+          "line": 112,
           "column": 5
         }
       },
@@ -346,11 +346,11 @@
     "green": {
       "location": {
         "start": {
-          "line": 130,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 135,
+          "line": 119,
           "column": 5
         }
       },
@@ -372,11 +372,11 @@
     "blue": {
       "location": {
         "start": {
-          "line": 138,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 143,
+          "line": 126,
           "column": 5
         }
       },
@@ -398,11 +398,11 @@
     "hue": {
       "location": {
         "start": {
-          "line": 146,
+          "line": 129,
           "column": 4
         },
         "end": {
-          "line": 151,
+          "line": 133,
           "column": 5
         }
       },
@@ -424,11 +424,11 @@
     "saturation": {
       "location": {
         "start": {
-          "line": 154,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 159,
+          "line": 140,
           "column": 5
         }
       },
@@ -450,11 +450,11 @@
     "brightness": {
       "location": {
         "start": {
-          "line": 162,
+          "line": 143,
           "column": 4
         },
         "end": {
-          "line": 167,
+          "line": 147,
           "column": 5
         }
       },
@@ -510,12 +510,12 @@
     "__updateContext": {
       "location": {
         "start": {
-          "line": 190,
+          "line": 166,
           "column": 4
         },
         "end": {
-          "line": 190,
-          "column": 26
+          "line": 166,
+          "column": 25
         }
       },
       "jsdoc": {
@@ -538,12 +538,12 @@
     "__presetTable": {
       "location": {
         "start": {
-          "line": 196,
+          "line": 172,
           "column": 4
         },
         "end": {
-          "line": 198,
-          "column": 55
+          "line": 193,
+          "column": 5
         }
       },
       "jsdoc": {
@@ -572,12 +572,12 @@
     "__capture": {
       "location": {
         "start": {
-          "line": 203,
+          "line": 198,
           "column": 4
         },
         "end": {
-          "line": 203,
-          "column": 18
+          "line": 198,
+          "column": 17
         }
       },
       "jsdoc": {
@@ -600,12 +600,12 @@
     "__brightnessSubtract": {
       "location": {
         "start": {
-          "line": 208,
+          "line": 203,
           "column": 4
         },
         "end": {
-          "line": 208,
-          "column": 28
+          "line": 203,
+          "column": 27
         }
       },
       "jsdoc": {
@@ -628,12 +628,12 @@
     "__hueSaturationSubtractTop": {
       "location": {
         "start": {
-          "line": 213,
+          "line": 208,
           "column": 4
         },
         "end": {
-          "line": 213,
-          "column": 34
+          "line": 208,
+          "column": 33
         }
       },
       "jsdoc": {
@@ -656,12 +656,12 @@
     "__hueSaturationSubtractLeft": {
       "location": {
         "start": {
-          "line": 218,
+          "line": 213,
           "column": 4
         },
         "end": {
-          "line": 218,
-          "column": 35
+          "line": 213,
+          "column": 34
         }
       },
       "jsdoc": {
@@ -684,12 +684,12 @@
     "__nullValue": {
       "location": {
         "start": {
-          "line": 221,
+          "line": 216,
           "column": 4
         },
         "end": {
-          "line": 221,
-          "column": 22
+          "line": 216,
+          "column": 21
         }
       },
       "jsdoc": {},
@@ -699,12 +699,12 @@
     "__preventChangeValueEvent": {
       "location": {
         "start": {
-          "line": 224,
+          "line": 219,
           "column": 4
         },
         "end": {
-          "line": 224,
-          "column": 37
+          "line": 219,
+          "column": 36
         }
       },
       "jsdoc": {},
@@ -714,11 +714,11 @@
     "_createChildControlImpl": {
       "location": {
         "start": {
-          "line": 228,
+          "line": 222,
           "column": 4
         },
         "end": {
-          "line": 473,
+          "line": 527,
           "column": 5
         }
       },
@@ -733,11 +733,11 @@
     "setValue": {
       "location": {
         "start": {
-          "line": 484,
+          "line": 537,
           "column": 4
         },
         "end": {
-          "line": 506,
+          "line": 555,
           "column": 5
         }
       },
@@ -769,11 +769,11 @@
     "getValue": {
       "location": {
         "start": {
-          "line": 515,
+          "line": 563,
           "column": 4
         },
         "end": {
-          "line": 520,
+          "line": 571,
           "column": 5
         }
       },
@@ -804,11 +804,11 @@
     "resetValue": {
       "location": {
         "start": {
-          "line": 525,
+          "line": 576,
           "column": 4
         },
         "end": {
-          "line": 533,
+          "line": 583,
           "column": 5
         }
       },
@@ -831,11 +831,11 @@
     "__fireChangeValueEvent": {
       "location": {
         "start": {
-          "line": 539,
+          "line": 588,
           "column": 4
         },
         "end": {
-          "line": 546,
+          "line": 593,
           "column": 5
         }
       },
@@ -853,11 +853,11 @@
     "_applyRed": {
       "location": {
         "start": {
-          "line": 557,
+          "line": 602,
           "column": 4
         },
         "end": {
-          "line": 585,
+          "line": 628,
           "column": 5
         }
       },
@@ -871,11 +871,11 @@
     "_applyGreen": {
       "location": {
         "start": {
-          "line": 589,
+          "line": 631,
           "column": 4
         },
         "end": {
-          "line": 617,
+          "line": 657,
           "column": 5
         }
       },
@@ -889,11 +889,11 @@
     "_applyBlue": {
       "location": {
         "start": {
-          "line": 621,
+          "line": 660,
           "column": 4
         },
         "end": {
-          "line": 649,
+          "line": 686,
           "column": 5
         }
       },
@@ -907,11 +907,11 @@
     "_applyHue": {
       "location": {
         "start": {
-          "line": 661,
+          "line": 695,
           "column": 4
         },
         "end": {
-          "line": 691,
+          "line": 728,
           "column": 5
         }
       },
@@ -925,11 +925,11 @@
     "_applySaturation": {
       "location": {
         "start": {
-          "line": 695,
+          "line": 731,
           "column": 4
         },
         "end": {
-          "line": 726,
+          "line": 765,
           "column": 5
         }
       },
@@ -943,11 +943,11 @@
     "_applyBrightness": {
       "location": {
         "start": {
-          "line": 730,
+          "line": 768,
           "column": 4
         },
         "end": {
-          "line": 762,
+          "line": 801,
           "column": 5
         }
       },
@@ -961,11 +961,11 @@
     "_onBrightnessHandlePointerDown": {
       "location": {
         "start": {
-          "line": 779,
+          "line": 815,
           "column": 4
         },
         "end": {
-          "line": 795,
+          "line": 834,
           "column": 5
         }
       },
@@ -992,11 +992,11 @@
     "_onBrightnessHandlePointerUp": {
       "location": {
         "start": {
-          "line": 804,
+          "line": 842,
           "column": 4
         },
         "end": {
-          "line": 809,
+          "line": 846,
           "column": 5
         }
       },
@@ -1023,11 +1023,11 @@
     "_onBrightnessHandlePointerMove": {
       "location": {
         "start": {
-          "line": 818,
+          "line": 854,
           "column": 4
         },
         "end": {
-          "line": 825,
+          "line": 860,
           "column": 5
         }
       },
@@ -1054,11 +1054,11 @@
     "_onBrightnessFieldPointerDown": {
       "location": {
         "start": {
-          "line": 834,
+          "line": 868,
           "column": 4
         },
         "end": {
-          "line": 847,
+          "line": 881,
           "column": 5
         }
       },
@@ -1085,11 +1085,11 @@
     "_onBrightnessPaneRoll": {
       "location": {
         "start": {
-          "line": 856,
+          "line": 889,
           "column": 4
         },
         "end": {
-          "line": 866,
+          "line": 900,
           "column": 5
         }
       },
@@ -1116,11 +1116,11 @@
     "_setBrightnessOnFieldEvent": {
       "location": {
         "start": {
-          "line": 874,
+          "line": 907,
           "column": 4
         },
         "end": {
-          "line": 889,
+          "line": 927,
           "column": 5
         }
       },
@@ -1147,11 +1147,11 @@
     "_onHueSaturationHandlePointerUp": {
       "location": {
         "start": {
-          "line": 904,
+          "line": 941,
           "column": 4
         },
         "end": {
-          "line": 913,
+          "line": 948,
           "column": 5
         }
       },
@@ -1178,11 +1178,11 @@
     "_onHueSaturationHandlePointerMove": {
       "location": {
         "start": {
-          "line": 922,
+          "line": 956,
           "column": 4
         },
         "end": {
-          "line": 931,
+          "line": 962,
           "column": 5
         }
       },
@@ -1209,11 +1209,11 @@
     "_onHueSaturationFieldPointerDown": {
       "location": {
         "start": {
-          "line": 941,
+          "line": 971,
           "column": 4
         },
         "end": {
-          "line": 957,
+          "line": 994,
           "column": 5
         }
       },
@@ -1240,11 +1240,11 @@
     "_onHueSaturationPaneRoll": {
       "location": {
         "start": {
-          "line": 966,
+          "line": 1002,
           "column": 4
         },
         "end": {
-          "line": 978,
+          "line": 1016,
           "column": 5
         }
       },
@@ -1271,11 +1271,11 @@
     "_setHueSaturationOnFieldEvent": {
       "location": {
         "start": {
-          "line": 986,
+          "line": 1023,
           "column": 4
         },
         "end": {
-          "line": 999,
+          "line": 1044,
           "column": 5
         }
       },
@@ -1302,11 +1302,11 @@
     "_setRedFromSpinner": {
       "location": {
         "start": {
-          "line": 1013,
+          "line": 1055,
           "column": 4
         },
         "end": {
-          "line": 1022,
+          "line": 1063,
           "column": 5
         }
       },
@@ -1324,11 +1324,11 @@
     "_setGreenFromSpinner": {
       "location": {
         "start": {
-          "line": 1028,
+          "line": 1068,
           "column": 4
         },
         "end": {
-          "line": 1037,
+          "line": 1076,
           "column": 5
         }
       },
@@ -1346,11 +1346,11 @@
     "_setBlueFromSpinner": {
       "location": {
         "start": {
-          "line": 1043,
+          "line": 1081,
           "column": 4
         },
         "end": {
-          "line": 1052,
+          "line": 1089,
           "column": 5
         }
       },
@@ -1368,11 +1368,11 @@
     "_setHueFromSpinner": {
       "location": {
         "start": {
-          "line": 1066,
+          "line": 1100,
           "column": 4
         },
         "end": {
-          "line": 1075,
+          "line": 1108,
           "column": 5
         }
       },
@@ -1390,11 +1390,11 @@
     "_setSaturationFromSpinner": {
       "location": {
         "start": {
-          "line": 1081,
+          "line": 1113,
           "column": 4
         },
         "end": {
-          "line": 1090,
+          "line": 1124,
           "column": 5
         }
       },
@@ -1412,11 +1412,11 @@
     "_setBrightnessFromSpinner": {
       "location": {
         "start": {
-          "line": 1096,
+          "line": 1129,
           "column": 4
         },
         "end": {
-          "line": 1105,
+          "line": 1140,
           "column": 5
         }
       },
@@ -1434,11 +1434,11 @@
     "_onHexFieldChange": {
       "location": {
         "start": {
-          "line": 1120,
+          "line": 1152,
           "column": 4
         },
         "end": {
-          "line": 1139,
+          "line": 1169,
           "column": 5
         }
       },
@@ -1465,11 +1465,11 @@
     "_setHexFromRgb": {
       "location": {
         "start": {
-          "line": 1145,
+          "line": 1174,
           "column": 4
         },
         "end": {
-          "line": 1155,
+          "line": 1185,
           "column": 5
         }
       },
@@ -1487,11 +1487,11 @@
     "_onColorFieldTap": {
       "location": {
         "start": {
-          "line": 1172,
+          "line": 1199,
           "column": 4
         },
         "end": {
-          "line": 1186,
+          "line": 1212,
           "column": 5
         }
       },
@@ -1518,11 +1518,11 @@
     "_setHueFromRgb": {
       "location": {
         "start": {
-          "line": 1200,
+          "line": 1223,
           "column": 4
         },
         "end": {
-          "line": 1216,
+          "line": 1241,
           "column": 5
         }
       },
@@ -1540,11 +1540,11 @@
     "_setRgbFromHue": {
       "location": {
         "start": {
-          "line": 1222,
+          "line": 1246,
           "column": 4
         },
         "end": {
-          "line": 1237,
+          "line": 1263,
           "column": 5
         }
       },
@@ -1562,11 +1562,11 @@
     "_setPreviewFromRgb": {
       "location": {
         "start": {
-          "line": 1251,
+          "line": 1274,
           "column": 4
         },
         "end": {
-          "line": 1255,
+          "line": 1282,
           "column": 5
         }
       },
@@ -1584,11 +1584,11 @@
     "setPreviousColor": {
       "location": {
         "start": {
-          "line": 1265,
+          "line": 1291,
           "column": 4
         },
         "end": {
-          "line": 1273,
+          "line": 1298,
           "column": 5
         }
       },
@@ -1629,11 +1629,11 @@
     "_setBrightnessGradiant": {
       "location": {
         "start": {
-          "line": 1278,
+          "line": 1303,
           "column": 4
         },
         "end": {
-          "line": 1284,
+          "line": 1315,
           "column": 5
         }
       },
@@ -1651,11 +1651,11 @@
     "_onAppear": {
       "location": {
         "start": {
-          "line": 1292,
+          "line": 1323,
           "column": 4
         },
         "end": {
-          "line": 1299,
+          "line": 1332,
           "column": 5
         }
       },
@@ -2011,6 +2011,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -2035,6 +2036,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

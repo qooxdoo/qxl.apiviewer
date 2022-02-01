@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 77,
+        "line": 76,
         "column": 3
       }
     },
@@ -43,12 +43,12 @@
     "TYPES": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 31,
           "column": 4
         },
         "end": {
-          "line": 32,
-          "column": 21
+          "line": 31,
+          "column": 20
         }
       },
       "jsdoc": {
@@ -65,12 +65,12 @@
     "BIND_METHODS": {
       "location": {
         "start": {
-          "line": 35,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 35,
-          "column": 33
+          "line": 33,
+          "column": 30
         }
       },
       "type": "variable",
@@ -79,11 +79,11 @@
     "getScale": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 45,
+          "line": 42,
           "column": 5
         }
       },
@@ -109,11 +109,11 @@
     "normalize": {
       "location": {
         "start": {
-          "line": 57,
+          "line": 53,
           "column": 4
         },
         "end": {
-          "line": 71,
+          "line": 67,
           "column": 5
         }
       },
@@ -162,15 +162,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 74,
-        "column": 10
+        "line": 70,
+        "column": 2
       },
       "end": {
-        "line": 76,
+        "line": 75,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

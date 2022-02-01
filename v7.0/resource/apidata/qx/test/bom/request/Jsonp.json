@@ -17,7 +17,7 @@
         "column": 0
       },
       "end": {
-        "line": 291,
+        "line": 294,
         "column": 3
       }
     },
@@ -126,7 +126,7 @@
           "column": 4
         },
         "end": {
-          "line": 120,
+          "line": 122,
           "column": 5
         }
       },
@@ -150,11 +150,11 @@
     "test: responseJson holds response with default callback": {
       "location": {
         "start": {
-          "line": 126,
+          "line": 128,
           "column": 4
         },
         "end": {
-          "line": 139,
+          "line": 141,
           "column": 5
         }
       },
@@ -165,11 +165,11 @@
     "test: reset responseJson when reopened": {
       "location": {
         "start": {
-          "line": 141,
+          "line": 143,
           "column": 4
         },
         "end": {
-          "line": 154,
+          "line": 156,
           "column": 5
         }
       },
@@ -179,11 +179,11 @@
     "test: status indicates success when default callback called": {
       "location": {
         "start": {
-          "line": 156,
+          "line": 158,
           "column": 4
         },
         "end": {
-          "line": 167,
+          "line": 169,
           "column": 5
         }
       },
@@ -193,11 +193,11 @@
     "test: status indicates success when custom callback called": {
       "location": {
         "start": {
-          "line": 169,
+          "line": 171,
           "column": 4
         },
         "end": {
-          "line": 181,
+          "line": 183,
           "column": 5
         }
       },
@@ -207,11 +207,11 @@
     "test: status indicates failure when default callback not called": {
       "location": {
         "start": {
-          "line": 185,
+          "line": 187,
           "column": 4
         },
         "end": {
-          "line": 196,
+          "line": 198,
           "column": 5
         }
       },
@@ -222,11 +222,11 @@
     "test: status indicates failure when custom callback not called": {
       "location": {
         "start": {
-          "line": 198,
+          "line": 200,
           "column": 4
         },
         "end": {
-          "line": 210,
+          "line": 212,
           "column": 5
         }
       },
@@ -236,11 +236,11 @@
     "test: status indicates failure when callback not called on second request": {
       "location": {
         "start": {
-          "line": 212,
+          "line": 214,
           "column": 4
         },
         "end": {
-          "line": 232,
+          "line": 234,
           "column": 5
         }
       },
@@ -250,11 +250,11 @@
     "test: call onload": {
       "location": {
         "start": {
-          "line": 238,
+          "line": 240,
           "column": 4
         },
         "end": {
-          "line": 247,
+          "line": 249,
           "column": 5
         }
       },
@@ -265,11 +265,11 @@
     "test: call onerror on network error": {
       "location": {
         "start": {
-          "line": 251,
+          "line": 253,
           "column": 4
         },
         "end": {
-          "line": 268,
+          "line": 272,
           "column": 5
         }
       },
@@ -280,11 +280,11 @@
     "test: call onloadend on network error": {
       "location": {
         "start": {
-          "line": 270,
+          "line": 274,
           "column": 4
         },
         "end": {
-          "line": 279,
+          "line": 283,
           "column": 5
         }
       },
@@ -294,11 +294,11 @@
     "request": {
       "location": {
         "start": {
-          "line": 281,
+          "line": 285,
           "column": 4
         },
         "end": {
-          "line": 284,
+          "line": 288,
           "column": 5
         }
       },
@@ -308,11 +308,11 @@
     "skip": {
       "location": {
         "start": {
-          "line": 286,
+          "line": 290,
           "column": 4
         },
         "end": {
-          "line": 288,
+          "line": 292,
           "column": 5
         }
       },
@@ -1515,6 +1515,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1539,6 +1540,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

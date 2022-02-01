@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 219,
+        "line": 239,
         "column": 3
       }
     },
@@ -26,12 +26,12 @@
     "__defaultLocale": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 26,
-          "column": 26
+          "line": 24,
+          "column": 25
         }
       },
       "type": "variable",
@@ -40,12 +40,12 @@
     "__listenerId": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 27,
-          "column": 23
+          "line": 25,
+          "column": 22
         }
       },
       "type": "variable",
@@ -54,11 +54,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 29,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 32,
+          "line": 30,
           "column": 5
         }
       },
@@ -68,11 +68,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 35,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 41,
+          "line": 38,
           "column": 5
         }
       },
@@ -82,11 +82,11 @@
     "testTranslation": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 145,
+          "line": 150,
           "column": 5
         }
       },
@@ -96,11 +96,11 @@
     "testInvalidMessage": {
       "location": {
         "start": {
-          "line": 148,
+          "line": 152,
           "column": 4
         },
         "end": {
-          "line": 176,
+          "line": 181,
           "column": 5
         }
       },
@@ -110,11 +110,11 @@
     "testMacCtrl": {
       "location": {
         "start": {
-          "line": 179,
+          "line": 183,
           "column": 4
         },
         "end": {
-          "line": 192,
+          "line": 213,
           "column": 5
         }
       },
@@ -124,11 +124,11 @@
     "testResetLocale": {
       "location": {
         "start": {
-          "line": 194,
+          "line": 215,
           "column": 4
         },
         "end": {
-          "line": 216,
+          "line": 237,
           "column": 5
         }
       },
@@ -467,6 +467,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -491,6 +492,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

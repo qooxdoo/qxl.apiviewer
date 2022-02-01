@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 224,
+        "line": 214,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 34,
+          "line": 31,
           "column": 5
         }
       },
@@ -42,11 +42,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 41,
+          "line": 37,
           "column": 5
         }
       },
@@ -60,11 +60,11 @@
     "assertScrollbars": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 39,
           "column": 4
         },
         "end": {
-          "line": 55,
+          "line": 51,
           "column": 5
         }
       },
@@ -74,7 +74,21 @@
     "configureScroller": {
       "location": {
         "start": {
-          "line": 57,
+          "line": 53,
+          "column": 4
+        },
+        "end": {
+          "line": 65,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testConstructor": {
+      "location": {
+        "start": {
+          "line": 67,
           "column": 4
         },
         "end": {
@@ -85,28 +99,14 @@
       "type": "function",
       "access": "public"
     },
-    "testConstructor": {
+    "testScrollX": {
       "location": {
         "start": {
           "line": 71,
           "column": 4
         },
         "end": {
-          "line": 73,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testScrollX": {
-      "location": {
-        "start": {
-          "line": 75,
-          "column": 4
-        },
-        "end": {
-          "line": 98,
+          "line": 93,
           "column": 5
         }
       },
@@ -116,11 +116,11 @@
     "testScrollY": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 122,
+          "line": 116,
           "column": 5
         }
       },
@@ -130,11 +130,11 @@
     "testMaxScrollPosition": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 146,
+          "line": 141,
           "column": 5
         }
       },
@@ -144,11 +144,11 @@
     "testScrollbarYAuto": {
       "location": {
         "start": {
-          "line": 148,
+          "line": 143,
           "column": 4
         },
         "end": {
-          "line": 169,
+          "line": 162,
           "column": 5
         }
       },
@@ -158,11 +158,11 @@
     "testScrollbarXAuto": {
       "location": {
         "start": {
-          "line": 171,
+          "line": 164,
           "column": 4
         },
         "end": {
-          "line": 192,
+          "line": 183,
           "column": 5
         }
       },
@@ -172,11 +172,11 @@
     "testScrollbarXYAuto": {
       "location": {
         "start": {
-          "line": 194,
+          "line": 185,
           "column": 4
         },
         "end": {
-          "line": 218,
+          "line": 208,
           "column": 5
         }
       },
@@ -271,6 +271,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -295,6 +296,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -461,15 +463,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 221,
-        "column": 13
+        "line": 211,
+        "column": 2
       },
       "end": {
-        "line": 223,
+        "line": 213,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {},
   "descendants": []

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 442,
+        "line": 600,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "__label1": {
       "location": {
         "start": {
-          "line": 24,
+          "line": 22,
           "column": 4
         },
         "end": {
-          "line": 24,
+          "line": 22,
           "column": 18
         }
       },
@@ -38,11 +38,11 @@
     "__label2": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 25,
+          "line": 23,
           "column": 18
         }
       },
@@ -52,11 +52,11 @@
     "__model": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 26,
+          "line": 24,
           "column": 17
         }
       },
@@ -66,11 +66,11 @@
     "__controller": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 27,
+          "line": 25,
           "column": 22
         }
       },
@@ -80,11 +80,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 29,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 37,
+          "line": 34,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 36,
           "column": 4
         },
         "end": {
-          "line": 46,
+          "line": 41,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "testOneToOne": {
       "location": {
         "start": {
-          "line": 49,
+          "line": 43,
           "column": 4
         },
         "end": {
-          "line": 58,
+          "line": 56,
           "column": 5
         }
       },
@@ -122,11 +122,11 @@
     "testOneToTwo": {
       "location": {
         "start": {
-          "line": 61,
+          "line": 58,
           "column": 4
         },
         "end": {
-          "line": 73,
+          "line": 79,
           "column": 5
         }
       },
@@ -136,11 +136,11 @@
     "testChangeModel": {
       "location": {
         "start": {
-          "line": 76,
+          "line": 81,
           "column": 4
         },
         "end": {
-          "line": 99,
+          "line": 113,
           "column": 5
         }
       },
@@ -150,11 +150,11 @@
     "testRemoveOneBinding": {
       "location": {
         "start": {
-          "line": 102,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 123,
+          "line": 154,
           "column": 5
         }
       },
@@ -164,11 +164,11 @@
     "testRemoveUnexistantTarget": {
       "location": {
         "start": {
-          "line": 126,
+          "line": 156,
           "column": 4
         },
         "end": {
-          "line": 137,
+          "line": 167,
           "column": 5
         }
       },
@@ -178,35 +178,7 @@
     "testTowToTwo": {
       "location": {
         "start": {
-          "line": 140,
-          "column": 4
-        },
-        "end": {
-          "line": 160,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testOneToOneBi": {
-      "location": {
-        "start": {
-          "line": 163,
-          "column": 4
-        },
-        "end": {
-          "line": 178,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testOneToTwoBi": {
-      "location": {
-        "start": {
-          "line": 181,
+          "line": 169,
           "column": 4
         },
         "end": {
@@ -217,14 +189,42 @@
       "type": "function",
       "access": "public"
     },
-    "testChangeModelBi": {
+    "testOneToOneBi": {
       "location": {
         "start": {
-          "line": 210,
+          "line": 209,
           "column": 4
         },
         "end": {
-          "line": 238,
+          "line": 232,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testOneToTwoBi": {
+      "location": {
+        "start": {
+          "line": 234,
+          "column": 4
+        },
+        "end": {
+          "line": 287,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testChangeModelBi": {
+      "location": {
+        "start": {
+          "line": 289,
+          "column": 4
+        },
+        "end": {
+          "line": 340,
           "column": 5
         }
       },
@@ -234,11 +234,11 @@
     "testConverting": {
       "location": {
         "start": {
-          "line": 241,
+          "line": 342,
           "column": 4
         },
         "end": {
-          "line": 262,
+          "line": 371,
           "column": 5
         }
       },
@@ -248,11 +248,11 @@
     "testConvertingBi": {
       "location": {
         "start": {
-          "line": 266,
+          "line": 373,
           "column": 4
         },
         "end": {
-          "line": 303,
+          "line": 434,
           "column": 5
         }
       },
@@ -262,11 +262,11 @@
     "testChangeModelCon": {
       "location": {
         "start": {
-          "line": 306,
+          "line": 436,
           "column": 4
         },
         "end": {
-          "line": 336,
+          "line": 475,
           "column": 5
         }
       },
@@ -276,11 +276,11 @@
     "testSetLateModel": {
       "location": {
         "start": {
-          "line": 339,
+          "line": 477,
           "column": 4
         },
         "end": {
-          "line": 355,
+          "line": 497,
           "column": 5
         }
       },
@@ -290,11 +290,11 @@
     "testSetModelNull": {
       "location": {
         "start": {
-          "line": 358,
+          "line": 499,
           "column": 4
         },
         "end": {
-          "line": 377,
+          "line": 522,
           "column": 5
         }
       },
@@ -304,11 +304,11 @@
     "testCreateWithoutModel": {
       "location": {
         "start": {
-          "line": 380,
+          "line": 524,
           "column": 4
         },
         "end": {
-          "line": 395,
+          "line": 543,
           "column": 5
         }
       },
@@ -318,11 +318,11 @@
     "testTargetArrayBi": {
       "location": {
         "start": {
-          "line": 398,
+          "line": 545,
           "column": 4
         },
         "end": {
-          "line": 415,
+          "line": 567,
           "column": 5
         }
       },
@@ -332,11 +332,11 @@
     "testDispose": {
       "location": {
         "start": {
-          "line": 418,
+          "line": 569,
           "column": 4
         },
         "end": {
-          "line": 439,
+          "line": 598,
           "column": 5
         }
       },
@@ -431,6 +431,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -455,6 +456,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

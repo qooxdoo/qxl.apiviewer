@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 310,
+        "line": 296,
         "column": 3
       }
     },
@@ -23,26 +23,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 22,
-        "column": 14
+        "line": 21,
+        "column": 2
       },
       "end": {
-        "line": 24,
+        "line": 23,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "members": {
     "__username": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 26,
           "column": 4
         },
         "end": {
-          "line": 28,
-          "column": 21
+          "line": 26,
+          "column": 20
         }
       },
       "type": "variable",
@@ -51,12 +50,12 @@
     "__password1": {
       "location": {
         "start": {
-          "line": 29,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 29,
-          "column": 22
+          "line": 27,
+          "column": 21
         }
       },
       "type": "variable",
@@ -65,12 +64,12 @@
     "__password2": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 30,
-          "column": 22
+          "line": 28,
+          "column": 21
         }
       },
       "type": "variable",
@@ -79,12 +78,12 @@
     "__resetter": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 31,
-          "column": 21
+          "line": 29,
+          "column": 20
         }
       },
       "type": "variable",
@@ -93,11 +92,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 33,
+          "line": 31,
           "column": 4
         },
         "end": {
-          "line": 38,
+          "line": 36,
           "column": 5
         }
       },
@@ -111,11 +110,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 45,
+          "line": 43,
           "column": 5
         }
       },
@@ -129,11 +128,11 @@
     "testReset": {
       "location": {
         "start": {
-          "line": 48,
+          "line": 45,
           "column": 4
         },
         "end": {
-          "line": 68,
+          "line": 65,
           "column": 5
         }
       },
@@ -143,11 +142,11 @@
     "testRemove": {
       "location": {
         "start": {
-          "line": 71,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 91,
+          "line": 87,
           "column": 5
         }
       },
@@ -157,11 +156,11 @@
     "testResetWithSelectBox": {
       "location": {
         "start": {
-          "line": 94,
+          "line": 89,
           "column": 4
         },
         "end": {
-          "line": 122,
+          "line": 117,
           "column": 5
         }
       },
@@ -171,11 +170,11 @@
     "testDifferentWidgets": {
       "location": {
         "start": {
-          "line": 125,
+          "line": 119,
           "column": 4
         },
         "end": {
-          "line": 176,
+          "line": 170,
           "column": 5
         }
       },
@@ -185,11 +184,11 @@
     "testRedefine": {
       "location": {
         "start": {
-          "line": 179,
+          "line": 172,
           "column": 4
         },
         "end": {
-          "line": 207,
+          "line": 199,
           "column": 5
         }
       },
@@ -199,11 +198,11 @@
     "testRefineSelection": {
       "location": {
         "start": {
-          "line": 210,
+          "line": 201,
           "column": 4
         },
         "end": {
-          "line": 240,
+          "line": 230,
           "column": 5
         }
       },
@@ -213,11 +212,11 @@
     "testResetOneItem": {
       "location": {
         "start": {
-          "line": 242,
+          "line": 232,
           "column": 4
         },
         "end": {
-          "line": 270,
+          "line": 259,
           "column": 5
         }
       },
@@ -227,11 +226,11 @@
     "testRedefineOneItem": {
       "location": {
         "start": {
-          "line": 273,
+          "line": 261,
           "column": 4
         },
         "end": {
-          "line": 307,
+          "line": 294,
           "column": 5
         }
       },
@@ -326,6 +325,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -350,6 +350,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

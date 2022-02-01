@@ -19,7 +19,7 @@
         "column": 0
       },
       "end": {
-        "line": 274,
+        "line": 247,
         "column": 3
       }
     },
@@ -36,11 +36,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 82,
-        "column": 14
+        "line": 74,
+        "column": 2
       },
       "end": {
-        "line": 89,
+        "line": 80,
         "column": 3
       }
     },
@@ -50,11 +50,11 @@
     "dynamic": {
       "location": {
         "start": {
-          "line": 104,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 109,
+          "line": 97,
           "column": 5
         }
       },
@@ -110,11 +110,11 @@
     "_applyDynamic": {
       "location": {
         "start": {
-          "line": 123,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 142,
+          "line": 124,
           "column": 5
         }
       },
@@ -128,11 +128,11 @@
     "_getItems": {
       "location": {
         "start": {
-          "line": 156,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 158,
+          "line": 138,
           "column": 5
         }
       },
@@ -158,11 +158,11 @@
     "_isAllowEmptySelection": {
       "location": {
         "start": {
-          "line": 166,
+          "line": 146,
           "column": 4
         },
         "end": {
-          "line": 168,
+          "line": 148,
           "column": 5
         }
       },
@@ -188,11 +188,11 @@
     "_isItemSelectable": {
       "location": {
         "start": {
-          "line": 176,
+          "line": 156,
           "column": 4
         },
         "end": {
-          "line": 178,
+          "line": 158,
           "column": 5
         }
       },
@@ -227,11 +227,11 @@
     "__onChangeSelection": {
       "location": {
         "start": {
-          "line": 187,
+          "line": 167,
           "column": 4
         },
         "end": {
-          "line": 204,
+          "line": 182,
           "column": 5
         }
       },
@@ -258,11 +258,11 @@
     "_afterAddChild": {
       "location": {
         "start": {
-          "line": 208,
+          "line": 185,
           "column": 4
         },
         "end": {
-          "line": 220,
+          "line": 197,
           "column": 5
         }
       },
@@ -273,11 +273,11 @@
     "_afterRemoveChild": {
       "location": {
         "start": {
-          "line": 224,
+          "line": 200,
           "column": 4
         },
         "end": {
-          "line": 234,
+          "line": 210,
           "column": 5
         }
       },
@@ -288,11 +288,11 @@
     "previous": {
       "location": {
         "start": {
-          "line": 246,
+          "line": 221,
           "column": 4
         },
         "end": {
-          "line": 258,
+          "line": 232,
           "column": 5
         }
       },
@@ -310,11 +310,11 @@
     "next": {
       "location": {
         "start": {
-          "line": 263,
+          "line": 237,
           "column": 4
         },
         "end": {
-          "line": 272,
+          "line": 245,
           "column": 5
         }
       },
@@ -1298,6 +1298,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1322,6 +1323,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 561,
+        "line": 539,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 101,
-        "column": 14
+        "line": 97,
+        "column": 2
       },
       "end": {
-        "line": 116,
+        "line": 111,
         "column": 3
       }
     },
@@ -82,11 +82,11 @@
     "alignY": {
       "location": {
         "start": {
-          "line": 135,
+          "line": 125,
           "column": 4
         },
         "end": {
-          "line": 140,
+          "line": 129,
           "column": 5
         }
       },
@@ -112,11 +112,11 @@
     "alignX": {
       "location": {
         "start": {
-          "line": 147,
+          "line": 135,
           "column": 4
         },
         "end": {
-          "line": 152,
+          "line": 139,
           "column": 5
         }
       },
@@ -142,11 +142,11 @@
     "spacing": {
       "location": {
         "start": {
-          "line": 156,
+          "line": 142,
           "column": 4
         },
         "end": {
-          "line": 161,
+          "line": 146,
           "column": 5
         }
       },
@@ -168,11 +168,11 @@
     "separator": {
       "location": {
         "start": {
-          "line": 165,
+          "line": 149,
           "column": 4
         },
         "end": {
-          "line": 170,
+          "line": 153,
           "column": 5
         }
       },
@@ -194,11 +194,11 @@
     "reversed": {
       "location": {
         "start": {
-          "line": 174,
+          "line": 156,
           "column": 4
         },
         "end": {
-          "line": 179,
+          "line": 160,
           "column": 5
         }
       },
@@ -254,12 +254,12 @@
     "__heights": {
       "location": {
         "start": {
-          "line": 194,
+          "line": 170,
           "column": 4
         },
         "end": {
-          "line": 194,
-          "column": 20
+          "line": 170,
+          "column": 19
         }
       },
       "type": "variable",
@@ -268,12 +268,12 @@
     "__flexs": {
       "location": {
         "start": {
-          "line": 195,
+          "line": 171,
           "column": 4
         },
         "end": {
-          "line": 195,
-          "column": 18
+          "line": 171,
+          "column": 17
         }
       },
       "type": "variable",
@@ -282,12 +282,12 @@
     "__enableFlex": {
       "location": {
         "start": {
-          "line": 196,
+          "line": 172,
           "column": 4
         },
         "end": {
-          "line": 196,
-          "column": 23
+          "line": 172,
+          "column": 22
         }
       },
       "type": "variable",
@@ -296,12 +296,12 @@
     "__children": {
       "location": {
         "start": {
-          "line": 197,
+          "line": 173,
           "column": 4
         },
         "end": {
-          "line": 197,
-          "column": 21
+          "line": 173,
+          "column": 20
         }
       },
       "type": "variable",
@@ -310,11 +310,11 @@
     "_applyReversed": {
       "location": {
         "start": {
-          "line": 207,
+          "line": 182,
           "column": 4
         },
         "end": {
-          "line": 214,
+          "line": 188,
           "column": 5
         }
       },
@@ -328,11 +328,11 @@
     "__rebuildCache": {
       "location": {
         "start": {
-          "line": 220,
+          "line": 193,
           "column": 4
         },
         "end": {
-          "line": 268,
+          "line": 241,
           "column": 5
         }
       },
@@ -350,11 +350,11 @@
     "verifyLayoutProperty": {
       "location": {
         "start": {
-          "line": 281,
+          "line": 250,
           "column": 4
         },
         "end": {
-          "line": 299,
+          "line": 269,
           "column": 6
         }
       },
@@ -365,11 +365,11 @@
     "renderLayout": {
       "location": {
         "start": {
-          "line": 303,
+          "line": 272,
           "column": 4
         },
         "end": {
-          "line": 475,
+          "line": 452,
           "column": 5
         }
       },
@@ -384,11 +384,11 @@
     "_computeSizeHint": {
       "location": {
         "start": {
-          "line": 479,
+          "line": 455,
           "column": 4
         },
         "end": {
-          "line": 547,
+          "line": 527,
           "column": 5
         }
       },
@@ -488,6 +488,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -512,6 +513,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -894,11 +896,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 558,
-        "column": 13
+        "line": 536,
+        "column": 2
       },
       "end": {
-        "line": 560,
+        "line": 538,
         "column": 3
       }
     },

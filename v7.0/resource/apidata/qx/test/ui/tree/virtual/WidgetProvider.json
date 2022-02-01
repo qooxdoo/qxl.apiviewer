@@ -17,7 +17,7 @@
         "column": 0
       },
       "end": {
-        "line": 476,
+        "line": 471,
         "column": 3
       }
     },
@@ -28,11 +28,11 @@
     "openProperty": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 30,
+          "line": 28,
           "column": 5
         }
       },
@@ -45,18 +45,46 @@
     "model": {
       "location": {
         "start": {
-          "line": 35,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 35,
-          "column": 16
+          "line": 32,
+          "column": 15
         }
       },
       "type": "variable",
       "access": "public"
     },
     "provider": {
+      "location": {
+        "start": {
+          "line": 34,
+          "column": 4
+        },
+        "end": {
+          "line": 34,
+          "column": 18
+        }
+      },
+      "type": "variable",
+      "access": "public"
+    },
+    "lookupTable": {
+      "location": {
+        "start": {
+          "line": 36,
+          "column": 4
+        },
+        "end": {
+          "line": 36,
+          "column": 21
+        }
+      },
+      "type": "variable",
+      "access": "public"
+    },
+    "selection": {
       "location": {
         "start": {
           "line": 38,
@@ -70,42 +98,14 @@
       "type": "variable",
       "access": "public"
     },
-    "lookupTable": {
-      "location": {
-        "start": {
-          "line": 41,
-          "column": 4
-        },
-        "end": {
-          "line": 41,
-          "column": 22
-        }
-      },
-      "type": "variable",
-      "access": "public"
-    },
-    "selection": {
-      "location": {
-        "start": {
-          "line": 44,
-          "column": 4
-        },
-        "end": {
-          "line": 44,
-          "column": 20
-        }
-      },
-      "type": "variable",
-      "access": "public"
-    },
     "setUp": {
       "location": {
         "start": {
-          "line": 47,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 63,
+          "line": 58,
           "column": 5
         }
       },
@@ -115,11 +115,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 66,
+          "line": 60,
           "column": 4
         },
         "end": {
-          "line": 86,
+          "line": 79,
           "column": 5
         }
       },
@@ -129,7 +129,21 @@
     "testCreation": {
       "location": {
         "start": {
-          "line": 89,
+          "line": 81,
+          "column": 4
+        },
+        "end": {
+          "line": 99,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testCreateLayer": {
+      "location": {
+        "start": {
+          "line": 101,
           "column": 4
         },
         "end": {
@@ -140,28 +154,14 @@
       "type": "function",
       "access": "public"
     },
-    "testCreateLayer": {
-      "location": {
-        "start": {
-          "line": 109,
-          "column": 4
-        },
-        "end": {
-          "line": 117,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
     "testGetRootNodeWidget": {
       "location": {
         "start": {
-          "line": 120,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 139,
+          "line": 126,
           "column": 5
         }
       },
@@ -171,11 +171,11 @@
     "testGetNodeWidget": {
       "location": {
         "start": {
-          "line": 142,
+          "line": 128,
           "column": 4
         },
         "end": {
-          "line": 160,
+          "line": 145,
           "column": 5
         }
       },
@@ -185,11 +185,11 @@
     "testGetLeafWidget": {
       "location": {
         "start": {
-          "line": 163,
+          "line": 147,
           "column": 4
         },
         "end": {
-          "line": 181,
+          "line": 164,
           "column": 5
         }
       },
@@ -199,11 +199,11 @@
     "testPoolWidget": {
       "location": {
         "start": {
-          "line": 184,
+          "line": 166,
           "column": 4
         },
         "end": {
-          "line": 198,
+          "line": 179,
           "column": 5
         }
       },
@@ -213,11 +213,11 @@
     "testDefaultNodeBinding": {
       "location": {
         "start": {
-          "line": 201,
+          "line": 181,
           "column": 4
         },
         "end": {
-          "line": 220,
+          "line": 209,
           "column": 5
         }
       },
@@ -227,11 +227,11 @@
     "testDefaultLeafBinding": {
       "location": {
         "start": {
-          "line": 223,
+          "line": 211,
           "column": 4
         },
         "end": {
-          "line": 235,
+          "line": 227,
           "column": 5
         }
       },
@@ -241,11 +241,11 @@
     "testRemoveBindingsFromNode": {
       "location": {
         "start": {
-          "line": 238,
+          "line": 229,
           "column": 4
         },
         "end": {
-          "line": 254,
+          "line": 253,
           "column": 5
         }
       },
@@ -255,11 +255,11 @@
     "testReverseBinding": {
       "location": {
         "start": {
-          "line": 257,
+          "line": 255,
           "column": 4
         },
         "end": {
-          "line": 274,
+          "line": 280,
           "column": 5
         }
       },
@@ -269,11 +269,11 @@
     "testRemoveAllBindings": {
       "location": {
         "start": {
-          "line": 277,
+          "line": 282,
           "column": 4
         },
         "end": {
-          "line": 302,
+          "line": 320,
           "column": 5
         }
       },
@@ -283,21 +283,7 @@
     "testRemoveAllBindingsOnDispose": {
       "location": {
         "start": {
-          "line": 305,
-          "column": 4
-        },
-        "end": {
-          "line": 313,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testCreateItem": {
-      "location": {
-        "start": {
-          "line": 316,
+          "line": 322,
           "column": 4
         },
         "end": {
@@ -308,10 +294,10 @@
       "type": "function",
       "access": "public"
     },
-    "testConfigureItem": {
+    "testCreateItem": {
       "location": {
         "start": {
-          "line": 332,
+          "line": 331,
           "column": 4
         },
         "end": {
@@ -322,14 +308,28 @@
       "type": "function",
       "access": "public"
     },
-    "testBindItem": {
+    "testConfigureItem": {
       "location": {
         "start": {
-          "line": 347,
+          "line": 346,
           "column": 4
         },
         "end": {
-          "line": 359,
+          "line": 358,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testBindItem": {
+      "location": {
+        "start": {
+          "line": 360,
+          "column": 4
+        },
+        "end": {
+          "line": 372,
           "column": 5
         }
       },
@@ -339,11 +339,11 @@
     "testOnPool": {
       "location": {
         "start": {
-          "line": 362,
+          "line": 374,
           "column": 4
         },
         "end": {
-          "line": 375,
+          "line": 387,
           "column": 5
         }
       },
@@ -353,11 +353,11 @@
     "isShowTopLevelOpenCloseIcons": {
       "location": {
         "start": {
-          "line": 385,
+          "line": 395,
           "column": 4
         },
         "end": {
-          "line": 387,
+          "line": 397,
           "column": 5
         }
       },
@@ -372,11 +372,11 @@
     "isShowLeafs": {
       "location": {
         "start": {
-          "line": 390,
+          "line": 399,
           "column": 4
         },
         "end": {
-          "line": 392,
+          "line": 401,
           "column": 5
         }
       },
@@ -386,11 +386,11 @@
     "getSelection": {
       "location": {
         "start": {
-          "line": 395,
+          "line": 403,
           "column": 4
         },
         "end": {
-          "line": 403,
+          "line": 410,
           "column": 5
         }
       },
@@ -414,11 +414,11 @@
     "getLookupTable": {
       "location": {
         "start": {
-          "line": 406,
+          "line": 412,
           "column": 4
         },
         "end": {
-          "line": 418,
+          "line": 423,
           "column": 5
         }
       },
@@ -442,11 +442,11 @@
     "isNode": {
       "location": {
         "start": {
-          "line": 421,
+          "line": 425,
           "column": 4
         },
         "end": {
-          "line": 431,
+          "line": 434,
           "column": 5
         }
       },
@@ -479,11 +479,11 @@
     "isNodeOpen": {
       "location": {
         "start": {
-          "line": 434,
+          "line": 436,
           "column": 4
         },
         "end": {
-          "line": 444,
+          "line": 445,
           "column": 5
         }
       },
@@ -520,7 +520,7 @@
           "column": 4
         },
         "end": {
-          "line": 456,
+          "line": 455,
           "column": 5
         }
       },
@@ -553,11 +553,11 @@
     "hasChildren": {
       "location": {
         "start": {
-          "line": 459,
+          "line": 457,
           "column": 4
         },
         "end": {
-          "line": 466,
+          "line": 463,
           "column": 5
         }
       },
@@ -590,12 +590,12 @@
     "openNode": {
       "location": {
         "start": {
-          "line": 469,
+          "line": 465,
           "column": 4
         },
         "end": {
-          "line": 469,
-          "column": 32
+          "line": 465,
+          "column": 21
         }
       },
       "type": "function",
@@ -619,12 +619,12 @@
     "openNodeWithoutScrolling": {
       "location": {
         "start": {
-          "line": 470,
+          "line": 466,
           "column": 4
         },
         "end": {
-          "line": 470,
-          "column": 48
+          "line": 466,
+          "column": 37
         }
       },
       "type": "function",
@@ -648,12 +648,12 @@
     "closeNode": {
       "location": {
         "start": {
-          "line": 473,
+          "line": 468,
           "column": 4
         },
         "end": {
-          "line": 473,
-          "column": 33
+          "line": 468,
+          "column": 22
         }
       },
       "type": "function",
@@ -677,12 +677,12 @@
     "closeNodeWithoutScrolling": {
       "location": {
         "start": {
-          "line": 474,
+          "line": 469,
           "column": 4
         },
         "end": {
-          "line": 474,
-          "column": 49
+          "line": 469,
+          "column": 38
         }
       },
       "type": "function",
@@ -1383,6 +1383,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1407,6 +1408,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

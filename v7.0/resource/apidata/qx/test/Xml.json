@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 205,
+        "line": 276,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "serializeArray": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 34,
+          "line": 31,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "testParseSerializeXml": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 50,
+          "line": 49,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "testFromString": {
       "location": {
         "start": {
-          "line": 53,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 59,
+          "line": 57,
           "column": 5
         }
       },
@@ -66,7 +66,7 @@
     "testCreateDocument": {
       "location": {
         "start": {
-          "line": 62,
+          "line": 59,
           "column": 4
         },
         "end": {
@@ -80,11 +80,11 @@
     "testXPath": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 74,
           "column": 4
         },
         "end": {
-          "line": 90,
+          "line": 110,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testXPathNS": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 112,
           "column": 4
         },
         "end": {
-          "line": 136,
+          "line": 176,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "testGetElementsByTagNameNS": {
       "location": {
         "start": {
-          "line": 139,
+          "line": 178,
           "column": 4
         },
         "end": {
-          "line": 163,
+          "line": 225,
           "column": 5
         }
       },
@@ -122,11 +122,11 @@
     "testSetAttributeNS": {
       "location": {
         "start": {
-          "line": 166,
+          "line": 227,
           "column": 4
         },
         "end": {
-          "line": 179,
+          "line": 241,
           "column": 5
         }
       },
@@ -136,11 +136,11 @@
     "testGetAttributeNS": {
       "location": {
         "start": {
-          "line": 182,
+          "line": 243,
           "column": 4
         },
         "end": {
-          "line": 190,
+          "line": 253,
           "column": 5
         }
       },
@@ -150,11 +150,11 @@
     "testCreateSubElementNS": {
       "location": {
         "start": {
-          "line": 192,
+          "line": 255,
           "column": 4
         },
         "end": {
-          "line": 203,
+          "line": 274,
           "column": 5
         }
       },
@@ -249,6 +249,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -273,6 +274,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

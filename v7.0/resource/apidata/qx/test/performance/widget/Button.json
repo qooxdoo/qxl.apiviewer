@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 11,
+        "line": 9,
         "column": 3
       }
     }
@@ -23,11 +23,11 @@
     "_createWidget": {
       "location": {
         "start": {
-          "line": 7,
+          "line": 5,
           "column": 4
         },
         "end": {
-          "line": 9,
+          "line": 7,
           "column": 5
         }
       },
@@ -126,6 +126,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -150,6 +151,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

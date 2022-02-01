@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 35,
+        "line": 32,
         "column": 3
       }
     },
@@ -37,11 +37,11 @@
     "testToString": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 26,
           "column": 4
         },
         "end": {
-          "line": 33,
+          "line": 30,
           "column": 5
         }
       },
@@ -136,6 +136,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -160,6 +161,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

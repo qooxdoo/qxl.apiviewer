@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 73,
+        "line": 76,
         "column": 3
       }
     },
@@ -33,11 +33,11 @@
     "_onDbltapPane": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 41,
           "column": 4
         },
         "end": {
-          "line": 71,
+          "line": 74,
           "column": 5
         }
       },
@@ -189,6 +189,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -213,6 +214,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

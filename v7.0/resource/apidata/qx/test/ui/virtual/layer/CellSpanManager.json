@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 304,
+        "line": 334,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 35,
+          "line": 32,
           "column": 5
         }
       },
@@ -42,11 +42,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 34,
           "column": 4
         },
         "end": {
-          "line": 44,
+          "line": 39,
           "column": 5
         }
       },
@@ -60,11 +60,11 @@
     "assertSorted": {
       "location": {
         "start": {
-          "line": 47,
+          "line": 41,
           "column": 4
         },
         "end": {
-          "line": 57,
+          "line": 49,
           "column": 5
         }
       },
@@ -74,11 +74,11 @@
     "testGetSortedCells": {
       "location": {
         "start": {
-          "line": 60,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 106,
+          "line": 95,
           "column": 5
         }
       },
@@ -88,11 +88,11 @@
     "testFindCellsInRange": {
       "location": {
         "start": {
-          "line": 109,
+          "line": 97,
           "column": 4
         },
         "end": {
-          "line": 153,
+          "line": 130,
           "column": 5
         }
       },
@@ -102,11 +102,11 @@
     "testFindCellsInWindow": {
       "location": {
         "start": {
-          "line": 156,
+          "line": 132,
           "column": 4
         },
         "end": {
-          "line": 173,
+          "line": 148,
           "column": 5
         }
       },
@@ -116,11 +116,11 @@
     "testGetCellOffsets": {
       "location": {
         "start": {
-          "line": 176,
+          "line": 150,
           "column": 4
         },
         "end": {
-          "line": 218,
+          "line": 227,
           "column": 5
         }
       },
@@ -130,11 +130,11 @@
     "testAxisChange": {
       "location": {
         "start": {
-          "line": 221,
+          "line": 229,
           "column": 4
         },
         "end": {
-          "line": 250,
+          "line": 281,
           "column": 5
         }
       },
@@ -144,11 +144,11 @@
     "testComputeCellSpanMap": {
       "location": {
         "start": {
-          "line": 253,
+          "line": 283,
           "column": 4
         },
         "end": {
-          "line": 278,
+          "line": 311,
           "column": 5
         }
       },
@@ -158,11 +158,11 @@
     "testDispose": {
       "location": {
         "start": {
-          "line": 281,
+          "line": 313,
           "column": 4
         },
         "end": {
-          "line": 297,
+          "line": 328,
           "column": 5
         }
       },
@@ -257,6 +257,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -281,6 +282,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -447,15 +449,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 301,
-        "column": 13
+        "line": 331,
+        "column": 2
       },
       "end": {
-        "line": 303,
+        "line": 333,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {},
   "descendants": []

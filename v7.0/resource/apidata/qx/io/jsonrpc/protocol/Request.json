@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 93,
+        "line": 94,
         "column": 3
       }
     },
@@ -42,7 +42,7 @@
         },
         "end": {
           "line": 30,
-          "column": 28
+          "column": 27
         }
       },
       "jsdoc": {
@@ -89,11 +89,11 @@
     "id": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 45,
           "column": 4
         },
         "end": {
-          "line": 46,
+          "line": 48,
           "column": 5
         }
       },
@@ -112,11 +112,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 57,
+        "line": 59,
         "column": 2
       },
       "end": {
-        "line": 64,
+        "line": 66,
         "column": 3
       }
     },
@@ -151,12 +151,12 @@
     "__promise": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 69,
           "column": 4
         },
         "end": {
-          "line": 68,
-          "column": 20
+          "line": 69,
+          "column": 19
         }
       },
       "type": "variable",
@@ -165,11 +165,11 @@
     "getPromise": {
       "location": {
         "start": {
-          "line": 74,
+          "line": 75,
           "column": 4
         },
         "end": {
-          "line": 76,
+          "line": 77,
           "column": 5
         }
       },
@@ -195,11 +195,11 @@
     "handleTransportException": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 86,
           "column": 4
         },
         "end": {
-          "line": 91,
+          "line": 92,
           "column": 5
         }
       },
@@ -308,6 +308,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -332,6 +333,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

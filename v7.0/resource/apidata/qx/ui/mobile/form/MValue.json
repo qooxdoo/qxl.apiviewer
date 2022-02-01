@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 290,
+        "line": 262,
         "column": 3
       }
     },
@@ -36,11 +36,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 37,
-        "column": 14
+        "line": 35,
+        "column": 2
       },
       "end": {
-        "line": 50,
+        "line": 58,
         "column": 3
       }
     },
@@ -68,12 +68,12 @@
     "input": {
       "location": {
         "start": {
-          "line": 69,
+          "line": 73,
           "column": 4
         },
         "end": {
-          "line": 69,
-          "column": 34
+          "line": 73,
+          "column": 31
         }
       },
       "jsdoc": {
@@ -90,12 +90,12 @@
     "changeValue": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 86,
           "column": 4
         },
         "end": {
-          "line": 83,
-          "column": 40
+          "line": 86,
+          "column": 37
         }
       },
       "jsdoc": {
@@ -114,11 +114,11 @@
     "liveUpdate": {
       "location": {
         "start": {
-          "line": 102,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 106,
+          "line": 104,
           "column": 5
         }
       },
@@ -141,12 +141,12 @@
     "__oldValue": {
       "location": {
         "start": {
-          "line": 121,
+          "line": 114,
           "column": 4
         },
         "end": {
-          "line": 121,
-          "column": 21
+          "line": 114,
+          "column": 20
         }
       },
       "type": "variable",
@@ -155,12 +155,12 @@
     "__inputTimeoutHandle": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 122,
-          "column": 31
+          "line": 115,
+          "column": 30
         }
       },
       "type": "variable",
@@ -169,12 +169,12 @@
     "__hasFocus": {
       "location": {
         "start": {
-          "line": 123,
+          "line": 116,
           "column": 4
         },
         "end": {
-          "line": 123,
-          "column": 21
+          "line": 116,
+          "column": 20
         }
       },
       "type": "variable",
@@ -183,11 +183,11 @@
     "_convertValue": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 124,
           "column": 4
         },
         "end": {
-          "line": 146,
+          "line": 132,
           "column": 5
         }
       },
@@ -222,11 +222,11 @@
     "_onFocus": {
       "location": {
         "start": {
-          "line": 152,
+          "line": 137,
           "column": 4
         },
         "end": {
-          "line": 154,
+          "line": 139,
           "column": 5
         }
       },
@@ -244,11 +244,11 @@
     "_onBlur": {
       "location": {
         "start": {
-          "line": 160,
+          "line": 144,
           "column": 4
         },
         "end": {
-          "line": 162,
+          "line": 146,
           "column": 5
         }
       },
@@ -266,11 +266,11 @@
     "hasFocus": {
       "location": {
         "start": {
-          "line": 169,
+          "line": 152,
           "column": 4
         },
         "end": {
-          "line": 171,
+          "line": 154,
           "column": 5
         }
       },
@@ -296,11 +296,11 @@
     "setValue": {
       "location": {
         "start": {
-          "line": 179,
+          "line": 161,
           "column": 4
         },
         "end": {
-          "line": 191,
+          "line": 171,
           "column": 5
         }
       },
@@ -327,11 +327,11 @@
     "getValue": {
       "location": {
         "start": {
-          "line": 198,
+          "line": 178,
           "column": 4
         },
         "end": {
-          "line": 201,
+          "line": 182,
           "column": 5
         }
       },
@@ -357,11 +357,11 @@
     "resetValue": {
       "location": {
         "start": {
-          "line": 207,
+          "line": 187,
           "column": 4
         },
         "end": {
-          "line": 210,
+          "line": 189,
           "column": 5
         }
       },
@@ -379,11 +379,11 @@
     "_onChangeContent": {
       "location": {
         "start": {
-          "line": 218,
+          "line": 196,
           "column": 4
         },
         "end": {
-          "line": 221,
+          "line": 198,
           "column": 5
         }
       },
@@ -410,11 +410,11 @@
     "_onInput": {
       "location": {
         "start": {
-          "line": 229,
+          "line": 205,
           "column": 4
         },
         "end": {
-          "line": 240,
+          "line": 215,
           "column": 5
         }
       },
@@ -441,11 +441,11 @@
     "_getCaretPosition": {
       "location": {
         "start": {
-          "line": 247,
+          "line": 221,
           "column": 4
         },
         "end": {
-          "line": 254,
+          "line": 228,
           "column": 5
         }
       },
@@ -471,11 +471,11 @@
     "_setCaretPosition": {
       "location": {
         "start": {
-          "line": 261,
+          "line": 234,
           "column": 4
         },
         "end": {
-          "line": 267,
+          "line": 243,
           "column": 5
         }
       },
@@ -502,11 +502,11 @@
     "__fireChangeValue": {
       "location": {
         "start": {
-          "line": 275,
+          "line": 250,
           "column": 4
         },
         "end": {
-          "line": 282,
+          "line": 255,
           "column": 5
         }
       },
@@ -624,15 +624,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 286,
-        "column": 13
+        "line": 258,
+        "column": 2
       },
       "end": {
-        "line": 289,
+        "line": 261,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

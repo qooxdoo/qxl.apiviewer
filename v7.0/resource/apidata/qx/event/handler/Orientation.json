@@ -16,7 +16,7 @@
         "column": 0
       },
       "end": {
-        "line": 246,
+        "line": 240,
         "column": 3
       }
     },
@@ -33,11 +33,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 59,
-        "column": 14
+        "line": 55,
+        "column": 2
       },
       "end": {
-        "line": 67,
+        "line": 62,
         "column": 3
       }
     },
@@ -63,12 +63,12 @@
     "PRIORITY": {
       "location": {
         "start": {
-          "line": 81,
+          "line": 72,
           "column": 4
         },
         "end": {
-          "line": 81,
-          "column": 52
+          "line": 72,
+          "column": 51
         }
       },
       "jsdoc": {
@@ -91,11 +91,11 @@
     "SUPPORTED_TYPES": {
       "location": {
         "start": {
-          "line": 84,
+          "line": 75,
           "column": 4
         },
         "end": {
-          "line": 87,
+          "line": 77,
           "column": 5
         }
       },
@@ -119,12 +119,12 @@
     "TARGET_CHECK": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 90,
-          "column": 55
+          "line": 80,
+          "column": 54
         }
       },
       "jsdoc": {
@@ -147,12 +147,12 @@
     "IGNORE_CAN_HANDLE": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 83,
           "column": 4
         },
         "end": {
-          "line": 93,
-          "column": 28
+          "line": 83,
+          "column": 27
         }
       },
       "jsdoc": {
@@ -177,12 +177,12 @@
     "__manager": {
       "location": {
         "start": {
-          "line": 108,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 108,
-          "column": 20
+          "line": 93,
+          "column": 19
         }
       },
       "type": "variable",
@@ -191,12 +191,12 @@
     "__window": {
       "location": {
         "start": {
-          "line": 109,
+          "line": 94,
           "column": 4
         },
         "end": {
-          "line": 109,
-          "column": 19
+          "line": 94,
+          "column": 18
         }
       },
       "type": "variable",
@@ -205,12 +205,12 @@
     "__nativeEventType": {
       "location": {
         "start": {
-          "line": 110,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 110,
-          "column": 28
+          "line": 95,
+          "column": 27
         }
       },
       "type": "variable",
@@ -219,12 +219,12 @@
     "_currentOrientation": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 96,
           "column": 4
         },
         "end": {
-          "line": 111,
-          "column": 30
+          "line": 96,
+          "column": 29
         }
       },
       "type": "variable",
@@ -233,12 +233,12 @@
     "__onNativeWrapper": {
       "location": {
         "start": {
-          "line": 112,
+          "line": 97,
           "column": 4
         },
         "end": {
-          "line": 112,
-          "column": 28
+          "line": 97,
+          "column": 27
         }
       },
       "type": "variable",
@@ -247,11 +247,11 @@
     "canHandleEvent": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 106,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 108,
           "column": 5
         }
       },
@@ -266,11 +266,11 @@
     "registerEvent": {
       "location": {
         "start": {
-          "line": 128,
+          "line": 111,
           "column": 4
         },
         "end": {
-          "line": 130,
+          "line": 113,
           "column": 5
         }
       },
@@ -285,11 +285,11 @@
     "unregisterEvent": {
       "location": {
         "start": {
-          "line": 134,
+          "line": 116,
           "column": 4
         },
         "end": {
-          "line": 136,
+          "line": 118,
           "column": 5
         }
       },
@@ -304,11 +304,11 @@
     "_initObserver": {
       "location": {
         "start": {
-          "line": 148,
+          "line": 129,
           "column": 4
         },
         "end": {
-          "line": 160,
+          "line": 148,
           "column": 5
         }
       },
@@ -326,11 +326,11 @@
     "_stopObserver": {
       "location": {
         "start": {
-          "line": 172,
+          "line": 159,
           "column": 4
         },
         "end": {
-          "line": 176,
+          "line": 166,
           "column": 5
         }
       },
@@ -348,11 +348,11 @@
     "_onNative": {
       "location": {
         "start": {
-          "line": 191,
+          "line": 180,
           "column": 4
         },
         "end": {
-          "line": 201,
+          "line": 195,
           "column": 6
         }
       },
@@ -385,11 +385,11 @@
     "_onOrientationChange": {
       "location": {
         "start": {
-          "line": 208,
+          "line": 201,
           "column": 4
         },
         "end": {
-          "line": 220,
+          "line": 217,
           "column": 5
         }
       },
@@ -501,6 +501,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -525,6 +526,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -553,11 +555,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 230,
-        "column": 13
+        "line": 226,
+        "column": 2
       },
       "end": {
-        "line": 234,
+        "line": 229,
         "column": 3
       }
     },
@@ -566,11 +568,11 @@
   "defer": {
     "location": {
       "start": {
-        "line": 243,
-        "column": 10
+        "line": 237,
+        "column": 2
       },
       "end": {
-        "line": 245,
+        "line": 239,
         "column": 3
       }
     },

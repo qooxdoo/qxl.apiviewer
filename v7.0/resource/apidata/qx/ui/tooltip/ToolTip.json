@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 235,
+        "line": 205,
         "column": 3
       }
     },
@@ -39,11 +39,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 44,
-        "column": 14
+        "line": 41,
+        "column": 2
       },
       "end": {
-        "line": 65,
+        "line": 61,
         "column": 3
       }
     },
@@ -78,11 +78,11 @@
     "appearance": {
       "location": {
         "start": {
-          "line": 79,
+          "line": 71,
           "column": 4
         },
         "end": {
-          "line": 83,
+          "line": 74,
           "column": 5
         }
       },
@@ -101,11 +101,11 @@
     "showTimeout": {
       "location": {
         "start": {
-          "line": 86,
+          "line": 77,
           "column": 4
         },
         "end": {
-          "line": 91,
+          "line": 81,
           "column": 5
         }
       },
@@ -127,11 +127,11 @@
     "hideTimeout": {
       "location": {
         "start": {
-          "line": 94,
+          "line": 84,
           "column": 4
         },
         "end": {
-          "line": 99,
+          "line": 88,
           "column": 5
         }
       },
@@ -153,11 +153,11 @@
     "label": {
       "location": {
         "start": {
-          "line": 102,
+          "line": 91,
           "column": 4
         },
         "end": {
-          "line": 107,
+          "line": 95,
           "column": 5
         }
       },
@@ -179,11 +179,11 @@
     "icon": {
       "location": {
         "start": {
-          "line": 113,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 106,
           "column": 5
         }
       },
@@ -206,11 +206,11 @@
     "rich": {
       "location": {
         "start": {
-          "line": 127,
+          "line": 114,
           "column": 4
         },
         "end": {
-          "line": 132,
+          "line": 118,
           "column": 5
         }
       },
@@ -232,11 +232,11 @@
     "opener": {
       "location": {
         "start": {
-          "line": 136,
+          "line": 121,
           "column": 4
         },
         "end": {
-          "line": 140,
+          "line": 124,
           "column": 5
         }
       },
@@ -257,11 +257,11 @@
     "arrowPosition": {
       "location": {
         "start": {
-          "line": 144,
+          "line": 127,
           "column": 4
         },
         "end": {
-          "line": 150,
+          "line": 132,
           "column": 5
         }
       },
@@ -289,11 +289,11 @@
     "_forwardStates": {
       "location": {
         "start": {
-          "line": 166,
+          "line": 146,
           "column": 4
         },
         "end": {
-          "line": 169,
+          "line": 148,
           "column": 5
         }
       },
@@ -317,11 +317,11 @@
     "_createChildControlImpl": {
       "location": {
         "start": {
-          "line": 172,
+          "line": 151,
           "column": 4
         },
         "end": {
-          "line": 188,
+          "line": 165,
           "column": 5
         }
       },
@@ -336,11 +336,11 @@
     "_onPointerOver": {
       "location": {
         "start": {
-          "line": 196,
+          "line": 172,
           "column": 4
         },
         "end": {
-          "line": 198,
+          "line": 174,
           "column": 5
         }
       },
@@ -367,11 +367,11 @@
     "_applyIcon": {
       "location": {
         "start": {
-          "line": 208,
+          "line": 183,
           "column": 4
         },
         "end": {
-          "line": 212,
+          "line": 186,
           "column": 5
         }
       },
@@ -385,11 +385,11 @@
     "_applyLabel": {
       "location": {
         "start": {
-          "line": 216,
+          "line": 189,
           "column": 4
         },
         "end": {
-          "line": 220,
+          "line": 192,
           "column": 5
         }
       },
@@ -403,11 +403,11 @@
     "_applyRich": {
       "location": {
         "start": {
-          "line": 223,
+          "line": 195,
           "column": 4
         },
         "end": {
-          "line": 227,
+          "line": 198,
           "column": 5
         }
       },
@@ -421,11 +421,11 @@
     "_applyArrowPosition": {
       "location": {
         "start": {
-          "line": 230,
+          "line": 201,
           "column": 4
         },
         "end": {
-          "line": 233,
+          "line": 203,
           "column": 5
         }
       },
@@ -1214,6 +1214,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1238,6 +1239,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

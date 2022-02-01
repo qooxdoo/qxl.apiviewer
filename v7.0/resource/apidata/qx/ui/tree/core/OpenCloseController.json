@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 139,
+        "line": 133,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 43,
-        "column": 13
+        "line": 42,
+        "column": 2
       },
       "end": {
-        "line": 77,
+        "line": 74,
         "column": 3
       }
     },
@@ -67,11 +67,11 @@
     "_tree": {
       "location": {
         "start": {
-          "line": 82,
+          "line": 78,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 78,
           "column": 15
         }
       },
@@ -89,11 +89,11 @@
     "_lids": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 81,
           "column": 4
         },
         "end": {
-          "line": 85,
+          "line": 81,
           "column": 15
         }
       },
@@ -111,7 +111,22 @@
     "_onOpen": {
       "location": {
         "start": {
-          "line": 88,
+          "line": 84,
+          "column": 4
+        },
+        "end": {
+          "line": 86,
+          "column": 5
+        }
+      },
+      "jsdoc": {},
+      "type": "function",
+      "access": "protected"
+    },
+    "_onClose": {
+      "location": {
+        "start": {
+          "line": 89,
           "column": 4
         },
         "end": {
@@ -123,29 +138,14 @@
       "type": "function",
       "access": "protected"
     },
-    "_onClose": {
+    "_onChangeBubble": {
       "location": {
         "start": {
           "line": 94,
           "column": 4
         },
         "end": {
-          "line": 97,
-          "column": 5
-        }
-      },
-      "jsdoc": {},
-      "type": "function",
-      "access": "protected"
-    },
-    "_onChangeBubble": {
-      "location": {
-        "start": {
-          "line": 100,
-          "column": 4
-        },
-        "end": {
-          "line": 129,
+          "line": 124,
           "column": 5
         }
       },
@@ -241,6 +241,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -265,6 +266,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -293,15 +295,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 132,
-        "column": 12
+        "line": 127,
+        "column": 2
       },
       "end": {
-        "line": 138,
+        "line": 132,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

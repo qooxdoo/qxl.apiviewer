@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 192,
+        "line": 191,
         "column": 3
       }
     },
@@ -37,11 +37,11 @@
     "trim": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 36,
           "column": 4
         },
         "end": {
-          "line": 40,
+          "line": 38,
           "column": 5
         }
       },
@@ -67,11 +67,11 @@
     "startsWith": {
       "location": {
         "start": {
-          "line": 53,
+          "line": 50,
           "column": 4
         },
         "end": {
-          "line": 57,
+          "line": 53,
           "column": 5
         }
       },
@@ -115,11 +115,11 @@
     "endsWith": {
       "location": {
         "start": {
-          "line": 71,
+          "line": 66,
           "column": 4
         },
         "end": {
-          "line": 83,
+          "line": 79,
           "column": 5
         }
       },
@@ -163,11 +163,11 @@
     "codePointAt": {
       "location": {
         "start": {
-          "line": 96,
+          "line": 91,
           "column": 4
         },
         "end": {
-          "line": 126,
+          "line": 124,
           "column": 5
         }
       },
@@ -202,7 +202,7 @@
     "fromCodePoint": {
       "location": {
         "start": {
-          "line": 138,
+          "line": 135,
           "column": 4
         },
         "end": {
@@ -243,14 +243,13 @@
     "location": {
       "start": {
         "line": 169,
-        "column": 10
+        "column": 2
       },
       "end": {
-        "line": 191,
+        "line": 190,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

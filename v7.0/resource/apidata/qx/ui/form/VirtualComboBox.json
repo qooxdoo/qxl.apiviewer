@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 438,
+        "line": 398,
         "column": 3
       }
     },
@@ -48,25 +48,24 @@
   "construct": {
     "location": {
       "start": {
-        "line": 34,
-        "column": 14
+        "line": 32,
+        "column": 2
       },
       "end": {
-        "line": 60,
+        "line": 65,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "properties": {
     "appearance": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 69,
           "column": 4
         },
         "end": {
-          "line": 69,
+          "line": 72,
           "column": 5
         }
       },
@@ -84,11 +83,11 @@
     "width": {
       "location": {
         "start": {
-          "line": 72,
+          "line": 75,
           "column": 4
         },
         "end": {
-          "line": 76,
+          "line": 78,
           "column": 5
         }
       },
@@ -107,7 +106,7 @@
     "value": {
       "location": {
         "start": {
-          "line": 82,
+          "line": 83,
           "column": 4
         },
         "end": {
@@ -132,11 +131,11 @@
     "placeholder": {
       "location": {
         "start": {
-          "line": 94,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 99,
+          "line": 97,
           "column": 5
         }
       },
@@ -158,11 +157,11 @@
     "defaultFormat": {
       "location": {
         "start": {
-          "line": 110,
+          "line": 107,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 111,
           "column": 5
         }
       },
@@ -253,12 +252,12 @@
     "__localBindId": {
       "location": {
         "start": {
-          "line": 121,
+          "line": 116,
           "column": 4
         },
         "end": {
-          "line": 121,
-          "column": 24
+          "line": 116,
+          "column": 23
         }
       },
       "jsdoc": {
@@ -281,12 +280,12 @@
     "__textFieldBindId": {
       "location": {
         "start": {
-          "line": 125,
+          "line": 119,
           "column": 4
         },
         "end": {
-          "line": 125,
-          "column": 28
+          "line": 119,
+          "column": 27
         }
       },
       "jsdoc": {
@@ -309,12 +308,12 @@
     "__selection": {
       "location": {
         "start": {
-          "line": 129,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 129,
-          "column": 22
+          "line": 122,
+          "column": 21
         }
       },
       "jsdoc": {
@@ -337,12 +336,12 @@
     "__ignoreChangeSelection": {
       "location": {
         "start": {
-          "line": 133,
+          "line": 125,
           "column": 4
         },
         "end": {
-          "line": 133,
-          "column": 34
+          "line": 125,
+          "column": 33
         }
       },
       "jsdoc": {
@@ -365,11 +364,11 @@
     "getTextSelection": {
       "location": {
         "start": {
-          "line": 149,
+          "line": 139,
           "column": 4
         },
         "end": {
-          "line": 151,
+          "line": 141,
           "column": 5
         }
       },
@@ -395,11 +394,11 @@
     "getTextSelectionLength": {
       "location": {
         "start": {
-          "line": 160,
+          "line": 149,
           "column": 4
         },
         "end": {
-          "line": 162,
+          "line": 151,
           "column": 5
         }
       },
@@ -425,11 +424,11 @@
     "setTextSelection": {
       "location": {
         "start": {
-          "line": 174,
+          "line": 162,
           "column": 4
         },
         "end": {
-          "line": 176,
+          "line": 164,
           "column": 5
         }
       },
@@ -463,11 +462,11 @@
     "clearTextSelection": {
       "location": {
         "start": {
-          "line": 183,
+          "line": 170,
           "column": 4
         },
         "end": {
-          "line": 185,
+          "line": 172,
           "column": 5
         }
       },
@@ -485,11 +484,11 @@
     "selectAllText": {
       "location": {
         "start": {
-          "line": 191,
+          "line": 177,
           "column": 4
         },
         "end": {
-          "line": 193,
+          "line": 179,
           "column": 5
         }
       },
@@ -507,11 +506,11 @@
     "resetAllTextSelection": {
       "location": {
         "start": {
-          "line": 199,
+          "line": 184,
           "column": 4
         },
         "end": {
-          "line": 203,
+          "line": 187,
           "column": 5
         }
       },
@@ -529,11 +528,11 @@
     "tabFocus": {
       "location": {
         "start": {
-          "line": 207,
+          "line": 190,
           "column": 4
         },
         "end": {
-          "line": 213,
+          "line": 195,
           "column": 5
         }
       },
@@ -548,11 +547,11 @@
     "focus": {
       "location": {
         "start": {
-          "line": 217,
+          "line": 198,
           "column": 4
         },
         "end": {
-          "line": 221,
+          "line": 201,
           "column": 5
         }
       },
@@ -567,11 +566,11 @@
     "_createChildControlImpl": {
       "location": {
         "start": {
-          "line": 232,
+          "line": 210,
           "column": 4
         },
         "end": {
-          "line": 256,
+          "line": 232,
           "column": 5
         }
       },
@@ -587,11 +586,11 @@
     "_beforeOpen": {
       "location": {
         "start": {
-          "line": 260,
+          "line": 235,
           "column": 4
         },
         "end": {
-          "line": 262,
+          "line": 237,
           "column": 5
         }
       },
@@ -606,11 +605,11 @@
     "_handleKeyboard": {
       "location": {
         "start": {
-          "line": 266,
+          "line": 240,
           "column": 4
         },
         "end": {
-          "line": 280,
+          "line": 252,
           "column": 5
         }
       },
@@ -625,11 +624,11 @@
     "_getAction": {
       "location": {
         "start": {
-          "line": 284,
+          "line": 255,
           "column": 4
         },
         "end": {
-          "line": 295,
+          "line": 265,
           "column": 5
         }
       },
@@ -644,11 +643,11 @@
     "_handlePointer": {
       "location": {
         "start": {
-          "line": 306,
+          "line": 274,
           "column": 4
         },
         "end": {
-          "line": 315,
+          "line": 283,
           "column": 5
         }
       },
@@ -663,11 +662,11 @@
     "__onSelectionChange": {
       "location": {
         "start": {
-          "line": 323,
+          "line": 290,
           "column": 4
         },
         "end": {
-          "line": 333,
+          "line": 300,
           "column": 5
         }
       },
@@ -694,11 +693,11 @@
     "_applyPlaceholder": {
       "location": {
         "start": {
-          "line": 342,
+          "line": 308,
           "column": 4
         },
         "end": {
-          "line": 344,
+          "line": 310,
           "column": 5
         }
       },
@@ -712,11 +711,11 @@
     "__selectFirstMatch": {
       "location": {
         "start": {
-          "line": 357,
+          "line": 321,
           "column": 4
         },
         "end": {
-          "line": 393,
+          "line": 354,
           "column": 5
         }
       },
@@ -734,11 +733,11 @@
     "__convertValue": {
       "location": {
         "start": {
-          "line": 402,
+          "line": 362,
           "column": 4
         },
         "end": {
-          "line": 425,
+          "line": 387,
           "column": 5
         }
       },
@@ -1111,38 +1110,6 @@
       "overriddenFrom": "qx.ui.form.MForm",
       "jsdoc": {}
     },
-    "__onChangeLocale": {
-      "type": "function",
-      "name": "__onChangeLocale",
-      "abstract": false,
-      "mixin": true,
-      "inherited": true,
-      "access": "private",
-      "overriddenFrom": "qx.ui.form.MForm",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Locale change event handler</p>"
-          }
-        ],
-        "@signature": [
-          {
-            "name": "@signature",
-            "body": "function(e)"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {Event} the change event",
-            "paramName": "e",
-            "description": " the change event",
-            "type": "Event"
-          }
-        ]
-      }
-    },
     "isValid": {
       "type": "function",
       "name": "isValid",
@@ -1353,6 +1320,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1377,6 +1345,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -5760,15 +5729,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 429,
-        "column": 13
+        "line": 390,
+        "column": 2
       },
       "end": {
-        "line": 437,
+        "line": 397,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {
     "changeValue": {

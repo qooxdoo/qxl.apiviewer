@@ -17,7 +17,7 @@
         "column": 0
       },
       "end": {
-        "line": 391,
+        "line": 349,
         "column": 3
       }
     },
@@ -50,11 +50,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 47,
-        "column": 14
+        "line": 44,
+        "column": 2
       },
       "end": {
-        "line": 83,
+        "line": 79,
         "column": 3
       }
     },
@@ -103,11 +103,11 @@
     "appearance": {
       "location": {
         "start": {
-          "line": 96,
+          "line": 89,
           "column": 4
         },
         "end": {
-          "line": 100,
+          "line": 92,
           "column": 5
         }
       },
@@ -125,11 +125,11 @@
     "focusable": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 107,
+          "line": 98,
           "column": 5
         }
       },
@@ -147,11 +147,11 @@
     "label": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 116,
+          "line": 105,
           "column": 5
         }
       },
@@ -173,11 +173,11 @@
     "icon": {
       "location": {
         "start": {
-          "line": 120,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 126,
+          "line": 113,
           "column": 5
         }
       },
@@ -200,11 +200,11 @@
     "show": {
       "location": {
         "start": {
-          "line": 133,
+          "line": 119,
           "column": 4
         },
         "end": {
-          "line": 141,
+          "line": 126,
           "column": 5
         }
       },
@@ -233,11 +233,11 @@
     "menu": {
       "location": {
         "start": {
-          "line": 145,
+          "line": 129,
           "column": 4
         },
         "end": {
-          "line": 151,
+          "line": 134,
           "column": 5
         }
       },
@@ -279,12 +279,12 @@
     "__cursorIsOut": {
       "location": {
         "start": {
-          "line": 164,
+          "line": 144,
           "column": 4
         },
         "end": {
-          "line": 164,
-          "column": 24
+          "line": 144,
+          "column": 23
         }
       },
       "type": "variable",
@@ -293,11 +293,11 @@
     "_createChildControlImpl": {
       "location": {
         "start": {
-          "line": 174,
+          "line": 153,
           "column": 4
         },
         "end": {
-          "line": 196,
+          "line": 173,
           "column": 5
         }
       },
@@ -312,11 +312,11 @@
     "_forwardStates": {
       "location": {
         "start": {
-          "line": 202,
+          "line": 179,
           "column": 4
         },
         "end": {
-          "line": 206,
+          "line": 182,
           "column": 5
         }
       },
@@ -340,11 +340,11 @@
     "_applyLabel": {
       "location": {
         "start": {
-          "line": 218,
+          "line": 191,
           "column": 4
         },
         "end": {
-          "line": 222,
+          "line": 194,
           "column": 5
         }
       },
@@ -358,11 +358,11 @@
     "_applyIcon": {
       "location": {
         "start": {
-          "line": 225,
+          "line": 197,
           "column": 4
         },
         "end": {
-          "line": 229,
+          "line": 200,
           "column": 5
         }
       },
@@ -376,11 +376,11 @@
     "_applyMenu": {
       "location": {
         "start": {
-          "line": 232,
+          "line": 203,
           "column": 4
         },
         "end": {
-          "line": 255,
+          "line": 230,
           "column": 5
         }
       },
@@ -394,11 +394,11 @@
     "_applyShow": {
       "location": {
         "start": {
-          "line": 258,
+          "line": 233,
           "column": 4
         },
         "end": {
-          "line": 260,
+          "line": 235,
           "column": 5
         }
       },
@@ -412,11 +412,11 @@
     "_onPointerOver": {
       "location": {
         "start": {
-          "line": 275,
+          "line": 248,
           "column": 4
         },
         "end": {
-          "line": 287,
+          "line": 259,
           "column": 5
         }
       },
@@ -443,11 +443,11 @@
     "_onPointerOut": {
       "location": {
         "start": {
-          "line": 295,
+          "line": 266,
           "column": 4
         },
         "end": {
-          "line": 324,
+          "line": 293,
           "column": 5
         }
       },
@@ -474,11 +474,11 @@
     "_onKeyDown": {
       "location": {
         "start": {
-          "line": 332,
+          "line": 300,
           "column": 4
         },
         "end": {
-          "line": 342,
+          "line": 308,
           "column": 5
         }
       },
@@ -505,11 +505,11 @@
     "_onKeyUp": {
       "location": {
         "start": {
-          "line": 350,
+          "line": 315,
           "column": 4
         },
         "end": {
-          "line": 364,
+          "line": 326,
           "column": 5
         }
       },
@@ -536,11 +536,11 @@
     "_onButtonExecute": {
       "location": {
         "start": {
-          "line": 372,
+          "line": 333,
           "column": 4
         },
         "end": {
-          "line": 376,
+          "line": 336,
           "column": 5
         }
       },
@@ -567,11 +567,11 @@
     "_onChangeMenuVisibility": {
       "location": {
         "start": {
-          "line": 384,
+          "line": 343,
           "column": 4
         },
         "end": {
-          "line": 389,
+          "line": 347,
           "column": 5
         }
       },
@@ -807,6 +807,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -831,6 +832,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

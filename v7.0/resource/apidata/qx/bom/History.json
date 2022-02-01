@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 407,
+        "line": 379,
         "column": 3
       }
     },
@@ -39,11 +39,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 111,
-        "column": 14
+        "line": 107,
+        "column": 2
       },
       "end": {
-        "line": 119,
+        "line": 114,
         "column": 3
       }
     },
@@ -53,12 +53,12 @@
     "request": {
       "location": {
         "start": {
-          "line": 133,
+          "line": 127,
           "column": 4
         },
         "end": {
-          "line": 133,
-          "column": 36
+          "line": 127,
+          "column": 33
         }
       },
       "jsdoc": {
@@ -77,12 +77,12 @@
     "SUPPORTS_HASH_CHANGE_EVENT": {
       "location": {
         "start": {
-          "line": 149,
+          "line": 140,
           "column": 4
         },
         "end": {
-          "line": 149,
-          "column": 76
+          "line": 140,
+          "column": 75
         }
       },
       "jsdoc": {
@@ -105,11 +105,11 @@
     "getInstance": {
       "location": {
         "start": {
-          "line": 157,
+          "line": 147,
           "column": 4
         },
         "end": {
-          "line": 194,
+          "line": 184,
           "column": 5
         }
       },
@@ -137,11 +137,11 @@
     "title": {
       "location": {
         "start": {
-          "line": 209,
+          "line": 197,
           "column": 4
         },
         "end": {
-          "line": 215,
+          "line": 202,
           "column": 5
         }
       },
@@ -164,11 +164,11 @@
     "state": {
       "location": {
         "start": {
-          "line": 220,
+          "line": 207,
           "column": 4
         },
         "end": {
-          "line": 226,
+          "line": 212,
           "column": 5
         }
       },
@@ -225,12 +225,12 @@
     "_titles": {
       "location": {
         "start": {
-          "line": 240,
+          "line": 222,
           "column": 4
         },
         "end": {
-          "line": 240,
-          "column": 18
+          "line": 222,
+          "column": 17
         }
       },
       "type": "variable",
@@ -239,11 +239,11 @@
     "_applyState": {
       "location": {
         "start": {
-          "line": 244,
+          "line": 225,
           "column": 4
         },
         "end": {
-          "line": 247,
+          "line": 227,
           "column": 5
         }
       },
@@ -257,11 +257,11 @@
     "_setInitialState": {
       "location": {
         "start": {
-          "line": 253,
+          "line": 232,
           "column": 4
         },
         "end": {
-          "line": 255,
+          "line": 234,
           "column": 5
         }
       },
@@ -279,11 +279,11 @@
     "_encode": {
       "location": {
         "start": {
-          "line": 264,
+          "line": 242,
           "column": 4
         },
         "end": {
-          "line": 271,
+          "line": 248,
           "column": 5
         }
       },
@@ -318,11 +318,11 @@
     "_decode": {
       "location": {
         "start": {
-          "line": 280,
+          "line": 256,
           "column": 4
         },
         "end": {
-          "line": 287,
+          "line": 262,
           "column": 5
         }
       },
@@ -357,11 +357,11 @@
     "_applyTitle": {
       "location": {
         "start": {
-          "line": 291,
+          "line": 265,
           "column": 4
         },
         "end": {
-          "line": 296,
+          "line": 269,
           "column": 5
         }
       },
@@ -375,11 +375,11 @@
     "addToHistory": {
       "location": {
         "start": {
-          "line": 308,
+          "line": 280,
           "column": 4
         },
         "end": {
-          "line": 323,
+          "line": 293,
           "column": 5
         }
       },
@@ -415,12 +415,12 @@
     "navigateBack": {
       "location": {
         "start": {
-          "line": 330,
-          "column": 5
+          "line": 299,
+          "column": 4
         },
         "end": {
-          "line": 332,
-          "column": 6
+          "line": 307,
+          "column": 5
         }
       },
       "jsdoc": {
@@ -437,12 +437,12 @@
     "navigateForward": {
       "location": {
         "start": {
-          "line": 339,
-          "column": 5
+          "line": 313,
+          "column": 4
         },
         "end": {
-          "line": 341,
-          "column": 6
+          "line": 321,
+          "column": 5
         }
       },
       "jsdoc": {
@@ -459,11 +459,11 @@
     "_onHistoryLoad": {
       "location": {
         "start": {
-          "line": 349,
+          "line": 328,
           "column": 4
         },
         "end": {
-          "line": 356,
+          "line": 334,
           "column": 5
         }
       },
@@ -490,11 +490,11 @@
     "_readState": {
       "location": {
         "start": {
-          "line": 364,
+          "line": 341,
           "column": 4
         },
         "end": {
-          "line": 366,
+          "line": 343,
           "column": 5
         }
       },
@@ -520,11 +520,11 @@
     "_writeState": {
       "location": {
         "start": {
-          "line": 374,
+          "line": 350,
           "column": 4
         },
         "end": {
-          "line": 376,
+          "line": 352,
           "column": 5
         }
       },
@@ -551,11 +551,11 @@
     "_setHash": {
       "location": {
         "start": {
-          "line": 384,
+          "line": 359,
           "column": 4
         },
         "end": {
-          "line": 392,
+          "line": 366,
           "column": 5
         }
       },
@@ -582,11 +582,11 @@
     "_getHash": {
       "location": {
         "start": {
-          "line": 401,
+          "line": 374,
           "column": 4
         },
         "end": {
-          "line": 405,
+          "line": 377,
           "column": 5
         }
       },
@@ -662,69 +662,6 @@
             "body": "{var} Returns the internal id for that binding. This can be used\n   for referencing the binding e.g. for removing. This is not an atomic\n   id so you can't you use it as a hash-map index.",
             "type": "var",
             "description": " Returns the internal id for that binding. This can be used\n   for referencing the binding e.g. for removing. This is not an atomic\n   id so you can't you use it as a hash-map index."
-          }
-        ],
-        "@throws": [
-          {
-            "name": "@throws",
-            "body": "{qx.core.AssertionError} If the event is no data event or\n   there is no property definition for object and property (source and\n   target).",
-            "type": "qx.core.AssertionError",
-            "description": " If the event is no data event or\n   there is no property definition for object and property (source and\n   target)."
-          }
-        ]
-      }
-    },
-    "bindAsync": {
-      "type": "function",
-      "name": "bindAsync",
-      "abstract": false,
-      "mixin": true,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.data.MBinding",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>The bind method delegates the call to the\n {@link qx.data.SingleValueBinding#bind} function. As source, the current\n object (this) will be used.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "sourcePropertyChain {String} The property chain which represents\n   the source property.",
-            "paramName": "sourcePropertyChain",
-            "description": " The property chain which represents\n   the source property.",
-            "type": "String"
-          },
-          {
-            "name": "@param",
-            "body": "targetObject {qx.core.Object} The object which the source should\n   be bind to.",
-            "paramName": "targetObject",
-            "description": " The object which the source should\n   be bind to.",
-            "type": "qx.core.Object"
-          },
-          {
-            "name": "@param",
-            "body": "targetProperty {String} The property name of the target object.",
-            "paramName": "targetProperty",
-            "description": " The property name of the target object.",
-            "type": "String"
-          },
-          {
-            "name": "@param",
-            "body": "options {Map} A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
-            "paramName": "options",
-            "description": " A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
-            "type": "Map"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.Promise} A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index.",
-            "type": "qx.Promise",
-            "description": " A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index."
           }
         ],
         "@throws": [
@@ -2175,6 +2112,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -2198,6 +2136,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 159,
+        "line": 175,
         "column": 3
       }
     },
@@ -26,26 +26,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 24,
-        "column": 14
+        "line": 23,
+        "column": 2
       },
       "end": {
-        "line": 32,
+        "line": 30,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "members": {
     "ITERATIONS": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 36,
-          "column": 18
+          "line": 33,
+          "column": 17
         }
       },
       "type": "variable",
@@ -54,11 +53,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 57,
+          "line": 53,
           "column": 5
         }
       },
@@ -73,11 +72,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 60,
+          "line": 55,
           "column": 4
         },
         "end": {
-          "line": 63,
+          "line": 57,
           "column": 5
         }
       },
@@ -91,11 +90,11 @@
     "getLayer": {
       "location": {
         "start": {
-          "line": 66,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 70,
+          "line": 64,
           "column": 5
         }
       },
@@ -105,11 +104,11 @@
     "testFullUpdateSameWindow": {
       "location": {
         "start": {
-          "line": 73,
+          "line": 66,
           "column": 4
         },
         "end": {
-          "line": 79,
+          "line": 75,
           "column": 5
         }
       },
@@ -119,11 +118,11 @@
     "testFullUpdateScrollDown": {
       "location": {
         "start": {
-          "line": 82,
+          "line": 77,
           "column": 4
         },
         "end": {
-          "line": 91,
+          "line": 89,
           "column": 5
         }
       },
@@ -133,11 +132,11 @@
     "testUpdateLayerWindowScrollDown": {
       "location": {
         "start": {
-          "line": 94,
+          "line": 91,
           "column": 4
         },
         "end": {
-          "line": 103,
+          "line": 109,
           "column": 5
         }
       },
@@ -147,11 +146,11 @@
     "testUpdateLayerWindowScrollRight": {
       "location": {
         "start": {
-          "line": 106,
+          "line": 111,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 129,
           "column": 5
         }
       },
@@ -161,11 +160,11 @@
     "testUpdateLayerData": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 131,
           "column": 4
         },
         "end": {
-          "line": 128,
+          "line": 143,
           "column": 5
         }
       },
@@ -175,11 +174,11 @@
     "profile": {
       "location": {
         "start": {
-          "line": 131,
+          "line": 145,
           "column": 4
         },
         "end": {
-          "line": 156,
+          "line": 173,
           "column": 5
         }
       },
@@ -274,6 +273,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -298,6 +298,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

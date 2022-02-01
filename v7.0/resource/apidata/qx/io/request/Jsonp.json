@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 209,
+        "line": 206,
         "column": 3
       }
     },
@@ -31,12 +31,12 @@
     "success": {
       "location": {
         "start": {
-          "line": 82,
+          "line": 79,
           "column": 4
         },
         "end": {
-          "line": 82,
-          "column": 36
+          "line": 79,
+          "column": 34
         }
       },
       "jsdoc": {
@@ -53,12 +53,12 @@
     "load": {
       "location": {
         "start": {
-          "line": 92,
+          "line": 89,
           "column": 4
         },
         "end": {
-          "line": 92,
-          "column": 33
+          "line": 89,
+          "column": 31
         }
       },
       "jsdoc": {
@@ -75,12 +75,12 @@
     "statusError": {
       "location": {
         "start": {
-          "line": 109,
+          "line": 106,
           "column": 4
         },
         "end": {
-          "line": 109,
-          "column": 40
+          "line": 106,
+          "column": 38
         }
       },
       "jsdoc": {
@@ -99,11 +99,11 @@
     "cache": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 125,
+          "line": 121,
           "column": 5
         }
       },
@@ -126,11 +126,11 @@
     "_createTransport": {
       "location": {
         "start": {
-          "line": 141,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 143,
+          "line": 138,
           "column": 5
         }
       },
@@ -160,11 +160,11 @@
     "_getConfiguredUrl": {
       "location": {
         "start": {
-          "line": 153,
+          "line": 148,
           "column": 4
         },
         "end": {
-          "line": 168,
+          "line": 165,
           "column": 5
         }
       },
@@ -194,11 +194,11 @@
     "_getParsedResponse": {
       "location": {
         "start": {
-          "line": 177,
+          "line": 174,
           "column": 4
         },
         "end": {
-          "line": 179,
+          "line": 176,
           "column": 5
         }
       },
@@ -228,11 +228,11 @@
     "setCallbackParam": {
       "location": {
         "start": {
-          "line": 194,
+          "line": 191,
           "column": 4
         },
         "end": {
-          "line": 196,
+          "line": 193,
           "column": 5
         }
       },
@@ -259,11 +259,11 @@
     "setCallbackName": {
       "location": {
         "start": {
-          "line": 205,
+          "line": 202,
           "column": 4
         },
         "end": {
-          "line": 207,
+          "line": 204,
           "column": 5
         }
       },
@@ -375,6 +375,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -399,6 +400,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -580,6 +582,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for requestData"
           }
         ]
@@ -604,6 +607,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for requestData"
           }

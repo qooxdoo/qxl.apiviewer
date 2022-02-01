@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 127,
+        "line": 123,
         "column": 3
       }
     },
@@ -31,12 +31,12 @@
     "changeStatus": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 38,
-          "column": 41
+          "line": 35,
+          "column": 38
         }
       },
       "jsdoc": {
@@ -55,11 +55,11 @@
     "sources": {
       "location": {
         "start": {
-          "line": 53,
+          "line": 48,
           "column": 4
         },
         "end": {
-          "line": 57,
+          "line": 51,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "valid": {
       "location": {
         "start": {
-          "line": 62,
+          "line": 56,
           "column": 4
         },
         "end": {
-          "line": 66,
+          "line": 60,
           "column": 5
         }
       },
@@ -108,12 +108,12 @@
     "__families": {
       "location": {
         "start": {
-          "line": 78,
+          "line": 70,
           "column": 4
         },
         "end": {
-          "line": 78,
-          "column": 21
+          "line": 70,
+          "column": 20
         }
       },
       "type": "variable",
@@ -122,11 +122,11 @@
     "_applySources": {
       "location": {
         "start": {
-          "line": 81,
+          "line": 73,
           "column": 4
         },
         "end": {
-          "line": 94,
+          "line": 91,
           "column": 5
         }
       },
@@ -140,11 +140,11 @@
     "_onWebFontChangeStatus": {
       "location": {
         "start": {
-          "line": 102,
+          "line": 98,
           "column": 4
         },
         "end": {
-          "line": 112,
+          "line": 111,
           "column": 5
         }
       },
@@ -171,11 +171,11 @@
     "_quoteFontFamily": {
       "location": {
         "start": {
-          "line": 121,
+          "line": 119,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 121,
           "column": 5
         }
       },
@@ -295,6 +295,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -319,6 +320,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -569,6 +571,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for version"
           }
         ]
@@ -593,6 +596,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for version"
           }

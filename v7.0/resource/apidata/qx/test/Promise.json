@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 808,
+        "line": 897,
         "column": 3
       }
     }
@@ -23,11 +23,11 @@
     "testNewPromise": {
       "location": {
         "start": {
-          "line": 9,
+          "line": 8,
           "column": 4
         },
         "end": {
-          "line": 25,
+          "line": 28,
           "column": 5
         }
       },
@@ -45,11 +45,11 @@
     "testReject": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 46,
+          "line": 53,
           "column": 5
         }
       },
@@ -67,11 +67,11 @@
     "testCatchFinally": {
       "location": {
         "start": {
-          "line": 48,
+          "line": 55,
           "column": 4
         },
         "end": {
-          "line": 60,
+          "line": 69,
           "column": 5
         }
       },
@@ -81,11 +81,11 @@
     "testAllOf": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 74,
           "column": 4
         },
         "end": {
-          "line": 93,
+          "line": 102,
           "column": 5
         }
       },
@@ -103,11 +103,11 @@
     "testPropertySetValueAsPromise1": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 109,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 134,
           "column": 5
         }
       },
@@ -125,11 +125,11 @@
     "testPropertySetValueAsPromise2": {
       "location": {
         "start": {
-          "line": 131,
+          "line": 141,
           "column": 4
         },
         "end": {
-          "line": 155,
+          "line": 166,
           "column": 5
         }
       },
@@ -147,11 +147,11 @@
     "testPropertySetValueAsyncApply1": {
       "location": {
         "start": {
-          "line": 162,
+          "line": 173,
           "column": 4
         },
         "end": {
-          "line": 203,
+          "line": 215,
           "column": 5
         }
       },
@@ -169,11 +169,11 @@
     "testPropertySetValueAsyncApply2": {
       "location": {
         "start": {
-          "line": 209,
+          "line": 221,
           "column": 4
         },
         "end": {
-          "line": 256,
+          "line": 269,
           "column": 5
         }
       },
@@ -191,11 +191,11 @@
     "testPropertySetValueAsyncApply3": {
       "location": {
         "start": {
-          "line": 261,
+          "line": 274,
           "column": 4
         },
         "end": {
-          "line": 278,
+          "line": 292,
           "column": 5
         }
       },
@@ -213,11 +213,11 @@
     "testBinding": {
       "location": {
         "start": {
-          "line": 280,
+          "line": 294,
           "column": 4
         },
         "end": {
-          "line": 400,
+          "line": 433,
           "column": 5
         }
       },
@@ -227,11 +227,11 @@
     "testAsyncEventHandlers": {
       "location": {
         "start": {
-          "line": 407,
+          "line": 440,
           "column": 4
         },
         "end": {
-          "line": 496,
+          "line": 545,
           "column": 5
         }
       },
@@ -249,11 +249,11 @@
     "testWaterfallBinding": {
       "location": {
         "start": {
-          "line": 504,
+          "line": 553,
           "column": 4
         },
         "end": {
-          "line": 580,
+          "line": 647,
           "column": 5
         }
       },
@@ -271,11 +271,11 @@
     "testEach1": {
       "location": {
         "start": {
-          "line": 586,
+          "line": 653,
           "column": 4
         },
         "end": {
-          "line": 601,
+          "line": 670,
           "column": 5
         }
       },
@@ -293,11 +293,11 @@
     "testEach2": {
       "location": {
         "start": {
-          "line": 607,
+          "line": 676,
           "column": 4
         },
         "end": {
-          "line": 634,
+          "line": 718,
           "column": 5
         }
       },
@@ -315,11 +315,11 @@
     "testGlobalError": {
       "location": {
         "start": {
-          "line": 639,
+          "line": 723,
           "column": 4
         },
         "end": {
-          "line": 655,
+          "line": 739,
           "column": 5
         }
       },
@@ -337,11 +337,11 @@
     "testMethod": {
       "location": {
         "start": {
-          "line": 660,
+          "line": 744,
           "column": 4
         },
         "end": {
-          "line": 672,
+          "line": 756,
           "column": 5
         }
       },
@@ -359,11 +359,11 @@
     "testBinding1": {
       "location": {
         "start": {
-          "line": 677,
+          "line": 761,
           "column": 4
         },
         "end": {
-          "line": 685,
+          "line": 769,
           "column": 5
         }
       },
@@ -381,11 +381,11 @@
     "testBinding2": {
       "location": {
         "start": {
-          "line": 690,
+          "line": 774,
           "column": 4
         },
         "end": {
-          "line": 703,
+          "line": 787,
           "column": 5
         }
       },
@@ -403,11 +403,11 @@
     "testMarshal": {
       "location": {
         "start": {
-          "line": 705,
+          "line": 789,
           "column": 4
         },
         "end": {
-          "line": 709,
+          "line": 793,
           "column": 5
         }
       },
@@ -417,11 +417,11 @@
     "testBindingToStatic": {
       "location": {
         "start": {
-          "line": 714,
+          "line": 798,
           "column": 4
         },
         "end": {
-          "line": 721,
+          "line": 805,
           "column": 5
         }
       },
@@ -439,11 +439,11 @@
     "testBindingResolve": {
       "location": {
         "start": {
-          "line": 726,
+          "line": 810,
           "column": 4
         },
         "end": {
-          "line": 733,
+          "line": 817,
           "column": 5
         }
       },
@@ -461,11 +461,11 @@
     "testBindingReject": {
       "location": {
         "start": {
-          "line": 738,
+          "line": 822,
           "column": 4
         },
         "end": {
-          "line": 745,
+          "line": 829,
           "column": 5
         }
       },
@@ -483,11 +483,11 @@
     "testWrapping": {
       "location": {
         "start": {
-          "line": 750,
+          "line": 834,
           "column": 4
         },
         "end": {
-          "line": 765,
+          "line": 849,
           "column": 5
         }
       },
@@ -590,6 +590,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -614,6 +615,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -781,12 +783,12 @@
     "TEST_MODEL": {
       "location": {
         "start": {
-          "line": 769,
+          "line": 853,
           "column": 4
         },
         "end": {
-          "line": 806,
-          "column": 7
+          "line": 895,
+          "column": 5
         }
       },
       "type": "variable",

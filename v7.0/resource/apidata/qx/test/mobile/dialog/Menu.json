@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 96,
+        "line": 117,
         "column": 3
       }
     },
@@ -26,11 +26,11 @@
     "testInit": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 39,
+          "line": 36,
           "column": 5
         }
       },
@@ -40,11 +40,11 @@
     "testSetListHeight": {
       "location": {
         "start": {
-          "line": 42,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 63,
+          "line": 61,
           "column": 5
         }
       },
@@ -54,11 +54,11 @@
     "testMaxListHeight": {
       "location": {
         "start": {
-          "line": 66,
+          "line": 63,
           "column": 4
         },
         "end": {
-          "line": 93,
+          "line": 115,
           "column": 5
         }
       },
@@ -745,6 +745,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -769,6 +770,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

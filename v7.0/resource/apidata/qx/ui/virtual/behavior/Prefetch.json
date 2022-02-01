@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 239,
+        "line": 224,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 53,
-        "column": 14
+        "line": 51,
+        "column": 2
       },
       "end": {
-        "line": 80,
+        "line": 86,
         "column": 3
       }
     },
@@ -67,12 +67,12 @@
     "scroller": {
       "location": {
         "start": {
-          "line": 92,
-          "column": 5
+          "line": 96,
+          "column": 4
         },
         "end": {
-          "line": 98,
-          "column": 6
+          "line": 101,
+          "column": 5
         }
       },
       "jsdoc": {
@@ -99,12 +99,12 @@
     "interval": {
       "location": {
         "start": {
-          "line": 101,
-          "column": 5
+          "line": 104,
+          "column": 4
         },
         "end": {
-          "line": 106,
-          "column": 6
+          "line": 108,
+          "column": 5
         }
       },
       "jsdoc": {
@@ -170,7 +170,7 @@
         },
         "end": {
           "line": 118,
-          "column": 22
+          "column": 21
         }
       },
       "type": "variable",
@@ -184,7 +184,7 @@
         },
         "end": {
           "line": 119,
-          "column": 22
+          "column": 21
         }
       },
       "type": "variable",
@@ -198,7 +198,7 @@
         },
         "end": {
           "line": 120,
-          "column": 18
+          "column": 17
         }
       },
       "type": "variable",
@@ -212,7 +212,7 @@
         },
         "end": {
           "line": 121,
-          "column": 24
+          "column": 23
         }
       },
       "type": "variable",
@@ -226,7 +226,7 @@
         },
         "end": {
           "line": 122,
-          "column": 24
+          "column": 23
         }
       },
       "type": "variable",
@@ -287,11 +287,11 @@
     "setPrefetchY": {
       "location": {
         "start": {
-          "line": 145,
+          "line": 144,
           "column": 4
         },
         "end": {
-          "line": 147,
+          "line": 146,
           "column": 5
         }
       },
@@ -339,11 +339,11 @@
     "_onInterval": {
       "location": {
         "start": {
-          "line": 153,
+          "line": 151,
           "column": 4
         },
         "end": {
-          "line": 168,
+          "line": 163,
           "column": 5
         }
       },
@@ -361,11 +361,11 @@
     "_applyScroller": {
       "location": {
         "start": {
-          "line": 172,
+          "line": 166,
           "column": 4
         },
         "end": {
-          "line": 218,
+          "line": 205,
           "column": 5
         }
       },
@@ -379,11 +379,11 @@
     "_applyInterval": {
       "location": {
         "start": {
-          "line": 222,
+          "line": 208,
           "column": 4
         },
         "end": {
-          "line": 224,
+          "line": 210,
           "column": 5
         }
       },
@@ -482,6 +482,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -506,6 +507,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -666,11 +668,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 233,
-        "column": 13
+        "line": 219,
+        "column": 2
       },
       "end": {
-        "line": 238,
+        "line": 223,
         "column": 3
       }
     },

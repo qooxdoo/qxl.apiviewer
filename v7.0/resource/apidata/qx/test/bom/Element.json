@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 127,
+        "line": 135,
         "column": 3
       }
     },
@@ -24,7 +24,21 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 23,
+          "column": 4
+        },
+        "end": {
+          "line": 29,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "tearDown": {
+      "location": {
+        "start": {
+          "line": 31,
           "column": 4
         },
         "end": {
@@ -35,28 +49,14 @@
       "type": "function",
       "access": "public"
     },
-    "tearDown": {
-      "location": {
-        "start": {
-          "line": 36,
-          "column": 4
-        },
-        "end": {
-          "line": 38,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
     "testAddListener": {
       "location": {
         "start": {
-          "line": 41,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 48,
+          "line": 41,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "testRemoveListenerById": {
       "location": {
         "start": {
-          "line": 51,
+          "line": 43,
           "column": 4
         },
         "end": {
-          "line": 57,
+          "line": 55,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "testFocus": {
       "location": {
         "start": {
-          "line": 60,
+          "line": 57,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 75,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testBlur": {
       "location": {
         "start": {
-          "line": 76,
+          "line": 77,
           "column": 4
         },
         "end": {
-          "line": 91,
+          "line": 96,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "testActivate": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 98,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 101,
           "column": 5
         }
       },
@@ -122,11 +122,11 @@
     "testDeactivate": {
       "location": {
         "start": {
-          "line": 99,
+          "line": 103,
           "column": 4
         },
         "end": {
-          "line": 103,
+          "line": 106,
           "column": 5
         }
       },
@@ -136,11 +136,11 @@
     "testCapture": {
       "location": {
         "start": {
-          "line": 105,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 109,
+          "line": 111,
           "column": 5
         }
       },
@@ -150,11 +150,11 @@
     "testReleaseCapture": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 113,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 116,
           "column": 5
         }
       },
@@ -164,11 +164,11 @@
     "testClone": {
       "location": {
         "start": {
-          "line": 117,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 133,
           "column": 5
         }
       },
@@ -263,6 +263,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -287,6 +288,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

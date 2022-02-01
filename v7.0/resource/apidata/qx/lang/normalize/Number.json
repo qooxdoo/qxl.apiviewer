@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 39,
+        "line": 37,
         "column": 3
       }
     },
@@ -37,12 +37,12 @@
     "EPSILON": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 30,
-          "column": 19
+          "line": 29,
+          "column": 18
         }
       },
       "type": "variable",
@@ -52,15 +52,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 33,
-        "column": 10
+        "line": 32,
+        "column": 2
       },
       "end": {
-        "line": 38,
+        "line": 36,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

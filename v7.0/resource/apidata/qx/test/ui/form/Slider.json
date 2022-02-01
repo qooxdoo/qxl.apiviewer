@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 100,
+        "line": 116,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 24,
+          "line": 22,
           "column": 4
         },
         "end": {
-          "line": 31,
+          "line": 30,
           "column": 5
         }
       },
@@ -42,11 +42,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 34,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 36,
+          "line": 34,
           "column": 5
         }
       },
@@ -60,11 +60,11 @@
     "testKnobPositionAfterBlur": {
       "location": {
         "start": {
-          "line": 39,
+          "line": 36,
           "column": 4
         },
         "end": {
-          "line": 54,
+          "line": 60,
           "column": 5
         }
       },
@@ -74,11 +74,11 @@
     "testInitOrientation": {
       "location": {
         "start": {
-          "line": 57,
+          "line": 62,
           "column": 4
         },
         "end": {
-          "line": 66,
+          "line": 71,
           "column": 5
         }
       },
@@ -88,11 +88,11 @@
     "testSlideMethods": {
       "location": {
         "start": {
-          "line": 69,
+          "line": 73,
           "column": 4
         },
         "end": {
-          "line": 98,
+          "line": 114,
           "column": 5
         }
       },
@@ -187,6 +187,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -211,6 +212,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

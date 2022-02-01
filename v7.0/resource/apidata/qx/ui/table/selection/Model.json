@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 666,
+        "line": 576,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 36,
-        "column": 14
+        "line": 32,
+        "column": 2
       },
       "end": {
-        "line": 45,
+        "line": 40,
         "column": 3
       }
     },
@@ -44,12 +44,12 @@
     "changeSelection": {
       "location": {
         "start": {
-          "line": 57,
+          "line": 50,
           "column": 4
         },
         "end": {
-          "line": 57,
-          "column": 45
+          "line": 50,
+          "column": 42
         }
       },
       "jsdoc": {
@@ -68,12 +68,12 @@
     "NO_SELECTION": {
       "location": {
         "start": {
-          "line": 72,
+          "line": 61,
           "column": 4
         },
         "end": {
-          "line": 72,
-          "column": 35
+          "line": 61,
+          "column": 19
         }
       },
       "jsdoc": {
@@ -96,12 +96,12 @@
     "SINGLE_SELECTION": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 75,
-          "column": 35
+          "line": 64,
+          "column": 23
         }
       },
       "jsdoc": {
@@ -124,12 +124,12 @@
     "SINGLE_INTERVAL_SELECTION": {
       "location": {
         "start": {
-          "line": 82,
+          "line": 70,
           "column": 4
         },
         "end": {
-          "line": 82,
-          "column": 35
+          "line": 70,
+          "column": 32
         }
       },
       "jsdoc": {
@@ -152,12 +152,12 @@
     "MULTIPLE_INTERVAL_SELECTION": {
       "location": {
         "start": {
-          "line": 89,
+          "line": 76,
           "column": 4
         },
         "end": {
-          "line": 89,
-          "column": 35
+          "line": 76,
+          "column": 34
         }
       },
       "jsdoc": {
@@ -180,12 +180,12 @@
     "MULTIPLE_INTERVAL_SELECTION_TOGGLE": {
       "location": {
         "start": {
-          "line": 99,
+          "line": 85,
           "column": 4
         },
         "end": {
-          "line": 99,
-          "column": 42
+          "line": 85,
+          "column": 41
         }
       },
       "jsdoc": {
@@ -210,11 +210,11 @@
     "selectionMode": {
       "location": {
         "start": {
-          "line": 118,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 106,
           "column": 5
         }
       },
@@ -276,12 +276,12 @@
     "__hadChangeEventInBatchMode": {
       "location": {
         "start": {
-          "line": 138,
+          "line": 116,
           "column": 4
         },
         "end": {
-          "line": 138,
-          "column": 38
+          "line": 116,
+          "column": 37
         }
       },
       "type": "variable",
@@ -290,12 +290,12 @@
     "__anchorSelectionIndex": {
       "location": {
         "start": {
-          "line": 139,
+          "line": 117,
           "column": 4
         },
         "end": {
-          "line": 139,
-          "column": 33
+          "line": 117,
+          "column": 32
         }
       },
       "type": "variable",
@@ -304,12 +304,12 @@
     "__leadSelectionIndex": {
       "location": {
         "start": {
-          "line": 140,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 140,
-          "column": 31
+          "line": 118,
+          "column": 30
         }
       },
       "type": "variable",
@@ -318,12 +318,12 @@
     "__selectedRangeArr": {
       "location": {
         "start": {
-          "line": 141,
+          "line": 119,
           "column": 4
         },
         "end": {
-          "line": 141,
-          "column": 29
+          "line": 119,
+          "column": 28
         }
       },
       "type": "variable",
@@ -332,11 +332,11 @@
     "_applySelectionMode": {
       "location": {
         "start": {
-          "line": 145,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 147,
+          "line": 124,
           "column": 5
         }
       },
@@ -350,11 +350,11 @@
     "setBatchMode": {
       "location": {
         "start": {
-          "line": 164,
+          "line": 140,
           "column": 4
         },
         "end": {
-          "line": 185,
+          "line": 159,
           "column": 5
         }
       },
@@ -397,11 +397,11 @@
     "hasBatchMode": {
       "location": {
         "start": {
-          "line": 194,
+          "line": 167,
           "column": 4
         },
         "end": {
-          "line": 196,
+          "line": 169,
           "column": 5
         }
       },
@@ -427,11 +427,11 @@
     "getAnchorSelectionIndex": {
       "location": {
         "start": {
-          "line": 205,
+          "line": 177,
           "column": 4
         },
         "end": {
-          "line": 207,
+          "line": 179,
           "column": 5
         }
       },
@@ -457,11 +457,11 @@
     "_setAnchorSelectionIndex": {
       "location": {
         "start": {
-          "line": 216,
+          "line": 187,
           "column": 4
         },
         "end": {
-          "line": 218,
+          "line": 189,
           "column": 5
         }
       },
@@ -488,11 +488,11 @@
     "getLeadSelectionIndex": {
       "location": {
         "start": {
-          "line": 227,
+          "line": 197,
           "column": 4
         },
         "end": {
-          "line": 229,
+          "line": 199,
           "column": 5
         }
       },
@@ -518,11 +518,11 @@
     "_setLeadSelectionIndex": {
       "location": {
         "start": {
-          "line": 238,
+          "line": 207,
           "column": 4
         },
         "end": {
-          "line": 240,
+          "line": 209,
           "column": 5
         }
       },
@@ -549,11 +549,11 @@
     "_getSelectedRangeArr": {
       "location": {
         "start": {
-          "line": 250,
+          "line": 218,
           "column": 4
         },
         "end": {
-          "line": 252,
+          "line": 220,
           "column": 5
         }
       },
@@ -579,11 +579,11 @@
     "resetSelection": {
       "location": {
         "start": {
-          "line": 258,
+          "line": 225,
           "column": 4
         },
         "end": {
-          "line": 265,
+          "line": 230,
           "column": 5
         }
       },
@@ -601,11 +601,11 @@
     "isSelectionEmpty": {
       "location": {
         "start": {
-          "line": 273,
+          "line": 237,
           "column": 4
         },
         "end": {
-          "line": 275,
+          "line": 239,
           "column": 5
         }
       },
@@ -631,11 +631,11 @@
     "getSelectedCount": {
       "location": {
         "start": {
-          "line": 283,
+          "line": 246,
           "column": 4
         },
         "end": {
-          "line": 294,
+          "line": 255,
           "column": 5
         }
       },
@@ -661,11 +661,11 @@
     "isSelectedIndex": {
       "location": {
         "start": {
-          "line": 303,
+          "line": 263,
           "column": 4
         },
         "end": {
-          "line": 315,
+          "line": 273,
           "column": 5
         }
       },
@@ -700,11 +700,11 @@
     "getSelectedRanges": {
       "location": {
         "start": {
-          "line": 324,
+          "line": 281,
           "column": 4
         },
         "end": {
-          "line": 340,
+          "line": 294,
           "column": 5
         }
       },
@@ -730,11 +730,11 @@
     "iterateSelection": {
       "location": {
         "start": {
-          "line": 359,
+          "line": 312,
           "column": 4
         },
         "end": {
-          "line": 367,
+          "line": 322,
           "column": 5
         }
       },
@@ -765,11 +765,11 @@
     "setSelectionInterval": {
       "location": {
         "start": {
-          "line": 376,
+          "line": 330,
           "column": 4
         },
         "end": {
-          "line": 424,
+          "line": 369,
           "column": 5
         }
       },
@@ -803,11 +803,11 @@
     "addSelectionInterval": {
       "location": {
         "start": {
-          "line": 433,
+          "line": 377,
           "column": 4
         },
         "end": {
-          "line": 452,
+          "line": 394,
           "column": 5
         }
       },
@@ -841,11 +841,11 @@
     "removeSelectionInterval": {
       "location": {
         "start": {
-          "line": 463,
+          "line": 404,
           "column": 4
         },
         "end": {
-          "line": 542,
+          "line": 472,
           "column": 5
         }
       },
@@ -887,11 +887,11 @@
     "_resetSelection": {
       "location": {
         "start": {
-          "line": 548,
+          "line": 477,
           "column": 4
         },
         "end": {
-          "line": 553,
+          "line": 481,
           "column": 5
         }
       },
@@ -909,11 +909,11 @@
     "_addSelectionInterval": {
       "location": {
         "start": {
-          "line": 563,
+          "line": 490,
           "column": 4
         },
         "end": {
-          "line": 613,
+          "line": 533,
           "column": 5
         }
       },
@@ -947,11 +947,11 @@
     "_dumpRanges": {
       "location": {
         "start": {
-          "line": 620,
+          "line": 540,
           "column": 4
         },
         "end": {
-          "line": 631,
+          "line": 549,
           "column": 5
         }
       },
@@ -969,11 +969,11 @@
     "_fireChangeSelection": {
       "location": {
         "start": {
-          "line": 639,
+          "line": 556,
           "column": 4
         },
         "end": {
-          "line": 651,
+          "line": 564,
           "column": 5
         }
       },
@@ -1076,6 +1076,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1100,6 +1101,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -1194,11 +1196,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 663,
-        "column": 13
+        "line": 573,
+        "column": 2
       },
       "end": {
-        "line": 665,
+        "line": 575,
         "column": 3
       }
     },

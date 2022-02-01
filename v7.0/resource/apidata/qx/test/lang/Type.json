@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 258,
+        "line": 248,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "testIsString": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 46,
+          "line": 43,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "testIsArray": {
       "location": {
         "start": {
-          "line": 49,
+          "line": 45,
           "column": 4
         },
         "end": {
-          "line": 69,
+          "line": 64,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "testIsObject": {
       "location": {
         "start": {
-          "line": 72,
+          "line": 66,
           "column": 4
         },
         "end": {
-          "line": 95,
+          "line": 92,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "testIsRegExp": {
       "location": {
         "start": {
-          "line": 98,
+          "line": 94,
           "column": 4
         },
         "end": {
-          "line": 116,
+          "line": 111,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "testIsNumber": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 113,
           "column": 4
         },
         "end": {
-          "line": 140,
+          "line": 133,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testIsBoolean": {
       "location": {
         "start": {
-          "line": 143,
+          "line": 135,
           "column": 4
         },
         "end": {
-          "line": 163,
+          "line": 156,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "testIsFunction": {
       "location": {
         "start": {
-          "line": 166,
+          "line": 158,
           "column": 4
         },
         "end": {
-          "line": 184,
+          "line": 177,
           "column": 5
         }
       },
@@ -122,11 +122,11 @@
     "testIsDate": {
       "location": {
         "start": {
-          "line": 187,
+          "line": 179,
           "column": 4
         },
         "end": {
-          "line": 208,
+          "line": 200,
           "column": 5
         }
       },
@@ -136,11 +136,11 @@
     "testIsError": {
       "location": {
         "start": {
-          "line": 211,
+          "line": 202,
           "column": 4
         },
         "end": {
-          "line": 233,
+          "line": 224,
           "column": 5
         }
       },
@@ -150,11 +150,11 @@
     "testIsPromise": {
       "location": {
         "start": {
-          "line": 238,
+          "line": 229,
           "column": 4
         },
         "end": {
-          "line": 255,
+          "line": 246,
           "column": 5
         }
       },
@@ -263,6 +263,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -287,6 +288,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

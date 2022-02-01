@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 470,
+        "line": 497,
         "column": 3
       }
     },
@@ -32,11 +32,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 34,
-        "column": 14
+        "line": 33,
+        "column": 2
       },
       "end": {
-        "line": 39,
+        "line": 37,
         "column": 3
       }
     },
@@ -62,12 +62,12 @@
     "$$instance": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 43,
-          "column": 21
+          "line": 40,
+          "column": 20
         }
       },
       "type": "variable",
@@ -76,11 +76,11 @@
     "createModel": {
       "location": {
         "start": {
-          "line": 56,
+          "line": 53,
           "column": 4
         },
         "end": {
-          "line": 65,
+          "line": 62,
           "column": 5
         }
       },
@@ -122,11 +122,11 @@
     "legacyJsonHash": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 74,
           "column": 4
         },
         "end": {
-          "line": 80,
+          "line": 79,
           "column": 5
         }
       },
@@ -146,12 +146,12 @@
     "__delegate": {
       "location": {
         "start": {
-          "line": 86,
+          "line": 83,
           "column": 4
         },
         "end": {
-          "line": 86,
-          "column": 21
+          "line": 83,
+          "column": 20
         }
       },
       "type": "variable",
@@ -160,11 +160,11 @@
     "__jsonToHash": {
       "location": {
         "start": {
-          "line": 99,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 106,
+          "line": 103,
           "column": 5
         }
       },
@@ -208,11 +208,11 @@
     "__jsonToBestHash": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 120,
           "column": 4
         },
         "end": {
-          "line": 143,
+          "line": 138,
           "column": 5
         }
       },
@@ -254,11 +254,11 @@
     "toClass": {
       "location": {
         "start": {
-          "line": 164,
+          "line": 158,
           "column": 4
         },
         "end": {
-          "line": 166,
+          "line": 160,
           "column": 5
         }
       },
@@ -302,11 +302,11 @@
     "__toClass": {
       "location": {
         "start": {
-          "line": 179,
+          "line": 172,
           "column": 4
         },
         "end": {
-          "line": 294,
+          "line": 300,
           "column": 5
         }
       },
@@ -357,11 +357,11 @@
     "__disposeItem": {
       "location": {
         "start": {
-          "line": 302,
+          "line": 307,
           "column": 4
         },
         "end": {
-          "line": 312,
+          "line": 317,
           "column": 5
         }
       },
@@ -388,11 +388,11 @@
     "__createInstance": {
       "location": {
         "start": {
-          "line": 326,
+          "line": 330,
           "column": 4
         },
         "end": {
-          "line": 351,
+          "line": 361,
           "column": 5
         }
       },
@@ -451,11 +451,11 @@
     "__ignore": {
       "location": {
         "start": {
-          "line": 362,
+          "line": 371,
           "column": 4
         },
         "end": {
-          "line": 365,
+          "line": 374,
           "column": 5
         }
       },
@@ -507,11 +507,11 @@
     "toModel": {
       "location": {
         "start": {
-          "line": 382,
+          "line": 390,
           "column": 4
         },
         "end": {
-          "line": 384,
+          "line": 392,
           "column": 5
         }
       },
@@ -559,11 +559,11 @@
     "__toModel": {
       "location": {
         "start": {
-          "line": 400,
+          "line": 407,
           "column": 4
         },
         "end": {
-          "line": 468,
+          "line": 495,
           "column": 5
         }
       },
@@ -710,6 +710,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -734,6 +735,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

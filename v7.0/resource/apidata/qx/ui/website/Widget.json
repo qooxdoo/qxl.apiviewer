@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 349,
+        "line": 336,
         "column": 3
       }
     },
@@ -53,11 +53,11 @@
     "widget": {
       "location": {
         "start": {
-          "line": 46,
+          "line": 45,
           "column": 4
         },
         "end": {
-          "line": 50,
+          "line": 49,
           "column": 5
         }
       },
@@ -89,11 +89,11 @@
     "create": {
       "location": {
         "start": {
-          "line": 60,
+          "line": 58,
           "column": 4
         },
         "end": {
-          "line": 62,
+          "line": 60,
           "column": 5
         }
       },
@@ -134,11 +134,11 @@
     "initWidgets": {
       "location": {
         "start": {
-          "line": 74,
+          "line": 71,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 79,
           "column": 5
         }
       },
@@ -172,11 +172,11 @@
     "toWidgetCollection": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 89,
           "column": 4
         },
         "end": {
-          "line": 102,
+          "line": 100,
           "column": 5
         }
       },
@@ -209,26 +209,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 106,
-        "column": 14
+        "line": 103,
+        "column": 2
       },
       "end": {
         "line": 112,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "members": {
     "__cssPrefix": {
       "location": {
         "start": {
-          "line": 116,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 116,
-          "column": 22
+          "line": 115,
+          "column": 21
         }
       },
       "type": "variable",
@@ -237,11 +236,11 @@
     "init": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 136,
+          "line": 134,
           "column": 5
         }
       },
@@ -267,11 +266,11 @@
     "getCssPrefix": {
       "location": {
         "start": {
-          "line": 145,
+          "line": 142,
           "column": 4
         },
         "end": {
-          "line": 151,
+          "line": 148,
           "column": 5
         }
       },
@@ -297,11 +296,11 @@
     "setEnabled": {
       "location": {
         "start": {
-          "line": 162,
+          "line": 158,
           "column": 4
         },
         "end": {
-          "line": 166,
+          "line": 162,
           "column": 5
         }
       },
@@ -336,11 +335,11 @@
     "getEnabled": {
       "location": {
         "start": {
-          "line": 174,
+          "line": 169,
           "column": 4
         },
         "end": {
-          "line": 176,
+          "line": 171,
           "column": 5
         }
       },
@@ -366,11 +365,11 @@
     "setTemplate": {
       "location": {
         "start": {
-          "line": 193,
+          "line": 187,
           "column": 4
         },
         "end": {
-          "line": 195,
+          "line": 189,
           "column": 5
         }
       },
@@ -412,11 +411,11 @@
     "setConfig": {
       "location": {
         "start": {
-          "line": 211,
+          "line": 204,
           "column": 4
         },
         "end": {
-          "line": 213,
+          "line": 206,
           "column": 5
         }
       },
@@ -458,11 +457,11 @@
     "_setData": {
       "location": {
         "start": {
-          "line": 224,
+          "line": 216,
           "column": 4
         },
         "end": {
-          "line": 231,
+          "line": 223,
           "column": 5
         }
       },
@@ -511,11 +510,11 @@
     "getTemplate": {
       "location": {
         "start": {
-          "line": 241,
+          "line": 232,
           "column": 4
         },
         "end": {
-          "line": 243,
+          "line": 234,
           "column": 5
         }
       },
@@ -550,11 +549,11 @@
     "getConfig": {
       "location": {
         "start": {
-          "line": 255,
+          "line": 245,
           "column": 4
         },
         "end": {
-          "line": 257,
+          "line": 247,
           "column": 5
         }
       },
@@ -589,11 +588,11 @@
     "_getData": {
       "location": {
         "start": {
-          "line": 269,
+          "line": 258,
           "column": 4
         },
         "end": {
-          "line": 297,
+          "line": 286,
           "column": 5
         }
       },
@@ -635,11 +634,11 @@
     "render": {
       "location": {
         "start": {
-          "line": 307,
+          "line": 295,
           "column": 4
         },
         "end": {
-          "line": 310,
+          "line": 298,
           "column": 5
         }
       },
@@ -665,11 +664,11 @@
     "dispose": {
       "location": {
         "start": {
-          "line": 319,
+          "line": 306,
           "column": 4
         },
         "end": {
-          "line": 336,
+          "line": 323,
           "column": 5
         }
       },
@@ -700,15 +699,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 340,
-        "column": 10
+        "line": 326,
+        "column": 2
       },
       "end": {
-        "line": 348,
+        "line": 335,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": [
     "qx.ui.website.Button",

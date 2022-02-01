@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 208,
+        "line": 194,
         "column": 3
       }
     },
@@ -31,11 +31,11 @@
     "setLocalItem": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 38,
+          "line": 37,
           "column": 5
         }
       },
@@ -75,11 +75,11 @@
     "getLocalItem": {
       "location": {
         "start": {
-          "line": 48,
+          "line": 46,
           "column": 4
         },
         "end": {
-          "line": 50,
+          "line": 48,
           "column": 5
         }
       },
@@ -120,11 +120,11 @@
     "removeLocalItem": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 55,
           "column": 4
         },
         "end": {
-          "line": 60,
+          "line": 57,
           "column": 5
         }
       },
@@ -157,11 +157,11 @@
     "getLocalLength": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 70,
+          "line": 66,
           "column": 5
         }
       },
@@ -193,11 +193,11 @@
     "getLocalKey": {
       "location": {
         "start": {
-          "line": 79,
+          "line": 74,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 76,
           "column": 5
         }
       },
@@ -238,11 +238,11 @@
     "clearLocal": {
       "location": {
         "start": {
-          "line": 88,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 90,
+          "line": 84,
           "column": 5
         }
       },
@@ -266,11 +266,11 @@
     "forEachLocal": {
       "location": {
         "start": {
-          "line": 102,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 104,
+          "line": 97,
           "column": 5
         }
       },
@@ -310,11 +310,11 @@
     "setSessionItem": {
       "location": {
         "start": {
-          "line": 114,
+          "line": 106,
           "column": 4
         },
         "end": {
-          "line": 116,
+          "line": 108,
           "column": 5
         }
       },
@@ -354,11 +354,11 @@
     "getSessionItem": {
       "location": {
         "start": {
-          "line": 126,
+          "line": 117,
           "column": 4
         },
         "end": {
-          "line": 128,
+          "line": 119,
           "column": 5
         }
       },
@@ -399,11 +399,11 @@
     "removeSessionItem": {
       "location": {
         "start": {
-          "line": 136,
+          "line": 126,
           "column": 4
         },
         "end": {
-          "line": 138,
+          "line": 128,
           "column": 5
         }
       },
@@ -436,11 +436,11 @@
     "getSessionLength": {
       "location": {
         "start": {
-          "line": 146,
+          "line": 135,
           "column": 4
         },
         "end": {
-          "line": 148,
+          "line": 137,
           "column": 5
         }
       },
@@ -472,11 +472,11 @@
     "getSessionKey": {
       "location": {
         "start": {
-          "line": 157,
+          "line": 145,
           "column": 4
         },
         "end": {
-          "line": 159,
+          "line": 147,
           "column": 5
         }
       },
@@ -517,11 +517,11 @@
     "clearSession": {
       "location": {
         "start": {
-          "line": 166,
+          "line": 153,
           "column": 4
         },
         "end": {
-          "line": 168,
+          "line": 155,
           "column": 5
         }
       },
@@ -545,11 +545,11 @@
     "forEachSession": {
       "location": {
         "start": {
-          "line": 180,
+          "line": 166,
           "column": 4
         },
         "end": {
-          "line": 182,
+          "line": 168,
           "column": 5
         }
       },
@@ -590,15 +590,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 186,
-        "column": 10
+        "line": 171,
+        "column": 2
       },
       "end": {
-        "line": 207,
+        "line": 193,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

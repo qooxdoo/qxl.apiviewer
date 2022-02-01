@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 142,
+        "line": 132,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "TEST_CONSTANT": {
       "location": {
         "start": {
-          "line": 24,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 24,
+          "line": 23,
           "column": 24
         }
       },
@@ -40,11 +40,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 29,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 32,
+          "line": 29,
           "column": 5
         }
       },
@@ -54,11 +54,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 34,
+          "line": 31,
           "column": 4
         },
         "end": {
-          "line": 37,
+          "line": 33,
           "column": 5
         }
       },
@@ -68,11 +68,11 @@
     "__testLogException": {
       "location": {
         "start": {
-          "line": 39,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 59,
+          "line": 57,
           "column": 5
         }
       },
@@ -82,11 +82,11 @@
     "testLogException": {
       "location": {
         "start": {
-          "line": 61,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 65,
+          "line": 62,
           "column": 5
         }
       },
@@ -96,11 +96,11 @@
     "testLogDOMException": {
       "location": {
         "start": {
-          "line": 67,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 71,
+          "line": 67,
           "column": 5
         }
       },
@@ -110,11 +110,11 @@
     "testKonstantDeprecation": {
       "location": {
         "start": {
-          "line": 74,
+          "line": 69,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 77,
           "column": 5
         }
       },
@@ -124,11 +124,11 @@
     "testContextObject": {
       "location": {
         "start": {
-          "line": 88,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 117,
+          "line": 110,
           "column": 5
         }
       },
@@ -152,11 +152,11 @@
     "newException": {
       "location": {
         "start": {
-          "line": 120,
+          "line": 112,
           "column": 4
         },
         "end": {
-          "line": 129,
+          "line": 120,
           "column": 5
         }
       },
@@ -166,11 +166,11 @@
     "newDOMException": {
       "location": {
         "start": {
-          "line": 131,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 140,
+          "line": 130,
           "column": 5
         }
       },
@@ -265,6 +265,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -289,6 +290,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

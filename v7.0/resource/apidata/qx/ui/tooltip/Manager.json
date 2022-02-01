@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 460,
+        "line": 462,
         "column": 3
       }
     },
@@ -33,11 +33,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 39,
-        "column": 14
+        "line": 36,
+        "column": 2
       },
       "end": {
-        "line": 55,
+        "line": 57,
         "column": 3
       }
     },
@@ -47,11 +47,11 @@
     "current": {
       "location": {
         "start": {
-          "line": 69,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 71,
           "column": 5
         }
       },
@@ -73,11 +73,11 @@
     "showInvalidToolTips": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 74,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 77,
           "column": 5
         }
       },
@@ -98,11 +98,11 @@
     "showToolTips": {
       "location": {
         "start": {
-          "line": 84,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 88,
+          "line": 83,
           "column": 5
         }
       },
@@ -157,12 +157,12 @@
     "__pointerPosition": {
       "location": {
         "start": {
-          "line": 102,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 102,
-          "column": 28
+          "line": 93,
+          "column": 27
         }
       },
       "type": "variable",
@@ -171,12 +171,12 @@
     "__hideTimer": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 94,
           "column": 4
         },
         "end": {
-          "line": 103,
-          "column": 22
+          "line": 94,
+          "column": 21
         }
       },
       "type": "variable",
@@ -185,12 +185,12 @@
     "__showTimer": {
       "location": {
         "start": {
-          "line": 104,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 104,
-          "column": 22
+          "line": 95,
+          "column": 21
         }
       },
       "type": "variable",
@@ -199,11 +199,11 @@
     "__sharedToolTip": {
       "location": {
         "start": {
-          "line": 105,
+          "line": 96,
           "column": 4
         },
         "end": {
-          "line": 105,
+          "line": 96,
           "column": 25
         }
       },
@@ -213,11 +213,11 @@
     "__sharedErrorToolTip": {
       "location": {
         "start": {
-          "line": 106,
+          "line": 97,
           "column": 4
         },
         "end": {
-          "line": 106,
+          "line": 97,
           "column": 30
         }
       },
@@ -227,11 +227,11 @@
     "getSharedTooltip": {
       "location": {
         "start": {
-          "line": 118,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 127,
+          "line": 115,
           "column": 5
         }
       },
@@ -257,11 +257,11 @@
     "getSharedErrorTooltip": {
       "location": {
         "start": {
-          "line": 140,
+          "line": 127,
           "column": 4
         },
         "end": {
-          "line": 153,
+          "line": 139,
           "column": 5
         }
       },
@@ -287,11 +287,11 @@
     "_applyCurrent": {
       "location": {
         "start": {
-          "line": 163,
+          "line": 148,
           "column": 4
         },
         "end": {
-          "line": 200,
+          "line": 220,
           "column": 5
         }
       },
@@ -305,11 +305,11 @@
     "__onShowInterval": {
       "location": {
         "start": {
-          "line": 216,
+          "line": 233,
           "column": 4
         },
         "end": {
-          "line": 233,
+          "line": 248,
           "column": 5
         }
       },
@@ -336,11 +336,11 @@
     "__onHideInterval": {
       "location": {
         "start": {
-          "line": 241,
+          "line": 255,
           "column": 4
         },
         "end": {
-          "line": 255,
+          "line": 268,
           "column": 5
         }
       },
@@ -367,11 +367,11 @@
     "__onPointerMoveRoot": {
       "location": {
         "start": {
-          "line": 271,
+          "line": 281,
           "column": 4
         },
         "end": {
-          "line": 277,
+          "line": 286,
           "column": 5
         }
       },
@@ -398,11 +398,11 @@
     "__onPointerOverRoot": {
       "location": {
         "start": {
-          "line": 287,
+          "line": 295,
           "column": 4
         },
         "end": {
-          "line": 293,
+          "line": 300,
           "column": 5
         }
       },
@@ -429,11 +429,11 @@
     "showToolTip": {
       "location": {
         "start": {
-          "line": 301,
+          "line": 307,
           "column": 4
         },
         "end": {
-          "line": 358,
+          "line": 361,
           "column": 5
         }
       },
@@ -463,11 +463,11 @@
     "__onPointerOutRoot": {
       "location": {
         "start": {
-          "line": 367,
+          "line": 369,
           "column": 4
         },
         "end": {
-          "line": 404,
+          "line": 408,
           "column": 5
         }
       },
@@ -498,7 +498,7 @@
           "column": 4
         },
         "end": {
-          "line": 440,
+          "line": 439,
           "column": 5
         }
       },
@@ -610,6 +610,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -634,6 +635,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -908,11 +910,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 451,
-        "column": 13
+        "line": 448,
+        "column": 2
       },
       "end": {
-        "line": 459,
+        "line": 461,
         "column": 3
       }
     },

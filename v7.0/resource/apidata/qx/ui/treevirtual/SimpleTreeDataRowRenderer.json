@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 77,
+        "line": 67,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 35,
-        "column": 14
+        "line": 31,
+        "column": 2
       },
       "end": {
-        "line": 37,
+        "line": 33,
         "column": 3
       }
     },
@@ -44,11 +44,11 @@
     "updateDataRowElement": {
       "location": {
         "start": {
-          "line": 51,
+          "line": 43,
           "column": 4
         },
         "end": {
-          "line": 75,
+          "line": 65,
           "column": 5
         }
       },
@@ -149,6 +149,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -173,6 +174,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

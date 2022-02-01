@@ -16,7 +16,7 @@
         "column": 0
       },
       "end": {
-        "line": 851,
+        "line": 898,
         "column": 3
       }
     },
@@ -27,11 +27,11 @@
     "UNSENT": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 28,
+          "line": 25,
           "column": 13
         }
       },
@@ -41,11 +41,11 @@
     "OPENED": {
       "location": {
         "start": {
-          "line": 29,
+          "line": 26,
           "column": 4
         },
         "end": {
-          "line": 29,
+          "line": 26,
           "column": 13
         }
       },
@@ -55,11 +55,11 @@
     "HEADERS_RECEIVED": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 30,
+          "line": 27,
           "column": 23
         }
       },
@@ -69,11 +69,11 @@
     "LOADING": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 31,
+          "line": 28,
           "column": 14
         }
       },
@@ -83,11 +83,11 @@
     "DONE": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 32,
+          "line": 29,
           "column": 11
         }
       },
@@ -99,11 +99,11 @@
     "fakedXhr": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 36,
           "column": 4
         },
         "end": {
-          "line": 40,
+          "line": 36,
           "column": 18
         }
       },
@@ -121,11 +121,11 @@
     "fakeReqs": {
       "location": {
         "start": {
-          "line": 45,
+          "line": 41,
           "column": 4
         },
         "end": {
-          "line": 45,
+          "line": 41,
           "column": 18
         }
       },
@@ -143,11 +143,11 @@
     "req": {
       "location": {
         "start": {
-          "line": 50,
+          "line": 46,
           "column": 4
         },
         "end": {
-          "line": 50,
+          "line": 46,
           "column": 13
         }
       },
@@ -165,7 +165,21 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 52,
+          "line": 48,
+          "column": 4
+        },
+        "end": {
+          "line": 51,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "tearDown": {
+      "location": {
+        "start": {
+          "line": 53,
           "column": 4
         },
         "end": {
@@ -176,28 +190,14 @@
       "type": "function",
       "access": "public"
     },
-    "tearDown": {
-      "location": {
-        "start": {
-          "line": 58,
-          "column": 4
-        },
-        "end": {
-          "line": 62,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
     "test: create instance": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 62,
           "column": 4
         },
         "end": {
-          "line": 70,
+          "line": 64,
           "column": 5
         }
       },
@@ -208,11 +208,11 @@
     "test: detect native XHR": {
       "location": {
         "start": {
-          "line": 72,
+          "line": 66,
           "column": 4
         },
         "end": {
-          "line": 77,
+          "line": 71,
           "column": 5
         }
       },
@@ -222,11 +222,11 @@
     "test: open request": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 77,
           "column": 4
         },
         "end": {
-          "line": 92,
+          "line": 86,
           "column": 5
         }
       },
@@ -237,11 +237,11 @@
     "test: open request throws when missing arguments": {
       "location": {
         "start": {
-          "line": 94,
+          "line": 88,
           "column": 4
         },
         "end": {
-          "line": 99,
+          "line": 106,
           "column": 5
         }
       },
@@ -251,11 +251,11 @@
     "test: open async request on default": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 107,
+          "line": 114,
           "column": 5
         }
       },
@@ -265,11 +265,11 @@
     "test: open sync request": {
       "location": {
         "start": {
-          "line": 109,
+          "line": 116,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 122,
           "column": 5
         }
       },
@@ -279,11 +279,11 @@
     "test: open request with username and password": {
       "location": {
         "start": {
-          "line": 117,
+          "line": 124,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 135,
           "column": 5
         }
       },
@@ -293,11 +293,11 @@
     "test: set request header": {
       "location": {
         "start": {
-          "line": 130,
+          "line": 141,
           "column": 4
         },
         "end": {
-          "line": 139,
+          "line": 150,
           "column": 5
         }
       },
@@ -308,11 +308,11 @@
     "test: send() with data": {
       "location": {
         "start": {
-          "line": 145,
+          "line": 156,
           "column": 4
         },
         "end": {
-          "line": 154,
+          "line": 165,
           "column": 5
         }
       },
@@ -323,11 +323,11 @@
     "test: send() without data": {
       "location": {
         "start": {
-          "line": 158,
+          "line": 169,
           "column": 4
         },
         "end": {
-          "line": 166,
+          "line": 177,
           "column": 5
         }
       },
@@ -338,11 +338,11 @@
     "test: abort() aborts native Xhr": {
       "location": {
         "start": {
-          "line": 172,
+          "line": 183,
           "column": 4
         },
         "end": {
-          "line": 179,
+          "line": 190,
           "column": 5
         }
       },
@@ -353,11 +353,11 @@
     "test: abort() resets readyState": {
       "location": {
         "start": {
-          "line": 181,
+          "line": 192,
           "column": 4
         },
         "end": {
-          "line": 187,
+          "line": 202,
           "column": 5
         }
       },
@@ -367,11 +367,11 @@
     "test: call event handler": {
       "location": {
         "start": {
-          "line": 193,
+          "line": 208,
           "column": 4
         },
         "end": {
-          "line": 198,
+          "line": 213,
           "column": 5
         }
       },
@@ -382,11 +382,11 @@
     "test: fire event": {
       "location": {
         "start": {
-          "line": 200,
+          "line": 215,
           "column": 4
         },
         "end": {
-          "line": 207,
+          "line": 222,
           "column": 5
         }
       },
@@ -396,11 +396,11 @@
     "test: responseText set before onreadystatechange is called": {
       "location": {
         "start": {
-          "line": 214,
+          "line": 229,
           "column": 4
         },
         "end": {
-          "line": 226,
+          "line": 241,
           "column": 5
         }
       },
@@ -411,11 +411,11 @@
     "test: emit readystatechange when reopened": {
       "location": {
         "start": {
-          "line": 228,
+          "line": 243,
           "column": 4
         },
         "end": {
-          "line": 242,
+          "line": 257,
           "column": 5
         }
       },
@@ -425,11 +425,11 @@
     "test: ignore onreadystatechange when readyState is unchanged": {
       "location": {
         "start": {
-          "line": 246,
+          "line": 261,
           "column": 4
         },
         "end": {
-          "line": 256,
+          "line": 271,
           "column": 5
         }
       },
@@ -440,11 +440,11 @@
     "test: native onreadystatechange is disposed once DONE": {
       "location": {
         "start": {
-          "line": 258,
+          "line": 273,
           "column": 4
         },
         "end": {
-          "line": 268,
+          "line": 285,
           "column": 5
         }
       },
@@ -454,11 +454,11 @@
     "test: emit load on successful request": {
       "location": {
         "start": {
-          "line": 274,
+          "line": 291,
           "column": 4
         },
         "end": {
-          "line": 287,
+          "line": 304,
           "column": 5
         }
       },
@@ -469,11 +469,11 @@
     "test: emit abort": {
       "location": {
         "start": {
-          "line": 299,
+          "line": 316,
           "column": 4
         },
         "end": {
-          "line": 309,
+          "line": 326,
           "column": 5
         }
       },
@@ -484,11 +484,11 @@
     "test: emit abort before loadend": {
       "location": {
         "start": {
-          "line": 311,
+          "line": 328,
           "column": 4
         },
         "end": {
-          "line": 323,
+          "line": 340,
           "column": 5
         }
       },
@@ -498,11 +498,11 @@
     "test: emit timeout": {
       "location": {
         "start": {
-          "line": 329,
+          "line": 346,
           "column": 4
         },
         "end": {
-          "line": 342,
+          "line": 363,
           "column": 5
         }
       },
@@ -513,11 +513,11 @@
     "test: not emit error when timeout": {
       "location": {
         "start": {
-          "line": 344,
+          "line": 365,
           "column": 4
         },
         "end": {
-          "line": 363,
+          "line": 387,
           "column": 5
         }
       },
@@ -527,11 +527,11 @@
     "test: not emit error when aborted immediately": {
       "location": {
         "start": {
-          "line": 365,
+          "line": 389,
           "column": 4
         },
         "end": {
-          "line": 375,
+          "line": 399,
           "column": 5
         }
       },
@@ -541,11 +541,11 @@
     "test: cancel timeout when DONE": {
       "location": {
         "start": {
-          "line": 377,
+          "line": 401,
           "column": 4
         },
         "end": {
-          "line": 391,
+          "line": 419,
           "column": 5
         }
       },
@@ -555,11 +555,11 @@
     "test: cancel timeout when handler throws": {
       "location": {
         "start": {
-          "line": 393,
+          "line": 421,
           "column": 4
         },
         "end": {
-          "line": 421,
+          "line": 452,
           "column": 5
         }
       },
@@ -569,11 +569,11 @@
     "test: fire loadend when request complete": {
       "location": {
         "start": {
-          "line": 427,
+          "line": 458,
           "column": 4
         },
         "end": {
-          "line": 439,
+          "line": 470,
           "column": 5
         }
       },
@@ -584,11 +584,11 @@
     "test: set readyState appropriate to native readyState": {
       "location": {
         "start": {
-          "line": 450,
+          "line": 480,
           "column": 4
         },
         "end": {
-          "line": 465,
+          "line": 495,
           "column": 5
         }
       },
@@ -599,11 +599,11 @@
     "test: responseText is empty string when OPEN": {
       "location": {
         "start": {
-          "line": 471,
+          "line": 501,
           "column": 4
         },
         "end": {
-          "line": 474,
+          "line": 504,
           "column": 5
         }
       },
@@ -614,11 +614,11 @@
     "test: responseText is empty string when reopened": {
       "location": {
         "start": {
-          "line": 476,
+          "line": 506,
           "column": 4
         },
         "end": {
-          "line": 488,
+          "line": 518,
           "column": 5
         }
       },
@@ -628,11 +628,11 @@
     "test: responseText is set when DONE": {
       "location": {
         "start": {
-          "line": 490,
+          "line": 520,
           "column": 4
         },
         "end": {
-          "line": 499,
+          "line": 529,
           "column": 5
         }
       },
@@ -642,11 +642,11 @@
     "test: query responseText when available": {
       "location": {
         "start": {
-          "line": 503,
+          "line": 533,
           "column": 4
         },
         "end": {
-          "line": 531,
+          "line": 562,
           "column": 5
         }
       },
@@ -657,11 +657,11 @@
     "test: not query responseText if unavailable": {
       "location": {
         "start": {
-          "line": 533,
+          "line": 564,
           "column": 4
         },
         "end": {
-          "line": 558,
+          "line": 590,
           "column": 5
         }
       },
@@ -671,11 +671,11 @@
     "test: responseXML is null when not DONE": {
       "location": {
         "start": {
-          "line": 564,
+          "line": 596,
           "column": 4
         },
         "end": {
-          "line": 566,
+          "line": 598,
           "column": 5
         }
       },
@@ -686,11 +686,11 @@
     "test: responseXML is null when reopened": {
       "location": {
         "start": {
-          "line": 568,
+          "line": 600,
           "column": 4
         },
         "end": {
-          "line": 580,
+          "line": 616,
           "column": 5
         }
       },
@@ -700,11 +700,11 @@
     "test: responseXML is parsed document with XML response": {
       "location": {
         "start": {
-          "line": 582,
+          "line": 618,
           "column": 4
         },
         "end": {
-          "line": 594,
+          "line": 630,
           "column": 5
         }
       },
@@ -714,11 +714,11 @@
     "test: http status is 0 when UNSENT": {
       "location": {
         "start": {
-          "line": 600,
+          "line": 636,
           "column": 4
         },
         "end": {
-          "line": 602,
+          "line": 638,
           "column": 5
         }
       },
@@ -729,11 +729,11 @@
     "test: http status is 0 when OPENED": {
       "location": {
         "start": {
-          "line": 604,
+          "line": 640,
           "column": 4
         },
         "end": {
-          "line": 609,
+          "line": 645,
           "column": 5
         }
       },
@@ -743,11 +743,11 @@
     "test: http status is 0 when aborted immediately": {
       "location": {
         "start": {
-          "line": 611,
+          "line": 647,
           "column": 4
         },
         "end": {
-          "line": 620,
+          "line": 656,
           "column": 5
         }
       },
@@ -757,63 +757,7 @@
     "test: http status when DONE": {
       "location": {
         "start": {
-          "line": 622,
-          "column": 4
-        },
-        "end": {
-          "line": 629,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "test: statusText is empty string when UNSENT": {
-      "location": {
-        "start": {
-          "line": 631,
-          "column": 4
-        },
-        "end": {
-          "line": 633,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "test: statusText is set when DONE": {
-      "location": {
-        "start": {
-          "line": 635,
-          "column": 4
-        },
-        "end": {
-          "line": 642,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "test: status is set when LOADING": {
-      "location": {
-        "start": {
-          "line": 644,
-          "column": 4
-        },
-        "end": {
-          "line": 654,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "test: reset status when reopened": {
-      "location": {
-        "start": {
-          "line": 656,
+          "line": 658,
           "column": 4
         },
         "end": {
@@ -824,39 +768,52 @@
       "type": "function",
       "access": "public"
     },
-    "test: normalize status 1223 to 204": {
+    "test: statusText is empty string when UNSENT": {
       "location": {
         "start": {
+          "line": 667,
+          "column": 4
+        },
+        "end": {
           "line": 669,
-          "column": 4
-        },
-        "end": {
-          "line": 677,
-          "column": 5
-        }
-      },
-      "jsdoc": {},
-      "type": "function",
-      "access": "public"
-    },
-    "test: normalize status 0 to 200 when DONE and file protocol": {
-      "location": {
-        "start": {
-          "line": 679,
-          "column": 4
-        },
-        "end": {
-          "line": 689,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "test: keep status 0 when not yet DONE and file protocol": {
+    "test: statusText is set when DONE": {
       "location": {
         "start": {
-          "line": 691,
+          "line": 671,
+          "column": 4
+        },
+        "end": {
+          "line": 678,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "test: status is set when LOADING": {
+      "location": {
+        "start": {
+          "line": 680,
+          "column": 4
+        },
+        "end": {
+          "line": 690,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "test: reset status when reopened": {
+      "location": {
+        "start": {
+          "line": 692,
           "column": 4
         },
         "end": {
@@ -867,28 +824,14 @@
       "type": "function",
       "access": "public"
     },
-    "test: keep status 0 when DONE with network error and file protocol": {
+    "test: normalize status 1223 to 204": {
       "location": {
         "start": {
-          "line": 703,
+          "line": 705,
           "column": 4
         },
         "end": {
-          "line": 717,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "test: read protocol from requested URL when it contains protocol": {
-      "location": {
-        "start": {
-          "line": 723,
-          "column": 4
-        },
-        "end": {
-          "line": 728,
+          "line": 713,
           "column": 5
         }
       },
@@ -896,10 +839,24 @@
       "type": "function",
       "access": "public"
     },
-    "test: read protocol from window if requested URL is without protocol": {
+    "test: normalize status 0 to 200 when DONE and file protocol": {
       "location": {
         "start": {
-          "line": 730,
+          "line": 715,
+          "column": 4
+        },
+        "end": {
+          "line": 725,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "test: keep status 0 when not yet DONE and file protocol": {
+      "location": {
+        "start": {
+          "line": 727,
           "column": 4
         },
         "end": {
@@ -910,14 +867,57 @@
       "type": "function",
       "access": "public"
     },
-    "test: getResponseHeader()": {
+    "test: keep status 0 when DONE with network error and file protocol": {
       "location": {
         "start": {
-          "line": 743,
+          "line": 739,
           "column": 4
         },
         "end": {
-          "line": 752,
+          "line": 753,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "test: read protocol from requested URL when it contains protocol": {
+      "location": {
+        "start": {
+          "line": 759,
+          "column": 4
+        },
+        "end": {
+          "line": 764,
+          "column": 5
+        }
+      },
+      "jsdoc": {},
+      "type": "function",
+      "access": "public"
+    },
+    "test: read protocol from window if requested URL is without protocol": {
+      "location": {
+        "start": {
+          "line": 766,
+          "column": 4
+        },
+        "end": {
+          "line": 773,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "test: getResponseHeader()": {
+      "location": {
+        "start": {
+          "line": 779,
+          "column": 4
+        },
+        "end": {
+          "line": 788,
           "column": 5
         }
       },
@@ -928,11 +928,11 @@
     "test: getAllResponseHeaders()": {
       "location": {
         "start": {
-          "line": 758,
+          "line": 794,
           "column": 4
         },
         "end": {
-          "line": 769,
+          "line": 805,
           "column": 5
         }
       },
@@ -943,11 +943,11 @@
     "test: dispose() deletes native Xhr": {
       "location": {
         "start": {
-          "line": 775,
+          "line": 811,
           "column": 4
         },
         "end": {
-          "line": 779,
+          "line": 815,
           "column": 5
         }
       },
@@ -958,11 +958,11 @@
     "test: dispose() aborts": {
       "location": {
         "start": {
-          "line": 781,
+          "line": 817,
           "column": 4
         },
         "end": {
-          "line": 788,
+          "line": 824,
           "column": 5
         }
       },
@@ -972,11 +972,11 @@
     "test: isDisposed()": {
       "location": {
         "start": {
-          "line": 791,
+          "line": 826,
           "column": 4
         },
         "end": {
-          "line": 795,
+          "line": 830,
           "column": 5
         }
       },
@@ -986,11 +986,11 @@
     "test: invoking public method throws when disposed": {
       "location": {
         "start": {
-          "line": 798,
+          "line": 832,
           "column": 4
         },
         "end": {
-          "line": 813,
+          "line": 861,
           "column": 5
         }
       },
@@ -1000,11 +1000,11 @@
     "fakeNativeXhr": {
       "location": {
         "start": {
-          "line": 815,
+          "line": 863,
           "column": 4
         },
         "end": {
-          "line": 822,
+          "line": 870,
           "column": 5
         }
       },
@@ -1014,11 +1014,11 @@
     "getFakeReq": {
       "location": {
         "start": {
-          "line": 824,
+          "line": 872,
           "column": 4
         },
         "end": {
-          "line": 826,
+          "line": 874,
           "column": 5
         }
       },
@@ -1028,11 +1028,11 @@
     "isIEBelow": {
       "location": {
         "start": {
-          "line": 828,
+          "line": 876,
           "column": 4
         },
         "end": {
-          "line": 833,
+          "line": 881,
           "column": 5
         }
       },
@@ -1042,11 +1042,11 @@
     "isFFBelow": {
       "location": {
         "start": {
-          "line": 835,
+          "line": 883,
           "column": 4
         },
         "end": {
-          "line": 840,
+          "line": 888,
           "column": 5
         }
       },
@@ -1056,11 +1056,11 @@
     "hasIEBelow9": {
       "location": {
         "start": {
-          "line": 842,
+          "line": 890,
           "column": 4
         },
         "end": {
-          "line": 844,
+          "line": 892,
           "column": 5
         }
       },
@@ -1070,11 +1070,11 @@
     "skip": {
       "location": {
         "start": {
-          "line": 846,
+          "line": 894,
           "column": 4
         },
         "end": {
-          "line": 848,
+          "line": 896,
           "column": 5
         }
       },
@@ -2250,6 +2250,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -2274,6 +2275,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

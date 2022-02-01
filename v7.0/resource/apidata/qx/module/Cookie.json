@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 70,
+        "line": 66,
         "column": 3
       }
     },
@@ -31,12 +31,12 @@
     "get": {
       "location": {
         "start": {
-          "line": 34,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 34,
-          "column": 27
+          "line": 33,
+          "column": 26
         }
       },
       "jsdoc": {
@@ -82,12 +82,12 @@
     "set": {
       "location": {
         "start": {
-          "line": 51,
+          "line": 49,
           "column": 4
         },
         "end": {
-          "line": 51,
-          "column": 27
+          "line": 49,
+          "column": 26
         }
       },
       "jsdoc": {
@@ -168,12 +168,12 @@
     "del": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 60,
           "column": 4
         },
         "end": {
-          "line": 63,
-          "column": 27
+          "line": 60,
+          "column": 26
         }
       },
       "jsdoc": {
@@ -230,15 +230,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 67,
-        "column": 10
+        "line": 63,
+        "column": 2
       },
       "end": {
-        "line": 69,
+        "line": 65,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

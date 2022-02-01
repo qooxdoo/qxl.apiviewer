@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 480,
+        "line": 497,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 62,
-        "column": 13
+        "line": 61,
+        "column": 2
       },
       "end": {
-        "line": 67,
+        "line": 66,
         "column": 3
       }
     },
@@ -60,12 +60,12 @@
     "change": {
       "location": {
         "start": {
-          "line": 79,
+          "line": 78,
           "column": 4
         },
         "end": {
-          "line": 79,
-          "column": 19
+          "line": 78,
+          "column": 17
         }
       },
       "jsdoc": {
@@ -84,11 +84,11 @@
     "version": {
       "location": {
         "start": {
-          "line": 86,
+          "line": 85,
           "column": 4
         },
         "end": {
-          "line": 86,
+          "line": 85,
           "column": 20
         }
       },
@@ -108,11 +108,11 @@
     "__mql": {
       "location": {
         "start": {
-          "line": 95,
+          "line": 92,
           "column": 4
         },
         "end": {
-          "line": 95,
+          "line": 92,
           "column": 15
         }
       },
@@ -130,11 +130,11 @@
     "matches": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 97,
           "column": 4
         },
         "end": {
-          "line": 100,
+          "line": 97,
           "column": 18
         }
       },
@@ -152,11 +152,11 @@
     "query": {
       "location": {
         "start": {
-          "line": 106,
+          "line": 102,
           "column": 4
         },
         "end": {
-          "line": 106,
+          "line": 102,
           "column": 15
         }
       },
@@ -174,11 +174,11 @@
     "getQuery": {
       "location": {
         "start": {
-          "line": 113,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 110,
           "column": 5
         }
       },
@@ -204,11 +204,11 @@
     "isMatching": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 116,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 118,
           "column": 5
         }
       },
@@ -234,11 +234,11 @@
     "__init": {
       "location": {
         "start": {
-          "line": 130,
+          "line": 123,
           "column": 4
         },
         "end": {
-          "line": 132,
+          "line": 125,
           "column": 5
         }
       },
@@ -256,11 +256,11 @@
     "__changed": {
       "location": {
         "start": {
-          "line": 137,
+          "line": 130,
           "column": 4
         },
         "end": {
-          "line": 140,
+          "line": 133,
           "column": 5
         }
       },
@@ -279,15 +279,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 144,
-        "column": 10
+        "line": 136,
+        "column": 2
       },
       "end": {
-        "line": 479,
+        "line": 496,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

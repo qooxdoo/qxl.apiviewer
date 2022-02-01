@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 618,
+        "line": 879,
         "column": 3
       }
     },
@@ -51,12 +51,12 @@
     "__store": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 36,
           "column": 4
         },
         "end": {
-          "line": 38,
-          "column": 18
+          "line": 36,
+          "column": 17
         }
       },
       "type": "variable",
@@ -65,12 +65,12 @@
     "__data": {
       "location": {
         "start": {
-          "line": 39,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 39,
-          "column": 17
+          "line": 37,
+          "column": 16
         }
       },
       "type": "variable",
@@ -79,12 +79,12 @@
     "__propertyNames": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 40,
-          "column": 26
+          "line": 38,
+          "column": 25
         }
       },
       "type": "variable",
@@ -93,11 +93,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 46,
+          "line": 43,
           "column": 4
         },
         "end": {
-          "line": 55,
+          "line": 52,
           "column": 5
         }
       },
@@ -121,11 +121,11 @@
     "setUpFakeRequest": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 54,
           "column": 4
         },
         "end": {
-          "line": 64,
+          "line": 59,
           "column": 5
         }
       },
@@ -135,11 +135,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 67,
+          "line": 61,
           "column": 4
         },
         "end": {
-          "line": 91,
+          "line": 83,
           "column": 5
         }
       },
@@ -149,11 +149,11 @@
     "testConfigureNewTransportConstructor": {
       "location": {
         "start": {
-          "line": 94,
+          "line": 85,
           "column": 4
         },
         "end": {
-          "line": 98,
+          "line": 88,
           "column": 5
         }
       },
@@ -163,11 +163,11 @@
     "testLoadUrl": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 90,
           "column": 4
         },
         "end": {
-          "line": 113,
+          "line": 110,
           "column": 5
         }
       },
@@ -177,11 +177,11 @@
     "testProgressStates": {
       "location": {
         "start": {
-          "line": 116,
+          "line": 112,
           "column": 4
         },
         "end": {
-          "line": 134,
+          "line": 140,
           "column": 5
         }
       },
@@ -191,11 +191,11 @@
     "testLoadResource": {
       "location": {
         "start": {
-          "line": 137,
+          "line": 142,
           "column": 4
         },
         "end": {
-          "line": 149,
+          "line": 162,
           "column": 5
         }
       },
@@ -205,11 +205,11 @@
     "testParseErrorForResource": {
       "location": {
         "start": {
-          "line": 152,
+          "line": 164,
           "column": 4
         },
         "end": {
-          "line": 164,
+          "line": 187,
           "column": 5
         }
       },
@@ -219,11 +219,11 @@
     "testLoadAlias": {
       "location": {
         "start": {
-          "line": 167,
+          "line": 189,
           "column": 4
         },
         "end": {
-          "line": 183,
+          "line": 214,
           "column": 5
         }
       },
@@ -233,11 +233,11 @@
     "testDispose": {
       "location": {
         "start": {
-          "line": 186,
+          "line": 216,
           "column": 4
         },
         "end": {
-          "line": 189,
+          "line": 219,
           "column": 5
         }
       },
@@ -247,11 +247,11 @@
     "testWholePrimitive": {
       "location": {
         "start": {
-          "line": 192,
+          "line": 221,
           "column": 4
         },
         "end": {
-          "line": 207,
+          "line": 258,
           "column": 5
         }
       },
@@ -261,11 +261,11 @@
     "testWholeArray": {
       "location": {
         "start": {
-          "line": 210,
+          "line": 260,
           "column": 4
         },
         "end": {
-          "line": 225,
+          "line": 303,
           "column": 5
         }
       },
@@ -275,11 +275,11 @@
     "testWholeObject": {
       "location": {
         "start": {
-          "line": 228,
+          "line": 305,
           "column": 4
         },
         "end": {
-          "line": 242,
+          "line": 338,
           "column": 5
         }
       },
@@ -289,11 +289,11 @@
     "testOwnClassWith": {
       "location": {
         "start": {
-          "line": 245,
+          "line": 340,
           "column": 4
         },
         "end": {
-          "line": 292,
+          "line": 408,
           "column": 5
         }
       },
@@ -303,11 +303,11 @@
     "testOwnClassWithout": {
       "location": {
         "start": {
-          "line": 295,
+          "line": 410,
           "column": 4
         },
         "end": {
-          "line": 317,
+          "line": 451,
           "column": 5
         }
       },
@@ -317,11 +317,11 @@
     "testOwnSuperclassWith": {
       "location": {
         "start": {
-          "line": 320,
+          "line": 453,
           "column": 4
         },
         "end": {
-          "line": 349,
+          "line": 508,
           "column": 5
         }
       },
@@ -331,11 +331,11 @@
     "testOwnSuperclassWithout": {
       "location": {
         "start": {
-          "line": 352,
+          "line": 510,
           "column": 4
         },
         "end": {
-          "line": 379,
+          "line": 557,
           "column": 5
         }
       },
@@ -345,11 +345,11 @@
     "testOwnMixinWithout": {
       "location": {
         "start": {
-          "line": 382,
+          "line": 559,
           "column": 4
         },
         "end": {
-          "line": 403,
+          "line": 601,
           "column": 5
         }
       },
@@ -359,11 +359,11 @@
     "testOwnMixinWith": {
       "location": {
         "start": {
-          "line": 406,
+          "line": 603,
           "column": 4
         },
         "end": {
-          "line": 440,
+          "line": 656,
           "column": 5
         }
       },
@@ -373,11 +373,11 @@
     "testOwnMixinWithMultiple": {
       "location": {
         "start": {
-          "line": 442,
+          "line": 658,
           "column": 4
         },
         "end": {
-          "line": 487,
+          "line": 720,
           "column": 5
         }
       },
@@ -387,11 +387,11 @@
     "testManipulatePrimitive": {
       "location": {
         "start": {
-          "line": 490,
+          "line": 722,
           "column": 4
         },
         "end": {
-          "line": 510,
+          "line": 748,
           "column": 5
         }
       },
@@ -401,11 +401,11 @@
     "testConfigureRequestPrimitive": {
       "location": {
         "start": {
-          "line": 513,
+          "line": 750,
           "column": 4
         },
         "end": {
-          "line": 536,
+          "line": 779,
           "column": 5
         }
       },
@@ -415,11 +415,11 @@
     "testDisposeOldModel": {
       "location": {
         "start": {
-          "line": 539,
+          "line": 781,
           "column": 4
         },
         "end": {
-          "line": 558,
+          "line": 804,
           "column": 5
         }
       },
@@ -429,11 +429,11 @@
     "testDisposeRequest": {
       "location": {
         "start": {
-          "line": 561,
+          "line": 806,
           "column": 4
         },
         "end": {
-          "line": 567,
+          "line": 812,
           "column": 5
         }
       },
@@ -443,11 +443,11 @@
     "testDisposeRequestDone": {
       "location": {
         "start": {
-          "line": 570,
+          "line": 814,
           "column": 4
         },
         "end": {
-          "line": 580,
+          "line": 829,
           "column": 5
         }
       },
@@ -457,11 +457,11 @@
     "testErrorEvent": {
       "location": {
         "start": {
-          "line": 583,
+          "line": 831,
           "column": 4
         },
         "end": {
-          "line": 593,
+          "line": 845,
           "column": 5
         }
       },
@@ -471,11 +471,11 @@
     "test Internal Server Error": {
       "location": {
         "start": {
-          "line": 595,
+          "line": 847,
           "column": 4
         },
         "end": {
-          "line": 616,
+          "line": 877,
           "column": 5
         }
       },
@@ -1162,6 +1162,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1186,6 +1187,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

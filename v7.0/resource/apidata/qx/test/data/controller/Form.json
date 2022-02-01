@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 912,
+        "line": 954,
         "column": 3
       }
     },
@@ -24,12 +24,12 @@
     "__form": {
       "location": {
         "start": {
-          "line": 24,
+          "line": 22,
           "column": 4
         },
         "end": {
-          "line": 24,
-          "column": 17
+          "line": 22,
+          "column": 16
         }
       },
       "type": "variable",
@@ -38,12 +38,12 @@
     "__tf1": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 25,
-          "column": 16
+          "line": 23,
+          "column": 15
         }
       },
       "type": "variable",
@@ -52,12 +52,12 @@
     "__tf2": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 26,
-          "column": 16
+          "line": 24,
+          "column": 15
         }
       },
       "type": "variable",
@@ -66,12 +66,12 @@
     "__cb": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 27,
-          "column": 15
+          "line": 25,
+          "column": 14
         }
       },
       "type": "variable",
@@ -80,12 +80,12 @@
     "__model": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 26,
           "column": 4
         },
         "end": {
-          "line": 28,
-          "column": 18
+          "line": 26,
+          "column": 17
         }
       },
       "type": "variable",
@@ -94,11 +94,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 42,
+          "line": 44,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 46,
           "column": 4
         },
         "end": {
-          "line": 50,
+          "line": 52,
           "column": 5
         }
       },
@@ -122,11 +122,11 @@
     "testSetModelNull": {
       "location": {
         "start": {
-          "line": 53,
+          "line": 54,
           "column": 4
         },
         "end": {
-          "line": 70,
+          "line": 71,
           "column": 5
         }
       },
@@ -150,11 +150,11 @@
     "testUnidirectionalDeep": {
       "location": {
         "start": {
-          "line": 86,
+          "line": 85,
           "column": 4
         },
         "end": {
-          "line": 110,
+          "line": 109,
           "column": 5
         }
       },
@@ -164,11 +164,11 @@
     "testUnidirectionalSelectionOptions": {
       "location": {
         "start": {
-          "line": 113,
+          "line": 111,
           "column": 4
         },
         "end": {
-          "line": 144,
+          "line": 153,
           "column": 5
         }
       },
@@ -178,11 +178,11 @@
     "testUnidirectionalOptions": {
       "location": {
         "start": {
-          "line": 147,
+          "line": 155,
           "column": 4
         },
         "end": {
-          "line": 166,
+          "line": 184,
           "column": 5
         }
       },
@@ -192,11 +192,11 @@
     "testUnidirectionalSelection": {
       "location": {
         "start": {
-          "line": 169,
+          "line": 186,
           "column": 4
         },
         "end": {
-          "line": 195,
+          "line": 212,
           "column": 5
         }
       },
@@ -206,11 +206,11 @@
     "testUnidirectional": {
       "location": {
         "start": {
-          "line": 198,
+          "line": 214,
           "column": 4
         },
         "end": {
-          "line": 216,
+          "line": 232,
           "column": 5
         }
       },
@@ -220,11 +220,11 @@
     "testCreateEmpty": {
       "location": {
         "start": {
-          "line": 219,
+          "line": 234,
           "column": 4
         },
         "end": {
-          "line": 227,
+          "line": 242,
           "column": 5
         }
       },
@@ -234,11 +234,11 @@
     "testCreateWithModel": {
       "location": {
         "start": {
-          "line": 229,
+          "line": 244,
           "column": 4
         },
         "end": {
-          "line": 237,
+          "line": 252,
           "column": 5
         }
       },
@@ -248,11 +248,11 @@
     "testCreateWithForm": {
       "location": {
         "start": {
-          "line": 239,
+          "line": 254,
           "column": 4
         },
         "end": {
-          "line": 247,
+          "line": 262,
           "column": 5
         }
       },
@@ -262,11 +262,11 @@
     "testCreateWithBoth": {
       "location": {
         "start": {
-          "line": 249,
+          "line": 264,
           "column": 4
         },
         "end": {
-          "line": 257,
+          "line": 272,
           "column": 5
         }
       },
@@ -276,11 +276,11 @@
     "testBindingCreate": {
       "location": {
         "start": {
-          "line": 259,
+          "line": 274,
           "column": 4
         },
         "end": {
-          "line": 295,
+          "line": 310,
           "column": 5
         }
       },
@@ -290,11 +290,11 @@
     "testBindingChangeModel": {
       "location": {
         "start": {
-          "line": 298,
+          "line": 312,
           "column": 4
         },
         "end": {
-          "line": 333,
+          "line": 351,
           "column": 5
         }
       },
@@ -304,11 +304,11 @@
     "testBindingChangeForm": {
       "location": {
         "start": {
-          "line": 336,
+          "line": 353,
           "column": 4
         },
         "end": {
-          "line": 381,
+          "line": 398,
           "column": 5
         }
       },
@@ -318,11 +318,11 @@
     "testBindingDeep": {
       "location": {
         "start": {
-          "line": 384,
+          "line": 400,
           "column": 4
         },
         "end": {
-          "line": 433,
+          "line": 449,
           "column": 5
         }
       },
@@ -332,11 +332,11 @@
     "testBindingModelSelection": {
       "location": {
         "start": {
-          "line": 436,
+          "line": 451,
           "column": 4
         },
         "end": {
-          "line": 471,
+          "line": 491,
           "column": 5
         }
       },
@@ -346,11 +346,11 @@
     "testModelCreation": {
       "location": {
         "start": {
-          "line": 474,
+          "line": 493,
           "column": 4
         },
         "end": {
-          "line": 533,
+          "line": 559,
           "column": 5
         }
       },
@@ -360,11 +360,11 @@
     "testModelCreationDeep": {
       "location": {
         "start": {
-          "line": 536,
+          "line": 561,
           "column": 4
         },
         "end": {
-          "line": 556,
+          "line": 581,
           "column": 5
         }
       },
@@ -374,11 +374,11 @@
     "testModelCreationWithList": {
       "location": {
         "start": {
-          "line": 559,
+          "line": 583,
           "column": 4
         },
         "end": {
-          "line": 588,
+          "line": 612,
           "column": 5
         }
       },
@@ -388,11 +388,11 @@
     "testModelCreationSpecialCaracter": {
       "location": {
         "start": {
-          "line": 591,
+          "line": 614,
           "column": 4
         },
         "end": {
-          "line": 607,
+          "line": 630,
           "column": 5
         }
       },
@@ -402,11 +402,11 @@
     "testModelCreationWithListController": {
       "location": {
         "start": {
-          "line": 610,
+          "line": 632,
           "column": 4
         },
         "end": {
-          "line": 647,
+          "line": 676,
           "column": 5
         }
       },
@@ -416,11 +416,11 @@
     "testModelCreationWithModelSelection": {
       "location": {
         "start": {
-          "line": 650,
+          "line": 678,
           "column": 4
         },
         "end": {
-          "line": 691,
+          "line": 719,
           "column": 5
         }
       },
@@ -430,11 +430,11 @@
     "testRemoveTarget": {
       "location": {
         "start": {
-          "line": 694,
+          "line": 721,
           "column": 4
         },
         "end": {
-          "line": 762,
+          "line": 794,
           "column": 5
         }
       },
@@ -444,11 +444,11 @@
     "testOptions": {
       "location": {
         "start": {
-          "line": 765,
+          "line": 796,
           "column": 4
         },
         "end": {
-          "line": 805,
+          "line": 845,
           "column": 5
         }
       },
@@ -458,11 +458,11 @@
     "testConnectionWithListControllerSelection": {
       "location": {
         "start": {
-          "line": 808,
+          "line": 847,
           "column": 4
         },
         "end": {
-          "line": 874,
+          "line": 918,
           "column": 5
         }
       },
@@ -472,11 +472,11 @@
     "testDispose": {
       "location": {
         "start": {
-          "line": 877,
+          "line": 920,
           "column": 4
         },
         "end": {
-          "line": 886,
+          "line": 929,
           "column": 5
         }
       },
@@ -486,11 +486,11 @@
     "testBindingCreateMissingOne": {
       "location": {
         "start": {
-          "line": 889,
+          "line": 931,
           "column": 4
         },
         "end": {
-          "line": 910,
+          "line": 952,
           "column": 5
         }
       },
@@ -585,6 +585,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -609,6 +610,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

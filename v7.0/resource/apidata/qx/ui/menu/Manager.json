@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 928,
+        "line": 850,
         "column": 3
       }
     },
@@ -33,11 +33,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 42,
-        "column": 14
+        "line": 39,
+        "column": 2
       },
       "end": {
-        "line": 75,
+        "line": 78,
         "column": 3
       }
     },
@@ -45,6 +45,20 @@
   },
   "members": {
     "__scheduleOpen": {
+      "location": {
+        "start": {
+          "line": 88,
+          "column": 4
+        },
+        "end": {
+          "line": 88,
+          "column": 24
+        }
+      },
+      "type": "variable",
+      "access": "private"
+    },
+    "__scheduleClose": {
       "location": {
         "start": {
           "line": 89,
@@ -58,7 +72,7 @@
       "type": "variable",
       "access": "private"
     },
-    "__scheduleClose": {
+    "__openTimer": {
       "location": {
         "start": {
           "line": 90,
@@ -66,13 +80,13 @@
         },
         "end": {
           "line": 90,
-          "column": 26
+          "column": 21
         }
       },
       "type": "variable",
       "access": "private"
     },
-    "__openTimer": {
+    "__closeTimer": {
       "location": {
         "start": {
           "line": 91,
@@ -86,29 +100,15 @@
       "type": "variable",
       "access": "private"
     },
-    "__closeTimer": {
-      "location": {
-        "start": {
-          "line": 92,
-          "column": 4
-        },
-        "end": {
-          "line": 92,
-          "column": 23
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
     "__objects": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 92,
           "column": 4
         },
         "end": {
-          "line": 93,
-          "column": 20
+          "line": 92,
+          "column": 19
         }
       },
       "type": "variable",
@@ -117,11 +117,11 @@
     "_getChild": {
       "location": {
         "start": {
-          "line": 113,
+          "line": 109,
           "column": 4
         },
         "end": {
-          "line": 140,
+          "line": 132,
           "column": 5
         }
       },
@@ -179,11 +179,11 @@
     "_isInMenu": {
       "location": {
         "start": {
-          "line": 149,
+          "line": 140,
           "column": 4
         },
         "end": {
-          "line": 161,
+          "line": 150,
           "column": 5
         }
       },
@@ -218,11 +218,11 @@
     "_isMenuOpener": {
       "location": {
         "start": {
-          "line": 170,
+          "line": 158,
           "column": 4
         },
         "end": {
-          "line": 181,
+          "line": 168,
           "column": 5
         }
       },
@@ -257,11 +257,11 @@
     "_getMenuButton": {
       "location": {
         "start": {
-          "line": 190,
+          "line": 176,
           "column": 4
         },
         "end": {
-          "line": 202,
+          "line": 186,
           "column": 5
         }
       },
@@ -296,11 +296,11 @@
     "add": {
       "location": {
         "start": {
-          "line": 216,
+          "line": 199,
           "column": 4
         },
         "end": {
-          "line": 228,
+          "line": 209,
           "column": 5
         }
       },
@@ -327,11 +327,11 @@
     "remove": {
       "location": {
         "start": {
-          "line": 236,
+          "line": 216,
           "column": 4
         },
         "end": {
-          "line": 249,
+          "line": 227,
           "column": 5
         }
       },
@@ -358,11 +358,11 @@
     "hideAll": {
       "location": {
         "start": {
-          "line": 255,
+          "line": 232,
           "column": 4
         },
         "end": {
-          "line": 264,
+          "line": 239,
           "column": 5
         }
       },
@@ -380,11 +380,11 @@
     "getActiveMenu": {
       "location": {
         "start": {
-          "line": 273,
+          "line": 247,
           "column": 4
         },
         "end": {
-          "line": 277,
+          "line": 250,
           "column": 5
         }
       },
@@ -410,11 +410,11 @@
     "scheduleOpen": {
       "location": {
         "start": {
-          "line": 295,
+          "line": 265,
           "column": 4
         },
         "end": {
-          "line": 317,
+          "line": 284,
           "column": 5
         }
       },
@@ -441,11 +441,11 @@
     "scheduleClose": {
       "location": {
         "start": {
-          "line": 327,
+          "line": 293,
           "column": 4
         },
         "end": {
-          "line": 349,
+          "line": 312,
           "column": 5
         }
       },
@@ -472,11 +472,11 @@
     "cancelOpen": {
       "location": {
         "start": {
-          "line": 358,
+          "line": 320,
           "column": 4
         },
         "end": {
-          "line": 366,
+          "line": 326,
           "column": 5
         }
       },
@@ -503,11 +503,11 @@
     "cancelClose": {
       "location": {
         "start": {
-          "line": 375,
+          "line": 334,
           "column": 4
         },
         "end": {
-          "line": 383,
+          "line": 340,
           "column": 5
         }
       },
@@ -534,11 +534,11 @@
     "_onOpenInterval": {
       "location": {
         "start": {
-          "line": 398,
+          "line": 354,
           "column": 4
         },
         "end": {
-          "line": 406,
+          "line": 361,
           "column": 5
         }
       },
@@ -565,11 +565,11 @@
     "_onCloseInterval": {
       "location": {
         "start": {
-          "line": 415,
+          "line": 369,
           "column": 4
         },
         "end": {
-          "line": 423,
+          "line": 376,
           "column": 5
         }
       },
@@ -596,11 +596,11 @@
     "preventContextMenuOnce": {
       "location": {
         "start": {
-          "line": 441,
+          "line": 392,
           "column": 4
         },
         "end": {
-          "line": 444,
+          "line": 400,
           "column": 5
         }
       },
@@ -624,11 +624,11 @@
     "__onPreventContextMenu": {
       "location": {
         "start": {
-          "line": 455,
+          "line": 410,
           "column": 4
         },
         "end": {
-          "line": 466,
+          "line": 426,
           "column": 5
         }
       },
@@ -661,11 +661,11 @@
     "_onPointerDown": {
       "location": {
         "start": {
-          "line": 480,
+          "line": 439,
           "column": 4
         },
         "end": {
-          "line": 505,
+          "line": 463,
           "column": 5
         }
       },
@@ -692,11 +692,11 @@
     "__selectionKeys": {
       "location": {
         "start": {
-          "line": 518,
+          "line": 475,
           "column": 4
         },
         "end": {
-          "line": 522,
+          "line": 478,
           "column": 5
         }
       },
@@ -726,11 +726,11 @@
     "__navigationKeys": {
       "location": {
         "start": {
-          "line": 529,
+          "line": 484,
           "column": 4
         },
         "end": {
-          "line": 537,
+          "line": 491,
           "column": 5
         }
       },
@@ -760,11 +760,11 @@
     "_onKeyUpDown": {
       "location": {
         "start": {
-          "line": 546,
+          "line": 499,
           "column": 4
         },
         "end": {
-          "line": 558,
+          "line": 513,
           "column": 5
         }
       },
@@ -791,11 +791,11 @@
     "_onKeyPress": {
       "location": {
         "start": {
-          "line": 570,
+          "line": 524,
           "column": 4
         },
         "end": {
-          "line": 631,
+          "line": 578,
           "column": 5
         }
       },
@@ -822,11 +822,11 @@
     "_onKeyPressUp": {
       "location": {
         "start": {
-          "line": 639,
+          "line": 585,
           "column": 4
         },
         "end": {
-          "line": 653,
+          "line": 600,
           "column": 5
         }
       },
@@ -853,11 +853,11 @@
     "_onKeyPressDown": {
       "location": {
         "start": {
-          "line": 661,
+          "line": 607,
           "column": 4
         },
         "end": {
-          "line": 674,
+          "line": 619,
           "column": 5
         }
       },
@@ -884,11 +884,11 @@
     "_onKeyPressLeft": {
       "location": {
         "start": {
-          "line": 682,
+          "line": 626,
           "column": 4
         },
         "end": {
-          "line": 725,
+          "line": 665,
           "column": 5
         }
       },
@@ -915,11 +915,11 @@
     "_onKeyPressRight": {
       "location": {
         "start": {
-          "line": 733,
+          "line": 672,
           "column": 4
         },
         "end": {
-          "line": 831,
+          "line": 758,
           "column": 5
         }
       },
@@ -946,11 +946,11 @@
     "_onKeyPressEnter": {
       "location": {
         "start": {
-          "line": 841,
+          "line": 767,
           "column": 4
         },
         "end": {
-          "line": 857,
+          "line": 781,
           "column": 5
         }
       },
@@ -991,11 +991,11 @@
     "_onKeyPressSpace": {
       "location": {
         "start": {
-          "line": 867,
+          "line": 790,
           "column": 4
         },
         "end": {
-          "line": 880,
+          "line": 801,
           "column": 5
         }
       },
@@ -1036,11 +1036,11 @@
     "_onRoll": {
       "location": {
         "start": {
-          "line": 888,
+          "line": 808,
           "column": 4
         },
         "end": {
-          "line": 900,
+          "line": 820,
           "column": 5
         }
       },
@@ -1152,6 +1152,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1176,6 +1177,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -1204,11 +1206,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 912,
-        "column": 13
+        "line": 829,
+        "column": 2
       },
       "end": {
-        "line": 927,
+        "line": 849,
         "column": 3
       }
     },

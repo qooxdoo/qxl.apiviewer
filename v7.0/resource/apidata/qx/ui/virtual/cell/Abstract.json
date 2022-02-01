@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 119,
+        "line": 110,
         "column": 3
       }
     },
@@ -41,25 +41,24 @@
   "construct": {
     "location": {
       "start": {
-        "line": 34,
-        "column": 14
+        "line": 33,
+        "column": 2
       },
       "end": {
-        "line": 40,
+        "line": 38,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "members": {
     "getCssClasses": {
       "location": {
         "start": {
-          "line": 52,
+          "line": 48,
           "column": 4
         },
         "end": {
-          "line": 54,
+          "line": 50,
           "column": 5
         }
       },
@@ -101,11 +100,11 @@
     "getAttributes": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 60,
           "column": 4
         },
         "end": {
-          "line": 67,
+          "line": 62,
           "column": 5
         }
       },
@@ -147,11 +146,11 @@
     "getStyles": {
       "location": {
         "start": {
-          "line": 78,
+          "line": 72,
           "column": 4
         },
         "end": {
-          "line": 80,
+          "line": 74,
           "column": 5
         }
       },
@@ -193,11 +192,11 @@
     "getInsets": {
       "location": {
         "start": {
-          "line": 92,
+          "line": 85,
           "column": 4
         },
         "end": {
-          "line": 94,
+          "line": 87,
           "column": 5
         }
       },
@@ -239,11 +238,11 @@
     "getContent": {
       "location": {
         "start": {
-          "line": 104,
+          "line": 96,
           "column": 4
         },
         "end": {
-          "line": 106,
+          "line": 98,
           "column": 5
         }
       },
@@ -285,11 +284,11 @@
     "getCellProperties": {
       "location": {
         "start": {
-          "line": 108,
+          "line": 100,
           "column": 4
         },
         "end": {
-          "line": 117,
+          "line": 108,
           "column": 5
         }
       },
@@ -414,6 +413,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -438,6 +438,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

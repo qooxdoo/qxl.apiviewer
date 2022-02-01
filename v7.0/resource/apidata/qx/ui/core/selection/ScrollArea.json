@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 24,
+        "line": 23,
         "column": 0
       },
       "end": {
-        "line": 262,
+        "line": 224,
         "column": 3
       }
     },
@@ -31,11 +31,11 @@
     "_isSelectable": {
       "location": {
         "start": {
-          "line": 46,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 50,
+          "line": 45,
           "column": 5
         }
       },
@@ -51,11 +51,11 @@
     "_getDimension": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 54,
           "column": 4
         },
         "end": {
-          "line": 65,
+          "line": 56,
           "column": 5
         }
       },
@@ -71,11 +71,11 @@
     "_getScroll": {
       "location": {
         "start": {
-          "line": 78,
+          "line": 65,
           "column": 4
         },
         "end": {
-          "line": 86,
+          "line": 72,
           "column": 5
         }
       },
@@ -91,11 +91,11 @@
     "_scrollBy": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 75,
           "column": 4
         },
         "end": {
-          "line": 96,
+          "line": 80,
           "column": 5
         }
       },
@@ -111,7 +111,27 @@
     "_getFirstVisibleSelectable": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 89,
+          "column": 4
+        },
+        "end": {
+          "line": 102,
+          "column": 5
+        }
+      },
+      "jsdoc": {},
+      "type": "function",
+      "access": "protected",
+      "overriddenFrom": "qx.ui.core.selection.Widget",
+      "appearsIn": [
+        "qx.ui.core.selection.Widget",
+        "qx.ui.core.selection.Abstract"
+      ]
+    },
+    "_getLastVisibleSelectable": {
+      "location": {
+        "start": {
+          "line": 105,
           "column": 4
         },
         "end": {
@@ -128,34 +148,14 @@
         "qx.ui.core.selection.Abstract"
       ]
     },
-    "_getLastVisibleSelectable": {
+    "_getPage": {
       "location": {
         "start": {
           "line": 128,
           "column": 4
         },
         "end": {
-          "line": 149,
-          "column": 5
-        }
-      },
-      "jsdoc": {},
-      "type": "function",
-      "access": "protected",
-      "overriddenFrom": "qx.ui.core.selection.Widget",
-      "appearsIn": [
-        "qx.ui.core.selection.Widget",
-        "qx.ui.core.selection.Abstract"
-      ]
-    },
-    "_getPage": {
-      "location": {
-        "start": {
-          "line": 152,
-          "column": 4
-        },
-        "end": {
-          "line": 260,
+          "line": 222,
           "column": 5
         }
       },
@@ -256,6 +256,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -280,6 +281,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

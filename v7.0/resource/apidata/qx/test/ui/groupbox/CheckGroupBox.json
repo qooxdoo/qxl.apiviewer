@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 71,
+        "line": 66,
         "column": 3
       }
     },
@@ -24,12 +24,12 @@
     "_checkGroupBox": {
       "location": {
         "start": {
-          "line": 21,
+          "line": 19,
           "column": 4
         },
         "end": {
-          "line": 21,
-          "column": 25
+          "line": 19,
+          "column": 24
         }
       },
       "type": "variable",
@@ -38,12 +38,12 @@
     "_label": {
       "location": {
         "start": {
-          "line": 22,
+          "line": 20,
           "column": 4
         },
         "end": {
-          "line": 22,
-          "column": 17
+          "line": 20,
+          "column": 16
         }
       },
       "type": "variable",
@@ -52,11 +52,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 24,
+          "line": 22,
           "column": 4
         },
         "end": {
-          "line": 35,
+          "line": 32,
           "column": 5
         }
       },
@@ -70,11 +70,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 37,
+          "line": 34,
           "column": 4
         },
         "end": {
-          "line": 41,
+          "line": 37,
           "column": 5
         }
       },
@@ -88,11 +88,11 @@
     "testEnabledConsistencyBetweenContentAndParent": {
       "location": {
         "start": {
-          "line": 49,
+          "line": 45,
           "column": 4
         },
         "end": {
-          "line": 69,
+          "line": 64,
           "column": 5
         }
       },
@@ -195,6 +195,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -219,6 +220,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

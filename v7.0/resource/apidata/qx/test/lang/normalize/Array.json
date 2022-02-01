@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 253,
+        "line": 306,
         "column": 3
       }
     },
@@ -39,11 +39,11 @@
     "testShims": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 35,
+          "line": 32,
           "column": 5
         }
       },
@@ -53,11 +53,11 @@
     "testIndexOf": {
       "location": {
         "start": {
-          "line": 37,
+          "line": 34,
           "column": 4
         },
         "end": {
-          "line": 46,
+          "line": 42,
           "column": 5
         }
       },
@@ -67,11 +67,11 @@
     "testLastIndexOf": {
       "location": {
         "start": {
-          "line": 48,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 56,
+          "line": 52,
           "column": 5
         }
       },
@@ -81,11 +81,11 @@
     "testForEach": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 54,
           "column": 4
         },
         "end": {
-          "line": 73,
+          "line": 69,
           "column": 5
         }
       },
@@ -95,11 +95,11 @@
     "testFilter": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 71,
           "column": 4
         },
         "end": {
-          "line": 92,
+          "line": 88,
           "column": 5
         }
       },
@@ -109,11 +109,11 @@
     "testMap": {
       "location": {
         "start": {
-          "line": 94,
+          "line": 90,
           "column": 4
         },
         "end": {
-          "line": 114,
+          "line": 110,
           "column": 5
         }
       },
@@ -123,7 +123,7 @@
     "testSome": {
       "location": {
         "start": {
-          "line": 116,
+          "line": 112,
           "column": 4
         },
         "end": {
@@ -141,7 +141,7 @@
           "column": 4
         },
         "end": {
-          "line": 164,
+          "line": 169,
           "column": 5
         }
       },
@@ -151,11 +151,11 @@
     "testFindIndex": {
       "location": {
         "start": {
-          "line": 166,
+          "line": 171,
           "column": 4
         },
         "end": {
-          "line": 189,
+          "line": 200,
           "column": 5
         }
       },
@@ -165,11 +165,11 @@
     "testEvery": {
       "location": {
         "start": {
-          "line": 191,
+          "line": 202,
           "column": 4
         },
         "end": {
-          "line": 215,
+          "line": 230,
           "column": 5
         }
       },
@@ -179,11 +179,11 @@
     "testReduce": {
       "location": {
         "start": {
-          "line": 217,
+          "line": 232,
           "column": 4
         },
         "end": {
-          "line": 226,
+          "line": 260,
           "column": 5
         }
       },
@@ -193,11 +193,11 @@
     "testReduceRight": {
       "location": {
         "start": {
-          "line": 228,
+          "line": 262,
           "column": 4
         },
         "end": {
-          "line": 237,
+          "line": 290,
           "column": 5
         }
       },
@@ -207,11 +207,11 @@
     "testIncludes": {
       "location": {
         "start": {
-          "line": 239,
+          "line": 292,
           "column": 4
         },
         "end": {
-          "line": 251,
+          "line": 304,
           "column": 5
         }
       },
@@ -898,6 +898,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -922,6 +923,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

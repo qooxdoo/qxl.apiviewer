@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 110,
+        "line": 103,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 24,
+          "line": 22,
           "column": 4
         },
         "end": {
-          "line": 33,
+          "line": 30,
           "column": 5
         }
       },
@@ -42,11 +42,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 35,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 43,
+          "line": 39,
           "column": 5
         }
       },
@@ -60,11 +60,11 @@
     "testStatePopupOpen": {
       "location": {
         "start": {
-          "line": 45,
+          "line": 41,
           "column": 4
         },
         "end": {
-          "line": 62,
+          "line": 57,
           "column": 5
         }
       },
@@ -74,11 +74,11 @@
     "testListLengthAfterModelChangeSelectBox": {
       "location": {
         "start": {
-          "line": 64,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 85,
+          "line": 79,
           "column": 5
         }
       },
@@ -88,11 +88,11 @@
     "testListLengthAfterModelChangeComboBox": {
       "location": {
         "start": {
-          "line": 87,
+          "line": 81,
           "column": 4
         },
         "end": {
-          "line": 108,
+          "line": 101,
           "column": 5
         }
       },
@@ -187,6 +187,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -211,6 +212,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

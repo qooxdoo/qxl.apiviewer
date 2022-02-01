@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 512,
+        "line": 474,
         "column": 3
       }
     },
@@ -36,25 +36,24 @@
   "construct": {
     "location": {
       "start": {
-        "line": 46,
-        "column": 14
+        "line": 45,
+        "column": 2
       },
       "end": {
-        "line": 52,
+        "line": 50,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "properties": {
     "selectionMode": {
       "location": {
         "start": {
-          "line": 76,
+          "line": 71,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 75,
           "column": 5
         }
       },
@@ -85,11 +84,11 @@
     "dragSelection": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 83,
           "column": 4
         },
         "end": {
-          "line": 95,
+          "line": 87,
           "column": 5
         }
       },
@@ -111,11 +110,11 @@
     "quickSelection": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 94,
           "column": 4
         },
         "end": {
-          "line": 108,
+          "line": 98,
           "column": 5
         }
       },
@@ -139,12 +138,12 @@
     "changeSelection": {
       "location": {
         "start": {
-          "line": 121,
+          "line": 110,
           "column": 4
         },
         "end": {
-          "line": 121,
-          "column": 44
+          "line": 110,
+          "column": 41
         }
       },
       "jsdoc": {
@@ -161,12 +160,12 @@
     "changeValue": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 113,
           "column": 4
         },
         "end": {
-          "line": 124,
-          "column": 40
+          "line": 113,
+          "column": 37
         }
       },
       "jsdoc": {
@@ -185,12 +184,12 @@
     "_manager": {
       "location": {
         "start": {
-          "line": 131,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 131,
-          "column": 19
+          "line": 118,
+          "column": 18
         }
       },
       "jsdoc": {
@@ -213,12 +212,12 @@
     "__ignoreChangeSelection": {
       "location": {
         "start": {
-          "line": 135,
+          "line": 121,
           "column": 4
         },
         "end": {
-          "line": 135,
-          "column": 35
+          "line": 121,
+          "column": 34
         }
       },
       "jsdoc": {
@@ -241,12 +240,12 @@
     "__ignoreManagerChangeSelection": {
       "location": {
         "start": {
-          "line": 139,
+          "line": 124,
           "column": 4
         },
         "end": {
-          "line": 139,
-          "column": 42
+          "line": 124,
+          "column": 41
         }
       },
       "jsdoc": {
@@ -269,12 +268,12 @@
     "__selection": {
       "location": {
         "start": {
-          "line": 141,
+          "line": 126,
           "column": 4
         },
         "end": {
-          "line": 141,
-          "column": 22
+          "line": 126,
+          "column": 21
         }
       },
       "type": "variable",
@@ -283,11 +282,11 @@
     "setValue": {
       "location": {
         "start": {
-          "line": 150,
+          "line": 134,
           "column": 4
         },
         "end": {
-          "line": 158,
+          "line": 142,
           "column": 5
         }
       },
@@ -325,11 +324,11 @@
     "getValue": {
       "location": {
         "start": {
-          "line": 166,
+          "line": 149,
           "column": 4
         },
         "end": {
-          "line": 168,
+          "line": 151,
           "column": 5
         }
       },
@@ -355,11 +354,11 @@
     "resetValue": {
       "location": {
         "start": {
-          "line": 174,
+          "line": 156,
           "column": 4
         },
         "end": {
-          "line": 176,
+          "line": 158,
           "column": 5
         }
       },
@@ -377,11 +376,11 @@
     "_initSelectionManager": {
       "location": {
         "start": {
-          "line": 182,
+          "line": 163,
           "column": 4
         },
         "end": {
-          "line": 211,
+          "line": 195,
           "column": 5
         }
       },
@@ -399,11 +398,11 @@
     "setAutoScrollIntoView": {
       "location": {
         "start": {
-          "line": 220,
+          "line": 203,
           "column": 4
         },
         "end": {
-          "line": 223,
+          "line": 205,
           "column": 5
         }
       },
@@ -430,11 +429,11 @@
     "getAutoScrollIntoView": {
       "location": {
         "start": {
-          "line": 231,
+          "line": 212,
           "column": 4
         },
         "end": {
-          "line": 234,
+          "line": 214,
           "column": 5
         }
       },
@@ -460,11 +459,11 @@
     "_updateSelection": {
       "location": {
         "start": {
-          "line": 241,
+          "line": 220,
           "column": 4
         },
         "end": {
-          "line": 248,
+          "line": 226,
           "column": 5
         }
       },
@@ -482,11 +481,11 @@
     "setSelection": {
       "location": {
         "start": {
-          "line": 263,
+          "line": 240,
           "column": 4
         },
         "end": {
-          "line": 270,
+          "line": 246,
           "column": 5
         }
       },
@@ -513,11 +512,11 @@
     "getSelection": {
       "location": {
         "start": {
-          "line": 277,
+          "line": 253,
           "column": 4
         },
         "end": {
-          "line": 279,
+          "line": 255,
           "column": 5
         }
       },
@@ -543,11 +542,11 @@
     "resetSelection": {
       "location": {
         "start": {
-          "line": 284,
+          "line": 260,
           "column": 4
         },
         "end": {
-          "line": 286,
+          "line": 262,
           "column": 5
         }
       },
@@ -565,11 +564,11 @@
     "initSelection": {
       "location": {
         "start": {
-          "line": 294,
+          "line": 270,
           "column": 4
         },
         "end": {
-          "line": 297,
+          "line": 278,
           "column": 5
         }
       },
@@ -596,11 +595,11 @@
     "_applySelection": {
       "location": {
         "start": {
-          "line": 305,
+          "line": 286,
           "column": 4
         },
         "end": {
-          "line": 307,
+          "line": 288,
           "column": 5
         }
       },
@@ -634,11 +633,11 @@
     "_applySelectionMode": {
       "location": {
         "start": {
-          "line": 311,
+          "line": 291,
           "column": 4
         },
         "end": {
-          "line": 313,
+          "line": 293,
           "column": 5
         }
       },
@@ -652,11 +651,11 @@
     "_applyDragSelection": {
       "location": {
         "start": {
-          "line": 317,
+          "line": 296,
           "column": 4
         },
         "end": {
-          "line": 319,
+          "line": 298,
           "column": 5
         }
       },
@@ -670,11 +669,11 @@
     "_applyQuickSelection": {
       "location": {
         "start": {
-          "line": 323,
+          "line": 301,
           "column": 4
         },
         "end": {
-          "line": 325,
+          "line": 303,
           "column": 5
         }
       },
@@ -688,11 +687,11 @@
     "_onChangeSelection": {
       "location": {
         "start": {
-          "line": 340,
+          "line": 316,
           "column": 4
         },
         "end": {
-          "line": 389,
+          "line": 365,
           "column": 5
         }
       },
@@ -719,11 +718,11 @@
     "_onManagerChangeSelection": {
       "location": {
         "start": {
-          "line": 397,
+          "line": 372,
           "column": 4
         },
         "end": {
-          "line": 410,
+          "line": 384,
           "column": 5
         }
       },
@@ -750,11 +749,11 @@
     "__synchronizeSelection": {
       "location": {
         "start": {
-          "line": 416,
+          "line": 389,
           "column": 4
         },
         "end": {
-          "line": 435,
+          "line": 406,
           "column": 5
         }
       },
@@ -772,11 +771,11 @@
     "__replaceSelection": {
       "location": {
         "start": {
-          "line": 443,
+          "line": 413,
           "column": 4
         },
         "end": {
-          "line": 456,
+          "line": 424,
           "column": 5
         }
       },
@@ -803,11 +802,11 @@
     "__isSelectionEquals": {
       "location": {
         "start": {
-          "line": 465,
+          "line": 432,
           "column": 4
         },
         "end": {
-          "line": 490,
+          "line": 455,
           "column": 5
         }
       },
@@ -833,11 +832,11 @@
     "_applyDefaultSelection": {
       "location": {
         "start": {
-          "line": 496,
+          "line": 460,
           "column": 4
         },
         "end": {
-          "line": 500,
+          "line": 464,
           "column": 5
         }
       },
@@ -1102,15 +1101,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 504,
-        "column": 13
+        "line": 467,
+        "column": 2
       },
       "end": {
-        "line": 511,
+        "line": 473,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

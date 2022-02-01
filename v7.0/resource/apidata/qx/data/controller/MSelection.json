@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 448,
+        "line": 429,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 36,
-        "column": 14
+        "line": 34,
+        "column": 2
       },
       "end": {
-        "line": 48,
+        "line": 45,
         "column": 3
       }
     },
@@ -44,11 +44,11 @@
     "selection": {
       "location": {
         "start": {
-          "line": 64,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 70,
+          "line": 64,
           "column": 5
         }
       },
@@ -71,12 +71,12 @@
     "changeSelection": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 76,
           "column": 4
         },
         "end": {
-          "line": 83,
-          "column": 44
+          "line": 76,
+          "column": 41
         }
       },
       "jsdoc": {
@@ -93,12 +93,12 @@
     "changeValue": {
       "location": {
         "start": {
-          "line": 86,
+          "line": 79,
           "column": 4
         },
         "end": {
-          "line": 86,
-          "column": 40
+          "line": 79,
+          "column": 37
         }
       },
       "jsdoc": {
@@ -117,12 +117,12 @@
     "_modifingSelection": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 91,
           "column": 4
         },
         "end": {
-          "line": 100,
-          "column": 26
+          "line": 91,
+          "column": 25
         }
       },
       "jsdoc": {},
@@ -132,12 +132,12 @@
     "__selectionListenerId": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 92,
           "column": 4
         },
         "end": {
-          "line": 101,
-          "column": 32
+          "line": 92,
+          "column": 31
         }
       },
       "type": "variable",
@@ -146,12 +146,12 @@
     "__selectionArrayListenerId": {
       "location": {
         "start": {
-          "line": 102,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 102,
-          "column": 37
+          "line": 93,
+          "column": 36
         }
       },
       "type": "variable",
@@ -160,12 +160,12 @@
     "__ownSelection": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 94,
           "column": 4
         },
         "end": {
-          "line": 103,
-          "column": 25
+          "line": 94,
+          "column": 24
         }
       },
       "type": "variable",
@@ -174,11 +174,11 @@
     "setValue": {
       "location": {
         "start": {
-          "line": 112,
+          "line": 102,
           "column": 4
         },
         "end": {
-          "line": 120,
+          "line": 110,
           "column": 5
         }
       },
@@ -216,11 +216,11 @@
     "getValue": {
       "location": {
         "start": {
-          "line": 128,
+          "line": 117,
           "column": 4
         },
         "end": {
-          "line": 130,
+          "line": 119,
           "column": 5
         }
       },
@@ -246,11 +246,11 @@
     "resetValue": {
       "location": {
         "start": {
-          "line": 136,
+          "line": 124,
           "column": 4
         },
         "end": {
-          "line": 138,
+          "line": 126,
           "column": 5
         }
       },
@@ -268,11 +268,11 @@
     "_applySelection": {
       "location": {
         "start": {
-          "line": 154,
+          "line": 140,
           "column": 4
         },
         "end": {
-          "line": 169,
+          "line": 157,
           "column": 5
         }
       },
@@ -312,11 +312,11 @@
     "__changeSelectionArray": {
       "location": {
         "start": {
-          "line": 182,
+          "line": 169,
           "column": 4
         },
         "end": {
-          "line": 184,
+          "line": 171,
           "column": 5
         }
       },
@@ -334,11 +334,11 @@
     "_changeTargetSelection": {
       "location": {
         "start": {
-          "line": 192,
+          "line": 178,
           "column": 4
         },
         "end": {
-          "line": 231,
+          "line": 219,
           "column": 5
         }
       },
@@ -356,11 +356,11 @@
     "_addChangeTargetListener": {
       "location": {
         "start": {
-          "line": 246,
+          "line": 233,
           "column": 4
         },
         "end": {
-          "line": 264,
+          "line": 253,
           "column": 5
         }
       },
@@ -400,11 +400,11 @@
     "_updateSelection": {
       "location": {
         "start": {
-          "line": 272,
+          "line": 260,
           "column": 4
         },
         "end": {
-          "line": 335,
+          "line": 321,
           "column": 5
         }
       },
@@ -422,11 +422,11 @@
     "__targetSupportsMultiSelection": {
       "location": {
         "start": {
-          "line": 342,
+          "line": 327,
           "column": 4
         },
         "end": {
-          "line": 345,
+          "line": 333,
           "column": 5
         }
       },
@@ -452,11 +452,11 @@
     "__targetSupportsSingleSelection": {
       "location": {
         "start": {
-          "line": 352,
+          "line": 339,
           "column": 4
         },
         "end": {
-          "line": 355,
+          "line": 345,
           "column": 5
         }
       },
@@ -482,11 +482,11 @@
     "__selectItem": {
       "location": {
         "start": {
-          "line": 364,
+          "line": 353,
           "column": 4
         },
         "end": {
-          "line": 378,
+          "line": 367,
           "column": 5
         }
       },
@@ -513,11 +513,11 @@
     "__getSelectableForModel": {
       "location": {
         "start": {
-          "line": 387,
+          "line": 375,
           "column": 4
         },
         "end": {
-          "line": 400,
+          "line": 387,
           "column": 5
         }
       },
@@ -552,11 +552,11 @@
     "_startSelectionModification": {
       "location": {
         "start": {
-          "line": 408,
+          "line": 394,
           "column": 4
         },
         "end": {
-          "line": 410,
+          "line": 396,
           "column": 5
         }
       },
@@ -574,11 +574,11 @@
     "_endSelectionModification": {
       "location": {
         "start": {
-          "line": 418,
+          "line": 403,
           "column": 4
         },
         "end": {
-          "line": 420,
+          "line": 405,
           "column": 5
         }
       },
@@ -596,11 +596,11 @@
     "_inSelectionModification": {
       "location": {
         "start": {
-          "line": 429,
+          "line": 413,
           "column": 4
         },
         "end": {
-          "line": 431,
+          "line": 415,
           "column": 5
         }
       },
@@ -693,11 +693,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 442,
-        "column": 13
+        "line": 424,
+        "column": 2
       },
       "end": {
-        "line": 447,
+        "line": 428,
         "column": 3
       }
     },

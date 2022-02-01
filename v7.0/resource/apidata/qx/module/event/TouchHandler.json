@@ -43,12 +43,12 @@
     "TYPES": {
       "location": {
         "start": {
-          "line": 34,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 34,
-          "column": 66
+          "line": 32,
+          "column": 65
         }
       },
       "jsdoc": {
@@ -65,7 +65,7 @@
     "register": {
       "location": {
         "start": {
-          "line": 42,
+          "line": 40,
           "column": 4
         },
         "end": {
@@ -96,11 +96,11 @@
     "unregister": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 57,
           "column": 4
         },
         "end": {
-          "line": 77,
+          "line": 74,
           "column": 5
         }
       },
@@ -128,15 +128,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 80,
-        "column": 10
+        "line": 77,
+        "column": 2
       },
       "end": {
         "line": 83,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 65,
+        "line": 58,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 29,
+          "line": 27,
           "column": 5
         }
       },
@@ -43,11 +43,11 @@
     "_createLayer": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 35,
+          "line": 32,
           "column": 5
         }
       },
@@ -61,11 +61,11 @@
     "getCellProperties": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 34,
           "column": 4
         },
         "end": {
-          "line": 40,
+          "line": 36,
           "column": 5
         }
       },
@@ -75,11 +75,11 @@
     "_assertCells": {
       "location": {
         "start": {
-          "line": 42,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 59,
+          "line": 52,
           "column": 5
         }
       },
@@ -178,6 +178,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -202,6 +203,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -368,15 +370,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 62,
-        "column": 13
+        "line": 55,
+        "column": 2
       },
       "end": {
-        "line": 64,
+        "line": 57,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {},
   "descendants": []

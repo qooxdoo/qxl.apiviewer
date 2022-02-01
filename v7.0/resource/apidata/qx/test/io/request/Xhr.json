@@ -17,7 +17,7 @@
         "column": 0
       },
       "end": {
-        "line": 822,
+        "line": 980,
         "column": 3
       }
     },
@@ -83,7 +83,7 @@
           "column": 4
         },
         "end": {
-          "line": 65,
+          "line": 72,
           "column": 5
         }
       },
@@ -93,35 +93,7 @@
     "setUpFakeServer": {
       "location": {
         "start": {
-          "line": 67,
-          "column": 4
-        },
-        "end": {
-          "line": 84,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "setUpFakeXhr": {
-      "location": {
-        "start": {
-          "line": 86,
-          "column": 4
-        },
-        "end": {
-          "line": 92,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "tearDown": {
-      "location": {
-        "start": {
-          "line": 94,
+          "line": 74,
           "column": 4
         },
         "end": {
@@ -132,39 +104,38 @@
       "type": "function",
       "access": "public"
     },
+    "setUpFakeXhr": {
+      "location": {
+        "start": {
+          "line": 102,
+          "column": 4
+        },
+        "end": {
+          "line": 108,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "tearDown": {
+      "location": {
+        "start": {
+          "line": 110,
+          "column": 4
+        },
+        "end": {
+          "line": 118,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
     "test: set url property on construct": {
       "location": {
         "start": {
-          "line": 106,
-          "column": 4
-        },
-        "end": {
-          "line": 110,
-          "column": 5
-        }
-      },
-      "jsdoc": {},
-      "type": "function",
-      "access": "public"
-    },
-    "test: set method property on construct": {
-      "location": {
-        "start": {
-          "line": 112,
-          "column": 4
-        },
-        "end": {
-          "line": 116,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "test: send POST request": {
-      "location": {
-        "start": {
-          "line": 122,
+          "line": 124,
           "column": 4
         },
         "end": {
@@ -176,14 +147,43 @@
       "type": "function",
       "access": "public"
     },
-    "test: send sync request": {
+    "test: set method property on construct": {
       "location": {
         "start": {
           "line": 130,
           "column": 4
         },
         "end": {
-          "line": 139,
+          "line": 134,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "test: send POST request": {
+      "location": {
+        "start": {
+          "line": 140,
+          "column": 4
+        },
+        "end": {
+          "line": 146,
+          "column": 5
+        }
+      },
+      "jsdoc": {},
+      "type": "function",
+      "access": "public"
+    },
+    "test: send sync request": {
+      "location": {
+        "start": {
+          "line": 148,
+          "column": 4
+        },
+        "end": {
+          "line": 157,
           "column": 5
         }
       },
@@ -193,11 +193,11 @@
     "test: set content type urlencoded for POST request with body when no type given": {
       "location": {
         "start": {
-          "line": 145,
+          "line": 163,
           "column": 4
         },
         "end": {
-          "line": 153,
+          "line": 174,
           "column": 5
         }
       },
@@ -208,11 +208,11 @@
     "test: not set content type urlencoded for POST request with body when type given": {
       "location": {
         "start": {
-          "line": 155,
+          "line": 176,
           "column": 4
         },
         "end": {
-          "line": 167,
+          "line": 194,
           "column": 5
         }
       },
@@ -222,11 +222,11 @@
     "test: send string data with POST request": {
       "location": {
         "start": {
-          "line": 169,
+          "line": 196,
           "column": 4
         },
         "end": {
-          "line": 176,
+          "line": 203,
           "column": 5
         }
       },
@@ -236,11 +236,11 @@
     "test: send obj data with POST request": {
       "location": {
         "start": {
-          "line": 178,
+          "line": 205,
           "column": 4
         },
         "end": {
-          "line": 185,
+          "line": 212,
           "column": 5
         }
       },
@@ -250,11 +250,11 @@
     "test: send qooxdoo obj data with POST request": {
       "location": {
         "start": {
-          "line": 187,
+          "line": 214,
           "column": 4
         },
         "end": {
-          "line": 197,
+          "line": 224,
           "column": 5
         }
       },
@@ -264,11 +264,11 @@
     "test: send blob data with POST request": {
       "location": {
         "start": {
-          "line": 199,
+          "line": 226,
           "column": 4
         },
         "end": {
-          "line": 210,
+          "line": 237,
           "column": 5
         }
       },
@@ -278,11 +278,11 @@
     "test: send array buffer data with POST request": {
       "location": {
         "start": {
-          "line": 212,
+          "line": 239,
           "column": 4
         },
         "end": {
-          "line": 223,
+          "line": 250,
           "column": 5
         }
       },
@@ -292,11 +292,11 @@
     "test: serialize data": {
       "location": {
         "start": {
-          "line": 225,
+          "line": 252,
           "column": 4
         },
         "end": {
-          "line": 242,
+          "line": 269,
           "column": 5
         }
       },
@@ -306,11 +306,11 @@
     "test: set requested-with header": {
       "location": {
         "start": {
-          "line": 248,
+          "line": 275,
           "column": 4
         },
         "end": {
-          "line": 253,
+          "line": 284,
           "column": 5
         }
       },
@@ -321,11 +321,11 @@
     "test: not set requested-with header when cross-origin": {
       "location": {
         "start": {
-          "line": 255,
+          "line": 286,
           "column": 4
         },
         "end": {
-          "line": 263,
+          "line": 297,
           "column": 5
         }
       },
@@ -335,11 +335,11 @@
     "test: set cache control header": {
       "location": {
         "start": {
-          "line": 265,
+          "line": 299,
           "column": 4
         },
         "end": {
-          "line": 271,
+          "line": 309,
           "column": 5
         }
       },
@@ -349,11 +349,11 @@
     "test: set accept header": {
       "location": {
         "start": {
-          "line": 273,
+          "line": 311,
           "column": 4
         },
         "end": {
-          "line": 279,
+          "line": 321,
           "column": 5
         }
       },
@@ -363,11 +363,11 @@
     "test: override response content type": {
       "location": {
         "start": {
-          "line": 281,
+          "line": 323,
           "column": 4
         },
         "end": {
-          "line": 286,
+          "line": 331,
           "column": 5
         }
       },
@@ -377,11 +377,11 @@
     "test: get response content type": {
       "location": {
         "start": {
-          "line": 288,
+          "line": 333,
           "column": 4
         },
         "end": {
-          "line": 293,
+          "line": 338,
           "column": 5
         }
       },
@@ -391,11 +391,11 @@
     "test: event handler receives request": {
       "location": {
         "start": {
-          "line": 300,
+          "line": 345,
           "column": 4
         },
         "end": {
-          "line": 316,
+          "line": 361,
           "column": 5
         }
       },
@@ -406,11 +406,11 @@
     "test: event handler's this is request": {
       "location": {
         "start": {
-          "line": 319,
+          "line": 364,
           "column": 4
         },
         "end": {
-          "line": 335,
+          "line": 380,
           "column": 5
         }
       },
@@ -421,11 +421,11 @@
     "test: sync XHR properties for every readyState": {
       "location": {
         "start": {
-          "line": 341,
+          "line": 386,
           "column": 4
         },
         "end": {
-          "line": 367,
+          "line": 416,
           "column": 5
         }
       },
@@ -436,11 +436,11 @@
     "test: get response": {
       "location": {
         "start": {
-          "line": 373,
+          "line": 422,
           "column": 4
         },
         "end": {
-          "line": 384,
+          "line": 433,
           "column": 5
         }
       },
@@ -451,11 +451,11 @@
     "test: get response on 400 status": {
       "location": {
         "start": {
-          "line": 386,
+          "line": 435,
           "column": 4
         },
         "end": {
-          "line": 397,
+          "line": 446,
           "column": 5
         }
       },
@@ -465,11 +465,11 @@
     "test: get response by change event": {
       "location": {
         "start": {
-          "line": 399,
+          "line": 448,
           "column": 4
         },
         "end": {
-          "line": 415,
+          "line": 468,
           "column": 5
         }
       },
@@ -479,11 +479,11 @@
     "test: _getParsedResponse": {
       "location": {
         "start": {
-          "line": 421,
+          "line": 474,
           "column": 4
         },
         "end": {
-          "line": 436,
+          "line": 489,
           "column": 5
         }
       },
@@ -494,11 +494,11 @@
     "test: setParser": {
       "location": {
         "start": {
-          "line": 438,
+          "line": 491,
           "column": 4
         },
         "end": {
-          "line": 449,
+          "line": 502,
           "column": 5
         }
       },
@@ -508,11 +508,11 @@
     "test: basic auth": {
       "location": {
         "start": {
-          "line": 455,
+          "line": 508,
           "column": 4
         },
         "end": {
-          "line": 470,
+          "line": 526,
           "column": 5
         }
       },
@@ -523,11 +523,11 @@
     "test: send with promise sends the request": {
       "location": {
         "start": {
-          "line": 477,
+          "line": 532,
           "column": 4
         },
         "end": {
-          "line": 484,
+          "line": 539,
           "column": 5
         }
       },
@@ -538,11 +538,11 @@
     "test: send with promise succeeds": {
       "location": {
         "start": {
-          "line": 486,
+          "line": 541,
           "column": 4
         },
         "end": {
-          "line": 506,
+          "line": 562,
           "column": 5
         }
       },
@@ -552,11 +552,11 @@
     "test: send with promise fails with statusError": {
       "location": {
         "start": {
-          "line": 508,
+          "line": 564,
           "column": 4
         },
         "end": {
-          "line": 532,
+          "line": 596,
           "column": 5
         }
       },
@@ -566,11 +566,11 @@
     "test: send with promise fails with error": {
       "location": {
         "start": {
-          "line": 534,
+          "line": 598,
           "column": 4
         },
         "end": {
-          "line": 557,
+          "line": 629,
           "column": 5
         }
       },
@@ -580,11 +580,11 @@
     "test: send with promise fails with timeout": {
       "location": {
         "start": {
-          "line": 559,
+          "line": 631,
           "column": 4
         },
         "end": {
-          "line": 579,
+          "line": 662,
           "column": 5
         }
       },
@@ -594,11 +594,11 @@
     "test: setled promise has no extra listeners": {
       "location": {
         "start": {
-          "line": 581,
+          "line": 664,
           "column": 4
         },
         "end": {
-          "line": 601,
+          "line": 690,
           "column": 5
         }
       },
@@ -608,11 +608,11 @@
     "test: aborted request rejects the promise": {
       "location": {
         "start": {
-          "line": 603,
+          "line": 692,
           "column": 4
         },
         "end": {
-          "line": 622,
+          "line": 719,
           "column": 5
         }
       },
@@ -622,11 +622,11 @@
     "test: parseError rejects the promise": {
       "location": {
         "start": {
-          "line": 624,
+          "line": 721,
           "column": 4
         },
         "end": {
-          "line": 652,
+          "line": 760,
           "column": 5
         }
       },
@@ -636,11 +636,11 @@
     "test: canceled promise with abort() in finally does not reject other promises": {
       "location": {
         "start": {
-          "line": 654,
+          "line": 762,
           "column": 4
         },
         "end": {
-          "line": 694,
+          "line": 819,
           "column": 5
         }
       },
@@ -650,11 +650,11 @@
     "test: canceled promise path does not affect other listeners": {
       "location": {
         "start": {
-          "line": 696,
+          "line": 821,
           "column": 4
         },
         "end": {
-          "line": 729,
+          "line": 864,
           "column": 5
         }
       },
@@ -664,11 +664,11 @@
     "test: canceled promise aborts pending request": {
       "location": {
         "start": {
-          "line": 731,
+          "line": 866,
           "column": 4
         },
         "end": {
-          "line": 757,
+          "line": 905,
           "column": 5
         }
       },
@@ -678,11 +678,11 @@
     "test: settled promise does not set phase to abort": {
       "location": {
         "start": {
-          "line": 759,
+          "line": 907,
           "column": 4
         },
         "end": {
-          "line": 784,
+          "line": 940,
           "column": 5
         }
       },
@@ -692,11 +692,11 @@
     "test: returned promise is bound to request": {
       "location": {
         "start": {
-          "line": 786,
+          "line": 942,
           "column": 4
         },
         "end": {
-          "line": 802,
+          "line": 959,
           "column": 5
         }
       },
@@ -706,11 +706,11 @@
     "test: returned promise is bound to caller": {
       "location": {
         "start": {
-          "line": 804,
+          "line": 961,
           "column": 4
         },
         "end": {
-          "line": 820,
+          "line": 978,
           "column": 5
         }
       },
@@ -2326,6 +2326,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -2350,6 +2351,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

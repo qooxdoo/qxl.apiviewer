@@ -17,7 +17,7 @@
         "column": 0
       },
       "end": {
-        "line": 627,
+        "line": 639,
         "column": 3
       }
     },
@@ -112,11 +112,11 @@
     "test: isDisposed()": {
       "location": {
         "start": {
-          "line": 73,
+          "line": 72,
           "column": 4
         },
         "end": {
-          "line": 77,
+          "line": 76,
           "column": 5
         }
       },
@@ -126,11 +126,11 @@
     "test: allow many requests with same object": {
       "location": {
         "start": {
-          "line": 80,
+          "line": 78,
           "column": 4
         },
         "end": {
-          "line": 95,
+          "line": 93,
           "column": 5
         }
       },
@@ -140,11 +140,11 @@
     "test: call event handler": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 106,
+          "line": 104,
           "column": 5
         }
       },
@@ -155,11 +155,11 @@
     "test: fire event": {
       "location": {
         "start": {
-          "line": 108,
+          "line": 106,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 113,
           "column": 5
         }
       },
@@ -169,11 +169,11 @@
     "test: properties indicate success when request completed": {
       "location": {
         "start": {
-          "line": 121,
+          "line": 119,
           "column": 4
         },
         "end": {
-          "line": 135,
+          "line": 133,
           "column": 5
         }
       },
@@ -184,11 +184,11 @@
     "test: status indicates success when determineSuccess returns true": {
       "location": {
         "start": {
-          "line": 140,
+          "line": 138,
           "column": 4
         },
         "end": {
-          "line": 155,
+          "line": 153,
           "column": 5
         }
       },
@@ -212,11 +212,11 @@
     "test: properties indicate failure when request failed": {
       "location": {
         "start": {
-          "line": 159,
+          "line": 157,
           "column": 4
         },
         "end": {
-          "line": 179,
+          "line": 176,
           "column": 5
         }
       },
@@ -227,11 +227,11 @@
     "test: properties indicate failure when request timed out": {
       "location": {
         "start": {
-          "line": 181,
+          "line": 178,
           "column": 4
         },
         "end": {
-          "line": 202,
+          "line": 198,
           "column": 5
         }
       },
@@ -241,11 +241,11 @@
     "test: status indicates failure when determineSuccess returns false": {
       "location": {
         "start": {
-          "line": 204,
+          "line": 200,
           "column": 4
         },
         "end": {
-          "line": 219,
+          "line": 215,
           "column": 5
         }
       },
@@ -255,11 +255,11 @@
     "test: reset XHR properties when reopened": {
       "location": {
         "start": {
-          "line": 221,
+          "line": 217,
           "column": 4
         },
         "end": {
-          "line": 236,
+          "line": 232,
           "column": 5
         }
       },
@@ -269,11 +269,11 @@
     "test: open() stores URL": {
       "location": {
         "start": {
-          "line": 242,
+          "line": 238,
           "column": 4
         },
         "end": {
-          "line": 245,
+          "line": 241,
           "column": 5
         }
       },
@@ -284,11 +284,11 @@
     "test: send() adds script element to DOM": {
       "location": {
         "start": {
-          "line": 251,
+          "line": 247,
           "column": 4
         },
         "end": {
-          "line": 258,
+          "line": 257,
           "column": 5
         }
       },
@@ -299,11 +299,11 @@
     "test: send() sets script src to URL": {
       "location": {
         "start": {
-          "line": 260,
+          "line": 259,
           "column": 4
         },
         "end": {
-          "line": 263,
+          "line": 265,
           "column": 5
         }
       },
@@ -313,11 +313,11 @@
     "test: send() with data": {
       "location": {
         "start": {
-          "line": 265,
+          "line": 267,
           "column": 4
         },
         "end": {
-          "line": 267,
+          "line": 269,
           "column": 5
         }
       },
@@ -327,11 +327,11 @@
     "test: abort() removes script element": {
       "location": {
         "start": {
-          "line": 273,
+          "line": 275,
           "column": 4
         },
         "end": {
-          "line": 280,
+          "line": 285,
           "column": 5
         }
       },
@@ -342,11 +342,11 @@
     "test: abort() makes request not fire load": {
       "location": {
         "start": {
-          "line": 282,
+          "line": 287,
           "column": 4
         },
         "end": {
-          "line": 298,
+          "line": 307,
           "column": 5
         }
       },
@@ -356,11 +356,11 @@
     "test: setRequestHeader() throws error when other than OPENED": {
       "location": {
         "start": {
-          "line": 304,
+          "line": 313,
           "column": 4
         },
         "end": {
-          "line": 310,
+          "line": 323,
           "column": 5
         }
       },
@@ -371,11 +371,11 @@
     "test: setRequestHeader() appends to URL": {
       "location": {
         "start": {
-          "line": 312,
+          "line": 325,
           "column": 4
         },
         "end": {
-          "line": 321,
+          "line": 334,
           "column": 5
         }
       },
@@ -385,11 +385,11 @@
     "test: call onload": {
       "location": {
         "start": {
-          "line": 327,
+          "line": 340,
           "column": 4
         },
         "end": {
-          "line": 340,
+          "line": 352,
           "column": 5
         }
       },
@@ -400,11 +400,11 @@
     "test: call onreadystatechange and have appropriate readyState": {
       "location": {
         "start": {
-          "line": 342,
+          "line": 354,
           "column": 4
         },
         "end": {
-          "line": 364,
+          "line": 376,
           "column": 5
         }
       },
@@ -414,11 +414,11 @@
     "test: call onloadend on network error": {
       "location": {
         "start": {
-          "line": 368,
+          "line": 380,
           "column": 4
         },
         "end": {
-          "line": 377,
+          "line": 389,
           "column": 5
         }
       },
@@ -429,11 +429,11 @@
     "test: call onloadend when request completes": {
       "location": {
         "start": {
-          "line": 379,
+          "line": 391,
           "column": 4
         },
         "end": {
-          "line": 388,
+          "line": 400,
           "column": 5
         }
       },
@@ -443,11 +443,11 @@
     "test: not call onload when loading failed because of network error": {
       "location": {
         "start": {
-          "line": 390,
+          "line": 402,
           "column": 4
         },
         "end": {
-          "line": 415,
+          "line": 426,
           "column": 5
         }
       },
@@ -457,11 +457,11 @@
     "test: call onerror on network error": {
       "location": {
         "start": {
-          "line": 417,
+          "line": 428,
           "column": 4
         },
         "end": {
-          "line": 432,
+          "line": 442,
           "column": 5
         }
       },
@@ -471,11 +471,11 @@
     "test: call onerror on invalid script": {
       "location": {
         "start": {
-          "line": 434,
+          "line": 444,
           "column": 4
         },
         "end": {
-          "line": 453,
+          "line": 462,
           "column": 5
         }
       },
@@ -485,11 +485,11 @@
     "test: not call onerror when request exceeds timeout limit": {
       "location": {
         "start": {
-          "line": 455,
+          "line": 464,
           "column": 4
         },
         "end": {
-          "line": 471,
+          "line": 484,
           "column": 5
         }
       },
@@ -499,11 +499,11 @@
     "test: call ontimeout when request exceeds timeout limit": {
       "location": {
         "start": {
-          "line": 473,
+          "line": 486,
           "column": 4
         },
         "end": {
-          "line": 489,
+          "line": 501,
           "column": 5
         }
       },
@@ -513,21 +513,7 @@
     "test: not call ontimeout when request is within timeout limit": {
       "location": {
         "start": {
-          "line": 491,
-          "column": 4
-        },
-        "end": {
-          "line": 511,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "test: call onabort when request was aborted": {
-      "location": {
-        "start": {
-          "line": 513,
+          "line": 503,
           "column": 4
         },
         "end": {
@@ -538,14 +524,28 @@
       "type": "function",
       "access": "public"
     },
-    "test: remove script from DOM when request completed": {
+    "test: call onabort when request was aborted": {
       "location": {
         "start": {
-          "line": 527,
+          "line": 523,
           "column": 4
         },
         "end": {
-          "line": 540,
+          "line": 531,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "test: remove script from DOM when request completed": {
+      "location": {
+        "start": {
+          "line": 537,
+          "column": 4
+        },
+        "end": {
+          "line": 550,
           "column": 5
         }
       },
@@ -556,11 +556,11 @@
     "test: remove script from DOM when request failed": {
       "location": {
         "start": {
-          "line": 542,
+          "line": 552,
           "column": 4
         },
         "end": {
-          "line": 556,
+          "line": 566,
           "column": 5
         }
       },
@@ -570,11 +570,11 @@
     "test: remove script from DOM when request timed out": {
       "location": {
         "start": {
-          "line": 558,
+          "line": 568,
           "column": 4
         },
         "end": {
-          "line": 578,
+          "line": 587,
           "column": 5
         }
       },
@@ -584,11 +584,11 @@
     "request": {
       "location": {
         "start": {
-          "line": 580,
+          "line": 589,
           "column": 4
         },
         "end": {
-          "line": 583,
+          "line": 592,
           "column": 5
         }
       },
@@ -598,11 +598,11 @@
     "requestPending": {
       "location": {
         "start": {
-          "line": 585,
+          "line": 594,
           "column": 4
         },
         "end": {
-          "line": 595,
+          "line": 604,
           "column": 5
         }
       },
@@ -612,35 +612,7 @@
     "isInDom": {
       "location": {
         "start": {
-          "line": 597,
-          "column": 4
-        },
-        "end": {
-          "line": 599,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "isIe": {
-      "location": {
-        "start": {
-          "line": 601,
-          "column": 4
-        },
-        "end": {
-          "line": 603,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "isIeBelow": {
-      "location": {
-        "start": {
-          "line": 605,
+          "line": 606,
           "column": 4
         },
         "end": {
@@ -651,14 +623,42 @@
       "type": "function",
       "access": "public"
     },
-    "supportsErrorHandler": {
+    "isIe": {
       "location": {
         "start": {
           "line": 610,
           "column": 4
         },
         "end": {
-          "line": 617,
+          "line": 612,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "isIeBelow": {
+      "location": {
+        "start": {
+          "line": 614,
+          "column": 4
+        },
+        "end": {
+          "line": 619,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "supportsErrorHandler": {
+      "location": {
+        "start": {
+          "line": 621,
+          "column": 4
+        },
+        "end": {
+          "line": 629,
           "column": 5
         }
       },
@@ -668,11 +668,11 @@
     "noCache": {
       "location": {
         "start": {
-          "line": 619,
+          "line": 631,
           "column": 4
         },
         "end": {
-          "line": 621,
+          "line": 633,
           "column": 5
         }
       },
@@ -682,11 +682,11 @@
     "skip": {
       "location": {
         "start": {
-          "line": 623,
+          "line": 635,
           "column": 4
         },
         "end": {
-          "line": 625,
+          "line": 637,
           "column": 5
         }
       },
@@ -1889,6 +1889,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1913,6 +1914,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

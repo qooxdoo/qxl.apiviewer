@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 290,
+        "line": 278,
         "column": 3
       }
     },
@@ -31,11 +31,11 @@
     "specialCharCodeMap": {
       "location": {
         "start": {
-          "line": 39,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 49,
+          "line": 46,
           "column": 5
         }
       },
@@ -65,11 +65,11 @@
     "numpadToCharCode": {
       "location": {
         "start": {
-          "line": 56,
+          "line": 53,
           "column": 4
         },
         "end": {
-          "line": 73,
+          "line": 69,
           "column": 5
         }
       },
@@ -99,11 +99,11 @@
     "keyCodeToIdentifierMap": {
       "location": {
         "start": {
-          "line": 80,
+          "line": 76,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 119,
           "column": 5
         }
       },
@@ -133,12 +133,12 @@
     "charCodeA": {
       "location": {
         "start": {
-          "line": 128,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 128,
-          "column": 33
+          "line": 122,
+          "column": 32
         }
       },
       "jsdoc": {
@@ -155,12 +155,12 @@
     "charCodeZ": {
       "location": {
         "start": {
-          "line": 130,
+          "line": 124,
           "column": 4
         },
         "end": {
-          "line": 130,
-          "column": 33
+          "line": 124,
+          "column": 32
         }
       },
       "jsdoc": {
@@ -177,12 +177,12 @@
     "charCode0": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 126,
           "column": 4
         },
         "end": {
-          "line": 132,
-          "column": 33
+          "line": 126,
+          "column": 32
         }
       },
       "jsdoc": {
@@ -199,12 +199,12 @@
     "charCode9": {
       "location": {
         "start": {
-          "line": 134,
+          "line": 128,
           "column": 4
         },
         "end": {
-          "line": 134,
-          "column": 33
+          "line": 128,
+          "column": 32
         }
       },
       "jsdoc": {
@@ -221,11 +221,11 @@
     "keyCodeToIdentifier": {
       "location": {
         "start": {
-          "line": 142,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 158,
+          "line": 152,
           "column": 5
         }
       },
@@ -260,11 +260,11 @@
     "charCodeToIdentifier": {
       "location": {
         "start": {
-          "line": 167,
+          "line": 160,
           "column": 4
         },
         "end": {
-          "line": 169,
+          "line": 165,
           "column": 5
         }
       },
@@ -299,11 +299,11 @@
     "isIdentifiableKeyCode": {
       "location": {
         "start": {
-          "line": 178,
+          "line": 173,
           "column": 4
         },
         "end": {
-          "line": 205,
+          "line": 199,
           "column": 5
         }
       },
@@ -338,11 +338,11 @@
     "isNonPrintableKeyCode": {
       "location": {
         "start": {
-          "line": 214,
+          "line": 207,
           "column": 4
         },
         "end": {
-          "line": 216,
+          "line": 209,
           "column": 5
         }
       },
@@ -377,11 +377,11 @@
     "isValidKeyIdentifier": {
       "location": {
         "start": {
-          "line": 225,
+          "line": 217,
           "column": 4
         },
         "end": {
-          "line": 255,
+          "line": 245,
           "column": 5
         }
       },
@@ -416,11 +416,11 @@
     "isPrintableKeyIdentifier": {
       "location": {
         "start": {
-          "line": 264,
+          "line": 253,
           "column": 4
         },
         "end": {
-          "line": 271,
+          "line": 259,
           "column": 5
         }
       },
@@ -456,15 +456,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 274,
-        "column": 10
+        "line": 262,
+        "column": 2
       },
       "end": {
-        "line": 289,
+        "line": 277,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

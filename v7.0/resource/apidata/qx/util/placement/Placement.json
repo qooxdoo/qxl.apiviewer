@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 299,
+        "line": 282,
         "column": 3
       }
     },
@@ -30,25 +30,24 @@
   "construct": {
     "location": {
       "start": {
-        "line": 29,
-        "column": 14
+        "line": 28,
+        "column": 2
       },
       "end": {
-        "line": 33,
+        "line": 31,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "properties": {
     "axisX": {
       "location": {
         "start": {
-          "line": 41,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 43,
+          "line": 39,
           "column": 5
         }
       },
@@ -67,11 +66,11 @@
     "axisY": {
       "location": {
         "start": {
-          "line": 48,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 50,
+          "line": 46,
           "column": 5
         }
       },
@@ -90,11 +89,11 @@
     "edge": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 58,
+          "line": 54,
           "column": 5
         }
       },
@@ -120,11 +119,11 @@
     "align": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 66,
+          "line": 62,
           "column": 5
         }
       },
@@ -186,12 +185,12 @@
     "__instance": {
       "location": {
         "start": {
-          "line": 72,
+          "line": 66,
           "column": 4
         },
         "end": {
-          "line": 72,
-          "column": 21
+          "line": 66,
+          "column": 20
         }
       },
       "type": "variable",
@@ -200,11 +199,11 @@
     "compute": {
       "location": {
         "start": {
-          "line": 109,
+          "line": 103,
           "column": 4
         },
         "end": {
-          "line": 137,
+          "line": 132,
           "column": 5
         }
       },
@@ -281,12 +280,12 @@
     "__direct": {
       "location": {
         "start": {
-          "line": 140,
+          "line": 134,
           "column": 4
         },
         "end": {
-          "line": 140,
-          "column": 19
+          "line": 134,
+          "column": 18
         }
       },
       "type": "variable",
@@ -295,12 +294,12 @@
     "__keepAlign": {
       "location": {
         "start": {
-          "line": 141,
+          "line": 135,
           "column": 4
         },
         "end": {
-          "line": 141,
-          "column": 22
+          "line": 135,
+          "column": 21
         }
       },
       "type": "variable",
@@ -309,12 +308,12 @@
     "__bestFit": {
       "location": {
         "start": {
-          "line": 142,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 142,
-          "column": 20
+          "line": 136,
+          "column": 19
         }
       },
       "type": "variable",
@@ -323,11 +322,11 @@
     "__getAxis": {
       "location": {
         "start": {
-          "line": 151,
+          "line": 145,
           "column": 4
         },
         "end": {
-          "line": 170,
+          "line": 163,
           "column": 5
         }
       },
@@ -364,12 +363,12 @@
     "__defaultAxis": {
       "location": {
         "start": {
-          "line": 176,
+          "line": 167,
           "column": 4
         },
         "end": {
-          "line": 176,
-          "column": 24
+          "line": 167,
+          "column": 23
         }
       },
       "type": "variable",
@@ -378,11 +377,11 @@
     "compute": {
       "location": {
         "start": {
-          "line": 196,
+          "line": 187,
           "column": 4
         },
         "end": {
-          "line": 243,
+          "line": 232,
           "column": 5
         }
       },
@@ -438,11 +437,11 @@
     "__getPositionX": {
       "location": {
         "start": {
-          "line": 251,
+          "line": 239,
           "column": 4
         },
         "end": {
-          "line": 267,
+          "line": 254,
           "column": 5
         }
       },
@@ -468,11 +467,11 @@
     "__getPositionY": {
       "location": {
         "start": {
-          "line": 275,
+          "line": 261,
           "column": 4
         },
         "end": {
-          "line": 291,
+          "line": 276,
           "column": 5
         }
       },
@@ -583,6 +582,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -607,6 +607,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -899,15 +900,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 295,
-        "column": 13
+        "line": 279,
+        "column": 2
       },
       "end": {
-        "line": 298,
+        "line": 281,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

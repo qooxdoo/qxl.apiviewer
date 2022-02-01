@@ -24,11 +24,11 @@
     "createModel": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 32,
+          "line": 29,
           "column": 5
         }
       },
@@ -38,7 +38,7 @@
     "createRandomRows": {
       "location": {
         "start": {
-          "line": 35,
+          "line": 31,
           "column": 4
         },
         "end": {
@@ -52,11 +52,11 @@
     "testSimple": {
       "location": {
         "start": {
-          "line": 49,
+          "line": 48,
           "column": 4
         },
         "end": {
-          "line": 63,
+          "line": 64,
           "column": 5
         }
       },
@@ -70,7 +70,7 @@
           "column": 4
         },
         "end": {
-          "line": 71,
+          "line": 70,
           "column": 5
         }
       },
@@ -80,7 +80,7 @@
     "testChangeModel": {
       "location": {
         "start": {
-          "line": 74,
+          "line": 72,
           "column": 4
         },
         "end": {
@@ -179,6 +179,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -203,6 +204,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

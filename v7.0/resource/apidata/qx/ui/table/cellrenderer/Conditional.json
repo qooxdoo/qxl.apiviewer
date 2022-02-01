@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 362,
+        "line": 373,
         "column": 3
       }
     },
@@ -36,11 +36,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 50,
-        "column": 14
+        "line": 46,
+        "column": 2
       },
       "end": {
-        "line": 62,
+        "line": 57,
         "column": 3
       }
     },
@@ -99,12 +99,12 @@
     "__defaultTextAlign": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 66,
           "column": 4
         },
         "end": {
-          "line": 75,
-          "column": 29
+          "line": 66,
+          "column": 28
         }
       },
       "type": "variable",
@@ -113,12 +113,12 @@
     "__defaultColor": {
       "location": {
         "start": {
-          "line": 76,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 76,
-          "column": 25
+          "line": 67,
+          "column": 24
         }
       },
       "type": "variable",
@@ -127,12 +127,12 @@
     "__defaultFontStyle": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 68,
           "column": 4
         },
         "end": {
-          "line": 77,
-          "column": 29
+          "line": 68,
+          "column": 28
         }
       },
       "type": "variable",
@@ -141,12 +141,12 @@
     "__defaultFontWeight": {
       "location": {
         "start": {
-          "line": 78,
+          "line": 69,
           "column": 4
         },
         "end": {
-          "line": 78,
-          "column": 30
+          "line": 69,
+          "column": 29
         }
       },
       "type": "variable",
@@ -155,11 +155,11 @@
     "__applyFormatting": {
       "location": {
         "start": {
-          "line": 86,
+          "line": 76,
           "column": 4
         },
         "end": {
-          "line": 103,
+          "line": 92,
           "column": 5
         }
       },
@@ -193,11 +193,11 @@
     "addNumericCondition": {
       "location": {
         "start": {
-          "line": 127,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 143,
+          "line": 137,
           "column": 5
         }
       },
@@ -289,11 +289,11 @@
     "addBetweenCondition": {
       "location": {
         "start": {
-          "line": 167,
+          "line": 160,
           "column": 4
         },
         "end": {
-          "line": 181,
+          "line": 190,
           "column": 5
         }
       },
@@ -392,11 +392,11 @@
     "addRegex": {
       "location": {
         "start": {
-          "line": 203,
+          "line": 211,
           "column": 4
         },
         "end": {
-          "line": 214,
+          "line": 221,
           "column": 5
         }
       },
@@ -481,11 +481,11 @@
     "_getCellStyle": {
       "location": {
         "start": {
-          "line": 228,
+          "line": 234,
           "column": 4
         },
         "end": {
-          "line": 350,
+          "line": 361,
           "column": 5
         }
       },
@@ -609,6 +609,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -633,6 +634,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -820,11 +822,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 359,
-        "column": 13
+        "line": 370,
+        "column": 2
       },
       "end": {
-        "line": 361,
+        "line": 372,
         "column": 3
       }
     },

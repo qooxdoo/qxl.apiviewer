@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 219,
+        "line": 193,
         "column": 3
       }
     },
@@ -32,11 +32,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 47,
-        "column": 14
+        "line": 43,
+        "column": 2
       },
       "end": {
-        "line": 56,
+        "line": 51,
         "column": 3
       }
     },
@@ -62,11 +62,11 @@
     "size": {
       "location": {
         "start": {
-          "line": 80,
+          "line": 71,
           "column": 4
         },
         "end": {
-          "line": 84,
+          "line": 74,
           "column": 5
         }
       },
@@ -121,12 +121,12 @@
     "__pool": {
       "location": {
         "start": {
-          "line": 99,
+          "line": 85,
           "column": 4
         },
         "end": {
-          "line": 99,
-          "column": 17
+          "line": 85,
+          "column": 16
         }
       },
       "jsdoc": {
@@ -149,11 +149,11 @@
     "getObject": {
       "location": {
         "start": {
-          "line": 118,
+          "line": 103,
           "column": 4
         },
         "end": {
-          "line": 142,
+          "line": 126,
           "column": 5
         }
       },
@@ -188,11 +188,11 @@
     "poolObject": {
       "location": {
         "start": {
-          "line": 156,
+          "line": 139,
           "column": 4
         },
         "end": {
-          "line": 190,
+          "line": 171,
           "column": 5
         }
       },
@@ -304,6 +304,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -328,6 +329,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -422,11 +424,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 204,
-        "column": 13
+        "line": 180,
+        "column": 2
       },
       "end": {
-        "line": 218,
+        "line": 192,
         "column": 3
       }
     },

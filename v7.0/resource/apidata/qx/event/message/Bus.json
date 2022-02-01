@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 431,
+        "line": 412,
         "column": 3
       }
     },
@@ -34,11 +34,11 @@
     "getSubscriptions": {
       "location": {
         "start": {
-          "line": 42,
+          "line": 39,
           "column": 4
         },
         "end": {
-          "line": 44,
+          "line": 41,
           "column": 5
         }
       },
@@ -64,11 +64,11 @@
     "subscribe": {
       "location": {
         "start": {
-          "line": 53,
+          "line": 50,
           "column": 4
         },
         "end": {
-          "line": 56,
+          "line": 52,
           "column": 5
         }
       },
@@ -114,11 +114,11 @@
     "subscribeOnce": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 61,
           "column": 4
         },
         "end": {
-          "line": 68,
+          "line": 66,
           "column": 5
         }
       },
@@ -164,7 +164,7 @@
     "checkSubscription": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 75,
           "column": 4
         },
         "end": {
@@ -224,7 +224,7 @@
           "column": 4
         },
         "end": {
-          "line": 92,
+          "line": 94,
           "column": 5
         }
       },
@@ -276,11 +276,11 @@
     "dispatch": {
       "location": {
         "start": {
-          "line": 99,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 102,
+          "line": 103,
           "column": 5
         }
       },
@@ -315,11 +315,11 @@
     "dispatchByName": {
       "location": {
         "start": {
-          "line": 110,
+          "line": 111,
           "column": 4
         },
         "end": {
-          "line": 113,
+          "line": 116,
           "column": 5
         }
       },
@@ -362,11 +362,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 119,
-        "column": 14
+        "line": 122,
+        "column": 2
       },
       "end": {
-        "line": 123,
+        "line": 125,
         "column": 3
       }
     },
@@ -383,12 +383,12 @@
     "__subscriptions": {
       "location": {
         "start": {
-          "line": 131,
+          "line": 132,
           "column": 4
         },
         "end": {
-          "line": 131,
-          "column": 26
+          "line": 132,
+          "column": 25
         }
       },
       "jsdoc": {
@@ -411,11 +411,11 @@
     "getSubscriptions": {
       "location": {
         "start": {
-          "line": 140,
+          "line": 141,
           "column": 4
         },
         "end": {
-          "line": 142,
+          "line": 143,
           "column": 5
         }
       },
@@ -445,7 +445,7 @@
           "column": 4
         },
         "end": {
-          "line": 201,
+          "line": 196,
           "column": 5
         }
       },
@@ -497,11 +497,11 @@
     "subscribeOnce": {
       "location": {
         "start": {
-          "line": 215,
+          "line": 210,
           "column": 4
         },
         "end": {
-          "line": 223,
+          "line": 217,
           "column": 5
         }
       },
@@ -553,11 +553,11 @@
     "checkSubscription": {
       "location": {
         "start": {
-          "line": 237,
+          "line": 231,
           "column": 4
         },
         "end": {
-          "line": 259,
+          "line": 253,
           "column": 5
         }
       },
@@ -609,11 +609,11 @@
     "unsubscribe": {
       "location": {
         "start": {
-          "line": 280,
+          "line": 273,
           "column": 4
         },
         "end": {
-          "line": 310,
+          "line": 305,
           "column": 5
         }
       },
@@ -665,11 +665,11 @@
     "dispatch": {
       "location": {
         "start": {
-          "line": 319,
+          "line": 314,
           "column": 4
         },
         "end": {
-          "line": 353,
+          "line": 343,
           "column": 5
         }
       },
@@ -704,11 +704,11 @@
     "dispatchByName": {
       "location": {
         "start": {
-          "line": 363,
+          "line": 353,
           "column": 4
         },
         "end": {
-          "line": 376,
+          "line": 365,
           "column": 5
         }
       },
@@ -750,11 +750,11 @@
     "removeAllSubscriptions": {
       "location": {
         "start": {
-          "line": 381,
+          "line": 370,
           "column": 4
         },
         "end": {
-          "line": 386,
+          "line": 375,
           "column": 5
         }
       },
@@ -772,11 +772,11 @@
     "__callSubscribers": {
       "location": {
         "start": {
-          "line": 400,
+          "line": 389,
           "column": 4
         },
         "end": {
-          "line": 429,
+          "line": 410,
           "column": 5
         }
       },
@@ -895,6 +895,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -919,6 +920,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

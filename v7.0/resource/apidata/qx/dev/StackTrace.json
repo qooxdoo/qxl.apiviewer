@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 404,
+        "line": 398,
         "column": 3
       }
     },
@@ -55,12 +55,12 @@
     "FILENAME_TO_CLASSNAME": {
       "location": {
         "start": {
-          "line": 39,
+          "line": 36,
           "column": 4
         },
         "end": {
-          "line": 39,
-          "column": 32
+          "line": 36,
+          "column": 31
         }
       },
       "jsdoc": {
@@ -77,12 +77,12 @@
     "FORMAT_STACKTRACE": {
       "location": {
         "start": {
-          "line": 47,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 47,
-          "column": 28
+          "line": 44,
+          "column": 27
         }
       },
       "jsdoc": {
@@ -99,7 +99,7 @@
     "getStackTrace": {
       "location": {
         "start": {
-          "line": 64,
+          "line": 61,
           "column": 4
         },
         "end": {
@@ -129,11 +129,11 @@
     "getStackTraceFromCaller": {
       "location": {
         "start": {
-          "line": 147,
+          "line": 146,
           "column": 4
         },
         "end": {
-          "line": 187,
+          "line": 184,
           "column": 5
         }
       },
@@ -174,11 +174,11 @@
     "getStackTraceFromError": {
       "location": {
         "start": {
-          "line": 212,
+          "line": 208,
           "column": 4
         },
         "end": {
-          "line": 324,
+          "line": 311,
           "column": 5
         }
       },
@@ -213,11 +213,11 @@
     "__fileNameToClassName": {
       "location": {
         "start": {
-          "line": 334,
+          "line": 321,
           "column": 4
         },
         "end": {
-          "line": 347,
+          "line": 334,
           "column": 5
         }
       },
@@ -252,11 +252,11 @@
     "__fileNameToClassNameDefault": {
       "location": {
         "start": {
-          "line": 358,
+          "line": 344,
           "column": 4
         },
         "end": {
-          "line": 372,
+          "line": 363,
           "column": 5
         }
       },
@@ -291,11 +291,11 @@
     "__formatStackTrace": {
       "location": {
         "start": {
-          "line": 383,
+          "line": 373,
           "column": 4
         },
         "end": {
-          "line": 394,
+          "line": 386,
           "column": 5
         }
       },
@@ -331,15 +331,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 397,
-        "column": 10
+        "line": 389,
+        "column": 2
       },
       "end": {
-        "line": 403,
+        "line": 397,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

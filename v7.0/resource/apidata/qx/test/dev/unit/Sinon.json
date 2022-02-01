@@ -16,7 +16,7 @@
         "column": 0
       },
       "end": {
-        "line": 338,
+        "line": 350,
         "column": 3
       }
     },
@@ -44,11 +44,11 @@
     "sinon": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 36,
+          "line": 33,
           "column": 15
         }
       },
@@ -58,11 +58,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 67,
+          "line": 69,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "test: get sinon": {
       "location": {
         "start": {
-          "line": 69,
+          "line": 71,
           "column": 4
         },
         "end": {
-          "line": 78,
+          "line": 80,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "test: fail": {
       "location": {
         "start": {
-          "line": 80,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 85,
+          "line": 87,
           "column": 5
         }
       },
@@ -122,11 +122,11 @@
     "test: spy": {
       "location": {
         "start": {
-          "line": 87,
+          "line": 89,
           "column": 4
         },
         "end": {
-          "line": 91,
+          "line": 93,
           "column": 5
         }
       },
@@ -136,11 +136,11 @@
     "test: spy conveniently": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 99,
           "column": 5
         }
       },
@@ -150,11 +150,11 @@
     "test: stub": {
       "location": {
         "start": {
-          "line": 99,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 104,
+          "line": 106,
           "column": 5
         }
       },
@@ -164,11 +164,11 @@
     "test: stub conveniently": {
       "location": {
         "start": {
-          "line": 106,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 111,
+          "line": 113,
           "column": 5
         }
       },
@@ -178,11 +178,11 @@
     "test: stub property": {
       "location": {
         "start": {
-          "line": 113,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 120,
+          "line": 122,
           "column": 5
         }
       },
@@ -192,11 +192,11 @@
     "test: stub property in isolation": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 124,
           "column": 4
         },
         "end": {
-          "line": 130,
+          "line": 132,
           "column": 5
         }
       },
@@ -206,11 +206,11 @@
     "test: stub environment setting": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 134,
           "column": 4
         },
         "end": {
-          "line": 136,
+          "line": 141,
           "column": 5
         }
       },
@@ -220,11 +220,11 @@
     "test: stub environment setting in isolation": {
       "location": {
         "start": {
-          "line": 138,
+          "line": 143,
           "column": 4
         },
         "end": {
-          "line": 146,
+          "line": 154,
           "column": 5
         }
       },
@@ -234,11 +234,11 @@
     "test: mock": {
       "location": {
         "start": {
-          "line": 148,
+          "line": 156,
           "column": 4
         },
         "end": {
-          "line": 155,
+          "line": 163,
           "column": 5
         }
       },
@@ -248,11 +248,11 @@
     "test: mock verify throws": {
       "location": {
         "start": {
-          "line": 157,
+          "line": 165,
           "column": 4
         },
         "end": {
-          "line": 165,
+          "line": 173,
           "column": 5
         }
       },
@@ -262,11 +262,11 @@
     "test: mock unexpected use throws": {
       "location": {
         "start": {
-          "line": 167,
+          "line": 175,
           "column": 4
         },
         "end": {
-          "line": 175,
+          "line": 187,
           "column": 5
         }
       },
@@ -276,11 +276,11 @@
     "test: assert": {
       "location": {
         "start": {
-          "line": 177,
+          "line": 189,
           "column": 4
         },
         "end": {
-          "line": 181,
+          "line": 193,
           "column": 5
         }
       },
@@ -290,11 +290,11 @@
     "test: fake XHR": {
       "location": {
         "start": {
-          "line": 183,
+          "line": 195,
           "column": 4
         },
         "end": {
-          "line": 194,
+          "line": 206,
           "column": 5
         }
       },
@@ -304,11 +304,11 @@
     "test: fake server": {
       "location": {
         "start": {
-          "line": 196,
+          "line": 208,
           "column": 4
         },
         "end": {
-          "line": 201,
+          "line": 213,
           "column": 5
         }
       },
@@ -318,11 +318,11 @@
     "test: respond": {
       "location": {
         "start": {
-          "line": 203,
+          "line": 215,
           "column": 4
         },
         "end": {
-          "line": 218,
+          "line": 230,
           "column": 5
         }
       },
@@ -332,11 +332,11 @@
     "test: respond with invalid XML": {
       "location": {
         "start": {
-          "line": 220,
+          "line": 232,
           "column": 4
         },
         "end": {
-          "line": 231,
+          "line": 243,
           "column": 5
         }
       },
@@ -346,11 +346,11 @@
     "test: sandbox and restore": {
       "location": {
         "start": {
-          "line": 233,
+          "line": 245,
           "column": 4
         },
         "end": {
-          "line": 246,
+          "line": 259,
           "column": 5
         }
       },
@@ -360,11 +360,11 @@
     "test: deep stub": {
       "location": {
         "start": {
-          "line": 248,
+          "line": 261,
           "column": 4
         },
         "end": {
-          "line": 254,
+          "line": 267,
           "column": 5
         }
       },
@@ -374,11 +374,11 @@
     "test: shallow stub": {
       "location": {
         "start": {
-          "line": 256,
+          "line": 269,
           "column": 4
         },
         "end": {
-          "line": 269,
+          "line": 282,
           "column": 5
         }
       },
@@ -388,11 +388,11 @@
     "test: inject stub of original": {
       "location": {
         "start": {
-          "line": 271,
+          "line": 284,
           "column": 4
         },
         "end": {
-          "line": 278,
+          "line": 291,
           "column": 5
         }
       },
@@ -402,11 +402,11 @@
     "test: inject stub of original and return": {
       "location": {
         "start": {
-          "line": 280,
+          "line": 293,
           "column": 4
         },
         "end": {
-          "line": 287,
+          "line": 300,
           "column": 5
         }
       },
@@ -416,11 +416,11 @@
     "test: inject custom stub": {
       "location": {
         "start": {
-          "line": 289,
+          "line": 302,
           "column": 4
         },
         "end": {
-          "line": 295,
+          "line": 308,
           "column": 5
         }
       },
@@ -430,11 +430,11 @@
     "test: inject custom stub and return": {
       "location": {
         "start": {
-          "line": 297,
+          "line": 310,
           "column": 4
         },
         "end": {
-          "line": 303,
+          "line": 316,
           "column": 5
         }
       },
@@ -444,35 +444,7 @@
     "test: reveal mock of original and return": {
       "location": {
         "start": {
-          "line": 305,
-          "column": 4
-        },
-        "end": {
-          "line": 313,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "test: reveal mock of custom and return": {
-      "location": {
-        "start": {
-          "line": 315,
-          "column": 4
-        },
-        "end": {
-          "line": 322,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "hasXhr": {
-      "location": {
-        "start": {
-          "line": 324,
+          "line": 318,
           "column": 4
         },
         "end": {
@@ -483,14 +455,42 @@
       "type": "function",
       "access": "public"
     },
-    "tearDown": {
+    "test: reveal mock of custom and return": {
       "location": {
         "start": {
           "line": 328,
           "column": 4
         },
         "end": {
-          "line": 336,
+          "line": 335,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "hasXhr": {
+      "location": {
+        "start": {
+          "line": 337,
+          "column": 4
+        },
+        "end": {
+          "line": 339,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "tearDown": {
+      "location": {
+        "start": {
+          "line": 341,
+          "column": 4
+        },
+        "end": {
+          "line": 348,
           "column": 5
         }
       },
@@ -1648,6 +1648,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1672,6 +1673,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

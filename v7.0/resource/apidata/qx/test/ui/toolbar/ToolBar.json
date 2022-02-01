@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 191,
+        "line": 181,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 24,
-          "column": 5
+          "line": 22,
+          "column": 4
         },
         "end": {
-          "line": 31,
+          "line": 28,
           "column": 5
         }
       },
@@ -42,11 +42,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 34,
+          "line": 30,
           "column": 4
         },
         "end": {
-          "line": 41,
+          "line": 36,
           "column": 5
         }
       },
@@ -60,11 +60,11 @@
     "testShowSyncing": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 57,
+          "line": 51,
           "column": 5
         }
       },
@@ -74,11 +74,11 @@
     "testPositionStates": {
       "location": {
         "start": {
-          "line": 60,
+          "line": 53,
           "column": 4
         },
         "end": {
-          "line": 75,
+          "line": 68,
           "column": 5
         }
       },
@@ -88,11 +88,11 @@
     "testPositionStatesAdd": {
       "location": {
         "start": {
-          "line": 78,
+          "line": 70,
           "column": 4
         },
         "end": {
-          "line": 98,
+          "line": 90,
           "column": 5
         }
       },
@@ -102,11 +102,11 @@
     "testPositionStatesRemove": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 92,
           "column": 4
         },
         "end": {
-          "line": 122,
+          "line": 113,
           "column": 5
         }
       },
@@ -116,11 +116,11 @@
     "testShowUserValueShouldTakePrecedence": {
       "location": {
         "start": {
-          "line": 125,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 152,
+          "line": 142,
           "column": 5
         }
       },
@@ -130,11 +130,11 @@
     "testRemoveChildByIndex": {
       "location": {
         "start": {
-          "line": 154,
+          "line": 144,
           "column": 4
         },
         "end": {
-          "line": 173,
+          "line": 163,
           "column": 5
         }
       },
@@ -144,11 +144,11 @@
     "testRemoveAllChildren": {
       "location": {
         "start": {
-          "line": 175,
+          "line": 165,
           "column": 4
         },
         "end": {
-          "line": 189,
+          "line": 179,
           "column": 5
         }
       },
@@ -243,6 +243,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -267,6 +268,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

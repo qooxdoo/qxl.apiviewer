@@ -16,7 +16,7 @@
         "column": 0
       },
       "end": {
-        "line": 53,
+        "line": 56,
         "column": 3
       }
     },
@@ -27,11 +27,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 32,
+          "line": 30,
           "column": 5
         }
       },
@@ -41,11 +41,11 @@
     "test stop of CSS animation": {
       "location": {
         "start": {
-          "line": 34,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 51,
+          "line": 54,
           "column": 5
         }
       },
@@ -1203,6 +1203,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1227,6 +1228,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 231,
+        "line": 226,
         "column": 3
       }
     },
@@ -40,11 +40,11 @@
     "_media": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 30,
+          "line": 28,
           "column": 16
         }
       },
@@ -54,11 +54,11 @@
     "_src": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 31,
+          "line": 29,
           "column": 14
         }
       },
@@ -68,12 +68,12 @@
     "_getSrc": {
       "location": {
         "start": {
-          "line": 33,
+          "line": 31,
           "column": 4
         },
         "end": {
-          "line": 34,
-          "column": 5
+          "line": 31,
+          "column": 16
         }
       },
       "type": "function",
@@ -82,12 +82,12 @@
     "_createMedia": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 37,
-          "column": 5
+          "line": 33,
+          "column": 21
         }
       },
       "type": "function",
@@ -96,12 +96,12 @@
     "_checkFeature": {
       "location": {
         "start": {
-          "line": 39,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 40,
-          "column": 5
+          "line": 35,
+          "column": 22
         }
       },
       "type": "function",
@@ -110,11 +110,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 49,
+          "line": 42,
           "column": 5
         }
       },
@@ -124,11 +124,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 51,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 56,
+          "line": 48,
           "column": 5
         }
       },
@@ -138,11 +138,11 @@
     "testId": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 50,
           "column": 4
         },
         "end": {
-          "line": 63,
+          "line": 54,
           "column": 5
         }
       },
@@ -152,11 +152,11 @@
     "testVolume": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 56,
           "column": 4
         },
         "end": {
-          "line": 83,
+          "line": 81,
           "column": 5
         }
       },
@@ -166,11 +166,11 @@
     "testMute": {
       "location": {
         "start": {
-          "line": 86,
+          "line": 83,
           "column": 4
         },
         "end": {
-          "line": 95,
+          "line": 91,
           "column": 5
         }
       },
@@ -180,11 +180,11 @@
     "testCurrentTime": {
       "location": {
         "start": {
-          "line": 97,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 101,
+          "line": 96,
           "column": 5
         }
       },
@@ -194,11 +194,11 @@
     "testSource": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 98,
           "column": 4
         },
         "end": {
-          "line": 117,
+          "line": 111,
           "column": 5
         }
       },
@@ -208,11 +208,11 @@
     "testControls": {
       "location": {
         "start": {
-          "line": 120,
+          "line": 113,
           "column": 4
         },
         "end": {
-          "line": 129,
+          "line": 121,
           "column": 5
         }
       },
@@ -222,11 +222,11 @@
     "testAutoplay": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 123,
           "column": 4
         },
         "end": {
-          "line": 140,
+          "line": 130,
           "column": 5
         }
       },
@@ -236,11 +236,11 @@
     "testGetMediaObject": {
       "location": {
         "start": {
-          "line": 142,
+          "line": 132,
           "column": 4
         },
         "end": {
-          "line": 144,
+          "line": 134,
           "column": 5
         }
       },
@@ -250,11 +250,11 @@
     "testPreload": {
       "location": {
         "start": {
-          "line": 146,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 164,
+          "line": 153,
           "column": 5
         }
       },
@@ -264,11 +264,11 @@
     "testLoop": {
       "location": {
         "start": {
-          "line": 166,
+          "line": 155,
           "column": 4
         },
         "end": {
-          "line": 175,
+          "line": 163,
           "column": 5
         }
       },
@@ -278,11 +278,11 @@
     "testVolumeChangeEvent": {
       "location": {
         "start": {
-          "line": 178,
+          "line": 165,
           "column": 4
         },
         "end": {
-          "line": 190,
+          "line": 179,
           "column": 5
         }
       },
@@ -292,11 +292,11 @@
     "test Play Event": {
       "location": {
         "start": {
-          "line": 204,
+          "line": 193,
           "column": 4
         },
         "end": {
-          "line": 229,
+          "line": 224,
           "column": 5
         }
       },
@@ -392,6 +392,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -416,6 +417,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

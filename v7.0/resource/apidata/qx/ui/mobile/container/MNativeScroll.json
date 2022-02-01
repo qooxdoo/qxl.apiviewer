@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 325,
+        "line": 341,
         "column": 3
       }
     },
@@ -40,26 +40,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 30,
-        "column": 14
+        "line": 27,
+        "column": 2
       },
       "end": {
         "line": 45,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "members": {
     "_snapPoints": {
       "location": {
         "start": {
-          "line": 50,
+          "line": 48,
           "column": 4
         },
         "end": {
-          "line": 50,
-          "column": 22
+          "line": 48,
+          "column": 21
         }
       },
       "type": "variable",
@@ -68,12 +67,12 @@
     "_onTrack": {
       "location": {
         "start": {
-          "line": 51,
+          "line": 49,
           "column": 4
         },
         "end": {
-          "line": 51,
-          "column": 19
+          "line": 49,
+          "column": 18
         }
       },
       "type": "variable",
@@ -82,12 +81,12 @@
     "_snapTimeoutId": {
       "location": {
         "start": {
-          "line": 52,
+          "line": 50,
           "column": 4
         },
         "end": {
-          "line": 52,
-          "column": 25
+          "line": 50,
+          "column": 24
         }
       },
       "type": "variable",
@@ -96,11 +95,11 @@
     "_onAppear": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 55,
           "column": 4
         },
         "end": {
-          "line": 60,
+          "line": 57,
           "column": 5
         }
       },
@@ -118,11 +117,11 @@
     "_onTouchMove": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 75,
+          "line": 71,
           "column": 5
         }
       },
@@ -149,11 +148,11 @@
     "_onTrackStart": {
       "location": {
         "start": {
-          "line": 82,
+          "line": 77,
           "column": 4
         },
         "end": {
-          "line": 88,
+          "line": 83,
           "column": 5
         }
       },
@@ -180,11 +179,11 @@
     "_preventPageBounce": {
       "location": {
         "start": {
-          "line": 94,
+          "line": 88,
           "column": 4
         },
         "end": {
-          "line": 106,
+          "line": 102,
           "column": 5
         }
       },
@@ -202,11 +201,11 @@
     "_onTrackEnd": {
       "location": {
         "start": {
-          "line": 113,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 122,
           "column": 5
         }
       },
@@ -233,7 +232,7 @@
     "_onScroll": {
       "location": {
         "start": {
-          "line": 130,
+          "line": 127,
           "column": 4
         },
         "end": {
@@ -255,11 +254,11 @@
     "_calcSnapPoints": {
       "location": {
         "start": {
-          "line": 151,
+          "line": 150,
           "column": 4
         },
         "end": {
-          "line": 163,
+          "line": 168,
           "column": 5
         }
       },
@@ -277,11 +276,11 @@
     "_determineSnapPoint": {
       "location": {
         "start": {
-          "line": 172,
+          "line": 176,
           "column": 4
         },
         "end": {
-          "line": 191,
+          "line": 198,
           "column": 5
         }
       },
@@ -323,11 +322,11 @@
     "_snap": {
       "location": {
         "start": {
-          "line": 197,
+          "line": 203,
           "column": 4
         },
         "end": {
-          "line": 211,
+          "line": 220,
           "column": 5
         }
       },
@@ -345,11 +344,11 @@
     "_refresh": {
       "location": {
         "start": {
-          "line": 217,
+          "line": 225,
           "column": 4
         },
         "end": {
-          "line": 219,
+          "line": 227,
           "column": 5
         }
       },
@@ -367,11 +366,11 @@
     "_createScrollElement": {
       "location": {
         "start": {
-          "line": 227,
+          "line": 234,
           "column": 4
         },
         "end": {
-          "line": 229,
+          "line": 236,
           "column": 5
         }
       },
@@ -397,11 +396,11 @@
     "_getPosition": {
       "location": {
         "start": {
-          "line": 236,
+          "line": 242,
           "column": 4
         },
         "end": {
-          "line": 238,
+          "line": 247,
           "column": 5
         }
       },
@@ -427,11 +426,11 @@
     "_getScrollContentElement": {
       "location": {
         "start": {
-          "line": 246,
+          "line": 254,
           "column": 4
         },
         "end": {
-          "line": 248,
+          "line": 256,
           "column": 5
         }
       },
@@ -457,11 +456,11 @@
     "_getScrollHeight": {
       "location": {
         "start": {
-          "line": 255,
+          "line": 262,
           "column": 4
         },
         "end": {
-          "line": 261,
+          "line": 271,
           "column": 5
         }
       },
@@ -487,11 +486,11 @@
     "_getScrollWidth": {
       "location": {
         "start": {
-          "line": 268,
+          "line": 277,
           "column": 4
         },
         "end": {
-          "line": 274,
+          "line": 286,
           "column": 5
         }
       },
@@ -517,11 +516,11 @@
     "_scrollTo": {
       "location": {
         "start": {
-          "line": 284,
+          "line": 295,
           "column": 4
         },
         "end": {
-          "line": 312,
+          "line": 325,
           "column": 5
         }
       },
@@ -563,15 +562,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 316,
-        "column": 13
+        "line": 328,
+        "column": 2
       },
       "end": {
-        "line": 324,
+        "line": 340,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

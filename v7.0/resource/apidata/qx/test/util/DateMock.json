@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 71,
+        "line": 68,
         "column": 3
       }
     },
@@ -23,25 +23,24 @@
   "construct": {
     "location": {
       "start": {
-        "line": 23,
-        "column": 14
+        "line": 22,
+        "column": 2
       },
       "end": {
-        "line": 27,
+        "line": 25,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "members": {
     "getFullYear": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 33,
+          "line": 30,
           "column": 5
         }
       },
@@ -51,11 +50,11 @@
     "getMonth": {
       "location": {
         "start": {
-          "line": 35,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 37,
+          "line": 34,
           "column": 5
         }
       },
@@ -65,11 +64,11 @@
     "getDate": {
       "location": {
         "start": {
-          "line": 39,
+          "line": 36,
           "column": 4
         },
         "end": {
-          "line": 41,
+          "line": 38,
           "column": 5
         }
       },
@@ -79,11 +78,11 @@
     "getDay": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 45,
+          "line": 42,
           "column": 5
         }
       },
@@ -93,11 +92,11 @@
     "getHours": {
       "location": {
         "start": {
-          "line": 47,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 49,
+          "line": 46,
           "column": 5
         }
       },
@@ -107,11 +106,11 @@
     "getSeconds": {
       "location": {
         "start": {
-          "line": 51,
+          "line": 48,
           "column": 4
         },
         "end": {
-          "line": 53,
+          "line": 50,
           "column": 5
         }
       },
@@ -121,11 +120,11 @@
     "getMinutes": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 52,
           "column": 4
         },
         "end": {
-          "line": 57,
+          "line": 54,
           "column": 5
         }
       },
@@ -135,11 +134,11 @@
     "getMilliseconds": {
       "location": {
         "start": {
-          "line": 59,
+          "line": 56,
           "column": 4
         },
         "end": {
-          "line": 61,
+          "line": 58,
           "column": 5
         }
       },
@@ -149,11 +148,11 @@
     "getTimezoneOffset": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 60,
           "column": 4
         },
         "end": {
-          "line": 65,
+          "line": 62,
           "column": 5
         }
       },
@@ -163,11 +162,11 @@
     "getTime": {
       "location": {
         "start": {
-          "line": 67,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 69,
+          "line": 66,
           "column": 5
         }
       },
@@ -262,6 +261,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -286,6 +286,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

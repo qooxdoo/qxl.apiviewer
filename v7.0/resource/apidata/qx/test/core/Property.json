@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 969,
+        "line": 1065,
         "column": 3
       }
     },
@@ -41,11 +41,11 @@
     "testBasic": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 48,
+          "line": 45,
           "column": 5
         }
       },
@@ -55,11 +55,11 @@
     "testBuiltinTypes": {
       "location": {
         "start": {
-          "line": 51,
+          "line": 47,
           "column": 4
         },
         "end": {
-          "line": 100,
+          "line": 137,
           "column": 5
         }
       },
@@ -69,11 +69,11 @@
     "testInheritance": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 139,
           "column": 4
         },
         "end": {
-          "line": 153,
+          "line": 188,
           "column": 5
         }
       },
@@ -83,11 +83,11 @@
     "testParent": {
       "location": {
         "start": {
-          "line": 156,
+          "line": 190,
           "column": 4
         },
         "end": {
-          "line": 190,
+          "line": 223,
           "column": 5
         }
       },
@@ -97,11 +97,11 @@
     "testMultiValues": {
       "location": {
         "start": {
-          "line": 193,
+          "line": 225,
           "column": 4
         },
         "end": {
-          "line": 229,
+          "line": 265,
           "column": 5
         }
       },
@@ -111,11 +111,11 @@
     "testInitApply": {
       "location": {
         "start": {
-          "line": 232,
+          "line": 267,
           "column": 4
         },
         "end": {
-          "line": 256,
+          "line": 290,
           "column": 5
         }
       },
@@ -125,11 +125,11 @@
     "testInit": {
       "location": {
         "start": {
-          "line": 259,
+          "line": 292,
           "column": 4
         },
         "end": {
-          "line": 275,
+          "line": 306,
           "column": 5
         }
       },
@@ -139,11 +139,11 @@
     "testDefinesThanSubClassWithInterface": {
       "location": {
         "start": {
-          "line": 277,
+          "line": 308,
           "column": 4
         },
         "end": {
-          "line": 312,
+          "line": 339,
           "column": 5
         }
       },
@@ -153,11 +153,11 @@
     "testPropertyNamedClassname": {
       "location": {
         "start": {
-          "line": 315,
+          "line": 341,
           "column": 4
         },
         "end": {
-          "line": 325,
+          "line": 350,
           "column": 5
         }
       },
@@ -167,35 +167,7 @@
     "testWrongPropertyDefinitions": {
       "location": {
         "start": {
-          "line": 328,
-          "column": 4
-        },
-        "end": {
-          "line": 406,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testRecursive": {
-      "location": {
-        "start": {
-          "line": 408,
-          "column": 4
-        },
-        "end": {
-          "line": 443,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testEventWithInitOldData": {
-      "location": {
-        "start": {
-          "line": 446,
+          "line": 352,
           "column": 4
         },
         "end": {
@@ -206,14 +178,42 @@
       "type": "function",
       "access": "public"
     },
-    "testEventWithoutInitOldData": {
+    "testRecursive": {
       "location": {
         "start": {
-          "line": 480,
+          "line": 479,
           "column": 4
         },
         "end": {
-          "line": 511,
+          "line": 508,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testEventWithInitOldData": {
+      "location": {
+        "start": {
+          "line": 510,
+          "column": 4
+        },
+        "end": {
+          "line": 544,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testEventWithoutInitOldData": {
+      "location": {
+        "start": {
+          "line": 546,
+          "column": 4
+        },
+        "end": {
+          "line": 580,
           "column": 5
         }
       },
@@ -223,11 +223,11 @@
     "testEventWithInitAndInheritableOldData": {
       "location": {
         "start": {
-          "line": 514,
+          "line": 582,
           "column": 4
         },
         "end": {
-          "line": 546,
+          "line": 617,
           "column": 5
         }
       },
@@ -237,11 +237,11 @@
     "testEventWithoutInitAndInheritableOldData": {
       "location": {
         "start": {
-          "line": 549,
+          "line": 619,
           "column": 4
         },
         "end": {
-          "line": 581,
+          "line": 654,
           "column": 5
         }
       },
@@ -251,11 +251,11 @@
     "__isNegativeZero": {
       "location": {
         "start": {
-          "line": 596,
+          "line": 668,
           "column": 4
         },
         "end": {
-          "line": 598,
+          "line": 670,
           "column": 5
         }
       },
@@ -290,11 +290,11 @@
     "__isPositiveZero": {
       "location": {
         "start": {
-          "line": 607,
+          "line": 678,
           "column": 4
         },
         "end": {
-          "line": 609,
+          "line": 680,
           "column": 5
         }
       },
@@ -329,11 +329,11 @@
     "testWrongIsEqualDefinitions": {
       "location": {
         "start": {
-          "line": 612,
+          "line": 682,
           "column": 4
         },
         "end": {
-          "line": 652,
+          "line": 723,
           "column": 5
         }
       },
@@ -343,11 +343,11 @@
     "testIsEqualInline": {
       "location": {
         "start": {
-          "line": 655,
+          "line": 725,
           "column": 4
         },
         "end": {
-          "line": 696,
+          "line": 777,
           "column": 5
         }
       },
@@ -357,11 +357,11 @@
     "testIsEqualFunction": {
       "location": {
         "start": {
-          "line": 699,
+          "line": 779,
           "column": 4
         },
         "end": {
-          "line": 740,
+          "line": 833,
           "column": 5
         }
       },
@@ -371,11 +371,11 @@
     "testIsEqualMember": {
       "location": {
         "start": {
-          "line": 743,
+          "line": 835,
           "column": 4
         },
         "end": {
-          "line": 789,
+          "line": 893,
           "column": 5
         }
       },
@@ -385,11 +385,11 @@
     "testIsEqualInlineContext": {
       "location": {
         "start": {
-          "line": 792,
+          "line": 895,
           "column": 4
         },
         "end": {
-          "line": 818,
+          "line": 921,
           "column": 5
         }
       },
@@ -399,11 +399,11 @@
     "testIsEqualFunctionContext": {
       "location": {
         "start": {
-          "line": 821,
+          "line": 923,
           "column": 4
         },
         "end": {
-          "line": 844,
+          "line": 945,
           "column": 5
         }
       },
@@ -413,11 +413,11 @@
     "testIsEqualMemberContext": {
       "location": {
         "start": {
-          "line": 847,
+          "line": 947,
           "column": 4
         },
         "end": {
-          "line": 873,
+          "line": 973,
           "column": 5
         }
       },
@@ -427,11 +427,11 @@
     "testIsEqualBaseClassMember": {
       "location": {
         "start": {
-          "line": 876,
+          "line": 975,
           "column": 4
         },
         "end": {
-          "line": 905,
+          "line": 1004,
           "column": 5
         }
       },
@@ -441,11 +441,11 @@
     "testTransform": {
       "location": {
         "start": {
-          "line": 908,
+          "line": 1006,
           "column": 4
         },
         "end": {
-          "line": 965,
+          "line": 1063,
           "column": 5
         }
       },
@@ -540,6 +540,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -564,6 +565,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

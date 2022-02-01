@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 76,
+        "line": 66,
         "column": 3
       }
     },
@@ -23,26 +23,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 23,
-        "column": 14
+        "line": 22,
+        "column": 2
       },
       "end": {
-        "line": 27,
+        "line": 25,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "properties": {
     "enabled": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 32,
-          "column": 36
+          "line": 28,
+          "column": 34
         }
       },
       "name": "enabled",
@@ -52,11 +51,11 @@
     "width_": {
       "location": {
         "start": {
-          "line": 34,
+          "line": 30,
           "column": 4
         },
         "end": {
-          "line": 38,
+          "line": 33,
           "column": 5
         }
       },
@@ -68,11 +67,11 @@
     "height_": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 44,
+          "line": 38,
           "column": 5
         }
       },
@@ -84,11 +83,11 @@
     "left_": {
       "location": {
         "start": {
-          "line": 46,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 50,
+          "line": 43,
           "column": 5
         }
       },
@@ -100,11 +99,11 @@
     "top_": {
       "location": {
         "start": {
-          "line": 52,
+          "line": 45,
           "column": 4
         },
         "end": {
-          "line": 56,
+          "line": 48,
           "column": 5
         }
       },
@@ -150,11 +149,11 @@
     "add": {
       "location": {
         "start": {
-          "line": 61,
+          "line": 52,
           "column": 4
         },
         "end": {
-          "line": 66,
+          "line": 56,
           "column": 5
         }
       },
@@ -164,11 +163,11 @@
     "_getChildren": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 58,
           "column": 4
         },
         "end": {
-          "line": 70,
+          "line": 60,
           "column": 5
         }
       },
@@ -178,11 +177,11 @@
     "getLayoutParent": {
       "location": {
         "start": {
-          "line": 72,
+          "line": 62,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 64,
           "column": 5
         }
       },
@@ -277,6 +276,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -301,6 +301,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

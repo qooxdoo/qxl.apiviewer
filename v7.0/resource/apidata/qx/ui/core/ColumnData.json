@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 119,
+        "line": 101,
         "column": 3
       }
     },
@@ -30,26 +30,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 31,
-        "column": 14
+        "line": 29,
+        "column": 2
       },
       "end": {
-        "line": 35,
+        "line": 32,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "members": {
     "__computedWidth": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 40,
-          "column": 26
+          "line": 35,
+          "column": 25
         }
       },
       "type": "variable",
@@ -58,11 +57,11 @@
     "renderLayout": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 46,
+          "line": 40,
           "column": 5
         }
       },
@@ -77,11 +76,11 @@
     "getComputedWidth": {
       "location": {
         "start": {
-          "line": 53,
+          "line": 46,
           "column": 4
         },
         "end": {
-          "line": 55,
+          "line": 48,
           "column": 5
         }
       },
@@ -107,11 +106,11 @@
     "getFlex": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 55,
           "column": 4
         },
         "end": {
-          "line": 66,
+          "line": 57,
           "column": 5
         }
       },
@@ -137,11 +136,11 @@
     "setColumnWidth": {
       "location": {
         "start": {
-          "line": 81,
+          "line": 71,
           "column": 4
         },
         "end": {
-          "line": 112,
+          "line": 95,
           "column": 5
         }
       },
@@ -265,6 +264,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -289,6 +289,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

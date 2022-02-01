@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 90,
+        "line": 85,
         "column": 3
       }
     },
@@ -26,11 +26,11 @@
     "testGroupManager": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 66,
+          "line": 63,
           "column": 5
         }
       },
@@ -40,11 +40,11 @@
     "test: add and remove group": {
       "location": {
         "start": {
-          "line": 69,
+          "line": 65,
           "column": 4
         },
         "end": {
-          "line": 88,
+          "line": 83,
           "column": 5
         }
       },
@@ -731,6 +731,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -755,6 +756,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

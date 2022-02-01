@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 19,
+        "line": 17,
         "column": 3
       }
     }
@@ -23,11 +23,11 @@
     "_applyOldProperty": {
       "location": {
         "start": {
-          "line": 7,
+          "line": 5,
           "column": 4
         },
         "end": {
-          "line": 11,
+          "line": 9,
           "column": 5
         }
       },
@@ -41,11 +41,11 @@
     "_applyNewProperty": {
       "location": {
         "start": {
-          "line": 13,
+          "line": 11,
           "column": 4
         },
         "end": {
-          "line": 17,
+          "line": 15,
           "column": 5
         }
       },
@@ -145,6 +145,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -169,6 +170,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

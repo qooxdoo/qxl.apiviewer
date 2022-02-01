@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 126,
+        "line": 130,
         "column": 3
       }
     },
@@ -31,11 +31,11 @@
     "PROPERTIES": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 31,
+          "line": 30,
           "column": 5
         }
       },
@@ -46,11 +46,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 40,
-        "column": 14
+        "line": 39,
+        "column": 2
       },
       "end": {
-        "line": 73,
+        "line": 72,
         "column": 3
       }
     },
@@ -98,6 +98,20 @@
     "_type": {
       "location": {
         "start": {
+          "line": 75,
+          "column": 4
+        },
+        "end": {
+          "line": 75,
+          "column": 15
+        }
+      },
+      "type": "variable",
+      "access": "protected"
+    },
+    "_event": {
+      "location": {
+        "start": {
           "line": 76,
           "column": 4
         },
@@ -109,28 +123,14 @@
       "type": "variable",
       "access": "protected"
     },
-    "_event": {
-      "location": {
-        "start": {
-          "line": 77,
-          "column": 4
-        },
-        "end": {
-          "line": 77,
-          "column": 17
-        }
-      },
-      "type": "variable",
-      "access": "protected"
-    },
     "_createEvent": {
       "location": {
         "start": {
-          "line": 84,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 95,
           "column": 5
         }
       },
@@ -156,11 +156,11 @@
     "_initEvent": {
       "location": {
         "start": {
-          "line": 105,
+          "line": 103,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 128,
           "column": 5
         }
       },

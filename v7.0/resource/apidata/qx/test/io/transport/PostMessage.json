@@ -45,11 +45,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 30,
           "column": 4
         },
         "end": {
-          "line": 42,
+          "line": 44,
           "column": 5
         }
       },
@@ -59,7 +59,7 @@
     "test: send message to worker and check response": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 46,
           "column": 4
         },
         "end": {
@@ -158,6 +158,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -182,6 +183,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

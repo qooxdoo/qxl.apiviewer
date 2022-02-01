@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 60,
+        "line": 64,
         "column": 3
       }
     },
@@ -26,11 +26,11 @@
     "testDebounce": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 39,
+          "line": 40,
           "column": 5
         }
       },
@@ -40,11 +40,11 @@
     "testImmediateDebounce": {
       "location": {
         "start": {
-          "line": 41,
+          "line": 42,
           "column": 4
         },
         "end": {
-          "line": 58,
+          "line": 62,
           "column": 5
         }
       },
@@ -731,6 +731,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -755,6 +756,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

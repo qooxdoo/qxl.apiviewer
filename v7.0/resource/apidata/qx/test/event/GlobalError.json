@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 284,
+        "line": 256,
         "column": 3
       }
     },
@@ -26,11 +26,11 @@
     "hasGlobalErrorHandling": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 29,
+          "line": 26,
           "column": 5
         }
       },
@@ -40,11 +40,11 @@
     "hasNoGlobalErrorHandling": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 34,
+          "line": 30,
           "column": 5
         }
       },
@@ -54,11 +54,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 37,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 44,
+          "line": 38,
           "column": 5
         }
       },
@@ -68,11 +68,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 47,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 53,
+          "line": 45,
           "column": 5
         }
       },
@@ -82,11 +82,11 @@
     "onError": {
       "location": {
         "start": {
-          "line": 56,
+          "line": 47,
           "column": 4
         },
         "end": {
-          "line": 61,
+          "line": 51,
           "column": 5
         }
       },
@@ -96,11 +96,11 @@
     "testObserveMethod": {
       "location": {
         "start": {
-          "line": 64,
+          "line": 53,
           "column": 4
         },
         "end": {
-          "line": 76,
+          "line": 64,
           "column": 5
         }
       },
@@ -110,11 +110,11 @@
     "testDontWrapIfSettingIsOff": {
       "location": {
         "start": {
-          "line": 79,
+          "line": 66,
           "column": 4
         },
         "end": {
-          "line": 87,
+          "line": 73,
           "column": 5
         }
       },
@@ -124,11 +124,11 @@
     "testWrappedParameterAndReturnValue": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 75,
           "column": 4
         },
         "end": {
-          "line": 104,
+          "line": 85,
           "column": 5
         }
       },
@@ -138,11 +138,11 @@
     "testObserveMethodButNoHandler": {
       "location": {
         "start": {
-          "line": 107,
+          "line": 87,
           "column": 4
         },
         "end": {
-          "line": 122,
+          "line": 101,
           "column": 5
         }
       },
@@ -152,11 +152,11 @@
     "testHandlerContext": {
       "location": {
         "start": {
-          "line": 125,
+          "line": 103,
           "column": 4
         },
         "end": {
-          "line": 143,
+          "line": 120,
           "column": 5
         }
       },
@@ -166,11 +166,11 @@
     "testHandleError": {
       "location": {
         "start": {
-          "line": 146,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 155,
+          "line": 130,
           "column": 5
         }
       },
@@ -180,11 +180,11 @@
     "testOnWindowError": {
       "location": {
         "start": {
-          "line": 158,
+          "line": 132,
           "column": 4
         },
         "end": {
-          "line": 208,
+          "line": 182,
           "column": 5
         }
       },
@@ -194,11 +194,11 @@
     "testOnWindowErrorWrapped": {
       "location": {
         "start": {
-          "line": 211,
+          "line": 184,
           "column": 4
         },
         "end": {
-          "line": 282,
+          "line": 254,
           "column": 5
         }
       },
@@ -764,6 +764,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -788,6 +789,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

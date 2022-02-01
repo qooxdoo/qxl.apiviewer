@@ -11,11 +11,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 32,
+        "line": 31,
         "column": 0
       },
       "end": {
-        "line": 171,
+        "line": 182,
         "column": 3
       }
     },
@@ -32,11 +32,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 43,
-        "column": 13
+        "line": 40,
+        "column": 2
       },
       "end": {
-        "line": 48,
+        "line": 44,
         "column": 3
       }
     },
@@ -62,12 +62,12 @@
     "message": {
       "location": {
         "start": {
-          "line": 54,
+          "line": 48,
           "column": 4
         },
         "end": {
-          "line": 54,
-          "column": 35
+          "line": 48,
+          "column": 33
         }
       },
       "jsdoc": {
@@ -84,12 +84,12 @@
     "error": {
       "location": {
         "start": {
-          "line": 57,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 57,
-          "column": 33
+          "line": 51,
+          "column": 31
         }
       },
       "jsdoc": {
@@ -108,12 +108,12 @@
     "_worker": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 55,
           "column": 4
         },
         "end": {
-          "line": 63,
-          "column": 18
+          "line": 55,
+          "column": 17
         }
       },
       "type": "variable",
@@ -122,12 +122,12 @@
     "_handleErrorBound": {
       "location": {
         "start": {
-          "line": 64,
+          "line": 56,
           "column": 4
         },
         "end": {
-          "line": 64,
-          "column": 28
+          "line": 56,
+          "column": 27
         }
       },
       "type": "variable",
@@ -136,12 +136,12 @@
     "_handleMessageBound": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 57,
           "column": 4
         },
         "end": {
-          "line": 65,
-          "column": 30
+          "line": 57,
+          "column": 29
         }
       },
       "type": "variable",
@@ -150,12 +150,12 @@
     "__isNative": {
       "location": {
         "start": {
-          "line": 67,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 67,
-          "column": 21
+          "line": 59,
+          "column": 20
         }
       },
       "type": "variable",
@@ -164,12 +164,12 @@
     "__fake": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 60,
           "column": 4
         },
         "end": {
-          "line": 68,
-          "column": 17
+          "line": 60,
+          "column": 16
         }
       },
       "type": "variable",
@@ -178,11 +178,11 @@
     "__initNative": {
       "location": {
         "start": {
-          "line": 76,
+          "line": 66,
           "column": 4
         },
         "end": {
-          "line": 83,
+          "line": 86,
           "column": 5
         }
       },
@@ -209,11 +209,11 @@
     "__initFake": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 112,
+          "line": 119,
           "column": 5
         }
       },
@@ -246,11 +246,11 @@
     "postMessage": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 125,
           "column": 4
         },
         "end": {
-          "line": 133,
+          "line": 139,
           "column": 5
         }
       },
@@ -277,11 +277,11 @@
     "_handleMessage": {
       "location": {
         "start": {
-          "line": 140,
+          "line": 145,
           "column": 4
         },
         "end": {
-          "line": 142,
+          "line": 147,
           "column": 5
         }
       },
@@ -308,11 +308,11 @@
     "_handleError": {
       "location": {
         "start": {
-          "line": 149,
+          "line": 153,
           "column": 4
         },
         "end": {
-          "line": 151,
+          "line": 155,
           "column": 5
         }
       },
@@ -389,69 +389,6 @@
             "body": "{var} Returns the internal id for that binding. This can be used\n   for referencing the binding e.g. for removing. This is not an atomic\n   id so you can't you use it as a hash-map index.",
             "type": "var",
             "description": " Returns the internal id for that binding. This can be used\n   for referencing the binding e.g. for removing. This is not an atomic\n   id so you can't you use it as a hash-map index."
-          }
-        ],
-        "@throws": [
-          {
-            "name": "@throws",
-            "body": "{qx.core.AssertionError} If the event is no data event or\n   there is no property definition for object and property (source and\n   target).",
-            "type": "qx.core.AssertionError",
-            "description": " If the event is no data event or\n   there is no property definition for object and property (source and\n   target)."
-          }
-        ]
-      }
-    },
-    "bindAsync": {
-      "type": "function",
-      "name": "bindAsync",
-      "abstract": false,
-      "mixin": true,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.data.MBinding",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>The bind method delegates the call to the\n {@link qx.data.SingleValueBinding#bind} function. As source, the current\n object (this) will be used.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "sourcePropertyChain {String} The property chain which represents\n   the source property.",
-            "paramName": "sourcePropertyChain",
-            "description": " The property chain which represents\n   the source property.",
-            "type": "String"
-          },
-          {
-            "name": "@param",
-            "body": "targetObject {qx.core.Object} The object which the source should\n   be bind to.",
-            "paramName": "targetObject",
-            "description": " The object which the source should\n   be bind to.",
-            "type": "qx.core.Object"
-          },
-          {
-            "name": "@param",
-            "body": "targetProperty {String} The property name of the target object.",
-            "paramName": "targetProperty",
-            "description": " The property name of the target object.",
-            "type": "String"
-          },
-          {
-            "name": "@param",
-            "body": "options {Map} A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
-            "paramName": "options",
-            "description": " A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
-            "type": "Map"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.Promise} A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index.",
-            "type": "qx.Promise",
-            "description": " A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index."
           }
         ],
         "@throws": [
@@ -1902,6 +1839,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1925,6 +1863,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -3612,15 +3551,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 155,
-        "column": 13
+        "line": 158,
+        "column": 2
       },
       "end": {
-        "line": 170,
+        "line": 181,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

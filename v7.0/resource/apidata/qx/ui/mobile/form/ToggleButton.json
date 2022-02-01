@@ -22,7 +22,7 @@
         "column": 0
       },
       "end": {
-        "line": 222,
+        "line": 199,
         "column": 3
       }
     },
@@ -39,11 +39,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 62,
-        "column": 14
+        "line": 57,
+        "column": 2
       },
       "end": {
-        "line": 85,
+        "line": 79,
         "column": 3
       }
     },
@@ -89,11 +89,11 @@
     "defaultCssClass": {
       "location": {
         "start": {
-          "line": 91,
+          "line": 83,
           "column": 4
         },
         "end": {
-          "line": 95,
+          "line": 86,
           "column": 5
         }
       },
@@ -214,12 +214,12 @@
     "__switch": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 90,
           "column": 4
         },
         "end": {
-          "line": 101,
-          "column": 19
+          "line": 90,
+          "column": 18
         }
       },
       "type": "variable",
@@ -228,12 +228,12 @@
     "__value": {
       "location": {
         "start": {
-          "line": 102,
+          "line": 91,
           "column": 4
         },
         "end": {
-          "line": 102,
-          "column": 19
+          "line": 91,
+          "column": 18
         }
       },
       "type": "variable",
@@ -242,12 +242,12 @@
     "__labelUnchecked": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 92,
           "column": 4
         },
         "end": {
-          "line": 103,
-          "column": 28
+          "line": 92,
+          "column": 27
         }
       },
       "type": "variable",
@@ -256,12 +256,12 @@
     "__labelChecked": {
       "location": {
         "start": {
-          "line": 104,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 104,
-          "column": 25
+          "line": 93,
+          "column": 24
         }
       },
       "type": "variable",
@@ -270,12 +270,12 @@
     "__lastToggleTimestamp": {
       "location": {
         "start": {
-          "line": 105,
+          "line": 94,
           "column": 4
         },
         "end": {
-          "line": 105,
-          "column": 29
+          "line": 94,
+          "column": 28
         }
       },
       "type": "variable",
@@ -284,11 +284,11 @@
     "_getChild": {
       "location": {
         "start": {
-          "line": 113,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 103,
           "column": 5
         }
       },
@@ -314,11 +314,11 @@
     "_createSwitch": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 109,
           "column": 4
         },
         "end": {
-          "line": 126,
+          "line": 113,
           "column": 5
         }
       },
@@ -344,11 +344,11 @@
     "_setValue": {
       "location": {
         "start": {
-          "line": 134,
+          "line": 120,
           "column": 4
         },
         "end": {
-          "line": 145,
+          "line": 130,
           "column": 5
         }
       },
@@ -375,11 +375,11 @@
     "_getValue": {
       "location": {
         "start": {
-          "line": 152,
+          "line": 137,
           "column": 4
         },
         "end": {
-          "line": 154,
+          "line": 139,
           "column": 5
         }
       },
@@ -405,11 +405,11 @@
     "toggle": {
       "location": {
         "start": {
-          "line": 160,
+          "line": 144,
           "column": 4
         },
         "end": {
-          "line": 162,
+          "line": 146,
           "column": 5
         }
       },
@@ -427,11 +427,11 @@
     "_onTap": {
       "location": {
         "start": {
-          "line": 171,
+          "line": 154,
           "column": 4
         },
         "end": {
-          "line": 176,
+          "line": 158,
           "column": 5
         }
       },
@@ -458,11 +458,11 @@
     "_onSwipe": {
       "location": {
         "start": {
-          "line": 185,
+          "line": 166,
           "column": 4
         },
         "end": {
-          "line": 199,
+          "line": 179,
           "column": 5
         }
       },
@@ -489,11 +489,11 @@
     "_checkLastPointerTime": {
       "location": {
         "start": {
-          "line": 207,
+          "line": 186,
           "column": 4
         },
         "end": {
-          "line": 211,
+          "line": 190,
           "column": 5
         }
       },
@@ -1257,38 +1257,6 @@
       "overriddenFrom": "qx.ui.form.MForm",
       "jsdoc": {}
     },
-    "__onChangeLocale": {
-      "type": "function",
-      "name": "__onChangeLocale",
-      "abstract": false,
-      "mixin": true,
-      "inherited": true,
-      "access": "private",
-      "overriddenFrom": "qx.ui.form.MForm",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Locale change event handler</p>"
-          }
-        ],
-        "@signature": [
-          {
-            "name": "@signature",
-            "body": "function(e)"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {Event} the change event",
-            "paramName": "e",
-            "description": " the change event",
-            "type": "Event"
-          }
-        ]
-      }
-    },
     "isValid": {
       "type": "function",
       "name": "isValid",
@@ -1628,6 +1596,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1652,6 +1621,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -2670,15 +2640,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 215,
-        "column": 13
+        "line": 193,
+        "column": 2
       },
       "end": {
-        "line": 221,
+        "line": 198,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {
     "changeValue": {

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 212,
+        "line": 234,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "__formWidget": {
       "location": {
         "start": {
-          "line": 24,
+          "line": 22,
           "column": 4
         },
         "end": {
-          "line": 24,
+          "line": 22,
           "column": 22
         }
       },
@@ -38,11 +38,11 @@
     "__label": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 25,
+          "line": 23,
           "column": 17
         }
       },
@@ -52,11 +52,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 30,
+          "line": 27,
           "column": 5
         }
       },
@@ -70,11 +70,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 36,
+          "line": 32,
           "column": 5
         }
       },
@@ -88,11 +88,11 @@
     "__testEnabled": {
       "location": {
         "start": {
-          "line": 39,
+          "line": 34,
           "column": 4
         },
         "end": {
-          "line": 59,
+          "line": 72,
           "column": 5
         }
       },
@@ -102,11 +102,11 @@
     "__testEnabledRemove": {
       "location": {
         "start": {
-          "line": 62,
+          "line": 74,
           "column": 4
         },
         "end": {
-          "line": 80,
+          "line": 106,
           "column": 5
         }
       },
@@ -116,11 +116,11 @@
     "__testFocus": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 98,
+          "line": 127,
           "column": 5
         }
       },
@@ -130,11 +130,11 @@
     "__testFocusRemove": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 129,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 160,
           "column": 5
         }
       },
@@ -144,11 +144,11 @@
     "testEnabledRemoveTextField": {
       "location": {
         "start": {
-          "line": 127,
+          "line": 162,
           "column": 4
         },
         "end": {
-          "line": 130,
+          "line": 165,
           "column": 5
         }
       },
@@ -158,11 +158,11 @@
     "testEnabledTextField": {
       "location": {
         "start": {
-          "line": 133,
+          "line": 167,
           "column": 4
         },
         "end": {
-          "line": 136,
+          "line": 170,
           "column": 5
         }
       },
@@ -172,11 +172,11 @@
     "testEnabledRemoveSpinner": {
       "location": {
         "start": {
-          "line": 139,
+          "line": 172,
           "column": 4
         },
         "end": {
-          "line": 142,
+          "line": 175,
           "column": 5
         }
       },
@@ -186,11 +186,11 @@
     "testEnabledSpinner": {
       "location": {
         "start": {
-          "line": 145,
+          "line": 177,
           "column": 4
         },
         "end": {
-          "line": 148,
+          "line": 180,
           "column": 5
         }
       },
@@ -200,11 +200,11 @@
     "testEnabledRemoveCheckBox": {
       "location": {
         "start": {
-          "line": 151,
+          "line": 182,
           "column": 4
         },
         "end": {
-          "line": 154,
+          "line": 185,
           "column": 5
         }
       },
@@ -212,76 +212,6 @@
       "access": "public"
     },
     "testEnabledCheckBox": {
-      "location": {
-        "start": {
-          "line": 157,
-          "column": 4
-        },
-        "end": {
-          "line": 160,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testFocusTextField": {
-      "location": {
-        "start": {
-          "line": 163,
-          "column": 4
-        },
-        "end": {
-          "line": 166,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testFocusSpinner": {
-      "location": {
-        "start": {
-          "line": 169,
-          "column": 4
-        },
-        "end": {
-          "line": 172,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testFocusCheckBox": {
-      "location": {
-        "start": {
-          "line": 175,
-          "column": 4
-        },
-        "end": {
-          "line": 178,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testFocusRemoveTextField": {
-      "location": {
-        "start": {
-          "line": 181,
-          "column": 4
-        },
-        "end": {
-          "line": 184,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testFocusRemoveSpinner": {
       "location": {
         "start": {
           "line": 187,
@@ -295,14 +225,84 @@
       "type": "function",
       "access": "public"
     },
-    "testFocusRemoveCheckBox": {
+    "testFocusTextField": {
       "location": {
         "start": {
-          "line": 193,
+          "line": 192,
           "column": 4
         },
         "end": {
-          "line": 196,
+          "line": 195,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testFocusSpinner": {
+      "location": {
+        "start": {
+          "line": 197,
+          "column": 4
+        },
+        "end": {
+          "line": 200,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testFocusCheckBox": {
+      "location": {
+        "start": {
+          "line": 202,
+          "column": 4
+        },
+        "end": {
+          "line": 205,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testFocusRemoveTextField": {
+      "location": {
+        "start": {
+          "line": 207,
+          "column": 4
+        },
+        "end": {
+          "line": 210,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testFocusRemoveSpinner": {
+      "location": {
+        "start": {
+          "line": 212,
+          "column": 4
+        },
+        "end": {
+          "line": 215,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testFocusRemoveCheckBox": {
+      "location": {
+        "start": {
+          "line": 217,
+          "column": 4
+        },
+        "end": {
+          "line": 220,
           "column": 5
         }
       },
@@ -312,11 +312,11 @@
     "testFocusNotFocusableTextField": {
       "location": {
         "start": {
-          "line": 199,
+          "line": 222,
           "column": 4
         },
         "end": {
-          "line": 205,
+          "line": 228,
           "column": 5
         }
       },
@@ -411,6 +411,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -435,6 +436,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -601,15 +603,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 209,
-        "column": 13
+        "line": 231,
+        "column": 2
       },
       "end": {
-        "line": 211,
+        "line": 233,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {},
   "descendants": []

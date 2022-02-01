@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 460,
+        "line": 407,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 42,
-        "column": 14
+        "line": 40,
+        "column": 2
       },
       "end": {
-        "line": 68,
+        "line": 53,
         "column": 3
       }
     },
@@ -81,12 +81,12 @@
     "__numericAllowed": {
       "location": {
         "start": {
-          "line": 74,
+          "line": 56,
           "column": 4
         },
         "end": {
-          "line": 74,
-          "column": 30
+          "line": 56,
+          "column": 26
         }
       },
       "type": "variable",
@@ -95,12 +95,12 @@
     "__betweenAllowed": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 57,
           "column": 4
         },
         "end": {
-          "line": 75,
-          "column": 30
+          "line": 57,
+          "column": 26
         }
       },
       "type": "variable",
@@ -109,12 +109,12 @@
     "__conditions": {
       "location": {
         "start": {
-          "line": 76,
+          "line": 58,
           "column": 4
         },
         "end": {
-          "line": 76,
-          "column": 30
+          "line": 58,
+          "column": 22
         }
       },
       "type": "variable",
@@ -123,12 +123,12 @@
     "__defaultTextAlign": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 77,
-          "column": 30
+          "line": 59,
+          "column": 28
         }
       },
       "type": "variable",
@@ -137,12 +137,12 @@
     "__defaultColor": {
       "location": {
         "start": {
-          "line": 78,
+          "line": 60,
           "column": 4
         },
         "end": {
-          "line": 78,
-          "column": 30
+          "line": 60,
+          "column": 24
         }
       },
       "type": "variable",
@@ -151,12 +151,12 @@
     "__defaultFontStyle": {
       "location": {
         "start": {
-          "line": 79,
+          "line": 61,
           "column": 4
         },
         "end": {
-          "line": 79,
-          "column": 30
+          "line": 61,
+          "column": 28
         }
       },
       "type": "variable",
@@ -165,12 +165,12 @@
     "__defaultFontWeight": {
       "location": {
         "start": {
-          "line": 80,
+          "line": 62,
           "column": 4
         },
         "end": {
-          "line": 80,
-          "column": 30
+          "line": 62,
+          "column": 29
         }
       },
       "type": "variable",
@@ -179,11 +179,11 @@
     "__applyFormatting": {
       "location": {
         "start": {
-          "line": 91,
+          "line": 73,
           "column": 4
         },
         "end": {
-          "line": 112,
+          "line": 89,
           "column": 5
         }
       },
@@ -217,11 +217,11 @@
     "addNumericCondition": {
       "location": {
         "start": {
-          "line": 152,
+          "line": 128,
           "column": 4
         },
         "end": {
-          "line": 171,
+          "line": 150,
           "column": 5
         }
       },
@@ -298,11 +298,11 @@
     "addBetweenCondition": {
       "location": {
         "start": {
-          "line": 214,
+          "line": 192,
           "column": 4
         },
         "end": {
-          "line": 235,
+          "line": 220,
           "column": 5
         }
       },
@@ -386,11 +386,11 @@
     "addRegex": {
       "location": {
         "start": {
-          "line": 270,
+          "line": 254,
           "column": 4
         },
         "end": {
-          "line": 287,
+          "line": 268,
           "column": 5
         }
       },
@@ -460,11 +460,11 @@
     "_getCellStyle": {
       "location": {
         "start": {
-          "line": 303,
+          "line": 283,
           "column": 4
         },
         "end": {
-          "line": 454,
+          "line": 401,
           "column": 5
         }
       },
@@ -588,6 +588,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -612,6 +613,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -640,15 +642,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 457,
-        "column": 13
+        "line": 404,
+        "column": 2
       },
       "end": {
-        "line": 459,
+        "line": 406,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

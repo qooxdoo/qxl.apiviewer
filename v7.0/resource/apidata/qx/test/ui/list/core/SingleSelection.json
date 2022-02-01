@@ -24,11 +24,11 @@
     "createModelData": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 34,
+          "line": 31,
           "column": 5
         }
       },
@@ -42,11 +42,11 @@
     "testSelection": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 53,
+          "line": 49,
           "column": 5
         }
       },
@@ -56,11 +56,11 @@
     "testInvalidSelection": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 73,
+          "line": 68,
           "column": 5
         }
       },
@@ -70,11 +70,11 @@
     "testSelectionByUserInteraction": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 70,
           "column": 4
         },
         "end": {
-          "line": 85,
+          "line": 79,
           "column": 5
         }
       },
@@ -84,11 +84,11 @@
     "testSelectionEventByUserInteraction": {
       "location": {
         "start": {
-          "line": 87,
+          "line": 81,
           "column": 4
         },
         "end": {
-          "line": 105,
+          "line": 98,
           "column": 5
         }
       },
@@ -98,11 +98,11 @@
     "testSelectionWithSorter": {
       "location": {
         "start": {
-          "line": 107,
+          "line": 100,
           "column": 4
         },
         "end": {
-          "line": 116,
+          "line": 108,
           "column": 5
         }
       },
@@ -112,11 +112,11 @@
     "testSelectionWithFilter": {
       "location": {
         "start": {
-          "line": 118,
+          "line": 110,
           "column": 4
         },
         "end": {
-          "line": 140,
+          "line": 132,
           "column": 5
         }
       },
@@ -126,11 +126,11 @@
     "testInvalidSelectionWithFilter": {
       "location": {
         "start": {
-          "line": 142,
+          "line": 134,
           "column": 4
         },
         "end": {
-          "line": 160,
+          "line": 152,
           "column": 5
         }
       },
@@ -140,11 +140,11 @@
     "testApplyFilterAfterSelection": {
       "location": {
         "start": {
-          "line": 162,
+          "line": 154,
           "column": 4
         },
         "end": {
-          "line": 181,
+          "line": 174,
           "column": 5
         }
       },
@@ -154,11 +154,11 @@
     "testApplySortingAfterSelection": {
       "location": {
         "start": {
-          "line": 183,
+          "line": 176,
           "column": 4
         },
         "end": {
-          "line": 214,
+          "line": 216,
           "column": 5
         }
       },
@@ -168,11 +168,11 @@
     "testRemoveItem": {
       "location": {
         "start": {
-          "line": 216,
+          "line": 218,
           "column": 4
         },
         "end": {
-          "line": 231,
+          "line": 232,
           "column": 5
         }
       },
@@ -182,7 +182,7 @@
     "testRemoveItemWithGrouping": {
       "location": {
         "start": {
-          "line": 233,
+          "line": 234,
           "column": 4
         },
         "end": {
@@ -281,6 +281,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -305,6 +306,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

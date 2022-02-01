@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 205,
+        "line": 194,
         "column": 3
       }
     },
@@ -26,12 +26,12 @@
     "__widget1": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 25,
-          "column": 20
+          "line": 23,
+          "column": 19
         }
       },
       "type": "variable",
@@ -40,12 +40,12 @@
     "__widget2": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 26,
-          "column": 20
+          "line": 24,
+          "column": 19
         }
       },
       "type": "variable",
@@ -54,12 +54,12 @@
     "__widget3": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 27,
-          "column": 20
+          "line": 25,
+          "column": 19
         }
       },
       "type": "variable",
@@ -68,12 +68,12 @@
     "__widget4": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 26,
           "column": 4
         },
         "end": {
-          "line": 28,
-          "column": 20
+          "line": 26,
+          "column": 19
         }
       },
       "type": "variable",
@@ -82,11 +82,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 43,
+          "line": 40,
           "column": 5
         }
       },
@@ -96,11 +96,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 46,
+          "line": 42,
           "column": 4
         },
         "end": {
-          "line": 52,
+          "line": 48,
           "column": 5
         }
       },
@@ -110,11 +110,11 @@
     "testWidgetOrder": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 50,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 68,
           "column": 5
         }
       },
@@ -124,11 +124,11 @@
     "testAppearanceOrder": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 70,
           "column": 4
         },
         "end": {
-          "line": 98,
+          "line": 93,
           "column": 5
         }
       },
@@ -138,11 +138,11 @@
     "testDisposeOrder": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 120,
+          "line": 113,
           "column": 5
         }
       },
@@ -152,11 +152,11 @@
     "testVisibilityOrder": {
       "location": {
         "start": {
-          "line": 123,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 142,
+          "line": 133,
           "column": 5
         }
       },
@@ -166,11 +166,11 @@
     "testWidgetAddJobs": {
       "location": {
         "start": {
-          "line": 145,
+          "line": 135,
           "column": 4
         },
         "end": {
-          "line": 176,
+          "line": 167,
           "column": 5
         }
       },
@@ -180,11 +180,11 @@
     "testWidgetRemoveJobs": {
       "location": {
         "start": {
-          "line": 178,
+          "line": 169,
           "column": 4
         },
         "end": {
-          "line": 203,
+          "line": 192,
           "column": 5
         }
       },
@@ -871,6 +871,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -895,6 +896,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

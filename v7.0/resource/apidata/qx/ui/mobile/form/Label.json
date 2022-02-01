@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 256,
+        "line": 253,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 59,
-        "column": 14
+        "line": 57,
+        "column": 2
       },
       "end": {
-        "line": 78,
+        "line": 82,
         "column": 3
       }
     },
@@ -62,7 +62,7 @@
     "defaultCssClass": {
       "location": {
         "start": {
-          "line": 91,
+          "line": 92,
           "column": 4
         },
         "end": {
@@ -84,11 +84,11 @@
     "value": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 100,
           "column": 4
         },
         "end": {
-          "line": 107,
+          "line": 105,
           "column": 5
         }
       },
@@ -110,11 +110,11 @@
     "anonymous": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 111,
           "column": 5
         }
       },
@@ -132,11 +132,11 @@
     "wrap": {
       "location": {
         "start": {
-          "line": 121,
+          "line": 116,
           "column": 4
         },
         "end": {
-          "line": 126,
+          "line": 120,
           "column": 5
         }
       },
@@ -160,12 +160,12 @@
     "__forWidget": {
       "location": {
         "start": {
-          "line": 140,
+          "line": 130,
           "column": 4
         },
         "end": {
-          "line": 140,
-          "column": 22
+          "line": 130,
+          "column": 21
         }
       },
       "type": "variable",
@@ -174,11 +174,11 @@
     "_getTagName": {
       "location": {
         "start": {
-          "line": 144,
+          "line": 133,
           "column": 4
         },
         "end": {
-          "line": 147,
+          "line": 135,
           "column": 5
         }
       },
@@ -193,11 +193,11 @@
     "_applyValue": {
       "location": {
         "start": {
-          "line": 151,
+          "line": 138,
           "column": 4
         },
         "end": {
-          "line": 160,
+          "line": 146,
           "column": 5
         }
       },
@@ -211,11 +211,11 @@
     "_applyWrap": {
       "location": {
         "start": {
-          "line": 164,
+          "line": 149,
           "column": 4
         },
         "end": {
-          "line": 171,
+          "line": 155,
           "column": 5
         }
       },
@@ -229,11 +229,11 @@
     "_changeEnabled": {
       "location": {
         "start": {
-          "line": 178,
+          "line": 161,
           "column": 4
         },
         "end": {
-          "line": 182,
+          "line": 165,
           "column": 5
         }
       },
@@ -260,11 +260,11 @@
     "setLabelFor": {
       "location": {
         "start": {
-          "line": 192,
+          "line": 174,
           "column": 4
         },
         "end": {
-          "line": 205,
+          "line": 196,
           "column": 5
         }
       },
@@ -291,11 +291,11 @@
     "_onTap": {
       "location": {
         "start": {
-          "line": 212,
+          "line": 202,
           "column": 4
         },
         "end": {
-          "line": 221,
+          "line": 213,
           "column": 5
         }
       },
@@ -322,11 +322,11 @@
     "_onChangeLocale": {
       "location": {
         "start": {
-          "line": 230,
+          "line": 221,
           "column": 4
         },
         "end": {
-          "line": 241,
+          "line": 230,
           "column": 6
         }
       },
@@ -353,7 +353,7 @@
           }
         ]
       },
-      "type": "function",
+      "type": "variable",
       "access": "protected"
     },
     "getQxOwner": {
@@ -444,6 +444,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -468,6 +469,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -1693,15 +1695,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 245,
-        "column": 13
+        "line": 233,
+        "column": 2
       },
       "end": {
-        "line": 255,
+        "line": 252,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {},
   "descendants": []

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 884,
+        "line": 1549,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "__a": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 22,
           "column": 4
         },
         "end": {
-          "line": 25,
+          "line": 22,
           "column": 13
         }
       },
@@ -38,7 +38,21 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 24,
+          "column": 4
+        },
+        "end": {
+          "line": 26,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "tearDown": {
+      "location": {
+        "start": {
+          "line": 28,
           "column": 4
         },
         "end": {
@@ -49,28 +63,14 @@
       "type": "function",
       "access": "public"
     },
-    "tearDown": {
-      "location": {
-        "start": {
-          "line": 33,
-          "column": 4
-        },
-        "end": {
-          "line": 36,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
     "testConstructor": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 73,
+          "line": 84,
           "column": 5
         }
       },
@@ -80,49 +80,7 @@
     "testGetItem": {
       "location": {
         "start": {
-          "line": 76,
-          "column": 4
-        },
-        "end": {
-          "line": 85,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testSetItem": {
-      "location": {
-        "start": {
-          "line": 88,
-          "column": 4
-        },
-        "end": {
-          "line": 93,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testJoin": {
-      "location": {
-        "start": {
-          "line": 96,
-          "column": 4
-        },
-        "end": {
-          "line": 98,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testReverse": {
-      "location": {
-        "start": {
-          "line": 101,
+          "line": 86,
           "column": 4
         },
         "end": {
@@ -133,14 +91,56 @@
       "type": "function",
       "access": "public"
     },
-    "testSort": {
+    "testSetItem": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 138,
+          "line": 132,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testJoin": {
+      "location": {
+        "start": {
+          "line": 134,
+          "column": 4
+        },
+        "end": {
+          "line": 140,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testReverse": {
+      "location": {
+        "start": {
+          "line": 142,
+          "column": 4
+        },
+        "end": {
+          "line": 178,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testSort": {
+      "location": {
+        "start": {
+          "line": 180,
+          "column": 4
+        },
+        "end": {
+          "line": 229,
           "column": 5
         }
       },
@@ -150,11 +150,11 @@
     "testConcat": {
       "location": {
         "start": {
-          "line": 141,
+          "line": 231,
           "column": 4
         },
         "end": {
-          "line": 149,
+          "line": 249,
           "column": 5
         }
       },
@@ -164,11 +164,11 @@
     "testSlice": {
       "location": {
         "start": {
-          "line": 152,
+          "line": 251,
           "column": 4
         },
         "end": {
-          "line": 165,
+          "line": 264,
           "column": 5
         }
       },
@@ -178,11 +178,11 @@
     "testReplace": {
       "location": {
         "start": {
-          "line": 168,
+          "line": 266,
           "column": 4
         },
         "end": {
-          "line": 184,
+          "line": 282,
           "column": 5
         }
       },
@@ -192,11 +192,11 @@
     "testPop": {
       "location": {
         "start": {
-          "line": 187,
+          "line": 284,
           "column": 4
         },
         "end": {
-          "line": 193,
+          "line": 290,
           "column": 5
         }
       },
@@ -206,11 +206,11 @@
     "testPush": {
       "location": {
         "start": {
-          "line": 196,
+          "line": 292,
           "column": 4
         },
         "end": {
-          "line": 204,
+          "line": 314,
           "column": 5
         }
       },
@@ -220,11 +220,11 @@
     "testShift": {
       "location": {
         "start": {
-          "line": 207,
+          "line": 316,
           "column": 4
         },
         "end": {
-          "line": 212,
+          "line": 326,
           "column": 5
         }
       },
@@ -234,11 +234,11 @@
     "testShiftWithEventPropagation": {
       "location": {
         "start": {
-          "line": 215,
+          "line": 328,
           "column": 4
         },
         "end": {
-          "line": 222,
+          "line": 336,
           "column": 5
         }
       },
@@ -248,11 +248,11 @@
     "testUnshift": {
       "location": {
         "start": {
-          "line": 225,
+          "line": 338,
           "column": 4
         },
         "end": {
-          "line": 230,
+          "line": 362,
           "column": 5
         }
       },
@@ -262,11 +262,11 @@
     "testSplice": {
       "location": {
         "start": {
-          "line": 233,
+          "line": 364,
           "column": 4
         },
         "end": {
-          "line": 260,
+          "line": 391,
           "column": 5
         }
       },
@@ -276,11 +276,11 @@
     "testToArray": {
       "location": {
         "start": {
-          "line": 263,
+          "line": 393,
           "column": 4
         },
         "end": {
-          "line": 266,
+          "line": 401,
           "column": 5
         }
       },
@@ -290,11 +290,11 @@
     "testLengthEvent": {
       "location": {
         "start": {
-          "line": 269,
+          "line": 403,
           "column": 4
         },
         "end": {
-          "line": 280,
+          "line": 421,
           "column": 5
         }
       },
@@ -304,11 +304,11 @@
     "testToString": {
       "location": {
         "start": {
-          "line": 283,
+          "line": 423,
           "column": 4
         },
         "end": {
-          "line": 285,
+          "line": 429,
           "column": 5
         }
       },
@@ -318,147 +318,7 @@
     "testContains": {
       "location": {
         "start": {
-          "line": 288,
-          "column": 4
-        },
-        "end": {
-          "line": 292,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testIndexOf": {
-      "location": {
-        "start": {
-          "line": 295,
-          "column": 4
-        },
-        "end": {
-          "line": 299,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testLastIndexOf": {
-      "location": {
-        "start": {
-          "line": 302,
-          "column": 4
-        },
-        "end": {
-          "line": 309,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testCopy": {
-      "location": {
-        "start": {
-          "line": 312,
-          "column": 4
-        },
-        "end": {
-          "line": 325,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testInsertAt": {
-      "location": {
-        "start": {
-          "line": 328,
-          "column": 4
-        },
-        "end": {
-          "line": 338,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testInsertBefore": {
-      "location": {
-        "start": {
-          "line": 341,
-          "column": 4
-        },
-        "end": {
-          "line": 351,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testInsertAfter": {
-      "location": {
-        "start": {
-          "line": 354,
-          "column": 4
-        },
-        "end": {
-          "line": 364,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testRemoveAt": {
-      "location": {
-        "start": {
-          "line": 367,
-          "column": 4
-        },
-        "end": {
-          "line": 374,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testRemoveAll": {
-      "location": {
-        "start": {
-          "line": 377,
-          "column": 4
-        },
-        "end": {
-          "line": 404,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testAppend": {
-      "location": {
-        "start": {
-          "line": 407,
-          "column": 4
-        },
-        "end": {
-          "line": 424,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testExclude": {
-      "location": {
-        "start": {
-          "line": 427,
+          "line": 431,
           "column": 4
         },
         "end": {
@@ -469,108 +329,66 @@
       "type": "function",
       "access": "public"
     },
-    "testRemove": {
+    "testIndexOf": {
       "location": {
         "start": {
-          "line": 438,
+          "line": 437,
           "column": 4
         },
         "end": {
-          "line": 444,
+          "line": 441,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "testEquals": {
+    "testLastIndexOf": {
       "location": {
         "start": {
-          "line": 447,
+          "line": 443,
           "column": 4
         },
         "end": {
-          "line": 453,
+          "line": 464,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "testSum": {
+    "testCopy": {
       "location": {
         "start": {
-          "line": 456,
+          "line": 466,
           "column": 4
         },
         "end": {
-          "line": 462,
+          "line": 479,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "testMax": {
+    "testInsertAt": {
       "location": {
         "start": {
-          "line": 465,
+          "line": 481,
           "column": 4
         },
         "end": {
-          "line": 471,
+          "line": 491,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "testMin": {
+    "testInsertBefore": {
       "location": {
         "start": {
-          "line": 474,
-          "column": 4
-        },
-        "end": {
-          "line": 480,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testPopEvent": {
-      "location": {
-        "start": {
-          "line": 483,
-          "column": 4
-        },
-        "end": {
-          "line": 496,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testPushEvent": {
-      "location": {
-        "start": {
-          "line": 498,
-          "column": 4
-        },
-        "end": {
-          "line": 511,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testAppendEvent": {
-      "location": {
-        "start": {
-          "line": 513,
+          "line": 493,
           "column": 4
         },
         "end": {
@@ -581,80 +399,108 @@
       "type": "function",
       "access": "public"
     },
-    "testShiftEvent": {
+    "testInsertAfter": {
       "location": {
         "start": {
           "line": 529,
           "column": 4
         },
         "end": {
-          "line": 542,
+          "line": 563,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "testUnshiftEvent": {
+    "testRemoveAt": {
       "location": {
         "start": {
-          "line": 544,
+          "line": 565,
           "column": 4
         },
         "end": {
-          "line": 557,
+          "line": 572,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "testSpliceEvent": {
+    "testRemoveAll": {
       "location": {
         "start": {
-          "line": 559,
+          "line": 574,
           "column": 4
         },
         "end": {
-          "line": 623,
+          "line": 626,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "testSpliceBubbleEvent": {
+    "testAppend": {
       "location": {
         "start": {
-          "line": 625,
+          "line": 628,
           "column": 4
         },
         "end": {
-          "line": 662,
+          "line": 645,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "testSpliceEventNoChange": {
+    "testExclude": {
+      "location": {
+        "start": {
+          "line": 647,
+          "column": 4
+        },
+        "end": {
+          "line": 655,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testRemove": {
+      "location": {
+        "start": {
+          "line": 657,
+          "column": 4
+        },
+        "end": {
+          "line": 663,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testEquals": {
       "location": {
         "start": {
           "line": 665,
           "column": 4
         },
         "end": {
-          "line": 672,
+          "line": 674,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "testSpliceEventEqualContent": {
+    "testSum": {
       "location": {
         "start": {
-          "line": 675,
+          "line": 676,
           "column": 4
         },
         "end": {
@@ -665,150 +511,80 @@
       "type": "function",
       "access": "public"
     },
-    "testSpliceBubbleEventNoChange": {
+    "testMax": {
       "location": {
         "start": {
-          "line": 685,
+          "line": 684,
           "column": 4
         },
         "end": {
+          "line": 690,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testMin": {
+      "location": {
+        "start": {
           "line": 692,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testSpliceBubbleEventEqualContent": {
-      "location": {
-        "start": {
-          "line": 695,
           "column": 4
         },
         "end": {
-          "line": 702,
+          "line": 698,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "testSetItemEvent": {
+    "testPopEvent": {
       "location": {
         "start": {
-          "line": 705,
+          "line": 700,
           "column": 4
         },
         "end": {
-          "line": 727,
+          "line": 739,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "testForEach": {
+    "testPushEvent": {
       "location": {
         "start": {
-          "line": 730,
+          "line": 741,
           "column": 4
         },
         "end": {
-          "line": 767,
+          "line": 780,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "testNotAutoDisposeItems": {
+    "testAppendEvent": {
       "location": {
         "start": {
-          "line": 770,
+          "line": 782,
           "column": 4
         },
         "end": {
-          "line": 776,
+          "line": 827,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "testAutoDisposeItems": {
+    "testShiftEvent": {
       "location": {
         "start": {
-          "line": 779,
-          "column": 4
-        },
-        "end": {
-          "line": 785,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testFilter": {
-      "location": {
-        "start": {
-          "line": 788,
-          "column": 4
-        },
-        "end": {
-          "line": 803,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testMap": {
-      "location": {
-        "start": {
-          "line": 806,
-          "column": 4
-        },
-        "end": {
-          "line": 822,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testSome": {
-      "location": {
-        "start": {
-          "line": 825,
-          "column": 4
-        },
-        "end": {
-          "line": 838,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testEvery": {
-      "location": {
-        "start": {
-          "line": 841,
-          "column": 4
-        },
-        "end": {
-          "line": 854,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testReduce": {
-      "location": {
-        "start": {
-          "line": 857,
+          "line": 829,
           "column": 4
         },
         "end": {
@@ -819,14 +595,238 @@
       "type": "function",
       "access": "public"
     },
-    "testReduceRight": {
+    "testUnshiftEvent": {
       "location": {
         "start": {
-          "line": 871,
+          "line": 870,
           "column": 4
         },
         "end": {
-          "line": 882,
+          "line": 909,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testSpliceEvent": {
+      "location": {
+        "start": {
+          "line": 911,
+          "column": 4
+        },
+        "end": {
+          "line": 1154,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testSpliceBubbleEvent": {
+      "location": {
+        "start": {
+          "line": 1156,
+          "column": 4
+        },
+        "end": {
+          "line": 1256,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testSpliceEventNoChange": {
+      "location": {
+        "start": {
+          "line": 1258,
+          "column": 4
+        },
+        "end": {
+          "line": 1270,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testSpliceEventEqualContent": {
+      "location": {
+        "start": {
+          "line": 1272,
+          "column": 4
+        },
+        "end": {
+          "line": 1284,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testSpliceBubbleEventNoChange": {
+      "location": {
+        "start": {
+          "line": 1286,
+          "column": 4
+        },
+        "end": {
+          "line": 1298,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testSpliceBubbleEventEqualContent": {
+      "location": {
+        "start": {
+          "line": 1300,
+          "column": 4
+        },
+        "end": {
+          "line": 1312,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testSetItemEvent": {
+      "location": {
+        "start": {
+          "line": 1314,
+          "column": 4
+        },
+        "end": {
+          "line": 1382,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testForEach": {
+      "location": {
+        "start": {
+          "line": 1384,
+          "column": 4
+        },
+        "end": {
+          "line": 1420,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testNotAutoDisposeItems": {
+      "location": {
+        "start": {
+          "line": 1422,
+          "column": 4
+        },
+        "end": {
+          "line": 1428,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testAutoDisposeItems": {
+      "location": {
+        "start": {
+          "line": 1430,
+          "column": 4
+        },
+        "end": {
+          "line": 1436,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testFilter": {
+      "location": {
+        "start": {
+          "line": 1438,
+          "column": 4
+        },
+        "end": {
+          "line": 1453,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testMap": {
+      "location": {
+        "start": {
+          "line": 1455,
+          "column": 4
+        },
+        "end": {
+          "line": 1471,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testSome": {
+      "location": {
+        "start": {
+          "line": 1473,
+          "column": 4
+        },
+        "end": {
+          "line": 1490,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testEvery": {
+      "location": {
+        "start": {
+          "line": 1492,
+          "column": 4
+        },
+        "end": {
+          "line": 1509,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testReduce": {
+      "location": {
+        "start": {
+          "line": 1511,
+          "column": 4
+        },
+        "end": {
+          "line": 1528,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testReduceRight": {
+      "location": {
+        "start": {
+          "line": 1530,
+          "column": 4
+        },
+        "end": {
+          "line": 1547,
           "column": 5
         }
       },
@@ -921,6 +921,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -945,6 +946,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

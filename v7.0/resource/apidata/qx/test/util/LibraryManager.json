@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 74,
+        "line": 67,
         "column": 3
       }
     },
@@ -23,26 +23,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 23,
-        "column": 14
+        "line": 22,
+        "column": 2
       },
       "end": {
-        "line": 36,
+        "line": 34,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "members": {
     "__mgr": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 40,
-          "column": 16
+          "line": 37,
+          "column": 15
         }
       },
       "type": "variable",
@@ -51,12 +50,12 @@
     "__qxBackup": {
       "location": {
         "start": {
-          "line": 41,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 41,
-          "column": 21
+          "line": 38,
+          "column": 20
         }
       },
       "type": "variable",
@@ -65,12 +64,12 @@
     "libKeys": {
       "location": {
         "start": {
-          "line": 42,
+          "line": 39,
           "column": 4
         },
         "end": {
-          "line": 42,
-          "column": 18
+          "line": 39,
+          "column": 17
         }
       },
       "type": "variable",
@@ -79,11 +78,11 @@
     "testHas": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 41,
           "column": 4
         },
         "end": {
-          "line": 48,
+          "line": 44,
           "column": 5
         }
       },
@@ -93,11 +92,11 @@
     "testGet": {
       "location": {
         "start": {
-          "line": 50,
+          "line": 46,
           "column": 4
         },
         "end": {
-          "line": 56,
+          "line": 51,
           "column": 5
         }
       },
@@ -107,11 +106,11 @@
     "testSet": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 53,
           "column": 4
         },
         "end": {
-          "line": 65,
+          "line": 59,
           "column": 5
         }
       },
@@ -121,11 +120,11 @@
     "tearDownTestSet": {
       "location": {
         "start": {
-          "line": 67,
+          "line": 61,
           "column": 4
         },
         "end": {
-          "line": 72,
+          "line": 65,
           "column": 5
         }
       },
@@ -220,6 +219,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -244,6 +244,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

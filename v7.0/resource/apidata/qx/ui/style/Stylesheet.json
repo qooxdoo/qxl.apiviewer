@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 74,
+        "line": 67,
         "column": 3
       }
     },
@@ -33,26 +33,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 28,
-        "column": 14
+        "line": 26,
+        "column": 2
       },
       "end": {
-        "line": 32,
+        "line": 30,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "members": {
     "__rules": {
       "location": {
         "start": {
-          "line": 37,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 37,
-          "column": 18
+          "line": 33,
+          "column": 17
         }
       },
       "type": "variable",
@@ -61,12 +60,12 @@
     "__sheet": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 34,
           "column": 4
         },
         "end": {
-          "line": 38,
-          "column": 18
+          "line": 34,
+          "column": 17
         }
       },
       "type": "variable",
@@ -75,11 +74,11 @@
     "addRule": {
       "location": {
         "start": {
-          "line": 46,
+          "line": 41,
           "column": 4
         },
         "end": {
-          "line": 52,
+          "line": 47,
           "column": 5
         }
       },
@@ -113,11 +112,11 @@
     "hasRule": {
       "location": {
         "start": {
-          "line": 60,
+          "line": 54,
           "column": 4
         },
         "end": {
-          "line": 62,
+          "line": 56,
           "column": 5
         }
       },
@@ -152,11 +151,11 @@
     "removeRule": {
       "location": {
         "start": {
-          "line": 69,
+          "line": 62,
           "column": 4
         },
         "end": {
-          "line": 72,
+          "line": 65,
           "column": 5
         }
       },
@@ -268,6 +267,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -292,6 +292,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

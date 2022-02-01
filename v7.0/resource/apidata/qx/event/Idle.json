@@ -11,11 +11,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 29,
+        "line": 28,
         "column": 0
       },
       "end": {
-        "line": 172,
+        "line": 157,
         "column": 3
       }
     },
@@ -35,26 +35,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 35,
-        "column": 14
+        "line": 33,
+        "column": 2
       },
       "end": {
-        "line": 38,
+        "line": 35,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {
     "interval": {
       "location": {
         "start": {
-          "line": 50,
+          "line": 45,
           "column": 4
         },
         "end": {
-          "line": 50,
-          "column": 38
+          "line": 45,
+          "column": 35
         }
       },
       "jsdoc": {
@@ -73,11 +72,11 @@
     "timeoutInterval": {
       "location": {
         "start": {
-          "line": 66,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 71,
+          "line": 63,
           "column": 5
         }
       },
@@ -133,12 +132,12 @@
     "__timer": {
       "location": {
         "start": {
-          "line": 79,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 79,
-          "column": 18
+          "line": 67,
+          "column": 17
         }
       },
       "type": "variable",
@@ -147,11 +146,11 @@
     "_applyTimeoutInterval": {
       "location": {
         "start": {
-          "line": 82,
+          "line": 70,
           "column": 4
         },
         "end": {
-          "line": 86,
+          "line": 74,
           "column": 5
         }
       },
@@ -165,11 +164,11 @@
     "_onInterval": {
       "location": {
         "start": {
-          "line": 91,
+          "line": 79,
           "column": 4
         },
         "end": {
-          "line": 93,
+          "line": 81,
           "column": 5
         }
       },
@@ -187,11 +186,11 @@
     "__startTimer": {
       "location": {
         "start": {
-          "line": 98,
+          "line": 86,
           "column": 4
         },
         "end": {
-          "line": 106,
+          "line": 94,
           "column": 5
         }
       },
@@ -209,11 +208,11 @@
     "__stopTimer": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 117,
+          "line": 105,
           "column": 5
         }
       },
@@ -231,11 +230,11 @@
     "addListener": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 110,
           "column": 4
         },
         "end": {
-          "line": 126,
+          "line": 114,
           "column": 5
         }
       },
@@ -264,11 +263,11 @@
     "addListenerOnce": {
       "location": {
         "start": {
-          "line": 131,
+          "line": 119,
           "column": 4
         },
         "end": {
-          "line": 135,
+          "line": 123,
           "column": 5
         }
       },
@@ -297,11 +296,11 @@
     "removeListener": {
       "location": {
         "start": {
-          "line": 140,
+          "line": 128,
           "column": 4
         },
         "end": {
-          "line": 144,
+          "line": 132,
           "column": 5
         }
       },
@@ -330,11 +329,11 @@
     "removeListenerById": {
       "location": {
         "start": {
-          "line": 149,
+          "line": 137,
           "column": 4
         },
         "end": {
-          "line": 153,
+          "line": 141,
           "column": 5
         }
       },
@@ -448,6 +447,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -472,6 +472,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -566,11 +567,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 163,
-        "column": 13
+        "line": 150,
+        "column": 2
       },
       "end": {
-        "line": 170,
+        "line": 156,
         "column": 3
       }
     },

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 436,
+        "line": 407,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 33,
-        "column": 14
+        "line": 32,
+        "column": 2
       },
       "end": {
-        "line": 77,
+        "line": 76,
         "column": 3
       }
     },
@@ -60,12 +60,12 @@
     "TIMEOUT": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 85,
-          "column": 18
+          "line": 82,
+          "column": 17
         }
       },
       "jsdoc": {
@@ -82,11 +82,11 @@
     "getInstance": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 89,
           "column": 4
         },
         "end": {
-          "line": 99,
+          "line": 94,
           "column": 5
         }
       },
@@ -112,11 +112,11 @@
     "require": {
       "location": {
         "start": {
-          "line": 112,
+          "line": 106,
           "column": 4
         },
         "end": {
-          "line": 114,
+          "line": 108,
           "column": 5
         }
       },
@@ -159,11 +159,11 @@
     "preload": {
       "location": {
         "start": {
-          "line": 127,
+          "line": 120,
           "column": 4
         },
         "end": {
-          "line": 129,
+          "line": 122,
           "column": 5
         }
       },
@@ -190,11 +190,11 @@
     "$$notifyLoad": {
       "location": {
         "start": {
-          "line": 139,
+          "line": 131,
           "column": 4
         },
         "end": {
-          "line": 141,
+          "line": 133,
           "column": 5
         }
       },
@@ -230,12 +230,12 @@
     "__loader": {
       "location": {
         "start": {
-          "line": 147,
+          "line": 137,
           "column": 4
         },
         "end": {
-          "line": 147,
-          "column": 19
+          "line": 137,
+          "column": 18
         }
       },
       "type": "variable",
@@ -244,12 +244,12 @@
     "__packages": {
       "location": {
         "start": {
-          "line": 148,
+          "line": 138,
           "column": 4
         },
         "end": {
-          "line": 148,
-          "column": 21
+          "line": 138,
+          "column": 20
         }
       },
       "type": "variable",
@@ -258,12 +258,12 @@
     "__parts": {
       "location": {
         "start": {
-          "line": 149,
+          "line": 139,
           "column": 4
         },
         "end": {
-          "line": 149,
-          "column": 18
+          "line": 139,
+          "column": 17
         }
       },
       "type": "variable",
@@ -272,12 +272,12 @@
     "__packageClosureListeners": {
       "location": {
         "start": {
-          "line": 150,
+          "line": 140,
           "column": 4
         },
         "end": {
-          "line": 150,
-          "column": 36
+          "line": 140,
+          "column": 35
         }
       },
       "type": "variable",
@@ -286,11 +286,11 @@
     "addToPackage": {
       "location": {
         "start": {
-          "line": 160,
+          "line": 149,
           "column": 4
         },
         "end": {
-          "line": 162,
+          "line": 151,
           "column": 5
         }
       },
@@ -323,11 +323,11 @@
     "saveClosure": {
       "location": {
         "start": {
-          "line": 172,
+          "line": 160,
           "column": 4
         },
         "end": {
-          "line": 195,
+          "line": 182,
           "column": 5
         }
       },
@@ -367,11 +367,11 @@
     "getParts": {
       "location": {
         "start": {
-          "line": 205,
+          "line": 191,
           "column": 4
         },
         "end": {
-          "line": 207,
+          "line": 193,
           "column": 5
         }
       },
@@ -403,11 +403,11 @@
     "require": {
       "location": {
         "start": {
-          "line": 223,
+          "line": 208,
           "column": 4
         },
         "end": {
-          "line": 261,
+          "line": 250,
           "column": 5
         }
       },
@@ -456,11 +456,11 @@
     "preload": {
       "location": {
         "start": {
-          "line": 273,
+          "line": 261,
           "column": 4
         },
         "end": {
-          "line": 297,
+          "line": 283,
           "column": 5
         }
       },
@@ -503,11 +503,11 @@
     "__getUris": {
       "location": {
         "start": {
-          "line": 305,
+          "line": 290,
           "column": 4
         },
         "end": {
-          "line": 313,
+          "line": 297,
           "column": 5
         }
       },
@@ -533,12 +533,12 @@
     "__decodeUris": {
       "location": {
         "start": {
-          "line": 324,
+          "line": 307,
           "column": 4
         },
         "end": {
-          "line": 324,
-          "column": 41
+          "line": 307,
+          "column": 40
         }
       },
       "jsdoc": {
@@ -578,12 +578,12 @@
     "__partListners": {
       "location": {
         "start": {
-          "line": 333,
+          "line": 315,
           "column": 4
         },
         "end": {
-          "line": 333,
-          "column": 25
+          "line": 315,
+          "column": 24
         }
       },
       "jsdoc": {},
@@ -593,11 +593,11 @@
     "addPartListener": {
       "location": {
         "start": {
-          "line": 345,
+          "line": 326,
           "column": 4
         },
         "end": {
-          "line": 352,
+          "line": 332,
           "column": 5
         }
       },
@@ -637,12 +637,12 @@
     "onpart": {
       "location": {
         "start": {
-          "line": 358,
+          "line": 337,
           "column": 4
         },
         "end": {
-          "line": 358,
-          "column": 17
+          "line": 337,
+          "column": 16
         }
       },
       "jsdoc": {
@@ -659,11 +659,11 @@
     "notifyPartResult": {
       "location": {
         "start": {
-          "line": 368,
+          "line": 346,
           "column": 4
         },
         "end": {
-          "line": 384,
+          "line": 360,
           "column": 5
         }
       },
@@ -696,12 +696,12 @@
     "__packageListeners": {
       "location": {
         "start": {
-          "line": 393,
+          "line": 368,
           "column": 4
         },
         "end": {
-          "line": 393,
-          "column": 29
+          "line": 368,
+          "column": 28
         }
       },
       "jsdoc": {},
@@ -711,11 +711,11 @@
     "addPackageListener": {
       "location": {
         "start": {
-          "line": 405,
+          "line": 379,
           "column": 4
         },
         "end": {
-          "line": 412,
+          "line": 385,
           "column": 5
         }
       },
@@ -755,11 +755,11 @@
     "notifyPackageResult": {
       "location": {
         "start": {
-          "line": 422,
+          "line": 394,
           "column": 4
         },
         "end": {
-          "line": 434,
+          "line": 405,
           "column": 5
         }
       },

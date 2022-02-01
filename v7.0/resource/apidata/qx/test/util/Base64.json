@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 65,
+        "line": 62,
         "column": 3
       }
     },
@@ -38,11 +38,11 @@
     "testChineseChars": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 34,
+          "line": 33,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "testChineseCharsExplicitNot8bit": {
       "location": {
         "start": {
-          "line": 37,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 41,
+          "line": 39,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "testChineseCharsExplicit8bit": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 41,
           "column": 4
         },
         "end": {
-          "line": 48,
+          "line": 45,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "testGermanChars": {
       "location": {
         "start": {
-          "line": 51,
+          "line": 47,
           "column": 4
         },
         "end": {
-          "line": 55,
+          "line": 52,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testKnownEncoding": {
       "location": {
         "start": {
-          "line": 57,
+          "line": 54,
           "column": 4
         },
         "end": {
-          "line": 63,
+          "line": 60,
           "column": 5
         }
       },
@@ -193,6 +193,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -217,6 +218,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

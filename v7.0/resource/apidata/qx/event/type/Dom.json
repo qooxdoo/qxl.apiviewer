@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 219,
+        "line": 204,
         "column": 3
       }
     },
@@ -31,12 +31,12 @@
     "SHIFT_MASK": {
       "location": {
         "start": {
-          "line": 33,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 33,
-          "column": 18
+          "line": 29,
+          "column": 17
         }
       },
       "jsdoc": {
@@ -59,12 +59,12 @@
     "CTRL_MASK": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 36,
-          "column": 18
+          "line": 32,
+          "column": 16
         }
       },
       "jsdoc": {
@@ -87,12 +87,12 @@
     "ALT_MASK": {
       "location": {
         "start": {
-          "line": 39,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 39,
-          "column": 18
+          "line": 35,
+          "column": 15
         }
       },
       "jsdoc": {
@@ -115,12 +115,12 @@
     "META_MASK": {
       "location": {
         "start": {
-          "line": 42,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 42,
-          "column": 18
+          "line": 38,
+          "column": 16
         }
       },
       "jsdoc": {
@@ -143,12 +143,12 @@
     "CAPSLOCK_MASK": {
       "location": {
         "start": {
-          "line": 45,
+          "line": 41,
           "column": 4
         },
         "end": {
-          "line": 45,
-          "column": 22
+          "line": 41,
+          "column": 21
         }
       },
       "jsdoc": {
@@ -171,12 +171,12 @@
     "NUMLOCK_MASK": {
       "location": {
         "start": {
-          "line": 48,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 48,
-          "column": 21
+          "line": 44,
+          "column": 20
         }
       },
       "jsdoc": {
@@ -199,12 +199,12 @@
     "SCROLLLOCK_MASK": {
       "location": {
         "start": {
-          "line": 51,
+          "line": 47,
           "column": 4
         },
         "end": {
-          "line": 51,
-          "column": 24
+          "line": 47,
+          "column": 23
         }
       },
       "jsdoc": {
@@ -229,11 +229,11 @@
     "_cloneNativeEvent": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 52,
           "column": 4
         },
         "end": {
-          "line": 79,
+          "line": 71,
           "column": 5
         }
       },
@@ -248,11 +248,11 @@
     "getModifiers": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 81,
           "column": 4
         },
         "end": {
-          "line": 107,
+          "line": 97,
           "column": 5
         }
       },
@@ -278,11 +278,11 @@
     "getKeyLockState": {
       "location": {
         "start": {
-          "line": 116,
+          "line": 106,
           "column": 4
         },
         "end": {
-          "line": 130,
+          "line": 120,
           "column": 5
         }
       },
@@ -308,11 +308,11 @@
     "isCtrlPressed": {
       "location": {
         "start": {
-          "line": 138,
+          "line": 127,
           "column": 4
         },
         "end": {
-          "line": 140,
+          "line": 129,
           "column": 5
         }
       },
@@ -338,11 +338,11 @@
     "isShiftPressed": {
       "location": {
         "start": {
-          "line": 148,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 150,
+          "line": 138,
           "column": 5
         }
       },
@@ -368,11 +368,11 @@
     "isAltPressed": {
       "location": {
         "start": {
-          "line": 158,
+          "line": 145,
           "column": 4
         },
         "end": {
-          "line": 160,
+          "line": 147,
           "column": 5
         }
       },
@@ -398,11 +398,11 @@
     "isMetaPressed": {
       "location": {
         "start": {
-          "line": 168,
+          "line": 154,
           "column": 4
         },
         "end": {
-          "line": 170,
+          "line": 156,
           "column": 5
         }
       },
@@ -428,11 +428,11 @@
     "isCapsLocked": {
       "location": {
         "start": {
-          "line": 177,
+          "line": 163,
           "column": 4
         },
         "end": {
-          "line": 179,
+          "line": 165,
           "column": 5
         }
       },
@@ -458,11 +458,11 @@
     "isNumLocked": {
       "location": {
         "start": {
-          "line": 186,
+          "line": 172,
           "column": 4
         },
         "end": {
-          "line": 188,
+          "line": 174,
           "column": 5
         }
       },
@@ -488,11 +488,11 @@
     "isScrollLocked": {
       "location": {
         "start": {
-          "line": 195,
+          "line": 181,
           "column": 4
         },
         "end": {
-          "line": 197,
+          "line": 183,
           "column": 5
         }
       },
@@ -518,11 +518,11 @@
     "isCtrlOrCommandPressed": {
       "location": {
         "start": {
-          "line": 205,
+          "line": 191,
           "column": 4
         },
         "end": {
-          "line": 217,
+          "line": 202,
           "column": 5
         }
       },
@@ -633,6 +633,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -657,6 +658,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

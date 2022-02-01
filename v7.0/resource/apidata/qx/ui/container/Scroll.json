@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 139,
+        "line": 128,
         "column": 3
       }
     },
@@ -32,11 +32,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 75,
-        "column": 14
+        "line": 72,
+        "column": 2
       },
       "end": {
-        "line": 82,
+        "line": 78,
         "column": 3
       }
     },
@@ -64,11 +64,11 @@
     "add": {
       "location": {
         "start": {
-          "line": 102,
+          "line": 94,
           "column": 4
         },
         "end": {
-          "line": 104,
+          "line": 96,
           "column": 5
         }
       },
@@ -95,11 +95,11 @@
     "remove": {
       "location": {
         "start": {
-          "line": 112,
+          "line": 103,
           "column": 4
         },
         "end": {
-          "line": 114,
+          "line": 105,
           "column": 5
         }
       },
@@ -126,11 +126,11 @@
     "getChildren": {
       "location": {
         "start": {
-          "line": 125,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 127,
+          "line": 117,
           "column": 5
         }
       },
@@ -156,11 +156,11 @@
     "_getContentPaddingTarget": {
       "location": {
         "start": {
-          "line": 135,
+          "line": 124,
           "column": 4
         },
         "end": {
-          "line": 137,
+          "line": 126,
           "column": 5
         }
       },
@@ -1640,6 +1640,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1664,6 +1665,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

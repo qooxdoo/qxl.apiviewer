@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 266,
+        "line": 273,
         "column": 3
       }
     },
@@ -40,12 +40,12 @@
     "$$clazz": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 30,
-          "column": 18
+          "line": 28,
+          "column": 17
         }
       },
       "type": "variable",
@@ -54,12 +54,12 @@
     "$$args": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 31,
-          "column": 17
+          "line": 29,
+          "column": 16
         }
       },
       "type": "variable",
@@ -70,11 +70,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 38,
+          "line": 35,
           "column": 5
         }
       },
@@ -84,11 +84,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 41,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 53,
+          "line": 51,
           "column": 5
         }
       },
@@ -98,11 +98,11 @@
     "getRoot": {
       "location": {
         "start": {
-          "line": 56,
+          "line": 53,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 77,
           "column": 5
         }
       },
@@ -112,11 +112,11 @@
     "getRunnerApplication": {
       "location": {
         "start": {
-          "line": 84,
+          "line": 79,
           "column": 4
         },
         "end": {
-          "line": 86,
+          "line": 84,
           "column": 5
         }
       },
@@ -126,11 +126,11 @@
     "flush": {
       "location": {
         "start": {
-          "line": 89,
+          "line": 86,
           "column": 4
         },
         "end": {
-          "line": 91,
+          "line": 88,
           "column": 5
         }
       },
@@ -140,7 +140,7 @@
     "assertDestroy": {
       "location": {
         "start": {
-          "line": 94,
+          "line": 90,
           "column": 4
         },
         "end": {
@@ -154,11 +154,11 @@
     "assertWidgetDispose": {
       "location": {
         "start": {
-          "line": 179,
+          "line": 178,
           "column": 4
         },
         "end": {
-          "line": 198,
+          "line": 203,
           "column": 5
         }
       },
@@ -182,11 +182,11 @@
     "_getFixedWidget": {
       "location": {
         "start": {
-          "line": 201,
+          "line": 205,
           "column": 4
         },
         "end": {
-          "line": 213,
+          "line": 217,
           "column": 5
         }
       },
@@ -196,11 +196,11 @@
     "assertSize": {
       "location": {
         "start": {
-          "line": 216,
+          "line": 219,
           "column": 4
         },
         "end": {
-          "line": 224,
+          "line": 226,
           "column": 5
         }
       },
@@ -210,11 +210,11 @@
     "assertPadding": {
       "location": {
         "start": {
-          "line": 227,
+          "line": 228,
           "column": 4
         },
         "end": {
-          "line": 245,
+          "line": 249,
           "column": 5
         }
       },
@@ -224,11 +224,11 @@
     "assertStyle": {
       "location": {
         "start": {
-          "line": 248,
+          "line": 251,
           "column": 4
         },
         "end": {
-          "line": 259,
+          "line": 261,
           "column": 5
         }
       },
@@ -238,11 +238,11 @@
     "tapOn": {
       "location": {
         "start": {
-          "line": 262,
+          "line": 263,
           "column": 4
         },
         "end": {
-          "line": 264,
+          "line": 271,
           "column": 5
         }
       },
@@ -337,6 +337,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -361,6 +362,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

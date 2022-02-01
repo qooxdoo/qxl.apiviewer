@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 367,
+        "line": 351,
         "column": 3
       }
     },
@@ -31,11 +31,11 @@
     "gap": {
       "location": {
         "start": {
-          "line": 61,
+          "line": 56,
           "column": 4
         },
         "end": {
-          "line": 66,
+          "line": 60,
           "column": 5
         }
       },
@@ -57,11 +57,11 @@
     "iconPosition": {
       "location": {
         "start": {
-          "line": 70,
+          "line": 63,
           "column": 4
         },
         "end": {
-          "line": 75,
+          "line": 77,
           "column": 5
         }
       },
@@ -92,7 +92,7 @@
     "center": {
       "location": {
         "start": {
-          "line": 87,
+          "line": 88,
           "column": 4
         },
         "end": {
@@ -152,11 +152,11 @@
     "verifyLayoutProperty": {
       "location": {
         "start": {
-          "line": 113,
+          "line": 109,
           "column": 4
         },
         "end": {
-          "line": 120,
+          "line": 118,
           "column": 6
         }
       },
@@ -167,11 +167,11 @@
     "renderLayout": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 121,
           "column": 4
         },
         "end": {
-          "line": 267,
+          "line": 263,
           "column": 5
         }
       },
@@ -186,11 +186,11 @@
     "_computeSizeHint": {
       "location": {
         "start": {
-          "line": 271,
+          "line": 266,
           "column": 4
         },
         "end": {
-          "line": 365,
+          "line": 349,
           "column": 5
         }
       },
@@ -290,6 +290,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -314,6 +315,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 197,
+        "line": 227,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 41,
+          "line": 38,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 50,
+          "line": 45,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "testBlockWholeDocument": {
       "location": {
         "start": {
-          "line": 52,
+          "line": 47,
           "column": 4
         },
         "end": {
-          "line": 73,
+          "line": 84,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "testUnblockWholeDocument": {
       "location": {
         "start": {
-          "line": 76,
+          "line": 86,
           "column": 4
         },
         "end": {
-          "line": 94,
+          "line": 108,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "testBlockElement": {
       "location": {
         "start": {
-          "line": 97,
+          "line": 110,
           "column": 4
         },
         "end": {
-          "line": 131,
+          "line": 169,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testBlockerColor": {
       "location": {
         "start": {
-          "line": 134,
+          "line": 171,
           "column": 4
         },
         "end": {
-          "line": 149,
+          "line": 185,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "testBlockerOpacity": {
       "location": {
         "start": {
-          "line": 152,
+          "line": 187,
           "column": 4
         },
         "end": {
-          "line": 165,
+          "line": 199,
           "column": 5
         }
       },
@@ -122,11 +122,11 @@
     "testDoubleBlocking": {
       "location": {
         "start": {
-          "line": 168,
+          "line": 201,
           "column": 4
         },
         "end": {
-          "line": 184,
+          "line": 216,
           "column": 5
         }
       },
@@ -136,11 +136,11 @@
     "testDoubleUnBlocking": {
       "location": {
         "start": {
-          "line": 187,
+          "line": 218,
           "column": 4
         },
         "end": {
-          "line": 195,
+          "line": 225,
           "column": 5
         }
       },
@@ -235,6 +235,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -259,6 +260,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

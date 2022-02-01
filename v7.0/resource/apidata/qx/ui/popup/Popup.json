@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 144,
+        "line": 119,
         "column": 3
       }
     },
@@ -32,11 +32,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 41,
-        "column": 14
+        "line": 38,
+        "column": 2
       },
       "end": {
-        "line": 47,
+        "line": 43,
         "column": 3
       }
     },
@@ -46,11 +46,11 @@
     "appearance": {
       "location": {
         "start": {
-          "line": 62,
+          "line": 53,
           "column": 4
         },
         "end": {
-          "line": 66,
+          "line": 56,
           "column": 5
         }
       },
@@ -68,11 +68,11 @@
     "visibility": {
       "location": {
         "start": {
-          "line": 69,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 73,
+          "line": 62,
           "column": 5
         }
       },
@@ -90,11 +90,11 @@
     "autoHide": {
       "location": {
         "start": {
-          "line": 80,
+          "line": 69,
           "column": 4
         },
         "end": {
-          "line": 84,
+          "line": 72,
           "column": 5
         }
       },
@@ -277,11 +277,11 @@
     "show": {
       "location": {
         "start": {
-          "line": 107,
+          "line": 89,
           "column": 4
         },
         "end": {
-          "line": 117,
+          "line": 97,
           "column": 5
         }
       },
@@ -296,11 +296,11 @@
     "_applyVisibility": {
       "location": {
         "start": {
-          "line": 121,
+          "line": 100,
           "column": 4
         },
         "end": {
-          "line": 127,
+          "line": 105,
           "column": 5
         }
       },
@@ -1377,6 +1377,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1401,6 +1402,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -5175,11 +5177,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 139,
-        "column": 13
+        "line": 114,
+        "column": 2
       },
       "end": {
-        "line": 143,
+        "line": 118,
         "column": 3
       }
     },

@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 142,
+        "line": 118,
         "column": 3
       }
     },
@@ -32,11 +32,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 43,
-        "column": 14
+        "line": 39,
+        "column": 2
       },
       "end": {
-        "line": 50,
+        "line": 45,
         "column": 3
       }
     },
@@ -62,12 +62,12 @@
     "PRIORITY": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 55,
           "column": 4
         },
         "end": {
-          "line": 65,
-          "column": 52
+          "line": 55,
+          "column": 51
         }
       },
       "jsdoc": {
@@ -90,11 +90,11 @@
     "SUPPORTED_TYPES": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 58,
           "column": 4
         },
         "end": {
-          "line": 70,
+          "line": 60,
           "column": 5
         }
       },
@@ -118,12 +118,12 @@
     "TARGET_CHECK": {
       "location": {
         "start": {
-          "line": 73,
+          "line": 63,
           "column": 4
         },
         "end": {
-          "line": 73,
-          "column": 55
+          "line": 63,
+          "column": 54
         }
       },
       "jsdoc": {
@@ -146,12 +146,12 @@
     "IGNORE_CAN_HANDLE": {
       "location": {
         "start": {
-          "line": 76,
+          "line": 66,
           "column": 4
         },
         "end": {
-          "line": 76,
-          "column": 28
+          "line": 66,
+          "column": 27
         }
       },
       "jsdoc": {
@@ -176,12 +176,12 @@
     "__manager": {
       "location": {
         "start": {
-          "line": 91,
+          "line": 76,
           "column": 4
         },
         "end": {
-          "line": 91,
-          "column": 20
+          "line": 76,
+          "column": 19
         }
       },
       "type": "variable",
@@ -190,11 +190,11 @@
     "__window": {
       "location": {
         "start": {
-          "line": 92,
+          "line": 77,
           "column": 4
         },
         "end": {
-          "line": 92,
+          "line": 77,
           "column": 18
         }
       },
@@ -204,12 +204,12 @@
     "canHandleEvent": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 86,
           "column": 4
         },
         "end": {
-          "line": 101,
-          "column": 46
+          "line": 86,
+          "column": 35
         }
       },
       "jsdoc": {},
@@ -223,11 +223,11 @@
     "registerEvent": {
       "location": {
         "start": {
-          "line": 105,
+          "line": 89,
           "column": 4
         },
         "end": {
-          "line": 107,
+          "line": 91,
           "column": 5
         }
       },
@@ -242,11 +242,11 @@
     "unregisterEvent": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 94,
           "column": 4
         },
         "end": {
-          "line": 113,
+          "line": 96,
           "column": 5
         }
       },
@@ -346,6 +346,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -370,6 +371,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -398,11 +400,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 125,
-        "column": 13
+        "line": 105,
+        "column": 2
       },
       "end": {
-        "line": 127,
+        "line": 107,
         "column": 3
       }
     },
@@ -411,11 +413,11 @@
   "defer": {
     "location": {
       "start": {
-        "line": 139,
-        "column": 10
+        "line": 115,
+        "column": 2
       },
       "end": {
-        "line": 141,
+        "line": 117,
         "column": 3
       }
     },

@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 23,
+        "line": 22,
         "column": 0
       },
       "end": {
-        "line": 131,
+        "line": 112,
         "column": 3
       }
     },
@@ -31,11 +31,11 @@
     "_getItemCount": {
       "location": {
         "start": {
-          "line": 42,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 44,
+          "line": 40,
           "column": 5
         }
       },
@@ -65,11 +65,11 @@
     "_getSelectableFromPointerEvent": {
       "location": {
         "start": {
-          "line": 54,
+          "line": 49,
           "column": 4
         },
         "end": {
-          "line": 66,
+          "line": 60,
           "column": 5
         }
       },
@@ -85,11 +85,11 @@
     "_getRelatedSelectable": {
       "location": {
         "start": {
-          "line": 70,
+          "line": 63,
           "column": 4
         },
         "end": {
-          "line": 96,
+          "line": 82,
           "column": 5
         }
       },
@@ -105,11 +105,11 @@
     "_scrollItemIntoView": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 85,
           "column": 4
         },
         "end": {
-          "line": 104,
+          "line": 89,
           "column": 5
         }
       },
@@ -125,11 +125,11 @@
     "_getSelectableLocationX": {
       "location": {
         "start": {
-          "line": 108,
+          "line": 92,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 102,
           "column": 5
         }
       },
@@ -145,11 +145,11 @@
     "_getSelectableLocationY": {
       "location": {
         "start": {
-          "line": 123,
+          "line": 105,
           "column": 4
         },
         "end": {
-          "line": 129,
+          "line": 110,
           "column": 5
         }
       },
@@ -250,6 +250,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -274,6 +275,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

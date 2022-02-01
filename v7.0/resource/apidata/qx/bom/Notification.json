@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 306,
+        "line": 300,
         "column": 3
       }
     },
@@ -40,11 +40,11 @@
     "getNotification": {
       "location": {
         "start": {
-          "line": 73,
+          "line": 71,
           "column": 4
         },
         "end": {
-          "line": 75,
+          "line": 73,
           "column": 5
         }
       },
@@ -77,11 +77,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 89,
-        "column": 14
+        "line": 85,
+        "column": 2
       },
       "end": {
-        "line": 92,
+        "line": 88,
         "column": 3
       }
     },
@@ -98,12 +98,12 @@
     "appear": {
       "location": {
         "start": {
-          "line": 106,
+          "line": 100,
           "column": 4
         },
         "end": {
-          "line": 106,
-          "column": 21
+          "line": 100,
+          "column": 18
         }
       },
       "jsdoc": {
@@ -120,12 +120,12 @@
     "click": {
       "location": {
         "start": {
-          "line": 112,
+          "line": 106,
           "column": 4
         },
         "end": {
-          "line": 112,
-          "column": 20
+          "line": 106,
+          "column": 17
         }
       },
       "jsdoc": {
@@ -142,12 +142,12 @@
     "close": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 113,
           "column": 4
         },
         "end": {
-          "line": 119,
-          "column": 20
+          "line": 113,
+          "column": 17
         }
       },
       "jsdoc": {
@@ -166,12 +166,12 @@
     "__notifications": {
       "location": {
         "start": {
-          "line": 130,
+          "line": 123,
           "column": 4
         },
         "end": {
-          "line": 130,
-          "column": 26
+          "line": 123,
+          "column": 25
         }
       },
       "type": "variable",
@@ -180,12 +180,12 @@
     "__lastId": {
       "location": {
         "start": {
-          "line": 131,
+          "line": 124,
           "column": 4
         },
         "end": {
-          "line": 131,
-          "column": 16
+          "line": 124,
+          "column": 15
         }
       },
       "type": "variable",
@@ -194,11 +194,11 @@
     "show": {
       "location": {
         "start": {
-          "line": 149,
+          "line": 141,
           "column": 4
         },
         "end": {
-          "line": 180,
+          "line": 169,
           "column": 5
         }
       },
@@ -261,11 +261,11 @@
     "_show": {
       "location": {
         "start": {
-          "line": 197,
+          "line": 185,
           "column": 4
         },
         "end": {
-          "line": 256,
+          "line": 253,
           "column": 5
         }
       },
@@ -326,11 +326,11 @@
     "close": {
       "location": {
         "start": {
-          "line": 264,
+          "line": 260,
           "column": 4
         },
         "end": {
-          "line": 268,
+          "line": 264,
           "column": 5
         }
       },
@@ -357,11 +357,11 @@
     "request": {
       "location": {
         "start": {
-          "line": 278,
+          "line": 273,
           "column": 4
         },
         "end": {
-          "line": 286,
+          "line": 281,
           "column": 5
         }
       },
@@ -379,11 +379,11 @@
     "getPermission": {
       "location": {
         "start": {
-          "line": 296,
+          "line": 290,
           "column": 4
         },
         "end": {
-          "line": 298,
+          "line": 294,
           "column": 5
         }
       },
@@ -459,69 +459,6 @@
             "body": "{var} Returns the internal id for that binding. This can be used\n   for referencing the binding e.g. for removing. This is not an atomic\n   id so you can't you use it as a hash-map index.",
             "type": "var",
             "description": " Returns the internal id for that binding. This can be used\n   for referencing the binding e.g. for removing. This is not an atomic\n   id so you can't you use it as a hash-map index."
-          }
-        ],
-        "@throws": [
-          {
-            "name": "@throws",
-            "body": "{qx.core.AssertionError} If the event is no data event or\n   there is no property definition for object and property (source and\n   target).",
-            "type": "qx.core.AssertionError",
-            "description": " If the event is no data event or\n   there is no property definition for object and property (source and\n   target)."
-          }
-        ]
-      }
-    },
-    "bindAsync": {
-      "type": "function",
-      "name": "bindAsync",
-      "abstract": false,
-      "mixin": true,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.data.MBinding",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>The bind method delegates the call to the\n {@link qx.data.SingleValueBinding#bind} function. As source, the current\n object (this) will be used.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "sourcePropertyChain {String} The property chain which represents\n   the source property.",
-            "paramName": "sourcePropertyChain",
-            "description": " The property chain which represents\n   the source property.",
-            "type": "String"
-          },
-          {
-            "name": "@param",
-            "body": "targetObject {qx.core.Object} The object which the source should\n   be bind to.",
-            "paramName": "targetObject",
-            "description": " The object which the source should\n   be bind to.",
-            "type": "qx.core.Object"
-          },
-          {
-            "name": "@param",
-            "body": "targetProperty {String} The property name of the target object.",
-            "paramName": "targetProperty",
-            "description": " The property name of the target object.",
-            "type": "String"
-          },
-          {
-            "name": "@param",
-            "body": "options {Map} A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
-            "paramName": "options",
-            "description": " A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
-            "type": "Map"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.Promise} A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index.",
-            "type": "qx.Promise",
-            "description": " A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index."
           }
         ],
         "@throws": [
@@ -1972,6 +1909,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1995,6 +1933,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -3682,15 +3621,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 303,
-        "column": 10
+        "line": 297,
+        "column": 2
       },
       "end": {
-        "line": 305,
+        "line": 299,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

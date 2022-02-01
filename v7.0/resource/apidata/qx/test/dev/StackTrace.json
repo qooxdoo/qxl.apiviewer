@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 115,
+        "line": 124,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 22,
+          "line": 20,
           "column": 4
         },
         "end": {
-          "line": 26,
+          "line": 23,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "testGetStackTraceFromError": {
       "location": {
         "start": {
-          "line": 29,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 41,
+          "line": 40,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "testGetStackTraceFromErrorQx": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 42,
           "column": 4
         },
         "end": {
-          "line": 68,
+          "line": 72,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "testFilenameConverterDefault": {
       "location": {
         "start": {
-          "line": 71,
+          "line": 74,
           "column": 4
         },
         "end": {
-          "line": 78,
+          "line": 83,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "testFilenameConverterCustom": {
       "location": {
         "start": {
-          "line": 81,
+          "line": 85,
           "column": 4
         },
         "end": {
-          "line": 94,
+          "line": 101,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testFormatStackTrace": {
       "location": {
         "start": {
-          "line": 97,
+          "line": 103,
           "column": 4
         },
         "end": {
-          "line": 113,
+          "line": 122,
           "column": 5
         }
       },
@@ -193,6 +193,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -217,6 +218,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

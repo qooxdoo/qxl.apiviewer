@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 155,
+        "line": 140,
         "column": 3
       }
     },
@@ -31,11 +31,11 @@
     "appearance": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 35,
+          "line": 31,
           "column": 5
         }
       },
@@ -72,11 +72,11 @@
     "_forwardStates": {
       "location": {
         "start": {
-          "line": 45,
+          "line": 39,
           "column": 4
         },
         "end": {
-          "line": 47,
+          "line": 41,
           "column": 5
         }
       },
@@ -100,11 +100,11 @@
     "_addWidgets": {
       "location": {
         "start": {
-          "line": 51,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 57,
+          "line": 49,
           "column": 5
         }
       },
@@ -119,11 +119,11 @@
     "_shouldShowOpenSymbol": {
       "location": {
         "start": {
-          "line": 61,
+          "line": 52,
           "column": 4
         },
         "end": {
-          "line": 69,
+          "line": 59,
           "column": 5
         }
       },
@@ -138,11 +138,11 @@
     "getLevel": {
       "location": {
         "start": {
-          "line": 73,
+          "line": 62,
           "column": 4
         },
         "end": {
-          "line": 75,
+          "line": 64,
           "column": 5
         }
       },
@@ -157,11 +157,11 @@
     "hasChildren": {
       "location": {
         "start": {
-          "line": 79,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 86,
+          "line": 73,
           "column": 5
         }
       },
@@ -176,11 +176,11 @@
     "_applyModel": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 76,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 112,
           "column": 5
         }
       },
@@ -195,11 +195,11 @@
     "_onChangeLength": {
       "location": {
         "start": {
-          "line": 130,
+          "line": 117,
           "column": 4
         },
         "end": {
-          "line": 132,
+          "line": 119,
           "column": 5
         }
       },
@@ -217,11 +217,11 @@
     "_onChangeChildProperty": {
       "location": {
         "start": {
-          "line": 140,
+          "line": 126,
           "column": 4
         },
         "end": {
-          "line": 153,
+          "line": 138,
           "column": 5
         }
       },
@@ -404,6 +404,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -428,6 +429,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

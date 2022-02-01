@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 305,
+        "line": 312,
         "column": 3
       }
     },
@@ -37,12 +37,12 @@
     "__scheduled": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 30,
-          "column": 23
+          "line": 28,
+          "column": 22
         }
       },
       "jsdoc": {
@@ -65,12 +65,12 @@
     "__canceled": {
       "location": {
         "start": {
-          "line": 33,
+          "line": 31,
           "column": 4
         },
         "end": {
-          "line": 33,
-          "column": 22
+          "line": 31,
+          "column": 21
         }
       },
       "jsdoc": {
@@ -93,12 +93,12 @@
     "__jobs": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 34,
           "column": 4
         },
         "end": {
-          "line": 36,
-          "column": 15
+          "line": 34,
+          "column": 14
         }
       },
       "jsdoc": {
@@ -121,12 +121,12 @@
     "__retries": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 40,
-          "column": 17
+          "line": 37,
+          "column": 16
         }
       },
       "jsdoc": {
@@ -149,12 +149,12 @@
     "MAX_RETRIES": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 43,
-          "column": 20
+          "line": 40,
+          "column": 19
         }
       },
       "jsdoc": {
@@ -177,11 +177,11 @@
     "scheduleFlush": {
       "location": {
         "start": {
-          "line": 52,
+          "line": 48,
           "column": 4
         },
         "end": {
-          "line": 72,
+          "line": 66,
           "column": 5
         }
       },
@@ -208,11 +208,11 @@
     "flush": {
       "location": {
         "start": {
-          "line": 80,
+          "line": 73,
           "column": 4
         },
         "end": {
-          "line": 206,
+          "line": 222,
           "column": 5
         }
       },
@@ -230,11 +230,11 @@
     "__executeAndRescheduleOnError": {
       "location": {
         "start": {
-          "line": 218,
+          "line": 233,
           "column": 4
         },
         "end": {
-          "line": 264,
+          "line": 274,
           "column": 6
         }
       },
@@ -268,17 +268,17 @@
           }
         ]
       },
-      "type": "function",
+      "type": "variable",
       "access": "private"
     },
     "__onUserAction": {
       "location": {
         "start": {
-          "line": 277,
+          "line": 286,
           "column": 4
         },
         "end": {
-          "line": 280,
+          "line": 288,
           "column": 5
         }
       },
@@ -306,11 +306,11 @@
   "defer": {
     "location": {
       "start": {
-        "line": 292,
-        "column": 10
+        "line": 297,
+        "column": 2
       },
       "end": {
-        "line": 304,
+        "line": 311,
         "column": 3
       }
     },

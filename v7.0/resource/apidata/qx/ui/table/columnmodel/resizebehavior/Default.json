@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 575,
+        "line": 524,
         "column": 3
       }
     },
@@ -36,25 +36,24 @@
   "construct": {
     "location": {
       "start": {
-        "line": 57,
-        "column": 14
+        "line": 55,
+        "column": 2
       },
       "end": {
-        "line": 76,
+        "line": 74,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "properties": {
     "newResizeBehaviorColumnData": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 86,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 91,
           "column": 5
         }
       },
@@ -68,16 +67,18 @@
       },
       "name": "newResizeBehaviorColumnData",
       "propertyType": "new",
-      "check": "Function"
+      "init": "[[ ObjectMethod Function ]]",
+      "check": "Function",
+      "defaultValue": "[[ ObjectMethod Function ]]"
     },
     "initializeWidthsOnEveryAppear": {
       "location": {
         "start": {
-          "line": 107,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 111,
+          "line": 104,
           "column": 5
         }
       },
@@ -98,11 +99,11 @@
     "tableColumnModel": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 112,
           "column": 4
         },
         "end": {
-          "line": 122,
+          "line": 114,
           "column": 5
         }
       },
@@ -155,12 +156,12 @@
     "__layout": {
       "location": {
         "start": {
-          "line": 136,
+          "line": 124,
           "column": 4
         },
         "end": {
-          "line": 136,
-          "column": 19
+          "line": 124,
+          "column": 18
         }
       },
       "type": "variable",
@@ -169,12 +170,12 @@
     "__layoutChildren": {
       "location": {
         "start": {
-          "line": 137,
+          "line": 125,
           "column": 4
         },
         "end": {
-          "line": 137,
-          "column": 27
+          "line": 125,
+          "column": 26
         }
       },
       "type": "variable",
@@ -183,12 +184,12 @@
     "__resizeColumnData": {
       "location": {
         "start": {
-          "line": 138,
+          "line": 126,
           "column": 4
         },
         "end": {
-          "line": 138,
-          "column": 29
+          "line": 126,
+          "column": 28
         }
       },
       "type": "variable",
@@ -197,12 +198,12 @@
     "__deferredComputeColumnsFlexWidth": {
       "location": {
         "start": {
-          "line": 139,
+          "line": 127,
           "column": 4
         },
         "end": {
-          "line": 139,
-          "column": 44
+          "line": 127,
+          "column": 43
         }
       },
       "type": "variable",
@@ -211,12 +212,12 @@
     "__widthsInitialized": {
       "location": {
         "start": {
-          "line": 144,
+          "line": 132,
           "column": 4
         },
         "end": {
-          "line": 144,
-          "column": 31
+          "line": 132,
+          "column": 30
         }
       },
       "jsdoc": {
@@ -233,11 +234,11 @@
     "setWidth": {
       "location": {
         "start": {
-          "line": 162,
+          "line": 150,
           "column": 4
         },
         "end": {
-          "line": 172,
+          "line": 159,
           "column": 5
         }
       },
@@ -291,11 +292,11 @@
     "setMinWidth": {
       "location": {
         "start": {
-          "line": 188,
+          "line": 174,
           "column": 4
         },
         "end": {
-          "line": 199,
+          "line": 183,
           "column": 5
         }
       },
@@ -337,11 +338,11 @@
     "setMaxWidth": {
       "location": {
         "start": {
-          "line": 215,
+          "line": 198,
           "column": 4
         },
         "end": {
-          "line": 225,
+          "line": 207,
           "column": 5
         }
       },
@@ -383,11 +384,11 @@
     "set": {
       "location": {
         "start": {
-          "line": 245,
+          "line": 226,
           "column": 4
         },
         "end": {
-          "line": 267,
+          "line": 245,
           "column": 5
         }
       },
@@ -434,11 +435,11 @@
     "onAppear": {
       "location": {
         "start": {
-          "line": 270,
+          "line": 248,
           "column": 4
         },
         "end": {
-          "line": 282,
+          "line": 262,
           "column": 5
         }
       },
@@ -453,11 +454,11 @@
     "onTableWidthChanged": {
       "location": {
         "start": {
-          "line": 285,
+          "line": 265,
           "column": 4
         },
         "end": {
-          "line": 287,
+          "line": 267,
           "column": 5
         }
       },
@@ -472,11 +473,11 @@
     "onVerticalScrollBarChanged": {
       "location": {
         "start": {
-          "line": 290,
+          "line": 270,
           "column": 4
         },
         "end": {
-          "line": 292,
+          "line": 272,
           "column": 5
         }
       },
@@ -491,11 +492,11 @@
     "onColumnWidthChanged": {
       "location": {
         "start": {
-          "line": 295,
+          "line": 275,
           "column": 4
         },
         "end": {
-          "line": 299,
+          "line": 278,
           "column": 5
         }
       },
@@ -510,11 +511,11 @@
     "onVisibilityChanged": {
       "location": {
         "start": {
-          "line": 302,
+          "line": 281,
           "column": 4
         },
         "end": {
-          "line": 316,
+          "line": 293,
           "column": 5
         }
       },
@@ -529,11 +530,11 @@
     "_setNumColumns": {
       "location": {
         "start": {
-          "line": 319,
+          "line": 296,
           "column": 4
         },
         "end": {
-          "line": 337,
+          "line": 311,
           "column": 5
         }
       },
@@ -548,11 +549,11 @@
     "getLayoutChildren": {
       "location": {
         "start": {
-          "line": 346,
+          "line": 319,
           "column": 4
         },
         "end": {
-          "line": 348,
+          "line": 321,
           "column": 5
         }
       },
@@ -578,11 +579,11 @@
     "_computeColumnsFlexWidth": {
       "location": {
         "start": {
-          "line": 355,
+          "line": 327,
           "column": 4
         },
         "end": {
-          "line": 397,
+          "line": 366,
           "column": 5
         }
       },
@@ -600,11 +601,11 @@
     "__clearLayoutCaches": {
       "location": {
         "start": {
-          "line": 403,
+          "line": 371,
           "column": 4
         },
         "end": {
-          "line": 410,
+          "line": 377,
           "column": 5
         }
       },
@@ -622,11 +623,11 @@
     "_extendNextColumn": {
       "location": {
         "start": {
-          "line": 428,
+          "line": 394,
           "column": 4
         },
         "end": {
-          "line": 482,
+          "line": 442,
           "column": 5
         }
       },
@@ -653,11 +654,11 @@
     "_extendLastColumn": {
       "location": {
         "start": {
-          "line": 499,
+          "line": 458,
           "column": 4
         },
         "end": {
-          "line": 547,
+          "line": 502,
           "column": 5
         }
       },
@@ -684,11 +685,11 @@
     "_getResizeColumnData": {
       "location": {
         "start": {
-          "line": 555,
+          "line": 509,
           "column": 4
         },
         "end": {
-          "line": 558,
+          "line": 511,
           "column": 5
         }
       },
@@ -799,6 +800,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -823,6 +825,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -1073,11 +1076,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 570,
-        "column": 13
+        "line": 520,
+        "column": 2
       },
       "end": {
-        "line": 574,
+        "line": 523,
         "column": 3
       }
     },

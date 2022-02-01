@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 85,
+        "line": 83,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 24,
+          "line": 22,
           "column": 4
         },
         "end": {
-          "line": 27,
+          "line": 25,
           "column": 5
         }
       },
@@ -42,11 +42,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 29,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 33,
+          "line": 31,
           "column": 5
         }
       },
@@ -60,11 +60,11 @@
     "test: get default length": {
       "location": {
         "start": {
-          "line": 35,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 38,
+          "line": 36,
           "column": 5
         }
       },
@@ -74,11 +74,11 @@
     "test: set max length": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 44,
+          "line": 42,
           "column": 5
         }
       },
@@ -88,11 +88,11 @@
     "test: reset max length": {
       "location": {
         "start": {
-          "line": 46,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 53,
+          "line": 51,
           "column": 5
         }
       },
@@ -102,11 +102,11 @@
     "test: validate input with filter": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 53,
           "column": 4
         },
         "end": {
-          "line": 61,
+          "line": 59,
           "column": 5
         }
       },
@@ -116,11 +116,11 @@
     "test: validate input with complex filter": {
       "location": {
         "start": {
-          "line": 62,
+          "line": 60,
           "column": 4
         },
         "end": {
-          "line": 76,
+          "line": 74,
           "column": 5
         }
       },
@@ -130,11 +130,11 @@
     "test: validate input with complex filter 2": {
       "location": {
         "start": {
-          "line": 77,
-          "column": 2
+          "line": 75,
+          "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 79,
           "column": 5
         }
       },
@@ -144,11 +144,11 @@
     "__field": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 81,
           "column": 4
         },
         "end": {
-          "line": 83,
+          "line": 81,
           "column": 17
         }
       },
@@ -243,6 +243,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -267,6 +268,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

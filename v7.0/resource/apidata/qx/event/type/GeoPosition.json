@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 28,
+        "line": 27,
         "column": 0
       },
       "end": {
-        "line": 140,
+        "line": 131,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 35,
-        "column": 14
+        "line": 33,
+        "column": 2
       },
       "end": {
-        "line": 38,
+        "line": 35,
         "column": 3
       }
     },
@@ -51,11 +51,11 @@
     "timestamp": {
       "location": {
         "start": {
-          "line": 46,
+          "line": 41,
           "column": 4
         },
         "end": {
-          "line": 49,
+          "line": 43,
           "column": 5
         }
       },
@@ -74,11 +74,11 @@
     "latitude": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 49,
           "column": 4
         },
         "end": {
-          "line": 57,
+          "line": 51,
           "column": 5
         }
       },
@@ -97,11 +97,11 @@
     "longitude": {
       "location": {
         "start": {
-          "line": 64,
+          "line": 57,
           "column": 4
         },
         "end": {
-          "line": 66,
+          "line": 59,
           "column": 5
         }
       },
@@ -120,11 +120,11 @@
     "altitude": {
       "location": {
         "start": {
-          "line": 73,
+          "line": 65,
           "column": 4
         },
         "end": {
-          "line": 76,
+          "line": 68,
           "column": 5
         }
       },
@@ -145,11 +145,11 @@
     "accuracy": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 74,
           "column": 4
         },
         "end": {
-          "line": 85,
+          "line": 76,
           "column": 5
         }
       },
@@ -168,11 +168,11 @@
     "altitudeAccuracy": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 81,
           "column": 4
         },
         "end": {
-          "line": 93,
+          "line": 84,
           "column": 5
         }
       },
@@ -193,11 +193,11 @@
     "heading": {
       "location": {
         "start": {
-          "line": 105,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 107,
+          "line": 97,
           "column": 5
         }
       },
@@ -217,11 +217,11 @@
     "speed": {
       "location": {
         "start": {
-          "line": 117,
+          "line": 106,
           "column": 4
         },
         "end": {
-          "line": 120,
+          "line": 111,
           "column": 5
         }
       },
@@ -236,7 +236,8 @@
       "name": "speed",
       "propertyType": "new",
       "nullable": true,
-      "allowNull": true
+      "allowNull": true,
+      "check": "[[ ObjectMethod Function ]]"
     },
     "qxOwner": {
       "type": "property",
@@ -275,11 +276,11 @@
     "init": {
       "location": {
         "start": {
-          "line": 129,
+          "line": 120,
           "column": 4
         },
         "end": {
-          "line": 138,
+          "line": 129,
           "column": 5
         }
       },
@@ -395,6 +396,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -419,6 +421,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -923,6 +926,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for speed"
           }
         ]
@@ -946,6 +950,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for speed"
           }

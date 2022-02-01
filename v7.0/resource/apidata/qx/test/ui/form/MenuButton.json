@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 86,
+        "line": 92,
         "column": 3
       }
     },
@@ -24,12 +24,12 @@
     "__menu": {
       "location": {
         "start": {
-          "line": 24,
+          "line": 22,
           "column": 4
         },
         "end": {
-          "line": 24,
-          "column": 17
+          "line": 22,
+          "column": 16
         }
       },
       "type": "variable",
@@ -38,12 +38,12 @@
     "__menuButton": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 26,
-          "column": 23
+          "line": 24,
+          "column": 22
         }
       },
       "type": "variable",
@@ -52,11 +52,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 26,
           "column": 4
         },
         "end": {
-          "line": 41,
+          "line": 42,
           "column": 5
         }
       },
@@ -70,7 +70,7 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 44,
           "column": 4
         },
         "end": {
@@ -106,7 +106,7 @@
           "column": 4
         },
         "end": {
-          "line": 73,
+          "line": 76,
           "column": 5
         }
       },
@@ -116,11 +116,11 @@
     "testOpenSelectFirstWithDisabledElement": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 78,
           "column": 4
         },
         "end": {
-          "line": 84,
+          "line": 90,
           "column": 5
         }
       },
@@ -215,6 +215,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -239,6 +240,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

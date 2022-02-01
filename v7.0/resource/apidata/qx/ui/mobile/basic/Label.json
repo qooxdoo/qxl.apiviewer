@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 172,
+        "line": 156,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 48,
-        "column": 14
+        "line": 46,
+        "column": 2
       },
       "end": {
-        "line": 59,
+        "line": 60,
         "column": 3
       }
     },
@@ -62,11 +62,11 @@
     "defaultCssClass": {
       "location": {
         "start": {
-          "line": 72,
+          "line": 70,
           "column": 4
         },
         "end": {
-          "line": 76,
+          "line": 73,
           "column": 5
         }
       },
@@ -84,11 +84,11 @@
     "value": {
       "location": {
         "start": {
-          "line": 82,
+          "line": 78,
           "column": 4
         },
         "end": {
-          "line": 89,
+          "line": 84,
           "column": 5
         }
       },
@@ -111,11 +111,11 @@
     "anonymous": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 87,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 90,
           "column": 5
         }
       },
@@ -133,11 +133,11 @@
     "wrap": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 108,
+          "line": 99,
           "column": 5
         }
       },
@@ -193,11 +193,11 @@
     "_applyValue": {
       "location": {
         "start": {
-          "line": 123,
+          "line": 110,
           "column": 4
         },
         "end": {
-          "line": 126,
+          "line": 112,
           "column": 5
         }
       },
@@ -211,11 +211,11 @@
     "_applyWrap": {
       "location": {
         "start": {
-          "line": 130,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 137,
+          "line": 121,
           "column": 5
         }
       },
@@ -229,11 +229,11 @@
     "_onChangeLocale": {
       "location": {
         "start": {
-          "line": 145,
+          "line": 129,
           "column": 4
         },
         "end": {
-          "line": 156,
+          "line": 138,
           "column": 6
         }
       },
@@ -260,7 +260,7 @@
           }
         ]
       },
-      "type": "function",
+      "type": "variable",
       "access": "protected"
     },
     "tr": {
@@ -595,6 +595,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -619,6 +620,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -1799,11 +1801,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 166,
-        "column": 13
+        "line": 147,
+        "column": 2
       },
       "end": {
-        "line": 171,
+        "line": 155,
         "column": 3
       }
     },

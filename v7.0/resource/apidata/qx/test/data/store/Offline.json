@@ -16,7 +16,7 @@
         "column": 0
       },
       "end": {
-        "line": 256,
+        "line": 273,
         "column": 3
       }
     },
@@ -27,12 +27,12 @@
     "__store": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 26,
-          "column": 18
+          "line": 23,
+          "column": 17
         }
       },
       "type": "variable",
@@ -41,12 +41,12 @@
     "__testKey": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 27,
-          "column": 30
+          "line": 24,
+          "column": 29
         }
       },
       "type": "variable",
@@ -55,7 +55,21 @@
     "hasLocalStorage": {
       "location": {
         "start": {
-          "line": 29,
+          "line": 26,
+          "column": 4
+        },
+        "end": {
+          "line": 28,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "hasQxDebug": {
+      "location": {
+        "start": {
+          "line": 30,
           "column": 4
         },
         "end": {
@@ -66,28 +80,14 @@
       "type": "function",
       "access": "public"
     },
-    "hasQxDebug": {
+    "setUp": {
       "location": {
         "start": {
           "line": 34,
           "column": 4
         },
         "end": {
-          "line": 37,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "setUp": {
-      "location": {
-        "start": {
-          "line": 39,
-          "column": 4
-        },
-        "end": {
-          "line": 41,
+          "line": 36,
           "column": 5
         }
       },
@@ -97,11 +97,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 53,
+          "line": 46,
           "column": 5
         }
       },
@@ -111,11 +111,11 @@
     "__initDefaultStore": {
       "location": {
         "start": {
-          "line": 56,
+          "line": 48,
           "column": 4
         },
         "end": {
-          "line": 58,
+          "line": 50,
           "column": 5
         }
       },
@@ -125,11 +125,11 @@
     "__createDefaultModel": {
       "location": {
         "start": {
-          "line": 60,
+          "line": 52,
           "column": 4
         },
         "end": {
-          "line": 62,
+          "line": 54,
           "column": 5
         }
       },
@@ -139,11 +139,11 @@
     "testCreate": {
       "location": {
         "start": {
-          "line": 66,
+          "line": 56,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 72,
           "column": 5
         }
       },
@@ -153,11 +153,11 @@
     "testCreateWithDelegate": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 74,
           "column": 4
         },
         "end": {
-          "line": 92,
+          "line": 81,
           "column": 5
         }
       },
@@ -167,11 +167,11 @@
     "testCheckEmptyModel": {
       "location": {
         "start": {
-          "line": 95,
+          "line": 83,
           "column": 4
         },
         "end": {
-          "line": 108,
+          "line": 99,
           "column": 5
         }
       },
@@ -181,11 +181,11 @@
     "testSetModel": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 121,
+          "line": 114,
           "column": 5
         }
       },
@@ -195,11 +195,11 @@
     "testSetModelDebounce": {
       "location": {
         "start": {
-          "line": 123,
+          "line": 116,
           "column": 4
         },
         "end": {
-          "line": 135,
+          "line": 132,
           "column": 5
         }
       },
@@ -209,11 +209,11 @@
     "testChangeModel": {
       "location": {
         "start": {
-          "line": 138,
+          "line": 134,
           "column": 4
         },
         "end": {
-          "line": 152,
+          "line": 151,
           "column": 5
         }
       },
@@ -223,11 +223,11 @@
     "testModelWriteRead": {
       "location": {
         "start": {
-          "line": 155,
+          "line": 153,
           "column": 4
         },
         "end": {
-          "line": 172,
+          "line": 173,
           "column": 5
         }
       },
@@ -251,11 +251,11 @@
     "testUpdateModel": {
       "location": {
         "start": {
-          "line": 185,
+          "line": 184,
           "column": 4
         },
         "end": {
-          "line": 213,
+          "line": 218,
           "column": 5
         }
       },
@@ -265,11 +265,11 @@
     "testReplaceModel": {
       "location": {
         "start": {
-          "line": 216,
+          "line": 220,
           "column": 4
         },
         "end": {
-          "line": 236,
+          "line": 243,
           "column": 5
         }
       },
@@ -279,11 +279,11 @@
     "testBigModel": {
       "location": {
         "start": {
-          "line": 239,
+          "line": 245,
           "column": 4
         },
         "end": {
-          "line": 254,
+          "line": 271,
           "column": 5
         }
       },
@@ -1441,6 +1441,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1465,6 +1466,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 110,
+        "line": 121,
         "column": 3
       }
     },
@@ -26,11 +26,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 28,
+          "line": 26,
           "column": 5
         }
       },
@@ -40,11 +40,11 @@
     "hasVariantsOptimized": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 32,
+          "line": 30,
           "column": 5
         }
       },
@@ -54,7 +54,7 @@
     "test If 'if' statement is pruned by the generator": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 38,
           "column": 4
         },
         "end": {
@@ -80,7 +80,7 @@
           "column": 4
         },
         "end": {
-          "line": 70,
+          "line": 72,
           "column": 5
         }
       },
@@ -90,11 +90,11 @@
     "test If 'select' call is pruned by the generator": {
       "location": {
         "start": {
-          "line": 78,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 87,
+          "line": 92,
           "column": 5
         }
       },
@@ -112,12 +112,12 @@
     "tearDown If 'select' call is pruned by the generator": {
       "location": {
         "start": {
-          "line": 89,
+          "line": 94,
           "column": 4
         },
         "end": {
-          "line": 91,
-          "column": 4
+          "line": 98,
+          "column": 5
         }
       },
       "type": "function",
@@ -126,11 +126,11 @@
     "test If simple 'get' call is pruned by the generator": {
       "location": {
         "start": {
-          "line": 98,
+          "line": 105,
           "column": 4
         },
         "end": {
-          "line": 104,
+          "line": 113,
           "column": 5
         }
       },
@@ -148,11 +148,11 @@
     "tearDown If simple 'get' call is pruned by the generator": {
       "location": {
         "start": {
-          "line": 106,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 108,
+          "line": 119,
           "column": 5
         }
       },
@@ -718,6 +718,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -742,6 +743,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

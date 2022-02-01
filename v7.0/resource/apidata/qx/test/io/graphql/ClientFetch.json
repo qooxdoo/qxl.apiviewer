@@ -31,11 +31,11 @@
     "TEST_ENDPOINT": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 26,
+          "line": 25,
           "column": 56
         }
       },
@@ -145,6 +145,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -169,6 +170,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

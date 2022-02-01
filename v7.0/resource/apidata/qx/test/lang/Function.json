@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 166,
+        "line": 177,
         "column": 3
       }
     },
@@ -37,11 +37,11 @@
     "testGlobalEval": {
       "location": {
         "start": {
-          "line": 29,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 39,
+          "line": 36,
           "column": 5
         }
       },
@@ -51,11 +51,11 @@
     "testFunctionWrap": {
       "location": {
         "start": {
-          "line": 42,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 70,
+          "line": 64,
           "column": 5
         }
       },
@@ -65,11 +65,11 @@
     "testBindWithDisposedContext": {
       "location": {
         "start": {
-          "line": 73,
+          "line": 66,
           "column": 4
         },
         "end": {
-          "line": 87,
+          "line": 79,
           "column": 5
         }
       },
@@ -79,11 +79,11 @@
     "testBindWithUndefinedArguments": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 81,
           "column": 4
         },
         "end": {
-          "line": 98,
+          "line": 88,
           "column": 5
         }
       },
@@ -93,11 +93,11 @@
     "testCreateDelayGlobalError": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 90,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 109,
           "column": 5
         }
       },
@@ -107,11 +107,11 @@
     "testGetName": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 111,
           "column": 4
         },
         "end": {
-          "line": 164,
+          "line": 175,
           "column": 5
         }
       },
@@ -206,6 +206,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -230,6 +231,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 116,
+        "line": 103,
         "column": 3
       }
     },
@@ -26,11 +26,11 @@
     "hasFulfilledReq": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 30,
+          "line": 27,
           "column": 5
         }
       },
@@ -40,11 +40,11 @@
     "hasUnfulfilledReq": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 35,
+          "line": 31,
           "column": 5
         }
       },
@@ -54,11 +54,11 @@
     "testRequirementPass": {
       "location": {
         "start": {
-          "line": 37,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 45,
+          "line": 39,
           "column": 5
         }
       },
@@ -68,11 +68,11 @@
     "testRequirementFail": {
       "location": {
         "start": {
-          "line": 47,
+          "line": 41,
           "column": 4
         },
         "end": {
-          "line": 53,
+          "line": 46,
           "column": 5
         }
       },
@@ -82,11 +82,11 @@
     "testMissingCheck": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 48,
           "column": 4
         },
         "end": {
-          "line": 61,
+          "line": 57,
           "column": 5
         }
       },
@@ -96,11 +96,11 @@
     "testEnvironmentPass": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 77,
+          "line": 71,
           "column": 5
         }
       },
@@ -110,11 +110,11 @@
     "testEnvironmentFail": {
       "location": {
         "start": {
-          "line": 79,
+          "line": 73,
           "column": 4
         },
         "end": {
-          "line": 91,
+          "line": 84,
           "column": 5
         }
       },
@@ -124,11 +124,11 @@
     "testEnvironmentAsync": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 86,
           "column": 4
         },
         "end": {
-          "line": 104,
+          "line": 101,
           "column": 5
         }
       },
@@ -694,6 +694,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -718,6 +719,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

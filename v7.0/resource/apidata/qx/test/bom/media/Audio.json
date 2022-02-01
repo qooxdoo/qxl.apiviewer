@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 57,
+        "line": 61,
         "column": 3
       }
     },
@@ -39,25 +39,7 @@
     "_getSrc": {
       "location": {
         "start": {
-          "line": 35,
-          "column": 4
-        },
-        "end": {
-          "line": 43,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "protected",
-      "overriddenFrom": "qx.test.bom.media.MediaTestCase",
-      "appearsIn": [
-        "qx.test.bom.media.MediaTestCase"
-      ]
-    },
-    "_createMedia": {
-      "location": {
-        "start": {
-          "line": 45,
+          "line": 33,
           "column": 4
         },
         "end": {
@@ -72,7 +54,7 @@
         "qx.test.bom.media.MediaTestCase"
       ]
     },
-    "_checkFeature": {
+    "_createMedia": {
       "location": {
         "start": {
           "line": 49,
@@ -90,7 +72,7 @@
         "qx.test.bom.media.MediaTestCase"
       ]
     },
-    "hasAudio": {
+    "_checkFeature": {
       "location": {
         "start": {
           "line": 53,
@@ -98,6 +80,24 @@
         },
         "end": {
           "line": 55,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "protected",
+      "overriddenFrom": "qx.test.bom.media.MediaTestCase",
+      "appearsIn": [
+        "qx.test.bom.media.MediaTestCase"
+      ]
+    },
+    "hasAudio": {
+      "location": {
+        "start": {
+          "line": 57,
+          "column": 4
+        },
+        "end": {
+          "line": 59,
           "column": 5
         }
       },
@@ -663,6 +663,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -687,6 +688,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

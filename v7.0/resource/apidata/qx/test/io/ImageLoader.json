@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 256,
+        "line": 352,
         "column": 3
       }
     },
@@ -37,11 +37,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 30,
           "column": 4
         },
         "end": {
-          "line": 39,
+          "line": 45,
           "column": 5
         }
       },
@@ -51,11 +51,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 41,
+          "line": 47,
           "column": 4
         },
         "end": {
-          "line": 44,
+          "line": 49,
           "column": 5
         }
       },
@@ -65,11 +65,11 @@
     "testLoadImageSuccess": {
       "location": {
         "start": {
-          "line": 47,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 63,
+          "line": 73,
           "column": 5
         }
       },
@@ -79,11 +79,11 @@
     "testLoadVectorImageSuccess": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 75,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 97,
           "column": 5
         }
       },
@@ -93,11 +93,11 @@
     "testLoadImageFailure": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 98,
+          "line": 121,
           "column": 5
         }
       },
@@ -107,11 +107,11 @@
     "testLoadVectorImageFailure": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 123,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 145,
           "column": 5
         }
       },
@@ -121,11 +121,11 @@
     "testImageWidth": {
       "location": {
         "start": {
-          "line": 117,
+          "line": 147,
           "column": 4
         },
         "end": {
-          "line": 132,
+          "line": 172,
           "column": 5
         }
       },
@@ -135,11 +135,11 @@
     "testVectorImageWidth": {
       "location": {
         "start": {
-          "line": 134,
+          "line": 174,
           "column": 4
         },
         "end": {
-          "line": 149,
+          "line": 199,
           "column": 5
         }
       },
@@ -149,11 +149,11 @@
     "testImageHeight": {
       "location": {
         "start": {
-          "line": 151,
+          "line": 201,
           "column": 4
         },
         "end": {
-          "line": 166,
+          "line": 226,
           "column": 5
         }
       },
@@ -163,11 +163,11 @@
     "testVectorImageHeight": {
       "location": {
         "start": {
-          "line": 168,
+          "line": 228,
           "column": 4
         },
         "end": {
-          "line": 183,
+          "line": 253,
           "column": 5
         }
       },
@@ -177,11 +177,11 @@
     "testImageSize": {
       "location": {
         "start": {
-          "line": 185,
+          "line": 255,
           "column": 4
         },
         "end": {
-          "line": 202,
+          "line": 279,
           "column": 5
         }
       },
@@ -191,11 +191,11 @@
     "testVectorImageSize": {
       "location": {
         "start": {
-          "line": 204,
+          "line": 281,
           "column": 4
         },
         "end": {
-          "line": 221,
+          "line": 305,
           "column": 5
         }
       },
@@ -205,11 +205,11 @@
     "testImageFormat": {
       "location": {
         "start": {
-          "line": 223,
+          "line": 307,
           "column": 4
         },
         "end": {
-          "line": 238,
+          "line": 332,
           "column": 5
         }
       },
@@ -219,11 +219,11 @@
     "testAbort": {
       "location": {
         "start": {
-          "line": 241,
+          "line": 334,
           "column": 4
         },
         "end": {
-          "line": 254,
+          "line": 350,
           "column": 5
         }
       },
@@ -318,6 +318,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -342,6 +343,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

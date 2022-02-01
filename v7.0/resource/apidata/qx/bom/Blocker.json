@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 373,
+        "line": 364,
         "column": 3
       }
     },
@@ -40,26 +40,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 53,
-        "column": 14
+        "line": 52,
+        "column": 2
       },
       "end": {
-        "line": 58,
+        "line": 56,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "members": {
     "__iframeElement": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 63,
-          "column": 26
+          "line": 59,
+          "column": 25
         }
       },
       "type": "variable",
@@ -68,12 +67,12 @@
     "__blockerElement": {
       "location": {
         "start": {
-          "line": 64,
+          "line": 60,
           "column": 4
         },
         "end": {
-          "line": 64,
-          "column": 27
+          "line": 60,
+          "column": 26
         }
       },
       "type": "variable",
@@ -82,12 +81,12 @@
     "__blockedElement": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 61,
           "column": 4
         },
         "end": {
-          "line": 65,
-          "column": 27
+          "line": 61,
+          "column": 26
         }
       },
       "type": "variable",
@@ -96,12 +95,12 @@
     "__isActive": {
       "location": {
         "start": {
-          "line": 66,
+          "line": 62,
           "column": 4
         },
         "end": {
-          "line": 66,
-          "column": 22
+          "line": 62,
+          "column": 21
         }
       },
       "type": "variable",
@@ -110,11 +109,11 @@
     "__defaultZIndex": {
       "location": {
         "start": {
-          "line": 67,
+          "line": 63,
           "column": 4
         },
         "end": {
-          "line": 67,
+          "line": 63,
           "column": 26
         }
       },
@@ -124,11 +123,11 @@
     "__defaultBlockerOpacity": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 68,
+          "line": 64,
           "column": 30
         }
       },
@@ -138,11 +137,11 @@
     "__defaultBlockerColor": {
       "location": {
         "start": {
-          "line": 69,
+          "line": 65,
           "column": 4
         },
         "end": {
-          "line": 69,
+          "line": 65,
           "column": 40
         }
       },
@@ -152,11 +151,11 @@
     "block": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 79,
           "column": 4
         },
         "end": {
-          "line": 95,
+          "line": 94,
           "column": 5
         }
       },
@@ -185,11 +184,11 @@
     "unblock": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 109,
+          "line": 111,
           "column": 5
         }
       },
@@ -207,11 +206,11 @@
     "isBlocked": {
       "location": {
         "start": {
-          "line": 117,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 120,
           "column": 5
         }
       },
@@ -267,11 +266,11 @@
     "setBlockerColor": {
       "location": {
         "start": {
-          "line": 139,
+          "line": 138,
           "column": 4
         },
         "end": {
-          "line": 141,
+          "line": 140,
           "column": 5
         }
       },
@@ -304,11 +303,11 @@
     "getBlockerColor": {
       "location": {
         "start": {
-          "line": 149,
+          "line": 147,
           "column": 4
         },
         "end": {
-          "line": 151,
+          "line": 149,
           "column": 5
         }
       },
@@ -334,11 +333,11 @@
     "setBlockerOpacity": {
       "location": {
         "start": {
-          "line": 161,
+          "line": 158,
           "column": 4
         },
         "end": {
-          "line": 163,
+          "line": 160,
           "column": 5
         }
       },
@@ -371,11 +370,11 @@
     "getBlockerOpacity": {
       "location": {
         "start": {
-          "line": 171,
+          "line": 167,
           "column": 4
         },
         "end": {
-          "line": 173,
+          "line": 169,
           "column": 5
         }
       },
@@ -401,11 +400,11 @@
     "setBlockerZIndex": {
       "location": {
         "start": {
-          "line": 182,
+          "line": 177,
           "column": 4
         },
         "end": {
-          "line": 184,
+          "line": 179,
           "column": 5
         }
       },
@@ -432,11 +431,11 @@
     "getBlockerZIndex": {
       "location": {
         "start": {
-          "line": 192,
+          "line": 186,
           "column": 4
         },
         "end": {
-          "line": 194,
+          "line": 188,
           "column": 5
         }
       },
@@ -462,11 +461,11 @@
     "__init": {
       "location": {
         "start": {
-          "line": 208,
+          "line": 199,
           "column": 4
         },
         "end": {
-          "line": 215,
+          "line": 205,
           "column": 5
         }
       },
@@ -484,11 +483,11 @@
     "__setupBlockerElement": {
       "location": {
         "start": {
-          "line": 221,
+          "line": 210,
           "column": 4
         },
         "end": {
-          "line": 231,
+          "line": 219,
           "column": 5
         }
       },
@@ -506,11 +505,11 @@
     "__setupIframeElement": {
       "location": {
         "start": {
-          "line": 240,
+          "line": 227,
           "column": 4
         },
         "end": {
-          "line": 253,
+          "line": 248,
           "column": 5
         }
       },
@@ -528,11 +527,11 @@
     "__calculateStyles": {
       "location": {
         "start": {
-          "line": 262,
+          "line": 256,
           "column": 4
         },
         "end": {
-          "line": 284,
+          "line": 278,
           "column": 5
         }
       },
@@ -558,11 +557,11 @@
     "__styleAndInsertBlocker": {
       "location": {
         "start": {
-          "line": 292,
+          "line": 285,
           "column": 4
         },
         "end": {
-          "line": 306,
+          "line": 297,
           "column": 5
         }
       },
@@ -589,11 +588,11 @@
     "__removeBlocker": {
       "location": {
         "start": {
-          "line": 312,
+          "line": 302,
           "column": 4
         },
         "end": {
-          "line": 319,
+          "line": 308,
           "column": 5
         }
       },
@@ -611,11 +610,11 @@
     "__onResize": {
       "location": {
         "start": {
-          "line": 328,
+          "line": 316,
           "column": 4
         },
         "end": {
-          "line": 344,
+          "line": 336,
           "column": 5
         }
       },
@@ -642,11 +641,11 @@
     "__resizeBlocker": {
       "location": {
         "start": {
-          "line": 352,
+          "line": 343,
           "column": 4
         },
         "end": {
-          "line": 359,
+          "line": 349,
           "column": 5
         }
       },
@@ -673,11 +672,11 @@
     "__isWholeDocumentBlockTarget": {
       "location": {
         "start": {
-          "line": 367,
+          "line": 356,
           "column": 4
         },
         "end": {
-          "line": 371,
+          "line": 362,
           "column": 5
         }
       },
@@ -753,69 +752,6 @@
             "body": "{var} Returns the internal id for that binding. This can be used\n   for referencing the binding e.g. for removing. This is not an atomic\n   id so you can't you use it as a hash-map index.",
             "type": "var",
             "description": " Returns the internal id for that binding. This can be used\n   for referencing the binding e.g. for removing. This is not an atomic\n   id so you can't you use it as a hash-map index."
-          }
-        ],
-        "@throws": [
-          {
-            "name": "@throws",
-            "body": "{qx.core.AssertionError} If the event is no data event or\n   there is no property definition for object and property (source and\n   target).",
-            "type": "qx.core.AssertionError",
-            "description": " If the event is no data event or\n   there is no property definition for object and property (source and\n   target)."
-          }
-        ]
-      }
-    },
-    "bindAsync": {
-      "type": "function",
-      "name": "bindAsync",
-      "abstract": false,
-      "mixin": true,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.data.MBinding",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>The bind method delegates the call to the\n {@link qx.data.SingleValueBinding#bind} function. As source, the current\n object (this) will be used.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "sourcePropertyChain {String} The property chain which represents\n   the source property.",
-            "paramName": "sourcePropertyChain",
-            "description": " The property chain which represents\n   the source property.",
-            "type": "String"
-          },
-          {
-            "name": "@param",
-            "body": "targetObject {qx.core.Object} The object which the source should\n   be bind to.",
-            "paramName": "targetObject",
-            "description": " The object which the source should\n   be bind to.",
-            "type": "qx.core.Object"
-          },
-          {
-            "name": "@param",
-            "body": "targetProperty {String} The property name of the target object.",
-            "paramName": "targetProperty",
-            "description": " The property name of the target object.",
-            "type": "String"
-          },
-          {
-            "name": "@param",
-            "body": "options {Map} A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
-            "paramName": "options",
-            "description": " A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
-            "type": "Map"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.Promise} A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index.",
-            "type": "qx.Promise",
-            "description": " A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index."
           }
         ],
         "@throws": [
@@ -2266,6 +2202,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -2289,6 +2226,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

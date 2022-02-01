@@ -18,7 +18,7 @@
         "column": 0
       },
       "end": {
-        "line": 124,
+        "line": 107,
         "column": 3
       }
     },
@@ -35,11 +35,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 43,
-        "column": 14
+        "line": 40,
+        "column": 2
       },
       "end": {
-        "line": 53,
+        "line": 49,
         "column": 3
       }
     },
@@ -83,12 +83,12 @@
     "action": {
       "location": {
         "start": {
-          "line": 67,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 67,
-          "column": 36
+          "line": 59,
+          "column": 33
         }
       },
       "jsdoc": {
@@ -123,11 +123,11 @@
     "appearance": {
       "location": {
         "start": {
-          "line": 81,
+          "line": 69,
           "column": 4
         },
         "end": {
-          "line": 85,
+          "line": 72,
           "column": 5
         }
       },
@@ -164,11 +164,11 @@
     "_forwardStates": {
       "location": {
         "start": {
-          "line": 95,
+          "line": 81,
           "column": 4
         },
         "end": {
-          "line": 101,
+          "line": 86,
           "column": 5
         }
       },
@@ -192,11 +192,11 @@
     "_onPointerOver": {
       "location": {
         "start": {
-          "line": 107,
+          "line": 91,
           "column": 4
         },
         "end": {
-          "line": 109,
+          "line": 93,
           "column": 5
         }
       },
@@ -214,11 +214,11 @@
     "_onPointerOut": {
       "location": {
         "start": {
-          "line": 115,
+          "line": 98,
           "column": 4
         },
         "end": {
-          "line": 117,
+          "line": 100,
           "column": 5
         }
       },
@@ -397,6 +397,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -421,6 +422,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -4638,15 +4640,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 120,
-        "column": 13
+        "line": 103,
+        "column": 2
       },
       "end": {
-        "line": 123,
+        "line": 106,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

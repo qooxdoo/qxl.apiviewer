@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 63,
+        "line": 64,
         "column": 3
       }
     },
@@ -47,12 +47,12 @@
     "__hasEndpoint": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 31,
           "column": 4
         },
         "end": {
-          "line": 32,
-          "column": 25
+          "line": 31,
+          "column": 24
         }
       },
       "type": "variable",
@@ -61,11 +61,11 @@
     "__skipMsg": {
       "location": {
         "start": {
-          "line": 33,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 33,
+          "line": 32,
           "column": 60
         }
       },
@@ -75,11 +75,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 35,
+          "line": 34,
           "column": 4
         },
         "end": {
-          "line": 37,
+          "line": 38,
           "column": 5
         }
       },
@@ -89,11 +89,11 @@
     "test: check endpoint": {
       "location": {
         "start": {
-          "line": 39,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 46,
+          "line": 49,
           "column": 5
         }
       },
@@ -103,11 +103,11 @@
     "test: send message to public websocket echo server and check response": {
       "location": {
         "start": {
-          "line": 48,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 61,
+          "line": 62,
           "column": 5
         }
       },
@@ -202,6 +202,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -226,6 +227,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

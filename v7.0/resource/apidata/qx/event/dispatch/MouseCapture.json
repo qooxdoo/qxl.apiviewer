@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 30,
+        "line": 24,
         "column": 0
       },
       "end": {
-        "line": 267,
+        "line": 250,
         "column": 3
       }
     },
@@ -44,11 +44,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 39,
-        "column": 14
+        "line": 31,
+        "column": 2
       },
       "end": {
-        "line": 48,
+        "line": 39,
         "column": 3
       }
     },
@@ -81,12 +81,12 @@
     "PRIORITY": {
       "location": {
         "start": {
-          "line": 54,
+          "line": 43,
           "column": 4
         },
         "end": {
-          "line": 54,
-          "column": 51
+          "line": 43,
+          "column": 50
         }
       },
       "jsdoc": {
@@ -111,12 +111,12 @@
     "__registration": {
       "location": {
         "start": {
-          "line": 60,
+          "line": 48,
           "column": 4
         },
         "end": {
-          "line": 60,
-          "column": 25
+          "line": 48,
+          "column": 24
         }
       },
       "type": "variable",
@@ -125,12 +125,12 @@
     "__captureElement": {
       "location": {
         "start": {
-          "line": 61,
+          "line": 49,
           "column": 4
         },
         "end": {
-          "line": 61,
-          "column": 27
+          "line": 49,
+          "column": 26
         }
       },
       "type": "variable",
@@ -139,12 +139,12 @@
     "__containerCapture": {
       "location": {
         "start": {
-          "line": 62,
+          "line": 50,
           "column": 4
         },
         "end": {
-          "line": 62,
-          "column": 29
+          "line": 50,
+          "column": 28
         }
       },
       "type": "variable",
@@ -153,12 +153,12 @@
     "__window": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 63,
-          "column": 19
+          "line": 51,
+          "column": 18
         }
       },
       "type": "variable",
@@ -167,11 +167,11 @@
     "_getParent": {
       "location": {
         "start": {
-          "line": 67,
+          "line": 54,
           "column": 4
         },
         "end": {
-          "line": 69,
+          "line": 56,
           "column": 5
         }
       },
@@ -186,11 +186,11 @@
     "canDispatchEvent": {
       "location": {
         "start": {
-          "line": 79,
+          "line": 65,
           "column": 4
         },
         "end": {
-          "line": 85,
+          "line": 67,
           "column": 5
         }
       },
@@ -206,11 +206,11 @@
     "dispatchEvent": {
       "location": {
         "start": {
-          "line": 89,
+          "line": 70,
           "column": 4
         },
         "end": {
-          "line": 106,
+          "line": 86,
           "column": 5
         }
       },
@@ -228,11 +228,11 @@
     "__captureEvents": {
       "location": {
         "start": {
-          "line": 118,
+          "line": 97,
           "column": 4
         },
         "end": {
-          "line": 135,
+          "line": 113,
           "column": 5
         }
       },
@@ -256,11 +256,11 @@
     "activateCapture": {
       "location": {
         "start": {
-          "line": 152,
+          "line": 129,
           "column": 4
         },
         "end": {
-          "line": 183,
+          "line": 169,
           "column": 5
         }
       },
@@ -296,11 +296,11 @@
     "getCaptureElement": {
       "location": {
         "start": {
-          "line": 192,
+          "line": 177,
           "column": 4
         },
         "end": {
-          "line": 194,
+          "line": 179,
           "column": 5
         }
       },
@@ -326,11 +326,11 @@
     "releaseCapture": {
       "location": {
         "start": {
-          "line": 200,
+          "line": 184,
           "column": 4
         },
         "end": {
-          "line": 213,
+          "line": 201,
           "column": 5
         }
       },
@@ -348,12 +348,12 @@
     "hasNativeCapture": {
       "location": {
         "start": {
-          "line": 217,
+          "line": 204,
           "column": 4
         },
         "end": {
-          "line": 220,
-          "column": 5
+          "line": 208,
+          "column": 60
         }
       },
       "jsdoc": {
@@ -370,11 +370,11 @@
     "nativeSetCapture": {
       "location": {
         "start": {
-          "line": 236,
+          "line": 223,
           "column": 4
         },
         "end": {
-          "line": 243,
+          "line": 229,
           "column": 6
         }
       },
@@ -416,11 +416,11 @@
     "nativeReleaseCapture": {
       "location": {
         "start": {
-          "line": 253,
+          "line": 238,
           "column": 4
         },
         "end": {
-          "line": 260,
+          "line": 244,
           "column": 6
         }
       },
@@ -538,6 +538,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -562,6 +563,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -590,15 +592,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 264,
-        "column": 10
+        "line": 247,
+        "column": 2
       },
       "end": {
-        "line": 266,
+        "line": 249,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

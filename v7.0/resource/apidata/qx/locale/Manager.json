@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 478,
+        "line": 440,
         "column": 3
       }
     },
@@ -53,11 +53,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 49,
-        "column": 14
+        "line": 45,
+        "column": 2
       },
       "end": {
-        "line": 58,
+        "line": 53,
         "column": 3
       }
     },
@@ -67,11 +67,11 @@
     "tr": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 70,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 74,
           "column": 5
         }
       },
@@ -119,11 +119,11 @@
     "trn": {
       "location": {
         "start": {
-          "line": 97,
+          "line": 88,
           "column": 4
         },
         "end": {
-          "line": 110,
+          "line": 103,
           "column": 5
         }
       },
@@ -185,11 +185,11 @@
     "trc": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 114,
           "column": 4
         },
         "end": {
-          "line": 128,
+          "line": 119,
           "column": 5
         }
       },
@@ -244,11 +244,11 @@
     "trnc": {
       "location": {
         "start": {
-          "line": 143,
+          "line": 134,
           "column": 4
         },
         "end": {
-          "line": 154,
+          "line": 147,
           "column": 5
         }
       },
@@ -317,11 +317,11 @@
     "marktr": {
       "location": {
         "start": {
-          "line": 162,
+          "line": 155,
           "column": 4
         },
         "end": {
-          "line": 164,
+          "line": 157,
           "column": 5
         }
       },
@@ -358,11 +358,11 @@
     "locale": {
       "location": {
         "start": {
-          "line": 179,
+          "line": 168,
           "column": 4
         },
         "end": {
-          "line": 194,
+          "line": 183,
           "column": 5
         }
       },
@@ -417,12 +417,12 @@
     "__defaultLocale": {
       "location": {
         "start": {
-          "line": 209,
+          "line": 193,
           "column": 4
         },
         "end": {
-          "line": 209,
-          "column": 63
+          "line": 193,
+          "column": 62
         }
       },
       "type": "variable",
@@ -431,12 +431,12 @@
     "__locale": {
       "location": {
         "start": {
-          "line": 210,
+          "line": 194,
           "column": 4
         },
         "end": {
-          "line": 210,
-          "column": 19
+          "line": 194,
+          "column": 18
         }
       },
       "type": "variable",
@@ -445,12 +445,12 @@
     "__language": {
       "location": {
         "start": {
-          "line": 211,
+          "line": 195,
           "column": 4
         },
         "end": {
-          "line": 211,
-          "column": 21
+          "line": 195,
+          "column": 20
         }
       },
       "type": "variable",
@@ -459,12 +459,12 @@
     "__translations": {
       "location": {
         "start": {
-          "line": 212,
+          "line": 196,
           "column": 4
         },
         "end": {
-          "line": 212,
-          "column": 25
+          "line": 196,
+          "column": 24
         }
       },
       "type": "variable",
@@ -473,12 +473,12 @@
     "__locales": {
       "location": {
         "start": {
-          "line": 213,
+          "line": 197,
           "column": 4
         },
         "end": {
-          "line": 213,
-          "column": 20
+          "line": 197,
+          "column": 19
         }
       },
       "type": "variable",
@@ -487,12 +487,12 @@
     "__clientLocale": {
       "location": {
         "start": {
-          "line": 214,
+          "line": 198,
           "column": 4
         },
         "end": {
-          "line": 214,
-          "column": 25
+          "line": 198,
+          "column": 24
         }
       },
       "type": "variable",
@@ -501,11 +501,11 @@
     "getLanguage": {
       "location": {
         "start": {
-          "line": 223,
+          "line": 207,
           "column": 4
         },
         "end": {
-          "line": 225,
+          "line": 209,
           "column": 5
         }
       },
@@ -531,11 +531,11 @@
     "getTerritory": {
       "location": {
         "start": {
-          "line": 235,
+          "line": 218,
           "column": 4
         },
         "end": {
-          "line": 237,
+          "line": 220,
           "column": 5
         }
       },
@@ -561,11 +561,11 @@
     "getAvailableLocales": {
       "location": {
         "start": {
-          "line": 252,
+          "line": 234,
           "column": 4
         },
         "end": {
-          "line": 267,
+          "line": 247,
           "column": 5
         }
       },
@@ -602,11 +602,11 @@
     "__extractLanguage": {
       "location": {
         "start": {
-          "line": 276,
+          "line": 255,
           "column": 4
         },
         "end": {
-          "line": 291,
+          "line": 269,
           "column": 5
         }
       },
@@ -641,11 +641,11 @@
     "_applyLocale": {
       "location": {
         "start": {
-          "line": 295,
+          "line": 272,
           "column": 4
         },
         "end": {
-          "line": 305,
+          "line": 281,
           "column": 5
         }
       },
@@ -659,11 +659,11 @@
     "addTranslation": {
       "location": {
         "start": {
-          "line": 320,
+          "line": 295,
           "column": 4
         },
         "end": {
-          "line": 333,
+          "line": 304,
           "column": 5
         }
       },
@@ -697,11 +697,11 @@
     "addLocale": {
       "location": {
         "start": {
-          "line": 346,
+          "line": 316,
           "column": 4
         },
         "end": {
-          "line": 359,
+          "line": 325,
           "column": 5
         }
       },
@@ -735,11 +735,11 @@
     "translate": {
       "location": {
         "start": {
-          "line": 375,
+          "line": 340,
           "column": 4
         },
         "end": {
-          "line": 379,
+          "line": 343,
           "column": 5
         }
       },
@@ -790,11 +790,11 @@
     "localize": {
       "location": {
         "start": {
-          "line": 394,
+          "line": 358,
           "column": 4
         },
         "end": {
-          "line": 398,
+          "line": 361,
           "column": 5
         }
       },
@@ -845,11 +845,11 @@
     "__lookupAndExpand": {
       "location": {
         "start": {
-          "line": 415,
+          "line": 377,
           "column": 4
         },
         "end": {
-          "line": 476,
+          "line": 438,
           "column": 5
         }
       },
@@ -992,6 +992,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1016,6 +1017,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

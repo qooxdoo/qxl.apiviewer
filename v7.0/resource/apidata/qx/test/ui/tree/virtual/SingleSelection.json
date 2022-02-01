@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 143,
+        "line": 151,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "testSelection": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 38,
+          "line": 35,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "testInvalidSelection": {
       "location": {
         "start": {
-          "line": 41,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 56,
+          "line": 55,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "testSelectionByUserInteraction": {
       "location": {
         "start": {
-          "line": 59,
+          "line": 57,
           "column": 4
         },
         "end": {
-          "line": 69,
+          "line": 66,
           "column": 5
         }
       },
@@ -66,7 +66,7 @@
     "testSelectionEventByUserInteraction": {
       "location": {
         "start": {
-          "line": 72,
+          "line": 68,
           "column": 4
         },
         "end": {
@@ -80,11 +80,11 @@
     "testSelectionWithClosedNode": {
       "location": {
         "start": {
-          "line": 92,
+          "line": 91,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 125,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testRemoveItem": {
       "location": {
         "start": {
-          "line": 118,
+          "line": 127,
           "column": 4
         },
         "end": {
-          "line": 141,
+          "line": 149,
           "column": 5
         }
       },
@@ -193,6 +193,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -217,6 +218,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

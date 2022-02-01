@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 242,
+        "line": 257,
         "column": 3
       }
     },
@@ -37,12 +37,12 @@
     "__arrayField": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 30,
-          "column": 23
+          "line": 28,
+          "column": 22
         }
       },
       "jsdoc": {
@@ -65,12 +65,12 @@
     "__modelField": {
       "location": {
         "start": {
-          "line": 33,
+          "line": 31,
           "column": 4
         },
         "end": {
-          "line": 33,
-          "column": 23
+          "line": 31,
+          "column": 22
         }
       },
       "jsdoc": {
@@ -93,12 +93,12 @@
     "__form": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 34,
           "column": 4
         },
         "end": {
-          "line": 36,
-          "column": 17
+          "line": 34,
+          "column": 16
         }
       },
       "jsdoc": {
@@ -121,12 +121,12 @@
     "__model": {
       "location": {
         "start": {
-          "line": 39,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 39,
-          "column": 18
+          "line": 37,
+          "column": 17
         }
       },
       "jsdoc": {
@@ -149,11 +149,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 42,
+          "line": 39,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 134,
           "column": 5
         }
       },
@@ -163,11 +163,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 127,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 131,
+          "line": 140,
           "column": 5
         }
       },
@@ -177,11 +177,11 @@
     "__makeAddressForm": {
       "location": {
         "start": {
-          "line": 139,
+          "line": 147,
           "column": 4
         },
         "end": {
-          "line": 148,
+          "line": 156,
           "column": 5
         }
       },
@@ -207,11 +207,11 @@
     "test self update: array": {
       "location": {
         "start": {
-          "line": 151,
+          "line": 158,
           "column": 4
         },
         "end": {
-          "line": 168,
+          "line": 179,
           "column": 5
         }
       },
@@ -221,11 +221,11 @@
     "test self update: model": {
       "location": {
         "start": {
-          "line": 171,
+          "line": 181,
           "column": 4
         },
         "end": {
-          "line": 190,
+          "line": 200,
           "column": 5
         }
       },
@@ -235,11 +235,11 @@
     "test updating view": {
       "location": {
         "start": {
-          "line": 193,
+          "line": 202,
           "column": 4
         },
         "end": {
-          "line": 209,
+          "line": 222,
           "column": 5
         }
       },
@@ -249,11 +249,11 @@
     "test updating model: array field": {
       "location": {
         "start": {
-          "line": 212,
+          "line": 224,
           "column": 4
         },
         "end": {
-          "line": 224,
+          "line": 240,
           "column": 5
         }
       },
@@ -263,11 +263,11 @@
     "test updating model: model field": {
       "location": {
         "start": {
-          "line": 227,
+          "line": 242,
           "column": 4
         },
         "end": {
-          "line": 240,
+          "line": 255,
           "column": 5
         }
       },
@@ -362,6 +362,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -386,6 +387,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

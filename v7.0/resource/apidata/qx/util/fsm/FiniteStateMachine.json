@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 1312,
+        "line": 1253,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 34,
-        "column": 14
+        "line": 32,
+        "column": 2
       },
       "end": {
-        "line": 80,
+        "line": 77,
         "column": 3
       }
     },
@@ -60,11 +60,11 @@
     "StateChange": {
       "location": {
         "start": {
-          "line": 89,
+          "line": 84,
           "column": 4
         },
         "end": {
-          "line": 102,
+          "line": 95,
           "column": 5
         }
       },
@@ -82,11 +82,11 @@
     "EventHandling": {
       "location": {
         "start": {
-          "line": 109,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 110,
           "column": 5
         }
       },
@@ -104,11 +104,11 @@
     "DebugFlags": {
       "location": {
         "start": {
-          "line": 125,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 141,
+          "line": 129,
           "column": 5
         }
       },
@@ -128,12 +128,12 @@
     "terminated": {
       "location": {
         "start": {
-          "line": 150,
+          "line": 137,
           "column": 4
         },
         "end": {
-          "line": 150,
-          "column": 39
+          "line": 137,
+          "column": 36
         }
       },
       "jsdoc": {
@@ -152,11 +152,11 @@
     "name": {
       "location": {
         "start": {
-          "line": 158,
+          "line": 144,
           "column": 4
         },
         "end": {
-          "line": 162,
+          "line": 147,
           "column": 5
         }
       },
@@ -177,11 +177,11 @@
     "state": {
       "location": {
         "start": {
-          "line": 168,
+          "line": 152,
           "column": 4
         },
         "end": {
-          "line": 172,
+          "line": 155,
           "column": 5
         }
       },
@@ -202,11 +202,11 @@
     "previousState": {
       "location": {
         "start": {
-          "line": 181,
+          "line": 163,
           "column": 4
         },
         "end": {
-          "line": 185,
+          "line": 166,
           "column": 5
         }
       },
@@ -227,11 +227,11 @@
     "nextState": {
       "location": {
         "start": {
-          "line": 193,
+          "line": 173,
           "column": 4
         },
         "end": {
-          "line": 197,
+          "line": 176,
           "column": 5
         }
       },
@@ -252,11 +252,11 @@
     "maxSavedStates": {
       "location": {
         "start": {
-          "line": 207,
+          "line": 185,
           "column": 4
         },
         "end": {
-          "line": 211,
+          "line": 188,
           "column": 5
         }
       },
@@ -277,11 +277,11 @@
     "debugFlags": {
       "location": {
         "start": {
-          "line": 228,
+          "line": 204,
           "column": 4
         },
         "end": {
-          "line": 237,
+          "line": 212,
           "column": 5
         }
       },
@@ -336,12 +336,12 @@
     "__states": {
       "location": {
         "start": {
-          "line": 243,
+          "line": 216,
           "column": 4
         },
         "end": {
-          "line": 243,
-          "column": 39
+          "line": 216,
+          "column": 18
         }
       },
       "type": "variable",
@@ -350,12 +350,12 @@
     "__startState": {
       "location": {
         "start": {
-          "line": 244,
+          "line": 217,
           "column": 4
         },
         "end": {
-          "line": 244,
-          "column": 39
+          "line": 217,
+          "column": 22
         }
       },
       "type": "variable",
@@ -364,12 +364,12 @@
     "__eventQueue": {
       "location": {
         "start": {
-          "line": 245,
+          "line": 218,
           "column": 4
         },
         "end": {
-          "line": 245,
-          "column": 39
+          "line": 218,
+          "column": 22
         }
       },
       "type": "variable",
@@ -378,12 +378,12 @@
     "__blockedEvents": {
       "location": {
         "start": {
-          "line": 246,
+          "line": 219,
           "column": 4
         },
         "end": {
-          "line": 246,
-          "column": 39
+          "line": 219,
+          "column": 25
         }
       },
       "type": "variable",
@@ -392,12 +392,12 @@
     "__savedStates": {
       "location": {
         "start": {
-          "line": 247,
+          "line": 220,
           "column": 4
         },
         "end": {
-          "line": 247,
-          "column": 39
+          "line": 220,
+          "column": 23
         }
       },
       "type": "variable",
@@ -406,12 +406,12 @@
     "__friendlyToObject": {
       "location": {
         "start": {
-          "line": 248,
+          "line": 221,
           "column": 4
         },
         "end": {
-          "line": 248,
-          "column": 39
+          "line": 221,
+          "column": 28
         }
       },
       "type": "variable",
@@ -420,12 +420,12 @@
     "__friendlyToHash": {
       "location": {
         "start": {
-          "line": 249,
+          "line": 222,
           "column": 4
         },
         "end": {
-          "line": 249,
-          "column": 39
+          "line": 222,
+          "column": 26
         }
       },
       "type": "variable",
@@ -434,12 +434,12 @@
     "__hashToFriendly": {
       "location": {
         "start": {
-          "line": 250,
+          "line": 223,
           "column": 4
         },
         "end": {
-          "line": 250,
-          "column": 39
+          "line": 223,
+          "column": 26
         }
       },
       "type": "variable",
@@ -448,12 +448,12 @@
     "__groupToFriendly": {
       "location": {
         "start": {
-          "line": 251,
+          "line": 224,
           "column": 4
         },
         "end": {
-          "line": 251,
-          "column": 39
+          "line": 224,
+          "column": 27
         }
       },
       "type": "variable",
@@ -462,12 +462,12 @@
     "__friendlyToGroups": {
       "location": {
         "start": {
-          "line": 252,
+          "line": 225,
           "column": 4
         },
         "end": {
-          "line": 252,
-          "column": 39
+          "line": 225,
+          "column": 28
         }
       },
       "type": "variable",
@@ -476,12 +476,12 @@
     "__bEventProcessingInProgress": {
       "location": {
         "start": {
-          "line": 253,
+          "line": 226,
           "column": 4
         },
         "end": {
-          "line": 253,
-          "column": 40
+          "line": 226,
+          "column": 39
         }
       },
       "type": "variable",
@@ -490,12 +490,12 @@
     "__bTerminated": {
       "location": {
         "start": {
-          "line": 254,
+          "line": 227,
           "column": 4
         },
         "end": {
-          "line": 254,
-          "column": 39
+          "line": 227,
+          "column": 23
         }
       },
       "type": "variable",
@@ -504,11 +504,11 @@
     "isTerminated": {
       "location": {
         "start": {
-          "line": 261,
+          "line": 234,
           "column": 4
         },
         "end": {
-          "line": 264,
+          "line": 236,
           "column": 5
         }
       },
@@ -534,11 +534,11 @@
     "addState": {
       "location": {
         "start": {
-          "line": 278,
+          "line": 250,
           "column": 4
         },
         "end": {
-          "line": 305,
+          "line": 274,
           "column": 5
         }
       },
@@ -579,11 +579,11 @@
     "replaceState": {
       "location": {
         "start": {
-          "line": 330,
+          "line": 298,
           "column": 4
         },
         "end": {
-          "line": 356,
+          "line": 322,
           "column": 5
         }
       },
@@ -633,11 +633,11 @@
     "addObject": {
       "location": {
         "start": {
-          "line": 374,
+          "line": 339,
           "column": 4
         },
         "end": {
-          "line": 421,
+          "line": 380,
           "column": 5
         }
       },
@@ -678,11 +678,11 @@
     "removeObject": {
       "location": {
         "start": {
-          "line": 433,
+          "line": 391,
           "column": 4
         },
         "end": {
-          "line": 474,
+          "line": 427,
           "column": 5
         }
       },
@@ -709,11 +709,11 @@
     "getObject": {
       "location": {
         "start": {
-          "line": 489,
+          "line": 441,
           "column": 4
         },
         "end": {
-          "line": 492,
+          "line": 443,
           "column": 5
         }
       },
@@ -748,11 +748,11 @@
     "getFriendlyName": {
       "location": {
         "start": {
-          "line": 506,
+          "line": 456,
           "column": 4
         },
         "end": {
-          "line": 510,
+          "line": 459,
           "column": 5
         }
       },
@@ -787,11 +787,11 @@
     "getGroupObjects": {
       "location": {
         "start": {
-          "line": 525,
+          "line": 473,
           "column": 4
         },
         "end": {
-          "line": 535,
+          "line": 481,
           "column": 5
         }
       },
@@ -826,11 +826,11 @@
     "displayAllObjects": {
       "location": {
         "start": {
-          "line": 542,
+          "line": 487,
           "column": 4
         },
         "end": {
-          "line": 556,
+          "line": 501,
           "column": 5
         }
       },
@@ -848,11 +848,11 @@
     "_getInternalData": {
       "location": {
         "start": {
-          "line": 576,
+          "line": 520,
           "column": 4
         },
         "end": {
-          "line": 591,
+          "line": 533,
           "column": 5
         }
       },
@@ -878,11 +878,11 @@
     "start": {
       "location": {
         "start": {
-          "line": 600,
+          "line": 542,
           "column": 4
         },
         "end": {
-          "line": 644,
+          "line": 581,
           "column": 5
         }
       },
@@ -908,11 +908,11 @@
     "pushState": {
       "location": {
         "start": {
-          "line": 672,
+          "line": 608,
           "column": 4
         },
         "end": {
-          "line": 695,
+          "line": 624,
           "column": 5
         }
       },
@@ -950,11 +950,11 @@
     "popState": {
       "location": {
         "start": {
-          "line": 705,
+          "line": 633,
           "column": 4
         },
         "end": {
-          "line": 715,
+          "line": 641,
           "column": 5
         }
       },
@@ -980,11 +980,11 @@
     "postponeEvent": {
       "location": {
         "start": {
-          "line": 726,
+          "line": 652,
           "column": 4
         },
         "end": {
-          "line": 731,
+          "line": 656,
           "column": 5
         }
       },
@@ -1011,11 +1011,11 @@
     "enqueueEvent": {
       "location": {
         "start": {
-          "line": 747,
+          "line": 671,
           "column": 4
         },
         "end": {
-          "line": 778,
+          "line": 703,
           "column": 5
         }
       },
@@ -1049,11 +1049,11 @@
     "eventListener": {
       "location": {
         "start": {
-          "line": 786,
+          "line": 710,
           "column": 4
         },
         "end": {
-          "line": 808,
+          "line": 734,
           "column": 5
         }
       },
@@ -1080,11 +1080,11 @@
     "fireImmediateEvent": {
       "location": {
         "start": {
-          "line": 827,
+          "line": 752,
           "column": 4
         },
         "end": {
-          "line": 852,
+          "line": 779,
           "column": 5
         }
       },
@@ -1128,11 +1128,11 @@
     "scheduleEvent": {
       "location": {
         "start": {
-          "line": 875,
+          "line": 801,
           "column": 4
         },
         "end": {
-          "line": 884,
+          "line": 809,
           "column": 5
         }
       },
@@ -1186,11 +1186,11 @@
     "__processEvents": {
       "location": {
         "start": {
-          "line": 891,
+          "line": 815,
           "column": 4
         },
         "end": {
-          "line": 922,
+          "line": 842,
           "column": 5
         }
       },
@@ -1208,11 +1208,11 @@
     "__run": {
       "location": {
         "start": {
-          "line": 945,
+          "line": 864,
           "column": 4
         },
         "end": {
-          "line": 1302,
+          "line": 1245,
           "column": 5
         }
       },
@@ -1364,6 +1364,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1388,6 +1389,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -1812,15 +1814,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 1306,
-        "column": 13
+        "line": 1248,
+        "column": 2
       },
       "end": {
-        "line": 1311,
+        "line": 1252,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

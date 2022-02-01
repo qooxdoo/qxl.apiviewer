@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 290,
+        "line": 264,
         "column": 3
       }
     },
@@ -23,25 +23,24 @@
   "construct": {
     "location": {
       "start": {
-        "line": 23,
-        "column": 14
+        "line": 22,
+        "column": 2
       },
       "end": {
-        "line": 36,
+        "line": 34,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "properties": {
     "visibility": {
       "location": {
         "start": {
-          "line": 41,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 47,
+          "line": 42,
           "column": 5
         }
       },
@@ -94,12 +93,12 @@
     "bounds": {
       "location": {
         "start": {
-          "line": 52,
+          "line": 46,
           "column": 4
         },
         "end": {
-          "line": 52,
-          "column": 17
+          "line": 46,
+          "column": 16
         }
       },
       "type": "variable",
@@ -108,12 +107,12 @@
     "__layout": {
       "location": {
         "start": {
-          "line": 54,
+          "line": 48,
           "column": 4
         },
         "end": {
-          "line": 54,
-          "column": 19
+          "line": 48,
+          "column": 18
         }
       },
       "type": "variable",
@@ -122,12 +121,12 @@
     "__children": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 49,
           "column": 4
         },
         "end": {
-          "line": 55,
-          "column": 21
+          "line": 49,
+          "column": 20
         }
       },
       "type": "variable",
@@ -136,11 +135,11 @@
     "renderLayout": {
       "location": {
         "start": {
-          "line": 57,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 80,
+          "line": 77,
           "column": 5
         }
       },
@@ -194,11 +193,11 @@
     "setLayout": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 79,
           "column": 4
         },
         "end": {
-          "line": 88,
+          "line": 83,
           "column": 5
         }
       },
@@ -208,11 +207,11 @@
     "_getLayout": {
       "location": {
         "start": {
-          "line": 91,
+          "line": 85,
           "column": 4
         },
         "end": {
-          "line": 93,
+          "line": 87,
           "column": 5
         }
       },
@@ -236,11 +235,11 @@
     "invalidateLayoutCache": {
       "location": {
         "start": {
-          "line": 97,
+          "line": 90,
           "column": 4
         },
         "end": {
-          "line": 104,
+          "line": 96,
           "column": 5
         }
       },
@@ -255,11 +254,11 @@
     "invalidateLayoutChildren": {
       "location": {
         "start": {
-          "line": 107,
+          "line": 98,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 105,
           "column": 5
         }
       },
@@ -269,11 +268,11 @@
     "_applyVisibility": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 129,
+          "line": 123,
           "column": 5
         }
       },
@@ -287,11 +286,11 @@
     "_getContentHint": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 125,
           "column": 4
         },
         "end": {
-          "line": 139,
+          "line": 131,
           "column": 5
         }
       },
@@ -301,11 +300,11 @@
     "_computeSizeHint": {
       "location": {
         "start": {
-          "line": 143,
+          "line": 134,
           "column": 4
         },
         "end": {
-          "line": 206,
+          "line": 191,
           "column": 5
         }
       },
@@ -320,11 +319,11 @@
     "add": {
       "location": {
         "start": {
-          "line": 209,
+          "line": 193,
           "column": 4
         },
         "end": {
-          "line": 225,
+          "line": 208,
           "column": 5
         }
       },
@@ -334,11 +333,11 @@
     "remove": {
       "location": {
         "start": {
-          "line": 228,
+          "line": 210,
           "column": 4
         },
         "end": {
-          "line": 246,
+          "line": 227,
           "column": 5
         }
       },
@@ -348,11 +347,11 @@
     "getLayoutChildren": {
       "location": {
         "start": {
-          "line": 249,
+          "line": 229,
           "column": 4
         },
         "end": {
-          "line": 262,
+          "line": 240,
           "column": 5
         }
       },
@@ -362,12 +361,12 @@
     "checkAppearanceNeeds": {
       "location": {
         "start": {
-          "line": 265,
+          "line": 242,
           "column": 4
         },
         "end": {
-          "line": 265,
-          "column": 40
+          "line": 242,
+          "column": 29
         }
       },
       "type": "function",
@@ -376,11 +375,11 @@
     "addChildrenToQueue": {
       "location": {
         "start": {
-          "line": 269,
+          "line": 245,
           "column": 4
         },
         "end": {
-          "line": 284,
+          "line": 258,
           "column": 5
         }
       },
@@ -476,6 +475,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -500,6 +500,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -1872,15 +1873,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 287,
-        "column": 13
+        "line": 261,
+        "column": 2
       },
       "end": {
-        "line": 289,
+        "line": 263,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": [
     "qx.test.ui.layout.LayoutRoot"

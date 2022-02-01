@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 675,
+        "line": 861,
         "column": 3
       }
     },
@@ -38,26 +38,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 28,
-        "column": 14
+        "line": 27,
+        "column": 2
       },
       "end": {
-        "line": 76,
+        "line": 72,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "members": {
     "__a": {
       "location": {
         "start": {
-          "line": 81,
+          "line": 75,
           "column": 4
         },
         "end": {
-          "line": 81,
-          "column": 14
+          "line": 75,
+          "column": 13
         }
       },
       "type": "variable",
@@ -66,12 +65,12 @@
     "__b1": {
       "location": {
         "start": {
-          "line": 82,
+          "line": 76,
           "column": 4
         },
         "end": {
-          "line": 82,
-          "column": 15
+          "line": 76,
+          "column": 14
         }
       },
       "type": "variable",
@@ -80,12 +79,12 @@
     "__b2": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 77,
           "column": 4
         },
         "end": {
-          "line": 83,
-          "column": 15
+          "line": 77,
+          "column": 14
         }
       },
       "type": "variable",
@@ -94,12 +93,12 @@
     "__label": {
       "location": {
         "start": {
-          "line": 84,
+          "line": 78,
           "column": 4
         },
         "end": {
-          "line": 84,
-          "column": 18
+          "line": 78,
+          "column": 17
         }
       },
       "type": "variable",
@@ -108,11 +107,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 86,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 105,
+          "line": 100,
           "column": 5
         }
       },
@@ -122,11 +121,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 108,
+          "line": 102,
           "column": 4
         },
         "end": {
-          "line": 114,
+          "line": 107,
           "column": 5
         }
       },
@@ -136,11 +135,11 @@
     "testConverterChainBroken": {
       "location": {
         "start": {
-          "line": 117,
+          "line": 109,
           "column": 4
         },
         "end": {
-          "line": 139,
+          "line": 134,
           "column": 5
         }
       },
@@ -150,11 +149,11 @@
     "testConverterChainBrokenInitialNull": {
       "location": {
         "start": {
-          "line": 142,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 157,
+          "line": 151,
           "column": 5
         }
       },
@@ -164,11 +163,11 @@
     "testDepthOf2": {
       "location": {
         "start": {
-          "line": 160,
+          "line": 153,
           "column": 4
         },
         "end": {
-          "line": 180,
+          "line": 191,
           "column": 5
         }
       },
@@ -178,11 +177,11 @@
     "testDepthOf3": {
       "location": {
         "start": {
-          "line": 183,
+          "line": 193,
           "column": 4
         },
         "end": {
-          "line": 225,
+          "line": 259,
           "column": 5
         }
       },
@@ -192,11 +191,11 @@
     "testDepthOf5": {
       "location": {
         "start": {
-          "line": 229,
+          "line": 261,
           "column": 4
         },
         "end": {
-          "line": 252,
+          "line": 295,
           "column": 5
         }
       },
@@ -206,11 +205,11 @@
     "testWrongDeep": {
       "location": {
         "start": {
-          "line": 255,
+          "line": 297,
           "column": 4
         },
         "end": {
-          "line": 274,
+          "line": 326,
           "column": 5
         }
       },
@@ -220,11 +219,11 @@
     "testSingle": {
       "location": {
         "start": {
-          "line": 277,
+          "line": 328,
           "column": 4
         },
         "end": {
-          "line": 286,
+          "line": 346,
           "column": 5
         }
       },
@@ -234,11 +233,11 @@
     "testDebug": {
       "location": {
         "start": {
-          "line": 289,
+          "line": 348,
           "column": 4
         },
         "end": {
-          "line": 297,
+          "line": 361,
           "column": 5
         }
       },
@@ -248,11 +247,11 @@
     "testRemove": {
       "location": {
         "start": {
-          "line": 300,
+          "line": 363,
           "column": 4
         },
         "end": {
-          "line": 323,
+          "line": 414,
           "column": 5
         }
       },
@@ -262,11 +261,11 @@
     "testArrayDeep": {
       "location": {
         "start": {
-          "line": 326,
+          "line": 416,
           "column": 4
         },
         "end": {
-          "line": 344,
+          "line": 451,
           "column": 5
         }
       },
@@ -276,11 +275,11 @@
     "testDeepTarget": {
       "location": {
         "start": {
-          "line": 347,
+          "line": 453,
           "column": 4
         },
         "end": {
-          "line": 351,
+          "line": 461,
           "column": 5
         }
       },
@@ -290,11 +289,11 @@
     "testDeepTarget2": {
       "location": {
         "start": {
-          "line": 353,
+          "line": 463,
           "column": 4
         },
         "end": {
-          "line": 358,
+          "line": 477,
           "column": 5
         }
       },
@@ -304,11 +303,11 @@
     "testDeepTargetNull": {
       "location": {
         "start": {
-          "line": 360,
+          "line": 479,
           "column": 4
         },
         "end": {
-          "line": 364,
+          "line": 492,
           "column": 5
         }
       },
@@ -318,11 +317,11 @@
     "testDeepTargetArray": {
       "location": {
         "start": {
-          "line": 366,
+          "line": 494,
           "column": 4
         },
         "end": {
-          "line": 373,
+          "line": 510,
           "column": 5
         }
       },
@@ -332,11 +331,11 @@
     "testDeepTargetArrayLast": {
       "location": {
         "start": {
-          "line": 375,
+          "line": 512,
           "column": 4
         },
         "end": {
-          "line": 382,
+          "line": 528,
           "column": 5
         }
       },
@@ -346,11 +345,11 @@
     "testDeepTargetChange": {
       "location": {
         "start": {
-          "line": 385,
+          "line": 530,
           "column": 4
         },
         "end": {
-          "line": 401,
+          "line": 545,
           "column": 5
         }
       },
@@ -360,11 +359,11 @@
     "testDeepTargetChangeConverter": {
       "location": {
         "start": {
-          "line": 404,
+          "line": 547,
           "column": 4
         },
         "end": {
-          "line": 423,
+          "line": 572,
           "column": 5
         }
       },
@@ -374,105 +373,7 @@
     "testDeepTargetChange3": {
       "location": {
         "start": {
-          "line": 426,
-          "column": 4
-        },
-        "end": {
-          "line": 447,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testDeepTargetChange3Remove": {
-      "location": {
-        "start": {
-          "line": 450,
-          "column": 4
-        },
-        "end": {
-          "line": 473,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testDeepTargetChangeArray": {
-      "location": {
-        "start": {
-          "line": 476,
-          "column": 4
-        },
-        "end": {
-          "line": 494,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testDeepTargetChangeArrayLast": {
-      "location": {
-        "start": {
-          "line": 497,
-          "column": 4
-        },
-        "end": {
-          "line": 515,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testDeepTargetChange3Array": {
-      "location": {
-        "start": {
-          "line": 518,
-          "column": 4
-        },
-        "end": {
-          "line": 539,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testDeepTargetChangeMiddleArray": {
-      "location": {
-        "start": {
-          "line": 542,
-          "column": 4
-        },
-        "end": {
-          "line": 560,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testDeepTargetChangeMiddleArrayLast": {
-      "location": {
-        "start": {
-          "line": 563,
-          "column": 4
-        },
-        "end": {
-          "line": 581,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testDeepTargetChangeWithoutEvent": {
-      "location": {
-        "start": {
-          "line": 584,
+          "line": 574,
           "column": 4
         },
         "end": {
@@ -483,14 +384,112 @@
       "type": "function",
       "access": "public"
     },
-    "testDeepTargetChangeWithoutEvent3": {
+    "testDeepTargetChange3Remove": {
       "location": {
         "start": {
-          "line": 602,
+          "line": 601,
           "column": 4
         },
         "end": {
-          "line": 622,
+          "line": 632,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testDeepTargetChangeArray": {
+      "location": {
+        "start": {
+          "line": 634,
+          "column": 4
+        },
+        "end": {
+          "line": 656,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testDeepTargetChangeArrayLast": {
+      "location": {
+        "start": {
+          "line": 658,
+          "column": 4
+        },
+        "end": {
+          "line": 680,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testDeepTargetChange3Array": {
+      "location": {
+        "start": {
+          "line": 682,
+          "column": 4
+        },
+        "end": {
+          "line": 711,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testDeepTargetChangeMiddleArray": {
+      "location": {
+        "start": {
+          "line": 713,
+          "column": 4
+        },
+        "end": {
+          "line": 735,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testDeepTargetChangeMiddleArrayLast": {
+      "location": {
+        "start": {
+          "line": 737,
+          "column": 4
+        },
+        "end": {
+          "line": 759,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testDeepTargetChangeWithoutEvent": {
+      "location": {
+        "start": {
+          "line": 761,
+          "column": 4
+        },
+        "end": {
+          "line": 780,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testDeepTargetChangeWithoutEvent3": {
+      "location": {
+        "start": {
+          "line": 782,
+          "column": 4
+        },
+        "end": {
+          "line": 806,
           "column": 5
         }
       },
@@ -500,11 +499,11 @@
     "testDeepTargetChange3ResetNotNull": {
       "location": {
         "start": {
-          "line": 625,
+          "line": 808,
           "column": 4
         },
         "end": {
-          "line": 642,
+          "line": 830,
           "column": 5
         }
       },
@@ -514,11 +513,11 @@
     "testRemoveIncompleteBinding": {
       "location": {
         "start": {
-          "line": 648,
+          "line": 835,
           "column": 4
         },
         "end": {
-          "line": 672,
+          "line": 859,
           "column": 5
         }
       },
@@ -1213,6 +1212,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1237,6 +1237,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

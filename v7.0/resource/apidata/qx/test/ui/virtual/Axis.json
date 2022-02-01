@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 430,
+        "line": 447,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 30,
+          "line": 27,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 33,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 35,
+          "line": 31,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "assertItem": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 42,
+          "line": 45,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "testDefaultItemSize": {
       "location": {
         "start": {
-          "line": 45,
+          "line": 47,
           "column": 4
         },
         "end": {
-          "line": 51,
+          "line": 52,
           "column": 5
         }
       },
@@ -84,7 +84,7 @@
           "column": 4
         },
         "end": {
-          "line": 60,
+          "line": 59,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testItemSize": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 61,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 84,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "testItemAtPosition": {
       "location": {
         "start": {
-          "line": 84,
+          "line": 86,
           "column": 4
         },
         "end": {
-          "line": 104,
+          "line": 105,
           "column": 5
         }
       },
@@ -126,7 +126,7 @@
           "column": 4
         },
         "end": {
-          "line": 112,
+          "line": 111,
           "column": 5
         }
       },
@@ -136,11 +136,11 @@
     "testGetItemAtPositionCustomSizes": {
       "location": {
         "start": {
-          "line": 115,
+          "line": 113,
           "column": 4
         },
         "end": {
-          "line": 146,
+          "line": 166,
           "column": 5
         }
       },
@@ -150,12 +150,12 @@
     "ITEM_POS_ITER": {
       "location": {
         "start": {
-          "line": 149,
+          "line": 168,
           "column": 4
         },
         "end": {
-          "line": 149,
-          "column": 21
+          "line": 168,
+          "column": 20
         }
       },
       "type": "variable",
@@ -164,12 +164,12 @@
     "ITEM_POS_COUNT": {
       "location": {
         "start": {
-          "line": 150,
+          "line": 169,
           "column": 4
         },
         "end": {
-          "line": 150,
-          "column": 26
+          "line": 169,
+          "column": 25
         }
       },
       "type": "variable",
@@ -178,11 +178,11 @@
     "testGetItemAtPositionStress": {
       "location": {
         "start": {
-          "line": 152,
+          "line": 171,
           "column": 4
         },
         "end": {
-          "line": 172,
+          "line": 192,
           "column": 5
         }
       },
@@ -192,11 +192,11 @@
     "testGetTotalSize": {
       "location": {
         "start": {
-          "line": 175,
+          "line": 194,
           "column": 4
         },
         "end": {
-          "line": 189,
+          "line": 207,
           "column": 5
         }
       },
@@ -206,12 +206,12 @@
     "TOTAL_SIZE_ITER": {
       "location": {
         "start": {
-          "line": 192,
+          "line": 209,
           "column": 4
         },
         "end": {
-          "line": 192,
-          "column": 23
+          "line": 209,
+          "column": 22
         }
       },
       "type": "variable",
@@ -220,12 +220,12 @@
     "TOTAL_SIZE_ITEMS": {
       "location": {
         "start": {
-          "line": 193,
+          "line": 210,
           "column": 4
         },
         "end": {
-          "line": 193,
-          "column": 26
+          "line": 210,
+          "column": 25
         }
       },
       "jsdoc": {},
@@ -235,11 +235,11 @@
     "testGetTotalSizeStress": {
       "location": {
         "start": {
-          "line": 195,
+          "line": 212,
           "column": 4
         },
         "end": {
-          "line": 211,
+          "line": 225,
           "column": 5
         }
       },
@@ -250,11 +250,11 @@
     "testGetItemSizes": {
       "location": {
         "start": {
-          "line": 214,
+          "line": 227,
           "column": 4
         },
         "end": {
-          "line": 263,
+          "line": 251,
           "column": 5
         }
       },
@@ -264,11 +264,11 @@
     "testGetItemPosition": {
       "location": {
         "start": {
-          "line": 266,
+          "line": 253,
           "column": 4
         },
         "end": {
-          "line": 281,
+          "line": 270,
           "column": 5
         }
       },
@@ -278,11 +278,11 @@
     "testGetItemPositionCustomSizes": {
       "location": {
         "start": {
-          "line": 284,
+          "line": 272,
           "column": 4
         },
         "end": {
-          "line": 300,
+          "line": 287,
           "column": 5
         }
       },
@@ -292,11 +292,11 @@
     "testChangeEvents": {
       "location": {
         "start": {
-          "line": 303,
+          "line": 289,
           "column": 4
         },
         "end": {
-          "line": 346,
+          "line": 373,
           "column": 5
         }
       },
@@ -306,12 +306,12 @@
     "SETUP_ITER": {
       "location": {
         "start": {
-          "line": 349,
+          "line": 375,
           "column": 4
         },
         "end": {
-          "line": 349,
-          "column": 19
+          "line": 375,
+          "column": 18
         }
       },
       "type": "variable",
@@ -320,11 +320,11 @@
     "testPerformanceSetupBestCase": {
       "location": {
         "start": {
-          "line": 351,
+          "line": 377,
           "column": 4
         },
         "end": {
-          "line": 364,
+          "line": 388,
           "column": 5
         }
       },
@@ -335,11 +335,11 @@
     "testPerformanceSetupWorstCase": {
       "location": {
         "start": {
-          "line": 366,
+          "line": 390,
           "column": 4
         },
         "end": {
-          "line": 384,
+          "line": 406,
           "column": 5
         }
       },
@@ -349,12 +349,12 @@
     "FIND_ITER": {
       "location": {
         "start": {
-          "line": 387,
+          "line": 408,
           "column": 4
         },
         "end": {
-          "line": 387,
-          "column": 19
+          "line": 408,
+          "column": 18
         }
       },
       "type": "variable",
@@ -363,11 +363,11 @@
     "testPerformanceFindBestCase": {
       "location": {
         "start": {
-          "line": 389,
+          "line": 410,
           "column": 4
         },
         "end": {
-          "line": 402,
+          "line": 422,
           "column": 5
         }
       },
@@ -378,11 +378,11 @@
     "testPerformanceFindWorstCase": {
       "location": {
         "start": {
-          "line": 405,
+          "line": 424,
           "column": 4
         },
         "end": {
-          "line": 423,
+          "line": 441,
           "column": 5
         }
       },
@@ -477,6 +477,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -501,6 +502,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -667,15 +669,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 427,
-        "column": 13
+        "line": 444,
+        "column": 2
       },
       "end": {
-        "line": 429,
+        "line": 446,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {},
   "descendants": []

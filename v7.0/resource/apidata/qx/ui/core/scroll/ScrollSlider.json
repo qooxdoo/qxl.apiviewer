@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 76,
+        "line": 70,
         "column": 3
       }
     },
@@ -36,11 +36,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 31,
-        "column": 14
+        "line": 30,
+        "column": 2
       },
       "end": {
-        "line": 38,
+        "line": 36,
         "column": 3
       }
     },
@@ -50,11 +50,11 @@
     "_createChildControlImpl": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 58,
+          "line": 52,
           "column": 5
         }
       },
@@ -70,11 +70,11 @@
     "getSizeHint": {
       "location": {
         "start": {
-          "line": 61,
+          "line": 55,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 68,
           "column": 5
         }
       },
@@ -607,38 +607,6 @@
       "overriddenFrom": "qx.ui.form.MForm",
       "jsdoc": {}
     },
-    "__onChangeLocale": {
-      "type": "function",
-      "name": "__onChangeLocale",
-      "abstract": false,
-      "mixin": true,
-      "inherited": true,
-      "access": "private",
-      "overriddenFrom": "qx.ui.form.MForm",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Locale change event handler</p>"
-          }
-        ],
-        "@signature": [
-          {
-            "name": "@signature",
-            "body": "function(e)"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {Event} the change event",
-            "paramName": "e",
-            "description": " the change event",
-            "type": "Event"
-          }
-        ]
-      }
-    },
     "isValid": {
       "type": "function",
       "name": "isValid",
@@ -843,6 +811,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -867,6 +836,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

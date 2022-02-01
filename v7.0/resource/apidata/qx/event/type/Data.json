@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 107,
+        "line": 96,
         "column": 3
       }
     },
@@ -31,12 +31,12 @@
     "__data": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 38,
-          "column": 17
+          "line": 33,
+          "column": 16
         }
       },
       "type": "variable",
@@ -45,12 +45,12 @@
     "__old": {
       "location": {
         "start": {
-          "line": 39,
+          "line": 34,
           "column": 4
         },
         "end": {
-          "line": 39,
-          "column": 16
+          "line": 34,
+          "column": 15
         }
       },
       "type": "variable",
@@ -59,11 +59,11 @@
     "init": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 49,
           "column": 4
         },
         "end": {
-          "line": 63,
+          "line": 56,
           "column": 5
         }
       },
@@ -120,11 +120,11 @@
     "clone": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 83,
+          "line": 74,
           "column": 5
         }
       },
@@ -166,11 +166,11 @@
     "getData": {
       "location": {
         "start": {
-          "line": 92,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 94,
+          "line": 84,
           "column": 5
         }
       },
@@ -196,11 +196,11 @@
     "getOldData": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 92,
           "column": 4
         },
         "end": {
-          "line": 105,
+          "line": 94,
           "column": 5
         }
       },
@@ -311,6 +311,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -335,6 +336,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 84,
+        "line": 99,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "testHasResource": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 29,
+          "line": 26,
           "column": 5
         }
       },
@@ -38,7 +38,7 @@
     "testGetData": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 28,
           "column": 4
         },
         "end": {
@@ -56,7 +56,7 @@
           "column": 4
         },
         "end": {
-          "line": 42,
+          "line": 44,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "testGetImageHeight": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 46,
           "column": 4
         },
         "end": {
-          "line": 48,
+          "line": 52,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "testGetImageFormat": {
       "location": {
         "start": {
-          "line": 50,
+          "line": 54,
           "column": 4
         },
         "end": {
-          "line": 55,
+          "line": 65,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testIsFontUri": {
       "location": {
         "start": {
-          "line": 57,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 63,
+          "line": 72,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "testIsClippedImage": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 74,
           "column": 4
         },
         "end": {
-          "line": 69,
+          "line": 79,
           "column": 5
         }
       },
@@ -122,11 +122,11 @@
     "testToUri": {
       "location": {
         "start": {
-          "line": 71,
+          "line": 81,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 97,
           "column": 5
         }
       },
@@ -221,6 +221,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -245,6 +246,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

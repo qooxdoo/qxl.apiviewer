@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 72,
+        "line": 88,
         "column": 3
       }
     },
@@ -24,12 +24,12 @@
     "__selectBox": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 22,
           "column": 4
         },
         "end": {
-          "line": 25,
-          "column": 22
+          "line": 22,
+          "column": 21
         }
       },
       "type": "variable",
@@ -38,11 +38,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 37,
+          "line": 32,
           "column": 5
         }
       },
@@ -56,11 +56,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 34,
           "column": 4
         },
         "end": {
-          "line": 48,
+          "line": 41,
           "column": 5
         }
       },
@@ -74,11 +74,11 @@
     "__createModelData": {
       "location": {
         "start": {
-          "line": 50,
+          "line": 43,
           "column": 4
         },
         "end": {
-          "line": 59,
+          "line": 51,
           "column": 5
         }
       },
@@ -88,11 +88,11 @@
     "testCreation": {
       "location": {
         "start": {
-          "line": 62,
+          "line": 53,
           "column": 4
         },
         "end": {
-          "line": 70,
+          "line": 86,
           "column": 5
         }
       },
@@ -187,6 +187,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -211,6 +212,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

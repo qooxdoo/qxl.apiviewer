@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 204,
+        "line": 205,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "createModel": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 22,
           "column": 4
         },
         "end": {
-          "line": 32,
+          "line": 28,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "createRandomRows": {
       "location": {
         "start": {
-          "line": 34,
+          "line": 30,
           "column": 4
         },
         "end": {
-          "line": 45,
+          "line": 40,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "testSetColumnWidth": {
       "location": {
         "start": {
-          "line": 47,
+          "line": 42,
           "column": 4
         },
         "end": {
-          "line": 62,
+          "line": 60,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "testGetColumnWidth": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 62,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 80,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "testSetHeaderCellRenderer": {
       "location": {
         "start": {
-          "line": 86,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 102,
+          "line": 103,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testGetHeaderCellRenderer": {
       "location": {
         "start": {
-          "line": 104,
+          "line": 105,
           "column": 4
         },
         "end": {
-          "line": 120,
+          "line": 123,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "testSetDataCellRenderer": {
       "location": {
         "start": {
-          "line": 123,
+          "line": 125,
           "column": 4
         },
         "end": {
-          "line": 139,
+          "line": 143,
           "column": 5
         }
       },
@@ -122,11 +122,11 @@
     "testGetDataCellRenderer": {
       "location": {
         "start": {
-          "line": 142,
+          "line": 145,
           "column": 4
         },
         "end": {
-          "line": 158,
+          "line": 163,
           "column": 5
         }
       },
@@ -136,11 +136,11 @@
     "testSetCellEditorFactory": {
       "location": {
         "start": {
-          "line": 161,
+          "line": 165,
           "column": 4
         },
         "end": {
-          "line": 177,
+          "line": 183,
           "column": 5
         }
       },
@@ -150,11 +150,11 @@
     "testGetCellEditorFactory": {
       "location": {
         "start": {
-          "line": 180,
+          "line": 185,
           "column": 4
         },
         "end": {
-          "line": 196,
+          "line": 203,
           "column": 5
         }
       },
@@ -249,6 +249,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -273,6 +274,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

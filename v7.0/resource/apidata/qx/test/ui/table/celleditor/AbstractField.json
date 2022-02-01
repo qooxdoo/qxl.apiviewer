@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 106,
+        "line": 92,
         "column": 3
       }
     },
@@ -27,11 +27,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 29,
+          "line": 26,
           "column": 5
         }
       },
@@ -45,11 +45,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 33,
+          "line": 30,
           "column": 5
         }
       },
@@ -63,11 +63,11 @@
     "_getCellInfo": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 38,
+          "line": 34,
           "column": 5
         }
       },
@@ -77,11 +77,11 @@
     "testCreateCellEditor": {
       "location": {
         "start": {
-          "line": 41,
+          "line": 36,
           "column": 4
         },
         "end": {
-          "line": 49,
+          "line": 43,
           "column": 5
         }
       },
@@ -91,11 +91,11 @@
     "testCreateCellEditorWithValue": {
       "location": {
         "start": {
-          "line": 52,
+          "line": 45,
           "column": 4
         },
         "end": {
-          "line": 58,
+          "line": 50,
           "column": 5
         }
       },
@@ -105,11 +105,11 @@
     "testGetCellEditorValue": {
       "location": {
         "start": {
-          "line": 61,
+          "line": 52,
           "column": 4
         },
         "end": {
-          "line": 69,
+          "line": 59,
           "column": 5
         }
       },
@@ -119,11 +119,11 @@
     "testValidationFunction": {
       "location": {
         "start": {
-          "line": 72,
+          "line": 61,
           "column": 4
         },
         "end": {
-          "line": 92,
+          "line": 80,
           "column": 5
         }
       },
@@ -133,11 +133,11 @@
     "testAutoconvertToNumber": {
       "location": {
         "start": {
-          "line": 95,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 104,
+          "line": 90,
           "column": 5
         }
       },
@@ -232,6 +232,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -256,6 +257,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

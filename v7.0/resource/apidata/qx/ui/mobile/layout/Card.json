@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 368,
+        "line": 385,
         "column": 3
       }
     },
@@ -36,11 +36,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 55,
-        "column": 14
+        "line": 53,
+        "column": 2
       },
       "end": {
-        "line": 60,
+        "line": 57,
         "column": 3
       }
     },
@@ -50,12 +50,12 @@
     "animationStart": {
       "location": {
         "start": {
-          "line": 72,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 72,
-          "column": 41
+          "line": 67,
+          "column": 40
         }
       },
       "jsdoc": {
@@ -72,12 +72,12 @@
     "animationEnd": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 70,
           "column": 4
         },
         "end": {
-          "line": 75,
-          "column": 39
+          "line": 70,
+          "column": 38
         }
       },
       "jsdoc": {
@@ -96,11 +96,11 @@
     "defaultAnimation": {
       "location": {
         "start": {
-          "line": 88,
+          "line": 81,
           "column": 4
         },
         "end": {
-          "line": 92,
+          "line": 84,
           "column": 5
         }
       },
@@ -121,11 +121,11 @@
     "showAnimation": {
       "location": {
         "start": {
-          "line": 96,
+          "line": 87,
           "column": 4
         },
         "end": {
-          "line": 100,
+          "line": 90,
           "column": 5
         }
       },
@@ -146,11 +146,11 @@
     "animationDuration": {
       "location": {
         "start": {
-          "line": 104,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 108,
+          "line": 96,
           "column": 5
         }
       },
@@ -205,12 +205,12 @@
     "__nextWidget": {
       "location": {
         "start": {
-          "line": 120,
+          "line": 106,
           "column": 4
         },
         "end": {
-          "line": 120,
-          "column": 23
+          "line": 106,
+          "column": 22
         }
       },
       "type": "variable",
@@ -219,12 +219,12 @@
     "__currentWidget": {
       "location": {
         "start": {
-          "line": 121,
+          "line": 107,
           "column": 4
         },
         "end": {
-          "line": 121,
-          "column": 26
+          "line": 107,
+          "column": 25
         }
       },
       "type": "variable",
@@ -233,12 +233,12 @@
     "__inAnimation": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 122,
-          "column": 24
+          "line": 108,
+          "column": 23
         }
       },
       "type": "variable",
@@ -247,12 +247,12 @@
     "__animation": {
       "location": {
         "start": {
-          "line": 123,
+          "line": 109,
           "column": 4
         },
         "end": {
-          "line": 123,
-          "column": 22
+          "line": 109,
+          "column": 21
         }
       },
       "type": "variable",
@@ -261,12 +261,12 @@
     "__reverse": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 110,
           "column": 4
         },
         "end": {
-          "line": 124,
-          "column": 20
+          "line": 110,
+          "column": 19
         }
       },
       "type": "variable",
@@ -275,12 +275,12 @@
     "__cardAnimation": {
       "location": {
         "start": {
-          "line": 125,
+          "line": 111,
           "column": 4
         },
         "end": {
-          "line": 125,
-          "column": 26
+          "line": 111,
+          "column": 25
         }
       },
       "type": "variable",
@@ -289,11 +289,11 @@
     "_getCssClasses": {
       "location": {
         "start": {
-          "line": 129,
+          "line": 114,
           "column": 4
         },
         "end": {
-          "line": 131,
+          "line": 116,
           "column": 5
         }
       },
@@ -308,11 +308,11 @@
     "connectToChildWidget": {
       "location": {
         "start": {
-          "line": 135,
+          "line": 119,
           "column": 4
         },
         "end": {
-          "line": 143,
+          "line": 126,
           "column": 5
         }
       },
@@ -327,11 +327,11 @@
     "disconnectFromChildWidget": {
       "location": {
         "start": {
-          "line": 147,
+          "line": 129,
           "column": 4
         },
         "end": {
-          "line": 151,
+          "line": 132,
           "column": 5
         }
       },
@@ -346,11 +346,11 @@
     "updateLayout": {
       "location": {
         "start": {
-          "line": 155,
+          "line": 135,
           "column": 4
         },
         "end": {
-          "line": 162,
+          "line": 140,
           "column": 5
         }
       },
@@ -365,11 +365,11 @@
     "setCardAnimation": {
       "location": {
         "start": {
-          "line": 169,
+          "line": 146,
           "column": 4
         },
         "end": {
-          "line": 171,
+          "line": 148,
           "column": 5
         }
       },
@@ -396,11 +396,11 @@
     "getCardAnimation": {
       "location": {
         "start": {
-          "line": 178,
+          "line": 154,
           "column": 4
         },
         "end": {
-          "line": 180,
+          "line": 156,
           "column": 5
         }
       },
@@ -426,11 +426,11 @@
     "_showWidget": {
       "location": {
         "start": {
-          "line": 189,
+          "line": 164,
           "column": 4
         },
         "end": {
-          "line": 226,
+          "line": 207,
           "column": 5
         }
       },
@@ -464,11 +464,11 @@
     "_swapWidget": {
       "location": {
         "start": {
-          "line": 232,
+          "line": 212,
           "column": 4
         },
         "end": {
-          "line": 239,
+          "line": 219,
           "column": 5
         }
       },
@@ -486,11 +486,11 @@
     "_fixWidgetSize": {
       "location": {
         "start": {
-          "line": 248,
+          "line": 227,
           "column": 4
         },
         "end": {
-          "line": 256,
+          "line": 239,
           "column": 5
         }
       },
@@ -517,11 +517,11 @@
     "_releaseWidgetSize": {
       "location": {
         "start": {
-          "line": 265,
+          "line": 247,
           "column": 4
         },
         "end": {
-          "line": 273,
+          "line": 259,
           "column": 5
         }
       },
@@ -548,11 +548,11 @@
     "__startAnimation": {
       "location": {
         "start": {
-          "line": 281,
+          "line": 266,
           "column": 4
         },
         "end": {
-          "line": 309,
+          "line": 313,
           "column": 5
         }
       },
@@ -579,11 +579,11 @@
     "_onAnimationEnd": {
       "location": {
         "start": {
-          "line": 317,
+          "line": 320,
           "column": 4
         },
         "end": {
-          "line": 321,
+          "line": 326,
           "column": 5
         }
       },
@@ -610,11 +610,11 @@
     "__stopAnimation": {
       "location": {
         "start": {
-          "line": 327,
+          "line": 331,
           "column": 4
         },
         "end": {
-          "line": 344,
+          "line": 364,
           "column": 5
         }
       },
@@ -632,11 +632,11 @@
     "__getAnimationClasses": {
       "location": {
         "start": {
-          "line": 354,
+          "line": 373,
           "column": 4
         },
         "end": {
-          "line": 361,
+          "line": 379,
           "column": 5
         }
       },
@@ -756,6 +756,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -780,6 +781,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -1030,15 +1032,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 365,
-        "column": 13
+        "line": 382,
+        "column": 2
       },
       "end": {
-        "line": 367,
+        "line": 384,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

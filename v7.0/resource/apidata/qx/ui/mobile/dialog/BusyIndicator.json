@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 144,
+        "line": 129,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 41,
-        "column": 14
+        "line": 39,
+        "column": 2
       },
       "end": {
-        "line": 48,
+        "line": 45,
         "column": 3
       }
     },
@@ -60,11 +60,11 @@
     "spinnerClass": {
       "location": {
         "start": {
-          "line": 57,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 63,
+          "line": 56,
           "column": 5
         }
       },
@@ -90,12 +90,12 @@
     "SPINNER_ANIMATION": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 60,
           "column": 4
         },
         "end": {
-          "line": 68,
-          "column": 28
+          "line": 60,
+          "column": 27
         }
       },
       "type": "variable",
@@ -106,12 +106,12 @@
     "__animationHandle": {
       "location": {
         "start": {
-          "line": 74,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 74,
-          "column": 28
+          "line": 64,
+          "column": 27
         }
       },
       "type": "variable",
@@ -120,11 +120,11 @@
     "_onAppear": {
       "location": {
         "start": {
-          "line": 80,
+          "line": 69,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 74,
           "column": 5
         }
       },
@@ -142,11 +142,11 @@
     "_onDisappear": {
       "location": {
         "start": {
-          "line": 88,
+          "line": 79,
           "column": 4
         },
         "end": {
-          "line": 90,
+          "line": 81,
           "column": 5
         }
       },
@@ -164,11 +164,11 @@
     "_createIconWidget": {
       "location": {
         "start": {
-          "line": 94,
+          "line": 84,
           "column": 4
         },
         "end": {
-          "line": 99,
+          "line": 88,
           "column": 5
         }
       },
@@ -183,11 +183,11 @@
     "_applySpinnerClass": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 91,
           "column": 4
         },
         "end": {
-          "line": 111,
+          "line": 98,
           "column": 5
         }
       },
@@ -286,6 +286,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -310,6 +311,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -1721,28 +1723,26 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 115,
-        "column": 13
+        "line": 101,
+        "column": 2
       },
       "end": {
-        "line": 125,
+        "line": 110,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "defer": {
     "location": {
       "start": {
-        "line": 128,
-        "column": 10
+        "line": 112,
+        "column": 2
       },
       "end": {
-        "line": 143,
+        "line": 128,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {},
   "descendants": []

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 578,
+        "line": 601,
         "column": 3
       }
     },
@@ -47,11 +47,11 @@
     "setUpKlass": {
       "location": {
         "start": {
-          "line": 41,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 52,
+          "line": 47,
           "column": 5
         }
       },
@@ -61,11 +61,11 @@
     "test: dispose transport on destruct": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 53,
           "column": 4
         },
         "end": {
-          "line": 65,
+          "line": 63,
           "column": 5
         }
       },
@@ -76,11 +76,11 @@
     "test: getTransport()": {
       "location": {
         "start": {
-          "line": 67,
+          "line": 65,
           "column": 4
         },
         "end": {
-          "line": 69,
+          "line": 67,
           "column": 5
         }
       },
@@ -90,11 +90,11 @@
     "test: send() GET": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 73,
           "column": 4
         },
         "end": {
-          "line": 80,
+          "line": 78,
           "column": 5
         }
       },
@@ -105,11 +105,11 @@
     "test: drop fragment from URL": {
       "location": {
         "start": {
-          "line": 82,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 87,
+          "line": 85,
           "column": 5
         }
       },
@@ -119,11 +119,11 @@
     "test: abort request": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 91,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 95,
           "column": 5
         }
       },
@@ -134,11 +134,11 @@
     "test: not send data with GET request": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 108,
+          "line": 106,
           "column": 5
         }
       },
@@ -149,11 +149,11 @@
     "test: append string data to URL with GET request": {
       "location": {
         "start": {
-          "line": 110,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 113,
           "column": 5
         }
       },
@@ -163,11 +163,11 @@
     "test: append obj data to URL with GET request": {
       "location": {
         "start": {
-          "line": 117,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 122,
+          "line": 120,
           "column": 5
         }
       },
@@ -177,11 +177,11 @@
     "test: append qooxdoo obj data to URL with GET request": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 132,
+          "line": 130,
           "column": 5
         }
       },
@@ -191,11 +191,11 @@
     "test: append FormData to URL with POST request": {
       "location": {
         "start": {
-          "line": 134,
+          "line": 132,
           "column": 4
         },
         "end": {
-          "line": 152,
+          "line": 150,
           "column": 5
         }
       },
@@ -205,11 +205,11 @@
     "test: set request header": {
       "location": {
         "start": {
-          "line": 158,
+          "line": 156,
           "column": 4
         },
         "end": {
-          "line": 163,
+          "line": 161,
           "column": 5
         }
       },
@@ -220,11 +220,11 @@
     "test: set request header does not append": {
       "location": {
         "start": {
-          "line": 165,
+          "line": 163,
           "column": 4
         },
         "end": {
-          "line": 173,
+          "line": 171,
           "column": 5
         }
       },
@@ -234,11 +234,11 @@
     "test: get request header": {
       "location": {
         "start": {
-          "line": 175,
+          "line": 173,
           "column": 4
         },
         "end": {
-          "line": 179,
+          "line": 177,
           "column": 5
         }
       },
@@ -248,11 +248,11 @@
     "test: remove request header": {
       "location": {
         "start": {
-          "line": 181,
+          "line": 179,
           "column": 4
         },
         "end": {
-          "line": 191,
+          "line": 189,
           "column": 5
         }
       },
@@ -262,11 +262,11 @@
     "test: get all request headers": {
       "location": {
         "start": {
-          "line": 193,
+          "line": 191,
           "column": 4
         },
         "end": {
-          "line": 199,
+          "line": 197,
           "column": 5
         }
       },
@@ -276,7 +276,7 @@
     "test: get all request headers includes configuration dependent headers": {
       "location": {
         "start": {
-          "line": 201,
+          "line": 199,
           "column": 4
         },
         "end": {
@@ -308,7 +308,7 @@
           "column": 4
         },
         "end": {
-          "line": 222,
+          "line": 225,
           "column": 5
         }
       },
@@ -318,11 +318,11 @@
     "test: fire readyStateChange": {
       "location": {
         "start": {
-          "line": 228,
+          "line": 231,
           "column": 4
         },
         "end": {
-          "line": 236,
+          "line": 239,
           "column": 5
         }
       },
@@ -333,11 +333,11 @@
     "test: fire success": {
       "location": {
         "start": {
-          "line": 238,
+          "line": 241,
           "column": 4
         },
         "end": {
-          "line": 246,
+          "line": 249,
           "column": 5
         }
       },
@@ -347,11 +347,11 @@
     "test: not fire success on erroneous status": {
       "location": {
         "start": {
-          "line": 248,
+          "line": 251,
           "column": 4
         },
         "end": {
-          "line": 256,
+          "line": 259,
           "column": 5
         }
       },
@@ -361,11 +361,11 @@
     "test: fire load": {
       "location": {
         "start": {
-          "line": 258,
+          "line": 261,
           "column": 4
         },
         "end": {
-          "line": 266,
+          "line": 269,
           "column": 5
         }
       },
@@ -375,11 +375,11 @@
     "test: fire loadEnd": {
       "location": {
         "start": {
-          "line": 268,
+          "line": 271,
           "column": 4
         },
         "end": {
-          "line": 276,
+          "line": 279,
           "column": 5
         }
       },
@@ -389,11 +389,11 @@
     "test: fire abort": {
       "location": {
         "start": {
-          "line": 278,
+          "line": 281,
           "column": 4
         },
         "end": {
-          "line": 286,
+          "line": 289,
           "column": 5
         }
       },
@@ -403,11 +403,11 @@
     "test: fire timeout": {
       "location": {
         "start": {
-          "line": 288,
+          "line": 291,
           "column": 4
         },
         "end": {
-          "line": 301,
+          "line": 304,
           "column": 5
         }
       },
@@ -417,11 +417,11 @@
     "test: fire error": {
       "location": {
         "start": {
-          "line": 303,
+          "line": 306,
           "column": 4
         },
         "end": {
-          "line": 311,
+          "line": 314,
           "column": 5
         }
       },
@@ -431,11 +431,11 @@
     "test: fire statusError": {
       "location": {
         "start": {
-          "line": 313,
+          "line": 316,
           "column": 4
         },
         "end": {
-          "line": 321,
+          "line": 324,
           "column": 5
         }
       },
@@ -445,11 +445,11 @@
     "test: fire fail on erroneous status": {
       "location": {
         "start": {
-          "line": 323,
+          "line": 326,
           "column": 4
         },
         "end": {
-          "line": 331,
+          "line": 334,
           "column": 5
         }
       },
@@ -459,11 +459,11 @@
     "test: fire fail on network error": {
       "location": {
         "start": {
-          "line": 333,
+          "line": 336,
           "column": 4
         },
         "end": {
-          "line": 341,
+          "line": 344,
           "column": 5
         }
       },
@@ -473,11 +473,11 @@
     "test: fire fail on timeout": {
       "location": {
         "start": {
-          "line": 343,
+          "line": 346,
           "column": 4
         },
         "end": {
-          "line": 351,
+          "line": 354,
           "column": 5
         }
       },
@@ -487,11 +487,11 @@
     "test: fire changePhase": {
       "location": {
         "start": {
-          "line": 353,
+          "line": 356,
           "column": 4
         },
         "end": {
-          "line": 362,
+          "line": 370,
           "column": 5
         }
       },
@@ -501,11 +501,11 @@
     "test: phase is unsent": {
       "location": {
         "start": {
-          "line": 368,
+          "line": 376,
           "column": 4
         },
         "end": {
-          "line": 370,
+          "line": 378,
           "column": 5
         }
       },
@@ -516,11 +516,11 @@
     "test: phase was open before send": {
       "location": {
         "start": {
-          "line": 372,
+          "line": 380,
           "column": 4
         },
         "end": {
-          "line": 384,
+          "line": 392,
           "column": 5
         }
       },
@@ -530,11 +530,11 @@
     "test: phase is sent": {
       "location": {
         "start": {
-          "line": 386,
+          "line": 394,
           "column": 4
         },
         "end": {
-          "line": 393,
+          "line": 401,
           "column": 5
         }
       },
@@ -544,11 +544,11 @@
     "test: phase is loading": {
       "location": {
         "start": {
-          "line": 395,
+          "line": 403,
           "column": 4
         },
         "end": {
-          "line": 403,
+          "line": 411,
           "column": 5
         }
       },
@@ -558,11 +558,11 @@
     "test: phase is load intermediately": {
       "location": {
         "start": {
-          "line": 405,
+          "line": 413,
           "column": 4
         },
         "end": {
-          "line": 419,
+          "line": 427,
           "column": 5
         }
       },
@@ -572,11 +572,11 @@
     "test: phase is success": {
       "location": {
         "start": {
-          "line": 421,
+          "line": 429,
           "column": 4
         },
         "end": {
-          "line": 426,
+          "line": 434,
           "column": 5
         }
       },
@@ -586,11 +586,11 @@
     "test: phase is statusError": {
       "location": {
         "start": {
-          "line": 430,
+          "line": 438,
           "column": 4
         },
         "end": {
-          "line": 435,
+          "line": 443,
           "column": 5
         }
       },
@@ -601,11 +601,11 @@
     "test: phase is abort": {
       "location": {
         "start": {
-          "line": 437,
+          "line": 445,
           "column": 4
         },
         "end": {
-          "line": 449,
+          "line": 457,
           "column": 5
         }
       },
@@ -615,11 +615,11 @@
     "test: phase is abort when from cache": {
       "location": {
         "start": {
-          "line": 451,
+          "line": 459,
           "column": 4
         },
         "end": {
-          "line": 466,
+          "line": 474,
           "column": 5
         }
       },
@@ -629,11 +629,11 @@
     "test: phase is abort on readyState DONE when aborted before": {
       "location": {
         "start": {
-          "line": 468,
+          "line": 476,
           "column": 4
         },
         "end": {
-          "line": 486,
+          "line": 498,
           "column": 5
         }
       },
@@ -643,11 +643,11 @@
     "test: phase is abort on readyState DONE when aborting loading": {
       "location": {
         "start": {
-          "line": 488,
+          "line": 500,
           "column": 4
         },
         "end": {
-          "line": 511,
+          "line": 527,
           "column": 5
         }
       },
@@ -657,11 +657,11 @@
     "test: phase is abort on loadEnd when aborted before": {
       "location": {
         "start": {
-          "line": 513,
+          "line": 529,
           "column": 4
         },
         "end": {
-          "line": 529,
+          "line": 549,
           "column": 5
         }
       },
@@ -671,11 +671,11 @@
     "test: phase is timeout": {
       "location": {
         "start": {
-          "line": 531,
+          "line": 551,
           "column": 4
         },
         "end": {
-          "line": 536,
+          "line": 556,
           "column": 5
         }
       },
@@ -685,11 +685,11 @@
     "getFakeReq": {
       "location": {
         "start": {
-          "line": 538,
+          "line": 558,
           "column": 4
         },
         "end": {
-          "line": 540,
+          "line": 560,
           "column": 5
         }
       },
@@ -699,11 +699,11 @@
     "noCache": {
       "location": {
         "start": {
-          "line": 542,
+          "line": 562,
           "column": 4
         },
         "end": {
-          "line": 544,
+          "line": 567,
           "column": 5
         }
       },
@@ -713,11 +713,11 @@
     "respond": {
       "location": {
         "start": {
-          "line": 546,
+          "line": 569,
           "column": 4
         },
         "end": {
-          "line": 568,
+          "line": 591,
           "column": 5
         }
       },
@@ -727,11 +727,11 @@
     "respondError": {
       "location": {
         "start": {
-          "line": 570,
+          "line": 593,
           "column": 4
         },
         "end": {
-          "line": 572,
+          "line": 595,
           "column": 5
         }
       },
@@ -741,11 +741,11 @@
     "timeout": {
       "location": {
         "start": {
-          "line": 574,
+          "line": 597,
           "column": 4
         },
         "end": {
-          "line": 576,
+          "line": 599,
           "column": 5
         }
       },

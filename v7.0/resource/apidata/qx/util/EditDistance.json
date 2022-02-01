@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 28,
+        "line": 26,
         "column": 0
       },
       "end": {
-        "line": 165,
+        "line": 171,
         "column": 3
       }
     },
@@ -31,12 +31,12 @@
     "OPERATION_DELETE": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 32,
-          "column": 24
+          "line": 28,
+          "column": 23
         }
       },
       "type": "variable",
@@ -45,12 +45,12 @@
     "OPERATION_INSERT": {
       "location": {
         "start": {
-          "line": 33,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 33,
-          "column": 24
+          "line": 29,
+          "column": 23
         }
       },
       "type": "variable",
@@ -59,12 +59,12 @@
     "OPERATION_REPLACE": {
       "location": {
         "start": {
-          "line": 34,
+          "line": 30,
           "column": 4
         },
         "end": {
-          "line": 34,
-          "column": 25
+          "line": 30,
+          "column": 24
         }
       },
       "type": "variable",
@@ -73,11 +73,11 @@
     "__computeLevenshteinDistance": {
       "location": {
         "start": {
-          "line": 45,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 73,
           "column": 5
         }
       },
@@ -119,11 +119,11 @@
     "__computeEditOperations": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 83,
           "column": 4
         },
         "end": {
-          "line": 147,
+          "line": 155,
           "column": 5
         }
       },
@@ -172,11 +172,11 @@
     "getEditOperations": {
       "location": {
         "start": {
-          "line": 157,
+          "line": 164,
           "column": 4
         },
         "end": {
-          "line": 163,
+          "line": 169,
           "column": 5
         }
       },

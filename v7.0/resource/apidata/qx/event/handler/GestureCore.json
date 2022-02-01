@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 910,
+        "line": 961,
         "column": 3
       }
     },
@@ -33,12 +33,12 @@
     "TYPES": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 30,
-          "column": 111
+          "line": 40,
+          "column": 5
         }
       },
       "type": "variable",
@@ -47,12 +47,12 @@
     "GESTURE_EVENTS": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 42,
           "column": 4
         },
         "end": {
-          "line": 32,
-          "column": 86
+          "line": 47,
+          "column": 5
         }
       },
       "type": "variable",
@@ -61,12 +61,12 @@
     "TAP_MAX_DISTANCE": {
       "location": {
         "start": {
-          "line": 35,
+          "line": 50,
           "column": 4
         },
         "end": {
-          "line": 35,
-          "column": 59
+          "line": 50,
+          "column": 54
         }
       },
       "jsdoc": {
@@ -89,12 +89,12 @@
     "DOUBLETAP_MAX_DISTANCE": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 53,
           "column": 4
         },
         "end": {
-          "line": 38,
-          "column": 65
+          "line": 53,
+          "column": 60
         }
       },
       "jsdoc": {
@@ -117,11 +117,11 @@
     "SWIPE_DIRECTION": {
       "location": {
         "start": {
-          "line": 41,
+          "line": 56,
           "column": 4
         },
         "end": {
-          "line": 45,
+          "line": 59,
           "column": 5
         }
       },
@@ -145,12 +145,12 @@
     "LONGTAP_TIME": {
       "location": {
         "start": {
-          "line": 50,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 50,
-          "column": 70
+          "line": 64,
+          "column": 71
         }
       },
       "jsdoc": {
@@ -173,12 +173,12 @@
     "DOUBLETAP_TIME": {
       "location": {
         "start": {
-          "line": 56,
+          "line": 70,
           "column": 4
         },
         "end": {
-          "line": 56,
-          "column": 24
+          "line": 70,
+          "column": 23
         }
       },
       "jsdoc": {
@@ -201,11 +201,11 @@
     "ROLL_FACTOR": {
       "location": {
         "start": {
-          "line": 62,
+          "line": 76,
           "column": 4
         },
         "end": {
-          "line": 62,
+          "line": 76,
           "column": 19
         }
       },
@@ -229,11 +229,11 @@
     "TOUCHPAD_ROLL_FACTOR": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 68,
+          "line": 82,
           "column": 27
         }
       },
@@ -257,11 +257,11 @@
     "TOUCHPAD_WHEEL_EVENTS_THRESHOLD": {
       "location": {
         "start": {
-          "line": 74,
+          "line": 88,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 88,
           "column": 39
         }
       },
@@ -285,11 +285,11 @@
     "TOUCHPAD_WHEEL_EVENTS_PERIOD": {
       "location": {
         "start": {
-          "line": 80,
+          "line": 94,
           "column": 4
         },
         "end": {
-          "line": 80,
+          "line": 94,
           "column": 37
         }
       },
@@ -313,11 +313,11 @@
     "TOUCHPAD_WHEEL_EVENTS_TIMEOUT": {
       "location": {
         "start": {
-          "line": 86,
+          "line": 100,
           "column": 4
         },
         "end": {
-          "line": 86,
+          "line": 100,
           "column": 39
         }
       },
@@ -342,11 +342,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 94,
-        "column": 14
+        "line": 108,
+        "column": 2
       },
       "end": {
-        "line": 103,
+        "line": 117,
         "column": 3
       }
     },
@@ -380,12 +380,12 @@
     "__defaultTarget": {
       "location": {
         "start": {
-          "line": 106,
+          "line": 120,
           "column": 4
         },
         "end": {
-          "line": 106,
-          "column": 26
+          "line": 120,
+          "column": 25
         }
       },
       "type": "variable",
@@ -394,12 +394,12 @@
     "__emitter": {
       "location": {
         "start": {
-          "line": 107,
+          "line": 121,
           "column": 4
         },
         "end": {
-          "line": 107,
-          "column": 20
+          "line": 121,
+          "column": 19
         }
       },
       "type": "variable",
@@ -408,12 +408,12 @@
     "__gesture": {
       "location": {
         "start": {
-          "line": 108,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 108,
-          "column": 20
+          "line": 122,
+          "column": 19
         }
       },
       "type": "variable",
@@ -422,12 +422,12 @@
     "__eventName": {
       "location": {
         "start": {
-          "line": 109,
+          "line": 123,
           "column": 4
         },
         "end": {
-          "line": 109,
-          "column": 22
+          "line": 123,
+          "column": 21
         }
       },
       "type": "variable",
@@ -436,12 +436,12 @@
     "__primaryTarget": {
       "location": {
         "start": {
-          "line": 110,
+          "line": 124,
           "column": 4
         },
         "end": {
-          "line": 110,
-          "column": 26
+          "line": 124,
+          "column": 25
         }
       },
       "type": "variable",
@@ -450,12 +450,12 @@
     "__isMultiPointerGesture": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 125,
           "column": 4
         },
         "end": {
-          "line": 111,
-          "column": 34
+          "line": 125,
+          "column": 33
         }
       },
       "type": "variable",
@@ -464,12 +464,12 @@
     "__initialAngle": {
       "location": {
         "start": {
-          "line": 112,
+          "line": 126,
           "column": 4
         },
         "end": {
-          "line": 112,
-          "column": 25
+          "line": 126,
+          "column": 24
         }
       },
       "type": "variable",
@@ -478,12 +478,12 @@
     "__lastTap": {
       "location": {
         "start": {
-          "line": 113,
+          "line": 127,
           "column": 4
         },
         "end": {
-          "line": 113,
-          "column": 20
+          "line": 127,
+          "column": 19
         }
       },
       "type": "variable",
@@ -492,12 +492,12 @@
     "__rollImpulseId": {
       "location": {
         "start": {
-          "line": 114,
+          "line": 128,
           "column": 4
         },
         "end": {
-          "line": 114,
-          "column": 26
+          "line": 128,
+          "column": 25
         }
       },
       "type": "variable",
@@ -506,12 +506,12 @@
     "__stopMomentum": {
       "location": {
         "start": {
-          "line": 115,
+          "line": 129,
           "column": 4
         },
         "end": {
-          "line": 115,
-          "column": 25
+          "line": 129,
+          "column": 24
         }
       },
       "type": "variable",
@@ -520,12 +520,12 @@
     "__initialDistance": {
       "location": {
         "start": {
-          "line": 116,
+          "line": 130,
           "column": 4
         },
         "end": {
-          "line": 116,
-          "column": 28
+          "line": 130,
+          "column": 27
         }
       },
       "type": "variable",
@@ -534,12 +534,12 @@
     "__momentum": {
       "location": {
         "start": {
-          "line": 117,
+          "line": 131,
           "column": 4
         },
         "end": {
-          "line": 117,
-          "column": 21
+          "line": 131,
+          "column": 20
         }
       },
       "type": "variable",
@@ -548,12 +548,12 @@
     "__rollEvents": {
       "location": {
         "start": {
-          "line": 118,
+          "line": 132,
           "column": 4
         },
         "end": {
-          "line": 118,
-          "column": 23
+          "line": 132,
+          "column": 22
         }
       },
       "type": "variable",
@@ -562,12 +562,12 @@
     "__rollEventsCountStart": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 133,
           "column": 4
         },
         "end": {
-          "line": 119,
-          "column": 30
+          "line": 133,
+          "column": 29
         }
       },
       "type": "variable",
@@ -576,12 +576,12 @@
     "__rollEventsCount": {
       "location": {
         "start": {
-          "line": 120,
+          "line": 134,
           "column": 4
         },
         "end": {
-          "line": 120,
-          "column": 25
+          "line": 134,
+          "column": 24
         }
       },
       "type": "variable",
@@ -590,12 +590,12 @@
     "__touchPadDetectionPerformed": {
       "location": {
         "start": {
-          "line": 121,
+          "line": 135,
           "column": 4
         },
         "end": {
-          "line": 121,
-          "column": 40
+          "line": 135,
+          "column": 39
         }
       },
       "type": "variable",
@@ -604,11 +604,11 @@
     "__lastRollEventTime": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 122,
+          "line": 136,
           "column": 26
         }
       },
@@ -618,11 +618,11 @@
     "_initObserver": {
       "location": {
         "start": {
-          "line": 127,
+          "line": 141,
           "column": 4
         },
         "end": {
-          "line": 141,
+          "line": 162,
           "column": 5
         }
       },
@@ -640,11 +640,11 @@
     "_stopObserver": {
       "location": {
         "start": {
-          "line": 147,
+          "line": 167,
           "column": 4
         },
         "end": {
-          "line": 160,
+          "line": 187,
           "column": 5
         }
       },
@@ -662,11 +662,11 @@
     "checkAndFireGesture": {
       "location": {
         "start": {
-          "line": 170,
+          "line": 196,
           "column": 4
         },
         "end": {
-          "line": 188,
+          "line": 214,
           "column": 5
         }
       },
@@ -711,11 +711,11 @@
     "gestureBegin": {
       "location": {
         "start": {
-          "line": 196,
+          "line": 222,
           "column": 4
         },
         "end": {
-          "line": 240,
+          "line": 266,
           "column": 5
         }
       },
@@ -749,11 +749,11 @@
     "gestureMove": {
       "location": {
         "start": {
-          "line": 249,
+          "line": 274,
           "column": 4
         },
         "end": {
-          "line": 285,
+          "line": 310,
           "column": 5
         }
       },
@@ -787,11 +787,11 @@
     "_hasIntermediaryHandler": {
       "location": {
         "start": {
-          "line": 296,
+          "line": 320,
           "column": 4
         },
         "end": {
-          "line": 304,
+          "line": 328,
           "column": 5
         }
       },
@@ -826,11 +826,11 @@
     "gestureFinish": {
       "location": {
         "start": {
-          "line": 313,
+          "line": 336,
           "column": 4
         },
         "end": {
-          "line": 398,
+          "line": 419,
           "column": 5
         }
       },
@@ -864,11 +864,11 @@
     "stopMomentum": {
       "location": {
         "start": {
-          "line": 406,
+          "line": 426,
           "column": 4
         },
         "end": {
-          "line": 408,
+          "line": 428,
           "column": 5
         }
       },
@@ -895,11 +895,11 @@
     "gestureCancel": {
       "location": {
         "start": {
-          "line": 415,
+          "line": 434,
           "column": 4
         },
         "end": {
-          "line": 424,
+          "line": 443,
           "column": 5
         }
       },
@@ -926,11 +926,11 @@
     "updateGestureTarget": {
       "location": {
         "start": {
-          "line": 435,
+          "line": 453,
           "column": 4
         },
         "end": {
-          "line": 437,
+          "line": 455,
           "column": 5
         }
       },
@@ -970,11 +970,11 @@
     "__handleRollImpulse": {
       "location": {
         "start": {
-          "line": 448,
+          "line": 465,
           "column": 4
         },
         "end": {
-          "line": 493,
+          "line": 521,
           "column": 5
         }
       },
@@ -1030,11 +1030,11 @@
     "_calcAngle": {
       "location": {
         "start": {
-          "line": 500,
+          "line": 527,
           "column": 4
         },
         "end": {
-          "line": 517,
+          "line": 544,
           "column": 5
         }
       },
@@ -1060,11 +1060,11 @@
     "_calcDistance": {
       "location": {
         "start": {
-          "line": 524,
+          "line": 550,
           "column": 4
         },
         "end": {
-          "line": 539,
+          "line": 569,
           "column": 5
         }
       },
@@ -1090,11 +1090,11 @@
     "_isBelowTapMaxDistance": {
       "location": {
         "start": {
-          "line": 549,
+          "line": 578,
           "column": 4
         },
         "end": {
-          "line": 558,
+          "line": 592,
           "column": 5
         }
       },
@@ -1129,11 +1129,11 @@
     "__isBelowDoubleTapDistance": {
       "location": {
         "start": {
-          "line": 572,
+          "line": 605,
           "column": 4
         },
         "end": {
-          "line": 579,
+          "line": 612,
           "column": 5
         }
       },
@@ -1196,11 +1196,11 @@
     "_getDeltaCoordinates": {
       "location": {
         "start": {
-          "line": 587,
+          "line": 619,
           "column": 4
         },
         "end": {
-          "line": 606,
+          "line": 638,
           "column": 5
         }
       },
@@ -1235,11 +1235,11 @@
     "_fireEvent": {
       "location": {
         "start": {
-          "line": 617,
+          "line": 648,
           "column": 4
         },
         "end": {
-          "line": 649,
+          "line": 681,
           "column": 5
         }
       },
@@ -1290,11 +1290,11 @@
     "_onDblClick": {
       "location": {
         "start": {
-          "line": 658,
+          "line": 689,
           "column": 4
         },
         "end": {
-          "line": 662,
+          "line": 693,
           "column": 5
         }
       },
@@ -1321,11 +1321,11 @@
     "__getSwipeGesture": {
       "location": {
         "start": {
-          "line": 672,
+          "line": 702,
           "column": 4
         },
         "end": {
-          "line": 696,
+          "line": 729,
           "column": 5
         }
       },
@@ -1367,11 +1367,11 @@
     "__fireTrack": {
       "location": {
         "start": {
-          "line": 706,
+          "line": 738,
           "column": 4
         },
         "end": {
-          "line": 709,
+          "line": 741,
           "column": 5
         }
       },
@@ -1412,11 +1412,11 @@
     "__fireRollEvent": {
       "location": {
         "start": {
-          "line": 719,
+          "line": 750,
           "column": 4
         },
         "end": {
-          "line": 727,
+          "line": 760,
           "column": 5
         }
       },
@@ -1457,11 +1457,11 @@
     "__performAdaptativeRollScrolling": {
       "location": {
         "start": {
-          "line": 734,
+          "line": 767,
           "column": 4
         },
         "end": {
-          "line": 747,
+          "line": 780,
           "column": 5
         }
       },
@@ -1488,11 +1488,11 @@
     "__endTouchPadDetection": {
       "location": {
         "start": {
-          "line": 752,
+          "line": 785,
           "column": 4
         },
         "end": {
-          "line": 762,
+          "line": 798,
           "column": 5
         }
       },
@@ -1510,11 +1510,11 @@
     "_isTouchPadDetectionEnabled": {
       "location": {
         "start": {
-          "line": 769,
+          "line": 805,
           "column": 4
         },
         "end": {
-          "line": 771,
+          "line": 810,
           "column": 5
         }
       },
@@ -1546,11 +1546,11 @@
     "_fireRoll": {
       "location": {
         "start": {
-          "line": 782,
+          "line": 821,
           "column": 4
         },
         "end": {
-          "line": 837,
+          "line": 892,
           "column": 5
         }
       },
@@ -1591,11 +1591,11 @@
     "__fireRotate": {
       "location": {
         "start": {
-          "line": 846,
+          "line": 900,
           "column": 4
         },
         "end": {
-          "line": 852,
+          "line": 906,
           "column": 5
         }
       },
@@ -1629,11 +1629,11 @@
     "__firePinch": {
       "location": {
         "start": {
-          "line": 861,
+          "line": 914,
           "column": 4
         },
         "end": {
-          "line": 868,
+          "line": 921,
           "column": 5
         }
       },
@@ -1667,11 +1667,11 @@
     "__fireLongTap": {
       "location": {
         "start": {
-          "line": 877,
+          "line": 929,
           "column": 4
         },
         "end": {
-          "line": 884,
+          "line": 936,
           "column": 5
         }
       },
@@ -1705,11 +1705,11 @@
     "__stopLongTapTimer": {
       "location": {
         "start": {
-          "line": 891,
+          "line": 942,
           "column": 4
         },
         "end": {
-          "line": 896,
+          "line": 947,
           "column": 5
         }
       },
@@ -1736,11 +1736,11 @@
     "dispose": {
       "location": {
         "start": {
-          "line": 901,
+          "line": 952,
           "column": 4
         },
         "end": {
-          "line": 908,
+          "line": 959,
           "column": 5
         }
       },

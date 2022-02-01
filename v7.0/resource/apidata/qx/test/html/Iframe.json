@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 187,
+        "line": 199,
         "column": 3
       }
     },
@@ -39,11 +39,11 @@
     "__doc": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 36,
+          "line": 33,
           "column": 15
         }
       },
@@ -53,11 +53,11 @@
     "__frame": {
       "location": {
         "start": {
-          "line": 37,
+          "line": 34,
           "column": 4
         },
         "end": {
-          "line": 37,
+          "line": 34,
           "column": 17
         }
       },
@@ -67,11 +67,11 @@
     "__origin": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 38,
+          "line": 35,
           "column": 18
         }
       },
@@ -81,11 +81,11 @@
     "__destSource": {
       "location": {
         "start": {
-          "line": 39,
+          "line": 36,
           "column": 4
         },
         "end": {
-          "line": 39,
+          "line": 36,
           "column": 22
         }
       },
@@ -95,12 +95,12 @@
     "__alredyRun": {
       "location": {
         "start": {
-          "line": 41,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 41,
-          "column": 23
+          "line": 38,
+          "column": 22
         }
       },
       "type": "variable",
@@ -109,11 +109,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 62,
+          "line": 60,
           "column": 5
         }
       },
@@ -123,11 +123,11 @@
     "test: set source to URL with same origin": {
       "location": {
         "start": {
-          "line": 64,
+          "line": 62,
           "column": 4
         },
         "end": {
-          "line": 94,
+          "line": 97,
           "column": 5
         }
       },
@@ -137,11 +137,11 @@
     "test: update source on navigate": {
       "location": {
         "start": {
-          "line": 96,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 114,
+          "line": 120,
           "column": 5
         }
       },
@@ -151,11 +151,11 @@
     "test: skip setting source if frame is already on URL": {
       "location": {
         "start": {
-          "line": 116,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 151,
+          "line": 159,
           "column": 5
         }
       },
@@ -165,11 +165,11 @@
     "test: set null source if frame is cross-origin": {
       "location": {
         "start": {
-          "line": 153,
+          "line": 161,
           "column": 4
         },
         "end": {
-          "line": 174,
+          "line": 187,
           "column": 5
         }
       },
@@ -179,11 +179,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 176,
+          "line": 189,
           "column": 4
         },
         "end": {
-          "line": 185,
+          "line": 197,
           "column": 5
         }
       },
@@ -870,6 +870,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -894,6 +895,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

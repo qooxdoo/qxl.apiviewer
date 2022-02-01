@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 124,
+        "line": 120,
         "column": 3
       }
     },
@@ -24,7 +24,7 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
@@ -46,7 +46,7 @@
           "column": 4
         },
         "end": {
-          "line": 72,
+          "line": 71,
           "column": 5
         }
       },
@@ -60,11 +60,11 @@
     "_getChildren": {
       "location": {
         "start": {
-          "line": 74,
+          "line": 73,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 79,
           "column": 5
         }
       },
@@ -78,11 +78,11 @@
     "_createTestElement": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 81,
           "column": 4
         },
         "end": {
-          "line": 85,
+          "line": 83,
           "column": 5
         }
       },
@@ -96,11 +96,11 @@
     "testFolderOpen": {
       "location": {
         "start": {
-          "line": 88,
+          "line": 85,
           "column": 4
         },
         "end": {
-          "line": 122,
+          "line": 118,
           "column": 5
         }
       },
@@ -195,6 +195,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -219,6 +220,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

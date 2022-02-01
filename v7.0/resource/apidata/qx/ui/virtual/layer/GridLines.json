@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 298,
+        "line": 271,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 33,
-        "column": 14
+        "line": 32,
+        "column": 2
       },
       "end": {
-        "line": 50,
+        "line": 48,
         "column": 3
       }
     },
@@ -81,11 +81,11 @@
     "defaultLineColor": {
       "location": {
         "start": {
-          "line": 62,
+          "line": 58,
           "column": 4
         },
         "end": {
-          "line": 67,
+          "line": 62,
           "column": 5
         }
       },
@@ -107,11 +107,11 @@
     "defaultLineSize": {
       "location": {
         "start": {
-          "line": 70,
+          "line": 65,
           "column": 4
         },
         "end": {
-          "line": 75,
+          "line": 69,
           "column": 5
         }
       },
@@ -135,12 +135,12 @@
     "__lineColors": {
       "location": {
         "start": {
-          "line": 89,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 89,
-          "column": 23
+          "line": 80,
+          "column": 22
         }
       },
       "jsdoc": {
@@ -157,12 +157,12 @@
     "__lineSizes": {
       "location": {
         "start": {
-          "line": 92,
+          "line": 83,
           "column": 4
         },
         "end": {
-          "line": 92,
-          "column": 22
+          "line": 83,
+          "column": 21
         }
       },
       "jsdoc": {
@@ -179,11 +179,11 @@
     "isHorizontal": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 90,
           "column": 4
         },
         "end": {
-          "line": 102,
+          "line": 92,
           "column": 5
         }
       },
@@ -209,11 +209,11 @@
     "setLineColor": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 100,
           "column": 4
         },
         "end": {
-          "line": 123,
+          "line": 110,
           "column": 5
         }
       },
@@ -247,11 +247,11 @@
     "setLineSize": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 144,
+          "line": 128,
           "column": 5
         }
       },
@@ -285,11 +285,11 @@
     "__isLineRendered": {
       "location": {
         "start": {
-          "line": 154,
+          "line": 137,
           "column": 4
         },
         "end": {
-          "line": 168,
+          "line": 147,
           "column": 5
         }
       },
@@ -324,11 +324,11 @@
     "getLineSize": {
       "location": {
         "start": {
-          "line": 177,
+          "line": 155,
           "column": 4
         },
         "end": {
-          "line": 179,
+          "line": 157,
           "column": 5
         }
       },
@@ -363,11 +363,11 @@
     "getLineColor": {
       "location": {
         "start": {
-          "line": 188,
+          "line": 165,
           "column": 4
         },
         "end": {
-          "line": 190,
+          "line": 167,
           "column": 5
         }
       },
@@ -402,11 +402,11 @@
     "__renderHorizontalLines": {
       "location": {
         "start": {
-          "line": 200,
+          "line": 176,
           "column": 4
         },
         "end": {
-          "line": 221,
+          "line": 198,
           "column": 5
         }
       },
@@ -447,11 +447,11 @@
     "__renderVerticalLines": {
       "location": {
         "start": {
-          "line": 231,
+          "line": 207,
           "column": 4
         },
         "end": {
-          "line": 253,
+          "line": 230,
           "column": 5
         }
       },
@@ -492,11 +492,11 @@
     "_fullUpdate": {
       "location": {
         "start": {
-          "line": 257,
+          "line": 233,
           "column": 4
         },
         "end": {
-          "line": 266,
+          "line": 241,
           "column": 5
         }
       },
@@ -511,11 +511,11 @@
     "_updateLayerWindow": {
       "location": {
         "start": {
-          "line": 270,
+          "line": 244,
           "column": 4
         },
         "end": {
-          "line": 286,
+          "line": 259,
           "column": 5
         }
       },
@@ -615,6 +615,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -639,6 +640,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -4455,11 +4457,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 295,
-        "column": 13
+        "line": 268,
+        "column": 2
       },
       "end": {
-        "line": 297,
+        "line": 270,
         "column": 3
       }
     },

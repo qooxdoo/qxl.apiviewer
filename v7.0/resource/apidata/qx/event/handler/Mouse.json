@@ -16,7 +16,7 @@
         "column": 0
       },
       "end": {
-        "line": 606,
+        "line": 645,
         "column": 3
       }
     },
@@ -49,11 +49,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 51,
-        "column": 14
+        "line": 47,
+        "column": 2
       },
       "end": {
-        "line": 65,
+        "line": 60,
         "column": 3
       }
     },
@@ -79,12 +79,12 @@
     "PRIORITY": {
       "location": {
         "start": {
-          "line": 79,
+          "line": 70,
           "column": 4
         },
         "end": {
-          "line": 79,
-          "column": 52
+          "line": 70,
+          "column": 51
         }
       },
       "jsdoc": {
@@ -107,11 +107,11 @@
     "SUPPORTED_TYPES": {
       "location": {
         "start": {
-          "line": 82,
+          "line": 73,
           "column": 4
         },
         "end": {
-          "line": 96,
+          "line": 86,
           "column": 5
         }
       },
@@ -135,11 +135,11 @@
     "NON_BUBBLING_EVENTS": {
       "location": {
         "start": {
-          "line": 99,
+          "line": 89,
           "column": 4
         },
         "end": {
-          "line": 103,
+          "line": 92,
           "column": 5
         }
       },
@@ -163,12 +163,12 @@
     "TARGET_CHECK": {
       "location": {
         "start": {
-          "line": 106,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 106,
-          "column": 136
+          "line": 98,
+          "column": 42
         }
       },
       "jsdoc": {
@@ -191,12 +191,12 @@
     "IGNORE_CAN_HANDLE": {
       "location": {
         "start": {
-          "line": 109,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 109,
-          "column": 28
+          "line": 101,
+          "column": 27
         }
       },
       "jsdoc": {
@@ -221,12 +221,12 @@
     "__onButtonEventWrapper": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 111,
           "column": 4
         },
         "end": {
-          "line": 124,
-          "column": 33
+          "line": 111,
+          "column": 32
         }
       },
       "type": "variable",
@@ -235,12 +235,12 @@
     "__onMoveEventWrapper": {
       "location": {
         "start": {
-          "line": 125,
+          "line": 112,
           "column": 4
         },
         "end": {
-          "line": 125,
-          "column": 31
+          "line": 112,
+          "column": 30
         }
       },
       "type": "variable",
@@ -249,12 +249,12 @@
     "__onWheelEventWrapper": {
       "location": {
         "start": {
-          "line": 126,
+          "line": 113,
           "column": 4
         },
         "end": {
-          "line": 126,
-          "column": 32
+          "line": 113,
+          "column": 31
         }
       },
       "type": "variable",
@@ -263,12 +263,12 @@
     "__lastEventType": {
       "location": {
         "start": {
-          "line": 127,
+          "line": 114,
           "column": 4
         },
         "end": {
-          "line": 127,
-          "column": 26
+          "line": 114,
+          "column": 25
         }
       },
       "type": "variable",
@@ -277,12 +277,12 @@
     "__lastMouseDownTarget": {
       "location": {
         "start": {
-          "line": 128,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 128,
-          "column": 32
+          "line": 115,
+          "column": 31
         }
       },
       "type": "variable",
@@ -291,12 +291,12 @@
     "__manager": {
       "location": {
         "start": {
-          "line": 129,
+          "line": 116,
           "column": 4
         },
         "end": {
-          "line": 129,
-          "column": 20
+          "line": 116,
+          "column": 19
         }
       },
       "type": "variable",
@@ -305,12 +305,12 @@
     "__window": {
       "location": {
         "start": {
-          "line": 130,
+          "line": 117,
           "column": 4
         },
         "end": {
-          "line": 130,
-          "column": 19
+          "line": 117,
+          "column": 18
         }
       },
       "type": "variable",
@@ -319,12 +319,12 @@
     "__root": {
       "location": {
         "start": {
-          "line": 131,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 131,
-          "column": 17
+          "line": 118,
+          "column": 16
         }
       },
       "type": "variable",
@@ -333,11 +333,11 @@
     "__preventNextClick": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 119,
           "column": 4
         },
         "end": {
-          "line": 132,
+          "line": 119,
           "column": 28
         }
       },
@@ -347,11 +347,11 @@
     "__onNativeListener": {
       "location": {
         "start": {
-          "line": 135,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 135,
+          "line": 122,
           "column": 28
         }
       },
@@ -375,12 +375,12 @@
     "canHandleEvent": {
       "location": {
         "start": {
-          "line": 146,
+          "line": 131,
           "column": 4
         },
         "end": {
-          "line": 146,
-          "column": 46
+          "line": 131,
+          "column": 35
         }
       },
       "jsdoc": {},
@@ -394,7 +394,39 @@
     "registerEvent": {
       "location": {
         "start": {
-          "line": 152,
+          "line": 136,
+          "column": 4
+        },
+        "end": {
+          "line": 148,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": ""
+          }
+        ],
+        "@Override": [
+          {
+            "name": "@Override",
+            "body": ""
+          }
+        ]
+      },
+      "type": "function",
+      "access": "public",
+      "overriddenFrom": "qx.event.IEventHandler",
+      "appearsIn": [
+        "qx.event.IEventHandler"
+      ]
+    },
+    "unregisterEvent": {
+      "location": {
+        "start": {
+          "line": 153,
           "column": 4
         },
         "end": {
@@ -423,46 +455,14 @@
         "qx.event.IEventHandler"
       ]
     },
-    "unregisterEvent": {
-      "location": {
-        "start": {
-          "line": 168,
-          "column": 4
-        },
-        "end": {
-          "line": 175,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": ""
-          }
-        ],
-        "@Override": [
-          {
-            "name": "@Override",
-            "body": ""
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public",
-      "overriddenFrom": "qx.event.IEventHandler",
-      "appearsIn": [
-        "qx.event.IEventHandler"
-      ]
-    },
     "_onNative": {
       "location": {
         "start": {
-          "line": 183,
+          "line": 171,
           "column": 4
         },
         "end": {
-          "line": 192,
+          "line": 180,
           "column": 6
         }
       },
@@ -495,11 +495,11 @@
     "__fireEvent": {
       "location": {
         "start": {
-          "line": 210,
+          "line": 195,
           "column": 4
         },
         "end": {
-          "line": 231,
+          "line": 219,
           "column": 5
         }
       },
@@ -540,11 +540,11 @@
     "preventNextClick": {
       "location": {
         "start": {
-          "line": 238,
+          "line": 225,
           "column": 4
         },
         "end": {
-          "line": 240,
+          "line": 227,
           "column": 5
         }
       },
@@ -568,11 +568,11 @@
     "_initButtonObserver": {
       "location": {
         "start": {
-          "line": 255,
+          "line": 240,
           "column": 4
         },
         "end": {
-          "line": 267,
+          "line": 283,
           "column": 5
         }
       },
@@ -596,11 +596,11 @@
     "_initMoveObserver": {
       "location": {
         "start": {
-          "line": 275,
+          "line": 290,
           "column": 4
         },
         "end": {
-          "line": 283,
+          "line": 314,
           "column": 5
         }
       },
@@ -624,11 +624,11 @@
     "_initWheelObserver": {
       "location": {
         "start": {
-          "line": 291,
+          "line": 321,
           "column": 4
         },
         "end": {
-          "line": 298,
+          "line": 333,
           "column": 5
         }
       },
@@ -652,11 +652,11 @@
     "_stopButtonObserver": {
       "location": {
         "start": {
-          "line": 316,
+          "line": 346,
           "column": 4
         },
         "end": {
-          "line": 325,
+          "line": 378,
           "column": 5
         }
       },
@@ -680,11 +680,11 @@
     "_stopMoveObserver": {
       "location": {
         "start": {
-          "line": 333,
+          "line": 385,
           "column": 4
         },
         "end": {
-          "line": 340,
+          "line": 405,
           "column": 5
         }
       },
@@ -708,11 +708,11 @@
     "_stopWheelObserver": {
       "location": {
         "start": {
-          "line": 348,
+          "line": 412,
           "column": 4
         },
         "end": {
-          "line": 354,
+          "line": 419,
           "column": 5
         }
       },
@@ -736,11 +736,11 @@
     "_onMoveEvent": {
       "location": {
         "start": {
-          "line": 374,
+          "line": 434,
           "column": 4
         },
         "end": {
-          "line": 376,
+          "line": 436,
           "column": 6
         }
       },
@@ -773,11 +773,11 @@
     "_onButtonEvent": {
       "location": {
         "start": {
-          "line": 386,
+          "line": 445,
           "column": 4
         },
         "end": {
-          "line": 440,
+          "line": 499,
           "column": 6
         }
       },
@@ -810,11 +810,11 @@
     "_onWheelEvent": {
       "location": {
         "start": {
-          "line": 449,
+          "line": 507,
           "column": 4
         },
         "end": {
-          "line": 451,
+          "line": 509,
           "column": 6
         }
       },
@@ -847,11 +847,11 @@
     "__rightClickFixPost": {
       "location": {
         "start": {
-          "line": 480,
+          "line": 531,
           "column": 4
         },
         "end": {
-          "line": 490,
+          "line": 539,
           "column": 6
         }
       },
@@ -898,11 +898,11 @@
     "__doubleClickFixPre": {
       "location": {
         "start": {
-          "line": 514,
+          "line": 562,
           "column": 4
         },
         "end": {
-          "line": 532,
+          "line": 578,
           "column": 6
         }
       },
@@ -949,11 +949,11 @@
     "__differentTargetClickFixPost": {
       "location": {
         "start": {
-          "line": 548,
+          "line": 593,
           "column": 4
         },
         "end": {
-          "line": 570,
+          "line": 615,
           "column": 6
         }
       },
@@ -1085,6 +1085,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1109,6 +1110,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -1137,11 +1139,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 583,
-        "column": 13
+        "line": 624,
+        "column": 2
       },
       "end": {
-        "line": 591,
+        "line": 634,
         "column": 3
       }
     },
@@ -1150,11 +1152,11 @@
   "defer": {
     "location": {
       "start": {
-        "line": 603,
-        "column": 10
+        "line": 642,
+        "column": 2
       },
       "end": {
-        "line": 605,
+        "line": 644,
         "column": 3
       }
     },

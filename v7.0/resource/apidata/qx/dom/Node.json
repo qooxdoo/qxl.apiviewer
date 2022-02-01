@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 313,
+        "line": 286,
         "column": 3
       }
     },
@@ -31,12 +31,12 @@
     "ELEMENT": {
       "location": {
         "start": {
-          "line": 54,
+          "line": 52,
           "column": 4
         },
         "end": {
-          "line": 54,
-          "column": 30
+          "line": 52,
+          "column": 14
         }
       },
       "jsdoc": {
@@ -59,12 +59,12 @@
     "ATTRIBUTE": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 53,
           "column": 4
         },
         "end": {
-          "line": 55,
-          "column": 30
+          "line": 53,
+          "column": 16
         }
       },
       "type": "variable",
@@ -73,12 +73,12 @@
     "TEXT": {
       "location": {
         "start": {
-          "line": 56,
+          "line": 54,
           "column": 4
         },
         "end": {
-          "line": 56,
-          "column": 30
+          "line": 54,
+          "column": 11
         }
       },
       "type": "variable",
@@ -87,12 +87,12 @@
     "CDATA_SECTION": {
       "location": {
         "start": {
-          "line": 57,
+          "line": 55,
           "column": 4
         },
         "end": {
-          "line": 57,
-          "column": 30
+          "line": 55,
+          "column": 20
         }
       },
       "type": "variable",
@@ -101,12 +101,12 @@
     "ENTITY_REFERENCE": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 56,
           "column": 4
         },
         "end": {
-          "line": 58,
-          "column": 30
+          "line": 56,
+          "column": 23
         }
       },
       "type": "variable",
@@ -115,12 +115,12 @@
     "ENTITY": {
       "location": {
         "start": {
-          "line": 59,
+          "line": 57,
           "column": 4
         },
         "end": {
-          "line": 59,
-          "column": 30
+          "line": 57,
+          "column": 13
         }
       },
       "type": "variable",
@@ -129,12 +129,12 @@
     "PROCESSING_INSTRUCTION": {
       "location": {
         "start": {
-          "line": 60,
+          "line": 58,
           "column": 4
         },
         "end": {
-          "line": 60,
-          "column": 30
+          "line": 58,
+          "column": 29
         }
       },
       "type": "variable",
@@ -143,12 +143,12 @@
     "COMMENT": {
       "location": {
         "start": {
-          "line": 61,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 61,
-          "column": 30
+          "line": 59,
+          "column": 14
         }
       },
       "type": "variable",
@@ -157,12 +157,12 @@
     "DOCUMENT": {
       "location": {
         "start": {
-          "line": 62,
+          "line": 60,
           "column": 4
         },
         "end": {
-          "line": 62,
-          "column": 30
+          "line": 60,
+          "column": 15
         }
       },
       "type": "variable",
@@ -171,12 +171,12 @@
     "DOCUMENT_TYPE": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 61,
           "column": 4
         },
         "end": {
-          "line": 63,
-          "column": 31
+          "line": 61,
+          "column": 21
         }
       },
       "type": "variable",
@@ -185,12 +185,12 @@
     "DOCUMENT_FRAGMENT": {
       "location": {
         "start": {
-          "line": 64,
+          "line": 62,
           "column": 4
         },
         "end": {
-          "line": 64,
-          "column": 31
+          "line": 62,
+          "column": 25
         }
       },
       "type": "variable",
@@ -199,12 +199,12 @@
     "NOTATION": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 63,
           "column": 4
         },
         "end": {
-          "line": 65,
-          "column": 31
+          "line": 63,
+          "column": 16
         }
       },
       "type": "variable",
@@ -213,11 +213,11 @@
     "getDocument": {
       "location": {
         "start": {
-          "line": 84,
+          "line": 77,
           "column": 4
         },
         "end": {
-          "line": 89,
+          "line": 82,
           "column": 5
         }
       },
@@ -256,11 +256,11 @@
     "getWindow": {
       "location": {
         "start": {
-          "line": 98,
+          "line": 90,
           "column": 4
         },
         "end": {
-          "line": 112,
+          "line": 103,
           "column": 5
         }
       },
@@ -299,11 +299,11 @@
     "getDocumentElement": {
       "location": {
         "start": {
-          "line": 125,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 127,
+          "line": 117,
           "column": 5
         }
       },
@@ -342,11 +342,11 @@
     "getBodyElement": {
       "location": {
         "start": {
-          "line": 139,
+          "line": 128,
           "column": 4
         },
         "end": {
-          "line": 141,
+          "line": 130,
           "column": 5
         }
       },
@@ -385,11 +385,11 @@
     "isNode": {
       "location": {
         "start": {
-          "line": 160,
+          "line": 144,
           "column": 4
         },
         "end": {
-          "line": 162,
+          "line": 146,
           "column": 5
         }
       },
@@ -424,11 +424,11 @@
     "isElement": {
       "location": {
         "start": {
-          "line": 171,
+          "line": 154,
           "column": 4
         },
         "end": {
-          "line": 173,
+          "line": 156,
           "column": 5
         }
       },
@@ -463,11 +463,11 @@
     "isDocument": {
       "location": {
         "start": {
-          "line": 182,
+          "line": 164,
           "column": 4
         },
         "end": {
-          "line": 184,
+          "line": 166,
           "column": 5
         }
       },
@@ -502,11 +502,11 @@
     "isDocumentFragment": {
       "location": {
         "start": {
-          "line": 193,
+          "line": 174,
           "column": 4
         },
         "end": {
-          "line": 195,
+          "line": 176,
           "column": 5
         }
       },
@@ -541,11 +541,11 @@
     "isText": {
       "location": {
         "start": {
-          "line": 204,
+          "line": 184,
           "column": 4
         },
         "end": {
-          "line": 206,
+          "line": 186,
           "column": 5
         }
       },
@@ -580,11 +580,11 @@
     "isWindow": {
       "location": {
         "start": {
-          "line": 215,
+          "line": 194,
           "column": 4
         },
         "end": {
-          "line": 217,
+          "line": 196,
           "column": 5
         }
       },
@@ -619,11 +619,11 @@
     "isNodeName": {
       "location": {
         "start": {
-          "line": 227,
+          "line": 205,
           "column": 4
         },
         "end": {
-          "line": 234,
+          "line": 211,
           "column": 5
         }
       },
@@ -665,11 +665,11 @@
     "getName": {
       "location": {
         "start": {
-          "line": 251,
+          "line": 225,
           "column": 4
         },
         "end": {
-          "line": 258,
+          "line": 231,
           "column": 5
         }
       },
@@ -704,11 +704,11 @@
     "getText": {
       "location": {
         "start": {
-          "line": 270,
+          "line": 242,
           "column": 4
         },
         "end": {
-          "line": 293,
+          "line": 266,
           "column": 5
         }
       },
@@ -749,11 +749,11 @@
     "isBlockNode": {
       "location": {
         "start": {
-          "line": 302,
+          "line": 274,
           "column": 4
         },
         "end": {
-          "line": 311,
+          "line": 284,
           "column": 5
         }
       },

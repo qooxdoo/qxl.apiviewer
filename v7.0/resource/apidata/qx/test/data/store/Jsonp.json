@@ -16,7 +16,7 @@
         "column": 0
       },
       "end": {
-        "line": 217,
+        "line": 243,
         "column": 3
       }
     },
@@ -46,12 +46,12 @@
     "__store": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 38,
-          "column": 18
+          "line": 35,
+          "column": 17
         }
       },
       "type": "variable",
@@ -60,11 +60,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 47,
+          "line": 44,
           "column": 5
         }
       },
@@ -74,11 +74,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 50,
+          "line": 46,
           "column": 4
         },
         "end": {
-          "line": 71,
+          "line": 65,
           "column": 5
         }
       },
@@ -88,11 +88,11 @@
     "isLocal": {
       "location": {
         "start": {
-          "line": 74,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 76,
+          "line": 69,
           "column": 5
         }
       },
@@ -102,11 +102,11 @@
     "setUpFakeRequest": {
       "location": {
         "start": {
-          "line": 79,
+          "line": 71,
           "column": 4
         },
         "end": {
-          "line": 84,
+          "line": 75,
           "column": 5
         }
       },
@@ -116,11 +116,11 @@
     "testSetCallbackParam": {
       "location": {
         "start": {
-          "line": 87,
+          "line": 77,
           "column": 4
         },
         "end": {
-          "line": 96,
+          "line": 86,
           "column": 5
         }
       },
@@ -130,11 +130,11 @@
     "testSetCallbackName": {
       "location": {
         "start": {
-          "line": 99,
+          "line": 88,
           "column": 4
         },
         "end": {
-          "line": 108,
+          "line": 97,
           "column": 5
         }
       },
@@ -144,11 +144,11 @@
     "testWholePrimitive": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 126,
+          "line": 136,
           "column": 5
         }
       },
@@ -158,11 +158,11 @@
     "testManipulatePrimitive": {
       "location": {
         "start": {
-          "line": 129,
+          "line": 138,
           "column": 4
         },
         "end": {
-          "line": 149,
+          "line": 164,
           "column": 5
         }
       },
@@ -172,11 +172,11 @@
     "testConfigureRequestPrimitive": {
       "location": {
         "start": {
-          "line": 152,
+          "line": 166,
           "column": 4
         },
         "end": {
-          "line": 174,
+          "line": 194,
           "column": 5
         }
       },
@@ -186,11 +186,11 @@
     "testDisposeRequest": {
       "location": {
         "start": {
-          "line": 177,
+          "line": 196,
           "column": 4
         },
         "end": {
-          "line": 184,
+          "line": 203,
           "column": 5
         }
       },
@@ -200,11 +200,11 @@
     "testDisposeRequestDone": {
       "location": {
         "start": {
-          "line": 187,
+          "line": 205,
           "column": 4
         },
         "end": {
-          "line": 197,
+          "line": 220,
           "column": 5
         }
       },
@@ -214,11 +214,11 @@
     "testErrorEvent": {
       "location": {
         "start": {
-          "line": 200,
+          "line": 222,
           "column": 4
         },
         "end": {
-          "line": 215,
+          "line": 241,
           "column": 5
         }
       },
@@ -1376,6 +1376,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1400,6 +1401,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

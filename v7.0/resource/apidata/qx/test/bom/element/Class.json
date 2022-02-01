@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 188,
+        "line": 163,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 33,
+          "line": 29,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 31,
           "column": 4
         },
         "end": {
-          "line": 40,
+          "line": 34,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "test: get should return the className for svg element": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 36,
           "column": 4
         },
         "end": {
-          "line": 54,
+          "line": 46,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "test: get on new element should return empty string": {
       "location": {
         "start": {
-          "line": 56,
+          "line": 48,
           "column": 4
         },
         "end": {
-          "line": 60,
+          "line": 51,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "test: get should return the className": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 53,
           "column": 4
         },
         "end": {
-          "line": 68,
+          "line": 57,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "test: add() on new element should set the class name": {
       "location": {
         "start": {
-          "line": 71,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 76,
+          "line": 63,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "test: add() on element with class should not set it again": {
       "location": {
         "start": {
-          "line": 79,
+          "line": 65,
           "column": 4
         },
         "end": {
-          "line": 85,
+          "line": 70,
           "column": 5
         }
       },
@@ -122,11 +122,11 @@
     "test: addClasses() on new element should set multiple classes": {
       "location": {
         "start": {
-          "line": 88,
+          "line": 72,
           "column": 4
         },
         "end": {
-          "line": 93,
+          "line": 80,
           "column": 5
         }
       },
@@ -136,11 +136,11 @@
     "test: addClasses() should ignore class names, which are already set": {
       "location": {
         "start": {
-          "line": 96,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 103,
+          "line": 88,
           "column": 5
         }
       },
@@ -150,11 +150,11 @@
     "test: has()": {
       "location": {
         "start": {
-          "line": 106,
+          "line": 90,
           "column": 4
         },
         "end": {
-          "line": 116,
+          "line": 99,
           "column": 5
         }
       },
@@ -164,11 +164,11 @@
     "test: remove() non existing class should be ignored": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 125,
+          "line": 106,
           "column": 5
         }
       },
@@ -178,11 +178,11 @@
     "test: remove() existing classes": {
       "location": {
         "start": {
-          "line": 128,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 136,
+          "line": 115,
           "column": 5
         }
       },
@@ -192,11 +192,11 @@
     "test: removeClasses() to remove several classes at once": {
       "location": {
         "start": {
-          "line": 139,
+          "line": 117,
           "column": 4
         },
         "end": {
-          "line": 145,
+          "line": 126,
           "column": 5
         }
       },
@@ -206,11 +206,11 @@
     "test: replace()": {
       "location": {
         "start": {
-          "line": 148,
+          "line": 128,
           "column": 4
         },
         "end": {
-          "line": 169,
+          "line": 148,
           "column": 5
         }
       },
@@ -220,11 +220,11 @@
     "test: toggle() non existing class should add it": {
       "location": {
         "start": {
-          "line": 172,
+          "line": 150,
           "column": 4
         },
         "end": {
-          "line": 177,
+          "line": 154,
           "column": 5
         }
       },
@@ -234,11 +234,11 @@
     "test: toggle() existing class name should remove it": {
       "location": {
         "start": {
-          "line": 180,
+          "line": 156,
           "column": 4
         },
         "end": {
-          "line": 186,
+          "line": 161,
           "column": 5
         }
       },
@@ -333,6 +333,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -357,6 +358,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

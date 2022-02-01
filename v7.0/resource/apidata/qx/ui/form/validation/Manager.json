@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 681,
+        "line": 647,
         "column": 3
       }
     },
@@ -40,26 +40,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 28,
-        "column": 14
+        "line": 27,
+        "column": 2
       },
       "end": {
         "line": 38,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {
     "changeValid": {
       "location": {
         "start": {
-          "line": 46,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 46,
-          "column": 40
+          "line": 44,
+          "column": 37
         }
       },
       "jsdoc": {
@@ -76,12 +75,12 @@
     "complete": {
       "location": {
         "start": {
-          "line": 53,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 53,
-          "column": 38
+          "line": 51,
+          "column": 35
         }
       },
       "jsdoc": {
@@ -100,11 +99,11 @@
     "validator": {
       "location": {
         "start": {
-          "line": 70,
+          "line": 66,
           "column": 4
         },
         "end": {
-          "line": 75,
+          "line": 71,
           "column": 5
         }
       },
@@ -131,11 +130,11 @@
     "invalidMessage": {
       "location": {
         "start": {
-          "line": 82,
+          "line": 78,
           "column": 4
         },
         "end": {
-          "line": 86,
+          "line": 81,
           "column": 5
         }
       },
@@ -156,11 +155,11 @@
     "requiredFieldMessage": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 87,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 90,
           "column": 5
         }
       },
@@ -181,11 +180,11 @@
     "context": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 106,
+          "line": 97,
           "column": 5
         }
       },
@@ -239,12 +238,12 @@
     "__formItems": {
       "location": {
         "start": {
-          "line": 112,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 112,
-          "column": 22
+          "line": 101,
+          "column": 21
         }
       },
       "type": "variable",
@@ -253,12 +252,12 @@
     "__valid": {
       "location": {
         "start": {
-          "line": 113,
+          "line": 102,
           "column": 4
         },
         "end": {
-          "line": 113,
-          "column": 18
+          "line": 102,
+          "column": 17
         }
       },
       "type": "variable",
@@ -267,12 +266,12 @@
     "__asyncResults": {
       "location": {
         "start": {
-          "line": 114,
+          "line": 103,
           "column": 4
         },
         "end": {
-          "line": 114,
-          "column": 25
+          "line": 103,
+          "column": 24
         }
       },
       "type": "variable",
@@ -281,12 +280,12 @@
     "__syncValid": {
       "location": {
         "start": {
-          "line": 115,
+          "line": 104,
           "column": 4
         },
         "end": {
-          "line": 115,
-          "column": 22
+          "line": 104,
+          "column": 21
         }
       },
       "type": "variable",
@@ -295,11 +294,11 @@
     "add": {
       "location": {
         "start": {
-          "line": 146,
+          "line": 134,
           "column": 4
         },
         "end": {
-          "line": 167,
+          "line": 157,
           "column": 5
         }
       },
@@ -345,11 +344,11 @@
     "remove": {
       "location": {
         "start": {
-          "line": 177,
+          "line": 166,
           "column": 4
         },
         "end": {
-          "line": 191,
+          "line": 177,
           "column": 5
         }
       },
@@ -384,11 +383,11 @@
     "getItems": {
       "location": {
         "start": {
-          "line": 199,
+          "line": 184,
           "column": 4
         },
         "end": {
-          "line": 206,
+          "line": 190,
           "column": 5
         }
       },
@@ -414,11 +413,11 @@
     "validate": {
       "location": {
         "start": {
-          "line": 220,
+          "line": 203,
           "column": 4
         },
         "end": {
-          "line": 266,
+          "line": 251,
           "column": 5
         }
       },
@@ -444,11 +443,11 @@
     "_validateRequired": {
       "location": {
         "start": {
-          "line": 277,
+          "line": 261,
           "column": 4
         },
         "end": {
-          "line": 298,
+          "line": 282,
           "column": 5
         }
       },
@@ -483,11 +482,11 @@
     "_validateItem": {
       "location": {
         "start": {
-          "line": 312,
+          "line": 295,
           "column": 4
         },
         "end": {
-          "line": 351,
+          "line": 333,
           "column": 5
         }
       },
@@ -529,11 +528,11 @@
     "__validateForm": {
       "location": {
         "start": {
-          "line": 364,
+          "line": 345,
           "column": 4
         },
         "end": {
-          "line": 401,
+          "line": 382,
           "column": 5
         }
       },
@@ -568,11 +567,11 @@
     "__isAsyncValidator": {
       "location": {
         "start": {
-          "line": 412,
+          "line": 392,
           "column": 4
         },
         "end": {
-          "line": 420,
+          "line": 401,
           "column": 5
         }
       },
@@ -610,11 +609,11 @@
     "__supportsInvalid": {
       "location": {
         "start": {
-          "line": 431,
+          "line": 411,
           "column": 4
         },
         "end": {
-          "line": 434,
+          "line": 414,
           "column": 5
         }
       },
@@ -649,11 +648,11 @@
     "__supportsSingleSelection": {
       "location": {
         "start": {
-          "line": 445,
+          "line": 424,
           "column": 4
         },
         "end": {
-          "line": 448,
+          "line": 427,
           "column": 5
         }
       },
@@ -688,11 +687,11 @@
     "__supportsDataBindingSelection": {
       "location": {
         "start": {
-          "line": 459,
+          "line": 437,
           "column": 4
         },
         "end": {
-          "line": 462,
+          "line": 440,
           "column": 5
         }
       },
@@ -727,11 +726,11 @@
     "_setValid": {
       "location": {
         "start": {
-          "line": 471,
+          "line": 448,
           "column": 4
         },
         "end": {
-          "line": 479,
+          "line": 456,
           "column": 5
         }
       },
@@ -761,11 +760,11 @@
     "_showToolTip": {
       "location": {
         "start": {
-          "line": 487,
+          "line": 463,
           "column": 4
         },
         "end": {
-          "line": 526,
+          "line": 502,
           "column": 5
         }
       },
@@ -792,11 +791,11 @@
     "getValid": {
       "location": {
         "start": {
-          "line": 534,
+          "line": 509,
           "column": 4
         },
         "end": {
-          "line": 536,
+          "line": 511,
           "column": 5
         }
       },
@@ -822,11 +821,11 @@
     "isValid": {
       "location": {
         "start": {
-          "line": 544,
+          "line": 518,
           "column": 4
         },
         "end": {
-          "line": 546,
+          "line": 520,
           "column": 5
         }
       },
@@ -852,11 +851,11 @@
     "getInvalidMessages": {
       "location": {
         "start": {
-          "line": 555,
+          "line": 528,
           "column": 4
         },
         "end": {
-          "line": 570,
+          "line": 543,
           "column": 5
         }
       },
@@ -882,11 +881,11 @@
     "getInvalidFormItems": {
       "location": {
         "start": {
-          "line": 578,
+          "line": 550,
           "column": 4
         },
         "end": {
-          "line": 588,
+          "line": 560,
           "column": 5
         }
       },
@@ -912,11 +911,11 @@
     "reset": {
       "location": {
         "start": {
-          "line": 594,
+          "line": 565,
           "column": 4
         },
         "end": {
-          "line": 604,
+          "line": 575,
           "column": 5
         }
       },
@@ -939,11 +938,11 @@
     "setItemValid": {
       "location": {
         "start": {
-          "line": 619,
+          "line": 589,
           "column": 4
         },
         "end": {
-          "line": 624,
+          "line": 594,
           "column": 5
         }
       },
@@ -983,11 +982,11 @@
     "setFormValid": {
       "location": {
         "start": {
-          "line": 638,
+          "line": 607,
           "column": 4
         },
         "end": {
-          "line": 641,
+          "line": 610,
           "column": 5
         }
       },
@@ -1020,11 +1019,11 @@
     "__checkValidationComplete": {
       "location": {
         "start": {
-          "line": 649,
+          "line": 617,
           "column": 4
         },
         "end": {
-          "line": 667,
+          "line": 635,
           "column": 5
         }
       },
@@ -1127,6 +1126,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1151,6 +1151,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -1443,11 +1444,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 676,
-        "column": 13
+        "line": 643,
+        "column": 2
       },
       "end": {
-        "line": 680,
+        "line": 646,
         "column": 3
       }
     },

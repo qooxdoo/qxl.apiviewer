@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 589,
+        "line": 561,
         "column": 3
       }
     },
@@ -38,26 +38,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 29,
-        "column": 14
+        "line": 27,
+        "column": 2
       },
       "end": {
-        "line": 66,
+        "line": 63,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "members": {
     "__form": {
       "location": {
         "start": {
-          "line": 70,
+          "line": 66,
           "column": 4
         },
         "end": {
-          "line": 70,
-          "column": 17
+          "line": 66,
+          "column": 16
         }
       },
       "type": "variable",
@@ -66,12 +65,12 @@
     "__tf1": {
       "location": {
         "start": {
-          "line": 71,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 71,
-          "column": 16
+          "line": 67,
+          "column": 15
         }
       },
       "type": "variable",
@@ -80,12 +79,12 @@
     "__tf2": {
       "location": {
         "start": {
-          "line": 72,
+          "line": 68,
           "column": 4
         },
         "end": {
-          "line": 72,
-          "column": 16
+          "line": 68,
+          "column": 15
         }
       },
       "type": "variable",
@@ -94,11 +93,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 70,
           "column": 4
         },
         "end": {
-          "line": 79,
+          "line": 74,
           "column": 5
         }
       },
@@ -112,11 +111,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 82,
+          "line": 76,
           "column": 4
         },
         "end": {
-          "line": 86,
+          "line": 80,
           "column": 5
         }
       },
@@ -130,11 +129,11 @@
     "testValidationContext": {
       "location": {
         "start": {
-          "line": 89,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 98,
+          "line": 96,
           "column": 5
         }
       },
@@ -144,11 +143,11 @@
     "testAddTwo": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 98,
           "column": 4
         },
         "end": {
-          "line": 117,
+          "line": 114,
           "column": 5
         }
       },
@@ -158,11 +157,11 @@
     "testRemove": {
       "location": {
         "start": {
-          "line": 120,
+          "line": 116,
           "column": 4
         },
         "end": {
-          "line": 144,
+          "line": 139,
           "column": 5
         }
       },
@@ -172,11 +171,11 @@
     "testAddTwoWithValidator": {
       "location": {
         "start": {
-          "line": 147,
+          "line": 141,
           "column": 4
         },
         "end": {
-          "line": 169,
+          "line": 163,
           "column": 5
         }
       },
@@ -186,11 +185,11 @@
     "testAddTwoWithHeader": {
       "location": {
         "start": {
-          "line": 172,
+          "line": 165,
           "column": 4
         },
         "end": {
-          "line": 193,
+          "line": 186,
           "column": 5
         }
       },
@@ -200,11 +199,11 @@
     "testRemoveHeader": {
       "location": {
         "start": {
-          "line": 196,
+          "line": 188,
           "column": 4
         },
         "end": {
-          "line": 227,
+          "line": 219,
           "column": 5
         }
       },
@@ -214,11 +213,11 @@
     "testAddTwoWithTwoGroups": {
       "location": {
         "start": {
-          "line": 231,
+          "line": 221,
           "column": 4
         },
         "end": {
-          "line": 252,
+          "line": 242,
           "column": 5
         }
       },
@@ -228,11 +227,11 @@
     "testAddTwoButtons": {
       "location": {
         "start": {
-          "line": 255,
+          "line": 244,
           "column": 4
         },
         "end": {
-          "line": 272,
+          "line": 261,
           "column": 5
         }
       },
@@ -242,11 +241,11 @@
     "testRemoveButton": {
       "location": {
         "start": {
-          "line": 275,
+          "line": 263,
           "column": 4
         },
         "end": {
-          "line": 303,
+          "line": 291,
           "column": 5
         }
       },
@@ -256,11 +255,11 @@
     "testAddTwoWithButtons": {
       "location": {
         "start": {
-          "line": 306,
+          "line": 293,
           "column": 4
         },
         "end": {
-          "line": 334,
+          "line": 321,
           "column": 5
         }
       },
@@ -270,11 +269,11 @@
     "testAddTwoWithOptions": {
       "location": {
         "start": {
-          "line": 337,
+          "line": 323,
           "column": 4
         },
         "end": {
-          "line": 349,
+          "line": 335,
           "column": 5
         }
       },
@@ -284,7 +283,21 @@
     "testAddTwoWithButtonsOptions": {
       "location": {
         "start": {
-          "line": 352,
+          "line": 337,
+          "column": 4
+        },
+        "end": {
+          "line": 357,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testAddTwoWithHeaderOptions": {
+      "location": {
+        "start": {
+          "line": 359,
           "column": 4
         },
         "end": {
@@ -295,28 +308,14 @@
       "type": "function",
       "access": "public"
     },
-    "testAddTwoWithHeaderOptions": {
-      "location": {
-        "start": {
-          "line": 375,
-          "column": 4
-        },
-        "end": {
-          "line": 388,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
     "testResetter": {
       "location": {
         "start": {
-          "line": 391,
+          "line": 374,
           "column": 4
         },
         "end": {
-          "line": 409,
+          "line": 392,
           "column": 5
         }
       },
@@ -326,11 +325,11 @@
     "testAll": {
       "location": {
         "start": {
-          "line": 412,
+          "line": 394,
           "column": 4
         },
         "end": {
-          "line": 445,
+          "line": 427,
           "column": 5
         }
       },
@@ -340,11 +339,11 @@
     "testGetItems": {
       "location": {
         "start": {
-          "line": 448,
+          "line": 429,
           "column": 4
         },
         "end": {
-          "line": 457,
+          "line": 438,
           "column": 5
         }
       },
@@ -354,11 +353,11 @@
     "testGetItemsFallback": {
       "location": {
         "start": {
-          "line": 460,
+          "line": 440,
           "column": 4
         },
         "end": {
-          "line": 469,
+          "line": 449,
           "column": 5
         }
       },
@@ -368,11 +367,11 @@
     "testGetItemsMixedWithGroups": {
       "location": {
         "start": {
-          "line": 472,
+          "line": 451,
           "column": 4
         },
         "end": {
-          "line": 487,
+          "line": 466,
           "column": 5
         }
       },
@@ -382,11 +381,11 @@
     "testRedefineResetter": {
       "location": {
         "start": {
-          "line": 490,
+          "line": 468,
           "column": 4
         },
         "end": {
-          "line": 495,
+          "line": 472,
           "column": 5
         }
       },
@@ -396,11 +395,11 @@
     "testEvent": {
       "location": {
         "start": {
-          "line": 498,
+          "line": 474,
           "column": 4
         },
         "end": {
-          "line": 524,
+          "line": 500,
           "column": 5
         }
       },
@@ -410,11 +409,11 @@
     "testSingleRenderer": {
       "location": {
         "start": {
-          "line": 527,
+          "line": 502,
           "column": 4
         },
         "end": {
-          "line": 540,
+          "line": 514,
           "column": 5
         }
       },
@@ -424,11 +423,11 @@
     "testSinglePlaceholderRenderer": {
       "location": {
         "start": {
-          "line": 542,
+          "line": 516,
           "column": 4
         },
         "end": {
-          "line": 555,
+          "line": 528,
           "column": 5
         }
       },
@@ -438,11 +437,11 @@
     "testDoubleRenderer": {
       "location": {
         "start": {
-          "line": 557,
+          "line": 530,
           "column": 4
         },
         "end": {
-          "line": 570,
+          "line": 542,
           "column": 5
         }
       },
@@ -452,11 +451,11 @@
     "testGetItem": {
       "location": {
         "start": {
-          "line": 572,
+          "line": 544,
           "column": 4
         },
         "end": {
-          "line": 586,
+          "line": 559,
           "column": 5
         }
       },
@@ -1143,6 +1142,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1167,6 +1167,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

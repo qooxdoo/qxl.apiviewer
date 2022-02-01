@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 227,
+        "line": 205,
         "column": 3
       }
     },
@@ -48,11 +48,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 44,
-        "column": 14
+        "line": 41,
+        "column": 2
       },
       "end": {
-        "line": 53,
+        "line": 49,
         "column": 3
       }
     },
@@ -62,11 +62,11 @@
     "appearance": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 58,
           "column": 4
         },
         "end": {
-          "line": 69,
+          "line": 61,
           "column": 5
         }
       },
@@ -83,11 +83,11 @@
     "show": {
       "location": {
         "start": {
-          "line": 72,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 78,
+          "line": 69,
           "column": 5
         }
       },
@@ -114,11 +114,11 @@
     "spacing": {
       "location": {
         "start": {
-          "line": 81,
+          "line": 72,
           "column": 4
         },
         "end": {
-          "line": 87,
+          "line": 77,
           "column": 5
         }
       },
@@ -143,11 +143,11 @@
     "_createChildControlImpl": {
       "location": {
         "start": {
-          "line": 108,
+          "line": 94,
           "column": 4
         },
         "end": {
-          "line": 131,
+          "line": 120,
           "column": 5
         }
       },
@@ -162,11 +162,11 @@
     "getChildrenContainer": {
       "location": {
         "start": {
-          "line": 134,
+          "line": 123,
           "column": 4
         },
         "end": {
-          "line": 136,
+          "line": 125,
           "column": 5
         }
       },
@@ -181,11 +181,11 @@
     "_applySpacing": {
       "location": {
         "start": {
-          "line": 147,
+          "line": 133,
           "column": 4
         },
         "end": {
-          "line": 151,
+          "line": 136,
           "column": 5
         }
       },
@@ -199,11 +199,11 @@
     "__onSyncAppearance": {
       "location": {
         "start": {
-          "line": 164,
+          "line": 146,
           "column": 4
         },
         "end": {
-          "line": 192,
+          "line": 174,
           "column": 5
         }
       },
@@ -221,11 +221,11 @@
     "addSeparator": {
       "location": {
         "start": {
-          "line": 198,
+          "line": 179,
           "column": 4
         },
         "end": {
-          "line": 200,
+          "line": 181,
           "column": 5
         }
       },
@@ -243,11 +243,11 @@
     "getMenuButtons": {
       "location": {
         "start": {
-          "line": 209,
+          "line": 189,
           "column": 4
         },
         "end": {
-          "line": 225,
+          "line": 203,
           "column": 5
         }
       },
@@ -762,6 +762,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -786,6 +787,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 1040,
+        "line": 1025,
         "column": 3
       }
     },
@@ -38,11 +38,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 44,
-        "column": 14
+        "line": 43,
+        "column": 2
       },
       "end": {
-        "line": 80,
+        "line": 81,
         "column": 3
       }
     },
@@ -75,12 +75,12 @@
     "__lastUnique": {
       "location": {
         "start": {
-          "line": 94,
+          "line": 91,
           "column": 4
         },
         "end": {
-          "line": 94,
-          "column": 20
+          "line": 91,
+          "column": 19
         }
       },
       "jsdoc": {
@@ -103,11 +103,11 @@
     "getNextUniqueId": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 105,
+          "line": 101,
           "column": 5
         }
       },
@@ -133,11 +133,11 @@
     "__globalEventMonitors": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 106,
           "column": 4
         },
         "end": {
-          "line": 111,
+          "line": 106,
           "column": 29
         }
       },
@@ -161,11 +161,11 @@
     "addGlobalEventMonitor": {
       "location": {
         "start": {
-          "line": 123,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 127,
+          "line": 122,
           "column": 5
         }
       },
@@ -200,11 +200,11 @@
     "removeGlobalEventMonitor": {
       "location": {
         "start": {
-          "line": 134,
+          "line": 129,
           "column": 4
         },
         "end": {
-          "line": 137,
+          "line": 132,
           "column": 5
         }
       },
@@ -231,11 +231,11 @@
     "resetGlobalEventMonitors": {
       "location": {
         "start": {
-          "line": 143,
+          "line": 137,
           "column": 4
         },
         "end": {
-          "line": 145,
+          "line": 139,
           "column": 5
         }
       },
@@ -253,11 +253,11 @@
     "getGlobalEventMonitor": {
       "location": {
         "start": {
-          "line": 155,
+          "line": 148,
           "column": 4
         },
         "end": {
-          "line": 157,
+          "line": 150,
           "column": 5
         }
       },
@@ -289,11 +289,11 @@
     "setGlobalEventMonitor": {
       "location": {
         "start": {
-          "line": 168,
+          "line": 160,
           "column": 4
         },
         "end": {
-          "line": 171,
+          "line": 163,
           "column": 5
         }
       },
@@ -329,12 +329,12 @@
     "__registration": {
       "location": {
         "start": {
-          "line": 185,
+          "line": 173,
           "column": 4
         },
         "end": {
-          "line": 185,
-          "column": 25
+          "line": 173,
+          "column": 24
         }
       },
       "type": "variable",
@@ -343,12 +343,12 @@
     "__listeners": {
       "location": {
         "start": {
-          "line": 186,
+          "line": 174,
           "column": 4
         },
         "end": {
-          "line": 186,
-          "column": 22
+          "line": 174,
+          "column": 21
         }
       },
       "type": "variable",
@@ -357,12 +357,12 @@
     "__dispatchers": {
       "location": {
         "start": {
-          "line": 188,
+          "line": 176,
           "column": 4
         },
         "end": {
-          "line": 188,
-          "column": 24
+          "line": 176,
+          "column": 23
         }
       },
       "type": "variable",
@@ -371,12 +371,12 @@
     "__disposeWrapper": {
       "location": {
         "start": {
-          "line": 189,
+          "line": 177,
           "column": 4
         },
         "end": {
-          "line": 189,
-          "column": 27
+          "line": 177,
+          "column": 26
         }
       },
       "type": "variable",
@@ -385,12 +385,12 @@
     "__handlers": {
       "location": {
         "start": {
-          "line": 191,
+          "line": 179,
           "column": 4
         },
         "end": {
-          "line": 191,
-          "column": 21
+          "line": 179,
+          "column": 20
         }
       },
       "type": "variable",
@@ -399,12 +399,12 @@
     "__handlerCache": {
       "location": {
         "start": {
-          "line": 192,
+          "line": 180,
           "column": 4
         },
         "end": {
-          "line": 192,
-          "column": 25
+          "line": 180,
+          "column": 24
         }
       },
       "type": "variable",
@@ -413,12 +413,12 @@
     "__window": {
       "location": {
         "start": {
-          "line": 193,
+          "line": 181,
           "column": 4
         },
         "end": {
-          "line": 193,
-          "column": 19
+          "line": 181,
+          "column": 18
         }
       },
       "type": "variable",
@@ -427,12 +427,12 @@
     "__windowId": {
       "location": {
         "start": {
-          "line": 194,
+          "line": 182,
           "column": 4
         },
         "end": {
-          "line": 194,
-          "column": 21
+          "line": 182,
+          "column": 20
         }
       },
       "type": "variable",
@@ -441,12 +441,12 @@
     "__blacklist": {
       "location": {
         "start": {
-          "line": 196,
+          "line": 184,
           "column": 4
         },
         "end": {
-          "line": 196,
-          "column": 22
+          "line": 184,
+          "column": 21
         }
       },
       "type": "variable",
@@ -455,12 +455,12 @@
     "__clearBlackList": {
       "location": {
         "start": {
-          "line": 197,
+          "line": 185,
           "column": 4
         },
         "end": {
-          "line": 197,
-          "column": 27
+          "line": 185,
+          "column": 26
         }
       },
       "type": "variable",
@@ -469,11 +469,11 @@
     "getWindow": {
       "location": {
         "start": {
-          "line": 212,
+          "line": 198,
           "column": 4
         },
         "end": {
-          "line": 214,
+          "line": 200,
           "column": 5
         }
       },
@@ -499,11 +499,11 @@
     "getWindowId": {
       "location": {
         "start": {
-          "line": 222,
+          "line": 207,
           "column": 4
         },
         "end": {
-          "line": 224,
+          "line": 209,
           "column": 5
         }
       },
@@ -529,11 +529,11 @@
     "getHandler": {
       "location": {
         "start": {
-          "line": 233,
+          "line": 217,
           "column": 4
         },
         "end": {
-          "line": 242,
+          "line": 225,
           "column": 5
         }
       },
@@ -568,11 +568,11 @@
     "getDispatcher": {
       "location": {
         "start": {
-          "line": 251,
+          "line": 233,
           "column": 4
         },
         "end": {
-          "line": 260,
+          "line": 244,
           "column": 5
         }
       },
@@ -607,11 +607,11 @@
     "getListeners": {
       "location": {
         "start": {
-          "line": 284,
+          "line": 266,
           "column": 4
         },
         "end": {
-          "line": 297,
+          "line": 279,
           "column": 5
         }
       },
@@ -662,11 +662,11 @@
     "getAllListeners": {
       "location": {
         "start": {
-          "line": 307,
+          "line": 288,
           "column": 4
         },
         "end": {
-          "line": 309,
+          "line": 290,
           "column": 5
         }
       },
@@ -698,11 +698,11 @@
     "serializeListeners": {
       "location": {
         "start": {
-          "line": 319,
+          "line": 299,
           "column": 4
         },
         "end": {
-          "line": 350,
+          "line": 326,
           "column": 5
         }
       },
@@ -737,11 +737,11 @@
     "toggleAttachedEvents": {
       "location": {
         "start": {
-          "line": 366,
+          "line": 341,
           "column": 4
         },
         "end": {
-          "line": 388,
+          "line": 361,
           "column": 5
         }
       },
@@ -781,11 +781,11 @@
     "hasListener": {
       "location": {
         "start": {
-          "line": 401,
+          "line": 373,
           "column": 4
         },
         "end": {
-          "line": 423,
+          "line": 393,
           "column": 5
         }
       },
@@ -836,11 +836,11 @@
     "importListeners": {
       "location": {
         "start": {
-          "line": 441,
+          "line": 410,
           "column": 4
         },
         "end": {
-          "line": 481,
+          "line": 445,
           "column": 5
         }
       },
@@ -874,11 +874,11 @@
     "addListener": {
       "location": {
         "start": {
-          "line": 504,
+          "line": 467,
           "column": 4
         },
         "end": {
-          "line": 553,
+          "line": 522,
           "column": 5
         }
       },
@@ -953,11 +953,11 @@
     "findHandler": {
       "location": {
         "start": {
-          "line": 564,
+          "line": 532,
           "column": 4
         },
         "end": {
-          "line": 647,
+          "line": 615,
           "column": 5
         }
       },
@@ -999,11 +999,11 @@
     "__registerAtHandler": {
       "location": {
         "start": {
-          "line": 660,
+          "line": 627,
           "column": 4
         },
         "end": {
-          "line": 678,
+          "line": 645,
           "column": 5
         }
       },
@@ -1052,11 +1052,11 @@
     "removeListener": {
       "location": {
         "start": {
-          "line": 694,
+          "line": 660,
           "column": 4
         },
         "end": {
-          "line": 747,
+          "line": 718,
           "column": 5
         }
       },
@@ -1131,11 +1131,11 @@
     "removeListenerById": {
       "location": {
         "start": {
-          "line": 758,
+          "line": 728,
           "column": 4
         },
         "end": {
-          "line": 807,
+          "line": 779,
           "column": 5
         }
       },
@@ -1177,11 +1177,11 @@
     "removeAllListeners": {
       "location": {
         "start": {
-          "line": 816,
+          "line": 787,
           "column": 4
         },
         "end": {
-          "line": 846,
+          "line": 815,
           "column": 5
         }
       },
@@ -1216,11 +1216,11 @@
     "deleteAllListeners": {
       "location": {
         "start": {
-          "line": 858,
+          "line": 826,
           "column": 4
         },
         "end": {
-          "line": 860,
+          "line": 828,
           "column": 5
         }
       },
@@ -1253,11 +1253,11 @@
     "__unregisterAtHandler": {
       "location": {
         "start": {
-          "line": 874,
+          "line": 841,
           "column": 4
         },
         "end": {
-          "line": 892,
+          "line": 859,
           "column": 5
         }
       },
@@ -1306,11 +1306,11 @@
     "dispatchEvent": {
       "location": {
         "start": {
-          "line": 917,
+          "line": 881,
           "column": 4
         },
         "end": {
-          "line": 998,
+          "line": 985,
           "column": 5
         }
       },
@@ -1360,11 +1360,11 @@
     "dispose": {
       "location": {
         "start": {
-          "line": 1004,
+          "line": 990,
           "column": 4
         },
         "end": {
-          "line": 1015,
+          "line": 1000,
           "column": 5
         }
       },
@@ -1386,11 +1386,11 @@
     "__addToBlacklist": {
       "location": {
         "start": {
-          "line": 1022,
+          "line": 1007,
           "column": 4
         },
         "end": {
-          "line": 1028,
+          "line": 1013,
           "column": 5
         }
       },
@@ -1417,11 +1417,11 @@
     "isBlacklisted": {
       "location": {
         "start": {
-          "line": 1036,
+          "line": 1021,
           "column": 4
         },
         "end": {
-          "line": 1038,
+          "line": 1023,
           "column": 5
         }
       },

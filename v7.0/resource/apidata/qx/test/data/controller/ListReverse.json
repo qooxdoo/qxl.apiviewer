@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 6,
+        "line": 5,
         "column": 0
       },
       "end": {
-        "line": 274,
+        "line": 275,
         "column": 3
       }
     },
@@ -36,25 +36,24 @@
   "construct": {
     "location": {
       "start": {
-        "line": 10,
-        "column": 14
+        "line": 8,
+        "column": 2
       },
       "end": {
-        "line": 46,
+        "line": 42,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "members": {
     "__list": {
       "location": {
         "start": {
-          "line": 51,
+          "line": 45,
           "column": 4
         },
         "end": {
-          "line": 51,
+          "line": 45,
           "column": 16
         }
       },
@@ -64,11 +63,11 @@
     "__controller": {
       "location": {
         "start": {
-          "line": 52,
+          "line": 46,
           "column": 4
         },
         "end": {
-          "line": 52,
+          "line": 46,
           "column": 22
         }
       },
@@ -78,11 +77,11 @@
     "__data": {
       "location": {
         "start": {
-          "line": 53,
+          "line": 47,
           "column": 4
         },
         "end": {
-          "line": 53,
+          "line": 47,
           "column": 16
         }
       },
@@ -92,11 +91,11 @@
     "__model": {
       "location": {
         "start": {
-          "line": 54,
+          "line": 48,
           "column": 4
         },
         "end": {
-          "line": 54,
+          "line": 48,
           "column": 17
         }
       },
@@ -106,11 +105,11 @@
     "__delegate": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 49,
           "column": 4
         },
         "end": {
-          "line": 55,
+          "line": 49,
           "column": 20
         }
       },
@@ -120,11 +119,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 57,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 75,
+          "line": 69,
           "column": 5
         }
       },
@@ -138,11 +137,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 78,
+          "line": 71,
           "column": 4
         },
         "end": {
-          "line": 87,
+          "line": 79,
           "column": 5
         }
       },
@@ -156,11 +155,11 @@
     "testStringListModel": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 81,
           "column": 4
         },
         "end": {
-          "line": 136,
+          "line": 126,
           "column": 5
         }
       },
@@ -170,11 +169,11 @@
     "testStringListModelInitModelPrior": {
       "location": {
         "start": {
-          "line": 139,
+          "line": 128,
           "column": 4
         },
         "end": {
-          "line": 158,
+          "line": 146,
           "column": 5
         }
       },
@@ -184,11 +183,11 @@
     "testStringListModelInitTargetPrior": {
       "location": {
         "start": {
-          "line": 161,
+          "line": 148,
           "column": 4
         },
         "end": {
-          "line": 180,
+          "line": 166,
           "column": 5
         }
       },
@@ -198,11 +197,11 @@
     "testStringListModelDeepTarget": {
       "location": {
         "start": {
-          "line": 183,
+          "line": 168,
           "column": 4
         },
         "end": {
-          "line": 219,
+          "line": 206,
           "column": 5
         }
       },
@@ -212,11 +211,11 @@
     "testStringListModelArrayTarget": {
       "location": {
         "start": {
-          "line": 222,
+          "line": 208,
           "column": 4
         },
         "end": {
-          "line": 272,
+          "line": 273,
           "column": 5
         }
       },
@@ -311,6 +310,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -335,6 +335,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

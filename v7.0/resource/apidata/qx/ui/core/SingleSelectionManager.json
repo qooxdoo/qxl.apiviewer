@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 297,
+        "line": 278,
         "column": 3
       }
     },
@@ -36,11 +36,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 45,
-        "column": 14
+        "line": 42,
+        "column": 2
       },
       "end": {
-        "line": 55,
+        "line": 54,
         "column": 3
       }
     },
@@ -66,12 +66,12 @@
     "changeSelected": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 68,
-          "column": 43
+          "line": 64,
+          "column": 40
         }
       },
       "jsdoc": {
@@ -90,11 +90,11 @@
     "allowEmptySelection": {
       "location": {
         "start": {
-          "line": 86,
+          "line": 79,
           "column": 4
         },
         "end": {
-          "line": 91,
+          "line": 83,
           "column": 5
         }
       },
@@ -108,7 +108,7 @@
       },
       "name": "allowEmptySelection",
       "propertyType": "new",
-      "apply": "__P_388_1",
+      "apply": "__P_390_1",
       "init": true,
       "check": "Boolean",
       "defaultValue": true
@@ -150,12 +150,12 @@
     "__selected": {
       "location": {
         "start": {
-          "line": 105,
+          "line": 94,
           "column": 4
         },
         "end": {
-          "line": 105,
-          "column": 21
+          "line": 94,
+          "column": 20
         }
       },
       "jsdoc": {
@@ -178,12 +178,12 @@
     "__selectionProvider": {
       "location": {
         "start": {
-          "line": 108,
+          "line": 97,
           "column": 4
         },
         "end": {
-          "line": 108,
-          "column": 30
+          "line": 97,
+          "column": 29
         }
       },
       "jsdoc": {
@@ -206,11 +206,11 @@
     "getSelected": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 111,
           "column": 4
         },
         "end": {
-          "line": 126,
+          "line": 113,
           "column": 5
         }
       },
@@ -236,11 +236,11 @@
     "setSelected": {
       "location": {
         "start": {
-          "line": 134,
+          "line": 121,
           "column": 4
         },
         "end": {
-          "line": 141,
+          "line": 129,
           "column": 5
         }
       },
@@ -275,11 +275,11 @@
     "resetSelected": {
       "location": {
         "start": {
-          "line": 147,
+          "line": 135,
           "column": 4
         },
         "end": {
-          "line": 149,
+          "line": 137,
           "column": 5
         }
       },
@@ -297,11 +297,11 @@
     "isSelected": {
       "location": {
         "start": {
-          "line": 159,
+          "line": 147,
           "column": 4
         },
         "end": {
-          "line": 165,
+          "line": 157,
           "column": 5
         }
       },
@@ -344,11 +344,11 @@
     "isSelectionEmpty": {
       "location": {
         "start": {
-          "line": 173,
+          "line": 165,
           "column": 4
         },
         "end": {
-          "line": 175,
+          "line": 167,
           "column": 5
         }
       },
@@ -374,11 +374,11 @@
     "getSelectables": {
       "location": {
         "start": {
-          "line": 184,
+          "line": 176,
           "column": 4
         },
         "end": {
-          "line": 206,
+          "line": 196,
           "column": 5
         }
       },
@@ -413,11 +413,11 @@
     "__applyAllowEmptySelection": {
       "location": {
         "start": {
-          "line": 217,
+          "line": 205,
           "column": 4
         },
         "end": {
-          "line": 222,
+          "line": 209,
           "column": 5
         }
       },
@@ -428,11 +428,11 @@
     "__setSelected": {
       "location": {
         "start": {
-          "line": 239,
+          "line": 225,
           "column": 4
         },
         "end": {
-          "line": 257,
+          "line": 243,
           "column": 5
         }
       },
@@ -462,11 +462,11 @@
     "__isChildElement": {
       "location": {
         "start": {
-          "line": 266,
+          "line": 252,
           "column": 4
         },
         "end": {
-          "line": 278,
+          "line": 261,
           "column": 5
         }
       },
@@ -586,6 +586,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -610,6 +611,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -728,11 +730,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 288,
-        "column": 13
+        "line": 269,
+        "column": 2
       },
       "end": {
-        "line": 296,
+        "line": 277,
         "column": 3
       }
     },

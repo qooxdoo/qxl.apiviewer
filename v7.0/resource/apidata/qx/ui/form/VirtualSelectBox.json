@@ -16,7 +16,7 @@
         "column": 0
       },
       "end": {
-        "line": 805,
+        "line": 795,
         "column": 3
       }
     },
@@ -56,25 +56,24 @@
   "construct": {
     "location": {
       "start": {
-        "line": 46,
-        "column": 14
+        "line": 45,
+        "column": 2
       },
       "end": {
-        "line": 74,
+        "line": 72,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "properties": {
     "appearance": {
       "location": {
         "start": {
-          "line": 80,
+          "line": 76,
           "column": 4
         },
         "end": {
-          "line": 84,
+          "line": 79,
           "column": 5
         }
       },
@@ -92,11 +91,11 @@
     "width": {
       "location": {
         "start": {
-          "line": 88,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 92,
+          "line": 85,
           "column": 5
         }
       },
@@ -115,11 +114,11 @@
     "incrementalSearch": {
       "location": {
         "start": {
-          "line": 97,
+          "line": 90,
           "column": 4
         },
         "end": {
-          "line": 102,
+          "line": 94,
           "column": 5
         }
       },
@@ -141,11 +140,11 @@
     "plainMarkers": {
       "location": {
         "start": {
-          "line": 107,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 112,
+          "line": 103,
           "column": 5
         }
       },
@@ -159,7 +158,7 @@
       },
       "name": "plainMarkers",
       "propertyType": "new",
-      "apply": "__P_430_5",
+      "apply": "__P_432_5",
       "init": [
         "|",
         "|"
@@ -173,11 +172,11 @@
     "htmlMarkers": {
       "location": {
         "start": {
-          "line": 118,
+          "line": 109,
           "column": 4
         },
         "end": {
-          "line": 123,
+          "line": 113,
           "column": 5
         }
       },
@@ -191,17 +190,17 @@
       },
       "name": "htmlMarkers",
       "propertyType": "new",
-      "apply": "__P_430_5",
+      "apply": "__P_432_5",
       "check": "Array"
     },
     "rich": {
       "location": {
         "start": {
-          "line": 128,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 133,
+          "line": 122,
           "column": 5
         }
       },
@@ -221,11 +220,11 @@
     "highlightMode": {
       "location": {
         "start": {
-          "line": 143,
+          "line": 132,
           "column": 4
         },
         "end": {
-          "line": 148,
+          "line": 136,
           "column": 5
         }
       },
@@ -251,11 +250,11 @@
     "selection": {
       "location": {
         "start": {
-          "line": 151,
+          "line": 139,
           "column": 4
         },
         "end": {
-          "line": 158,
+          "line": 145,
           "column": 5
         }
       },
@@ -348,12 +347,12 @@
     "changeSelection": {
       "location": {
         "start": {
-          "line": 171,
+          "line": 157,
           "column": 4
         },
         "end": {
-          "line": 171,
-          "column": 44
+          "line": 157,
+          "column": 41
         }
       },
       "jsdoc": {
@@ -370,12 +369,12 @@
     "changeValue": {
       "location": {
         "start": {
-          "line": 174,
+          "line": 160,
           "column": 4
         },
         "end": {
-          "line": 174,
-          "column": 40
+          "line": 160,
+          "column": 37
         }
       },
       "jsdoc": {
@@ -458,12 +457,12 @@
     "__searchValue": {
       "location": {
         "start": {
-          "line": 181,
+          "line": 165,
           "column": 4
         },
         "end": {
-          "line": 181,
-          "column": 22
+          "line": 165,
+          "column": 21
         }
       },
       "jsdoc": {
@@ -486,12 +485,12 @@
     "__searchTimer": {
       "location": {
         "start": {
-          "line": 187,
+          "line": 170,
           "column": 4
         },
         "end": {
-          "line": 187,
-          "column": 24
+          "line": 170,
+          "column": 23
         }
       },
       "jsdoc": {
@@ -514,12 +513,12 @@
     "__bindings": {
       "location": {
         "start": {
-          "line": 191,
+          "line": 173,
           "column": 4
         },
         "end": {
-          "line": 191,
-          "column": 21
+          "line": 173,
+          "column": 20
         }
       },
       "jsdoc": {
@@ -542,11 +541,11 @@
     "setValue": {
       "location": {
         "start": {
-          "line": 198,
+          "line": 179,
           "column": 4
         },
         "end": {
-          "line": 206,
+          "line": 187,
           "column": 5
         }
       },
@@ -588,11 +587,11 @@
     "getValue": {
       "location": {
         "start": {
-          "line": 212,
+          "line": 192,
           "column": 4
         },
         "end": {
-          "line": 215,
+          "line": 195,
           "column": 5
         }
       },
@@ -622,11 +621,11 @@
     "resetValue": {
       "location": {
         "start": {
-          "line": 218,
+          "line": 197,
           "column": 4
         },
         "end": {
-          "line": 220,
+          "line": 199,
           "column": 5
         }
       },
@@ -640,11 +639,11 @@
     "syncWidget": {
       "location": {
         "start": {
-          "line": 224,
+          "line": 202,
           "column": 4
         },
         "end": {
-          "line": 228,
+          "line": 205,
           "column": 5
         }
       },
@@ -659,11 +658,11 @@
     "_createChildControlImpl": {
       "location": {
         "start": {
-          "line": 239,
+          "line": 214,
           "column": 4
         },
         "end": {
-          "line": 268,
+          "line": 241,
           "column": 5
         }
       },
@@ -679,11 +678,11 @@
     "_getAction": {
       "location": {
         "start": {
-          "line": 272,
+          "line": 244,
           "column": 4
         },
         "end": {
-          "line": 288,
+          "line": 260,
           "column": 5
         }
       },
@@ -698,11 +697,11 @@
     "_addBindings": {
       "location": {
         "start": {
-          "line": 294,
+          "line": 266,
           "column": 4
         },
         "end": {
-          "line": 311,
+          "line": 282,
           "column": 5
         }
       },
@@ -720,11 +719,11 @@
     "_removeBindings": {
       "location": {
         "start": {
-          "line": 318,
+          "line": 288,
           "column": 4
         },
         "end": {
-          "line": 325,
+          "line": 293,
           "column": 5
         }
       },
@@ -742,11 +741,11 @@
     "_onBlur": {
       "location": {
         "start": {
-          "line": 334,
+          "line": 301,
           "column": 4
         },
         "end": {
-          "line": 339,
+          "line": 305,
           "column": 5
         }
       },
@@ -761,11 +760,11 @@
     "_handlePointer": {
       "location": {
         "start": {
-          "line": 342,
+          "line": 308,
           "column": 4
         },
         "end": {
-          "line": 350,
+          "line": 315,
           "column": 5
         }
       },
@@ -780,11 +779,11 @@
     "_handleKeyboard": {
       "location": {
         "start": {
-          "line": 354,
+          "line": 318,
           "column": 4
         },
         "end": {
-          "line": 370,
+          "line": 336,
           "column": 5
         }
       },
@@ -799,11 +798,11 @@
     "_onPointerOver": {
       "location": {
         "start": {
-          "line": 384,
+          "line": 349,
           "column": 4
         },
         "end": {
-          "line": 397,
+          "line": 360,
           "column": 5
         }
       },
@@ -830,11 +829,11 @@
     "_onPointerOut": {
       "location": {
         "start": {
-          "line": 411,
+          "line": 373,
           "column": 4
         },
         "end": {
-          "line": 424,
+          "line": 384,
           "column": 5
         }
       },
@@ -861,11 +860,11 @@
     "_applySelection": {
       "location": {
         "start": {
-          "line": 435,
+          "line": 393,
           "column": 4
         },
         "end": {
-          "line": 439,
+          "line": 396,
           "column": 5
         }
       },
@@ -879,11 +878,11 @@
     "__preselect": {
       "location": {
         "start": {
-          "line": 453,
+          "line": 408,
           "column": 4
         },
         "end": {
-          "line": 503,
+          "line": 457,
           "column": 5
         }
       },
@@ -901,11 +900,11 @@
     "__convertKeyIdentifier": {
       "location": {
         "start": {
-          "line": 513,
+          "line": 466,
           "column": 4
         },
         "end": {
-          "line": 520,
+          "line": 472,
           "column": 5
         }
       },
@@ -940,11 +939,11 @@
     "_updateSelectionValue": {
       "location": {
         "start": {
-          "line": 528,
+          "line": 479,
           "column": 4
         },
         "end": {
-          "line": 532,
+          "line": 483,
           "column": 5
         }
       },
@@ -971,12 +970,12 @@
     "__filterValue": {
       "location": {
         "start": {
-          "line": 541,
+          "line": 491,
           "column": 4
         },
         "end": {
-          "line": 541,
-          "column": 24
+          "line": 491,
+          "column": 23
         }
       },
       "jsdoc": {},
@@ -986,12 +985,12 @@
     "__lastMatch": {
       "location": {
         "start": {
-          "line": 542,
+          "line": 492,
           "column": 4
         },
         "end": {
-          "line": 542,
-          "column": 20
+          "line": 492,
+          "column": 19
         }
       },
       "type": "variable",
@@ -1000,12 +999,12 @@
     "__filterUpdateRunning": {
       "location": {
         "start": {
-          "line": 544,
+          "line": 494,
           "column": 4
         },
         "end": {
-          "line": 544,
-          "column": 29
+          "line": 494,
+          "column": 28
         }
       },
       "jsdoc": {},
@@ -1015,12 +1014,12 @@
     "__filterInput": {
       "location": {
         "start": {
-          "line": 545,
+          "line": 495,
           "column": 4
         },
         "end": {
-          "line": 545,
-          "column": 24
+          "line": 495,
+          "column": 23
         }
       },
       "type": "variable",
@@ -1029,12 +1028,12 @@
     "__highlightMarkers": {
       "location": {
         "start": {
-          "line": 546,
+          "line": 496,
           "column": 4
         },
         "end": {
-          "line": 546,
-          "column": 30
+          "line": 496,
+          "column": 28
         }
       },
       "type": "variable",
@@ -1043,12 +1042,12 @@
     "_highlightFilterValueFunction": {
       "location": {
         "start": {
-          "line": 548,
+          "line": 498,
           "column": 4
         },
         "end": {
-          "line": 548,
-          "column": 40
+          "line": 498,
+          "column": 39
         }
       },
       "type": "variable",
@@ -1057,12 +1056,12 @@
     "_searchRegExp": {
       "location": {
         "start": {
-          "line": 549,
+          "line": 499,
           "column": 4
         },
         "end": {
-          "line": 549,
-          "column": 24
+          "line": 499,
+          "column": 23
         }
       },
       "type": "variable",
@@ -1071,11 +1070,11 @@
     "__addFilterInput": {
       "location": {
         "start": {
-          "line": 552,
+          "line": 501,
           "column": 4
         },
         "end": {
-          "line": 590,
+          "line": 554,
           "column": 5
         }
       },
@@ -1085,11 +1084,11 @@
     "__getHighlightStyleFromAppearance": {
       "location": {
         "start": {
-          "line": 592,
+          "line": 556,
           "column": 4
         },
         "end": {
-          "line": 613,
+          "line": 583,
           "column": 5
         }
       },
@@ -1099,11 +1098,11 @@
     "_searchMatch": {
       "location": {
         "start": {
-          "line": 617,
+          "line": 587,
           "column": 4
         },
         "end": {
-          "line": 619,
+          "line": 589,
           "column": 5
         }
       },
@@ -1114,11 +1113,11 @@
     "_highlightFilterValuePlainFunction": {
       "location": {
         "start": {
-          "line": 622,
+          "line": 592,
           "column": 4
         },
         "end": {
-          "line": 630,
+          "line": 601,
           "column": 5
         }
       },
@@ -1129,11 +1128,11 @@
     "_highlightFilterValueHtmlFunction": {
       "location": {
         "start": {
-          "line": 633,
+          "line": 604,
           "column": 4
         },
         "end": {
-          "line": 642,
+          "line": 614,
           "column": 5
         }
       },
@@ -1144,11 +1143,11 @@
     "_configureItemRich": {
       "location": {
         "start": {
-          "line": 644,
+          "line": 616,
           "column": 4
         },
         "end": {
-          "line": 646,
+          "line": 618,
           "column": 5
         }
       },
@@ -1158,11 +1157,11 @@
     "_configureItemPlain": {
       "location": {
         "start": {
-          "line": 648,
+          "line": 620,
           "column": 4
         },
         "end": {
-          "line": 650,
+          "line": 622,
           "column": 5
         }
       },
@@ -1172,11 +1171,11 @@
     "__updateDelegate": {
       "location": {
         "start": {
-          "line": 652,
+          "line": 624,
           "column": 4
         },
         "end": {
-          "line": 699,
+          "line": 687,
           "column": 5
         }
       },
@@ -1186,11 +1185,11 @@
     "__initIncrementalSearch": {
       "location": {
         "start": {
-          "line": 701,
+          "line": 689,
           "column": 4
         },
         "end": {
-          "line": 723,
+          "line": 710,
           "column": 5
         }
       },
@@ -1200,11 +1199,11 @@
     "_applyDelegate": {
       "location": {
         "start": {
-          "line": 725,
+          "line": 712,
           "column": 4
         },
         "end": {
-          "line": 733,
+          "line": 719,
           "column": 5
         }
       },
@@ -1218,11 +1217,11 @@
     "_applyRich": {
       "location": {
         "start": {
-          "line": 735,
+          "line": 721,
           "column": 4
         },
         "end": {
-          "line": 746,
+          "line": 736,
           "column": 5
         }
       },
@@ -1235,11 +1234,11 @@
     "_applyHighlightMode": {
       "location": {
         "start": {
-          "line": 748,
+          "line": 738,
           "column": 4
         },
         "end": {
-          "line": 765,
+          "line": 756,
           "column": 5
         }
       },
@@ -1252,11 +1251,11 @@
     "__applyMarkers": {
       "location": {
         "start": {
-          "line": 767,
+          "line": 758,
           "column": 4
         },
         "end": {
-          "line": 779,
+          "line": 769,
           "column": 5
         }
       },
@@ -1266,11 +1265,11 @@
     "_applyIncrementalSearch": {
       "location": {
         "start": {
-          "line": 781,
+          "line": 771,
           "column": 4
         },
         "end": {
-          "line": 791,
+          "line": 779,
           "column": 5
         }
       },
@@ -1621,38 +1620,6 @@
       "overriddenFrom": "qx.ui.form.MForm",
       "jsdoc": {}
     },
-    "__onChangeLocale": {
-      "type": "function",
-      "name": "__onChangeLocale",
-      "abstract": false,
-      "mixin": true,
-      "inherited": true,
-      "access": "private",
-      "overriddenFrom": "qx.ui.form.MForm",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Locale change event handler</p>"
-          }
-        ],
-        "@signature": [
-          {
-            "name": "@signature",
-            "body": "function(e)"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {Event} the change event",
-            "paramName": "e",
-            "description": " the change event",
-            "type": "Event"
-          }
-        ]
-      }
-    },
     "isValid": {
       "type": "function",
       "name": "isValid",
@@ -1863,6 +1830,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1887,6 +1855,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -6516,15 +6485,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 795,
-        "column": 13
+        "line": 782,
+        "column": 2
       },
       "end": {
-        "line": 804,
+        "line": 794,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

@@ -16,7 +16,7 @@
         "column": 0
       },
       "end": {
-        "line": 252,
+        "line": 334,
         "column": 3
       }
     },
@@ -40,11 +40,11 @@
     "hasWebFontSupport": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 41,
+          "line": 39,
           "column": 5
         }
       },
@@ -54,11 +54,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 41,
           "column": 4
         },
         "end": {
-          "line": 49,
+          "line": 46,
           "column": 5
         }
       },
@@ -72,11 +72,11 @@
     "testHeightForWidth": {
       "location": {
         "start": {
-          "line": 51,
+          "line": 48,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 73,
           "column": 5
         }
       },
@@ -86,11 +86,11 @@
     "testSelectableSetOnCreate": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 75,
           "column": 4
         },
         "end": {
-          "line": 83,
+          "line": 85,
           "column": 5
         }
       },
@@ -100,11 +100,11 @@
     "testSelectableUnSetOnCreate": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 87,
           "column": 4
         },
         "end": {
-          "line": 91,
+          "line": 97,
           "column": 5
         }
       },
@@ -114,11 +114,11 @@
     "testSelectableSet": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 100,
+          "line": 110,
           "column": 5
         }
       },
@@ -128,11 +128,11 @@
     "testSelectableUnset": {
       "location": {
         "start": {
-          "line": 102,
+          "line": 112,
           "column": 4
         },
         "end": {
-          "line": 109,
+          "line": 123,
           "column": 5
         }
       },
@@ -142,11 +142,11 @@
     "testWrapSet": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 125,
           "column": 4
         },
         "end": {
-          "line": 117,
+          "line": 131,
           "column": 5
         }
       },
@@ -156,11 +156,11 @@
     "testTextAlign": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 133,
           "column": 4
         },
         "end": {
-          "line": 143,
+          "line": 157,
           "column": 5
         }
       },
@@ -170,11 +170,11 @@
     "testWrapNotSet": {
       "location": {
         "start": {
-          "line": 146,
+          "line": 159,
           "column": 4
         },
         "end": {
-          "line": 152,
+          "line": 165,
           "column": 5
         }
       },
@@ -184,11 +184,11 @@
     "testApplyWebFont": {
       "location": {
         "start": {
-          "line": 154,
+          "line": 167,
           "column": 4
         },
         "end": {
-          "line": 191,
+          "line": 228,
           "column": 5
         }
       },
@@ -198,11 +198,11 @@
     "testApplyFontColorAndTextColor": {
       "location": {
         "start": {
-          "line": 193,
+          "line": 230,
           "column": 4
         },
         "end": {
-          "line": 209,
+          "line": 249,
           "column": 5
         }
       },
@@ -212,11 +212,11 @@
     "testBuddy": {
       "location": {
         "start": {
-          "line": 211,
+          "line": 251,
           "column": 4
         },
         "end": {
-          "line": 236,
+          "line": 314,
           "column": 5
         }
       },
@@ -226,11 +226,11 @@
     "testLocaleInitialization": {
       "location": {
         "start": {
-          "line": 238,
+          "line": 316,
           "column": 4
         },
         "end": {
-          "line": 250,
+          "line": 332,
           "column": 5
         }
       },
@@ -1388,6 +1388,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1412,6 +1413,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

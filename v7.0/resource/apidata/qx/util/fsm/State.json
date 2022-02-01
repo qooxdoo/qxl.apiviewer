@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 926,
+        "line": 887,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 146,
-        "column": 14
+        "line": 145,
+        "column": 2
       },
       "end": {
-        "line": 226,
+        "line": 225,
         "column": 3
       }
     },
@@ -81,11 +81,11 @@
     "_commonTransformAutoActions": {
       "location": {
         "start": {
-          "line": 289,
+          "line": 286,
           "column": 4
         },
         "end": {
-          "line": 464,
+          "line": 454,
           "column": 5
         }
       },
@@ -180,11 +180,11 @@
     "name": {
       "location": {
         "start": {
-          "line": 476,
+          "line": 463,
           "column": 4
         },
         "end": {
-          "line": 480,
+          "line": 466,
           "column": 5
         }
       },
@@ -199,17 +199,17 @@
       "name": "name",
       "propertyType": "new",
       "nullable": true,
-      "transform": "__P_586_1",
+      "transform": "__P_588_1",
       "allowNull": true
     },
     "onentry": {
       "location": {
         "start": {
-          "line": 489,
+          "line": 474,
           "column": 4
         },
         "end": {
-          "line": 494,
+          "line": 478,
           "column": 5
         }
       },
@@ -224,17 +224,19 @@
       "name": "onentry",
       "propertyType": "new",
       "nullable": true,
-      "transform": "__P_586_2",
-      "allowNull": true
+      "init": "[[ ObjectMethod Function ]]",
+      "transform": "__P_588_2",
+      "allowNull": true,
+      "defaultValue": "[[ ObjectMethod Function ]]"
     },
     "onexit": {
       "location": {
         "start": {
-          "line": 503,
+          "line": 486,
           "column": 4
         },
         "end": {
-          "line": 508,
+          "line": 490,
           "column": 5
         }
       },
@@ -249,17 +251,19 @@
       "name": "onexit",
       "propertyType": "new",
       "nullable": true,
-      "transform": "__P_586_3",
-      "allowNull": true
+      "init": "[[ ObjectMethod Function ]]",
+      "transform": "__P_588_3",
+      "allowNull": true,
+      "defaultValue": "[[ ObjectMethod Function ]]"
     },
     "autoActionsBeforeOnentry": {
       "location": {
         "start": {
-          "line": 539,
+          "line": 520,
           "column": 4
         },
         "end": {
-          "line": 544,
+          "line": 524,
           "column": 5
         }
       },
@@ -274,17 +278,19 @@
       "name": "autoActionsBeforeOnentry",
       "propertyType": "new",
       "nullable": true,
-      "transform": "__P_586_4",
-      "allowNull": true
+      "init": "[[ ObjectMethod Function ]]",
+      "transform": "__P_588_4",
+      "allowNull": true,
+      "defaultValue": "[[ ObjectMethod Function ]]"
     },
     "autoActionsAfterOnentry": {
       "location": {
         "start": {
-          "line": 576,
+          "line": 555,
           "column": 4
         },
         "end": {
-          "line": 581,
+          "line": 559,
           "column": 5
         }
       },
@@ -299,17 +305,19 @@
       "name": "autoActionsAfterOnentry",
       "propertyType": "new",
       "nullable": true,
-      "transform": "__P_586_5",
-      "allowNull": true
+      "init": "[[ ObjectMethod Function ]]",
+      "transform": "__P_588_5",
+      "allowNull": true,
+      "defaultValue": "[[ ObjectMethod Function ]]"
     },
     "autoActionsBeforeOnexit": {
       "location": {
         "start": {
-          "line": 612,
+          "line": 589,
           "column": 4
         },
         "end": {
-          "line": 617,
+          "line": 593,
           "column": 5
         }
       },
@@ -324,17 +332,19 @@
       "name": "autoActionsBeforeOnexit",
       "propertyType": "new",
       "nullable": true,
-      "transform": "__P_586_6",
-      "allowNull": true
+      "init": "[[ ObjectMethod Function ]]",
+      "transform": "__P_588_6",
+      "allowNull": true,
+      "defaultValue": "[[ ObjectMethod Function ]]"
     },
     "autoActionsAfterOnexit": {
       "location": {
         "start": {
-          "line": 649,
+          "line": 624,
           "column": 4
         },
         "end": {
-          "line": 654,
+          "line": 628,
           "column": 5
         }
       },
@@ -349,17 +359,19 @@
       "name": "autoActionsAfterOnexit",
       "propertyType": "new",
       "nullable": true,
-      "transform": "__P_586_7",
-      "allowNull": true
+      "init": "[[ ObjectMethod Function ]]",
+      "transform": "__P_588_7",
+      "allowNull": true,
+      "defaultValue": "[[ ObjectMethod Function ]]"
     },
     "events": {
       "location": {
         "start": {
-          "line": 663,
+          "line": 636,
           "column": 4
         },
         "end": {
-          "line": 667,
+          "line": 639,
           "column": 5
         }
       },
@@ -374,7 +386,7 @@
       "name": "events",
       "propertyType": "new",
       "nullable": true,
-      "transform": "__P_586_8",
+      "transform": "__P_588_8",
       "allowNull": true
     },
     "qxOwner": {
@@ -414,11 +426,11 @@
     "__transformName": {
       "location": {
         "start": {
-          "line": 680,
+          "line": 650,
           "column": 4
         },
         "end": {
-          "line": 689,
+          "line": 657,
           "column": 5
         }
       },
@@ -461,11 +473,11 @@
     "__transformOnentry": {
       "location": {
         "start": {
-          "line": 699,
+          "line": 666,
           "column": 4
         },
         "end": {
-          "line": 715,
+          "line": 680,
           "column": 5
         }
       },
@@ -508,11 +520,11 @@
     "__transformOnexit": {
       "location": {
         "start": {
-          "line": 725,
+          "line": 689,
           "column": 4
         },
         "end": {
-          "line": 741,
+          "line": 703,
           "column": 5
         }
       },
@@ -555,11 +567,11 @@
     "__transformEvents": {
       "location": {
         "start": {
-          "line": 751,
+          "line": 712,
           "column": 4
         },
         "end": {
-          "line": 815,
+          "line": 784,
           "column": 5
         }
       },
@@ -602,11 +614,11 @@
     "__transformAutoActionsBeforeOnentry": {
       "location": {
         "start": {
-          "line": 824,
+          "line": 792,
           "column": 4
         },
         "end": {
-          "line": 830,
+          "line": 798,
           "column": 5
         }
       },
@@ -641,11 +653,11 @@
     "__transformAutoActionsAfterOnentry": {
       "location": {
         "start": {
-          "line": 839,
+          "line": 806,
           "column": 4
         },
         "end": {
-          "line": 845,
+          "line": 812,
           "column": 5
         }
       },
@@ -680,11 +692,11 @@
     "__transformAutoActionsBeforeOnexit": {
       "location": {
         "start": {
-          "line": 854,
+          "line": 820,
           "column": 4
         },
         "end": {
-          "line": 860,
+          "line": 826,
           "column": 5
         }
       },
@@ -719,11 +731,11 @@
     "__transformAutoActionsAfterOnexit": {
       "location": {
         "start": {
-          "line": 869,
+          "line": 834,
           "column": 4
         },
         "end": {
-          "line": 875,
+          "line": 840,
           "column": 5
         }
       },
@@ -758,11 +770,11 @@
     "__bindIfFunction": {
       "location": {
         "start": {
-          "line": 892,
+          "line": 856,
           "column": 4
         },
         "end": {
-          "line": 902,
+          "line": 864,
           "column": 5
         }
       },
@@ -807,11 +819,11 @@
     "addTransition": {
       "location": {
         "start": {
-          "line": 914,
+          "line": 875,
           "column": 4
         },
         "end": {
-          "line": 924,
+          "line": 885,
           "column": 5
         }
       },
@@ -923,6 +935,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -947,6 +960,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

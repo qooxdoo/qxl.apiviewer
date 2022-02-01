@@ -13,8 +13,8 @@
         "column": 0
       },
       "end": {
-        "line": 109,
-        "column": 5
+        "line": 105,
+        "column": 3
       }
     },
     "jsdoc": {
@@ -53,11 +53,11 @@
     "URLS": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 42,
           "column": 4
         },
         "end": {
-          "line": 107,
+          "line": 103,
           "column": 5
         }
       },
@@ -168,6 +168,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -192,6 +193,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

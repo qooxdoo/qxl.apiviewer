@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 335,
+        "line": 348,
         "column": 3
       }
     },
@@ -30,26 +30,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 49,
-        "column": 14
+        "line": 47,
+        "column": 2
       },
       "end": {
-        "line": 58,
+        "line": 55,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {
     "changeSelection": {
       "location": {
         "start": {
-          "line": 72,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 72,
-          "column": 42
+          "line": 67,
+          "column": 41
         }
       },
       "jsdoc": {
@@ -68,11 +67,11 @@
     "defaultCssClass": {
       "location": {
         "start": {
-          "line": 79,
+          "line": 72,
           "column": 4
         },
         "end": {
-          "line": 83,
+          "line": 75,
           "column": 5
         }
       },
@@ -90,11 +89,11 @@
     "visibleItems": {
       "location": {
         "start": {
-          "line": 89,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 93,
+          "line": 84,
           "column": 5
         }
       },
@@ -121,11 +120,11 @@
     "height": {
       "location": {
         "start": {
-          "line": 99,
+          "line": 89,
           "column": 4
         },
         "end": {
-          "line": 102,
+          "line": 92,
           "column": 5
         }
       },
@@ -180,12 +179,12 @@
     "_slots": {
       "location": {
         "start": {
-          "line": 108,
+          "line": 96,
           "column": 4
         },
         "end": {
-          "line": 108,
-          "column": 17
+          "line": 96,
+          "column": 16
         }
       },
       "type": "variable",
@@ -194,12 +193,12 @@
     "_pickerModel": {
       "location": {
         "start": {
-          "line": 109,
+          "line": 97,
           "column": 4
         },
         "end": {
-          "line": 109,
-          "column": 23
+          "line": 97,
+          "column": 22
         }
       },
       "type": "variable",
@@ -208,11 +207,11 @@
     "_onAppear": {
       "location": {
         "start": {
-          "line": 115,
+          "line": 102,
           "column": 4
         },
         "end": {
-          "line": 122,
+          "line": 109,
           "column": 5
         }
       },
@@ -230,11 +229,11 @@
     "_applyVisibleItems": {
       "location": {
         "start": {
-          "line": 126,
+          "line": 112,
           "column": 4
         },
         "end": {
-          "line": 128,
+          "line": 114,
           "column": 5
         }
       },
@@ -248,11 +247,11 @@
     "getModel": {
       "location": {
         "start": {
-          "line": 135,
+          "line": 120,
           "column": 4
         },
         "end": {
-          "line": 137,
+          "line": 122,
           "column": 5
         }
       },
@@ -278,11 +277,11 @@
     "_createPickerSlot": {
       "location": {
         "start": {
-          "line": 147,
+          "line": 131,
           "column": 4
         },
         "end": {
-          "line": 197,
+          "line": 187,
           "column": 5
         }
       },
@@ -333,11 +332,11 @@
     "_createPlaceholderItem": {
       "location": {
         "start": {
-          "line": 204,
+          "line": 193,
           "column": 4
         },
         "end": {
-          "line": 210,
+          "line": 204,
           "column": 5
         }
       },
@@ -363,11 +362,11 @@
     "_calcItemHeight": {
       "location": {
         "start": {
-          "line": 217,
+          "line": 210,
           "column": 4
         },
         "end": {
-          "line": 219,
+          "line": 212,
           "column": 5
         }
       },
@@ -393,11 +392,11 @@
     "_onChangeSelection": {
       "location": {
         "start": {
-          "line": 226,
+          "line": 218,
           "column": 4
         },
         "end": {
-          "line": 228,
+          "line": 225,
           "column": 5
         }
       },
@@ -424,11 +423,11 @@
     "_onWaypoint": {
       "location": {
         "start": {
-          "line": 235,
+          "line": 231,
           "column": 4
         },
         "end": {
-          "line": 244,
+          "line": 240,
           "column": 5
         }
       },
@@ -455,11 +454,11 @@
     "getSelectedIndex": {
       "location": {
         "start": {
-          "line": 252,
+          "line": 247,
           "column": 4
         },
         "end": {
-          "line": 254,
+          "line": 249,
           "column": 5
         }
       },
@@ -494,11 +493,11 @@
     "setSelectedIndex": {
       "location": {
         "start": {
-          "line": 262,
+          "line": 256,
           "column": 4
         },
         "end": {
-          "line": 268,
+          "line": 262,
           "column": 5
         }
       },
@@ -532,11 +531,11 @@
     "getSlotCount": {
       "location": {
         "start": {
-          "line": 275,
+          "line": 268,
           "column": 4
         },
         "end": {
-          "line": 277,
+          "line": 270,
           "column": 5
         }
       },
@@ -562,11 +561,11 @@
     "addSlot": {
       "location": {
         "start": {
-          "line": 285,
+          "line": 277,
           "column": 4
         },
         "end": {
-          "line": 295,
+          "line": 300,
           "column": 5
         }
       },
@@ -602,11 +601,11 @@
     "removeSlot": {
       "location": {
         "start": {
-          "line": 302,
+          "line": 306,
           "column": 4
         },
         "end": {
-          "line": 315,
+          "line": 328,
           "column": 5
         }
       },
@@ -633,11 +632,11 @@
     "_onSlotDataChange": {
       "location": {
         "start": {
-          "line": 321,
+          "line": 333,
           "column": 4
         },
         "end": {
-          "line": 325,
+          "line": 340,
           "column": 5
         }
       },
@@ -740,6 +739,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -764,6 +764,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -1965,15 +1966,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 329,
-        "column": 13
+        "line": 343,
+        "column": 2
       },
       "end": {
-        "line": 334,
+        "line": 347,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

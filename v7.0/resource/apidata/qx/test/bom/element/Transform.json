@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 251,
+        "line": 374,
         "column": 3
       }
     },
@@ -26,12 +26,12 @@
     "__el": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 25,
-          "column": 15
+          "line": 23,
+          "column": 14
         }
       },
       "type": "variable",
@@ -40,12 +40,12 @@
     "__keys": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 26,
-          "column": 17
+          "line": 24,
+          "column": 16
         }
       },
       "type": "variable",
@@ -54,11 +54,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 26,
           "column": 4
         },
         "end": {
-          "line": 35,
+          "line": 33,
           "column": 5
         }
       },
@@ -68,11 +68,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 40,
+          "line": 37,
           "column": 5
         }
       },
@@ -82,11 +82,11 @@
     "testTranslate": {
       "location": {
         "start": {
-          "line": 47,
+          "line": 43,
           "column": 4
         },
         "end": {
-          "line": 51,
+          "line": 49,
           "column": 5
         }
       },
@@ -104,7 +104,7 @@
     "testRotate": {
       "location": {
         "start": {
-          "line": 53,
+          "line": 51,
           "column": 4
         },
         "end": {
@@ -122,7 +122,7 @@
           "column": 4
         },
         "end": {
-          "line": 63,
+          "line": 65,
           "column": 5
         }
       },
@@ -132,11 +132,11 @@
     "testScale": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 69,
+          "line": 73,
           "column": 5
         }
       },
@@ -146,11 +146,11 @@
     "testTransform": {
       "location": {
         "start": {
-          "line": 71,
+          "line": 75,
           "column": 4
         },
         "end": {
-          "line": 76,
+          "line": 88,
           "column": 5
         }
       },
@@ -160,11 +160,11 @@
     "testAddStyleSheetRuleWith-X-Axis": {
       "location": {
         "start": {
-          "line": 78,
+          "line": 90,
           "column": 4
         },
         "end": {
-          "line": 86,
+          "line": 109,
           "column": 5
         }
       },
@@ -174,11 +174,11 @@
     "testAddStyleSheetRuleWith-XY-Axis": {
       "location": {
         "start": {
-          "line": 88,
+          "line": 111,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 131,
           "column": 5
         }
       },
@@ -188,11 +188,11 @@
     "test3D": {
       "location": {
         "start": {
-          "line": 104,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 116,
+          "line": 157,
           "column": 5
         }
       },
@@ -210,11 +210,11 @@
     "testAddStyleSheetRuleWith-XYZ-Axis": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 159,
           "column": 4
         },
         "end": {
-          "line": 142,
+          "line": 215,
           "column": 5
         }
       },
@@ -224,11 +224,11 @@
     "testGetCss": {
       "location": {
         "start": {
-          "line": 150,
+          "line": 221,
           "column": 4
         },
         "end": {
-          "line": 153,
+          "line": 227,
           "column": 5
         }
       },
@@ -246,11 +246,11 @@
     "testOrigin": {
       "location": {
         "start": {
-          "line": 160,
+          "line": 233,
           "column": 4
         },
         "end": {
-          "line": 164,
+          "line": 240,
           "column": 5
         }
       },
@@ -268,11 +268,11 @@
     "testStyle": {
       "location": {
         "start": {
-          "line": 166,
+          "line": 242,
           "column": 4
         },
         "end": {
-          "line": 170,
+          "line": 246,
           "column": 5
         }
       },
@@ -282,11 +282,11 @@
     "testPerspective": {
       "location": {
         "start": {
-          "line": 172,
+          "line": 248,
           "column": 4
         },
         "end": {
-          "line": 176,
+          "line": 255,
           "column": 5
         }
       },
@@ -296,11 +296,11 @@
     "testPerspectiveOrigin": {
       "location": {
         "start": {
-          "line": 178,
+          "line": 257,
           "column": 4
         },
         "end": {
-          "line": 183,
+          "line": 268,
           "column": 5
         }
       },
@@ -310,11 +310,11 @@
     "testBackfaceVisibility": {
       "location": {
         "start": {
-          "line": 185,
+          "line": 270,
           "column": 4
         },
         "end": {
-          "line": 189,
+          "line": 280,
           "column": 5
         }
       },
@@ -324,11 +324,11 @@
     "testGetTransformValue": {
       "location": {
         "start": {
-          "line": 191,
+          "line": 282,
           "column": 4
         },
         "end": {
-          "line": 223,
+          "line": 313,
           "column": 5
         }
       },
@@ -338,11 +338,11 @@
     "testTransformArray": {
       "location": {
         "start": {
-          "line": 225,
+          "line": 315,
           "column": 4
         },
         "end": {
-          "line": 249,
+          "line": 372,
           "column": 5
         }
       },
@@ -908,6 +908,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -932,6 +933,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

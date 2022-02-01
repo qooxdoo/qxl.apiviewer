@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 215,
+        "line": 217,
         "column": 3
       }
     },
@@ -47,12 +47,12 @@
     "TYPES": {
       "location": {
         "start": {
-          "line": 35,
+          "line": 34,
           "column": 4
         },
         "end": {
-          "line": 36,
-          "column": 17
+          "line": 42,
+          "column": 5
         }
       },
       "jsdoc": {
@@ -69,12 +69,12 @@
     "BIND_METHODS": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 49,
           "column": 4
         },
         "end": {
-          "line": 45,
-          "column": 75
+          "line": 57,
+          "column": 5
         }
       },
       "jsdoc": {
@@ -97,11 +97,11 @@
     "BUTTONS_DOM2": {
       "location": {
         "start": {
-          "line": 51,
+          "line": 62,
           "column": 4
         },
         "end": {
-          "line": 55,
+          "line": 66,
           "column": 5
         }
       },
@@ -119,11 +119,11 @@
     "BUTTONS_MSHTML": {
       "location": {
         "start": {
-          "line": 61,
+          "line": 71,
           "column": 4
         },
         "end": {
-          "line": 65,
+          "line": 75,
           "column": 5
         }
       },
@@ -141,11 +141,11 @@
     "getButton": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 84,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 105,
           "column": 5
         }
       },
@@ -171,11 +171,11 @@
     "getViewportLeft": {
       "location": {
         "start": {
-          "line": 106,
+          "line": 113,
           "column": 4
         },
         "end": {
-          "line": 108,
+          "line": 115,
           "column": 5
         }
       },
@@ -201,11 +201,11 @@
     "getViewportTop": {
       "location": {
         "start": {
-          "line": 118,
+          "line": 124,
           "column": 4
         },
         "end": {
-          "line": 120,
+          "line": 126,
           "column": 5
         }
       },
@@ -237,11 +237,11 @@
     "getDocumentLeft": {
       "location": {
         "start": {
-          "line": 130,
+          "line": 135,
           "column": 4
         },
         "end": {
-          "line": 138,
+          "line": 142,
           "column": 5
         }
       },
@@ -267,11 +267,11 @@
     "getDocumentTop": {
       "location": {
         "start": {
-          "line": 148,
+          "line": 151,
           "column": 4
         },
         "end": {
-          "line": 156,
+          "line": 158,
           "column": 5
         }
       },
@@ -297,11 +297,11 @@
     "getScreenLeft": {
       "location": {
         "start": {
-          "line": 168,
+          "line": 169,
           "column": 4
         },
         "end": {
-          "line": 170,
+          "line": 171,
           "column": 5
         }
       },
@@ -357,11 +357,11 @@
     "normalize": {
       "location": {
         "start": {
-          "line": 196,
+          "line": 195,
           "column": 4
         },
         "end": {
-          "line": 209,
+          "line": 208,
           "column": 5
         }
       },
@@ -410,15 +410,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 212,
-        "column": 10
+        "line": 211,
+        "column": 2
       },
       "end": {
-        "line": 214,
+        "line": 216,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

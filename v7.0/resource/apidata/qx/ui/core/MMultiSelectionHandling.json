@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 455,
+        "line": 436,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 32,
-        "column": 14
+        "line": 31,
+        "column": 2
       },
       "end": {
-        "line": 51,
+        "line": 49,
         "column": 3
       }
     },
@@ -44,12 +44,12 @@
     "changeValue": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 63,
-          "column": 40
+          "line": 59,
+          "column": 37
         }
       },
       "jsdoc": {
@@ -66,12 +66,12 @@
     "changeSelection": {
       "location": {
         "start": {
-          "line": 66,
+          "line": 62,
           "column": 4
         },
         "end": {
-          "line": 66,
-          "column": 44
+          "line": 62,
+          "column": 41
         }
       },
       "jsdoc": {
@@ -90,11 +90,11 @@
     "selectionMode": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 78,
           "column": 4
         },
         "end": {
-          "line": 90,
+          "line": 82,
           "column": 5
         }
       },
@@ -121,11 +121,11 @@
     "dragSelection": {
       "location": {
         "start": {
-          "line": 98,
+          "line": 90,
           "column": 4
         },
         "end": {
-          "line": 103,
+          "line": 94,
           "column": 5
         }
       },
@@ -147,11 +147,11 @@
     "quickSelection": {
       "location": {
         "start": {
-          "line": 110,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 105,
           "column": 5
         }
       },
@@ -175,12 +175,12 @@
     "__manager": {
       "location": {
         "start": {
-          "line": 129,
+          "line": 116,
           "column": 4
         },
         "end": {
-          "line": 129,
-          "column": 20
+          "line": 116,
+          "column": 19
         }
       },
       "jsdoc": {
@@ -203,11 +203,11 @@
     "__inOnSelectionChange": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 119,
           "column": 4
         },
         "end": {
-          "line": 132,
+          "line": 119,
           "column": 32
         }
       },
@@ -231,11 +231,11 @@
     "setValue": {
       "location": {
         "start": {
-          "line": 148,
+          "line": 133,
           "column": 4
         },
         "end": {
-          "line": 169,
+          "line": 155,
           "column": 5
         }
       },
@@ -276,11 +276,11 @@
     "getValue": {
       "location": {
         "start": {
-          "line": 177,
+          "line": 162,
           "column": 4
         },
         "end": {
-          "line": 179,
+          "line": 164,
           "column": 5
         }
       },
@@ -306,11 +306,11 @@
     "resetValue": {
       "location": {
         "start": {
-          "line": 185,
+          "line": 169,
           "column": 4
         },
         "end": {
-          "line": 187,
+          "line": 171,
           "column": 5
         }
       },
@@ -328,11 +328,11 @@
     "selectAll": {
       "location": {
         "start": {
-          "line": 193,
+          "line": 176,
           "column": 4
         },
         "end": {
-          "line": 195,
+          "line": 178,
           "column": 5
         }
       },
@@ -350,11 +350,11 @@
     "isSelected": {
       "location": {
         "start": {
-          "line": 205,
+          "line": 187,
           "column": 4
         },
         "end": {
-          "line": 212,
+          "line": 197,
           "column": 5
         }
       },
@@ -397,11 +397,11 @@
     "addToSelection": {
       "location": {
         "start": {
-          "line": 224,
+          "line": 208,
           "column": 4
         },
         "end": {
-          "line": 231,
+          "line": 218,
           "column": 5
         }
       },
@@ -436,11 +436,11 @@
     "removeFromSelection": {
       "location": {
         "start": {
-          "line": 243,
+          "line": 229,
           "column": 4
         },
         "end": {
-          "line": 250,
+          "line": 239,
           "column": 5
         }
       },
@@ -475,11 +475,11 @@
     "selectRange": {
       "location": {
         "start": {
-          "line": 259,
+          "line": 247,
           "column": 4
         },
         "end": {
-          "line": 261,
+          "line": 249,
           "column": 5
         }
       },
@@ -513,11 +513,11 @@
     "resetSelection": {
       "location": {
         "start": {
-          "line": 269,
+          "line": 256,
           "column": 4
         },
         "end": {
-          "line": 271,
+          "line": 258,
           "column": 5
         }
       },
@@ -535,11 +535,11 @@
     "setSelection": {
       "location": {
         "start": {
-          "line": 282,
+          "line": 268,
           "column": 4
         },
         "end": {
-          "line": 305,
+          "line": 294,
           "column": 5
         }
       },
@@ -574,11 +574,11 @@
     "getSelection": {
       "location": {
         "start": {
-          "line": 316,
+          "line": 304,
           "column": 4
         },
         "end": {
-          "line": 318,
+          "line": 306,
           "column": 5
         }
       },
@@ -604,11 +604,11 @@
     "getSortedSelection": {
       "location": {
         "start": {
-          "line": 326,
+          "line": 314,
           "column": 4
         },
         "end": {
-          "line": 328,
+          "line": 316,
           "column": 5
         }
       },
@@ -634,11 +634,11 @@
     "isSelectionEmpty": {
       "location": {
         "start": {
-          "line": 335,
+          "line": 323,
           "column": 4
         },
         "end": {
-          "line": 337,
+          "line": 325,
           "column": 5
         }
       },
@@ -664,11 +664,11 @@
     "getSelectionContext": {
       "location": {
         "start": {
-          "line": 345,
+          "line": 333,
           "column": 4
         },
         "end": {
-          "line": 347,
+          "line": 335,
           "column": 5
         }
       },
@@ -694,11 +694,11 @@
     "_getManager": {
       "location": {
         "start": {
-          "line": 355,
+          "line": 343,
           "column": 4
         },
         "end": {
-          "line": 357,
+          "line": 345,
           "column": 5
         }
       },
@@ -724,11 +724,11 @@
     "getSelectables": {
       "location": {
         "start": {
-          "line": 366,
+          "line": 354,
           "column": 4
         },
         "end": {
-          "line": 368,
+          "line": 356,
           "column": 5
         }
       },
@@ -763,11 +763,11 @@
     "invertSelection": {
       "location": {
         "start": {
-          "line": 373,
+          "line": 361,
           "column": 4
         },
         "end": {
-          "line": 375,
+          "line": 363,
           "column": 5
         }
       },
@@ -785,11 +785,11 @@
     "_getLeadItem": {
       "location": {
         "start": {
-          "line": 384,
+          "line": 371,
           "column": 4
         },
         "end": {
-          "line": 392,
+          "line": 379,
           "column": 5
         }
       },
@@ -815,11 +815,11 @@
     "_applySelectionMode": {
       "location": {
         "start": {
-          "line": 403,
+          "line": 388,
           "column": 4
         },
         "end": {
-          "line": 405,
+          "line": 390,
           "column": 5
         }
       },
@@ -833,11 +833,11 @@
     "_applyDragSelection": {
       "location": {
         "start": {
-          "line": 408,
+          "line": 393,
           "column": 4
         },
         "end": {
-          "line": 410,
+          "line": 395,
           "column": 5
         }
       },
@@ -851,11 +851,11 @@
     "_applyQuickSelection": {
       "location": {
         "start": {
-          "line": 413,
+          "line": 398,
           "column": 4
         },
         "end": {
-          "line": 415,
+          "line": 400,
           "column": 5
         }
       },
@@ -869,11 +869,11 @@
     "_onSelectionChange": {
       "location": {
         "start": {
-          "line": 430,
+          "line": 413,
           "column": 4
         },
         "end": {
-          "line": 441,
+          "line": 424,
           "column": 5
         }
       },
@@ -1147,11 +1147,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 452,
-        "column": 13
+        "line": 433,
+        "column": 2
       },
       "end": {
-        "line": 454,
+        "line": 435,
         "column": 3
       }
     },

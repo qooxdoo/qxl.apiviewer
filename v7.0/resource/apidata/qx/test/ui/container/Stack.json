@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 116,
+        "line": 106,
         "column": 3
       }
     },
@@ -24,12 +24,12 @@
     "__stack": {
       "location": {
         "start": {
-          "line": 24,
+          "line": 22,
           "column": 4
         },
         "end": {
-          "line": 24,
-          "column": 18
+          "line": 22,
+          "column": 17
         }
       },
       "type": "variable",
@@ -38,12 +38,12 @@
     "__c1": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 25,
-          "column": 15
+          "line": 23,
+          "column": 14
         }
       },
       "type": "variable",
@@ -52,12 +52,12 @@
     "__c2": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 26,
-          "column": 15
+          "line": 24,
+          "column": 14
         }
       },
       "type": "variable",
@@ -66,12 +66,12 @@
     "__c3": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 27,
-          "column": 15
+          "line": 25,
+          "column": 14
         }
       },
       "type": "variable",
@@ -80,11 +80,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 41,
+          "line": 37,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 39,
           "column": 4
         },
         "end": {
-          "line": 49,
+          "line": 44,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "testAddAndSelectChild": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 50,
           "column": 4
         },
         "end": {
-          "line": 58,
+          "line": 53,
           "column": 5
         }
       },
@@ -130,11 +130,11 @@
     "testAddAndDontSelectChildInADynamicStack": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 71,
+          "line": 65,
           "column": 5
         }
       },
@@ -152,11 +152,11 @@
     "testAddAndDontSelectChildInANonDynamicStack": {
       "location": {
         "start": {
-          "line": 78,
+          "line": 71,
           "column": 4
         },
         "end": {
-          "line": 84,
+          "line": 77,
           "column": 5
         }
       },
@@ -174,11 +174,11 @@
     "testRemoveSelectedChildSelectFirstOne": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 89,
           "column": 5
         }
       },
@@ -196,11 +196,11 @@
     "testRemoveSelectedChildResetSelection": {
       "location": {
         "start": {
-          "line": 104,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 113,
+          "line": 104,
           "column": 5
         }
       },
@@ -303,6 +303,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -327,6 +328,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

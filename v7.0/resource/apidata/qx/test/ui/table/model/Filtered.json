@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 135,
+        "line": 150,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "createTable": {
       "location": {
         "start": {
-          "line": 23,
+          "line": 21,
           "column": 4
         },
         "end": {
-          "line": 50,
+          "line": 68,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "testBetween": {
       "location": {
         "start": {
-          "line": 52,
+          "line": 70,
           "column": 4
         },
         "end": {
-          "line": 76,
+          "line": 93,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "testNotBetween": {
       "location": {
         "start": {
-          "line": 78,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 99,
+          "line": 115,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "testNumericFilter": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 117,
           "column": 4
         },
         "end": {
-          "line": 133,
+          "line": 148,
           "column": 5
         }
       },
@@ -165,6 +165,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -189,6 +190,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

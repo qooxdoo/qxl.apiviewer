@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 359,
+        "line": 397,
         "column": 3
       }
     },
@@ -34,11 +34,11 @@
     "INPUT_DIALOG": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 55,
           "column": 4
         },
         "end": {
-          "line": 58,
+          "line": 55,
           "column": 19
         }
       },
@@ -48,11 +48,11 @@
     "MESSAGE_DIALOG": {
       "location": {
         "start": {
-          "line": 59,
+          "line": 56,
           "column": 4
         },
         "end": {
-          "line": 59,
+          "line": 56,
           "column": 21
         }
       },
@@ -62,11 +62,11 @@
     "WARNING_DIALOG": {
       "location": {
         "start": {
-          "line": 60,
+          "line": 57,
           "column": 4
         },
         "end": {
-          "line": 60,
+          "line": 57,
           "column": 21
         }
       },
@@ -76,11 +76,11 @@
     "ERROR_DIALOG": {
       "location": {
         "start": {
-          "line": 61,
+          "line": 58,
           "column": 4
         },
         "end": {
-          "line": 61,
+          "line": 58,
           "column": 19
         }
       },
@@ -90,11 +90,11 @@
     "WAITING_DIALOG": {
       "location": {
         "start": {
-          "line": 62,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 62,
+          "line": 59,
           "column": 21
         }
       },
@@ -106,11 +106,11 @@
     "alert": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 86,
           "column": 4
         },
         "end": {
-          "line": 106,
+          "line": 109,
           "column": 5
         }
       },
@@ -179,11 +179,11 @@
     "confirm": {
       "location": {
         "start": {
-          "line": 125,
+          "line": 127,
           "column": 4
         },
         "end": {
-          "line": 140,
+          "line": 147,
           "column": 5
         }
       },
@@ -252,11 +252,11 @@
     "input": {
       "location": {
         "start": {
-          "line": 156,
+          "line": 163,
           "column": 4
         },
         "end": {
-          "line": 159,
+          "line": 172,
           "column": 5
         }
       },
@@ -325,11 +325,11 @@
     "error": {
       "location": {
         "start": {
-          "line": 176,
+          "line": 189,
           "column": 4
         },
         "end": {
-          "line": 191,
+          "line": 211,
           "column": 5
         }
       },
@@ -403,11 +403,11 @@
     "warning": {
       "location": {
         "start": {
-          "line": 209,
+          "line": 228,
           "column": 4
         },
         "end": {
-          "line": 224,
+          "line": 250,
           "column": 5
         }
       },
@@ -476,11 +476,11 @@
     "wait": {
       "location": {
         "start": {
-          "line": 241,
+          "line": 266,
           "column": 4
         },
         "end": {
-          "line": 244,
+          "line": 275,
           "column": 5
         }
       },
@@ -549,11 +549,11 @@
     "__processDialogButtons": {
       "location": {
         "start": {
-          "line": 254,
+          "line": 284,
           "column": 4
         },
         "end": {
-          "line": 264,
+          "line": 293,
           "column": 5
         }
       },
@@ -588,11 +588,11 @@
     "__showNonNativeDialog": {
       "location": {
         "start": {
-          "line": 281,
+          "line": 309,
           "column": 4
         },
         "end": {
-          "line": 357,
+          "line": 395,
           "column": 5
         }
       },
@@ -747,6 +747,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -771,6 +772,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

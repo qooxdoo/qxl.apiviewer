@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 276,
+        "line": 265,
         "column": 3
       }
     },
@@ -32,11 +32,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 38,
-        "column": 14
+        "line": 34,
+        "column": 2
       },
       "end": {
-        "line": 50,
+        "line": 47,
         "column": 3
       }
     },
@@ -46,11 +46,11 @@
     "highlightFocusRow": {
       "location": {
         "start": {
-          "line": 64,
+          "line": 57,
           "column": 4
         },
         "end": {
-          "line": 68,
+          "line": 60,
           "column": 5
         }
       },
@@ -105,12 +105,12 @@
     "_colors": {
       "location": {
         "start": {
-          "line": 81,
+          "line": 70,
           "column": 4
         },
         "end": {
-          "line": 81,
-          "column": 18
+          "line": 70,
+          "column": 17
         }
       },
       "type": "variable",
@@ -119,12 +119,12 @@
     "_fontStyle": {
       "location": {
         "start": {
-          "line": 82,
+          "line": 71,
           "column": 4
         },
         "end": {
-          "line": 82,
-          "column": 21
+          "line": 71,
+          "column": 20
         }
       },
       "type": "variable",
@@ -133,12 +133,12 @@
     "_fontStyleString": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 72,
           "column": 4
         },
         "end": {
-          "line": 83,
-          "column": 27
+          "line": 72,
+          "column": 26
         }
       },
       "type": "variable",
@@ -147,11 +147,11 @@
     "initThemeValues": {
       "location": {
         "start": {
-          "line": 89,
+          "line": 78,
           "column": 4
         },
         "end": {
-          "line": 108,
+          "line": 106,
           "column": 5
         }
       },
@@ -175,12 +175,12 @@
     "_insetY": {
       "location": {
         "start": {
-          "line": 115,
+          "line": 112,
           "column": 4
         },
         "end": {
-          "line": 115,
-          "column": 15
+          "line": 112,
+          "column": 14
         }
       },
       "jsdoc": {
@@ -197,11 +197,11 @@
     "_renderFont": {
       "location": {
         "start": {
-          "line": 123,
+          "line": 120,
           "column": 4
         },
         "end": {
-          "line": 136,
+          "line": 129,
           "column": 5
         }
       },
@@ -228,11 +228,11 @@
     "updateDataRowElement": {
       "location": {
         "start": {
-          "line": 140,
+          "line": 132,
           "column": 4
         },
         "end": {
-          "line": 166,
+          "line": 158,
           "column": 5
         }
       },
@@ -247,11 +247,11 @@
     "getRowHeightStyle": {
       "location": {
         "start": {
-          "line": 175,
+          "line": 166,
           "column": 4
         },
         "end": {
-          "line": 182,
+          "line": 172,
           "column": 5
         }
       },
@@ -290,11 +290,11 @@
     "createRowStyle": {
       "location": {
         "start": {
-          "line": 186,
+          "line": 175,
           "column": 4
         },
         "end": {
-          "line": 215,
+          "line": 207,
           "column": 5
         }
       },
@@ -309,11 +309,11 @@
     "getRowClass": {
       "location": {
         "start": {
-          "line": 218,
+          "line": 209,
           "column": 4
         },
         "end": {
-          "line": 220,
+          "line": 211,
           "column": 5
         }
       },
@@ -338,11 +338,11 @@
     "getRowAttributes": {
       "location": {
         "start": {
-          "line": 251,
+          "line": 242,
           "column": 4
         },
         "end": {
-          "line": 254,
+          "line": 244,
           "column": 5
         }
       },
@@ -462,6 +462,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -486,6 +487,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -604,11 +606,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 266,
-        "column": 13
+        "line": 253,
+        "column": 2
       },
       "end": {
-        "line": 275,
+        "line": 264,
         "column": 3
       }
     },

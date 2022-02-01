@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 183,
+        "line": 184,
         "column": 3
       }
     },
@@ -26,12 +26,12 @@
     "__r": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 25,
-          "column": 14
+          "line": 24,
+          "column": 13
         }
       },
       "type": "variable",
@@ -40,12 +40,12 @@
     "__initialState": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 26,
-          "column": 25
+          "line": 25,
+          "column": 24
         }
       },
       "type": "variable",
@@ -54,11 +54,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 31,
+          "line": 30,
           "column": 5
         }
       },
@@ -68,11 +68,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 34,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 37,
+          "line": 35,
           "column": 5
         }
       },
@@ -82,11 +82,11 @@
     "testGet": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 45,
+          "line": 42,
           "column": 5
         }
       },
@@ -96,11 +96,11 @@
     "testBack": {
       "location": {
         "start": {
-          "line": 48,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 58,
+          "line": 54,
           "column": 5
         }
       },
@@ -110,11 +110,11 @@
     "testBackCycle": {
       "location": {
         "start": {
-          "line": 64,
+          "line": 60,
           "column": 4
         },
         "end": {
-          "line": 79,
+          "line": 75,
           "column": 5
         }
       },
@@ -132,11 +132,11 @@
     "testGetCustomData": {
       "location": {
         "start": {
-          "line": 81,
+          "line": 77,
           "column": 4
         },
         "end": {
-          "line": 87,
+          "line": 83,
           "column": 5
         }
       },
@@ -146,11 +146,11 @@
     "testGetCustomDataTwoInstances": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 85,
           "column": 4
         },
         "end": {
-          "line": 98,
+          "line": 93,
           "column": 5
         }
       },
@@ -160,11 +160,11 @@
     "testOn": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 106,
+          "line": 100,
           "column": 5
         }
       },
@@ -174,11 +174,11 @@
     "testPost": {
       "location": {
         "start": {
-          "line": 109,
+          "line": 102,
           "column": 4
         },
         "end": {
-          "line": 114,
+          "line": 107,
           "column": 5
         }
       },
@@ -188,11 +188,11 @@
     "testPostParam": {
       "location": {
         "start": {
-          "line": 117,
+          "line": 109,
           "column": 4
         },
         "end": {
-          "line": 126,
+          "line": 120,
           "column": 5
         }
       },
@@ -200,6 +200,20 @@
       "access": "public"
     },
     "testDelete": {
+      "location": {
+        "start": {
+          "line": 122,
+          "column": 4
+        },
+        "end": {
+          "line": 127,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testPut": {
       "location": {
         "start": {
           "line": 129,
@@ -213,10 +227,10 @@
       "type": "function",
       "access": "public"
     },
-    "testPut": {
+    "testAny": {
       "location": {
         "start": {
-          "line": 137,
+          "line": 136,
           "column": 4
         },
         "end": {
@@ -227,28 +241,14 @@
       "type": "function",
       "access": "public"
     },
-    "testAny": {
-      "location": {
-        "start": {
-          "line": 145,
-          "column": 4
-        },
-        "end": {
-          "line": 151,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
     "testInit": {
       "location": {
         "start": {
-          "line": 153,
+          "line": 144,
           "column": 4
         },
         "end": {
-          "line": 171,
+          "line": 162,
           "column": 5
         }
       },
@@ -258,11 +258,11 @@
     "testGetPathOrFallback": {
       "location": {
         "start": {
-          "line": 173,
+          "line": 164,
           "column": 4
         },
         "end": {
-          "line": 181,
+          "line": 182,
           "column": 5
         }
       },
@@ -949,6 +949,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -973,6 +974,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

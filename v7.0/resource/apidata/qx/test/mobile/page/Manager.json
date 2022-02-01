@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 51,
+        "line": 45,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "testCreate": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 29,
+          "line": 26,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "testAddTablet": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 38,
+          "line": 34,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "testAddMobile": {
       "location": {
         "start": {
-          "line": 41,
+          "line": 36,
           "column": 4
         },
         "end": {
-          "line": 48,
+          "line": 43,
           "column": 5
         }
       },
@@ -151,6 +151,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -175,6 +176,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

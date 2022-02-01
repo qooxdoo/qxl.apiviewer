@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 139,
+        "line": 138,
         "column": 3
       }
     },
@@ -62,12 +62,12 @@
     "__tranportImpl": {
       "location": {
         "start": {
-          "line": 29,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 29,
-          "column": 25
+          "line": 28,
+          "column": 24
         }
       },
       "jsdoc": {
@@ -90,11 +90,11 @@
     "getTransportImpl": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 39,
           "column": 4
         },
         "end": {
-          "line": 43,
+          "line": 42,
           "column": 5
         }
       },
@@ -124,11 +124,11 @@
     "send": {
       "location": {
         "start": {
-          "line": 54,
+          "line": 53,
           "column": 4
         },
         "end": {
-          "line": 110,
+          "line": 109,
           "column": 5
         }
       },
@@ -164,11 +164,11 @@
     "_createTransportImpl": {
       "location": {
         "start": {
-          "line": 125,
+          "line": 124,
           "column": 4
         },
         "end": {
-          "line": 133,
+          "line": 132,
           "column": 5
         }
       },
@@ -348,6 +348,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -372,6 +373,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -400,11 +402,11 @@
   "defer": {
     "location": {
       "start": {
-        "line": 136,
+        "line": 135,
         "column": 2
       },
       "end": {
-        "line": 138,
+        "line": 137,
         "column": 3
       }
     }

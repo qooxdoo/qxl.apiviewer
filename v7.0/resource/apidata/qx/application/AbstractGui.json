@@ -17,7 +17,7 @@
         "column": 0
       },
       "end": {
-        "line": 123,
+        "line": 111,
         "column": 3
       }
     },
@@ -44,12 +44,12 @@
     "__root": {
       "location": {
         "start": {
-          "line": 42,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 42,
-          "column": 17
+          "line": 38,
+          "column": 16
         }
       },
       "jsdoc": {
@@ -72,11 +72,11 @@
     "_createRootWidget": {
       "location": {
         "start": {
-          "line": 52,
+          "line": 47,
           "column": 4
         },
         "end": {
-          "line": 54,
+          "line": 49,
           "column": 5
         }
       },
@@ -102,11 +102,11 @@
     "getRoot": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 62,
           "column": 4
         },
         "end": {
-          "line": 70,
+          "line": 64,
           "column": 5
         }
       },
@@ -132,11 +132,11 @@
     "main": {
       "location": {
         "start": {
-          "line": 74,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 92,
+          "line": 86,
           "column": 5
         }
       },
@@ -151,11 +151,11 @@
     "finalize": {
       "location": {
         "start": {
-          "line": 96,
+          "line": 89,
           "column": 4
         },
         "end": {
-          "line": 98,
+          "line": 91,
           "column": 5
         }
       },
@@ -170,11 +170,11 @@
     "render": {
       "location": {
         "start": {
-          "line": 105,
+          "line": 97,
           "column": 4
         },
         "end": {
-          "line": 107,
+          "line": 99,
           "column": 5
         }
       },
@@ -192,11 +192,11 @@
     "close": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 102,
           "column": 4
         },
         "end": {
-          "line": 114,
+          "line": 104,
           "column": 5
         }
       },
@@ -211,11 +211,11 @@
     "terminate": {
       "location": {
         "start": {
-          "line": 118,
+          "line": 107,
           "column": 4
         },
         "end": {
-          "line": 121,
+          "line": 109,
           "column": 5
         }
       },
@@ -524,69 +524,6 @@
             "body": "{var} Returns the internal id for that binding. This can be used\n   for referencing the binding e.g. for removing. This is not an atomic\n   id so you can't you use it as a hash-map index.",
             "type": "var",
             "description": " Returns the internal id for that binding. This can be used\n   for referencing the binding e.g. for removing. This is not an atomic\n   id so you can't you use it as a hash-map index."
-          }
-        ],
-        "@throws": [
-          {
-            "name": "@throws",
-            "body": "{qx.core.AssertionError} If the event is no data event or\n   there is no property definition for object and property (source and\n   target).",
-            "type": "qx.core.AssertionError",
-            "description": " If the event is no data event or\n   there is no property definition for object and property (source and\n   target)."
-          }
-        ]
-      }
-    },
-    "bindAsync": {
-      "type": "function",
-      "name": "bindAsync",
-      "abstract": false,
-      "mixin": true,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.data.MBinding",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>The bind method delegates the call to the\n {@link qx.data.SingleValueBinding#bind} function. As source, the current\n object (this) will be used.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "sourcePropertyChain {String} The property chain which represents\n   the source property.",
-            "paramName": "sourcePropertyChain",
-            "description": " The property chain which represents\n   the source property.",
-            "type": "String"
-          },
-          {
-            "name": "@param",
-            "body": "targetObject {qx.core.Object} The object which the source should\n   be bind to.",
-            "paramName": "targetObject",
-            "description": " The object which the source should\n   be bind to.",
-            "type": "qx.core.Object"
-          },
-          {
-            "name": "@param",
-            "body": "targetProperty {String} The property name of the target object.",
-            "paramName": "targetProperty",
-            "description": " The property name of the target object.",
-            "type": "String"
-          },
-          {
-            "name": "@param",
-            "body": "options {Map} A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
-            "paramName": "options",
-            "description": " A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
-            "type": "Map"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.Promise} A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index.",
-            "type": "qx.Promise",
-            "description": " A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index."
           }
         ],
         "@throws": [
@@ -2037,6 +1974,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -2060,6 +1998,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

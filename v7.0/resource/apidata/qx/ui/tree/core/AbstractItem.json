@@ -17,7 +17,7 @@
         "column": 0
       },
       "end": {
-        "line": 512,
+        "line": 458,
         "column": 3
       }
     },
@@ -60,11 +60,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 42,
-        "column": 14
+        "line": 40,
+        "column": 2
       },
       "end": {
-        "line": 54,
+        "line": 51,
         "column": 3
       }
     },
@@ -92,11 +92,11 @@
     "open": {
       "location": {
         "start": {
-          "line": 62,
+          "line": 57,
           "column": 4
         },
         "end": {
-          "line": 68,
+          "line": 62,
           "column": 5
         }
       },
@@ -119,11 +119,11 @@
     "openSymbolMode": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 68,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 73,
           "column": 5
         }
       },
@@ -150,11 +150,11 @@
     "indent": {
       "location": {
         "start": {
-          "line": 87,
+          "line": 78,
           "column": 4
         },
         "end": {
-          "line": 94,
+          "line": 84,
           "column": 5
         }
       },
@@ -178,11 +178,11 @@
     "icon": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 89,
           "column": 4
         },
         "end": {
-          "line": 107,
+          "line": 95,
           "column": 5
         }
       },
@@ -206,11 +206,11 @@
     "iconOpened": {
       "location": {
         "start": {
-          "line": 113,
+          "line": 100,
           "column": 4
         },
         "end": {
-          "line": 120,
+          "line": 106,
           "column": 5
         }
       },
@@ -234,11 +234,11 @@
     "label": {
       "location": {
         "start": {
-          "line": 126,
+          "line": 111,
           "column": 4
         },
         "end": {
-          "line": 132,
+          "line": 116,
           "column": 5
         }
       },
@@ -280,12 +280,12 @@
     "__labelAdded": {
       "location": {
         "start": {
-          "line": 138,
+          "line": 120,
           "column": 4
         },
         "end": {
-          "line": 138,
-          "column": 23
+          "line": 120,
+          "column": 22
         }
       },
       "type": "variable",
@@ -294,12 +294,12 @@
     "__iconAdded": {
       "location": {
         "start": {
-          "line": 139,
+          "line": 121,
           "column": 4
         },
         "end": {
-          "line": 139,
-          "column": 22
+          "line": 121,
+          "column": 21
         }
       },
       "type": "variable",
@@ -308,12 +308,12 @@
     "__spacer": {
       "location": {
         "start": {
-          "line": 140,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 140,
-          "column": 19
+          "line": 122,
+          "column": 18
         }
       },
       "type": "variable",
@@ -322,11 +322,11 @@
     "_addWidgets": {
       "location": {
         "start": {
-          "line": 149,
+          "line": 130,
           "column": 4
         },
         "end": {
-          "line": 151,
+          "line": 132,
           "column": 5
         }
       },
@@ -344,11 +344,11 @@
     "_createChildControlImpl": {
       "location": {
         "start": {
-          "line": 155,
+          "line": 135,
           "column": 4
         },
         "end": {
-          "line": 187,
+          "line": 168,
           "column": 5
         }
       },
@@ -363,11 +363,11 @@
     "addWidget": {
       "location": {
         "start": {
-          "line": 202,
+          "line": 182,
           "column": 4
         },
         "end": {
-          "line": 204,
+          "line": 184,
           "column": 5
         }
       },
@@ -403,11 +403,11 @@
     "addSpacer": {
       "location": {
         "start": {
-          "line": 212,
+          "line": 191,
           "column": 4
         },
         "end": {
-          "line": 221,
+          "line": 199,
           "column": 5
         }
       },
@@ -425,11 +425,11 @@
     "addOpenButton": {
       "location": {
         "start": {
-          "line": 229,
+          "line": 206,
           "column": 4
         },
         "end": {
-          "line": 231,
+          "line": 208,
           "column": 5
         }
       },
@@ -447,11 +447,11 @@
     "_onChangeOpen": {
       "location": {
         "start": {
-          "line": 239,
+          "line": 215,
           "column": 4
         },
         "end": {
-          "line": 244,
+          "line": 219,
           "column": 5
         }
       },
@@ -478,11 +478,11 @@
     "addIcon": {
       "location": {
         "start": {
-          "line": 252,
+          "line": 226,
           "column": 4
         },
         "end": {
-          "line": 262,
+          "line": 235,
           "column": 5
         }
       },
@@ -500,11 +500,11 @@
     "addLabel": {
       "location": {
         "start": {
-          "line": 272,
+          "line": 244,
           "column": 4
         },
         "end": {
-          "line": 288,
+          "line": 259,
           "column": 5
         }
       },
@@ -533,11 +533,11 @@
     "_applyIcon": {
       "location": {
         "start": {
-          "line": 298,
+          "line": 268,
           "column": 4
         },
         "end": {
-          "line": 310,
+          "line": 276,
           "column": 5
         }
       },
@@ -551,11 +551,11 @@
     "_applyIconOpened": {
       "location": {
         "start": {
-          "line": 314,
+          "line": 279,
           "column": 4
         },
         "end": {
-          "line": 330,
+          "line": 294,
           "column": 5
         }
       },
@@ -569,11 +569,11 @@
     "_applyLabel": {
       "location": {
         "start": {
-          "line": 334,
+          "line": 297,
           "column": 4
         },
         "end": {
-          "line": 340,
+          "line": 302,
           "column": 5
         }
       },
@@ -587,11 +587,11 @@
     "_applyOpen": {
       "location": {
         "start": {
-          "line": 343,
+          "line": 305,
           "column": 4
         },
         "end": {
-          "line": 372,
+          "line": 332,
           "column": 5
         }
       },
@@ -605,11 +605,11 @@
     "__getUserValueIcon": {
       "location": {
         "start": {
-          "line": 379,
+          "line": 339,
           "column": 4
         },
         "end": {
-          "line": 381,
+          "line": 341,
           "column": 5
         }
       },
@@ -635,11 +635,11 @@
     "__getUserValueIconOpened": {
       "location": {
         "start": {
-          "line": 388,
+          "line": 348,
           "column": 4
         },
         "end": {
-          "line": 390,
+          "line": 350,
           "column": 5
         }
       },
@@ -665,11 +665,11 @@
     "__setIconSource": {
       "location": {
         "start": {
-          "line": 397,
+          "line": 357,
           "column": 4
         },
         "end": {
-          "line": 402,
+          "line": 362,
           "column": 5
         }
       },
@@ -696,11 +696,11 @@
     "isOpenable": {
       "location": {
         "start": {
-          "line": 416,
+          "line": 375,
           "column": 4
         },
         "end": {
-          "line": 423,
+          "line": 380,
           "column": 5
         }
       },
@@ -726,11 +726,11 @@
     "_shouldShowOpenSymbol": {
       "location": {
         "start": {
-          "line": 431,
+          "line": 387,
           "column": 4
         },
         "end": {
-          "line": 433,
+          "line": 389,
           "column": 5
         }
       },
@@ -756,11 +756,11 @@
     "_applyOpenSymbolMode": {
       "location": {
         "start": {
-          "line": 437,
+          "line": 392,
           "column": 4
         },
         "end": {
-          "line": 439,
+          "line": 394,
           "column": 5
         }
       },
@@ -774,11 +774,11 @@
     "_updateIndent": {
       "location": {
         "start": {
-          "line": 445,
+          "line": 399,
           "column": 4
         },
         "end": {
-          "line": 472,
+          "line": 423,
           "column": 5
         }
       },
@@ -796,11 +796,11 @@
     "_applyIndent": {
       "location": {
         "start": {
-          "line": 476,
+          "line": 426,
           "column": 4
         },
         "end": {
-          "line": 478,
+          "line": 428,
           "column": 5
         }
       },
@@ -814,11 +814,11 @@
     "getLevel": {
       "location": {
         "start": {
-          "line": 487,
+          "line": 436,
           "column": 4
         },
         "end": {
-          "line": 489,
+          "line": 438,
           "column": 5
         }
       },
@@ -844,11 +844,11 @@
     "syncWidget": {
       "location": {
         "start": {
-          "line": 493,
+          "line": 441,
           "column": 4
         },
         "end": {
-          "line": 495,
+          "line": 443,
           "column": 5
         }
       },
@@ -863,11 +863,11 @@
     "hasChildren": {
       "location": {
         "start": {
-          "line": 503,
+          "line": 450,
           "column": 4
         },
         "end": {
-          "line": 505,
+          "line": 452,
           "column": 5
         }
       },
@@ -1059,6 +1059,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1083,6 +1084,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -5187,15 +5189,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 509,
-        "column": 13
+        "line": 455,
+        "column": 2
       },
       "end": {
-        "line": 511,
+        "line": 457,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {
     "changeModel": {

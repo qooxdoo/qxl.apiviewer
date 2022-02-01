@@ -16,7 +16,7 @@
         "column": 0
       },
       "end": {
-        "line": 206,
+        "line": 217,
         "column": 3
       }
     },
@@ -40,11 +40,11 @@
     "hasWebFontSupport": {
       "location": {
         "start": {
-          "line": 34,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 44,
+          "line": 42,
           "column": 5
         }
       },
@@ -54,11 +54,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 46,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 50,
+          "line": 48,
           "column": 5
         }
       },
@@ -72,11 +72,11 @@
     "testSelectTextAllBeforeFlush": {
       "location": {
         "start": {
-          "line": 52,
+          "line": 50,
           "column": 4
         },
         "end": {
-          "line": 68,
+          "line": 65,
           "column": 5
         }
       },
@@ -86,11 +86,11 @@
     "testSelectAllTextAfterFlush": {
       "location": {
         "start": {
-          "line": 71,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 87,
+          "line": 82,
           "column": 5
         }
       },
@@ -100,11 +100,11 @@
     "testClearTextSelectionBeforeFlush": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 84,
           "column": 4
         },
         "end": {
-          "line": 107,
+          "line": 100,
           "column": 5
         }
       },
@@ -114,11 +114,11 @@
     "testClearTextSelectionAfterFlush": {
       "location": {
         "start": {
-          "line": 110,
+          "line": 102,
           "column": 4
         },
         "end": {
-          "line": 126,
+          "line": 117,
           "column": 5
         }
       },
@@ -128,11 +128,11 @@
     "testGetTextSelectionStartEndAfterFlush": {
       "location": {
         "start": {
-          "line": 129,
+          "line": 119,
           "column": 4
         },
         "end": {
-          "line": 145,
+          "line": 134,
           "column": 5
         }
       },
@@ -142,11 +142,11 @@
     "testGetTextSelectionStartEndBeforeFlush": {
       "location": {
         "start": {
-          "line": 148,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 165,
+          "line": 152,
           "column": 5
         }
       },
@@ -156,11 +156,11 @@
     "testApplyWebFont": {
       "location": {
         "start": {
-          "line": 167,
+          "line": 154,
           "column": 4
         },
         "end": {
-          "line": 204,
+          "line": 215,
           "column": 5
         }
       },
@@ -1318,6 +1318,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1342,6 +1343,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

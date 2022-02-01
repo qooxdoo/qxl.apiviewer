@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 157,
+        "line": 162,
         "column": 3
       }
     },
@@ -24,12 +24,12 @@
     "__iframe": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 25,
-          "column": 19
+          "line": 23,
+          "column": 18
         }
       },
       "type": "variable",
@@ -38,7 +38,25 @@
     "setUp": {
       "location": {
         "start": {
+          "line": 25,
+          "column": 4
+        },
+        "end": {
           "line": 28,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public",
+      "overriddenFrom": "qx.test.ui.LayoutTestCase",
+      "appearsIn": [
+        "qx.test.ui.LayoutTestCase"
+      ]
+    },
+    "tearDown": {
+      "location": {
+        "start": {
+          "line": 30,
           "column": 4
         },
         "end": {
@@ -53,32 +71,14 @@
         "qx.test.ui.LayoutTestCase"
       ]
     },
-    "tearDown": {
+    "testHiddenSetSourceInitial": {
       "location": {
         "start": {
           "line": 34,
           "column": 4
         },
         "end": {
-          "line": 36,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public",
-      "overriddenFrom": "qx.test.ui.LayoutTestCase",
-      "appearsIn": [
-        "qx.test.ui.LayoutTestCase"
-      ]
-    },
-    "testHiddenSetSourceInitial": {
-      "location": {
-        "start": {
-          "line": 38,
-          "column": 4
-        },
-        "end": {
-          "line": 47,
+          "line": 43,
           "column": 5
         }
       },
@@ -88,11 +88,11 @@
     "testHiddenSetSource": {
       "location": {
         "start": {
-          "line": 50,
+          "line": 45,
           "column": 4
         },
         "end": {
-          "line": 72,
+          "line": 74,
           "column": 5
         }
       },
@@ -102,11 +102,11 @@
     "testGetWindow": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 76,
           "column": 4
         },
         "end": {
-          "line": 89,
+          "line": 95,
           "column": 5
         }
       },
@@ -116,11 +116,11 @@
     "testSyncSourceAfterDOMMove": {
       "location": {
         "start": {
-          "line": 92,
+          "line": 98,
           "column": 4
         },
         "end": {
-          "line": 155,
+          "line": 160,
           "column": 5
         }
       },
@@ -229,6 +229,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -253,6 +254,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -11,11 +11,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 27,
+        "line": 26,
         "column": 0
       },
       "end": {
-        "line": 507,
+        "line": 500,
         "column": 3
       }
     },
@@ -35,11 +35,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 37,
-        "column": 13
+        "line": 34,
+        "column": 2
       },
       "end": {
-        "line": 63,
+        "line": 93,
         "column": 3
       }
     },
@@ -65,12 +65,12 @@
     "play": {
       "location": {
         "start": {
-          "line": 71,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 71,
-          "column": 33
+          "line": 99,
+          "column": 31
         }
       },
       "jsdoc": {
@@ -87,12 +87,12 @@
     "pause": {
       "location": {
         "start": {
-          "line": 74,
+          "line": 102,
           "column": 4
         },
         "end": {
-          "line": 74,
-          "column": 34
+          "line": 102,
+          "column": 32
         }
       },
       "jsdoc": {
@@ -109,12 +109,12 @@
     "timeupdate": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 105,
           "column": 4
         },
         "end": {
-          "line": 77,
-          "column": 39
+          "line": 105,
+          "column": 37
         }
       },
       "jsdoc": {
@@ -131,12 +131,12 @@
     "ended": {
       "location": {
         "start": {
-          "line": 80,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 80,
-          "column": 34
+          "line": 108,
+          "column": 32
         }
       },
       "jsdoc": {
@@ -153,12 +153,12 @@
     "volumechange": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 111,
           "column": 4
         },
         "end": {
-          "line": 83,
-          "column": 41
+          "line": 111,
+          "column": 39
         }
       },
       "jsdoc": {
@@ -175,12 +175,12 @@
     "loadeddata": {
       "location": {
         "start": {
-          "line": 86,
+          "line": 114,
           "column": 4
         },
         "end": {
-          "line": 86,
-          "column": 39
+          "line": 114,
+          "column": 37
         }
       },
       "jsdoc": {
@@ -197,12 +197,12 @@
     "loadedmetadata": {
       "location": {
         "start": {
-          "line": 89,
+          "line": 117,
           "column": 4
         },
         "end": {
-          "line": 89,
-          "column": 43
+          "line": 117,
+          "column": 41
         }
       },
       "jsdoc": {
@@ -221,11 +221,11 @@
     "_media": {
       "location": {
         "start": {
-          "line": 95,
+          "line": 121,
           "column": 4
         },
         "end": {
-          "line": 95,
+          "line": 121,
           "column": 16
         }
       },
@@ -235,11 +235,11 @@
     "_hasLoop": {
       "location": {
         "start": {
-          "line": 96,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 96,
+          "line": 122,
           "column": 19
         }
       },
@@ -249,11 +249,11 @@
     "_loopId": {
       "location": {
         "start": {
-          "line": 97,
+          "line": 123,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 123,
           "column": 17
         }
       },
@@ -263,11 +263,11 @@
     "getMediaObject": {
       "location": {
         "start": {
-          "line": 104,
+          "line": 130,
           "column": 4
         },
         "end": {
-          "line": 107,
+          "line": 132,
           "column": 5
         }
       },
@@ -293,11 +293,11 @@
     "play": {
       "location": {
         "start": {
-          "line": 113,
+          "line": 137,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 146,
           "column": 5
         }
       },
@@ -315,11 +315,11 @@
     "pause": {
       "location": {
         "start": {
-          "line": 125,
+          "line": 151,
           "column": 4
         },
         "end": {
-          "line": 128,
+          "line": 153,
           "column": 5
         }
       },
@@ -337,11 +337,11 @@
     "isPaused": {
       "location": {
         "start": {
-          "line": 136,
+          "line": 160,
           "column": 4
         },
         "end": {
-          "line": 139,
+          "line": 162,
           "column": 5
         }
       },
@@ -367,11 +367,11 @@
     "isEnded": {
       "location": {
         "start": {
-          "line": 147,
+          "line": 169,
           "column": 4
         },
         "end": {
-          "line": 150,
+          "line": 171,
           "column": 5
         }
       },
@@ -397,11 +397,11 @@
     "setId": {
       "location": {
         "start": {
-          "line": 158,
+          "line": 178,
           "column": 4
         },
         "end": {
-          "line": 161,
+          "line": 180,
           "column": 5
         }
       },
@@ -428,11 +428,11 @@
     "getId": {
       "location": {
         "start": {
-          "line": 168,
+          "line": 187,
           "column": 4
         },
         "end": {
-          "line": 171,
+          "line": 189,
           "column": 5
         }
       },
@@ -458,11 +458,11 @@
     "canPlayType": {
       "location": {
         "start": {
-          "line": 180,
+          "line": 197,
           "column": 4
         },
         "end": {
-          "line": 183,
+          "line": 199,
           "column": 5
         }
       },
@@ -497,11 +497,11 @@
     "setVolume": {
       "location": {
         "start": {
-          "line": 192,
+          "line": 207,
           "column": 4
         },
         "end": {
-          "line": 195,
+          "line": 209,
           "column": 5
         }
       },
@@ -528,11 +528,11 @@
     "getVolume": {
       "location": {
         "start": {
-          "line": 204,
+          "line": 217,
           "column": 4
         },
         "end": {
-          "line": 207,
+          "line": 219,
           "column": 5
         }
       },
@@ -558,11 +558,11 @@
     "setMuted": {
       "location": {
         "start": {
-          "line": 215,
+          "line": 226,
           "column": 4
         },
         "end": {
-          "line": 218,
+          "line": 228,
           "column": 5
         }
       },
@@ -589,11 +589,11 @@
     "isMuted": {
       "location": {
         "start": {
-          "line": 226,
+          "line": 235,
           "column": 4
         },
         "end": {
-          "line": 229,
+          "line": 237,
           "column": 5
         }
       },
@@ -619,11 +619,11 @@
     "getDuration": {
       "location": {
         "start": {
-          "line": 237,
+          "line": 244,
           "column": 4
         },
         "end": {
-          "line": 240,
+          "line": 246,
           "column": 5
         }
       },
@@ -649,11 +649,11 @@
     "setCurrentTime": {
       "location": {
         "start": {
-          "line": 248,
+          "line": 253,
           "column": 4
         },
         "end": {
-          "line": 251,
+          "line": 255,
           "column": 5
         }
       },
@@ -680,11 +680,11 @@
     "getCurrentTime": {
       "location": {
         "start": {
-          "line": 259,
+          "line": 262,
           "column": 4
         },
         "end": {
-          "line": 262,
+          "line": 264,
           "column": 5
         }
       },
@@ -710,11 +710,11 @@
     "setSource": {
       "location": {
         "start": {
-          "line": 269,
+          "line": 271,
           "column": 4
         },
         "end": {
-          "line": 272,
+          "line": 273,
           "column": 5
         }
       },
@@ -745,7 +745,7 @@
           "column": 4
         },
         "end": {
-          "line": 283,
+          "line": 282,
           "column": 5
         }
       },
@@ -771,11 +771,11 @@
     "setSourceObject": {
       "location": {
         "start": {
-          "line": 291,
+          "line": 289,
           "column": 4
         },
         "end": {
-          "line": 294,
+          "line": 291,
           "column": 5
         }
       },
@@ -802,11 +802,11 @@
     "getSourceObject": {
       "location": {
         "start": {
-          "line": 302,
+          "line": 298,
           "column": 4
         },
         "end": {
-          "line": 305,
+          "line": 300,
           "column": 5
         }
       },
@@ -832,11 +832,11 @@
     "hasControls": {
       "location": {
         "start": {
-          "line": 313,
+          "line": 307,
           "column": 4
         },
         "end": {
-          "line": 316,
+          "line": 309,
           "column": 5
         }
       },
@@ -862,11 +862,11 @@
     "showControls": {
       "location": {
         "start": {
-          "line": 322,
+          "line": 314,
           "column": 4
         },
         "end": {
-          "line": 325,
+          "line": 316,
           "column": 5
         }
       },
@@ -884,11 +884,11 @@
     "hideControls": {
       "location": {
         "start": {
-          "line": 331,
+          "line": 321,
           "column": 4
         },
         "end": {
-          "line": 334,
+          "line": 323,
           "column": 5
         }
       },
@@ -906,11 +906,11 @@
     "setAutoplay": {
       "location": {
         "start": {
-          "line": 342,
+          "line": 330,
           "column": 4
         },
         "end": {
-          "line": 345,
+          "line": 332,
           "column": 5
         }
       },
@@ -937,11 +937,11 @@
     "getAutoplay": {
       "location": {
         "start": {
-          "line": 353,
+          "line": 339,
           "column": 4
         },
         "end": {
-          "line": 356,
+          "line": 341,
           "column": 5
         }
       },
@@ -967,11 +967,11 @@
     "setPreload": {
       "location": {
         "start": {
-          "line": 372,
+          "line": 357,
           "column": 4
         },
         "end": {
-          "line": 380,
+          "line": 364,
           "column": 5
         }
       },
@@ -998,11 +998,11 @@
     "getPreload": {
       "location": {
         "start": {
-          "line": 388,
+          "line": 371,
           "column": 4
         },
         "end": {
-          "line": 391,
+          "line": 373,
           "column": 5
         }
       },
@@ -1028,11 +1028,11 @@
     "setLoop": {
       "location": {
         "start": {
-          "line": 399,
+          "line": 380,
           "column": 4
         },
         "end": {
-          "line": 411,
+          "line": 391,
           "column": 5
         }
       },
@@ -1059,11 +1059,11 @@
     "isLoop": {
       "location": {
         "start": {
-          "line": 419,
+          "line": 398,
           "column": 4
         },
         "end": {
-          "line": 422,
+          "line": 400,
           "column": 5
         }
       },
@@ -1089,11 +1089,11 @@
     "_handlePlayEvent": {
       "location": {
         "start": {
-          "line": 428,
+          "line": 405,
           "column": 4
         },
         "end": {
-          "line": 431,
+          "line": 407,
           "column": 5
         }
       },
@@ -1111,11 +1111,11 @@
     "_handlePauseEvent": {
       "location": {
         "start": {
-          "line": 437,
+          "line": 412,
           "column": 4
         },
         "end": {
-          "line": 440,
+          "line": 414,
           "column": 5
         }
       },
@@ -1133,11 +1133,11 @@
     "_handleTimeUpdateEvent": {
       "location": {
         "start": {
-          "line": 446,
+          "line": 419,
           "column": 4
         },
         "end": {
-          "line": 449,
+          "line": 421,
           "column": 5
         }
       },
@@ -1155,11 +1155,11 @@
     "_handleEndedEvent": {
       "location": {
         "start": {
-          "line": 455,
+          "line": 426,
           "column": 4
         },
         "end": {
-          "line": 458,
+          "line": 428,
           "column": 5
         }
       },
@@ -1177,11 +1177,11 @@
     "_handleVolumeChangeEvent": {
       "location": {
         "start": {
-          "line": 464,
+          "line": 433,
           "column": 4
         },
         "end": {
-          "line": 467,
+          "line": 435,
           "column": 5
         }
       },
@@ -1199,11 +1199,11 @@
     "_handleLoadedDataEvent": {
       "location": {
         "start": {
-          "line": 472,
+          "line": 440,
           "column": 4
         },
         "end": {
-          "line": 475,
+          "line": 442,
           "column": 5
         }
       },
@@ -1221,11 +1221,11 @@
     "_handleLoadedMetaDataEvent": {
       "location": {
         "start": {
-          "line": 480,
+          "line": 447,
           "column": 4
         },
         "end": {
-          "line": 483,
+          "line": 449,
           "column": 5
         }
       },
@@ -1293,69 +1293,6 @@
             "body": "{var} Returns the internal id for that binding. This can be used\n   for referencing the binding e.g. for removing. This is not an atomic\n   id so you can't you use it as a hash-map index.",
             "type": "var",
             "description": " Returns the internal id for that binding. This can be used\n   for referencing the binding e.g. for removing. This is not an atomic\n   id so you can't you use it as a hash-map index."
-          }
-        ],
-        "@throws": [
-          {
-            "name": "@throws",
-            "body": "{qx.core.AssertionError} If the event is no data event or\n   there is no property definition for object and property (source and\n   target).",
-            "type": "qx.core.AssertionError",
-            "description": " If the event is no data event or\n   there is no property definition for object and property (source and\n   target)."
-          }
-        ]
-      }
-    },
-    "bindAsync": {
-      "type": "function",
-      "name": "bindAsync",
-      "abstract": false,
-      "mixin": true,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.data.MBinding",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>The bind method delegates the call to the\n {@link qx.data.SingleValueBinding#bind} function. As source, the current\n object (this) will be used.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "sourcePropertyChain {String} The property chain which represents\n   the source property.",
-            "paramName": "sourcePropertyChain",
-            "description": " The property chain which represents\n   the source property.",
-            "type": "String"
-          },
-          {
-            "name": "@param",
-            "body": "targetObject {qx.core.Object} The object which the source should\n   be bind to.",
-            "paramName": "targetObject",
-            "description": " The object which the source should\n   be bind to.",
-            "type": "qx.core.Object"
-          },
-          {
-            "name": "@param",
-            "body": "targetProperty {String} The property name of the target object.",
-            "paramName": "targetProperty",
-            "description": " The property name of the target object.",
-            "type": "String"
-          },
-          {
-            "name": "@param",
-            "body": "options {Map} A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
-            "paramName": "options",
-            "description": " A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
-            "type": "Map"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.Promise} A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index.",
-            "type": "qx.Promise",
-            "description": " A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index."
           }
         ],
         "@throws": [
@@ -2806,6 +2743,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -2829,6 +2767,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -4516,15 +4455,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 487,
-        "column": 12
+        "line": 452,
+        "column": 2
       },
       "end": {
-        "line": 506,
+        "line": 499,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": [
     "qx.bom.media.Audio",

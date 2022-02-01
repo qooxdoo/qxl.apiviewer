@@ -23,7 +23,7 @@
         "column": 0
       },
       "end": {
-        "line": 204,
+        "line": 205,
         "column": 3
       }
     },
@@ -41,12 +41,12 @@
     "__initialized": {
       "location": {
         "start": {
-          "line": 50,
+          "line": 48,
           "column": 4
         },
         "end": {
-          "line": 50,
-          "column": 25
+          "line": 48,
+          "column": 24
         }
       },
       "type": "variable",
@@ -55,11 +55,11 @@
     "getPadding": {
       "location": {
         "start": {
-          "line": 56,
+          "line": 54,
           "column": 4
         },
         "end": {
-          "line": 72,
+          "line": 73,
           "column": 5
         }
       },
@@ -94,7 +94,7 @@
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 95,
           "column": 5
         }
       },
@@ -135,11 +135,11 @@
     "_getStyles": {
       "location": {
         "start": {
-          "line": 105,
+          "line": 102,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 118,
           "column": 5
         }
       },
@@ -165,11 +165,11 @@
     "_getDefaultInsets": {
       "location": {
         "start": {
-          "line": 128,
+          "line": 121,
           "column": 4
         },
         "end": {
-          "line": 156,
+          "line": 152,
           "column": 5
         }
       },
@@ -184,11 +184,11 @@
     "_isInitialized": {
       "location": {
         "start": {
-          "line": 160,
+          "line": 155,
           "column": 4
         },
         "end": {
-          "line": 162,
+          "line": 157,
           "column": 5
         }
       },
@@ -203,11 +203,11 @@
     "_getExtendedPropertyValueArrays": {
       "location": {
         "start": {
-          "line": 170,
+          "line": 165,
           "column": 4
         },
         "end": {
-          "line": 190,
+          "line": 191,
           "column": 5
         }
       },
@@ -242,11 +242,11 @@
     "__extendArray": {
       "location": {
         "start": {
-          "line": 197,
+          "line": 198,
           "column": 4
         },
         "end": {
-          "line": 202,
+          "line": 203,
           "column": 5
         }
       },
@@ -5693,6 +5693,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -5717,6 +5718,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

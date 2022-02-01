@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 212,
+        "line": 186,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "testAppend": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 55,
+          "line": 52,
           "column": 5
         }
       },
@@ -46,11 +46,11 @@
     "testExclude": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 54,
           "column": 4
         },
         "end": {
-          "line": 84,
+          "line": 80,
           "column": 5
         }
       },
@@ -60,7 +60,21 @@
     "testMinNumeric": {
       "location": {
         "start": {
-          "line": 87,
+          "line": 82,
+          "column": 4
+        },
+        "end": {
+          "line": 86,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testMaxNumeric": {
+      "location": {
+        "start": {
+          "line": 88,
           "column": 4
         },
         "end": {
@@ -71,28 +85,14 @@
       "type": "function",
       "access": "public"
     },
-    "testMaxNumeric": {
-      "location": {
-        "start": {
-          "line": 95,
-          "column": 4
-        },
-        "end": {
-          "line": 100,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
     "testMinMixed": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 94,
           "column": 4
         },
         "end": {
-          "line": 108,
+          "line": 98,
           "column": 5
         }
       },
@@ -102,7 +102,35 @@
     "testMaxMixed": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 100,
+          "column": 4
+        },
+        "end": {
+          "line": 104,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testMinEmpty": {
+      "location": {
+        "start": {
+          "line": 106,
+          "column": 4
+        },
+        "end": {
+          "line": 110,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testMaxEmpty": {
+      "location": {
+        "start": {
+          "line": 112,
           "column": 4
         },
         "end": {
@@ -113,42 +141,14 @@
       "type": "function",
       "access": "public"
     },
-    "testMinEmpty": {
-      "location": {
-        "start": {
-          "line": 119,
-          "column": 4
-        },
-        "end": {
-          "line": 124,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testMaxEmpty": {
-      "location": {
-        "start": {
-          "line": 127,
-          "column": 4
-        },
-        "end": {
-          "line": 132,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
     "testRemove": {
       "location": {
         "start": {
-          "line": 135,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 148,
+          "line": 130,
           "column": 5
         }
       },
@@ -158,7 +158,35 @@
     "testRemoveAt": {
       "location": {
         "start": {
-          "line": 151,
+          "line": 132,
+          "column": 4
+        },
+        "end": {
+          "line": 138,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testRemoveAll": {
+      "location": {
+        "start": {
+          "line": 140,
+          "column": 4
+        },
+        "end": {
+          "line": 146,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testContains": {
+      "location": {
+        "start": {
+          "line": 148,
           "column": 4
         },
         "end": {
@@ -169,10 +197,10 @@
       "type": "function",
       "access": "public"
     },
-    "testRemoveAll": {
+    "testEquals": {
       "location": {
         "start": {
-          "line": 161,
+          "line": 160,
           "column": 4
         },
         "end": {
@@ -183,42 +211,14 @@
       "type": "function",
       "access": "public"
     },
-    "testContains": {
-      "location": {
-        "start": {
-          "line": 171,
-          "column": 4
-        },
-        "end": {
-          "line": 181,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testEquals": {
-      "location": {
-        "start": {
-          "line": 184,
-          "column": 4
-        },
-        "end": {
-          "line": 192,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
     "testReplace": {
       "location": {
         "start": {
-          "line": 195,
+          "line": 170,
           "column": 4
         },
         "end": {
-          "line": 200,
+          "line": 175,
           "column": 5
         }
       },
@@ -228,11 +228,11 @@
     "testToNativeArray": {
       "location": {
         "start": {
-          "line": 203,
+          "line": 177,
           "column": 4
         },
         "end": {
-          "line": 210,
+          "line": 184,
           "column": 5
         }
       },
@@ -327,6 +327,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -351,6 +352,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

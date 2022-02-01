@@ -16,7 +16,7 @@
         "column": 0
       },
       "end": {
-        "line": 1105,
+        "line": 1169,
         "column": 3
       }
     },
@@ -40,11 +40,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 34,
+          "line": 31,
           "column": 5
         }
       },
@@ -54,11 +54,11 @@
     "setUpDoubleRequest": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 57,
+          "line": 58,
           "column": 5
         }
       },
@@ -68,11 +68,11 @@
     "setUpResource": {
       "location": {
         "start": {
-          "line": 59,
+          "line": 60,
           "column": 4
         },
         "end": {
-          "line": 66,
+          "line": 67,
           "column": 5
         }
       },
@@ -82,11 +82,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 69,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 75,
           "column": 5
         }
       },
@@ -96,11 +96,11 @@
     "test: configure request receives pre-configured but unsent request": {
       "location": {
         "start": {
-          "line": 80,
+          "line": 81,
           "column": 4
         },
         "end": {
-          "line": 91,
+          "line": 94,
           "column": 5
         }
       },
@@ -111,11 +111,11 @@
     "test: configure request receives invocation details": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 96,
           "column": 4
         },
         "end": {
-          "line": 109,
+          "line": 115,
           "column": 5
         }
       },
@@ -125,11 +125,11 @@
     "test: map action": {
       "location": {
         "start": {
-          "line": 115,
+          "line": 121,
           "column": 4
         },
         "end": {
-          "line": 123,
+          "line": 129,
           "column": 5
         }
       },
@@ -140,11 +140,11 @@
     "test: map action when base URL": {
       "location": {
         "start": {
-          "line": 125,
+          "line": 131,
           "column": 4
         },
         "end": {
-          "line": 133,
+          "line": 139,
           "column": 5
         }
       },
@@ -154,11 +154,11 @@
     "test: map existing action": {
       "location": {
         "start": {
-          "line": 135,
+          "line": 141,
           "column": 4
         },
         "end": {
-          "line": 143,
+          "line": 149,
           "column": 5
         }
       },
@@ -168,11 +168,11 @@
     "test: map action creates method": {
       "location": {
         "start": {
-          "line": 145,
+          "line": 151,
           "column": 4
         },
         "end": {
-          "line": 150,
+          "line": 156,
           "column": 5
         }
       },
@@ -182,11 +182,11 @@
     "test: map action throws when existing method": {
       "location": {
         "start": {
-          "line": 152,
+          "line": 158,
           "column": 4
         },
         "end": {
-          "line": 164,
+          "line": 170,
           "column": 5
         }
       },
@@ -196,11 +196,11 @@
     "test: map action does not throw when existing method is empty": {
       "location": {
         "start": {
-          "line": 166,
+          "line": 172,
           "column": 4
         },
         "end": {
-          "line": 176,
+          "line": 182,
           "column": 5
         }
       },
@@ -210,21 +210,7 @@
     "test: dynamically created action forwards arguments": {
       "location": {
         "start": {
-          "line": 178,
-          "column": 4
-        },
-        "end": {
-          "line": 186,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "test: dynamically created action returns what invoke returns": {
-      "location": {
-        "start": {
-          "line": 188,
+          "line": 184,
           "column": 4
         },
         "end": {
@@ -235,14 +221,28 @@
       "type": "function",
       "access": "public"
     },
-    "test: map actions from description": {
+    "test: dynamically created action returns what invoke returns": {
       "location": {
         "start": {
           "line": 194,
           "column": 4
         },
         "end": {
-          "line": 219,
+          "line": 198,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "test: map actions from description": {
+      "location": {
+        "start": {
+          "line": 200,
+          "column": 4
+        },
+        "end": {
+          "line": 224,
           "column": 5
         }
       },
@@ -252,11 +252,11 @@
     "test: map action from description throws with non-object": {
       "location": {
         "start": {
-          "line": 221,
+          "line": 226,
           "column": 4
         },
         "end": {
-          "line": 227,
+          "line": 232,
           "column": 5
         }
       },
@@ -266,11 +266,11 @@
     "test: map action from description throws with incomplete route": {
       "location": {
         "start": {
-          "line": 229,
+          "line": 234,
           "column": 4
         },
         "end": {
-          "line": 240,
+          "line": 249,
           "column": 5
         }
       },
@@ -280,11 +280,11 @@
     "test: invoke action generically": {
       "location": {
         "start": {
-          "line": 246,
+          "line": 255,
           "column": 4
         },
         "end": {
-          "line": 254,
+          "line": 263,
           "column": 5
         }
       },
@@ -293,20 +293,6 @@
       "access": "public"
     },
     "test: invoke action": {
-      "location": {
-        "start": {
-          "line": 256,
-          "column": 4
-        },
-        "end": {
-          "line": 263,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "test: invoke action returns id of request": {
       "location": {
         "start": {
           "line": 265,
@@ -320,14 +306,28 @@
       "type": "function",
       "access": "public"
     },
-    "test: invoke action while other is in progress": {
+    "test: invoke action returns id of request": {
       "location": {
         "start": {
           "line": 274,
           "column": 4
         },
         "end": {
-          "line": 288,
+          "line": 281,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "test: invoke action while other is in progress": {
+      "location": {
+        "start": {
+          "line": 283,
+          "column": 4
+        },
+        "end": {
+          "line": 298,
           "column": 5
         }
       },
@@ -337,11 +337,11 @@
     "test: invoke same action handles multiple requests": {
       "location": {
         "start": {
-          "line": 290,
+          "line": 300,
           "column": 4
         },
         "end": {
-          "line": 309,
+          "line": 320,
           "column": 5
         }
       },
@@ -351,11 +351,11 @@
     "test: invoke action with positional params": {
       "location": {
         "start": {
-          "line": 311,
+          "line": 322,
           "column": 4
         },
         "end": {
-          "line": 319,
+          "line": 330,
           "column": 5
         }
       },
@@ -365,11 +365,11 @@
     "test: invoke action with positional params that evaluate to false": {
       "location": {
         "start": {
-          "line": 321,
+          "line": 332,
           "column": 4
         },
         "end": {
-          "line": 329,
+          "line": 340,
           "column": 5
         }
       },
@@ -379,11 +379,11 @@
     "test: invoke action with non-string params": {
       "location": {
         "start": {
-          "line": 331,
+          "line": 342,
           "column": 4
         },
         "end": {
-          "line": 339,
+          "line": 350,
           "column": 5
         }
       },
@@ -393,11 +393,11 @@
     "test: invoke action with params and data": {
       "location": {
         "start": {
-          "line": 341,
+          "line": 352,
           "column": 4
         },
         "end": {
-          "line": 355,
+          "line": 366,
           "column": 5
         }
       },
@@ -407,11 +407,11 @@
     "test: invoke action with multiple positional params": {
       "location": {
         "start": {
-          "line": 357,
+          "line": 368,
           "column": 4
         },
         "end": {
-          "line": 365,
+          "line": 376,
           "column": 5
         }
       },
@@ -421,11 +421,11 @@
     "test: invoke action with positional params in query": {
       "location": {
         "start": {
-          "line": 367,
+          "line": 378,
           "column": 4
         },
         "end": {
-          "line": 375,
+          "line": 386,
           "column": 5
         }
       },
@@ -435,11 +435,11 @@
     "test: invoke action with undefined params": {
       "location": {
         "start": {
-          "line": 377,
+          "line": 388,
           "column": 4
         },
         "end": {
-          "line": 383,
+          "line": 394,
           "column": 5
         }
       },
@@ -449,11 +449,11 @@
     "test: invoke action with null params": {
       "location": {
         "start": {
-          "line": 385,
+          "line": 396,
           "column": 4
         },
         "end": {
-          "line": 391,
+          "line": 402,
           "column": 5
         }
       },
@@ -463,11 +463,11 @@
     "test: invoke action when content type json": {
       "location": {
         "start": {
-          "line": 393,
+          "line": 404,
           "column": 4
         },
         "end": {
-          "line": 411,
+          "line": 422,
           "column": 5
         }
       },
@@ -477,11 +477,11 @@
     "test: invoke action when content type json and get": {
       "location": {
         "start": {
-          "line": 413,
+          "line": 424,
           "column": 4
         },
         "end": {
-          "line": 425,
+          "line": 436,
           "column": 5
         }
       },
@@ -491,11 +491,11 @@
     "test: invoke action for url with port": {
       "location": {
         "start": {
-          "line": 427,
+          "line": 438,
           "column": 4
         },
         "end": {
-          "line": 435,
+          "line": 446,
           "column": 5
         }
       },
@@ -505,11 +505,11 @@
     "test: invoke action for relative url": {
       "location": {
         "start": {
-          "line": 437,
+          "line": 448,
           "column": 4
         },
         "end": {
-          "line": 444,
+          "line": 455,
           "column": 5
         }
       },
@@ -519,11 +519,11 @@
     "test: invoke action for relative url with dots": {
       "location": {
         "start": {
-          "line": 446,
+          "line": 457,
           "column": 4
         },
         "end": {
-          "line": 453,
+          "line": 464,
           "column": 5
         }
       },
@@ -533,11 +533,11 @@
     "test: invoke action for route with check": {
       "location": {
         "start": {
-          "line": 455,
+          "line": 466,
           "column": 4
         },
         "end": {
-          "line": 462,
+          "line": 473,
           "column": 5
         }
       },
@@ -547,11 +547,11 @@
     "test: invoke action fills in empty string when missing param and no default": {
       "location": {
         "start": {
-          "line": 464,
+          "line": 475,
           "column": 4
         },
         "end": {
-          "line": 471,
+          "line": 482,
           "column": 5
         }
       },
@@ -561,11 +561,11 @@
     "test: invoke action fills in default when missing param": {
       "location": {
         "start": {
-          "line": 473,
+          "line": 484,
           "column": 4
         },
         "end": {
-          "line": 480,
+          "line": 491,
           "column": 5
         }
       },
@@ -575,11 +575,11 @@
     "test: invoke action throws when missing required positional param": {
       "location": {
         "start": {
-          "line": 482,
+          "line": 493,
           "column": 4
         },
         "end": {
-          "line": 490,
+          "line": 508,
           "column": 5
         }
       },
@@ -589,11 +589,11 @@
     "test: invoke action throws when missing required request param": {
       "location": {
         "start": {
-          "line": 492,
+          "line": 510,
           "column": 4
         },
         "end": {
-          "line": 500,
+          "line": 525,
           "column": 5
         }
       },
@@ -603,11 +603,11 @@
     "test: invoke action throws when param not match check": {
       "location": {
         "start": {
-          "line": 502,
+          "line": 527,
           "column": 4
         },
         "end": {
-          "line": 509,
+          "line": 538,
           "column": 5
         }
       },
@@ -617,11 +617,11 @@
     "test: invoke action ignores invalid check in production": {
       "location": {
         "start": {
-          "line": 511,
+          "line": 540,
           "column": 4
         },
         "end": {
-          "line": 524,
+          "line": 553,
           "column": 5
         }
       },
@@ -631,11 +631,11 @@
     "test: abort action": {
       "location": {
         "start": {
-          "line": 530,
+          "line": 559,
           "column": 4
         },
         "end": {
-          "line": 538,
+          "line": 567,
           "column": 5
         }
       },
@@ -646,11 +646,11 @@
     "test: abort action when multiple requests": {
       "location": {
         "start": {
-          "line": 540,
+          "line": 569,
           "column": 4
         },
         "end": {
-          "line": 554,
+          "line": 584,
           "column": 5
         }
       },
@@ -660,11 +660,11 @@
     "test: abort by action id": {
       "location": {
         "start": {
-          "line": 556,
+          "line": 586,
           "column": 4
         },
         "end": {
-          "line": 566,
+          "line": 596,
           "column": 5
         }
       },
@@ -674,11 +674,11 @@
     "test: refresh action": {
       "location": {
         "start": {
-          "line": 572,
+          "line": 602,
           "column": 4
         },
         "end": {
-          "line": 581,
+          "line": 611,
           "column": 5
         }
       },
@@ -689,11 +689,11 @@
     "test: refresh action replaying previous params": {
       "location": {
         "start": {
-          "line": 583,
+          "line": 613,
           "column": 4
         },
         "end": {
-          "line": 593,
+          "line": 623,
           "column": 5
         }
       },
@@ -703,11 +703,11 @@
     "test: poll action": {
       "location": {
         "start": {
-          "line": 595,
+          "line": 625,
           "column": 4
         },
         "end": {
-          "line": 608,
+          "line": 638,
           "column": 5
         }
       },
@@ -717,49 +717,7 @@
     "test: not poll action when no response received yet": {
       "location": {
         "start": {
-          "line": 610,
-          "column": 4
-        },
-        "end": {
-          "line": 621,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "test: poll action immediately": {
-      "location": {
-        "start": {
-          "line": 623,
-          "column": 4
-        },
-        "end": {
-          "line": 629,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "test: poll action sets initial params": {
-      "location": {
-        "start": {
-          "line": 631,
-          "column": 4
-        },
-        "end": {
-          "line": 639,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "test: poll action replaying previous params": {
-      "location": {
-        "start": {
-          "line": 641,
+          "line": 640,
           "column": 4
         },
         "end": {
@@ -770,14 +728,56 @@
       "type": "function",
       "access": "public"
     },
-    "test: poll action repeatedly ends previous timer": {
+    "test: poll action immediately": {
       "location": {
         "start": {
           "line": 653,
           "column": 4
         },
         "end": {
-          "line": 670,
+          "line": 659,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "test: poll action sets initial params": {
+      "location": {
+        "start": {
+          "line": 661,
+          "column": 4
+        },
+        "end": {
+          "line": 669,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "test: poll action replaying previous params": {
+      "location": {
+        "start": {
+          "line": 671,
+          "column": 4
+        },
+        "end": {
+          "line": 681,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "test: poll action repeatedly ends previous timer": {
+      "location": {
+        "start": {
+          "line": 683,
+          "column": 4
+        },
+        "end": {
+          "line": 700,
           "column": 5
         }
       },
@@ -787,11 +787,11 @@
     "test: poll many actions": {
       "location": {
         "start": {
-          "line": 672,
+          "line": 702,
           "column": 4
         },
         "end": {
-          "line": 696,
+          "line": 726,
           "column": 5
         }
       },
@@ -801,11 +801,11 @@
     "test: end poll action": {
       "location": {
         "start": {
-          "line": 698,
+          "line": 728,
           "column": 4
         },
         "end": {
-          "line": 716,
+          "line": 746,
           "column": 5
         }
       },
@@ -815,11 +815,11 @@
     "test: end poll action does not end polling of other action": {
       "location": {
         "start": {
-          "line": 718,
+          "line": 748,
           "column": 4
         },
         "end": {
-          "line": 735,
+          "line": 765,
           "column": 5
         }
       },
@@ -829,11 +829,11 @@
     "test: restart poll action": {
       "location": {
         "start": {
-          "line": 737,
+          "line": 767,
           "column": 4
         },
         "end": {
-          "line": 753,
+          "line": 783,
           "column": 5
         }
       },
@@ -843,11 +843,11 @@
     "test: long poll action": {
       "location": {
         "start": {
-          "line": 755,
+          "line": 785,
           "column": 4
         },
         "end": {
-          "line": 779,
+          "line": 814,
           "column": 5
         }
       },
@@ -857,11 +857,11 @@
     "test: throttle long poll": {
       "location": {
         "start": {
-          "line": 781,
+          "line": 816,
           "column": 4
         },
         "end": {
-          "line": 803,
+          "line": 839,
           "column": 5
         }
       },
@@ -871,11 +871,11 @@
     "test: not throttle long poll when not received within limit": {
       "location": {
         "start": {
-          "line": 805,
+          "line": 841,
           "column": 4
         },
         "end": {
-          "line": 832,
+          "line": 868,
           "column": 5
         }
       },
@@ -885,11 +885,11 @@
     "test: not throttle long poll when not received subsequently": {
       "location": {
         "start": {
-          "line": 834,
+          "line": 870,
           "column": 4
         },
         "end": {
-          "line": 866,
+          "line": 902,
           "column": 5
         }
       },
@@ -899,11 +899,11 @@
     "test: end long poll action": {
       "location": {
         "start": {
-          "line": 868,
+          "line": 904,
           "column": 4
         },
         "end": {
-          "line": 892,
+          "line": 928,
           "column": 5
         }
       },
@@ -913,11 +913,11 @@
     "test: fire actionSuccess": {
       "location": {
         "start": {
-          "line": 898,
+          "line": 934,
           "column": 4
         },
         "end": {
-          "line": 911,
+          "line": 952,
           "column": 5
         }
       },
@@ -928,11 +928,11 @@
     "test: fire success": {
       "location": {
         "start": {
-          "line": 913,
+          "line": 954,
           "column": 4
         },
         "end": {
-          "line": 926,
+          "line": 972,
           "column": 5
         }
       },
@@ -942,11 +942,11 @@
     "test: fire actionError": {
       "location": {
         "start": {
-          "line": 928,
+          "line": 974,
           "column": 4
         },
         "end": {
-          "line": 940,
+          "line": 991,
           "column": 5
         }
       },
@@ -956,11 +956,11 @@
     "test: fire error": {
       "location": {
         "start": {
-          "line": 942,
+          "line": 993,
           "column": 4
         },
         "end": {
-          "line": 954,
+          "line": 1010,
           "column": 5
         }
       },
@@ -970,11 +970,11 @@
     "test: fire started": {
       "location": {
         "start": {
-          "line": 956,
+          "line": 1012,
           "column": 4
         },
         "end": {
-          "line": 975,
+          "line": 1033,
           "column": 5
         }
       },
@@ -984,11 +984,11 @@
     "test: dispose requests": {
       "location": {
         "start": {
-          "line": 981,
+          "line": 1039,
           "column": 4
         },
         "end": {
-          "line": 1000,
+          "line": 1059,
           "column": 5
         }
       },
@@ -999,11 +999,11 @@
     "test: dispose requests of same action": {
       "location": {
         "start": {
-          "line": 1002,
+          "line": 1061,
           "column": 4
         },
         "end": {
-          "line": 1021,
+          "line": 1081,
           "column": 5
         }
       },
@@ -1013,11 +1013,11 @@
     "test: dispose request on loadEnd": {
       "location": {
         "start": {
-          "line": 1023,
+          "line": 1083,
           "column": 4
         },
         "end": {
-          "line": 1039,
+          "line": 1102,
           "column": 5
         }
       },
@@ -1027,11 +1027,11 @@
     "assertSend": {
       "location": {
         "start": {
-          "line": 1041,
+          "line": 1104,
           "column": 4
         },
         "end": {
-          "line": 1050,
+          "line": 1113,
           "column": 5
         }
       },
@@ -1041,11 +1041,11 @@
     "respond": {
       "location": {
         "start": {
-          "line": 1053,
+          "line": 1116,
           "column": 4
         },
         "end": {
-          "line": 1061,
+          "line": 1124,
           "column": 5
         }
       },
@@ -1056,11 +1056,11 @@
     "respondSubsequent": {
       "location": {
         "start": {
-          "line": 1065,
+          "line": 1128,
           "column": 4
         },
         "end": {
-          "line": 1095,
+          "line": 1160,
           "column": 5
         }
       },
@@ -1071,11 +1071,11 @@
     "respondError": {
       "location": {
         "start": {
-          "line": 1098,
+          "line": 1163,
           "column": 4
         },
         "end": {
-          "line": 1102,
+          "line": 1167,
           "column": 5
         }
       },
@@ -2234,6 +2234,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -2258,6 +2259,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

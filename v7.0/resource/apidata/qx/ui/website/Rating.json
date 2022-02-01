@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 295,
+        "line": 277,
         "column": 3
       }
     },
@@ -37,11 +37,11 @@
     "_config": {
       "location": {
         "start": {
-          "line": 81,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 84,
+          "line": 83,
           "column": 5
         }
       },
@@ -59,11 +59,11 @@
     "rating": {
       "location": {
         "start": {
-          "line": 98,
+          "line": 96,
           "column": 4
         },
         "end": {
-          "line": 122,
+          "line": 120,
           "column": 5
         }
       },
@@ -125,26 +125,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 126,
-        "column": 14
+        "line": 123,
+        "column": 2
       },
       "end": {
-        "line": 128,
+        "line": 125,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {
     "changeValue": {
       "location": {
         "start": {
-          "line": 133,
+          "line": 129,
           "column": 4
         },
         "end": {
-          "line": 133,
-          "column": 28
+          "line": 129,
+          "column": 25
         }
       },
       "jsdoc": {
@@ -163,11 +162,11 @@
     "init": {
       "location": {
         "start": {
-          "line": 140,
+          "line": 134,
           "column": 4
         },
         "end": {
-          "line": 158,
+          "line": 152,
           "column": 5
         }
       },
@@ -182,11 +181,11 @@
     "setValue": {
       "location": {
         "start": {
-          "line": 168,
+          "line": 161,
           "column": 4
         },
         "end": {
-          "line": 182,
+          "line": 175,
           "column": 5
         }
       },
@@ -221,11 +220,11 @@
     "getValue": {
       "location": {
         "start": {
-          "line": 191,
+          "line": 183,
           "column": 4
         },
         "end": {
-          "line": 194,
+          "line": 186,
           "column": 5
         }
       },
@@ -251,11 +250,11 @@
     "render": {
       "location": {
         "start": {
-          "line": 198,
+          "line": 189,
           "column": 4
         },
         "end": {
-          "line": 200,
+          "line": 191,
           "column": 5
         }
       },
@@ -270,11 +269,11 @@
     "_updateSymbolLength": {
       "location": {
         "start": {
-          "line": 208,
+          "line": 198,
           "column": 4
         },
         "end": {
-          "line": 231,
+          "line": 220,
           "column": 5
         }
       },
@@ -300,11 +299,11 @@
     "_onTap": {
       "location": {
         "start": {
-          "line": 239,
+          "line": 227,
           "column": 4
         },
         "end": {
-          "line": 242,
+          "line": 230,
           "column": 5
         }
       },
@@ -331,11 +330,11 @@
     "_onFocus": {
       "location": {
         "start": {
-          "line": 249,
+          "line": 236,
           "column": 4
         },
         "end": {
-          "line": 251,
+          "line": 238,
           "column": 5
         }
       },
@@ -362,11 +361,11 @@
     "_onBlur": {
       "location": {
         "start": {
-          "line": 259,
+          "line": 245,
           "column": 4
         },
         "end": {
-          "line": 261,
+          "line": 247,
           "column": 5
         }
       },
@@ -393,11 +392,11 @@
     "_onKeyDown": {
       "location": {
         "start": {
-          "line": 269,
+          "line": 254,
           "column": 4
         },
         "end": {
-          "line": 276,
+          "line": 261,
           "column": 5
         }
       },
@@ -424,11 +423,11 @@
     "dispose": {
       "location": {
         "start": {
-          "line": 280,
+          "line": 264,
           "column": 4
         },
         "end": {
-          "line": 288,
+          "line": 271,
           "column": 5
         }
       },
@@ -445,15 +444,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 292,
-        "column": 10
+        "line": 274,
+        "column": 2
       },
       "end": {
-        "line": 294,
+        "line": 276,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

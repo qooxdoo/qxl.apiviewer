@@ -23,7 +23,7 @@
         "column": 0
       },
       "end": {
-        "line": 598,
+        "line": 545,
         "column": 3
       }
     },
@@ -40,11 +40,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 63,
-        "column": 14
+        "line": 61,
+        "column": 2
       },
       "end": {
-        "line": 79,
+        "line": 78,
         "column": 3
       }
     },
@@ -54,12 +54,12 @@
     "addItem": {
       "location": {
         "start": {
-          "line": 96,
+          "line": 92,
           "column": 4
         },
         "end": {
-          "line": 96,
-          "column": 34
+          "line": 92,
+          "column": 33
         }
       },
       "jsdoc": {
@@ -76,12 +76,12 @@
     "removeItem": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 103,
-          "column": 37
+          "line": 99,
+          "column": 36
         }
       },
       "jsdoc": {
@@ -212,11 +212,11 @@
     "openMode": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 113,
           "column": 4
         },
         "end": {
-          "line": 126,
+          "line": 119,
           "column": 5
         }
       },
@@ -244,11 +244,11 @@
     "root": {
       "location": {
         "start": {
-          "line": 131,
+          "line": 124,
           "column": 4
         },
         "end": {
-          "line": 138,
+          "line": 130,
           "column": 5
         }
       },
@@ -271,11 +271,11 @@
     "hideRoot": {
       "location": {
         "start": {
-          "line": 144,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 149,
+          "line": 140,
           "column": 5
         }
       },
@@ -297,11 +297,11 @@
     "rootOpenClose": {
       "location": {
         "start": {
-          "line": 158,
+          "line": 149,
           "column": 4
         },
         "end": {
-          "line": 163,
+          "line": 153,
           "column": 5
         }
       },
@@ -323,11 +323,11 @@
     "appearance": {
       "location": {
         "start": {
-          "line": 166,
+          "line": 156,
           "column": 4
         },
         "end": {
-          "line": 170,
+          "line": 159,
           "column": 5
         }
       },
@@ -346,11 +346,11 @@
     "focusable": {
       "location": {
         "start": {
-          "line": 173,
+          "line": 162,
           "column": 4
         },
         "end": {
-          "line": 177,
+          "line": 165,
           "column": 5
         }
       },
@@ -566,12 +566,12 @@
     "__content": {
       "location": {
         "start": {
-          "line": 189,
+          "line": 175,
           "column": 4
         },
         "end": {
-          "line": 189,
-          "column": 20
+          "line": 175,
+          "column": 19
         }
       },
       "type": "variable",
@@ -580,12 +580,12 @@
     "SELECTION_MANAGER": {
       "location": {
         "start": {
-          "line": 192,
+          "line": 178,
           "column": 4
         },
         "end": {
-          "line": 192,
-          "column": 61
+          "line": 178,
+          "column": 60
         }
       },
       "jsdoc": {
@@ -608,11 +608,11 @@
     "getChildrenContainer": {
       "location": {
         "start": {
-          "line": 208,
+          "line": 192,
           "column": 4
         },
         "end": {
-          "line": 210,
+          "line": 194,
           "column": 5
         }
       },
@@ -642,11 +642,11 @@
     "_applyRoot": {
       "location": {
         "start": {
-          "line": 214,
+          "line": 197,
           "column": 4
         },
         "end": {
-          "line": 236,
+          "line": 216,
           "column": 5
         }
       },
@@ -660,11 +660,11 @@
     "_applyHideRoot": {
       "location": {
         "start": {
-          "line": 240,
+          "line": 219,
           "column": 4
         },
         "end": {
-          "line": 249,
+          "line": 227,
           "column": 5
         }
       },
@@ -678,11 +678,11 @@
     "_applyRootOpenClose": {
       "location": {
         "start": {
-          "line": 253,
+          "line": 230,
           "column": 4
         },
         "end": {
-          "line": 260,
+          "line": 236,
           "column": 5
         }
       },
@@ -696,11 +696,11 @@
     "_getContentPaddingTarget": {
       "location": {
         "start": {
-          "line": 268,
+          "line": 243,
           "column": 4
         },
         "end": {
-          "line": 270,
+          "line": 245,
           "column": 5
         }
       },
@@ -726,11 +726,11 @@
     "getNextNodeOf": {
       "location": {
         "start": {
-          "line": 290,
+          "line": 263,
           "column": 4
         },
         "end": {
-          "line": 313,
+          "line": 286,
           "column": 5
         }
       },
@@ -774,11 +774,11 @@
     "getPreviousNodeOf": {
       "location": {
         "start": {
-          "line": 326,
+          "line": 298,
           "column": 4
         },
         "end": {
-          "line": 365,
+          "line": 331,
           "column": 5
         }
       },
@@ -822,11 +822,11 @@
     "getNextSiblingOf": {
       "location": {
         "start": {
-          "line": 378,
+          "line": 343,
           "column": 4
         },
         "end": {
-          "line": 393,
+          "line": 357,
           "column": 5
         }
       },
@@ -861,11 +861,11 @@
     "getPreviousSiblingOf": {
       "location": {
         "start": {
-          "line": 406,
+          "line": 369,
           "column": 4
         },
         "end": {
-          "line": 421,
+          "line": 383,
           "column": 5
         }
       },
@@ -900,11 +900,11 @@
     "getItems": {
       "location": {
         "start": {
-          "line": 433,
+          "line": 394,
           "column": 4
         },
         "end": {
-          "line": 440,
+          "line": 404,
           "column": 5
         }
       },
@@ -950,11 +950,11 @@
     "getChildren": {
       "location": {
         "start": {
-          "line": 448,
+          "line": 411,
           "column": 4
         },
         "end": {
-          "line": 455,
+          "line": 417,
           "column": 5
         }
       },
@@ -980,11 +980,11 @@
     "getTreeItem": {
       "location": {
         "start": {
-          "line": 473,
+          "line": 433,
           "column": 4
         },
         "end": {
-          "line": 489,
+          "line": 447,
           "column": 5
         }
       },
@@ -1019,11 +1019,11 @@
     "_applyOpenMode": {
       "location": {
         "start": {
-          "line": 493,
+          "line": 450,
           "column": 4
         },
         "end": {
-          "line": 506,
+          "line": 462,
           "column": 5
         }
       },
@@ -1037,11 +1037,11 @@
     "_onOpen": {
       "location": {
         "start": {
-          "line": 515,
+          "line": 470,
           "column": 4
         },
         "end": {
-          "line": 524,
+          "line": 478,
           "column": 5
         }
       },
@@ -1068,11 +1068,11 @@
     "_onChangeSelection": {
       "location": {
         "start": {
-          "line": 533,
+          "line": 486,
           "column": 4
         },
         "end": {
-          "line": 544,
+          "line": 497,
           "column": 5
         }
       },
@@ -1099,11 +1099,11 @@
     "_onKeyPress": {
       "location": {
         "start": {
-          "line": 554,
+          "line": 506,
           "column": 4
         },
         "end": {
-          "line": 584,
+          "line": 533,
           "column": 5
         }
       },
@@ -2621,38 +2621,6 @@
       "overriddenFrom": "qx.ui.form.MForm",
       "jsdoc": {}
     },
-    "__onChangeLocale": {
-      "type": "function",
-      "name": "__onChangeLocale",
-      "abstract": false,
-      "mixin": true,
-      "inherited": true,
-      "access": "private",
-      "overriddenFrom": "qx.ui.form.MForm",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Locale change event handler</p>"
-          }
-        ],
-        "@signature": [
-          {
-            "name": "@signature",
-            "body": "function(e)"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "e {Event} the change event",
-            "paramName": "e",
-            "description": " the change event",
-            "type": "Event"
-          }
-        ]
-      }
-    },
     "isValid": {
       "type": "function",
       "name": "isValid",
@@ -3070,6 +3038,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -3094,6 +3063,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -7221,11 +7191,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 595,
-        "column": 13
+        "line": 542,
+        "column": 2
       },
       "end": {
-        "line": 597,
+        "line": 544,
         "column": 3
       }
     },

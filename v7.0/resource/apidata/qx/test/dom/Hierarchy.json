@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 125,
+        "line": 140,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 39,
+          "line": 35,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 42,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 66,
+          "line": 60,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "testIsRendered": {
       "location": {
         "start": {
-          "line": 69,
+          "line": 62,
           "column": 4
         },
         "end": {
-          "line": 75,
+          "line": 69,
           "column": 5
         }
       },
@@ -66,7 +66,7 @@
     "testIsRenderedIframe": {
       "location": {
         "start": {
-          "line": 78,
+          "line": 71,
           "column": 4
         },
         "end": {
@@ -80,11 +80,11 @@
     "testContains": {
       "location": {
         "start": {
-          "line": 96,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 108,
+          "line": 115,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testGetCommonParent": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 117,
           "column": 4
         },
         "end": {
-          "line": 123,
+          "line": 138,
           "column": 5
         }
       },
@@ -193,6 +193,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -217,6 +218,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

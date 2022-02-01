@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 134,
+        "line": 121,
         "column": 3
       }
     },
@@ -33,26 +33,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 30,
-        "column": 14
+        "line": 28,
+        "column": 2
       },
       "end": {
-        "line": 45,
+        "line": 41,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {
     "partLoaded": {
       "location": {
         "start": {
-          "line": 54,
+          "line": 48,
           "column": 4
         },
         "end": {
-          "line": 54,
-          "column": 39
+          "line": 48,
+          "column": 36
         }
       },
       "jsdoc": {
@@ -69,12 +68,12 @@
     "partLoadingError": {
       "location": {
         "start": {
-          "line": 61,
+          "line": 55,
           "column": 4
         },
         "end": {
-          "line": 61,
-          "column": 45
+          "line": 55,
+          "column": 42
         }
       },
       "jsdoc": {
@@ -93,11 +92,11 @@
     "require": {
       "location": {
         "start": {
-          "line": 79,
+          "line": 71,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 73,
           "column": 5
         }
       },
@@ -142,11 +141,11 @@
     "require": {
       "location": {
         "start": {
-          "line": 98,
+          "line": 88,
           "column": 4
         },
         "end": {
-          "line": 100,
+          "line": 90,
           "column": 5
         }
       },
@@ -195,11 +194,11 @@
     "getPart": {
       "location": {
         "start": {
-          "line": 110,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 112,
+          "line": 101,
           "column": 5
         }
       },
@@ -234,11 +233,11 @@
     "hasPart": {
       "location": {
         "start": {
-          "line": 121,
+          "line": 109,
           "column": 4
         },
         "end": {
-          "line": 123,
+          "line": 111,
           "column": 5
         }
       },
@@ -273,11 +272,11 @@
     "getParts": {
       "location": {
         "start": {
-          "line": 130,
+          "line": 117,
           "column": 4
         },
         "end": {
-          "line": 132,
+          "line": 119,
           "column": 5
         }
       },
@@ -388,6 +387,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -412,6 +412,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

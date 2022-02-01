@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 220,
+        "line": 196,
         "column": 3
       }
     },
@@ -32,11 +32,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 54,
-        "column": 14
+        "line": 51,
+        "column": 2
       },
       "end": {
-        "line": 61,
+        "line": 57,
         "column": 3
       }
     },
@@ -62,11 +62,11 @@
     "html": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 72,
           "column": 5
         }
       },
@@ -89,11 +89,11 @@
     "cssClass": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 95,
+          "line": 84,
           "column": 5
         }
       },
@@ -115,11 +115,11 @@
     "selectable": {
       "location": {
         "start": {
-          "line": 99,
+          "line": 87,
           "column": 4
         },
         "end": {
-          "line": 103,
+          "line": 90,
           "column": 5
         }
       },
@@ -137,11 +137,11 @@
     "focusable": {
       "location": {
         "start": {
-          "line": 107,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 111,
+          "line": 96,
           "column": 5
         }
       },
@@ -209,11 +209,11 @@
     "getFocusElement": {
       "location": {
         "start": {
-          "line": 131,
+          "line": 112,
           "column": 4
         },
         "end": {
-          "line": 133,
+          "line": 114,
           "column": 5
         }
       },
@@ -228,11 +228,11 @@
     "_applyHtml": {
       "location": {
         "start": {
-          "line": 145,
+          "line": 123,
           "column": 4
         },
         "end": {
-          "line": 157,
+          "line": 135,
           "column": 5
         }
       },
@@ -246,11 +246,11 @@
     "_applyCssClass": {
       "location": {
         "start": {
-          "line": 161,
+          "line": 138,
           "column": 4
         },
         "end": {
-          "line": 164,
+          "line": 141,
           "column": 5
         }
       },
@@ -264,11 +264,11 @@
     "_applySelectable": {
       "location": {
         "start": {
-          "line": 168,
+          "line": 144,
           "column": 4
         },
         "end": {
-          "line": 179,
+          "line": 156,
           "column": 5
         }
       },
@@ -283,11 +283,11 @@
     "_applyFont": {
       "location": {
         "start": {
-          "line": 189,
+          "line": 165,
           "column": 4
         },
         "end": {
-          "line": 199,
+          "line": 176,
           "column": 5
         }
       },
@@ -302,11 +302,11 @@
     "_applyTextColor": {
       "location": {
         "start": {
-          "line": 211,
+          "line": 185,
           "column": 4
         },
         "end": {
-          "line": 218,
+          "line": 194,
           "column": 5
         }
       },
@@ -608,6 +608,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -632,6 +633,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 580,
+        "line": 526,
         "column": 3
       }
     },
@@ -56,25 +56,24 @@
   "construct": {
     "location": {
       "start": {
-        "line": 36,
-        "column": 14
+        "line": 34,
+        "column": 2
       },
       "end": {
-        "line": 41,
+        "line": 38,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "properties": {
     "parent": {
       "location": {
         "start": {
-          "line": 49,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 53,
+          "line": 47,
           "column": 5
         }
       },
@@ -97,12 +96,12 @@
     "__children": {
       "location": {
         "start": {
-          "line": 59,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 59,
-          "column": 21
+          "line": 51,
+          "column": 20
         }
       },
       "type": "variable",
@@ -111,12 +110,12 @@
     "__childrenContainer": {
       "location": {
         "start": {
-          "line": 60,
+          "line": 52,
           "column": 4
         },
         "end": {
-          "line": 60,
-          "column": 30
+          "line": 52,
+          "column": 29
         }
       },
       "type": "variable",
@@ -125,11 +124,11 @@
     "getTree": {
       "location": {
         "start": {
-          "line": 69,
+          "line": 60,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 73,
           "column": 5
         }
       },
@@ -155,11 +154,11 @@
     "_applyOpen": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 76,
           "column": 4
         },
         "end": {
-          "line": 92,
+          "line": 84,
           "column": 5
         }
       },
@@ -174,11 +173,11 @@
     "_shouldShowOpenSymbol": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 126,
+          "line": 113,
           "column": 5
         }
       },
@@ -193,11 +192,11 @@
     "_updateIndent": {
       "location": {
         "start": {
-          "line": 130,
+          "line": 116,
           "column": 4
         },
         "end": {
-          "line": 137,
+          "line": 122,
           "column": 5
         }
       },
@@ -212,11 +211,11 @@
     "getLevel": {
       "location": {
         "start": {
-          "line": 141,
+          "line": 125,
           "column": 4
         },
         "end": {
-          "line": 167,
+          "line": 149,
           "column": 5
         }
       },
@@ -231,11 +230,11 @@
     "addState": {
       "location": {
         "start": {
-          "line": 177,
+          "line": 158,
           "column": 4
         },
         "end": {
-          "line": 189,
+          "line": 168,
           "column": 5
         }
       },
@@ -250,11 +249,11 @@
     "removeState": {
       "location": {
         "start": {
-          "line": 193,
+          "line": 171,
           "column": 4
         },
         "end": {
-          "line": 205,
+          "line": 181,
           "column": 5
         }
       },
@@ -269,11 +268,11 @@
     "getChildrenContainer": {
       "location": {
         "start": {
-          "line": 220,
+          "line": 195,
           "column": 4
         },
         "end": {
-          "line": 230,
+          "line": 205,
           "column": 5
         }
       },
@@ -303,11 +302,11 @@
     "hasChildrenContainer": {
       "location": {
         "start": {
-          "line": 238,
+          "line": 212,
           "column": 4
         },
         "end": {
-          "line": 240,
+          "line": 214,
           "column": 5
         }
       },
@@ -333,11 +332,11 @@
     "getParentChildrenContainer": {
       "location": {
         "start": {
-          "line": 250,
+          "line": 223,
           "column": 4
         },
         "end": {
-          "line": 259,
+          "line": 231,
           "column": 5
         }
       },
@@ -363,11 +362,11 @@
     "getChildren": {
       "location": {
         "start": {
-          "line": 276,
+          "line": 247,
           "column": 4
         },
         "end": {
-          "line": 278,
+          "line": 249,
           "column": 5
         }
       },
@@ -393,11 +392,11 @@
     "hasChildren": {
       "location": {
         "start": {
-          "line": 282,
+          "line": 252,
           "column": 4
         },
         "end": {
-          "line": 284,
+          "line": 254,
           "column": 5
         }
       },
@@ -412,11 +411,11 @@
     "getItems": {
       "location": {
         "start": {
-          "line": 298,
+          "line": 267,
           "column": 4
         },
         "end": {
-          "line": 325,
+          "line": 290,
           "column": 5
         }
       },
@@ -471,11 +470,11 @@
     "recursiveAddToWidgetQueue": {
       "location": {
         "start": {
-          "line": 334,
+          "line": 298,
           "column": 4
         },
         "end": {
-          "line": 340,
+          "line": 303,
           "column": 5
         }
       },
@@ -499,11 +498,11 @@
     "__addChildrenToParent": {
       "location": {
         "start": {
-          "line": 346,
+          "line": 308,
           "column": 4
         },
         "end": {
-          "line": 351,
+          "line": 315,
           "column": 5
         }
       },
@@ -521,11 +520,11 @@
     "add": {
       "location": {
         "start": {
-          "line": 359,
+          "line": 322,
           "column": 4
         },
         "end": {
-          "line": 397,
+          "line": 356,
           "column": 5
         }
       },
@@ -552,11 +551,11 @@
     "addAt": {
       "location": {
         "start": {
-          "line": 406,
+          "line": 364,
           "column": 4
         },
         "end": {
-          "line": 448,
+          "line": 403,
           "column": 5
         }
       },
@@ -590,11 +589,11 @@
     "addBefore": {
       "location": {
         "start": {
-          "line": 457,
+          "line": 411,
           "column": 4
         },
         "end": {
-          "line": 471,
+          "line": 424,
           "column": 5
         }
       },
@@ -628,11 +627,11 @@
     "addAfter": {
       "location": {
         "start": {
-          "line": 480,
+          "line": 432,
           "column": 4
         },
         "end": {
-          "line": 494,
+          "line": 445,
           "column": 5
         }
       },
@@ -666,11 +665,11 @@
     "addAtBegin": {
       "location": {
         "start": {
-          "line": 502,
+          "line": 452,
           "column": 4
         },
         "end": {
-          "line": 504,
+          "line": 454,
           "column": 5
         }
       },
@@ -697,11 +696,11 @@
     "remove": {
       "location": {
         "start": {
-          "line": 512,
+          "line": 461,
           "column": 4
         },
         "end": {
-          "line": 543,
+          "line": 495,
           "column": 5
         }
       },
@@ -728,11 +727,11 @@
     "removeAt": {
       "location": {
         "start": {
-          "line": 551,
+          "line": 502,
           "column": 4
         },
         "end": {
-          "line": 557,
+          "line": 507,
           "column": 5
         }
       },
@@ -759,11 +758,11 @@
     "removeAll": {
       "location": {
         "start": {
-          "line": 563,
+          "line": 512,
           "column": 4
         },
         "end": {
-          "line": 571,
+          "line": 519,
           "column": 5
         }
       },
@@ -937,6 +936,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -961,6 +961,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -5150,15 +5151,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 575,
-        "column": 13
+        "line": 522,
+        "column": 2
       },
       "end": {
-        "line": 579,
+        "line": 525,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {},
   "descendants": [

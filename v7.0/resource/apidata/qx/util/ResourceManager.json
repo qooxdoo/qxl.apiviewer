@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 459,
+        "line": 458,
         "column": 3
       }
     },
@@ -33,11 +33,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 35,
-        "column": 14
+        "line": 34,
+        "column": 2
       },
       "end": {
-        "line": 38,
+        "line": 36,
         "column": 3
       }
     },
@@ -47,12 +47,12 @@
     "__registry": {
       "location": {
         "start": {
-          "line": 49,
+          "line": 46,
           "column": 4
         },
         "end": {
-          "line": 49,
-          "column": 37
+          "line": 46,
+          "column": 36
         }
       },
       "jsdoc": {
@@ -75,12 +75,12 @@
     "__urlPrefix": {
       "location": {
         "start": {
-          "line": 52,
+          "line": 49,
           "column": 4
         },
         "end": {
-          "line": 52,
-          "column": 20
+          "line": 49,
+          "column": 19
         }
       },
       "jsdoc": {
@@ -105,11 +105,11 @@
     "findHighResolutionSource": {
       "location": {
         "start": {
-          "line": 74,
-          "column": 5
+          "line": 70,
+          "column": 4
         },
         "end": {
-          "line": 108,
+          "line": 114,
           "column": 5
         }
       },
@@ -151,11 +151,11 @@
     "getHighResolutionSource": {
       "location": {
         "start": {
-          "line": 117,
+          "line": 123,
           "column": 4
         },
         "end": {
-          "line": 128,
+          "line": 137,
           "column": 5
         }
       },
@@ -197,11 +197,11 @@
     "getIds": {
       "location": {
         "start": {
-          "line": 136,
+          "line": 145,
           "column": 4
         },
         "end": {
-          "line": 144,
+          "line": 153,
           "column": 5
         }
       },
@@ -233,11 +233,11 @@
     "has": {
       "location": {
         "start": {
-          "line": 152,
+          "line": 161,
           "column": 4
         },
         "end": {
-          "line": 154,
+          "line": 163,
           "column": 5
         }
       },
@@ -272,11 +272,11 @@
     "getData": {
       "location": {
         "start": {
-          "line": 163,
+          "line": 171,
           "column": 4
         },
         "end": {
-          "line": 165,
+          "line": 173,
           "column": 5
         }
       },
@@ -311,11 +311,11 @@
     "getImageWidth": {
       "location": {
         "start": {
-          "line": 176,
+          "line": 183,
           "column": 4
         },
         "end": {
-          "line": 192,
+          "line": 198,
           "column": 5
         }
       },
@@ -350,11 +350,11 @@
     "getImageHeight": {
       "location": {
         "start": {
-          "line": 203,
+          "line": 208,
           "column": 4
         },
         "end": {
-          "line": 214,
+          "line": 218,
           "column": 5
         }
       },
@@ -389,11 +389,11 @@
     "getImageFormat": {
       "location": {
         "start": {
-          "line": 225,
+          "line": 228,
           "column": 4
         },
         "end": {
-          "line": 233,
+          "line": 235,
           "column": 5
         }
       },
@@ -428,11 +428,11 @@
     "getCombinedFormat": {
       "location": {
         "start": {
-          "line": 243,
+          "line": 245,
           "column": 4
         },
         "end": {
-          "line": 255,
+          "line": 259,
           "column": 5
         }
       },
@@ -467,11 +467,11 @@
     "toUri": {
       "location": {
         "start": {
-          "line": 264,
+          "line": 267,
           "column": 4
         },
         "end": {
-          "line": 296,
+          "line": 303,
           "column": 5
         }
       },
@@ -506,11 +506,11 @@
     "toDataUri": {
       "location": {
         "start": {
-          "line": 309,
+          "line": 316,
           "column": 4
         },
         "end": {
-          "line": 323,
+          "line": 333,
           "column": 5
         }
       },
@@ -545,11 +545,11 @@
     "isFontUri": {
       "location": {
         "start": {
-          "line": 331,
+          "line": 341,
           "column": 4
         },
         "end": {
-          "line": 334,
+          "line": 343,
           "column": 5
         }
       },
@@ -584,11 +584,11 @@
     "fromFontUriToCharCode": {
       "location": {
         "start": {
-          "line": 345,
+          "line": 354,
           "column": 4
         },
         "end": {
-          "line": 370,
+          "line": 377,
           "column": 5
         }
       },
@@ -706,6 +706,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -730,6 +731,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -758,15 +760,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 374,
-        "column": 10
+        "line": 380,
+        "column": 2
       },
       "end": {
-        "line": 458,
+        "line": 457,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

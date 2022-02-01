@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 169,
+        "line": 131,
         "column": 3
       }
     },
@@ -37,11 +37,11 @@
     "testToString": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 34,
+          "line": 31,
           "column": 5
         }
       },
@@ -51,11 +51,11 @@
     "testValueOf": {
       "location": {
         "start": {
-          "line": 37,
+          "line": 33,
           "column": 4
         },
         "end": {
-          "line": 40,
+          "line": 36,
           "column": 5
         }
       },
@@ -65,11 +65,11 @@
     "testUpperCase": {
       "location": {
         "start": {
-          "line": 43,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 47,
+          "line": 41,
           "column": 5
         }
       },
@@ -79,11 +79,11 @@
     "testIndexOf": {
       "location": {
         "start": {
-          "line": 50,
+          "line": 43,
           "column": 4
         },
         "end": {
-          "line": 54,
+          "line": 46,
           "column": 5
         }
       },
@@ -93,7 +93,35 @@
     "testPlusOperator": {
       "location": {
         "start": {
-          "line": 57,
+          "line": 48,
+          "column": 4
+        },
+        "end": {
+          "line": 51,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testCharAt": {
+      "location": {
+        "start": {
+          "line": 53,
+          "column": 4
+        },
+        "end": {
+          "line": 56,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testcharCodeAt": {
+      "location": {
+        "start": {
+          "line": 58,
           "column": 4
         },
         "end": {
@@ -104,42 +132,14 @@
       "type": "function",
       "access": "public"
     },
-    "testCharAt": {
-      "location": {
-        "start": {
-          "line": 64,
-          "column": 4
-        },
-        "end": {
-          "line": 68,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testcharCodeAt": {
-      "location": {
-        "start": {
-          "line": 71,
-          "column": 4
-        },
-        "end": {
-          "line": 75,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
     "testlastIndexOf": {
       "location": {
         "start": {
-          "line": 78,
+          "line": 63,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 66,
           "column": 5
         }
       },
@@ -149,11 +149,11 @@
     "testLength": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 68,
           "column": 4
         },
         "end": {
-          "line": 89,
+          "line": 71,
           "column": 5
         }
       },
@@ -163,7 +163,63 @@
     "testLowerCase": {
       "location": {
         "start": {
-          "line": 92,
+          "line": 73,
+          "column": 4
+        },
+        "end": {
+          "line": 76,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testSubstringOneArgument": {
+      "location": {
+        "start": {
+          "line": 78,
+          "column": 4
+        },
+        "end": {
+          "line": 81,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testSubstringTwoArguments": {
+      "location": {
+        "start": {
+          "line": 83,
+          "column": 4
+        },
+        "end": {
+          "line": 86,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testSearchString": {
+      "location": {
+        "start": {
+          "line": 88,
+          "column": 4
+        },
+        "end": {
+          "line": 91,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testSearchRegExp": {
+      "location": {
+        "start": {
+          "line": 93,
           "column": 4
         },
         "end": {
@@ -174,52 +230,38 @@
       "type": "function",
       "access": "public"
     },
-    "testSubstringOneArgument": {
+    "testReplace": {
       "location": {
         "start": {
-          "line": 99,
+          "line": 98,
           "column": 4
         },
         "end": {
+          "line": 101,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testEmptyString": {
+      "location": {
+        "start": {
           "line": 103,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testSubstringTwoArguments": {
-      "location": {
-        "start": {
-          "line": 106,
           "column": 4
         },
         "end": {
-          "line": 110,
+          "line": 109,
           "column": 5
         }
       },
       "type": "function",
       "access": "public"
     },
-    "testSearchString": {
+    "testExtend": {
       "location": {
         "start": {
-          "line": 113,
-          "column": 4
-        },
-        "end": {
-          "line": 117,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testSearchRegExp": {
-      "location": {
-        "start": {
-          "line": 120,
+          "line": 111,
           "column": 4
         },
         "end": {
@@ -230,56 +272,14 @@
       "type": "function",
       "access": "public"
     },
-    "testReplace": {
-      "location": {
-        "start": {
-          "line": 127,
-          "column": 4
-        },
-        "end": {
-          "line": 131,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testEmptyString": {
-      "location": {
-        "start": {
-          "line": 134,
-          "column": 4
-        },
-        "end": {
-          "line": 141,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "testExtend": {
-      "location": {
-        "start": {
-          "line": 144,
-          "column": 4
-        },
-        "end": {
-          "line": 160,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
     "testCodePointAt": {
       "location": {
         "start": {
-          "line": 162,
+          "line": 126,
           "column": 4
         },
         "end": {
-          "line": 166,
+          "line": 129,
           "column": 5
         }
       },
@@ -374,6 +374,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -398,6 +399,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

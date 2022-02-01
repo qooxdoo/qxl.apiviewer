@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 105,
+        "line": 90,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 29,
+          "line": 26,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 34,
+          "line": 30,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "testAddClass": {
       "location": {
         "start": {
-          "line": 37,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 42,
+          "line": 36,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "testAddClasses": {
       "location": {
         "start": {
-          "line": 45,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 51,
+          "line": 43,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "testHasClass": {
       "location": {
         "start": {
-          "line": 54,
+          "line": 45,
           "column": 4
         },
         "end": {
-          "line": 59,
+          "line": 49,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testRemoveClass": {
       "location": {
         "start": {
-          "line": 62,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 69,
+          "line": 57,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "testRemoveClasses": {
       "location": {
         "start": {
-          "line": 72,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 70,
           "column": 5
         }
       },
@@ -122,11 +122,11 @@
     "testToggleClass": {
       "location": {
         "start": {
-          "line": 84,
+          "line": 72,
           "column": 4
         },
         "end": {
-          "line": 93,
+          "line": 80,
           "column": 5
         }
       },
@@ -136,11 +136,11 @@
     "testReplaceClass": {
       "location": {
         "start": {
-          "line": 96,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 103,
+          "line": 88,
           "column": 5
         }
       },
@@ -235,6 +235,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -259,6 +260,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

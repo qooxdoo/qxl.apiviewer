@@ -12,11 +12,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 54,
+        "line": 53,
         "column": 0
       },
       "end": {
-        "line": 141,
+        "line": 127,
         "column": 3
       }
     },
@@ -33,11 +33,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 71,
-        "column": 14
+        "line": 67,
+        "column": 2
       },
       "end": {
-        "line": 78,
+        "line": 73,
         "column": 3
       }
     },
@@ -63,12 +63,12 @@
     "addChildWidget": {
       "location": {
         "start": {
-          "line": 95,
+          "line": 87,
           "column": 4
         },
         "end": {
-          "line": 95,
-          "column": 41
+          "line": 87,
+          "column": 40
         }
       },
       "jsdoc": {
@@ -85,12 +85,12 @@
     "removeChildWidget": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 94,
           "column": 4
         },
         "end": {
-          "line": 103,
-          "column": 44
+          "line": 94,
+          "column": 43
         }
       },
       "jsdoc": {
@@ -109,11 +109,11 @@
     "_afterAddChild": {
       "location": {
         "start": {
-          "line": 117,
+          "line": 105,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 107,
           "column": 5
         }
       },
@@ -124,11 +124,11 @@
     "_afterRemoveChild": {
       "location": {
         "start": {
-          "line": 123,
+          "line": 110,
           "column": 4
         },
         "end": {
-          "line": 125,
+          "line": 114,
           "column": 5
         }
       },
@@ -849,6 +849,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -873,6 +874,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -4399,11 +4401,11 @@
   "defer": {
     "location": {
       "start": {
-        "line": 136,
-        "column": 10
+        "line": 123,
+        "column": 2
       },
       "end": {
-        "line": 140,
+        "line": 126,
         "column": 3
       }
     },

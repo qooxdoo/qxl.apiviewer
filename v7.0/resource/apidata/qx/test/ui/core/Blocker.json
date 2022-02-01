@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 212,
+        "line": 248,
         "column": 3
       }
     },
@@ -24,12 +24,12 @@
     "__blocker": {
       "location": {
         "start": {
-          "line": 24,
+          "line": 22,
           "column": 4
         },
         "end": {
-          "line": 24,
-          "column": 20
+          "line": 22,
+          "column": 19
         }
       },
       "type": "variable",
@@ -38,11 +38,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 32,
+          "line": 30,
           "column": 5
         }
       },
@@ -56,11 +56,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 34,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 38,
+          "line": 36,
           "column": 5
         }
       },
@@ -74,11 +74,11 @@
     "testBlocker": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 53,
+          "line": 50,
           "column": 5
         }
       },
@@ -88,11 +88,11 @@
     "testBlockerThrice": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 52,
           "column": 4
         },
         "end": {
-          "line": 88,
+          "line": 84,
           "column": 5
         }
       },
@@ -102,11 +102,11 @@
     "testForceUnblock": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 86,
           "column": 4
         },
         "end": {
-          "line": 108,
+          "line": 103,
           "column": 5
         }
       },
@@ -116,11 +116,11 @@
     "testBlockedEvent": {
       "location": {
         "start": {
-          "line": 110,
+          "line": 105,
           "column": 4
         },
         "end": {
-          "line": 130,
+          "line": 143,
           "column": 5
         }
       },
@@ -130,11 +130,11 @@
     "testRestoreActiveAndFocusedWidgets": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 145,
           "column": 4
         },
         "end": {
-          "line": 176,
+          "line": 208,
           "column": 5
         }
       },
@@ -144,11 +144,11 @@
     "testRestoreDisposedWidget": {
       "location": {
         "start": {
-          "line": 179,
+          "line": 210,
           "column": 4
         },
         "end": {
-          "line": 210,
+          "line": 246,
           "column": 5
         }
       },
@@ -243,6 +243,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -267,6 +268,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

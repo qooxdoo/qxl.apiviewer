@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 74,
+        "line": 70,
         "column": 3
       }
     },
@@ -24,12 +24,12 @@
     "__arr": {
       "location": {
         "start": {
-          "line": 24,
+          "line": 22,
           "column": 4
         },
         "end": {
-          "line": 24,
-          "column": 16
+          "line": 22,
+          "column": 15
         }
       },
       "type": "variable",
@@ -38,11 +38,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 29,
+          "line": 26,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "testConstruct": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 33,
+          "line": 30,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "testAppend": {
       "location": {
         "start": {
-          "line": 35,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 52,
+          "line": 49,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "testPrepend": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 72,
+          "line": 68,
           "column": 5
         }
       },
@@ -179,6 +179,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -203,6 +204,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

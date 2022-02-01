@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 106,
+        "line": 128,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 28,
+          "line": 25,
           "column": 5
         }
       },
@@ -38,11 +38,11 @@
     "testGlobalErrorHandling": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 41,
+          "line": 39,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "testStartStop": {
       "location": {
         "start": {
-          "line": 47,
+          "line": 44,
           "column": 4
         },
         "end": {
-          "line": 68,
+          "line": 75,
           "column": 5
         }
       },
@@ -74,11 +74,11 @@
     "testNoStartByDefault": {
       "location": {
         "start": {
-          "line": 74,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 86,
+          "line": 99,
           "column": 5
         }
       },
@@ -96,11 +96,11 @@
     "testStaticOnce": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 105,
           "column": 4
         },
         "end": {
-          "line": 104,
+          "line": 126,
           "column": 5
         }
       },
@@ -203,6 +203,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -227,6 +228,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

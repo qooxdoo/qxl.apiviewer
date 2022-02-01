@@ -17,7 +17,7 @@
         "column": 0
       },
       "end": {
-        "line": 416,
+        "line": 408,
         "column": 3
       }
     },
@@ -67,11 +67,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 43,
-        "column": 14
+        "line": 41,
+        "column": 2
       },
       "end": {
-        "line": 56,
+        "line": 53,
         "column": 3
       }
     },
@@ -81,11 +81,11 @@
     "blockToolTip": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 63,
           "column": 4
         },
         "end": {
-          "line": 72,
+          "line": 66,
           "column": 5
         }
       },
@@ -103,11 +103,11 @@
     "label": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 69,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 74,
           "column": 5
         }
       },
@@ -130,11 +130,11 @@
     "menu": {
       "location": {
         "start": {
-          "line": 84,
+          "line": 77,
           "column": 4
         },
         "end": {
-          "line": 91,
+          "line": 83,
           "column": 5
         }
       },
@@ -157,11 +157,11 @@
     "icon": {
       "location": {
         "start": {
-          "line": 94,
+          "line": 86,
           "column": 4
         },
         "end": {
-          "line": 101,
+          "line": 92,
           "column": 5
         }
       },
@@ -185,11 +185,11 @@
     "showCommandLabel": {
       "location": {
         "start": {
-          "line": 104,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 111,
+          "line": 101,
           "column": 5
         }
       },
@@ -232,11 +232,11 @@
     "_createChildControlImpl": {
       "location": {
         "start": {
-          "line": 130,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 165,
+          "line": 151,
           "column": 5
         }
       },
@@ -251,11 +251,11 @@
     "_forwardStates": {
       "location": {
         "start": {
-          "line": 172,
+          "line": 157,
           "column": 4
         },
         "end": {
-          "line": 174,
+          "line": 159,
           "column": 5
         }
       },
@@ -279,11 +279,11 @@
     "getChildrenSizes": {
       "location": {
         "start": {
-          "line": 190,
+          "line": 172,
           "column": 4
         },
         "end": {
-          "line": 219,
+          "line": 211,
           "column": 5
         }
       },
@@ -309,11 +309,11 @@
     "_onTap": {
       "location": {
         "start": {
-          "line": 234,
+          "line": 224,
           "column": 4
         },
         "end": {
-          "line": 248,
+          "line": 241,
           "column": 5
         }
       },
@@ -340,11 +340,11 @@
     "_onKeyPress": {
       "location": {
         "start": {
-          "line": 256,
+          "line": 248,
           "column": 4
         },
         "end": {
-          "line": 258,
+          "line": 250,
           "column": 5
         }
       },
@@ -371,11 +371,11 @@
     "_onChangeCommand": {
       "location": {
         "start": {
-          "line": 266,
+          "line": 257,
           "column": 4
         },
         "end": {
-          "line": 288,
+          "line": 285,
           "column": 5
         }
       },
@@ -402,11 +402,11 @@
     "_onChangeLocale": {
       "location": {
         "start": {
-          "line": 294,
+          "line": 290,
           "column": 4
         },
         "end": {
-          "line": 304,
+          "line": 299,
           "column": 6
         }
       },
@@ -418,17 +418,17 @@
           }
         ]
       },
-      "type": "function",
+      "type": "variable",
       "access": "protected"
     },
     "_applyIcon": {
       "location": {
         "start": {
-          "line": 314,
+          "line": 308,
           "column": 4
         },
         "end": {
-          "line": 321,
+          "line": 314,
           "column": 5
         }
       },
@@ -442,11 +442,11 @@
     "_applyLabel": {
       "location": {
         "start": {
-          "line": 324,
+          "line": 317,
           "column": 4
         },
         "end": {
-          "line": 331,
+          "line": 323,
           "column": 5
         }
       },
@@ -460,11 +460,11 @@
     "_applyMenu": {
       "location": {
         "start": {
-          "line": 334,
+          "line": 326,
           "column": 4
         },
         "end": {
-          "line": 370,
+          "line": 360,
           "column": 5
         }
       },
@@ -478,11 +478,11 @@
     "_onMenuChange": {
       "location": {
         "start": {
-          "line": 377,
+          "line": 367,
           "column": 4
         },
         "end": {
-          "line": 381,
+          "line": 373,
           "column": 5
         }
       },
@@ -509,11 +509,11 @@
     "_applyShowCommandLabel": {
       "location": {
         "start": {
-          "line": 384,
+          "line": 376,
           "column": 4
         },
         "end": {
-          "line": 391,
+          "line": 382,
           "column": 5
         }
       },
@@ -736,6 +736,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -760,6 +761,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -4732,11 +4734,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 401,
-        "column": 13
+        "line": 391,
+        "column": 2
       },
       "end": {
-        "line": 415,
+        "line": 407,
         "column": 3
       }
     },

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 114,
+        "line": 107,
         "column": 3
       }
     },
@@ -43,12 +43,12 @@
     "TYPES": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 31,
           "column": 4
         },
         "end": {
-          "line": 32,
-          "column": 33
+          "line": 31,
+          "column": 32
         }
       },
       "jsdoc": {
@@ -65,12 +65,12 @@
     "BIND_METHODS": {
       "location": {
         "start": {
-          "line": 40,
+          "line": 38,
           "column": 4
         },
         "end": {
-          "line": 40,
-          "column": 66
+          "line": 38,
+          "column": 65
         }
       },
       "jsdoc": {
@@ -93,11 +93,11 @@
     "getOrientation": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 52,
           "column": 4
         },
         "end": {
-          "line": 57,
+          "line": 54,
           "column": 5
         }
       },
@@ -123,11 +123,11 @@
     "isLandscape": {
       "location": {
         "start": {
-          "line": 66,
+          "line": 62,
           "column": 4
         },
         "end": {
-          "line": 68,
+          "line": 64,
           "column": 5
         }
       },
@@ -153,11 +153,11 @@
     "isPortrait": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 72,
           "column": 4
         },
         "end": {
-          "line": 80,
+          "line": 74,
           "column": 5
         }
       },
@@ -183,11 +183,11 @@
     "normalize": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 86,
           "column": 4
         },
         "end": {
-          "line": 108,
+          "line": 101,
           "column": 5
         }
       },
@@ -243,15 +243,14 @@
   "defer": {
     "location": {
       "start": {
-        "line": 111,
-        "column": 10
+        "line": 104,
+        "column": 2
       },
       "end": {
-        "line": 113,
+        "line": 106,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

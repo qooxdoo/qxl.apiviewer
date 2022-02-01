@@ -18,7 +18,7 @@
         "column": 0
       },
       "end": {
-        "line": 332,
+        "line": 300,
         "column": 3
       }
     },
@@ -41,11 +41,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 43,
-        "column": 14
+        "line": 41,
+        "column": 2
       },
       "end": {
-        "line": 55,
+        "line": 52,
         "column": 3
       }
     },
@@ -71,12 +71,12 @@
     "_itemRenderer": {
       "location": {
         "start": {
-          "line": 61,
+          "line": 56,
           "column": 4
         },
         "end": {
-          "line": 61,
-          "column": 24
+          "line": 56,
+          "column": 23
         }
       },
       "jsdoc": {
@@ -99,12 +99,12 @@
     "_groupRenderer": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 59,
           "column": 4
         },
         "end": {
-          "line": 65,
-          "column": 25
+          "line": 59,
+          "column": 24
         }
       },
       "jsdoc": {
@@ -127,7 +127,26 @@
     "getCellWidget": {
       "location": {
         "start": {
-          "line": 76,
+          "line": 68,
+          "column": 4
+        },
+        "end": {
+          "line": 88,
+          "column": 5
+        }
+      },
+      "jsdoc": {},
+      "type": "function",
+      "access": "public",
+      "overriddenFrom": "qx.ui.virtual.core.IWidgetCellProvider",
+      "appearsIn": [
+        "qx.ui.virtual.core.IWidgetCellProvider"
+      ]
+    },
+    "poolCellWidget": {
+      "location": {
+        "start": {
+          "line": 91,
           "column": 4
         },
         "end": {
@@ -143,33 +162,14 @@
         "qx.ui.virtual.core.IWidgetCellProvider"
       ]
     },
-    "poolCellWidget": {
-      "location": {
-        "start": {
-          "line": 104,
-          "column": 4
-        },
-        "end": {
-          "line": 113,
-          "column": 5
-        }
-      },
-      "jsdoc": {},
-      "type": "function",
-      "access": "public",
-      "overriddenFrom": "qx.ui.virtual.core.IWidgetCellProvider",
-      "appearsIn": [
-        "qx.ui.virtual.core.IWidgetCellProvider"
-      ]
-    },
     "createLayer": {
       "location": {
         "start": {
-          "line": 117,
+          "line": 103,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 105,
           "column": 5
         }
       },
@@ -184,11 +184,11 @@
     "createItemRenderer": {
       "location": {
         "start": {
-          "line": 123,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 139,
+          "line": 126,
           "column": 5
         }
       },
@@ -203,11 +203,11 @@
     "createGroupRenderer": {
       "location": {
         "start": {
-          "line": 143,
+          "line": 129,
           "column": 4
         },
         "end": {
-          "line": 163,
+          "line": 150,
           "column": 5
         }
       },
@@ -222,11 +222,11 @@
     "styleSelectabled": {
       "location": {
         "start": {
-          "line": 167,
+          "line": 153,
           "column": 4
         },
         "end": {
-          "line": 171,
+          "line": 156,
           "column": 5
         }
       },
@@ -241,11 +241,11 @@
     "styleUnselectabled": {
       "location": {
         "start": {
-          "line": 175,
+          "line": 159,
           "column": 4
         },
         "end": {
-          "line": 179,
+          "line": 162,
           "column": 5
         }
       },
@@ -260,11 +260,11 @@
     "isSelectable": {
       "location": {
         "start": {
-          "line": 183,
+          "line": 165,
           "column": 4
         },
         "end": {
-          "line": 196,
+          "line": 177,
           "column": 5
         }
       },
@@ -279,11 +279,11 @@
     "_styleSelectabled": {
       "location": {
         "start": {
-          "line": 211,
+          "line": 190,
           "column": 4
         },
         "end": {
-          "line": 213,
+          "line": 192,
           "column": 5
         }
       },
@@ -310,11 +310,11 @@
     "_styleUnselectabled": {
       "location": {
         "start": {
-          "line": 221,
+          "line": 199,
           "column": 4
         },
         "end": {
-          "line": 223,
+          "line": 201,
           "column": 5
         }
       },
@@ -341,11 +341,11 @@
     "_onPool": {
       "location": {
         "start": {
-          "line": 232,
+          "line": 209,
           "column": 4
         },
         "end": {
-          "line": 239,
+          "line": 215,
           "column": 5
         }
       },
@@ -372,11 +372,11 @@
     "_onItemCreated": {
       "location": {
         "start": {
-          "line": 254,
+          "line": 228,
           "column": 4
         },
         "end": {
-          "line": 258,
+          "line": 231,
           "column": 5
         }
       },
@@ -403,11 +403,11 @@
     "_onGroupItemCreated": {
       "location": {
         "start": {
-          "line": 266,
+          "line": 238,
           "column": 4
         },
         "end": {
-          "line": 270,
+          "line": 241,
           "column": 5
         }
       },
@@ -434,11 +434,11 @@
     "_onChangeDelegate": {
       "location": {
         "start": {
-          "line": 278,
+          "line": 248,
           "column": 4
         },
         "end": {
-          "line": 288,
+          "line": 262,
           "column": 5
         }
       },
@@ -465,11 +465,11 @@
     "__getWidgetFrom": {
       "location": {
         "start": {
-          "line": 304,
+          "line": 276,
           "column": 4
         },
         "end": {
-          "line": 306,
+          "line": 278,
           "column": 5
         }
       },
@@ -504,11 +504,11 @@
     "__updateStates": {
       "location": {
         "start": {
-          "line": 315,
+          "line": 286,
           "column": 4
         },
         "end": {
-          "line": 322,
+          "line": 292,
           "column": 5
         }
       },
@@ -1547,6 +1547,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -1571,6 +1572,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -1599,15 +1601,14 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 326,
-        "column": 13
+        "line": 295,
+        "column": 2
       },
       "end": {
-        "line": 331,
+        "line": 299,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "descendants": []
 }

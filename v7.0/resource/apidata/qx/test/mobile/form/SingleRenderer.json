@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 89,
+        "line": 93,
         "column": 3
       }
     },
@@ -24,12 +24,12 @@
     "__form": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 25,
-          "column": 17
+          "line": 23,
+          "column": 16
         }
       },
       "type": "variable",
@@ -38,12 +38,12 @@
     "__b": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 26,
-          "column": 14
+          "line": 24,
+          "column": 13
         }
       },
       "type": "variable",
@@ -52,12 +52,12 @@
     "__t": {
       "location": {
         "start": {
-          "line": 27,
+          "line": 25,
           "column": 4
         },
         "end": {
-          "line": 27,
-          "column": 14
+          "line": 25,
+          "column": 13
         }
       },
       "type": "variable",
@@ -66,12 +66,12 @@
     "__s": {
       "location": {
         "start": {
-          "line": 28,
+          "line": 26,
           "column": 4
         },
         "end": {
-          "line": 28,
-          "column": 14
+          "line": 26,
+          "column": 13
         }
       },
       "type": "variable",
@@ -80,11 +80,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 28,
           "column": 4
         },
         "end": {
-          "line": 46,
+          "line": 43,
           "column": 5
         }
       },
@@ -98,11 +98,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 49,
+          "line": 45,
           "column": 4
         },
         "end": {
-          "line": 56,
+          "line": 52,
           "column": 5
         }
       },
@@ -116,11 +116,11 @@
     "testShowHideRow": {
       "location": {
         "start": {
-          "line": 59,
+          "line": 54,
           "column": 4
         },
         "end": {
-          "line": 67,
+          "line": 68,
           "column": 5
         }
       },
@@ -134,7 +134,7 @@
           "column": 4
         },
         "end": {
-          "line": 73,
+          "line": 77,
           "column": 5
         }
       },
@@ -144,11 +144,11 @@
     "testButtonRow": {
       "location": {
         "start": {
-          "line": 76,
+          "line": 79,
           "column": 4
         },
         "end": {
-          "line": 80,
+          "line": 85,
           "column": 5
         }
       },
@@ -158,11 +158,11 @@
     "testTwoLinesRow": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 87,
           "column": 4
         },
         "end": {
-          "line": 87,
+          "line": 91,
           "column": 5
         }
       },
@@ -257,6 +257,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -281,6 +282,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

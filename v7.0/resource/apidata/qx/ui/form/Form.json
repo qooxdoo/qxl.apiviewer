@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 458,
+        "line": 439,
         "column": 3
       }
     },
@@ -30,26 +30,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 32,
-        "column": 14
+        "line": 30,
+        "column": 2
       },
       "end": {
-        "line": 41,
+        "line": 38,
         "column": 3
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {
     "change": {
       "location": {
         "start": {
-          "line": 46,
+          "line": 42,
           "column": 4
         },
         "end": {
-          "line": 46,
-          "column": 36
+          "line": 42,
+          "column": 33
         }
       },
       "jsdoc": {
@@ -68,12 +67,12 @@
     "__groups": {
       "location": {
         "start": {
-          "line": 52,
+          "line": 46,
           "column": 4
         },
         "end": {
-          "line": 52,
-          "column": 19
+          "line": 46,
+          "column": 18
         }
       },
       "type": "variable",
@@ -82,12 +81,12 @@
     "_validationManager": {
       "location": {
         "start": {
-          "line": 53,
+          "line": 47,
           "column": 4
         },
         "end": {
-          "line": 53,
-          "column": 29
+          "line": 47,
+          "column": 28
         }
       },
       "type": "variable",
@@ -96,12 +95,12 @@
     "_groupCounter": {
       "location": {
         "start": {
-          "line": 54,
+          "line": 48,
           "column": 4
         },
         "end": {
-          "line": 54,
-          "column": 21
+          "line": 48,
+          "column": 20
         }
       },
       "type": "variable",
@@ -110,12 +109,12 @@
     "_buttons": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 49,
           "column": 4
         },
         "end": {
-          "line": 55,
-          "column": 19
+          "line": 49,
+          "column": 18
         }
       },
       "type": "variable",
@@ -124,12 +123,12 @@
     "_buttonOptions": {
       "location": {
         "start": {
-          "line": 56,
+          "line": 50,
           "column": 4
         },
         "end": {
-          "line": 56,
-          "column": 25
+          "line": 50,
+          "column": 24
         }
       },
       "type": "variable",
@@ -138,12 +137,12 @@
     "_resetter": {
       "location": {
         "start": {
-          "line": 57,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 57,
-          "column": 20
+          "line": 51,
+          "column": 19
         }
       },
       "type": "variable",
@@ -152,11 +151,11 @@
     "add": {
       "location": {
         "start": {
-          "line": 82,
+          "line": 76,
           "column": 4
         },
         "end": {
-          "line": 107,
+          "line": 106,
           "column": 5
         }
       },
@@ -229,11 +228,11 @@
     "addGroupHeader": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 117,
           "column": 4
         },
         "end": {
-          "line": 129,
+          "line": 132,
           "column": 5
         }
       },
@@ -269,11 +268,11 @@
     "addButton": {
       "location": {
         "start": {
-          "line": 141,
+          "line": 143,
           "column": 4
         },
         "end": {
-          "line": 146,
+          "line": 148,
           "column": 5
         }
       },
@@ -309,11 +308,11 @@
     "__isFirstAdd": {
       "location": {
         "start": {
-          "line": 154,
+          "line": 155,
           "column": 4
         },
         "end": {
-          "line": 156,
+          "line": 157,
           "column": 5
         }
       },
@@ -339,11 +338,11 @@
     "remove": {
       "location": {
         "start": {
-          "line": 172,
+          "line": 171,
           "column": 4
         },
         "end": {
-          "line": 196,
+          "line": 195,
           "column": 5
         }
       },
@@ -378,11 +377,11 @@
     "removeGroupHeader": {
       "location": {
         "start": {
-          "line": 207,
+          "line": 205,
           "column": 4
         },
         "end": {
-          "line": 249,
+          "line": 247,
           "column": 5
         }
       },
@@ -417,11 +416,11 @@
     "removeButton": {
       "location": {
         "start": {
-          "line": 258,
+          "line": 255,
           "column": 4
         },
         "end": {
-          "line": 270,
+          "line": 267,
           "column": 5
         }
       },
@@ -456,11 +455,11 @@
     "getItems": {
       "location": {
         "start": {
-          "line": 278,
+          "line": 274,
           "column": 4
         },
         "end": {
-          "line": 290,
+          "line": 286,
           "column": 5
         }
       },
@@ -486,11 +485,11 @@
     "getItem": {
       "location": {
         "start": {
-          "line": 299,
+          "line": 294,
           "column": 4
         },
         "end": {
-          "line": 310,
+          "line": 305,
           "column": 5
         }
       },
@@ -525,11 +524,11 @@
     "reset": {
       "location": {
         "start": {
-          "line": 322,
+          "line": 316,
           "column": 4
         },
         "end": {
-          "line": 325,
+          "line": 319,
           "column": 5
         }
       },
@@ -552,11 +551,11 @@
     "redefineResetter": {
       "location": {
         "start": {
-          "line": 332,
+          "line": 325,
           "column": 4
         },
         "end": {
-          "line": 334,
+          "line": 327,
           "column": 5
         }
       },
@@ -574,11 +573,11 @@
     "redefineResetterItem": {
       "location": {
         "start": {
-          "line": 343,
+          "line": 335,
           "column": 4
         },
         "end": {
-          "line": 345,
+          "line": 337,
           "column": 5
         }
       },
@@ -605,11 +604,11 @@
     "validate": {
       "location": {
         "start": {
-          "line": 361,
+          "line": 351,
           "column": 4
         },
         "end": {
-          "line": 363,
+          "line": 353,
           "column": 5
         }
       },
@@ -635,11 +634,11 @@
     "getValidationManager": {
       "location": {
         "start": {
-          "line": 372,
+          "line": 361,
           "column": 4
         },
         "end": {
-          "line": 374,
+          "line": 363,
           "column": 5
         }
       },
@@ -665,11 +664,11 @@
     "getGroups": {
       "location": {
         "start": {
-          "line": 391,
+          "line": 379,
           "column": 4
         },
         "end": {
-          "line": 393,
+          "line": 381,
           "column": 5
         }
       },
@@ -701,11 +700,11 @@
     "getButtons": {
       "location": {
         "start": {
-          "line": 402,
+          "line": 389,
           "column": 4
         },
         "end": {
-          "line": 404,
+          "line": 391,
           "column": 5
         }
       },
@@ -737,11 +736,11 @@
     "getButtonOptions": {
       "location": {
         "start": {
-          "line": 413,
+          "line": 399,
           "column": 4
         },
         "end": {
-          "line": 415,
+          "line": 401,
           "column": 5
         }
       },
@@ -773,11 +772,11 @@
     "_createValidationManager": {
       "location": {
         "start": {
-          "line": 430,
+          "line": 414,
           "column": 4
         },
         "end": {
-          "line": 432,
+          "line": 416,
           "column": 5
         }
       },
@@ -803,11 +802,11 @@
     "_createResetter": {
       "location": {
         "start": {
-          "line": 440,
+          "line": 423,
           "column": 4
         },
         "end": {
-          "line": 442,
+          "line": 425,
           "column": 5
         }
       },
@@ -918,6 +917,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -942,6 +942,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -970,11 +971,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 451,
-        "column": 13
+        "line": 433,
+        "column": 2
       },
       "end": {
-        "line": 457,
+        "line": 438,
         "column": 3
       }
     },

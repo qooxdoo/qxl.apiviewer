@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 219,
+        "line": 229,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 72,
+          "line": 73,
           "column": 5
         }
       },
@@ -42,7 +42,7 @@
           "column": 4
         },
         "end": {
-          "line": 87,
+          "line": 86,
           "column": 5
         }
       },
@@ -52,11 +52,11 @@
     "logEvent": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 88,
           "column": 4
         },
         "end": {
-          "line": 92,
+          "line": 90,
           "column": 5
         }
       },
@@ -66,11 +66,11 @@
     "onLoseCapture": {
       "location": {
         "start": {
-          "line": 95,
+          "line": 92,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 94,
           "column": 5
         }
       },
@@ -80,11 +80,11 @@
     "fire": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 96,
           "column": 4
         },
         "end": {
-          "line": 104,
+          "line": 102,
           "column": 5
         }
       },
@@ -94,11 +94,11 @@
     "testNoCapture": {
       "location": {
         "start": {
-          "line": 107,
+          "line": 104,
           "column": 4
         },
         "end": {
-          "line": 111,
+          "line": 107,
           "column": 5
         }
       },
@@ -108,11 +108,11 @@
     "testContainerCapture": {
       "location": {
         "start": {
-          "line": 114,
+          "line": 109,
           "column": 4
         },
         "end": {
-          "line": 129,
+          "line": 123,
           "column": 5
         }
       },
@@ -122,7 +122,21 @@
     "testNoContainerCapture": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 125,
+          "column": 4
+        },
+        "end": {
+          "line": 139,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testCaptureBubbling": {
+      "location": {
+        "start": {
+          "line": 141,
           "column": 4
         },
         "end": {
@@ -133,28 +147,14 @@
       "type": "function",
       "access": "public"
     },
-    "testCaptureBubbling": {
-      "location": {
-        "start": {
-          "line": 150,
-          "column": 4
-        },
-        "end": {
-          "line": 157,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
     "testLoseCaptureOnClick": {
       "location": {
         "start": {
-          "line": 160,
+          "line": 149,
           "column": 4
         },
         "end": {
-          "line": 169,
+          "line": 163,
           "column": 5
         }
       },
@@ -164,11 +164,11 @@
     "testLoseCaptureOnWindowBlur": {
       "location": {
         "start": {
-          "line": 172,
+          "line": 165,
           "column": 4
         },
         "end": {
-          "line": 181,
+          "line": 179,
           "column": 5
         }
       },
@@ -178,11 +178,11 @@
     "testLoseCaptureOnWindowFocus": {
       "location": {
         "start": {
-          "line": 184,
+          "line": 181,
           "column": 4
         },
         "end": {
-          "line": 193,
+          "line": 195,
           "column": 5
         }
       },
@@ -192,11 +192,11 @@
     "testLoseCaptureOnWindowScroll": {
       "location": {
         "start": {
-          "line": 196,
+          "line": 197,
           "column": 4
         },
         "end": {
-          "line": 205,
+          "line": 211,
           "column": 5
         }
       },
@@ -206,11 +206,11 @@
     "testLoseCaptureOnCaptureChange": {
       "location": {
         "start": {
-          "line": 208,
+          "line": 213,
           "column": 4
         },
         "end": {
-          "line": 217,
+          "line": 227,
           "column": 5
         }
       },
@@ -305,6 +305,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -329,6 +330,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

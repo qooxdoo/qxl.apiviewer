@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 313,
+        "line": 483,
         "column": 3
       }
     },
@@ -37,12 +37,12 @@
     "nonBubble": {
       "location": {
         "start": {
-          "line": 30,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 30,
-          "column": 39
+          "line": 27,
+          "column": 36
         }
       },
       "name": "nonBubble",
@@ -53,11 +53,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 36,
+          "line": 31,
           "column": 4
         },
         "end": {
-          "line": 55,
+          "line": 49,
           "column": 5
         }
       },
@@ -67,11 +67,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 67,
+          "line": 59,
           "column": 5
         }
       },
@@ -81,11 +81,11 @@
     "testBubbling": {
       "location": {
         "start": {
-          "line": 70,
+          "line": 61,
           "column": 4
         },
         "end": {
-          "line": 98,
+          "line": 133,
           "column": 5
         }
       },
@@ -95,11 +95,11 @@
     "testContext": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 135,
           "column": 4
         },
         "end": {
-          "line": 130,
+          "line": 168,
           "column": 5
         }
       },
@@ -109,11 +109,11 @@
     "testCapture": {
       "location": {
         "start": {
-          "line": 133,
+          "line": 170,
           "column": 4
         },
         "end": {
-          "line": 161,
+          "line": 245,
           "column": 5
         }
       },
@@ -123,11 +123,11 @@
     "_stopPropagation": {
       "location": {
         "start": {
-          "line": 164,
+          "line": 247,
           "column": 4
         },
         "end": {
-          "line": 167,
+          "line": 249,
           "column": 5
         }
       },
@@ -137,11 +137,11 @@
     "testStopPropagation": {
       "location": {
         "start": {
-          "line": 170,
+          "line": 251,
           "column": 4
         },
         "end": {
-          "line": 241,
+          "line": 374,
           "column": 5
         }
       },
@@ -151,11 +151,11 @@
     "_preventDefault": {
       "location": {
         "start": {
-          "line": 244,
+          "line": 376,
           "column": 4
         },
         "end": {
-          "line": 246,
+          "line": 378,
           "column": 5
         }
       },
@@ -165,11 +165,11 @@
     "testPreventDefault": {
       "location": {
         "start": {
-          "line": 249,
+          "line": 380,
           "column": 4
         },
         "end": {
-          "line": 311,
+          "line": 481,
           "column": 5
         }
       },
@@ -264,6 +264,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -288,6 +289,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

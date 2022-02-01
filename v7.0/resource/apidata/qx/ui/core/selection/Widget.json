@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 381,
+        "line": 318,
         "column": 3
       }
     },
@@ -30,11 +30,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 37,
-        "column": 14
+        "line": 34,
+        "column": 2
       },
       "end": {
-        "line": 42,
+        "line": 38,
         "column": 3
       }
     },
@@ -60,12 +60,12 @@
     "__widget": {
       "location": {
         "start": {
-          "line": 57,
+          "line": 47,
           "column": 4
         },
         "end": {
-          "line": 57,
-          "column": 19
+          "line": 47,
+          "column": 18
         }
       },
       "type": "variable",
@@ -74,11 +74,11 @@
     "_isSelectable": {
       "location": {
         "start": {
-          "line": 66,
+          "line": 56,
           "column": 4
         },
         "end": {
-          "line": 68,
+          "line": 60,
           "column": 5
         }
       },
@@ -93,11 +93,11 @@
     "_selectableToHashCode": {
       "location": {
         "start": {
-          "line": 72,
+          "line": 63,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 65,
           "column": 5
         }
       },
@@ -110,6 +110,44 @@
       ]
     },
     "_styleSelectable": {
+      "location": {
+        "start": {
+          "line": 68,
+          "column": 4
+        },
+        "end": {
+          "line": 70,
+          "column": 5
+        }
+      },
+      "jsdoc": {},
+      "type": "function",
+      "access": "protected",
+      "overriddenFrom": "qx.ui.core.selection.Abstract",
+      "appearsIn": [
+        "qx.ui.core.selection.Abstract"
+      ]
+    },
+    "_capture": {
+      "location": {
+        "start": {
+          "line": 73,
+          "column": 4
+        },
+        "end": {
+          "line": 75,
+          "column": 5
+        }
+      },
+      "jsdoc": {},
+      "type": "function",
+      "access": "protected",
+      "overriddenFrom": "qx.ui.core.selection.Abstract",
+      "appearsIn": [
+        "qx.ui.core.selection.Abstract"
+      ]
+    },
+    "_releaseCapture": {
       "location": {
         "start": {
           "line": 78,
@@ -128,52 +166,14 @@
         "qx.ui.core.selection.Abstract"
       ]
     },
-    "_capture": {
-      "location": {
-        "start": {
-          "line": 84,
-          "column": 4
-        },
-        "end": {
-          "line": 86,
-          "column": 5
-        }
-      },
-      "jsdoc": {},
-      "type": "function",
-      "access": "protected",
-      "overriddenFrom": "qx.ui.core.selection.Abstract",
-      "appearsIn": [
-        "qx.ui.core.selection.Abstract"
-      ]
-    },
-    "_releaseCapture": {
-      "location": {
-        "start": {
-          "line": 90,
-          "column": 4
-        },
-        "end": {
-          "line": 92,
-          "column": 5
-        }
-      },
-      "jsdoc": {},
-      "type": "function",
-      "access": "protected",
-      "overriddenFrom": "qx.ui.core.selection.Abstract",
-      "appearsIn": [
-        "qx.ui.core.selection.Abstract"
-      ]
-    },
     "_isItemSelectable": {
       "location": {
         "start": {
-          "line": 102,
+          "line": 89,
           "column": 4
         },
         "end": {
-          "line": 108,
+          "line": 95,
           "column": 5
         }
       },
@@ -208,11 +208,11 @@
     "_getWidget": {
       "location": {
         "start": {
-          "line": 115,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 117,
+          "line": 103,
           "column": 5
         }
       },
@@ -238,11 +238,11 @@
     "_getLocation": {
       "location": {
         "start": {
-          "line": 129,
+          "line": 112,
           "column": 4
         },
         "end": {
-          "line": 133,
+          "line": 115,
           "column": 5
         }
       },
@@ -257,11 +257,11 @@
     "_getDimension": {
       "location": {
         "start": {
-          "line": 137,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 139,
+          "line": 120,
           "column": 5
         }
       },
@@ -276,11 +276,11 @@
     "_getSelectableLocationX": {
       "location": {
         "start": {
-          "line": 143,
+          "line": 123,
           "column": 4
         },
         "end": {
-          "line": 153,
+          "line": 131,
           "column": 5
         }
       },
@@ -295,11 +295,11 @@
     "_getSelectableLocationY": {
       "location": {
         "start": {
-          "line": 157,
+          "line": 134,
           "column": 4
         },
         "end": {
-          "line": 167,
+          "line": 142,
           "column": 5
         }
       },
@@ -314,11 +314,11 @@
     "_getScroll": {
       "location": {
         "start": {
-          "line": 181,
+          "line": 151,
           "column": 4
         },
         "end": {
-          "line": 187,
+          "line": 156,
           "column": 5
         }
       },
@@ -333,11 +333,11 @@
     "_scrollBy": {
       "location": {
         "start": {
-          "line": 191,
+          "line": 159,
           "column": 4
         },
         "end": {
-          "line": 193,
+          "line": 161,
           "column": 5
         }
       },
@@ -352,11 +352,11 @@
     "_scrollItemIntoView": {
       "location": {
         "start": {
-          "line": 197,
+          "line": 164,
           "column": 4
         },
         "end": {
-          "line": 199,
+          "line": 166,
           "column": 5
         }
       },
@@ -371,11 +371,11 @@
     "getSelectables": {
       "location": {
         "start": {
-          "line": 213,
+          "line": 175,
           "column": 4
         },
         "end": {
-          "line": 237,
+          "line": 197,
           "column": 5
         }
       },
@@ -390,11 +390,11 @@
     "_getSelectableRange": {
       "location": {
         "start": {
-          "line": 241,
+          "line": 200,
           "column": 4
         },
         "end": {
-          "line": 278,
+          "line": 231,
           "column": 5
         }
       },
@@ -409,11 +409,11 @@
     "_getFirstSelectable": {
       "location": {
         "start": {
-          "line": 282,
+          "line": 234,
           "column": 4
         },
         "end": {
-          "line": 293,
+          "line": 243,
           "column": 5
         }
       },
@@ -428,11 +428,11 @@
     "_getLastSelectable": {
       "location": {
         "start": {
-          "line": 297,
+          "line": 246,
           "column": 4
         },
         "end": {
-          "line": 308,
+          "line": 255,
           "column": 5
         }
       },
@@ -447,11 +447,11 @@
     "_getFirstVisibleSelectable": {
       "location": {
         "start": {
-          "line": 312,
+          "line": 258,
           "column": 4
         },
         "end": {
-          "line": 315,
+          "line": 260,
           "column": 5
         }
       },
@@ -466,11 +466,11 @@
     "_getLastVisibleSelectable": {
       "location": {
         "start": {
-          "line": 319,
+          "line": 263,
           "column": 4
         },
         "end": {
-          "line": 322,
+          "line": 265,
           "column": 5
         }
       },
@@ -485,11 +485,11 @@
     "_getRelatedSelectable": {
       "location": {
         "start": {
-          "line": 326,
+          "line": 268,
           "column": 4
         },
         "end": {
-          "line": 355,
+          "line": 297,
           "column": 5
         }
       },
@@ -504,11 +504,11 @@
     "_getPage": {
       "location": {
         "start": {
-          "line": 359,
+          "line": 300,
           "column": 4
         },
         "end": {
-          "line": 366,
+          "line": 306,
           "column": 5
         }
       },
@@ -608,6 +608,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -632,6 +633,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
@@ -1011,11 +1013,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 378,
-        "column": 13
+        "line": 315,
+        "column": 2
       },
       "end": {
-        "line": 380,
+        "line": 317,
         "column": 3
       }
     },

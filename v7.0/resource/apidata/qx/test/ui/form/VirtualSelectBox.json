@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 135,
+        "line": 161,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 24,
+          "line": 22,
           "column": 4
         },
         "end": {
-          "line": 30,
+          "line": 27,
           "column": 5
         }
       },
@@ -42,11 +42,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 29,
           "column": 4
         },
         "end": {
-          "line": 37,
+          "line": 33,
           "column": 5
         }
       },
@@ -60,11 +60,11 @@
     "__simulateUiInteraction": {
       "location": {
         "start": {
-          "line": 39,
+          "line": 35,
           "column": 4
         },
         "end": {
-          "line": 42,
+          "line": 40,
           "column": 5
         }
       },
@@ -74,11 +74,11 @@
     "testChangeValueEvent": {
       "location": {
         "start": {
-          "line": 44,
+          "line": 42,
           "column": 4
         },
         "end": {
-          "line": 61,
+          "line": 64,
           "column": 5
         }
       },
@@ -88,11 +88,11 @@
     "testChangeModelWhileNotVisible": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 66,
           "column": 4
         },
         "end": {
-          "line": 85,
+          "line": 95,
           "column": 5
         }
       },
@@ -102,11 +102,11 @@
     "test dropdown list same width as selectbox": {
       "location": {
         "start": {
-          "line": 87,
+          "line": 97,
           "column": 4
         },
         "end": {
-          "line": 109,
+          "line": 127,
           "column": 5
         }
       },
@@ -116,11 +116,11 @@
     "test dropdown list wider than selectbox": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 129,
           "column": 4
         },
         "end": {
-          "line": 133,
+          "line": 159,
           "column": 5
         }
       },
@@ -215,6 +215,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -239,6 +240,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

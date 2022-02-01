@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 161,
+        "line": 152,
         "column": 3
       }
     },
@@ -37,11 +37,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 32,
+          "line": 30,
           "column": 4
         },
         "end": {
-          "line": 43,
+          "line": 39,
           "column": 5
         }
       },
@@ -51,11 +51,11 @@
     "testAddImport": {
       "location": {
         "start": {
-          "line": 45,
+          "line": 41,
           "column": 4
         },
         "end": {
-          "line": 59,
+          "line": 54,
           "column": 5
         }
       },
@@ -65,11 +65,11 @@
     "testAddRule": {
       "location": {
         "start": {
-          "line": 61,
+          "line": 56,
           "column": 4
         },
         "end": {
-          "line": 73,
+          "line": 67,
           "column": 5
         }
       },
@@ -79,11 +79,11 @@
     "testCreateElement": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 69,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 74,
           "column": 5
         }
       },
@@ -93,11 +93,11 @@
     "testCreateElementWithText": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 76,
           "column": 4
         },
         "end": {
-          "line": 91,
+          "line": 83,
           "column": 5
         }
       },
@@ -107,11 +107,11 @@
     "testIncludeFile": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 85,
           "column": 4
         },
         "end": {
-          "line": 106,
+          "line": 98,
           "column": 5
         }
       },
@@ -121,11 +121,11 @@
     "testRemoveAllImports": {
       "location": {
         "start": {
-          "line": 108,
+          "line": 100,
           "column": 4
         },
         "end": {
-          "line": 122,
+          "line": 113,
           "column": 5
         }
       },
@@ -135,11 +135,11 @@
     "testRemoveAllRules": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 135,
+          "line": 125,
           "column": 5
         }
       },
@@ -149,11 +149,11 @@
     "testRemoveImport": {
       "location": {
         "start": {
-          "line": 137,
+          "line": 127,
           "column": 4
         },
         "end": {
-          "line": 151,
+          "line": 140,
           "column": 5
         }
       },
@@ -163,11 +163,11 @@
     "testRemoveRule": {
       "location": {
         "start": {
-          "line": 153,
+          "line": 142,
           "column": 4
         },
         "end": {
-          "line": 159,
+          "line": 150,
           "column": 5
         }
       },
@@ -262,6 +262,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -286,6 +287,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 130,
+        "line": 114,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
     "setUp": {
       "location": {
         "start": {
-          "line": 26,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 29,
+          "line": 25,
           "column": 5
         }
       },
@@ -42,11 +42,11 @@
     "tearDown": {
       "location": {
         "start": {
-          "line": 31,
+          "line": 27,
           "column": 4
         },
         "end": {
-          "line": 35,
+          "line": 30,
           "column": 5
         }
       },
@@ -60,11 +60,11 @@
     "_getCellInfo": {
       "location": {
         "start": {
-          "line": 38,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 56,
+          "line": 50,
           "column": 5
         }
       },
@@ -74,11 +74,11 @@
     "testCreateCellEditor": {
       "location": {
         "start": {
-          "line": 59,
+          "line": 52,
           "column": 4
         },
         "end": {
-          "line": 67,
+          "line": 59,
           "column": 5
         }
       },
@@ -86,6 +86,20 @@
       "access": "public"
     },
     "testCreateCellEditorWithValue": {
+      "location": {
+        "start": {
+          "line": 61,
+          "column": 4
+        },
+        "end": {
+          "line": 68,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "testGetCellEditorValue": {
       "location": {
         "start": {
           "line": 70,
@@ -99,28 +113,14 @@
       "type": "function",
       "access": "public"
     },
-    "testGetCellEditorValue": {
-      "location": {
-        "start": {
-          "line": 81,
-          "column": 4
-        },
-        "end": {
-          "line": 90,
-          "column": 5
-        }
-      },
-      "type": "function",
-      "access": "public"
-    },
     "testValidationFunction": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 101,
           "column": 5
         }
       },
@@ -130,11 +130,11 @@
     "testAutoconvertToNumber": {
       "location": {
         "start": {
-          "line": 118,
+          "line": 103,
           "column": 4
         },
         "end": {
-          "line": 128,
+          "line": 112,
           "column": 5
         }
       },
@@ -229,6 +229,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for qxObjectId"
           }
         ]
@@ -253,6 +254,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for qxObjectId"
           }
