@@ -4,7 +4,8 @@
     "qx.icontheme": "Tango",
     "qxl.apiviewer.exclude": [
       "qxl.*",
-      "q.*"
+      "q.*",
+      "qx.test.*" 
     ]
   },
   "ignores": [
@@ -26,12 +27,15 @@
         "qxWeb"
       ],
       "exclude": [
-        "qx.tool.*",
-        "qx.test.compiler.*",
-        "qx.test.tool.*",
         "qx.module.Blocker",
         "qx.module.Placement"
-      ]
+      ],
+      "bundle": {
+       "exclude": [ 
+          "qx.tool.*",
+          "qx.test.*" 
+       ]
+      }
     }
   ],
   "targets": [
