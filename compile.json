@@ -50,6 +50,11 @@
       "outputPath": "compiled/source",
       "babelOptions": {
         "targets": "edge >=18, chrome >= 73, firefox >= 66"
+      },
+      "bundle": {
+        "include": [
+          "qx.*"
+        ]
       }
     },
     {
