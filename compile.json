@@ -30,23 +30,33 @@
         "qx.module.Blocker",
         "qx.module.Placement"
       ],
-      "bundle": {
-       "exclude": [ 
-          "qx.tool.*",
-          "qx.test.*" 
-       ]
-      }
+      "parts": {
+         "boot" : {
+           "include": [
+             "qx.*"
+           ],
+           "exclude": [
+             "qx.tool.*",
+             "qx.test.*"
+           ]
+         }, 
+         "tool" : {
+           "include": [
+             "qx.tool.*"
+          ]
+         },
+         "test" : {
+           "include": [
+             "qx.test.*"
+          ]
+         }    
+      }    
     }
   ],
   "targets": [
     {
       "type": "source",
       "outputPath": "compiled/source",
-      "bundle": {
-        "include": [
-          "qx.*"
-        ]
-      },
       "babelOptions": {
         "targets": "edge >=18, chrome >= 73, firefox >= 66"
       }

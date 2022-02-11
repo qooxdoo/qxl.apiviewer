@@ -94,6 +94,14 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
       if (command instanceof qx.tool.cli.commands.Compile) {
         command.addListener("writingApplication", function(e) {
            let appMeta = e.getData().appMeta;
+           let parts = appMeta.getParts();
+           parts.pop();
+           parts.pop();
+           let pkg = appMeta.getPackages();
+           pkg.pop();
+           pkg.pop();
+           let pre = appMeta.getPreloads();
+           pre.urisBefore = [];
            return this.__appCompiling(appMeta);
         }, this);
       }
