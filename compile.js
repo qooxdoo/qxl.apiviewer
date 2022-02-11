@@ -96,9 +96,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
            let appMeta = e.getData().appMeta;
            let parts = appMeta.getParts();
            parts.pop();
-           parts.pop();
            let pkg = appMeta.getPackages();
-           pkg.pop();
            pkg.pop();
            let pre = appMeta.getPreloads();
            pre.urisBefore = [];

@@ -34,20 +34,11 @@
          "boot" : {
            "include": [
              "qx.*"
-           ],
-           "exclude": [
-             "qx.tool.*",
-             "qx.test.*"
            ]
          }, 
          "tool" : {
            "include": [
              "qx.tool.*"
-          ]
-         },
-         "test" : {
-           "include": [
-             "qx.test.*"
           ]
          }    
       }    
