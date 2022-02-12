@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 1895,
+        "line": 1867,
         "column": 3
       }
     },
@@ -1836,60 +1836,14 @@
       "type": "function",
       "access": "private"
     },
-    "__mixinMemberWrapper": {
-      "location": {
-        "start": {
-          "line": 1660,
-          "column": 4
-        },
-        "end": {
-          "line": 1678,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Wraps a member function of a mixin, which is included using \"patch\". This\n allows \"base\" calls in the mixin member function.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "member {Function} The mixin method to wrap",
-            "paramName": "member",
-            "description": " The mixin method to wrap",
-            "type": "Function"
-          },
-          {
-            "name": "@param",
-            "body": "base {Function} The overwritten method",
-            "paramName": "base",
-            "description": " The overwritten method",
-            "type": "Function"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Function} the wrapped mixin member",
-            "type": "Function",
-            "description": " the wrapped mixin member"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "private"
-    },
     "__addInterface": {
       "location": {
         "start": {
-          "line": 1686,
+          "line": 1658,
           "column": 4
         },
         "end": {
-          "line": 1720,
+          "line": 1692,
           "column": 5
         }
       },
@@ -1923,11 +1877,11 @@
     "__addMixin": {
       "location": {
         "start": {
-          "line": 1729,
+          "line": 1701,
           "column": 4
         },
         "end": {
-          "line": 1771,
+          "line": 1743,
           "column": 5
         }
       },
@@ -1968,11 +1922,11 @@
     "__createDefaultConstructor": {
       "location": {
         "start": {
-          "line": 1785,
+          "line": 1757,
           "column": 4
         },
         "end": {
-          "line": 1791,
+          "line": 1763,
           "column": 5
         }
       },
@@ -1998,11 +1952,11 @@
     "__wrapConstructor": {
       "location": {
         "start": {
-          "line": 1802,
+          "line": 1774,
           "column": 4
         },
         "end": {
-          "line": 1873,
+          "line": 1845,
           "column": 5
         }
       },
@@ -2052,11 +2006,11 @@
   "defer": {
     "location": {
       "start": {
-        "line": 1876,
+        "line": 1848,
         "column": 2
       },
       "end": {
-        "line": 1894,
+        "line": 1866,
         "column": 3
       }
     }

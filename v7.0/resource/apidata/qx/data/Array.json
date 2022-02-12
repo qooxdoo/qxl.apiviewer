@@ -1555,9 +1555,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code>, if any element passed the test function.",
-            "type": "Boolean",
-            "description": " <code>true</code>, if any element passed the test function."
+            "body": "{var | undefined} The found item.",
+            "type": "var | undefined",
+            "description": " The found item."
           }
         ]
       },
