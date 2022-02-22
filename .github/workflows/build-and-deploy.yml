@@ -19,8 +19,4 @@ jobs:
           event-type: "push-tag"
           client-payload: '{"ref": "refs/tags/latest"}'
 
-      - uses: peter-evans/repository-dispatch@v1
-        with:
-          token: ${{ secrets.REPOSITORY_DISPATCH }}
-          event-type: "push-tag"
-          client-payload: '{"ref": "refs/tags/~v7.0.0"}'
+    
