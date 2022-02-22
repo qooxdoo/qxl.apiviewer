@@ -23,110 +23,103 @@
 
 ************************************************************************ */
 
-qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
-  {
-    type : "abstract",
-    extend : qx.ui.embed.Html,
+qx.Class.define("qxl.apiviewer.ui.AbstractViewer", {
+  type: "abstract",
+  extend: qx.ui.embed.Html,
 
-    construct : function() {
-      this.base(arguments);
+  construct() {
+    super();
 
-      this._infoPanelHash = {};
-      this._infoPanels = [];
+    this._infoPanelHash = {};
+    this._infoPanels = [];
 
-      this.setOverflowX("auto");
-      this.setOverflowY("auto");
+    this.setOverflowX("auto");
+    this.setOverflowY("auto");
 
-      this.getContentElement().setStyle("-webkit-overflow-scrolling", "touch");
-      this.getContentElement().setStyle("touch-action", "pan-y");
-      this.getContentElement().setStyle("-ms-touch-action", "pan-y");
+    this.getContentElement().setStyle("-webkit-overflow-scrolling", "touch");
+    this.getContentElement().setStyle("touch-action", "pan-y");
+    this.getContentElement().setStyle("-ms-touch-action", "pan-y");
 
-      this.setAppearance("detailviewer");
+    this.setAppearance("detailviewer");
 
-      this._infoPanelHash = {};
-      this._infoPanels = [];
+    this._infoPanelHash = {};
+    this._infoPanels = [];
 
-      qxl.apiviewer.ObjectRegistry.register(this);
-    },
+    qxl.apiviewer.ObjectRegistry.register(this);
+  },
 
-
-    properties :
-  {
+  properties: {
     /** The class to display */
-    docNode : {
-      init : null,
-      nullable : true,
-      apply : "_applyDocNode",
-      async: true
+    docNode: {
+      init: null,
+      nullable: true,
+      apply: "_applyDocNode",
+      async: true,
     },
 
     /** whether to display inherited items */
-    showInherited : {
+    showInherited: {
       check: "Boolean",
       init: false,
-      apply: "_updatePanelsWithInheritedMembers"
+      apply: "_updatePanelsWithInheritedMembers",
     },
 
     /** whether to display included items */
-    showIncluded : {
+    showIncluded: {
       check: "Boolean",
       init: true,
-      apply: "_updatePanelsWithInheritedMembers"
+      apply: "_updatePanelsWithInheritedMembers",
     },
 
     /** whether to display protected items */
-    expandProperties :  {
+    expandProperties: {
       check: "Boolean",
       init: false,
-      apply: "_updatePanels"
+      apply: "_updatePanels",
     },
 
     /** whether to display protected items */
-    showProtected :  {
+    showProtected: {
       check: "Boolean",
       init: false,
-      apply: "_updatePanels"
+      apply: "_updatePanels",
     },
 
     /** whether to display private items */
-    showPrivate : {
+    showPrivate: {
       check: "Boolean",
       init: false,
-      apply: "_updatePanels"
+      apply: "_updatePanels",
     },
 
     /** whether to display internal items */
-    showInternal : {
+    showInternal: {
       check: "Boolean",
       init: false,
-      apply: "_updatePanels"
-    }
+      apply: "_updatePanels",
+    },
   },
 
-
-    statics :
-  {
-
+  statics: {
     /**
      * Change the target of all external links inside the given element to open in a new browser window.
      *
      * @param el {Element} Root element
      */
-    fixLinks : function(el) {
+    fixLinks(el) {
       var a = el.getElementsByTagName("a");
 
-      for (var i=0; i<a.length; i++) {
+      for (var i = 0; i < a.length; i++) {
         if (typeof a[i].href == "string" && a[i].href.indexOf("http://") == 0) {
           a[i].target = "_blank";
         }
       }
     },
 
-
-    highlightCode : function(el) {
+    highlightCode(el) {
       var pres = el.getElementsByTagName("pre");
 
-      for (var i=0; i<pres.length; i++) {
+      for (var i = 0; i < pres.length; i++) {
         var element = pres[i];
         if (element.className !== "javascript") {
           continue;
@@ -138,42 +131,44 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
           // existing pre element with the wrapper element.
           var preWrapper = document.createElement("div");
           var content = element.textContent || element.innerText;
-          preWrapper.innerHTML = "<pre class=\"javascript\">" + qx.dev.Tokenizer.javaScriptToHtml(content, true) + "</pre>";
+          preWrapper.innerHTML =
+            '<pre class="javascript">' +
+            qx.dev.Tokenizer.javaScriptToHtml(content, true) +
+            "</pre>";
           element.parentNode.replaceChild(preWrapper, element);
         } else {
-          element.innerHTML = qx.dev.Tokenizer.javaScriptToHtml(element.textContent);
+          element.innerHTML = qx.dev.Tokenizer.javaScriptToHtml(
+            element.textContent
+          );
         }
       }
-    }
-
+    },
   },
 
-  events :
-  {
-    "synced" : "qx.event.type.Event"
+  events: {
+    synced: "qx.event.type.Event",
   },
 
-   members :
-  {
-    _infoPanelHash : null,
-    _infoPanels : null,
+  members: {
+    _infoPanelHash: null,
+    _infoPanels: null,
     __valid: false,
 
-    _init : function(pkg) {
+    _init(pkg) {
       this.__initHtml();
       this.addListenerOnce("appear", () => this._syncHtml());
     },
 
-    __initHtml : function() {
+    __initHtml() {
       var html = new qx.util.StringBuilder();
 
-      html.add("<div style=\"padding:24px;\">");
+      html.add('<div style="padding:24px;">');
 
       // Add title
       html.add("<h1></h1>");
 
       // Add TOC
-      html.add("<div class=\"tocContainer\"></div>");
+      html.add('<div class="tocContainer"></div>');
 
       // Add description
       html.add("<div>", "</div>");
@@ -181,7 +176,7 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
       // render panels
       var panels = this.getPanels();
 
-      for (var i=0; i<panels.length; i++) {
+      for (var i = 0; i < panels.length; i++) {
         var panel = panels[i];
         html.add(panel.getPanelHtml(this));
       }
@@ -198,26 +193,24 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
      * @param classNode {qxl.apiviewer.dao.Class} the class documentation node for the title
      * @return {String} HTML fragment of the title
      */
-    _getTitleHtml : function(classNode) {
+    _getTitleHtml(classNode) {
       throw new Error("Abstract method called!");
     },
 
-    _getTocHtml : function(classNode) {
+    _getTocHtml(classNode) {
       throw new Error("Abstract method called!");
     },
 
-
-    _getDescriptionHtml : function(classNode) {
+    _getDescriptionHtml(classNode) {
       throw new Error("Abstract method called!");
     },
-
 
     /**
      * Initializes the content of the embedding DIV. Will be called by the
      * HtmlEmbed element initialization routine.
      *
      */
-    _syncHtml : async function() {
+    async _syncHtml() {
       var oldTitleElem = this._titleElem;
       var element = this.getContentElement().getDomElement().firstChild;
       var divArr = element.childNodes;
@@ -229,9 +222,9 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
       this._tocElem = divArr[1];
       this._classDescElem = divArr[2];
 
-      for (var i=0; i<panels.length; i++) {
+      for (var i = 0; i < panels.length; i++) {
         var panel = panels[i];
-        panel.setElement(divArr[i+3]);
+        panel.setElement(divArr[i + 3]);
       }
 
       if (oldTitleElem !== this._titleElem && this.getDocNode()) {
@@ -241,40 +234,38 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
       this.fireEvent("synced");
     },
 
-    isValid: function() {
-       return this.__valid;
+    isValid() {
+      return this.__valid;
     },
-    
-    addInfoPanel : function(panel) {
+
+    addInfoPanel(panel) {
       this._infoPanelHash[panel.toHashCode()] = panel;
       this._infoPanels.push(panel);
     },
 
-
-    getPanels : function() {
+    getPanels() {
       return this._infoPanels;
     },
 
-
-    getPanelFromHashCode : function(hashCode) {
+    getPanelFromHashCode(hashCode) {
       return this._infoPanelHash[hashCode];
     },
-
 
     /**
      * Updates all info panels
      *
      * @return {qx.Promise}
      */
-    _updatePanels : function() {
+    _updatePanels() {
       if (!this.getDocNode()) {
         return qx.Promise.resolve();
       }
       qxl.apiviewer.LoadingIndicator.getInstance().show();
       var panels = this.getPanels();
-      var all = panels.map(panel => panel.update(this, this.getDocNode()));
-      return qx.Promise.all(all)
-        .then(() => qxl.apiviewer.LoadingIndicator.getInstance().hide());
+      var all = panels.map((panel) => panel.update(this, this.getDocNode()));
+      return qx.Promise.all(all).then(() =>
+        qxl.apiviewer.LoadingIndicator.getInstance().hide()
+      );
     },
 
     /**
@@ -283,26 +274,24 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
      *
      * @return {qx.Promise}
      */
-    _updatePanelsWithInheritedMembers : function() {
+    _updatePanelsWithInheritedMembers() {
       if (!this.getDocNode()) {
         return qx.Promise.resolve();
       }
-      return this._updatePanels()
-        .then(() => {
-          if (this._tocElem) {
-            qx.dom.Element.empty(this._tocElem);
-            this._tocElem.appendChild(this._getTocHtml(this.getDocNode()));
-          }
-        });
+      return this._updatePanels().then(() => {
+        if (this._tocElem) {
+          qx.dom.Element.empty(this._tocElem);
+          this._tocElem.appendChild(this._getTocHtml(this.getDocNode()));
+        }
+      });
     },
-
 
     /**
      * Shows the information about a class.
      *
      * @param classNode {qxl.apiviewer.dao.Class} the doc node of the class to show.
      */
-    _applyDocNode : function(classNode) {
+    _applyDocNode(classNode) {
       if (!this._titleElem) {
         return null;
       }
@@ -311,19 +300,15 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
       qx.dom.Element.empty(this._tocElem);
       this._tocElem.appendChild(this._getTocHtml(classNode));
 
-      return this._getDescriptionHtml(classNode)
-        .then(html => {
-          this._classDescElem.innerHTML = html;
-          qxl.apiviewer.ui.AbstractViewer.fixLinks(this._classDescElem);
-          qxl.apiviewer.ui.AbstractViewer.highlightCode(this._classDescElem);
+      return this._getDescriptionHtml(classNode).then((html) => {
+        this._classDescElem.innerHTML = html;
+        qxl.apiviewer.ui.AbstractViewer.fixLinks(this._classDescElem);
+        qxl.apiviewer.ui.AbstractViewer.highlightCode(this._classDescElem);
 
-          // Refresh the info viewers
-          return this._updatePanels();
-        });
+        // Refresh the info viewers
+        return this._updatePanels();
+      });
     },
-
-
-
 
     /**
      * Event handler. Called when the user tapped a button for showing/hiding the
@@ -331,12 +316,16 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
      * @param panel
      * @return {qx.Promise}
      */
-    togglePanelVisibility : function(panel) {
+    togglePanelVisibility(panel) {
       try {
         panel.setIsOpen(!panel.getIsOpen());
 
         var imgElem = panel.getTitleElement().getElementsByTagName("img")[0];
-        imgElem.src = qx.util.ResourceManager.getInstance().toUri(panel.getIsOpen() ? "qxl/apiviewer/image/close.gif" : "qxl/apiviewer/image/open.gif");
+        imgElem.src = qx.util.ResourceManager.getInstance().toUri(
+          panel.getIsOpen()
+            ? "qxl/apiviewer/image/close.gif"
+            : "qxl/apiviewer/image/open.gif"
+        );
 
         return panel.update(this, this.getDocNode());
       } catch (exc) {
@@ -350,7 +339,7 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
      *
      * @param nodeArr {qxl.apiviewer.dao.ClassItem[]} array of class items
      */
-    sortItems : function(nodeArr) {
+    sortItems(nodeArr) {
       let WEIGHT = ["qxl.apiviewer.dao.Package", "qxl.apiviewer.dao.Class"];
 
       // Sort the nodeArr by name
@@ -405,6 +394,6 @@ qx.Class.define("qxl.apiviewer.ui.AbstractViewer",
 
         return sum1 - sum2;
       });
-    }
-  }
-  });
+    },
+  },
+});

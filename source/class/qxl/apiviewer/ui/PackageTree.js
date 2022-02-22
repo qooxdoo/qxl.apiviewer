@@ -23,41 +23,35 @@
 
 ************************************************************************ */
 
-
 /**
  * The package tree.
  */
-qx.Class.define("qxl.apiviewer.ui.PackageTree",
-  {
-    extend : qx.ui.tree.Tree,
+qx.Class.define("qxl.apiviewer.ui.PackageTree", {
+  extend: qx.ui.tree.Tree,
 
+  construct() {
+    super("Documentation");
 
-    construct : function() {
-      this.base(arguments, "Documentation");
+    this.setDecorator(null);
+    this.setPadding(0);
 
-      this.setDecorator(null);
-      this.setPadding(0);
+    this.__root = new qx.ui.tree.TreeFolder("Packages");
+    this.__root.setOpen(true);
+    this.setRoot(this.__root);
+    this.setSelection([this.__root]);
+    // Workaround: Since navigating in qx.ui.tree.Tree doesn't work, we've to
+    // maintain a hash that keeps the tree nodes for class names
+    this._classTreeNodeHash = {};
+  },
 
-      this.__root = new qx.ui.tree.TreeFolder("Packages");
-      this.__root.setOpen(true);
-      this.setRoot(this.__root);
-      this.setSelection([this.__root]);
-      // Workaround: Since navigating in qx.ui.tree.Tree doesn't work, we've to
-      // maintain a hash that keeps the tree nodes for class names
-      this._classTreeNodeHash = {};
-    },
-
-
-    /*
+  /*
    * ****************************************************************************
    * MEMBERS
    * ****************************************************************************
    */
 
-    members :
-  {
-
-    __root : null,
+  members: {
+    __root: null,
 
     /**
      * Updates the tree on the left.
@@ -67,7 +61,7 @@ qx.Class.define("qxl.apiviewer.ui.PackageTree",
      *          updating.
      * @return {void}
      */
-    setTreeData : function(docTree) {
+    setTreeData(docTree) {
       this._docTree = docTree;
 
       // Fill the packages tree
@@ -79,7 +73,6 @@ qx.Class.define("qxl.apiviewer.ui.PackageTree",
       }
     },
 
-
     /**
      * Selects a certain class.
      *
@@ -87,7 +80,7 @@ qx.Class.define("qxl.apiviewer.ui.PackageTree",
      * @async
      * @return {Boolean} Whether the class name was valid and could be selected.
      */
-    selectTreeNodeByClassName : function(className) {
+    selectTreeNodeByClassName(className) {
       if (!this._docTree) {
         // The doc tree has not been loaded yet
         // -> Remember the wanted class and show when loading is done
@@ -116,28 +109,25 @@ qx.Class.define("qxl.apiviewer.ui.PackageTree",
           return qx.Promise.resolve(false);
         }
         treeNode.setOpen(true);
-        return treeNode.loading
-          .then(() => {
-            nameIndex++;
-            if (nameIndex < nameParts.length) {
-              return next();
-            }
-            return treeNode;
-          });
+        return treeNode.loading.then(() => {
+          nameIndex++;
+          if (nameIndex < nameParts.length) {
+            return next();
+          }
+          return treeNode;
+        });
       };
 
-      return next()
-        .then(treeNode => {
-          if (treeNode) {
-            this.setSelection([treeNode]);
-            this.scrollChildIntoView(treeNode);
-            return true;
-          }
-          this.setSelection([]);
-          return false;
-        });
+      return next().then((treeNode) => {
+        if (treeNode) {
+          this.setSelection([treeNode]);
+          this.scrollChildIntoView(treeNode);
+          return true;
+        }
+        this.setSelection([]);
+        return false;
+      });
     },
-
 
     /**
      * Create a callback which loads the child nodes of a tree folder
@@ -150,17 +140,16 @@ qx.Class.define("qxl.apiviewer.ui.PackageTree",
      *          {var} current depth in the tree
      * @return {Function} the opener callback function
      */
-    __getPackageNodeOpener : function(packageTreeNode, packageDoc, depth) {
+    __getPackageNodeOpener(packageTreeNode, packageDoc, depth) {
       var self = this;
-      return function() {
+      return function () {
         if (!packageTreeNode.loaded) {
-          packageTreeNode.loaded = true;          
+          packageTreeNode.loaded = true;
           self.__fillPackageNode(packageTreeNode, packageDoc, depth + 1);
           packageTreeNode.setOpenSymbolMode("always");
         }
       };
     },
-
 
     /**
      * Fills a package tree node with tree nodes for the sub packages and
@@ -173,7 +162,7 @@ qx.Class.define("qxl.apiviewer.ui.PackageTree",
      * @param depth
      *          {var} current depth in the tree
      */
-    __fillPackageNode : function(treeNode, docNode, depth) {
+    __fillPackageNode(treeNode, docNode, depth) {
       var PackageTree = qxl.apiviewer.ui.PackageTree;
 
       var packagesDoc = docNode.getPackages();
@@ -182,7 +171,7 @@ qx.Class.define("qxl.apiviewer.ui.PackageTree",
         r = r.getFullName();
         return l < r ? -1 : l > r ? 1 : 0;
       });
-      qx.Promise.map(packagesDoc, packageDoc => {
+      qx.Promise.map(packagesDoc, (packageDoc) => {
         var iconUrl = qxl.apiviewer.TreeUtil.getIconUrl(packageDoc);
         var segs = packageDoc.getName().split(".");
         var packageTreeNode = new qx.ui.tree.TreeFolder(segs[segs.length - 1]);
@@ -192,20 +181,24 @@ qx.Class.define("qxl.apiviewer.ui.PackageTree",
         treeNode.add(packageTreeNode);
 
         // defer adding of child nodes
-        packageTreeNode.addListener("changeOpen", this.__getPackageNodeOpener(packageTreeNode, packageDoc, depth + 1), this);
+        packageTreeNode.addListener(
+          "changeOpen",
+          this.__getPackageNodeOpener(packageTreeNode, packageDoc, depth + 1),
+          this
+        );
 
         // Register the tree node
         this._classTreeNodeHash[packageDoc.getFullName()] = packageTreeNode;
         return packageDoc.load();
       });
 
-      treeNode.loading = docNode.loadDependedClasses().then(classes => {
+      treeNode.loading = docNode.loadDependedClasses().then((classes) => {
         classes.sort((l, r) => {
           l = l.getFullName();
           r = r.getFullName();
           return l < r ? -1 : l > r ? 1 : 0;
         });
-        classes.forEach(classDoc => {
+        classes.forEach((classDoc) => {
           var iconUrl = qxl.apiviewer.TreeUtil.getIconUrl(classDoc);
           var segs = classDoc.getName().split(".");
           var classTreeNode = new qx.ui.tree.TreeFolder(segs[segs.length - 1]);
@@ -221,19 +214,17 @@ qx.Class.define("qxl.apiviewer.ui.PackageTree",
         });
         return null;
       });
-    }
-
+    },
   },
 
-
-    /*
+  /*
    * ****************************************************************************
    * DESTRUCTOR
    * ****************************************************************************
    */
 
-    destruct : function() {
-      this._docTree = this._classTreeNodeHash = null;
-      this._disposeObjects("__root");
-    }
-  });
+  destruct() {
+    this._docTree = this._classTreeNodeHash = null;
+    this._disposeObjects("__root");
+  },
+});

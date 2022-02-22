@@ -57,67 +57,62 @@
         ]
  */
 qx.Class.define("qxl.apiviewer.dao.Param", {
-  extend : qx.core.Object,
+  extend: qx.core.Object,
 
-  construct : function(meta, method) {
+  construct(meta, method) {
     this.base(arguments);
     this._meta = meta;
     this._method = method;
-    this._types = [{type: "var"}];
+    this._types = [{ type: "var" }];
     if (meta.type) {
-      this._types = qx.lang.Array.toNativeArray(meta.type)
-        .map(type => {
-          if (typeof (type) === "object") {
-            return {type: type.type,
-              arrayDimensions: type.dimensions};
-          }
-          var m = type.match(/^([^[]+)((\[\])+)?$/);
-          if (m && m[2]) {
-            return {type: m[1],
-              arrayDimensions: m[2].length / 2};
-          }
-          return {type: type};
-        });
+      this._types = qx.lang.Array.toNativeArray(meta.type).map((type) => {
+        if (typeof type === "object") {
+          return { type: type.type, arrayDimensions: type.dimensions };
+        }
+        var m = type.match(/^([^[]+)((\[\])+)?$/);
+        if (m && m[2]) {
+          return { type: m[1], arrayDimensions: m[2].length / 2 };
+        }
+        return { type: type };
+      });
     }
   },
 
-  members : {
+  members: {
     _method: null,
     _meta: null,
     _types: null,
     _arrayDimensions: 0,
 
-    getMethod: function() {
+    getMethod() {
       return this._method;
     },
 
-    getClass: function() {
+    getClass() {
       return this._method.getClass();
     },
 
-    getName: function() {
+    getName() {
       return this._meta.paramName;
     },
 
-    getTypes: function() {
+    getTypes() {
       return this._types;
     },
 
-    getArrayDimensions : function() {
+    getArrayDimensions() {
       return this._arrayDimensions;
     },
 
-    getDefaultValue : function() {
+    getDefaultValue() {
       return this._meta.defaultValue;
     },
 
-    isOptional : function() {
+    isOptional() {
       return Boolean(this._meta.optional);
     },
-    getDescription : function() {
-      return (this._meta.description || this._meta.body);
-    }
-
-  }
-
+    getDescription() {
+      return this._meta.description || this._meta.body;
+    },
+  },
 });

@@ -23,54 +23,56 @@
 ************************************************************************ */
 
 qx.Class.define("qxl.apiviewer.ui.panels.ChildControlsPanel", {
-
   extend: qxl.apiviewer.ui.panels.InfoPanel,
 
-  construct: function() {
-    this.base(arguments, "Child Controls", "qxl/apiviewer/image/childcontrol18.gif");
+  construct() {
+    super("Child Controls", "qxl/apiviewer/image/childcontrol18.gif");
   },
 
-  members :
-  {
-
+  members: {
     /**
      * @Override
      */
-    canDisplayItem: function(dao) {
+    canDisplayItem(dao) {
       return dao instanceof qxl.apiviewer.dao.ChildControl;
     },
 
-    getPanelItemObjects: function(daoClass, showInherited) {
+    getPanelItemObjects(daoClass, showInherited) {
       return daoClass.getChildControls();
     },
 
-    getItemTypeHtml : function(node, currentClassDocNode) {
-      return qxl.apiviewer.ui.panels.InfoPanel.createTypeHtml(node, "var", true);
+    getItemTypeHtml(node, currentClassDocNode) {
+      return qxl.apiviewer.ui.panels.InfoPanel.createTypeHtml(
+        node,
+        "var",
+        true
+      );
     },
 
-
-    getItemTitleHtml : function(node, currentClassDocNode) {
-      return qxl.apiviewer.ui.panels.InfoPanel.setTitleClass(node, node.getName());
+    getItemTitleHtml(node, currentClassDocNode) {
+      return qxl.apiviewer.ui.panels.InfoPanel.setTitleClass(
+        node,
+        node.getName()
+      );
     },
 
-
-    getItemTextHtml : function(node, currentClassDocNode, showDetails) {
+    getItemTextHtml(node, currentClassDocNode, showDetails) {
       var textHtml = new qx.util.StringBuilder(node.getDescription());
 
       if (showDetails) {
         textHtml.add(
-          "<div class=\"item-detail-headline\">", "Default value:", "</div>",
-          "<div class=\"item-detail-text\">",
+          '<div class="item-detail-headline">',
+          "Default value:",
+          "</div>",
+          '<div class="item-detail-text">',
           "<code>",
-          (node.getDefaultValue() ? node.getDefaultValue() : "null"),
+          node.getDefaultValue() ? node.getDefaultValue() : "null",
           "</code>",
           "</div>"
         );
       }
 
       return textHtml.get();
-    }
-
-  }
-
+    },
+  },
 });

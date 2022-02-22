@@ -21,49 +21,55 @@
 
 ************************************************************************ */
 
-qx.Class.define("qxl.apiviewer.ui.panels.PackagePanel",
-  {
-    extend: qxl.apiviewer.ui.panels.InfoPanel,
+qx.Class.define("qxl.apiviewer.ui.panels.PackagePanel", {
+  extend: qxl.apiviewer.ui.panels.InfoPanel,
 
-    members :
-  {
+  members: {
     /**
      * @Override
      */
-    canDisplayItem: function(dao) {
+    canDisplayItem(dao) {
       return dao instanceof qxl.apiviewer.dao.Package;
     },
 
-    getPanelItemObjects: function(daoClass, showInherited) {
+    getPanelItemObjects(daoClass, showInherited) {
       return daoClass.getPackages();
     },
 
-    getItemTypeHtml : function(node) {
-      return qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(node.getFullName(), null, false, true);
+    getItemTypeHtml(node) {
+      return qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(
+        node.getFullName(),
+        null,
+        false,
+        true
+      );
     },
 
-    getItemTitleHtml : function(node) {
+    getItemTitleHtml(node) {
       return node.getFullName();
     },
 
-
-    getItemTextHtml : function(node, getDocNode, showDetails) {
+    getItemTextHtml(node, getDocNode, showDetails) {
       if (showDetails) {
-        return qxl.apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(node.getDescription(), node);
+        return qxl.apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(
+          node.getDescription(),
+          node
+        );
       }
-      return qxl.apiviewer.ui.panels.InfoPanel.createDescriptionHtml(node, node.getPackage(), showDetails);
+      return qxl.apiviewer.ui.panels.InfoPanel.createDescriptionHtml(
+        node,
+        node.getPackage(),
+        showDetails
+      );
     },
 
-
-    getItemTooltip : function(classNode, currentClassDocNode) {
+    getItemTooltip(classNode, currentClassDocNode) {
       return "Package";
     },
 
-
-    itemHasDetails : function(node, currentClassDocNode) {
+    itemHasDetails(node, currentClassDocNode) {
       return qxl.apiviewer.ui.panels.InfoPanel.descriptionHasDetails(node);
     },
-
 
     /**
      * Updates an info panel.
@@ -71,23 +77,20 @@ qx.Class.define("qxl.apiviewer.ui.panels.PackagePanel",
      * @param classViewer {qxl.apiviewer.ui.ClassViewer} parent class viewer widget.
      * @param currentClassDocNode {qxl.apiviewer.dao.Class} the currently displayed class
      */
-    update : function(classViewer, currentClassDocNode) {
+    update(classViewer, currentClassDocNode) {
       if (!this.getElement()) {
         return qx.Promise.resolve(false);
       }
 
-      return this.setDocNodeAsync(currentClassDocNode)
-        .then(() => {
-          var nodeArr = currentClassDocNode.getPackages();
+      return this.setDocNodeAsync(currentClassDocNode).then(() => {
+        var nodeArr = currentClassDocNode.getPackages();
 
-          if (nodeArr && nodeArr.length > 0) {
-            classViewer.sortItems(nodeArr);
-          }
+        if (nodeArr && nodeArr.length > 0) {
+          classViewer.sortItems(nodeArr);
+        }
 
-          this._displayNodes(nodeArr, currentClassDocNode);
-        });
-    }
-
-  }
-
-  });
+        this._displayNodes(nodeArr, currentClassDocNode);
+      });
+    },
+  },
+});

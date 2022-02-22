@@ -18,33 +18,31 @@
      * Henner Kollmann (hkollmann)
 
 ************************************************************************ */
-qx.Class.define("qxl.apiviewer.TabViewController",
-  {
-    extend : qx.core.Object,
+qx.Class.define("qxl.apiviewer.TabViewController", {
+  extend: qx.core.Object,
 
-    construct : function(widgetRegistry) {
-      this.base(arguments);
+  construct(widgetRegistry) {
+    super();
 
-      qxl.apiviewer.TabViewController.instance = this;
+    qxl.apiviewer.TabViewController.instance = this;
 
-      this._tabView = widgetRegistry.getWidgetById("tabView");
-      this._tabView.addListener("changeSelection", this.__onChangeSelection, this);
-    },
-
-
-    events :
-  {
-    /** This event if dispatched if one of the internal links is tapped */
-    "classLinkTapped" : "qx.event.type.Data",
-
-    "changeSelection" : "qx.event.type.Data"
+    this._tabView = widgetRegistry.getWidgetById("tabView");
+    this._tabView.addListener(
+      "changeSelection",
+      this.__onChangeSelection,
+      this
+    );
   },
 
+  events: {
+    /** This event if dispatched if one of the internal links is tapped */
+    classLinkTapped: "qx.event.type.Data",
 
-    members :
-  {
+    changeSelection: "qx.event.type.Data",
+  },
 
-    isLoaded: function(callback) {
+  members: {
+    isLoaded(callback) {
       var page = this._tabView.getSelection()[0];
       var child = page.getChildren()[0];
       if (child.isValid()) {
@@ -54,7 +52,7 @@ qx.Class.define("qxl.apiviewer.TabViewController",
       child.addListenerOnce("synced", callback);
     },
 
-    showTabView : function() {
+    showTabView() {
       this._tabView.show();
     },
 
@@ -64,26 +62,30 @@ qx.Class.define("qxl.apiviewer.TabViewController",
      * class viewer.
      * @param itemName
      */
-    onSelectItem : function(itemName) {
+    onSelectItem(itemName) {
       this.fireDataEvent("classLinkTapped", itemName);
     },
 
-    showItem : function(itemName) {
+    showItem(itemName) {
       var page = this._tabView.getSelection()[0];
       page.setUserData("itemName", itemName);
       var child = page.getChildren()[0];
       return child.showItem(itemName);
     },
 
-    openPackage : function(classNode, newTab) {
-      return this.__open(classNode, qxl.apiviewer.ui.tabview.PackagePage, newTab);
+    openPackage(classNode, newTab) {
+      return this.__open(
+        classNode,
+        qxl.apiviewer.ui.tabview.PackagePage,
+        newTab
+      );
     },
 
-    openClass : function(classNode, newTab) {
+    openClass(classNode, newTab) {
       return this.__open(classNode, qxl.apiviewer.ui.tabview.ClassPage, newTab);
     },
 
-    __open : function(classNode, clazz, newTab) {
+    __open(classNode, clazz, newTab) {
       var currentPage = this._tabView.getSelection()[0] || null;
 
       if (currentPage && (!(currentPage instanceof clazz) || newTab)) {
@@ -104,15 +106,15 @@ qx.Class.define("qxl.apiviewer.TabViewController",
       return currentPage.setClassNodeAsync(classNode);
     },
 
-    __onChangeSelection : function(event) {
+    __onChangeSelection(event) {
       var oldData = event.getOldData();
       var data = event.getData();
       this.fireDataEvent("changeSelection", data, oldData);
-    }
+    },
   },
 
-    destruct : function() {
-      this._tabView.destroy();
-      this._tabView = null;
-    }
-  });
+  destruct() {
+    this._tabView.destroy();
+    this._tabView = null;
+  },
+});

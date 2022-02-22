@@ -27,7 +27,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
   /**
    * @param className
    */
-  construct: function (className) {
+  construct(className) {
     this.base(arguments);
     this._className = className;
     this._package = qxl.apiviewer.dao.Package.getParentPackage(className);
@@ -60,8 +60,8 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
     /**
      * retrieves the meta file name + path
      */
-    getMetaFile: function() {
-       return this.__url;
+    getMetaFile() {
+      return this.__url;
     },
 
     /**
@@ -69,28 +69,30 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      *
      * @return {Promise}
      */
-    load: function () {
+    load() {
       if (this._loadingPromise) {
         return this._loadingPromise;
       }
 
-      var url = this.__url = qxl.apiviewer.ClassLoader.getBaseUri() + this._className.replace(/\./g, "/") + ".json";
-      return this._loadingPromise = qxl.apiviewer.RequestUtil.get(url)
-        .then(content => {
+      var url = (this.__url =
+        qxl.apiviewer.ClassLoader.getBaseUri() +
+        this._className.replace(/\./g, "/") +
+        ".json");
+      return (this._loadingPromise = qxl.apiviewer.RequestUtil.get(url)
+        .then((content) => {
           /* eslint-disable-next-line no-eval */
           var meta = eval("(" + content + ")");
-          return this._initMeta(meta)
-            .then(() => {
-              this._loaded = true;
-              return this;
-            });
+          return this._initMeta(meta).then(() => {
+            this._loaded = true;
+            return this;
+          });
         })
-        .catch(e => {
+        .catch((e) => {
           this.error("Couldn't load file: " + url + " " + e.message);
-        });
+        }));
     },
 
-    isLoaded: function () {
+    isLoaded() {
       return this._loaded;
     },
 
@@ -99,14 +101,20 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      * @param meta
      * @return {qx.Promise}
      */
-    _initMeta: function (meta) {
+    _initMeta(meta) {
       this.base(arguments, meta);
 
       this._jsdoc = meta.clazz.jsdoc || {};
 
-      this._construct = meta.construct ? [new qxl.apiviewer.dao.Method(meta.construct, this, "construct")] : [];
-      this._destruct = meta.destruct ? [new qxl.apiviewer.dao.Method(meta.destruct, this, "destruct")] : [];
-      this._defer = meta.defer ? [new qxl.apiviewer.dao.Method(meta.defer, this, "defer")] : [];
+      this._construct = meta.construct
+        ? [new qxl.apiviewer.dao.Method(meta.construct, this, "construct")]
+        : [];
+      this._destruct = meta.destruct
+        ? [new qxl.apiviewer.dao.Method(meta.destruct, this, "destruct")]
+        : [];
+      this._defer = meta.defer
+        ? [new qxl.apiviewer.dao.Method(meta.defer, this, "defer")]
+        : [];
 
       this._staticMethods = [];
       this._constants = [];
@@ -114,9 +122,13 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
         for (let name in meta.statics) {
           let data = meta.statics[name];
           if (data.type == "variable") {
-            this._constants.push(new qxl.apiviewer.dao.Constant(data, this, name));
+            this._constants.push(
+              new qxl.apiviewer.dao.Constant(data, this, name)
+            );
           } else {
-            this._staticMethods.push(new qxl.apiviewer.dao.Method(data, this, name));
+            this._staticMethods.push(
+              new qxl.apiviewer.dao.Method(data, this, name)
+            );
           }
         }
       }
@@ -151,7 +163,6 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
         }
       }
 
-
       this._properties = [];
       this._mixinProperties = [];
       if (meta.properties) {
@@ -165,17 +176,25 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
           }
           let evt = obj.getEvent();
           if (evt) {
-            let objE = new qxl.apiviewer.dao.Event({
-              location: obj.location,
-              name: evt,
-              type: "qx.event.type.Data",
-              jsdoc: {
-                "@description": [{
-                  name : "@description",
-                  body: `Fired on change of the property {@link ${data.overriddenFrom || ""}#${name} ${name}}`
-                }]
-              }
-            }, this);
+            let objE = new qxl.apiviewer.dao.Event(
+              {
+                location: obj.location,
+                name: evt,
+                type: "qx.event.type.Data",
+                jsdoc: {
+                  "@description": [
+                    {
+                      name: "@description",
+                      body: `Fired on change of the property {@link ${
+                        data.overriddenFrom || ""
+                      }#${name} ${name}}`,
+                    },
+                  ],
+                },
+              },
+
+              this
+            );
             if (data.mixin) {
               this._mixinEvents.push(objE);
             } else {
@@ -185,12 +204,13 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
         }
       }
 
-
       this._childControls = [];
       let arr = this._jsdoc["@childControl"];
       if (arr) {
-        arr.forEach(elem => {
-          this._childControls.push(new qxl.apiviewer.dao.ChildControl(elem, this));
+        arr.forEach((elem) => {
+          this._childControls.push(
+            new qxl.apiviewer.dao.ChildControl(elem, this)
+          );
         });
       }
 
@@ -200,8 +220,8 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
        */
       function findClasses(tmp) {
         let p = qxl.apiviewer.dao.Class.findClasses(tmp);
-        return p.then(classes => {
-          classes.forEach(item => {
+        return p.then((classes) => {
+          classes.forEach((item) => {
             all.push(item);
           });
           return classes;
@@ -212,20 +232,30 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
       this._superInterfaces = [];
       this._superMixins = [];
       if (this._meta.type == "interface") {
-        all.push(findClasses(meta.superClass).then(arr => this._superInterfaces = arr));
+        all.push(
+          findClasses(meta.superClass).then(
+            (arr) => (this._superInterfaces = arr)
+          )
+        );
       } else if (this._meta.type == "mixin") {
-        all.push(findClasses(meta.superClass).then(arr => this._superMixins = arr));
+        all.push(
+          findClasses(meta.superClass).then((arr) => (this._superMixins = arr))
+        );
       } else {
-        all.push(findClasses(meta.superClass).then(arr => this._superClass = arr[0] || null));
+        all.push(
+          findClasses(meta.superClass).then(
+            (arr) => (this._superClass = arr[0] || null)
+          )
+        );
       }
       this._interfaces = [];
-      findClasses(meta.interfaces).then(arr => this._interfaces = arr);
+      findClasses(meta.interfaces).then((arr) => (this._interfaces = arr));
       this._mixins = [];
-      findClasses(meta.mixins).then(arr => this._mixins = arr);
+      findClasses(meta.mixins).then((arr) => (this._mixins = arr));
       return qx.Promise.all(all);
     },
 
-    getPackage: function () {
+    getPackage() {
       return this._package;
     },
 
@@ -234,30 +264,27 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      *
      * @return {String} name of the class
      */
-    getName: function () {
+    getName() {
       return this._className;
     },
-
 
     /**
      * Get the full name of the class, including the package name.
      *
      * @return {String} full name of the class
      */
-    getFullName: function () {
+    getFullName() {
       return this._className;
     },
-
 
     /**
      * Get the package name of the class.
      *
      * @return {String} package name of the class
      */
-    getPackageName: function () {
+    getPackageName() {
       return this._package.getFullName();
     },
-
 
     /**
      * Get type of the class. Valid types are "class", "interface" and "mixin".
@@ -265,50 +292,45 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      * @return {String} The type of the class. Valid types are "class",
      *         "interface" and "mixin".
      */
-    getType: function () {
+    getType() {
       return this._meta.type;
     },
-
 
     /**
      * Get whether the class is abstract.
      *
      * @return {Boolean} Whether the class is abstract.
      */
-    isAbstract: function () {
+    isAbstract() {
       return this._meta.isAbstract || false;
     },
-
 
     /**
      * Get whether the class is a static class.
      *
      * @return {Boolean} Whether the class is static.
      */
-    isStatic: function () {
+    isStatic() {
       return this._meta.isStatic || false;
     },
-
 
     /**
      * Get whether the class is a singleton.
      *
      * @return {Boolean} Whether the class is a singleton.
      */
-    isSingleton: function () {
+    isSingleton() {
       return this._meta.isSingleton || false;
     },
-
 
     /**
      * Get the super class of the class.
      *
      * @return {qxl.apiviewer.dao.Class} The super class of the class.
      */
-    getSuperClass: function () {
+    getSuperClass() {
       return this._superClass;
     },
-
 
     /**
      * Get the direct child classes of the class.
@@ -316,10 +338,12 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      * @return {qx.Promise<qxl.apiviewer.dao.Class[]>} A list of direct child classes of the
      *         class.
      */
-    getChildClasses: function () {
+    getChildClasses() {
       if (!this._childClassesPromise) {
         if (this._meta.type == "class") {
-          this._childClassesPromise = qxl.apiviewer.dao.Class.findClasses(this._meta.descendants);
+          this._childClassesPromise = qxl.apiviewer.dao.Class.findClasses(
+            this._meta.descendants
+          );
         } else {
           this._childClassesPromise = qx.Promise.resolve([]);
         }
@@ -327,14 +351,13 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
       return this._childClassesPromise;
     },
 
-
     /**
      * Get all interfaces declared at the class declaration.
      *
      * @return {qxl.apiviewer.dao.Class[]} All interfaces declared at the class
      *         declaration.
      */
-    getInterfaces: function () {
+    getInterfaces() {
       return this._interfaces;
     },
 
@@ -343,7 +366,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      *
      * @return {qxl.apiviewer.dao.Class[]} All super interfaces.
      */
-    getSuperInterfaces: function () {
+    getSuperInterfaces() {
       return this._superInterfaces;
     },
 
@@ -353,7 +376,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      * @return {qxl.apiviewer.dao.Class[]} All mixins declared at the class
      *         declaration.
      */
-    getMixins: function () {
+    getMixins() {
       return this._mixins;
     },
 
@@ -362,7 +385,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      *
      * @return {qxl.apiviewer.dao.Class[]} All super mixins.
      */
-    getSuperMixins: function () {
+    getSuperMixins() {
       return this._superMixins;
     },
 
@@ -371,10 +394,12 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      *
      * @return {qx.Promise<qxl.apiviewer.dao.Class[]>} All classes including this mixin.
      */
-    getIncluder: function () {
+    getIncluder() {
       if (!this._includersPromise) {
         if (this._meta.type == "mixin") {
-          this._includersPromise = qxl.apiviewer.dao.Class.findClasses(this._meta.descendants);
+          this._includersPromise = qxl.apiviewer.dao.Class.findClasses(
+            this._meta.descendants
+          );
         } else {
           this._includersPromise = qx.Promise.resolve([]);
         }
@@ -387,10 +412,12 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      *
      * @return {qx.Promise<qxl.apiviewer.dao.Class[]>} All implementations of this interface.
      */
-    getImplementations: function () {
+    getImplementations() {
       if (!this._implementationsPromise) {
         if (this._meta.type == "interface") {
-          this._implementationsPromise = qxl.apiviewer.dao.Class.findClasses(this._meta.descendants);
+          this._implementationsPromise = qxl.apiviewer.dao.Class.findClasses(
+            this._meta.descendants
+          );
         } else {
           this._implementationsPromise = qx.Promise.resolve([]);
         }
@@ -403,17 +430,16 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      *
      * @return {qxl.apiviewer.dao.Method} The constructor of the class.
      */
-    getConstructor: function () {
+    getConstructor() {
       return this._construct;
     },
-
 
     /**
      * Get all child controls
      *
      * @return {qxl.apiviewer.dao.ChildControl[]} All child controls.
      */
-    getChildControls: function () {
+    getChildControls() {
       return this._childControls;
     },
 
@@ -423,7 +449,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      * @return {qxl.apiviewer.dao.Method[]} The members of the class.
      * @deprecated Is this used any more????
      */
-    getMembers: function () {
+    getMembers() {
       return this._members;
     },
 
@@ -432,7 +458,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      *
      * @return {qxl.apiviewer.dao.Method[]} The members of the class.
      */
-    getMethods: function () {
+    getMethods() {
       return this._members;
     },
 
@@ -442,7 +468,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      * @return {qxl.apiviewer.dao.Method[]} The members of the class.
      * @deprecated Is this used any more????
      */
-    getMixinMembers: function () {
+    getMixinMembers() {
       return this._mixinMembers;
     },
 
@@ -451,7 +477,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      *
      * @return {qxl.apiviewer.dao.Method[]} The members of the class.
      */
-    getMixinMethods: function () {
+    getMixinMethods() {
       return this._mixinMembers;
     },
 
@@ -460,7 +486,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      *
      * @return {qxl.apiviewer.dao.Method[]} The statics of the class.
      */
-    getStatics: function () {
+    getStatics() {
       return this._staticMethods;
     },
 
@@ -469,7 +495,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      *
      * @return {qxl.apiviewer.dao.Event[]} The events of the class.
      */
-    getEvents: function () {
+    getEvents() {
       return this._events;
     },
 
@@ -478,7 +504,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      *
      * @return {qxl.apiviewer.dao.Event[]} The events of the class.
      */
-    getMixinEvents: function () {
+    getMixinEvents() {
       return this._mixinEvents;
     },
 
@@ -487,7 +513,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      *
      * @return {qxl.apiviewer.dao.Property[]} The properties of the class.
      */
-    getProperties: function () {
+    getProperties() {
       return this._properties;
     },
 
@@ -496,7 +522,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      * @param name
      * @return {qxl.apiviewer.dao.Property} The named property
      */
-    getProperty: function (name) {
+    getProperty(name) {
       for (var i = 0; i < this._properties.length; i++) {
         var prop = this._properties[i];
         if (prop.getName() == name) {
@@ -511,7 +537,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      *
      * @return {qxl.apiviewer.dao.Property[]} The properties of the class.
      */
-    getMixinProperties: function () {
+    getMixinProperties() {
       return this._mixinProperties;
     },
 
@@ -520,7 +546,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      *
      * @return {qxl.apiviewer.dao.Constant[]} The constants of the class.
      */
-    getConstants: function () {
+    getConstants() {
       return this._constants;
     },
 
@@ -529,11 +555,11 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      *
      * @return {String[]} A list of all references declared using the "see" attribute.
      */
-    getSee: function () {
-      return (this._jsdoc["@see"] || []).map(item => item.body);
+    getSee() {
+      return (this._jsdoc["@see"] || []).map((item) => item.body);
     },
 
-    getErrors: function () {
+    getErrors() {
       return [];
     },
 
@@ -548,9 +574,13 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      * @return {qxl.apiviewer.dao.Class[]} array of super classes of the given
      *         class.
      */
-    getClassHierarchy: function (includeNativeObjects) {
+    getClassHierarchy(includeNativeObjects) {
       var result = [];
-      for (var currentClass = this; currentClass; currentClass = currentClass.getSuperClass()) {
+      for (
+        var currentClass = this;
+        currentClass;
+        currentClass = currentClass.getSuperClass()
+      ) {
         var isNative = qxl.apiviewer.dao.Class.isNativeObject(currentClass);
         if (!isNative || includeNativeObjects) {
           result.push(currentClass);
@@ -562,7 +592,6 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
       return result;
     },
 
-
     /**
      * Get the documentation nodes of all interfaces in the inheritance chain of
      * an interface. The first entry in the list is the interface itself.
@@ -570,7 +599,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      * @return {qxl.apiviewer.dao.Class[]} array of super interfaces of the given
      *         interface.
      */
-    getInterfaceHierarchy: function () {
+    getInterfaceHierarchy() {
       var result = [];
 
       /**
@@ -578,7 +607,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
        */
       function add(currentClass) {
         result.push(currentClass);
-        currentClass.getSuperInterfaces().forEach(itf => add(itf));
+        currentClass.getSuperInterfaces().forEach((itf) => add(itf));
       }
       add(this);
 
@@ -592,22 +621,21 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      *          {Boolean?false} Whether the interfaces of all super classes
      *          should be returned as well.
      */
-    getAllInterfaces: function (includeSuperClasses) {
+    getAllInterfaces(includeSuperClasses) {
       var interfaceNodes = [];
 
-      let ifaceRecurser = ifaceNode => {
+      let ifaceRecurser = (ifaceNode) => {
         interfaceNodes.push(ifaceNode);
         (ifaceNode.getSuperInterfaces() || []).forEach(ifaceRecurser);
       };
 
       var classNodes = includeSuperClasses ? this.getClassHierarchy() : [this];
-      classNodes.forEach(classNode => {
+      classNodes.forEach((classNode) => {
         (classNode.getInterfaces() || []).forEach(ifaceRecurser);
       });
-      
+
       return interfaceNodes;
     },
-
 
     /**
      * Return a class item matching the given name.
@@ -616,11 +644,13 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      *          {String} name of the class item
      * @return {qxl.apiviewer.dao.ClassItem} the class item.
      */
-    getItemByNameFromMixins: function (itemName) {
-      return this._mixinMembers[itemName] ||
+    getItemByNameFromMixins(itemName) {
+      return (
+        this._mixinMembers[itemName] ||
         this._mixinProperties[itemName] ||
         this._mixinEvents[itemName] ||
-        null;
+        null
+      );
     },
 
     /**
@@ -629,7 +659,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      * @param itemName {String} name of the class item
      * @return {qxl.apiviewer.dao.ClassItem} the class item.
      */
-    getItem: function (itemName) {
+    getItem(itemName) {
       var itemListNames = [
         "getMembers",
         "getStatics",
@@ -637,7 +667,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
         "getProperties",
         "getConstants",
         // "getAppearances",
-        "getChildControls"
+        "getChildControls",
       ];
 
       for (var i = 0; i < itemListNames.length; i++) {
@@ -671,27 +701,25 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      * @param listName {String} name of the item list
      * @return {apiviewer.dao.ClassItem[]} item list
      */
-    getItemList : function(listName) {
-      var methodMap =
-      {
-        "events" : "getEvents",
-        "constructor": "getConstructor",
-        "properties" : "getProperties",
-        "methods" : "getMembers",
-        "methods-static" : "getStatics",
-        "constants" : "getConstants",
-//        "appearances" : "getAppearances",
-        "superInterfaces" : "getSuperInterfaces",
-        "superMixins" : "getSuperMixins",
-        "childControls" : "getChildControls"
+    getItemList(listName) {
+      var methodMap = {
+        events: "getEvents",
+        constructor: "getConstructor",
+        properties: "getProperties",
+        methods: "getMembers",
+        "methods-static": "getStatics",
+        constants: "getConstants",
+        //        "appearances" : "getAppearances",
+        superInterfaces: "getSuperInterfaces",
+        superMixins: "getSuperMixins",
+        childControls: "getChildControls",
       };
 
       if (listName == "constructor") {
         return this.getConstructor() ? [this.getConstructor()] : [];
-      } 
-        return this[methodMap[listName]]();
+      }
+      return this[methodMap[listName]]();
     },
-
 
     /**
      * Get a class item by the item list name and the item name.
@@ -701,9 +729,9 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      * @param itemName {String} name of the class item.
      * @return {apiviewer.dao.ClassItem} the matching class item.
      */
-    getItemByListAndName : function(listName, itemName) {
+    getItemByListAndName(listName, itemName) {
       var list = this.getItemList(listName);
-      for (var j=0; j<list.length; j++) {
+      for (var j = 0; j < list.length; j++) {
         if (itemName == list[j].getName()) {
           return list[j];
         }
@@ -711,8 +739,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
       return null;
     },
 
-
-    loadDependedClasses: function () {
+    loadDependedClasses() {
       return qxl.apiviewer.ClassLoader.loadClassList(this.getDependedClasses());
     },
 
@@ -723,7 +750,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      *
      * @return {qx.Promise<Class[]>} array of dependent classes.
      */
-    getDependedClasses: function () {
+    getDependedClasses() {
       let foundClasses = [];
       /**
        * @param clazz
@@ -732,44 +759,43 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
         if (qxl.apiviewer.dao.Class.isNativeObject(clazz)) {
           return;
         }
-        clazz.load().then(() => {
-        });
+        clazz.load().then(() => {});
 
         foundClasses.push(clazz);
         clazz.getSuperClass() && findClasses(clazz.getSuperClass());
         (clazz.getMixins() || []).forEach(() => findClasses);
-        (clazz.getSuperMixins()|| []).forEach(() => findClasses);
-        (clazz.getInterfaces()|| []).forEach(() => findClasses);
-        (clazz.getSuperInterfaces()|| []).forEach(() => findClasses);
+        (clazz.getSuperMixins() || []).forEach(() => findClasses);
+        (clazz.getInterfaces() || []).forEach(() => findClasses);
+        (clazz.getSuperInterfaces() || []).forEach(() => findClasses);
       }
 
       findClasses(this);
       return foundClasses;
-    }
+    },
   },
 
   statics: {
     _native_classes: {
-      "Array": Array,
-      "Boolean": Boolean,
-      "Date": Date,
-      "Error": Error,
-      "Function": Function,
-      "Math": Math,
-      "Number": Number,
-      "Object": Object,
-      "RegExp": RegExp,
-      "String": String
+      Array: Array,
+      Boolean: Boolean,
+      Date: Date,
+      Error: Error,
+      Function: Function,
+      Math: Math,
+      Number: Number,
+      Object: Object,
+      RegExp: RegExp,
+      String: String,
     },
 
     /**
      * Get a class documentation by the class name.
-     * @param className 
+     * @param className
      * {String} name of the class
      * @param create
      * @return {qxl.apiviewer.dao.Class} The class documentation
      */
-    getClassByName: function (className, create) {
+    getClassByName(className, create) {
       var nativeClass = qxl.apiviewer.dao.Class._native_classes[className];
       if (nativeClass !== undefined) {
         return nativeClass;
@@ -787,27 +813,27 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
       return cls;
     },
 
-
     /**
      * Get a class documentation by the class name.
      * @param classNames
      * @param create
      * @return {qxl.apiviewer.dao.Class} The class documentation
      */
-    getClassesByName: function (classNames, create) {
+    getClassesByName(classNames, create) {
       classNames = qx.lang.Array.toNativeArray(classNames);
-      var result = classNames.map(name => qxl.apiviewer.dao.Class.getClassByName(name, create));
+      var result = classNames.map((name) =>
+        qxl.apiviewer.dao.Class.getClassByName(name, create)
+      );
       return result;
     },
 
-
-    findClasses: function (name) {
+    findClasses(name) {
       if (!name) {
         return qx.Promise.resolve([]);
       }
       var all = qx.lang.Array.toNativeArray(name)
-        .filter(name => !qxl.apiviewer.dao.Class._native_classes[name])
-        .map(name => {
+        .filter((name) => !qxl.apiviewer.dao.Class._native_classes[name])
+        .map((name) => {
           let c = qxl.apiviewer.dao.Class.getClassByName(name);
           if (c) {
             c.load();
@@ -817,7 +843,6 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
       return qx.Promise.all(all);
     },
 
-
     /**
      * Checks if the Class is a qooxdoo qxl.apiviewer.dao.Class Object or a native
      * one
@@ -826,9 +851,8 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      *          {qxl.apiviewer.dao.Class} the object to be checked
      * @return {Boolean} true if it is a JS native object
      */
-    isNativeObject: function (clazz) {
+    isNativeObject(clazz) {
       return clazz.classname !== "qxl.apiviewer.dao.Class";
-    }
-
-  }
+    },
+  },
 });

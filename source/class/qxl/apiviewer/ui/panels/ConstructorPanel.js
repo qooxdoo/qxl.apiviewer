@@ -24,21 +24,22 @@
 qx.Class.define("qxl.apiviewer.ui.panels.ConstructorPanel", {
   extend: qxl.apiviewer.ui.panels.AbstractMethodPanel,
 
-  construct: function() {
-    this.base(arguments, "Constructor", "qxl/apiviewer/image/constructor18.gif");
+  construct() {
+    super("Constructor", "qxl/apiviewer/image/constructor18.gif");
   },
 
-  members : {
+  members: {
     /**
      * @Override
      */
-    canDisplayItem: function(dao) {
-      return dao instanceof qxl.apiviewer.dao.Method && dao.getName() == "construct";
+    canDisplayItem(dao) {
+      return (
+        dao instanceof qxl.apiviewer.dao.Method && dao.getName() == "construct"
+      );
     },
 
-    getPanelItemObjects: function(daoClass, showInherited) {
+    getPanelItemObjects(daoClass, showInherited) {
       return daoClass.getConstructor();
-    }
-
-  }
+    },
+  },
 });

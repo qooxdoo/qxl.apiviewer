@@ -53,95 +53,97 @@
     },
 
  */
-qx.Class.define("qxl.apiviewer.dao.Property",
-  {
-    extend : qxl.apiviewer.dao.ClassItem,
+qx.Class.define("qxl.apiviewer.dao.Property", {
+  extend: qxl.apiviewer.dao.ClassItem,
 
-    construct : function(meta, clazz, name) {
-      this.base(arguments, meta, clazz, name);
+  construct(meta, clazz, name) {
+    this.base(arguments, meta, clazz, name);
+  },
+
+  members: {
+    getTypes() {
+      var result = [];
+      if (this._meta.check) {
+        result.push({ type: this._meta.check });
+      }
+      return result;
     },
 
-    members : {
-      getTypes : function() {
-        var result = [];
-        if (this._meta.check) {
-          result.push({type: this._meta.check});
-        }
-        return result;
-      },
-
-
-      /**
+    /**
      * Returns the check attribute of the property definition if
      * the check attribute does not define an internal type or a
      * class. In this case use {@link #getTypes}.
      *
      * @return {String} the contents of the check attribute.
      */
-      getCheck : function() {
-        var check = this._meta.check;
-        if (check &&
-          !qxl.apiviewer.dao.Class.getClassByName(check) &&
-          !qxl.apiviewer.ui.ClassViewer.PRIMITIVES[check]) {
-          return check;
-        }
+    getCheck() {
+      var check = this._meta.check;
+      if (
+        check &&
+        !qxl.apiviewer.dao.Class.getClassByName(check) &&
+        !qxl.apiviewer.ui.ClassViewer.PRIMITIVES[check]
+      ) {
+        return check;
+      }
 
-        return null;
-      },
+      return null;
+    },
 
-      /**
+    /**
      * @Override
      */
-      isRequiredByInterface : function(iface) {
-        return iface.getProperties().some(method => method.getName() == this.getName());
-      },
+    isRequiredByInterface(iface) {
+      return iface
+        .getProperties()
+        .some((method) => method.getName() == this.getName());
+    },
 
-      getClassname : function() {
-        return this._class.getName();
-      },
+    getClassname() {
+      return this._class.getName();
+    },
 
-      getPossibleValues : function() {
-        return this._meta.possibleValues||[];
-      },
+    getPossibleValues() {
+      return this._meta.possibleValues || [];
+    },
 
-      getGroup : function() {
-        return this._meta.group || [];
-      },
+    getGroup() {
+      return this._meta.group || [];
+    },
 
-      isPropertyGroup : function() {
-        return Boolean(this._meta.group);
-      },
+    isPropertyGroup() {
+      return Boolean(this._meta.group);
+    },
 
-      getType : function() {
-        return this.getCheck();
-      },
+    getType() {
+      return this.getCheck();
+    },
 
-      getEvent : function() {
-        return this._meta.event;
-      },
+    getEvent() {
+      return this._meta.event;
+    },
 
-      getApplyMethod : function() {
-        return this._meta.apply;
-      },
+    getApplyMethod() {
+      return this._meta.apply;
+    },
 
-      isNullable : function() {
-        return Boolean(this._meta.nullable);
-      },
+    isNullable() {
+      return Boolean(this._meta.nullable);
+    },
 
-      getDefaultValue : function() {
-        return this._meta.defaultValue;
-      },
+    getDefaultValue() {
+      return this._meta.defaultValue;
+    },
 
-      isInheritable : function() {
-        return this._meta.inheritable || false;
-      },
+    isInheritable() {
+      return this._meta.inheritable || false;
+    },
 
-      isThemeable : function() {
-        return this._meta.themeable || false;
-      },
+    isThemeable() {
+      return this._meta.themeable || false;
+    },
 
-      isRefined : function() {
-        return this._meta.refine || false;
-      }
-    }
-  });
+    isRefined() {
+      return this._meta.refine || false;
+    },
+  },
+});

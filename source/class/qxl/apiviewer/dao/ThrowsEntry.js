@@ -18,29 +18,24 @@
 
 ************************************************************************ */
 
-qx.Class.define("qxl.apiviewer.dao.ThrowsEntry",
-  {
-    extend : qxl.apiviewer.dao.ClassItem,
+qx.Class.define("qxl.apiviewer.dao.ThrowsEntry", {
+  extend: qxl.apiviewer.dao.ClassItem,
 
-    construct : function(classDocNode, parentClass, method) {
-      this.base(arguments, classDocNode, parentClass);
-    },
+  construct(classDocNode, parentClass, method) {
+    this.base(arguments, classDocNode, parentClass);
+  },
 
-    members :
-  {
-
-    getType : function() {
+  members: {
+    getType() {
       return this._docNode.attributes.type || null;
     },
 
-    getDefaultType : function() {
+    getDefaultType() {
       return "Error";
     },
 
-    getDescription : function() {
+    getDescription() {
       return this._docNode.attributes.text;
-    }
-
-  }
-
-  });
+    },
+  },
+});

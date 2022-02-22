@@ -19,20 +19,18 @@
 ************************************************************************ */
 
 qx.Class.define("qxl.apiviewer.dao.Constant", {
-  extend : qxl.apiviewer.dao.ClassItem,
+  extend: qxl.apiviewer.dao.ClassItem,
 
-  construct : function(meta, clazz, name) {
+  construct(meta, clazz, name) {
     this.base(arguments, meta, clazz, name);
     this._value = meta.value;
   },
 
-  members : {
+  members: {
     _value: undefined,
 
-    getValue : function() {
+    getValue() {
       return this._value;
-    }
-
-  }
-
+    },
+  },
 });

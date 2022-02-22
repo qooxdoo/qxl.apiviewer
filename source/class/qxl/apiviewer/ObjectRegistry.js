@@ -17,20 +17,17 @@
      * Fabian Jakobs (fjakobs)
 
 ************************************************************************ */
-qx.Class.define("qxl.apiviewer.ObjectRegistry",
-  {
-    statics :
-  {
-    __objectDb : {},
+qx.Class.define("qxl.apiviewer.ObjectRegistry", {
+  statics: {
+    __objectDb: {},
 
-    register : function(object) {
+    register(object) {
       var hash = qx.core.ObjectRegistry.toHashCode(object);
       this.__objectDb[hash] = object;
     },
 
-    getObjectFromHashCode : function(hashCode) {
+    getObjectFromHashCode(hashCode) {
       return this.__objectDb[hashCode];
-    }
-  }
-
-  });
+    },
+  },
+});

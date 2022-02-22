@@ -18,14 +18,12 @@
 
 ************************************************************************ */
 
-qx.Class.define("qxl.apiviewer.ui.tabview.ClassPage",
-  {
-    extend : qxl.apiviewer.ui.tabview.AbstractPage,
+qx.Class.define("qxl.apiviewer.ui.tabview.ClassPage", {
+  extend: qxl.apiviewer.ui.tabview.AbstractPage,
 
-    members :
-  {
-    _createViewer : function() {
+  members: {
+    _createViewer() {
       return new qxl.apiviewer.ui.ClassViewer();
-    }
-  }
-  });
+    },
+  },
+});

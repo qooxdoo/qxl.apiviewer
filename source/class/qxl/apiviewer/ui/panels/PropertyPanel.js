@@ -22,27 +22,25 @@
 ************************************************************************ */
 
 qx.Class.define("qxl.apiviewer.ui.panels.PropertyPanel", {
-
   extend: qxl.apiviewer.ui.panels.InfoPanel,
 
-  construct: function() {
-    this.base(arguments, "Properties", "qxl/apiviewer/image/property18.gif");
+  construct() {
+    super("Properties", "qxl/apiviewer/image/property18.gif");
   },
 
-  members :
-  {
+  members: {
     /**
      * @Override
      */
-    canDisplayItem: function(dao) {
+    canDisplayItem(dao) {
       return dao instanceof qxl.apiviewer.dao.Property;
     },
 
-    _canShowInherited: function() {
+    _canShowInherited() {
       return true;
     },
 
-    getPanelItemObjects: function(daoClass, showInherited) {
+    getPanelItemObjects(daoClass, showInherited) {
       var arr = daoClass.getProperties();
       if (showInherited) {
         arr = arr.concat(daoClass.getMixinProperties());
@@ -50,7 +48,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.PropertyPanel", {
       return arr;
     },
 
-    __createGeneratedMethodsHtml : function(node, currentClassDocNode) {
+    __createGeneratedMethodsHtml(node, currentClassDocNode) {
       if (node.isRefined()) {
         return "";
       }
@@ -70,53 +68,107 @@ qx.Class.define("qxl.apiviewer.ui.panels.PropertyPanel", {
 
       var generatedMethods = [];
 
-      generatedMethods.push("{@link #" + access + "set" + name + "}</td><td> Set the property value.");
+      generatedMethods.push(
+        "{@link #" +
+          access +
+          "set" +
+          name +
+          "}</td><td> Set the property value."
+      );
 
       if (!node.isPropertyGroup()) {
-        generatedMethods.push("{@link #" + access + "get" + name + "}</td><td> Get the property value.");
-        generatedMethods.push("{@link #" + access + "init" + name + "}</td><td> Call apply method with the init value.");
+        generatedMethods.push(
+          "{@link #" +
+            access +
+            "get" +
+            name +
+            "}</td><td> Get the property value."
+        );
+        generatedMethods.push(
+          "{@link #" +
+            access +
+            "init" +
+            name +
+            "}</td><td> Call apply method with the init value."
+        );
       }
 
-      generatedMethods.push("{@link #" + access + "reset" + name + "}</td><td> Reset the property value.");
+      generatedMethods.push(
+        "{@link #" +
+          access +
+          "reset" +
+          name +
+          "}</td><td> Reset the property value."
+      );
 
       if (node.getType() == "Boolean") {
-        generatedMethods.push("{@link #" + access + "toggle" + name + "}</td><td> Toggle the property value.");
-        generatedMethods.push("{@link #" + access + "is" + name + "}</td><td> Check whether the property equals <code>true</code>.");
+        generatedMethods.push(
+          "{@link #" +
+            access +
+            "toggle" +
+            name +
+            "}</td><td> Toggle the property value."
+        );
+        generatedMethods.push(
+          "{@link #" +
+            access +
+            "is" +
+            name +
+            "}</td><td> Check whether the property equals <code>true</code>."
+        );
       }
 
       var textHtml = new qx.util.StringBuilder();
-      textHtml.add("<div class=\"item-detail-headline\">", "Generated methods:", "</div>", "<div class=\"item-detail-text\">");
+      textHtml.add(
+        '<div class="item-detail-headline">',
+        "Generated methods:",
+        "</div>",
+        '<div class="item-detail-text">'
+      );
       textHtml.add("<table><tr><td>");
       textHtml.add(generatedMethods.join("</td></tr><tr><td>"));
       textHtml.add("</td></tr></table>");
       textHtml.add("</div>");
 
-      return qxl.apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(textHtml.get(), currentClassDocNode);
+      return qxl.apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(
+        textHtml.get(),
+        currentClassDocNode
+      );
     },
 
-
-    __createAttributesHtml : function(node) {
+    __createAttributesHtml(node) {
       var attributes = [];
 
       if (node.isNullable()) {
         attributes.push("This property allows 'null' values");
       }
       if (node.isInheritable()) {
-        attributes.push("The property value can be inherited from a parent object.");
+        attributes.push(
+          "The property value can be inherited from a parent object."
+        );
       }
       if (node.isThemeable()) {
-        attributes.push("The property value can be set using appearance themes.");
+        attributes.push(
+          "The property value can be set using appearance themes."
+        );
       }
       if (node.isPropertyGroup()) {
         attributes.push("The property is a property group.");
       }
       if (node.isRefined()) {
-        attributes.push("The property refines the init value of an existing property.");
+        attributes.push(
+          "The property refines the init value of an existing property."
+        );
       }
 
       if (attributes.length > 0) {
         var textHtml = new qx.util.StringBuilder();
-        textHtml.add("<div class=\"item-detail-headline\">", "Property attributes:", "</div>", "<div class=\"item-detail-text\">");
+        textHtml.add(
+          '<div class="item-detail-headline">',
+          "Property attributes:",
+          "</div>",
+          '<div class="item-detail-text">'
+        );
         textHtml.add("<ul><li>");
         textHtml.add(attributes.join("</li><li>"));
         textHtml.add("</li></ul>");
@@ -127,37 +179,41 @@ qx.Class.define("qxl.apiviewer.ui.panels.PropertyPanel", {
       return "";
     },
 
-
     /**
      * Creates the HTML showing whether the item is refined
      *
      * @param node {qxl.apiviewer.dao.ClassItem} item to get the the information from
      * @return {String} HTML fragment
      */
-    __createRefinedFromHtml : function(node) {
+    __createRefinedFromHtml(node) {
       if (node.isRefined()) {
         var html = new qx.util.StringBuilder(
-          "<div class=\"item-detail-headline\">", "Refined property:", "</div>",
-          "<div class=\"item-detail-text\">",
-          qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(node.getOverriddenFrom().getFullName()+"#"+node.getName()),
+          '<div class="item-detail-headline">',
+          "Refined property:",
+          "</div>",
+          '<div class="item-detail-text">',
+          qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(
+            node.getOverriddenFrom().getFullName() + "#" + node.getName()
+          ),
           "</div>"
         );
+
         return html.get();
       }
 
       return "";
     },
 
-
-    getItemTypeHtml : function(node) {
+    getItemTypeHtml(node) {
       return qxl.apiviewer.ui.panels.InfoPanel.createTypeHtml(node, "var");
     },
 
-
-    getItemTitleHtml : function(node) {
-      return qxl.apiviewer.ui.panels.InfoPanel.setTitleClass(node, node.getName());
+    getItemTitleHtml(node) {
+      return qxl.apiviewer.ui.panels.InfoPanel.setTitleClass(
+        node,
+        node.getName()
+      );
     },
-
 
     /**
      * Creates the HTML showing the information about a property.
@@ -167,9 +223,15 @@ qx.Class.define("qxl.apiviewer.ui.panels.PropertyPanel", {
      * @param showDetails {Boolean} whether to show the details.
      * @return {String} the HTML showing the information about the property.
      */
-    getItemTextHtml : function(node, currentClassDocNode, showDetails) {
+    getItemTextHtml(node, currentClassDocNode, showDetails) {
       // Add the description
-      var textHtml = new qx.util.StringBuilder(qxl.apiviewer.ui.panels.InfoPanel.createDescriptionHtml(node, node.getClass(), showDetails));
+      var textHtml = new qx.util.StringBuilder(
+        qxl.apiviewer.ui.panels.InfoPanel.createDescriptionHtml(
+          node,
+          node.getClass(),
+          showDetails
+        )
+      );
 
       if (showDetails) {
         // Add allowed values
@@ -181,27 +243,33 @@ qx.Class.define("qxl.apiviewer.ui.panels.PropertyPanel", {
             possibleValues.push("null");
           }
           allowedValue =
-            "<code>" +
-            possibleValues.join("</code>, <code>") +
-            "</code>";
+            "<code>" + possibleValues.join("</code>, <code>") + "</code>";
         } else if (node.getClassname()) {
           allowedValue = "instances of " + node.getClassname();
         } else if (node.getInstance()) {
-          allowedValue = "instances of " + node.getInstance() + " or sub classes";
+          allowedValue =
+            "instances of " + node.getInstance() + " or sub classes";
         } else if (node.getType()) {
           allowedValue = "any " + node.getType();
         }
 
         if (allowedValue) {
-          textHtml.add("<div class=\"item-detail-headline\">", "Allowed values:", "</div>", "<div class=\"item-detail-text\">");
+          textHtml.add(
+            '<div class="item-detail-headline">',
+            "Allowed values:",
+            "</div>",
+            '<div class="item-detail-text">'
+          );
           textHtml.add(allowedValue, "</div>");
         }
 
         // Add check
         if (node.getCheck()) {
           textHtml.add(
-            "<div class=\"item-detail-headline\">", "Check:", "</div>",
-            "<div class=\"javascript\">",
+            '<div class="item-detail-headline">',
+            "Check:",
+            "</div>",
+            '<div class="javascript">',
             qx.dev.Tokenizer.javaScriptToHtml(node.getCheck()),
             "</div>"
           );
@@ -210,10 +278,12 @@ qx.Class.define("qxl.apiviewer.ui.panels.PropertyPanel", {
         // Add default value
         if (!node.isPropertyGroup()) {
           textHtml.add(
-            "<div class=\"item-detail-headline\">", "Init value:", "</div>",
-            "<div class=\"item-detail-text\">",
+            '<div class="item-detail-headline">',
+            "Init value:",
+            "</div>",
+            '<div class="item-detail-text">',
             "<code>",
-            (node.getDefaultValue() ? node.getDefaultValue() : "null"),
+            node.getDefaultValue() ? node.getDefaultValue() : "null",
             "</code>",
             "</div>"
           );
@@ -222,11 +292,17 @@ qx.Class.define("qxl.apiviewer.ui.panels.PropertyPanel", {
         // add event
         if (node.getEvent() && !node.isRefined()) {
           textHtml.add(
-            "<div class=\"item-detail-headline\">", "Change event:", "</div>",
-            "<div class=\"item-detail-text\">",
+            '<div class="item-detail-headline">',
+            "Change event:",
+            "</div>",
+            '<div class="item-detail-text">',
             qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(
-              "#"+node.getEvent(), node.getClass(), true, true
+              "#" + node.getEvent(),
+              node.getClass(),
+              true,
+              true
             ),
+
             "</div>"
           );
         }
@@ -234,29 +310,57 @@ qx.Class.define("qxl.apiviewer.ui.panels.PropertyPanel", {
         // add apply method
         if (node.getApplyMethod() && !node.isRefined()) {
           textHtml.add(
-            "<div class=\"item-detail-headline\">", "Apply method:", "</div>",
-            "<div class=\"item-detail-text\">",
+            '<div class="item-detail-headline">',
+            "Apply method:",
+            "</div>",
+            '<div class="item-detail-text">',
             qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(
-              "#"+node.getApplyMethod(), node.getClass(), true, true
+              "#" + node.getApplyMethod(),
+              node.getClass(),
+              true,
+              true
             ),
+
             "</div>"
           );
         }
 
         textHtml.add(this.__createAttributesHtml(node));
-        textHtml.add(this.__createGeneratedMethodsHtml(node, currentClassDocNode));
-        textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createIncludedFromHtml(node, currentClassDocNode));
+        textHtml.add(
+          this.__createGeneratedMethodsHtml(node, currentClassDocNode)
+        );
+        textHtml.add(
+          qxl.apiviewer.ui.panels.InfoPanel.createIncludedFromHtml(
+            node,
+            currentClassDocNode
+          )
+        );
         textHtml.add(this.__createRefinedFromHtml(node));
-        textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createInheritedFromHtml(node, currentClassDocNode));
-        textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createInfoRequiredByHtml(node));
+        textHtml.add(
+          qxl.apiviewer.ui.panels.InfoPanel.createInheritedFromHtml(
+            node,
+            currentClassDocNode
+          )
+        );
+        textHtml.add(
+          qxl.apiviewer.ui.panels.InfoPanel.createInfoRequiredByHtml(node)
+        );
         textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createSeeAlsoHtml(node));
-        textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createErrorHtml(node, currentClassDocNode));
-        textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createDeprecationHtml(node, "property"));
+        textHtml.add(
+          qxl.apiviewer.ui.panels.InfoPanel.createErrorHtml(
+            node,
+            currentClassDocNode
+          )
+        );
+        textHtml.add(
+          qxl.apiviewer.ui.panels.InfoPanel.createDeprecationHtml(
+            node,
+            "property"
+          )
+        );
       }
 
       return textHtml.get();
-    }
-
-  }
-
+    },
+  },
 });

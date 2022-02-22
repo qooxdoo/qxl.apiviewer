@@ -21,23 +21,21 @@
 
 ************************************************************************ */
 qx.Class.define("qxl.apiviewer.ui.panels.ConstantPanel", {
-
   extend: qxl.apiviewer.ui.panels.InfoPanel,
 
-  construct: function() {
-    this.base(arguments, "Constants", "qxl/apiviewer/image/constant18.gif");
+  construct() {
+    super("Constants", "qxl/apiviewer/image/constant18.gif");
   },
 
-  members : {
-
+  members: {
     /**
      * @Override
      */
-    canDisplayItem: function(dao) {
+    canDisplayItem(dao) {
       return dao instanceof qxl.apiviewer.dao.Constant;
     },
 
-    getPanelItemObjects: function(daoClass, showInherited) {
+    getPanelItemObjects(daoClass, showInherited) {
       return daoClass.getConstants();
     },
 
@@ -48,7 +46,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.ConstantPanel", {
      * @param currentClassDocNode {Map} the doc node of the currently displayed class
      * @return {Boolean} whether the constant has details.
      */
-    itemHasDetails : function(node, currentClassDocNode) {
+    itemHasDetails(node, currentClassDocNode) {
       return (
         node.getSee().length > 0 ||
         node.getErrors().length > 0 ||
@@ -57,16 +55,16 @@ qx.Class.define("qxl.apiviewer.ui.panels.ConstantPanel", {
       );
     },
 
-
-    getItemTypeHtml : function(node) {
+    getItemTypeHtml(node) {
       return qxl.apiviewer.ui.panels.InfoPanel.createTypeHtml(node, "var");
     },
 
-
-    getItemTitleHtml : function(node) {
-      return qxl.apiviewer.ui.panels.InfoPanel.setTitleClass(node, node.getName());
+    getItemTitleHtml(node) {
+      return qxl.apiviewer.ui.panels.InfoPanel.setTitleClass(
+        node,
+        node.getName()
+      );
     },
-
 
     /**
      * Creates the HTML showing the information about a constant.
@@ -76,19 +74,28 @@ qx.Class.define("qxl.apiviewer.ui.panels.ConstantPanel", {
      * @param showDetails {Boolean} whether to show the details.
      * @return {String} the HTML showing the information about the constant.
      */
-    getItemTextHtml : function(node, currentClassDocNode, showDetails) {
-      var textHtml = qxl.apiviewer.ui.panels.InfoPanel.createDescriptionHtml(node, node.getClass(), showDetails);
+    getItemTextHtml(node, currentClassDocNode, showDetails) {
+      var textHtml = qxl.apiviewer.ui.panels.InfoPanel.createDescriptionHtml(
+        node,
+        node.getClass(),
+        showDetails
+      );
 
       if (showDetails) {
         textHtml += this.__createConstantValueHtml(node);
         textHtml += qxl.apiviewer.ui.panels.InfoPanel.createSeeAlsoHtml(node);
-        textHtml += qxl.apiviewer.ui.panels.InfoPanel.createErrorHtml(node, currentClassDocNode);
-        textHtml += qxl.apiviewer.ui.panels.InfoPanel.createDeprecationHtml(node, "constant");
+        textHtml += qxl.apiviewer.ui.panels.InfoPanel.createErrorHtml(
+          node,
+          currentClassDocNode
+        );
+        textHtml += qxl.apiviewer.ui.panels.InfoPanel.createDeprecationHtml(
+          node,
+          "constant"
+        );
       }
 
       return textHtml;
     },
-
 
     /**
      * Checks whether a constant value is provided
@@ -96,10 +103,9 @@ qx.Class.define("qxl.apiviewer.ui.panels.ConstantPanel", {
      * @param node {Map} the doc node of the item.
      * @return {Boolean} whether the constant provides a value
      */
-    __hasConstantValueHtml : function(node) {
+    __hasConstantValueHtml(node) {
       return Boolean(node.getValue());
     },
-
 
     /**
      * Creates the HTML showing the value of a constant
@@ -107,7 +113,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.ConstantPanel", {
      * @param node {Map} the doc node of the item.
      * @return {String} the HTML showing the value of the constant
      */
-    __createConstantValueHtml : function(node) {
+    __createConstantValueHtml(node) {
       if (this.__hasConstantValueHtml(node)) {
         var value = node.getValue();
         if (typeof value !== "string") {
@@ -115,16 +121,17 @@ qx.Class.define("qxl.apiviewer.ui.panels.ConstantPanel", {
         }
         value = qx.bom.String.escape(value);
         var html = new qx.util.StringBuilder(
-          "<div class=\"item-detail-headline\">", "Value: ",
-          "</div>", "<div class=\"item-detail-text\">",
+          '<div class="item-detail-headline">',
+          "Value: ",
+          "</div>",
+          '<div class="item-detail-text">',
           value,
           "</div>"
         );
+
         return html.get();
       }
       return "";
-    }
-
-  }
-
+    },
+  },
 });

@@ -21,7 +21,7 @@ qx.Class.define("qxl.apiviewer.RequestUtil", {
   extend: qx.core.Object,
 
   statics: {
-    get: function(url, opts) {
+    get(url, opts) {
       return new qx.Promise((resolve, reject) => {
         var req = new qx.io.remote.Request(url);
         req.setAsynchronous(true);
@@ -30,13 +30,13 @@ qx.Class.define("qxl.apiviewer.RequestUtil", {
         if (opts) {
           req.set(opts);
         }
-        req.addListener("completed", evt => {
+        req.addListener("completed", (evt) => {
           resolve(evt.getContent());
         });
         req.addListener("failed", () => reject());
         req.addListener("aborted", () => reject());
         req.send();
       });
-    }
-  }
+    },
+  },
 });

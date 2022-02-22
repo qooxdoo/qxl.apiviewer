@@ -22,28 +22,25 @@
 ************************************************************************ */
 
 qx.Class.define("qxl.apiviewer.ui.panels.EventPanel", {
-
   extend: qxl.apiviewer.ui.panels.InfoPanel,
 
-  construct: function() {
-    this.base(arguments, "Events", "qxl/apiviewer/image/event18.gif");
+  construct() {
+    super("Events", "qxl/apiviewer/image/event18.gif");
   },
 
-  members :
-  {
-
+  members: {
     /**
      * @Override
      */
-    canDisplayItem: function(dao) {
+    canDisplayItem(dao) {
       return dao instanceof qxl.apiviewer.dao.Event;
     },
 
-    _canShowInherited: function() {
+    _canShowInherited() {
       return true;
     },
 
-    getPanelItemObjects: function(daoClass, showInherited) {
+    getPanelItemObjects(daoClass, showInherited) {
       var arr = daoClass.getEvents();
       if (showInherited) {
         arr = arr.concat(daoClass.getMixinEvents());
@@ -58,7 +55,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.EventPanel", {
      * @param currentClassDocNode {Map} the doc node of the currently displayed class
      * @return {Boolean} whether the event has details.
      */
-    itemHasDetails : function(node, currentClassDocNode) {
+    itemHasDetails(node, currentClassDocNode) {
       return (
         node.getOverriddenFrom() || // event is inherited
         node.getSee().length > 0 ||
@@ -67,16 +64,16 @@ qx.Class.define("qxl.apiviewer.ui.panels.EventPanel", {
       );
     },
 
-
-    getItemTypeHtml : function(node) {
+    getItemTypeHtml(node) {
       return qxl.apiviewer.ui.panels.InfoPanel.createTypeHtml(node, "var");
     },
 
-
-    getItemTitleHtml : function(node) {
-      return qxl.apiviewer.ui.panels.InfoPanel.setTitleClass(node, node.getName());
+    getItemTitleHtml(node) {
+      return qxl.apiviewer.ui.panels.InfoPanel.setTitleClass(
+        node,
+        node.getName()
+      );
     },
-
 
     /**
      * Creates the HTML showing the information about an event.
@@ -86,20 +83,36 @@ qx.Class.define("qxl.apiviewer.ui.panels.EventPanel", {
      * @param showDetails {Boolean} whether to show the details.
      * @return {String} the HTML showing the information about the event.
      */
-    getItemTextHtml : function(node, currentClassDocNode, showDetails) {
+    getItemTextHtml(node, currentClassDocNode, showDetails) {
       // Add the description
-      var textHtml = new qx.util.StringBuilder(qxl.apiviewer.ui.panels.InfoPanel.createDescriptionHtml(node, node.getClass(), showDetails));
+      var textHtml = new qx.util.StringBuilder(
+        qxl.apiviewer.ui.panels.InfoPanel.createDescriptionHtml(
+          node,
+          node.getClass(),
+          showDetails
+        )
+      );
 
       if (showDetails) {
-        textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createInheritedFromHtml(node, currentClassDocNode));
+        textHtml.add(
+          qxl.apiviewer.ui.panels.InfoPanel.createInheritedFromHtml(
+            node,
+            currentClassDocNode
+          )
+        );
         textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createSeeAlsoHtml(node));
-        textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createErrorHtml(node, currentClassDocNode));
-        textHtml.add(qxl.apiviewer.ui.panels.InfoPanel.createDeprecationHtml(node, "event"));
+        textHtml.add(
+          qxl.apiviewer.ui.panels.InfoPanel.createErrorHtml(
+            node,
+            currentClassDocNode
+          )
+        );
+        textHtml.add(
+          qxl.apiviewer.ui.panels.InfoPanel.createDeprecationHtml(node, "event")
+        );
       }
 
       return textHtml.get();
-    }
-
-  }
-
+    },
+  },
 });

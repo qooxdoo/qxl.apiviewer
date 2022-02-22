@@ -17,22 +17,18 @@
      * Fabian Jakobs (fjakobs)
 
 ************************************************************************ */
-qx.Mixin.define("qxl.apiviewer.MWidgetRegistry",
-  {
-
-    properties :
-  {
-    id : {
-      check : "String",
-      apply : "_applyId",
-      nullable : true,
-      init : null
-    }
+qx.Mixin.define("qxl.apiviewer.MWidgetRegistry", {
+  properties: {
+    id: {
+      check: "String",
+      apply: "_applyId",
+      nullable: true,
+      init: null,
+    },
   },
 
-    members :
-  {
-    _applyId : function(id, oldId) {
+  members: {
+    _applyId(id, oldId) {
       var statics = qxl.apiviewer.MWidgetRegistry;
       if (oldId) {
         statics.unregister(this, oldId);
@@ -42,15 +38,13 @@ qx.Mixin.define("qxl.apiviewer.MWidgetRegistry",
       }
     },
 
-    getWidgetById : function(id) {
+    getWidgetById(id) {
       return qxl.apiviewer.MWidgetRegistry.getWidgetById(id);
-    }
-
+    },
   },
 
-    statics :
-  {
-    __objectDb : {},
+  statics: {
+    __objectDb: {},
 
     /**
      * Returns the widget registered under the given id by {@link #register}
@@ -58,7 +52,7 @@ qx.Mixin.define("qxl.apiviewer.MWidgetRegistry",
      * @param id {String} the id of the widget
      * @return {qx.ui.core.Widget} the widget.
      */
-    getWidgetById : function(id) {
+    getWidgetById(id) {
       return this.__objectDb[id];
     },
 
@@ -68,20 +62,20 @@ qx.Mixin.define("qxl.apiviewer.MWidgetRegistry",
      * @param object
      * @param id {String} the id of the widget.
      */
-    register : function(object, id) {
+    register(object, id) {
       if (this.__objectDb[id]) {
-        throw new Error("An object with the id '"+id+"' already exists.");
+        throw new Error("An object with the id '" + id + "' already exists.");
       }
       this.__objectDb[id] = object;
     },
 
-    unregister : function(object, id) {
+    unregister(object, id) {
       if (this.__objectDb[id] !== object) {
-        throw new Error("The object is not registered with the id '"+id+"'.");
+        throw new Error(
+          "The object is not registered with the id '" + id + "'."
+        );
       }
-      delete (this.__objectDb[id]);
-    }
-
-  }
-
-  });
+      delete this.__objectDb[id];
+    },
+  },
+});

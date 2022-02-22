@@ -19,17 +19,14 @@
 ************************************************************************ */
 
 qx.Class.define("qxl.apiviewer.dao.ChildControl", {
-  extend : qxl.apiviewer.dao.ClassItem,
+  extend: qxl.apiviewer.dao.ClassItem,
 
-  construct : function(meta, parentClass) {
+  construct(meta, parentClass) {
     this.base(arguments, meta, parentClass, meta.controlName);
   },
-  members : {
-    getDefaultValue : function() {
+  members: {
+    getDefaultValue() {
       return "";
-    }
-  }
-
-
-
+    },
+  },
 });

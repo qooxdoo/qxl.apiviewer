@@ -22,14 +22,12 @@
  * Implements the dynamic behavior of the API viewer.
  * The GUI is defined in {@link Viewer}.
  */
-qx.Class.define("qxl.apiviewer.ui.tabview.PackagePage",
-  {
-    extend : qxl.apiviewer.ui.tabview.AbstractPage,
+qx.Class.define("qxl.apiviewer.ui.tabview.PackagePage", {
+  extend: qxl.apiviewer.ui.tabview.AbstractPage,
 
-    members :
-  {
-    _createViewer : function() {
+  members: {
+    _createViewer() {
       return new qxl.apiviewer.ui.PackageViewer();
-    }
-  }
-  });
+    },
+  },
+});

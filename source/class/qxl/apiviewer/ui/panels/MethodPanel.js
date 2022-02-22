@@ -24,17 +24,16 @@
 qx.Class.define("qxl.apiviewer.ui.panels.MethodPanel", {
   extend: qxl.apiviewer.ui.panels.AbstractMethodPanel,
 
-  construct: function() {
-    this.base(arguments, "Members", "qxl/apiviewer/image/method_public18.gif");
+  construct() {
+    super("Members", "qxl/apiviewer/image/method_public18.gif");
   },
 
-  members : {
+  members: {
     /**
      * @Override
      */
-    canDisplayItem: function(dao) {
+    canDisplayItem(dao) {
       return dao instanceof qxl.apiviewer.dao.Method && !dao.isStatic();
-    }
-  }
-
+    },
+  },
 });

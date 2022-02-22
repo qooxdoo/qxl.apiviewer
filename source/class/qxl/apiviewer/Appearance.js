@@ -22,87 +22,78 @@
 /**
  * Extends the default qooxdoo appearance theme.
  */
-qx.Theme.define("qxl.apiviewer.Appearance",
-  {
-    title: "Theme for API Viewer",
-    extend : qx.theme.indigo.Appearance,
+qx.Theme.define("qxl.apiviewer.Appearance", {
+  title: "Theme for API Viewer",
+  extend: qx.theme.indigo.Appearance,
 
-    appearances :
-  {
-    "toggleview" :
-    {
-      style : function(states) {
+  appearances: {
+    toggleview: {
+      style(states) {
         return {
-          width : 240,
-          decorator : "main"
+          width: 240,
+          decorator: "main",
         };
-      }
+      },
     },
 
-    "detailviewer" :
-    {
-      style : function(states) {
+    detailviewer: {
+      style(states) {
         return {
-          backgroundColor : "white",
-          decorator : "main",
-          padding : [10, 0, 10, 0]
+          backgroundColor: "white",
+          decorator: "main",
+          padding: [10, 0, 10, 0],
         };
-      }
+      },
     },
 
-    "legend" :
-    {
-      include : "scrollarea",
-      alias : "scrollarea",
+    legend: {
+      include: "scrollarea",
+      alias: "scrollarea",
 
-      style : function(states) {
+      style(states) {
         return {
-          contentPadding : [10, 10, 10, 10],
-          backgroundColor: "white"
+          contentPadding: [10, 10, 10, 10],
+          backgroundColor: "white",
         };
-      }
+      },
     },
 
-    "legendview-label-important" :
-    {
-      style : function(states) {
+    "legendview-label-important": {
+      style(states) {
         return {
           textColor: "#134275",
-          font : "bold"
+          font: "bold",
         };
-      }
+      },
     },
 
-    "legendview-label" :
-    {
-      style : function(states) {
+    "legendview-label": {
+      style(states) {
         return {
-          textColor: "#134275"
+          textColor: "#134275",
         };
-      }
+      },
     },
 
-    "tabview" :
-    {
-      style : function(states) {
+    tabview: {
+      style(states) {
         return {
-          contentPadding : 0
+          contentPadding: 0,
         };
-      }
+      },
     },
 
-    "tabview/pane" :
-    {
-      style : function(states) {
+    "tabview/pane": {
+      style(states) {
         return {
-          minHeight : 100,
+          minHeight: 100,
 
-          marginBottom : states.barBottom ? -1 : 0,
-          marginTop : states.barTop ? -1 : 0,
-          marginLeft : states.barLeft ? -1 : 0,
-          marginRight : states.barRight ? -1 : 0
+          marginBottom: states.barBottom ? -1 : 0,
+          marginTop: states.barTop ? -1 : 0,
+          marginLeft: states.barLeft ? -1 : 0,
+          marginRight: states.barRight ? -1 : 0,
         };
-      }
-    }
-  }
-  });
+      },
+    },
+  },
+});

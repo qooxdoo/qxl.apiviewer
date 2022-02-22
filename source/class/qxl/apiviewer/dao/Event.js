@@ -19,24 +19,25 @@
 ************************************************************************ */
 
 qx.Class.define("qxl.apiviewer.dao.Event", {
-  extend : qxl.apiviewer.dao.ClassItem,
+  extend: qxl.apiviewer.dao.ClassItem,
 
-  construct : function(meta, clazz) {
+  construct(meta, clazz) {
     this.base(arguments, meta, clazz, meta.name);
     this._type = meta.type;
   },
 
-  members : {
-
-    getType : function() {
+  members: {
+    getType() {
       return qxl.apiviewer.dao.Class.getClassByName(this._type);
     },
 
-    getTypes : function() {
+    getTypes() {
       if (this._type) {
-        return [{
-          type: this._type
-        }];
+        return [
+          {
+            type: this._type,
+          },
+        ];
       }
       return [];
     },
@@ -44,10 +45,10 @@ qx.Class.define("qxl.apiviewer.dao.Event", {
     /**
      * @Override
      */
-    isRequiredByInterface : function(iface) {
-      return iface.getEvents().some(method => method.getName() == this.getName());
-    }
-
-  }
-
+    isRequiredByInterface(iface) {
+      return iface
+        .getEvents()
+        .some((method) => method.getName() == this.getName());
+    },
+  },
 });

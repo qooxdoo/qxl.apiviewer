@@ -22,9 +22,9 @@
  * This class wraps the access to documentation nodes.
  */
 qx.Class.define("qxl.apiviewer.dao.Node", {
-  extend : qx.core.Object,
+  extend: qx.core.Object,
 
-  construct: function(meta) {
+  construct(meta) {
     this.base(arguments);
     this._meta = {};
     this._jsdoc = {};
@@ -33,13 +33,12 @@ qx.Class.define("qxl.apiviewer.dao.Node", {
     }
   },
 
-  members :
-  {
+  members: {
     _meta: null,
     _jsdoc: null,
     _errors: null,
 
-    _initMeta: function(meta) {
+    _initMeta(meta) {
       this._meta = meta;
       this._jsdoc = meta.jsdoc || {};
       this._errors = [];
@@ -50,7 +49,7 @@ qx.Class.define("qxl.apiviewer.dao.Node", {
      *
      * @return {String} description
      */
-    getDescription : function() {
+    getDescription() {
       var arr = this._jsdoc["@description"];
       if (arr && arr.length) {
         return arr[arr.length - 1].body;
@@ -58,117 +57,102 @@ qx.Class.define("qxl.apiviewer.dao.Node", {
       return "";
     },
 
-
     /**
      * Get a list of errors of this item.
      *
      * @return {Map[]} errors of this item.
      */
-    getErrors : function() {
+    getErrors() {
       return this._errors;
     },
-
 
     /**
      * Get the line number of this item in the source file
      *
      * @return {Integer|null} line number or <code>null</code> if unknown
      */
-    getLineNumber : function() {
+    getLineNumber() {
       return this._meta.location ? this._meta.location.start.line : null;
     },
-
 
     /**
      * Get whether the node is deprecated.
      *
      * @return {Boolean} whether the node is deprecated.
      */
-    isDeprecated : function() {
+    isDeprecated() {
       return this._jsdoc["@deprecated"] !== undefined;
     },
-
 
     /**
      * Get the text of the deprecation message.
      *
      * @return {String} the deprecation message.
      */
-    getDeprecationText : function() {
+    getDeprecationText() {
       return (this.isDeprecated() && this._jsdoc["@deprecated"].body) || "";
     },
-
 
     /**
      * Get whether the node is internal.
      *
      * @return {Boolean} whether the node is internal.
      */
-    isInternal : function() {
+    isInternal() {
       return this._jsdoc["@internal"] !== undefined;
     },
-
 
     /**
      * Get whether the node is private.
      *
      * @return {Boolean} whether the node is private.
      */
-    isPrivate : function() {
+    isPrivate() {
       return this._meta.access == "private";
     },
-
 
     /**
      * Get whether the node is protected.
      *
      * @return {Boolean} whether the node is protected.
      */
-    isProtected : function() {
+    isProtected() {
       return this._meta.access == "protected";
     },
-
 
     /**
      * Get whether the node is property generated.
      *
      * @return {Boolean} whether the node is property generated.
      */
-    isPropertyGenerated : function() {
+    isPropertyGenerated() {
       return Boolean(this._meta.property);
     },
-
 
     /**
      * Get whether the node is public.
      *
      * @return {Boolean} Whether the node is public.
      */
-    isPublic : function() {
-      return (
-        !this.isPrivate() &&
-        !this.isProtected() &&
-        !this.isInternal()
-      );
+    isPublic() {
+      return !this.isPrivate() && !this.isProtected() && !this.isInternal();
     },
-
 
     /**
      * Get whether the node has a warning.
      *
      * @return {Boolean} whether the node has a warning.
      */
-    hasWarning : function() {
+    hasWarning() {
       return this._meta.hasWarning || false;
     },
-
 
     /**
      * Initialize all internal fields. This method will be called by the
      * constructor before the child nodes are parsed.
      */
-    _initializeFields : function() {
+    _initializeFields() {
       this._errors = [];
-    }
-  }
+    },
+  },
 });

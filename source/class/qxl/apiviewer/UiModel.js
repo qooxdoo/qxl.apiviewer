@@ -1,56 +1,48 @@
-qx.Class.define("qxl.apiviewer.UiModel",
-  {
-    extend : qx.core.Object,
-    type : "singleton",
+qx.Class.define("qxl.apiviewer.UiModel", {
+  extend: qx.core.Object,
+  type: "singleton",
 
-    properties :
-  {
+  properties: {
     /** whether to display inherited items */
-    showInherited :
-    {
+    showInherited: {
       check: "Boolean",
       init: false,
-      event : "changeShowInherited"
+      event: "changeShowInherited",
     },
 
     /** whether to display included items */
-    showIncluded :
-    {
+    showIncluded: {
       check: "Boolean",
       init: true,
-      event : "changeShowIncluded"
+      event: "changeShowIncluded",
     },
 
     /** whether to display protected items */
-    expandProperties :
-    {
+    expandProperties: {
       check: "Boolean",
       init: false,
-      event : "changeExpandProperties"
+      event: "changeExpandProperties",
     },
 
     /** whether to display protected items */
-    showProtected :
-    {
+    showProtected: {
       check: "Boolean",
       init: false,
-      event : "changeShowProtected"
+      event: "changeShowProtected",
     },
 
     /** whether to display private items */
-    showPrivate :
-    {
+    showPrivate: {
       check: "Boolean",
       init: false,
-      event : "changeShowPrivate"
+      event: "changeShowPrivate",
     },
 
     /** whether to display internal items */
-    showInternal :
-    {
+    showInternal: {
       check: "Boolean",
       init: false,
-      event : "changeShowInternal"
-    }
-  }
-  });
+      event: "changeShowInternal",
+    },
+  },
+});

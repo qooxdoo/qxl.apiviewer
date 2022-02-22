@@ -20,16 +20,14 @@
 /**
  * Contemporary Theme
  */
-qx.Theme.define("qxl.apiviewer.Theme",
-  {
-    title : "APIViewer theme",
+qx.Theme.define("qxl.apiviewer.Theme", {
+  title: "APIViewer theme",
 
-    meta :
-  {
-    color : qx.theme.indigo.Color,
-    decoration : qx.theme.indigo.Decoration,
-    font : qx.theme.indigo.Font,
-    appearance : qxl.apiviewer.Appearance,
-    icon : qx.theme.icon.Tango
-  }
-  });
+  meta: {
+    color: qx.theme.indigo.Color,
+    decoration: qx.theme.indigo.Decoration,
+    font: qx.theme.indigo.Font,
+    appearance: qxl.apiviewer.Appearance,
+    icon: qx.theme.icon.Tango,
+  },
+});
