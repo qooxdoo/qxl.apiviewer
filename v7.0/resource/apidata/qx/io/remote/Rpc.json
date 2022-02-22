@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 1075,
+        "line": 1001,
         "column": 3
       }
     },
@@ -36,11 +36,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 110,
-        "column": 14
+        "line": 106,
+        "column": 2
       },
       "end": {
-        "line": 128,
+        "line": 120,
         "column": 3
       }
     },
@@ -73,12 +73,12 @@
     "completed": {
       "location": {
         "start": {
-          "line": 144,
+          "line": 132,
           "column": 4
         },
         "end": {
-          "line": 144,
-          "column": 39
+          "line": 132,
+          "column": 36
         }
       },
       "jsdoc": {
@@ -95,12 +95,12 @@
     "aborted": {
       "location": {
         "start": {
-          "line": 149,
+          "line": 137,
           "column": 4
         },
         "end": {
-          "line": 149,
-          "column": 37
+          "line": 137,
+          "column": 34
         }
       },
       "jsdoc": {
@@ -117,12 +117,12 @@
     "failed": {
       "location": {
         "start": {
-          "line": 154,
+          "line": 142,
           "column": 4
         },
         "end": {
-          "line": 154,
-          "column": 36
+          "line": 142,
+          "column": 33
         }
       },
       "jsdoc": {
@@ -139,12 +139,12 @@
     "timeout": {
       "location": {
         "start": {
-          "line": 159,
+          "line": 147,
           "column": 4
         },
         "end": {
-          "line": 159,
-          "column": 37
+          "line": 147,
+          "column": 34
         }
       },
       "jsdoc": {
@@ -163,11 +163,11 @@
     "origin": {
       "location": {
         "start": {
-          "line": 175,
+          "line": 160,
           "column": 4
         },
         "end": {
-          "line": 181,
+          "line": 165,
           "column": 5
         }
       },
@@ -185,11 +185,11 @@
     "localError": {
       "location": {
         "start": {
-          "line": 187,
+          "line": 170,
           "column": 4
         },
         "end": {
-          "line": 192,
+          "line": 174,
           "column": 5
         }
       },
@@ -207,12 +207,12 @@
     "CONVERT_DATES": {
       "location": {
         "start": {
-          "line": 217,
+          "line": 198,
           "column": 4
         },
         "end": {
-          "line": 217,
-          "column": 24
+          "line": 198,
+          "column": 23
         }
       },
       "jsdoc": {
@@ -229,12 +229,12 @@
     "RESPONSE_JSON": {
       "location": {
         "start": {
-          "line": 237,
+          "line": 217,
           "column": 4
         },
         "end": {
-          "line": 237,
-          "column": 24
+          "line": 217,
+          "column": 23
         }
       },
       "jsdoc": {
@@ -251,11 +251,11 @@
     "makeServerURL": {
       "location": {
         "start": {
-          "line": 256,
+          "line": 235,
           "column": 4
         },
         "end": {
-          "line": 274,
+          "line": 250,
           "column": 5
         }
       },
@@ -294,11 +294,11 @@
     "timeout": {
       "location": {
         "start": {
-          "line": 295,
+          "line": 267,
           "column": 4
         },
         "end": {
-          "line": 299,
+          "line": 270,
           "column": 5
         }
       },
@@ -319,11 +319,11 @@
     "crossDomain": {
       "location": {
         "start": {
-          "line": 311,
+          "line": 281,
           "column": 4
         },
         "end": {
-          "line": 315,
+          "line": 284,
           "column": 5
         }
       },
@@ -344,11 +344,11 @@
     "url": {
       "location": {
         "start": {
-          "line": 319,
+          "line": 287,
           "column": 4
         },
         "end": {
-          "line": 323,
+          "line": 290,
           "column": 5
         }
       },
@@ -369,11 +369,11 @@
     "serviceName": {
       "location": {
         "start": {
-          "line": 327,
+          "line": 293,
           "column": 4
         },
         "end": {
-          "line": 331,
+          "line": 296,
           "column": 5
         }
       },
@@ -394,11 +394,11 @@
     "serverData": {
       "location": {
         "start": {
-          "line": 342,
+          "line": 306,
           "column": 4
         },
         "end": {
-          "line": 346,
+          "line": 309,
           "column": 5
         }
       },
@@ -419,11 +419,11 @@
     "username": {
       "location": {
         "start": {
-          "line": 353,
+          "line": 315,
           "column": 4
         },
         "end": {
-          "line": 357,
+          "line": 318,
           "column": 5
         }
       },
@@ -444,11 +444,11 @@
     "password": {
       "location": {
         "start": {
-          "line": 364,
+          "line": 324,
           "column": 4
         },
         "end": {
-          "line": 368,
+          "line": 327,
           "column": 5
         }
       },
@@ -469,11 +469,11 @@
     "useBasicHttpAuth": {
       "location": {
         "start": {
-          "line": 374,
+          "line": 332,
           "column": 4
         },
         "end": {
-          "line": 378,
+          "line": 335,
           "column": 5
         }
       },
@@ -494,11 +494,11 @@
     "protocol": {
       "location": {
         "start": {
-          "line": 388,
+          "line": 345,
           "column": 4
         },
         "end": {
-          "line": 392,
+          "line": 350,
           "column": 5
         }
       },
@@ -513,6 +513,7 @@
       "name": "protocol",
       "propertyType": "new",
       "init": "2.0",
+      "check": "[[ ObjectMethod Function ]]",
       "defaultValue": "2.0"
     },
     "qxOwner": {
@@ -552,12 +553,12 @@
     "__previousServerSuffix": {
       "location": {
         "start": {
-          "line": 406,
+          "line": 360,
           "column": 4
         },
         "end": {
-          "line": 406,
-          "column": 33
+          "line": 360,
+          "column": 32
         }
       },
       "type": "variable",
@@ -566,12 +567,12 @@
     "__currentServerSuffix": {
       "location": {
         "start": {
-          "line": 407,
+          "line": 361,
           "column": 4
         },
         "end": {
-          "line": 407,
-          "column": 32
+          "line": 361,
+          "column": 31
         }
       },
       "type": "variable",
@@ -580,11 +581,11 @@
     "createRequest": {
       "location": {
         "start": {
-          "line": 417,
+          "line": 371,
           "column": 4
         },
         "end": {
-          "line": 422,
+          "line": 377,
           "column": 5
         }
       },
@@ -610,11 +611,11 @@
     "createRpcData": {
       "location": {
         "start": {
-          "line": 447,
+          "line": 402,
           "column": 4
         },
         "end": {
-          "line": 495,
+          "line": 439,
           "column": 5
         }
       },
@@ -670,11 +671,11 @@
     "_callInternal": {
       "location": {
         "start": {
-          "line": 517,
+          "line": 460,
           "column": 4
         },
         "end": {
-          "line": 839,
+          "line": 782,
           "column": 5
         }
       },
@@ -737,11 +738,11 @@
     "fixUrl": {
       "location": {
         "start": {
-          "line": 849,
+          "line": 791,
           "column": 4
         },
         "end": {
-          "line": 869,
+          "line": 812,
           "column": 5
         }
       },
@@ -776,11 +777,11 @@
     "callSync": {
       "location": {
         "start": {
-          "line": 894,
+          "line": 836,
           "column": 4
         },
         "end": {
-          "line": 897,
+          "line": 838,
           "column": 5
         }
       },
@@ -822,11 +823,11 @@
     "callAsync": {
       "location": {
         "start": {
-          "line": 933,
+          "line": 873,
           "column": 4
         },
         "end": {
-          "line": 936,
+          "line": 875,
           "column": 5
         }
       },
@@ -875,11 +876,11 @@
     "callAsyncListeners": {
       "location": {
         "start": {
-          "line": 988,
+          "line": 926,
           "column": 4
         },
         "end": {
-          "line": 991,
+          "line": 928,
           "column": 5
         }
       },
@@ -928,11 +929,11 @@
     "refreshSession": {
       "location": {
         "start": {
-          "line": 1010,
+          "line": 946,
           "column": 4
         },
         "end": {
-          "line": 1033,
+          "line": 963,
           "column": 5
         }
       },
@@ -959,11 +960,11 @@
     "_isConvertDates": {
       "location": {
         "start": {
-          "line": 1044,
+          "line": 973,
           "column": 4
         },
         "end": {
-          "line": 1046,
+          "line": 975,
           "column": 5
         }
       },
@@ -989,11 +990,11 @@
     "_isResponseJson": {
       "location": {
         "start": {
-          "line": 1056,
+          "line": 984,
           "column": 4
         },
         "end": {
-          "line": 1058,
+          "line": 986,
           "column": 5
         }
       },
@@ -1019,11 +1020,11 @@
     "abort": {
       "location": {
         "start": {
-          "line": 1070,
+          "line": 997,
           "column": 4
         },
         "end": {
-          "line": 1073,
+          "line": 999,
           "column": 5
         }
       },
@@ -1779,6 +1780,7 @@
         "@return": [
           {
             "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
             "desc": "Returns the value for protocol"
           }
         ]
@@ -1802,6 +1804,7 @@
         "@param": [
           {
             "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
             "paramName": "value",
             "desc": "Value for protocol"
           }
