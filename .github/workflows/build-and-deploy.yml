@@ -17,6 +17,6 @@ jobs:
         with:
           token: ${{ secrets.REPOSITORY_DISPATCH }}
           event-type: "push-tag"
-          client-payload: '{"ref": "refs/tags/latest"}'
+          client-payload: '{"ref": "refs/tags/~v7.0.0"}'
 
     
