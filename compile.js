@@ -93,14 +93,19 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
       let command = this.getCompilerApi().getCommand();
       if (command instanceof qx.tool.cli.commands.Compile) {
         command.addListener("writingApplication", function(e) {
-           let appMeta = e.getData().appMeta;
-           let parts = appMeta.getParts();
-           parts.pop();
-           let pkg = appMeta.getPackages();
-           pkg.pop();
-           let pre = appMeta.getPreloads();
-           pre.urisBefore = [];
-           return this.__appCompiling(appMeta);
+          let appMeta = e.getData().appMeta;
+          let application = appMeta.getApplication();
+          let className = application.getClassName();
+          if (className !== "qxl.apiviewer.Application") {
+            return;
+          }
+          let parts = appMeta.getParts();
+          parts.pop();
+          let pkg = appMeta.getPackages();
+          pkg.pop();
+          let pre = appMeta.getPreloads();
+          pre.urisBefore = [];
+          return this.__appCompiling(appMeta);
         }, this);
       }
       return this.base(arguments);
@@ -301,10 +306,6 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
 
     async __appCompiling(appMeta) {
       let application = appMeta.getApplication();
-      let className = application.getClassName();
-      if (className !== "qxl.apiviewer.Application") {
-        return;
-      }
       let environment = appMeta.getEnvironment();
 
       let command = this.getCompilerApi().getCommand();
