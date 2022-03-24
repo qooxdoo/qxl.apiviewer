@@ -1,0 +1,592 @@
+{
+  "className": "qx.tool.compiler.Es6ify",
+  "packageName": "qx.tool.compiler",
+  "name": "Es6ify",
+  "superClass": "qx.core.Object",
+  "interfaces": [],
+  "mixins": [],
+  "functionName": null,
+  "clazz": {
+    "location": {
+      "start": {
+        "line": 103,
+        "column": 0
+      },
+      "end": {
+        "line": 404,
+        "column": 3
+      }
+    },
+    "jsdoc": {
+      "@description": [
+        {
+          "name": "@description",
+          "body": "<p>Processes a .js source file and tries to upgrade to ES6 syntax\n This is a reliable but fairly unintrusive upgrade, provided that <code>arrowFunctions</code> property is\n <code>careful</code>.  The issue is that this code: <code>setTimeout(function() { something(); })</code> can be\n changed to <code>setTimeout(() =&gt; something())</code> and that is often desirable, but it also means that\n the <code>this</code> will be different because an arrow function always has the <code>this</code> from where the\n code is written.\n However, if you use an API which changes <code>this</code> then the switch to arrow functions will break\n your code.  Mostly, in Qooxdoo, changes to <code>this</code> are done via an explicit API (eg\n <code>obj.addListener(\"changeXyx\", function() {}, this)</code>) and so those known APIs can be translated,\n but there are places which do not work this way (eg the unit tests <code>qx.dev.unit.TestCase.resume()</code>).\n Third party integrations are of course completely unknown.\n If <code>arrowFunctions</code> is set to aggressive, then all functions are switched to arrow functions except\n where there is a known API that does not support it (eg any call to <code>.resume</code> in a test class); this\n could break your code.\n If <code>arrowFunctions is set to </code>careful<code> (the default), then functions are only switched to arrow\n functions where the API is known  (eg </code>.addListener<code>).\n The final step is that the ES6ify will use https://prettier.io/ to reformat the code, and will use\n the nearest </code>prettierrc.json` for configuration</p>"
+        }
+      ]
+    }
+  },
+  "type": "class",
+  "construct": {
+    "location": {
+      "start": {
+        "line": 106,
+        "column": 2
+      },
+      "end": {
+        "line": 109,
+        "column": 3
+      }
+    }
+  },
+  "properties": {
+    "arrowFunctions": {
+      "location": {
+        "start": {
+          "line": 113,
+          "column": 4
+        },
+        "end": {
+          "line": 117,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Whether to convert functions to arrow functions; careful means only on things like addListener callbacks</p>"
+          }
+        ]
+      },
+      "name": "arrowFunctions",
+      "propertyType": "new",
+      "nullable": true,
+      "init": "careful",
+      "allowNull": true,
+      "possibleValues": [
+        "never",
+        "always",
+        "careful",
+        "aggressive"
+      ],
+      "defaultValue": "careful"
+    },
+    "overwrite": {
+      "location": {
+        "start": {
+          "line": 120,
+          "column": 4
+        },
+        "end": {
+          "line": 123,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Whether to overwrite the original file</p>"
+          }
+        ]
+      },
+      "name": "overwrite",
+      "propertyType": "new",
+      "init": false,
+      "check": "Boolean",
+      "defaultValue": false
+    },
+    "qxOwner": {
+      "type": "property",
+      "name": "qxOwner",
+      "abstract": false,
+      "mixin": true,
+      "access": "public",
+      "overriddenFrom": "qx.core.MObjectId",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>The owning object</p>"
+          }
+        ]
+      }
+    },
+    "qxObjectId": {
+      "type": "property",
+      "name": "qxObjectId",
+      "abstract": false,
+      "mixin": true,
+      "access": "public",
+      "overriddenFrom": "qx.core.MObjectId",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>{String} The ID of the object.</p>"
+          }
+        ]
+      }
+    }
+  },
+  "members": {
+    "__filename": {
+      "location": {
+        "start": {
+          "line": 127,
+          "column": 4
+        },
+        "end": {
+          "line": 127,
+          "column": 20
+        }
+      },
+      "type": "variable",
+      "access": "private"
+    },
+    "transform": {
+      "location": {
+        "start": {
+          "line": 129,
+          "column": 4
+        },
+        "end": {
+          "line": 196,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "__pluginFunctionExpressions": {
+      "location": {
+        "start": {
+          "line": 213,
+          "column": 4
+        },
+        "end": {
+          "line": 250,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Plugin that converts object properties which are functions into object methods, eg\n <code></code><code>\n {\n   myMethod: function() {}\n }\n </code><code></code>\n becomes\n <code></code><code>\n {\n   myMethod() {}\n }\n </code><code></code></p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "",
+            "type": "",
+            "description": ""
+          }
+        ]
+      },
+      "type": "function",
+      "access": "private"
+    },
+    "__toArrowExpression": {
+      "location": {
+        "start": {
+          "line": 252,
+          "column": 4
+        },
+        "end": {
+          "line": 268,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "private"
+    },
+    "__pluginArrowFunctions": {
+      "location": {
+        "start": {
+          "line": 274,
+          "column": 4
+        },
+        "end": {
+          "line": 319,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Tries to convert functions into arrow functions</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "",
+            "type": "",
+            "description": ""
+          }
+        ]
+      },
+      "type": "function",
+      "access": "private"
+    },
+    "__pluginRemoveUnnecessaryThis": {
+      "location": {
+        "start": {
+          "line": 326,
+          "column": 4
+        },
+        "end": {
+          "line": 345,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Where a function has been translated into an arrow function, the this binding is not needed\n and can be removed</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "",
+            "type": "",
+            "description": ""
+          }
+        ]
+      },
+      "type": "function",
+      "access": "private"
+    },
+    "__pluginSwitchToSuper": {
+      "location": {
+        "start": {
+          "line": 351,
+          "column": 4
+        },
+        "end": {
+          "line": 402,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Translates <code>this.base(arguments...)</code> into <code>super</code></p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "",
+            "type": "",
+            "description": ""
+          }
+        ]
+      },
+      "type": "function",
+      "access": "private"
+    },
+    "getQxOwner": {
+      "type": "function",
+      "name": "getQxOwner",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.core.Object",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "qx.core.Object",
+            "desc": "Returns the value for qxOwner"
+          }
+        ]
+      }
+    },
+    "setQxOwner": {
+      "type": "function",
+      "name": "setQxOwner",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.core.Object",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "qx.core.Object",
+            "paramName": "value",
+            "desc": "Value for qxOwner"
+          }
+        ]
+      }
+    },
+    "resetQxOwner": {
+      "type": "function",
+      "name": "resetQxOwner",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.core.Object",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>qxOwner</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
+          }
+        ]
+      }
+    },
+    "getQxObjectId": {
+      "type": "function",
+      "name": "getQxObjectId",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.core.Object",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "[[ ObjectMethod Function ]]",
+            "desc": "Returns the value for qxObjectId"
+          }
+        ]
+      }
+    },
+    "setQxObjectId": {
+      "type": "function",
+      "name": "setQxObjectId",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.core.Object",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "[[ ObjectMethod Function ]]",
+            "paramName": "value",
+            "desc": "Value for qxObjectId"
+          }
+        ]
+      }
+    },
+    "resetQxObjectId": {
+      "type": "function",
+      "name": "resetQxObjectId",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.core.Object",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>qxObjectId</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
+          }
+        ]
+      }
+    },
+    "getArrowFunctions": {
+      "type": "function",
+      "name": "getArrowFunctions",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>arrowFunctions</code>.\n\nFor further details take a look at the property definition: {@link #arrowFunctions}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "any",
+            "desc": "Returns the value for arrowFunctions"
+          }
+        ]
+      }
+    },
+    "setArrowFunctions": {
+      "type": "function",
+      "name": "setArrowFunctions",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>arrowFunctions</code>.\n\nFor further details take a look at the property definition: {@link #arrowFunctions}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "any",
+            "paramName": "value",
+            "desc": "Value for arrowFunctions"
+          }
+        ]
+      }
+    },
+    "resetArrowFunctions": {
+      "type": "function",
+      "name": "resetArrowFunctions",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>arrowFunctions</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #arrowFunctions}."
+          }
+        ]
+      }
+    },
+    "getOverwrite": {
+      "type": "function",
+      "name": "getOverwrite",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>overwrite</code>.\n\nFor further details take a look at the property definition: {@link #overwrite}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "Boolean",
+            "desc": "Returns the value for overwrite"
+          }
+        ]
+      }
+    },
+    "isOverwrite": {
+      "type": "function",
+      "name": "isOverwrite",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "is",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>overwrite</code>.\n\nFor further details take a look at the property definition: {@link #overwrite}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "Boolean",
+            "desc": "Returns the value for overwrite"
+          }
+        ]
+      }
+    },
+    "setOverwrite": {
+      "type": "function",
+      "name": "setOverwrite",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>overwrite</code>.\n\nFor further details take a look at the property definition: {@link #overwrite}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "Boolean",
+            "paramName": "value",
+            "desc": "Value for overwrite"
+          }
+        ]
+      }
+    },
+    "resetOverwrite": {
+      "type": "function",
+      "name": "resetOverwrite",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>overwrite</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #overwrite}."
+          }
+        ]
+      }
+    }
+  },
+  "descendants": []
+}
