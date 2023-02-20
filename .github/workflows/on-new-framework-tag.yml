@@ -17,11 +17,10 @@ jobs:
           version=$(echo "$ref" | cut -d / -f 3)
           dir=$(echo "$version" | cut -d . -f 1-2)
           dir=$(echo "$dir" | cut -d \~ -f 2)
-          echo "::set-output name=version::$version"
-          echo "::set-output name=destination_dir::$dir"
-          
+          echo "{version}={$version}" >> $GITHUB_OUTPUT
+          echo "{destination_dir}={$dir}" >> $GITHUB_OUTPUT
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           persist-credentials: false
           
