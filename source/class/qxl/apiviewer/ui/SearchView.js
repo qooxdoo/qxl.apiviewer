@@ -502,7 +502,6 @@ qx.Class.define("qxl.apiviewer.ui.SearchView", {
                     }
                     icon = qxl.apiviewer.TreeUtil["ICON_" + elemtype];
                   }
-                  
                   sresult.push([icon, fullname]);
                 }
               }
