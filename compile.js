@@ -206,10 +206,12 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           if (!res.apiindex.index[name]) {
             res.apiindex.index[name] = [];
           }
-          if (typeIdx === 2 && res.apiindex.index[name].length){
-            return;
+          const PACKAGE_ID = 2;
+          const isPackageAndWasAlreadyAdded = typeIdx === PACKAGE_ID && res.apiindex.index[name].length;
+          // no need to add package more than once
+          if (!isPackageAndWasAlreadyAdded){
+            res.apiindex.index[name].push([typeIdx, nameIdx]);
           }
-          res.apiindex.index[name].push([typeIdx, nameIdx]);
         };
 
         // We sort the result so that we can get a consistent ordering for loading classes, otherwise the order in
