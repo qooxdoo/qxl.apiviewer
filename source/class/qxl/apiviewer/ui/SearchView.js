@@ -384,7 +384,6 @@ qx.Class.define("qxl.apiviewer.ui.SearchView", {
 
       sresult = this._searchIndex(search[0], search[1]);
       sresult.sort(this._sortByIcons);
-      sresult = this.__withoutDuplicates(sresult);
 
       this._tableModel.setColumns([
         "",
@@ -401,10 +400,6 @@ qx.Class.define("qxl.apiviewer.ui.SearchView", {
         }.bind(this),
         0
       );
-    },
-
-    __withoutDuplicates(arr){
-      return [...new Set(arr.map(el => JSON.stringify(el)))].map(el => JSON.parse(el));
     },
 
     /**
@@ -492,10 +487,14 @@ qx.Class.define("qxl.apiviewer.ui.SearchView", {
                     icon = qxl.apiviewer.TreeUtil.getIconUrl(
                       qxl.apiviewer.dao.Class.getClassByName(fullname)
                     );
-                  } else {
+                  }
+                  else {
                     if (elemtype != "PACKAGE" && elemtype != "INTERFACE") {
                       // just consider attribute types
                       fullname += key;
+                    }
+                    if (elemtype == "PACKAGE"){
+                      fullname = key;
                     }
                     if (elemtype === "ENTRY") {
                       fullname = key.substring(1);

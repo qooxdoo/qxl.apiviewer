@@ -206,6 +206,9 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           if (!res.apiindex.index[name]) {
             res.apiindex.index[name] = [];
           }
+          if (typeIdx === 2 && res.apiindex.index[name].length){
+            return;
+          }
           res.apiindex.index[name].push([typeIdx, nameIdx]);
         };
 
@@ -240,7 +243,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
             }
             let typeIdx = TYPES[cls.getType()];
             addToIndex(cls.getName(), typeIdx, nameIdx);
-            typeIdx = 1;
+            typeIdx = 2;
             addToIndex(cls.getPackageName(), typeIdx, nameIdx);
             cls.getMethods().forEach(method => {
               let typeIdx;
@@ -333,7 +336,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
       res.apiindex = {};
       res.apiindex.fullNames = [];
       res.apiindex.index = {};
-      res.apiindex.types = ["doctree", "package", "class", "method_pub", "method_prot", "event", "property_pub", "method_priv", "method_intl", "constant", "childControl"];
+      res.apiindex.types = ["doctree", "class", "package", "method_pub", "method_prot", "event", "property_pub", "method_priv", "method_intl", "constant", "childControl"];
 
       let appsToScan = environment["qxl.apiviewer.applications"] || [];
       if (appsToScan.length === 0) {
