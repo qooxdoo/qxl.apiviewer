@@ -487,10 +487,14 @@ qx.Class.define("qxl.apiviewer.ui.SearchView", {
                     icon = qxl.apiviewer.TreeUtil.getIconUrl(
                       qxl.apiviewer.dao.Class.getClassByName(fullname)
                     );
-                  } else {
+                  }
+                  else {
                     if (elemtype != "PACKAGE" && elemtype != "INTERFACE") {
                       // just consider attribute types
                       fullname += key;
+                    }
+                    if (elemtype == "PACKAGE"){
+                      fullname = key;
                     }
                     if (elemtype === "ENTRY") {
                       fullname = key.substring(1);

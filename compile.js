@@ -206,7 +206,12 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           if (!res.apiindex.index[name]) {
             res.apiindex.index[name] = [];
           }
-          res.apiindex.index[name].push([typeIdx, nameIdx]);
+          const PACKAGE_ID = 2;
+          const isPackageAndWasAlreadyAdded = typeIdx === PACKAGE_ID && res.apiindex.index[name].length;
+          // no need to add package more than once
+          if (!isPackageAndWasAlreadyAdded){
+            res.apiindex.index[name].push([typeIdx, nameIdx]);
+          }
         };
 
         // We sort the result so that we can get a consistent ordering for loading classes, otherwise the order in
@@ -240,7 +245,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
             }
             let typeIdx = TYPES[cls.getType()];
             addToIndex(cls.getName(), typeIdx, nameIdx);
-            typeIdx = 1;
+            typeIdx = 2;
             addToIndex(cls.getPackageName(), typeIdx, nameIdx);
             cls.getMethods().forEach(method => {
               let typeIdx;
@@ -333,7 +338,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
       res.apiindex = {};
       res.apiindex.fullNames = [];
       res.apiindex.index = {};
-      res.apiindex.types = ["doctree", "package", "class", "method_pub", "method_prot", "event", "property_pub", "method_priv", "method_intl", "constant", "childControl"];
+      res.apiindex.types = ["doctree", "class", "package", "method_pub", "method_prot", "event", "property_pub", "method_priv", "method_intl", "constant", "childControl"];
 
       let appsToScan = environment["qxl.apiviewer.applications"] || [];
       if (appsToScan.length === 0) {
