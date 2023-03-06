@@ -49,7 +49,7 @@ Clone this repo and compile it:
 ```bash
 $ git clone https://github.com/qooxdoo/qxl.apiviewer
 $ cd qxl.apiviewer
-$ npm install --no-save --no-package-lock @qooxdoo/compiler
+$ npm install --no-save --no-package-lock @qooxdoo/framework
 $ npx qx serve
 ```
 
