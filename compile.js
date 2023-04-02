@@ -247,7 +247,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
             addToIndex(cls.getName(), typeIdx, nameIdx);
             typeIdx = 2;
             addToIndex(cls.getPackageName(), typeIdx, nameIdx);
-            cls.getMethods().forEach(method => {
+            const addMethodToIndex = (method) => {
               let typeIdx;
               if (method.isProtected())
                 typeIdx = 4;
@@ -256,7 +256,9 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
               else
                 typeIdx = 3;
               addToIndex('#' + method.getName(), typeIdx, nameIdx);
-            });
+            }
+            cls.getStatics().forEach(addMethodToIndex);
+            cls.getMethods().forEach(addMethodToIndex);
             cls.getProperties().forEach(prop => {
               let typeIdx = 6;
               addToIndex('#' + prop.getName(), typeIdx, nameIdx);

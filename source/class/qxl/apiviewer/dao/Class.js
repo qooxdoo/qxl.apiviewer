@@ -126,6 +126,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
               new qxl.apiviewer.dao.Constant(data, this, name)
             );
           } else {
+            data.isStatic = true;
             this._staticMethods.push(
               new qxl.apiviewer.dao.Method(data, this, name)
             );
@@ -730,13 +731,21 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
      * @return {apiviewer.dao.ClassItem} the matching class item.
      */
     getItemByListAndName(listName, itemName) {
-      var list = this.getItemList(listName);
-      for (var j = 0; j < list.length; j++) {
-        if (itemName == list[j].getName()) {
-          return list[j];
+      const getItemByListAndNameInternal = (listName) => {
+        var list = this.getItemList(listName);
+        for (var j = 0; j < list.length; j++) {
+          if (itemName == list[j].getName()) {
+            return list[j];
+          }
         }
+        return null;
       }
-      return null;
+      let item = getItemByListAndNameInternal(listName);
+      if (!item && listName === "methods"){
+        // try search method in static methods
+        item = getItemByListAndNameInternal("methods-static");
+      }
+      return item;
     },
 
     loadDependedClasses() {
