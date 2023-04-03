@@ -59,6 +59,10 @@ qx.Class.define("qxl.apiviewer.dao.Method", {
       return this._meta.isAbstract || false;
     },
 
+    isAsync() {
+      return this._meta.async || false;
+    },
+
     isConstructor() {
       return this.getName() == "construct";
     },

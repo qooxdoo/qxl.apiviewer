@@ -84,7 +84,11 @@ qx.Class.define("qxl.apiviewer.ui.panels.AbstractMethodPanel", {
         }
       }
 
-      titleHtml.add('<span class="parenthesis">)</span></span>');
+      titleHtml.add('<span class="parenthesis">)</span>');
+      if (method.isAsync()) {
+        titleHtml.add('<span class="async"> async</span>');
+      }
+      titleHtml.add("</span>");
 
       return titleHtml.get();
     },
@@ -347,6 +351,6 @@ qx.Class.define("qxl.apiviewer.ui.panels.AbstractMethodPanel", {
         qxl.apiviewer.ui.panels.InfoPanel.descriptionHasDetails(node) ||
         qxl.apiviewer.ui.ClassViewer.getSourceUri(node)
       );
-    },
-  },
+    }
+  }
 });
