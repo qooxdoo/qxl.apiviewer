@@ -866,7 +866,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
         itemNode && itemNode.getFullName
           ? itemNode.getFullName()
           : classNode && classNode.getFullName
-          ? classNode.getFullName() + itemName
+          ? `${classNode.getFullName()}${itemName ? itemName: ""}`
           : className;
       var protocol;
       var host;
