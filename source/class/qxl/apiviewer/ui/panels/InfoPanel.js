@@ -1168,7 +1168,6 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
       var typeDimensions;
       var typeName;
       var linkText;
-      console.log(typeNode);
 
       if (typeNode) {
         types = typeNode.getTypes();
