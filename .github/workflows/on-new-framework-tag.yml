@@ -34,7 +34,6 @@ jobs:
       - name: add compiler
         run: |
              npm -g install @qooxdoo/framework@${{ steps.get_version.outputs.version }}        
-             qx --help || npm -g install @qooxdoo/compiler
              
       - name: Build API Viewer
         run:  qx deploy --target=build -v --clean
