@@ -33,14 +33,14 @@ jobs:
           
       - name: add compiler
         run: |
-             npm install @qooxdoo/framework@${{ steps.get_version.outputs.version }}        
-             npx qx --help || npm install @qooxdoo/compiler
+             npm -g install @qooxdoo/framework@${{ steps.get_version.outputs.version }}        
+             qx --help || npm -g install @qooxdoo/compiler
              
       - name: Build API Viewer
-        run:  npx qx deploy --target=build -v --clean
+        run:  qx deploy --target=build -v --clean
         
       - name: Run Tests
-        run: npx qx test --target=build -v 
+        run: qx test --target=build -v 
 
       - name: Deploy to GH page
         uses: peaceiris/actions-gh-pages@v3
