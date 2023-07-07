@@ -54,10 +54,21 @@
         "qx.*"
       ],
       "exclude": [
-        "qx.test.*",
         "qx.module.Blocker",
         "qx.module.Placement"
-      ]
+      ],
+      "parts": {
+        "boot" : {
+          "include": [
+            "qx.*"
+          ]
+        }, 
+        "tool" : {
+          "include": [
+            "qx.tool.*"
+         ]
+        }
+      }
     }
   },
   "requires": {
