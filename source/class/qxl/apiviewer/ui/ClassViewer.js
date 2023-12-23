@@ -38,25 +38,13 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer", {
 
   construct() {
     super();
-    this.addInfoPanel(
-      new qxl.apiviewer.ui.panels.ConstructorPanel("constructor")
-    );
-    this.addInfoPanel(
-      new qxl.apiviewer.ui.panels.EventPanel("events", true, true)
-    );
-    this.addInfoPanel(
-      new qxl.apiviewer.ui.panels.StaticMethodsPanel("static methods")
-    );
-    this.addInfoPanel(
-      new qxl.apiviewer.ui.panels.ConstantPanel("constants", false, true)
-    );
-    this.addInfoPanel(
-      new qxl.apiviewer.ui.panels.PropertyPanel("properties", true, true)
-    );
+    this.addInfoPanel(new qxl.apiviewer.ui.panels.ConstructorPanel("constructor"));
+    this.addInfoPanel(new qxl.apiviewer.ui.panels.EventPanel("events", true, true));
+    this.addInfoPanel(new qxl.apiviewer.ui.panels.StaticMethodsPanel("static methods"));
+    this.addInfoPanel(new qxl.apiviewer.ui.panels.ConstantPanel("constants", false, true));
+    this.addInfoPanel(new qxl.apiviewer.ui.panels.PropertyPanel("properties", true, true));
     this.addInfoPanel(new qxl.apiviewer.ui.panels.MethodPanel("methods"));
-    this.addInfoPanel(
-      new qxl.apiviewer.ui.panels.ChildControlsPanel("child controls")
-    );
+    this.addInfoPanel(new qxl.apiviewer.ui.panels.ChildControlsPanel("child controls"));
 
     this.getContentElement().setAttribute("class", "ClassViewer");
 
@@ -70,75 +58,6 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer", {
   */
 
   statics: {
-    /** {Map} The primitive types. These types will not be shown with links. */
-    PRIMITIVES: {
-      var: true,
-      void: true,
-      undefined: true,
-      arguments: true,
-      null: true,
-      varargs: true,
-
-      Boolean: true,
-      String: true,
-
-      Number: true,
-      Integer: true,
-      PositiveNumber: true,
-      PositiveInteger: true,
-      Float: true,
-      Double: true,
-
-      Color: true,
-
-      Error: true,
-      RegExp: true,
-
-      Object: true,
-      Array: true,
-      Map: true,
-
-      Function: true,
-      Date: true,
-      Node: true,
-      Element: true,
-      Document: true,
-      Window: true,
-      Event: true,
-    },
-
-    MDC_LINKS: {
-      Event: "https://developer.mozilla.org/en/DOM/event",
-      Window: "https://developer.mozilla.org/en/DOM/window",
-      Document: "https://developer.mozilla.org/en/DOM/document",
-      Element: "https://developer.mozilla.org/en/DOM/element",
-      Node: "https://developer.mozilla.org/en/DOM/node",
-      Date: "https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date",
-      Function:
-        "https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function",
-      Array:
-        "https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array",
-      Object:
-        "https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object",
-      Map: "https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object",
-      RegExp:
-        "https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp",
-      Error:
-        "https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error",
-      Number:
-        "https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number",
-      Boolean:
-        "https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean",
-      String:
-        "https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String",
-      undefined:
-        "https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/undefined",
-      arguments:
-        "https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/arguments",
-      Font: "https://developer.mozilla.org/en/CSS/font",
-      Color: "https://developer.mozilla.org/en/CSS/color",
-    },
-
     /**
      * {Map} Replacement rules for placeholders in the source view URI.
      * Functions will be called with the current @link{qxl.apiviewer.dao.Node} as the
@@ -162,10 +81,9 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer", {
         return qx.core.Environment.get("qx.revision") // e.g. "master:47ac02f"
           ? qx.core.Environment.get("qx.revision").split(":")[1]
           : qx.core.Environment.get("qx.version") // e.g. "2.1.2"
-          ? "release_" +
-            qx.core.Environment.get("qx.version").replace(/\./g, "_")
+          ? "release_" + qx.core.Environment.get("qx.version").replace(/\./g, "_")
           : "master";
-      },
+      }
     },
 
     /**
@@ -194,13 +112,7 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer", {
         styleAttributes = "vertical-align:top";
       }
 
-      return qxl.apiviewer.ui.ClassViewer.createOverlayImageHtml(
-        18,
-        18,
-        imgUrl,
-        tooltip,
-        styleAttributes
-      );
+      return qxl.apiviewer.ui.ClassViewer.createOverlayImageHtml(18, 18, imgUrl, tooltip, styleAttributes);
     },
 
     /**
@@ -254,12 +166,7 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer", {
           html += ' title="' + toolTip + '"';
         }
 
-        html +=
-          ' style="' +
-          style +
-          '" src="' +
-          qx.util.ResourceManager.getInstance().toUri(imgUrlArr[i]) +
-          '"/>';
+        html += ' style="' + style + '" src="' + qx.util.ResourceManager.getInstance().toUri(imgUrlArr[i]) + '"/>';
       }
 
       html += "</span>";
@@ -292,10 +199,7 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer", {
         return null;
       }
 
-      var sourceViewUri = qx.util.LibraryManager.getInstance().get(
-        libNs,
-        "sourceViewUri"
-      );
+      var sourceViewUri = qx.util.LibraryManager.getInstance().get(libNs, "sourceViewUri");
       if (!sourceViewUri) {
         return null;
       }
@@ -303,32 +207,23 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer", {
       var replacements = this.SOURCE_VIEW_MACROS;
       for (var key in replacements) {
         var macro = "%{" + key + "}";
-        if (
-          sourceViewUri.indexOf(macro) >= 0 &&
-          typeof replacements[key] == "function"
-        ) {
+        if (sourceViewUri.indexOf(macro) >= 0 && typeof replacements[key] == "function") {
           var replacement = replacements[key](node);
           if (typeof replacement == "string") {
-            sourceViewUri = sourceViewUri.replace(
-              new RegExp(macro),
-              replacement
-            );
+            sourceViewUri = sourceViewUri.replace(new RegExp(macro), replacement);
           }
         }
       }
 
       if (sourceViewUri.indexOf("%{") >= 0) {
         if (qx.core.Environment.get("qx.debug")) {
-          qx.log.Logger.warn(
-            "Source View URI contains unresolved macro(s):",
-            sourceViewUri
-          );
+          qx.log.Logger.warn("Source View URI contains unresolved macro(s):", sourceViewUri);
         }
         return null;
       }
 
       return sourceViewUri;
-    },
+    }
   },
 
   /*
@@ -375,17 +270,10 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer", {
       var className = classNode.getName();
       var sourceUri = this.self(arguments).getSourceUri(classNode);
       if (sourceUri) {
-        className =
-          '<a href="' +
-          sourceUri +
-          '" target="_blank" title="View Source">' +
-          className +
-          "</a>";
+        className = '<a href="' + sourceUri + '" target="_blank" title="View Source">' + className + "</a>";
       }
 
-      titleHtml.add(
-        qxl.apiviewer.ui.panels.InfoPanel.setTitleClass(classNode, className)
-      );
+      titleHtml.add(qxl.apiviewer.ui.panels.InfoPanel.setTitleClass(classNode, className));
 
       return titleHtml.get();
     },
@@ -394,11 +282,8 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer", {
       var tocHtml = document.createDocumentFragment();
       var lastTocItem = null;
 
-      this.getPanels().forEach((panel) => {
-        var items = panel.getPanelItemObjects(
-          this.getDocNode(),
-          this.getShowInherited() || this.getShowIncluded()
-        );
+      this.getPanels().forEach(panel => {
+        var items = panel.getPanelItemObjects(this.getDocNode(), this.getShowInherited() || this.getShowIncluded());
         if (items.length == 0) {
           return;
         }
@@ -411,22 +296,14 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer", {
 
         // add icon in front of the TOC item
         tocItem.innerHTML =
-          qxl.apiviewer.ui.ClassViewer.createImageHtml(
-            panel.getPanelIcon(),
-            panel.getPanelTitle()
-          ) + " ";
+          qxl.apiviewer.ui.ClassViewer.createImageHtml(panel.getPanelIcon(), panel.getPanelTitle()) + " ";
 
         q(tocItem).on(
           "tap",
           function (firstItem) {
             return function () {
               this.__enableSection(firstItem);
-              qx.bom.element.Scroll.intoView(
-                panel.getTitleElement(),
-                null,
-                "left",
-                "top"
-              );
+              qx.bom.element.Scroll.intoView(panel.getTitleElement(), null, "left", "top");
               if (!panel.getIsOpen()) {
                 this.togglePanelVisibility(panel);
               }
@@ -475,16 +352,12 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer", {
       if (desc !== "") {
         classHtml.add(
           '<div class="class-description">',
-          qxl.apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(
-            desc,
-            classNode
-          ),
+          qxl.apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(desc, classNode),
           "</div>"
         );
       }
 
-      var seeAlso =
-        qxl.apiviewer.ui.panels.InfoPanel.createSeeAlsoHtml(classNode);
+      var seeAlso = qxl.apiviewer.ui.panels.InfoPanel.createSeeAlsoHtml(classNode);
       if (seeAlso) {
         if (classHtml.length > 0) {
           classHtml.splice(-1, 0, seeAlso);
@@ -496,10 +369,7 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer", {
       if (classNode.getErrors().length > 0) {
         classHtml.add(
           '<div class="class-description">',
-          qxl.apiviewer.ui.panels.InfoPanel.createErrorHtml(
-            classNode,
-            classNode
-          ),
+          qxl.apiviewer.ui.panels.InfoPanel.createErrorHtml(classNode, classNode),
           "</div>"
         );
       }
@@ -513,55 +383,25 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer", {
 
       return classNode
         .getChildClasses()
-        .then((childClasses) => {
-          classHtml.add(
-            this.__getDependentClassesHtml(
-              childClasses,
-              "Direct " + subObjectsName + ":"
-            )
-          );
-          classHtml.add(
-            this.__getDependentClassesHtml(
-              classNode.getInterfaces(),
-              "Implemented interfaces:"
-            )
-          );
-          classHtml.add(
-            this.__getDependentClassesHtml(
-              classNode.getMixins(),
-              "Included mixins:"
-            )
-          );
+        .then(childClasses => {
+          classHtml.add(this.__getDependentClassesHtml(childClasses, "Direct " + subObjectsName + ":"));
+          classHtml.add(this.__getDependentClassesHtml(classNode.getInterfaces(), "Implemented interfaces:"));
+          classHtml.add(this.__getDependentClassesHtml(classNode.getMixins(), "Included mixins:"));
           return classNode.getImplementations();
         })
-        .then((classes) => {
-          classHtml.add(
-            this.__getDependentClassesHtml(
-              classes,
-              "Implementations of this interface:"
-            )
-          );
+        .then(classes => {
+          classHtml.add(this.__getDependentClassesHtml(classes, "Implementations of this interface:"));
           return classNode.getIncluder();
         })
-        .then((classes) => {
-          classHtml.add(
-            this.__getDependentClassesHtml(
-              classes,
-              "Classes including this mixin:"
-            )
-          );
+        .then(classes => {
+          classHtml.add(this.__getDependentClassesHtml(classes, "Classes including this mixin:"));
 
           if (classNode.isDeprecated()) {
             classHtml.add('<h2 class="warning">', "Deprecated:", "</h2>");
             classHtml.add("<p>");
             desc = classNode.getDeprecationText();
             if (desc) {
-              classHtml.add(
-                qxl.apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(
-                  desc,
-                  classNode
-                )
-              );
+              classHtml.add(qxl.apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(desc, classNode));
             } else {
               classHtml.add("This ", classNode.getType(), " is deprecated!");
             }
@@ -601,14 +441,7 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer", {
           if (i !== 0) {
             result.add(", ");
           }
-          result.add(
-            qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(
-              dependentClasses[i],
-              null,
-              true,
-              false
-            )
-          );
+          result.add(qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(dependentClasses[i], null, true, false));
         }
 
         result = result.get();
@@ -626,11 +459,7 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer", {
       var ClassViewer = qxl.apiviewer.ui.ClassViewer;
 
       // Create the class hierarchy
-      var classHtml = new qx.util.StringBuilder(
-        "<h2>",
-        "Inheritance hierarchy:",
-        "</h2>"
-      );
+      var classHtml = new qx.util.StringBuilder("<h2>", "Inheritance hierarchy:", "</h2>");
 
       var classHierarchy = classNode.getClassHierarchy(true);
 
@@ -641,44 +470,29 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer", {
       var indent = 0;
 
       for (var i = classHierarchy.length - 1; i >= 0; i--) {
-        if (
-          qxl.apiviewer.dao.Class.isNativeObject(classHierarchy[i]) &&
-          classHierarchy[i] === Object
-        ) {
+        if (qxl.apiviewer.dao.Class.isNativeObject(classHierarchy[i]) && classHierarchy[i] === Object) {
           continue;
         }
         classHtml.add("<div>");
         classHtml.add(
-          ClassViewer.createImageHtml(
-            "qxl/apiviewer/image/nextlevel.gif",
-            null,
-            "margin-left:" + indent + "px"
-          ),
+          ClassViewer.createImageHtml("qxl/apiviewer/image/nextlevel.gif", null, "margin-left:" + indent + "px"),
           !qxl.apiviewer.dao.Class.isNativeObject(classHierarchy[i])
-            ? ClassViewer.createImageHtml(
-                qxl.apiviewer.TreeUtil.getIconUrl(classHierarchy[i])
-              )
+            ? ClassViewer.createImageHtml(qxl.apiviewer.TreeUtil.getIconUrl(classHierarchy[i]))
             : ClassViewer.createImageHtml("qxl/apiviewer/image/class18.gif")
         );
 
         if (i !== 0) {
           if (!qxl.apiviewer.dao.Class.isNativeObject(classHierarchy[i])) {
             classHtml.add(
-              qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(
-                classHierarchy[i].getFullName(),
-                null,
-                false
-              )
+              qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(classHierarchy[i].getFullName(), null, false)
             );
           } else {
             // it is safe to get the name of the type of the object as below, because only standard native objects are used here.
             // the method below returns Object for user defined objects
-            var name = Object.prototype.toString
-              .call(new classHierarchy[i]())
-              .match(/^\[object (.*)\]$/)[1];
+            var name = Object.prototype.toString.call(new classHierarchy[i]()).match(/^\[object (.*)\]$/)[1];
             classHtml.add(
               '<span style="white-space: nowrap;"><a href="' +
-                qxl.apiviewer.ui.ClassViewer.MDC_LINKS[name] +
+                qxl.apiviewer.Constants.MDC_LINKS[name] +
                 '" target="_blank" title="' +
                 name +
                 '">' +
@@ -726,16 +540,10 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer", {
 
         if (hierarchy[i].getSuperInterfaces().length > 0) {
           html.add(
-            ClassViewer.createImageHtml(
-              "qxl/apiviewer/image/nextlevel.gif",
-              null,
-              "margin-left:" + indent + "px"
-            )
+            ClassViewer.createImageHtml("qxl/apiviewer/image/nextlevel.gif", null, "margin-left:" + indent + "px")
           );
           html.add(ClassViewer.createImageHtml(icon));
-          html.add(
-            i !== 0 ? InfoPanel.createItemLinkHtml(name, null, false) : name
-          );
+          html.add(i !== 0 ? InfoPanel.createItemLinkHtml(name, null, false) : name);
           indent += 18;
         } else {
           html.add(ClassViewer.createImageHtml(icon));
@@ -765,7 +573,7 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer", {
         property_private: "properties",
         property_protected: "properties",
         constant: "constants",
-        childcontrol: "childControls",
+        childcontrol: "childControls"
       };
 
       // special handling for constructor methods since the constructor
@@ -774,10 +582,7 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer", {
         itemNode = this.getDocNode().getConstructor();
       } else if (itemName.indexOf("!") != -1) {
         var parts = itemName.split("!");
-        itemNode = this.getDocNode().getItemByListAndName(
-          nameMap[parts[1]],
-          parts[0]
-        );
+        itemNode = this.getDocNode().getItemByListAndName(nameMap[parts[1]], parts[0]);
         if (!itemNode) {
           itemNode = this.getDocNode().getItem(parts[0]);
         }
@@ -806,10 +611,7 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer", {
 
       // Handle mark
       if (this._markedElement) {
-        this._markedElement.className =
-          qxl.apiviewer.ui.panels.InfoPanel.getItemCssClasses(
-            this._markedItemNode
-          );
+        this._markedElement.className = qxl.apiviewer.ui.panels.InfoPanel.getItemCssClasses(this._markedItemNode);
       }
 
       elem.className = "marked";
@@ -880,7 +682,7 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer", {
         }
       }
       return null;
-    },
+    }
   },
 
   /*
@@ -890,10 +692,6 @@ qx.Class.define("qxl.apiviewer.ui.ClassViewer", {
   */
 
   destruct() {
-    this._titleElem =
-      this._classDescElem =
-      this._markedElement =
-      this._markedItemNode =
-        null;
-  },
+    this._titleElem = this._classDescElem = this._markedElement = this._markedItemNode = null;
+  }
 });

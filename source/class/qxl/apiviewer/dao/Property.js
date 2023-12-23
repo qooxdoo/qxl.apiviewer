@@ -81,7 +81,7 @@ qx.Class.define("qxl.apiviewer.dao.Property", {
       if (
         check &&
         !qxl.apiviewer.dao.Class.getClassByName(check) &&
-        !qxl.apiviewer.ui.ClassViewer.PRIMITIVES[check]
+        !qxl.apiviewer.Constants.PRIMITIVES[check]
       ) {
         return check;
       }

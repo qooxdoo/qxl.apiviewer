@@ -43,7 +43,7 @@ qx.Class.define("qxl.apiviewer.ClassLoader", {
         return qx.Promise.resolve([]);
       }
 
-      var all = classes.map((clazz) => clazz.load());
+      var all = classes.map(clazz => clazz.load());
       return qx.Promise.all(all)
         .then(() => callback && callback.call(self || this, classes))
         .then(() => classes);
@@ -58,10 +58,10 @@ qx.Class.define("qxl.apiviewer.ClassLoader", {
       }
       var pkg = qxl.apiviewer.dao.Package.getPackage(name);
       return pkg;
-    },
+    }
   },
 
   defer(statics) {
     statics.RESOURCEPATH = "apidata";
-  },
+  }
 });

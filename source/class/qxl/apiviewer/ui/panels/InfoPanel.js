@@ -54,19 +54,19 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
       check: "Element",
       init: null,
       nullable: true,
-      apply: "_applyElement",
+      apply: "_applyElement"
     },
 
     /** whether the info panel is open */
     isOpen: {
       check: "Boolean",
-      init: true,
+      init: true
     },
 
     docNode: {
       nullable: true,
-      async: true,
-    },
+      async: true
+    }
   },
 
   members: {
@@ -97,9 +97,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
      * @return {Boolean} Whether the panel can display the given item node
      */
     canDisplayItem(dao) {
-      throw new Error(
-        "No implementation for " + this.classname + ".canDisplayItem"
-      );
+      throw new Error("No implementation for " + this.classname + ".canDisplayItem");
     },
 
     /**
@@ -166,46 +164,24 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
      */
     getItemHtml(node, currentDocNode, showDetails) {
       var parentNode;
-      if (
-        node instanceof qxl.apiviewer.dao.Class ||
-        node instanceof qxl.apiviewer.dao.Package
-      ) {
+      if (node instanceof qxl.apiviewer.dao.Class || node instanceof qxl.apiviewer.dao.Package) {
         parentNode = node.getPackage();
       } else {
         parentNode = node.getClass();
       }
       var html = new qx.util.StringBuilder();
 
-      var inherited =
-        parentNode &&
-        parentNode != currentDocNode &&
-        parentNode.getType() == "class";
+      var inherited = parentNode && parentNode != currentDocNode && parentNode.getType() == "class";
       var iconUrl = qxl.apiviewer.TreeUtil.getIconUrl(node, inherited);
 
       // Create the title row
-      html.add(
-        '<tr class="',
-        qxl.apiviewer.ui.panels.InfoPanel.getItemCssClasses(node),
-        '">'
-      );
+      html.add('<tr class="', qxl.apiviewer.ui.panels.InfoPanel.getItemCssClasses(node), '">');
       var tooltipText = this.getItemTooltip(node, currentDocNode);
-      var tooltip = tooltipText
-        ? 'title="' + tooltipText + '" alt="' + tooltipText + '"'
-        : "";
-      html.add(
-        '<td class="icon" ',
-        tooltip,
-        ">",
-        qxl.apiviewer.ui.ClassViewer.createImageHtml(iconUrl),
-        "</td>"
-      );
+      var tooltip = tooltipText ? 'title="' + tooltipText + '" alt="' + tooltipText + '"' : "";
+      html.add('<td class="icon" ', tooltip, ">", qxl.apiviewer.ui.ClassViewer.createImageHtml(iconUrl), "</td>");
 
       var typeHtml = this.getItemTypeHtml(node, currentDocNode);
-      html.add(
-        '<td class="type">',
-        typeHtml ? typeHtml + "&nbsp;" : "&nbsp;",
-        "</td>"
-      );
+      html.add('<td class="type">', typeHtml ? typeHtml + "&nbsp;" : "&nbsp;", "</td>");
 
       html.add('<td class="toggle">');
 
@@ -213,17 +189,13 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
         // This node has details -> Show the detail button
         html.add(
           '<img src="',
-          qx.util.ResourceManager.getInstance().toUri(
-            "qxl/apiviewer/image/open.gif"
-          ),
+          qx.util.ResourceManager.getInstance().toUri("qxl/apiviewer/image/open.gif"),
           '" onclick="',
           this.__encodeObject(this),
           ".toggleShowItemDetails('",
           node.getName(),
           "'",
-          parentNode != currentDocNode
-            ? ",'" + parentNode.getFullName() + "'"
-            : "",
+          parentNode != currentDocNode ? ",'" + parentNode.getFullName() + "'" : "",
           ')"/>'
         );
       } else {
@@ -244,9 +216,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
           ".toggleShowItemDetails('",
           node.getName(),
           "'",
-          parentNode != currentDocNode
-            ? ",'" + parentNode.getFullName() + "'"
-            : "",
+          parentNode != currentDocNode ? ",'" + parentNode.getFullName() + "'" : "",
           ')">'
         );
       } else {
@@ -284,11 +254,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
     },
 
     __encodeObject(object) {
-      return (
-        "qxl.apiviewer.ObjectRegistry.getObjectFromHashCode('" +
-        object.toHashCode() +
-        "')"
-      );
+      return "qxl.apiviewer.ObjectRegistry.getObjectFromHashCode('" + object.toHashCode() + "')";
     },
 
     /**
@@ -297,8 +263,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
      * @return {String} HTML fragment of the info panel
      */
     getPanelHtml(viewer) {
-      var uppercaseLabelText =
-        this._labelText.charAt(0).toUpperCase() + this._labelText.substring(1);
+      var uppercaseLabelText = this._labelText.charAt(0).toUpperCase() + this._labelText.substring(1);
 
       var html = new qx.util.StringBuilder('<div class="info-panel"><h2>');
       html.add(
@@ -354,10 +319,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
 
       for (var classIndex = 0; classIndex < classes.length; classIndex++) {
         var currClassNode = classes[classIndex];
-        this.getPanelItemObjects(
-          currClassNode,
-          showInherited || showIncluded
-        ).forEach((item) => {
+        this.getPanelItemObjects(currClassNode, showInherited || showIncluded).forEach(item => {
           var name = item.getName();
           if (fromClassHash[name] === undefined) {
             result.push(item);
@@ -374,9 +336,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
     },
 
     getPanelItemObjects(daoClass, showInherited) {
-      throw new Error(
-        "No implementation for " + this.classname + ".getPanelItemObjects"
-      );
+      throw new Error("No implementation for " + this.classname + ".getPanelItemObjects");
     },
 
     /**
@@ -392,13 +352,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
      * {Boolean} whether to show internal items
      * @return {qxl.apiviewer.dao.ClassItem[]} filtered list of items
      */
-    __filterItems(
-      nodeArr,
-      expandProperties,
-      showProtected,
-      showPrivate,
-      showInternal
-    ) {
+    __filterItems(nodeArr, expandProperties, showProtected, showPrivate, showInternal) {
       var copyArr = nodeArr.concat();
       for (var i = nodeArr.length - 1; i >= 0; i--) {
         var node = nodeArr[i];
@@ -419,9 +373,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
     _displayNodes(nodes, currentClassDocNode) {
       // Show the nodes
       if (nodes && nodes.length > 0) {
-        var html = new qx.util.StringBuilder(
-          '<table cellspacing="0" cellpadding="0" class="info" width="100%">'
-        );
+        var html = new qx.util.StringBuilder('<table cellspacing="0" cellpadding="0" class="info" width="100%">');
 
         for (var i = 0; i < nodes.length; i++) {
           html.add(this.getItemHtml(nodes[i], currentClassDocNode, false));
@@ -457,11 +409,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
       return this.setDocNodeAsync(currentClassDocNode).then(() => {
         var showInherited = classViewer.getShowInherited();
         var showIncluded = classViewer.getShowIncluded();
-        var nodeArr = this._getPanelItems(
-          showInherited,
-          showIncluded,
-          currentClassDocNode
-        );
+        var nodeArr = this._getPanelItems(showInherited, showIncluded, currentClassDocNode);
 
         if (nodeArr && nodeArr.length > 0) {
           var expandProperties = classViewer.getExpandProperties();
@@ -469,13 +417,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
           var showPrivate = classViewer.getShowPrivate();
           var showInternal = classViewer.getShowInternal();
 
-          nodeArr = this.__filterItems(
-            nodeArr,
-            expandProperties,
-            showProtected,
-            showPrivate,
-            showInternal
-          );
+          nodeArr = this.__filterItems(nodeArr, expandProperties, showProtected, showPrivate, showInternal);
           classViewer.sortItems(nodeArr);
         }
 
@@ -521,10 +463,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
         // ARRG, should be implemented in a more fault-tolerant way
         // iterate over tr's, look inside the third "td" and there the second
         // element
-        if (
-          elemArr[i].childNodes[3].childNodes[1].getAttribute("_itemName") ==
-          name
-        ) {
+        if (elemArr[i].childNodes[3].childNodes[1].getAttribute("_itemName") == name) {
           return elemArr[i].childNodes[3].childNodes[1];
         }
       }
@@ -549,15 +488,9 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
         var showDetails = textDiv._showDetails ? !textDiv._showDetails : true;
         textDiv._showDetails = showDetails;
 
-        var fromClassNode = fromClassName
-          ? qxl.apiviewer.dao.Class.getClassByName(fromClassName)
-          : this.getDocNode();
+        var fromClassNode = fromClassName ? qxl.apiviewer.dao.Class.getClassByName(fromClassName) : this.getDocNode();
         var node = null;
-        for (
-          var arr = this.getPanelItemObjects(fromClassNode, true), i = 0;
-          i < arr.length && !node;
-          i++
-        ) {
+        for (var arr = this.getPanelItemObjects(fromClassNode, true), i = 0; i < arr.length && !node; i++) {
           var tmp = arr[i];
           if (tmp.getName() == itemName) {
             node = tmp;
@@ -570,17 +503,11 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
         // Update the close/open image
         var opencloseImgElem = textDiv.parentNode.previousSibling.firstChild;
         opencloseImgElem.src = qx.util.ResourceManager.getInstance().toUri(
-          showDetails
-            ? "qxl/apiviewer/image/close.gif"
-            : "qxl/apiviewer/image/open.gif"
+          showDetails ? "qxl/apiviewer/image/close.gif" : "qxl/apiviewer/image/open.gif"
         );
 
         // Update content
-        textDiv.innerHTML = this.getItemTextHtml(
-          node,
-          this.getDocNode(),
-          showDetails
-        );
+        textDiv.innerHTML = this.getItemTextHtml(node, this.getDocNode(), showDetails);
         this._postProcessLinks(textDiv);
         qxl.apiviewer.ui.AbstractViewer.fixLinks(textDiv);
         qxl.apiviewer.ui.AbstractViewer.highlightCode(textDiv);
@@ -616,8 +543,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
       });
 
       q(el).on("tap", function (e) {
-        var onClickValue =
-          "event.preventDefault ? event.preventDefault() : event.returnValue = false; return false;";
+        var onClickValue = "event.preventDefault ? event.preventDefault() : event.returnValue = false; return false;";
         var target = e.getTarget();
         var click = target.getAttribute("onclick");
         if (click && click != onClickValue) {
@@ -634,7 +560,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
       });
 
       el._processed = true;
-    },
+    }
   },
 
   /*
@@ -676,10 +602,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
 
       while ((hit = linkRegex.exec(description))) {
         // Add the text before the link
-        html.add(
-          description.substring(lastPos, hit.index) +
-            this.createItemLinkHtml(hit[1], packageBaseClass)
-        );
+        html.add(description.substring(lastPos, hit.index) + this.createItemLinkHtml(hit[1], packageBaseClass));
 
         lastPos = hit.index + hit[0].length;
       }
@@ -747,11 +670,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
           classNode = qxl.apiviewer.dao.Class.getClassByName(className);
 
           // classNode could be a native JS constructor (String, Boolean, ...)
-          if (
-            !classNode ||
-            !classNode.classname ||
-            classNode.getPackage().getName() !== ""
-          ) {
+          if (!classNode || !classNode.classname || classNode.getPackage().getName() !== "") {
             // The class name has no package -> Use the same package as the
             // current class
             if (packageBaseClass instanceof qxl.apiviewer.dao.Package) {
@@ -797,14 +716,8 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
               if (parenPos != -1) {
                 cleanItemName = cleanItemName.substring(0, parenPos).trim();
               }
-              itemNode = this.__getItemFromClassHierarchy(
-                cleanItemName,
-                classNode
-              );
-              if (
-                !itemNode &&
-                qxl.apiviewer.UiModel.getInstance().getShowIncluded()
-              ) {
+              itemNode = this.__getItemFromClassHierarchy(cleanItemName, classNode);
+              if (!itemNode && qxl.apiviewer.UiModel.getInstance().getShowIncluded()) {
                 if (qxl.apiviewer.UiModel.getInstance().getShowInherited()) {
                   var classNodes = [classNode];
                   if (classNode.getType() == "interface") {
@@ -813,8 +726,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
                     classNodes = classNode.getClassHierarchy();
                   }
                   for (var i = 0, l = classNodes.length; i < l; i++) {
-                    itemNode =
-                      classNodes[i].getItemByNameFromMixins(cleanItemName);
+                    itemNode = classNodes[i].getItemByNameFromMixins(cleanItemName);
                     if (itemNode) {
                       break;
                     }
@@ -829,9 +741,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
             }
 
             if (itemNode && !(itemNode instanceof qxl.apiviewer.dao.Package)) {
-              className = itemNode.getFullName
-                ? itemNode.getFullName()
-                : itemNode.name;
+              className = itemNode.getFullName ? itemNode.getFullName() : itemNode.name;
             }
           }
         }
@@ -866,7 +776,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
         itemNode && itemNode.getFullName
           ? itemNode.getFullName()
           : classNode && classNode.getFullName
-          ? `${classNode.getFullName()}${itemName ? itemName: ""}`
+          ? `${classNode.getFullName()}${itemName ? itemName : ""}`
           : className;
       var protocol;
       var host;
@@ -874,10 +784,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
 
       // Opera 10.5 loses the reference to "window"
       // See http://bugzilla.qooxdoo.org/show_bug.cgi?id=3516 for details
-      if (
-        qx.core.Environment.get("engine.name") == "opera" &&
-        qx.core.Environment.get("engine.version") > 9
-      ) {
+      if (qx.core.Environment.get("engine.name") == "opera" && qx.core.Environment.get("engine.version") > 9) {
         protocol = location.protocol;
         host = location.host;
         pathname = location.pathname;
@@ -904,7 +811,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
         fullItemName,
         '">',
         label,
-        "</a></span>",
+        "</a></span>"
       ];
 
       return linkHtml.join("");
@@ -963,18 +870,13 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
      * @return {String} HTML fragment
      */
     createInheritedFromHtml(node, currentClassDocNode) {
-      if (
-        node.getClass().getType() != "mixin" &&
-        node.getClass() != currentClassDocNode
-      ) {
+      if (node.getClass().getType() != "mixin" && node.getClass() != currentClassDocNode) {
         let html = new qx.util.StringBuilder(
           '<div class="item-detail-headline">',
           "Inherited from:",
           "</div>",
           '<div class="item-detail-text">',
-          qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(
-            node.getClass().getFullName() + "#" + node.getName()
-          ),
+          qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(node.getClass().getFullName() + "#" + node.getName()),
           "</div>"
         );
         return html.get();
@@ -986,9 +888,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
           "Defined in Mixin:",
           "</div>",
           '<div class="item-detail-text">',
-          qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(
-            over.getFullName() + "#" + node.getName()
-          ),
+          qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(over.getFullName() + "#" + node.getName()),
           "</div>"
         );
         return html.get();
@@ -1038,9 +938,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
             "Included from mixin:",
             "</div>",
             '<div class="item-detail-text">',
-            qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(
-              node.getClass().getFullName() + "#" + node.getName()
-            ),
+            qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(node.getClass().getFullName() + "#" + node.getName()),
             "</div>"
           );
           return html.get();
@@ -1096,11 +994,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
         if (!showDetails) {
           desc = this.__extractFirstSentence(desc);
         }
-        return (
-          '<div class="item-desc">' +
-          this.resolveLinkAttributes(desc, packageBaseClass) +
-          "</div>"
-        );
+        return '<div class="item-desc">' + this.resolveLinkAttributes(desc, packageBaseClass) + "</div>";
       }
       return "";
     },
@@ -1189,11 +1083,11 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
           typeName = types[j].type;
           typeDimensions = types[j].dimensions;
 
-          if (qxl.apiviewer.ui.ClassViewer.PRIMITIVES[typeName]) {
-            if (qxl.apiviewer.ui.ClassViewer.MDC_LINKS[typeName]) {
+          if (qxl.apiviewer.Constants.PRIMITIVES[typeName]) {
+            if (qxl.apiviewer.Constants.MDC_LINKS[typeName]) {
               typeHtml.add(
                 '<span style="white-space: nowrap;"><a href="' +
-                  qxl.apiviewer.ui.ClassViewer.MDC_LINKS[typeName] +
+                  qxl.apiviewer.Constants.MDC_LINKS[typeName] +
                   '" target="_blank" title="' +
                   typeName +
                   '">' +
@@ -1214,12 +1108,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
               }
             }
             typeHtml.add(
-              qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(
-                linkText,
-                typeNode.getClass(),
-                false,
-                true
-              )
+              qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(linkText, typeNode.getClass(), false, true)
             );
           }
 
@@ -1251,23 +1140,12 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
       var errors = node.getErrors();
 
       if (errors.length > 0) {
-        var html = new qx.util.StringBuilder(
-          '<div class="item-detail-error">',
-          "Documentation errors:",
-          "</div>"
-        );
+        var html = new qx.util.StringBuilder('<div class="item-detail-error">', "Documentation errors:", "</div>");
 
         for (var i = 0; i < errors.length; i++) {
-          html.add(
-            '<div class="item-detail-text">',
-            errors[i].attributes.msg,
-            " <br/>"
-          );
+          html.add('<div class="item-detail-text">', errors[i].attributes.msg, " <br/>");
 
-          if (
-            errors[i].attributes.line ||
-            node.getClass() != currentClassDocNode
-          ) {
+          if (errors[i].attributes.line || node.getClass() != currentClassDocNode) {
             html.add("(");
 
             if (node.getClass() != currentClassDocNode) {
@@ -1360,17 +1238,11 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
       var html = new qx.util.StringBuilder();
       var requiredBy = node.getRequiredBy();
       if (requiredBy.length > 0) {
-        html.add(
-          '<div class="item-detail-headline">',
-          "Required by:",
-          "</div>"
-        );
+        html.add('<div class="item-detail-headline">', "Required by:", "</div>");
         for (var i = 0; i < requiredBy.length; i++) {
           html.add(
             '<div class="item-detail-text">',
-            qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(
-              requiredBy[i].getFullName() + "#" + node.getName()
-            ),
+            qxl.apiviewer.ui.panels.InfoPanel.createItemLinkHtml(requiredBy[i].getFullName() + "#" + node.getName()),
             "</div>"
           );
         }
@@ -1453,6 +1325,6 @@ qx.Class.define("qxl.apiviewer.ui.panels.InfoPanel", {
         }
       }
       return cssClasses.join(" ");
-    },
-  },
+    }
+  }
 });

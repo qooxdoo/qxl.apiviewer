@@ -74,22 +74,23 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
         return this._loadingPromise;
       }
 
-      var url = (this.__url =
-        qxl.apiviewer.ClassLoader.getBaseUri() +
-        this._className.replace(/\./g, "/") +
-        ".json");
-      return (this._loadingPromise = qxl.apiviewer.RequestUtil.get(url)
-        .then((content) => {
-          /* eslint-disable-next-line no-eval */
-          var meta = eval("(" + content + ")");
-          return this._initMeta(meta).then(() => {
-            this._loaded = true;
-            return this;
-          });
-        })
-        .catch((e) => {
-          this.error("Couldn't load file: " + url + " " + e.message);
-        }));
+      const loadImpl = async () => {
+        this.__url = qxl.apiviewer.ClassLoader.getBaseUri() + this._className.replace(/\./g, "/") + ".json";
+        let content;
+        try {
+          content = await qxl.apiviewer.RequestUtil.get(this.__url);
+        }catch(e) {
+          this.error("Couldn't load file: " + this.__url + " " + e.message);
+        }
+
+        var meta = JSON.parse(content);
+        await this._initMeta(meta);
+        this._loaded = true;
+        return this;
+      };
+
+      this.__loadingPromise = loadImpl();
+      return this.__loadingPromise;
     },
 
     isLoaded() {
@@ -104,7 +105,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
     _initMeta(meta) {
       this.base(arguments, meta);
 
-      this._jsdoc = meta.clazz.jsdoc || {};
+      this._jsdoc = meta.jsdoc || {};
 
       this._construct = meta.construct
         ? [new qxl.apiviewer.dao.Method(meta.construct, this, "construct")]
@@ -175,6 +176,28 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
           } else {
             this._properties.push(obj);
           }
+
+          let upname = qx.lang.String.firstUp(name);
+          const addPropertyMethod = (methodName, prefix) => {
+            let methodObj = new qxl.apiviewer.dao.PropertyMethod(data, this, methodName, prefix);
+            if (data.mixin) {
+              this._mixinMembers.push(methodObj);
+            } else {
+              this._members.push(methodObj);
+            }
+          }
+          addPropertyMethod("get" + upname, "get");
+          if (data.type == "Boolean") {
+            addPropertyMethod("is" + upname, "is");
+          }
+          addPropertyMethod("set" + upname, "set");
+          addPropertyMethod("reset" + upname, "reset");
+
+          if (meta.async) {
+            addPropertyMethod("get" + upname + "Async", "get");
+            addPropertyMethod("set" + upname + "Async", "set");
+          }
+
           let evt = obj.getEvent();
           if (evt) {
             let objE = new qxl.apiviewer.dao.Event(
