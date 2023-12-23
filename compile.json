@@ -2,18 +2,9 @@
   "$schema": "https://qooxdoo.org/schema/compile-1-0-0.json",
   "environment": {
     "qx.icontheme": "Tango",
-    "qxl.apiviewer.exclude": [
-      "qxl.*",
-      "q.*",
-      "qx.test.*" 
-    ]
+    "qxl.apiviewer.exclude": ["qxl.*", "q.*", "qx.test.*"]
   },
-  "ignores": [
-    "require",
-    "process",
-    "loadSass",
-    "__dirname"
-  ],
+  "ignores": ["require", "process", "loadSass", "__dirname"],
   "applications": [
     {
       "class": "qxl.apiviewer.Application",
@@ -21,52 +12,60 @@
       "name": "apiviewer",
       "title": "Qooxdoo API Viewer",
       "bootPath": "source/boot",
-      "include": [
-        "qx.*",
-        "q",
-        "qxWeb"
-      ],
-      "exclude": [
-        "qx.module.Blocker",
-        "qx.module.Placement"
-      ],
+      "exclude": ["qx.module.Blocker", "qx.module.Placement"],
       "parts": {
-         "boot" : {
-           "include": [
-             "qx.*"
-           ]
-         }, 
-         "tool" : {
-           "include": [
-             "qx.tool.*"
-          ]
-         }    
-      }    
+        "boot": {
+          "include": ["qx.*"]
+        },
+        "tool": {
+          "include": ["qx.tool.*"]
+        }
+      }
+    },
+    {
+      "class": "qxl.apiviewer.CreateClassDb",
+      "name": "createclassdb",
+      "type": "node"
     }
   ],
   "targets": [
     {
       "type": "source",
       "outputPath": "compiled/source",
+      "application-types": ["browser"],
       "babelOptions": {
         "targets": "edge >=18, chrome >= 73, firefox >= 66"
       },
       "bundle": {
-        "include": [
-          "qx.*"
-        ]
+        "include": ["qx.*"]
+      }
+    },
+    {
+      "type": "source",
+      "outputPath": "compiled/source-node",
+      "application-types": ["node"],
+      "babelOptions": {
+        "targets": "node >= 18"
       }
     },
     {
       "type": "build",
       "outputPath": "compiled/build",
+      "application-types": ["browser"],
       "deployPath": "html"
+    },
+    {
+      "type": "build",
+      "outputPath": "compiled/build-node",
+      "application-types": ["node"],
+      "babelOptions": {
+        "targets": "node >= 18"
+      },
+      "deployPath": "compiled/deploy-node"
     }
   ],
   "defaultTarget": "source",
-  "locales": [
-    "en"
-  ],
+  "locales": ["en"],
   "serve": {
     "listenPort": 8080
   },

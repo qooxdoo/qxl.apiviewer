@@ -22,21 +22,26 @@ qx.Class.define("qxl.apiviewer.RequestUtil", {
 
   statics: {
     get(url, opts) {
-      return new qx.Promise((resolve, reject) => {
-        var req = new qx.io.remote.Request(url);
-        req.setAsynchronous(true);
-        req.setTimeout(180000);
-        req.setProhibitCaching(false);
-        if (opts) {
-          req.set(opts);
-        }
-        req.addListener("completed", (evt) => {
-          resolve(evt.getContent());
+      if (qx.core.Environment.get("qx.compiler.applicationType") == "node") {
+        let fs = require("fs");
+        return fs.promises.readFile(url, "utf-8");
+      } else {
+        return new qx.Promise((resolve, reject) => {
+          var req = new qx.io.remote.Request(url);
+          req.setAsynchronous(true);
+          req.setTimeout(180000);
+          req.setProhibitCaching(false);
+          if (opts) {
+            req.set(opts);
+          }
+          req.addListener("completed", evt => {
+            resolve(evt.getContent());
+          });
+          req.addListener("failed", () => reject());
+          req.addListener("aborted", () => reject());
+          req.send();
         });
-        req.addListener("failed", () => reject());
-        req.addListener("aborted", () => reject());
-        req.send();
-      });
-    },
-  },
+      }
+    }
+  }
 });
