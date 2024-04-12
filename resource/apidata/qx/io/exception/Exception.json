@@ -1,35 +1,49 @@
 {
-  "className": "qx.io.exception.Exception",
-  "packageName": "qx.io.exception",
-  "name": "Exception",
-  "superClass": "qx.type.BaseError",
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 22,
-        "column": 0,
-        "index": 543
-      },
-      "end": {
-        "line": 37,
-        "column": 3,
-        "index": 872
-      }
+  "version": 0.3,
+  "lastModified": 1712910030681,
+  "lastModifiedIso": "2024-04-12T08:20:30.681Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/io/exception/Exception.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 22,
+      "column": 0,
+      "index": 543
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>A generic class for representing exceptions that occur during io operations.</p>"
-        }
-      ]
+    "end": {
+      "line": 37,
+      "column": 3,
+      "index": 872
     }
   },
-  "type": "class",
+  "className": "qx.io.exception.Exception",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * A generic class for representing exceptions that occur during io operations.",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>A generic class for representing exceptions that occur during io operations.</p>"
+      }
+    ]
+  },
+  "superClass": "qx.type.BaseError",
   "construct": {
+    "type": "function",
+    "params": [
+      {
+        "name": "message"
+      },
+      {
+        "name": "code"
+      },
+      {
+        "name": "data"
+      }
+    ],
     "location": {
       "start": {
         "line": 31,
@@ -41,33 +55,9 @@
         "column": 3,
         "index": 868
       }
-    },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Constructor</p>"
-        }
-      ],
-      "@param": [
-        {
-          "name": "@param",
-          "body": "message {String}"
-        },
-        {
-          "name": "@param",
-          "body": "code {Number}"
-        },
-        {
-          "name": "@param",
-          "body": "data {*|null}"
-        }
-      ]
     }
   },
-  "descendants": [
-    "qx.io.exception.Cancel",
-    "qx.io.exception.Protocol",
-    "qx.io.exception.Transport"
-  ]
+  "members": {},
+  "statics": {},
+  "properties": {}
 }

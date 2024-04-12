@@ -1,35 +1,46 @@
 {
-  "className": "qx.tool.compiler.Analyser",
-  "packageName": "qx.tool.compiler",
-  "name": "Analyser",
-  "superClass": "qx.core.Object",
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 44,
-        "column": 0,
-        "index": 1391
-      },
-      "end": {
-        "line": 1629,
-        "column": 3,
-        "index": 47615
-      }
+  "version": 0.3,
+  "lastModified": 1712910030309,
+  "lastModifiedIso": "2024-04-12T08:20:30.309Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/tool/compiler/Analyser.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 44,
+      "column": 0,
+      "index": 1391
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Entry point for analysing source files; maintains a list of known libraries\n (eg a qooxdoo application, packages, qooxdoo framework etc.), known classes\n (and the files and library in which the class is defined, and environment\n checks which have been used (env checks imply a dependency).</p>"
-        }
-      ]
+    "end": {
+      "line": 1133,
+      "column": 3,
+      "index": 30709
     }
   },
-  "type": "class",
+  "className": "qx.tool.compiler.Analyser",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Entry point for analysing source files; maintains a list of known libraries",
+      " * (eg a qooxdoo application, packages, qooxdoo framework etc.), known classes",
+      " * (and the files and library in which the class is defined, and environment",
+      " * checks which have been used (env checks imply a dependency).",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Entry point for analysing source files; maintains a list of known libraries\n (eg a qooxdoo application, packages, qooxdoo framework etc.), known classes\n (and the files and library in which the class is defined, and environment\n checks which have been used (env checks imply a dependency).</p>"
+      }
+    ]
+  },
+  "superClass": "qx.core.Object",
   "construct": {
+    "type": "function",
+    "params": [
+      {
+        "name": "dbFilename"
+      }
+    ],
     "location": {
       "start": {
         "line": 53,
@@ -37,44 +48,34 @@
         "index": 1595
       },
       "end": {
-        "line": 64,
+        "line": 65,
         "column": 3,
-        "index": 1934
+        "index": 1957
       }
-    },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Constructor</p>"
-        }
-      ],
-      "@param": [
-        {
-          "name": "@param",
-          "body": "dbFilename\n          {String} the name of the database, defaults to \"db.json\"",
-          "paramName": "dbFilename",
-          "description": " the name of the database, defaults to \"db.json\"",
-          "type": "String"
-        }
-      ]
     }
   },
   "properties": {
     "outputDir": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 69,
           "column": 4,
-          "index": 2014
+          "index": 2037
         },
         "end": {
-          "line": 71,
+          "line": 72,
           "column": 5,
-          "index": 2076
+          "index": 2099
         }
       },
+      "json": {
+        "nullable": true,
+        "check": "String"
+      },
       "jsdoc": {
+        "raw": [
+          "* Output directory for the compiled application "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -82,26 +83,29 @@
           }
         ]
       },
-      "name": "outputDir",
-      "propertyType": "new",
-      "nullable": true,
-      "allowNull": true,
-      "check": "String"
+      "appearsIn": []
     },
     "proxySourcePath": {
       "location": {
         "start": {
-          "line": 74,
+          "line": 75,
           "column": 4,
-          "index": 2151
+          "index": 2174
         },
         "end": {
-          "line": 78,
+          "line": 79,
           "column": 5,
-          "index": 2237
+          "index": 2260
         }
       },
+      "json": {
+        "nullable": true,
+        "check": "String"
+      },
       "jsdoc": {
+        "raw": [
+          "* Directory for proxy source files, if they are to be used "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -109,26 +113,32 @@
           }
         ]
       },
-      "name": "proxySourcePath",
-      "propertyType": "new",
-      "nullable": true,
-      "allowNull": true,
-      "check": "String"
+      "appearsIn": []
     },
     "applicationTypes": {
       "location": {
         "start": {
-          "line": 81,
+          "line": 82,
           "column": 4,
-          "index": 2283
+          "index": 2306
         },
         "end": {
-          "line": 84,
+          "line": 85,
           "column": 5,
-          "index": 2362
+          "index": 2385
         }
       },
+      "json": {
+        "init": [
+          "node",
+          "browser"
+        ],
+        "check": "Array"
+      },
       "jsdoc": {
+        "raw": [
+          "* Supported application types "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -136,32 +146,30 @@
           }
         ]
       },
-      "name": "applicationTypes",
-      "propertyType": "new",
-      "init": [
-        "node",
-        "browser"
-      ],
-      "check": "Array",
-      "defaultValue": [
-        "node",
-        "browser"
-      ]
+      "appearsIn": []
     },
     "trackLineNumbers": {
       "location": {
         "start": {
-          "line": 87,
+          "line": 88,
           "column": 4,
-          "index": 2413
+          "index": 2436
         },
         "end": {
-          "line": 91,
+          "line": 92,
           "column": 5,
-          "index": 2503
+          "index": 2526
         }
       },
+      "json": {
+        "check": "Boolean",
+        "init": false,
+        "nullable": false
+      },
       "jsdoc": {
+        "raw": [
+          "* Whether to preserve line numbers "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -169,28 +177,30 @@
           }
         ]
       },
-      "name": "trackLineNumbers",
-      "propertyType": "new",
-      "nullable": false,
-      "init": false,
-      "allowNull": false,
-      "check": "Boolean",
-      "defaultValue": false
+      "appearsIn": []
     },
     "processResources": {
       "location": {
         "start": {
-          "line": 94,
+          "line": 95,
           "column": 4,
-          "index": 2550
+          "index": 2573
         },
         "end": {
-          "line": 98,
+          "line": 99,
           "column": 5,
-          "index": 2639
+          "index": 2662
         }
       },
+      "json": {
+        "init": true,
+        "nullable": false,
+        "check": "Boolean"
+      },
       "jsdoc": {
+        "raw": [
+          "* Whether to process resources "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -198,28 +208,30 @@
           }
         ]
       },
-      "name": "processResources",
-      "propertyType": "new",
-      "nullable": false,
-      "init": true,
-      "allowNull": false,
-      "check": "Boolean",
-      "defaultValue": true
+      "appearsIn": []
     },
     "addCreatedAt": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 102,
           "column": 4,
-          "index": 2701
+          "index": 2724
         },
         "end": {
-          "line": 105,
+          "line": 106,
           "column": 5,
-          "index": 2787
+          "index": 2810
         }
       },
+      "json": {
+        "init": false,
+        "nullable": false,
+        "check": "Boolean"
+      },
       "jsdoc": {
+        "raw": [
+          "* Whether to add `$$createdAt` to new objects "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -227,28 +239,60 @@
           }
         ]
       },
-      "name": "addCreatedAt",
-      "propertyType": "new",
-      "nullable": false,
-      "init": false,
-      "allowNull": false,
-      "check": "Boolean",
-      "defaultValue": false
+      "appearsIn": []
+    },
+    "verboseCreatedAt": {
+      "location": {
+        "start": {
+          "line": 109,
+          "column": 4,
+          "index": 2916
+        },
+        "end": {
+          "line": 113,
+          "column": 5,
+          "index": 3006
+        }
+      },
+      "json": {
+        "init": false,
+        "nullable": false,
+        "check": "Boolean"
+      },
+      "jsdoc": {
+        "raw": [
+          "* Whether to add verbose tracking to `$$createdAt`. Has no effect if `addCreatedAt=false` "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Whether to add verbose tracking to <code>$$createdAt</code>. Has no effect if <code>addCreatedAt=false</code></p>"
+          }
+        ]
+      },
+      "appearsIn": []
     },
     "environment": {
       "location": {
         "start": {
-          "line": 108,
+          "line": 116,
           "column": 4,
-          "index": 2837
+          "index": 3056
         },
         "end": {
-          "line": 112,
+          "line": 120,
           "column": 5,
-          "index": 2928
+          "index": 3147
         }
       },
+      "json": {
+        "check": "Map",
+        "apply": "_applyEnvironment"
+      },
       "jsdoc": {
+        "raw": [
+          "* Environment during compile time "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -256,25 +300,29 @@
           }
         ]
       },
-      "name": "environment",
-      "propertyType": "new",
-      "apply": "_applyEnvironment",
-      "check": "Map"
+      "appearsIn": []
     },
     "babelConfig": {
       "location": {
         "start": {
-          "line": 115,
+          "line": 123,
           "column": 4,
-          "index": 2969
+          "index": 3188
         },
         "end": {
-          "line": 119,
+          "line": 127,
           "column": 5,
-          "index": 3051
+          "index": 3270
         }
       },
+      "json": {
+        "nullable": true,
+        "check": "Object"
+      },
       "jsdoc": {
+        "raw": [
+          "* configuration of babel "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -282,26 +330,30 @@
           }
         ]
       },
-      "name": "babelConfig",
-      "propertyType": "new",
-      "nullable": true,
-      "allowNull": true,
-      "check": "Object"
+      "appearsIn": []
     },
     "ignores": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 130,
           "column": 4,
-          "index": 3092
+          "index": 3311
         },
         "end": {
-          "line": 126,
+          "line": 134,
           "column": 5,
-          "index": 3168
+          "index": 3387
         }
       },
+      "json": {
+        "init": [],
+        "nullable": false,
+        "check": "Array"
+      },
       "jsdoc": {
+        "raw": [
+          "* list of global ignores "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -309,28 +361,30 @@
           }
         ]
       },
-      "name": "ignores",
-      "propertyType": "new",
-      "nullable": false,
-      "init": [],
-      "allowNull": false,
-      "check": "Array",
-      "defaultValue": []
+      "appearsIn": []
     },
     "globalSymbols": {
       "location": {
         "start": {
-          "line": 129,
+          "line": 137,
           "column": 4,
-          "index": 3209
+          "index": 3428
         },
         "end": {
-          "line": 133,
+          "line": 141,
           "column": 5,
-          "index": 3291
+          "index": 3510
         }
       },
+      "json": {
+        "init": [],
+        "nullable": false,
+        "check": "Array"
+      },
       "jsdoc": {
+        "raw": [
+          "* list of global symbols "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -338,28 +392,33 @@
           }
         ]
       },
-      "name": "globalSymbols",
-      "propertyType": "new",
-      "nullable": false,
-      "init": [],
-      "allowNull": false,
-      "check": "Array",
-      "defaultValue": []
+      "appearsIn": []
     },
     "manglePrivates": {
       "location": {
         "start": {
-          "line": 136,
+          "line": 144,
           "column": 4,
-          "index": 3355
+          "index": 3574
         },
         "end": {
-          "line": 139,
+          "line": 147,
           "column": 5,
-          "index": 3449
+          "index": 3668
         }
       },
+      "json": {
+        "init": "readable",
+        "check": [
+          "off",
+          "readable",
+          "unreadable"
+        ]
+      },
       "jsdoc": {
+        "raw": [
+          "* Whether and how to mangle private identifiers "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -367,30 +426,29 @@
           }
         ]
       },
-      "name": "manglePrivates",
-      "propertyType": "new",
-      "init": "readable",
-      "possibleValues": [
-        "off",
-        "readable",
-        "unreadable"
-      ],
-      "defaultValue": "readable"
+      "appearsIn": []
     },
     "writePoLineNumbers": {
       "location": {
         "start": {
-          "line": 142,
+          "line": 150,
           "column": 4,
-          "index": 3510
+          "index": 3729
         },
         "end": {
-          "line": 145,
+          "line": 153,
           "column": 5,
-          "index": 3579
+          "index": 3798
         }
       },
+      "json": {
+        "init": false,
+        "check": "Boolean"
+      },
       "jsdoc": {
+        "raw": [
+          "* Whether to write line numbers to .po files "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -398,60 +456,22 @@
           }
         ]
       },
-      "name": "writePoLineNumbers",
-      "propertyType": "new",
-      "init": false,
-      "check": "Boolean",
-      "defaultValue": false
-    },
-    "qxOwner": {
-      "type": "property",
-      "name": "qxOwner",
-      "abstract": false,
-      "mixin": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.MObjectId",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>The owning object</p>"
-          }
-        ]
-      }
-    },
-    "qxObjectId": {
-      "type": "property",
-      "name": "qxObjectId",
-      "abstract": false,
-      "mixin": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.MObjectId",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>{String} The ID of the object.</p>"
-          }
-        ]
-      }
+      "appearsIn": []
     }
   },
   "events": {
     "compilingClass": {
-      "location": {
-        "start": {
-          "line": 156,
-          "column": 4,
-          "index": 3888
-        },
-        "end": {
-          "line": 156,
-          "column": 40,
-          "index": 3924
-        }
-      },
+      "type": "qx.event.type.Data",
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fired when a class is about to be compiled; data is a map:",
+          "     *",
+          "     * dbClassInfo: {Object} the newly populated class info",
+          "     * oldDbClassInfo: {Object} the previous populated class info",
+          "     * classFile - {ClassFile} the qx.tool.compiler.ClassFile instance",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -459,23 +479,30 @@
           }
         ]
       },
-      "name": "compilingClass",
-      "type": "qx.event.type.Data"
-    },
-    "compiledClass": {
       "location": {
         "start": {
           "line": 164,
           "column": 4,
-          "index": 4198
+          "index": 4107
         },
         "end": {
           "line": 164,
-          "column": 39,
-          "index": 4233
+          "column": 40,
+          "index": 4143
         }
-      },
+      }
+    },
+    "compiledClass": {
+      "type": "qx.event.type.Data",
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fired when a class is compiled; data is a map:",
+          "     * dbClassInfo: {Object} the newly populated class info",
+          "     * oldDbClassInfo: {Object} the previous populated class info",
+          "     * classFile - {ClassFile} the qx.tool.compiler.ClassFile instance",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -483,23 +510,29 @@
           }
         ]
       },
-      "name": "compiledClass",
-      "type": "qx.event.type.Data"
-    },
-    "alreadyCompiledClass": {
       "location": {
         "start": {
-          "line": 171,
+          "line": 172,
           "column": 4,
-          "index": 4434
+          "index": 4417
         },
         "end": {
-          "line": 171,
-          "column": 46,
-          "index": 4476
+          "line": 172,
+          "column": 39,
+          "index": 4452
         }
-      },
+      }
+    },
+    "alreadyCompiledClass": {
+      "type": "qx.event.type.Data",
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fired when a class is already compiled (but needed for compilation); data is a map:",
+          "     * className: {String}",
+          "     * dbClassInfo: {Object} the newly populated class info",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -507,23 +540,28 @@
           }
         ]
       },
-      "name": "alreadyCompiledClass",
-      "type": "qx.event.type.Data"
-    },
-    "saveDatabase": {
       "location": {
         "start": {
-          "line": 177,
+          "line": 179,
           "column": 4,
-          "index": 4591
+          "index": 4653
         },
         "end": {
-          "line": 177,
-          "column": 38,
-          "index": 4625
+          "line": 179,
+          "column": 46,
+          "index": 4695
         }
-      },
+      }
+    },
+    "saveDatabase": {
+      "type": "qx.event.type.Data",
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fired when the database is been saved",
+          "     * database: {Object} the database to save",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -531,89 +569,94 @@
           }
         ]
       },
-      "name": "saveDatabase",
-      "type": "qx.event.type.Data"
+      "location": {
+        "start": {
+          "line": 185,
+          "column": 4,
+          "index": 4810
+        },
+        "end": {
+          "line": 185,
+          "column": 38,
+          "index": 4844
+        }
+      }
     }
   },
   "members": {
     "__opened": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 181,
+          "line": 189,
           "column": 4,
-          "index": 4649
+          "index": 4868
         },
         "end": {
-          "line": 181,
+          "line": 189,
           "column": 19,
-          "index": 4664
+          "index": 4883
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__resManager": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 182,
+          "line": 190,
           "column": 4,
-          "index": 4670
+          "index": 4889
         },
         "end": {
-          "line": 182,
+          "line": 190,
           "column": 22,
-          "index": 4688
+          "index": 4907
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__dbFilename": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 183,
+          "line": 191,
           "column": 4,
-          "index": 4694
+          "index": 4913
         },
         "end": {
-          "line": 183,
+          "line": 191,
           "column": 22,
-          "index": 4712
+          "index": 4931
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__db": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 184,
+          "line": 192,
           "column": 4,
-          "index": 4718
+          "index": 4937
         },
         "end": {
-          "line": 184,
+          "line": 192,
           "column": 14,
-          "index": 4728
+          "index": 4947
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__libraries": {
-      "location": {
-        "start": {
-          "line": 187,
-          "column": 4,
-          "index": 4772
-        },
-        "end": {
-          "line": 187,
-          "column": 21,
-          "index": 4789
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "* {Library[]} All libraries "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -621,23 +664,26 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
-    },
-    "__librariesByNamespace": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 190,
+          "line": 195,
           "column": 4,
-          "index": 4871
+          "index": 4991
         },
         "end": {
-          "line": 190,
-          "column": 32,
-          "index": 4899
+          "line": 195,
+          "column": 21,
+          "index": 5008
         }
       },
+      "appearsIn": []
+    },
+    "__librariesByNamespace": {
       "jsdoc": {
+        "raw": [
+          "* {Map{String,Library}} Lookup of libraries, indexed by namespace "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -645,167 +691,216 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 198,
+          "column": 4,
+          "index": 5090
+        },
+        "end": {
+          "line": 198,
+          "column": 32,
+          "index": 5118
+        }
+      },
+      "appearsIn": []
     },
     "__classes": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 192,
+          "line": 200,
           "column": 4,
-          "index": 4906
+          "index": 5125
         },
         "end": {
-          "line": 192,
+          "line": 200,
           "column": 19,
-          "index": 4921
+          "index": 5140
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__initialClassesToScan": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 193,
+          "line": 201,
           "column": 4,
-          "index": 4927
+          "index": 5146
         },
         "end": {
-          "line": 193,
+          "line": 201,
           "column": 32,
-          "index": 4955
+          "index": 5174
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__cldrs": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 194,
+          "line": 202,
           "column": 4,
-          "index": 4961
+          "index": 5180
         },
         "end": {
-          "line": 194,
+          "line": 202,
           "column": 17,
-          "index": 4974
+          "index": 5193
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__translations": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 195,
+          "line": 203,
           "column": 4,
-          "index": 4980
+          "index": 5199
         },
         "end": {
-          "line": 195,
+          "line": 203,
           "column": 24,
-          "index": 5000
+          "index": 5219
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
+    },
+    "__fonts": {
+      "jsdoc": {
+        "raw": [
+          "* @type{qx.tool.compiler.app.ManifestFont[]} list of fonts in provides.fonts "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": ""
+          }
+        ],
+        "@type": [
+          {
+            "name": "@type",
+            "body": "{qx.tool.compiler.app.ManifestFont[]} list of fonts in provides.fonts"
+          }
+        ]
+      },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 206,
+          "column": 4,
+          "index": 5312
+        },
+        "end": {
+          "line": 206,
+          "column": 17,
+          "index": 5325
+        }
+      },
+      "appearsIn": []
     },
     "__classFiles": {
-      "location": {
-        "start": {
-          "line": 197,
-          "column": 4,
-          "index": 5007
-        },
-        "end": {
-          "line": 197,
-          "column": 22,
-          "index": 5025
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__environmentChecks": {
-      "location": {
-        "start": {
-          "line": 198,
-          "column": 4,
-          "index": 5031
-        },
-        "end": {
-          "line": 198,
-          "column": 29,
-          "index": 5056
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__inDefer": {
-      "location": {
-        "start": {
-          "line": 199,
-          "column": 4,
-          "index": 5062
-        },
-        "end": {
-          "line": 199,
-          "column": 20,
-          "index": 5078
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__qooxdooVersion": {
-      "location": {
-        "start": {
-          "line": 200,
-          "column": 4,
-          "index": 5084
-        },
-        "end": {
-          "line": 200,
-          "column": 26,
-          "index": 5106
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__environmentHash": {
-      "location": {
-        "start": {
-          "line": 201,
-          "column": 4,
-          "index": 5112
-        },
-        "end": {
-          "line": 201,
-          "column": 27,
-          "index": 5135
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "open": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 208,
           "column": 4,
-          "index": 5225
+          "index": 5332
         },
         "end": {
-          "line": 227,
-          "column": 5,
-          "index": 5692
+          "line": 208,
+          "column": 22,
+          "index": 5350
         }
       },
+      "appearsIn": []
+    },
+    "__environmentChecks": {
+      "jsdoc": null,
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 209,
+          "column": 4,
+          "index": 5356
+        },
+        "end": {
+          "line": 209,
+          "column": 29,
+          "index": 5381
+        }
+      },
+      "appearsIn": []
+    },
+    "__inDefer": {
+      "jsdoc": null,
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 210,
+          "column": 4,
+          "index": 5387
+        },
+        "end": {
+          "line": 210,
+          "column": 20,
+          "index": 5403
+        }
+      },
+      "appearsIn": []
+    },
+    "__qooxdooVersion": {
+      "jsdoc": null,
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 211,
+          "column": 4,
+          "index": 5409
+        },
+        "end": {
+          "line": 211,
+          "column": 26,
+          "index": 5431
+        }
+      },
+      "appearsIn": []
+    },
+    "__environmentHash": {
+      "jsdoc": null,
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 212,
+          "column": 4,
+          "index": 5437
+        },
+        "end": {
+          "line": 212,
+          "column": 27,
+          "index": 5460
+        }
+      },
+      "appearsIn": []
+    },
+    "open": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Opens the analyser, loads database etc",
+          "     *",
+          "     * @async",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -819,23 +914,33 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "initialScan": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 235,
+          "line": 219,
           "column": 4,
-          "index": 5856
+          "index": 5550
         },
         "end": {
-          "line": 281,
+          "line": 238,
           "column": 5,
-          "index": 6940
+          "index": 6017
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "initialScan": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Scans the source files for javascript class and resource references and",
+          "     * calculates the dependency tree",
+          "     *",
+          "     * @param cb",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -851,23 +956,34 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "loadDatabase": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 286,
+          "line": 246,
           "column": 4,
-          "index": 7002
+          "index": 6181
         },
         "end": {
-          "line": 289,
+          "line": 292,
           "column": 5,
-          "index": 7126
+          "index": 7265
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "cb"
+        }
+      ],
+      "appearsIn": []
+    },
+    "loadDatabase": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Loads the database if available",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -875,23 +991,32 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "resetDatabase": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 296,
+          "line": 297,
           "column": 4,
-          "index": 7208
+          "index": 7327
         },
         "end": {
-          "line": 306,
+          "line": 300,
           "column": 5,
-          "index": 7422
+          "index": 7451
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "resetDatabase": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Resets the database",
+          "     *",
+          "     * @return {Promise}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -902,28 +1027,38 @@
           {
             "name": "@return",
             "body": "{Promise}",
-            "type": "Promise",
+            "type": "Promise<any>",
             "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "saveDatabase": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 311,
+          "line": 307,
           "column": 4,
-          "index": 7471
+          "index": 7533
         },
         "end": {
-          "line": 318,
+          "line": 317,
           "column": 5,
-          "index": 7778
+          "index": 7747
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "Promise<any>"
+      },
+      "appearsIn": []
+    },
+    "saveDatabase": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Saves the database",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -931,23 +1066,32 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getDatabase": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 325,
+          "line": 322,
           "column": 4,
-          "index": 7859
+          "index": 7796
         },
         "end": {
-          "line": 327,
+          "line": 329,
           "column": 5,
-          "index": 7904
+          "index": 8103
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "getDatabase": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the loaded database",
+          "     *",
+          "     * @returns",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -957,29 +1101,36 @@
         "@return": [
           {
             "name": "@return",
-            "body": "",
-            "type": "",
-            "description": ""
+            "body": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "analyseClasses": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 333,
+          "line": 336,
           "column": 4,
-          "index": 8036
+          "index": 8184
         },
         "end": {
-          "line": 1006,
+          "line": 338,
           "column": 5,
-          "index": 30485
+          "index": 8229
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {},
+      "appearsIn": []
+    },
+    "analyseClasses": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Parses all the source files recursively until all classes and all",
+          "     * dependent classes are loaded",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -987,23 +1138,32 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "_addRequiredClass": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1013,
+          "line": 344,
           "column": 4,
-          "index": 30598
+          "index": 8361
         },
         "end": {
-          "line": 1026,
+          "line": 461,
           "column": 5,
-          "index": 30988
+          "index": 12102
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "_addRequiredClass": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Called when a reference to a class is made",
+          "     * @param className",
+          "     * @private",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1025,23 +1185,35 @@
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "getDependentClasses": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 1032,
+          "line": 468,
           "column": 4,
-          "index": 31083
+          "index": 12215
         },
         "end": {
-          "line": 1034,
+          "line": 481,
           "column": 5,
-          "index": 31141
+          "index": 12605
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "className"
+        }
+      ],
+      "appearsIn": []
+    },
+    "getDependentClasses": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the full list of required classes",
+          "     * @returns {null}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1057,23 +1229,34 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getCachedClassInfo": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1040,
+          "line": 487,
           "column": 4,
-          "index": 31276
+          "index": 12700
         },
         "end": {
-          "line": 1042,
+          "line": 489,
           "column": 5,
-          "index": 31377
+          "index": 12758
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "null"
+      },
+      "appearsIn": []
+    },
+    "getCachedClassInfo": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns cached class info - returns null if not loaded or not in the database",
+          "     * @returb DbClassInfo",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1087,23 +1270,37 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getClassInfo": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1050,
+          "line": 495,
           "column": 4,
-          "index": 31637
+          "index": 12893
         },
         "end": {
-          "line": 1155,
+          "line": 497,
           "column": 5,
-          "index": 34775
+          "index": 12994
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "className"
+        }
+      ],
+      "appearsIn": []
+    },
+    "getClassInfo": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Loads a class",
+          "     * @param className {String} the name of the class",
+          "     * @param forceScan {Boolean?} true if the class is to be compiled whether it needs it or not (default false)",
+          "     * @param cb {Function} (err, DbClassInfo)",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1116,7 +1313,7 @@
             "body": "className {String} the name of the class",
             "paramName": "className",
             "description": " the name of the class",
-            "type": "String"
+            "type": "string"
           },
           {
             "name": "@param",
@@ -1131,27 +1328,52 @@
             "body": "cb {Function} (err, DbClassInfo)",
             "paramName": "cb",
             "description": " (err, DbClassInfo)",
-            "type": "Function"
+            "type": "((...args: any[]) => any)"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getClassSourcePath": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1164,
+          "line": 505,
           "column": 4,
-          "index": 34968
+          "index": 13254
         },
         "end": {
-          "line": 1181,
+          "line": 606,
           "column": 5,
-          "index": 35521
+          "index": 16248
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "className",
+          "type": "string"
+        },
+        {
+          "name": "forceScan",
+          "type": "Boolean",
+          "optional": true
+        },
+        {
+          "name": "cb",
+          "type": "((...args: any[]) => any)"
+        }
+      ],
+      "appearsIn": []
+    },
+    "getClassSourcePath": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the absolute path to the class file",
+          "     *",
+          "     * @param library  {qx.tool.compiler.app.Library}",
+          "     * @param className {String}",
+          "     * @returns {String}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1161,39 +1383,65 @@
         "@param": [
           {
             "name": "@param",
-            "body": "library  {qx.tool.compiler.app.Library}"
+            "body": "library  {qx.tool.compiler.app.Library}",
+            "paramName": "library",
+            "type": "qx.tool.compiler.app.Library"
           },
           {
             "name": "@param",
-            "body": "className {String}"
+            "body": "className {String}",
+            "paramName": "className",
+            "type": "string"
           }
         ],
         "@return": [
           {
             "name": "@return",
             "body": "{String}",
-            "type": "String",
+            "type": "string",
             "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getClassOutputPath": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1189,
+          "line": 615,
           "column": 4,
-          "index": 35661
+          "index": 16441
         },
         "end": {
-          "line": 1197,
+          "line": 632,
           "column": 5,
-          "index": 35865
+          "index": 16994
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "library",
+          "type": "qx.tool.compiler.app.Library"
+        },
+        {
+          "name": "className",
+          "type": "string"
+        }
+      ],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
+    },
+    "getClassOutputPath": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the path to the rewritten class file",
+          "     *",
+          "     * @param className {String}",
+          "     * @returns {String}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1203,35 +1451,54 @@
         "@param": [
           {
             "name": "@param",
-            "body": "className {String}"
+            "body": "className {String}",
+            "paramName": "className",
+            "type": "string"
           }
         ],
         "@return": [
           {
             "name": "@return",
             "body": "{String}",
-            "type": "String",
+            "type": "string",
             "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getCldr": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1204,
+          "line": 640,
           "column": 4,
-          "index": 36016
+          "index": 17134
         },
         "end": {
-          "line": 1213,
+          "line": 648,
           "column": 5,
-          "index": 36265
+          "index": 17338
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "className",
+          "type": "string"
+        }
+      ],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
+    },
+    "getCldr": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the CLDR data for a given locale",
+          "     * @param locale {String} the locale string",
+          "     * @returns {Promise<qx.tool.compiler.app.Cldr>}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1244,33 +1511,53 @@
             "body": "locale {String} the locale string",
             "paramName": "locale",
             "description": " the locale string",
-            "type": "String"
+            "type": "string"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "Promise({cldr})"
+            "body": "{Promise<qx.tool.compiler.app.Cldr>}",
+            "type": "Promise<qx.tool.compiler.app.Cldr>",
+            "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getTranslation": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1221,
+          "line": 655,
           "column": 4,
-          "index": 36437
+          "index": 17510
         },
         "end": {
-          "line": 1232,
+          "line": 664,
           "column": 5,
-          "index": 36881
+          "index": 17759
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "locale",
+          "type": "string"
+        }
+      ],
+      "returnType": {
+        "type": "Promise<qx.tool.compiler.app.Cldr>"
+      },
+      "appearsIn": []
+    },
+    "getTranslation": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Gets the translation for the locale and library, caching the result.",
+          "     * @param library",
+          "     * @param locale",
+          "     * @returns {qx.tool.compiler.app.Translation}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1294,29 +1581,50 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{translation}",
-            "type": "translation",
+            "body": "{qx.tool.compiler.app.Translation}",
+            "type": "qx.tool.compiler.app.Translation",
             "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "updateTranslations": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1241,
+          "line": 672,
           "column": 4,
-          "index": 37258
+          "index": 17952
         },
         "end": {
-          "line": 1377,
+          "line": 683,
           "column": 5,
-          "index": 41755
+          "index": 18396
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "library"
+        },
+        {
+          "name": "locale"
+        }
+      ],
+      "returnType": {
+        "type": "qx.tool.compiler.app.Translation"
+      },
+      "appearsIn": []
+    },
+    "updateTranslations": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Updates all translations to include all msgids found in code",
+          "     * @param appLibrary {qx.tool.compiler.app.Library} the library to update",
+          "     * @param locales {String[]} locales",
+          "     * @param libraries {qx.tool.compiler.app.Library[]} all libraries",
+          "     * @param copyAllMsgs {Boolean} whether to copy everything, or just those that are required",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1350,27 +1658,53 @@
             "body": "copyAllMsgs {Boolean} whether to copy everything, or just those that are required",
             "paramName": "copyAllMsgs",
             "description": " whether to copy everything, or just those that are required",
-            "type": "Boolean"
+            "type": "boolean"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getQooxdooPath": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1384,
+          "line": 692,
           "column": 4,
-          "index": 41848
+          "index": 18773
         },
         "end": {
-          "line": 1390,
+          "line": 828,
           "column": 5,
-          "index": 41998
+          "index": 23270
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "appLibrary",
+          "type": "qx.tool.compiler.app.Library"
+        },
+        {
+          "name": "locales",
+          "type": "String[]"
+        },
+        {
+          "name": "libraries",
+          "type": "qx.tool.compiler.app.Library[]"
+        },
+        {
+          "name": "copyAllMsgs",
+          "type": "boolean"
+        }
+      ],
+      "appearsIn": []
+    },
+    "getQooxdooPath": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the path to the qooxdoo library",
+          "     *",
+          "     * @returns",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1380,29 +1714,35 @@
         "@return": [
           {
             "name": "@return",
-            "body": "",
-            "type": "",
-            "description": ""
+            "body": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "findLibrary": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1395,
+          "line": 835,
           "column": 4,
-          "index": 42065
+          "index": 23363
         },
         "end": {
-          "line": 1398,
+          "line": 841,
           "column": 5,
-          "index": 42159
+          "index": 23513
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {},
+      "appearsIn": []
+    },
+    "findLibrary": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Finds the library with a name(space)",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1410,23 +1750,35 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getLibraries": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1404,
+          "line": 846,
           "column": 4,
-          "index": 42234
+          "index": 23580
         },
         "end": {
-          "line": 1406,
+          "line": 849,
           "column": 5,
-          "index": 42287
+          "index": 23674
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "name"
+        }
+      ],
+      "appearsIn": []
+    },
+    "getLibraries": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns all libraries",
+          "     * @returns {null}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1442,23 +1794,35 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "addLibrary": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1413,
+          "line": 855,
           "column": 4,
-          "index": 42372
+          "index": 23749
         },
         "end": {
-          "line": 1416,
+          "line": 857,
           "column": 5,
-          "index": 42506
+          "index": 23802
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "null"
+      },
+      "appearsIn": []
+    },
+    "addLibrary": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds a library definition",
+          "     *",
+          "     * @param library",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1474,23 +1838,212 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "addClass": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1423,
+          "line": 864,
           "column": 4,
-          "index": 42624
+          "index": 23887
         },
         "end": {
-          "line": 1425,
+          "line": 879,
           "column": 5,
-          "index": 42702
+          "index": 24393
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "library"
+        }
+      ],
+      "appearsIn": []
+    },
+    "getFont": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns a font by name",
+          "     *",
+          "     * @param {String} name",
+          "     * @param {Boolean?} create whether to create the font if it does not exist (default is false)",
+          "     * @returns {qx.tool.compiler.app.ManifestFont?} null if it does not exist and `create` is falsey",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns a font by name</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "{String} name",
+            "paramName": "name",
+            "description": "",
+            "type": "string"
+          },
+          {
+            "name": "@param",
+            "body": "{Boolean?} create whether to create the font if it does not exist (default is false)",
+            "paramName": "create",
+            "description": "whether to create the font if it does not exist (default is false)",
+            "optional": true,
+            "type": "Boolean"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{qx.tool.compiler.app.ManifestFont?} null if it does not exist and <code>create</code> is falsey",
+            "type": "qx.tool.compiler.app.ManifestFont?",
+            "description": "null if it does not exist and <code>create</code> is falsey"
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 888,
+          "column": 4,
+          "index": 24682
+        },
+        "end": {
+          "line": 894,
+          "column": 5,
+          "index": 24893
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "create",
+          "type": "Boolean",
+          "optional": true
+        }
+      ],
+      "returnType": {
+        "type": "qx.tool.compiler.app.ManifestFont?"
+      },
+      "appearsIn": []
+    },
+    "isFontAsset": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Detects whether the filename is one of the fonts",
+          "     *",
+          "     * @param {String} filename",
+          "     * @returns {Boolean} whether the filename is a font asset",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Detects whether the filename is one of the fonts</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "{String} filename",
+            "paramName": "filename",
+            "description": "",
+            "type": "string"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} whether the filename is a font asset",
+            "type": "boolean",
+            "description": "whether the filename is a font asset"
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 902,
+          "column": 4,
+          "index": 25074
+        },
+        "end": {
+          "line": 912,
+          "column": 5,
+          "index": 25408
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "filename",
+          "type": "string"
+        }
+      ],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "getFonts": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the map of all fonts, indexed by name",
+          "     *",
+          "     * @returns {Map<String, qx.tool.compiler.app.ManifestFont>}",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns the map of all fonts, indexed by name</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Map<String, qx.tool.compiler.app.ManifestFont>}",
+            "type": "Map<String, qx.tool.compiler.app.ManifestFont>",
+            "description": ""
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 918,
+          "column": 4,
+          "index": 25555
+        },
+        "end": {
+          "line": 920,
+          "column": 5,
+          "index": 25600
+        }
+      },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "Map<String, qx.tool.compiler.app.ManifestFont>"
+      },
+      "appearsIn": []
+    },
+    "addClass": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds a required class to be analysed by analyseClasses()",
+          "     *",
+          "     * @param classname",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1506,23 +2059,35 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "removeClass": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1431,
+          "line": 927,
           "column": 4,
-          "index": 42826
+          "index": 25718
         },
         "end": {
-          "line": 1433,
+          "line": 929,
           "column": 5,
-          "index": 42909
+          "index": 25796
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "classname"
+        }
+      ],
+      "appearsIn": []
+    },
+    "removeClass": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Removes a class from the list of required classes to analyse",
+          "     * @param classname {String}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1532,27 +2097,43 @@
         "@param": [
           {
             "name": "@param",
-            "body": "classname {String}"
+            "body": "classname {String}",
+            "paramName": "classname",
+            "type": "string"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getSymbolType": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1440,
+          "line": 935,
           "column": 4,
-          "index": 43061
+          "index": 25920
         },
         "end": {
-          "line": 1450,
+          "line": 937,
           "column": 5,
-          "index": 43331
+          "index": 26003
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "classname",
+          "type": "string"
+        }
+      ],
+      "appearsIn": []
+    },
+    "getSymbolType": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Detects the symbol type, ie class, package, member, etc",
+          "     * @param name",
+          "     * @returns {{symbolType,name,className}?}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1571,28 +2152,44 @@
           {
             "name": "@return",
             "body": "{{symbolType,name,className}?}",
-            "type": "{symbolType,name,className",
-            "description": "?}"
+            "type": "{symbolType,name,className}?",
+            "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getLibraryFromClassname": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1457,
+          "line": 944,
           "column": 4,
-          "index": 43471
+          "index": 26155
         },
         "end": {
-          "line": 1476,
+          "line": 954,
           "column": 5,
-          "index": 43957
+          "index": 26425
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "name"
+        }
+      ],
+      "returnType": {
+        "type": "{symbolType,name,className}?"
+      },
+      "appearsIn": []
+    },
+    "getLibraryFromClassname": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the library for a given classname, supports private files",
+          "     * @param className",
+          "     * @returns {*}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1616,23 +2213,39 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getClassFilename": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1483,
+          "line": 961,
           "column": 4,
-          "index": 44058
+          "index": 26565
         },
         "end": {
-          "line": 1496,
+          "line": 980,
           "column": 5,
-          "index": 44389
+          "index": 27051
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "className"
+        }
+      ],
+      "returnType": {
+        "type": "*"
+      },
+      "appearsIn": []
+    },
+    "getClassFilename": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the classname",
+          "     * @param className",
+          "     * @returns {string}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1656,23 +2269,40 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "setEnvironmentCheck": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1504,
+          "line": 987,
           "column": 4,
-          "index": 44511
+          "index": 27152
         },
         "end": {
-          "line": 1515,
+          "line": 1000,
           "column": 5,
-          "index": 44854
+          "index": 27483
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "className"
+        }
+      ],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
+    },
+    "setEnvironmentCheck": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Sets an environment value as being checked for",
+          "     *",
+          "     * @param key",
+          "     * @param value",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1694,23 +2324,40 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getEnvironmentCheck": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1523,
+          "line": 1008,
           "column": 4,
-          "index": 44975
+          "index": 27605
         },
         "end": {
-          "line": 1525,
+          "line": 1019,
           "column": 5,
-          "index": 45051
+          "index": 27948
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "key"
+        },
+        {
+          "name": "value"
+        }
+      ],
+      "appearsIn": []
+    },
+    "getEnvironmentCheck": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Tests whether an environment value is checked for",
+          "     *",
+          "     * @param key",
+          "     * @returns",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1728,29 +2375,39 @@
         "@return": [
           {
             "name": "@return",
-            "body": "",
-            "type": "",
-            "description": ""
+            "body": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getResourceManager": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1530,
+          "line": 1027,
           "column": 4,
-          "index": 45110
+          "index": 28069
         },
         "end": {
-          "line": 1532,
+          "line": 1029,
           "column": 5,
-          "index": 45170
+          "index": 28145
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "key"
+        }
+      ],
+      "returnType": {},
+      "appearsIn": []
+    },
+    "getResourceManager": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the resource manager",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1758,23 +2415,31 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getQooxdooVersion": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1538,
+          "line": 1034,
           "column": 4,
-          "index": 45256
+          "index": 28204
         },
         "end": {
-          "line": 1549,
+          "line": 1036,
           "column": 5,
-          "index": 45567
+          "index": 28264
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "getQooxdooVersion": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the version of Qooxdoo",
+          "     * @returns {String}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1785,28 +2450,39 @@
           {
             "name": "@return",
             "body": "{String}",
-            "type": "String",
+            "type": "string",
             "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getDbFilename": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1555,
+          "line": 1042,
           "column": 4,
-          "index": 45650
+          "index": 28350
         },
         "end": {
-          "line": 1557,
+          "line": 1053,
           "column": 5,
-          "index": 45705
+          "index": 28661
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
+    },
+    "getDbFilename": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the database filename",
+          "     * @returns {null}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1822,23 +2498,34 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getResDbFilename": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1563,
+          "line": 1059,
           "column": 4,
-          "index": 45797
+          "index": 28744
         },
         "end": {
-          "line": 1572,
+          "line": 1061,
           "column": 5,
-          "index": 46053
+          "index": 28799
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "null"
+      },
+      "appearsIn": []
+    },
+    "getResDbFilename": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the resource database filename",
+          "     * @returns {null}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1854,43 +2541,63 @@
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 1067,
+          "column": 4,
+          "index": 28891
+        },
+        "end": {
+          "line": 1076,
+          "column": 5,
+          "index": 29147
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "null"
+      },
+      "appearsIn": []
     },
     "_applyEnvironment": {
+      "jsdoc": {
+        "raw": [
+          " property apply"
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
-          "line": 1575,
+          "line": 1079,
           "column": 4,
-          "index": 46082
+          "index": 29176
         },
         "end": {
-          "line": 1578,
+          "line": 1082,
           "column": 5,
-          "index": 46212
+          "index": 29306
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "protected",
-      "applyFor": [
-        "environment"
-      ]
+      "params": [
+        {
+          "name": "value"
+        }
+      ],
+      "appearsIn": []
     },
     "isContextChanged": {
-      "location": {
-        "start": {
-          "line": 1586,
-          "column": 4,
-          "index": 46390
-        },
-        "end": {
-          "line": 1606,
-          "column": 5,
-          "index": 46990
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether the compilation context has changed since last analysis",
+          "     * e.g. compiler version, environment variables",
+          "     *",
+          "     * @return {Boolean}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1901,28 +2608,43 @@
           {
             "name": "@return",
             "body": "{Boolean}",
-            "type": "Boolean",
+            "type": "boolean",
             "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "updateEnvironmentData": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1616,
+          "line": 1090,
           "column": 4,
-          "index": 47219
+          "index": 29484
         },
         "end": {
-          "line": 1627,
+          "line": 1110,
           "column": 5,
-          "index": 47607
+          "index": 30084
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "updateEnvironmentData": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Sets the environment data in the __db.",
+          "     * The data beeing set are:",
+          "     *  * a hash of the current environment values",
+          "     *  * the compiler version",
+          "     *  * a list of the libraries used",
+          "     *",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1930,1035 +2652,23 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getQxOwner": {
-      "type": "function",
-      "name": "getQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "qx.core.Object",
-            "desc": "Returns the value for qxOwner"
-          }
-        ]
-      }
-    },
-    "setQxOwner": {
+      "location": {
+        "start": {
+          "line": 1120,
+          "column": 4,
+          "index": 30313
+        },
+        "end": {
+          "line": 1131,
+          "column": 5,
+          "index": 30701
+        }
+      },
       "type": "function",
-      "name": "setQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.core.Object",
-            "paramName": "value",
-            "desc": "Value for qxOwner"
-          }
-        ]
-      }
-    },
-    "resetQxOwner": {
-      "type": "function",
-      "name": "resetQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxOwner</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ]
-      }
-    },
-    "getQxObjectId": {
-      "type": "function",
-      "name": "getQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "[[ ObjectMethod Function ]]",
-            "desc": "Returns the value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "setQxObjectId": {
-      "type": "function",
-      "name": "setQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "[[ ObjectMethod Function ]]",
-            "paramName": "value",
-            "desc": "Value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "resetQxObjectId": {
-      "type": "function",
-      "name": "resetQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxObjectId</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ]
-      }
-    },
-    "getOutputDir": {
-      "type": "function",
-      "name": "getOutputDir",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>outputDir</code>.\n\nFor further details take a look at the property definition: {@link #outputDir}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "String",
-            "desc": "Returns the value for outputDir"
-          }
-        ]
-      }
-    },
-    "setOutputDir": {
-      "type": "function",
-      "name": "setOutputDir",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>outputDir</code>.\n\nFor further details take a look at the property definition: {@link #outputDir}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "String",
-            "paramName": "value",
-            "desc": "Value for outputDir"
-          }
-        ]
-      }
-    },
-    "resetOutputDir": {
-      "type": "function",
-      "name": "resetOutputDir",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>outputDir</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #outputDir}."
-          }
-        ]
-      }
-    },
-    "getProxySourcePath": {
-      "type": "function",
-      "name": "getProxySourcePath",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>proxySourcePath</code>.\n\nFor further details take a look at the property definition: {@link #proxySourcePath}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "String",
-            "desc": "Returns the value for proxySourcePath"
-          }
-        ]
-      }
-    },
-    "setProxySourcePath": {
-      "type": "function",
-      "name": "setProxySourcePath",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>proxySourcePath</code>.\n\nFor further details take a look at the property definition: {@link #proxySourcePath}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "String",
-            "paramName": "value",
-            "desc": "Value for proxySourcePath"
-          }
-        ]
-      }
-    },
-    "resetProxySourcePath": {
-      "type": "function",
-      "name": "resetProxySourcePath",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>proxySourcePath</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #proxySourcePath}."
-          }
-        ]
-      }
-    },
-    "getApplicationTypes": {
-      "type": "function",
-      "name": "getApplicationTypes",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>applicationTypes</code>.\n\nFor further details take a look at the property definition: {@link #applicationTypes}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Array",
-            "desc": "Returns the value for applicationTypes"
-          }
-        ]
-      }
-    },
-    "setApplicationTypes": {
-      "type": "function",
-      "name": "setApplicationTypes",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>applicationTypes</code>.\n\nFor further details take a look at the property definition: {@link #applicationTypes}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "Array",
-            "paramName": "value",
-            "desc": "Value for applicationTypes"
-          }
-        ]
-      }
-    },
-    "resetApplicationTypes": {
-      "type": "function",
-      "name": "resetApplicationTypes",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>applicationTypes</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #applicationTypes}."
-          }
-        ]
-      }
-    },
-    "getTrackLineNumbers": {
-      "type": "function",
-      "name": "getTrackLineNumbers",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>trackLineNumbers</code>.\n\nFor further details take a look at the property definition: {@link #trackLineNumbers}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Boolean",
-            "desc": "Returns the value for trackLineNumbers"
-          }
-        ]
-      }
-    },
-    "isTrackLineNumbers": {
-      "type": "function",
-      "name": "isTrackLineNumbers",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "is",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>trackLineNumbers</code>.\n\nFor further details take a look at the property definition: {@link #trackLineNumbers}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Boolean",
-            "desc": "Returns the value for trackLineNumbers"
-          }
-        ]
-      }
-    },
-    "setTrackLineNumbers": {
-      "type": "function",
-      "name": "setTrackLineNumbers",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>trackLineNumbers</code>.\n\nFor further details take a look at the property definition: {@link #trackLineNumbers}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "Boolean",
-            "paramName": "value",
-            "desc": "Value for trackLineNumbers"
-          }
-        ]
-      }
-    },
-    "resetTrackLineNumbers": {
-      "type": "function",
-      "name": "resetTrackLineNumbers",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>trackLineNumbers</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #trackLineNumbers}."
-          }
-        ]
-      }
-    },
-    "getProcessResources": {
-      "type": "function",
-      "name": "getProcessResources",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>processResources</code>.\n\nFor further details take a look at the property definition: {@link #processResources}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Boolean",
-            "desc": "Returns the value for processResources"
-          }
-        ]
-      }
-    },
-    "isProcessResources": {
-      "type": "function",
-      "name": "isProcessResources",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "is",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>processResources</code>.\n\nFor further details take a look at the property definition: {@link #processResources}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Boolean",
-            "desc": "Returns the value for processResources"
-          }
-        ]
-      }
-    },
-    "setProcessResources": {
-      "type": "function",
-      "name": "setProcessResources",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>processResources</code>.\n\nFor further details take a look at the property definition: {@link #processResources}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "Boolean",
-            "paramName": "value",
-            "desc": "Value for processResources"
-          }
-        ]
-      }
-    },
-    "resetProcessResources": {
-      "type": "function",
-      "name": "resetProcessResources",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>processResources</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #processResources}."
-          }
-        ]
-      }
-    },
-    "getAddCreatedAt": {
-      "type": "function",
-      "name": "getAddCreatedAt",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>addCreatedAt</code>.\n\nFor further details take a look at the property definition: {@link #addCreatedAt}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Boolean",
-            "desc": "Returns the value for addCreatedAt"
-          }
-        ]
-      }
-    },
-    "isAddCreatedAt": {
-      "type": "function",
-      "name": "isAddCreatedAt",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "is",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>addCreatedAt</code>.\n\nFor further details take a look at the property definition: {@link #addCreatedAt}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Boolean",
-            "desc": "Returns the value for addCreatedAt"
-          }
-        ]
-      }
-    },
-    "setAddCreatedAt": {
-      "type": "function",
-      "name": "setAddCreatedAt",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>addCreatedAt</code>.\n\nFor further details take a look at the property definition: {@link #addCreatedAt}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "Boolean",
-            "paramName": "value",
-            "desc": "Value for addCreatedAt"
-          }
-        ]
-      }
-    },
-    "resetAddCreatedAt": {
-      "type": "function",
-      "name": "resetAddCreatedAt",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>addCreatedAt</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #addCreatedAt}."
-          }
-        ]
-      }
-    },
-    "getEnvironment": {
-      "type": "function",
-      "name": "getEnvironment",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>environment</code>.\n\nFor further details take a look at the property definition: {@link #environment}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Map",
-            "desc": "Returns the value for environment"
-          }
-        ]
-      }
-    },
-    "setEnvironment": {
-      "type": "function",
-      "name": "setEnvironment",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>environment</code>.\n\nFor further details take a look at the property definition: {@link #environment}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "Map",
-            "paramName": "value",
-            "desc": "Value for environment"
-          }
-        ]
-      }
-    },
-    "resetEnvironment": {
-      "type": "function",
-      "name": "resetEnvironment",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>environment</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #environment}."
-          }
-        ]
-      }
-    },
-    "getBabelConfig": {
-      "type": "function",
-      "name": "getBabelConfig",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>babelConfig</code>.\n\nFor further details take a look at the property definition: {@link #babelConfig}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Object",
-            "desc": "Returns the value for babelConfig"
-          }
-        ]
-      }
-    },
-    "setBabelConfig": {
-      "type": "function",
-      "name": "setBabelConfig",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>babelConfig</code>.\n\nFor further details take a look at the property definition: {@link #babelConfig}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "Object",
-            "paramName": "value",
-            "desc": "Value for babelConfig"
-          }
-        ]
-      }
-    },
-    "resetBabelConfig": {
-      "type": "function",
-      "name": "resetBabelConfig",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>babelConfig</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #babelConfig}."
-          }
-        ]
-      }
-    },
-    "getIgnores": {
-      "type": "function",
-      "name": "getIgnores",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>ignores</code>.\n\nFor further details take a look at the property definition: {@link #ignores}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Array",
-            "desc": "Returns the value for ignores"
-          }
-        ]
-      }
-    },
-    "setIgnores": {
-      "type": "function",
-      "name": "setIgnores",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>ignores</code>.\n\nFor further details take a look at the property definition: {@link #ignores}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "Array",
-            "paramName": "value",
-            "desc": "Value for ignores"
-          }
-        ]
-      }
-    },
-    "resetIgnores": {
-      "type": "function",
-      "name": "resetIgnores",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>ignores</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #ignores}."
-          }
-        ]
-      }
-    },
-    "getGlobalSymbols": {
-      "type": "function",
-      "name": "getGlobalSymbols",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>globalSymbols</code>.\n\nFor further details take a look at the property definition: {@link #globalSymbols}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Array",
-            "desc": "Returns the value for globalSymbols"
-          }
-        ]
-      }
-    },
-    "setGlobalSymbols": {
-      "type": "function",
-      "name": "setGlobalSymbols",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>globalSymbols</code>.\n\nFor further details take a look at the property definition: {@link #globalSymbols}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "Array",
-            "paramName": "value",
-            "desc": "Value for globalSymbols"
-          }
-        ]
-      }
-    },
-    "resetGlobalSymbols": {
-      "type": "function",
-      "name": "resetGlobalSymbols",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>globalSymbols</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #globalSymbols}."
-          }
-        ]
-      }
-    },
-    "getManglePrivates": {
-      "type": "function",
-      "name": "getManglePrivates",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>manglePrivates</code>.\n\nFor further details take a look at the property definition: {@link #manglePrivates}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "any",
-            "desc": "Returns the value for manglePrivates"
-          }
-        ]
-      }
-    },
-    "setManglePrivates": {
-      "type": "function",
-      "name": "setManglePrivates",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>manglePrivates</code>.\n\nFor further details take a look at the property definition: {@link #manglePrivates}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "any",
-            "paramName": "value",
-            "desc": "Value for manglePrivates"
-          }
-        ]
-      }
-    },
-    "resetManglePrivates": {
-      "type": "function",
-      "name": "resetManglePrivates",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>manglePrivates</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #manglePrivates}."
-          }
-        ]
-      }
-    },
-    "getWritePoLineNumbers": {
-      "type": "function",
-      "name": "getWritePoLineNumbers",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>writePoLineNumbers</code>.\n\nFor further details take a look at the property definition: {@link #writePoLineNumbers}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Boolean",
-            "desc": "Returns the value for writePoLineNumbers"
-          }
-        ]
-      }
-    },
-    "isWritePoLineNumbers": {
-      "type": "function",
-      "name": "isWritePoLineNumbers",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "is",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>writePoLineNumbers</code>.\n\nFor further details take a look at the property definition: {@link #writePoLineNumbers}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Boolean",
-            "desc": "Returns the value for writePoLineNumbers"
-          }
-        ]
-      }
-    },
-    "setWritePoLineNumbers": {
-      "type": "function",
-      "name": "setWritePoLineNumbers",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>writePoLineNumbers</code>.\n\nFor further details take a look at the property definition: {@link #writePoLineNumbers}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "Boolean",
-            "paramName": "value",
-            "desc": "Value for writePoLineNumbers"
-          }
-        ]
-      }
-    },
-    "resetWritePoLineNumbers": {
-      "type": "function",
-      "name": "resetWritePoLineNumbers",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>writePoLineNumbers</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #writePoLineNumbers}."
-          }
-        ]
-      }
+      "params": [],
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "statics": {}
 }

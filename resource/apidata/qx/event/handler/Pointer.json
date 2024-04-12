@@ -1,66 +1,63 @@
 {
+  "version": 0.3,
+  "lastModified": 1712910031045,
+  "lastModifiedIso": "2024-04-12T08:20:31.045Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/event/handler/Pointer.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 26,
+      "column": 0,
+      "index": 724
+    },
+    "end": {
+      "line": 223,
+      "column": 3,
+      "index": 6147
+    }
+  },
   "className": "qx.event.handler.Pointer",
-  "packageName": "qx.event.handler",
-  "name": "Pointer",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Unified pointer event handler.",
+      " * @require(qx.event.dispatch.DomBubbling)",
+      " * @require(qx.event.type.Pointer) // load-time dependency for early native events",
+      " * @require(qx.event.type.dom.Pointer)",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Unified pointer event handler.</p>"
+      }
+    ],
+    "@require": [
+      {
+        "name": "@require",
+        "body": "qx.event.dispatch.DomBubbling"
+      },
+      {
+        "name": "@require",
+        "body": "qx.event.type.Pointer"
+      },
+      {
+        "name": "@require",
+        "body": "qx.event.type.dom.Pointer"
+      }
+    ]
+  },
   "superClass": "qx.event.handler.PointerCore",
   "interfaces": [
     "qx.event.IEventHandler",
     "qx.core.IDisposable"
   ],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 26,
-        "column": 0,
-        "index": 724
-      },
-      "end": {
-        "line": 223,
-        "column": 3,
-        "index": 6147
-      }
-    },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Unified pointer event handler.</p>"
-        }
-      ],
-      "@require": [
-        {
-          "name": "@require",
-          "body": "qx.event.dispatch.DomBubbling"
-        },
-        {
-          "name": "@require",
-          "body": "qx.event.type.Pointer"
-        },
-        {
-          "name": "@require",
-          "body": "qx.event.type.dom.Pointer"
-        }
-      ]
-    }
-  },
-  "type": "class",
   "statics": {
     "PRIORITY": {
-      "location": {
-        "start": {
-          "line": 32,
-          "column": 4,
-          "index": 940
-        },
-        "end": {
-          "line": 32,
-          "column": 51,
-          "index": 987
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "* @type {Integer} Priority of this handler "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -74,23 +71,26 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "SUPPORTED_TYPES": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 35,
+          "line": 32,
           "column": 4,
-          "index": 1039
+          "index": 940
         },
         "end": {
-          "line": 47,
-          "column": 5,
-          "index": 1287
+          "line": 32,
+          "column": 51,
+          "index": 987
         }
       },
+      "appearsIn": []
+    },
+    "SUPPORTED_TYPES": {
       "jsdoc": {
+        "raw": [
+          "* @type {Map} Supported event types "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -104,23 +104,26 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "TARGET_CHECK": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 50,
+          "line": 35,
           "column": 4,
-          "index": 1347
+          "index": 1039
         },
         "end": {
-          "line": 52,
-          "column": 44,
-          "index": 1451
+          "line": 47,
+          "column": 5,
+          "index": 1287
         }
       },
+      "appearsIn": []
+    },
+    "TARGET_CHECK": {
       "jsdoc": {
+        "raw": [
+          "* @type {Integer} Which target check to use "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -134,23 +137,26 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "IGNORE_CAN_HANDLE": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 55,
+          "line": 50,
           "column": 4,
-          "index": 1536
+          "index": 1347
         },
         "end": {
-          "line": 55,
-          "column": 27,
-          "index": 1559
+          "line": 52,
+          "column": 44,
+          "index": 1451
         }
       },
+      "appearsIn": []
+    },
+    "IGNORE_CAN_HANDLE": {
       "jsdoc": {
+        "raw": [
+          "* @type {Integer} Whether the method \"canHandleEvent\" must be called "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -164,11 +170,29 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 55,
+          "column": 4,
+          "index": 1536
+        },
+        "end": {
+          "line": 55,
+          "column": 27,
+          "index": 1559
+        }
+      },
+      "appearsIn": []
     }
   },
   "construct": {
+    "type": "function",
+    "params": [
+      {
+        "name": "manager"
+      }
+    ],
     "location": {
       "start": {
         "line": 63,
@@ -180,27 +204,12 @@
         "column": 3,
         "index": 1911
       }
-    },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Create a new instance</p>"
-        }
-      ],
-      "@param": [
-        {
-          "name": "@param",
-          "body": "manager {qx.event.Manager} Event manager for the window to use",
-          "paramName": "manager",
-          "description": " Event manager for the window to use",
-          "type": "qx.event.Manager"
-        }
-      ]
     }
   },
   "members": {
     "__manager": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 73,
@@ -213,10 +222,11 @@
           "index": 1946
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__window": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 74,
@@ -229,10 +239,11 @@
           "index": 1966
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__root": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 75,
@@ -245,10 +256,15 @@
           "index": 1984
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "canHandleEvent": {
+      "jsdoc": {
+        "raw": [
+          " interface implementation"
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 78,
@@ -261,15 +277,26 @@
           "index": 2054
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "public",
-      "overriddenFrom": "qx.event.IEventHandler",
+      "params": [
+        {
+          "name": "target"
+        },
+        {
+          "name": "type"
+        }
+      ],
       "appearsIn": [
         "qx.event.IEventHandler"
       ]
     },
     "registerEvent": {
+      "jsdoc": {
+        "raw": [
+          " interface implementation"
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 81,
@@ -282,15 +309,29 @@
           "index": 2176
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "public",
-      "overriddenFrom": "qx.event.IEventHandler",
+      "params": [
+        {
+          "name": "target"
+        },
+        {
+          "name": "type"
+        },
+        {
+          "name": "capture"
+        }
+      ],
       "appearsIn": [
         "qx.event.IEventHandler"
       ]
     },
     "unregisterEvent": {
+      "jsdoc": {
+        "raw": [
+          " interface implementation"
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 86,
@@ -303,15 +344,29 @@
           "index": 2300
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "public",
-      "overriddenFrom": "qx.event.IEventHandler",
+      "params": [
+        {
+          "name": "target"
+        },
+        {
+          "name": "type"
+        },
+        {
+          "name": "capture"
+        }
+      ],
       "appearsIn": [
         "qx.event.IEventHandler"
       ]
     },
     "_initPointerObserver": {
+      "jsdoc": {
+        "raw": [
+          " overridden"
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 91,
@@ -324,28 +379,24 @@
           "index": 2764
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "protected",
+      "params": [],
       "overriddenFrom": "qx.event.handler.PointerCore",
       "appearsIn": [
         "qx.event.handler.PointerCore"
       ]
     },
     "_fireEvent": {
-      "location": {
-        "start": {
-          "line": 111,
-          "column": 4,
-          "index": 2993
-        },
-        "end": {
-          "line": 185,
-          "column": 5,
-          "index": 5195
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fire a pointer event with the given parameters",
+          "     *",
+          "     * @param domEvent {Event} DOM event",
+          "     * @param type {String ? null} type of the event",
+          "     * @param target {Element ? null} event target",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -380,14 +431,50 @@
           }
         ]
       },
-      "type": "function",
       "access": "protected",
+      "location": {
+        "start": {
+          "line": 111,
+          "column": 4,
+          "index": 2993
+        },
+        "end": {
+          "line": 185,
+          "column": 5,
+          "index": 5195
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "domEvent",
+          "type": "Event"
+        },
+        {
+          "name": "type",
+          "type": "String",
+          "optional": true,
+          "defaultValue": "null"
+        },
+        {
+          "name": "target",
+          "type": "Element",
+          "optional": true,
+          "defaultValue": "null"
+        }
+      ],
       "overriddenFrom": "qx.event.handler.PointerCore",
       "appearsIn": [
         "qx.event.handler.PointerCore"
       ]
     },
     "_onPointerEvent": {
+      "jsdoc": {
+        "raw": [
+          " overridden"
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 188,
@@ -400,15 +487,32 @@
           "index": 5569
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "protected",
+      "params": [
+        {
+          "name": "domEvent"
+        }
+      ],
       "overriddenFrom": "qx.event.handler.PointerCore",
       "appearsIn": [
         "qx.event.handler.PointerCore"
       ]
     },
     "dispose": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Dispose this object",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Dispose this object</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 203,
@@ -421,36 +525,25 @@
           "index": 5729
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Dispose this object</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public",
-      "overriddenFrom": "qx.core.IDisposable",
+      "params": [],
+      "overriddenFrom": "qx.event.handler.PointerCore",
       "appearsIn": [
+        "qx.event.handler.PointerCore",
         "qx.core.IDisposable",
-        "qx.event.handler.PointerCore"
+        "qx.core.IDisposable"
       ]
     },
     "__callBase": {
-      "location": {
-        "start": {
-          "line": 214,
-          "column": 4,
-          "index": 5889
-        },
-        "end": {
-          "line": 216,
-          "column": 5,
-          "index": 5999
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Call overridden method.",
+          "     *",
+          "     * @param method {String} Name of the overridden method.",
+          "     * @param args {Array} Arguments.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -463,34 +556,43 @@
             "body": "method {String} Name of the overridden method.",
             "paramName": "method",
             "description": " Name of the overridden method.",
-            "type": "String"
+            "type": "string"
           },
           {
             "name": "@param",
             "body": "args {Array} Arguments.",
             "paramName": "args",
             "description": " Arguments.",
-            "type": "Array"
+            "type": "Array<any>"
           }
         ]
       },
-      "type": "function",
-      "access": "private"
-    }
-  },
-  "defer": {
-    "location": {
-      "start": {
-        "line": 219,
-        "column": 2,
-        "index": 6008
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 214,
+          "column": 4,
+          "index": 5889
+        },
+        "end": {
+          "line": 216,
+          "column": 5,
+          "index": 5999
+        }
       },
-      "end": {
-        "line": 222,
-        "column": 3,
-        "index": 6143
-      }
+      "type": "function",
+      "params": [
+        {
+          "name": "method",
+          "type": "string"
+        },
+        {
+          "name": "args",
+          "type": "Array<any>"
+        }
+      ],
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "properties": {}
 }

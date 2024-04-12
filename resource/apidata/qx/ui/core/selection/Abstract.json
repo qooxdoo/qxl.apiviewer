@@ -1,38 +1,45 @@
 {
-  "className": "qx.ui.core.selection.Abstract",
-  "packageName": "qx.ui.core.selection",
-  "name": "Abstract",
-  "superClass": "qx.core.Object",
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 26,
-        "column": 0,
-        "index": 720
-      },
-      "end": {
-        "line": 1762,
-        "column": 3,
-        "index": 48770
-      }
+  "version": 0.3,
+  "lastModified": 1712910030273,
+  "lastModifiedIso": "2024-04-12T08:20:30.273Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/ui/core/selection/Abstract.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 26,
+      "column": 0,
+      "index": 720
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Generic selection manager to bring rich desktop like selection behavior\n to widgets and low-level interactive controls.\n The selection handling supports both Shift and Ctrl/Meta modifies like\n known from native applications.</p>"
-        }
-      ]
+    "end": {
+      "line": 1762,
+      "column": 3,
+      "index": 48770
     }
   },
-  "type": "class",
-  "isAbstract": true,
-  "isStatic": false,
+  "className": "qx.ui.core.selection.Abstract",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Generic selection manager to bring rich desktop like selection behavior",
+      " * to widgets and low-level interactive controls.",
+      " *",
+      " * The selection handling supports both Shift and Ctrl/Meta modifies like",
+      " * known from native applications.",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Generic selection manager to bring rich desktop like selection behavior\n to widgets and low-level interactive controls.\n The selection handling supports both Shift and Ctrl/Meta modifies like\n known from native applications.</p>"
+      }
+    ]
+  },
   "isSingleton": false,
+  "abstract": true,
+  "superClass": "qx.core.Object",
   "construct": {
+    "type": "function",
+    "params": [],
     "location": {
       "start": {
         "line": 36,
@@ -44,11 +51,22 @@
         "column": 3,
         "index": 1106
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {
     "changeSelection": {
+      "type": "qx.event.type.Data",
+      "jsdoc": {
+        "raw": [
+          "* Fires after the selection was modified. Contains the selection under the data property. "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Fires after the selection was modified. Contains the selection under the data property.</p>"
+          }
+        ]
+      },
       "location": {
         "start": {
           "line": 51,
@@ -60,17 +78,7 @@
           "column": 41,
           "index": 1444
         }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Fires after the selection was modified. Contains the selection under the data property.</p>"
-          }
-        ]
-      },
-      "name": "changeSelection",
-      "type": "qx.event.type.Data"
+      }
     }
   },
   "properties": {
@@ -87,7 +95,27 @@
           "index": 2121
         }
       },
+      "json": {
+        "check": [
+          "single",
+          "multi",
+          "additive",
+          "one"
+        ],
+        "init": "single",
+        "apply": "_applyMode"
+      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Selects the selection mode to use.",
+          "     *",
+          "     * * single: One or no element is selected",
+          "     * * multi: Multi items could be selected. Also allows empty selections.",
+          "     * * additive: Easy Web-2.0 selection mode. Allows multiple selections without modifier keys.",
+          "     * * one: If possible always exactly one item is selected",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -95,17 +123,7 @@
           }
         ]
       },
-      "name": "mode",
-      "propertyType": "new",
-      "apply": "_applyMode",
-      "init": "single",
-      "possibleValues": [
-        "single",
-        "multi",
-        "additive",
-        "one"
-      ],
-      "defaultValue": "single"
+      "appearsIn": []
     },
     "drag": {
       "location": {
@@ -120,7 +138,19 @@
           "index": 2397
         }
       },
+      "json": {
+        "check": "Boolean",
+        "init": false
+      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Enable drag selection (multi selection of items through",
+          "     * dragging the pointer in pressed states).",
+          "     *",
+          "     * Only possible for the modes <code>multi</code> and <code>additive</code>",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -128,11 +158,7 @@
           }
         ]
       },
-      "name": "drag",
-      "propertyType": "new",
-      "init": false,
-      "check": "Boolean",
-      "defaultValue": false
+      "appearsIn": []
     },
     "quick": {
       "location": {
@@ -147,7 +173,18 @@
           "index": 2644
         }
       },
+      "json": {
+        "check": "Boolean",
+        "init": false
+      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Enable quick selection mode, where no tap is needed to change the selection.",
+          "     *",
+          "     * Only possible for the modes <code>single</code> and <code>one</code>.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -155,11 +192,7 @@
           }
         ]
       },
-      "name": "quick",
-      "propertyType": "new",
-      "init": false,
-      "check": "Boolean",
-      "defaultValue": false
+      "appearsIn": []
     },
     "readOnly": {
       "location": {
@@ -174,7 +207,16 @@
           "index": 2790
         }
       },
+      "json": {
+        "check": "Boolean",
+        "init": false
+      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether the selection can be changed by user interaction",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -182,47 +224,13 @@
           }
         ]
       },
-      "name": "readOnly",
-      "propertyType": "new",
-      "init": false,
-      "check": "Boolean",
-      "defaultValue": false
-    },
-    "qxOwner": {
-      "type": "property",
-      "name": "qxOwner",
-      "abstract": false,
-      "mixin": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.MObjectId",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>The owning object</p>"
-          }
-        ]
-      }
-    },
-    "qxObjectId": {
-      "type": "property",
-      "name": "qxObjectId",
-      "abstract": false,
-      "mixin": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.MObjectId",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>{String} The ID of the object.</p>"
-          }
-        ]
-      }
+      "appearsIn": []
     }
   },
   "members": {
     "__scrollStepX": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 112,
@@ -235,10 +243,11 @@
           "index": 3067
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__scrollStepY": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 113,
@@ -251,10 +260,11 @@
           "index": 3089
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__scrollTimer": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 114,
@@ -267,10 +277,11 @@
           "index": 3114
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__frameScroll": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 115,
@@ -283,10 +294,11 @@
           "index": 3139
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__lastRelX": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 116,
@@ -299,10 +311,11 @@
           "index": 3161
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__lastRelY": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 117,
@@ -315,10 +328,11 @@
           "index": 3183
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__frameLocation": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 118,
@@ -331,10 +345,11 @@
           "index": 3210
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__dragStartX": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 119,
@@ -347,10 +362,11 @@
           "index": 3234
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__dragStartY": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 120,
@@ -363,10 +379,11 @@
           "index": 3258
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__inCapture": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 121,
@@ -379,10 +396,11 @@
           "index": 3281
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__pointerX": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 122,
@@ -395,10 +413,11 @@
           "index": 3303
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__pointerY": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 123,
@@ -411,10 +430,11 @@
           "index": 3325
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__moveDirectionX": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 124,
@@ -427,10 +447,11 @@
           "index": 3353
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__moveDirectionY": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 125,
@@ -443,10 +464,11 @@
           "index": 3381
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__selectionModified": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 126,
@@ -459,10 +481,11 @@
           "index": 3412
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__selectionContext": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 127,
@@ -475,10 +498,11 @@
           "index": 3442
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__leadItem": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 128,
@@ -491,10 +515,11 @@
           "index": 3464
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__selection": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 129,
@@ -507,10 +532,11 @@
           "index": 3487
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__anchorItem": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 130,
@@ -523,10 +549,11 @@
           "index": 3511
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__pointerDownOnSelected": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 131,
@@ -539,10 +566,15 @@
           "index": 3546
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "_userInteraction": {
+      "jsdoc": {
+        "raw": [
+          " was triggered by pointer or keyboard [BUG #3344]"
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 135,
@@ -555,11 +587,11 @@
           "index": 3713
         }
       },
-      "jsdoc": {},
-      "type": "variable",
-      "access": "protected"
+      "appearsIn": []
     },
     "__oldScrollTop": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 137,
@@ -572,10 +604,36 @@
           "index": 3740
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "getSelectionContext": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the selection context. One of <code>tap</code>,",
+          "     * <code>quick</code>, <code>drag</code> or <code>key</code> or",
+          "     * <code>null</code>.",
+          "     *",
+          "     * @return {String} One of <code>tap</code>, <code>quick</code>,",
+          "     *    <code>drag</code> or <code>key</code> or <code>null</code>",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns the selection context. One of <code>tap</code>,\n <code>quick</code>, <code>drag</code> or <code>key</code> or\n <code>null</code>.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{String} One of <code>tap</code>, <code>quick</code>,\n    <code>drag</code> or <code>key</code> or <code>null</code>",
+            "type": "string",
+            "description": "One of <code>tap</code>, <code>quick</code>,\n    <code>drag</code> or <code>key</code> or <code>null</code>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 153,
@@ -588,26 +646,29 @@
           "index": 4323
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
+    },
+    "selectAll": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Selects all items of the managed object.",
+          "     *",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Returns the selection context. One of <code>tap</code>,\n <code>quick</code>, <code>drag</code> or <code>key</code> or\n <code>null</code>.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{String} One of <code>tap</code>, <code>quick</code>,\n    <code>drag</code> or <code>key</code> or <code>null</code>",
-            "type": "String",
-            "description": " One of <code>tap</code>, <code>quick</code>,\n    <code>drag</code> or <code>key</code> or <code>null</code>"
+            "body": "<p>Selects all items of the managed object.</p>"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "selectAll": {
+      "access": "public",
       "location": {
         "start": {
           "line": 161,
@@ -620,31 +681,23 @@
           "index": 4645
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Selects all items of the managed object.</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "appearsIn": []
     },
     "selectItem": {
-      "location": {
-        "start": {
-          "line": 180,
-          "column": 4,
-          "index": 4918
-        },
-        "end": {
-          "line": 191,
-          "column": 5,
-          "index": 5201
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Selects the given item. Replaces current selection",
+          "     * completely with the new item.",
+          "     *",
+          "     * Use {@link #addItem} instead if you want to add new",
+          "     * items to an existing selection.",
+          "     *",
+          "     * @param item {Object} Any valid item",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -657,27 +710,44 @@
             "body": "item {Object} Any valid item",
             "paramName": "item",
             "description": " Any valid item",
-            "type": "Object"
+            "type": "Record<any, any>"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "addItem": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 201,
+          "line": 180,
           "column": 4,
-          "index": 5427
+          "index": 4918
         },
         "end": {
-          "line": 216,
+          "line": 191,
           "column": 5,
-          "index": 5817
+          "index": 5201
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "item",
+          "type": "Record<any, any>"
+        }
+      ],
+      "appearsIn": []
+    },
+    "addItem": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds the given item to the existing selection.",
+          "     *",
+          "     * Use {@link #selectItem} instead if you want to replace",
+          "     * the current selection.",
+          "     *",
+          "     * @param item {Object} Any valid item",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -690,27 +760,44 @@
             "body": "item {Object} Any valid item",
             "paramName": "item",
             "description": " Any valid item",
-            "type": "Object"
+            "type": "Record<any, any>"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "removeItem": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 226,
+          "line": 201,
           "column": 4,
-          "index": 6041
+          "index": 5427
         },
         "end": {
-          "line": 247,
+          "line": 216,
           "column": 5,
-          "index": 6536
+          "index": 5817
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "item",
+          "type": "Record<any, any>"
+        }
+      ],
+      "appearsIn": []
+    },
+    "removeItem": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Removes the given item from the selection.",
+          "     *",
+          "     * Use {@link #clearSelection} when you want to clear",
+          "     * the whole selection at once.",
+          "     *",
+          "     * @param item {Object} Any valid item",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -723,27 +810,42 @@
             "body": "item {Object} Any valid item",
             "paramName": "item",
             "description": " Any valid item",
-            "type": "Object"
+            "type": "Record<any, any>"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "selectItemRange": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 255,
+          "line": 226,
           "column": 4,
-          "index": 6710
+          "index": 6041
         },
         "end": {
-          "line": 271,
+          "line": 247,
           "column": 5,
-          "index": 7110
+          "index": 6536
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "item",
+          "type": "Record<any, any>"
+        }
+      ],
+      "appearsIn": []
+    },
+    "selectItemRange": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Selects an item range between two given items.",
+          "     *",
+          "     * @param begin {Object} Item to start with",
+          "     * @param end {Object} Item to end at",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -756,21 +858,61 @@
             "body": "begin {Object} Item to start with",
             "paramName": "begin",
             "description": " Item to start with",
-            "type": "Object"
+            "type": "Record<any, any>"
           },
           {
             "name": "@param",
             "body": "end {Object} Item to end at",
             "paramName": "end",
             "description": " Item to end at",
-            "type": "Object"
+            "type": "Record<any, any>"
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 255,
+          "column": 4,
+          "index": 6710
+        },
+        "end": {
+          "line": 271,
+          "column": 5,
+          "index": 7110
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "begin",
+          "type": "Record<any, any>"
+        },
+        {
+          "name": "end",
+          "type": "Record<any, any>"
+        }
+      ],
+      "appearsIn": []
     },
     "clearSelection": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Clears the whole selection at once. Also",
+          "     * resets the lead and anchor items and their",
+          "     * styles.",
+          "     *",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Clears the whole selection at once. Also\n resets the lead and anchor items and their\n styles.</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 279,
@@ -783,31 +925,22 @@
           "index": 7562
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Clears the whole selection at once. Also\n resets the lead and anchor items and their\n styles.</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "appearsIn": []
     },
     "replaceSelection": {
-      "location": {
-        "start": {
-          "line": 302,
-          "column": 4,
-          "index": 7823
-        },
-        "end": {
-          "line": 320,
-          "column": 5,
-          "index": 8305
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Replaces current selection with given array of items.",
+          "     *",
+          "     * Please note that in single selection scenarios it is more",
+          "     * efficient to directly use {@link #selectItem}.",
+          "     *",
+          "     * @param items {Array} Items to select",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -820,14 +953,58 @@
             "body": "items {Array} Items to select",
             "paramName": "items",
             "description": " Items to select",
-            "type": "Array"
+            "type": "Array<any>"
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 302,
+          "column": 4,
+          "index": 7823
+        },
+        "end": {
+          "line": 320,
+          "column": 5,
+          "index": 8305
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "items",
+          "type": "Array<any>"
+        }
+      ],
+      "appearsIn": []
     },
     "getSelectedItem": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Get the selected item. This method does only work in <code>single</code>",
+          "     * selection mode.",
+          "     *",
+          "     * @return {Object} The selected item.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Get the selected item. This method does only work in <code>single</code>\n selection mode.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Object} The selected item.",
+            "type": "Record<any, any>",
+            "description": "The selected item."
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 328,
@@ -840,26 +1017,41 @@
           "index": 8822
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "Record<any, any>"
+      },
+      "appearsIn": []
+    },
+    "getSelection": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns an array of currently selected items.",
+          "     *",
+          "     * Note: The result is only a set of selected items, so the order can",
+          "     * differ from the sequence in which the items were added.",
+          "     *",
+          "     * @return {Object[]} List of items.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Get the selected item. This method does only work in <code>single</code>\n selection mode.</p>"
+            "body": "<p>Returns an array of currently selected items.\n Note: The result is only a set of selected items, so the order can\n differ from the sequence in which the items were added.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Object} The selected item.",
-            "type": "Object",
-            "description": " The selected item."
+            "body": "{Object[]} List of items.",
+            "type": "Object[]",
+            "description": "List of items."
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getSelection": {
+      "access": "public",
       "location": {
         "start": {
           "line": 348,
@@ -872,26 +1064,39 @@
           "index": 9158
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "Object[]"
+      },
+      "appearsIn": []
+    },
+    "getSortedSelection": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the selection sorted by the index in the",
+          "     * container of the selection (the assigned widget)",
+          "     *",
+          "     * @return {Object[]} Sorted list of items",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Returns an array of currently selected items.\n Note: The result is only a set of selected items, so the order can\n differ from the sequence in which the items were added.</p>"
+            "body": "<p>Returns the selection sorted by the index in the\n container of the selection (the assigned widget)</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Object[]} List of items.",
+            "body": "{Object[]} Sorted list of items",
             "type": "Object[]",
-            "description": " List of items."
+            "description": "Sorted list of items"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getSortedSelection": {
+      "access": "public",
       "location": {
         "start": {
           "line": 358,
@@ -904,39 +1109,23 @@
           "index": 9589
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the selection sorted by the index in the\n container of the selection (the assigned widget)</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Object[]} Sorted list of items",
-            "type": "Object[]",
-            "description": " Sorted list of items"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "Object[]"
+      },
+      "appearsIn": []
     },
     "isItemSelected": {
-      "location": {
-        "start": {
-          "line": 375,
-          "column": 4,
-          "index": 9785
-        },
-        "end": {
-          "line": 378,
-          "column": 5,
-          "index": 9915
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Detects whether the given item is currently selected.",
+          "     *",
+          "     * @param item {var} Any valid selectable item",
+          "     * @return {Boolean} Whether the item is selected",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -956,15 +1145,61 @@
           {
             "name": "@return",
             "body": "{Boolean} Whether the item is selected",
-            "type": "Boolean",
-            "description": " Whether the item is selected"
+            "type": "boolean",
+            "description": "Whether the item is selected"
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 375,
+          "column": 4,
+          "index": 9785
+        },
+        "end": {
+          "line": 378,
+          "column": 5,
+          "index": 9915
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "item",
+          "type": "var"
+        }
+      ],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
     },
     "isSelectionEmpty": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether the selection is empty",
+          "     *",
+          "     * @return {Boolean} Whether the selection is empty",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Whether the selection is empty</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} Whether the selection is empty",
+            "type": "boolean",
+            "description": "Whether the selection is empty"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 385,
@@ -977,26 +1212,28 @@
           "index": 10120
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "invertSelection": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Invert the selection. Select the non selected and deselect the selected.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Whether the selection is empty</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Boolean} Whether the selection is empty",
-            "type": "Boolean",
-            "description": " Whether the selection is empty"
+            "body": "<p>Invert the selection. Select the non selected and deselect the selected.</p>"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "invertSelection": {
+      "access": "public",
       "location": {
         "start": {
           "line": 392,
@@ -1009,31 +1246,20 @@
           "index": 10660
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Invert the selection. Select the non selected and deselect the selected.</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "appearsIn": []
     },
     "_setLeadItem": {
-      "location": {
-        "start": {
-          "line": 420,
-          "column": 4,
-          "index": 11062
-        },
-        "end": {
-          "line": 432,
-          "column": 5,
-          "index": 11329
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Sets the lead item. Generally the item which was last modified",
+          "     * by the user (tapped on etc.)",
+          "     *",
+          "     * @param value {Object} Any valid item or <code>null</code>",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1046,14 +1272,58 @@
             "body": "value {Object} Any valid item or <code>null</code>",
             "paramName": "value",
             "description": " Any valid item or <code>null</code>",
-            "type": "Object"
+            "type": "Record<any, any>"
           }
         ]
       },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 420,
+          "column": 4,
+          "index": 11062
+        },
+        "end": {
+          "line": 432,
+          "column": 5,
+          "index": 11329
+        }
+      },
       "type": "function",
-      "access": "protected"
+      "params": [
+        {
+          "name": "value",
+          "type": "Record<any, any>"
+        }
+      ],
+      "appearsIn": []
     },
     "getLeadItem": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the current lead item. Generally the item which was last modified",
+          "     * by the user (tapped on etc.)",
+          "     *",
+          "     * @return {Object} The lead item or <code>null</code>",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns the current lead item. Generally the item which was last modified\n by the user (tapped on etc.)</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Object} The lead item or <code>null</code>",
+            "type": "Record<any, any>",
+            "description": "The lead item or <code>null</code>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 440,
@@ -1066,39 +1336,24 @@
           "index": 11586
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the current lead item. Generally the item which was last modified\n by the user (tapped on etc.)</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Object} The lead item or <code>null</code>",
-            "type": "Object",
-            "description": " The lead item or <code>null</code>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "Record<any, any>"
+      },
+      "appearsIn": []
     },
     "_setAnchorItem": {
-      "location": {
-        "start": {
-          "line": 451,
-          "column": 4,
-          "index": 11890
-        },
-        "end": {
-          "line": 463,
-          "column": 5,
-          "index": 12165
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Sets the anchor item. This is the item which is the starting",
+          "     * point for all range selections. Normally this is the item which was",
+          "     * tapped on the last time without any modifier keys pressed.",
+          "     *",
+          "     * @param value {Object} Any valid item or <code>null</code>",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1111,14 +1366,59 @@
             "body": "value {Object} Any valid item or <code>null</code>",
             "paramName": "value",
             "description": " Any valid item or <code>null</code>",
-            "type": "Object"
+            "type": "Record<any, any>"
           }
         ]
       },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 451,
+          "column": 4,
+          "index": 11890
+        },
+        "end": {
+          "line": 463,
+          "column": 5,
+          "index": 12165
+        }
+      },
       "type": "function",
-      "access": "protected"
+      "params": [
+        {
+          "name": "value",
+          "type": "Record<any, any>"
+        }
+      ],
+      "appearsIn": []
     },
     "_getAnchorItem": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the current anchor item. This is the item which is the starting",
+          "     * point for all range selections. Normally this is the item which was",
+          "     * tapped on the last time without any modifier keys pressed.",
+          "     *",
+          "     * @return {Object} The anchor item or <code>null</code>",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns the current anchor item. This is the item which is the starting\n point for all range selections. Normally this is the item which was\n tapped on the last time without any modifier keys pressed.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Object} The anchor item or <code>null</code>",
+            "type": "Record<any, any>",
+            "description": "The anchor item or <code>null</code>"
+          }
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 472,
@@ -1131,39 +1431,23 @@
           "index": 12568
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the current anchor item. This is the item which is the starting\n point for all range selections. Normally this is the item which was\n tapped on the last time without any modifier keys pressed.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Object} The anchor item or <code>null</code>",
-            "type": "Object",
-            "description": " The anchor item or <code>null</code>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "protected"
+      "params": [],
+      "returnType": {
+        "type": "Record<any, any>"
+      },
+      "appearsIn": []
     },
     "_isSelectable": {
-      "location": {
-        "start": {
-          "line": 488,
-          "column": 4,
-          "index": 12943
-        },
-        "end": {
-          "line": 490,
-          "column": 5,
-          "index": 13034
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether the given item is selectable.",
+          "     *",
+          "     * @param item {var} Any item",
+          "     * @return {Boolean} <code>true</code> when the item is selectable",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1183,28 +1467,46 @@
           {
             "name": "@return",
             "body": "{Boolean} <code>true</code> when the item is selectable",
-            "type": "Boolean",
-            "description": " <code>true</code> when the item is selectable"
+            "type": "boolean",
+            "description": "<code>true</code> when the item is selectable"
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_getSelectableFromPointerEvent": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 498,
+          "line": 488,
           "column": 4,
-          "index": 13238
+          "index": 12943
         },
         "end": {
-          "line": 505,
+          "line": 490,
           "column": 5,
-          "index": 13499
+          "index": 13034
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "item",
+          "type": "var"
+        }
+      ],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "_getSelectableFromPointerEvent": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Finds the selectable instance from a pointer event",
+          "     *",
+          "     * @param event {qx.event.type.Pointer} The pointer event",
+          "     * @return {Object|null} The resulting selectable",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1225,27 +1527,45 @@
             "name": "@return",
             "body": "{Object|null} The resulting selectable",
             "type": "Object|null",
-            "description": " The resulting selectable"
+            "description": "The resulting selectable"
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_selectableToHashCode": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 513,
+          "line": 498,
           "column": 4,
-          "index": 13658
+          "index": 13238
         },
         "end": {
-          "line": 515,
+          "line": 505,
           "column": 5,
-          "index": 13765
+          "index": 13499
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "event",
+          "type": "qx.event.type.Pointer"
+        }
+      ],
+      "returnType": {
+        "type": "Object|null"
+      },
+      "appearsIn": []
+    },
+    "_selectableToHashCode": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns an unique hashcode for the given item.",
+          "     *",
+          "     * @param item {var} Any item",
+          "     * @return {String} A valid hashcode",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1265,28 +1585,47 @@
           {
             "name": "@return",
             "body": "{String} A valid hashcode",
-            "type": "String",
-            "description": " A valid hashcode"
+            "type": "string",
+            "description": "A valid hashcode"
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_styleSelectable": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 524,
+          "line": 513,
           "column": 4,
-          "index": 14075
+          "index": 13658
         },
         "end": {
-          "line": 526,
+          "line": 515,
           "column": 5,
-          "index": 14187
+          "index": 13765
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "item",
+          "type": "var"
+        }
+      ],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
+    },
+    "_styleSelectable": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Updates the style (appearance) of the given item.",
+          "     *",
+          "     * @param item {var} Item to modify",
+          "     * @param type {String} Any of <code>selected</code>, <code>anchor</code> or <code>lead</code>",
+          "     * @param enabled {Boolean} Whether the given style should be added or removed.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1306,21 +1645,63 @@
             "body": "type {String} Any of <code>selected</code>, <code>anchor</code> or <code>lead</code>",
             "paramName": "type",
             "description": " Any of <code>selected</code>, <code>anchor</code> or <code>lead</code>",
-            "type": "String"
+            "type": "string"
           },
           {
             "name": "@param",
             "body": "enabled {Boolean} Whether the given style should be added or removed.",
             "paramName": "enabled",
             "description": " Whether the given style should be added or removed.",
-            "type": "Boolean"
+            "type": "boolean"
           }
         ]
       },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 524,
+          "column": 4,
+          "index": 14075
+        },
+        "end": {
+          "line": 526,
+          "column": 5,
+          "index": 14187
+        }
+      },
       "type": "function",
-      "access": "protected"
+      "params": [
+        {
+          "name": "item",
+          "type": "var"
+        },
+        {
+          "name": "type",
+          "type": "string"
+        },
+        {
+          "name": "enabled",
+          "type": "boolean"
+        }
+      ],
+      "appearsIn": []
     },
     "_capture": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Enables capturing of the container.",
+          "     *",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Enables capturing of the container.</p>"
+          }
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 532,
@@ -1333,18 +1714,26 @@
           "index": 14337
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "_releaseCapture": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Releases capturing of the container",
+          "     *",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Enables capturing of the container.</p>"
+            "body": "<p>Releases capturing of the container</p>"
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_releaseCapture": {
+      "access": "protected",
       "location": {
         "start": {
           "line": 540,
@@ -1357,18 +1746,36 @@
           "index": 14501
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "_getLocation": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the location of the container",
+          "     *",
+          "     * @return {Map} Map with the keys <code>top</code>, <code>right</code>,",
+          "     *    <code>bottom</code> and <code>left</code>.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Releases capturing of the container</p>"
+            "body": "<p>Returns the location of the container</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Map} Map with the keys <code>top</code>, <code>right</code>,\n    <code>bottom</code> and <code>left</code>.",
+            "type": "Map<any, any>",
+            "description": "Map with the keys <code>top</code>, <code>right</code>,\n    <code>bottom</code> and <code>left</code>."
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_getLocation": {
+      "access": "protected",
       "location": {
         "start": {
           "line": 556,
@@ -1381,26 +1788,38 @@
           "index": 14995
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "Map<any, any>"
+      },
+      "appearsIn": []
+    },
+    "_getDimension": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the dimension of the container (available scrolling space).",
+          "     *",
+          "     * @return {Map} Map with the keys <code>width</code> and <code>height</code>.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Returns the location of the container</p>"
+            "body": "<p>Returns the dimension of the container (available scrolling space).</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} Map with the keys <code>top</code>, <code>right</code>,\n    <code>bottom</code> and <code>left</code>.",
-            "type": "Map",
-            "description": " Map with the keys <code>top</code>, <code>right</code>,\n    <code>bottom</code> and <code>left</code>."
+            "body": "{Map} Map with the keys <code>width</code> and <code>height</code>.",
+            "type": "Map<any, any>",
+            "description": "Map with the keys <code>width</code> and <code>height</code>."
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_getDimension": {
+      "access": "protected",
       "location": {
         "start": {
           "line": 565,
@@ -1413,39 +1832,23 @@
           "index": 15270
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the dimension of the container (available scrolling space).</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Map} Map with the keys <code>width</code> and <code>height</code>.",
-            "type": "Map",
-            "description": " Map with the keys <code>width</code> and <code>height</code>."
-          }
-        ]
-      },
       "type": "function",
-      "access": "protected"
+      "params": [],
+      "returnType": {
+        "type": "Map<any, any>"
+      },
+      "appearsIn": []
     },
     "_getSelectableLocationX": {
-      "location": {
-        "start": {
-          "line": 575,
-          "column": 4,
-          "index": 15503
-        },
-        "end": {
-          "line": 577,
-          "column": 5,
-          "index": 15614
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the relative (to the container) horizontal location of the given item.",
+          "     *",
+          "     * @param item {var} Any item",
+          "     * @return {Map} A map with the keys <code>left</code> and <code>right</code>.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1465,28 +1868,46 @@
           {
             "name": "@return",
             "body": "{Map} A map with the keys <code>left</code> and <code>right</code>.",
-            "type": "Map",
-            "description": " A map with the keys <code>left</code> and <code>right</code>."
+            "type": "Map<any, any>",
+            "description": "A map with the keys <code>left</code> and <code>right</code>."
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_getSelectableLocationY": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 585,
+          "line": 575,
           "column": 4,
-          "index": 15847
+          "index": 15503
         },
         "end": {
-          "line": 587,
+          "line": 577,
           "column": 5,
-          "index": 15958
+          "index": 15614
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "item",
+          "type": "var"
+        }
+      ],
+      "returnType": {
+        "type": "Map<any, any>"
+      },
+      "appearsIn": []
+    },
+    "_getSelectableLocationY": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the relative (to the container) horizontal location of the given item.",
+          "     *",
+          "     * @param item {var} Any item",
+          "     * @return {Map} A map with the keys <code>top</code> and <code>bottom</code>.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1506,15 +1927,61 @@
           {
             "name": "@return",
             "body": "{Map} A map with the keys <code>top</code> and <code>bottom</code>.",
-            "type": "Map",
-            "description": " A map with the keys <code>top</code> and <code>bottom</code>."
+            "type": "Map<any, any>",
+            "description": "A map with the keys <code>top</code> and <code>bottom</code>."
           }
         ]
       },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 585,
+          "column": 4,
+          "index": 15847
+        },
+        "end": {
+          "line": 587,
+          "column": 5,
+          "index": 15958
+        }
+      },
       "type": "function",
-      "access": "protected"
+      "params": [
+        {
+          "name": "item",
+          "type": "var"
+        }
+      ],
+      "returnType": {
+        "type": "Map<any, any>"
+      },
+      "appearsIn": []
     },
     "_getScroll": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the scroll position of the container.",
+          "     *",
+          "     * @return {Map} Map with the keys <code>left</code> and <code>top</code>.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns the scroll position of the container.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Map} Map with the keys <code>left</code> and <code>top</code>.",
+            "type": "Map<any, any>",
+            "description": "Map with the keys <code>left</code> and <code>top</code>."
+          }
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 600,
@@ -1527,39 +1994,23 @@
           "index": 16397
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the scroll position of the container.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Map} Map with the keys <code>left</code> and <code>top</code>.",
-            "type": "Map",
-            "description": " Map with the keys <code>left</code> and <code>top</code>."
-          }
-        ]
-      },
       "type": "function",
-      "access": "protected"
+      "params": [],
+      "returnType": {
+        "type": "Map<any, any>"
+      },
+      "appearsIn": []
     },
     "_scrollBy": {
-      "location": {
-        "start": {
-          "line": 610,
-          "column": 4,
-          "index": 16580
-        },
-        "end": {
-          "line": 612,
-          "column": 5,
-          "index": 16669
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Scrolls by the given offset",
+          "     *",
+          "     * @param xoff {Integer} Horizontal offset to scroll by",
+          "     * @param yoff {Integer} Vertical offset to scroll by",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1583,23 +2034,41 @@
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_scrollItemIntoView": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 619,
+          "line": 610,
           "column": 4,
-          "index": 16795
+          "index": 16580
         },
         "end": {
-          "line": 621,
+          "line": 612,
           "column": 5,
-          "index": 16898
+          "index": 16669
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "xoff",
+          "type": "Integer"
+        },
+        {
+          "name": "yoff",
+          "type": "Integer"
+        }
+      ],
+      "appearsIn": []
+    },
+    "_scrollItemIntoView": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Scrolls the given item into the view (make it visible)",
+          "     *",
+          "     * @param item {var} Any item",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1616,23 +2085,39 @@
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "getSelectables": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 636,
+          "line": 619,
           "column": 4,
-          "index": 17339
+          "index": 16795
         },
         "end": {
-          "line": 638,
+          "line": 621,
           "column": 5,
-          "index": 17431
+          "index": 16898
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "item",
+          "type": "var"
+        }
+      ],
+      "appearsIn": []
+    },
+    "getSelectables": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns all selectable items of the container.",
+          "     *",
+          "     * @param all {Boolean} true for all selectables, false for the",
+          "     *   selectables the user can interactively select",
+          "     * @return {Array} A list of items",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1645,35 +2130,56 @@
             "body": "all {Boolean} true for all selectables, false for the\n   selectables the user can interactively select",
             "paramName": "all",
             "description": " true for all selectables, false for the\n   selectables the user can interactively select",
-            "type": "Boolean"
+            "type": "boolean"
           }
         ],
         "@return": [
           {
             "name": "@return",
             "body": "{Array} A list of items",
-            "type": "Array",
-            "description": " A list of items"
+            "type": "Array<any>",
+            "description": "A list of items"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "_getSelectableRange": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 649,
+          "line": 636,
           "column": 4,
-          "index": 17691
+          "index": 17339
         },
         "end": {
-          "line": 651,
+          "line": 638,
           "column": 5,
-          "index": 17802
+          "index": 17431
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "all",
+          "type": "boolean"
+        }
+      ],
+      "returnType": {
+        "type": "Array<any>"
+      },
+      "appearsIn": []
+    },
+    "_getSelectableRange": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns all selectable items between the two given items.",
+          "     *",
+          "     * The items could be given in any order.",
+          "     *",
+          "     * @param item1 {var} First item",
+          "     * @param item2 {var} Second item",
+          "     * @return {Array} List of items",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1700,15 +2206,65 @@
           {
             "name": "@return",
             "body": "{Array} List of items",
-            "type": "Array",
-            "description": " List of items"
+            "type": "Array<any>",
+            "description": "List of items"
           }
         ]
       },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 649,
+          "column": 4,
+          "index": 17691
+        },
+        "end": {
+          "line": 651,
+          "column": 5,
+          "index": 17802
+        }
+      },
       "type": "function",
-      "access": "protected"
+      "params": [
+        {
+          "name": "item1",
+          "type": "var"
+        },
+        {
+          "name": "item2",
+          "type": "var"
+        }
+      ],
+      "returnType": {
+        "type": "Array<any>"
+      },
+      "appearsIn": []
     },
     "_getFirstSelectable": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the first selectable item.",
+          "     *",
+          "     * @return {var} The first selectable item",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns the first selectable item.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{var} The first selectable item",
+            "type": "var",
+            "description": "The first selectable item"
+          }
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 658,
@@ -1721,26 +2277,38 @@
           "index": 18020
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "var"
+      },
+      "appearsIn": []
+    },
+    "_getLastSelectable": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the last selectable item.",
+          "     *",
+          "     * @return {var} The last selectable item",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Returns the first selectable item.</p>"
+            "body": "<p>Returns the last selectable item.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{var} The first selectable item",
+            "body": "{var} The last selectable item",
             "type": "var",
-            "description": " The first selectable item"
+            "description": "The last selectable item"
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_getLastSelectable": {
+      "access": "protected",
       "location": {
         "start": {
           "line": 667,
@@ -1753,26 +2321,38 @@
           "index": 18234
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "var"
+      },
+      "appearsIn": []
+    },
+    "_getFirstVisibleSelectable": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the first visible and selectable item.",
+          "     *",
+          "     * @return {var} The first visible and selectable item",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Returns the last selectable item.</p>"
+            "body": "<p>Returns the first visible and selectable item.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{var} The last selectable item",
+            "body": "{var} The first visible and selectable item",
             "type": "var",
-            "description": " The last selectable item"
+            "description": "The first visible and selectable item"
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_getFirstVisibleSelectable": {
+      "access": "protected",
       "location": {
         "start": {
           "line": 676,
@@ -1785,26 +2365,38 @@
           "index": 18490
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "var"
+      },
+      "appearsIn": []
+    },
+    "_getLastVisibleSelectable": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the last visible and selectable item.",
+          "     *",
+          "     * @return {var} The last visible and selectable item",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Returns the first visible and selectable item.</p>"
+            "body": "<p>Returns the last visible and selectable item.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{var} The first visible and selectable item",
+            "body": "{var} The last visible and selectable item",
             "type": "var",
-            "description": " The first visible and selectable item"
+            "description": "The last visible and selectable item"
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_getLastVisibleSelectable": {
+      "access": "protected",
       "location": {
         "start": {
           "line": 685,
@@ -1817,39 +2409,26 @@
           "index": 18742
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the last visible and selectable item.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{var} The last visible and selectable item",
-            "type": "var",
-            "description": " The last visible and selectable item"
-          }
-        ]
-      },
       "type": "function",
-      "access": "protected"
+      "params": [],
+      "returnType": {
+        "type": "var"
+      },
+      "appearsIn": []
     },
     "_getRelatedSelectable": {
-      "location": {
-        "start": {
-          "line": 698,
-          "column": 4,
-          "index": 19116
-        },
-        "end": {
-          "line": 700,
-          "column": 5,
-          "index": 19233
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns a selectable item which is related to the given",
+          "     * <code>item</code> through the value of <code>relation</code>.",
+          "     *",
+          "     * @param item {var} Any item",
+          "     * @param relation {String} A valid relation: <code>above</code>,",
+          "     *    <code>right</code>, <code>under</code> or <code>left</code>",
+          "     * @return {var} The related item",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1869,7 +2448,7 @@
             "body": "relation {String} A valid relation: <code>above</code>,\n    <code>right</code>, <code>under</code> or <code>left</code>",
             "paramName": "relation",
             "description": " A valid relation: <code>above</code>,\n    <code>right</code>, <code>under</code> or <code>left</code>",
-            "type": "String"
+            "type": "string"
           }
         ],
         "@return": [
@@ -1877,27 +2456,52 @@
             "name": "@return",
             "body": "{var} The related item",
             "type": "var",
-            "description": " The related item"
+            "description": "The related item"
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_getPage": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 711,
+          "line": 698,
           "column": 4,
-          "index": 19541
+          "index": 19116
         },
         "end": {
-          "line": 713,
+          "line": 700,
           "column": 5,
-          "index": 19626
+          "index": 19233
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "item",
+          "type": "var"
+        },
+        {
+          "name": "relation",
+          "type": "string"
+        }
+      ],
+      "returnType": {
+        "type": "var"
+      },
+      "appearsIn": []
+    },
+    "_getPage": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the item which should be selected on pageUp/pageDown.",
+          "     *",
+          "     * May also scroll to the needed position.",
+          "     *",
+          "     * @param lead {var} The current lead item",
+          "     * @param up {Boolean?false} Which page key was pressed:",
+          "     *   <code>up</code> or <code>down</code>.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1923,10 +2527,41 @@
           }
         ]
       },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 711,
+          "column": 4,
+          "index": 19541
+        },
+        "end": {
+          "line": 713,
+          "column": 5,
+          "index": 19626
+        }
+      },
       "type": "function",
-      "access": "protected"
+      "params": [
+        {
+          "name": "lead",
+          "type": "var"
+        },
+        {
+          "name": "up",
+          "type": "Boolean",
+          "optional": true,
+          "defaultValue": "false"
+        }
+      ],
+      "appearsIn": []
     },
     "_applyMode": {
+      "jsdoc": {
+        "raw": [
+          " property apply"
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 722,
@@ -1939,27 +2574,27 @@
           "index": 20140
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "protected",
-      "applyFor": [
-        "mode"
-      ]
+      "params": [
+        {
+          "name": "value"
+        },
+        {
+          "name": "old"
+        }
+      ],
+      "appearsIn": []
     },
     "handlePointerOver": {
-      "location": {
-        "start": {
-          "line": 748,
-          "column": 4,
-          "index": 20540
-        },
-        "end": {
-          "line": 796,
-          "column": 5,
-          "index": 21976
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * This method should be connected to the <code>pointerover</code> event",
+          "     * of the managed object.",
+          "     *",
+          "     * @param event {qx.event.type.Pointer} A valid pointer event",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1976,23 +2611,38 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "handlePointerDown": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 804,
+          "line": 748,
           "column": 4,
-          "index": 22179
+          "index": 20540
         },
         "end": {
-          "line": 868,
+          "line": 796,
           "column": 5,
-          "index": 24085
+          "index": 21976
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "event",
+          "type": "qx.event.type.Pointer"
+        }
+      ],
+      "appearsIn": []
+    },
+    "handlePointerDown": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * This method should be connected to the <code>pointerdown</code> event",
+          "     * of the managed object.",
+          "     *",
+          "     * @param event {qx.event.type.Pointer} A valid pointer event",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -2009,23 +2659,38 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "handleTap": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 876,
+          "line": 804,
           "column": 4,
-          "index": 24276
+          "index": 22179
         },
         "end": {
-          "line": 953,
+          "line": 868,
           "column": 5,
-          "index": 26467
+          "index": 24085
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "event",
+          "type": "qx.event.type.Pointer"
+        }
+      ],
+      "appearsIn": []
+    },
+    "handleTap": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * This method should be connected to the <code>tap</code> event",
+          "     * of the managed object.",
+          "     *",
+          "     * @param event {qx.event.type.Tap} A valid pointer event",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -2042,23 +2707,38 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "handleLoseCapture": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 961,
+          "line": 876,
           "column": 4,
-          "index": 26670
+          "index": 24276
         },
         "end": {
-          "line": 963,
+          "line": 953,
           "column": 5,
-          "index": 26725
+          "index": 26467
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "event",
+          "type": "qx.event.type.Tap"
+        }
+      ],
+      "appearsIn": []
+    },
+    "handleLoseCapture": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * This method should be connected to the <code>losecapture</code> event",
+          "     * of the managed object.",
+          "     *",
+          "     * @param event {qx.event.type.Pointer} A valid pointer event",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -2075,23 +2755,38 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "handlePointerMove": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 971,
+          "line": 961,
           "column": 4,
-          "index": 26928
+          "index": 26670
         },
         "end": {
-          "line": 1037,
+          "line": 963,
           "column": 5,
-          "index": 29020
+          "index": 26725
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "event",
+          "type": "qx.event.type.Pointer"
+        }
+      ],
+      "appearsIn": []
+    },
+    "handlePointerMove": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * This method should be connected to the <code>pointermove</code> event",
+          "     * of the managed object.",
+          "     *",
+          "     * @param event {qx.event.type.Pointer} A valid pointer event",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -2108,23 +2803,38 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "handleAddItem": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1045,
+          "line": 971,
           "column": 4,
-          "index": 29207
+          "index": 26928
         },
         "end": {
-          "line": 1050,
+          "line": 1037,
           "column": 5,
-          "index": 29362
+          "index": 29020
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "event",
+          "type": "qx.event.type.Pointer"
+        }
+      ],
+      "appearsIn": []
+    },
+    "handleAddItem": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * This method should be connected to the <code>addItem</code> event",
+          "     * of the managed object.",
+          "     *",
+          "     * @param e {qx.event.type.Data} The event object",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -2141,23 +2851,38 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "handleRemoveItem": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1058,
+          "line": 1045,
           "column": 4,
-          "index": 29552
+          "index": 29207
         },
         "end": {
-          "line": 1060,
+          "line": 1050,
           "column": 5,
-          "index": 29615
+          "index": 29362
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "e",
+          "type": "qx.event.type.Data"
+        }
+      ],
+      "appearsIn": []
+    },
+    "handleRemoveItem": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * This method should be connected to the <code>removeItem</code> event",
+          "     * of the managed object.",
+          "     *",
+          "     * @param e {qx.event.type.Data} The event object",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -2174,10 +2899,43 @@
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 1058,
+          "column": 4,
+          "index": 29552
+        },
+        "end": {
+          "line": 1060,
+          "column": 5,
+          "index": 29615
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "e",
+          "type": "qx.event.type.Data"
+        }
+      ],
+      "appearsIn": []
     },
     "_cleanup": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Stops all timers, release capture etc. to cleanup drag selection",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Stops all timers, release capture etc. to cleanup drag selection</p>"
+          }
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 1071,
@@ -2190,31 +2948,19 @@
           "index": 30390
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Stops all timers, release capture etc. to cleanup drag selection</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "protected"
+      "params": [],
+      "appearsIn": []
     },
     "_onInterval": {
-      "location": {
-        "start": {
-          "line": 1100,
-          "column": 4,
-          "index": 30525
-        },
-        "end": {
-          "line": 1109,
-          "column": 5,
-          "index": 30811
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Event listener for timer used by drag selection",
+          "     *",
+          "     * @param e {qx.event.type.Event} Timer event",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -2231,10 +2977,43 @@
           }
         ]
       },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 1100,
+          "column": 4,
+          "index": 30525
+        },
+        "end": {
+          "line": 1109,
+          "column": 5,
+          "index": 30811
+        }
+      },
       "type": "function",
-      "access": "protected"
+      "params": [
+        {
+          "name": "e",
+          "type": "qx.event.type.Event"
+        }
+      ],
+      "appearsIn": []
     },
     "_autoSelect": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Automatically selects items based on the pointer movement during a drag selection",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Automatically selects items based on the pointer movement during a drag selection</p>"
+          }
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 1114,
@@ -2247,31 +3026,19 @@
           "index": 34084
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Automatically selects items based on the pointer movement during a drag selection</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "protected"
+      "params": [],
+      "appearsIn": []
     },
     "__navigationKeys": {
-      "location": {
-        "start": {
-          "line": 1233,
-          "column": 4,
-          "index": 34413
-        },
-        "end": {
-          "line": 1242,
-          "column": 5,
-          "index": 34561
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * @type {Map} All supported navigation keys",
+          "     *",
+          "     * @lint ignoreReferenceField(__navigationKeys)",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -2291,23 +3058,31 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
-    },
-    "handleKeyPress": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 1250,
+          "line": 1233,
           "column": 4,
-          "index": 34770
+          "index": 34413
         },
         "end": {
-          "line": 1450,
+          "line": 1242,
           "column": 5,
-          "index": 40216
+          "index": 34561
         }
       },
+      "appearsIn": []
+    },
+    "handleKeyPress": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * This method should be connected to the <code>keypress</code> event",
+          "     * of the managed object.",
+          "     *",
+          "     * @param event {qx.event.type.KeySequence} A valid key sequence event",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -2324,10 +3099,43 @@
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 1250,
+          "column": 4,
+          "index": 34770
+        },
+        "end": {
+          "line": 1450,
+          "column": 5,
+          "index": 40216
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "event",
+          "type": "qx.event.type.KeySequence"
+        }
+      ],
+      "appearsIn": []
     },
     "_selectAllItems": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds all items to the selection",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Adds all items to the selection</p>"
+          }
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 1461,
@@ -2340,18 +3148,25 @@
           "index": 40651
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "_clearSelection": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Clears current selection",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Adds all items to the selection</p>"
+            "body": "<p>Clears current selection</p>"
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_clearSelection": {
+      "access": "protected",
       "location": {
         "start": {
           "line": 1471,
@@ -2364,31 +3179,22 @@
           "index": 40896
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Clears current selection</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "protected"
+      "params": [],
+      "appearsIn": []
     },
     "_selectItemRange": {
-      "location": {
-        "start": {
-          "line": 1487,
-          "column": 4,
-          "index": 41202
-        },
-        "end": {
-          "line": 1506,
-          "column": 5,
-          "index": 41771
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Select a range from <code>item1</code> to <code>item2</code>.",
+          "     *",
+          "     * @param item1 {Object} Start with this item",
+          "     * @param item2 {Object} End with this item",
+          "     * @param extend {Boolean?false} Whether the current",
+          "     *    selection should be replaced or extended.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -2401,14 +3207,14 @@
             "body": "item1 {Object} Start with this item",
             "paramName": "item1",
             "description": " Start with this item",
-            "type": "Object"
+            "type": "Record<any, any>"
           },
           {
             "name": "@param",
             "body": "item2 {Object} End with this item",
             "paramName": "item2",
             "description": " End with this item",
-            "type": "Object"
+            "type": "Record<any, any>"
           },
           {
             "name": "@param",
@@ -2421,23 +3227,48 @@
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_deselectItemRange": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 1514,
+          "line": 1487,
           "column": 4,
-          "index": 41976
+          "index": 41202
         },
         "end": {
-          "line": 1519,
+          "line": 1506,
           "column": 5,
-          "index": 42181
+          "index": 41771
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "item1",
+          "type": "Record<any, any>"
+        },
+        {
+          "name": "item2",
+          "type": "Record<any, any>"
+        },
+        {
+          "name": "extend",
+          "type": "Boolean",
+          "optional": true,
+          "defaultValue": "false"
+        }
+      ],
+      "appearsIn": []
+    },
+    "_deselectItemRange": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Deselect all items between <code>item1</code> and <code>item2</code>.",
+          "     *",
+          "     * @param item1 {Object} Start with this item",
+          "     * @param item2 {Object} End with this item",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -2450,34 +3281,53 @@
             "body": "item1 {Object} Start with this item",
             "paramName": "item1",
             "description": " Start with this item",
-            "type": "Object"
+            "type": "Record<any, any>"
           },
           {
             "name": "@param",
             "body": "item2 {Object} End with this item",
             "paramName": "item2",
             "description": " End with this item",
-            "type": "Object"
+            "type": "Record<any, any>"
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "__rangeToMap": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 1527,
+          "line": 1514,
           "column": 4,
-          "index": 42389
+          "index": 41976
         },
         "end": {
-          "line": 1537,
+          "line": 1519,
           "column": 5,
-          "index": 42622
+          "index": 42181
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "item1",
+          "type": "Record<any, any>"
+        },
+        {
+          "name": "item2",
+          "type": "Record<any, any>"
+        }
+      ],
+      "appearsIn": []
+    },
+    "__rangeToMap": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Internal method to convert a range to a map of hash",
+          "     * codes for faster lookup during selection compare routines.",
+          "     *",
+          "     * @param range {Array} List of selectable items",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -2490,14 +3340,58 @@
             "body": "range {Array} List of selectable items",
             "paramName": "range",
             "description": " List of selectable items",
-            "type": "Array"
+            "type": "Array<any>"
           }
         ]
       },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 1527,
+          "column": 4,
+          "index": 42389
+        },
+        "end": {
+          "line": 1537,
+          "column": 5,
+          "index": 42622
+        }
+      },
       "type": "function",
-      "access": "private"
+      "params": [
+        {
+          "name": "range",
+          "type": "Array<any>"
+        }
+      ],
+      "appearsIn": []
     },
     "_getSelectedItem": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the first selected item. Only makes sense",
+          "     * when using manager in single selection mode.",
+          "     *",
+          "     * @return {var} The selected item (or <code>null</code>)",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns the first selected item. Only makes sense\n when using manager in single selection mode.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{var} The selected item (or <code>null</code>)",
+            "type": "var",
+            "description": "The selected item (or <code>null</code>)"
+          }
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 1551,
@@ -2510,39 +3404,22 @@
           "index": 43175
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the first selected item. Only makes sense\n when using manager in single selection mode.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{var} The selected item (or <code>null</code>)",
-            "type": "var",
-            "description": " The selected item (or <code>null</code>)"
-          }
-        ]
-      },
       "type": "function",
-      "access": "protected"
+      "params": [],
+      "returnType": {
+        "type": "var"
+      },
+      "appearsIn": []
     },
     "_setSelectedItem": {
-      "location": {
-        "start": {
-          "line": 1564,
-          "column": 4,
-          "index": 43306
-        },
-        "end": {
-          "line": 1575,
-          "column": 5,
-          "index": 43683
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Replace current selection with given item.",
+          "     *",
+          "     * @param item {var} Any valid selectable item",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -2559,23 +3436,37 @@
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_addToSelection": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 1588,
+          "line": 1564,
           "column": 4,
-          "index": 43999
+          "index": 43306
         },
         "end": {
-          "line": 1597,
+          "line": 1575,
           "column": 5,
-          "index": 44296
+          "index": 43683
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "item",
+          "type": "var"
+        }
+      ],
+      "appearsIn": []
+    },
+    "_addToSelection": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds an item to the current selection.",
+          "     *",
+          "     * @param item {Object} Any item",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -2588,27 +3479,42 @@
             "body": "item {Object} Any item",
             "paramName": "item",
             "description": " Any item",
-            "type": "Object"
+            "type": "Record<any, any>"
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_toggleInSelection": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 1605,
+          "line": 1588,
           "column": 4,
-          "index": 44464
+          "index": 43999
         },
         "end": {
-          "line": 1617,
+          "line": 1597,
           "column": 5,
-          "index": 44844
+          "index": 44296
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "item",
+          "type": "Record<any, any>"
+        }
+      ],
+      "appearsIn": []
+    },
+    "_toggleInSelection": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Toggles the item e.g. remove it when already selected",
+          "     * or select it when currently not.",
+          "     *",
+          "     * @param item {Object} Any item",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -2621,27 +3527,41 @@
             "body": "item {Object} Any item",
             "paramName": "item",
             "description": " Any item",
-            "type": "Object"
+            "type": "Record<any, any>"
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_removeFromSelection": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 1624,
+          "line": 1605,
           "column": 4,
-          "index": 44969
+          "index": 44464
         },
         "end": {
-          "line": 1633,
+          "line": 1617,
           "column": 5,
-          "index": 45244
+          "index": 44844
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "item",
+          "type": "Record<any, any>"
+        }
+      ],
+      "appearsIn": []
+    },
+    "_removeFromSelection": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Removes the given item from the current selection.",
+          "     *",
+          "     * @param item {Object} Any item",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -2654,27 +3574,41 @@
             "body": "item {Object} Any item",
             "paramName": "item",
             "description": " Any item",
-            "type": "Object"
+            "type": "Record<any, any>"
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_replaceMultiSelection": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 1640,
+          "line": 1624,
           "column": 4,
-          "index": 45389
+          "index": 44969
         },
         "end": {
-          "line": 1709,
+          "line": 1633,
           "column": 5,
-          "index": 47276
+          "index": 45244
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "item",
+          "type": "Record<any, any>"
+        }
+      ],
+      "appearsIn": []
+    },
+    "_replaceMultiSelection": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Replaces current selection with items from given array.",
+          "     *",
+          "     * @param items {Array} List of items to select",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -2687,27 +3621,43 @@
             "body": "items {Array} List of items to select",
             "paramName": "items",
             "description": " List of items to select",
-            "type": "Array"
+            "type": "Array<any>"
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_fireChange": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 1718,
+          "line": 1640,
           "column": 4,
-          "index": 47534
+          "index": 45389
         },
         "end": {
-          "line": 1727,
+          "line": 1709,
           "column": 5,
-          "index": 47858
+          "index": 47276
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "items",
+          "type": "Array<any>"
+        }
+      ],
+      "appearsIn": []
+    },
+    "_fireChange": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fires the selection change event if the selection has",
+          "     * been modified.",
+          "     *",
+          "     * @param context {String} One of <code>tap</code>, <code>quick</code>,",
+          "     *    <code>drag</code> or <code>key</code> or <code>null</code>",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -2720,27 +3670,43 @@
             "body": "context {String} One of <code>tap</code>, <code>quick</code>,\n    <code>drag</code> or <code>key</code> or <code>null</code>",
             "paramName": "context",
             "description": " One of <code>tap</code>, <code>quick</code>,\n    <code>drag</code> or <code>key</code> or <code>null</code>",
-            "type": "String"
+            "type": "string"
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_applyDefaultSelection": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 1736,
+          "line": 1718,
           "column": 4,
-          "index": 48087
+          "index": 47534
         },
         "end": {
-          "line": 1748,
+          "line": 1727,
           "column": 5,
-          "index": 48403
+          "index": 47858
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "context",
+          "type": "string"
+        }
+      ],
+      "appearsIn": []
+    },
+    "_applyDefaultSelection": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Applies the default selection. The default item is the first item.",
+          "     *",
+          "     * @param force {Boolean} Whether the default selection should be forced.",
+          "     *",
+          "     * @return {var} The selected item.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -2753,7 +3719,7 @@
             "body": "force {Boolean} Whether the default selection should be forced.",
             "paramName": "force",
             "description": " Whether the default selection should be forced.",
-            "type": "Boolean"
+            "type": "boolean"
           }
         ],
         "@return": [
@@ -2761,489 +3727,39 @@
             "name": "@return",
             "body": "{var} The selected item.",
             "type": "var",
-            "description": " The selected item."
+            "description": "The selected item."
           }
         ]
       },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 1736,
+          "column": 4,
+          "index": 48087
+        },
+        "end": {
+          "line": 1748,
+          "column": 5,
+          "index": 48403
+        }
+      },
       "type": "function",
-      "access": "protected"
-    },
-    "getQxOwner": {
-      "type": "function",
-      "name": "getQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "qx.core.Object",
-            "desc": "Returns the value for qxOwner"
-          }
-        ]
-      }
-    },
-    "setQxOwner": {
-      "type": "function",
-      "name": "setQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.core.Object",
-            "paramName": "value",
-            "desc": "Value for qxOwner"
-          }
-        ]
-      }
-    },
-    "resetQxOwner": {
-      "type": "function",
-      "name": "resetQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxOwner</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ]
-      }
-    },
-    "getQxObjectId": {
-      "type": "function",
-      "name": "getQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "[[ ObjectMethod Function ]]",
-            "desc": "Returns the value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "setQxObjectId": {
-      "type": "function",
-      "name": "setQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "[[ ObjectMethod Function ]]",
-            "paramName": "value",
-            "desc": "Value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "resetQxObjectId": {
-      "type": "function",
-      "name": "resetQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxObjectId</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ]
-      }
-    },
-    "getMode": {
-      "type": "function",
-      "name": "getMode",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>mode</code>.\n\nFor further details take a look at the property definition: {@link #mode}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "any",
-            "desc": "Returns the value for mode"
-          }
-        ]
-      }
-    },
-    "setMode": {
-      "type": "function",
-      "name": "setMode",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>mode</code>.\n\nFor further details take a look at the property definition: {@link #mode}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "any",
-            "paramName": "value",
-            "desc": "Value for mode"
-          }
-        ]
-      }
-    },
-    "resetMode": {
-      "type": "function",
-      "name": "resetMode",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>mode</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #mode}."
-          }
-        ]
-      }
-    },
-    "getDrag": {
-      "type": "function",
-      "name": "getDrag",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>drag</code>.\n\nFor further details take a look at the property definition: {@link #drag}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Boolean",
-            "desc": "Returns the value for drag"
-          }
-        ]
-      }
-    },
-    "isDrag": {
-      "type": "function",
-      "name": "isDrag",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "is",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>drag</code>.\n\nFor further details take a look at the property definition: {@link #drag}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Boolean",
-            "desc": "Returns the value for drag"
-          }
-        ]
-      }
-    },
-    "setDrag": {
-      "type": "function",
-      "name": "setDrag",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>drag</code>.\n\nFor further details take a look at the property definition: {@link #drag}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "Boolean",
-            "paramName": "value",
-            "desc": "Value for drag"
-          }
-        ]
-      }
-    },
-    "resetDrag": {
-      "type": "function",
-      "name": "resetDrag",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>drag</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #drag}."
-          }
-        ]
-      }
-    },
-    "getQuick": {
-      "type": "function",
-      "name": "getQuick",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>quick</code>.\n\nFor further details take a look at the property definition: {@link #quick}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Boolean",
-            "desc": "Returns the value for quick"
-          }
-        ]
-      }
-    },
-    "isQuick": {
-      "type": "function",
-      "name": "isQuick",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "is",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>quick</code>.\n\nFor further details take a look at the property definition: {@link #quick}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Boolean",
-            "desc": "Returns the value for quick"
-          }
-        ]
-      }
-    },
-    "setQuick": {
-      "type": "function",
-      "name": "setQuick",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>quick</code>.\n\nFor further details take a look at the property definition: {@link #quick}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "Boolean",
-            "paramName": "value",
-            "desc": "Value for quick"
-          }
-        ]
-      }
-    },
-    "resetQuick": {
-      "type": "function",
-      "name": "resetQuick",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>quick</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #quick}."
-          }
-        ]
-      }
-    },
-    "getReadOnly": {
-      "type": "function",
-      "name": "getReadOnly",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>readOnly</code>.\n\nFor further details take a look at the property definition: {@link #readOnly}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Boolean",
-            "desc": "Returns the value for readOnly"
-          }
-        ]
-      }
-    },
-    "isReadOnly": {
-      "type": "function",
-      "name": "isReadOnly",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "is",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>readOnly</code>.\n\nFor further details take a look at the property definition: {@link #readOnly}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Boolean",
-            "desc": "Returns the value for readOnly"
-          }
-        ]
-      }
-    },
-    "setReadOnly": {
-      "type": "function",
-      "name": "setReadOnly",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>readOnly</code>.\n\nFor further details take a look at the property definition: {@link #readOnly}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "Boolean",
-            "paramName": "value",
-            "desc": "Value for readOnly"
-          }
-        ]
-      }
-    },
-    "resetReadOnly": {
-      "type": "function",
-      "name": "resetReadOnly",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>readOnly</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #readOnly}."
-          }
-        ]
-      }
+      "params": [
+        {
+          "name": "force",
+          "type": "boolean"
+        }
+      ],
+      "returnType": {
+        "type": "var"
+      },
+      "appearsIn": []
     }
   },
   "destruct": {
+    "type": "function",
+    "params": [],
     "location": {
       "start": {
         "line": 1757,
@@ -3255,11 +3771,7 @@
         "column": 3,
         "index": 48766
       }
-    },
-    "jsdoc": {}
+    }
   },
-  "descendants": [
-    "qx.ui.core.selection.Widget",
-    "qx.ui.virtual.selection.Abstract"
-  ]
+  "statics": {}
 }

@@ -1,55 +1,49 @@
 {
-  "className": "qx.theme.iconfont.LoadMaterialIconsSharp",
-  "packageName": "qx.theme.iconfont",
-  "name": "LoadMaterialIconsSharp",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 28,
-        "column": 0,
-        "index": 809
-      },
-      "end": {
-        "line": 28,
-        "column": 64,
-        "index": 873
-      }
+  "version": 0.3,
+  "lastModified": 1712910030921,
+  "lastModifiedIso": "2024-04-12T08:20:30.921Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/theme/iconfont/LoadMaterialIconsSharp.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 26,
+      "column": 0,
+      "index": 644
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>A dummy class to trigger the compiler to copy the MaterialIconsSharpe font files</p>"
-        },
-        {
-          "name": "@description",
-          "body": ""
-        }
-      ],
-      "@asset": [
-        {
-          "name": "@asset",
-          "body": "qx/iconfont/MaterialIcons/materialiconssharp-v101.otf"
-        },
-        {
-          "name": "@asset",
-          "body": "qx/iconfont/MaterialIcons/materialiconssharp-v101.woff2"
-        },
-        {
-          "name": "@asset",
-          "body": "qx/iconfont/MaterialIcons/materialiconssharp-v101.woff"
-        },
-        {
-          "name": "@asset",
-          "body": "qx/iconfont/MaterialIcons/materialiconssharp-v101.eot"
-        }
-      ]
+    "end": {
+      "line": 26,
+      "column": 64,
+      "index": 708
     }
   },
-  "type": "class",
-  "descendants": []
+  "className": "qx.theme.iconfont.LoadMaterialIconsSharp",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * @usefont(MaterialIconsSharp)",
+      " * @deprecated use the `@usefont` directive directly in your code",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": ""
+      }
+    ],
+    "@usefont": [
+      {
+        "name": "@usefont",
+        "body": "MaterialIconsSharp"
+      }
+    ],
+    "@deprecated": [
+      {
+        "name": "@deprecated",
+        "body": "use the <code>@usefont</code> directive directly in your code"
+      }
+    ]
+  },
+  "members": {},
+  "statics": {},
+  "properties": {}
 }

@@ -1,42 +1,69 @@
 {
-  "className": "qx.ui.list.provider.IListProvider",
-  "packageName": "qx.ui.list.provider",
-  "name": "IListProvider",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 24,
-        "column": 0,
-        "index": 596
-      },
-      "end": {
-        "line": 116,
-        "column": 3,
-        "index": 3054
-      }
+  "version": 0.3,
+  "lastModified": 1712910030817,
+  "lastModifiedIso": "2024-04-12T08:20:30.817Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/ui/list/provider/IListProvider.js",
+  "type": "interface",
+  "location": {
+    "start": {
+      "line": 24,
+      "column": 0,
+      "index": 596
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>This interface needs to implemented from all {@link qx.ui.list.List} providers.</p>"
-        }
-      ],
-      "@internal": [
-        {
-          "name": "@internal",
-          "body": ""
-        }
-      ]
+    "end": {
+      "line": 116,
+      "column": 3,
+      "index": 3054
     }
   },
-  "type": "interface",
+  "className": "qx.ui.list.provider.IListProvider",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * This interface needs to implemented from all {@link qx.ui.list.List} providers.",
+      " *",
+      " * @internal",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>This interface needs to implemented from all {@link qx.ui.list.List} providers.</p>"
+      }
+    ],
+    "@internal": [
+      {
+        "name": "@internal",
+        "body": ""
+      }
+    ]
+  },
   "members": {
     "createLayer": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Creates a layer for item and group rendering.",
+          "     *",
+          "     * @return {qx.ui.virtual.layer.Abstract} new layer.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Creates a layer for item and group rendering.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{qx.ui.virtual.layer.Abstract} new layer.",
+            "type": "qx.ui.virtual.layer.Abstract",
+            "description": "new layer."
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 31,
@@ -49,26 +76,38 @@
           "index": 821
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "qx.ui.virtual.layer.Abstract"
+      },
+      "appearsIn": []
+    },
+    "createItemRenderer": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Creates a renderer for item rendering.",
+          "     *",
+          "     * @return {var} new item renderer.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Creates a layer for item and group rendering.</p>"
+            "body": "<p>Creates a renderer for item rendering.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.virtual.layer.Abstract} new layer.",
-            "type": "qx.ui.virtual.layer.Abstract",
-            "description": " new layer."
+            "body": "{var} new item renderer.",
+            "type": "var",
+            "description": "new item renderer."
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "createItemRenderer": {
+      "access": "public",
       "location": {
         "start": {
           "line": 38,
@@ -81,26 +120,38 @@
           "index": 960
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "var"
+      },
+      "appearsIn": []
+    },
+    "createGroupRenderer": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Creates a renderer for group rendering.",
+          "     *",
+          "     * @return {var} new group renderer.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Creates a renderer for item rendering.</p>"
+            "body": "<p>Creates a renderer for group rendering.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{var} new item renderer.",
+            "body": "{var} new group renderer.",
             "type": "var",
-            "description": " new item renderer."
+            "description": "new group renderer."
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "createGroupRenderer": {
+      "access": "public",
       "location": {
         "start": {
           "line": 45,
@@ -113,39 +164,22 @@
           "index": 1102
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Creates a renderer for group rendering.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{var} new group renderer.",
-            "type": "var",
-            "description": " new group renderer."
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "var"
+      },
+      "appearsIn": []
     },
     "styleSelectabled": {
-      "location": {
-        "start": {
-          "line": 52,
-          "column": 4,
-          "index": 1205
-        },
-        "end": {
-          "line": 52,
-          "column": 28,
-          "index": 1229
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Styles a selected item.",
+          "     *",
+          "     * @param row {Integer} row to style.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -162,23 +196,37 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "styleUnselectabled": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 59,
+          "line": 52,
           "column": 4,
-          "index": 1336
+          "index": 1205
         },
         "end": {
-          "line": 59,
-          "column": 30,
-          "index": 1362
+          "line": 52,
+          "column": 28,
+          "index": 1229
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "row",
+          "type": "Integer"
+        }
+      ],
+      "appearsIn": []
+    },
+    "styleUnselectabled": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Styles a not selected item.",
+          "     *",
+          "     * @param row {Integer} row to style.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -195,23 +243,39 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "isSelectable": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 68,
+          "line": 59,
           "column": 4,
-          "index": 1605
+          "index": 1336
         },
         "end": {
-          "line": 68,
-          "column": 24,
-          "index": 1625
+          "line": 59,
+          "column": 30,
+          "index": 1362
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "row",
+          "type": "Integer"
+        }
+      ],
+      "appearsIn": []
+    },
+    "isSelectable": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns if the passed row can be selected or not.",
+          "     *",
+          "     * @param row {Integer} row to select.",
+          "     * @return {Boolean} <code>true</code> when the row can be selected,",
+          "     *    <code>false</code> otherwise.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -231,28 +295,46 @@
           {
             "name": "@return",
             "body": "{Boolean} <code>true</code> when the row can be selected,\n    <code>false</code> otherwise.",
-            "type": "Boolean",
-            "description": " <code>true</code> when the row can be selected,\n    <code>false</code> otherwise."
+            "type": "boolean",
+            "description": "<code>true</code> when the row can be selected,\n    <code>false</code> otherwise."
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "setLabelPath": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 76,
+          "line": 68,
           "column": 4,
-          "index": 1861
+          "index": 1605
         },
         "end": {
-          "line": 76,
-          "column": 25,
-          "index": 1882
+          "line": 68,
+          "column": 24,
+          "index": 1625
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "row",
+          "type": "Integer"
+        }
+      ],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "setLabelPath": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * The path to the property which holds the information that should be",
+          "     * shown as a label. This is only needed if objects are stored in the model.",
+          "     *",
+          "     * @param path {String} path to the property.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -265,27 +347,43 @@
             "body": "path {String} path to the property.",
             "paramName": "path",
             "description": " path to the property.",
-            "type": "String"
+            "type": "string"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "setIconPath": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 85,
+          "line": 76,
           "column": 4,
-          "index": 2157
+          "index": 1861
         },
         "end": {
-          "line": 85,
-          "column": 24,
-          "index": 2177
+          "line": 76,
+          "column": 25,
+          "index": 1882
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "path",
+          "type": "string"
+        }
+      ],
+      "appearsIn": []
+    },
+    "setIconPath": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * The path to the property which holds the information that should be",
+          "     * shown as an icon. This is only needed if objects are stored in the model",
+          "     * and if the icon should be shown.",
+          "     *",
+          "     * @param path {String} path to the property.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -298,27 +396,42 @@
             "body": "path {String} path to the property.",
             "paramName": "path",
             "description": " path to the property.",
-            "type": "String"
+            "type": "string"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "setLabelOptions": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 93,
+          "line": 85,
           "column": 4,
-          "index": 2420
+          "index": 2157
         },
         "end": {
-          "line": 93,
-          "column": 31,
-          "index": 2447
+          "line": 85,
+          "column": 24,
+          "index": 2177
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "path",
+          "type": "string"
+        }
+      ],
+      "appearsIn": []
+    },
+    "setLabelOptions": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * A map containing the options for the label binding. The possible keys",
+          "     * can be found in the {@link qx.data.SingleValueBinding} documentation.",
+          "     *",
+          "     * @param options {Map} options for the label binding.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -331,27 +444,42 @@
             "body": "options {Map} options for the label binding.",
             "paramName": "options",
             "description": " options for the label binding.",
-            "type": "Map"
+            "type": "Map<any, any>"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "setIconOptions": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 101,
+          "line": 93,
           "column": 4,
-          "index": 2688
+          "index": 2420
         },
         "end": {
-          "line": 101,
-          "column": 30,
-          "index": 2714
+          "line": 93,
+          "column": 31,
+          "index": 2447
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "options",
+          "type": "Map<any, any>"
+        }
+      ],
+      "appearsIn": []
+    },
+    "setIconOptions": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * A map containing the options for the icon binding. The possible keys",
+          "     * can be found in the {@link qx.data.SingleValueBinding} documentation.",
+          "     *",
+          "     * @param options {Map} options for the icon binding.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -364,27 +492,42 @@
             "body": "options {Map} options for the icon binding.",
             "paramName": "options",
             "description": " options for the icon binding.",
-            "type": "Map"
+            "type": "Map<any, any>"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "setDelegate": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 109,
+          "line": 101,
           "column": 4,
-          "index": 2929
+          "index": 2688
         },
         "end": {
-          "line": 109,
-          "column": 28,
-          "index": 2953
+          "line": 101,
+          "column": 30,
+          "index": 2714
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "options",
+          "type": "Map<any, any>"
+        }
+      ],
+      "appearsIn": []
+    },
+    "setDelegate": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Delegation object, which can have one or more functions defined by the",
+          "     * {@link qx.ui.list.core.IListDelegate} interface.",
+          "     *",
+          "     * @param delegate {Object} delegation object.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -397,14 +540,47 @@
             "body": "delegate {Object} delegation object.",
             "paramName": "delegate",
             "description": " delegation object.",
-            "type": "Object"
+            "type": "Record<any, any>"
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 109,
+          "column": 4,
+          "index": 2929
+        },
+        "end": {
+          "line": 109,
+          "column": 28,
+          "index": 2953
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "delegate",
+          "type": "Record<any, any>"
+        }
+      ],
+      "appearsIn": []
     },
     "removeBindings": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Remove all bindings from all bounded items.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Remove all bindings from all bounded items.</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 114,
@@ -417,17 +593,11 @@
           "index": 3046
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Remove all bindings from all bounded items.</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "statics": {},
+  "properties": {}
 }

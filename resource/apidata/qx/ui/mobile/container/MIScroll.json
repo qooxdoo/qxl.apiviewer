@@ -1,47 +1,30 @@
 {
-  "className": "qx.ui.mobile.container.MIScroll",
-  "packageName": "qx.ui.mobile.container",
-  "name": "MIScroll",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 34,
-        "column": 0,
-        "index": 964
-      },
-      "end": {
-        "line": 383,
-        "column": 3,
-        "index": 10841
-      }
+  "version": 0.3,
+  "lastModified": 1712910030961,
+  "lastModifiedIso": "2024-04-12T08:20:30.961Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/ui/mobile/container/MIScroll.js",
+  "type": "mixin",
+  "location": {
+    "start": {
+      "line": 34,
+      "column": 0,
+      "index": 964
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Mixin for the {@link Scroll} container. Used when the variant\n <code>qx.mobile.nativescroll</code> is set to \"off\". Uses the iScroll script to simulate\n the CSS position:fixed style. Position fixed is not available in iOS and\n Android &lt; 2.2.</p>"
-        }
-      ],
-      "@ignore": [
-        {
-          "name": "@ignore",
-          "body": "iScroll"
-        }
-      ],
-      "@asset": [
-        {
-          "name": "@asset",
-          "body": "qx/mobile/js/iscroll*.js"
-        }
-      ]
+    "end": {
+      "line": 383,
+      "column": 3,
+      "index": 10841
     }
   },
-  "type": "mixin",
+  "className": "qx.ui.mobile.container.MIScroll",
+  "jsdoc": {
+    "raw": [
+      " global iScroll "
+    ]
+  },
   "construct": {
+    "type": "function",
+    "params": [],
     "location": {
       "start": {
         "line": 41,
@@ -53,11 +36,12 @@
         "column": 3,
         "index": 1286
       }
-    },
-    "jsdoc": {}
+    }
   },
   "members": {
     "__scroll": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 53,
@@ -70,10 +54,33 @@
           "index": 1504
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "_createScrollElement": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Mixin method. Creates the scroll element.",
+          "     *",
+          "     * @return {Element} The scroll element",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Mixin method. Creates the scroll element.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Element} The scroll element",
+            "type": "Element",
+            "description": "The scroll element"
+          }
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 60,
@@ -86,26 +93,38 @@
           "index": 1778
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "Element"
+      },
+      "appearsIn": []
+    },
+    "_getScrollContentElement": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Mixin method. Returns the scroll content element..",
+          "     *",
+          "     * @return {Element} The scroll content element",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Mixin method. Creates the scroll element.</p>"
+            "body": "<p>Mixin method. Returns the scroll content element..</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Element} The scroll element",
+            "body": "{Element} The scroll content element",
             "type": "Element",
-            "description": " The scroll element"
+            "description": "The scroll content element"
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_getScrollContentElement": {
+      "access": "protected",
       "location": {
         "start": {
           "line": 71,
@@ -118,26 +137,37 @@
           "index": 2007
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "Element"
+      },
+      "appearsIn": []
+    },
+    "_getPosition": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the current scroll position",
+          "     * @return {Array} an array with the <code>[scrollLeft,scrollTop]</code>.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Mixin method. Returns the scroll content element..</p>"
+            "body": "<p>Returns the current scroll position</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Element} The scroll content element",
-            "type": "Element",
-            "description": " The scroll content element"
+            "body": "{Array} an array with the <code>[scrollLeft,scrollTop]</code>.",
+            "type": "Array<any>",
+            "description": "an array with the <code>[scrollLeft,scrollTop]</code>."
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_getPosition": {
+      "access": "protected",
       "location": {
         "start": {
           "line": 79,
@@ -150,26 +180,37 @@
           "index": 2220
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "Array<any>"
+      },
+      "appearsIn": []
+    },
+    "_getScrollHeight": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the scrolling height of the inner container.",
+          "     * @return {Number} the scrolling height.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Returns the current scroll position</p>"
+            "body": "<p>Returns the scrolling height of the inner container.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Array} an array with the <code>[scrollLeft,scrollTop]</code>.",
-            "type": "Array",
-            "description": " an array with the <code>[scrollLeft,scrollTop]</code>."
+            "body": "{Number} the scrolling height.",
+            "type": "number",
+            "description": "the scrolling height."
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_getScrollHeight": {
+      "access": "protected",
       "location": {
         "start": {
           "line": 87,
@@ -182,26 +223,37 @@
           "index": 2569
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "number"
+      },
+      "appearsIn": []
+    },
+    "_getScrollWidth": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the scrolling width of the inner container.",
+          "     * @return {Number} the scrolling width.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Returns the scrolling height of the inner container.</p>"
+            "body": "<p>Returns the scrolling width of the inner container.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Number} the scrolling height.",
-            "type": "Number",
-            "description": " the scrolling height."
+            "body": "{Number} the scrolling width.",
+            "type": "number",
+            "description": "the scrolling width."
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_getScrollWidth": {
+      "access": "protected",
       "location": {
         "start": {
           "line": 101,
@@ -214,39 +266,25 @@
           "index": 2913
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the scrolling width of the inner container.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Number} the scrolling width.",
-            "type": "Number",
-            "description": " the scrolling width."
-          }
-        ]
-      },
       "type": "function",
-      "access": "protected"
+      "params": [],
+      "returnType": {
+        "type": "number"
+      },
+      "appearsIn": []
     },
     "_scrollTo": {
-      "location": {
-        "start": {
-          "line": 119,
-          "column": 4,
-          "index": 3222
-        },
-        "end": {
-          "line": 145,
-          "column": 5,
-          "index": 4107
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Scrolls the wrapper contents to the x/y coordinates in a given period.",
+          "     *",
+          "     * @param x {Integer} X coordinate to scroll to.",
+          "     * @param y {Integer} Y coordinate to scroll to.",
+          "     * @param time {Integer} Time slice in which scrolling should",
+          "     *              be done.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -277,23 +315,45 @@
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "__initScroll": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 152,
+          "line": 119,
           "column": 4,
-          "index": 4206
+          "index": 3222
         },
         "end": {
-          "line": 172,
+          "line": 145,
           "column": 5,
-          "index": 4927
+          "index": 4107
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "x",
+          "type": "Integer"
+        },
+        {
+          "name": "y",
+          "type": "Integer"
+        },
+        {
+          "name": "time",
+          "type": "Integer"
+        }
+      ],
+      "appearsIn": []
+    },
+    "__initScroll": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Loads and inits the iScroll instance.",
+          "     *",
+          "     * @ignore(iScroll)",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -307,10 +367,55 @@
           }
         ]
       },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 152,
+          "column": 4,
+          "index": 4206
+        },
+        "end": {
+          "line": 172,
+          "column": 5,
+          "index": 4927
+        }
+      },
       "type": "function",
-      "access": "private"
+      "params": [],
+      "appearsIn": []
     },
     "__createScrollInstance": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Creates the iScroll instance.",
+          "     *",
+          "     * @return {Object} The iScroll instance",
+          "     * @ignore(iScroll)",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Creates the iScroll instance.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Object} The iScroll instance",
+            "type": "Record<any, any>",
+            "description": "The iScroll instance"
+          }
+        ],
+        "@ignore": [
+          {
+            "name": "@ignore",
+            "body": "iScroll"
+          }
+        ]
+      },
+      "access": "private",
       "location": {
         "start": {
           "line": 180,
@@ -323,32 +428,37 @@
           "index": 5534
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "Record<any, any>"
+      },
+      "appearsIn": []
+    },
+    "_getDefaultScrollProperties": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns a map with default iScroll properties for the iScroll instance.",
+          "     * @return {Object} Map with default iScroll properties",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Creates the iScroll instance.</p>"
+            "body": "<p>Returns a map with default iScroll properties for the iScroll instance.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Object} The iScroll instance",
-            "type": "Object",
-            "description": " The iScroll instance"
-          }
-        ],
-        "@ignore": [
-          {
-            "name": "@ignore",
-            "body": "iScroll"
+            "body": "{Object} Map with default iScroll properties",
+            "type": "Record<any, any>",
+            "description": "Map with default iScroll properties"
           }
         ]
       },
-      "type": "function",
-      "access": "private"
-    },
-    "_getDefaultScrollProperties": {
+      "access": "protected",
       "location": {
         "start": {
           "line": 201,
@@ -361,26 +471,28 @@
           "index": 8227
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "Record<any, any>"
+      },
+      "appearsIn": []
+    },
+    "__registerEventListeners": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Registers all needed event listener.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Returns a map with default iScroll properties for the iScroll instance.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Object} Map with default iScroll properties",
-            "type": "Object",
-            "description": " Map with default iScroll properties"
+            "body": "<p>Registers all needed event listener.</p>"
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "__registerEventListeners": {
+      "access": "private",
       "location": {
         "start": {
           "line": 276,
@@ -393,18 +505,25 @@
           "index": 8666
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "__unregisterEventListeners": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Unregisters all needed event listener.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Registers all needed event listener.</p>"
+            "body": "<p>Unregisters all needed event listener.</p>"
           }
         ]
       },
-      "type": "function",
-      "access": "private"
-    },
-    "__unregisterEventListeners": {
+      "access": "private",
       "location": {
         "start": {
           "line": 292,
@@ -417,31 +536,19 @@
           "index": 9162
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Unregisters all needed event listener.</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "private"
+      "params": [],
+      "appearsIn": []
     },
     "__onScrollLoaded": {
-      "location": {
-        "start": {
-          "line": 316,
-          "column": 4,
-          "index": 9328
-        },
-        "end": {
-          "line": 327,
-          "column": 5,
-          "index": 9687
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Load callback. Called when the iScroll script is loaded.",
+          "     *",
+          "     * @param request {qx.bom.request.Script} The Script request object",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -458,23 +565,37 @@
           }
         ]
       },
-      "type": "function",
-      "access": "private"
-    },
-    "_setScroll": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 334,
+          "line": 316,
           "column": 4,
-          "index": 9804
+          "index": 9328
         },
         "end": {
-          "line": 336,
+          "line": 327,
           "column": 5,
-          "index": 9860
+          "index": 9687
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "request",
+          "type": "qx.bom.request.Script"
+        }
+      ],
+      "appearsIn": []
+    },
+    "_setScroll": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Setter for the scroll instance.",
+          "     *",
+          "     * @param scroll {Object} iScroll instance.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -487,14 +608,48 @@
             "body": "scroll {Object} iScroll instance.",
             "paramName": "scroll",
             "description": " iScroll instance.",
-            "type": "Object"
+            "type": "Record<any, any>"
           }
         ]
       },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 334,
+          "column": 4,
+          "index": 9804
+        },
+        "end": {
+          "line": 336,
+          "column": 5,
+          "index": 9860
+        }
+      },
       "type": "function",
-      "access": "protected"
+      "params": [
+        {
+          "name": "scroll",
+          "type": "Record<any, any>"
+        }
+      ],
+      "appearsIn": []
     },
     "disable": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Delegation method for iScroll. Disabled the iScroll objects.",
+          "     * Prevents any further scrolling of this container.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Delegation method for iScroll. Disabled the iScroll objects.\n Prevents any further scrolling of this container.</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 342,
@@ -507,18 +662,25 @@
           "index": 10093
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "enable": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Delegation method for iScroll. Enables the iScroll object.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Delegation method for iScroll. Disabled the iScroll objects.\n Prevents any further scrolling of this container.</p>"
+            "body": "<p>Delegation method for iScroll. Enables the iScroll object.</p>"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "enable": {
+      "access": "public",
       "location": {
         "start": {
           "line": 351,
@@ -531,18 +693,26 @@
           "index": 10265
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "_refresh": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Calls the refresh function of iScroll. Needed to recalculate the",
+          "     * scrolling container.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Delegation method for iScroll. Enables the iScroll object.</p>"
+            "body": "<p>Calls the refresh function of iScroll. Needed to recalculate the\n scrolling container.</p>"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "_refresh": {
+      "access": "protected",
       "location": {
         "start": {
           "line": 361,
@@ -555,19 +725,14 @@
           "index": 10474
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Calls the refresh function of iScroll. Needed to recalculate the\n scrolling container.</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "protected"
+      "params": [],
+      "appearsIn": []
     }
   },
   "destruct": {
+    "type": "function",
+    "params": [],
     "location": {
       "start": {
         "line": 374,
@@ -579,8 +744,8 @@
         "column": 3,
         "index": 10837
       }
-    },
-    "jsdoc": {}
+    }
   },
-  "descendants": []
+  "statics": {},
+  "properties": {}
 }

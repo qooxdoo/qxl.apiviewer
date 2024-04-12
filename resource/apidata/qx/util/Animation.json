@@ -1,36 +1,50 @@
 {
-  "className": "qx.util.Animation",
-  "packageName": "qx.util",
-  "name": "Animation",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 23,
-        "column": 0,
-        "index": 661
-      },
-      "end": {
-        "line": 615,
-        "column": 3,
-        "index": 12061
-      }
+  "version": 0.3,
+  "lastModified": 1712910030313,
+  "lastModifiedIso": "2024-04-12T08:20:30.313Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/util/Animation.js",
+  "type": "bootstrap",
+  "location": {
+    "start": {
+      "line": 23,
+      "column": 0,
+      "index": 661
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Contains property maps for the usage with qx.bom.element.Animation {@link qx.bom.element.Animation}.\n These animations can be used for page transitions for example.</p>"
-        }
-      ]
+    "end": {
+      "line": 615,
+      "column": 3,
+      "index": 12061
     }
   },
-  "type": "class",
+  "className": "qx.util.Animation",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Contains property maps for the usage with qx.bom.element.Animation {@link qx.bom.element.Animation}.",
+      " * These animations can be used for page transitions for example.",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Contains property maps for the usage with qx.bom.element.Animation {@link qx.bom.element.Animation}.\n These animations can be used for page transitions for example.</p>"
+      }
+    ]
+  },
   "statics": {
     "SLIDE_LEFT_IN": {
+      "jsdoc": {
+        "raw": [
+          "* Target slides in from right. "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Target slides in from right.</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 26,
@@ -43,18 +57,21 @@
           "index": 994
         }
       },
+      "appearsIn": []
+    },
+    "SLIDE_LEFT_OUT": {
       "jsdoc": {
+        "raw": [
+          "* Target slides out from right."
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target slides in from right.</p>"
+            "body": "<p>Target slides out from right.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "SLIDE_LEFT_OUT": {
+      "access": "public",
       "location": {
         "start": {
           "line": 42,
@@ -67,18 +84,21 @@
           "index": 1277
         }
       },
+      "appearsIn": []
+    },
+    "SLIDE_RIGHT_IN": {
       "jsdoc": {
+        "raw": [
+          "* Target slides in from left."
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target slides out from right.</p>"
+            "body": "<p>Target slides in from left.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "SLIDE_RIGHT_IN": {
+      "access": "public",
       "location": {
         "start": {
           "line": 58,
@@ -91,18 +111,21 @@
           "index": 1557
         }
       },
+      "appearsIn": []
+    },
+    "SLIDE_RIGHT_OUT": {
       "jsdoc": {
+        "raw": [
+          "* Target slides out from left."
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target slides in from left.</p>"
+            "body": "<p>Target slides out from left.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "SLIDE_RIGHT_OUT": {
+      "access": "public",
       "location": {
         "start": {
           "line": 74,
@@ -115,18 +138,21 @@
           "index": 1839
         }
       },
+      "appearsIn": []
+    },
+    "FADE_IN": {
       "jsdoc": {
+        "raw": [
+          "* Target fades in. "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target slides out from left.</p>"
+            "body": "<p>Target fades in.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "FADE_IN": {
+      "access": "public",
       "location": {
         "start": {
           "line": 90,
@@ -139,18 +165,21 @@
           "index": 2093
         }
       },
+      "appearsIn": []
+    },
+    "FADE_OUT": {
       "jsdoc": {
+        "raw": [
+          "* Target fades out. "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target fades in.</p>"
+            "body": "<p>Target fades out.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "FADE_OUT": {
+      "access": "public",
       "location": {
         "start": {
           "line": 106,
@@ -163,18 +192,21 @@
           "index": 2349
         }
       },
+      "appearsIn": []
+    },
+    "POP_IN": {
       "jsdoc": {
+        "raw": [
+          "* Target pops in from center. "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target fades out.</p>"
+            "body": "<p>Target pops in from center.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "POP_IN": {
+      "access": "public",
       "location": {
         "start": {
           "line": 122,
@@ -187,18 +219,21 @@
           "index": 2614
         }
       },
+      "appearsIn": []
+    },
+    "POP_OUT": {
       "jsdoc": {
+        "raw": [
+          "* Target pops out from center. "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target pops in from center.</p>"
+            "body": "<p>Target pops out from center.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "POP_OUT": {
+      "access": "public",
       "location": {
         "start": {
           "line": 138,
@@ -211,18 +246,21 @@
           "index": 2881
         }
       },
+      "appearsIn": []
+    },
+    "SHRINK_HEIGHT": {
       "jsdoc": {
+        "raw": [
+          "* Target shrinks its height. "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target pops out from center.</p>"
+            "body": "<p>Target shrinks its height.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "SHRINK_HEIGHT": {
+      "access": "public",
       "location": {
         "start": {
           "line": 154,
@@ -235,18 +273,21 @@
           "index": 3215
         }
       },
+      "appearsIn": []
+    },
+    "GROW_HEIGHT": {
       "jsdoc": {
+        "raw": [
+          "* Target grows its height. "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target shrinks its height.</p>"
+            "body": "<p>Target grows its height.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "GROW_HEIGHT": {
+      "access": "public",
       "location": {
         "start": {
           "line": 173,
@@ -259,18 +300,21 @@
           "index": 3545
         }
       },
+      "appearsIn": []
+    },
+    "SHRINK_WIDTH": {
       "jsdoc": {
+        "raw": [
+          "* Target shrinks its width. "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target grows its height.</p>"
+            "body": "<p>Target shrinks its width.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "SHRINK_WIDTH": {
+      "access": "public",
       "location": {
         "start": {
           "line": 192,
@@ -283,18 +327,21 @@
           "index": 3878
         }
       },
+      "appearsIn": []
+    },
+    "GROW_WIDTH": {
       "jsdoc": {
+        "raw": [
+          "* Target grows its width. "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target shrinks its width.</p>"
+            "body": "<p>Target grows its width.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "GROW_WIDTH": {
+      "access": "public",
       "location": {
         "start": {
           "line": 211,
@@ -307,18 +354,21 @@
           "index": 4207
         }
       },
+      "appearsIn": []
+    },
+    "SHRINK": {
       "jsdoc": {
+        "raw": [
+          "* Target shrinks in both width and height. "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target grows its width.</p>"
+            "body": "<p>Target shrinks in both width and height.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "SHRINK": {
+      "access": "public",
       "location": {
         "start": {
           "line": 230,
@@ -331,18 +381,21 @@
           "index": 4546
         }
       },
+      "appearsIn": []
+    },
+    "GROW": {
       "jsdoc": {
+        "raw": [
+          "* Target grows in both width and height. "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target shrinks in both width and height.</p>"
+            "body": "<p>Target grows in both width and height.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "GROW": {
+      "access": "public",
       "location": {
         "start": {
           "line": 249,
@@ -355,18 +408,21 @@
           "index": 4881
         }
       },
+      "appearsIn": []
+    },
+    "SLIDE_UP_IN": {
       "jsdoc": {
+        "raw": [
+          "* Target slides in to top. "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target grows in both width and height.</p>"
+            "body": "<p>Target slides in to top.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "SLIDE_UP_IN": {
+      "access": "public",
       "location": {
         "start": {
           "line": 268,
@@ -379,18 +435,21 @@
           "index": 5163
         }
       },
+      "appearsIn": []
+    },
+    "SLIDE_UP_OUT": {
       "jsdoc": {
+        "raw": [
+          "* Target slides out to top."
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target slides in to top.</p>"
+            "body": "<p>Target slides out to top.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "SLIDE_UP_OUT": {
+      "access": "public",
       "location": {
         "start": {
           "line": 284,
@@ -403,18 +462,21 @@
           "index": 5445
         }
       },
+      "appearsIn": []
+    },
+    "SLIDE_DOWN_IN": {
       "jsdoc": {
+        "raw": [
+          "* Target slides out to bottom."
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target slides out to top.</p>"
+            "body": "<p>Target slides out to bottom.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "SLIDE_DOWN_IN": {
+      "access": "public",
       "location": {
         "start": {
           "line": 300,
@@ -427,18 +489,21 @@
           "index": 5731
         }
       },
+      "appearsIn": []
+    },
+    "SLIDE_DOWN_OUT": {
       "jsdoc": {
+        "raw": [
+          "* Target slides down to bottom."
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target slides out to bottom.</p>"
+            "body": "<p>Target slides down to bottom.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "SLIDE_DOWN_OUT": {
+      "access": "public",
       "location": {
         "start": {
           "line": 316,
@@ -451,18 +516,21 @@
           "index": 6020
         }
       },
+      "appearsIn": []
+    },
+    "FLIP_LEFT_IN": {
       "jsdoc": {
+        "raw": [
+          "* Target flips (turns) left from back side to front side. "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target slides down to bottom.</p>"
+            "body": "<p>Target flips (turns) left from back side to front side.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "FLIP_LEFT_IN": {
+      "access": "public",
       "location": {
         "start": {
           "line": 332,
@@ -475,18 +543,21 @@
           "index": 6529
         }
       },
+      "appearsIn": []
+    },
+    "FLIP_LEFT_OUT": {
       "jsdoc": {
+        "raw": [
+          "* Target flips (turns) left from front side to back side. "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target flips (turns) left from back side to front side.</p>"
+            "body": "<p>Target flips (turns) left from front side to back side.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "FLIP_LEFT_OUT": {
+      "access": "public",
       "location": {
         "start": {
           "line": 360,
@@ -499,18 +570,21 @@
           "index": 6910
         }
       },
+      "appearsIn": []
+    },
+    "FLIP_RIGHT_IN": {
       "jsdoc": {
+        "raw": [
+          "* Target flips (turns) right from back side to front side. "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target flips (turns) left from front side to back side.</p>"
+            "body": "<p>Target flips (turns) right from back side to front side.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "FLIP_RIGHT_IN": {
+      "access": "public",
       "location": {
         "start": {
           "line": 378,
@@ -523,18 +597,21 @@
           "index": 7429
         }
       },
+      "appearsIn": []
+    },
+    "FLIP_RIGHT_OUT": {
       "jsdoc": {
+        "raw": [
+          "* Target flips (turns) right from front side to back side. "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target flips (turns) right from back side to front side.</p>"
+            "body": "<p>Target flips (turns) right from front side to back side.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "FLIP_RIGHT_OUT": {
+      "access": "public",
       "location": {
         "start": {
           "line": 406,
@@ -547,18 +624,21 @@
           "index": 7811
         }
       },
+      "appearsIn": []
+    },
+    "SWAP_LEFT_IN": {
       "jsdoc": {
+        "raw": [
+          "* Target moves in to left. "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target flips (turns) right from front side to back side.</p>"
+            "body": "<p>Target moves in to left.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "SWAP_LEFT_IN": {
+      "access": "public",
       "location": {
         "start": {
           "line": 424,
@@ -571,18 +651,21 @@
           "index": 8378
         }
       },
+      "appearsIn": []
+    },
+    "SWAP_LEFT_OUT": {
       "jsdoc": {
+        "raw": [
+          "* Target moves out to left.  "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target moves in to left.</p>"
+            "body": "<p>Target moves out to left.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "SWAP_LEFT_OUT": {
+      "access": "public",
       "location": {
         "start": {
           "line": 450,
@@ -595,18 +678,21 @@
           "index": 8947
         }
       },
+      "appearsIn": []
+    },
+    "SWAP_RIGHT_IN": {
       "jsdoc": {
+        "raw": [
+          "* Target moves in to right. "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target moves out to left.</p>"
+            "body": "<p>Target moves in to right.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "SWAP_RIGHT_IN": {
+      "access": "public",
       "location": {
         "start": {
           "line": 476,
@@ -619,18 +705,21 @@
           "index": 9514
         }
       },
+      "appearsIn": []
+    },
+    "SWAP_RIGHT_OUT": {
       "jsdoc": {
+        "raw": [
+          "* Target moves out to right. "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target moves in to right.</p>"
+            "body": "<p>Target moves out to right.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "SWAP_RIGHT_OUT": {
+      "access": "public",
       "location": {
         "start": {
           "line": 502,
@@ -643,18 +732,21 @@
           "index": 10085
         }
       },
+      "appearsIn": []
+    },
+    "CUBE_LEFT_IN": {
       "jsdoc": {
+        "raw": [
+          "* Target moves in with cube animation from right to left.  "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target moves out to right.</p>"
+            "body": "<p>Target moves in with cube animation from right to left.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "CUBE_LEFT_IN": {
+      "access": "public",
       "location": {
         "start": {
           "line": 528,
@@ -667,18 +759,21 @@
           "index": 10576
         }
       },
+      "appearsIn": []
+    },
+    "CUBE_LEFT_OUT": {
       "jsdoc": {
+        "raw": [
+          "* Target moves out with cube animation from right to left.  "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target moves in with cube animation from right to left.</p>"
+            "body": "<p>Target moves out with cube animation from right to left.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "CUBE_LEFT_OUT": {
+      "access": "public",
       "location": {
         "start": {
           "line": 550,
@@ -691,18 +786,21 @@
           "index": 11068
         }
       },
+      "appearsIn": []
+    },
+    "CUBE_RIGHT_IN": {
       "jsdoc": {
+        "raw": [
+          "* Target moves in with cube animation from left to right.  "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target moves out with cube animation from right to left.</p>"
+            "body": "<p>Target moves in with cube animation from left to right.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "CUBE_RIGHT_IN": {
+      "access": "public",
       "location": {
         "start": {
           "line": 572,
@@ -715,18 +813,21 @@
           "index": 11559
         }
       },
+      "appearsIn": []
+    },
+    "CUBE_RIGHT_OUT": {
       "jsdoc": {
+        "raw": [
+          "* Target moves out with cube animation from left to right.  "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Target moves in with cube animation from left to right.</p>"
+            "body": "<p>Target moves out with cube animation from left to right.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "CUBE_RIGHT_OUT": {
+      "access": "public",
       "location": {
         "start": {
           "line": 594,
@@ -739,17 +840,9 @@
           "index": 12053
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Target moves out with cube animation from left to right.</p>"
-          }
-        ]
-      },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "members": {},
+  "properties": {}
 }

@@ -1,33 +1,37 @@
 {
-  "className": "q",
-  "packageName": null,
-  "name": "q",
-  "superClass": "qxWeb",
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 22,
-        "column": 0,
-        "index": 527
-      },
-      "end": {
-        "line": 24,
-        "column": 3,
-        "index": 573
-      }
+  "version": 0.3,
+  "lastModified": 1712910031065,
+  "lastModifiedIso": "2024-04-12T08:20:31.065Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/q.js",
+  "type": "bootstrap",
+  "location": {
+    "start": {
+      "line": 22,
+      "column": 0,
+      "index": 527
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Compatibility class for {@link qxWeb}.</p>"
-        }
-      ]
+    "end": {
+      "line": 24,
+      "column": 3,
+      "index": 573
     }
   },
-  "type": "class",
-  "descendants": []
+  "className": "q",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Compatibility class for {@link qxWeb}.",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Compatibility class for {@link qxWeb}.</p>"
+      }
+    ]
+  },
+  "superClass": "qxWeb",
+  "members": {},
+  "statics": {},
+  "properties": {}
 }

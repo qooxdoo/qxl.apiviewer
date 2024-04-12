@@ -1,54 +1,36 @@
 {
-  "className": "qx.theme.Simple",
-  "packageName": "qx.theme",
-  "name": "Simple",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 21,
-        "column": 0,
-        "index": 511
-      },
-      "end": {
-        "line": 31,
-        "column": 3,
-        "index": 769
-      }
-    },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Simple Theme</p>"
-        }
-      ]
-    }
-  },
+  "version": 0.3,
+  "lastModified": 1712910031129,
+  "lastModifiedIso": "2024-04-12T08:20:31.129Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/theme/Simple.js",
   "type": "theme",
-  "themeMeta": {
-    "location": {
-      "start": {
-        "line": 24,
-        "column": 2,
-        "index": 570
-      },
-      "end": {
-        "line": 30,
-        "column": 3,
-        "index": 765
-      }
+  "location": {
+    "start": {
+      "line": 21,
+      "column": 0,
+      "index": 511
     },
-    "themeMetaMap": {
-      "color": "qx.theme.simple.Color",
-      "decoration": "qx.theme.simple.Decoration",
-      "font": "qx.theme.simple.Font",
-      "appearance": "qx.theme.simple.Appearance",
-      "icon": "qx.theme.icon.Tango"
+    "end": {
+      "line": 31,
+      "column": 3,
+      "index": 769
     }
   },
-  "descendants": []
+  "className": "qx.theme.Simple",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Simple Theme",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Simple Theme</p>"
+      }
+    ]
+  },
+  "members": {},
+  "statics": {},
+  "properties": {}
 }

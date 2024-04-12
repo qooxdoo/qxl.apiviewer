@@ -1,42 +1,69 @@
 {
-  "className": "qx.dev.ObjectSummary",
-  "packageName": "qx.dev",
-  "name": "ObjectSummary",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 27,
-        "column": 0,
-        "index": 772
-      },
-      "end": {
-        "line": 154,
-        "column": 3,
-        "index": 3948
-      }
+  "version": 0.3,
+  "lastModified": 1712910031013,
+  "lastModifiedIso": "2024-04-12T08:20:31.013Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/dev/ObjectSummary.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 27,
+      "column": 0,
+      "index": 772
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Statics around created qooxdoo instances.</p>"
-        }
-      ],
-      "@deprecated": [
-        {
-          "name": "@deprecated",
-          "body": "{6.0} automatic memory management means that most objects are no\n longer stored in the object registry; this class is no longer useful"
-        }
-      ]
+    "end": {
+      "line": 154,
+      "column": 3,
+      "index": 3948
     }
   },
-  "type": "class",
+  "className": "qx.dev.ObjectSummary",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Statics around created qooxdoo instances.",
+      " * @deprecated {6.0} automatic memory management means that most objects are no",
+      " * longer stored in the object registry; this class is no longer useful",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Statics around created qooxdoo instances.</p>"
+      }
+    ],
+    "@deprecated": [
+      {
+        "name": "@deprecated",
+        "body": "{6.0} automatic memory management means that most objects are no\n longer stored in the object registry; this class is no longer useful"
+      }
+    ]
+  },
   "statics": {
     "getInfo": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Summary of allocated objects",
+          "     *",
+          "     * @return {String} summary of allocated objects.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Summary of allocated objects</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{String} summary of allocated objects.",
+            "type": "string",
+            "description": "summary of allocated objects."
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 34,
@@ -49,26 +76,39 @@
           "index": 1877
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
+    },
+    "getNewObjects": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Allocated objects and lists all objects, which have been newly created",
+          "     * since the last call of this function.",
+          "     *",
+          "     * @return {String} summary of allocated objects.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Summary of allocated objects</p>"
+            "body": "<p>Allocated objects and lists all objects, which have been newly created\n since the last call of this function.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
             "body": "{String} summary of allocated objects.",
-            "type": "String",
-            "description": " summary of allocated objects."
+            "type": "string",
+            "description": "summary of allocated objects."
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getNewObjects": {
+      "access": "public",
       "location": {
         "start": {
           "line": 82,
@@ -81,25 +121,14 @@
           "index": 3940
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Allocated objects and lists all objects, which have been newly created\n since the last call of this function.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{String} summary of allocated objects.",
-            "type": "String",
-            "description": " summary of allocated objects."
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "members": {},
+  "properties": {}
 }

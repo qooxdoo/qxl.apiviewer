@@ -1,48 +1,85 @@
 {
-  "className": "qx.bom.client.Browser",
-  "packageName": "qx.bom.client",
-  "name": "Browser",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 47,
-        "column": 0,
-        "index": 1189
-      },
-      "end": {
-        "line": 233,
-        "column": 3,
-        "index": 7031
-      }
+  "version": 0.3,
+  "lastModified": 1712910030437,
+  "lastModifiedIso": "2024-04-12T08:20:30.437Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/bom/client/Browser.js",
+  "type": "bootstrap",
+  "location": {
+    "start": {
+      "line": 47,
+      "column": 0,
+      "index": 1189
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Basic browser detection for qooxdoo.\n This class is used by {@link qx.core.Environment} and should not be used\n directly. Please check its class comment for details how to use it.</p>"
-        }
-      ],
-      "@require": [
-        {
-          "name": "@require",
-          "body": "qx.bom.client.OperatingSystem#getVersion"
-        }
-      ],
-      "@internal": [
-        {
-          "name": "@internal",
-          "body": ""
-        }
-      ]
+    "end": {
+      "line": 233,
+      "column": 3,
+      "index": 7031
     }
   },
-  "type": "class",
+  "className": "qx.bom.client.Browser",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Basic browser detection for qooxdoo.",
+      " *",
+      " * This class is used by {@link qx.core.Environment} and should not be used",
+      " * directly. Please check its class comment for details how to use it.",
+      " *",
+      " * @require(qx.bom.client.OperatingSystem#getVersion)",
+      " * @internal",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Basic browser detection for qooxdoo.\n This class is used by {@link qx.core.Environment} and should not be used\n directly. Please check its class comment for details how to use it.</p>"
+      }
+    ],
+    "@require": [
+      {
+        "name": "@require",
+        "body": "qx.bom.client.OperatingSystem#getVersion"
+      }
+    ],
+    "@internal": [
+      {
+        "name": "@internal",
+        "body": ""
+      }
+    ]
+  },
   "statics": {
     "getName": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Checks for the name of the browser and returns it.",
+          "     * @return {String} The name of the current browser.",
+          "     * @internal",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Checks for the name of the browser and returns it.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{String} The name of the current browser.",
+            "type": "string",
+            "description": "The name of the current browser."
+          }
+        ],
+        "@internal": [
+          {
+            "name": "@internal",
+            "body": ""
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 54,
@@ -55,45 +92,23 @@
           "index": 1486
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Checks for the name of the browser and returns it.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{String} The name of the current browser.",
-            "type": "String",
-            "description": " The name of the current browser."
-          }
-        ],
-        "@internal": [
-          {
-            "name": "@internal",
-            "body": ""
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
     },
     "detectName": {
-      "location": {
-        "start": {
-          "line": 64,
-          "column": 4,
-          "index": 1700
-        },
-        "end": {
-          "line": 116,
-          "column": 5,
-          "index": 3268
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Examines the user agent of the browser to determine the browser name",
+          "     *",
+          "     * @param agent {String} the user agent string",
+          "     * @return {String} The name of the current browser.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -106,22 +121,74 @@
             "body": "agent {String} the user agent string",
             "paramName": "agent",
             "description": " the user agent string",
-            "type": "String"
+            "type": "string"
           }
         ],
         "@return": [
           {
             "name": "@return",
             "body": "{String} The name of the current browser.",
-            "type": "String",
-            "description": " The name of the current browser."
+            "type": "string",
+            "description": "The name of the current browser."
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 64,
+          "column": 4,
+          "index": 1700
+        },
+        "end": {
+          "line": 116,
+          "column": 5,
+          "index": 3268
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "agent",
+          "type": "string"
+        }
+      ],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
     },
     "getVersion": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Determines the version of the current browser.",
+          "     * @return {String} The name of the current browser.",
+          "     * @internal",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Determines the version of the current browser.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{String} The name of the current browser.",
+            "type": "string",
+            "description": "The name of the current browser."
+          }
+        ],
+        "@internal": [
+          {
+            "name": "@internal",
+            "body": ""
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 123,
@@ -134,45 +201,23 @@
           "index": 4723
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Determines the version of the current browser.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{String} The name of the current browser.",
-            "type": "String",
-            "description": " The name of the current browser."
-          }
-        ],
-        "@internal": [
-          {
-            "name": "@internal",
-            "body": ""
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
     },
     "getDocumentMode": {
-      "location": {
-        "start": {
-          "line": 177,
-          "column": 4,
-          "index": 4905
-        },
-        "end": {
-          "line": 182,
-          "column": 5,
-          "index": 5027
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns in which document mode the current document is (only for IE).",
+          "     *",
+          "     * @internal",
+          "     * @return {Number} The mode in which the browser is.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -189,28 +234,41 @@
           {
             "name": "@return",
             "body": "{Number} The mode in which the browser is.",
-            "type": "Number",
-            "description": " The mode in which the browser is."
+            "type": "number",
+            "description": "The mode in which the browser is."
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getQuirksMode": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 190,
+          "line": 177,
           "column": 4,
-          "index": 5187
+          "index": 4905
         },
         "end": {
-          "line": 199,
+          "line": 182,
           "column": 5,
-          "index": 5477
+          "index": 5027
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "number"
+      },
+      "appearsIn": []
+    },
+    "getQuirksMode": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Check if in quirks mode.",
+          "     *",
+          "     * @internal",
+          "     * @return {Boolean} <code>true</code>, if the environment is in quirks mode",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -227,15 +285,46 @@
           {
             "name": "@return",
             "body": "{Boolean} <code>true</code>, if the environment is in quirks mode",
-            "type": "Boolean",
-            "description": " <code>true</code>, if the environment is in quirks mode"
+            "type": "boolean",
+            "description": "<code>true</code>, if the environment is in quirks mode"
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 190,
+          "column": 4,
+          "index": 5187
+        },
+        "end": {
+          "line": 199,
+          "column": 5,
+          "index": 5477
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
     },
     "__agents": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Internal helper map for picking the right browser names to check.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Internal helper map for picking the right browser names to check.</p>"
+          }
+        ]
+      },
+      "access": "private",
       "location": {
         "start": {
           "line": 204,
@@ -248,31 +337,9 @@
           "index": 6716
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Internal helper map for picking the right browser names to check.</p>"
-          }
-        ]
-      },
-      "type": "function",
-      "access": "private"
+      "appearsIn": []
     }
   },
-  "defer": {
-    "location": {
-      "start": {
-        "line": 227,
-        "column": 2,
-        "index": 6725
-      },
-      "end": {
-        "line": 232,
-        "column": 3,
-        "index": 7027
-      }
-    }
-  },
-  "descendants": []
+  "members": {},
+  "properties": {}
 }

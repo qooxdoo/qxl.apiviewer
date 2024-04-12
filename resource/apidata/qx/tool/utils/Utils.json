@@ -1,46 +1,63 @@
 {
-  "className": "qx.tool.utils.Utils",
-  "packageName": "qx.tool.utils",
-  "name": "Utils",
-  "superClass": "qx.core.Object",
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 31,
-        "column": 0,
-        "index": 757
-      },
-      "end": {
-        "line": 606,
-        "column": 3,
-        "index": 16222
-      }
+  "version": 0.3,
+  "lastModified": 1712910031237,
+  "lastModifiedIso": "2024-04-12T08:20:31.237Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/tool/utils/Utils.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 31,
+      "column": 0,
+      "index": 757
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": ""
-        },
-        {
-          "name": "@description",
-          "body": "<p>Utility methods</p>"
-        }
-      ],
-      "@ignore": [
-        {
-          "name": "@ignore",
-          "body": "process"
-        }
-      ]
+    "end": {
+      "line": 606,
+      "column": 3,
+      "index": 16255
     }
   },
-  "type": "class",
+  "className": "qx.tool.utils.Utils",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Utility methods",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Utility methods</p>"
+      }
+    ]
+  },
+  "superClass": "qx.core.Object",
   "statics": {
     "newExternalPromise": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Creates a Promise which can be resolved/rejected externally - it has",
+          "     * the resolve/reject methods as properties",
+          "     *",
+          "     * @returns {Promise} a promise",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Creates a Promise which can be resolved/rejected externally - it has\n the resolve/reject methods as properties</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Promise} a promise",
+            "type": "Promise<any>",
+            "description": "a promise"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 41,
@@ -53,26 +70,16 @@
           "index": 1297
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Creates a Promise which can be resolved/rejected externally - it has\n the resolve/reject methods as properties</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Promise} a promise",
-            "type": "Promise",
-            "description": " a promise"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "Promise<any>"
+      },
+      "appearsIn": []
     },
     "promisifyThis": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 53,
@@ -86,60 +93,67 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "fn"
+        },
+        {
+          "name": "self"
+        },
+        {
+          "name": "...args"
+        }
+      ],
+      "appearsIn": []
     },
     "UserError": {
-      "location": {
-        "start": {
-          "line": 78,
-          "column": 4,
-          "index": 1884
-        },
-        "end": {
-          "line": 84,
-          "column": 5,
-          "index": 2043
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Error that can be thrown to indicate wrong user input  and which doesn't",
+          "     * need a stack trace",
+          "     *",
+          "     * @type {new (message: string) => Error}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
             "body": "<p>Error that can be thrown to indicate wrong user input  and which doesn't\n need a stack trace</p>"
           }
         ],
-        "@param": [
+        "@type": [
           {
-            "name": "@param",
-            "body": "{string} message"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Error}",
-            "type": "Error",
-            "description": ""
+            "name": "@type",
+            "body": "{new (message: string) => Error}"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "formatTime": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 92,
+          "line": 77,
           "column": 4,
-          "index": 2219
+          "index": 1875
         },
         "end": {
-          "line": 113,
+          "line": 83,
           "column": 5,
-          "index": 2897
+          "index": 2034
         }
       },
+      "appearsIn": []
+    },
+    "formatTime": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Formats the time in a human readable format, eg \"1h 23m 45.678s\"",
+          "     *",
+          "     * @param {number} millisec",
+          "     * @returns {string} formatted string",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -149,7 +163,10 @@
         "@param": [
           {
             "name": "@param",
-            "body": "{number} millisec"
+            "body": "{number} millisec",
+            "paramName": "millisec",
+            "description": "",
+            "type": "number"
           }
         ],
         "@return": [
@@ -157,27 +174,44 @@
             "name": "@return",
             "body": "{string} formatted string",
             "type": "string",
-            "description": " formatted string"
+            "description": "formatted string"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "mkpath": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 120,
+          "line": 91,
           "column": 4,
-          "index": 2976
+          "index": 2210
         },
         "end": {
-          "line": 165,
+          "line": 114,
           "column": 5,
-          "index": 4188
+          "index": 2930
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "millisec",
+          "type": "number"
+        }
+      ],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
+    },
+    "mkpath": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Creates a dir",
+          "     * @param dir",
+          "     * @param cb",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -199,23 +233,37 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "mkParentPath": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 170,
+          "line": 121,
           "column": 4,
-          "index": 4291
+          "index": 3009
         },
         "end": {
-          "line": 178,
+          "line": 166,
           "column": 5,
-          "index": 4505
+          "index": 4221
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "dir"
+        },
+        {
+          "name": "cb"
+        }
+      ],
+      "appearsIn": []
+    },
+    "mkParentPath": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Creates the parent directory of a filename, if it does not already exist",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -223,23 +271,41 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "makeParentDir": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 187,
+          "line": 171,
           "column": 4,
-          "index": 4737
+          "index": 4324
         },
         "end": {
-          "line": 190,
+          "line": 179,
           "column": 5,
-          "index": 4873
+          "index": 4538
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "dir"
+        },
+        {
+          "name": "cb"
+        }
+      ],
+      "appearsIn": []
+    },
+    "makeParentDir": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Creates the parent directory of a filename, if it does not already exist",
+          "     *",
+          "     * @param {string} filename the filename to create the parent directory of",
+          "     *",
+          "     * @return {Promise?} the value",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -260,27 +326,46 @@
             "name": "@return",
             "body": "{Promise?} the value",
             "type": "Promise?",
-            "description": " the value"
+            "description": "the value"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "makeDirs": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 199,
+          "line": 188,
           "column": 4,
-          "index": 5085
+          "index": 4770
         },
         "end": {
-          "line": 202,
+          "line": 191,
           "column": 5,
-          "index": 5187
+          "index": 4906
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "filename",
+          "type": "string"
+        }
+      ],
+      "returnType": {
+        "type": "Promise?"
+      },
+      "appearsIn": []
+    },
+    "makeDirs": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Creates a directory, if it does not exist, including all intermediate paths",
+          "     *",
+          "     * @param {string} filename the directory to create",
+          "     *",
+          "     * @return {Promise?} the value",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -301,27 +386,42 @@
             "name": "@return",
             "body": "{Promise?} the value",
             "type": "Promise?",
-            "description": " the value"
+            "description": "the value"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "LineCountingTransform": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 207,
+          "line": 200,
           "column": 4,
-          "index": 5285
+          "index": 5118
         },
         "end": {
-          "line": 207,
-          "column": 31,
-          "index": 5312
+          "line": 203,
+          "column": 5,
+          "index": 5220
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "filename",
+          "type": "string"
+        }
+      ],
+      "returnType": {
+        "type": "Promise?"
+      },
+      "appearsIn": []
+    },
+    "LineCountingTransform": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Writable stream that keeps track of what the current line number is",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -329,23 +429,28 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "StripSourceMapTransform": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 212,
+          "line": 208,
           "column": 4,
-          "index": 5400
+          "index": 5318
         },
         "end": {
-          "line": 212,
-          "column": 33,
-          "index": 5429
+          "line": 208,
+          "column": 31,
+          "index": 5345
         }
       },
+      "appearsIn": []
+    },
+    "StripSourceMapTransform": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Writable stream that strips out sourceMappingURL comments",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -353,23 +458,29 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "ToStringWriteStream": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 218,
+          "line": 213,
           "column": 4,
-          "index": 5556
+          "index": 5433
         },
         "end": {
-          "line": 218,
-          "column": 29,
-          "index": 5581
+          "line": 213,
+          "column": 33,
+          "index": 5462
         }
       },
+      "appearsIn": []
+    },
+    "ToStringWriteStream": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Writable stream that keeps track of what's been written and can return",
+          "     * a copy as a string",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -377,40 +488,69 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 219,
+          "column": 4,
+          "index": 5589
+        },
+        "end": {
+          "line": 219,
+          "column": 29,
+          "index": 5614
+        }
+      },
+      "appearsIn": []
     },
     "isPlainObject": {
+      "jsdoc": {
+        "raw": [
+          "  Function to test if an object is a plain object, i.e. is constructed",
+          "     **  by the built-in Object constructor and inherits directly from Object.prototype",
+          "     **  or null. Some built-in objects pass the test, e.g. Math which is a plain object",
+          "     **  and some host or exotic objects may pass also.",
+          "     **",
+          "     **  @param {} obj - value to test",
+          "     **  @returns {Boolean} true if passes tests, false otherwise",
+          "     *",
+          "     * @see https://stackoverflow.com/a/5878101/2979698",
+          "     "
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
-          "line": 230,
+          "line": 231,
           "column": 4,
-          "index": 6082
+          "index": 6115
         },
         "end": {
-          "line": 246,
+          "line": 247,
           "column": 5,
-          "index": 6697
+          "index": 6730
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "obj"
+        }
+      ],
+      "appearsIn": []
     },
     "runCommand": {
-      "location": {
-        "start": {
-          "line": 256,
-          "column": 4,
-          "index": 7114
-        },
-        "end": {
-          "line": 324,
-          "column": 5,
-          "index": 8821
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Runs the given command and returns an object containing information on the",
+          "     * `exitCode`, the `output`, potential `error`s, and additional `messages`.",
+          "     * @param {String} cwd The current working directory",
+          "     * @param {String} args One or more command line arguments, including the",
+          "     * command itself",
+          "     * @return {{exitCode: Number, output: String, error: *, messages: *}}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -423,42 +563,65 @@
             "body": "{String} cwd The current working directory",
             "paramName": "cwd",
             "description": "The current working directory",
-            "type": "String"
+            "type": "string"
           },
           {
             "name": "@param",
             "body": "{String} args One or more command line arguments, including the\n command itself",
             "paramName": "args",
             "description": "One or more command line arguments, including the\n command itself",
-            "type": "String"
+            "type": "string"
           }
         ],
         "@return": [
           {
             "name": "@return",
             "body": "{{exitCode: Number, output: String, error: *, messages: *}}",
-            "type": "{exitCode: Number, output: String, error: *, messages: *",
-            "description": "}"
+            "type": "{exitCode: Number, output: String, error: *, messages: *}",
+            "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "run": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 334,
+          "line": 257,
           "column": 4,
-          "index": 9209
+          "index": 7147
         },
         "end": {
-          "line": 357,
+          "line": 325,
           "column": 5,
-          "index": 10003
+          "index": 8854
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "cwd",
+          "type": "string"
+        },
+        {
+          "name": "...args"
+        }
+      ],
+      "returnType": {
+        "type": "{exitCode: Number, output: String, error: *, messages: *}"
+      },
+      "appearsIn": []
+    },
+    "run": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Awaitable wrapper around child_process.spawn.",
+          "     * Runs a command in a separate process. The output of the command",
+          "     * is ignored. Throws when the exit code is not 0.",
+          "     * @param  {String} cmd Name of the command",
+          "     * @param  {Array} args Array of arguments to the command",
+          "     * @return {Promise<Number>} A promise that resolves with the exit code",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -471,14 +634,14 @@
             "body": "{String} cmd Name of the command",
             "paramName": "cmd",
             "description": "Name of the command",
-            "type": "String"
+            "type": "string"
           },
           {
             "name": "@param",
             "body": "{Array} args Array of arguments to the command",
             "paramName": "args",
             "description": "Array of arguments to the command",
-            "type": "Array"
+            "type": "Array<any>"
           }
         ],
         "@return": [
@@ -486,27 +649,49 @@
             "name": "@return",
             "body": "{Promise<Number>} A promise that resolves with the exit code",
             "type": "Promise<Number>",
-            "description": " A promise that resolves with the exit code"
+            "description": "A promise that resolves with the exit code"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "exec": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 365,
+          "line": 335,
           "column": 4,
-          "index": 10273
+          "index": 9242
         },
         "end": {
-          "line": 377,
+          "line": 358,
           "column": 5,
-          "index": 10579
+          "index": 10036
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "cmd",
+          "type": "string"
+        },
+        {
+          "name": "args",
+          "type": "Array<any>"
+        }
+      ],
+      "returnType": {
+        "type": "Promise<Number>"
+      },
+      "appearsIn": []
+    },
+    "exec": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Awaitable wrapper around child_process.exec",
+          "     * Executes a command and return its result wrapped in a Promise.",
+          "     * @param cmd {String} Command with all parameters",
+          "     * @return {Promise<String>} Promise that resolves with the result",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -519,7 +704,7 @@
             "body": "cmd {String} Command with all parameters",
             "paramName": "cmd",
             "description": " Command with all parameters",
-            "type": "String"
+            "type": "string"
           }
         ],
         "@return": [
@@ -527,27 +712,45 @@
             "name": "@return",
             "body": "{Promise<String>} Promise that resolves with the result",
             "type": "Promise<String>",
-            "description": " Promise that resolves with the result"
+            "description": "Promise that resolves with the result"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "parseCommand": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 385,
+          "line": 366,
           "column": 4,
-          "index": 10776
+          "index": 10306
         },
         "end": {
-          "line": 425,
+          "line": 378,
           "column": 5,
-          "index": 11688
+          "index": 10612
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "cmd",
+          "type": "string"
+        }
+      ],
+      "returnType": {
+        "type": "Promise<String>"
+      },
+      "appearsIn": []
+    },
+    "parseCommand": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Parses a command line and separates them out into an array that can be given to `child_process.spawn` etc",
+          "     *",
+          "     * @param {String} cmd",
+          "     * @returns {String[]}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -557,7 +760,10 @@
         "@param": [
           {
             "name": "@param",
-            "body": "{String} cmd"
+            "body": "{String} cmd",
+            "paramName": "cmd",
+            "description": "",
+            "type": "string"
           }
         ],
         "@return": [
@@ -569,23 +775,40 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "quoteCommand": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 433,
+          "line": 386,
           "column": 4,
-          "index": 11886
+          "index": 10809
         },
         "end": {
-          "line": 454,
+          "line": 426,
           "column": 5,
-          "index": 12491
+          "index": 11721
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "str"
+        }
+      ],
+      "returnType": {
+        "type": "String[]"
+      },
+      "appearsIn": []
+    },
+    "quoteCommand": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Quotes special characters in the argument array, ensuring that they are safe to pass to the command line",
+          "     *",
+          "     * @param {String[]} cmd",
+          "     * @returns {String[]}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -595,7 +818,10 @@
         "@param": [
           {
             "name": "@param",
-            "body": "{String[]} cmd"
+            "body": "{String[]} cmd",
+            "paramName": "cmd",
+            "description": "",
+            "type": "String[]"
           }
         ],
         "@return": [
@@ -607,23 +833,41 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "formatCommand": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 462,
+          "line": 434,
           "column": 4,
-          "index": 12605
+          "index": 11919
         },
         "end": {
-          "line": 464,
+          "line": 455,
           "column": 5,
-          "index": 12693
+          "index": 12524
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "cmd",
+          "type": "String[]"
+        }
+      ],
+      "returnType": {
+        "type": "String[]"
+      },
+      "appearsIn": []
+    },
+    "formatCommand": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Reformats a command line",
+          "     *",
+          "     * @param {String} cmd",
+          "     * @returns {String}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -633,35 +877,55 @@
         "@param": [
           {
             "name": "@param",
-            "body": "{String} cmd"
+            "body": "{String} cmd",
+            "paramName": "cmd",
+            "description": "",
+            "type": "string"
           }
         ],
         "@return": [
           {
             "name": "@return",
             "body": "{String}",
-            "type": "String",
+            "type": "string",
             "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "killTree": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 471,
+          "line": 463,
           "column": 4,
-          "index": 12809
+          "index": 12638
         },
         "end": {
-          "line": 493,
+          "line": 465,
           "column": 5,
-          "index": 13349
+          "index": 12726
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "cmd",
+          "type": "string"
+        }
+      ],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
+    },
+    "killTree": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Kills a process tree",
+          "     *",
+          "     * @param {Number} parentId parent process ID to kill",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -674,27 +938,40 @@
             "body": "{Number} parentId parent process ID to kill",
             "paramName": "parentId",
             "description": "parent process ID to kill",
-            "type": "Number"
+            "type": "number"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getTemplateDir": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 499,
+          "line": 472,
           "column": 4,
-          "index": 13455
+          "index": 12842
         },
         "end": {
-          "line": 506,
+          "line": 494,
           "column": 5,
-          "index": 13648
+          "index": 13382
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "parentId",
+          "type": "number"
+        }
+      ],
+      "appearsIn": []
+    },
+    "getTemplateDir": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the absolute path to the template directory",
+          "     * @return {String}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -705,28 +982,43 @@
           {
             "name": "@return",
             "body": "{String}",
-            "type": "String",
+            "type": "string",
             "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "isExplicitArg": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 516,
+          "line": 499,
           "column": 4,
-          "index": 13975
+          "index": 13488
         },
         "end": {
-          "line": 521,
+          "line": 506,
           "column": 5,
-          "index": 14181
+          "index": 13681
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
+    },
+    "isExplicitArg": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Detects whether the command line explicit set an option (as opposed to yargs",
+          "     * providing a default value).  Note that this does not handle aliases, use the",
+          "     * actual, full option name.",
+          "     *",
+          "     * @param option {String} the name of the option, eg \"listen-port\"",
+          "     * @return {Boolean}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -739,175 +1031,44 @@
             "body": "option {String} the name of the option, eg \"listen-port\"",
             "paramName": "option",
             "description": " the name of the option, eg \"listen-port\"",
-            "type": "String"
+            "type": "string"
           }
         ],
         "@return": [
           {
             "name": "@return",
             "body": "{Boolean}",
-            "type": "Boolean",
+            "type": "boolean",
             "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    }
-  },
-  "defer": {
-    "location": {
-      "start": {
-        "line": 524,
-        "column": 2,
-        "index": 14190
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 516,
+          "column": 4,
+          "index": 14008
+        },
+        "end": {
+          "line": 521,
+          "column": 5,
+          "index": 14214
+        }
       },
-      "end": {
-        "line": 605,
-        "column": 3,
-        "index": 16218
-      }
+      "type": "function",
+      "params": [
+        {
+          "name": "option",
+          "type": "string"
+        }
+      ],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
     }
   },
-  "members": {
-    "getQxOwner": {
-      "type": "function",
-      "name": "getQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "qx.core.Object",
-            "desc": "Returns the value for qxOwner"
-          }
-        ]
-      }
-    },
-    "setQxOwner": {
-      "type": "function",
-      "name": "setQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.core.Object",
-            "paramName": "value",
-            "desc": "Value for qxOwner"
-          }
-        ]
-      }
-    },
-    "resetQxOwner": {
-      "type": "function",
-      "name": "resetQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxOwner</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ]
-      }
-    },
-    "getQxObjectId": {
-      "type": "function",
-      "name": "getQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "[[ ObjectMethod Function ]]",
-            "desc": "Returns the value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "setQxObjectId": {
-      "type": "function",
-      "name": "setQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "[[ ObjectMethod Function ]]",
-            "paramName": "value",
-            "desc": "Value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "resetQxObjectId": {
-      "type": "function",
-      "name": "resetQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxObjectId</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ]
-      }
-    }
-  },
-  "descendants": []
+  "members": {},
+  "properties": {}
 }

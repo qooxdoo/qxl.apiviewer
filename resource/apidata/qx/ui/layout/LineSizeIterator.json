@@ -1,41 +1,54 @@
 {
-  "className": "qx.ui.layout.LineSizeIterator",
-  "packageName": "qx.ui.layout",
-  "name": "LineSizeIterator",
-  "superClass": "Object",
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 24,
-        "column": 0,
-        "index": 581
-      },
-      "end": {
-        "line": 131,
-        "column": 3,
-        "index": 3524
-      }
+  "version": 0.3,
+  "lastModified": 1712910030905,
+  "lastModifiedIso": "2024-04-12T08:20:30.905Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/ui/layout/LineSizeIterator.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 24,
+      "column": 0,
+      "index": 581
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>This class iterates over the lines in a flow layout.</p>"
-        }
-      ],
-      "@internal": [
-        {
-          "name": "@internal",
-          "body": ""
-        }
-      ]
+    "end": {
+      "line": 131,
+      "column": 3,
+      "index": 3524
     }
   },
-  "type": "class",
+  "className": "qx.ui.layout.LineSizeIterator",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * This class iterates over the lines in a flow layout.",
+      " *",
+      " * @internal",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>This class iterates over the lines in a flow layout.</p>"
+      }
+    ],
+    "@internal": [
+      {
+        "name": "@internal",
+        "body": ""
+      }
+    ]
+  },
+  "superClass": "Object",
   "construct": {
+    "type": "function",
+    "params": [
+      {
+        "name": "children"
+      },
+      {
+        "name": "spacing"
+      }
+    ],
     "location": {
       "start": {
         "line": 32,
@@ -47,34 +60,12 @@
         "column": 3,
         "index": 1019
       }
-    },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": ""
-        }
-      ],
-      "@param": [
-        {
-          "name": "@param",
-          "body": "children {qx.ui.core.Widget[]} The children of the flow layout to\n    compute the lines from",
-          "paramName": "children",
-          "description": " The children of the flow layout to\n    compute the lines from",
-          "type": "qx.ui.core.Widget[]"
-        },
-        {
-          "name": "@param",
-          "body": "spacing {Integer} The horizontal spacing between the children",
-          "paramName": "spacing",
-          "description": " The horizontal spacing between the children",
-          "type": "Integer"
-        }
-      ]
     }
   },
   "members": {
     "__children": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 41,
@@ -87,10 +78,11 @@
           "index": 1055
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__spacing": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 42,
@@ -103,10 +95,11 @@
           "index": 1076
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__hasMoreLines": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 43,
@@ -119,10 +112,11 @@
           "index": 1102
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__childIndex": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 44,
@@ -135,23 +129,19 @@
           "index": 1126
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "computeNextLine": {
-      "location": {
-        "start": {
-          "line": 53,
-          "column": 4,
-          "index": 1385
-        },
-        "end": {
-          "line": 101,
-          "column": 5,
-          "index": 2741
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Computes the properties of the next line taking the available width into",
+          "     * account",
+          "     *",
+          "     * @param availWidth {Integer} The available width for the next line",
+          "     * @return {Map} A map containing the line's properties.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -171,28 +161,46 @@
           {
             "name": "@return",
             "body": "{Map} A map containing the line's properties.",
-            "type": "Map",
-            "description": " A map containing the line's properties."
+            "type": "Map<any, any>",
+            "description": "A map containing the line's properties."
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "__computeGapBeforeChild": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 109,
+          "line": 53,
           "column": 4,
-          "index": 2952
+          "index": 1385
         },
         "end": {
-          "line": 120,
+          "line": 101,
           "column": 5,
-          "index": 3340
+          "index": 2741
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "availWidth",
+          "type": "Integer"
+        }
+      ],
+      "returnType": {
+        "type": "Map<any, any>"
+      },
+      "appearsIn": []
+    },
+    "__computeGapBeforeChild": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Computes the gap before the child at the given index",
+          "     *",
+          "     * @param childIndex {Integer} The index of the child widget",
+          "     * @return {Integer} The gap before the given child",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -213,14 +221,60 @@
             "name": "@return",
             "body": "{Integer} The gap before the given child",
             "type": "Integer",
-            "description": " The gap before the given child"
+            "description": "The gap before the given child"
           }
         ]
       },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 109,
+          "column": 4,
+          "index": 2952
+        },
+        "end": {
+          "line": 120,
+          "column": 5,
+          "index": 3340
+        }
+      },
       "type": "function",
-      "access": "private"
+      "params": [
+        {
+          "name": "childIndex",
+          "type": "Integer"
+        }
+      ],
+      "returnType": {
+        "type": "Integer"
+      },
+      "appearsIn": []
     },
     "hasMoreLines": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether there are more lines",
+          "     *",
+          "     * @return {Boolean} Whether there are more lines",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Whether there are more lines</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} Whether there are more lines",
+            "type": "boolean",
+            "description": "Whether there are more lines"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 127,
@@ -233,25 +287,14 @@
           "index": 3516
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Whether there are more lines</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Boolean} Whether there are more lines",
-            "type": "Boolean",
-            "description": " Whether there are more lines"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "statics": {},
+  "properties": {}
 }

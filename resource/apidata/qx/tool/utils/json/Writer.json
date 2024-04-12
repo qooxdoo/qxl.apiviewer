@@ -1,35 +1,39 @@
 {
-  "className": "qx.tool.utils.json.Writer",
-  "packageName": "qx.tool.utils.json",
-  "name": "Writer",
-  "superClass": "qx.core.Object",
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 26,
-        "column": 0,
-        "index": 783
-      },
-      "end": {
-        "line": 145,
-        "column": 3,
-        "index": 4117
-      }
+  "version": 0.3,
+  "lastModified": 1712910031269,
+  "lastModifiedIso": "2024-04-12T08:20:31.269Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/tool/utils/json/Writer.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 26,
+      "column": 0,
+      "index": 783
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Writer for serialising JSON, automatically indenting as required</p>"
-        }
-      ]
+    "end": {
+      "line": 145,
+      "column": 3,
+      "index": 4117
     }
   },
-  "type": "class",
+  "className": "qx.tool.utils.json.Writer",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Writer for serialising JSON, automatically indenting as required",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Writer for serialising JSON, automatically indenting as required</p>"
+      }
+    ]
+  },
+  "superClass": "qx.core.Object",
   "construct": {
+    "type": "function",
+    "params": [],
     "location": {
       "start": {
         "line": 29,
@@ -45,6 +49,21 @@
   },
   "members": {
     "write": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Writes a string/number.  Multiple lines are rewritten with indentation at the",
+          "     * start of each line",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Writes a string/number.  Multiple lines are rewritten with indentation at the\n start of each line</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 42,
@@ -57,18 +76,29 @@
           "index": 2010
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "str"
+        }
+      ],
+      "appearsIn": []
+    },
+    "comments": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Outputs comments",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Writes a string/number.  Multiple lines are rewritten with indentation at the\n start of each line</p>"
+            "body": "<p>Outputs comments</p>"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "comments": {
+      "access": "public",
       "location": {
         "start": {
           "line": 76,
@@ -81,31 +111,23 @@
           "index": 2233
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Outputs comments</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "comments"
+        }
+      ],
+      "appearsIn": []
     },
     "indent": {
-      "location": {
-        "start": {
-          "line": 90,
-          "column": 4,
-          "index": 2402
-        },
-        "end": {
-          "line": 113,
-          "column": 5,
-          "index": 3068
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Increases or decreases the indentation level (one indent is two spaces)",
+          "     *",
+          "     * @param count {Number} number to increase/decrease by",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -118,14 +140,64 @@
             "body": "count {Number} number to increase/decrease by",
             "paramName": "count",
             "description": " number to increase/decrease by",
-            "type": "Number"
+            "type": "number"
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 90,
+          "column": 4,
+          "index": 2402
+        },
+        "end": {
+          "line": 113,
+          "column": 5,
+          "index": 3068
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "count",
+          "type": "number"
+        }
+      ],
+      "appearsIn": []
     },
     "matchIndent": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Detects the current indentation level in the output, which has been added manually,",
+          "     * ie outside of the `indent()` method.  When outputting an AST via `reprint()`, whitespace",
+          "     * is copied too, this allows the code to adopt whatever indentation level has been",
+          "     * output by the AST so that injecting `prettyPrint()`-ed new objects are at the same\\",
+          "     * level.",
+          "     *",
+          "     * The old indent is returned, and should be passed to `resetIndent()` to restore the",
+          "     * previous value.",
+          "     *",
+          "     * @return {Object} previous indentation",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Detects the current indentation level in the output, which has been added manually,\n ie outside of the <code>indent()</code> method.  When outputting an AST via <code>reprint()</code>, whitespace\n is copied too, this allows the code to adopt whatever indentation level has been\n output by the AST so that injecting <code>prettyPrint()</code>-ed new objects are at the same\\\n level.\n The old indent is returned, and should be passed to <code>resetIndent()</code> to restore the\n previous value.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Object} previous indentation",
+            "type": "Record<any, any>",
+            "description": "previous indentation"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 127,
@@ -138,39 +210,22 @@
           "index": 3884
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Detects the current indentation level in the output, which has been added manually,\n ie outside of the <code>indent()</code> method.  When outputting an AST via <code>reprint()</code>, whitespace\n is copied too, this allows the code to adopt whatever indentation level has been\n output by the AST so that injecting <code>prettyPrint()</code>-ed new objects are at the same\\\n level.\n The old indent is returned, and should be passed to <code>resetIndent()</code> to restore the\n previous value.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Object} previous indentation",
-            "type": "Object",
-            "description": " previous indentation"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "Record<any, any>"
+      },
+      "appearsIn": []
     },
     "resetIndent": {
-      "location": {
-        "start": {
-          "line": 141,
-          "column": 4,
-          "index": 4049
-        },
-        "end": {
-          "line": 143,
-          "column": 5,
-          "index": 4109
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Restores the previous indentation settings prior to `matchIndent()`",
+          "     *",
+          "     * @param indent {Object} previous indentation settings",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -183,151 +238,33 @@
             "body": "indent {Object} previous indentation settings",
             "paramName": "indent",
             "description": " previous indentation settings",
-            "type": "Object"
+            "type": "Record<any, any>"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getQxOwner": {
-      "type": "function",
-      "name": "getQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "qx.core.Object",
-            "desc": "Returns the value for qxOwner"
-          }
-        ]
-      }
-    },
-    "setQxOwner": {
+      "location": {
+        "start": {
+          "line": 141,
+          "column": 4,
+          "index": 4049
+        },
+        "end": {
+          "line": 143,
+          "column": 5,
+          "index": 4109
+        }
+      },
       "type": "function",
-      "name": "setQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.core.Object",
-            "paramName": "value",
-            "desc": "Value for qxOwner"
-          }
-        ]
-      }
-    },
-    "resetQxOwner": {
-      "type": "function",
-      "name": "resetQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxOwner</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ]
-      }
-    },
-    "getQxObjectId": {
-      "type": "function",
-      "name": "getQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "[[ ObjectMethod Function ]]",
-            "desc": "Returns the value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "setQxObjectId": {
-      "type": "function",
-      "name": "setQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "[[ ObjectMethod Function ]]",
-            "paramName": "value",
-            "desc": "Value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "resetQxObjectId": {
-      "type": "function",
-      "name": "resetQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxObjectId</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ]
-      }
+      "params": [
+        {
+          "name": "indent",
+          "type": "Record<any, any>"
+        }
+      ],
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "statics": {},
+  "properties": {}
 }

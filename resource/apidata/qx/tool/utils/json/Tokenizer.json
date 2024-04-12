@@ -1,35 +1,46 @@
 {
-  "className": "qx.tool.utils.json.Tokenizer",
-  "packageName": "qx.tool.utils.json",
-  "name": "Tokenizer",
-  "superClass": "qx.core.Object",
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 50,
-        "column": 0,
-        "index": 1355
-      },
-      "end": {
-        "line": 623,
-        "column": 3,
-        "index": 16160
-      }
+  "version": 0.3,
+  "lastModified": 1712910031209,
+  "lastModifiedIso": "2024-04-12T08:20:31.209Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/tool/utils/json/Tokenizer.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 50,
+      "column": 0,
+      "index": 1355
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Tokenizer, based on json-to-ast by Vlad trushin</p>"
-        }
-      ]
+    "end": {
+      "line": 623,
+      "column": 3,
+      "index": 16160
     }
   },
-  "type": "class",
+  "className": "qx.tool.utils.json.Tokenizer",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Tokenizer, based on json-to-ast by Vlad trushin",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Tokenizer, based on json-to-ast by Vlad trushin</p>"
+      }
+    ]
+  },
+  "superClass": "qx.core.Object",
   "construct": {
+    "type": "function",
+    "params": [
+      {
+        "name": "input"
+      },
+      {
+        "name": "settings"
+      }
+    ],
     "location": {
       "start": {
         "line": 53,
@@ -45,6 +56,8 @@
   },
   "members": {
     "token": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 62,
@@ -58,9 +71,12 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "appearsIn": []
     },
     "hasMore": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 75,
@@ -74,9 +90,12 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "appearsIn": []
     },
     "next": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 102,
@@ -90,9 +109,12 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "appearsIn": []
     },
     "tokenize": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 135,
@@ -106,149 +128,14 @@
         }
       },
       "type": "function",
-      "access": "public"
-    },
-    "getQxOwner": {
-      "type": "function",
-      "name": "getQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "qx.core.Object",
-            "desc": "Returns the value for qxOwner"
-          }
-        ]
-      }
-    },
-    "setQxOwner": {
-      "type": "function",
-      "name": "setQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.core.Object",
-            "paramName": "value",
-            "desc": "Value for qxOwner"
-          }
-        ]
-      }
-    },
-    "resetQxOwner": {
-      "type": "function",
-      "name": "resetQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxOwner</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ]
-      }
-    },
-    "getQxObjectId": {
-      "type": "function",
-      "name": "getQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "[[ ObjectMethod Function ]]",
-            "desc": "Returns the value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "setQxObjectId": {
-      "type": "function",
-      "name": "setQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "[[ ObjectMethod Function ]]",
-            "paramName": "value",
-            "desc": "Value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "resetQxObjectId": {
-      "type": "function",
-      "name": "resetQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxObjectId</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ]
-      }
+      "params": [],
+      "appearsIn": []
     }
   },
   "statics": {
     "tokenTypes": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 193,
@@ -261,10 +148,11 @@
           "index": 5047
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "punctuatorTokensMap": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 195,
@@ -277,10 +165,11 @@
           "index": 5316
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "keywordTokensMap": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 205,
@@ -293,10 +182,11 @@
           "index": 5542
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "stringStates": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 212,
@@ -309,10 +199,11 @@
           "index": 5634
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "escapes": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 218,
@@ -325,10 +216,11 @@
           "index": 5942
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "numberStates": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 230,
@@ -341,10 +233,15 @@
           "index": 6117
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "isDigit1to9": {
+      "jsdoc": {
+        "raw": [
+          " HELPERS"
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 243,
@@ -357,11 +254,17 @@
           "index": 6206
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "char"
+        }
+      ],
+      "appearsIn": []
     },
     "isDigit": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 247,
@@ -375,9 +278,16 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "char"
+        }
+      ],
+      "appearsIn": []
     },
     "isHex": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 251,
@@ -391,9 +301,16 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "char"
+        }
+      ],
+      "appearsIn": []
     },
     "isExp": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 259,
@@ -407,9 +324,20 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "char"
+        }
+      ],
+      "appearsIn": []
     },
     "cannotTokenizeSymbol": {
+      "jsdoc": {
+        "raw": [
+          " ERRORS"
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 265,
@@ -422,11 +350,27 @@
           "index": 6669
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "symbol"
+        },
+        {
+          "name": "line"
+        },
+        {
+          "name": "column"
+        }
+      ],
+      "appearsIn": []
     },
     "parseWhitespace": {
+      "jsdoc": {
+        "raw": [
+          " PARSERS"
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 271,
@@ -439,11 +383,26 @@
           "index": 7628
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "input"
+        },
+        {
+          "name": "index"
+        },
+        {
+          "name": "line"
+        },
+        {
+          "name": "column"
+        }
+      ],
+      "appearsIn": []
     },
     "parseComment": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 314,
@@ -457,9 +416,25 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "input"
+        },
+        {
+          "name": "index"
+        },
+        {
+          "name": "line"
+        },
+        {
+          "name": "column"
+        }
+      ],
+      "appearsIn": []
     },
     "parseChar": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 384,
@@ -473,9 +448,25 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "input"
+        },
+        {
+          "name": "index"
+        },
+        {
+          "name": "line"
+        },
+        {
+          "name": "column"
+        }
+      ],
+      "appearsIn": []
     },
     "parseKeyword": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 402,
@@ -489,9 +480,25 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "input"
+        },
+        {
+          "name": "index"
+        },
+        {
+          "name": "line"
+        },
+        {
+          "name": "column"
+        }
+      ],
+      "appearsIn": []
     },
     "parseString": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 425,
@@ -505,9 +512,28 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "input"
+        },
+        {
+          "name": "index"
+        },
+        {
+          "name": "line"
+        },
+        {
+          "name": "column"
+        },
+        {
+          "name": "settings"
+        }
+      ],
+      "appearsIn": []
     },
     "parseNumber": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 501,
@@ -521,8 +547,22 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "input"
+        },
+        {
+          "name": "index"
+        },
+        {
+          "name": "line"
+        },
+        {
+          "name": "column"
+        }
+      ],
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "properties": {}
 }

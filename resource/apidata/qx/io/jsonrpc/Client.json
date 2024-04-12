@@ -1,36 +1,45 @@
 {
-  "className": "qx.io.jsonrpc.Client",
-  "packageName": "qx.io.jsonrpc",
-  "name": "Client",
-  "superClass": "qx.io.transport.AbstractClient",
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 23,
-        "column": 0,
-        "index": 588
-      },
-      "end": {
-        "line": 355,
-        "column": 3,
-        "index": 11568
-      }
+  "version": 0.3,
+  "lastModified": 1712910030497,
+  "lastModifiedIso": "2024-04-12T08:20:30.497Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/io/jsonrpc/Client.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 23,
+      "column": 0,
+      "index": 588
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>This class provides a JSON-RPC client object with auto-configuration of the\n transport used (based on the URI passed).</p>"
-        }
-      ]
+    "end": {
+      "line": 355,
+      "column": 3,
+      "index": 11568
     }
   },
-  "type": "class",
+  "className": "qx.io.jsonrpc.Client",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * This class provides a JSON-RPC client object with auto-configuration of the",
+      " * transport used (based on the URI passed).",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>This class provides a JSON-RPC client object with auto-configuration of the\n transport used (based on the URI passed).</p>"
+      }
+    ]
+  },
+  "superClass": "qx.io.transport.AbstractClient",
   "statics": {
     "registerTransport": {
+      "jsdoc": {
+        "raw": [
+          " statics are not inherited from parent class"
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 28,
@@ -43,13 +52,30 @@
           "index": 808
         }
       },
-      "jsdoc": {},
-      "type": "function",
-      "access": "public"
+      "appearsIn": [
+        "qx.io.transport.AbstractClient"
+      ]
     }
   },
   "events": {
     "outgoingRequest": {
+      "type": "qx.event.type.Data",
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Event fired before a request message is sent to the server.",
+          "     * Event data is the {@link qx.io.jsonrpc.protocol.Message} to",
+          "     * be sent. This also allows listeners to configure the transport",
+          "     * object beforehand.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Event fired before a request message is sent to the server.\n Event data is the {@link qx.io.jsonrpc.protocol.Message} to\n be sent. This also allows listeners to configure the transport\n object beforehand.</p>"
+          }
+        ]
+      },
       "location": {
         "start": {
           "line": 38,
@@ -61,19 +87,27 @@
           "column": 41,
           "index": 1114
         }
-      },
+      }
+    },
+    "error": {
+      "type": "qx.event.type.Data",
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Event fired when a request results in an error. Event data is an instance of",
+          "     * {@link qx.io.exception.Transport}, {@link qx.io.exception.Protocol},",
+          "     * or {@link qx.io.exception.Cancel}.",
+          "     * Event fired when a message is received from the endpoint. Event data",
+          "     * is an UTF-8 encoded string",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Event fired before a request message is sent to the server.\n Event data is the {@link qx.io.jsonrpc.protocol.Message} to\n be sent. This also allows listeners to configure the transport\n object beforehand.</p>"
+            "body": "<p>Event fired when a request results in an error. Event data is an instance of\n {@link qx.io.exception.Transport}, {@link qx.io.exception.Protocol},\n or {@link qx.io.exception.Cancel}.\n Event fired when a message is received from the endpoint. Event data\n is an UTF-8 encoded string</p>"
           }
         ]
       },
-      "name": "outgoingRequest",
-      "type": "qx.event.type.Data"
-    },
-    "error": {
       "location": {
         "start": {
           "line": 47,
@@ -85,19 +119,26 @@
           "column": 31,
           "index": 1476
         }
-      },
+      }
+    },
+    "incomingRequest": {
+      "type": "qx.event.type.Data",
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Event fired when a peer-originated JSON-RPC message has been",
+          "     * received from the peer endpoint. Event data is an instance of {@link",
+          "     * qx.io.jsonrpc.message.Batch}, {@link qx.io.jsonrpc.message.Request}",
+          "     * or {@link qx.io.jsonrpc.protocol.Notification}.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Event fired when a request results in an error. Event data is an instance of\n {@link qx.io.exception.Transport}, {@link qx.io.exception.Protocol},\n or {@link qx.io.exception.Cancel}.\n Event fired when a message is received from the endpoint. Event data\n is an UTF-8 encoded string</p>"
+            "body": "<p>Event fired when a peer-originated JSON-RPC message has been\n received from the peer endpoint. Event data is an instance of {@link\n qx.io.jsonrpc.message.Batch}, {@link qx.io.jsonrpc.message.Request}\n or {@link qx.io.jsonrpc.protocol.Notification}.</p>"
           }
         ]
       },
-      "name": "error",
-      "type": "qx.event.type.Data"
-    },
-    "incomingRequest": {
       "location": {
         "start": {
           "line": 55,
@@ -109,20 +150,22 @@
           "column": 41,
           "index": 1810
         }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event fired when a peer-originated JSON-RPC message has been\n received from the peer endpoint. Event data is an instance of {@link\n qx.io.jsonrpc.message.Batch}, {@link qx.io.jsonrpc.message.Request}\n or {@link qx.io.jsonrpc.protocol.Notification}.</p>"
-          }
-        ]
-      },
-      "name": "incomingRequest",
-      "type": "qx.event.type.Data"
+      }
     }
   },
   "construct": {
+    "type": "function",
+    "params": [
+      {
+        "name": "transportOrUri"
+      },
+      {
+        "name": "methodPrefix"
+      },
+      {
+        "name": "parser"
+      }
+    ],
     "location": {
       "start": {
         "line": 68,
@@ -134,42 +177,6 @@
         "column": 3,
         "index": 2907
       }
-    },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": ""
-        }
-      ],
-      "@param": [
-        {
-          "name": "@param",
-          "body": "{qx.io.transport.ITransport|String} transportOrUri\n    Transport object, which must implement {@link qx.io.transport.ITransport}\n    or a string URI, which will trigger auto-detection of transport, as long as an\n    appropriate transport has been registered with the static <code>registerTransport()</code> function.",
-          "paramName": "transportOrUri",
-          "description": "Transport object, which must implement {@link qx.io.transport.ITransport}\n    or a string URI, which will trigger auto-detection of transport, as long as an\n    appropriate transport has been registered with the static <code>registerTransport()</code> function.",
-          "type": [
-            "qx.io.transport.ITransport",
-            "String"
-          ]
-        },
-        {
-          "name": "@param",
-          "body": "{String?} methodPrefix\n    Optional service name which will be prepended to the method",
-          "paramName": "methodPrefix",
-          "description": "Optional service name which will be prepended to the method",
-          "optional": true,
-          "type": "String"
-        },
-        {
-          "name": "@param",
-          "body": "{qx.io.jsonrpc.protocol.Parser?} parser\n    Optional parser object, which needs to be an instance of a subclass of {@link qx.io.jsonrpc.protocol.Parser}",
-          "paramName": "parser",
-          "description": "Optional parser object, which needs to be an instance of a subclass of {@link qx.io.jsonrpc.protocol.Parser}",
-          "optional": true,
-          "type": "qx.io.jsonrpc.protocol.Parser"
-        }
-      ]
     }
   },
   "properties": {
@@ -186,7 +193,17 @@
           "index": 3148
         }
       },
+      "json": {
+        "check": "String",
+        "nullable": true
+      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * An optional string which is prepended to the method name by the {@link #sendRequest}",
+          "     * and {@link #sendNotification} methods",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -194,11 +211,7 @@
           }
         ]
       },
-      "name": "methodPrefix",
-      "propertyType": "new",
-      "nullable": true,
-      "allowNull": true,
-      "check": "String"
+      "appearsIn": []
     },
     "parser": {
       "location": {
@@ -213,7 +226,15 @@
           "index": 3323
         }
       },
+      "json": {
+        "check": "qx.io.jsonrpc.protocol.Parser"
+      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * The parser object, which must be a subclass of {@link qx.io.jsonrpc.protocol.Parser}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -221,45 +242,25 @@
           }
         ]
       },
-      "name": "parser",
-      "propertyType": "new",
-      "check": "qx.io.jsonrpc.protocol.Parser"
-    },
-    "qxOwner": {
-      "type": "property",
-      "name": "qxOwner",
-      "abstract": false,
-      "mixin": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.MObjectId",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>The owning object</p>"
-          }
-        ]
-      }
-    },
-    "qxObjectId": {
-      "type": "property",
-      "name": "qxObjectId",
-      "abstract": false,
-      "mixin": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.MObjectId",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>{String} The ID of the object.</p>"
-          }
-        ]
-      }
+      "appearsIn": []
     }
   },
   "members": {
     "__requests": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * A cache of the requests which have been sent out and are still pending",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>A cache of the requests which have been sent out and are still pending</p>"
+          }
+        ]
+      },
+      "access": "private",
       "location": {
         "start": {
           "line": 109,
@@ -272,18 +273,50 @@
           "index": 3457
         }
       },
+      "appearsIn": []
+    },
+    "_prependMethodPrefix": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * If a service name has been configured, prepend it to the method name,",
+          "     * unless it has already been prefixed",
+          "     * @param {String} method",
+          "     * @return {String}",
+          "     * @private",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>A cache of the requests which have been sent out and are still pending</p>"
+            "body": "<p>If a service name has been configured, prepend it to the method name,\n unless it has already been prefixed</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "{String} method",
+            "paramName": "method",
+            "description": "",
+            "type": "string"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{String}",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "@private": [
+          {
+            "name": "@private",
+            "body": ""
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
-    },
-    "_prependMethodPrefix": {
+      "access": "protected",
       "location": {
         "start": {
           "line": 118,
@@ -296,51 +329,28 @@
           "index": 3932
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>If a service name has been configured, prepend it to the method name,\n unless it has already been prefixed</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "{String} method"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{String}",
-            "type": "String",
-            "description": ""
-          }
-        ],
-        "@private": [
-          {
-            "name": "@private",
-            "body": ""
-          }
-        ]
-      },
       "type": "function",
-      "access": "protected"
+      "params": [
+        {
+          "name": "method",
+          "type": "string"
+        }
+      ],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
     },
     "_throwTransportException": {
-      "location": {
-        "start": {
-          "line": 133,
-          "column": 4,
-          "index": 4100
-        },
-        "end": {
-          "line": 141,
-          "column": 5,
-          "index": 4395
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fires \"error\" event and throws the error after informing pending requests",
+          "     * about the error.",
+          "     * @param exception",
+          "     * @private",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -362,10 +372,67 @@
           }
         ]
       },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 133,
+          "column": 4,
+          "index": 4100
+        },
+        "end": {
+          "line": 141,
+          "column": 5,
+          "index": 4395
+        }
+      },
       "type": "function",
-      "access": "protected"
+      "params": [
+        {
+          "name": "exception"
+        }
+      ],
+      "appearsIn": []
     },
     "send": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Send the given JSON-RPC message object using the configured transport",
+          "     *",
+          "     * @param {qx.io.jsonrpc.protocol.Message|qx.io.jsonrpc.protocol.Batch} message",
+          "     * @return {qx.Promise} Promise that resolves (with no data)",
+          "     * when the message has been successfully sent out, and rejects",
+          "     * when there is an error or a cancellation up to that point.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Send the given JSON-RPC message object using the configured transport</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "{qx.io.jsonrpc.protocol.Message|qx.io.jsonrpc.protocol.Batch} message",
+            "paramName": "message",
+            "description": "",
+            "type": [
+              "qx.io.jsonrpc.protocol.Message",
+              "qx.io.jsonrpc.protocol.Batch"
+            ]
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{qx.Promise} Promise that resolves (with no data)\n when the message has been successfully sent out, and rejects\n when there is an error or a cancellation up to that point.",
+            "type": "qx.Promise",
+            "description": "Promise that resolves (with no data)\n when the message has been successfully sent out, and rejects\n when there is an error or a cancellation up to that point."
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 151,
@@ -378,32 +445,69 @@
           "index": 6169
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "message",
+          "type": [
+            "qx.io.jsonrpc.protocol.Message",
+            "qx.io.jsonrpc.protocol.Batch"
+          ]
+        }
+      ],
+      "returnType": {
+        "type": "qx.Promise"
+      },
+      "appearsIn": []
+    },
+    "sendRequest": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Sends a single JSON-RPC request. If a method prefix name has been configured,",
+          "     * it will be prepended to the method name.",
+          "     * @param {String} method",
+          "     * @param {Array|Object?} params",
+          "     * @return {qx.Promise} Promise that resolves with the result to that request,",
+          "     * and rejects with an exception in the {@link qx.io.jsonrpc.exception} namespace.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Send the given JSON-RPC message object using the configured transport</p>"
+            "body": "<p>Sends a single JSON-RPC request. If a method prefix name has been configured,\n it will be prepended to the method name.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "{qx.io.jsonrpc.protocol.Message|qx.io.jsonrpc.protocol.Batch} message"
+            "body": "{String} method",
+            "paramName": "method",
+            "description": "",
+            "type": "string"
+          },
+          {
+            "name": "@param",
+            "body": "{Array|Object?} params",
+            "paramName": "params",
+            "description": "",
+            "optional": true,
+            "type": [
+              "Array",
+              "Object"
+            ]
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.Promise} Promise that resolves (with no data)\n when the message has been successfully sent out, and rejects\n when there is an error or a cancellation up to that point.",
+            "body": "{qx.Promise} Promise that resolves with the result to that request,\n and rejects with an exception in the {@link qx.io.jsonrpc.exception} namespace.",
             "type": "qx.Promise",
-            "description": " Promise that resolves (with no data)\n when the message has been successfully sent out, and rejects\n when there is an error or a cancellation up to that point."
+            "description": "Promise that resolves with the result to that request,\n and rejects with an exception in the {@link qx.io.jsonrpc.exception} namespace."
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "sendRequest": {
+      "access": "public",
       "location": {
         "start": {
           "line": 205,
@@ -416,36 +520,73 @@
           "index": 6802
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "method",
+          "type": "string"
+        },
+        {
+          "name": "params",
+          "type": [
+            "Array",
+            "Object"
+          ],
+          "optional": true
+        }
+      ],
+      "returnType": {
+        "type": "qx.Promise"
+      },
+      "appearsIn": []
+    },
+    "sendNotification": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Sends a single JSON-RPC notification. Will use the method prefix",
+          "     * @param {String} method",
+          "     * @param {Array|Object?} params",
+          "     * @return {qx.Promise} Promise that resolves immediately, (i.e. when the",
+          "     * notification has been sent out (which is synchronous)",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Sends a single JSON-RPC request. If a method prefix name has been configured,\n it will be prepended to the method name.</p>"
+            "body": "<p>Sends a single JSON-RPC notification. Will use the method prefix</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "{String} method"
+            "body": "{String} method",
+            "paramName": "method",
+            "description": "",
+            "type": "string"
           },
           {
             "name": "@param",
-            "body": "{Array|Object?} params"
+            "body": "{Array|Object?} params",
+            "paramName": "params",
+            "description": "",
+            "optional": true,
+            "type": [
+              "Array",
+              "Object"
+            ]
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.Promise} Promise that resolves with the result to that request,\n and rejects with an exception in the {@link qx.io.jsonrpc.exception} namespace.",
+            "body": "{qx.Promise} Promise that resolves immediately, (i.e. when the\n notification has been sent out (which is synchronous)",
             "type": "qx.Promise",
-            "description": " Promise that resolves with the result to that request,\n and rejects with an exception in the {@link qx.io.jsonrpc.exception} namespace."
+            "description": "Promise that resolves immediately, (i.e. when the\n notification has been sent out (which is synchronous)"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "sendNotification": {
+      "access": "public",
       "location": {
         "start": {
           "line": 222,
@@ -458,36 +599,61 @@
           "index": 7322
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "method",
+          "type": "string"
+        },
+        {
+          "name": "params",
+          "type": [
+            "Array",
+            "Object"
+          ],
+          "optional": true
+        }
+      ],
+      "returnType": {
+        "type": "qx.Promise"
+      },
+      "appearsIn": []
+    },
+    "sendBatch": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Send the given message batch. Will use the method prefix.",
+          "     * @param {qx.io.jsonrpc.protocol.Batch} batch",
+          "     * @return {qx.Promise} Promise that resolves with an array of the responses",
+          "     * to all requests in the batch, or rejects with any error that occurs.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Sends a single JSON-RPC notification. Will use the method prefix</p>"
+            "body": "<p>Send the given message batch. Will use the method prefix.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "{String} method"
-          },
-          {
-            "name": "@param",
-            "body": "{Array|Object?} params"
+            "body": "{qx.io.jsonrpc.protocol.Batch} batch",
+            "paramName": "batch",
+            "description": "",
+            "type": "qx.io.jsonrpc.protocol.Batch"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.Promise} Promise that resolves immediately, (i.e. when the\n notification has been sent out (which is synchronous)",
+            "body": "{qx.Promise} Promise that resolves with an array of the responses\n to all requests in the batch, or rejects with any error that occurs.",
             "type": "qx.Promise",
-            "description": " Promise that resolves immediately, (i.e. when the\n notification has been sent out (which is synchronous)"
+            "description": "Promise that resolves with an array of the responses\n to all requests in the batch, or rejects with any error that occurs."
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "sendBatch": {
+      "access": "public",
       "location": {
         "start": {
           "line": 237,
@@ -500,45 +666,26 @@
           "index": 8009
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Send the given message batch. Will use the method prefix.</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "{qx.io.jsonrpc.protocol.Batch} batch"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.Promise} Promise that resolves with an array of the responses\n to all requests in the batch, or rejects with any error that occurs.",
-            "type": "qx.Promise",
-            "description": " Promise that resolves with an array of the responses\n to all requests in the batch, or rejects with any error that occurs."
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "batch",
+          "type": "qx.io.jsonrpc.protocol.Batch"
+        }
+      ],
+      "returnType": {
+        "type": "qx.Promise"
+      },
+      "appearsIn": []
     },
     "handleIncoming": {
-      "location": {
-        "start": {
-          "line": 254,
-          "column": 4,
-          "index": 8142
-        },
-        "end": {
-          "line": 273,
-          "column": 5,
-          "index": 8798
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Receives and handles an incoming JSON-RPC compliant message data",
+          "     * @param {String} json JSON data",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -551,14 +698,64 @@
             "body": "{String} json JSON data",
             "paramName": "json",
             "description": "JSON data",
-            "type": "String"
+            "type": "string"
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 254,
+          "column": 4,
+          "index": 8142
+        },
+        "end": {
+          "line": 273,
+          "column": 5,
+          "index": 8798
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "json",
+          "type": "string"
+        }
+      ],
+      "appearsIn": []
     },
     "_cleanup": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Clean up after a message has been received",
+          "     * @param {qx.io.jsonrpc.protocol.Message} message",
+          "     * @private",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Clean up after a message has been received</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "{qx.io.jsonrpc.protocol.Message} message",
+            "paramName": "message",
+            "description": "",
+            "type": "qx.io.jsonrpc.protocol.Message"
+          }
+        ],
+        "@private": [
+          {
+            "name": "@private",
+            "body": ""
+          }
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 280,
@@ -571,43 +768,23 @@
           "index": 8992
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Clean up after a message has been received</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "{qx.io.jsonrpc.protocol.Message} message"
-          }
-        ],
-        "@private": [
-          {
-            "name": "@private",
-            "body": ""
-          }
-        ]
-      },
       "type": "function",
-      "access": "protected"
+      "params": [
+        {
+          "name": "message",
+          "type": "qx.io.jsonrpc.protocol.Message"
+        }
+      ],
+      "appearsIn": []
     },
     "handleMessage": {
-      "location": {
-        "start": {
-          "line": 288,
-          "column": 4,
-          "index": 9171
-        },
-        "end": {
-          "line": 349,
-          "column": 5,
-          "index": 11504
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Handle an incoming message or batch of messages",
+          "     * @param {qx.io.jsonrpc.protocol.Message|qx.io.jsonrpc.protocol.Batch} message Message or Batch",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -627,345 +804,30 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getQxOwner": {
-      "type": "function",
-      "name": "getQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "qx.core.Object",
-            "desc": "Returns the value for qxOwner"
-          }
-        ]
-      }
-    },
-    "setQxOwner": {
+      "location": {
+        "start": {
+          "line": 288,
+          "column": 4,
+          "index": 9171
+        },
+        "end": {
+          "line": 349,
+          "column": 5,
+          "index": 11504
+        }
+      },
       "type": "function",
-      "name": "setQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.core.Object",
-            "paramName": "value",
-            "desc": "Value for qxOwner"
-          }
-        ]
-      }
-    },
-    "resetQxOwner": {
-      "type": "function",
-      "name": "resetQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxOwner</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ]
-      }
-    },
-    "getQxObjectId": {
-      "type": "function",
-      "name": "getQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "[[ ObjectMethod Function ]]",
-            "desc": "Returns the value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "setQxObjectId": {
-      "type": "function",
-      "name": "setQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "[[ ObjectMethod Function ]]",
-            "paramName": "value",
-            "desc": "Value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "resetQxObjectId": {
-      "type": "function",
-      "name": "resetQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxObjectId</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ]
-      }
-    },
-    "getTransport": {
-      "type": "function",
-      "name": "getTransport",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>transport</code>.\n\nFor further details take a look at the property definition: {@link #transport}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "qx.io.transport.ITransport",
-            "desc": "Returns the value for transport"
-          }
-        ]
-      }
-    },
-    "setTransport": {
-      "type": "function",
-      "name": "setTransport",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>transport</code>.\n\nFor further details take a look at the property definition: {@link #transport}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.io.transport.ITransport",
-            "paramName": "value",
-            "desc": "Value for transport"
-          }
-        ]
-      }
-    },
-    "resetTransport": {
-      "type": "function",
-      "name": "resetTransport",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>transport</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #transport}."
-          }
-        ]
-      }
-    },
-    "getMethodPrefix": {
-      "type": "function",
-      "name": "getMethodPrefix",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>methodPrefix</code>.\n\nFor further details take a look at the property definition: {@link #methodPrefix}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "String",
-            "desc": "Returns the value for methodPrefix"
-          }
-        ]
-      }
-    },
-    "setMethodPrefix": {
-      "type": "function",
-      "name": "setMethodPrefix",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>methodPrefix</code>.\n\nFor further details take a look at the property definition: {@link #methodPrefix}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "String",
-            "paramName": "value",
-            "desc": "Value for methodPrefix"
-          }
-        ]
-      }
-    },
-    "resetMethodPrefix": {
-      "type": "function",
-      "name": "resetMethodPrefix",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>methodPrefix</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #methodPrefix}."
-          }
-        ]
-      }
-    },
-    "getParser": {
-      "type": "function",
-      "name": "getParser",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>parser</code>.\n\nFor further details take a look at the property definition: {@link #parser}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "qx.io.jsonrpc.protocol.Parser",
-            "desc": "Returns the value for parser"
-          }
-        ]
-      }
-    },
-    "setParser": {
-      "type": "function",
-      "name": "setParser",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>parser</code>.\n\nFor further details take a look at the property definition: {@link #parser}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.io.jsonrpc.protocol.Parser",
-            "paramName": "value",
-            "desc": "Value for parser"
-          }
-        ]
-      }
-    },
-    "resetParser": {
-      "type": "function",
-      "name": "resetParser",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>parser</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #parser}."
-          }
-        ]
-      }
+      "params": [
+        {
+          "name": "message",
+          "type": [
+            "qx.io.jsonrpc.protocol.Message",
+            "qx.io.jsonrpc.protocol.Batch"
+          ]
+        }
+      ],
+      "appearsIn": []
     }
-  },
-  "descendants": []
+  }
 }

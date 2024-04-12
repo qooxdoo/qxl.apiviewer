@@ -1,35 +1,55 @@
 {
-  "className": "qx.util.StringBuilder",
-  "packageName": "qx.util",
-  "name": "StringBuilder",
-  "superClass": "qx.type.BaseArray",
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 34,
-        "column": 0,
-        "index": 971
-      },
-      "end": {
-        "line": 125,
-        "column": 3,
-        "index": 3291
-      }
+  "version": 0.3,
+  "lastModified": 1712910031169,
+  "lastModifiedIso": "2024-04-12T08:20:31.169Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/util/StringBuilder.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 34,
+      "column": 0,
+      "index": 971
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>A string builder class\n += operator is faster in Firefox and Opera.\n Array push/join is faster in Internet Explorer\n Even with this wrapper, which costs some time, this is\n faster in Firefox than the alternative Array concat in\n all browsers (which is in relation to IE's performance issues\n only marginal). The IE performance loss caused by this\n wrapper is not relevant.\n So this class seems to be the best compromise to handle\n string concatenation.</p>"
-        }
-      ]
+    "end": {
+      "line": 125,
+      "column": 3,
+      "index": 3291
     }
   },
-  "type": "class",
+  "className": "qx.util.StringBuilder",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * A string builder class",
+      " *",
+      " * += operator is faster in Firefox and Opera.",
+      " * Array push/join is faster in Internet Explorer",
+      " *",
+      " * Even with this wrapper, which costs some time, this is",
+      " * faster in Firefox than the alternative Array concat in",
+      " * all browsers (which is in relation to IE's performance issues",
+      " * only marginal). The IE performance loss caused by this",
+      " * wrapper is not relevant.",
+      " *",
+      " * So this class seems to be the best compromise to handle",
+      " * string concatenation.",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>A string builder class\n += operator is faster in Firefox and Opera.\n Array push/join is faster in Internet Explorer\n Even with this wrapper, which costs some time, this is\n faster in Firefox than the alternative Array concat in\n all browsers (which is in relation to IE's performance issues\n only marginal). The IE performance loss caused by this\n wrapper is not relevant.\n So this class seems to be the best compromise to handle\n string concatenation.</p>"
+      }
+    ]
+  },
+  "superClass": "qx.type.BaseArray",
   "construct": {
+    "type": "function",
+    "params": [
+      {
+        "name": "length_or_items"
+      }
+    ],
     "location": {
       "start": {
         "line": 59,
@@ -41,32 +61,25 @@
         "column": 3,
         "index": 1982
       }
-    },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Creates a new StringBuilder with the given length or as a concatenation of the given arguments substrings.\n </p>\n<pre class=\"javascript\">\n var sb1 = new qx.util.StringBuilder(length);\n var sb2 = new qx.util.StringBuilder(item0, item1, ..., itemN);\n </pre>\n<ul>\n<li><code>length</code>: The initial length of the StringBuilder.</li>\n<li><code>itemN</code>:  A substring that will make up the newly created StringBuilder.\nThe StringBuilder's length property is set to the number of arguments.</li>\n</ul>"
-        }
-      ],
-      "@param": [
-        {
-          "name": "@param",
-          "body": "length_or_items {Integer|var?null} The initial length of the StringBuilder\n        OR an argument list of values.",
-          "paramName": "length_or_items",
-          "description": " The initial length of the StringBuilder\n        OR an argument list of values.",
-          "optional": true,
-          "defaultValue": "null",
-          "type": [
-            "Integer",
-            "var"
-          ]
-        }
-      ]
     }
   },
   "members": {
     "clear": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Removes all content",
+          "     *",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Removes all content</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 74,
@@ -79,18 +92,35 @@
           "index": 2273
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "get": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the concatted strings.",
+          "     *",
+          "     * @return {String} Concatted strings",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Removes all content</p>"
+            "body": "<p>Returns the concatted strings.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{String} Concatted strings",
+            "type": "string",
+            "description": "Concatted strings"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "get": {
+      "access": "public",
       "location": {
         "start": {
           "line": 83,
@@ -103,39 +133,23 @@
           "index": 2424
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the concatted strings.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{String} Concatted strings",
-            "type": "String",
-            "description": " Concatted strings"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
     },
     "add": {
-      "location": {
-        "start": {
-          "line": 93,
-          "column": 4,
-          "index": 2603
-        },
-        "end": {
-          "line": 93,
-          "column": 13,
-          "index": 2612
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds new strings. Supports multiple arguments.",
+          "     *",
+          "     * @signature function(varargs)",
+          "     * @param varargs {String} The separate strings to add",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -154,14 +168,50 @@
             "body": "varargs {String} The separate strings to add",
             "paramName": "varargs",
             "description": " The separate strings to add",
-            "type": "String"
+            "type": "string"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 93,
+          "column": 4,
+          "index": 2603
+        },
+        "end": {
+          "line": 93,
+          "column": 13,
+          "index": 2612
+        }
+      },
+      "appearsIn": []
     },
     "isEmpty": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether the string builder is empty",
+          "     *",
+          "     * @return {Boolean} <code>true</code> when the builder is empty",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Whether the string builder is empty</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} <code>true</code> when the builder is empty",
+            "type": "boolean",
+            "description": "<code>true</code> when the builder is empty"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 100,
@@ -174,26 +224,38 @@
           "index": 2803
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "size": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the size of the strings",
+          "     *",
+          "     * @return {Integer} The string length",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Whether the string builder is empty</p>"
+            "body": "<p>Returns the size of the strings</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> when the builder is empty",
-            "type": "Boolean",
-            "description": " <code>true</code> when the builder is empty"
+            "body": "{Integer} The string length",
+            "type": "Integer",
+            "description": "The string length"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "size": {
+      "access": "public",
       "location": {
         "start": {
           "line": 109,
@@ -206,40 +268,14 @@
           "index": 2964
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the size of the strings</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Integer} The string length",
-            "type": "Integer",
-            "description": " The string length"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "Integer"
+      },
+      "appearsIn": []
     }
   },
-  "defer": {
-    "location": {
-      "start": {
-        "line": 120,
-        "column": 2,
-        "index": 3155
-      },
-      "end": {
-        "line": 124,
-        "column": 3,
-        "index": 3287
-      }
-    },
-    "jsdoc": {}
-  },
-  "descendants": []
+  "statics": {},
+  "properties": {}
 }

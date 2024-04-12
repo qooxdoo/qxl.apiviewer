@@ -1,33 +1,49 @@
 {
-  "className": "qx.theme.classic.Font",
-  "packageName": "qx.theme.classic",
-  "name": "Font",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 23,
-        "column": 0,
-        "index": 549
-      },
-      "end": {
-        "line": 69,
-        "column": 3,
-        "index": 1364
-      }
+  "version": 0.3,
+  "lastModified": 1712910030709,
+  "lastModifiedIso": "2024-04-12T08:20:30.709Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/theme/classic/Font.js",
+  "type": "theme",
+  "location": {
+    "start": {
+      "line": 26,
+      "column": 0,
+      "index": 626
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>The classic qooxdoo font theme.</p>"
-        }
-      ]
+    "end": {
+      "line": 53,
+      "column": 3,
+      "index": 1126
     }
   },
-  "type": "theme",
-  "descendants": []
+  "className": "qx.theme.classic.Font",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * The classic qooxdoo font theme.",
+      " *",
+      " * @usefont(qx.theme.classic.defaultFont)",
+      " * @usefont(qx.theme.monospace)",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>The classic qooxdoo font theme.</p>"
+      }
+    ],
+    "@usefont": [
+      {
+        "name": "@usefont",
+        "body": "qx.theme.classic.defaultFont"
+      },
+      {
+        "name": "@usefont",
+        "body": "qx.theme.monospace"
+      }
+    ]
+  },
+  "members": {},
+  "statics": {},
+  "properties": {}
 }

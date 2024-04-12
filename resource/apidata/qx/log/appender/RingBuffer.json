@@ -1,35 +1,51 @@
 {
-  "className": "qx.log.appender.RingBuffer",
-  "packageName": "qx.log.appender",
-  "name": "RingBuffer",
-  "superClass": "qx.util.RingBuffer",
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 32,
-        "column": 0,
-        "index": 1143
-      },
-      "end": {
-        "line": 103,
-        "column": 3,
-        "index": 2987
-      }
+  "version": 0.3,
+  "lastModified": 1712910031093,
+  "lastModifiedIso": "2024-04-12T08:20:31.093Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/log/appender/RingBuffer.js",
+  "type": "bootstrap",
+  "location": {
+    "start": {
+      "line": 32,
+      "column": 0,
+      "index": 1143
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>An appender that writes all messages to a memory container. The messages\n can be retrieved later, f. i. when an error dialog pops up and the question\n arises what actions have caused the error.\n A mark feature also exists which can be used to remember a point in time.\n When retrieving log events, it is possible to get only those events\n after the marked time. This is useful if data from the buffer is extracted\n and f. i. sent to a logging system. Whenever this happens, a mark() call\n can be used so that the next extraction will only get new data.</p>"
-        }
-      ]
+    "end": {
+      "line": 103,
+      "column": 3,
+      "index": 2987
     }
   },
-  "type": "class",
+  "className": "qx.log.appender.RingBuffer",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * An appender that writes all messages to a memory container. The messages",
+      " * can be retrieved later, f. i. when an error dialog pops up and the question",
+      " * arises what actions have caused the error.",
+      " *",
+      " * A mark feature also exists which can be used to remember a point in time.",
+      " * When retrieving log events, it is possible to get only those events",
+      " * after the marked time. This is useful if data from the buffer is extracted",
+      " * and f. i. sent to a logging system. Whenever this happens, a mark() call",
+      " * can be used so that the next extraction will only get new data.",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>An appender that writes all messages to a memory container. The messages\n can be retrieved later, f. i. when an error dialog pops up and the question\n arises what actions have caused the error.\n A mark feature also exists which can be used to remember a point in time.\n When retrieving log events, it is possible to get only those events\n after the marked time. This is useful if data from the buffer is extracted\n and f. i. sent to a logging system. Whenever this happens, a mark() call\n can be used so that the next extraction will only get new data.</p>"
+      }
+    ]
+  },
+  "superClass": "qx.util.RingBuffer",
   "construct": {
+    "type": "function",
+    "params": [
+      {
+        "name": "maxMessages"
+      }
+    ],
     "location": {
       "start": {
         "line": 38,
@@ -41,42 +57,21 @@
         "column": 3,
         "index": 1390
       }
-    },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": ""
-        }
-      ],
-      "@param": [
-        {
-          "name": "@param",
-          "body": "maxMessages {Integer?50} Maximum number of messages in the buffer",
-          "paramName": "maxMessages",
-          "description": " Maximum number of messages in the buffer",
-          "optional": true,
-          "defaultValue": "50",
-          "type": "Integer"
-        }
-      ]
     }
   },
   "members": {
     "setMaxMessages": {
-      "location": {
-        "start": {
-          "line": 51,
-          "column": 4,
-          "index": 1696
-        },
-        "end": {
-          "line": 53,
-          "column": 5,
-          "index": 1770
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Set the maximum number of messages to hold. If null the number of",
+          "     * messages is not limited.",
+          "     *",
+          "     * Warning: Changing this property will clear the events logged so far.",
+          "     *",
+          "     * @param maxMessages {Integer} the maximum number of messages to hold",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -93,10 +88,53 @@
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 51,
+          "column": 4,
+          "index": 1696
+        },
+        "end": {
+          "line": 53,
+          "column": 5,
+          "index": 1770
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "maxMessages",
+          "type": "Integer"
+        }
+      ],
+      "appearsIn": []
     },
     "getMaxMessages": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Get the maximum number of messages to hold",
+          "     *",
+          "     * @return {Integer} the maximum number of messages",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Get the maximum number of messages to hold</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Integer} the maximum number of messages",
+            "type": "Integer",
+            "description": "the maximum number of messages"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 60,
@@ -109,39 +147,22 @@
           "index": 1965
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Get the maximum number of messages to hold</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Integer} the maximum number of messages",
-            "type": "Integer",
-            "description": " the maximum number of messages"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "Integer"
+      },
+      "appearsIn": []
     },
     "process": {
-      "location": {
-        "start": {
-          "line": 69,
-          "column": 4,
-          "index": 2078
-        },
-        "end": {
-          "line": 71,
-          "column": 5,
-          "index": 2128
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Processes a single log entry",
+          "     *",
+          "     * @param entry {Map} The entry to process",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -154,14 +175,57 @@
             "body": "entry {Map} The entry to process",
             "paramName": "entry",
             "description": " The entry to process",
-            "type": "Map"
+            "type": "Map<any, any>"
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 69,
+          "column": 4,
+          "index": 2078
+        },
+        "end": {
+          "line": 71,
+          "column": 5,
+          "index": 2128
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "entry",
+          "type": "Map<any, any>"
+        }
+      ],
+      "appearsIn": []
     },
     "getAllLogEvents": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns all stored log events",
+          "     *",
+          "     * @return {Array} array of stored log events",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns all stored log events</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Array} array of stored log events",
+            "type": "Array<any>",
+            "description": "array of stored log events"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 78,
@@ -174,39 +238,27 @@
           "index": 2305
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns all stored log events</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Array} array of stored log events",
-            "type": "Array",
-            "description": " array of stored log events"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "Array<any>"
+      },
+      "appearsIn": []
     },
     "retrieveLogEvents": {
-      "location": {
-        "start": {
-          "line": 92,
-          "column": 4,
-          "index": 2779
-        },
-        "end": {
-          "line": 94,
-          "column": 5,
-          "index": 2884
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns log events which have been logged previously.",
+          "     *",
+          "     * @param count {Integer} The number of events to retrieve. If there are",
+          "     *    more events than the given count, the oldest ones will not be returned.",
+          "     *",
+          "     * @param startingFromMark {Boolean ? false} If true, only entries since the last call to mark()",
+          "     *                                           will be returned",
+          "     * @return {Array} array of stored log events",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -235,15 +287,57 @@
           {
             "name": "@return",
             "body": "{Array} array of stored log events",
-            "type": "Array",
-            "description": " array of stored log events"
+            "type": "Array<any>",
+            "description": "array of stored log events"
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 92,
+          "column": 4,
+          "index": 2779
+        },
+        "end": {
+          "line": 94,
+          "column": 5,
+          "index": 2884
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "count",
+          "type": "Integer"
+        },
+        {
+          "name": "startingFromMark",
+          "type": "Boolean",
+          "optional": true,
+          "defaultValue": "false"
+        }
+      ],
+      "returnType": {
+        "type": "Array<any>"
+      },
+      "appearsIn": []
     },
     "clearHistory": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Clears the log history",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Clears the log history</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 99,
@@ -256,17 +350,11 @@
           "index": 2979
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Clears the log history</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "statics": {},
+  "properties": {}
 }

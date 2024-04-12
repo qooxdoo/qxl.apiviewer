@@ -1,42 +1,66 @@
 {
-  "className": "qx.event.type.Event",
-  "packageName": "qx.event.type",
-  "name": "Event",
-  "superClass": "qx.core.Object",
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 34,
-        "column": 0,
-        "index": 972
-      },
-      "end": {
-        "line": 431,
-        "column": 3,
-        "index": 12050
-      }
+  "version": 0.3,
+  "lastModified": 1712910030673,
+  "lastModifiedIso": "2024-04-12T08:20:30.673Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/event/type/Event.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 34,
+      "column": 0,
+      "index": 972
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Basic event object.\n Please note:\n Event objects are only valid during the event dispatch. After the dispatch\n event objects are pooled or disposed. If you want to safe a reference to an\n event instance use the {@link #clone} method.\n The interface is modeled after the DOM level 2 event interface:\n http://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-interface</p>"
-        }
-      ],
-      "@use": [
-        {
-          "name": "@use",
-          "body": "qx.event.Registration"
-        }
-      ]
+    "end": {
+      "line": 431,
+      "column": 3,
+      "index": 12050
     }
   },
-  "type": "class",
+  "className": "qx.event.type.Event",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Basic event object.",
+      " *",
+      " * Please note:",
+      " * Event objects are only valid during the event dispatch. After the dispatch",
+      " * event objects are pooled or disposed. If you want to safe a reference to an",
+      " * event instance use the {@link #clone} method.",
+      " *",
+      " * The interface is modeled after the DOM level 2 event interface:",
+      " * http://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-interface",
+      " *",
+      " * @use(qx.event.Registration)",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Basic event object.\n Please note:\n Event objects are only valid during the event dispatch. After the dispatch\n event objects are pooled or disposed. If you want to safe a reference to an\n event instance use the {@link #clone} method.\n The interface is modeled after the DOM level 2 event interface:\n http://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-interface</p>"
+      }
+    ],
+    "@use": [
+      {
+        "name": "@use",
+        "body": "qx.event.Registration"
+      }
+    ]
+  },
+  "superClass": "qx.core.Object",
   "statics": {
     "CAPTURING_PHASE": {
+      "jsdoc": {
+        "raw": [
+          "* The current event phase is the capturing phase. "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>The current event phase is the capturing phase.</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 45,
@@ -49,18 +73,21 @@
           "index": 1318
         }
       },
+      "appearsIn": []
+    },
+    "AT_TARGET": {
       "jsdoc": {
+        "raw": [
+          "* The event is currently being evaluated at the target "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>The current event phase is the capturing phase.</p>"
+            "body": "<p>The event is currently being evaluated at the target</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "AT_TARGET": {
+      "access": "public",
       "location": {
         "start": {
           "line": 48,
@@ -73,18 +100,21 @@
           "index": 1401
         }
       },
+      "appearsIn": []
+    },
+    "BUBBLING_PHASE": {
       "jsdoc": {
+        "raw": [
+          "* The current event phase is the bubbling phase. "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>The event is currently being evaluated at the target</p>"
+            "body": "<p>The current event phase is the bubbling phase.</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "BUBBLING_PHASE": {
+      "access": "public",
       "location": {
         "start": {
           "line": 51,
@@ -97,20 +127,23 @@
           "index": 1483
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>The current event phase is the bubbling phase.</p>"
-          }
-        ]
-      },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     }
   },
   "members": {
     "_promises": {
+      "jsdoc": {
+        "raw": [
+          "* {qx.Promise[]} promises returned by event handlers "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>{qx.Promise[]} promises returned by event handlers</p>"
+          }
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 62,
@@ -123,31 +156,27 @@
           "index": 1768
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>{qx.Promise[]} promises returned by event handlers</p>"
-          }
-        ]
-      },
-      "type": "variable",
-      "access": "protected"
+      "appearsIn": []
     },
     "init": {
-      "location": {
-        "start": {
-          "line": 79,
-          "column": 4,
-          "index": 2597
-        },
-        "end": {
-          "line": 110,
-          "column": 5,
-          "index": 3472
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Initialize the fields of the event. The event must be initialized before",
+          "     * it can be dispatched.",
+          "     *",
+          "     * @param canBubble {Boolean?false} Whether or not the event is a bubbling event.",
+          "     *     If the event is bubbling, the bubbling can be stopped using",
+          "     *     {@link #stopPropagation}",
+          "     * @param cancelable {Boolean?false} Whether or not an event can have its default",
+          "     *     action prevented. The default action can either be the browser's",
+          "     *     default action of a native event (e.g. open the context menu on a",
+          "     *     right click) or the default action of a qooxdoo class (e.g. close",
+          "     *     the window widget). The default action can be prevented by calling",
+          "     *     {@link #preventDefault}",
+          "     * @return {qx.event.type.Event} The initialized event instance",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -179,27 +208,57 @@
             "name": "@return",
             "body": "{qx.event.type.Event} The initialized event instance",
             "type": "qx.event.type.Event",
-            "description": " The initialized event instance"
+            "description": "The initialized event instance"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "clone": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 122,
+          "line": 79,
           "column": 4,
-          "index": 3970
+          "index": 2597
         },
         "end": {
-          "line": 141,
+          "line": 110,
           "column": 5,
-          "index": 4609
+          "index": 3472
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "canBubble",
+          "type": "Boolean",
+          "optional": true,
+          "defaultValue": "false"
+        },
+        {
+          "name": "cancelable",
+          "type": "Boolean",
+          "optional": true,
+          "defaultValue": "false"
+        }
+      ],
+      "returnType": {
+        "type": "qx.event.type.Event"
+      },
+      "appearsIn": []
+    },
+    "clone": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Create a clone of the event object, which is not automatically disposed",
+          "     * or pooled after an event dispatch.",
+          "     *",
+          "     * @param embryo {qx.event.type.Event?null} Optional event class, which will",
+          "     *     be configured using the data of this event instance. The event must be",
+          "     *     an instance of this event class. If the value is <code>null</code>,",
+          "     *     a new pooled instance is created.",
+          "     * @return {qx.event.type.Event} a clone of this class.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -222,18 +281,57 @@
             "name": "@return",
             "body": "{qx.event.type.Event} a clone of this class.",
             "type": "qx.event.type.Event",
-            "description": " a clone of this class."
+            "description": "a clone of this class."
           }
         ]
       },
-      "type": "function",
       "access": "public",
+      "location": {
+        "start": {
+          "line": 122,
+          "column": 4,
+          "index": 3970
+        },
+        "end": {
+          "line": 141,
+          "column": 5,
+          "index": 4609
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "embryo",
+          "type": "qx.event.type.Event",
+          "optional": true,
+          "defaultValue": "null"
+        }
+      ],
+      "returnType": {
+        "type": "qx.event.type.Event"
+      },
       "overriddenFrom": "qx.core.Object",
       "appearsIn": [
         "qx.core.Object"
       ]
     },
     "stop": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Stops event from all further processing. Execute this when the",
+          "     * current handler should have \"exclusive rights\" to the event",
+          "     * and no further reaction by anyone else should happen.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Stops event from all further processing. Execute this when the\n current handler should have \"exclusive rights\" to the event\n and no further reaction by anyone else should happen.</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 148,
@@ -246,18 +344,29 @@
           "index": 4981
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "stopPropagation": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * This method is used to prevent further propagation of an event during event",
+          "     * flow. If this method is called by any event listener the event will cease",
+          "     * propagating through the tree. The event will complete dispatch to all listeners",
+          "     * on the current event target before event flow stops.",
+          "     *",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Stops event from all further processing. Execute this when the\n current handler should have \"exclusive rights\" to the event\n and no further reaction by anyone else should happen.</p>"
+            "body": "<p>This method is used to prevent further propagation of an event during event\n flow. If this method is called by any event listener the event will cease\n propagating through the tree. The event will complete dispatch to all listeners\n on the current event target before event flow stops.</p>"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "stopPropagation": {
+      "access": "public",
       "location": {
         "start": {
           "line": 165,
@@ -270,18 +379,35 @@
           "index": 5580
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "getPropagationStopped": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Get whether further event propagation has been stopped.",
+          "     *",
+          "     * @return {Boolean} Whether further propagation has been stopped.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>This method is used to prevent further propagation of an event during event\n flow. If this method is called by any event listener the event will cease\n propagating through the tree. The event will complete dispatch to all listeners\n on the current event target before event flow stops.</p>"
+            "body": "<p>Get whether further event propagation has been stopped.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} Whether further propagation has been stopped.",
+            "type": "boolean",
+            "description": "Whether further propagation has been stopped."
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getPropagationStopped": {
+      "access": "public",
       "location": {
         "start": {
           "line": 180,
@@ -294,26 +420,30 @@
           "index": 5813
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "preventDefault": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Prevent the default action of cancelable events, e.g. opening the context",
+          "     * menu, ...",
+          "     *",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Get whether further event propagation has been stopped.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Boolean} Whether further propagation has been stopped.",
-            "type": "Boolean",
-            "description": " Whether further propagation has been stopped."
+            "body": "<p>Prevent the default action of cancelable events, e.g. opening the context\n menu, …</p>"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "preventDefault": {
+      "access": "public",
       "location": {
         "start": {
           "line": 189,
@@ -326,31 +456,18 @@
           "index": 6220
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Prevent the default action of cancelable events, e.g. opening the context\n menu, …</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "appearsIn": []
     },
     "addPromise": {
-      "location": {
-        "start": {
-          "line": 204,
-          "column": 4,
-          "index": 6370
-        },
-        "end": {
-          "line": 217,
-          "column": 6,
-          "index": 6747
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds a promise to the list of promises returned by event handlers",
+          "     * @param promise {qx.Promise} the promise to add",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -367,23 +484,29 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "getPromises": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 223,
+          "line": 204,
           "column": 4,
-          "index": 6872
+          "index": 6370
         },
         "end": {
-          "line": 233,
+          "line": 217,
           "column": 6,
-          "index": 7143
+          "index": 6747
         }
       },
+      "appearsIn": []
+    },
+    "getPromises": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the array of promises, or null if there are no promises",
+          "     * @return {qx.Promise[]?}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -399,10 +522,41 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 223,
+          "column": 4,
+          "index": 6872
+        },
+        "end": {
+          "line": 233,
+          "column": 6,
+          "index": 7143
+        }
+      },
+      "returnType": {
+        "type": "qx.Promise[]?"
+      },
+      "appearsIn": []
     },
     "promise": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns a promise for this event; if the event is defaultPrevented, the promise",
+          "     * is a rejected promise, otherwise it is fulfilled.  The promise returned will only",
+          "     * be fulfilled when the promises added via {@link addPromise} are also fulfilled",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns a promise for this event; if the event is defaultPrevented, the promise\n is a rejected promise, otherwise it is fulfilled.  The promise returned will only\n be fulfilled when the promises added via {@link addPromise} are also fulfilled</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 240,
@@ -415,18 +569,33 @@
           "index": 7877
         }
       },
+      "appearsIn": []
+    },
+    "getDefaultPrevented": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Get whether the default action has been prevented",
+          "     *",
+          "     * @return {Boolean} Whether the default action has been prevented",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Returns a promise for this event; if the event is defaultPrevented, the promise\n is a rejected promise, otherwise it is fulfilled.  The promise returned will only\n be fulfilled when the promises added via {@link addPromise} are also fulfilled</p>"
+            "body": "<p>Get whether the default action has been prevented</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} Whether the default action has been prevented",
+            "type": "boolean",
+            "description": "Whether the default action has been prevented"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "getDefaultPrevented": {
+      "access": "public",
       "location": {
         "start": {
           "line": 262,
@@ -439,26 +608,38 @@
           "index": 8101
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "getType": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * The name of the event",
+          "     *",
+          "     * @return {String} name of the event",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Get whether the default action has been prevented</p>"
+            "body": "<p>The name of the event</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} Whether the default action has been prevented",
-            "type": "Boolean",
-            "description": " Whether the default action has been prevented"
+            "body": "{String} name of the event",
+            "type": "string",
+            "description": "name of the event"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getType": {
+      "access": "public",
       "location": {
         "start": {
           "line": 271,
@@ -471,39 +652,22 @@
           "index": 8244
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>The name of the event</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{String} name of the event",
-            "type": "String",
-            "description": " name of the event"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
     },
     "setType": {
-      "location": {
-        "start": {
-          "line": 280,
-          "column": 4,
-          "index": 8348
-        },
-        "end": {
-          "line": 282,
-          "column": 5,
-          "index": 8394
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Override the event type",
+          "     *",
+          "     * @param type {String} new event type",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -516,14 +680,58 @@
             "body": "type {String} new event type",
             "paramName": "type",
             "description": " new event type",
-            "type": "String"
+            "type": "string"
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 280,
+          "column": 4,
+          "index": 8348
+        },
+        "end": {
+          "line": 282,
+          "column": 5,
+          "index": 8394
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "type",
+          "type": "string"
+        }
+      ],
+      "appearsIn": []
     },
     "getEventPhase": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Used to indicate which phase of event flow is currently being evaluated.",
+          "     *",
+          "     * @return {Integer} The current event phase. Possible values are",
+          "     *         {@link #CAPTURING_PHASE}, {@link #AT_TARGET} and {@link #BUBBLING_PHASE}.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Used to indicate which phase of event flow is currently being evaluated.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Integer} The current event phase. Possible values are\n         {@link #CAPTURING_PHASE}, {@link #AT_TARGET} and {@link #BUBBLING_PHASE}.",
+            "type": "Integer",
+            "description": "The current event phase. Possible values are\n         {@link #CAPTURING_PHASE}, {@link #AT_TARGET} and {@link #BUBBLING_PHASE}."
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 290,
@@ -536,39 +744,22 @@
           "index": 8717
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Used to indicate which phase of event flow is currently being evaluated.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Integer} The current event phase. Possible values are\n         {@link #CAPTURING_PHASE}, {@link #AT_TARGET} and {@link #BUBBLING_PHASE}.",
-            "type": "Integer",
-            "description": " The current event phase. Possible values are\n         {@link #CAPTURING_PHASE}, {@link #AT_TARGET} and {@link #BUBBLING_PHASE}."
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "Integer"
+      },
+      "appearsIn": []
     },
     "setEventPhase": {
-      "location": {
-        "start": {
-          "line": 299,
-          "column": 4,
-          "index": 8830
-        },
-        "end": {
-          "line": 301,
-          "column": 5,
-          "index": 8900
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Override the event phase",
+          "     *",
+          "     * @param eventPhase {Integer} new event phase",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -585,10 +776,53 @@
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 299,
+          "column": 4,
+          "index": 8830
+        },
+        "end": {
+          "line": 301,
+          "column": 5,
+          "index": 8900
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "eventPhase",
+          "type": "Integer"
+        }
+      ],
+      "appearsIn": []
     },
     "getTimeStamp": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * The time (in milliseconds relative to the epoch) at which the event was created.",
+          "     *",
+          "     * @return {Integer} the timestamp the event was created.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>The time (in milliseconds relative to the epoch) at which the event was created.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Integer} the timestamp the event was created.",
+            "type": "Integer",
+            "description": "the timestamp the event was created."
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 308,
@@ -601,26 +835,40 @@
           "index": 9132
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "Integer"
+      },
+      "appearsIn": []
+    },
+    "getTarget": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the event target to which the event was originally",
+          "     * dispatched.",
+          "     *",
+          "     * @return {Element} target to which the event was originally",
+          "     *       dispatched.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>The time (in milliseconds relative to the epoch) at which the event was created.</p>"
+            "body": "<p>Returns the event target to which the event was originally\n dispatched.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer} the timestamp the event was created.",
-            "type": "Integer",
-            "description": " the timestamp the event was created."
+            "body": "{Element} target to which the event was originally\n       dispatched.",
+            "type": "Element",
+            "description": "target to which the event was originally\n       dispatched."
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getTarget": {
+      "access": "public",
       "location": {
         "start": {
           "line": 319,
@@ -633,39 +881,22 @@
           "index": 9384
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the event target to which the event was originally\n dispatched.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Element} target to which the event was originally\n       dispatched.",
-            "type": "Element",
-            "description": " target to which the event was originally\n       dispatched."
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "Element"
+      },
+      "appearsIn": []
     },
     "setTarget": {
-      "location": {
-        "start": {
-          "line": 328,
-          "column": 4,
-          "index": 9492
-        },
-        "end": {
-          "line": 330,
-          "column": 5,
-          "index": 9546
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Override event target.",
+          "     *",
+          "     * @param target {Element} new event target",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -682,10 +913,56 @@
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 328,
+          "column": 4,
+          "index": 9492
+        },
+        "end": {
+          "line": 330,
+          "column": 5,
+          "index": 9546
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "target",
+          "type": "Element"
+        }
+      ],
+      "appearsIn": []
     },
     "getCurrentTarget": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Get the event target node whose event listeners are currently being",
+          "     * processed. This is particularly useful during event capturing and",
+          "     * bubbling.",
+          "     *",
+          "     * @return {Element} The target the event listener is currently",
+          "     *       dispatched on.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Get the event target node whose event listeners are currently being\n processed. This is particularly useful during event capturing and\n bubbling.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Element} The target the event listener is currently\n       dispatched on.",
+            "type": "Element",
+            "description": "The target the event listener is currently\n       dispatched on."
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 340,
@@ -698,39 +975,22 @@
           "index": 9913
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Get the event target node whose event listeners are currently being\n processed. This is particularly useful during event capturing and\n bubbling.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Element} The target the event listener is currently\n       dispatched on.",
-            "type": "Element",
-            "description": " The target the event listener is currently\n       dispatched on."
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "Element"
+      },
+      "appearsIn": []
     },
     "setCurrentTarget": {
-      "location": {
-        "start": {
-          "line": 349,
-          "column": 4,
-          "index": 10032
-        },
-        "end": {
-          "line": 351,
-          "column": 5,
-          "index": 10114
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Override current target.",
+          "     *",
+          "     * @param currentTarget {Element} new current target",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -747,10 +1007,55 @@
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 349,
+          "column": 4,
+          "index": 10032
+        },
+        "end": {
+          "line": 351,
+          "column": 5,
+          "index": 10114
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "currentTarget",
+          "type": "Element"
+        }
+      ],
+      "appearsIn": []
     },
     "getRelatedTarget": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Get the related event target. This is only configured for",
+          "     * events which also had an influences on another element e.g.",
+          "     * mouseover/mouseout, focus/blur, ...",
+          "     *",
+          "     * @return {Element} The related target",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Get the related event target. This is only configured for\n events which also had an influences on another element e.g.\n mouseover/mouseout, focus/blur, …</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Element} The related target",
+            "type": "Element",
+            "description": "The related target"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 360,
@@ -763,39 +1068,22 @@
           "index": 10423
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Get the related event target. This is only configured for\n events which also had an influences on another element e.g.\n mouseover/mouseout, focus/blur, …</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Element} The related target",
-            "type": "Element",
-            "description": " The related target"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "Element"
+      },
+      "appearsIn": []
     },
     "setRelatedTarget": {
-      "location": {
-        "start": {
-          "line": 369,
-          "column": 4,
-          "index": 10542
-        },
-        "end": {
-          "line": 371,
-          "column": 5,
-          "index": 10624
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Override related target.",
+          "     *",
+          "     * @param relatedTarget {Element} new related target",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -812,10 +1100,56 @@
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 369,
+          "column": 4,
+          "index": 10542
+        },
+        "end": {
+          "line": 371,
+          "column": 5,
+          "index": 10624
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "relatedTarget",
+          "type": "Element"
+        }
+      ],
+      "appearsIn": []
     },
     "getOriginalTarget": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Get the original event target. This is only configured",
+          "     * for events which are fired by another event (often when",
+          "     * the target should be reconfigured for another view) e.g.",
+          "     * low-level DOM event to widget event.",
+          "     *",
+          "     * @return {Element} The original target",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Get the original event target. This is only configured\n for events which are fired by another event (often when\n the target should be reconfigured for another view) e.g.\n low-level DOM event to widget event.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Element} The original target",
+            "type": "Element",
+            "description": "The original target"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 381,
@@ -828,39 +1162,22 @@
           "index": 10994
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Get the original event target. This is only configured\n for events which are fired by another event (often when\n the target should be reconfigured for another view) e.g.\n low-level DOM event to widget event.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Element} The original target",
-            "type": "Element",
-            "description": " The original target"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "Element"
+      },
+      "appearsIn": []
     },
     "setOriginalTarget": {
-      "location": {
-        "start": {
-          "line": 390,
-          "column": 4,
-          "index": 11116
-        },
-        "end": {
-          "line": 392,
-          "column": 5,
-          "index": 11202
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Override original target.",
+          "     *",
+          "     * @param originalTarget {Element} new original target",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -877,10 +1194,54 @@
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 390,
+          "column": 4,
+          "index": 11116
+        },
+        "end": {
+          "line": 392,
+          "column": 5,
+          "index": 11202
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "originalTarget",
+          "type": "Element"
+        }
+      ],
+      "appearsIn": []
     },
     "getBubbles": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Check whether or not the event is a bubbling event. If the event can",
+          "     * bubble the value is true, else the value is false.",
+          "     *",
+          "     * @return {Boolean} Whether the event bubbles",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Check whether or not the event is a bubbling event. If the event can\n bubble the value is true, else the value is false.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} Whether the event bubbles",
+            "type": "boolean",
+            "description": "Whether the event bubbles"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 400,
@@ -893,39 +1254,22 @@
           "index": 11465
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Check whether or not the event is a bubbling event. If the event can\n bubble the value is true, else the value is false.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Boolean} Whether the event bubbles",
-            "type": "Boolean",
-            "description": " Whether the event bubbles"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
     },
     "setBubbles": {
-      "location": {
-        "start": {
-          "line": 409,
-          "column": 4,
-          "index": 11591
-        },
-        "end": {
-          "line": 411,
-          "column": 5,
-          "index": 11649
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Set whether the event bubbles.",
+          "     *",
+          "     * @param bubbles {Boolean} Whether the event bubbles",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -938,14 +1282,57 @@
             "body": "bubbles {Boolean} Whether the event bubbles",
             "paramName": "bubbles",
             "description": " Whether the event bubbles",
-            "type": "Boolean"
+            "type": "boolean"
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 409,
+          "column": 4,
+          "index": 11591
+        },
+        "end": {
+          "line": 411,
+          "column": 5,
+          "index": 11649
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "bubbles",
+          "type": "boolean"
+        }
+      ],
+      "appearsIn": []
     },
     "isCancelable": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Get whether the event is cancelable",
+          "     *",
+          "     * @return {Boolean} Whether the event is cancelable",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Get whether the event is cancelable</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} Whether the event is cancelable",
+            "type": "boolean",
+            "description": "Whether the event is cancelable"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 418,
@@ -958,39 +1345,22 @@
           "index": 11832
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Get whether the event is cancelable</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Boolean} Whether the event is cancelable",
-            "type": "Boolean",
-            "description": " Whether the event is cancelable"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
     },
     "setCancelable": {
-      "location": {
-        "start": {
-          "line": 427,
-          "column": 4,
-          "index": 11972
-        },
-        "end": {
-          "line": 429,
-          "column": 5,
-          "index": 12042
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Set whether the event is cancelable",
+          "     *",
+          "     * @param cancelable {Boolean} Whether the event is cancelable",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1003,159 +1373,32 @@
             "body": "cancelable {Boolean} Whether the event is cancelable",
             "paramName": "cancelable",
             "description": " Whether the event is cancelable",
-            "type": "Boolean"
+            "type": "boolean"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getQxOwner": {
-      "type": "function",
-      "name": "getQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "qx.core.Object",
-            "desc": "Returns the value for qxOwner"
-          }
-        ]
-      }
-    },
-    "setQxOwner": {
+      "location": {
+        "start": {
+          "line": 427,
+          "column": 4,
+          "index": 11972
+        },
+        "end": {
+          "line": 429,
+          "column": 5,
+          "index": 12042
+        }
+      },
       "type": "function",
-      "name": "setQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.core.Object",
-            "paramName": "value",
-            "desc": "Value for qxOwner"
-          }
-        ]
-      }
-    },
-    "resetQxOwner": {
-      "type": "function",
-      "name": "resetQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxOwner</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ]
-      }
-    },
-    "getQxObjectId": {
-      "type": "function",
-      "name": "getQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "[[ ObjectMethod Function ]]",
-            "desc": "Returns the value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "setQxObjectId": {
-      "type": "function",
-      "name": "setQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "[[ ObjectMethod Function ]]",
-            "paramName": "value",
-            "desc": "Value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "resetQxObjectId": {
-      "type": "function",
-      "name": "resetQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxObjectId</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ]
-      }
+      "params": [
+        {
+          "name": "cancelable",
+          "type": "boolean"
+        }
+      ],
+      "appearsIn": []
     }
   },
-  "descendants": [
-    "qx.event.type.Data",
-    "qx.event.type.Drag",
-    "qx.event.type.Focus",
-    "qx.event.type.GeoPosition",
-    "qx.event.type.Native",
-    "qx.event.type.Orientation",
-    "qx.io.remote.Response"
-  ]
+  "properties": {}
 }

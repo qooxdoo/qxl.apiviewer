@@ -1,54 +1,36 @@
 {
-  "className": "qx.theme.Classic",
-  "packageName": "qx.theme",
-  "name": "Classic",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 23,
-        "column": 0,
-        "index": 542
-      },
-      "end": {
-        "line": 33,
-        "column": 3,
-        "index": 815
-      }
-    },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Classic Windows Theme</p>"
-        }
-      ]
-    }
-  },
+  "version": 0.3,
+  "lastModified": 1712910030493,
+  "lastModifiedIso": "2024-04-12T08:20:30.493Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/theme/Classic.js",
   "type": "theme",
-  "themeMeta": {
-    "location": {
-      "start": {
-        "line": 26,
-        "column": 2,
-        "index": 611
-      },
-      "end": {
-        "line": 32,
-        "column": 3,
-        "index": 811
-      }
+  "location": {
+    "start": {
+      "line": 23,
+      "column": 0,
+      "index": 542
     },
-    "themeMetaMap": {
-      "color": "qx.theme.classic.Color",
-      "decoration": "qx.theme.classic.Decoration",
-      "font": "qx.theme.classic.Font",
-      "appearance": "qx.theme.classic.Appearance",
-      "icon": "qx.theme.icon.Oxygen"
+    "end": {
+      "line": 33,
+      "column": 3,
+      "index": 815
     }
   },
-  "descendants": []
+  "className": "qx.theme.Classic",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Classic Windows Theme",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Classic Windows Theme</p>"
+      }
+    ]
+  },
+  "members": {},
+  "statics": {},
+  "properties": {}
 }

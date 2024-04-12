@@ -1,42 +1,44 @@
 {
-  "className": "qx.log.appender.RhinoFile",
-  "packageName": "qx.log.appender",
-  "name": "RhinoFile",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 23,
-        "column": 0,
-        "index": 588
-      },
-      "end": {
-        "line": 127,
-        "column": 3,
-        "index": 3028
-      }
+  "version": 0.3,
+  "lastModified": 1712910031089,
+  "lastModifiedIso": "2024-04-12T08:20:31.089Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/log/appender/RhinoFile.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 23,
+      "column": 0,
+      "index": 588
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Log appender for qooxdoo applications running in Mozilla Rhino. Writes log\n messages to a text file.</p>"
-        }
-      ],
-      "@ignore": [
-        {
-          "name": "@ignore",
-          "body": "java.*"
-        }
-      ]
+    "end": {
+      "line": 127,
+      "column": 3,
+      "index": 3028
     }
   },
-  "type": "class",
+  "className": "qx.log.appender.RhinoFile",
+  "jsdoc": {
+    "raw": [
+      " global java "
+    ]
+  },
   "statics": {
     "FILENAME": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Path/name of the log file to use, relative to the directory Rhino was",
+          "     * called from.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Path/name of the log file to use, relative to the directory Rhino was\n called from.</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 29,
@@ -49,18 +51,11 @@
           "index": 779
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Path/name of the log file to use, relative to the directory Rhino was\n called from.</p>"
-          }
-        ]
-      },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "__FILEHANDLE": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 31,
@@ -73,23 +68,18 @@
           "index": 804
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "log": {
-      "location": {
-        "start": {
-          "line": 39,
-          "column": 4,
-          "index": 1006
-        },
-        "end": {
-          "line": 48,
-          "column": 5,
-          "index": 1283
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Writes a message to the file.",
+          "     *",
+          "     * @param logMessage {String} Message to be logged",
+          "     * @param level {String} Log level. One of \"debug\", \"info\", \"warn\", \"error\"",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -102,34 +92,52 @@
             "body": "logMessage {String} Message to be logged",
             "paramName": "logMessage",
             "description": " Message to be logged",
-            "type": "String"
+            "type": "string"
           },
           {
             "name": "@param",
             "body": "level {String} Log level. One of \"debug\", \"info\", \"warn\", \"error\"",
             "paramName": "level",
             "description": " Log level. One of \"debug\", \"info\", \"warn\", \"error\"",
-            "type": "String"
+            "type": "string"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "debug": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 55,
+          "line": 39,
           "column": 4,
-          "index": 1396
+          "index": 1006
         },
         "end": {
-          "line": 57,
+          "line": 48,
           "column": 5,
-          "index": 1458
+          "index": 1283
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "logMessage",
+          "type": "string"
+        },
+        {
+          "name": "level",
+          "type": "string"
+        }
+      ],
+      "appearsIn": []
+    },
+    "debug": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Logs a debug message",
+          "     *",
+          "     * @param logMessage {String} Message to be logged",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -142,27 +150,41 @@
             "body": "logMessage {String} Message to be logged",
             "paramName": "logMessage",
             "description": " Message to be logged",
-            "type": "String"
+            "type": "string"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "info": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 64,
+          "line": 55,
           "column": 4,
-          "index": 1571
+          "index": 1396
         },
         "end": {
-          "line": 66,
+          "line": 57,
           "column": 5,
-          "index": 1631
+          "index": 1458
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "logMessage",
+          "type": "string"
+        }
+      ],
+      "appearsIn": []
+    },
+    "info": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Logs an info message",
+          "     *",
+          "     * @param logMessage {String} Message to be logged",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -175,27 +197,41 @@
             "body": "logMessage {String} Message to be logged",
             "paramName": "logMessage",
             "description": " Message to be logged",
-            "type": "String"
+            "type": "string"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "warn": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 73,
+          "line": 64,
           "column": 4,
-          "index": 1746
+          "index": 1571
         },
         "end": {
-          "line": 75,
+          "line": 66,
           "column": 5,
-          "index": 1806
+          "index": 1631
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "logMessage",
+          "type": "string"
+        }
+      ],
+      "appearsIn": []
+    },
+    "warn": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Logs a warning message",
+          "     *",
+          "     * @param logMessage {String} Message to be logged",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -208,27 +244,41 @@
             "body": "logMessage {String} Message to be logged",
             "paramName": "logMessage",
             "description": " Message to be logged",
-            "type": "String"
+            "type": "string"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "error": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 82,
+          "line": 73,
           "column": 4,
-          "index": 1920
+          "index": 1746
         },
         "end": {
-          "line": 84,
+          "line": 75,
           "column": 5,
-          "index": 1982
+          "index": 1806
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "logMessage",
+          "type": "string"
+        }
+      ],
+      "appearsIn": []
+    },
+    "error": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Logs an error message",
+          "     *",
+          "     * @param logMessage {String} Message to be logged",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -241,27 +291,41 @@
             "body": "logMessage {String} Message to be logged",
             "paramName": "logMessage",
             "description": " Message to be logged",
-            "type": "String"
+            "type": "string"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "process": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 91,
+          "line": 82,
           "column": 4,
-          "index": 2120
+          "index": 1920
         },
         "end": {
-          "line": 102,
+          "line": 84,
           "column": 5,
-          "index": 2438
+          "index": 1982
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "logMessage",
+          "type": "string"
+        }
+      ],
+      "appearsIn": []
+    },
+    "process": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Process a log entry object from qooxdoo's logging system.",
+          "     *",
+          "     * @param entry {Map} Log entry object",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -274,14 +338,48 @@
             "body": "entry {Map} Log entry object",
             "paramName": "entry",
             "description": " Log entry object",
-            "type": "Map"
+            "type": "Map<any, any>"
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 91,
+          "column": 4,
+          "index": 2120
+        },
+        "end": {
+          "line": 102,
+          "column": 5,
+          "index": 2438
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "entry",
+          "type": "Map<any, any>"
+        }
+      ],
+      "appearsIn": []
     },
     "create": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Creates a new log file using the value of {@link #FILENAME} as the",
+          "     * file path/name.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Creates a new log file using the value of {@link #FILENAME} as the\n file path/name.</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 108,
@@ -294,17 +392,11 @@
           "index": 3020
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Creates a new log file using the value of {@link #FILENAME} as the\n file path/name.</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "members": {},
+  "properties": {}
 }

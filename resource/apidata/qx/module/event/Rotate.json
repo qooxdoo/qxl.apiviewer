@@ -1,48 +1,67 @@
 {
-  "className": "qx.module.event.Rotate",
-  "packageName": "qx.module.event",
-  "name": "Rotate",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 26,
-        "column": 0,
-        "index": 593
-      },
-      "end": {
-        "line": 76,
-        "column": 3,
-        "index": 1914
-      }
+  "version": 0.3,
+  "lastModified": 1712910031093,
+  "lastModifiedIso": "2024-04-12T08:20:31.093Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/module/event/Rotate.js",
+  "type": "bootstrap",
+  "location": {
+    "start": {
+      "line": 26,
+      "column": 0,
+      "index": 593
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Normalization for the rotate gesture.</p>"
-        }
-      ],
-      "@require": [
-        {
-          "name": "@require",
-          "body": "qx.module.Event"
-        }
-      ],
-      "@group": [
-        {
-          "name": "@group",
-          "body": "Event_Normalization"
-        }
-      ]
+    "end": {
+      "line": 76,
+      "column": 3,
+      "index": 1914
     }
   },
-  "type": "class",
+  "className": "qx.module.event.Rotate",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Normalization for the rotate gesture.",
+      " *",
+      " * @require(qx.module.Event)",
+      " *",
+      " * @group (Event_Normalization)",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Normalization for the rotate gesture.</p>"
+      }
+    ],
+    "@require": [
+      {
+        "name": "@require",
+        "body": "qx.module.Event"
+      }
+    ],
+    "@group": [
+      {
+        "name": "@group",
+        "body": "Event_Normalization"
+      }
+    ]
+  },
   "statics": {
     "TYPES": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * List of event types to be normalized",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>List of event types to be normalized</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 31,
@@ -55,18 +74,11 @@
           "index": 735
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>List of event types to be normalized</p>"
-          }
-        ]
-      },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "BIND_METHODS": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 33,
@@ -79,10 +91,33 @@
           "index": 768
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "getAngle": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns a number with the current calculated angle between the primary and secondary active pointers.",
+          "     *",
+          "     * @return {Number} the angle of the two active pointers.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns a number with the current calculated angle between the primary and secondary active pointers.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Number} the angle of the two active pointers.",
+            "type": "number",
+            "description": "the angle of the two active pointers."
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 40,
@@ -95,39 +130,26 @@
           "index": 1022
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns a number with the current calculated angle between the primary and secondary active pointers.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Number} the angle of the two active pointers.",
-            "type": "Number",
-            "description": " the angle of the two active pointers."
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "number"
+      },
+      "appearsIn": []
     },
     "normalize": {
-      "location": {
-        "start": {
-          "line": 53,
-          "column": 4,
-          "index": 1334
-        },
-        "end": {
-          "line": 67,
-          "column": 5,
-          "index": 1775
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Manipulates the native event object, adding methods if they're not",
+          "     * already present",
+          "     *",
+          "     * @param event {Event} Native event object",
+          "     * @param element {Element} DOM element the listener was attached to",
+          "     * @return {Event} Normalized event object",
+          "     * @internal",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -155,7 +177,7 @@
             "name": "@return",
             "body": "{Event} Normalized event object",
             "type": "Event",
-            "description": " Normalized event object"
+            "description": "Normalized event object"
           }
         ],
         "@internal": [
@@ -165,23 +187,36 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    }
-  },
-  "defer": {
-    "location": {
-      "start": {
-        "line": 70,
-        "column": 2,
-        "index": 1784
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 53,
+          "column": 4,
+          "index": 1334
+        },
+        "end": {
+          "line": 67,
+          "column": 5,
+          "index": 1775
+        }
       },
-      "end": {
-        "line": 75,
-        "column": 3,
-        "index": 1910
-      }
+      "type": "function",
+      "params": [
+        {
+          "name": "event",
+          "type": "Event"
+        },
+        {
+          "name": "element",
+          "type": "Element"
+        }
+      ],
+      "returnType": {
+        "type": "Event"
+      },
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "members": {},
+  "properties": {}
 }

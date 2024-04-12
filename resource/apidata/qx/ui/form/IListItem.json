@@ -1,33 +1,37 @@
 {
-  "className": "qx.ui.form.IListItem",
-  "packageName": "qx.ui.form",
-  "name": "IListItem",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 23,
-        "column": 0,
-        "index": 588
-      },
-      "end": {
-        "line": 23,
-        "column": 48,
-        "index": 636
-      }
+  "version": 0.3,
+  "lastModified": 1712910030817,
+  "lastModifiedIso": "2024-04-12T08:20:30.817Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/ui/form/IListItem.js",
+  "type": "interface",
+  "location": {
+    "start": {
+      "line": 23,
+      "column": 0,
+      "index": 588
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>This is a marker interface for classes which can act as a children of\n {@link qx.ui.form.List}</p>"
-        }
-      ]
+    "end": {
+      "line": 23,
+      "column": 48,
+      "index": 636
     }
   },
-  "type": "interface",
-  "descendants": []
+  "className": "qx.ui.form.IListItem",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * This is a marker interface for classes which can act as a children of",
+      " * {@link qx.ui.form.List}",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>This is a marker interface for classes which can act as a children of\n {@link qx.ui.form.List}</p>"
+      }
+    ]
+  },
+  "members": {},
+  "statics": {},
+  "properties": {}
 }

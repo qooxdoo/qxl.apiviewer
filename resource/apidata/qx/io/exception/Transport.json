@@ -1,36 +1,41 @@
 {
-  "className": "qx.io.exception.Transport",
-  "packageName": "qx.io.exception",
-  "name": "Transport",
-  "superClass": "qx.io.exception.Exception",
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 23,
-        "column": 0,
-        "index": 619
-      },
-      "end": {
-        "line": 38,
-        "column": 3,
-        "index": 978
-      }
+  "version": 0.3,
+  "lastModified": 1712910031217,
+  "lastModifiedIso": "2024-04-12T08:20:31.217Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/io/exception/Transport.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 23,
+      "column": 0,
+      "index": 619
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>A class for representing errors that occurred during the request transport.\n  In the context of HTTP requests, the error code is the HTTP error code.</p>"
-        }
-      ]
+    "end": {
+      "line": 38,
+      "column": 3,
+      "index": 978
     }
   },
-  "type": "class",
+  "className": "qx.io.exception.Transport",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " *  A class for representing errors that occurred during the request transport.",
+      " *  In the context of HTTP requests, the error code is the HTTP error code.",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>A class for representing errors that occurred during the request transport.\n  In the context of HTTP requests, the error code is the HTTP error code.</p>"
+      }
+    ]
+  },
+  "superClass": "qx.io.exception.Exception",
   "statics": {
     "TIMEOUT": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 26,
@@ -43,10 +48,11 @@
           "index": 730
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "ABORTED": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 27,
@@ -59,10 +65,11 @@
           "index": 746
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "NO_DATA": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 28,
@@ -75,10 +82,11 @@
           "index": 762
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "INVALID_MSG_DATA": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 29,
@@ -91,10 +99,11 @@
           "index": 787
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "CANCELLED": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 30,
@@ -107,10 +116,11 @@
           "index": 805
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "INVALID_URI": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 31,
@@ -123,10 +133,11 @@
           "index": 825
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "FAILED": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 32,
@@ -139,10 +150,11 @@
           "index": 840
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "INVALID_ID": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 33,
@@ -155,10 +167,15 @@
           "index": 859
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "INVALID_JSON": {
+      "jsdoc": {
+        "raw": [
+          " JSON-RPC"
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 34,
@@ -171,11 +188,15 @@
           "index": 892
         }
       },
-      "jsdoc": {},
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "DUPLICATE_ID": {
+      "jsdoc": {
+        "raw": [
+          " JSON-RPC"
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 35,
@@ -188,11 +209,15 @@
           "index": 926
         }
       },
-      "jsdoc": {},
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "UNKNOWN_ID": {
+      "jsdoc": {
+        "raw": [
+          " JSON-RPC"
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 36,
@@ -205,10 +230,9 @@
           "index": 958
         }
       },
-      "jsdoc": {},
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "members": {},
+  "properties": {}
 }

@@ -1,36 +1,52 @@
 {
-  "className": "qx.tool.cli.commands.package.List",
-  "packageName": "qx.tool.cli.commands.package",
-  "name": "List",
-  "superClass": "qx.tool.cli.commands.Package",
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 25,
-        "column": 0,
-        "index": 612
-      },
-      "end": {
-        "line": 633,
-        "column": 3,
-        "index": 20228
-      }
+  "version": 0.3,
+  "lastModified": 1712910030913,
+  "lastModifiedIso": "2024-04-12T08:20:30.913Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/tool/cli/commands/package/List.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 25,
+      "column": 0,
+      "index": 612
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Lists compatible packages</p>"
-        }
-      ]
+    "end": {
+      "line": 642,
+      "column": 3,
+      "index": 20496
     }
   },
-  "type": "class",
+  "className": "qx.tool.cli.commands.package.List",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Lists compatible packages",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Lists compatible packages</p>"
+      }
+    ]
+  },
+  "superClass": "qx.tool.cli.commands.Package",
   "statics": {
     "localPathRepoName": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * The name of a \"fake\" repository containing libraries from local paths",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>The name of a \"fake\" repository containing libraries from local paths</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 31,
@@ -43,18 +59,32 @@
           "index": 845
         }
       },
+      "appearsIn": []
+    },
+    "getYargsCommand": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the yargs command data",
+          "     * @return {Object}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>The name of a \"fake\" repository containing libraries from local paths</p>"
+            "body": "<p>Returns the yargs command data</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Object}",
+            "type": "Record<any, any>",
+            "description": ""
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "getYargsCommand": {
+      "access": "public",
       "location": {
         "start": {
           "line": 37,
@@ -67,41 +97,24 @@
           "index": 2998
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the yargs command data</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Object}",
-            "type": "Object",
-            "description": ""
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "Record<any, any>"
+      },
+      "appearsIn": [
+        "qx.tool.cli.commands.Package"
+      ]
     }
   },
   "members": {
     "process": {
-      "location": {
-        "start": {
-          "line": 118,
-          "column": 4,
-          "index": 3104
-        },
-        "end": {
-          "line": 422,
-          "column": 5,
-          "index": 12796
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Lists library packages compatible with the current project",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -109,27 +122,33 @@
           }
         ]
       },
-      "type": "function",
       "access": "public",
+      "location": {
+        "start": {
+          "line": 118,
+          "column": 4,
+          "index": 3104
+        },
+        "end": {
+          "line": 431,
+          "column": 5,
+          "index": 13064
+        }
+      },
+      "type": "function",
+      "params": [],
       "overriddenFrom": "qx.tool.cli.commands.Command",
       "appearsIn": [
         "qx.tool.cli.commands.Command"
       ]
     },
     "__repositories": {
-      "location": {
-        "start": {
-          "line": 427,
-          "column": 4,
-          "index": 12848
-        },
-        "end": {
-          "line": 427,
-          "column": 24,
-          "index": 12868
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * compatibility indexes",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -137,55 +156,64 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
-    },
-    "__libraries": {
-      "location": {
-        "start": {
-          "line": 428,
-          "column": 4,
-          "index": 12874
-        },
-        "end": {
-          "line": 428,
-          "column": 21,
-          "index": 12891
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__latestCompatible": {
-      "location": {
-        "start": {
-          "line": 429,
-          "column": 4,
-          "index": 12897
-        },
-        "end": {
-          "line": 429,
-          "column": 28,
-          "index": 12921
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__createIndexes": {
+      "access": "private",
       "location": {
         "start": {
           "line": 436,
           "column": 4,
-          "index": 13192
+          "index": 13116
         },
         "end": {
-          "line": 631,
-          "column": 5,
-          "index": 20220
+          "line": 436,
+          "column": 24,
+          "index": 13136
         }
       },
+      "appearsIn": []
+    },
+    "__libraries": {
+      "jsdoc": null,
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 437,
+          "column": 4,
+          "index": 13142
+        },
+        "end": {
+          "line": 437,
+          "column": 21,
+          "index": 13159
+        }
+      },
+      "appearsIn": []
+    },
+    "__latestCompatible": {
+      "jsdoc": null,
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 438,
+          "column": 4,
+          "index": 13165
+        },
+        "end": {
+          "line": 438,
+          "column": 28,
+          "index": 13189
+        }
+      },
+      "appearsIn": []
+    },
+    "__createIndexes": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Create compatibilty indexes of repositories and the contained libraries",
+          "     * @param qooxdoo_version {String} The qooxdoo version to check compatibiity with",
+          "     * @return {Number} The number of repositories containing compatible libraries",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -198,228 +226,43 @@
             "body": "qooxdoo_version {String} The qooxdoo version to check compatibiity with",
             "paramName": "qooxdoo_version",
             "description": " The qooxdoo version to check compatibiity with",
-            "type": "String"
+            "type": "string"
           }
         ],
         "@return": [
           {
             "name": "@return",
             "body": "{Number} The number of repositories containing compatible libraries",
-            "type": "Number",
-            "description": " The number of repositories containing compatible libraries"
+            "type": "number",
+            "description": "The number of repositories containing compatible libraries"
           }
         ]
       },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 445,
+          "column": 4,
+          "index": 13460
+        },
+        "end": {
+          "line": 640,
+          "column": 5,
+          "index": 20488
+        }
+      },
       "type": "function",
-      "access": "private"
-    },
-    "getQxOwner": {
-      "type": "function",
-      "name": "getQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.cli.commands.Package",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "qx.core.Object",
-            "desc": "Returns the value for qxOwner"
-          }
-        ]
-      }
-    },
-    "setQxOwner": {
-      "type": "function",
-      "name": "setQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.cli.commands.Package",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.core.Object",
-            "paramName": "value",
-            "desc": "Value for qxOwner"
-          }
-        ]
-      }
-    },
-    "resetQxOwner": {
-      "type": "function",
-      "name": "resetQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.cli.commands.Package",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxOwner</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ]
-      }
-    },
-    "getQxObjectId": {
-      "type": "function",
-      "name": "getQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.cli.commands.Package",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "[[ ObjectMethod Function ]]",
-            "desc": "Returns the value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "setQxObjectId": {
-      "type": "function",
-      "name": "setQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.cli.commands.Package",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "[[ ObjectMethod Function ]]",
-            "paramName": "value",
-            "desc": "Value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "resetQxObjectId": {
-      "type": "function",
-      "name": "resetQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.cli.commands.Package",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxObjectId</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ]
-      }
-    },
-    "getCompilerApi": {
-      "type": "function",
-      "name": "getCompilerApi",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.cli.commands.Package",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>compilerApi</code>.\n\nFor further details take a look at the property definition: {@link #compilerApi}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "qx.tool.cli.api.CompilerApi",
-            "desc": "Returns the value for compilerApi"
-          }
-        ]
-      }
-    },
-    "setCompilerApi": {
-      "type": "function",
-      "name": "setCompilerApi",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.cli.commands.Package",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>compilerApi</code>.\n\nFor further details take a look at the property definition: {@link #compilerApi}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.tool.cli.api.CompilerApi",
-            "paramName": "value",
-            "desc": "Value for compilerApi"
-          }
-        ]
-      }
-    },
-    "resetCompilerApi": {
-      "type": "function",
-      "name": "resetCompilerApi",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.cli.commands.Package",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>compilerApi</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #compilerApi}."
-          }
-        ]
-      }
+      "params": [
+        {
+          "name": "qooxdoo_version",
+          "type": "string"
+        }
+      ],
+      "returnType": {
+        "type": "number"
+      },
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "properties": {}
 }

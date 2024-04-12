@@ -1,35 +1,39 @@
 {
-  "className": "qx.ui.core.MMultiSelectionHandling",
-  "packageName": "qx.ui.core",
-  "name": "MMultiSelectionHandling",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 24,
-        "column": 0,
-        "index": 647
-      },
-      "end": {
-        "line": 436,
-        "column": 3,
-        "index": 12363
-      }
+  "version": 0.3,
+  "lastModified": 1712910030969,
+  "lastModifiedIso": "2024-04-12T08:20:30.969Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/ui/core/MMultiSelectionHandling.js",
+  "type": "mixin",
+  "location": {
+    "start": {
+      "line": 24,
+      "column": 0,
+      "index": 647
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>This mixin links all methods to manage the multi selection from the\n internal selection manager to the widget.</p>"
-        }
-      ]
+    "end": {
+      "line": 436,
+      "column": 3,
+      "index": 12363
     }
   },
-  "type": "mixin",
+  "className": "qx.ui.core.MMultiSelectionHandling",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * This mixin links all methods to manage the multi selection from the",
+      " * internal selection manager to the widget.",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>This mixin links all methods to manage the multi selection from the\n internal selection manager to the widget.</p>"
+      }
+    ]
+  },
   "construct": {
+    "type": "function",
+    "params": [],
     "location": {
       "start": {
         "line": 31,
@@ -41,11 +45,22 @@
         "column": 3,
         "index": 1729
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {
     "changeValue": {
+      "type": "qx.event.type.Data",
+      "jsdoc": {
+        "raw": [
+          "* Fires after the value was modified "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Fires after the value was modified</p>"
+          }
+        ]
+      },
       "location": {
         "start": {
           "line": 59,
@@ -57,19 +72,21 @@
           "column": 37,
           "index": 2010
         }
-      },
+      }
+    },
+    "changeSelection": {
+      "type": "qx.event.type.Data",
       "jsdoc": {
+        "raw": [
+          "* Fires after the selection was modified "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Fires after the value was modified</p>"
+            "body": "<p>Fires after the selection was modified</p>"
           }
         ]
       },
-      "name": "changeValue",
-      "type": "qx.event.type.Data"
-    },
-    "changeSelection": {
       "location": {
         "start": {
           "line": 62,
@@ -81,17 +98,7 @@
           "column": 41,
           "index": 2104
         }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Fires after the selection was modified</p>"
-          }
-        ]
-      },
-      "name": "changeSelection",
-      "type": "qx.event.type.Data"
+      }
     }
   },
   "properties": {
@@ -108,7 +115,25 @@
           "index": 2607
         }
       },
+      "json": {
+        "check": [
+          "single",
+          "multi",
+          "additive",
+          "one"
+        ],
+        "init": "single",
+        "apply": "_applySelectionMode"
+      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * The selection mode to use.",
+          "     *",
+          "     * For further details please have a look at:",
+          "     * {@link qx.ui.core.selection.Abstract#mode}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -116,17 +141,7 @@
           }
         ]
       },
-      "name": "selectionMode",
-      "propertyType": "new",
-      "apply": "_applySelectionMode",
-      "init": "single",
-      "possibleValues": [
-        "single",
-        "multi",
-        "additive",
-        "one"
-      ],
-      "defaultValue": "single"
+      "appearsIn": []
     },
     "dragSelection": {
       "location": {
@@ -141,7 +156,20 @@
           "index": 2938
         }
       },
+      "json": {
+        "check": "Boolean",
+        "init": false,
+        "apply": "_applyDragSelection"
+      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Enable drag selection (multi selection of items through",
+          "     * dragging the pointer in pressed states).",
+          "     *",
+          "     * Only possible for the selection modes <code>multi</code> and <code>additive</code>",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -149,12 +177,7 @@
           }
         ]
       },
-      "name": "dragSelection",
-      "propertyType": "new",
-      "apply": "_applyDragSelection",
-      "init": false,
-      "check": "Boolean",
-      "defaultValue": false
+      "appearsIn": []
     },
     "quickSelection": {
       "location": {
@@ -169,7 +192,19 @@
           "index": 3231
         }
       },
+      "json": {
+        "check": "Boolean",
+        "init": false,
+        "apply": "_applyQuickSelection"
+      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Enable quick selection mode, where no tap is needed to change the selection.",
+          "     *",
+          "     * Only possible for the modes <code>single</code> and <code>one</code>.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -177,29 +212,15 @@
           }
         ]
       },
-      "name": "quickSelection",
-      "propertyType": "new",
-      "apply": "_applyQuickSelection",
-      "init": false,
-      "check": "Boolean",
-      "defaultValue": false
+      "appearsIn": []
     }
   },
   "members": {
     "__manager": {
-      "location": {
-        "start": {
-          "line": 116,
-          "column": 4,
-          "index": 3510
-        },
-        "end": {
-          "line": 116,
-          "column": 19,
-          "index": 3525
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "* @type {qx.ui.core.selection.Abstract} The selection manager "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -213,23 +234,26 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
-    },
-    "__inOnSelectionChange": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 119,
+          "line": 116,
           "column": 4,
-          "index": 3606
+          "index": 3510
         },
         "end": {
-          "line": 119,
-          "column": 32,
-          "index": 3634
+          "line": 116,
+          "column": 19,
+          "index": 3525
         }
       },
+      "appearsIn": []
+    },
+    "__inOnSelectionChange": {
       "jsdoc": {
+        "raw": [
+          "* @type {Boolean} used to control recursion in onSelectionChange "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -243,23 +267,31 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
-    },
-    "setValue": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 133,
+          "line": 119,
           "column": 4,
-          "index": 4057
+          "index": 3606
         },
         "end": {
-          "line": 155,
-          "column": 5,
-          "index": 4599
+          "line": 119,
+          "column": 32,
+          "index": 3634
         }
       },
+      "appearsIn": []
+    },
+    "setValue": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * setValue implements part of the {@link qx.ui.form.IField} interface.",
+          "     *",
+          "     * @param items {null|qx.ui.core.Widget[]} Items to select.",
+          "     * @returns {null|TypeError} The status of this operation.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -286,14 +318,66 @@
             "name": "@return",
             "body": "{null|TypeError} The status of this operation.",
             "type": "null|TypeError",
-            "description": " The status of this operation."
+            "description": "The status of this operation."
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 133,
+          "column": 4,
+          "index": 4057
+        },
+        "end": {
+          "line": 155,
+          "column": 5,
+          "index": 4599
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "items",
+          "type": [
+            "null",
+            {
+              "type": "qx.ui.core.Widget",
+              "dimensions": 2
+            }
+          ]
+        }
+      ],
+      "returnType": {
+        "type": "null|TypeError"
+      },
+      "appearsIn": []
     },
     "getValue": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * getValue implements part of the {@link qx.ui.form.IField} interface.",
+          "     *",
+          "     * @returns {qx.ui.core.Widget[]} The selected widgets or null if there are none.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>getValue implements part of the {@link qx.ui.form.IField} interface.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{qx.ui.core.Widget[]} The selected widgets or null if there are none.",
+            "type": "qx.ui.core.Widget[]",
+            "description": "The selected widgets or null if there are none."
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 162,
@@ -306,26 +390,28 @@
           "index": 4853
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "qx.ui.core.Widget[]"
+      },
+      "appearsIn": []
+    },
+    "resetValue": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * resetValue implements part of the {@link qx.ui.form.IField} interface.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>getValue implements part of the {@link qx.ui.form.IField} interface.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.ui.core.Widget[]} The selected widgets or null if there are none.",
-            "type": "qx.ui.core.Widget[]",
-            "description": " The selected widgets or null if there are none."
+            "body": "<p>resetValue implements part of the {@link qx.ui.form.IField} interface.</p>"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "resetValue": {
+      "access": "public",
       "location": {
         "start": {
           "line": 169,
@@ -338,18 +424,25 @@
           "index": 5013
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "selectAll": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Selects all items of the managed object.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>resetValue implements part of the {@link qx.ui.form.IField} interface.</p>"
+            "body": "<p>Selects all items of the managed object.</p>"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "selectAll": {
+      "access": "public",
       "location": {
         "start": {
           "line": 176,
@@ -362,31 +455,21 @@
           "index": 5137
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Selects all items of the managed object.</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "appearsIn": []
     },
     "isSelected": {
-      "location": {
-        "start": {
-          "line": 187,
-          "column": 4,
-          "index": 5408
-        },
-        "end": {
-          "line": 197,
-          "column": 5,
-          "index": 5695
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Detects whether the given item is currently selected.",
+          "     *",
+          "     * @param item {qx.ui.core.Widget} Any valid selectable item.",
+          "     * @return {Boolean} Whether the item is selected.",
+          "     * @throws {Error} if the item is not a child element.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -406,8 +489,8 @@
           {
             "name": "@return",
             "body": "{Boolean} Whether the item is selected.",
-            "type": "Boolean",
-            "description": " Whether the item is selected."
+            "type": "boolean",
+            "description": "Whether the item is selected."
           }
         ],
         "@throws": [
@@ -419,23 +502,44 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "addToSelection": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 208,
+          "line": 187,
           "column": 4,
-          "index": 5994
+          "index": 5408
         },
         "end": {
-          "line": 218,
+          "line": 197,
           "column": 5,
-          "index": 6270
+          "index": 5695
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "item",
+          "type": "qx.ui.core.Widget"
+        }
+      ],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "addToSelection": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds the given item to the existing selection.",
+          "     *",
+          "     * Use {@link #setSelection} instead if you want to replace",
+          "     * the current selection.",
+          "     *",
+          "     * @param item {qx.ui.core.Widget} Any valid item.",
+          "     * @throws {Error} if the item is not a child element.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -460,23 +564,41 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "removeFromSelection": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 229,
+          "line": 208,
           "column": 4,
-          "index": 6564
+          "index": 5994
         },
         "end": {
-          "line": 239,
+          "line": 218,
           "column": 5,
-          "index": 6851
+          "index": 6270
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "item",
+          "type": "qx.ui.core.Widget"
+        }
+      ],
+      "appearsIn": []
+    },
+    "removeFromSelection": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Removes the given item from the selection.",
+          "     *",
+          "     * Use {@link #resetSelection} when you want to clear",
+          "     * the whole selection at once.",
+          "     *",
+          "     * @param item {qx.ui.core.Widget} Any valid item",
+          "     * @throws {Error} if the item is not a child element.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -501,23 +623,38 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "selectRange": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 247,
+          "line": 229,
           "column": 4,
-          "index": 7047
+          "index": 6564
         },
         "end": {
-          "line": 249,
+          "line": 239,
           "column": 5,
-          "index": 7128
+          "index": 6851
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "item",
+          "type": "qx.ui.core.Widget"
+        }
+      ],
+      "appearsIn": []
+    },
+    "selectRange": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Selects an item range between two given items.",
+          "     *",
+          "     * @param begin {qx.ui.core.Widget} Item to start with",
+          "     * @param end {qx.ui.core.Widget} Item to end at",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -541,10 +678,49 @@
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 247,
+          "column": 4,
+          "index": 7047
+        },
+        "end": {
+          "line": 249,
+          "column": 5,
+          "index": 7128
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "begin",
+          "type": "qx.ui.core.Widget"
+        },
+        {
+          "name": "end",
+          "type": "qx.ui.core.Widget"
+        }
+      ],
+      "appearsIn": []
     },
     "resetSelection": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Clears the whole selection at once. Also",
+          "     * resets the lead and anchor items and their",
+          "     * styles.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Clears the whole selection at once. Also\n resets the lead and anchor items and their\n styles.</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 256,
@@ -557,31 +733,22 @@
           "index": 7327
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Clears the whole selection at once. Also\n resets the lead and anchor items and their\n styles.</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "appearsIn": []
     },
     "setSelection": {
-      "location": {
-        "start": {
-          "line": 268,
-          "column": 4,
-          "index": 7667
-        },
-        "end": {
-          "line": 294,
-          "column": 5,
-          "index": 8581
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Replaces current selection with the given items.",
+          "     *",
+          "     * @param items {qx.ui.core.Widget[]} Items to select.",
+          "     * @throws {Error} if one of the items is not a child element and if",
+          "     *    the mode is set to <code>single</code> or <code>one</code> and",
+          "     *    the items contains more than one item.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -606,10 +773,56 @@
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 268,
+          "column": 4,
+          "index": 7667
+        },
+        "end": {
+          "line": 294,
+          "column": 5,
+          "index": 8581
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "items",
+          "type": "qx.ui.core.Widget[]"
+        }
+      ],
+      "appearsIn": []
     },
     "getSelection": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns an array of currently selected items.",
+          "     *",
+          "     * Note: The result is only a set of selected items, so the order can",
+          "     * differ from the sequence in which the items were added.",
+          "     *",
+          "     * @return {qx.ui.core.Widget[]} List of items.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns an array of currently selected items.\n Note: The result is only a set of selected items, so the order can\n differ from the sequence in which the items were added.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{qx.ui.core.Widget[]} List of items.",
+            "type": "qx.ui.core.Widget[]",
+            "description": "List of items."
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 304,
@@ -622,26 +835,39 @@
           "index": 8926
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "qx.ui.core.Widget[]"
+      },
+      "appearsIn": []
+    },
+    "getSortedSelection": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns an array of currently selected items sorted",
+          "     * by their index in the container.",
+          "     *",
+          "     * @return {qx.ui.core.Widget[]} Sorted list of items",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Returns an array of currently selected items.\n Note: The result is only a set of selected items, so the order can\n differ from the sequence in which the items were added.</p>"
+            "body": "<p>Returns an array of currently selected items sorted\n by their index in the container.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.Widget[]} List of items.",
+            "body": "{qx.ui.core.Widget[]} Sorted list of items",
             "type": "qx.ui.core.Widget[]",
-            "description": " List of items."
+            "description": "Sorted list of items"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getSortedSelection": {
+      "access": "public",
       "location": {
         "start": {
           "line": 314,
@@ -654,26 +880,38 @@
           "index": 9191
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "qx.ui.core.Widget[]"
+      },
+      "appearsIn": []
+    },
+    "isSelectionEmpty": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether the selection is empty",
+          "     *",
+          "     * @return {Boolean} Whether the selection is empty",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Returns an array of currently selected items sorted\n by their index in the container.</p>"
+            "body": "<p>Whether the selection is empty</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.Widget[]} Sorted list of items",
-            "type": "qx.ui.core.Widget[]",
-            "description": " Sorted list of items"
+            "body": "{Boolean} Whether the selection is empty",
+            "type": "boolean",
+            "description": "Whether the selection is empty"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "isSelectionEmpty": {
+      "access": "public",
       "location": {
         "start": {
           "line": 323,
@@ -686,26 +924,39 @@
           "index": 9389
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "getSelectionContext": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the last selection context.",
+          "     *",
+          "     * @return {String|null} One of <code>tap</code>, <code>quick</code>,",
+          "     *    <code>drag</code> or <code>key</code> or <code>null</code>.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Whether the selection is empty</p>"
+            "body": "<p>Returns the last selection context.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} Whether the selection is empty",
-            "type": "Boolean",
-            "description": " Whether the selection is empty"
+            "body": "{String|null} One of <code>tap</code>, <code>quick</code>,\n    <code>drag</code> or <code>key</code> or <code>null</code>.",
+            "type": "String|null",
+            "description": "One of <code>tap</code>, <code>quick</code>,\n    <code>drag</code> or <code>key</code> or <code>null</code>."
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getSelectionContext": {
+      "access": "public",
       "location": {
         "start": {
           "line": 333,
@@ -718,26 +969,39 @@
           "index": 9686
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "String|null"
+      },
+      "appearsIn": []
+    },
+    "_getManager": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the internal selection manager. Use this with",
+          "     * caution!",
+          "     *",
+          "     * @return {qx.ui.core.selection.Abstract} The selection manager",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Returns the last selection context.</p>"
+            "body": "<p>Returns the internal selection manager. Use this with\n caution!</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} One of <code>tap</code>, <code>quick</code>,\n    <code>drag</code> or <code>key</code> or <code>null</code>.",
-            "type": "String|null",
-            "description": " One of <code>tap</code>, <code>quick</code>,\n    <code>drag</code> or <code>key</code> or <code>null</code>."
+            "body": "{qx.ui.core.selection.Abstract} The selection manager",
+            "type": "qx.ui.core.selection.Abstract",
+            "description": "The selection manager"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "_getManager": {
+      "access": "protected",
       "location": {
         "start": {
           "line": 343,
@@ -750,39 +1014,24 @@
           "index": 9912
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the internal selection manager. Use this with\n caution!</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.ui.core.selection.Abstract} The selection manager",
-            "type": "qx.ui.core.selection.Abstract",
-            "description": " The selection manager"
-          }
-        ]
-      },
       "type": "function",
-      "access": "protected"
+      "params": [],
+      "returnType": {
+        "type": "qx.ui.core.selection.Abstract"
+      },
+      "appearsIn": []
     },
     "getSelectables": {
-      "location": {
-        "start": {
-          "line": 354,
-          "column": 4,
-          "index": 10173
-        },
-        "end": {
-          "line": 356,
-          "column": 5,
-          "index": 10249
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns all elements which are selectable.",
+          "     *",
+          "     * @param all {Boolean} true for all selectables, false for the",
+          "     *   selectables the user can interactively select",
+          "     * @return {qx.ui.core.Widget[]} The contained items.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -795,7 +1044,7 @@
             "body": "all {Boolean} true for all selectables, false for the\n   selectables the user can interactively select",
             "paramName": "all",
             "description": " true for all selectables, false for the\n   selectables the user can interactively select",
-            "type": "Boolean"
+            "type": "boolean"
           }
         ],
         "@return": [
@@ -803,14 +1052,50 @@
             "name": "@return",
             "body": "{qx.ui.core.Widget[]} The contained items.",
             "type": "qx.ui.core.Widget[]",
-            "description": " The contained items."
+            "description": "The contained items."
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 354,
+          "column": 4,
+          "index": 10173
+        },
+        "end": {
+          "line": 356,
+          "column": 5,
+          "index": 10249
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "all",
+          "type": "boolean"
+        }
+      ],
+      "returnType": {
+        "type": "qx.ui.core.Widget[]"
+      },
+      "appearsIn": []
     },
     "invertSelection": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Invert the selection. Select the non selected and deselect the selected.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Invert the selection. Select the non selected and deselect the selected.</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 361,
@@ -823,18 +1108,36 @@
           "index": 10417
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "_getLeadItem": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the current lead item. Generally the item which was last modified",
+          "     * by the user (tapped on etc.)",
+          "     *",
+          "     * @return {qx.ui.core.Widget} The lead item or <code>null</code>",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Invert the selection. Select the non selected and deselect the selected.</p>"
+            "body": "<p>Returns the current lead item. Generally the item which was last modified\n by the user (tapped on etc.)</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{qx.ui.core.Widget} The lead item or <code>null</code>",
+            "type": "qx.ui.core.Widget",
+            "description": "The lead item or <code>null</code>"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "_getLeadItem": {
+      "access": "protected",
       "location": {
         "start": {
           "line": 371,
@@ -847,26 +1150,20 @@
           "index": 10866
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the current lead item. Generally the item which was last modified\n by the user (tapped on etc.)</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.ui.core.Widget} The lead item or <code>null</code>",
-            "type": "qx.ui.core.Widget",
-            "description": " The lead item or <code>null</code>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "protected"
+      "params": [],
+      "returnType": {
+        "type": "qx.ui.core.Widget"
+      },
+      "appearsIn": []
     },
     "_applySelectionMode": {
+      "jsdoc": {
+        "raw": [
+          " property apply"
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 388,
@@ -879,14 +1176,24 @@
           "index": 11176
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "protected",
-      "applyFor": [
-        "selectionMode"
-      ]
+      "params": [
+        {
+          "name": "value"
+        },
+        {
+          "name": "old"
+        }
+      ],
+      "appearsIn": []
     },
     "_applyDragSelection": {
+      "jsdoc": {
+        "raw": [
+          " property apply"
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 393,
@@ -899,14 +1206,24 @@
           "index": 11281
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "protected",
-      "applyFor": [
-        "dragSelection"
-      ]
+      "params": [
+        {
+          "name": "value"
+        },
+        {
+          "name": "old"
+        }
+      ],
+      "appearsIn": []
     },
     "_applyQuickSelection": {
+      "jsdoc": {
+        "raw": [
+          " property apply"
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 398,
@@ -919,27 +1236,26 @@
           "index": 11388
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "protected",
-      "applyFor": [
-        "quickSelection"
-      ]
+      "params": [
+        {
+          "name": "value"
+        },
+        {
+          "name": "old"
+        }
+      ],
+      "appearsIn": []
     },
     "_onSelectionChange": {
-      "location": {
-        "start": {
-          "line": 413,
-          "column": 4,
-          "index": 11744
-        },
-        "end": {
-          "line": 424,
-          "column": 5,
-          "index": 12108
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Event listener for <code>changeSelection</code> event on selection manager.",
+          "     *",
+          "     * @param e {qx.event.type.Data} Data event",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -956,257 +1272,32 @@
           }
         ]
       },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 413,
+          "column": 4,
+          "index": 11744
+        },
+        "end": {
+          "line": 424,
+          "column": 5,
+          "index": 12108
+        }
+      },
       "type": "function",
-      "access": "protected"
-    },
-    "getSelectionMode": {
-      "type": "function",
-      "name": "getSelectionMode",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>selectionMode</code>.\n\nFor further details take a look at the property definition: {@link #selectionMode}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "any",
-            "desc": "Returns the value for selectionMode"
-          }
-        ]
-      }
-    },
-    "setSelectionMode": {
-      "type": "function",
-      "name": "setSelectionMode",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>selectionMode</code>.\n\nFor further details take a look at the property definition: {@link #selectionMode}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "any",
-            "paramName": "value",
-            "desc": "Value for selectionMode"
-          }
-        ]
-      }
-    },
-    "resetSelectionMode": {
-      "type": "function",
-      "name": "resetSelectionMode",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>selectionMode</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #selectionMode}."
-          }
-        ]
-      }
-    },
-    "getDragSelection": {
-      "type": "function",
-      "name": "getDragSelection",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>dragSelection</code>.\n\nFor further details take a look at the property definition: {@link #dragSelection}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Boolean",
-            "desc": "Returns the value for dragSelection"
-          }
-        ]
-      }
-    },
-    "isDragSelection": {
-      "type": "function",
-      "name": "isDragSelection",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "is",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>dragSelection</code>.\n\nFor further details take a look at the property definition: {@link #dragSelection}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Boolean",
-            "desc": "Returns the value for dragSelection"
-          }
-        ]
-      }
-    },
-    "setDragSelection": {
-      "type": "function",
-      "name": "setDragSelection",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>dragSelection</code>.\n\nFor further details take a look at the property definition: {@link #dragSelection}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "Boolean",
-            "paramName": "value",
-            "desc": "Value for dragSelection"
-          }
-        ]
-      }
-    },
-    "resetDragSelection": {
-      "type": "function",
-      "name": "resetDragSelection",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>dragSelection</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #dragSelection}."
-          }
-        ]
-      }
-    },
-    "getQuickSelection": {
-      "type": "function",
-      "name": "getQuickSelection",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>quickSelection</code>.\n\nFor further details take a look at the property definition: {@link #quickSelection}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Boolean",
-            "desc": "Returns the value for quickSelection"
-          }
-        ]
-      }
-    },
-    "isQuickSelection": {
-      "type": "function",
-      "name": "isQuickSelection",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "is",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>quickSelection</code>.\n\nFor further details take a look at the property definition: {@link #quickSelection}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Boolean",
-            "desc": "Returns the value for quickSelection"
-          }
-        ]
-      }
-    },
-    "setQuickSelection": {
-      "type": "function",
-      "name": "setQuickSelection",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>quickSelection</code>.\n\nFor further details take a look at the property definition: {@link #quickSelection}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "Boolean",
-            "paramName": "value",
-            "desc": "Value for quickSelection"
-          }
-        ]
-      }
-    },
-    "resetQuickSelection": {
-      "type": "function",
-      "name": "resetQuickSelection",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>quickSelection</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #quickSelection}."
-          }
-        ]
-      }
+      "params": [
+        {
+          "name": "e",
+          "type": "qx.event.type.Data"
+        }
+      ],
+      "appearsIn": []
     }
   },
   "destruct": {
+    "type": "function",
+    "params": [],
     "location": {
       "start": {
         "line": 433,
@@ -1218,8 +1309,7 @@
         "column": 3,
         "index": 12359
       }
-    },
-    "jsdoc": {}
+    }
   },
-  "descendants": []
+  "statics": {}
 }

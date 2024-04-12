@@ -1,35 +1,56 @@
 {
-  "className": "qx.core.WindowError",
-  "packageName": "qx.core",
-  "name": "WindowError",
-  "superClass": "Error",
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 23,
-        "column": 0,
-        "index": 622
-      },
-      "end": {
-        "line": 114,
-        "column": 3,
-        "index": 3037
-      }
+  "version": 0.3,
+  "lastModified": 1712910031269,
+  "lastModifiedIso": "2024-04-12T08:20:31.269Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/core/WindowError.js",
+  "type": "bootstrap",
+  "location": {
+    "start": {
+      "line": 23,
+      "column": 0,
+      "index": 622
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>This exception is thrown by the {@link qx.event.GlobalError} handler if a\n <code>window.onerror</code> event occurs in the browser.</p>"
-        }
-      ]
+    "end": {
+      "line": 114,
+      "column": 3,
+      "index": 3037
     }
   },
-  "type": "class",
+  "className": "qx.core.WindowError",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * This exception is thrown by the {@link qx.event.GlobalError} handler if a",
+      " * <code>window.onerror</code> event occurs in the browser.",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>This exception is thrown by the {@link qx.event.GlobalError} handler if a\n <code>window.onerror</code> event occurs in the browser.</p>"
+      }
+    ]
+  },
+  "superClass": "Error",
   "construct": {
+    "type": "function",
+    "params": [
+      {
+        "name": "failMessage"
+      },
+      {
+        "name": "uri"
+      },
+      {
+        "name": "lineNumber"
+      },
+      {
+        "name": "columnNumber"
+      },
+      {
+        "name": "sourceException"
+      }
+    ],
     "location": {
       "start": {
         "line": 39,
@@ -41,55 +62,12 @@
         "column": 3,
         "index": 1806
       }
-    },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": ""
-        }
-      ],
-      "@param": [
-        {
-          "name": "@param",
-          "body": "failMessage {String} The error message",
-          "paramName": "failMessage",
-          "description": " The error message",
-          "type": "String"
-        },
-        {
-          "name": "@param",
-          "body": "uri {String} URI where error was raised",
-          "paramName": "uri",
-          "description": " URI where error was raised",
-          "type": "String"
-        },
-        {
-          "name": "@param",
-          "body": "lineNumber {Integer} The line number where the error was raised",
-          "paramName": "lineNumber",
-          "description": " The line number where the error was raised",
-          "type": "Integer"
-        },
-        {
-          "name": "@param",
-          "body": "columnNumber {Integer} The column number where the error was raised",
-          "paramName": "columnNumber",
-          "description": " The column number where the error was raised",
-          "type": "Integer"
-        },
-        {
-          "name": "@param",
-          "body": "sourceException {Error} orginal error",
-          "paramName": "sourceException",
-          "description": " orginal error",
-          "type": "Error"
-        }
-      ]
     }
   },
   "members": {
     "__failMessage": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 63,
@@ -102,10 +80,11 @@
           "index": 2029
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__uri": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 64,
@@ -118,10 +97,11 @@
           "index": 2046
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__lineNumber": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 65,
@@ -134,10 +114,11 @@
           "index": 2070
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__columnNumber": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 66,
@@ -150,10 +131,11 @@
           "index": 2096
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__sourceException": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 67,
@@ -166,10 +148,77 @@
           "index": 2125
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
+    },
+    "toString": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the error message.",
+          "     *",
+          "     * @return {String} error message",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns the error message.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{String} error message",
+            "type": "string",
+            "description": "error message"
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 74,
+          "column": 4,
+          "index": 2227
+        },
+        "end": {
+          "line": 76,
+          "column": 5,
+          "index": 2278
+        }
+      },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
     },
     "getUri": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Get the URI where error was raised",
+          "     *",
+          "     * @return {String} URI where error was raised",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Get the URI where error was raised</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{String} URI where error was raised",
+            "type": "string",
+            "description": "URI where error was raised"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 83,
@@ -182,26 +231,38 @@
           "index": 2442
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
+    },
+    "getLineNumber": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Get the line number where the error was raised",
+          "     *",
+          "     * @return {Integer} The line number where the error was raised",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Get the URI where error was raised</p>"
+            "body": "<p>Get the line number where the error was raised</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String} URI where error was raised",
-            "type": "String",
-            "description": " URI where error was raised"
+            "body": "{Integer} The line number where the error was raised",
+            "type": "Integer",
+            "description": "The line number where the error was raised"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getLineNumber": {
+      "access": "public",
       "location": {
         "start": {
           "line": 92,
@@ -214,11 +275,26 @@
           "index": 2649
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "Integer"
+      },
+      "appearsIn": []
+    },
+    "getColumnNumber": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Get the column number where the error was raised",
+          "     *",
+          "     * @return {Integer} The line number where the error was raised",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Get the line number where the error was raised</p>"
+            "body": "<p>Get the column number where the error was raised</p>"
           }
         ],
         "@return": [
@@ -226,14 +302,11 @@
             "name": "@return",
             "body": "{Integer} The line number where the error was raised",
             "type": "Integer",
-            "description": " The line number where the error was raised"
+            "description": "The line number where the error was raised"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getColumnNumber": {
+      "access": "public",
       "location": {
         "start": {
           "line": 101,
@@ -246,26 +319,38 @@
           "index": 2862
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "Integer"
+      },
+      "appearsIn": []
+    },
+    "getSourceException": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Get the source exception",
+          "     *",
+          "     * @return {Error} The source error",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Get the column number where the error was raised</p>"
+            "body": "<p>Get the source exception</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer} The line number where the error was raised",
-            "type": "Integer",
-            "description": " The line number where the error was raised"
+            "body": "{Error} The source error",
+            "type": "Error",
+            "description": "The source error"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getSourceException": {
+      "access": "public",
       "location": {
         "start": {
           "line": 110,
@@ -278,25 +363,14 @@
           "index": 3029
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Get the source exception</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Error} The source error",
-            "type": "Error",
-            "description": " The source error"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "Error"
+      },
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "statics": {},
+  "properties": {}
 }

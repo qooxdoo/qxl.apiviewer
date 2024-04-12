@@ -1,35 +1,41 @@
 {
-  "className": "qx.ui.form.MModelSelection",
-  "packageName": "qx.ui.form",
-  "name": "MModelSelection",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 24,
-        "column": 0,
-        "index": 747
-      },
-      "end": {
-        "line": 170,
-        "column": 3,
-        "index": 5139
-      }
+  "version": 0.3,
+  "lastModified": 1712910030969,
+  "lastModifiedIso": "2024-04-12T08:20:30.969Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/ui/form/MModelSelection.js",
+  "type": "mixin",
+  "location": {
+    "start": {
+      "line": 24,
+      "column": 0,
+      "index": 747
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>This mixin offers the selection of the model properties.\n It can only be included if the object including it implements the\n {@link qx.ui.core.ISingleSelection} interface and the selectables implement\n the {@link qx.ui.form.IModel} interface.</p>"
-        }
-      ]
+    "end": {
+      "line": 170,
+      "column": 3,
+      "index": 5139
     }
   },
-  "type": "mixin",
+  "className": "qx.ui.form.MModelSelection",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * This mixin offers the selection of the model properties.",
+      " * It can only be included if the object including it implements the",
+      " * {@link qx.ui.core.ISingleSelection} interface and the selectables implement",
+      " * the {@link qx.ui.form.IModel} interface.",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>This mixin offers the selection of the model properties.\n It can only be included if the object including it implements the\n {@link qx.ui.core.ISingleSelection} interface and the selectables implement\n the {@link qx.ui.form.IModel} interface.</p>"
+      }
+    ]
+  },
   "construct": {
+    "type": "function",
+    "params": [],
     "location": {
       "start": {
         "line": 25,
@@ -45,6 +51,21 @@
   },
   "events": {
     "changeModelSelection": {
+      "type": "qx.event.type.Data",
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Pseudo event. It will never be fired because the array itself can not",
+          "     * be changed. But the event description is needed for the data binding.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Pseudo event. It will never be fired because the array itself can not\n be changed. But the event description is needed for the data binding.</p>"
+          }
+        ]
+      },
       "location": {
         "start": {
           "line": 44,
@@ -56,21 +77,13 @@
           "column": 46,
           "index": 1352
         }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Pseudo event. It will never be fired because the array itself can not\n be changed. But the event description is needed for the data binding.</p>"
-          }
-        ]
-      },
-      "name": "changeModelSelection",
-      "type": "qx.event.type.Data"
+      }
     }
   },
   "members": {
     "__modelSelection": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 48,
@@ -83,10 +96,11 @@
           "index": 1398
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__inSelectionChange": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 49,
@@ -99,10 +113,25 @@
           "index": 1430
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__onModelSelectionChange": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Handler for the selection change of the including class e.g. SelectBox,",
+          "     * List, ...",
+          "     * It sets the new modelSelection via {@link #setModelSelection}.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Handler for the selection change of the including class e.g. SelectBox,\n List, …\n It sets the new modelSelection via {@link #setModelSelection}.</p>"
+          }
+        ]
+      },
+      "access": "private",
       "location": {
         "start": {
           "line": 56,
@@ -115,18 +144,25 @@
           "index": 2327
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "__onModelSelectionArrayChange": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Listener for the change of the internal model selection data array.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Handler for the selection change of the including class e.g. SelectBox,\n List, …\n It sets the new modelSelection via {@link #setModelSelection}.</p>"
+            "body": "<p>Listener for the change of the internal model selection data array.</p>"
           }
         ]
       },
-      "type": "function",
-      "access": "private"
-    },
-    "__onModelSelectionArrayChange": {
+      "access": "private",
       "location": {
         "start": {
           "line": 86,
@@ -139,18 +175,39 @@
           "index": 3468
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "getModelSelection": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns always an array of the models of the selected items. If no",
+          "     * item is selected or no model is given, the array will be empty.",
+          "     *",
+          "     * *CAREFUL!* The model selection can only work if every item item in the",
+          "     * selection providing widget has a model property!",
+          "     *",
+          "     * @return {qx.data.Array} An array of the models of the selected items.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Listener for the change of the internal model selection data array.</p>"
+            "body": "<p>Returns always an array of the models of the selected items. If no\n item is selected or no model is given, the array will be empty.\n<em>CAREFUL!</em> The model selection can only work if every item item in the\n selection providing widget has a model property!</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{qx.data.Array} An array of the models of the selected items.",
+            "type": "qx.data.Array",
+            "description": "An array of the models of the selected items."
           }
         ]
       },
-      "type": "function",
-      "access": "private"
-    },
-    "getModelSelection": {
+      "access": "public",
       "location": {
         "start": {
           "line": 126,
@@ -163,39 +220,30 @@
           "index": 3924
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns always an array of the models of the selected items. If no\n item is selected or no model is given, the array will be empty.\n<em>CAREFUL!</em> The model selection can only work if every item item in the\n selection providing widget has a model property!</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.data.Array} An array of the models of the selected items.",
-            "type": "qx.data.Array",
-            "description": " An array of the models of the selected items."
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "qx.data.Array"
+      },
+      "appearsIn": []
     },
     "setModelSelection": {
-      "location": {
-        "start": {
-          "line": 143,
-          "column": 4,
-          "index": 4438
-        },
-        "end": {
-          "line": 164,
-          "column": 5,
-          "index": 5064
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Takes the given models in the array and searches for the corresponding",
+          "     * selectables. If an selectable does have that model attached, it will be",
+          "     * selected.",
+          "     *",
+          "     * *Attention:* This method can have a time complexity of O(n^2)!",
+          "     *",
+          "     * *CAREFUL!* The model selection can only work if every item item in the",
+          "     * selection providing widget has a model property!",
+          "     *",
+          "     * @param modelSelection {Array} An array of models, which should be",
+          "     *   selected.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -208,15 +256,36 @@
             "body": "modelSelection {Array} An array of models, which should be\n   selected.",
             "paramName": "modelSelection",
             "description": " An array of models, which should be\n   selected.",
-            "type": "Array"
+            "type": "Array<any>"
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 143,
+          "column": 4,
+          "index": 4438
+        },
+        "end": {
+          "line": 164,
+          "column": 5,
+          "index": 5064
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "modelSelection",
+          "type": "Array<any>"
+        }
+      ],
+      "appearsIn": []
     }
   },
   "destruct": {
+    "type": "function",
+    "params": [],
     "location": {
       "start": {
         "line": 167,
@@ -230,5 +299,6 @@
       }
     }
   },
-  "descendants": []
+  "statics": {},
+  "properties": {}
 }

@@ -1,622 +1,681 @@
 {
-  "className": "qx.tool.compiler.ClassFile",
-  "packageName": "qx.tool.compiler",
-  "name": "ClassFile",
-  "superClass": "qx.core.Object",
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 183,
-        "column": 0,
-        "index": 4619
-      },
-      "end": {
-        "line": 3164,
-        "column": 3,
-        "index": 99176
-      }
+  "version": 0.3,
+  "lastModified": 1712910030493,
+  "lastModifiedIso": "2024-04-12T08:20:30.493Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/tool/compiler/ClassFile.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 186,
+      "column": 0,
+      "index": 4724
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>A class file is parsed and anaysed into an instance of ClassFile; it is\n connected to the Analyser that found the class so that dependencies can be\n identified.</p>"
-        }
-      ]
+    "end": {
+      "line": 3322,
+      "column": 3,
+      "index": 104036
     }
   },
-  "type": "class",
+  "className": "qx.tool.compiler.ClassFile",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * A class file is parsed and anaysed into an instance of ClassFile; it is",
+      " * connected to the Analyser that found the class so that dependencies can be",
+      " * identified.",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>A class file is parsed and anaysed into an instance of ClassFile; it is\n connected to the Analyser that found the class so that dependencies can be\n identified.</p>"
+      }
+    ]
+  },
+  "superClass": "qx.core.Object",
   "construct": {
+    "type": "function",
+    "params": [
+      {
+        "name": "analyser"
+      },
+      {
+        "name": "className"
+      },
+      {
+        "name": "library"
+      }
+    ],
     "location": {
       "start": {
-        "line": 194,
+        "line": 197,
         "column": 2,
-        "index": 5036
+        "index": 5141
       },
       "end": {
-        "line": 249,
+        "line": 253,
         "column": 3,
-        "index": 6538
+        "index": 6674
       }
-    },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Constructor</p>"
-        }
-      ],
-      "@param": [
-        {
-          "name": "@param",
-          "body": "analyser {Analyser} the Analyser that found the file",
-          "paramName": "analyser",
-          "description": " the Analyser that found the file",
-          "type": "qx.tool.compiler.Analyser"
-        },
-        {
-          "name": "@param",
-          "body": "className {String} the full name of the class",
-          "paramName": "className",
-          "description": " the full name of the class",
-          "type": "String"
-        },
-        {
-          "name": "@param",
-          "body": "library {Library} the Library the class belongs to (note that the class name is\n  not always enough to identify the library, eg private source files such as qxWeb.js)",
-          "paramName": "library",
-          "description": " the Library the class belongs to (note that the class name is\n  not always enough to identify the library, eg private source files such as qxWeb.js)",
-          "type": "Library"
-        }
-      ]
     }
   },
   "members": {
     "__analyser": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 252,
+          "line": 256,
           "column": 4,
-          "index": 6558
+          "index": 6694
         },
         "end": {
-          "line": 252,
+          "line": 256,
           "column": 20,
-          "index": 6574
+          "index": 6710
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__className": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 253,
+          "line": 257,
           "column": 4,
-          "index": 6580
+          "index": 6716
         },
         "end": {
-          "line": 253,
+          "line": 257,
           "column": 21,
-          "index": 6597
+          "index": 6733
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__numClassesDefined": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 254,
+          "line": 258,
           "column": 4,
-          "index": 6603
+          "index": 6739
         },
         "end": {
-          "line": 254,
+          "line": 258,
           "column": 26,
-          "index": 6625
+          "index": 6761
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__library": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 255,
+          "line": 259,
           "column": 4,
-          "index": 6631
+          "index": 6767
         },
         "end": {
-          "line": 255,
+          "line": 259,
           "column": 19,
-          "index": 6646
+          "index": 6782
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__requiredClasses": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 256,
+          "line": 260,
           "column": 4,
-          "index": 6652
+          "index": 6788
         },
         "end": {
-          "line": 256,
+          "line": 260,
           "column": 27,
-          "index": 6675
+          "index": 6811
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__environmentChecks": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 257,
+          "line": 261,
           "column": 4,
-          "index": 6681
+          "index": 6817
         },
         "end": {
-          "line": 257,
+          "line": 261,
           "column": 29,
-          "index": 6706
+          "index": 6842
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__requiredAssets": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 258,
+          "line": 262,
           "column": 4,
-          "index": 6712
+          "index": 6848
         },
         "end": {
-          "line": 258,
+          "line": 262,
           "column": 26,
-          "index": 6734
+          "index": 6870
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
+    },
+    "__requiredFonts": {
+      "jsdoc": {
+        "raw": [
+          "* @type{Map<String,Object>} list of fonts indexed by name; the value is an object with `name` and `loc` "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": ""
+          }
+        ],
+        "@type": [
+          {
+            "name": "@type",
+            "body": "{Map<String,Object>} list of fonts indexed by name; the value is an object with <code>name</code> and <code>loc</code>"
+          }
+        ]
+      },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 265,
+          "column": 4,
+          "index": 6990
+        },
+        "end": {
+          "line": 265,
+          "column": 25,
+          "index": 7011
+        }
+      },
+      "appearsIn": []
     },
     "__translateMessageIds": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 259,
+          "line": 267,
           "column": 4,
-          "index": 6740
+          "index": 7018
         },
         "end": {
-          "line": 259,
+          "line": 267,
           "column": 31,
-          "index": 6767
+          "index": 7045
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__scope": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 260,
+          "line": 268,
           "column": 4,
-          "index": 6773
+          "index": 7051
         },
         "end": {
-          "line": 260,
+          "line": 268,
           "column": 17,
-          "index": 6786
+          "index": 7064
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__inDefer": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 261,
+          "line": 269,
           "column": 4,
-          "index": 6792
+          "index": 7070
         },
         "end": {
-          "line": 261,
+          "line": 269,
           "column": 20,
-          "index": 6808
+          "index": 7086
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__inConstruct": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 262,
+          "line": 270,
           "column": 4,
-          "index": 6814
+          "index": 7092
         },
         "end": {
-          "line": 262,
+          "line": 270,
           "column": 24,
-          "index": 6834
+          "index": 7112
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__taskQueue": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 263,
+          "line": 271,
           "column": 4,
-          "index": 6840
+          "index": 7118
         },
         "end": {
-          "line": 263,
+          "line": 271,
           "column": 21,
-          "index": 6857
+          "index": 7135
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__taskQueueDrains": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 264,
+          "line": 272,
           "column": 4,
-          "index": 6863
+          "index": 7141
         },
         "end": {
-          "line": 264,
+          "line": 272,
           "column": 27,
-          "index": 6886
+          "index": 7164
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__markers": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 265,
+          "line": 273,
           "column": 4,
-          "index": 6892
+          "index": 7170
         },
         "end": {
-          "line": 265,
+          "line": 273,
           "column": 19,
-          "index": 6907
+          "index": 7185
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__haveMarkersFor": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 266,
+          "line": 274,
           "column": 4,
-          "index": 6913
+          "index": 7191
         },
         "end": {
-          "line": 266,
+          "line": 274,
           "column": 26,
-          "index": 6935
+          "index": 7213
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__classMeta": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 267,
+          "line": 275,
           "column": 4,
-          "index": 6941
+          "index": 7219
         },
         "end": {
-          "line": 267,
+          "line": 275,
           "column": 21,
-          "index": 6958
+          "index": 7236
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__metaStack": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 268,
+          "line": 276,
           "column": 4,
-          "index": 6964
+          "index": 7242
         },
         "end": {
-          "line": 268,
+          "line": 276,
           "column": 21,
-          "index": 6981
+          "index": 7259
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__metaDefinitions": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 269,
+          "line": 277,
           "column": 4,
-          "index": 6987
+          "index": 7265
         },
         "end": {
-          "line": 269,
+          "line": 277,
           "column": 27,
-          "index": 7010
+          "index": 7288
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__fatalCompileError": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 270,
+          "line": 278,
           "column": 4,
-          "index": 7016
+          "index": 7294
         },
         "end": {
-          "line": 270,
+          "line": 278,
           "column": 30,
-          "index": 7042
+          "index": 7320
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__translations": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 271,
+          "line": 279,
           "column": 4,
-          "index": 7048
+          "index": 7326
         },
         "end": {
-          "line": 271,
+          "line": 279,
           "column": 24,
-          "index": 7068
+          "index": 7346
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__dbClassInfo": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 272,
+          "line": 280,
           "column": 4,
-          "index": 7074
+          "index": 7352
         },
         "end": {
-          "line": 272,
+          "line": 280,
           "column": 23,
-          "index": 7093
+          "index": 7371
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__hasDefer": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 273,
+          "line": 281,
           "column": 4,
-          "index": 7099
+          "index": 7377
         },
         "end": {
-          "line": 273,
+          "line": 281,
           "column": 20,
-          "index": 7115
+          "index": 7393
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__definingType": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 274,
+          "line": 282,
           "column": 4,
-          "index": 7121
+          "index": 7399
         },
         "end": {
-          "line": 274,
+          "line": 282,
           "column": 24,
-          "index": 7141
+          "index": 7419
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__sourceFilename": {
-      "location": {
-        "start": {
-          "line": 275,
-          "column": 4,
-          "index": 7147
-        },
-        "end": {
-          "line": 275,
-          "column": 26,
-          "index": 7169
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__taskQueueDrain": {
-      "location": {
-        "start": {
-          "line": 276,
-          "column": 4,
-          "index": 7175
-        },
-        "end": {
-          "line": 276,
-          "column": 26,
-          "index": 7197
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__globalSymbols": {
-      "location": {
-        "start": {
-          "line": 277,
-          "column": 4,
-          "index": 7203
-        },
-        "end": {
-          "line": 277,
-          "column": 25,
-          "index": 7224
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__privates": {
-      "location": {
-        "start": {
-          "line": 278,
-          "column": 4,
-          "index": 7230
-        },
-        "end": {
-          "line": 278,
-          "column": 20,
-          "index": 7246
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__blockedPrivates": {
-      "location": {
-        "start": {
-          "line": 279,
-          "column": 4,
-          "index": 7252
-        },
-        "end": {
-          "line": 279,
-          "column": 27,
-          "index": 7275
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__externals": {
-      "location": {
-        "start": {
-          "line": 280,
-          "column": 4,
-          "index": 7281
-        },
-        "end": {
-          "line": 280,
-          "column": 21,
-          "index": 7298
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "__commonjsModules": {
-      "location": {
-        "start": {
-          "line": 281,
-          "column": 4,
-          "index": 7304
-        },
-        "end": {
-          "line": 281,
-          "column": 27,
-          "index": 7327
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
-    "_onTaskQueueDrain": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 283,
           "column": 4,
-          "index": 7334
+          "index": 7425
+        },
+        "end": {
+          "line": 283,
+          "column": 26,
+          "index": 7447
+        }
+      },
+      "appearsIn": []
+    },
+    "__taskQueueDrain": {
+      "jsdoc": null,
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 284,
+          "column": 4,
+          "index": 7453
+        },
+        "end": {
+          "line": 284,
+          "column": 26,
+          "index": 7475
+        }
+      },
+      "appearsIn": []
+    },
+    "__globalSymbols": {
+      "jsdoc": null,
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 285,
+          "column": 4,
+          "index": 7481
+        },
+        "end": {
+          "line": 285,
+          "column": 25,
+          "index": 7502
+        }
+      },
+      "appearsIn": []
+    },
+    "__privates": {
+      "jsdoc": null,
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 286,
+          "column": 4,
+          "index": 7508
+        },
+        "end": {
+          "line": 286,
+          "column": 20,
+          "index": 7524
+        }
+      },
+      "appearsIn": []
+    },
+    "__blockedPrivates": {
+      "jsdoc": null,
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 287,
+          "column": 4,
+          "index": 7530
+        },
+        "end": {
+          "line": 287,
+          "column": 27,
+          "index": 7553
+        }
+      },
+      "appearsIn": []
+    },
+    "__externals": {
+      "jsdoc": null,
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 288,
+          "column": 4,
+          "index": 7559
+        },
+        "end": {
+          "line": 288,
+          "column": 21,
+          "index": 7576
+        }
+      },
+      "appearsIn": []
+    },
+    "__commonjsModules": {
+      "jsdoc": null,
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 289,
+          "column": 4,
+          "index": 7582
         },
         "end": {
           "line": 289,
-          "column": 5,
-          "index": 7492
+          "column": 27,
+          "index": 7605
         }
       },
-      "type": "function",
-      "access": "protected"
+      "appearsIn": []
     },
-    "_waitForTaskQueueDrain": {
+    "_onTaskQueueDrain": {
+      "jsdoc": null,
+      "access": "protected",
       "location": {
         "start": {
           "line": 291,
           "column": 4,
-          "index": 7499
+          "index": 7612
         },
         "end": {
           "line": 297,
           "column": 5,
-          "index": 7655
+          "index": 7770
         }
       },
       "type": "function",
-      "access": "protected"
+      "params": [],
+      "appearsIn": []
     },
-    "_queueTask": {
+    "_waitForTaskQueueDrain": {
+      "jsdoc": null,
+      "access": "protected",
       "location": {
         "start": {
           "line": 299,
           "column": 4,
-          "index": 7662
+          "index": 7777
         },
         "end": {
-          "line": 301,
+          "line": 305,
           "column": 5,
-          "index": 7717
+          "index": 7933
         }
       },
       "type": "function",
-      "access": "protected"
+      "params": [
+        {
+          "name": "cb"
+        }
+      ],
+      "appearsIn": []
     },
-    "getSourcePath": {
+    "_queueTask": {
+      "jsdoc": null,
+      "access": "protected",
       "location": {
         "start": {
           "line": 307,
           "column": 4,
-          "index": 7816
+          "index": 7940
         },
         "end": {
           "line": 309,
           "column": 5,
-          "index": 7875
+          "index": 7995
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "cb"
+        }
+      ],
+      "appearsIn": []
+    },
+    "getSourcePath": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the absolute path to the class file",
+          "     * @returns {string}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -632,23 +691,34 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getOutputPath": {
+      "access": "public",
       "location": {
         "start": {
           "line": 315,
           "column": 4,
-          "index": 7975
+          "index": 8094
         },
         "end": {
           "line": 317,
           "column": 5,
-          "index": 8065
+          "index": 8153
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
+    },
+    "getOutputPath": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the path to the rewritten class file",
+          "     * @returns {string}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -664,23 +734,36 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "load": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 325,
+          "line": 323,
           "column": 4,
-          "index": 8277
+          "index": 8253
         },
         "end": {
-          "line": 481,
+          "line": 325,
           "column": 5,
-          "index": 13037
+          "index": 8343
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
+    },
+    "load": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Loads the source, transpiles and analyses the code, storing the result in outputPath",
+          "     *",
+          "     * @param callback",
+          "     *          {Function} callback for when the load is completed",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -693,27 +776,41 @@
             "body": "callback\n          {Function} callback for when the load is completed",
             "paramName": "callback",
             "description": " callback for when the load is completed",
-            "type": "Function"
+            "type": "((...args: any[]) => any)"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "writeDbInfo": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 488,
+          "line": 333,
           "column": 4,
-          "index": 13224
+          "index": 8555
         },
         "end": {
-          "line": 499,
+          "line": 489,
           "column": 5,
-          "index": 13625
+          "index": 13315
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "callback",
+          "type": "((...args: any[]) => any)"
+        }
+      ],
+      "appearsIn": []
+    },
+    "writeDbInfo": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Writes the data for the database; updates the record, which may have been previously",
+          "     * used (so needs to be zero'd out)",
+          "     * @param dbClassInfo {Map}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -723,27 +820,41 @@
         "@param": [
           {
             "name": "@param",
-            "body": "dbClassInfo {Map}"
+            "body": "dbClassInfo {Map}",
+            "paramName": "dbClassInfo",
+            "type": "Map<any, any>"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "_compileDbClassInfo": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 504,
+          "line": 496,
           "column": 4,
-          "index": 13728
+          "index": 13502
         },
         "end": {
-          "line": 678,
+          "line": 507,
           "column": 5,
-          "index": 18935
+          "index": 13903
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "dbClassInfo",
+          "type": "Map<any, any>"
+        }
+      ],
+      "appearsIn": []
+    },
+    "_compileDbClassInfo": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Compiles the DbInfo POJO to be stored in the database about this class",
+          "     * "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -751,23 +862,30 @@
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "getOuterClassMeta": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 683,
+          "line": 512,
           "column": 4,
-          "index": 18994
+          "index": 14006
         },
         "end": {
-          "line": 693,
+          "line": 702,
           "column": 5,
-          "index": 19283
+          "index": 19656
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "getOuterClassMeta": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the loaded meta data",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -775,23 +893,30 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "_babelClassPlugins": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 698,
+          "line": 707,
           "column": 4,
-          "index": 19326
+          "index": 19715
         },
         "end": {
-          "line": 2293,
+          "line": 717,
           "column": 5,
-          "index": 74794
+          "index": 20004
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "_babelClassPlugins": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Babel plugin",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -799,23 +924,33 @@
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "__pushMeta": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 2301,
+          "line": 722,
           "column": 4,
-          "index": 75040
+          "index": 20047
         },
         "end": {
-          "line": 2317,
+          "line": 2440,
           "column": 5,
-          "index": 75560
+          "index": 79360
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "__pushMeta": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Pushes new meta data onto the stack - each meta represents a class being defined,",
+          "     * we operate a stack so that we can handle inner classes",
+          "     *",
+          "     * @param className {String} name of the class being defined",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -828,27 +963,39 @@
             "body": "className {String} name of the class being defined",
             "paramName": "className",
             "description": " name of the class being defined",
-            "type": "String"
+            "type": "string"
           }
         ]
       },
-      "type": "function",
-      "access": "private"
-    },
-    "__popMeta": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 2322,
+          "line": 2448,
           "column": 4,
-          "index": 75677
+          "index": 79606
         },
         "end": {
-          "line": 2338,
+          "line": 2464,
           "column": 5,
-          "index": 76233
+          "index": 80126
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "className",
+          "type": "string"
+        }
+      ],
+      "appearsIn": []
+    },
+    "__popMeta": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Pops the current meta off the stack, optionally checking that the classname is correct",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -856,23 +1003,34 @@
           }
         ]
       },
-      "type": "function",
-      "access": "private"
-    },
-    "pushScope": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 2343,
+          "line": 2469,
           "column": 4,
-          "index": 76295
+          "index": 80243
         },
         "end": {
-          "line": 2352,
+          "line": 2485,
           "column": 5,
-          "index": 76556
+          "index": 80799
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "className"
+        }
+      ],
+      "appearsIn": []
+    },
+    "pushScope": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Pushes a new scope on the stack",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -880,23 +1038,40 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "popScope": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 2357,
+          "line": 2490,
           "column": 4,
-          "index": 76614
+          "index": 80861
         },
         "end": {
-          "line": 2378,
+          "line": 2499,
           "column": 5,
-          "index": 77162
+          "index": 81122
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "functionName"
+        },
+        {
+          "name": "node"
+        },
+        {
+          "name": "isClassMember"
+        }
+      ],
+      "appearsIn": []
+    },
+    "popScope": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Pops a scope from the stack",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -904,23 +1079,36 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "isLoadScope": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 2385,
+          "line": 2504,
           "column": 4,
-          "index": 77276
+          "index": 81180
         },
         "end": {
-          "line": 2387,
+          "line": 2525,
           "column": 5,
-          "index": 77332
+          "index": 81728
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "node"
+        }
+      ],
+      "appearsIn": []
+    },
+    "isLoadScope": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Tests whether the current scope is load-time scope",
+          "     *",
+          "     * @returns {Boolean}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -931,28 +1119,40 @@
           {
             "name": "@return",
             "body": "{Boolean}",
-            "type": "Boolean",
+            "type": "boolean",
             "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "hasDefer": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 2394,
+          "line": 2532,
           "column": 4,
-          "index": 77439
+          "index": 81842
         },
         "end": {
-          "line": 2396,
+          "line": 2534,
           "column": 5,
-          "index": 77487
+          "index": 81898
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "hasDefer": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Tests whether this class has a defer method",
+          "     *",
+          "     * @returns {Boolean}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -963,28 +1163,42 @@
           {
             "name": "@return",
             "body": "{Boolean}",
-            "type": "Boolean",
+            "type": "boolean",
             "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "addDeclaration": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 2405,
+          "line": 2541,
           "column": 4,
-          "index": 77800
+          "index": 82005
         },
         "end": {
-          "line": 2417,
+          "line": 2543,
           "column": 5,
-          "index": 78203
+          "index": 82053
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "addDeclaration": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds a variable declaration to the current scope; if the symbol was",
+          "     * previously \"unresolved\" it is removed from the unresolved list",
+          "     *",
+          "     * @param name {String} the name of the variabvle being declared",
+          "     * @param valueName {String} the value to assign to the variable",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -997,34 +1211,54 @@
             "body": "name {String} the name of the variabvle being declared",
             "paramName": "name",
             "description": " the name of the variabvle being declared",
-            "type": "String"
+            "type": "string"
           },
           {
             "name": "@param",
             "body": "valueName {String} the value to assign to the variable",
             "paramName": "valueName",
             "description": " the value to assign to the variable",
-            "type": "String"
+            "type": "string"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "hasDeclaration": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 2426,
+          "line": 2552,
           "column": 4,
-          "index": 78397
+          "index": 82366
         },
         "end": {
-          "line": 2437,
+          "line": 2564,
           "column": 5,
-          "index": 78694
+          "index": 82769
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "valueName",
+          "type": "string"
+        }
+      ],
+      "appearsIn": []
+    },
+    "hasDeclaration": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Tests whether there is a variable declaration accessible to the current",
+          "     * scope, ie including parent scope",
+          "     *",
+          "     * @param name",
+          "     * @returns {Boolean}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1043,28 +1277,44 @@
           {
             "name": "@return",
             "body": "{Boolean}",
-            "type": "Boolean",
+            "type": "boolean",
             "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "addReference": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 2444,
+          "line": 2573,
           "column": 4,
-          "index": 78832
+          "index": 82963
         },
         "end": {
-          "line": 2492,
+          "line": 2584,
           "column": 5,
-          "index": 79991
+          "index": 83260
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "name"
+        }
+      ],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "addReference": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds a reference to a symbol; unknown symbols are marked as unresolved",
+          "     * @param name",
+          "     * @param loc",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1086,23 +1336,42 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "encodePrivate": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 2502,
+          "line": 2591,
           "column": 4,
-          "index": 80411
+          "index": 83398
         },
         "end": {
-          "line": 2559,
+          "line": 2639,
           "column": 5,
-          "index": 82196
+          "index": 84557
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "name"
+        },
+        {
+          "name": "loc"
+        }
+      ],
+      "appearsIn": []
+    },
+    "encodePrivate": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Repeatably encodes a private symbol name, caching the result; ignores non-private symbols",
+          "     *",
+          "     * @param name {String} symbol name",
+          "     * @param isIdentifier {boolean} whether this is usage as an identifier (and not in a string literal)",
+          "     * @param location {Location} the location of the symbol",
+          "     * @return {String} the encoded name if private, the original name if not private",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1115,7 +1384,7 @@
             "body": "name {String} symbol name",
             "paramName": "name",
             "description": " symbol name",
-            "type": "String"
+            "type": "string"
           },
           {
             "name": "@param",
@@ -1136,28 +1405,52 @@
           {
             "name": "@return",
             "body": "{String} the encoded name if private, the original name if not private",
-            "type": "String",
-            "description": " the encoded name if private, the original name if not private"
+            "type": "string",
+            "description": "the encoded name if private, the original name if not private"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "deleteReference": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 2565,
+          "line": 2649,
           "column": 4,
-          "index": 82336
+          "index": 84977
         },
         "end": {
-          "line": 2573,
+          "line": 2706,
           "column": 5,
-          "index": 82585
+          "index": 86762
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "isIdentifier",
+          "type": "boolean"
+        },
+        {
+          "name": "location",
+          "type": "Location"
+        }
+      ],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
+    },
+    "deleteReference": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Removes a reference from scope; this should only really be used after scanning is complete",
+          "     * @param name",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1173,23 +1466,36 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "addExternal": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 2580,
+          "line": 2712,
           "column": 4,
-          "index": 82726
+          "index": 86902
         },
         "end": {
-          "line": 2584,
+          "line": 2720,
           "column": 5,
-          "index": 82844
+          "index": 87151
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "name"
+        }
+      ],
+      "appearsIn": []
+    },
+    "addExternal": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds an external resource which needs to be loaded early",
+          "     *",
+          "     * @param name {String} name of the symbol",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1202,27 +1508,41 @@
             "body": "name {String} name of the symbol",
             "paramName": "name",
             "description": " name of the symbol",
-            "type": "String"
+            "type": "string"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "addCommonjsModule": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 2591,
+          "line": 2727,
           "column": 4,
-          "index": 82970
+          "index": 87292
         },
         "end": {
-          "line": 2597,
+          "line": 2731,
           "column": 5,
-          "index": 83214
+          "index": 87410
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "appearsIn": []
+    },
+    "addCommonjsModule": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds a CommonJS module to be browserified",
+          "     *",
+          "     * @param name {String} name of the module",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1235,27 +1555,45 @@
             "body": "name {String} name of the module",
             "paramName": "name",
             "description": " name of the module",
-            "type": "String"
+            "type": "string"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "addIgnore": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 2603,
+          "line": 2738,
           "column": 4,
-          "index": 83314
+          "index": 87536
         },
         "end": {
-          "line": 2621,
+          "line": 2744,
           "column": 5,
-          "index": 83857
+          "index": 87780
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "moduleName"
+        },
+        {
+          "name": "className"
+        },
+        {
+          "name": "linenum"
+        }
+      ],
+      "appearsIn": []
+    },
+    "addIgnore": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds an ignored symbol",
+          "     * @param name {String} name of the symbol",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1268,27 +1606,41 @@
             "body": "name {String} name of the symbol",
             "paramName": "name",
             "description": " name of the symbol",
-            "type": "String"
+            "type": "string"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "isIgnored": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 2628,
+          "line": 2750,
           "column": 4,
-          "index": 84025
+          "index": 87880
         },
         "end": {
-          "line": 2644,
+          "line": 2768,
           "column": 5,
-          "index": 84452
+          "index": 88423
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "appearsIn": []
+    },
+    "isIgnored": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Tests whether a symbol has already been marked as ignore",
+          "     * @param name {String} symbol name",
+          "     * @return {Boolean} true if ignored",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1301,35 +1653,51 @@
             "body": "name {String} symbol name",
             "paramName": "name",
             "description": " symbol name",
-            "type": "String"
+            "type": "string"
           }
         ],
         "@return": [
           {
             "name": "@return",
             "body": "{Boolean} true if ignored",
-            "type": "Boolean",
-            "description": " true if ignored"
+            "type": "boolean",
+            "description": "true if ignored"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "removeIgnore": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 2650,
+          "line": 2775,
           "column": 4,
-          "index": 84555
+          "index": 88591
         },
         "end": {
-          "line": 2657,
+          "line": 2791,
           "column": 5,
-          "index": 84746
+          "index": 89018
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "removeIgnore": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Removes an ignored symbol",
+          "     * @param name {String} name of the symbol",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1342,27 +1710,42 @@
             "body": "name {String} name of the symbol",
             "paramName": "name",
             "description": " name of the symbol",
-            "type": "String"
+            "type": "string"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "addEnvCheck": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 2665,
+          "line": 2797,
           "column": 4,
-          "index": 84897
+          "index": 89121
         },
         "end": {
-          "line": 2713,
+          "line": 2804,
           "column": 5,
-          "index": 86804
+          "index": 89312
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "appearsIn": []
+    },
+    "addEnvCheck": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds an environment check made by the class",
+          "     *",
+          "     * @param name",
+          "     * @param location {Object?} see _requireClass",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1386,23 +1769,43 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "addMarker": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 2722,
+          "line": 2812,
           "column": 4,
-          "index": 87111
+          "index": 89463
         },
         "end": {
-          "line": 2776,
+          "line": 2860,
           "column": 5,
-          "index": 88532
+          "index": 91370
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "name"
+        },
+        {
+          "name": "location",
+          "type": "Object",
+          "optional": true
+        }
+      ],
+      "appearsIn": []
+    },
+    "addMarker": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds a marker (eg warning or error)",
+          "     *",
+          "     * @param msgId {String} the marker message ID (@see qx.tool.compiler.Marker)",
+          "     * @param pos {Object||null} position map; may contain a Map containing",
+          "     *  {line,column?}, or a Map {start:{line,column}, end: {line,column}}.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1415,7 +1818,7 @@
             "body": "msgId {String} the marker message ID (@see qx.tool.compiler.Marker)",
             "paramName": "msgId",
             "description": " the marker message ID (@see qx.tool.compiler.Marker)",
-            "type": "String"
+            "type": "string"
           },
           {
             "name": "@param",
@@ -1430,23 +1833,51 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "_requireClass": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 2789,
+          "line": 2869,
           "column": 4,
-          "index": 89050
+          "index": 91677
         },
         "end": {
-          "line": 2876,
+          "line": 2923,
           "column": 5,
-          "index": 91649
+          "index": 93098
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "msgId",
+          "type": "string"
+        },
+        {
+          "name": "pos",
+          "type": [
+            "Object",
+            "",
+            "null"
+          ]
+        }
+      ],
+      "appearsIn": []
+    },
+    "_requireClass": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds a required class",
+          "     *",
+          "     * @param name {String} the name of the class",
+          "     * @param opts {Map?} which is:",
+          "     *  where {\"ignore\"|\"require\"|\"use\"|null} where it's mentioned",
+          "     *  load {Boolean?} whether it is a load-time dependency or not",
+          "     *  defer {Boolean?} whether the dependency is in defer or not",
+          "     *  location {Map?} location of the token that caused the reference",
+          "     * @return {Map?} info about the symbol type of the named class, @see {Analyser.getSymbolType}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1459,7 +1890,7 @@
             "body": "name {String} the name of the class",
             "paramName": "name",
             "description": " the name of the class",
-            "type": "String"
+            "type": "string"
           },
           {
             "name": "@param",
@@ -1475,27 +1906,48 @@
             "name": "@return",
             "body": "{Map?} info about the symbol type of the named class, @see {Analyser.getSymbolType}",
             "type": "Map?",
-            "description": " info about the symbol type of the named class, @see {Analyser.getSymbolType}"
+            "description": "info about the symbol type of the named class, @see {Analyser.getSymbolType}"
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_requireAsset": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 2882,
+          "line": 2936,
           "column": 4,
-          "index": 91720
+          "index": 93616
         },
         "end": {
-          "line": 2889,
+          "line": 3023,
           "column": 5,
-          "index": 91973
+          "index": 96215
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "opts",
+          "type": "Map",
+          "optional": true
+        }
+      ],
+      "returnType": {
+        "type": "Map?"
+      },
+      "appearsIn": []
+    },
+    "_requireAsset": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds a required asset",
+          "     * @param path",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1511,23 +1963,35 @@
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "getAssets": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 2895,
-          "column": 4,
-          "index": 92060
+          "line": 3027,
+          "column": 8,
+          "index": 96281
         },
         "end": {
-          "line": 2897,
+          "line": 3034,
           "column": 5,
-          "index": 92115
+          "index": 96534
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "path"
+        }
+      ],
+      "appearsIn": []
+    },
+    "getAssets": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the assets required by the class",
+          "     * @returns",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1537,29 +2001,97 @@
         "@return": [
           {
             "name": "@return",
-            "body": "",
-            "type": "",
-            "description": ""
+            "body": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "__findProperty": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 2907,
-          "column": 4,
-          "index": 92299
+          "line": 3038,
+          "column": 8,
+          "index": 96616
         },
         "end": {
-          "line": 2920,
+          "line": 3040,
           "column": 5,
-          "index": 92708
+          "index": 96671
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {},
+      "appearsIn": []
+    },
+    "_requireFont": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds a required font",
+          "     * @param {String} name  name of the font",
+          "     * @param {Location} the Babel location",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Adds a required font</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "{String} name  name of the font",
+            "paramName": "name",
+            "description": "name of the font",
+            "type": "string"
+          },
+          {
+            "name": "@param",
+            "body": "{Location} the Babel location",
+            "paramName": "the",
+            "description": "Babel location",
+            "type": "Location"
+          }
+        ]
+      },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 3047,
+          "column": 4,
+          "index": 96812
+        },
+        "end": {
+          "line": 3052,
+          "column": 5,
+          "index": 96915
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "loc"
+        }
+      ],
+      "appearsIn": []
+    },
+    "__findProperty": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Finds an object property in a node tree (not a Qooxdoo property, an",
+          "     * object property)",
+          "     *",
+          "     * @param props",
+          "     * @param name",
+          "     * @returns",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1583,29 +2115,44 @@
         "@return": [
           {
             "name": "@return",
-            "body": "",
-            "type": "",
-            "description": ""
+            "body": ""
           }
         ]
       },
-      "type": "function",
-      "access": "private"
-    },
-    "getRequiredClasses": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 2927,
+          "line": 3062,
           "column": 4,
-          "index": 92813
+          "index": 97099
         },
         "end": {
-          "line": 2929,
+          "line": 3075,
           "column": 5,
-          "index": 92878
+          "index": 97508
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "props"
+        },
+        {
+          "name": "name"
+        }
+      ],
+      "returnType": {},
+      "appearsIn": []
+    },
+    "getRequiredClasses": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the list of required classes (dependencies)",
+          "     *",
+          "     * @returns",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1615,29 +2162,37 @@
         "@return": [
           {
             "name": "@return",
-            "body": "",
-            "type": "",
-            "description": ""
+            "body": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getUnresolvedSymbols": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 2936,
+          "line": 3082,
           "column": 4,
-          "index": 92968
+          "index": 97613
         },
         "end": {
-          "line": 2938,
+          "line": 3084,
           "column": 5,
-          "index": 93036
+          "index": 97678
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {},
+      "appearsIn": []
+    },
+    "getUnresolvedSymbols": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns a list of unresolved symbols",
+          "     *",
+          "     * @returns",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1647,29 +2202,36 @@
         "@return": [
           {
             "name": "@return",
-            "body": "",
-            "type": "",
-            "description": ""
+            "body": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getClassName": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 2944,
+          "line": 3091,
           "column": 4,
-          "index": 93134
+          "index": 97768
         },
         "end": {
-          "line": 2946,
+          "line": 3093,
           "column": 5,
-          "index": 93187
+          "index": 97836
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {},
+      "appearsIn": []
+    },
+    "getClassName": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the name of the class being compiled",
+          "     * @returns {null}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1685,177 +2247,37 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getQxOwner": {
-      "type": "function",
-      "name": "getQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "qx.core.Object",
-            "desc": "Returns the value for qxOwner"
-          }
-        ]
-      }
-    },
-    "setQxOwner": {
-      "type": "function",
-      "name": "setQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.core.Object",
-            "paramName": "value",
-            "desc": "Value for qxOwner"
-          }
-        ]
-      }
-    },
-    "resetQxOwner": {
-      "type": "function",
-      "name": "resetQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxOwner</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ]
-      }
-    },
-    "getQxObjectId": {
-      "type": "function",
-      "name": "getQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "[[ ObjectMethod Function ]]",
-            "desc": "Returns the value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "setQxObjectId": {
-      "type": "function",
-      "name": "setQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "[[ ObjectMethod Function ]]",
-            "paramName": "value",
-            "desc": "Value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "resetQxObjectId": {
-      "type": "function",
-      "name": "resetQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxObjectId</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ]
-      }
-    }
-  },
-  "defer": {
-    "location": {
-      "start": {
-        "line": 2949,
-        "column": 2,
-        "index": 93196
+      "location": {
+        "start": {
+          "line": 3099,
+          "column": 4,
+          "index": 97934
+        },
+        "end": {
+          "line": 3101,
+          "column": 5,
+          "index": 97987
+        }
       },
-      "end": {
-        "line": 2961,
-        "column": 3,
-        "index": 94139
-      }
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "null"
+      },
+      "appearsIn": []
     }
   },
   "statics": {
     "getNamespace": {
-      "location": {
-        "start": {
-          "line": 2969,
-          "column": 4,
-          "index": 94313
-        },
-        "end": {
-          "line": 2972,
-          "column": 5,
-          "index": 94423
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the root namespace from the classname, or null if it cannot be determined",
+          "     * @param className",
+          "     * @returns {*|null}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1879,23 +2301,43 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "JSX_OPTIONS": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 2983,
+          "line": 3124,
           "column": 4,
-          "index": 94937
+          "index": 99113
         },
         "end": {
-          "line": 2986,
+          "line": 3127,
           "column": 5,
-          "index": 95041
+          "index": 99223
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "className"
+        }
+      ],
+      "returnType": {
+        "type": "*|null"
+      },
+      "appearsIn": []
+    },
+    "JSX_OPTIONS": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * These options are passed to Babel for JSX compilation; they can be changed by the CLI etc",
+          "     * as needed.",
+          "     *",
+          "     * Note that at the moment they use a class that does not exist!  `qx.html.Jsx` is coming soon",
+          "     * to a PR near you, but in the mean time you could use the compile.json `jsx` setting to",
+          "     * change these to something else, eg `{ pragma: \"jsx.dom\", pragmaFrag: \"jsx.Fragment }` and",
+          "     * use https://github.com/alecsgone/jsx-render in your application's code.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1903,23 +2345,28 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "DEFER_SAFE_SYMBOLS": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 2991,
+          "line": 3138,
           "column": 4,
-          "index": 95164
+          "index": 99737
         },
         "end": {
-          "line": 2995,
+          "line": 3142,
           "column": 5,
-          "index": 95265
+          "index": 99872
         }
       },
+      "appearsIn": []
+    },
+    "DEFER_SAFE_SYMBOLS": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Classes which are safe to access from defer methods (in addition to the class being defined)",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1927,23 +2374,28 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "QX_GLOBALS": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 3000,
+          "line": 3147,
           "column": 4,
-          "index": 95332
+          "index": 99995
         },
         "end": {
-          "line": 3011,
+          "line": 3151,
           "column": 5,
-          "index": 95591
+          "index": 100096
         }
       },
+      "appearsIn": []
+    },
+    "QX_GLOBALS": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * List of global symbols to be ignored",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1951,103 +2403,115 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 3156,
+          "column": 4,
+          "index": 100163
+        },
+        "end": {
+          "line": 3167,
+          "column": 5,
+          "index": 100422
+        }
+      },
+      "appearsIn": []
     },
     "COMMON_GLOBALS": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
-          "line": 3013,
+          "line": 3169,
           "column": 4,
-          "index": 95598
+          "index": 100429
         },
         "end": {
-          "line": 3079,
+          "line": 3236,
           "column": 5,
-          "index": 96815
+          "index": 101659
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "BROWSER_GLOBALS": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
-          "line": 3081,
+          "line": 3238,
           "column": 4,
-          "index": 96822
+          "index": 101666
         },
         "end": {
-          "line": 3104,
+          "line": 3261,
           "column": 5,
-          "index": 97286
+          "index": 102130
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "NODE_GLOBALS": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
-          "line": 3106,
+          "line": 3263,
           "column": 4,
-          "index": 97293
+          "index": 102137
         },
         "end": {
-          "line": 3114,
+          "line": 3272,
           "column": 5,
-          "index": 97440
+          "index": 102300
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "RHINO_GLOBALS": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
-          "line": 3116,
+          "line": 3274,
           "column": 4,
-          "index": 97447
+          "index": 102307
         },
         "end": {
-          "line": 3116,
+          "line": 3274,
           "column": 39,
-          "index": 97482
+          "index": 102342
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "RESERVED_WORDS": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
-          "line": 3118,
+          "line": 3276,
           "column": 4,
-          "index": 97489
+          "index": 102349
         },
         "end": {
-          "line": 3118,
+          "line": 3276,
           "column": 24,
-          "index": 97509
+          "index": 102369
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "ENVIRONMENT_CONSTANTS": {
-      "location": {
-        "start": {
-          "line": 3125,
-          "column": 4,
-          "index": 97854
-        },
-        "end": {
-          "line": 3160,
-          "column": 5,
-          "index": 99142
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * These are the constants which are answered by Qooxdoo qx.core.Environment; we use out own copy here and",
+          "     * not the one available in qx.core.Environment._defaults because we need to use the version which is appropriate",
+          "     * for the version of Qooxdoo being compiled, not the one that this CLI is compiled with",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -2055,25 +2519,38 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "SYSTEM_CHECKS": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 3162,
+          "line": 3283,
           "column": 4,
-          "index": 99149
+          "index": 102714
         },
         "end": {
-          "line": 3162,
-          "column": 23,
-          "index": 99168
+          "line": 3318,
+          "column": 5,
+          "index": 104002
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
+    },
+    "SYSTEM_CHECKS": {
+      "jsdoc": null,
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 3320,
+          "column": 4,
+          "index": 104009
+        },
+        "end": {
+          "line": 3320,
+          "column": 23,
+          "index": 104028
+        }
+      },
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "properties": {}
 }

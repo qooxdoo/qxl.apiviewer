@@ -1,33 +1,36 @@
 {
-  "className": "qx.theme.modern.Color",
-  "packageName": "qx.theme.modern",
-  "name": "Color",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 25,
-        "column": 0,
-        "index": 613
-      },
-      "end": {
-        "line": 283,
-        "column": 3,
-        "index": 7927
-      }
+  "version": 0.3,
+  "lastModified": 1712910030509,
+  "lastModifiedIso": "2024-04-12T08:20:30.509Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/theme/modern/Color.js",
+  "type": "theme",
+  "location": {
+    "start": {
+      "line": 25,
+      "column": 0,
+      "index": 613
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Modern color theme</p>"
-        }
-      ]
+    "end": {
+      "line": 283,
+      "column": 3,
+      "index": 7927
     }
   },
-  "type": "theme",
-  "descendants": []
+  "className": "qx.theme.modern.Color",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Modern color theme",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Modern color theme</p>"
+      }
+    ]
+  },
+  "members": {},
+  "statics": {},
+  "properties": {}
 }

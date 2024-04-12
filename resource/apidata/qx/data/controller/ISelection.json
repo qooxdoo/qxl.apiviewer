@@ -1,49 +1,44 @@
 {
-  "className": "qx.data.controller.ISelection",
-  "packageName": "qx.data.controller",
-  "name": "ISelection",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 22,
-        "column": 0,
-        "index": 556
-      },
-      "end": {
-        "line": 41,
-        "column": 3,
-        "index": 1002
-      }
+  "version": 0.3,
+  "lastModified": 1712910030865,
+  "lastModifiedIso": "2024-04-12T08:20:30.865Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/data/controller/ISelection.js",
+  "type": "interface",
+  "location": {
+    "start": {
+      "line": 22,
+      "column": 0,
+      "index": 556
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Interface for data binding classes offering a selection.</p>"
-        }
-      ]
+    "end": {
+      "line": 41,
+      "column": 3,
+      "index": 1002
     }
   },
-  "type": "interface",
+  "className": "qx.data.controller.ISelection",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Interface for data binding classes offering a selection.",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Interface for data binding classes offering a selection.</p>"
+      }
+    ]
+  },
   "members": {
     "setSelection": {
-      "location": {
-        "start": {
-          "line": 28,
-          "column": 4,
-          "index": 744
-        },
-        "end": {
-          "line": 28,
-          "column": 26,
-          "index": 766
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Setter for the selection.",
+          "     * @param value {qx.data.IListData} The data of the selection.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -60,10 +55,52 @@
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 28,
+          "column": 4,
+          "index": 744
+        },
+        "end": {
+          "line": 28,
+          "column": 26,
+          "index": 766
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "value",
+          "type": "qx.data.IListData"
+        }
+      ],
+      "appearsIn": []
     },
     "getSelection": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Getter for the selection list.",
+          "     * @return {qx.data.IListData} The current selection.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Getter for the selection list.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{qx.data.IListData} The current selection.",
+            "type": "qx.data.IListData",
+            "description": "The current selection."
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 34,
@@ -76,26 +113,28 @@
           "index": 902
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "qx.data.IListData"
+      },
+      "appearsIn": []
+    },
+    "resetSelection": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Resets the selection to its default value.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Getter for the selection list.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.data.IListData} The current selection.",
-            "type": "qx.data.IListData",
-            "description": " The current selection."
+            "body": "<p>Resets the selection to its default value.</p>"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "resetSelection": {
+      "access": "public",
       "location": {
         "start": {
           "line": 39,
@@ -108,17 +147,11 @@
           "index": 994
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Resets the selection to its default value.</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "statics": {},
+  "properties": {}
 }

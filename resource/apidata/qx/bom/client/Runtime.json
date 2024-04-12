@@ -1,60 +1,61 @@
 {
-  "className": "qx.bom.client.Runtime",
-  "packageName": "qx.bom.client",
-  "name": "Runtime",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 33,
-        "column": 0,
-        "index": 846
-      },
-      "end": {
-        "line": 71,
-        "column": 3,
-        "index": 1969
-      }
+  "version": 0.3,
+  "lastModified": 1712910031101,
+  "lastModifiedIso": "2024-04-12T08:20:31.101Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/bom/client/Runtime.js",
+  "type": "bootstrap",
+  "location": {
+    "start": {
+      "line": 33,
+      "column": 0,
+      "index": 846
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Basic runtime detection for qooxdoo.\n This class is used by {@link qx.core.Environment} and should not be used\n directly. Please check its class comment for details how to use it.</p>"
-        }
-      ],
-      "@internal": [
-        {
-          "name": "@internal",
-          "body": ""
-        }
-      ],
-      "@ignore": [
-        {
-          "name": "@ignore",
-          "body": "environment"
-        },
-        {
-          "name": "@ignore",
-          "body": "process"
-        },
-        {
-          "name": "@ignore",
-          "body": "Titanium.*"
-        },
-        {
-          "name": "@ignore",
-          "body": "Packages"
-        }
-      ]
+    "end": {
+      "line": 71,
+      "column": 3,
+      "index": 1969
     }
   },
-  "type": "class",
+  "className": "qx.bom.client.Runtime",
+  "jsdoc": {
+    "raw": [
+      " global Packages, enviroment, process, Titanium "
+    ]
+  },
   "statics": {
     "getName": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Checks for the name of the runtime and returns it. In general, it checks",
+          "     * for rhino and node.js and if that could not be detected, it falls back",
+          "     * to the browser name defined by {@link qx.bom.client.Browser#getName}.",
+          "     * @return {String} The name of the current runtime.",
+          "     * @internal",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Checks for the name of the runtime and returns it. In general, it checks\n for rhino and node.js and if that could not be detected, it falls back\n to the browser name defined by {@link qx.bom.client.Browser#getName}.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{String} The name of the current runtime.",
+            "type": "string",
+            "description": "The name of the current runtime."
+          }
+        ],
+        "@internal": [
+          {
+            "name": "@internal",
+            "body": ""
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 42,
@@ -67,45 +68,14 @@
           "index": 1874
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Checks for the name of the runtime and returns it. In general, it checks\n for rhino and node.js and if that could not be detected, it falls back\n to the browser name defined by {@link qx.bom.client.Browser#getName}.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{String} The name of the current runtime.",
-            "type": "String",
-            "description": " The name of the current runtime."
-          }
-        ],
-        "@internal": [
-          {
-            "name": "@internal",
-            "body": ""
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
-    }
-  },
-  "defer": {
-    "location": {
-      "start": {
-        "line": 68,
-        "column": 2,
-        "index": 1883
+      "params": [],
+      "returnType": {
+        "type": "string"
       },
-      "end": {
-        "line": 70,
-        "column": 3,
-        "index": 1965
-      }
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "members": {},
+  "properties": {}
 }

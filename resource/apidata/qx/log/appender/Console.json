@@ -1,50 +1,77 @@
 {
-  "className": "qx.log.appender.Console",
-  "packageName": "qx.log.appender",
-  "name": "Console",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 38,
-        "column": 0,
-        "index": 1179
-      },
-      "end": {
-        "line": 363,
-        "column": 3,
-        "index": 10420
-      }
+  "version": 0.3,
+  "lastModified": 1712910030533,
+  "lastModifiedIso": "2024-04-12T08:20:30.533Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/log/appender/Console.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 38,
+      "column": 0,
+      "index": 1179
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Feature-rich console appender for the qooxdoo logging system.\n Creates a small inline element which is placed in the top-right corner\n of the window. Prints all messages with a nice color highlighting.</p>\n<ul>\n<li>Allows user command inputs.</li>\n<li>Command history enabled by default (Keyboard up/down arrows).</li>\n<li>Lazy creation on first open.</li>\n<li>Clearing the console using a button.</li>\n<li>Display of offset (time after loading) of each message</li>\n<li>Supports keyboard shortcuts F7 or Ctrl+D to toggle the visibility\nNote this class must be disposed of after use</li>\n</ul>"
-        }
-      ],
-      "@require": [
-        {
-          "name": "@require",
-          "body": "qx.event.handler.Window"
-        },
-        {
-          "name": "@require",
-          "body": "qx.event.handler.Keyboard"
-        },
-        {
-          "name": "@require",
-          "body": "qx.event.handler.Gesture"
-        }
-      ]
+    "end": {
+      "line": 363,
+      "column": 3,
+      "index": 10420
     }
   },
-  "type": "class",
+  "className": "qx.log.appender.Console",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Feature-rich console appender for the qooxdoo logging system.",
+      " *",
+      " * Creates a small inline element which is placed in the top-right corner",
+      " * of the window. Prints all messages with a nice color highlighting.",
+      " *",
+      " * * Allows user command inputs.",
+      " * * Command history enabled by default (Keyboard up/down arrows).",
+      " * * Lazy creation on first open.",
+      " * * Clearing the console using a button.",
+      " * * Display of offset (time after loading) of each message",
+      " * * Supports keyboard shortcuts F7 or Ctrl+D to toggle the visibility",
+      " *",
+      " * Note this class must be disposed of after use",
+      " *",
+      " * @require(qx.event.handler.Window)",
+      " * @require(qx.event.handler.Keyboard)",
+      " * @require(qx.event.handler.Gesture)",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Feature-rich console appender for the qooxdoo logging system.\n Creates a small inline element which is placed in the top-right corner\n of the window. Prints all messages with a nice color highlighting.</p>\n<ul>\n<li>Allows user command inputs.</li>\n<li>Command history enabled by default (Keyboard up/down arrows).</li>\n<li>Lazy creation on first open.</li>\n<li>Clearing the console using a button.</li>\n<li>Display of offset (time after loading) of each message</li>\n<li>Supports keyboard shortcuts F7 or Ctrl+D to toggle the visibility\nNote this class must be disposed of after use</li>\n</ul>"
+      }
+    ],
+    "@require": [
+      {
+        "name": "@require",
+        "body": "qx.event.handler.Window"
+      },
+      {
+        "name": "@require",
+        "body": "qx.event.handler.Keyboard"
+      },
+      {
+        "name": "@require",
+        "body": "qx.event.handler.Gesture"
+      }
+    ]
+  },
   "statics": {
     "__main": {
+      "jsdoc": {
+        "raw": [
+          "",
+          "    ---------------------------------------------------------------------------",
+          "      INITIALIZATION AND SHUTDOWN",
+          "    ---------------------------------------------------------------------------",
+          "    "
+        ]
+      },
+      "access": "private",
       "location": {
         "start": {
           "line": 46,
@@ -57,11 +84,11 @@
           "index": 1462
         }
       },
-      "jsdoc": {},
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__log": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 48,
@@ -74,10 +101,11 @@
           "index": 1480
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__cmd": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 50,
@@ -90,10 +118,11 @@
           "index": 1498
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__lastCommand": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 52,
@@ -106,10 +135,25 @@
           "index": 1524
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "init": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Initializes the console, building HTML and pushing last",
+          "     * log messages to the output window.",
+          "     *",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Initializes the console, building HTML and pushing last\n log messages to the output window.</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 59,
@@ -122,18 +166,26 @@
           "index": 4890
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "dispose": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Used by the object registry to dispose this instance e.g. remove listeners etc.",
+          "     *",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Initializes the console, building HTML and pushing last\n log messages to the output window.</p>"
+            "body": "<p>Used by the object registry to dispose this instance e.g. remove listeners etc.</p>"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "dispose": {
+      "access": "public",
       "location": {
         "start": {
           "line": 133,
@@ -146,18 +198,26 @@
           "index": 5210
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "clear": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Clears the current console output.",
+          "     *",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Used by the object registry to dispose this instance e.g. remove listeners etc.</p>"
+            "body": "<p>Clears the current console output.</p>"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "clear": {
+      "access": "public",
       "location": {
         "start": {
           "line": 154,
@@ -170,31 +230,20 @@
           "index": 5555
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Clears the current console output.</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "appearsIn": []
     },
     "process": {
-      "location": {
-        "start": {
-          "line": 165,
-          "column": 4,
-          "index": 5702
-        },
-        "end": {
-          "line": 172,
-          "column": 5,
-          "index": 5920
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Processes a single log entry",
+          "     *",
+          "     * @signature function(entry)",
+          "     * @param entry {Map} The entry to process",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -213,14 +262,47 @@
             "body": "entry {Map} The entry to process",
             "paramName": "entry",
             "description": " The entry to process",
-            "type": "Map"
+            "type": "Map<any, any>"
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 165,
+          "column": 4,
+          "index": 5702
+        },
+        "end": {
+          "line": 172,
+          "column": 5,
+          "index": 5920
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "entry",
+          "type": "Map<any, any>"
+        }
+      ],
+      "appearsIn": []
     },
     "__scrollDown": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Automatically scroll down to the last line",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Automatically scroll down to the last line</p>"
+          }
+        ]
+      },
+      "access": "private",
       "location": {
         "start": {
           "line": 177,
@@ -233,31 +315,15 @@
           "index": 6069
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Automatically scroll down to the last line</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "private"
+      "params": [],
+      "appearsIn": []
     },
     "__visible": {
-      "location": {
-        "start": {
-          "line": 188,
-          "column": 4,
-          "index": 6341
-        },
-        "end": {
-          "line": 188,
-          "column": 19,
-          "index": 6356
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "* @type {Boolean} Flag to store last visibility status "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -271,10 +337,37 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 188,
+          "column": 4,
+          "index": 6341
+        },
+        "end": {
+          "line": 188,
+          "column": 19,
+          "index": 6356
+        }
+      },
+      "appearsIn": []
     },
     "toggle": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Toggles the visibility of the console between visible and hidden.",
+          "     *",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Toggles the visibility of the console between visible and hidden.</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 194,
@@ -287,18 +380,26 @@
           "index": 6666
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "show": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Shows the console.",
+          "     *",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Toggles the visibility of the console between visible and hidden.</p>"
+            "body": "<p>Shows the console.</p>"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "show": {
+      "access": "public",
       "location": {
         "start": {
           "line": 208,
@@ -311,31 +412,15 @@
           "index": 6907
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Shows the console.</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "appearsIn": []
     },
     "__history": {
-      "location": {
-        "start": {
-          "line": 224,
-          "column": 4,
-          "index": 7172
-        },
-        "end": {
-          "line": 224,
-          "column": 17,
-          "index": 7185
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "* @type {Array} List of all previous commands. "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -349,10 +434,37 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 224,
+          "column": 4,
+          "index": 7172
+        },
+        "end": {
+          "line": 224,
+          "column": 17,
+          "index": 7185
+        }
+      },
+      "appearsIn": []
     },
     "execute": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Executes the currently given command",
+          "     *",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Executes the currently given command</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 230,
@@ -365,31 +477,19 @@
           "index": 7998
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Executes the currently given command</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "appearsIn": []
     },
     "__onResize": {
-      "location": {
-        "start": {
-          "line": 273,
-          "column": 4,
-          "index": 8303
-        },
-        "end": {
-          "line": 279,
-          "column": 5,
-          "index": 8496
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Event handler for resize listener",
+          "     *",
+          "     * @param e {Event} Event object",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -406,23 +506,37 @@
           }
         ]
       },
-      "type": "function",
-      "access": "private"
-    },
-    "__onKeyPress": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 286,
+          "line": 273,
           "column": 4,
-          "index": 8605
+          "index": 8303
         },
         "end": {
-          "line": 339,
+          "line": 279,
           "column": 5,
-          "index": 9929
+          "index": 8496
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "e",
+          "type": "Event"
+        }
+      ],
+      "appearsIn": []
+    },
+    "__onKeyPress": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Event handler for keydown listener",
+          "     *",
+          "     * @param e {Event} Event object",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -439,24 +553,29 @@
           }
         ]
       },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 286,
+          "column": 4,
+          "index": 8605
+        },
+        "end": {
+          "line": 339,
+          "column": 5,
+          "index": 9929
+        }
+      },
       "type": "function",
-      "access": "private"
+      "params": [
+        {
+          "name": "e",
+          "type": "Event"
+        }
+      ],
+      "appearsIn": []
     }
   },
-  "defer": {
-    "location": {
-      "start": {
-        "line": 348,
-        "column": 2,
-        "index": 10120
-      },
-      "end": {
-        "line": 362,
-        "column": 3,
-        "index": 10416
-      }
-    },
-    "jsdoc": {}
-  },
-  "descendants": []
+  "members": {},
+  "properties": {}
 }

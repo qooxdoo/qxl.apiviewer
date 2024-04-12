@@ -1,35 +1,39 @@
 {
-  "className": "qx.ui.table.selection.Model",
-  "packageName": "qx.ui.table.selection",
-  "name": "Model",
-  "superClass": "qx.core.Object",
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 23,
-        "column": 0,
-        "index": 536
-      },
-      "end": {
-        "line": 576,
-        "column": 3,
-        "index": 17124
-      }
+  "version": 0.3,
+  "lastModified": 1712910030977,
+  "lastModifiedIso": "2024-04-12T08:20:30.977Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/ui/table/selection/Model.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 23,
+      "column": 0,
+      "index": 536
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>A selection model.</p>"
-        }
-      ]
+    "end": {
+      "line": 576,
+      "column": 3,
+      "index": 17124
     }
   },
-  "type": "class",
+  "className": "qx.ui.table.selection.Model",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * A selection model.",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>A selection model.</p>"
+      }
+    ]
+  },
+  "superClass": "qx.core.Object",
   "construct": {
+    "type": "function",
+    "params": [],
     "location": {
       "start": {
         "line": 32,
@@ -41,11 +45,22 @@
         "column": 3,
         "index": 1022
       }
-    },
-    "jsdoc": {}
+    }
   },
   "events": {
     "changeSelection": {
+      "type": "qx.event.type.Event",
+      "jsdoc": {
+        "raw": [
+          "* Fired when the selection has changed. "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Fired when the selection has changed.</p>"
+          }
+        ]
+      },
       "location": {
         "start": {
           "line": 50,
@@ -57,34 +72,15 @@
           "column": 42,
           "index": 1311
         }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Fired when the selection has changed.</p>"
-          }
-        ]
-      },
-      "name": "changeSelection",
-      "type": "qx.event.type.Event"
+      }
     }
   },
   "statics": {
     "NO_SELECTION": {
-      "location": {
-        "start": {
-          "line": 61,
-          "column": 4,
-          "index": 1599
-        },
-        "end": {
-          "line": 61,
-          "column": 19,
-          "index": 1614
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "* @type {int} The selection mode \"none\". Nothing can ever be selected. "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -98,23 +94,26 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "SINGLE_SELECTION": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 64,
+          "line": 61,
           "column": 4,
-          "index": 1714
+          "index": 1599
         },
         "end": {
-          "line": 64,
-          "column": 23,
-          "index": 1733
+          "line": 61,
+          "column": 19,
+          "index": 1614
         }
       },
+      "appearsIn": []
+    },
+    "SINGLE_SELECTION": {
       "jsdoc": {
+        "raw": [
+          "* @type {int} The selection mode \"single\". This mode only allows one selected item. "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -128,23 +127,29 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "SINGLE_INTERVAL_SELECTION": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 70,
+          "line": 64,
           "column": 4,
-          "index": 1885
+          "index": 1714
         },
         "end": {
-          "line": 70,
-          "column": 32,
-          "index": 1913
+          "line": 64,
+          "column": 23,
+          "index": 1733
         }
       },
+      "appearsIn": []
+    },
+    "SINGLE_INTERVAL_SELECTION": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * @type {int} The selection mode \"single interval\". This mode only allows one",
+          "     * continuous interval of selected items.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -158,23 +163,29 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "MULTIPLE_INTERVAL_SELECTION": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 76,
+          "line": 70,
           "column": 4,
-          "index": 2039
+          "index": 1885
         },
         "end": {
-          "line": 76,
-          "column": 34,
-          "index": 2069
+          "line": 70,
+          "column": 32,
+          "index": 1913
         }
       },
+      "appearsIn": []
+    },
+    "MULTIPLE_INTERVAL_SELECTION": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * @type {int} The selection mode \"multiple interval\". This mode only allows any",
+          "     * selection.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -188,23 +199,32 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "MULTIPLE_INTERVAL_SELECTION_TOGGLE": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 85,
+          "line": 76,
           "column": 4,
-          "index": 2436
+          "index": 2039
         },
         "end": {
-          "line": 85,
-          "column": 41,
-          "index": 2473
+          "line": 76,
+          "column": 34,
+          "index": 2069
         }
       },
+      "appearsIn": []
+    },
+    "MULTIPLE_INTERVAL_SELECTION_TOGGLE": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * @type {int} The selection mode \"multiple interval\". This mode only allows any",
+          "     * selection. The difference with the previous one, is that multiple",
+          "     * selection is eased. A tap on an item, toggles its selection state.",
+          "     * On the other hand, MULTIPLE_INTERVAL_SELECTION does this behavior only",
+          "     * when Ctrl-tapping an item.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -218,8 +238,20 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 85,
+          "column": 4,
+          "index": 2436
+        },
+        "end": {
+          "line": 85,
+          "column": 41,
+          "index": 2473
+        }
+      },
+      "appearsIn": []
     }
   },
   "properties": {
@@ -236,7 +268,26 @@
           "index": 3202
         }
       },
+      "json": {
+        "init": 2,
+        "check": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "apply": "_applySelectionMode"
+      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Set the selection mode. Valid values are {@link #NO_SELECTION},",
+          "     * {@link #SINGLE_SELECTION}, {@link #SINGLE_INTERVAL_SELECTION},",
+          "     * {@link #MULTIPLE_INTERVAL_SELECTION} and",
+          "     * {@link #MULTIPLE_INTERVAL_SELECTION_TOGGLE}.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -244,54 +295,13 @@
           }
         ]
       },
-      "name": "selectionMode",
-      "propertyType": "new",
-      "apply": "_applySelectionMode",
-      "init": 2,
-      "possibleValues": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "defaultValue": 2
-    },
-    "qxOwner": {
-      "type": "property",
-      "name": "qxOwner",
-      "abstract": false,
-      "mixin": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.MObjectId",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>The owning object</p>"
-          }
-        ]
-      }
-    },
-    "qxObjectId": {
-      "type": "property",
-      "name": "qxObjectId",
-      "abstract": false,
-      "mixin": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.MObjectId",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>{String} The ID of the object.</p>"
-          }
-        ]
-      }
+      "appearsIn": []
     }
   },
   "members": {
     "__hadChangeEventInBatchMode": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 116,
@@ -304,10 +314,11 @@
           "index": 3443
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__anchorSelectionIndex": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 117,
@@ -320,10 +331,11 @@
           "index": 3477
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__leadSelectionIndex": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 118,
@@ -336,10 +348,11 @@
           "index": 3509
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__selectedRangeArr": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 119,
@@ -352,10 +365,15 @@
           "index": 3539
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "_applySelectionMode": {
+      "jsdoc": {
+        "raw": [
+          " selectionMode property modifier"
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 122,
@@ -368,27 +386,32 @@
           "index": 3656
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "protected",
-      "applyFor": [
-        "selectionMode"
-      ]
+      "params": [
+        {
+          "name": "selectionMode"
+        }
+      ],
+      "appearsIn": []
     },
     "setBatchMode": {
-      "location": {
-        "start": {
-          "line": 140,
-          "column": 4,
-          "index": 4392
-        },
-        "end": {
-          "line": 159,
-          "column": 5,
-          "index": 4902
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     *",
+          "     * Activates / Deactivates batch mode. In batch mode, no change events will be thrown but",
+          "     * will be collected instead. When batch mode is turned off again and any events have",
+          "     * been collected, one event is thrown to inform the listeners.",
+          "     *",
+          "     * This method supports nested calling, i. e. batch mode can be turned more than once.",
+          "     * In this case, batch mode will not end until it has been turned off once for each",
+          "     * turning on.",
+          "     *",
+          "     * @param batchMode {Boolean} true to activate batch mode, false to deactivate",
+          "     * @return {Boolean} true if batch mode is active, false otherwise",
+          "     * @throws {Error} if batch mode is turned off once more than it has been turned on",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -401,15 +424,15 @@
             "body": "batchMode {Boolean} true to activate batch mode, false to deactivate",
             "paramName": "batchMode",
             "description": " true to activate batch mode, false to deactivate",
-            "type": "Boolean"
+            "type": "boolean"
           }
         ],
         "@return": [
           {
             "name": "@return",
             "body": "{Boolean} true if batch mode is active, false otherwise",
-            "type": "Boolean",
-            "description": " true if batch mode is active, false otherwise"
+            "type": "boolean",
+            "description": "true if batch mode is active, false otherwise"
           }
         ],
         "@throws": [
@@ -421,10 +444,57 @@
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 140,
+          "column": 4,
+          "index": 4392
+        },
+        "end": {
+          "line": 159,
+          "column": 5,
+          "index": 4902
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "batchMode",
+          "type": "boolean"
+        }
+      ],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
     },
     "hasBatchMode": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     *",
+          "     * Returns whether batch mode is active. See setter for a description of batch mode.",
+          "     *",
+          "     * @return {Boolean} true if batch mode is active, false otherwise",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns whether batch mode is active. See setter for a description of batch mode.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} true if batch mode is active, false otherwise",
+            "type": "boolean",
+            "description": "true if batch mode is active, false otherwise"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 167,
@@ -437,26 +507,39 @@
           "index": 5165
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "getAnchorSelectionIndex": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the first argument of the last call to {@link #setSelectionInterval()},",
+          "     * {@link #addSelectionInterval()} or {@link #removeSelectionInterval()}.",
+          "     *",
+          "     * @return {Integer} the anchor selection index.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Returns whether batch mode is active. See setter for a description of batch mode.</p>"
+            "body": "<p>Returns the first argument of the last call to {@link #setSelectionInterval()},\n {@link #addSelectionInterval()} or {@link #removeSelectionInterval()}.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} true if batch mode is active, false otherwise",
-            "type": "Boolean",
-            "description": " true if batch mode is active, false otherwise"
+            "body": "{Integer} the anchor selection index.",
+            "type": "Integer",
+            "description": "the anchor selection index."
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getAnchorSelectionIndex": {
+      "access": "public",
       "location": {
         "start": {
           "line": 177,
@@ -469,39 +552,23 @@
           "index": 5488
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the first argument of the last call to {@link #setSelectionInterval()},\n {@link #addSelectionInterval()} or {@link #removeSelectionInterval()}.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Integer} the anchor selection index.",
-            "type": "Integer",
-            "description": " the anchor selection index."
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "Integer"
+      },
+      "appearsIn": []
     },
     "_setAnchorSelectionIndex": {
-      "location": {
-        "start": {
-          "line": 187,
-          "column": 4,
-          "index": 5684
-        },
-        "end": {
-          "line": 189,
-          "column": 5,
-          "index": 5766
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Sets the anchor selection index. Only use this function, if you want manipulate",
+          "     * the selection manually.",
+          "     *",
+          "     * @param index {Integer} the index to set.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -518,10 +585,54 @@
           }
         ]
       },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 187,
+          "column": 4,
+          "index": 5684
+        },
+        "end": {
+          "line": 189,
+          "column": 5,
+          "index": 5766
+        }
+      },
       "type": "function",
-      "access": "protected"
+      "params": [
+        {
+          "name": "index",
+          "type": "Integer"
+        }
+      ],
+      "appearsIn": []
     },
     "getLeadSelectionIndex": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the second argument of the last call to {@link #setSelectionInterval()},",
+          "     * {@link #addSelectionInterval()} or {@link #removeSelectionInterval()}.",
+          "     *",
+          "     * @return {Integer} the lead selection index.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns the second argument of the last call to {@link #setSelectionInterval()},\n {@link #addSelectionInterval()} or {@link #removeSelectionInterval()}.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Integer} the lead selection index.",
+            "type": "Integer",
+            "description": "the lead selection index."
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 197,
@@ -534,39 +645,23 @@
           "index": 6084
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the second argument of the last call to {@link #setSelectionInterval()},\n {@link #addSelectionInterval()} or {@link #removeSelectionInterval()}.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Integer} the lead selection index.",
-            "type": "Integer",
-            "description": " the lead selection index."
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "Integer"
+      },
+      "appearsIn": []
     },
     "_setLeadSelectionIndex": {
-      "location": {
-        "start": {
-          "line": 207,
-          "column": 4,
-          "index": 6278
-        },
-        "end": {
-          "line": 209,
-          "column": 5,
-          "index": 6356
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Sets the lead selection index. Only use this function, if you want manipulate",
+          "     * the selection manually.",
+          "     *",
+          "     * @param index {Integer} the index to set.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -583,10 +678,55 @@
           }
         ]
       },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 207,
+          "column": 4,
+          "index": 6278
+        },
+        "end": {
+          "line": 209,
+          "column": 5,
+          "index": 6356
+        }
+      },
       "type": "function",
-      "access": "protected"
+      "params": [
+        {
+          "name": "index",
+          "type": "Integer"
+        }
+      ],
+      "appearsIn": []
     },
     "_getSelectedRangeArr": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns an array that holds all the selected ranges of the table. Each",
+          "     * entry is a map holding information about the \"minIndex\" and \"maxIndex\" of the",
+          "     * selection range.",
+          "     *",
+          "     * @return {Map[]} array with all the selected ranges.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns an array that holds all the selected ranges of the table. Each\n entry is a map holding information about the \"minIndex\" and \"maxIndex\" of the\n selection range.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Map[]} array with all the selected ranges.",
+            "type": "Map[]",
+            "description": "array with all the selected ranges."
+          }
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 218,
@@ -599,26 +739,28 @@
           "index": 6700
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "Map[]"
+      },
+      "appearsIn": []
+    },
+    "resetSelection": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Resets (clears) the selection.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Returns an array that holds all the selected ranges of the table. Each\n entry is a map holding information about the \"minIndex\" and \"maxIndex\" of the\n selection range.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Map[]} array with all the selected ranges.",
-            "type": "Map[]",
-            "description": " array with all the selected ranges."
+            "body": "<p>Resets (clears) the selection.</p>"
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "resetSelection": {
+      "access": "public",
       "location": {
         "start": {
           "line": 225,
@@ -631,18 +773,35 @@
           "index": 6900
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "isSelectionEmpty": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns whether the selection is empty.",
+          "     *",
+          "     * @return {Boolean} whether the selection is empty.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Resets (clears) the selection.</p>"
+            "body": "<p>Returns whether the selection is empty.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} whether the selection is empty.",
+            "type": "boolean",
+            "description": "whether the selection is empty."
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "isSelectionEmpty": {
+      "access": "public",
       "location": {
         "start": {
           "line": 237,
@@ -655,26 +814,38 @@
           "index": 7110
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "getSelectedCount": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the number of selected items.",
+          "     *",
+          "     * @return {Integer} the number of selected items.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Returns whether the selection is empty.</p>"
+            "body": "<p>Returns the number of selected items.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} whether the selection is empty.",
-            "type": "Boolean",
-            "description": " whether the selection is empty."
+            "body": "{Integer} the number of selected items.",
+            "type": "Integer",
+            "description": "the number of selected items."
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getSelectedCount": {
+      "access": "public",
       "location": {
         "start": {
           "line": 246,
@@ -687,39 +858,23 @@
           "index": 7508
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the number of selected items.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Integer} the number of selected items.",
-            "type": "Integer",
-            "description": " the number of selected items."
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "Integer"
+      },
+      "appearsIn": []
     },
     "isSelectedIndex": {
-      "location": {
-        "start": {
-          "line": 263,
-          "column": 4,
-          "index": 7689
-        },
-        "end": {
-          "line": 273,
-          "column": 5,
-          "index": 7961
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns whether an index is selected.",
+          "     *",
+          "     * @param index {Integer} the index to check.",
+          "     * @return {Boolean} whether the index is selected.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -739,15 +894,62 @@
           {
             "name": "@return",
             "body": "{Boolean} whether the index is selected.",
-            "type": "Boolean",
-            "description": " whether the index is selected."
+            "type": "boolean",
+            "description": "whether the index is selected."
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 263,
+          "column": 4,
+          "index": 7689
+        },
+        "end": {
+          "line": 273,
+          "column": 5,
+          "index": 7961
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "index",
+          "type": "Integer"
+        }
+      ],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
     },
     "getSelectedRanges": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the selected ranges as an array. Each array element has a",
+          "     * <code>minIndex</code> and a <code>maxIndex</code> property.",
+          "     *",
+          "     * @return {Map[]} the selected ranges.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns the selected ranges as an array. Each array element has a\n <code>minIndex</code> and a <code>maxIndex</code> property.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Map[]} the selected ranges.",
+            "type": "Map[]",
+            "description": "the selected ranges."
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 281,
@@ -760,39 +962,33 @@
           "index": 8604
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the selected ranges as an array. Each array element has a\n <code>minIndex</code> and a <code>maxIndex</code> property.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Map[]} the selected ranges.",
-            "type": "Map[]",
-            "description": " the selected ranges."
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "Map[]"
+      },
+      "appearsIn": []
     },
     "iterateSelection": {
-      "location": {
-        "start": {
-          "line": 312,
-          "column": 4,
-          "index": 9220
-        },
-        "end": {
-          "line": 322,
-          "column": 5,
-          "index": 9528
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Calls an iterator function for each selected index.",
+          "     *",
+          "     * Usage Example:",
+          "     * <pre class='javascript'>",
+          "     * var selectedRowData = [];",
+          "     * mySelectionModel.iterateSelection(function(index) {",
+          "     *   selectedRowData.push(myTableModel.getRowData(index));",
+          "     * });",
+          "     * </pre>",
+          "     *",
+          "     * @param iterator {Function} the function to call for each selected index.",
+          "     *          Gets the current index as parameter.",
+          "     * @param object {var ? null} the object to use when calling the handler.",
+          "     *          (this object will be available via \"this\" in the iterator)",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -805,7 +1001,7 @@
             "body": "iterator {Function} the function to call for each selected index.\n          Gets the current index as parameter.",
             "paramName": "iterator",
             "description": " the function to call for each selected index.\n          Gets the current index as parameter.",
-            "type": "Function"
+            "type": "((...args: any[]) => any)"
           },
           {
             "name": "@param",
@@ -813,23 +1009,41 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "setSelectionInterval": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 330,
+          "line": 312,
           "column": 4,
-          "index": 9788
+          "index": 9220
         },
         "end": {
-          "line": 369,
+          "line": 322,
           "column": 5,
-          "index": 10851
+          "index": 9528
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "iterator",
+          "type": "((...args: any[]) => any)"
+        },
+        {
+          "name": "object"
+        }
+      ],
+      "appearsIn": []
+    },
+    "setSelectionInterval": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Sets the selected interval. This will clear the former selection.",
+          "     *",
+          "     * @param fromIndex {Integer} the first index of the selection (including).",
+          "     * @param toIndex {Integer} the last index of the selection (including).",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -853,23 +1067,42 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "addSelectionInterval": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 377,
+          "line": 330,
           "column": 4,
-          "index": 11097
+          "index": 9788
         },
         "end": {
-          "line": 394,
+          "line": 369,
           "column": 5,
-          "index": 11639
+          "index": 10851
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "fromIndex",
+          "type": "Integer"
+        },
+        {
+          "name": "toIndex",
+          "type": "Integer"
+        }
+      ],
+      "appearsIn": []
+    },
+    "addSelectionInterval": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds a selection interval to the current selection.",
+          "     *",
+          "     * @param fromIndex {Integer} the first index of the selection (including).",
+          "     * @param toIndex {Integer} the last index of the selection (including).",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -893,23 +1126,44 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "removeSelectionInterval": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 404,
+          "line": 377,
           "column": 4,
-          "index": 12069
+          "index": 11097
         },
         "end": {
-          "line": 472,
+          "line": 394,
           "column": 5,
-          "index": 14177
+          "index": 11639
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "fromIndex",
+          "type": "Integer"
+        },
+        {
+          "name": "toIndex",
+          "type": "Integer"
+        }
+      ],
+      "appearsIn": []
+    },
+    "removeSelectionInterval": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Removes an interval from the current selection.",
+          "     *",
+          "     * @param fromIndex {Integer} the first index of the interval (including).",
+          "     * @param toIndex {Integer} the last index of the interval (including).",
+          "     * @param rowsRemoved {Boolean?} rows were removed that caused this selection to change.",
+          "     *   If rows were removed, move the selections over so the same rows are selected as before.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -941,10 +1195,52 @@
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 404,
+          "column": 4,
+          "index": 12069
+        },
+        "end": {
+          "line": 472,
+          "column": 5,
+          "index": 14177
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "fromIndex",
+          "type": "Integer"
+        },
+        {
+          "name": "toIndex",
+          "type": "Integer"
+        },
+        {
+          "name": "rowsRemoved",
+          "type": "Boolean",
+          "optional": true
+        }
+      ],
+      "appearsIn": []
     },
     "_resetSelection": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Resets (clears) the selection, but doesn't inform the listeners.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Resets (clears) the selection, but doesn't inform the listeners.</p>"
+          }
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 477,
@@ -957,31 +1253,21 @@
           "index": 14411
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Resets (clears) the selection, but doesn't inform the listeners.</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "protected"
+      "params": [],
+      "appearsIn": []
     },
     "_addSelectionInterval": {
-      "location": {
-        "start": {
-          "line": 490,
-          "column": 4,
-          "index": 14698
-        },
-        "end": {
-          "line": 533,
-          "column": 5,
-          "index": 15998
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds a selection interval to the current selection, but doesn't inform",
+          "     * the listeners.",
+          "     *",
+          "     * @param fromIndex {Integer} the first index of the selection (including).",
+          "     * @param toIndex {Integer} the last index of the selection (including).",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1005,10 +1291,48 @@
           }
         ]
       },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 490,
+          "column": 4,
+          "index": 14698
+        },
+        "end": {
+          "line": 533,
+          "column": 5,
+          "index": 15998
+        }
+      },
       "type": "function",
-      "access": "protected"
+      "params": [
+        {
+          "name": "fromIndex",
+          "type": "Integer"
+        },
+        {
+          "name": "toIndex",
+          "type": "Integer"
+        }
+      ],
+      "appearsIn": []
     },
     "_dumpRanges": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Logs the current ranges for debug purposes.",
+          "     *",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Logs the current ranges for debug purposes.</p>"
+          }
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 540,
@@ -1021,18 +1345,27 @@
           "index": 16371
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "_fireChangeSelection": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fires the \"changeSelection\" event to all registered listeners. If the selection model",
+          "     * currently is in batch mode, only one event will be thrown when batch mode is ended.",
+          "     *",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Logs the current ranges for debug purposes.</p>"
+            "body": "<p>Fires the \"changeSelection\" event to all registered listeners. If the selection model\n currently is in batch mode, only one event will be thrown when batch mode is ended.</p>"
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_fireChangeSelection": {
+      "access": "protected",
       "location": {
         "start": {
           "line": 556,
@@ -1045,223 +1378,14 @@
           "index": 16872
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Fires the \"changeSelection\" event to all registered listeners. If the selection model\n currently is in batch mode, only one event will be thrown when batch mode is ended.</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "protected"
-    },
-    "getQxOwner": {
-      "type": "function",
-      "name": "getQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "qx.core.Object",
-            "desc": "Returns the value for qxOwner"
-          }
-        ]
-      }
-    },
-    "setQxOwner": {
-      "type": "function",
-      "name": "setQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.core.Object",
-            "paramName": "value",
-            "desc": "Value for qxOwner"
-          }
-        ]
-      }
-    },
-    "resetQxOwner": {
-      "type": "function",
-      "name": "resetQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxOwner</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ]
-      }
-    },
-    "getQxObjectId": {
-      "type": "function",
-      "name": "getQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "[[ ObjectMethod Function ]]",
-            "desc": "Returns the value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "setQxObjectId": {
-      "type": "function",
-      "name": "setQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "[[ ObjectMethod Function ]]",
-            "paramName": "value",
-            "desc": "Value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "resetQxObjectId": {
-      "type": "function",
-      "name": "resetQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxObjectId</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ]
-      }
-    },
-    "getSelectionMode": {
-      "type": "function",
-      "name": "getSelectionMode",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>selectionMode</code>.\n\nFor further details take a look at the property definition: {@link #selectionMode}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "any",
-            "desc": "Returns the value for selectionMode"
-          }
-        ]
-      }
-    },
-    "setSelectionMode": {
-      "type": "function",
-      "name": "setSelectionMode",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>selectionMode</code>.\n\nFor further details take a look at the property definition: {@link #selectionMode}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "any",
-            "paramName": "value",
-            "desc": "Value for selectionMode"
-          }
-        ]
-      }
-    },
-    "resetSelectionMode": {
-      "type": "function",
-      "name": "resetSelectionMode",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>selectionMode</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #selectionMode}."
-          }
-        ]
-      }
+      "params": [],
+      "appearsIn": []
     }
   },
   "destruct": {
+    "type": "function",
+    "params": [],
     "location": {
       "start": {
         "line": 573,
@@ -1273,8 +1397,6 @@
         "column": 3,
         "index": 17120
       }
-    },
-    "jsdoc": {}
-  },
-  "descendants": []
+    }
+  }
 }

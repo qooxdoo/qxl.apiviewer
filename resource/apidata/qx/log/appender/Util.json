@@ -1,42 +1,47 @@
 {
-  "className": "qx.log.appender.Util",
-  "packageName": "qx.log.appender",
-  "name": "Util",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 24,
-        "column": 0,
-        "index": 615
-      },
-      "end": {
-        "line": 43,
-        "column": 3,
-        "index": 1132
-      }
+  "version": 0.3,
+  "lastModified": 1712910031229,
+  "lastModifiedIso": "2024-04-12T08:20:31.229Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/log/appender/Util.js",
+  "type": "bootstrap",
+  "location": {
+    "start": {
+      "line": 24,
+      "column": 0,
+      "index": 615
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Contains some common methods available to all log appenders.</p>"
-        }
-      ],
-      "@deprecated": [
-        {
-          "name": "@deprecated",
-          "body": "{6.0} See qx.util.appender.Formatter instead"
-        }
-      ]
+    "end": {
+      "line": 43,
+      "column": 3,
+      "index": 1132
     }
   },
-  "type": "class",
+  "className": "qx.log.appender.Util",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Contains some common methods available to all log appenders.",
+      " *",
+      " * @deprecated {6.0} See qx.util.appender.Formatter instead",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Contains some common methods available to all log appenders.</p>"
+      }
+    ],
+    "@deprecated": [
+      {
+        "name": "@deprecated",
+        "body": "{6.0} See qx.util.appender.Formatter instead"
+      }
+    ]
+  },
   "statics": {
     "toHtml": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 26,
@@ -49,10 +54,11 @@
           "index": 690
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "toText": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 27,
@@ -65,10 +71,11 @@
           "index": 708
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "toTextArray": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 28,
@@ -81,10 +88,11 @@
           "index": 731
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "escapeHTML": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 29,
@@ -97,23 +105,9 @@
           "index": 785
         }
       },
-      "type": "function",
-      "access": "public"
+      "appearsIn": []
     }
   },
-  "defer": {
-    "location": {
-      "start": {
-        "line": 32,
-        "column": 2,
-        "index": 794
-      },
-      "end": {
-        "line": 42,
-        "column": 3,
-        "index": 1128
-      }
-    }
-  },
-  "descendants": []
+  "members": {},
+  "properties": {}
 }

@@ -1,36 +1,39 @@
 {
-  "className": "qx.tool.utils.json.Parser",
-  "packageName": "qx.tool.utils.json",
-  "name": "Parser",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 29,
-        "column": 0,
-        "index": 891
-      },
-      "end": {
-        "line": 649,
-        "column": 3,
-        "index": 18194
-      }
+  "version": 0.3,
+  "lastModified": 1712910031033,
+  "lastModifiedIso": "2024-04-12T08:20:31.033Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/tool/utils/json/Parser.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 29,
+      "column": 0,
+      "index": 891
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Parser, based on json-to-ast by Vlad trushin</p>"
-        }
-      ]
+    "end": {
+      "line": 649,
+      "column": 3,
+      "index": 18194
     }
   },
-  "type": "class",
+  "className": "qx.tool.utils.json.Parser",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Parser, based on json-to-ast by Vlad trushin",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Parser, based on json-to-ast by Vlad trushin</p>"
+      }
+    ]
+  },
   "statics": {
     "literals": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 31,
@@ -43,10 +46,11 @@
           "index": 1236
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "objectStates": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 39,
@@ -59,10 +63,11 @@
           "index": 1338
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "propertyStates": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 46,
@@ -75,10 +80,11 @@
           "index": 1415
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "arrayStates": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 52,
@@ -91,10 +97,11 @@
           "index": 1512
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "defaultSettings": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 59,
@@ -107,10 +114,11 @@
           "index": 1583
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "location": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 64,
@@ -124,9 +132,34 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "startLine"
+        },
+        {
+          "name": "startColumn"
+        },
+        {
+          "name": "startOffset"
+        },
+        {
+          "name": "endLine"
+        },
+        {
+          "name": "endColumn"
+        },
+        {
+          "name": "endOffset"
+        },
+        {
+          "name": "source"
+        }
+      ],
+      "appearsIn": []
     },
     "comment": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 90,
@@ -140,9 +173,22 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "value"
+        },
+        {
+          "name": "name"
+        },
+        {
+          "name": "token"
+        }
+      ],
+      "appearsIn": []
     },
     "parseObject": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 105,
@@ -156,9 +202,22 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "input"
+        },
+        {
+          "name": "tokenizer"
+        },
+        {
+          "name": "settings"
+        }
+      ],
+      "appearsIn": []
     },
     "parseProperty": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 262,
@@ -172,9 +231,22 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "input"
+        },
+        {
+          "name": "tokenizer"
+        },
+        {
+          "name": "settings"
+        }
+      ],
+      "appearsIn": []
     },
     "parseArray": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 368,
@@ -188,9 +260,22 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "input"
+        },
+        {
+          "name": "tokenizer"
+        },
+        {
+          "name": "settings"
+        }
+      ],
+      "appearsIn": []
     },
     "parseLiteral": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 506,
@@ -204,9 +289,22 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "input"
+        },
+        {
+          "name": "tokenizer"
+        },
+        {
+          "name": "settings"
+        }
+      ],
+      "appearsIn": []
     },
     "parseValue": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 541,
@@ -220,9 +318,22 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "input"
+        },
+        {
+          "name": "tokenizer"
+        },
+        {
+          "name": "settings"
+        }
+      ],
+      "appearsIn": []
     },
     "parseToAst": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 568,
@@ -236,9 +347,19 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "input"
+        },
+        {
+          "name": "settings"
+        }
+      ],
+      "appearsIn": []
     },
     "parse": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 613,
@@ -252,9 +373,19 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "input"
+        },
+        {
+          "name": "settings"
+        }
+      ],
+      "appearsIn": []
     },
     "unexpectedEnd": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 617,
@@ -268,9 +399,12 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "appearsIn": []
     },
     "unexpectedToken": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 621,
@@ -284,9 +418,22 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "token"
+        },
+        {
+          "name": "line"
+        },
+        {
+          "name": "column"
+        }
+      ],
+      "appearsIn": []
     },
     "error": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 625,
@@ -300,8 +447,23 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "message"
+        },
+        {
+          "name": "source"
+        },
+        {
+          "name": "line"
+        },
+        {
+          "name": "column"
+        }
+      ],
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "members": {},
+  "properties": {}
 }

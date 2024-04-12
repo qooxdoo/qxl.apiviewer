@@ -1,35 +1,44 @@
 {
-  "className": "qx.tool.compiler.resources.Manager",
-  "packageName": "qx.tool.compiler.resources",
-  "name": "Manager",
-  "superClass": "qx.core.Object",
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 33,
-        "column": 0,
-        "index": 956
-      },
-      "end": {
-        "line": 519,
-        "column": 3,
-        "index": 15760
-      }
+  "version": 0.3,
+  "lastModified": 1712910030933,
+  "lastModifiedIso": "2024-04-12T08:20:30.933Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/tool/compiler/resources/Manager.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 33,
+      "column": 0,
+      "index": 956
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Analyses library resources, collecting information into a cached database\n file</p>"
-        }
-      ]
+    "end": {
+      "line": 519,
+      "column": 3,
+      "index": 15810
     }
   },
-  "type": "class",
+  "className": "qx.tool.compiler.resources.Manager",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Analyses library resources, collecting information into a cached database",
+      " * file",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Analyses library resources, collecting information into a cached database\n file</p>"
+      }
+    ]
+  },
+  "superClass": "qx.core.Object",
   "construct": {
+    "type": "function",
+    "params": [
+      {
+        "name": "analyser"
+      }
+    ],
     "location": {
       "start": {
         "line": 41,
@@ -39,39 +48,16 @@
       "end": {
         "line": 54,
         "column": 3,
-        "index": 1549
+        "index": 1557
       }
-    },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Constructor</p>"
-        }
-      ],
-      "@param": [
-        {
-          "name": "@param",
-          "body": "analyser {qx.tool.compiler.Analyser}"
-        }
-      ]
     }
   },
   "members": {
     "__dbFilename": {
-      "location": {
-        "start": {
-          "line": 58,
-          "column": 4,
-          "index": 1610
-        },
-        "end": {
-          "line": 58,
-          "column": 22,
-          "index": 1628
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "* {String} filename of database "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -79,23 +65,26 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
-    },
-    "__db": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 61,
+          "line": 58,
           "column": 4,
-          "index": 1664
+          "index": 1618
         },
         "end": {
-          "line": 61,
-          "column": 14,
-          "index": 1674
+          "line": 58,
+          "column": 22,
+          "index": 1636
         }
       },
+      "appearsIn": []
+    },
+    "__db": {
       "jsdoc": {
+        "raw": [
+          "* {Object} Database "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -103,23 +92,26 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
-    },
-    "__analyser": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 64,
+          "line": 61,
           "column": 4,
-          "index": 1710
+          "index": 1672
         },
         "end": {
-          "line": 64,
-          "column": 20,
-          "index": 1726
+          "line": 61,
+          "column": 14,
+          "index": 1682
         }
       },
+      "appearsIn": []
+    },
+    "__analyser": {
       "jsdoc": {
+        "raw": [
+          "* the used analyser "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -127,23 +119,26 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
-    },
-    "__librariesByResourceUri": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 67,
+          "line": 64,
           "column": 4,
-          "index": 1811
+          "index": 1718
         },
         "end": {
-          "line": 67,
-          "column": 34,
-          "index": 1841
+          "line": 64,
+          "column": 20,
+          "index": 1734
         }
       },
+      "appearsIn": []
+    },
+    "__librariesByResourceUri": {
       "jsdoc": {
+        "raw": [
+          "* {Map{String,Library}} Lookup of libraries, indexed by resource URI "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -151,23 +146,26 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
-    },
-    "__allResourceUris": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 70,
+          "line": 67,
           "column": 4,
-          "index": 1972
+          "index": 1819
         },
         "end": {
-          "line": 70,
-          "column": 27,
-          "index": 1995
+          "line": 67,
+          "column": 34,
+          "index": 1849
         }
       },
+      "appearsIn": []
+    },
+    "__allResourceUris": {
       "jsdoc": {
+        "raw": [
+          "* {String[]} Array of all resource URIs, sorted alphabetically (ie these are the keys in __librariesByResourceUri) "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -175,23 +173,26 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
-    },
-    "__loaders": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 73,
+          "line": 70,
           "column": 4,
-          "index": 2091
+          "index": 1980
         },
         "end": {
-          "line": 73,
-          "column": 19,
-          "index": 2106
+          "line": 70,
+          "column": 27,
+          "index": 2003
         }
       },
+      "appearsIn": []
+    },
+    "__loaders": {
       "jsdoc": {
+        "raw": [
+          "* {ResourceLoader[]} list of resource loaders, used to add info to the database "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -199,23 +200,26 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
-    },
-    "__converters": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 76,
+          "line": 73,
           "column": 4,
-          "index": 2212
+          "index": 2099
         },
         "end": {
-          "line": 76,
-          "column": 22,
-          "index": 2230
+          "line": 73,
+          "column": 19,
+          "index": 2114
         }
       },
+      "appearsIn": []
+    },
+    "__converters": {
       "jsdoc": {
+        "raw": [
+          "* {ResourceConverter[]} list of resource converters, used to copy resources to the target "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -223,23 +227,28 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
-    },
-    "loadDatabase": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 81,
+          "line": 76,
           "column": 4,
-          "index": 2286
+          "index": 2220
         },
         "end": {
-          "line": 84,
-          "column": 5,
-          "index": 2407
+          "line": 76,
+          "column": 22,
+          "index": 2238
         }
       },
+      "appearsIn": []
+    },
+    "loadDatabase": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Loads the cached database",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -247,23 +256,30 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "saveDatabase": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 89,
+          "line": 81,
           "column": 4,
-          "index": 2456
+          "index": 2294
         },
         "end": {
-          "line": 92,
+          "line": 84,
           "column": 5,
-          "index": 2614
+          "index": 2415
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "saveDatabase": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Saves the database",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -271,23 +287,32 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getDatabase": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 99,
+          "line": 89,
           "column": 4,
-          "index": 2695
+          "index": 2464
         },
         "end": {
-          "line": 101,
+          "line": 92,
           "column": 5,
-          "index": 2740
+          "index": 2622
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "getDatabase": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the loaded database",
+          "     *",
+          "     * @returns",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -297,29 +322,39 @@
         "@return": [
           {
             "name": "@return",
-            "body": "",
-            "type": "",
-            "description": ""
+            "body": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "findLibraryForResource": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 110,
+          "line": 99,
           "column": 4,
-          "index": 3012
+          "index": 2703
         },
         "end": {
-          "line": 124,
+          "line": 101,
           "column": 5,
-          "index": 3469
+          "index": 2748
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {},
+      "appearsIn": []
+    },
+    "findLibraryForResource": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Finds the library needed for a resource, see `findLibrariesForResource`.  This reports",
+          "     * an error if more than one library is found.",
+          "     *",
+          "     * @param uri {String} URI",
+          "     * @return {qx.tool.compiler.app.Library[]} the libraries, empty list if not found",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -332,35 +367,58 @@
             "body": "uri {String} URI",
             "paramName": "uri",
             "description": " URI",
-            "type": "String"
+            "type": "string"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Library[]} the libraries, empty list if not found",
-            "type": "Library[]",
-            "description": " the libraries, empty list if not found"
+            "body": "{qx.tool.compiler.app.Library[]} the libraries, empty list if not found",
+            "type": "qx.tool.compiler.app.Library[]",
+            "description": "the libraries, empty list if not found"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "findLibrariesForResource": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 137,
+          "line": 110,
           "column": 4,
-          "index": 4037
+          "index": 3041
         },
         "end": {
-          "line": 227,
+          "line": 124,
           "column": 5,
-          "index": 6675
+          "index": 3498
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "uri",
+          "type": "string"
+        }
+      ],
+      "returnType": {
+        "type": "qx.tool.compiler.app.Library[]"
+      },
+      "appearsIn": []
+    },
+    "findLibrariesForResource": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Finds the libraries needed for a resource; this depends on `findAllResources` having",
+          "     * already been called.  `uri` can include optional explicit namespace (eg \"qx:blah/blah.png\"),",
+          "     * otherwise the library resource lookups are examined to find the library.",
+          "     *",
+          "     * Note that there can be more than one directory because the lookup holds directory names (used",
+          "     * for wildcards) and they are allowed to be duplicated.",
+          "     *",
+          "     * @param uri {String} URI",
+          "     * @return {qx.tool.compiler.app.Library[]} the libraries, empty list if not found",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -373,35 +431,51 @@
             "body": "uri {String} URI",
             "paramName": "uri",
             "description": " URI",
-            "type": "String"
+            "type": "string"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Library[]} the libraries, empty list if not found",
-            "type": "Library[]",
-            "description": " the libraries, empty list if not found"
+            "body": "{qx.tool.compiler.app.Library[]} the libraries, empty list if not found",
+            "type": "qx.tool.compiler.app.Library[]",
+            "description": "the libraries, empty list if not found"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "findAllResources": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 233,
+          "line": 137,
           "column": 4,
-          "index": 6813
+          "index": 4087
         },
         "end": {
-          "line": 352,
+          "line": 227,
           "column": 5,
-          "index": 10711
+          "index": 6725
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "uri",
+          "type": "string"
+        }
+      ],
+      "returnType": {
+        "type": "qx.tool.compiler.app.Library[]"
+      },
+      "appearsIn": []
+    },
+    "findAllResources": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Scans all libraries looking for resources; this does not analyse the",
+          "     * files, simply compiles the list",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -409,23 +483,32 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "__addAsset": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 359,
+          "line": 233,
           "column": 4,
-          "index": 10807
+          "index": 6863
         },
         "end": {
-          "line": 393,
+          "line": 352,
           "column": 5,
-          "index": 11821
+          "index": 10761
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "__addAsset": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds an asset",
+          "     *",
+          "     * @param asset {Asset} the asset to add",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -442,23 +525,40 @@
           }
         ]
       },
-      "type": "function",
-      "access": "private"
-    },
-    "getAsset": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 403,
+          "line": 359,
           "column": 4,
-          "index": 12197
+          "index": 10857
         },
         "end": {
-          "line": 429,
+          "line": 393,
           "column": 5,
-          "index": 13005
+          "index": 11871
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "asset",
+          "type": "qx.tool.compiler.resources.Asset"
+        }
+      ],
+      "appearsIn": []
+    },
+    "getAsset": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Gets an individual asset",
+          "     *",
+          "     * @param srcPath {String} the resource name, with or without a namespace prefix",
+          "     * @param create {Boolean?} if true the asset will be created if it does not exist",
+          "     * @param isThemeFile {Boolean?} if true the asset will be expected to be in the theme folder",
+          "     * @return {Asset?} the asset, if found",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -471,7 +571,7 @@
             "body": "srcPath {String} the resource name, with or without a namespace prefix",
             "paramName": "srcPath",
             "description": " the resource name, with or without a namespace prefix",
-            "type": "String"
+            "type": "string"
           },
           {
             "name": "@param",
@@ -495,27 +595,55 @@
             "name": "@return",
             "body": "{Asset?} the asset, if found",
             "type": "Asset?",
-            "description": " the asset, if found"
+            "description": "the asset, if found"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getAssetsForPaths": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 437,
+          "line": 403,
           "column": 4,
-          "index": 13148
+          "index": 12247
         },
         "end": {
-          "line": 517,
+          "line": 429,
           "column": 5,
-          "index": 15752
+          "index": 13055
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "srcPath",
+          "type": "string"
+        },
+        {
+          "name": "create",
+          "type": "Boolean",
+          "optional": true
+        },
+        {
+          "name": "isThemeFile",
+          "type": "Boolean",
+          "optional": true
+        }
+      ],
+      "returnType": {
+        "type": "Asset?"
+      },
+      "appearsIn": []
+    },
+    "getAssetsForPaths": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Collects information about the assets listed in srcPaths;",
+          "     *",
+          "     * @param srcPaths",
+          "     * @return {Asset[]}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -539,147 +667,31 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getQxOwner": {
-      "type": "function",
-      "name": "getQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "qx.core.Object",
-            "desc": "Returns the value for qxOwner"
-          }
-        ]
-      }
-    },
-    "setQxOwner": {
+      "location": {
+        "start": {
+          "line": 437,
+          "column": 4,
+          "index": 13198
+        },
+        "end": {
+          "line": 517,
+          "column": 5,
+          "index": 15802
+        }
+      },
       "type": "function",
-      "name": "setQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.core.Object",
-            "paramName": "value",
-            "desc": "Value for qxOwner"
-          }
-        ]
-      }
-    },
-    "resetQxOwner": {
-      "type": "function",
-      "name": "resetQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxOwner</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ]
-      }
-    },
-    "getQxObjectId": {
-      "type": "function",
-      "name": "getQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "[[ ObjectMethod Function ]]",
-            "desc": "Returns the value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "setQxObjectId": {
-      "type": "function",
-      "name": "setQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "[[ ObjectMethod Function ]]",
-            "paramName": "value",
-            "desc": "Value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "resetQxObjectId": {
-      "type": "function",
-      "name": "resetQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxObjectId</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ]
-      }
+      "params": [
+        {
+          "name": "srcPaths"
+        }
+      ],
+      "returnType": {
+        "type": "Asset[]"
+      },
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "statics": {},
+  "properties": {}
 }

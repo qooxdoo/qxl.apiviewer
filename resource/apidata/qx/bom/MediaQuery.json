@@ -1,35 +1,44 @@
 {
-  "className": "qx.bom.MediaQuery",
-  "packageName": "qx.bom",
-  "name": "MediaQuery",
-  "superClass": "qx.event.Emitter",
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 55,
-        "column": 0,
-        "index": 1963
-      },
-      "end": {
-        "line": 497,
-        "column": 3,
-        "index": 15143
-      }
+  "version": 0.3,
+  "lastModified": 1712910030949,
+  "lastModifiedIso": "2024-04-12T08:20:30.949Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/bom/MediaQuery.js",
+  "type": "bootstrap",
+  "location": {
+    "start": {
+      "line": 55,
+      "column": 0,
+      "index": 1963
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>This class is to test css media queries. It implements a polyfill for\n window.matchMedia if not supported natively.</p>"
-        }
-      ]
+    "end": {
+      "line": 497,
+      "column": 3,
+      "index": 15143
     }
   },
-  "type": "class",
+  "className": "qx.bom.MediaQuery",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * This class is to test css media queries. It implements a polyfill for",
+      " * window.matchMedia if not supported natively.",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>This class is to test css media queries. It implements a polyfill for\n window.matchMedia if not supported natively.</p>"
+      }
+    ]
+  },
+  "superClass": "qx.event.Emitter",
   "construct": {
+    "type": "function",
+    "params": [
+      {
+        "name": "query"
+      }
+    ],
     "location": {
       "start": {
         "line": 61,
@@ -41,27 +50,30 @@
         "column": 3,
         "index": 2251
       }
-    },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": ""
-        }
-      ],
-      "@param": [
-        {
-          "name": "@param",
-          "body": "query {String} the media query to evaluate",
-          "paramName": "query",
-          "description": " the media query to evaluate",
-          "type": "qx.bom.String"
-        }
-      ]
     }
   },
   "events": {
     "change": {
+      "type": "Map",
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fires each time the media query state changes. The event data is a map",
+          "     * with two keys:",
+          "     *",
+          "     * **query** The media query string",
+          "     *",
+          "     * **matches** A boolean that indicates whether the document",
+          "     * matches the query",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Fires each time the media query state changes. The event data is a map\n with two keys:\n    <em>query</em>* The media query string\n    <em>matches</em>* A boolean that indicates whether the document\n matches the query</p>"
+          }
+        ]
+      },
       "location": {
         "start": {
           "line": 78,
@@ -73,21 +85,25 @@
           "column": 17,
           "index": 2543
         }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Fires each time the media query state changes. The event data is a map\n with two keys:\n    <em>query</em>* The media query string\n    <em>matches</em>* A boolean that indicates whether the document\n matches the query</p>"
-          }
-        ]
-      },
-      "name": "change",
-      "type": "Map"
+      }
     }
   },
   "statics": {
     "version": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * The media.match.js version",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>The media.match.js version</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 85,
@@ -100,20 +116,25 @@
           "index": 2633
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>The media.match.js version</p>"
-          }
-        ]
-      },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     }
   },
   "members": {
     "__mql": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * The mediaquery Listener",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>The mediaquery Listener</p>"
+          }
+        ]
+      },
+      "access": "private",
       "location": {
         "start": {
           "line": 92,
@@ -126,18 +147,23 @@
           "index": 2715
         }
       },
+      "appearsIn": []
+    },
+    "matches": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Indicates if the document currently matches the media query list",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>The mediaquery Listener</p>"
+            "body": "<p>Indicates if the document currently matches the media query list</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
-    },
-    "matches": {
+      "access": "public",
       "location": {
         "start": {
           "line": 97,
@@ -150,18 +176,23 @@
           "index": 2824
         }
       },
+      "appearsIn": []
+    },
+    "query": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * The mediaquery list to be evaluated",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Indicates if the document currently matches the media query list</p>"
+            "body": "<p>The mediaquery list to be evaluated</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "query": {
+      "access": "public",
       "location": {
         "start": {
           "line": 102,
@@ -174,18 +205,32 @@
           "index": 2901
         }
       },
+      "appearsIn": []
+    },
+    "getQuery": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the query string used to initialize the listener.",
+          "     * @return {String} The given query string.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>The mediaquery list to be evaluated</p>"
+            "body": "<p>Returns the query string used to initialize the listener.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{String} The given query string.",
+            "type": "string",
+            "description": "The given query string."
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "getQuery": {
+      "access": "public",
       "location": {
         "start": {
           "line": 108,
@@ -198,26 +243,37 @@
           "index": 3080
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
+    },
+    "isMatching": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Access the matching state of the media query.",
+          "     * @return {Boolean} <code>true</code>, if the query matches.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Returns the query string used to initialize the listener.</p>"
+            "body": "<p>Access the matching state of the media query.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String} The given query string.",
-            "type": "qx.bom.String",
-            "description": " The given query string."
+            "body": "{Boolean} <code>true</code>, if the query matches.",
+            "type": "boolean",
+            "description": "<code>true</code>, if the query matches."
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "isMatching": {
+      "access": "public",
       "location": {
         "start": {
           "line": 116,
@@ -230,26 +286,28 @@
           "index": 3269
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "__init": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Initialize the mediaquery listener",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Access the matching state of the media query.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Boolean} <code>true</code>, if the query matches.",
-            "type": "Boolean",
-            "description": " <code>true</code>, if the query matches."
+            "body": "<p>Initialize the mediaquery listener</p>"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "__init": {
+      "access": "private",
       "location": {
         "start": {
           "line": 123,
@@ -262,18 +320,25 @@
           "index": 3407
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "__changed": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Callback for mediaqueries changes",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Initialize the mediaquery listener</p>"
+            "body": "<p>Callback for mediaqueries changes</p>"
           }
         ]
       },
-      "type": "function",
-      "access": "private"
-    },
-    "__changed": {
+      "access": "private",
       "location": {
         "start": {
           "line": 130,
@@ -286,31 +351,10 @@
           "index": 3604
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Callback for mediaqueries changes</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "private"
+      "params": [],
+      "appearsIn": []
     }
   },
-  "defer": {
-    "location": {
-      "start": {
-        "line": 136,
-        "column": 2,
-        "index": 3613
-      },
-      "end": {
-        "line": 496,
-        "column": 3,
-        "index": 15139
-      }
-    }
-  },
-  "descendants": []
+  "properties": {}
 }

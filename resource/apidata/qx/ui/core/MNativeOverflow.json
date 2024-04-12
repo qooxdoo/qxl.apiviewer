@@ -1,34 +1,35 @@
 {
-  "className": "qx.ui.core.MNativeOverflow",
-  "packageName": "qx.ui.core",
-  "name": "MNativeOverflow",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 24,
-        "column": 0,
-        "index": 637
-      },
-      "end": {
-        "line": 75,
-        "column": 3,
-        "index": 1861
-      }
+  "version": 0.3,
+  "lastModified": 1712910030969,
+  "lastModifiedIso": "2024-04-12T08:20:30.969Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/ui/core/MNativeOverflow.js",
+  "type": "mixin",
+  "location": {
+    "start": {
+      "line": 24,
+      "column": 0,
+      "index": 637
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>This mixin is included by all widgets which supports native overflowing.</p>"
-        }
-      ]
+    "end": {
+      "line": 75,
+      "column": 3,
+      "index": 1861
     }
   },
-  "type": "mixin",
+  "className": "qx.ui.core.MNativeOverflow",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * This mixin is included by all widgets which supports native overflowing.",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>This mixin is included by all widgets which supports native overflowing.</p>"
+      }
+    ]
+  },
   "properties": {
     "overflowX": {
       "location": {
@@ -43,7 +44,22 @@
           "index": 1094
         }
       },
+      "json": {
+        "check": [
+          "hidden",
+          "visible",
+          "scroll",
+          "auto"
+        ],
+        "nullable": true,
+        "apply": "_applyOverflowX"
+      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether the widget should have horizontal scrollbars.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -51,17 +67,7 @@
           }
         ]
       },
-      "name": "overflowX",
-      "propertyType": "new",
-      "apply": "_applyOverflowX",
-      "nullable": true,
-      "allowNull": true,
-      "possibleValues": [
-        "hidden",
-        "visible",
-        "scroll",
-        "auto"
-      ]
+      "appearsIn": []
     },
     "overflowY": {
       "location": {
@@ -76,7 +82,22 @@
           "index": 1301
         }
       },
+      "json": {
+        "check": [
+          "hidden",
+          "visible",
+          "scroll",
+          "auto"
+        ],
+        "nullable": true,
+        "apply": "_applyOverflowY"
+      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether the widget should have vertical scrollbars.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -84,17 +105,7 @@
           }
         ]
       },
-      "name": "overflowY",
-      "propertyType": "new",
-      "apply": "_applyOverflowY",
-      "nullable": true,
-      "allowNull": true,
-      "possibleValues": [
-        "hidden",
-        "visible",
-        "scroll",
-        "auto"
-      ]
+      "appearsIn": []
     },
     "overflow": {
       "location": {
@@ -109,7 +120,18 @@
           "index": 1412
         }
       },
+      "json": {
+        "group": [
+          "overflowX",
+          "overflowY"
+        ]
+      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Overflow group property",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -117,16 +139,17 @@
           }
         ]
       },
-      "name": "overflow",
-      "propertyType": "new",
-      "group": [
-        "overflowX",
-        "overflowY"
-      ]
+      "appearsIn": []
     }
   },
   "members": {
     "_applyOverflowX": {
+      "jsdoc": {
+        "raw": [
+          " property apply"
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 66,
@@ -139,14 +162,21 @@
           "index": 1733
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "protected",
-      "applyFor": [
-        "overflowX"
-      ]
+      "params": [
+        {
+          "name": "value"
+        }
+      ],
+      "appearsIn": []
     },
     "_applyOverflowY": {
+      "jsdoc": {
+        "raw": [
+          " property apply"
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 71,
@@ -159,187 +189,14 @@
           "index": 1853
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "protected",
-      "applyFor": [
-        "overflowY"
-      ]
-    },
-    "getOverflowX": {
-      "type": "function",
-      "name": "getOverflowX",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>overflowX</code>.\n\nFor further details take a look at the property definition: {@link #overflowX}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "any",
-            "desc": "Returns the value for overflowX"
-          }
-        ]
-      }
-    },
-    "setOverflowX": {
-      "type": "function",
-      "name": "setOverflowX",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>overflowX</code>.\n\nFor further details take a look at the property definition: {@link #overflowX}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "any",
-            "paramName": "value",
-            "desc": "Value for overflowX"
-          }
-        ]
-      }
-    },
-    "resetOverflowX": {
-      "type": "function",
-      "name": "resetOverflowX",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>overflowX</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #overflowX}."
-          }
-        ]
-      }
-    },
-    "getOverflowY": {
-      "type": "function",
-      "name": "getOverflowY",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>overflowY</code>.\n\nFor further details take a look at the property definition: {@link #overflowY}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "any",
-            "desc": "Returns the value for overflowY"
-          }
-        ]
-      }
-    },
-    "setOverflowY": {
-      "type": "function",
-      "name": "setOverflowY",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>overflowY</code>.\n\nFor further details take a look at the property definition: {@link #overflowY}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "any",
-            "paramName": "value",
-            "desc": "Value for overflowY"
-          }
-        ]
-      }
-    },
-    "resetOverflowY": {
-      "type": "function",
-      "name": "resetOverflowY",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>overflowY</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #overflowY}."
-          }
-        ]
-      }
-    },
-    "setOverflow": {
-      "type": "function",
-      "name": "setOverflow",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>overflow</code>.\n\nFor further details take a look at the property definition: {@link #overflow}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "any",
-            "paramName": "value",
-            "desc": "Value for overflow"
-          }
-        ]
-      }
-    },
-    "resetOverflow": {
-      "type": "function",
-      "name": "resetOverflow",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>overflow</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #overflow}."
-          }
-        ]
-      }
+      "params": [
+        {
+          "name": "value"
+        }
+      ],
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "statics": {}
 }

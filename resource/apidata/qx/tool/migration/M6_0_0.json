@@ -1,36 +1,52 @@
 {
-  "className": "qx.tool.migration.M6_0_0",
-  "packageName": "qx.tool.migration",
-  "name": "M6_0_0",
-  "superClass": "qx.tool.migration.BaseMigration",
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 27,
-        "column": 0,
-        "index": 661
-      },
-      "end": {
-        "line": 266,
-        "column": 3,
-        "index": 8418
-      }
+  "version": 0.3,
+  "lastModified": 1712910030929,
+  "lastModifiedIso": "2024-04-12T08:20:30.929Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/tool/migration/M6_0_0.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 27,
+      "column": 0,
+      "index": 661
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Migration class for updating from v5 to v6</p>"
-        }
-      ]
+    "end": {
+      "line": 266,
+      "column": 3,
+      "index": 8418
     }
   },
-  "type": "class",
+  "className": "qx.tool.migration.M6_0_0",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Migration class for updating from v5 to v6",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Migration class for updating from v5 to v6</p>"
+      }
+    ]
+  },
+  "superClass": "qx.tool.migration.BaseMigration",
   "members": {
     "migrateCompileJs": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Check for legacy compile.js - needs manual intervention",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Check for legacy compile.js - needs manual intervention</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 33,
@@ -43,18 +59,13 @@
           "index": 1369
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Check for legacy compile.js - needs manual intervention</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "appearsIn": []
     },
     "migrateQooxdooJs": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 47,
@@ -68,9 +79,12 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "appearsIn": []
     },
     "migrateConfigFiles": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 68,
@@ -84,9 +98,12 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "appearsIn": []
     },
     "migrateManifest": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 113,
@@ -100,9 +117,12 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "appearsIn": []
     },
     "migrateCompileJson": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 231,
@@ -116,353 +136,10 @@
         }
       },
       "type": "function",
-      "access": "public"
-    },
-    "getQxOwner": {
-      "type": "function",
-      "name": "getQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.migration.BaseMigration",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "qx.core.Object",
-            "desc": "Returns the value for qxOwner"
-          }
-        ]
-      }
-    },
-    "setQxOwner": {
-      "type": "function",
-      "name": "setQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.migration.BaseMigration",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.core.Object",
-            "paramName": "value",
-            "desc": "Value for qxOwner"
-          }
-        ]
-      }
-    },
-    "resetQxOwner": {
-      "type": "function",
-      "name": "resetQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.migration.BaseMigration",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxOwner</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ]
-      }
-    },
-    "getQxObjectId": {
-      "type": "function",
-      "name": "getQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.migration.BaseMigration",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "[[ ObjectMethod Function ]]",
-            "desc": "Returns the value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "setQxObjectId": {
-      "type": "function",
-      "name": "setQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.migration.BaseMigration",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "[[ ObjectMethod Function ]]",
-            "paramName": "value",
-            "desc": "Value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "resetQxObjectId": {
-      "type": "function",
-      "name": "resetQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.migration.BaseMigration",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxObjectId</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ]
-      }
-    },
-    "getRunner": {
-      "type": "function",
-      "name": "getRunner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.migration.BaseMigration",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>runner</code>.\n\nFor further details take a look at the property definition: {@link #runner}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "qx.tool.migration.Runner",
-            "desc": "Returns the value for runner"
-          }
-        ]
-      }
-    },
-    "setRunner": {
-      "type": "function",
-      "name": "setRunner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.migration.BaseMigration",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>runner</code>.\n\nFor further details take a look at the property definition: {@link #runner}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.tool.migration.Runner",
-            "paramName": "value",
-            "desc": "Value for runner"
-          }
-        ]
-      }
-    },
-    "resetRunner": {
-      "type": "function",
-      "name": "resetRunner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.migration.BaseMigration",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>runner</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #runner}."
-          }
-        ]
-      }
-    },
-    "getApplied": {
-      "type": "function",
-      "name": "getApplied",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.migration.BaseMigration",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>applied</code>.\n\nFor further details take a look at the property definition: {@link #applied}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Number",
-            "desc": "Returns the value for applied"
-          }
-        ]
-      }
-    },
-    "setApplied": {
-      "type": "function",
-      "name": "setApplied",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.migration.BaseMigration",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>applied</code>.\n\nFor further details take a look at the property definition: {@link #applied}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "Number",
-            "paramName": "value",
-            "desc": "Value for applied"
-          }
-        ]
-      }
-    },
-    "resetApplied": {
-      "type": "function",
-      "name": "resetApplied",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.migration.BaseMigration",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>applied</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #applied}."
-          }
-        ]
-      }
-    },
-    "getPending": {
-      "type": "function",
-      "name": "getPending",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.migration.BaseMigration",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>pending</code>.\n\nFor further details take a look at the property definition: {@link #pending}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Number",
-            "desc": "Returns the value for pending"
-          }
-        ]
-      }
-    },
-    "setPending": {
-      "type": "function",
-      "name": "setPending",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.migration.BaseMigration",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>pending</code>.\n\nFor further details take a look at the property definition: {@link #pending}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "Number",
-            "paramName": "value",
-            "desc": "Value for pending"
-          }
-        ]
-      }
-    },
-    "resetPending": {
-      "type": "function",
-      "name": "resetPending",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.migration.BaseMigration",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>pending</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #pending}."
-          }
-        ]
-      }
+      "params": [],
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "statics": {},
+  "properties": {}
 }

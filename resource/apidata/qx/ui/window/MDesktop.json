@@ -1,44 +1,48 @@
 {
-  "className": "qx.ui.window.MDesktop",
-  "packageName": "qx.ui.window",
-  "name": "MDesktop",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 25,
-        "column": 0,
-        "index": 633
-      },
-      "end": {
-        "line": 235,
-        "column": 3,
-        "index": 6106
-      }
+  "version": 0.3,
+  "lastModified": 1712910030949,
+  "lastModifiedIso": "2024-04-12T08:20:30.949Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/ui/window/MDesktop.js",
+  "type": "mixin",
+  "location": {
+    "start": {
+      "line": 25,
+      "column": 0,
+      "index": 633
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>This mixin implements the key methods of the {@link qx.ui.window.IDesktop}.</p>"
-        }
-      ],
-      "@ignore": [
-        {
-          "name": "@ignore",
-          "body": "qx.ui.window.Window"
-        },
-        {
-          "name": "@ignore",
-          "body": "qx.ui.window.Window.*"
-        }
-      ]
+    "end": {
+      "line": 235,
+      "column": 3,
+      "index": 6106
     }
   },
-  "type": "mixin",
+  "className": "qx.ui.window.MDesktop",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * This mixin implements the key methods of the {@link qx.ui.window.IDesktop}.",
+      " *",
+      " * @ignore(qx.ui.window.Window)",
+      " * @ignore(qx.ui.window.Window.*)",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>This mixin implements the key methods of the {@link qx.ui.window.IDesktop}.</p>"
+      }
+    ],
+    "@ignore": [
+      {
+        "name": "@ignore",
+        "body": "qx.ui.window.Window"
+      },
+      {
+        "name": "@ignore",
+        "body": "qx.ui.window.Window.*"
+      }
+    ]
+  },
   "properties": {
     "activeWindow": {
       "location": {
@@ -53,7 +57,18 @@
           "index": 1100
         }
       },
+      "json": {
+        "check": "qx.ui.window.Window",
+        "apply": "_applyActiveWindow",
+        "event": "changeActiveWindow",
+        "nullable": true
+      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * The currently active window",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -61,17 +76,25 @@
           }
         ]
       },
-      "name": "activeWindow",
-      "propertyType": "new",
-      "event": "changeActiveWindow",
-      "apply": "_applyActiveWindow",
-      "nullable": true,
-      "allowNull": true,
-      "check": "qx.ui.window.Window"
+      "appearsIn": []
     }
   },
   "events": {
     "windowAdded": {
+      "type": "qx.event.type.Data",
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fired when a window was added.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Fired when a window was added.</p>"
+          }
+        ]
+      },
       "location": {
         "start": {
           "line": 49,
@@ -83,19 +106,23 @@
           "column": 37,
           "index": 1210
         }
-      },
+      }
+    },
+    "windowRemoved": {
+      "type": "qx.event.type.Data",
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fired when a window was removed.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Fired when a window was added.</p>"
+            "body": "<p>Fired when a window was removed.</p>"
           }
         ]
       },
-      "name": "windowAdded",
-      "type": "qx.event.type.Data"
-    },
-    "windowRemoved": {
       "location": {
         "start": {
           "line": 54,
@@ -107,21 +134,13 @@
           "column": 39,
           "index": 1308
         }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Fired when a window was removed.</p>"
-          }
-        ]
-      },
-      "name": "windowRemoved",
-      "type": "qx.event.type.Data"
+      }
     }
   },
   "members": {
     "__windows": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 64,
@@ -134,10 +153,11 @@
           "index": 1531
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__manager": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 65,
@@ -150,10 +170,35 @@
           "index": 1552
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "getWindowManager": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Get the desktop's window manager. Each desktop must have a window manager.",
+          "     * If none is configured the default window manager {@link qx.ui.window.Window#DEFAULT_MANAGER_CLASS}",
+          "     * is used.",
+          "     *",
+          "     * @return {qx.ui.window.IWindowManager} The desktop's window manager",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Get the desktop's window manager. Each desktop must have a window manager.\n If none is configured the default window manager {@link qx.ui.window.Window#DEFAULT<em>MANAGER</em>CLASS}\n is used.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{qx.ui.window.IWindowManager} The desktop's window manager",
+            "type": "qx.ui.window.IWindowManager",
+            "description": "The desktop's window manager"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 74,
@@ -166,26 +211,39 @@
           "index": 2032
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "qx.ui.window.IWindowManager"
+      },
+      "appearsIn": []
+    },
+    "supportsMaximize": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether the configured layout supports a maximized window",
+          "     * e.g. is a Canvas.",
+          "     *",
+          "     * @return {Boolean} Whether the layout supports maximized windows",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Get the desktop's window manager. Each desktop must have a window manager.\n If none is configured the default window manager {@link qx.ui.window.Window#DEFAULT<em>MANAGER</em>CLASS}\n is used.</p>"
+            "body": "<p>Whether the configured layout supports a maximized window\n e.g. is a Canvas.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.window.IWindowManager} The desktop's window manager",
-            "type": "qx.ui.window.IWindowManager",
-            "description": " The desktop's window manager"
+            "body": "{Boolean} Whether the layout supports maximized windows",
+            "type": "boolean",
+            "description": "Whether the layout supports maximized windows"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "supportsMaximize": {
+      "access": "public",
       "location": {
         "start": {
           "line": 87,
@@ -198,39 +256,22 @@
           "index": 2268
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Whether the configured layout supports a maximized window\n e.g. is a Canvas.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Boolean} Whether the layout supports maximized windows",
-            "type": "Boolean",
-            "description": " Whether the layout supports maximized windows"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
     },
     "setWindowManager": {
-      "location": {
-        "start": {
-          "line": 96,
-          "column": 4,
-          "index": 2410
-        },
-        "end": {
-          "line": 103,
-          "column": 5,
-          "index": 2585
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Sets the desktop's window manager",
+          "     *",
+          "     * @param manager {qx.ui.window.IWindowManager} The window manager",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -247,23 +288,38 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "_onChangeActive": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 111,
+          "line": 96,
           "column": 4,
-          "index": 2763
+          "index": 2410
         },
         "end": {
-          "line": 117,
+          "line": 103,
           "column": 5,
-          "index": 2963
+          "index": 2585
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "manager",
+          "type": "qx.ui.window.IWindowManager"
+        }
+      ],
+      "appearsIn": []
+    },
+    "_onChangeActive": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Event handler. Called if one of the managed windows changes its active",
+          "     * state.",
+          "     *",
+          "     * @param e {qx.event.type.Event} the event object.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -280,10 +336,35 @@
           }
         ]
       },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 111,
+          "column": 4,
+          "index": 2763
+        },
+        "end": {
+          "line": 117,
+          "column": 5,
+          "index": 2963
+        }
+      },
       "type": "function",
-      "access": "protected"
+      "params": [
+        {
+          "name": "e",
+          "type": "qx.event.type.Event"
+        }
+      ],
+      "appearsIn": []
     },
     "_applyActiveWindow": {
+      "jsdoc": {
+        "raw": [
+          " property apply"
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 120,
@@ -296,27 +377,26 @@
           "index": 3137
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "protected",
-      "applyFor": [
-        "activeWindow"
-      ]
+      "params": [
+        {
+          "name": "value"
+        },
+        {
+          "name": "old"
+        }
+      ],
+      "appearsIn": []
     },
     "_onChangeModal": {
-      "location": {
-        "start": {
-          "line": 130,
-          "column": 4,
-          "index": 3303
-        },
-        "end": {
-          "line": 132,
-          "column": 5,
-          "index": 3373
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Event handler. Called if one of the managed windows changes its modality",
+          "     *",
+          "     * @param e {qx.event.type.Event} the event object.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -333,10 +413,44 @@
           }
         ]
       },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 130,
+          "column": 4,
+          "index": 3303
+        },
+        "end": {
+          "line": 132,
+          "column": 5,
+          "index": 3373
+        }
+      },
       "type": "function",
-      "access": "protected"
+      "params": [
+        {
+          "name": "e",
+          "type": "qx.event.type.Event"
+        }
+      ],
+      "appearsIn": []
     },
     "_onChangeVisibility": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Event handler. Called if one of the managed windows changes its visibility",
+          "     * state.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Event handler. Called if one of the managed windows changes its visibility\n state.</p>"
+          }
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 138,
@@ -349,31 +463,19 @@
           "index": 3566
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Event handler. Called if one of the managed windows changes its visibility\n state.</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "protected"
+      "params": [],
+      "appearsIn": []
     },
     "_afterAddChild": {
-      "location": {
-        "start": {
-          "line": 147,
-          "column": 4,
-          "index": 3716
-        },
-        "end": {
-          "line": 154,
-          "column": 5,
-          "index": 3898
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Overrides the method {@link qx.ui.core.Widget#_afterAddChild}",
+          "     *",
+          "     * @param win {qx.ui.core.Widget} added widget",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -390,23 +492,37 @@
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_addWindow": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 161,
+          "line": 147,
           "column": 4,
-          "index": 4061
+          "index": 3716
         },
         "end": {
-          "line": 177,
+          "line": 154,
           "column": 5,
-          "index": 4557
+          "index": 3898
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "win",
+          "type": "qx.ui.core.Widget"
+        }
+      ],
+      "appearsIn": []
+    },
+    "_addWindow": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Handles the case, when a window is added to the desktop.",
+          "     *",
+          "     * @param win {qx.ui.window.Window} Window, which has been added",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -423,23 +539,37 @@
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_afterRemoveChild": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 184,
+          "line": 161,
           "column": 4,
-          "index": 4712
+          "index": 4061
         },
         "end": {
-          "line": 191,
+          "line": 177,
           "column": 5,
-          "index": 4900
+          "index": 4557
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "win",
+          "type": "qx.ui.window.Window"
+        }
+      ],
+      "appearsIn": []
+    },
+    "_afterRemoveChild": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Overrides the method {@link qx.ui.core.Widget#_afterRemoveChild}",
+          "     *",
+          "     * @param win {qx.ui.core.Widget} removed widget",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -456,23 +586,37 @@
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_removeWindow": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 198,
+          "line": 184,
           "column": 4,
-          "index": 5069
+          "index": 4712
         },
         "end": {
-          "line": 210,
+          "line": 191,
           "column": 5,
-          "index": 5524
+          "index": 4900
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "win",
+          "type": "qx.ui.core.Widget"
+        }
+      ],
+      "appearsIn": []
+    },
+    "_removeWindow": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Handles the case, when a window is removed from the desktop.",
+          "     *",
+          "     * @param win {qx.ui.window.Window} Window, which has been removed",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -489,10 +633,53 @@
           }
         ]
       },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 198,
+          "column": 4,
+          "index": 5069
+        },
+        "end": {
+          "line": 210,
+          "column": 5,
+          "index": 5524
+        }
+      },
       "type": "function",
-      "access": "protected"
+      "params": [
+        {
+          "name": "win",
+          "type": "qx.ui.window.Window"
+        }
+      ],
+      "appearsIn": []
     },
     "getWindows": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Get a list of all windows added to the desktop (including hidden windows)",
+          "     *",
+          "     * @return {qx.ui.window.Window[]} Array of managed windows",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Get a list of all windows added to the desktop (including hidden windows)</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{qx.ui.window.Window[]} Array of managed windows",
+            "type": "qx.ui.window.Window[]",
+            "description": "Array of managed windows"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 217,
@@ -505,93 +692,17 @@
           "index": 5814
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Get a list of all windows added to the desktop (including hidden windows)</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.ui.window.Window[]} Array of managed windows",
-            "type": "qx.ui.window.Window[]",
-            "description": " Array of managed windows"
-          }
-        ]
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "qx.ui.window.Window[]"
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getActiveWindow": {
-      "type": "function",
-      "name": "getActiveWindow",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>activeWindow</code>.\n\nFor further details take a look at the property definition: {@link #activeWindow}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "qx.ui.window.Window",
-            "desc": "Returns the value for activeWindow"
-          }
-        ]
-      }
-    },
-    "setActiveWindow": {
-      "type": "function",
-      "name": "setActiveWindow",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>activeWindow</code>.\n\nFor further details take a look at the property definition: {@link #activeWindow}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.ui.window.Window",
-            "paramName": "value",
-            "desc": "Value for activeWindow"
-          }
-        ]
-      }
-    },
-    "resetActiveWindow": {
-      "type": "function",
-      "name": "resetActiveWindow",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>activeWindow</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #activeWindow}."
-          }
-        ]
-      }
+      "appearsIn": []
     }
   },
   "destruct": {
+    "type": "function",
+    "params": [],
     "location": {
       "start": {
         "line": 231,
@@ -603,8 +714,7 @@
         "column": 3,
         "index": 6102
       }
-    },
-    "jsdoc": {}
+    }
   },
-  "descendants": []
+  "statics": {}
 }

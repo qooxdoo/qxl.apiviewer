@@ -1,42 +1,80 @@
 {
-  "className": "qx.bom.client.Engine",
-  "packageName": "qx.bom.client",
-  "name": "Engine",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 29,
-        "column": 0,
-        "index": 780
-      },
-      "end": {
-        "line": 235,
-        "column": 3,
-        "index": 7719
-      }
+  "version": 0.3,
+  "lastModified": 1712910030665,
+  "lastModifiedIso": "2024-04-12T08:20:30.665Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/bom/client/Engine.js",
+  "type": "bootstrap",
+  "location": {
+    "start": {
+      "line": 29,
+      "column": 0,
+      "index": 780
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>This class comes with all relevant information regarding\n the client's engine.\n This class is used by {@link qx.core.Environment} and should not be used\n directly. Please check its class comment for details how to use it.</p>"
-        }
-      ],
-      "@internal": [
-        {
-          "name": "@internal",
-          "body": ""
-        }
-      ]
+    "end": {
+      "line": 235,
+      "column": 3,
+      "index": 7719
     }
   },
-  "type": "class",
+  "className": "qx.bom.client.Engine",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * This class comes with all relevant information regarding",
+      " * the client's engine.",
+      " *",
+      " * This class is used by {@link qx.core.Environment} and should not be used",
+      " * directly. Please check its class comment for details how to use it.",
+      " *",
+      " * @internal",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>This class comes with all relevant information regarding\n the client's engine.\n This class is used by {@link qx.core.Environment} and should not be used\n directly. Please check its class comment for details how to use it.</p>"
+      }
+    ],
+    "@internal": [
+      {
+        "name": "@internal",
+        "body": ""
+      }
+    ]
+  },
   "statics": {
     "getVersion": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the version of the engine.",
+          "     *",
+          "     * @return {String} The version number of the current engine.",
+          "     * @internal",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns the version of the engine.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{String} The version number of the current engine.",
+            "type": "string",
+            "description": "The version number of the current engine."
+          }
+        ],
+        "@internal": [
+          {
+            "name": "@internal",
+            "body": ""
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 40,
@@ -49,19 +87,35 @@
           "index": 4232
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
+    },
+    "getName": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the name of the engine.",
+          "     *",
+          "     * @return {String} The name of the current engine.",
+          "     * @internal",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Returns the version of the engine.</p>"
+            "body": "<p>Returns the name of the engine.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String} The version number of the current engine.",
-            "type": "String",
-            "description": " The version number of the current engine."
+            "body": "{String} The name of the current engine.",
+            "type": "string",
+            "description": "The name of the current engine."
           }
         ],
         "@internal": [
@@ -71,10 +125,7 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getName": {
+      "access": "public",
       "location": {
         "start": {
           "line": 129,
@@ -87,32 +138,41 @@
           "index": 5172
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
+    },
+    "__isOpera": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Internal helper for checking for opera (presto powered).",
+          "     *",
+          "     * Note that with opera >= 15 their engine switched to blink, so",
+          "     * things like \"window.opera\" don't work anymore or changed (e.g. user agent).",
+          "     *",
+          "     * @return {Boolean} true, if its opera (presto powered).",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Returns the name of the engine.</p>"
+            "body": "<p>Internal helper for checking for opera (presto powered).\n Note that with opera &gt;= 15 their engine switched to blink, so\n things like \"window.opera\" don't work anymore or changed (e.g. user agent).</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String} The name of the current engine.",
-            "type": "String",
-            "description": " The name of the current engine."
-          }
-        ],
-        "@internal": [
-          {
-            "name": "@internal",
-            "body": ""
+            "body": "{Boolean} true, if its opera (presto powered).",
+            "type": "boolean",
+            "description": "true, if its opera (presto powered)."
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "__isOpera": {
+      "access": "private",
       "location": {
         "start": {
           "line": 164,
@@ -125,26 +185,37 @@
           "index": 5627
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "__isWebkit": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Internal helper for checking for webkit.",
+          "     * @return {Boolean} true, if its webkit.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Internal helper for checking for opera (presto powered).\n Note that with opera &gt;= 15 their engine switched to blink, so\n things like \"window.opera\" don't work anymore or changed (e.g. user agent).</p>"
+            "body": "<p>Internal helper for checking for webkit.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} true, if its opera (presto powered).",
-            "type": "Boolean",
-            "description": " true, if its opera (presto powered)."
+            "body": "{Boolean} true, if its webkit.",
+            "type": "boolean",
+            "description": "true, if its webkit."
           }
         ]
       },
-      "type": "function",
-      "access": "private"
-    },
-    "__isWebkit": {
+      "access": "private",
       "location": {
         "start": {
           "line": 175,
@@ -157,26 +228,50 @@
           "index": 5835
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "__isGecko": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Internal helper for checking for gecko.",
+          "     *",
+          "     * Note:",
+          "     *  \"window.controllers\" is gone/hidden with Firefox 30+",
+          "     *  \"window.navigator.mozApps\" is supported since Firefox 11+ and is gone/hidden with Firefox 47 beta",
+          "     *  \"window.navigator.buildID\" is supported since Firefox 2+",
+          "     *  \"window.navigator.product\" is actually useless cause the HTML5 spec",
+          "     *    states it should be the constant \"Gecko\".",
+          "     *",
+          "     *  - https://developer.mozilla.org/en-US/docs/Web/API/Window.controllers",
+          "     *  - https://developer.mozilla.org/en-US/docs/Web/API/Navigator.mozApps",
+          "     *  - https://developer.mozilla.org/en-US/docs/Web/API/Navigator/buildID",
+          "     *  - http://www.w3.org/html/wg/drafts/html/master/webappapis.html#navigatorid",
+          "     *",
+          "     * @return {Boolean} true, if its gecko.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Internal helper for checking for webkit.</p>"
+            "body": "<p>Internal helper for checking for gecko.\n Note:\n  \"window.controllers\" is gone/hidden with Firefox 30+\n  \"window.navigator.mozApps\" is supported since Firefox 11+ and is gone/hidden with Firefox 47 beta\n  \"window.navigator.buildID\" is supported since Firefox 2+\n  \"window.navigator.product\" is actually useless cause the HTML5 spec\n    states it should be the constant \"Gecko\".</p>\n<ul>\n<li>https://developer.mozilla.org/en-US/docs/Web/API/Window.controllers</li>\n<li>https://developer.mozilla.org/en-US/docs/Web/API/Navigator.mozApps</li>\n<li>https://developer.mozilla.org/en-US/docs/Web/API/Navigator/buildID</li>\n<li>http://www.w3.org/html/wg/drafts/html/master/webappapis.html#navigatorid</li>\n</ul>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} true, if its webkit.",
-            "type": "Boolean",
-            "description": " true, if its webkit."
+            "body": "{Boolean} true, if its gecko.",
+            "type": "boolean",
+            "description": "true, if its gecko."
           }
         ]
       },
-      "type": "function",
-      "access": "private"
-    },
-    "__isGecko": {
+      "access": "private",
       "location": {
         "start": {
           "line": 196,
@@ -189,26 +284,37 @@
           "index": 6876
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "__isMshtml": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Internal helper to check for MSHTML.",
+          "     * @return {Boolean} true, if its MSHTML.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Internal helper for checking for gecko.\n Note:\n  \"window.controllers\" is gone/hidden with Firefox 30+\n  \"window.navigator.mozApps\" is supported since Firefox 11+ and is gone/hidden with Firefox 47 beta\n  \"window.navigator.buildID\" is supported since Firefox 2+\n  \"window.navigator.product\" is actually useless cause the HTML5 spec\n    states it should be the constant \"Gecko\".</p>\n<ul>\n<li>https://developer.mozilla.org/en-US/docs/Web/API/Window.controllers</li>\n<li>https://developer.mozilla.org/en-US/docs/Web/API/Navigator.mozApps</li>\n<li>https://developer.mozilla.org/en-US/docs/Web/API/Navigator/buildID</li>\n<li>http://www.w3.org/html/wg/drafts/html/master/webappapis.html#navigatorid</li>\n</ul>"
+            "body": "<p>Internal helper to check for MSHTML.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} true, if its gecko.",
-            "type": "Boolean",
-            "description": " true, if its gecko."
+            "body": "{Boolean} true, if its MSHTML.",
+            "type": "boolean",
+            "description": "true, if its MSHTML."
           }
         ]
       },
-      "type": "function",
-      "access": "private"
-    },
-    "__isMshtml": {
+      "access": "private",
       "location": {
         "start": {
           "line": 208,
@@ -221,26 +327,37 @@
           "index": 7334
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "__isWindowsPhone": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Internal helper to check for Windows phone.",
+          "     * @return {Boolean} true, if its Windows phone.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Internal helper to check for MSHTML.</p>"
+            "body": "<p>Internal helper to check for Windows phone.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} true, if its MSHTML.",
-            "type": "Boolean",
-            "description": " true, if its MSHTML."
+            "body": "{Boolean} true, if its Windows phone.",
+            "type": "boolean",
+            "description": "true, if its Windows phone."
           }
         ]
       },
-      "type": "function",
-      "access": "private"
-    },
-    "__isWindowsPhone": {
+      "access": "private",
       "location": {
         "start": {
           "line": 226,
@@ -253,39 +370,14 @@
           "index": 7558
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Internal helper to check for Windows phone.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Boolean} true, if its Windows phone.",
-            "type": "Boolean",
-            "description": " true, if its Windows phone."
-          }
-        ]
-      },
       "type": "function",
-      "access": "private"
-    }
-  },
-  "defer": {
-    "location": {
-      "start": {
-        "line": 231,
-        "column": 2,
-        "index": 7567
+      "params": [],
+      "returnType": {
+        "type": "boolean"
       },
-      "end": {
-        "line": 234,
-        "column": 3,
-        "index": 7715
-      }
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "members": {},
+  "properties": {}
 }

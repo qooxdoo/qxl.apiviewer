@@ -1,35 +1,53 @@
 {
-  "className": "qx.tool.compiler.targets.meta.ApplicationMeta",
-  "packageName": "qx.tool.compiler.targets.meta",
-  "name": "ApplicationMeta",
-  "superClass": "qx.core.Object",
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 33,
-        "column": 0,
-        "index": 1249
-      },
-      "end": {
-        "line": 364,
-        "column": 3,
-        "index": 8521
-      }
+  "version": 0.3,
+  "lastModified": 1712910030369,
+  "lastModifiedIso": "2024-04-12T08:20:30.369Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/tool/compiler/targets/meta/ApplicationMeta.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 33,
+      "column": 0,
+      "index": 1249
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>ApplicationMeta collects all the data about an application being compiled by a target,\n in a form easily navigated and well documented.\n It provides an abstraction where the target can choose to restructure and reorganise the\n output as it progresses - for example, a target may start by assembling a number of\n javascript files, and then bundle them together, effectively replacing several files\n with just one intermediate file; the target can then replace the intermediate file with\n a minified file etc.</p>"
-        }
-      ]
+    "end": {
+      "line": 364,
+      "column": 3,
+      "index": 8521
     }
   },
-  "type": "class",
+  "className": "qx.tool.compiler.targets.meta.ApplicationMeta",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * ApplicationMeta collects all the data about an application being compiled by a target,",
+      " * in a form easily navigated and well documented.",
+      " *",
+      " * It provides an abstraction where the target can choose to restructure and reorganise the",
+      " * output as it progresses - for example, a target may start by assembling a number of",
+      " * javascript files, and then bundle them together, effectively replacing several files",
+      " * with just one intermediate file; the target can then replace the intermediate file with",
+      " * a minified file etc.",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>ApplicationMeta collects all the data about an application being compiled by a target,\n in a form easily navigated and well documented.\n It provides an abstraction where the target can choose to restructure and reorganise the\n output as it progresses - for example, a target may start by assembling a number of\n javascript files, and then bundle them together, effectively replacing several files\n with just one intermediate file; the target can then replace the intermediate file with\n a minified file etc.</p>"
+      }
+    ]
+  },
+  "superClass": "qx.core.Object",
   "construct": {
+    "type": "function",
+    "params": [
+      {
+        "name": "target"
+      },
+      {
+        "name": "application"
+      }
+    ],
     "location": {
       "start": {
         "line": 36,
@@ -57,7 +75,11 @@
           "index": 1798
         }
       },
+      "json": {},
       "jsdoc": {
+        "raw": [
+          "* The environment for the build "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -65,8 +87,7 @@
           }
         ]
       },
-      "name": "environment",
-      "propertyType": "new"
+      "appearsIn": []
     },
     "addTimestampsToUrls": {
       "location": {
@@ -81,7 +102,16 @@
           "index": 1951
         }
       },
+      "json": {
+        "init": true,
+        "check": "Boolean"
+      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether to add timestamps to all URLs (cache busting)",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -89,11 +119,7 @@
           }
         ]
       },
-      "name": "addTimestampsToUrls",
-      "propertyType": "new",
-      "init": true,
-      "check": "Boolean",
-      "defaultValue": true
+      "appearsIn": []
     },
     "appLibrary": {
       "location": {
@@ -108,9 +134,11 @@
           "index": 2021
         }
       },
-      "name": "appLibrary",
-      "propertyType": "new",
-      "check": "qx.tool.compiler.app.Library"
+      "json": {
+        "check": "qx.tool.compiler.app.Library"
+      },
+      "jsdoc": null,
+      "appearsIn": []
     },
     "bootMetaJs": {
       "location": {
@@ -125,9 +153,11 @@
           "index": 2115
         }
       },
-      "name": "bootMetaJs",
-      "propertyType": "new",
-      "check": "qx.tool.compiler.targets.meta.AbstractJavascriptMeta"
+      "json": {
+        "check": "qx.tool.compiler.targets.meta.AbstractJavascriptMeta"
+      },
+      "jsdoc": null,
+      "appearsIn": []
     },
     "sourceUri": {
       "location": {
@@ -142,9 +172,11 @@
           "index": 2162
         }
       },
-      "name": "sourceUri",
-      "propertyType": "new",
-      "check": "String"
+      "json": {
+        "check": "String"
+      },
+      "jsdoc": null,
+      "appearsIn": []
     },
     "resourceUri": {
       "location": {
@@ -159,45 +191,27 @@
           "index": 2211
         }
       },
-      "name": "resourceUri",
-      "propertyType": "new",
-      "check": "String"
-    },
-    "qxOwner": {
-      "type": "property",
-      "name": "qxOwner",
-      "abstract": false,
-      "mixin": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.MObjectId",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>The owning object</p>"
-          }
-        ]
-      }
-    },
-    "qxObjectId": {
-      "type": "property",
-      "name": "qxObjectId",
-      "abstract": false,
-      "mixin": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.MObjectId",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>{String} The ID of the object.</p>"
-          }
-        ]
-      }
+      "json": {
+        "check": "String"
+      },
+      "jsdoc": null,
+      "appearsIn": []
     }
   },
   "members": {
     "__target": {
+      "jsdoc": {
+        "raw": [
+          "* {qx.tool.compiler.targets.Target} the target "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>{qx.tool.compiler.targets.Target} the target</p>"
+          }
+        ]
+      },
+      "access": "private",
       "location": {
         "start": {
           "line": 86,
@@ -210,18 +224,21 @@
           "index": 2305
         }
       },
+      "appearsIn": []
+    },
+    "__application": {
       "jsdoc": {
+        "raw": [
+          "* {qx.tool.compiler.app.Application} the application "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>{qx.tool.compiler.targets.Target} the target</p>"
+            "body": "<p>{qx.tool.compiler.app.Application} the application</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
-    },
-    "__application": {
+      "access": "private",
       "location": {
         "start": {
           "line": 89,
@@ -234,18 +251,21 @@
           "index": 2393
         }
       },
+      "appearsIn": []
+    },
+    "__libraries": {
       "jsdoc": {
+        "raw": [
+          "* {qx.tool.compiler.app.Libary[]} the libraries "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>{qx.tool.compiler.app.Application} the application</p>"
+            "body": "<p>{qx.tool.compiler.app.Libary[]} the libraries</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
-    },
-    "__libraries": {
+      "access": "private",
       "location": {
         "start": {
           "line": 92,
@@ -258,18 +278,21 @@
           "index": 2474
         }
       },
+      "appearsIn": []
+    },
+    "__preload": {
       "jsdoc": {
+        "raw": [
+          "* {Map} uris and CSS to load "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>{qx.tool.compiler.app.Libary[]} the libraries</p>"
+            "body": "<p>{Map} uris and CSS to load</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
-    },
-    "__preload": {
+      "access": "private",
       "location": {
         "start": {
           "line": 95,
@@ -282,18 +305,21 @@
           "index": 2534
         }
       },
+      "appearsIn": []
+    },
+    "__preBootCode": {
       "jsdoc": {
+        "raw": [
+          "* {String[]} code to run before boot "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>{Map} uris and CSS to load</p>"
+            "body": "<p>{String[]} code to run before boot</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
-    },
-    "__preBootCode": {
+      "access": "private",
       "location": {
         "start": {
           "line": 98,
@@ -306,18 +332,21 @@
           "index": 2606
         }
       },
+      "appearsIn": []
+    },
+    "__resources": {
       "jsdoc": {
+        "raw": [
+          "* {Map} list of resource paths, indexed by resource id "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>{String[]} code to run before boot</p>"
+            "body": "<p>{Map} list of resource paths, indexed by resource id</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
-    },
-    "__resources": {
+      "access": "private",
       "location": {
         "start": {
           "line": 101,
@@ -330,18 +359,21 @@
           "index": 2694
         }
       },
+      "appearsIn": []
+    },
+    "__packages": {
       "jsdoc": {
+        "raw": [
+          "* {Package[]} list of packages "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>{Map} list of resource paths, indexed by resource id</p>"
+            "body": "<p>{Package[]} list of packages</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
-    },
-    "__packages": {
+      "access": "private",
       "location": {
         "start": {
           "line": 104,
@@ -354,18 +386,21 @@
           "index": 2757
         }
       },
+      "appearsIn": []
+    },
+    "__parts": {
       "jsdoc": {
+        "raw": [
+          "* {Part[]} list of parts "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>{Package[]} list of packages</p>"
+            "body": "<p>{Part[]} list of parts</p>"
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
-    },
-    "__parts": {
+      "access": "private",
       "location": {
         "start": {
           "line": 107,
@@ -378,31 +413,18 @@
           "index": 2811
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>{Part[]} list of parts</p>"
-          }
-        ]
-      },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "setEnvironmentValue": {
-      "location": {
-        "start": {
-          "line": 115,
-          "column": 4,
-          "index": 2968
-        },
-        "end": {
-          "line": 122,
-          "column": 5,
-          "index": 3153
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Sets an environment variable",
+          "     *",
+          "     * @param key {String} the name of the variable",
+          "     * @param value {Object} the value",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -415,34 +437,54 @@
             "body": "key {String} the name of the variable",
             "paramName": "key",
             "description": " the name of the variable",
-            "type": "String"
+            "type": "string"
           },
           {
             "name": "@param",
             "body": "value {Object} the value",
             "paramName": "value",
             "description": " the value",
-            "type": "Object"
+            "type": "Record<any, any>"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getEnvironmentValue": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 131,
+          "line": 115,
           "column": 4,
-          "index": 3416
+          "index": 2968
         },
         "end": {
-          "line": 141,
+          "line": 122,
           "column": 5,
-          "index": 3707
+          "index": 3153
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "type": "Record<any, any>"
+        }
+      ],
+      "appearsIn": []
+    },
+    "getEnvironmentValue": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns an environment value",
+          "     *",
+          "     * @param key {String} the key to lookup",
+          "     * @param defaultValue {Object?} optional default value to use if the key is not found",
+          "     * @return {Object} the value, or undefined if not found",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -455,7 +497,7 @@
             "body": "key {String} the key to lookup",
             "paramName": "key",
             "description": " the key to lookup",
-            "type": "String"
+            "type": "string"
           },
           {
             "name": "@param",
@@ -470,28 +512,50 @@
           {
             "name": "@return",
             "body": "{Object} the value, or undefined if not found",
-            "type": "Object",
-            "description": " the value, or undefined if not found"
+            "type": "Record<any, any>",
+            "description": "the value, or undefined if not found"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getApplication": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 148,
+          "line": 131,
           "column": 4,
-          "index": 3818
+          "index": 3416
         },
         "end": {
-          "line": 150,
+          "line": 141,
           "column": 5,
-          "index": 3875
+          "index": 3707
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "name": "defaultValue",
+          "type": "Object",
+          "optional": true
+        }
+      ],
+      "returnType": {
+        "type": "Record<any, any>"
+      },
+      "appearsIn": []
+    },
+    "getApplication": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the application",
+          "     *",
+          "     * @return {qx.tool.compiler.app.Application}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -507,23 +571,35 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getTarget": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 157,
+          "line": 148,
           "column": 4,
-          "index": 3980
+          "index": 3818
         },
         "end": {
-          "line": 159,
+          "line": 150,
           "column": 5,
-          "index": 4027
+          "index": 3875
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "qx.tool.compiler.app.Application"
+      },
+      "appearsIn": []
+    },
+    "getTarget": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the target",
+          "     *",
+          "     * @return {qx.tool.compiler.targets.Target}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -539,10 +615,51 @@
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 157,
+          "column": 4,
+          "index": 3980
+        },
+        "end": {
+          "line": 159,
+          "column": 5,
+          "index": 4027
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "qx.tool.compiler.targets.Target"
+      },
+      "appearsIn": []
     },
     "getApplicationRoot": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the application root",
+          "     *",
+          "     * @return {String} the folder",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns the application root</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{String} the folder",
+            "type": "string",
+            "description": "the folder"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 166,
@@ -555,39 +672,22 @@
           "index": 4223
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the application root</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{String} the folder",
-            "type": "String",
-            "description": " the folder"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
     },
     "getAnalyser": {
-      "location": {
-        "start": {
-          "line": 175,
-          "column": 4,
-          "index": 4324
-        },
-        "end": {
-          "line": 177,
-          "column": 5,
-          "index": 4392
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the Analyser",
+          "     *",
+          "     * @return {qx.tool.compiler.Analyser}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -603,10 +703,41 @@
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 175,
+          "column": 4,
+          "index": 4324
+        },
+        "end": {
+          "line": 177,
+          "column": 5,
+          "index": 4392
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "qx.tool.compiler.Analyser"
+      },
+      "appearsIn": []
     },
     "syncAssets": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Syncs all assets into the output directory",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Syncs all assets into the output directory</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 182,
@@ -619,18 +750,35 @@
           "index": 4720
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "addLibrary": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds a library",
+          "     *",
+          "     * @param library {qx.tool.compiler.app.Library}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Syncs all assets into the output directory</p>"
+            "body": "<p>Adds a library</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "library {qx.tool.compiler.app.Library}",
+            "paramName": "library",
+            "type": "qx.tool.compiler.app.Library"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "addLibrary": {
+      "access": "public",
       "location": {
         "start": {
           "line": 196,
@@ -643,37 +791,24 @@
           "index": 4890
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Adds a library</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "library {qx.tool.compiler.app.Library}"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "library",
+          "type": "qx.tool.compiler.app.Library"
+        }
+      ],
+      "appearsIn": []
     },
     "getAppLibrary": {
-      "location": {
-        "start": {
-          "line": 205,
-          "column": 4,
-          "index": 5029
-        },
-        "end": {
-          "line": 210,
-          "column": 5,
-          "index": 5211
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the library that contains the application class",
+          "     *",
+          "     * @return {qx.tool.compiler.app.Library}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -689,23 +824,35 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getLibraries": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 217,
+          "line": 205,
           "column": 4,
-          "index": 5326
+          "index": 5029
         },
         "end": {
-          "line": 219,
+          "line": 210,
           "column": 5,
-          "index": 5379
+          "index": 5211
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "qx.tool.compiler.app.Library"
+      },
+      "appearsIn": []
+    },
+    "getLibraries": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the list of libraries",
+          "     *",
+          "     * @return {qx.tool.compiler.app.Library[]}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -721,23 +868,36 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "addExternal": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 227,
+          "line": 217,
           "column": 4,
-          "index": 5592
+          "index": 5326
         },
         "end": {
-          "line": 229,
+          "line": 219,
           "column": 5,
-          "index": 5678
+          "index": 5379
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "qx.tool.compiler.app.Library[]"
+      },
+      "appearsIn": []
+    },
+    "addExternal": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds an external resource (JS or CSS) to be loaded which is a http[s] URL",
+          "     *",
+          "     * @param type {String} either \"urisBefore\" or \"cssBefore\"",
+          "     * @param uri {String} uri to load",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -750,34 +910,53 @@
             "body": "type {String} either \"urisBefore\" or \"cssBefore\"",
             "paramName": "type",
             "description": " either \"urisBefore\" or \"cssBefore\"",
-            "type": "String"
+            "type": "string"
           },
           {
             "name": "@param",
             "body": "uri {String} uri to load",
             "paramName": "uri",
             "description": " uri to load",
-            "type": "String"
+            "type": "string"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "addPreload": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 237,
+          "line": 227,
           "column": 4,
-          "index": 5894
+          "index": 5592
         },
         "end": {
-          "line": 239,
+          "line": 229,
           "column": 5,
-          "index": 5961
+          "index": 5678
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "type",
+          "type": "string"
+        },
+        {
+          "name": "uri",
+          "type": "string"
+        }
+      ],
+      "appearsIn": []
+    },
+    "addPreload": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds an external resource (JS or CSS) to be loaded, which is a resource path",
+          "     *",
+          "     * @param type {String} either \"urisBefore\" or \"cssBefore\"",
+          "     * @param uri {String} uri to load",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -790,21 +969,68 @@
             "body": "type {String} either \"urisBefore\" or \"cssBefore\"",
             "paramName": "type",
             "description": " either \"urisBefore\" or \"cssBefore\"",
-            "type": "String"
+            "type": "string"
           },
           {
             "name": "@param",
             "body": "uri {String} uri to load",
             "paramName": "uri",
             "description": " uri to load",
-            "type": "String"
+            "type": "string"
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 237,
+          "column": 4,
+          "index": 5894
+        },
+        "end": {
+          "line": 239,
+          "column": 5,
+          "index": 5961
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "type",
+          "type": "string"
+        },
+        {
+          "name": "uri",
+          "type": "string"
+        }
+      ],
+      "appearsIn": []
     },
     "getPreloads": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the list of preloads, which is a map by type",
+          "     *",
+          "     * @return {Map}",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns the list of preloads, which is a map by type</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Map}",
+            "type": "Map<any, any>",
+            "description": ""
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 246,
@@ -817,39 +1043,22 @@
           "index": 6122
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the list of preloads, which is a map by type</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Map}",
-            "type": "Map",
-            "description": ""
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "Map<any, any>"
+      },
+      "appearsIn": []
     },
     "addPreBootCode": {
-      "location": {
-        "start": {
-          "line": 255,
-          "column": 4,
-          "index": 6251
-        },
-        "end": {
-          "line": 257,
-          "column": 5,
-          "index": 6316
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds code to be run before the boot code is run",
+          "     *",
+          "     * @param code {String} the code to run",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -862,14 +1071,57 @@
             "body": "code {String} the code to run",
             "paramName": "code",
             "description": " the code to run",
-            "type": "String"
+            "type": "string"
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 255,
+          "column": 4,
+          "index": 6251
+        },
+        "end": {
+          "line": 257,
+          "column": 5,
+          "index": 6316
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "code",
+          "type": "string"
+        }
+      ],
+      "appearsIn": []
     },
     "getPreBootCode": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the code to be run before the boot code",
+          "     *",
+          "     * @return {String} the code",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns the code to be run before the boot code</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{String} the code",
+            "type": "string",
+            "description": "the code"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 264,
@@ -882,39 +1134,23 @@
           "index": 6502
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the code to be run before the boot code</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{String} the code",
-            "type": "String",
-            "description": " the code"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
     },
     "createPart": {
-      "location": {
-        "start": {
-          "line": 274,
-          "column": 4,
-          "index": 6631
-        },
-        "end": {
-          "line": 284,
-          "column": 5,
-          "index": 6879
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Creates a new Part and adds it",
+          "     *",
+          "     * @param name {String} identifier",
+          "     * @return {Part}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -927,7 +1163,7 @@
             "body": "name {String} identifier",
             "paramName": "name",
             "description": " identifier",
-            "type": "String"
+            "type": "string"
           }
         ],
         "@return": [
@@ -939,23 +1175,40 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getParts": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 291,
+          "line": 274,
           "column": 4,
-          "index": 6968
+          "index": 6631
         },
         "end": {
-          "line": 293,
+          "line": 284,
           "column": 5,
-          "index": 7013
+          "index": 6879
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "returnType": {
+        "type": "qx.tool.compiler.targets.meta.Part"
+      },
+      "appearsIn": []
+    },
+    "getParts": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns a list of all parts",
+          "     *",
+          "     * @return {Part[]}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -971,23 +1224,35 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getPart": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 300,
+          "line": 291,
           "column": 4,
-          "index": 7132
+          "index": 6968
         },
         "end": {
-          "line": 302,
+          "line": 293,
           "column": 5,
-          "index": 7200
+          "index": 7013
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "Part[]"
+      },
+      "appearsIn": []
+    },
+    "getPart": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns a part with a given name",
+          "     *",
+          "     * @param name {String} the name to look for",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1000,27 +1265,41 @@
             "body": "name {String} the name to look for",
             "paramName": "name",
             "description": " the name to look for",
-            "type": "String"
+            "type": "string"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getPackages": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 309,
+          "line": 300,
           "column": 4,
-          "index": 7295
+          "index": 7132
         },
         "end": {
-          "line": 311,
+          "line": 302,
           "column": 5,
-          "index": 7346
+          "index": 7200
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "appearsIn": []
+    },
+    "getPackages": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns a list of all packages",
+          "     *",
+          "     * @return {Package[]}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1036,23 +1315,35 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "createPackage": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 318,
+          "line": 309,
           "column": 4,
-          "index": 7438
+          "index": 7295
         },
         "end": {
-          "line": 326,
+          "line": 311,
           "column": 5,
-          "index": 7626
+          "index": 7346
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "Package[]"
+      },
+      "appearsIn": []
+    },
+    "createPackage": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Creates a package and adds it",
+          "     *",
+          "     * @return {Package}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1068,23 +1359,37 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getLocalePackage": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 335,
+          "line": 318,
           "column": 4,
-          "index": 7899
+          "index": 7438
         },
         "end": {
-          "line": 343,
+          "line": 326,
           "column": 5,
-          "index": 8150
+          "index": 7626
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "qx.tool.compiler.targets.meta.Package"
+      },
+      "appearsIn": []
+    },
+    "getLocalePackage": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Gets a package for specific locale, creating a part with the name set to the localeId",
+          "     * if there isn't one already.  Used for when i18nAsParts == true",
+          "     *",
+          "     * @param localeId {String} the locale to look for",
+          "     * @return {Package}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1097,7 +1402,7 @@
             "body": "localeId {String} the locale to look for",
             "paramName": "localeId",
             "description": " the locale to look for",
-            "type": "String"
+            "type": "string"
           }
         ],
         "@return": [
@@ -1109,23 +1414,41 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "addResource": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 351,
+          "line": 335,
           "column": 4,
-          "index": 8307
+          "index": 7899
         },
         "end": {
-          "line": 353,
+          "line": 343,
           "column": 5,
-          "index": 8373
+          "index": 8150
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "localeId",
+          "type": "string"
+        }
+      ],
+      "returnType": {
+        "type": "qx.tool.compiler.targets.meta.Package"
+      },
+      "appearsIn": []
+    },
+    "addResource": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds a resource",
+          "     *",
+          "     * @param key {String} the resource identifier",
+          "     * @param path {String} the path to the resource",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1138,21 +1461,68 @@
             "body": "key {String} the resource identifier",
             "paramName": "key",
             "description": " the resource identifier",
-            "type": "String"
+            "type": "string"
           },
           {
             "name": "@param",
             "body": "path {String} the path to the resource",
             "paramName": "path",
             "description": " the path to the resource",
-            "type": "String"
+            "type": "string"
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 351,
+          "column": 4,
+          "index": 8307
+        },
+        "end": {
+          "line": 353,
+          "column": 5,
+          "index": 8373
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "name": "path",
+          "type": "string"
+        }
+      ],
+      "appearsIn": []
     },
     "getResources": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns all of the resources",
+          "     *",
+          "     * @return {Map}",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns all of the resources</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Map}",
+            "type": "Map<any, any>",
+            "description": ""
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 360,
@@ -1165,559 +1535,13 @@
           "index": 8513
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns all of the resources</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Map}",
-            "type": "Map",
-            "description": ""
-          }
-        ]
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "Map<any, any>"
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getQxOwner": {
-      "type": "function",
-      "name": "getQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "qx.core.Object",
-            "desc": "Returns the value for qxOwner"
-          }
-        ]
-      }
-    },
-    "setQxOwner": {
-      "type": "function",
-      "name": "setQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.core.Object",
-            "paramName": "value",
-            "desc": "Value for qxOwner"
-          }
-        ]
-      }
-    },
-    "resetQxOwner": {
-      "type": "function",
-      "name": "resetQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxOwner</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ]
-      }
-    },
-    "getQxObjectId": {
-      "type": "function",
-      "name": "getQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "[[ ObjectMethod Function ]]",
-            "desc": "Returns the value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "setQxObjectId": {
-      "type": "function",
-      "name": "setQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "[[ ObjectMethod Function ]]",
-            "paramName": "value",
-            "desc": "Value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "resetQxObjectId": {
-      "type": "function",
-      "name": "resetQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxObjectId</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ]
-      }
-    },
-    "getEnvironment": {
-      "type": "function",
-      "name": "getEnvironment",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>environment</code>.\n\nFor further details take a look at the property definition: {@link #environment}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "any",
-            "desc": "Returns the value for environment"
-          }
-        ]
-      }
-    },
-    "setEnvironment": {
-      "type": "function",
-      "name": "setEnvironment",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>environment</code>.\n\nFor further details take a look at the property definition: {@link #environment}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "any",
-            "paramName": "value",
-            "desc": "Value for environment"
-          }
-        ]
-      }
-    },
-    "resetEnvironment": {
-      "type": "function",
-      "name": "resetEnvironment",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>environment</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #environment}."
-          }
-        ]
-      }
-    },
-    "getAddTimestampsToUrls": {
-      "type": "function",
-      "name": "getAddTimestampsToUrls",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>addTimestampsToUrls</code>.\n\nFor further details take a look at the property definition: {@link #addTimestampsToUrls}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Boolean",
-            "desc": "Returns the value for addTimestampsToUrls"
-          }
-        ]
-      }
-    },
-    "isAddTimestampsToUrls": {
-      "type": "function",
-      "name": "isAddTimestampsToUrls",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "is",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>addTimestampsToUrls</code>.\n\nFor further details take a look at the property definition: {@link #addTimestampsToUrls}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Boolean",
-            "desc": "Returns the value for addTimestampsToUrls"
-          }
-        ]
-      }
-    },
-    "setAddTimestampsToUrls": {
-      "type": "function",
-      "name": "setAddTimestampsToUrls",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>addTimestampsToUrls</code>.\n\nFor further details take a look at the property definition: {@link #addTimestampsToUrls}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "Boolean",
-            "paramName": "value",
-            "desc": "Value for addTimestampsToUrls"
-          }
-        ]
-      }
-    },
-    "resetAddTimestampsToUrls": {
-      "type": "function",
-      "name": "resetAddTimestampsToUrls",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>addTimestampsToUrls</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #addTimestampsToUrls}."
-          }
-        ]
-      }
-    },
-    "setAppLibrary": {
-      "type": "function",
-      "name": "setAppLibrary",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>appLibrary</code>.\n\nFor further details take a look at the property definition: {@link #appLibrary}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.tool.compiler.app.Library",
-            "paramName": "value",
-            "desc": "Value for appLibrary"
-          }
-        ]
-      }
-    },
-    "resetAppLibrary": {
-      "type": "function",
-      "name": "resetAppLibrary",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>appLibrary</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #appLibrary}."
-          }
-        ]
-      }
-    },
-    "getBootMetaJs": {
-      "type": "function",
-      "name": "getBootMetaJs",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>bootMetaJs</code>.\n\nFor further details take a look at the property definition: {@link #bootMetaJs}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "qx.tool.compiler.targets.meta.AbstractJavascriptMeta",
-            "desc": "Returns the value for bootMetaJs"
-          }
-        ]
-      }
-    },
-    "setBootMetaJs": {
-      "type": "function",
-      "name": "setBootMetaJs",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>bootMetaJs</code>.\n\nFor further details take a look at the property definition: {@link #bootMetaJs}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.tool.compiler.targets.meta.AbstractJavascriptMeta",
-            "paramName": "value",
-            "desc": "Value for bootMetaJs"
-          }
-        ]
-      }
-    },
-    "resetBootMetaJs": {
-      "type": "function",
-      "name": "resetBootMetaJs",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>bootMetaJs</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #bootMetaJs}."
-          }
-        ]
-      }
-    },
-    "getSourceUri": {
-      "type": "function",
-      "name": "getSourceUri",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>sourceUri</code>.\n\nFor further details take a look at the property definition: {@link #sourceUri}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "String",
-            "desc": "Returns the value for sourceUri"
-          }
-        ]
-      }
-    },
-    "setSourceUri": {
-      "type": "function",
-      "name": "setSourceUri",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>sourceUri</code>.\n\nFor further details take a look at the property definition: {@link #sourceUri}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "String",
-            "paramName": "value",
-            "desc": "Value for sourceUri"
-          }
-        ]
-      }
-    },
-    "resetSourceUri": {
-      "type": "function",
-      "name": "resetSourceUri",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>sourceUri</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #sourceUri}."
-          }
-        ]
-      }
-    },
-    "getResourceUri": {
-      "type": "function",
-      "name": "getResourceUri",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>resourceUri</code>.\n\nFor further details take a look at the property definition: {@link #resourceUri}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "String",
-            "desc": "Returns the value for resourceUri"
-          }
-        ]
-      }
-    },
-    "setResourceUri": {
-      "type": "function",
-      "name": "setResourceUri",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>resourceUri</code>.\n\nFor further details take a look at the property definition: {@link #resourceUri}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "String",
-            "paramName": "value",
-            "desc": "Value for resourceUri"
-          }
-        ]
-      }
-    },
-    "resetResourceUri": {
-      "type": "function",
-      "name": "resetResourceUri",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>resourceUri</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #resourceUri}."
-          }
-        ]
-      }
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "statics": {}
 }

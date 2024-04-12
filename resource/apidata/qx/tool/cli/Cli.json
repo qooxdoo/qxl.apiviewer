@@ -1,34 +1,36 @@
 {
-  "className": "qx.tool.cli.Cli",
-  "packageName": "qx.tool.cli",
-  "name": "Cli",
-  "superClass": "qx.core.Object",
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 26,
-        "column": 0,
-        "index": 611
-      },
-      "end": {
-        "line": 701,
-        "column": 3,
-        "index": 21377
-      }
+  "version": 0.3,
+  "lastModified": 1712910030497,
+  "lastModifiedIso": "2024-04-12T08:20:30.497Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/tool/cli/Cli.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 26,
+      "column": 0,
+      "index": 611
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Entry point for the CLI</p>"
-        }
-      ]
+    "end": {
+      "line": 713,
+      "column": 3,
+      "index": 21741
     }
   },
-  "type": "class",
+  "className": "qx.tool.cli.Cli",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Entry point for the CLI",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Entry point for the CLI</p>"
+      }
+    ]
+  },
+  "superClass": "qx.core.Object",
   "properties": {
     "command": {
       "location": {
@@ -43,44 +45,16 @@
           "index": 740
         }
       },
-      "name": "command",
-      "propertyType": "new",
-      "apply": "__P_366_0"
-    },
-    "qxOwner": {
-      "type": "property",
-      "name": "qxOwner",
-      "abstract": false,
-      "mixin": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.MObjectId",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>The owning object</p>"
-          }
-        ]
-      }
-    },
-    "qxObjectId": {
-      "type": "property",
-      "name": "qxObjectId",
-      "abstract": false,
-      "mixin": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.MObjectId",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>{String} The ID of the object.</p>"
-          }
-        ]
-      }
+      "json": {
+        "apply": "__applyCommand"
+      },
+      "jsdoc": null,
+      "appearsIn": []
     }
   },
   "construct": {
+    "type": "function",
+    "params": [],
     "location": {
       "start": {
         "line": 34,
@@ -88,27 +62,18 @@
         "index": 749
       },
       "end": {
-        "line": 42,
+        "line": 43,
         "column": 3,
-        "index": 1006
+        "index": 1042
       }
     }
   },
   "members": {
     "yargs": {
-      "location": {
-        "start": {
-          "line": 46,
-          "column": 4,
-          "index": 1078
-        },
-        "end": {
-          "line": 46,
-          "column": 15,
-          "index": 1089
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "* @type {typeof import(\"yargs\")} the current yargs instance "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -118,27 +83,30 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{yargs} the current yargs instance"
+            "body": "{typeof import(\"yargs\")} the current yargs instance"
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "argv": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 49,
+          "line": 47,
           "column": 4,
-          "index": 1139
+          "index": 1131
         },
         "end": {
-          "line": 49,
-          "column": 14,
-          "index": 1149
+          "line": 47,
+          "column": 15,
+          "index": 1142
         }
       },
+      "appearsIn": []
+    },
+    "argv": {
       "jsdoc": {
+        "raw": [
+          "* @type {Object} the current argv "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -152,23 +120,26 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "_compilerApi": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 52,
+          "line": 50,
           "column": 4,
-          "index": 1212
+          "index": 1192
         },
         "end": {
-          "line": 52,
-          "column": 22,
-          "index": 1230
+          "line": 50,
+          "column": 14,
+          "index": 1202
         }
       },
+      "appearsIn": []
+    },
+    "_compilerApi": {
       "jsdoc": {
+        "raw": [
+          "* @type {qx.tool.cli.api.CompilerApi} the CompilerApi instance "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -178,27 +149,30 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{CompilerApi} the CompilerApi instance"
+            "body": "{qx.tool.cli.api.CompilerApi} the CompilerApi instance"
           }
         ]
       },
-      "type": "variable",
-      "access": "protected"
-    },
-    "_compileJsFilename": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 55,
+          "line": 53,
           "column": 4,
-          "index": 1304
+          "index": 1281
         },
         "end": {
-          "line": 55,
-          "column": 28,
-          "index": 1328
+          "line": 53,
+          "column": 22,
+          "index": 1299
         }
       },
+      "appearsIn": []
+    },
+    "_compileJsFilename": {
       "jsdoc": {
+        "raw": [
+          "* @type {String} the compile.js filename, if there is one "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -212,23 +186,26 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "protected"
-    },
-    "_compileJsonFilename": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 58,
+          "line": 56,
           "column": 4,
-          "index": 1404
+          "index": 1373
         },
         "end": {
-          "line": 58,
-          "column": 30,
-          "index": 1430
+          "line": 56,
+          "column": 28,
+          "index": 1397
         }
       },
+      "appearsIn": []
+    },
+    "_compileJsonFilename": {
       "jsdoc": {
+        "raw": [
+          "* @type {String} the compile.json filename, if there is one "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -242,23 +219,26 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "protected"
-    },
-    "__parsedArgs": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 61,
+          "line": 59,
           "column": 4,
-          "index": 1480
+          "index": 1473
         },
         "end": {
-          "line": 61,
-          "column": 22,
-          "index": 1498
+          "line": 59,
+          "column": 30,
+          "index": 1499
         }
       },
+      "appearsIn": []
+    },
+    "__parsedArgs": {
       "jsdoc": {
+        "raw": [
+          "* @type {Object} Parsed arguments "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -272,23 +252,26 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
-    },
-    "__librariesNotified": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 64,
+          "line": 62,
           "column": 4,
-          "index": 1593
+          "index": 1549
         },
         "end": {
-          "line": 64,
-          "column": 30,
-          "index": 1619
+          "line": 62,
+          "column": 22,
+          "index": 1567
         }
       },
+      "appearsIn": []
+    },
+    "__librariesNotified": {
       "jsdoc": {
+        "raw": [
+          "* @type {Boolean} Whether libraries have had their `.load()` method called yet "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -302,39 +285,53 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
-    },
-    "__applyCommand": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 66,
+          "line": 65,
           "column": 4,
-          "index": 1626
+          "index": 1662
         },
         "end": {
-          "line": 69,
+          "line": 65,
+          "column": 30,
+          "index": 1688
+        }
+      },
+      "appearsIn": []
+    },
+    "__applyCommand": {
+      "jsdoc": null,
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 67,
+          "column": 4,
+          "index": 1695
+        },
+        "end": {
+          "line": 70,
           "column": 5,
-          "index": 1751
+          "index": 1820
         }
       },
       "type": "function",
-      "access": "private"
+      "params": [
+        {
+          "name": "command"
+        }
+      ],
+      "appearsIn": []
     },
     "__createYargs": {
-      "location": {
-        "start": {
-          "line": 76,
-          "column": 4,
-          "index": 1862
-        },
-        "end": {
-          "line": 115,
-          "column": 5,
-          "index": 2984
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Creates an instance of yargs, with minimal options",
+          "     *",
+          "     * @return {import(\"yargs\")}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -344,29 +341,40 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{yargs}",
-            "type": "yargs",
+            "body": "{import(\"yargs\")}",
+            "type": "import(\"yargs\")",
             "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "private"
-    },
-    "__bootstrapArgv": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 121,
+          "line": 77,
           "column": 4,
-          "index": 3120
+          "index": 1941
         },
         "end": {
-          "line": 145,
+          "line": 116,
           "column": 5,
-          "index": 3941
+          "index": 3063
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "import(\"yargs\")"
+      },
+      "appearsIn": []
+    },
+    "__bootstrapArgv": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Initialises this.argv with the bare minimum required to load the config files and begin",
+          "     * processing",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -374,23 +382,30 @@
           }
         ]
       },
-      "type": "function",
-      "access": "private"
-    },
-    "__fullArgv": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 150,
+          "line": 122,
           "column": 4,
-          "index": 4020
+          "index": 3199
         },
         "end": {
-          "line": 207,
+          "line": 146,
           "column": 5,
-          "index": 5525
+          "index": 4020
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "__fullArgv": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Reloads this.argv with the full set of arguments",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -398,23 +413,32 @@
           }
         ]
       },
-      "type": "function",
-      "access": "private"
-    },
-    "__notifyCommand": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 214,
+          "line": 151,
           "column": 4,
-          "index": 5726
+          "index": 4099
         },
         "end": {
-          "line": 219,
+          "line": 210,
           "column": 5,
-          "index": 5887
+          "index": 5654
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "__notifyCommand": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * This is to notify the commands after loading the full args.",
+          "     * The commands can overload special arg arguments here.",
+          "     * e.g. Deploy will will overload the target.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -422,23 +446,32 @@
           }
         ]
       },
-      "type": "function",
-      "access": "private"
-    },
-    "__notifyLibraries": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 226,
+          "line": 217,
           "column": 4,
-          "index": 6110
+          "index": 5855
         },
         "end": {
-          "line": 240,
+          "line": 222,
           "column": 5,
-          "index": 6491
+          "index": 6016
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "__notifyLibraries": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Calls the `.load()` method of each library, safe to call multiple times.  This is",
+          "     * to delay the calling of `load()` until after we know that the command has been selected",
+          "     * by Yargs",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -446,23 +479,34 @@
           }
         ]
       },
-      "type": "function",
-      "access": "private"
-    },
-    "processCommand": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 249,
+          "line": 229,
           "column": 4,
-          "index": 6805
+          "index": 6239
         },
         "end": {
-          "line": 255,
+          "line": 243,
           "column": 5,
-          "index": 7083
+          "index": 6620
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "processCommand": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Processes a command.  All commands should use this method when invoked by Yargs, because it",
+          "     * provides a standard error control and makes sure that the libraries know what command has",
+          "     * been selected.",
+          "     *",
+          "     * @param command {qx.tool.cli.commands.Command} the command being run",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -472,30 +516,44 @@
         "@param": [
           {
             "name": "@param",
-            "body": "command {qx.tool.cli.Command} the command being run",
+            "body": "command {qx.tool.cli.commands.Command} the command being run",
             "paramName": "command",
             "description": " the command being run",
-            "type": "qx.tool.cli.Command"
+            "type": "qx.tool.cli.commands.Command"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getParsedArgs": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 262,
+          "line": 252,
           "column": 4,
-          "index": 7199
+          "index": 6943
         },
         "end": {
-          "line": 264,
+          "line": 258,
           "column": 5,
-          "index": 7254
+          "index": 7221
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "command",
+          "type": "qx.tool.cli.commands.Command"
+        }
+      ],
+      "appearsIn": []
+    },
+    "getParsedArgs": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the parsed command line and configuration data",
+          "     *",
+          "     * @return {Object}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -506,28 +564,50 @@
           {
             "name": "@return",
             "body": "{Object}",
-            "type": "Object",
+            "type": "Record<any, any>",
             "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "run": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 281,
+          "line": 265,
           "column": 4,
-          "index": 7879
+          "index": 7337
         },
         "end": {
-          "line": 287,
+          "line": 267,
           "column": 5,
-          "index": 8097
+          "index": 7392
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "Record<any, any>"
+      },
+      "appearsIn": []
+    },
+    "run": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Parses the command line and loads configuration data from a .js or .json file;",
+          "     * if you provide a .js file the file must be a module which returns an object which",
+          "     * has any of these properties:",
+          "     *",
+          "     *  CompilerApi - the class (derived from qx.tool.cli.api.CompilerApi)",
+          "     *    for configuring the compiler",
+          "     *",
+          "     * Each library can also have a compile.js, and that is also a module which can",
+          "     * return an object with any of these properties:",
+          "     *",
+          "     *  LibraryApi - the class (derived from qx.tool.cli.api.LibraryApi)",
+          "     *    for configuring the library",
+          "     *",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -535,23 +615,30 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "__parseArgsImpl": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 292,
+          "line": 284,
           "column": 4,
-          "index": 8204
+          "index": 8017
         },
         "end": {
-          "line": 573,
+          "line": 290,
           "column": 5,
-          "index": 17968
+          "index": 8235
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "__parseArgsImpl": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Does the work of parsing command line arguments and loading `compile.js[on]`",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -559,23 +646,33 @@
           }
         ]
       },
-      "type": "function",
-      "access": "private"
-    },
-    "__loadJs": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 581,
+          "line": 295,
           "column": 4,
-          "index": 18160
+          "index": 8342
         },
         "end": {
-          "line": 609,
+          "line": 576,
           "column": 5,
-          "index": 18965
+          "index": 18136
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "__loadJs": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Loads a .js file using `require`, handling exceptions as best as possible",
+          "     *",
+          "     * @param aPath {String} the file to load",
+          "     * @return {Object} the module",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -588,35 +685,96 @@
             "body": "aPath {String} the file to load",
             "paramName": "aPath",
             "description": " the file to load",
-            "type": "String"
+            "type": "string"
           }
         ],
         "@return": [
           {
             "name": "@return",
             "body": "{Object} the module",
-            "type": "Object",
-            "description": " the module"
+            "type": "Record<any, any>",
+            "description": "the module"
           }
         ]
       },
-      "type": "function",
-      "access": "private"
-    },
-    "getCompilerApi": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 616,
+          "line": 584,
           "column": 4,
-          "index": 19064
+          "index": 18328
         },
         "end": {
-          "line": 618,
+          "line": 612,
           "column": 5,
-          "index": 19120
+          "index": 19133
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "aPath",
+          "type": "string"
+        }
+      ],
+      "returnType": {
+        "type": "Record<any, any>"
+      },
+      "appearsIn": []
+    },
+    "compileJsExists": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns if the file compile.js exists",
+          "     *",
+          "     * @returns {Boolean}",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns if the file compile.js exists</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean}",
+            "type": "boolean",
+            "description": ""
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 619,
+          "column": 4,
+          "index": 19234
+        },
+        "end": {
+          "line": 621,
+          "column": 5,
+          "index": 19296
+        }
+      },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "getCompilerApi": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the CompilerApi instance",
+          "     *",
+          "     * @return {qx.tool.cli.api.CompilerApi}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -626,29 +784,41 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{CompilerApi}",
-            "type": "CompilerApi",
+            "body": "{qx.tool.cli.api.CompilerApi}",
+            "type": "qx.tool.cli.api.CompilerApi",
             "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getCompileJsFilename": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 625,
+          "line": 628,
           "column": 4,
-          "index": 19243
+          "index": 19411
         },
         "end": {
-          "line": 627,
+          "line": 630,
           "column": 5,
-          "index": 19311
+          "index": 19467
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "qx.tool.cli.api.CompilerApi"
+      },
+      "appearsIn": []
+    },
+    "getCompileJsFilename": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the filename of compile.js, if there is one",
+          "     *",
+          "     * @return {String?} filename",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -660,27 +830,39 @@
             "name": "@return",
             "body": "{String?} filename",
             "type": "String?",
-            "description": " filename"
+            "description": "filename"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getCompileJsonFilename": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 634,
+          "line": 637,
           "column": 4,
-          "index": 19436
+          "index": 19590
         },
         "end": {
-          "line": 636,
+          "line": 639,
           "column": 5,
-          "index": 19508
+          "index": 19658
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "String?"
+      },
+      "appearsIn": []
+    },
+    "getCompileJsonFilename": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the filename of compile.json, if there is one",
+          "     *",
+          "     * @return {String?} filename",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -692,27 +874,42 @@
             "name": "@return",
             "body": "{String?} filename",
             "type": "String?",
-            "description": " filename"
+            "description": "filename"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "isExplicitArg": {
+      "access": "public",
       "location": {
         "start": {
           "line": 646,
           "column": 4,
-          "index": 19835
+          "index": 19783
         },
         "end": {
-          "line": 651,
+          "line": 648,
           "column": 5,
-          "index": 20041
+          "index": 19855
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "String?"
+      },
+      "appearsIn": []
+    },
+    "isExplicitArg": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Detects whether the command line explicit set an option (as opposed to yargs",
+          "     * providing a default value).  Note that this does not handle aliases, use the",
+          "     * actual, full option name.",
+          "     *",
+          "     * @param option {String} the name of the option, eg \"listen-port\"",
+          "     * @return {Boolean}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -725,257 +922,67 @@
             "body": "option {String} the name of the option, eg \"listen-port\"",
             "paramName": "option",
             "description": " the name of the option, eg \"listen-port\"",
-            "type": "String"
+            "type": "string"
           }
         ],
         "@return": [
           {
             "name": "@return",
             "body": "{Boolean}",
-            "type": "Boolean",
+            "type": "boolean",
             "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getQxOwner": {
-      "type": "function",
-      "name": "getQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "qx.core.Object",
-            "desc": "Returns the value for qxOwner"
-          }
-        ]
-      }
-    },
-    "setQxOwner": {
+      "location": {
+        "start": {
+          "line": 658,
+          "column": 4,
+          "index": 20182
+        },
+        "end": {
+          "line": 663,
+          "column": 5,
+          "index": 20388
+        }
+      },
       "type": "function",
-      "name": "setQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.core.Object",
-            "paramName": "value",
-            "desc": "Value for qxOwner"
-          }
-        ]
-      }
-    },
-    "resetQxOwner": {
-      "type": "function",
-      "name": "resetQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxOwner</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ]
-      }
-    },
-    "getQxObjectId": {
-      "type": "function",
-      "name": "getQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "[[ ObjectMethod Function ]]",
-            "desc": "Returns the value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "setQxObjectId": {
-      "type": "function",
-      "name": "setQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "[[ ObjectMethod Function ]]",
-            "paramName": "value",
-            "desc": "Value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "resetQxObjectId": {
-      "type": "function",
-      "name": "resetQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxObjectId</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ]
-      }
-    },
-    "getCommand": {
-      "type": "function",
-      "name": "getCommand",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>command</code>.\n\nFor further details take a look at the property definition: {@link #command}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "any",
-            "desc": "Returns the value for command"
-          }
-        ]
-      }
-    },
-    "setCommand": {
-      "type": "function",
-      "name": "setCommand",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>command</code>.\n\nFor further details take a look at the property definition: {@link #command}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "any",
-            "paramName": "value",
-            "desc": "Value for command"
-          }
-        ]
-      }
-    },
-    "resetCommand": {
-      "type": "function",
-      "name": "resetCommand",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>command</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #command}."
-          }
-        ]
-      }
+      "params": [
+        {
+          "name": "option",
+          "type": "string"
+        }
+      ],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
     }
   },
   "statics": {
     "compileJsFilename": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
-          "line": 655,
+          "line": 667,
           "column": 4,
-          "index": 20065
+          "index": 20412
         },
         "end": {
-          "line": 655,
+          "line": 667,
           "column": 35,
-          "index": 20096
+          "index": 20443
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "__instance": {
-      "location": {
-        "start": {
-          "line": 658,
-          "column": 4,
-          "index": 20145
-        },
-        "end": {
-          "line": 658,
-          "column": 20,
-          "index": 20161
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "* {CompileJs} singleton instance "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -983,23 +990,30 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "private"
-    },
-    "getInstance": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 665,
+          "line": 670,
           "column": 4,
-          "index": 20306
+          "index": 20492
         },
         "end": {
           "line": 670,
-          "column": 5,
-          "index": 20485
+          "column": 20,
+          "index": 20508
         }
       },
+      "appearsIn": []
+    },
+    "getInstance": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the singleton instance, throws an error if it has not been created",
+          "     *",
+          "     * @return {qx.tool.cli.Cli}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1015,23 +1029,37 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "addYargsCommands": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 679,
+          "line": 677,
           "column": 4,
-          "index": 20782
+          "index": 20653
         },
         "end": {
-          "line": 699,
+          "line": 682,
           "column": 5,
-          "index": 21369
+          "index": 20832
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "qx.tool.cli.Cli"
+      },
+      "appearsIn": []
+    },
+    "addYargsCommands": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds commands to Yargs",
+          "     *",
+          "     * @param yargs {typeof import(\"yargs\")} the Yargs instance",
+          "     * @param classNames {String[]} array of class names, each of which is in the `packageName` package",
+          "     * @param packageName {String} the name of the package to find each command class",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1041,10 +1069,10 @@
         "@param": [
           {
             "name": "@param",
-            "body": "yargs {yargs} the Yargs instance",
+            "body": "yargs {typeof import(\"yargs\")} the Yargs instance",
             "paramName": "yargs",
             "description": " the Yargs instance",
-            "type": "yargs"
+            "type": "typeof import(\"yargs\")"
           },
           {
             "name": "@param",
@@ -1058,13 +1086,39 @@
             "body": "packageName {String} the name of the package to find each command class",
             "paramName": "packageName",
             "description": " the name of the package to find each command class",
-            "type": "String"
+            "type": "string"
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 691,
+          "column": 4,
+          "index": 21146
+        },
+        "end": {
+          "line": 711,
+          "column": 5,
+          "index": 21733
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "yargs",
+          "type": "typeof import(\"yargs\")"
+        },
+        {
+          "name": "classNames",
+          "type": "String[]"
+        },
+        {
+          "name": "packageName",
+          "type": "string"
+        }
+      ],
+      "appearsIn": []
     }
-  },
-  "descendants": []
+  }
 }

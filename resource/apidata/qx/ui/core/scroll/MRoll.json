@@ -1,65 +1,86 @@
 {
-  "className": "qx.ui.core.scroll.MRoll",
-  "packageName": "qx.ui.core.scroll",
-  "name": "MRoll",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 26,
-        "column": 0,
-        "index": 793
-      },
-      "end": {
-        "line": 129,
-        "column": 3,
-        "index": 3651
-      }
+  "version": 0.3,
+  "lastModified": 1712910030985,
+  "lastModifiedIso": "2024-04-12T08:20:30.985Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/ui/core/scroll/MRoll.js",
+  "type": "mixin",
+  "location": {
+    "start": {
+      "line": 26,
+      "column": 0,
+      "index": 793
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Mixin holding the handler for roll event. Please\n keep in mind that the including widget has to have the scroll bars\n implemented as child controls named <code>scrollbar-x</code> and\n <code>scrollbar-y</code> to get the handler working. Also, you have to\n attach the listener yourself.</p>"
-        }
-      ]
+    "end": {
+      "line": 139,
+      "column": 3,
+      "index": 3894
     }
   },
-  "type": "mixin",
+  "className": "qx.ui.core.scroll.MRoll",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Mixin holding the handler for roll event. Please",
+      " * keep in mind that the including widget has to have the scroll bars",
+      " * implemented as child controls named <code>scrollbar-x</code> and",
+      " * <code>scrollbar-y</code> to get the handler working. Also, you have to",
+      " * attach the listener yourself.",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Mixin holding the handler for roll event. Please\n keep in mind that the including widget has to have the scroll bars\n implemented as child controls named <code>scrollbar-x</code> and\n <code>scrollbar-y</code> to get the handler working. Also, you have to\n attach the listener yourself.</p>"
+      }
+    ]
+  },
+  "properties": {
+    "scrollByDrag": {
+      "location": {
+        "start": {
+          "line": 31,
+          "column": 4,
+          "index": 984
+        },
+        "end": {
+          "line": 34,
+          "column": 5,
+          "index": 1047
+        }
+      },
+      "json": {
+        "init": false,
+        "check": "Boolean"
+      },
+      "jsdoc": null,
+      "appearsIn": []
+    }
+  },
   "members": {
     "_cancelRoll": {
+      "jsdoc": null,
+      "access": "protected",
       "location": {
         "start": {
-          "line": 28,
+          "line": 38,
           "column": 4,
-          "index": 855
+          "index": 1071
         },
         "end": {
-          "line": 28,
+          "line": 38,
           "column": 21,
-          "index": 872
+          "index": 1088
         }
       },
-      "type": "variable",
-      "access": "protected"
+      "appearsIn": []
     },
     "_addRollHandling": {
-      "location": {
-        "start": {
-          "line": 33,
-          "column": 4,
-          "index": 972
-        },
-        "end": {
-          "line": 36,
-          "column": 5,
-          "index": 1123
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Responsible for adding the event listener needed for scroll handling.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -67,23 +88,30 @@
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_removeRollHandling": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 41,
+          "line": 43,
           "column": 4,
-          "index": 1225
+          "index": 1188
         },
         "end": {
-          "line": 44,
+          "line": 46,
           "column": 5,
-          "index": 1385
+          "index": 1339
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "_removeRollHandling": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Responsible for removing the event listener needed for scroll handling.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -91,23 +119,32 @@
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_onPointerDownForRoll": {
+      "access": "protected",
       "location": {
         "start": {
           "line": 51,
           "column": 4,
-          "index": 1557
+          "index": 1441
         },
         "end": {
-          "line": 53,
+          "line": 54,
           "column": 5,
-          "index": 1632
+          "index": 1601
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "_onPointerDownForRoll": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Handler for the pointerdown event which simply stops the momentum scrolling.",
+          "     *",
+          "     * @param e {qx.event.type.Pointer} pointerdown event",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -124,23 +161,37 @@
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_onRoll": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 60,
+          "line": 61,
           "column": 4,
-          "index": 1736
+          "index": 1773
         },
         "end": {
-          "line": 127,
+          "line": 63,
           "column": 5,
-          "index": 3643
+          "index": 1848
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "e",
+          "type": "qx.event.type.Pointer"
+        }
+      ],
+      "appearsIn": []
+    },
+    "_onRoll": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Roll event handler",
+          "     *",
+          "     * @param e {qx.event.type.Roll} Roll event",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -157,9 +208,28 @@
           }
         ]
       },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 70,
+          "column": 4,
+          "index": 1952
+        },
+        "end": {
+          "line": 137,
+          "column": 5,
+          "index": 3886
+        }
+      },
       "type": "function",
-      "access": "protected"
+      "params": [
+        {
+          "name": "e",
+          "type": "qx.event.type.Roll"
+        }
+      ],
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "statics": {}
 }

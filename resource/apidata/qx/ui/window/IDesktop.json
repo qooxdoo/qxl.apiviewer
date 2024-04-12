@@ -1,49 +1,45 @@
 {
-  "className": "qx.ui.window.IDesktop",
-  "packageName": "qx.ui.window",
-  "name": "IDesktop",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 22,
-        "column": 0,
-        "index": 549
-      },
-      "end": {
-        "line": 70,
-        "column": 3,
-        "index": 1739
-      }
+  "version": 0.3,
+  "lastModified": 1712910030805,
+  "lastModifiedIso": "2024-04-12T08:20:30.805Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/ui/window/IDesktop.js",
+  "type": "interface",
+  "location": {
+    "start": {
+      "line": 22,
+      "column": 0,
+      "index": 549
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>All parent widgets of windows must implement this interface.</p>"
-        }
-      ]
+    "end": {
+      "line": 70,
+      "column": 3,
+      "index": 1739
     }
   },
-  "type": "interface",
+  "className": "qx.ui.window.IDesktop",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * All parent widgets of windows must implement this interface.",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>All parent widgets of windows must implement this interface.</p>"
+      }
+    ]
+  },
   "members": {
     "setWindowManager": {
-      "location": {
-        "start": {
-          "line": 29,
-          "column": 4,
-          "index": 748
-        },
-        "end": {
-          "line": 31,
-          "column": 5,
-          "index": 847
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Sets the desktop's window manager",
+          "     *",
+          "     * @param manager {qx.ui.window.IWindowManager} The window manager",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -60,10 +56,53 @@
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 29,
+          "column": 4,
+          "index": 748
+        },
+        "end": {
+          "line": 31,
+          "column": 5,
+          "index": 847
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "manager",
+          "type": "qx.ui.window.IWindowManager"
+        }
+      ],
+      "appearsIn": []
     },
     "getWindows": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Get a list of all windows added to the desktop (including hidden windows)",
+          "     *",
+          "     * @return {qx.ui.window.Window[]} Array of managed windows",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Get a list of all windows added to the desktop (including hidden windows)</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{qx.ui.window.Window[]} Array of managed windows",
+            "type": "qx.ui.window.Window[]",
+            "description": "Array of managed windows"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 38,
@@ -76,26 +115,39 @@
           "index": 1037
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "qx.ui.window.Window[]"
+      },
+      "appearsIn": []
+    },
+    "supportsMaximize": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether the configured layout supports a maximized window",
+          "     * e.g. is a Canvas.",
+          "     *",
+          "     * @return {Boolean} Whether the layout supports maximized windows",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Get a list of all windows added to the desktop (including hidden windows)</p>"
+            "body": "<p>Whether the configured layout supports a maximized window\n e.g. is a Canvas.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.window.Window[]} Array of managed windows",
-            "type": "qx.ui.window.Window[]",
-            "description": " Array of managed windows"
+            "body": "{Boolean} Whether the layout supports maximized windows",
+            "type": "boolean",
+            "description": "Whether the layout supports maximized windows"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "supportsMaximize": {
+      "access": "public",
       "location": {
         "start": {
           "line": 46,
@@ -108,39 +160,23 @@
           "index": 1249
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Whether the configured layout supports a maximized window\n e.g. is a Canvas.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Boolean} Whether the layout supports maximized windows",
-            "type": "Boolean",
-            "description": " Whether the layout supports maximized windows"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
     },
     "blockContent": {
-      "location": {
-        "start": {
-          "line": 54,
-          "column": 4,
-          "index": 1460
-        },
-        "end": {
-          "line": 56,
-          "column": 5,
-          "index": 1522
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Block direct child widgets with a zIndex below <code>zIndex</code>",
+          "     *",
+          "     * @param zIndex {Integer} All child widgets with a zIndex below this value",
+          "     *     will be blocked",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -157,10 +193,43 @@
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 54,
+          "column": 4,
+          "index": 1460
+        },
+        "end": {
+          "line": 56,
+          "column": 5,
+          "index": 1522
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "zIndex",
+          "type": "Integer"
+        }
+      ],
+      "appearsIn": []
     },
     "unblock": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Remove the blocker.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Remove the blocker.</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 61,
@@ -173,18 +242,35 @@
           "index": 1584
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "isBlocked": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether the widget is currently blocked",
+          "     *",
+          "     * @return {Boolean} whether the widget is blocked.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Remove the blocker.</p>"
+            "body": "<p>Whether the widget is currently blocked</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} whether the widget is blocked.",
+            "type": "boolean",
+            "description": "whether the widget is blocked."
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "isBlocked": {
+      "access": "public",
       "location": {
         "start": {
           "line": 68,
@@ -197,25 +283,14 @@
           "index": 1731
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Whether the widget is currently blocked</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Boolean} whether the widget is blocked.",
-            "type": "Boolean",
-            "description": " whether the widget is blocked."
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "statics": {},
+  "properties": {}
 }

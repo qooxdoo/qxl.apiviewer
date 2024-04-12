@@ -1,48 +1,68 @@
 {
-  "className": "qx.module.event.OrientationHandler",
-  "packageName": "qx.module.event",
-  "name": "OrientationHandler",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 27,
-        "column": 0,
-        "index": 708
-      },
-      "end": {
-        "line": 91,
-        "column": 3,
-        "index": 2485
-      }
+  "version": 0.3,
+  "lastModified": 1712910031021,
+  "lastModifiedIso": "2024-04-12T08:20:31.021Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/module/event/OrientationHandler.js",
+  "type": "bootstrap",
+  "location": {
+    "start": {
+      "line": 27,
+      "column": 0,
+      "index": 708
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Orientation handler which is responsible for registering and unregistering a\n {@link qx.event.handler.OrientationCore} handler for each given element.</p>"
-        }
-      ],
-      "@require": [
-        {
-          "name": "@require",
-          "body": "qx.module.Event"
-        }
-      ],
-      "@group": [
-        {
-          "name": "@group",
-          "body": "Event_Normalization"
-        }
-      ]
+    "end": {
+      "line": 91,
+      "column": 3,
+      "index": 2485
     }
   },
-  "type": "class",
+  "className": "qx.module.event.OrientationHandler",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Orientation handler which is responsible for registering and unregistering a",
+      " * {@link qx.event.handler.OrientationCore} handler for each given element.",
+      " *",
+      " * @require(qx.module.Event)",
+      " *",
+      " * @group (Event_Normalization)",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Orientation handler which is responsible for registering and unregistering a\n {@link qx.event.handler.OrientationCore} handler for each given element.</p>"
+      }
+    ],
+    "@require": [
+      {
+        "name": "@require",
+        "body": "qx.module.Event"
+      }
+    ],
+    "@group": [
+      {
+        "name": "@group",
+        "body": "Event_Normalization"
+      }
+    ]
+  },
   "statics": {
     "TYPES": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * List of events that require an orientation handler",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>List of events that require an orientation handler</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 32,
@@ -55,31 +75,18 @@
           "index": 887
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>List of events that require an orientation handler</p>"
-          }
-        ]
-      },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "register": {
-      "location": {
-        "start": {
-          "line": 40,
-          "column": 4,
-          "index": 1084
-        },
-        "end": {
-          "line": 57,
-          "column": 5,
-          "index": 1562
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Creates an orientation handler for the given window when an",
+          "     * orientationchange event listener is attached to it",
+          "     *",
+          "     * @param element {Window} DOM Window",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -96,23 +103,37 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "unregister": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 64,
+          "line": 40,
           "column": 4,
-          "index": 1768
+          "index": 1084
         },
         "end": {
-          "line": 81,
+          "line": 57,
           "column": 5,
-          "index": 2345
+          "index": 1562
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "element",
+          "type": "Window"
+        }
+      ],
+      "appearsIn": []
+    },
+    "unregister": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Removes the orientation event handler from the element if there are no more",
+          "     * orientationchange event listeners attached to it",
+          "     * @param element {Element} DOM element",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -129,23 +150,29 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    }
-  },
-  "defer": {
-    "location": {
-      "start": {
-        "line": 84,
-        "column": 2,
-        "index": 2354
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 64,
+          "column": 4,
+          "index": 1768
+        },
+        "end": {
+          "line": 81,
+          "column": 5,
+          "index": 2345
+        }
       },
-      "end": {
-        "line": 90,
-        "column": 3,
-        "index": 2481
-      }
+      "type": "function",
+      "params": [
+        {
+          "name": "element",
+          "type": "Element"
+        }
+      ],
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "members": {},
+  "properties": {}
 }

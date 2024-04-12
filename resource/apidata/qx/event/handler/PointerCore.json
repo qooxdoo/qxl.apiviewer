@@ -1,48 +1,56 @@
 {
+  "version": 0.3,
+  "lastModified": 1712910031045,
+  "lastModifiedIso": "2024-04-12T08:20:31.045Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/event/handler/PointerCore.js",
+  "type": "bootstrap",
+  "location": {
+    "start": {
+      "line": 26,
+      "column": 0,
+      "index": 631
+    },
+    "end": {
+      "line": 571,
+      "column": 3,
+      "index": 17244
+    }
+  },
   "className": "qx.event.handler.PointerCore",
-  "packageName": "qx.event.handler",
-  "name": "PointerCore",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Low-level pointer event handler.",
+      " *",
+      " * @require(qx.bom.client.Event)",
+      " * @require(qx.bom.client.Device)",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Low-level pointer event handler.</p>"
+      }
+    ],
+    "@require": [
+      {
+        "name": "@require",
+        "body": "qx.bom.client.Event"
+      },
+      {
+        "name": "@require",
+        "body": "qx.bom.client.Device"
+      }
+    ]
+  },
   "superClass": "Object",
   "interfaces": [
     "qx.core.IDisposable"
   ],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 26,
-        "column": 0,
-        "index": 631
-      },
-      "end": {
-        "line": 571,
-        "column": 3,
-        "index": 17244
-      }
-    },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Low-level pointer event handler.</p>"
-        }
-      ],
-      "@require": [
-        {
-          "name": "@require",
-          "body": "qx.bom.client.Event"
-        },
-        {
-          "name": "@require",
-          "body": "qx.bom.client.Device"
-        }
-      ]
-    }
-  },
-  "type": "class",
   "statics": {
     "MOUSE_TO_POINTER_MAPPING": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 31,
@@ -55,10 +63,11 @@
           "index": 943
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "TOUCH_TO_POINTER_MAPPING": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 39,
@@ -71,10 +80,11 @@
           "index": 1112
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "MSPOINTER_TO_POINTER_MAPPING": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 46,
@@ -87,10 +97,11 @@
           "index": 1445
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "POINTER_TO_GESTURE_MAPPING": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 57,
@@ -103,10 +114,11 @@
           "index": 1627
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "LEFT_BUTTON": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 64,
@@ -119,10 +131,11 @@
           "index": 1789
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "SIM_MOUSE_DISTANCE": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 70,
@@ -135,10 +148,11 @@
           "index": 1818
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "SIM_MOUSE_DELAY": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 72,
@@ -151,10 +165,27 @@
           "index": 1846
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "__lastTouch": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Coordinates of the last touch. This needs to be static because the target could",
+          "     * change between touch and simulated mouse events. Touch events will be detected",
+          "     * by one instance which moves the target. The simulated mouse events will be fired with",
+          "     * a delay which causes another target and with that, another instance of this handler.",
+          "     * last touch was.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Coordinates of the last touch. This needs to be static because the target could\n change between touch and simulated mouse events. Touch events will be detected\n by one instance which moves the target. The simulated mouse events will be fired with\n a delay which causes another target and with that, another instance of this handler.\n last touch was.</p>"
+          }
+        ]
+      },
+      "access": "private",
       "location": {
         "start": {
           "line": 81,
@@ -167,19 +198,19 @@
           "index": 2267
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Coordinates of the last touch. This needs to be static because the target could\n change between touch and simulated mouse events. Touch events will be detected\n by one instance which moves the target. The simulated mouse events will be fired with\n a delay which causes another target and with that, another instance of this handler.\n last touch was.</p>"
-          }
-        ]
-      },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     }
   },
   "construct": {
+    "type": "function",
+    "params": [
+      {
+        "name": "target"
+      },
+      {
+        "name": "emitter"
+      }
+    ],
     "location": {
       "start": {
         "line": 91,
@@ -191,35 +222,12 @@
         "column": 3,
         "index": 4307
       }
-    },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Create a new instance</p>"
-        }
-      ],
-      "@param": [
-        {
-          "name": "@param",
-          "body": "target {Element} element on which to listen for native touch events",
-          "paramName": "target",
-          "description": " element on which to listen for native touch events",
-          "type": "qx.event.handler.Element"
-        },
-        {
-          "name": "@param",
-          "body": "emitter {qx.event.Emitter?} Event emitter (used if dispatchEvent\n is not supported, e.g. in IE8)",
-          "paramName": "emitter",
-          "description": " Event emitter (used if dispatchEvent\n is not supported, e.g. in IE8)",
-          "optional": true,
-          "type": "qx.event.Emitter"
-        }
-      ]
     }
   },
   "members": {
     "__defaultTarget": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 163,
@@ -232,10 +240,11 @@
           "index": 4348
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__emitter": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 164,
@@ -248,10 +257,11 @@
           "index": 4369
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__eventNames": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 165,
@@ -264,10 +274,11 @@
           "index": 4393
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__nativePointerEvents": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 166,
@@ -280,10 +291,11 @@
           "index": 4427
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__wrappedListener": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 167,
@@ -296,10 +308,11 @@
           "index": 4456
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__lastButtonState": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 168,
@@ -312,10 +325,11 @@
           "index": 4482
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__buttonStates": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 169,
@@ -328,10 +342,11 @@
           "index": 4508
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__primaryIdentifier": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 170,
@@ -344,10 +359,11 @@
           "index": 4539
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__activeTouches": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 171,
@@ -360,10 +376,11 @@
           "index": 4566
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "_processedFlag": {
+      "jsdoc": null,
+      "access": "protected",
       "location": {
         "start": {
           "line": 172,
@@ -376,10 +393,23 @@
           "index": 4592
         }
       },
-      "type": "variable",
-      "access": "protected"
+      "appearsIn": []
     },
     "_initPointerObserver": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds listeners to native pointer events if supported",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Adds listeners to native pointer events if supported</p>"
+          }
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 177,
@@ -392,31 +422,20 @@
           "index": 4753
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Adds listeners to native pointer events if supported</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "protected"
+      "params": [],
+      "appearsIn": []
     },
     "_initObserver": {
-      "location": {
-        "start": {
-          "line": 187,
-          "column": 4,
-          "index": 4960
-        },
-        "end": {
-          "line": 205,
-          "column": 5,
-          "index": 5638
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Register native event listeners",
+          "     * @param callback {Function} listener callback",
+          "     * @param useEmitter {Boolean} attach listener to Emitter instead of",
+          "     * native event",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -429,34 +448,51 @@
             "body": "callback {Function} listener callback",
             "paramName": "callback",
             "description": " listener callback",
-            "type": "Function"
+            "type": "((...args: any[]) => any)"
           },
           {
             "name": "@param",
             "body": "useEmitter {Boolean} attach listener to Emitter instead of\n native event",
             "paramName": "useEmitter",
             "description": " attach listener to Emitter instead of\n native event",
-            "type": "Boolean"
+            "type": "boolean"
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_onPointerEvent": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 211,
+          "line": 187,
           "column": 4,
-          "index": 5751
+          "index": 4960
         },
         "end": {
-          "line": 230,
+          "line": 205,
           "column": 5,
-          "index": 6425
+          "index": 5638
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "callback",
+          "type": "((...args: any[]) => any)"
+        },
+        {
+          "name": "useEmitter",
+          "type": "boolean"
+        }
+      ],
+      "appearsIn": []
+    },
+    "_onPointerEvent": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Handler for native pointer events",
+          "     * @param domEvent {Event}  Native DOM event",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -473,10 +509,53 @@
           }
         ]
       },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 211,
+          "column": 4,
+          "index": 5751
+        },
+        "end": {
+          "line": 230,
+          "column": 5,
+          "index": 6425
+        }
+      },
       "type": "function",
-      "access": "protected"
+      "params": [
+        {
+          "name": "domEvent",
+          "type": "Event"
+        }
+      ],
+      "appearsIn": []
     },
     "_onTouchEvent": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Handler for touch events",
+          "     * @param domEvent {Event} Native DOM event",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Handler for touch events</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "domEvent {Event} Native DOM event",
+            "paramName": "domEvent",
+            "description": " Native DOM event",
+            "type": "Event"
+          }
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 236,
@@ -489,7 +568,23 @@
           "index": 10099
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "domEvent",
+          "type": "Event"
+        }
+      ],
+      "appearsIn": []
+    },
+    "_onMouseEvent": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Handler for touch events",
+          "     * @param domEvent {Event} Native DOM event",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -506,10 +601,7 @@
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_onMouseEvent": {
+      "access": "protected",
       "location": {
         "start": {
           "line": 350,
@@ -522,40 +614,24 @@
           "index": 12387
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Handler for touch events</p>"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "domEvent {Event} Native DOM event",
-            "paramName": "domEvent",
-            "description": " Native DOM event",
-            "type": "Event"
-          }
-        ]
-      },
       "type": "function",
-      "access": "protected"
+      "params": [
+        {
+          "name": "domEvent",
+          "type": "Event"
+        }
+      ],
+      "appearsIn": []
     },
     "_determineActiveTouches": {
-      "location": {
-        "start": {
-          "line": 427,
-          "column": 4,
-          "index": 12570
-        },
-        "end": {
-          "line": 452,
-          "column": 5,
-          "index": 13392
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Determines the current active touches.",
+          "     * @param type {String} the DOM event type.",
+          "     * @param changedTouches {Array} the current changed touches.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -568,34 +644,54 @@
             "body": "type {String} the DOM event type.",
             "paramName": "type",
             "description": " the DOM event type.",
-            "type": "String"
+            "type": "string"
           },
           {
             "name": "@param",
             "body": "changedTouches {Array} the current changed touches.",
             "paramName": "changedTouches",
             "description": " the current changed touches.",
-            "type": "Array"
+            "type": "Array<any>"
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_isSimulatedMouseEvent": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 461,
+          "line": 427,
           "column": 4,
-          "index": 13789
+          "index": 12570
         },
         "end": {
-          "line": 475,
+          "line": 452,
           "column": 5,
-          "index": 14390
+          "index": 13392
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "type",
+          "type": "string"
+        },
+        {
+          "name": "changedTouches",
+          "type": "Array<any>"
+        }
+      ],
+      "appearsIn": []
+    },
+    "_isSimulatedMouseEvent": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Detects whether the given MouseEvent position is identical to the previously fired TouchEvent position.",
+          "     * If <code>true</code> the corresponding event can be identified as simulated.",
+          "     * @param x {Integer} current mouse x",
+          "     * @param y {Integer} current mouse y",
+          "     * @return {Boolean} <code>true</code> if passed mouse position is a synthetic MouseEvent.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -622,15 +718,55 @@
           {
             "name": "@return",
             "body": "{Boolean} <code>true</code> if passed mouse position is a synthetic MouseEvent.",
-            "type": "Boolean",
-            "description": " <code>true</code> if passed mouse position is a synthetic MouseEvent."
+            "type": "boolean",
+            "description": "<code>true</code> if passed mouse position is a synthetic MouseEvent."
           }
         ]
       },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 461,
+          "column": 4,
+          "index": 13789
+        },
+        "end": {
+          "line": 475,
+          "column": 5,
+          "index": 14390
+        }
+      },
       "type": "function",
-      "access": "protected"
+      "params": [
+        {
+          "name": "x",
+          "type": "Integer"
+        },
+        {
+          "name": "y",
+          "type": "Integer"
+        }
+      ],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
     },
     "_stopObserver": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Removes native pointer event listeners.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Removes native pointer event listeners.</p>"
+          }
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 480,
@@ -643,31 +779,22 @@
           "index": 14701
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Removes native pointer event listeners.</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "protected"
+      "params": [],
+      "appearsIn": []
     },
     "_fireEvent": {
-      "location": {
-        "start": {
-          "line": 498,
-          "column": 4,
-          "index": 15006
-        },
-        "end": {
-          "line": 561,
-          "column": 5,
-          "index": 17089
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fire a touch event with the given parameters",
+          "     *",
+          "     * @param domEvent {Event} DOM event",
+          "     * @param type {String ? null} type of the event",
+          "     * @param target {Element ? null} event target",
+          "     * @return {qx.Promise?} a promise, if one was returned by event handlers",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -706,14 +833,62 @@
             "name": "@return",
             "body": "{qx.Promise?} a promise, if one was returned by event handlers",
             "type": "qx.Promise?",
-            "description": " a promise, if one was returned by event handlers"
+            "description": "a promise, if one was returned by event handlers"
           }
         ]
       },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 498,
+          "column": 4,
+          "index": 15006
+        },
+        "end": {
+          "line": 561,
+          "column": 5,
+          "index": 17089
+        }
+      },
       "type": "function",
-      "access": "protected"
+      "params": [
+        {
+          "name": "domEvent",
+          "type": "Event"
+        },
+        {
+          "name": "type",
+          "type": "String",
+          "optional": true,
+          "defaultValue": "null"
+        },
+        {
+          "name": "target",
+          "type": "Element",
+          "optional": true,
+          "defaultValue": "null"
+        }
+      ],
+      "returnType": {
+        "type": "qx.Promise?"
+      },
+      "appearsIn": []
     },
     "dispose": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Dispose this object",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Dispose this object</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 566,
@@ -726,23 +901,12 @@
           "index": 17236
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Dispose this object</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "public",
-      "overriddenFrom": "qx.core.IDisposable",
+      "params": [],
       "appearsIn": [
         "qx.core.IDisposable"
       ]
     }
   },
-  "descendants": [
-    "qx.event.handler.Pointer"
-  ]
+  "properties": {}
 }

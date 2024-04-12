@@ -1,38 +1,50 @@
 {
-  "className": "qx.ui.table.model.Remote",
-  "packageName": "qx.ui.table.model",
-  "name": "Remote",
-  "superClass": "qx.ui.table.model.Abstract",
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 31,
-        "column": 0,
-        "index": 973
-      },
-      "end": {
-        "line": 808,
-        "column": 3,
-        "index": 24883
-      }
+  "version": 0.3,
+  "lastModified": 1712910031073,
+  "lastModifiedIso": "2024-04-12T08:20:31.073Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/ui/table/model/Remote.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 31,
+      "column": 0,
+      "index": 973
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>A table model that loads its data from a backend.\n <p>\n Only a subset of the available rows, those which are within or near the\n currently visible area, are loaded. If a quick scroll operation occurs,\n rows will soon be displayed using asynchronous loading in the background.\n All loaded data is managed through a cache which automatically removes\n the oldest used rows when it gets full.\n <p>\n This class is abstract: The actual loading of row data must be done by\n subclasses.</p>"
-        }
-      ]
+    "end": {
+      "line": 808,
+      "column": 3,
+      "index": 24883
     }
   },
-  "type": "class",
-  "isAbstract": true,
-  "isStatic": false,
+  "className": "qx.ui.table.model.Remote",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * A table model that loads its data from a backend.",
+      " * <p>",
+      " * Only a subset of the available rows, those which are within or near the",
+      " * currently visible area, are loaded. If a quick scroll operation occurs,",
+      " * rows will soon be displayed using asynchronous loading in the background.",
+      " * All loaded data is managed through a cache which automatically removes",
+      " * the oldest used rows when it gets full.",
+      " * <p>",
+      " * This class is abstract: The actual loading of row data must be done by",
+      " * subclasses.",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>A table model that loads its data from a backend.\n <p>\n Only a subset of the available rows, those which are within or near the\n currently visible area, are loaded. If a quick scroll operation occurs,\n rows will soon be displayed using asynchronous loading in the background.\n All loaded data is managed through a cache which automatically removes\n the oldest used rows when it gets full.\n <p>\n This class is abstract: The actual loading of row data must be done by\n subclasses.</p>"
+      }
+    ]
+  },
   "isSingleton": false,
+  "abstract": true,
+  "superClass": "qx.ui.table.model.Abstract",
   "construct": {
+    "type": "function",
+    "params": [],
     "location": {
       "start": {
         "line": 41,
@@ -44,8 +56,7 @@
         "column": 3,
         "index": 2138
       }
-    },
-    "jsdoc": {}
+    }
   },
   "properties": {
     "blockSize": {
@@ -61,7 +72,14 @@
           "index": 2471
         }
       },
+      "json": {
+        "check": "Integer",
+        "init": 50
+      },
       "jsdoc": {
+        "raw": [
+          "* The number of rows that are stored in one cache block. "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -69,11 +87,7 @@
           }
         ]
       },
-      "name": "blockSize",
-      "propertyType": "new",
-      "init": 50,
-      "check": "Integer",
-      "defaultValue": 50
+      "appearsIn": []
     },
     "maxCachedBlockCount": {
       "location": {
@@ -88,7 +102,14 @@
           "index": 2608
         }
       },
+      "json": {
+        "check": "Integer",
+        "init": 15
+      },
       "jsdoc": {
+        "raw": [
+          "* The maximum number of row blocks kept in the cache. "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -96,11 +117,7 @@
           }
         ]
       },
-      "name": "maxCachedBlockCount",
-      "propertyType": "new",
-      "init": 15,
-      "check": "Integer",
-      "defaultValue": 15
+      "appearsIn": []
     },
     "clearCacheOnRemove": {
       "location": {
@@ -115,7 +132,17 @@
           "index": 2820
         }
       },
+      "json": {
+        "check": "Boolean",
+        "init": false
+      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether to clear the cache when some rows are removed.",
+          "     * If true the rows are removed locally in the cache.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -123,11 +150,7 @@
           }
         ]
       },
-      "name": "clearCacheOnRemove",
-      "propertyType": "new",
-      "init": false,
-      "check": "Boolean",
-      "defaultValue": false
+      "appearsIn": []
     },
     "blockConcurrentLoadRowCount": {
       "location": {
@@ -142,7 +165,27 @@
           "index": 3832
         }
       },
+      "json": {
+        "check": "Boolean",
+        "init": true
+      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether to block remote requests for the row count while a request for",
+          "     * the row count is pending. Row counts are requested at various times and",
+          "     * from various parts of the code, resulting in numerous requests to the",
+          "     * user-provided _loadRowCount() method, often while other requests are",
+          "     * already pending. The default behavior now ignores requests to load a",
+          "     * new row count if such a request is already pending. It is therefore now",
+          "     * conceivable that the row count changes between an initial request for",
+          "     * the row count and a later (ignored) request. Since the chance of this",
+          "     * is low, the desirability of reducing the server requests outweighs the",
+          "     * slight possibility of an altered count (which will, by the way, be",
+          "     * detected soon thereafter upon the next request for the row count). If",
+          "     * the old behavior is desired, set this property to false.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -150,47 +193,13 @@
           }
         ]
       },
-      "name": "blockConcurrentLoadRowCount",
-      "propertyType": "new",
-      "init": true,
-      "check": "Boolean",
-      "defaultValue": true
-    },
-    "qxOwner": {
-      "type": "property",
-      "name": "qxOwner",
-      "abstract": false,
-      "mixin": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.MObjectId",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>The owning object</p>"
-          }
-        ]
-      }
-    },
-    "qxObjectId": {
-      "type": "property",
-      "name": "qxObjectId",
-      "abstract": false,
-      "mixin": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.MObjectId",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>{String} The ID of the object.</p>"
-          }
-        ]
-      }
+      "appearsIn": []
     }
   },
   "members": {
     "_rowCount": {
+      "jsdoc": null,
+      "access": "protected",
       "location": {
         "start": {
           "line": 127,
@@ -203,10 +212,11 @@
           "index": 4055
         }
       },
-      "type": "variable",
-      "access": "protected"
+      "appearsIn": []
     },
     "_ignoreCurrentRequest": {
+      "jsdoc": null,
+      "access": "protected",
       "location": {
         "start": {
           "line": 128,
@@ -219,10 +229,11 @@
           "index": 4088
         }
       },
-      "type": "variable",
-      "access": "protected"
+      "appearsIn": []
     },
     "_lruCounter": {
+      "jsdoc": null,
+      "access": "protected",
       "location": {
         "start": {
           "line": 130,
@@ -235,10 +246,11 @@
           "index": 4112
         }
       },
-      "type": "variable",
-      "access": "protected"
+      "appearsIn": []
     },
     "_firstLoadingBlock": {
+      "jsdoc": null,
+      "access": "protected",
       "location": {
         "start": {
           "line": 131,
@@ -251,10 +263,11 @@
           "index": 4142
         }
       },
-      "type": "variable",
-      "access": "protected"
+      "appearsIn": []
     },
     "_firstRowToLoad": {
+      "jsdoc": null,
+      "access": "protected",
       "location": {
         "start": {
           "line": 132,
@@ -267,10 +280,11 @@
           "index": 4169
         }
       },
-      "type": "variable",
-      "access": "protected"
+      "appearsIn": []
     },
     "_lastRowToLoad": {
+      "jsdoc": null,
+      "access": "protected",
       "location": {
         "start": {
           "line": 133,
@@ -283,10 +297,11 @@
           "index": 4195
         }
       },
-      "type": "variable",
-      "access": "protected"
+      "appearsIn": []
     },
     "_rowBlockCache": {
+      "jsdoc": null,
+      "access": "protected",
       "location": {
         "start": {
           "line": 134,
@@ -299,10 +314,11 @@
           "index": 4221
         }
       },
-      "type": "variable",
-      "access": "protected"
+      "appearsIn": []
     },
     "_rowBlockCount": {
+      "jsdoc": null,
+      "access": "protected",
       "location": {
         "start": {
           "line": 135,
@@ -315,10 +331,11 @@
           "index": 4247
         }
       },
-      "type": "variable",
-      "access": "protected"
+      "appearsIn": []
     },
     "_sortColumnIndex": {
+      "jsdoc": null,
+      "access": "protected",
       "location": {
         "start": {
           "line": 137,
@@ -331,10 +348,11 @@
           "index": 4276
         }
       },
-      "type": "variable",
-      "access": "protected"
+      "appearsIn": []
     },
     "_sortAscending": {
+      "jsdoc": null,
+      "access": "protected",
       "location": {
         "start": {
           "line": 138,
@@ -347,10 +365,11 @@
           "index": 4302
         }
       },
-      "type": "variable",
-      "access": "protected"
+      "appearsIn": []
     },
     "_editableColArr": {
+      "jsdoc": null,
+      "access": "protected",
       "location": {
         "start": {
           "line": 140,
@@ -363,10 +382,11 @@
           "index": 4330
         }
       },
-      "type": "variable",
-      "access": "protected"
+      "appearsIn": []
     },
     "_sortableColArr": {
+      "jsdoc": null,
+      "access": "protected",
       "location": {
         "start": {
           "line": 141,
@@ -379,10 +399,11 @@
           "index": 4357
         }
       },
-      "type": "variable",
-      "access": "protected"
+      "appearsIn": []
     },
     "_loadRowCountRequestRunning": {
+      "jsdoc": null,
+      "access": "protected",
       "location": {
         "start": {
           "line": 143,
@@ -395,10 +416,11 @@
           "index": 4398
         }
       },
-      "type": "variable",
-      "access": "protected"
+      "appearsIn": []
     },
     "_clearCache": {
+      "jsdoc": null,
+      "access": "protected",
       "location": {
         "start": {
           "line": 145,
@@ -411,10 +433,33 @@
           "index": 4423
         }
       },
-      "type": "variable",
-      "access": "protected"
+      "appearsIn": []
     },
     "_getIgnoreCurrentRequest": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns whether the current request is ignored by the model.",
+          "     *",
+          "     * @return {Boolean} true when the current request is ignored by the model.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns whether the current request is ignored by the model.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} true when the current request is ignored by the model.",
+            "type": "boolean",
+            "description": "true when the current request is ignored by the model."
+          }
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 152,
@@ -427,26 +472,20 @@
           "index": 4676
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns whether the current request is ignored by the model.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Boolean} true when the current request is ignored by the model.",
-            "type": "Boolean",
-            "description": " true when the current request is ignored by the model."
-          }
-        ]
-      },
       "type": "function",
-      "access": "protected"
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
     },
     "getRowCount": {
+      "jsdoc": {
+        "raw": [
+          " overridden"
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 157,
@@ -459,9 +498,8 @@
           "index": 5137
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "public",
+      "params": [],
       "overriddenFrom": "qx.ui.table.model.Abstract",
       "appearsIn": [
         "qx.ui.table.model.Abstract",
@@ -469,19 +507,17 @@
       ]
     },
     "_loadRowCount": {
-      "location": {
-        "start": {
-          "line": 182,
-          "column": 4,
-          "index": 5414
-        },
-        "end": {
-          "line": 184,
-          "column": 5,
-          "index": 5489
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Implementing classes have to call {@link #_onRowCountLoaded} when the",
+          "     * server response arrived. That method has to be called! Even when there",
+          "     * was an error.",
+          "     *",
+          "     * @abstract",
+          "     * @throws {Error} the abstract function warning.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -503,23 +539,34 @@
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_onRowCountLoaded": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 193,
+          "line": 182,
           "column": 4,
-          "index": 5690
+          "index": 5414
         },
         "end": {
-          "line": 215,
+          "line": 184,
           "column": 5,
-          "index": 6294
+          "index": 5489
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "_onRowCountLoaded": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Sets the row count.",
+          "     *",
+          "     * Has to be called by {@link #_loadRowCount}.",
+          "     *",
+          "     * @param rowCount {Integer} the number of rows in this model or null if loading.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -536,10 +583,44 @@
           }
         ]
       },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 193,
+          "column": 4,
+          "index": 5690
+        },
+        "end": {
+          "line": 215,
+          "column": 5,
+          "index": 6294
+        }
+      },
       "type": "function",
-      "access": "protected"
+      "params": [
+        {
+          "name": "rowCount",
+          "type": "Integer"
+        }
+      ],
+      "appearsIn": []
     },
     "reloadData": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Reloads the model and clears the local cache.",
+          "     *",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Reloads the model and clears the local cache.</p>"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 221,
@@ -552,18 +633,26 @@
           "index": 7430
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "clearCache": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Clears the cache.",
+          "     *",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Reloads the model and clears the local cache.</p>"
+            "body": "<p>Clears the cache.</p>"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "clearCache": {
+      "access": "public",
       "location": {
         "start": {
           "line": 255,
@@ -576,18 +665,39 @@
           "index": 7568
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "getCacheContent": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the current state of the cache.",
+          "     * <p>",
+          "     * Do not change anything in the returned data. This breaks the model state.",
+          "     * Use this method only together with {@link #restoreCacheContent} for backing",
+          "     * up state for a later restore.",
+          "     *",
+          "     * @return {Map} the current cache state.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Clears the cache.</p>"
+            "body": "<p>Returns the current state of the cache.\n <p>\n Do not change anything in the returned data. This breaks the model state.\n Use this method only together with {@link #restoreCacheContent} for backing\n up state for a later restore.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Map} the current cache state.",
+            "type": "Map<any, any>",
+            "description": "the current cache state."
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getCacheContent": {
+      "access": "public",
       "location": {
         "start": {
           "line": 269,
@@ -600,39 +710,22 @@
           "index": 8203
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the current state of the cache.\n <p>\n Do not change anything in the returned data. This breaks the model state.\n Use this method only together with {@link #restoreCacheContent} for backing\n up state for a later restore.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Map} the current cache state.",
-            "type": "Map",
-            "description": " the current cache state."
-          }
-        ]
-      },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "returnType": {
+        "type": "Map<any, any>"
+      },
+      "appearsIn": []
     },
     "restoreCacheContent": {
-      "location": {
-        "start": {
-          "line": 285,
-          "column": 4,
-          "index": 8353
-        },
-        "end": {
-          "line": 319,
-          "column": 5,
-          "index": 9589
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Restores a cache state created by {@link #getCacheContent}.",
+          "     *",
+          "     * @param cacheContent {Map} An old cache state.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -645,14 +738,60 @@
             "body": "cacheContent {Map} An old cache state.",
             "paramName": "cacheContent",
             "description": " An old cache state.",
-            "type": "Map"
+            "type": "Map<any, any>"
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 285,
+          "column": 4,
+          "index": 8353
+        },
+        "end": {
+          "line": 319,
+          "column": 5,
+          "index": 9589
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "cacheContent",
+          "type": "Map<any, any>"
+        }
+      ],
+      "appearsIn": []
     },
     "_cancelCurrentRequest": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Cancels the current request if possible.",
+          "     *",
+          "     * Should be overridden by subclasses if they are able to cancel requests. This",
+          "     * allows sending a new request directly after a call of {@link #reloadData}.",
+          "     *",
+          "     * @return {Boolean} whether the request was canceled.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Cancels the current request if possible.\n Should be overridden by subclasses if they are able to cancel requests. This\n allows sending a new request directly after a call of {@link #reloadData}.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} whether the request was canceled.",
+            "type": "boolean",
+            "description": "whether the request was canceled."
+          }
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 329,
@@ -665,39 +804,30 @@
           "index": 9950
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Cancels the current request if possible.\n Should be overridden by subclasses if they are able to cancel requests. This\n allows sending a new request directly after a call of {@link #reloadData}.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Boolean} whether the request was canceled.",
-            "type": "Boolean",
-            "description": " whether the request was canceled."
-          }
-        ]
-      },
       "type": "function",
-      "access": "protected"
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
     },
     "iterateCachedRows": {
-      "location": {
-        "start": {
-          "line": 346,
-          "column": 4,
-          "index": 10515
-        },
-        "end": {
-          "line": 369,
-          "column": 5,
-          "index": 11347
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Iterates through all cached rows.",
+          "     *",
+          "     * The iterator will be called for each cached row with two parameters: The row",
+          "     * index of the current row (Integer) and the row data of that row (var[]). If",
+          "     * the iterator returns something this will be used as new row data.",
+          "     *",
+          "     * The iterator is called in the same order as the rows are in the model",
+          "     * (the row index is always ascending).",
+          "     *",
+          "     * @param iterator {Function} The iterator function to call.",
+          "     * @param object {Object} context of the iterator",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -710,21 +840,50 @@
             "body": "iterator {Function} The iterator function to call.",
             "paramName": "iterator",
             "description": " The iterator function to call.",
-            "type": "Function"
+            "type": "((...args: any[]) => any)"
           },
           {
             "name": "@param",
             "body": "object {Object} context of the iterator",
             "paramName": "object",
             "description": " context of the iterator",
-            "type": "Object"
+            "type": "Record<any, any>"
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 346,
+          "column": 4,
+          "index": 10515
+        },
+        "end": {
+          "line": 369,
+          "column": 5,
+          "index": 11347
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "iterator",
+          "type": "((...args: any[]) => any)"
+        },
+        {
+          "name": "object",
+          "type": "Record<any, any>"
+        }
+      ],
+      "appearsIn": []
     },
     "prefetchRows": {
+      "jsdoc": {
+        "raw": [
+          " overridden"
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 372,
@@ -737,9 +896,15 @@
           "index": 13497
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "public",
+      "params": [
+        {
+          "name": "firstRowIndex"
+        },
+        {
+          "name": "lastRowIndex"
+        }
+      ],
       "overriddenFrom": "qx.ui.table.model.Abstract",
       "appearsIn": [
         "qx.ui.table.model.Abstract",
@@ -747,19 +912,20 @@
       ]
     },
     "_loadRowData": {
-      "location": {
-        "start": {
-          "line": 444,
-          "column": 4,
-          "index": 13953
-        },
-        "end": {
-          "line": 446,
-          "column": 5,
-          "index": 14043
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Loads some row data from the server.",
+          "     *",
+          "     * Implementing classes have to call {@link #_onRowDataLoaded} when the server",
+          "     * response arrived. That method has to be called! Even when there was an error.",
+          "     *",
+          "     * @abstract",
+          "     * @param firstRow {Integer} The index of the first row to load.",
+          "     * @param lastRow {Integer} The index of the last row to load.",
+          "     * @throws {Error} the abstract function warning.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -797,23 +963,43 @@
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_onRowDataLoaded": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 455,
+          "line": 444,
           "column": 4,
-          "index": 14236
+          "index": 13953
         },
         "end": {
-          "line": 504,
+          "line": 446,
           "column": 5,
-          "index": 16134
+          "index": 14043
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "firstRow",
+          "type": "Integer"
+        },
+        {
+          "name": "lastRow",
+          "type": "Integer"
+        }
+      ],
+      "appearsIn": []
+    },
+    "_onRowDataLoaded": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Sets row data.",
+          "     *",
+          "     * Has to be called by {@link #_loadRowData}.",
+          "     *",
+          "     * @param rowDataArr {Map[]} the loaded row data or null if there was an error.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -830,23 +1016,38 @@
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_setRowBlockData": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 512,
+          "line": 455,
           "column": 4,
-          "index": 16305
+          "index": 14236
         },
         "end": {
-          "line": 543,
+          "line": 504,
           "column": 5,
-          "index": 17348
+          "index": 16134
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "rowDataArr",
+          "type": "Map[]"
+        }
+      ],
+      "appearsIn": []
+    },
+    "_setRowBlockData": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Sets the data of one block.",
+          "     *",
+          "     * @param block {Integer} the index of the block.",
+          "     * @param rowDataArr {var[][]} the data to set.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -870,23 +1071,41 @@
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "removeRow": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 550,
+          "line": 512,
           "column": 4,
-          "index": 17480
+          "index": 16305
         },
         "end": {
-          "line": 622,
+          "line": 543,
           "column": 5,
-          "index": 19835
+          "index": 17348
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "block",
+          "type": "Integer"
+        },
+        {
+          "name": "rowDataArr",
+          "type": "var[][]"
+        }
+      ],
+      "appearsIn": []
+    },
+    "removeRow": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Removes a row from the model.",
+          "     *",
+          "     * @param rowIndex {Integer} the index of the row to remove.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -903,23 +1122,39 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getRowData": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 631,
+          "line": 550,
           "column": 4,
-          "index": 20039
+          "index": 17480
         },
         "end": {
-          "line": 649,
+          "line": 622,
           "column": 5,
-          "index": 20586
+          "index": 19835
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "rowIndex",
+          "type": "Integer"
+        }
+      ],
+      "appearsIn": []
+    },
+    "getRowData": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     *",
+          "     * See overridden method for details.",
+          "     *",
+          "     * @param rowIndex {Integer} the model index of the row.",
+          "     * @return {Object} Map containing a value for each column.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -939,13 +1174,34 @@
           {
             "name": "@return",
             "body": "{Object} Map containing a value for each column.",
-            "type": "Object",
-            "description": " Map containing a value for each column."
+            "type": "Record<any, any>",
+            "description": "Map containing a value for each column."
           }
         ]
       },
-      "type": "function",
       "access": "public",
+      "location": {
+        "start": {
+          "line": 631,
+          "column": 4,
+          "index": 20039
+        },
+        "end": {
+          "line": 649,
+          "column": 5,
+          "index": 20586
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "rowIndex",
+          "type": "Integer"
+        }
+      ],
+      "returnType": {
+        "type": "Record<any, any>"
+      },
       "overriddenFrom": "qx.ui.table.model.Abstract",
       "appearsIn": [
         "qx.ui.table.model.Abstract",
@@ -953,6 +1209,12 @@
       ]
     },
     "getValue": {
+      "jsdoc": {
+        "raw": [
+          " overridden"
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 652,
@@ -965,9 +1227,15 @@
           "index": 20859
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "public",
+      "params": [
+        {
+          "name": "columnIndex"
+        },
+        {
+          "name": "rowIndex"
+        }
+      ],
       "overriddenFrom": "qx.ui.table.model.Abstract",
       "appearsIn": [
         "qx.ui.table.model.Abstract",
@@ -975,6 +1243,12 @@
       ]
     },
     "setValue": {
+      "jsdoc": {
+        "raw": [
+          " overridden"
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 664,
@@ -987,9 +1261,18 @@
           "index": 21507
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "public",
+      "params": [
+        {
+          "name": "columnIndex"
+        },
+        {
+          "name": "rowIndex"
+        },
+        {
+          "name": "value"
+        }
+      ],
       "overriddenFrom": "qx.ui.table.model.Abstract",
       "appearsIn": [
         "qx.ui.table.model.Abstract",
@@ -997,19 +1280,14 @@
       ]
     },
     "setEditable": {
-      "location": {
-        "start": {
-          "line": 693,
-          "column": 4,
-          "index": 21654
-        },
-        "end": {
-          "line": 701,
-          "column": 5,
-          "index": 21875
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Sets all columns editable or not editable.",
+          "     *",
+          "     * @param editable {Boolean} whether all columns are editable.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1022,27 +1300,42 @@
             "body": "editable {Boolean} whether all columns are editable.",
             "paramName": "editable",
             "description": " whether all columns are editable.",
-            "type": "Boolean"
+            "type": "boolean"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "setColumnEditable": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 709,
+          "line": 693,
           "column": 4,
-          "index": 22102
+          "index": 21654
         },
         "end": {
-          "line": 719,
+          "line": 701,
           "column": 5,
-          "index": 22408
+          "index": 21875
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "editable",
+          "type": "boolean"
+        }
+      ],
+      "appearsIn": []
+    },
+    "setColumnEditable": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Sets whether a column is editable.",
+          "     *",
+          "     * @param columnIndex {Integer} the column of which to set the editable state.",
+          "     * @param editable {Boolean} whether the column should be editable.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1062,14 +1355,43 @@
             "body": "editable {Boolean} whether the column should be editable.",
             "paramName": "editable",
             "description": " whether the column should be editable.",
-            "type": "Boolean"
+            "type": "boolean"
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 709,
+          "column": 4,
+          "index": 22102
+        },
+        "end": {
+          "line": 719,
+          "column": 5,
+          "index": 22408
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "columnIndex",
+          "type": "Integer"
+        },
+        {
+          "name": "editable",
+          "type": "boolean"
+        }
+      ],
+      "appearsIn": []
     },
     "isColumnEditable": {
+      "jsdoc": {
+        "raw": [
+          " overridden"
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 722,
@@ -1082,9 +1404,12 @@
           "index": 22573
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "public",
+      "params": [
+        {
+          "name": "columnIndex"
+        }
+      ],
       "overriddenFrom": "qx.ui.table.model.Abstract",
       "appearsIn": [
         "qx.ui.table.model.Abstract",
@@ -1092,19 +1417,15 @@
       ]
     },
     "setColumnSortable": {
-      "location": {
-        "start": {
-          "line": 734,
-          "column": 4,
-          "index": 22800
-        },
-        "end": {
-          "line": 744,
-          "column": 5,
-          "index": 23106
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Sets whether a column is sortable.",
+          "     *",
+          "     * @param columnIndex {Integer} the column of which to set the sortable state.",
+          "     * @param sortable {Boolean} whether the column should be sortable.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1124,14 +1445,43 @@
             "body": "sortable {Boolean} whether the column should be sortable.",
             "paramName": "sortable",
             "description": " whether the column should be sortable.",
-            "type": "Boolean"
+            "type": "boolean"
           }
         ]
       },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 734,
+          "column": 4,
+          "index": 22800
+        },
+        "end": {
+          "line": 744,
+          "column": 5,
+          "index": 23106
+        }
+      },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "columnIndex",
+          "type": "Integer"
+        },
+        {
+          "name": "sortable",
+          "type": "boolean"
+        }
+      ],
+      "appearsIn": []
     },
     "isColumnSortable": {
+      "jsdoc": {
+        "raw": [
+          " overridden"
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 747,
@@ -1144,9 +1494,12 @@
           "index": 23272
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "public",
+      "params": [
+        {
+          "name": "columnIndex"
+        }
+      ],
       "overriddenFrom": "qx.ui.table.model.Abstract",
       "appearsIn": [
         "qx.ui.table.model.Abstract",
@@ -1154,6 +1507,12 @@
       ]
     },
     "sortByColumn": {
+      "jsdoc": {
+        "raw": [
+          " overridden"
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 754,
@@ -1166,9 +1525,15 @@
           "index": 23649
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "public",
+      "params": [
+        {
+          "name": "columnIndex"
+        },
+        {
+          "name": "ascending"
+        }
+      ],
       "overriddenFrom": "qx.ui.table.model.Abstract",
       "appearsIn": [
         "qx.ui.table.model.Abstract",
@@ -1176,6 +1541,12 @@
       ]
     },
     "getSortColumnIndex": {
+      "jsdoc": {
+        "raw": [
+          " overridden"
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 770,
@@ -1188,9 +1559,8 @@
           "index": 23738
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "public",
+      "params": [],
       "overriddenFrom": "qx.ui.table.model.Abstract",
       "appearsIn": [
         "qx.ui.table.model.Abstract",
@@ -1198,6 +1568,12 @@
       ]
     },
     "isSortAscending": {
+      "jsdoc": {
+        "raw": [
+          " overridden"
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 775,
@@ -1210,9 +1586,8 @@
           "index": 23822
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "public",
+      "params": [],
       "overriddenFrom": "qx.ui.table.model.Abstract",
       "appearsIn": [
         "qx.ui.table.model.Abstract",
@@ -1220,19 +1595,17 @@
       ]
     },
     "setSortColumnIndexWithoutSortingData": {
-      "location": {
-        "start": {
-          "line": 787,
-          "column": 4,
-          "index": 24183
-        },
-        "end": {
-          "line": 789,
-          "column": 5,
-          "index": 24291
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Sets the sorted column without sorting the data.",
+          "     * Use this method, if you want to mark the column as the sorted column,",
+          "     * (e.g. for appearance reason), but the sorting of the data will be done",
+          "     * in another step.",
+          "     *",
+          "     * @param sortColumnIndex {Integer} the column, which shall be marked as the sorted column.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1249,23 +1622,41 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "setSortAscendingWithoutSortingData": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 800,
+          "line": 787,
           "column": 4,
-          "index": 24676
+          "index": 24183
         },
         "end": {
-          "line": 802,
+          "line": 789,
           "column": 5,
-          "index": 24776
+          "index": 24291
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "sortColumnIndex",
+          "type": "Integer"
+        }
+      ],
+      "appearsIn": []
+    },
+    "setSortAscendingWithoutSortingData": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Sets the direction of the sorting without sorting the data.",
+          "     * Use this method, if you want to set the direction of sorting, (e.g",
+          "     * for appearance reason), but the sorting of the data will be done in",
+          "     * another step.",
+          "     *",
+          "     * @param sortAscending {Boolean} whether the sorting direction is ascending",
+          "     *        (true) or not (false).",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -1278,465 +1669,36 @@
             "body": "sortAscending {Boolean} whether the sorting direction is ascending\n        (true) or not (false).",
             "paramName": "sortAscending",
             "description": " whether the sorting direction is ascending\n        (true) or not (false).",
-            "type": "Boolean"
+            "type": "boolean"
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getQxOwner": {
-      "type": "function",
-      "name": "getQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.ui.table.model.Abstract",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "qx.core.Object",
-            "desc": "Returns the value for qxOwner"
-          }
-        ]
-      }
-    },
-    "setQxOwner": {
+      "location": {
+        "start": {
+          "line": 800,
+          "column": 4,
+          "index": 24676
+        },
+        "end": {
+          "line": 802,
+          "column": 5,
+          "index": 24776
+        }
+      },
       "type": "function",
-      "name": "setQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.ui.table.model.Abstract",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.core.Object",
-            "paramName": "value",
-            "desc": "Value for qxOwner"
-          }
-        ]
-      }
-    },
-    "resetQxOwner": {
-      "type": "function",
-      "name": "resetQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.ui.table.model.Abstract",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxOwner</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ]
-      }
-    },
-    "getQxObjectId": {
-      "type": "function",
-      "name": "getQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.ui.table.model.Abstract",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "[[ ObjectMethod Function ]]",
-            "desc": "Returns the value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "setQxObjectId": {
-      "type": "function",
-      "name": "setQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.ui.table.model.Abstract",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "[[ ObjectMethod Function ]]",
-            "paramName": "value",
-            "desc": "Value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "resetQxObjectId": {
-      "type": "function",
-      "name": "resetQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.ui.table.model.Abstract",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxObjectId</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ]
-      }
-    },
-    "getBlockSize": {
-      "type": "function",
-      "name": "getBlockSize",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>blockSize</code>.\n\nFor further details take a look at the property definition: {@link #blockSize}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Integer",
-            "desc": "Returns the value for blockSize"
-          }
-        ]
-      }
-    },
-    "setBlockSize": {
-      "type": "function",
-      "name": "setBlockSize",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>blockSize</code>.\n\nFor further details take a look at the property definition: {@link #blockSize}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "Integer",
-            "paramName": "value",
-            "desc": "Value for blockSize"
-          }
-        ]
-      }
-    },
-    "resetBlockSize": {
-      "type": "function",
-      "name": "resetBlockSize",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>blockSize</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #blockSize}."
-          }
-        ]
-      }
-    },
-    "getMaxCachedBlockCount": {
-      "type": "function",
-      "name": "getMaxCachedBlockCount",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>maxCachedBlockCount</code>.\n\nFor further details take a look at the property definition: {@link #maxCachedBlockCount}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Integer",
-            "desc": "Returns the value for maxCachedBlockCount"
-          }
-        ]
-      }
-    },
-    "setMaxCachedBlockCount": {
-      "type": "function",
-      "name": "setMaxCachedBlockCount",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>maxCachedBlockCount</code>.\n\nFor further details take a look at the property definition: {@link #maxCachedBlockCount}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "Integer",
-            "paramName": "value",
-            "desc": "Value for maxCachedBlockCount"
-          }
-        ]
-      }
-    },
-    "resetMaxCachedBlockCount": {
-      "type": "function",
-      "name": "resetMaxCachedBlockCount",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>maxCachedBlockCount</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #maxCachedBlockCount}."
-          }
-        ]
-      }
-    },
-    "getClearCacheOnRemove": {
-      "type": "function",
-      "name": "getClearCacheOnRemove",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>clearCacheOnRemove</code>.\n\nFor further details take a look at the property definition: {@link #clearCacheOnRemove}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Boolean",
-            "desc": "Returns the value for clearCacheOnRemove"
-          }
-        ]
-      }
-    },
-    "isClearCacheOnRemove": {
-      "type": "function",
-      "name": "isClearCacheOnRemove",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "is",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>clearCacheOnRemove</code>.\n\nFor further details take a look at the property definition: {@link #clearCacheOnRemove}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Boolean",
-            "desc": "Returns the value for clearCacheOnRemove"
-          }
-        ]
-      }
-    },
-    "setClearCacheOnRemove": {
-      "type": "function",
-      "name": "setClearCacheOnRemove",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>clearCacheOnRemove</code>.\n\nFor further details take a look at the property definition: {@link #clearCacheOnRemove}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "Boolean",
-            "paramName": "value",
-            "desc": "Value for clearCacheOnRemove"
-          }
-        ]
-      }
-    },
-    "resetClearCacheOnRemove": {
-      "type": "function",
-      "name": "resetClearCacheOnRemove",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>clearCacheOnRemove</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #clearCacheOnRemove}."
-          }
-        ]
-      }
-    },
-    "getBlockConcurrentLoadRowCount": {
-      "type": "function",
-      "name": "getBlockConcurrentLoadRowCount",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>blockConcurrentLoadRowCount</code>.\n\nFor further details take a look at the property definition: {@link #blockConcurrentLoadRowCount}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Boolean",
-            "desc": "Returns the value for blockConcurrentLoadRowCount"
-          }
-        ]
-      }
-    },
-    "isBlockConcurrentLoadRowCount": {
-      "type": "function",
-      "name": "isBlockConcurrentLoadRowCount",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "is",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>blockConcurrentLoadRowCount</code>.\n\nFor further details take a look at the property definition: {@link #blockConcurrentLoadRowCount}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "Boolean",
-            "desc": "Returns the value for blockConcurrentLoadRowCount"
-          }
-        ]
-      }
-    },
-    "setBlockConcurrentLoadRowCount": {
-      "type": "function",
-      "name": "setBlockConcurrentLoadRowCount",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>blockConcurrentLoadRowCount</code>.\n\nFor further details take a look at the property definition: {@link #blockConcurrentLoadRowCount}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "Boolean",
-            "paramName": "value",
-            "desc": "Value for blockConcurrentLoadRowCount"
-          }
-        ]
-      }
-    },
-    "resetBlockConcurrentLoadRowCount": {
-      "type": "function",
-      "name": "resetBlockConcurrentLoadRowCount",
-      "abstract": false,
-      "mixin": false,
-      "inherited": false,
-      "access": "public",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>blockConcurrentLoadRowCount</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #blockConcurrentLoadRowCount}."
-          }
-        ]
-      }
+      "params": [
+        {
+          "name": "sortAscending",
+          "type": "boolean"
+        }
+      ],
+      "appearsIn": []
     }
   },
   "destruct": {
+    "type": "function",
+    "params": [],
     "location": {
       "start": {
         "line": 805,
@@ -1750,6 +1712,5 @@
       }
     }
   },
-  "events": {},
-  "descendants": []
+  "statics": {}
 }

@@ -1,36 +1,62 @@
 {
-  "className": "qx.ui.mobile.container.MScrollHandling",
-  "packageName": "qx.ui.mobile.container",
-  "name": "MScrollHandling",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 24,
-        "column": 0,
-        "index": 629
-      },
-      "end": {
-        "line": 49,
-        "column": 3,
-        "index": 1379
-      }
+  "version": 0.3,
+  "lastModified": 1712910030985,
+  "lastModifiedIso": "2024-04-12T08:20:30.985Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/ui/mobile/container/MScrollHandling.js",
+  "type": "mixin",
+  "location": {
+    "start": {
+      "line": 24,
+      "column": 0,
+      "index": 629
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>The mixin contains all functionality to provide methods\n for scroll container handling: determine the parent scroll container.</p>"
-        }
-      ]
+    "end": {
+      "line": 49,
+      "column": 3,
+      "index": 1379
     }
   },
-  "type": "mixin",
+  "className": "qx.ui.mobile.container.MScrollHandling",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * The mixin contains all functionality to provide methods",
+      " * for scroll container handling: determine the parent scroll container.",
+      " *",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>The mixin contains all functionality to provide methods\n for scroll container handling: determine the parent scroll container.</p>"
+      }
+    ]
+  },
   "members": {
     "_getParentScrollContainer": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the parent scroll container of this widget.",
+          "     * @return {qx.ui.mobile.container.Scroll} the parent scroll container or <code>null</code>",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns the parent scroll container of this widget.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{qx.ui.mobile.container.Scroll} the parent scroll container or <code>null</code>",
+            "type": "qx.ui.mobile.container.Scroll",
+            "description": "the parent scroll container or <code>null</code>"
+          }
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 30,
@@ -43,25 +69,14 @@
           "index": 1371
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns the parent scroll container of this widget.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{qx.ui.mobile.container.Scroll} the parent scroll container or <code>null</code>",
-            "type": "qx.ui.mobile.container.Scroll",
-            "description": " the parent scroll container or <code>null</code>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "protected"
+      "params": [],
+      "returnType": {
+        "type": "qx.ui.mobile.container.Scroll"
+      },
+      "appearsIn": []
     }
   },
-  "descendants": []
+  "statics": {},
+  "properties": {}
 }

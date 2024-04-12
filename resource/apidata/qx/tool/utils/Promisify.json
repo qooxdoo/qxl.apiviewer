@@ -1,28 +1,27 @@
 {
-  "className": "qx.tool.utils.Promisify",
-  "packageName": "qx.tool.utils",
-  "name": "Promisify",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 27,
-        "column": 0,
-        "index": 829
-      },
-      "end": {
-        "line": 218,
-        "column": 3,
-        "index": 5371
-      }
+  "version": 0.3,
+  "lastModified": 1712910031057,
+  "lastModifiedIso": "2024-04-12T08:20:31.057Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/tool/utils/Promisify.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 27,
+      "column": 0,
+      "index": 829
+    },
+    "end": {
+      "line": 218,
+      "column": 3,
+      "index": 5371
     }
   },
-  "type": "class",
+  "className": "qx.tool.utils.Promisify",
+  "jsdoc": null,
   "statics": {
     "MAGIC_KEY": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 29,
@@ -35,10 +34,11 @@
           "index": 921
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "IGNORED_PROPS": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 30,
@@ -51,10 +51,11 @@
           "index": 1028
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "promisifyAll": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 33,
@@ -68,9 +69,19 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "target"
+        },
+        {
+          "name": "fn"
+        }
+      ],
+      "appearsIn": []
     },
     "isPromisified": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 62,
@@ -84,9 +95,16 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "fn"
+        }
+      ],
+      "appearsIn": []
     },
     "promisify": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 70,
@@ -100,9 +118,19 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "fn"
+        },
+        {
+          "name": "context"
+        }
+      ],
+      "appearsIn": []
     },
     "poolEachOf": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 78,
@@ -116,9 +144,22 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "arr"
+        },
+        {
+          "name": "size"
+        },
+        {
+          "name": "fn"
+        }
+      ],
+      "appearsIn": []
     },
     "map": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 90,
@@ -132,9 +173,19 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "arr"
+        },
+        {
+          "name": "fn"
+        }
+      ],
+      "appearsIn": []
     },
     "some": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 94,
@@ -148,9 +199,19 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "arr"
+        },
+        {
+          "name": "fn"
+        }
+      ],
+      "appearsIn": []
     },
     "someEach": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 113,
@@ -164,9 +225,19 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "arr"
+        },
+        {
+          "name": "fn"
+        }
+      ],
+      "appearsIn": []
     },
     "somePool": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 130,
@@ -180,9 +251,22 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "arr"
+        },
+        {
+          "name": "size"
+        },
+        {
+          "name": "fn"
+        }
+      ],
+      "appearsIn": []
     },
     "call": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 153,
@@ -196,9 +280,16 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "fn"
+        }
+      ],
+      "appearsIn": []
     },
     "callback": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 165,
@@ -212,9 +303,19 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "promise"
+        },
+        {
+          "name": "cb"
+        }
+      ],
+      "appearsIn": []
     },
     "fs": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 174,
@@ -227,10 +328,11 @@
           "index": 4330
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "each": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 176,
@@ -244,9 +346,19 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "coll"
+        },
+        {
+          "name": "fn"
+        }
+      ],
+      "appearsIn": []
     },
     "forEachOf": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 180,
@@ -260,9 +372,19 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "coll"
+        },
+        {
+          "name": "fn"
+        }
+      ],
+      "appearsIn": []
     },
     "eachOf": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 184,
@@ -276,9 +398,19 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "coll"
+        },
+        {
+          "name": "fn"
+        }
+      ],
+      "appearsIn": []
     },
     "eachSeries": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 189,
@@ -292,9 +424,19 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "coll"
+        },
+        {
+          "name": "fn"
+        }
+      ],
+      "appearsIn": []
     },
     "forEachOfSeries": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 193,
@@ -308,9 +450,19 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "coll"
+        },
+        {
+          "name": "fn"
+        }
+      ],
+      "appearsIn": []
     },
     "eachOfSeries": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
           "line": 197,
@@ -324,22 +476,17 @@
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [
+        {
+          "name": "coll"
+        },
+        {
+          "name": "fn"
+        }
+      ],
+      "appearsIn": []
     }
   },
-  "defer": {
-    "location": {
-      "start": {
-        "line": 213,
-        "column": 2,
-        "index": 5225
-      },
-      "end": {
-        "line": 217,
-        "column": 3,
-        "index": 5367
-      }
-    }
-  },
-  "descendants": []
+  "members": {},
+  "properties": {}
 }

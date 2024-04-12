@@ -1,59 +1,49 @@
 {
-  "className": "qx.theme.tangible.Font",
-  "packageName": "qx.theme.tangible",
-  "name": "Font",
-  "superClass": null,
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 30,
-        "column": 0,
-        "index": 714
-      },
-      "end": {
-        "line": 118,
-        "column": 3,
-        "index": 3254
-      }
+  "version": 0.3,
+  "lastModified": 1712910030709,
+  "lastModifiedIso": "2024-04-12T08:20:30.709Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/theme/tangible/Font.js",
+  "type": "theme",
+  "location": {
+    "start": {
+      "line": 27,
+      "column": 0,
+      "index": 585
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": ""
-        },
-        {
-          "name": "@description",
-          "body": "<p>The simple qooxdoo font theme.</p>"
-        }
-      ],
-      "@asset": [
-        {
-          "name": "@asset",
-          "body": "qx/font/Roboto/*.woff"
-        },
-        {
-          "name": "@asset",
-          "body": "qx/font/Roboto/*.woff2"
-        },
-        {
-          "name": "@asset",
-          "body": "qx/font/Roboto/*.eot"
-        },
-        {
-          "name": "@asset",
-          "body": "qx/font/Roboto/*.ttf"
-        },
-        {
-          "name": "@asset",
-          "body": "qx/iconfont/MaterialIcons/*"
-        }
-      ]
+    "end": {
+      "line": 65,
+      "column": 3,
+      "index": 1335
     }
   },
-  "type": "theme",
-  "descendants": []
+  "className": "qx.theme.tangible.Font",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * The simple qooxdoo font theme.",
+      " *",
+      " * @usefont(Roboto)",
+      " * @usefont(Roboto Mono)",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>The simple qooxdoo font theme.</p>"
+      }
+    ],
+    "@usefont": [
+      {
+        "name": "@usefont",
+        "body": "Roboto"
+      },
+      {
+        "name": "@usefont",
+        "body": "Roboto Mono"
+      }
+    ]
+  },
+  "members": {},
+  "statics": {},
+  "properties": {}
 }

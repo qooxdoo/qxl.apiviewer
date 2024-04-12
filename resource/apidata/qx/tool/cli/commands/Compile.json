@@ -1,83 +1,90 @@
 {
-  "className": "qx.tool.cli.commands.Compile",
-  "packageName": "qx.tool.cli.commands",
-  "name": "Compile",
-  "superClass": "qx.tool.cli.commands.Command",
-  "interfaces": [],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 31,
-        "column": 0,
-        "index": 819
-      },
-      "end": {
-        "line": 1627,
-        "column": 3,
-        "index": 52762
-      }
+  "version": 0.3,
+  "lastModified": 1712910030525,
+  "lastModifiedIso": "2024-04-12T08:20:30.525Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/tool/cli/commands/Compile.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 32,
+      "column": 0,
+      "index": 844
     },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Handles compilation of the project</p>"
-        }
-      ]
+    "end": {
+      "line": 1848,
+      "column": 3,
+      "index": 59949
     }
   },
-  "type": "class",
+  "className": "qx.tool.cli.commands.Compile",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Handles compilation of the project",
+      " * @ignore(setImmediate)",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Handles compilation of the project</p>"
+      }
+    ],
+    "@ignore": [
+      {
+        "name": "@ignore",
+        "body": "setImmediate"
+      }
+    ]
+  },
+  "superClass": "qx.tool.cli.commands.Command",
   "statics": {
     "YARGS_BUILDER": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
-          "line": 35,
+          "line": 36,
           "column": 4,
-          "index": 927
+          "index": 952
         },
         "end": {
-          "line": 228,
+          "line": 240,
           "column": 5,
-          "index": 5856
+          "index": 6149
         }
       },
-      "type": "variable",
-      "access": "public"
+      "appearsIn": []
     },
     "getYargsCommand": {
+      "jsdoc": null,
+      "access": "public",
       "location": {
         "start": {
-          "line": 230,
+          "line": 242,
           "column": 4,
-          "index": 5863
+          "index": 6156
         },
         "end": {
-          "line": 236,
+          "line": 248,
           "column": 5,
-          "index": 6074
+          "index": 6367
         }
       },
       "type": "function",
-      "access": "public"
+      "params": [],
+      "appearsIn": []
     }
   },
   "events": {
     "writingApplications": {
-      "location": {
-        "start": {
-          "line": 243,
-          "column": 4,
-          "index": 6158
-        },
-        "end": {
-          "line": 243,
-          "column": 46,
-          "index": 6200
-        }
-      },
+      "type": "qx.event.type.Event",
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fired when application writing starts",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -85,23 +92,30 @@
           }
         ]
       },
-      "name": "writingApplications",
-      "type": "qx.event.type.Event"
-    },
-    "writingApplication": {
       "location": {
         "start": {
-          "line": 251,
+          "line": 255,
           "column": 4,
-          "index": 6471
+          "index": 6451
         },
         "end": {
-          "line": 251,
-          "column": 44,
-          "index": 6511
+          "line": 255,
+          "column": 46,
+          "index": 6493
         }
-      },
+      }
+    },
+    "writingApplication": {
+      "type": "qx.event.type.Data",
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fired when writing of single application starts; data is an object containing:",
+          "     *   maker {qx.tool.compiler.makers.Maker}",
+          "     *   target {qx.tool.compiler.targets.Target}",
+          "     *   appMeta {qx.tool.compiler.targets.meta.ApplicationMeta}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -109,23 +123,32 @@
           }
         ]
       },
-      "name": "writingApplication",
-      "type": "qx.event.type.Data"
-    },
-    "writtenApplication": {
       "location": {
         "start": {
-          "line": 261,
+          "line": 263,
           "column": 4,
-          "index": 6880
+          "index": 6764
         },
         "end": {
-          "line": 261,
+          "line": 263,
           "column": 44,
-          "index": 6920
+          "index": 6804
         }
-      },
+      }
+    },
+    "writtenApplication": {
+      "type": "qx.event.type.Data",
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fired when writing of single application is complete; data is an object containing:",
+          "     *   maker {qx.tool.compiler.makers.Maker}",
+          "     *   target {qx.tool.compiler.targets.Target}",
+          "     *   appMeta {qx.tool.compiler.targets.meta.ApplicationMeta}",
+          "     *",
+          "     * Note that target.getAppMeta() will return null after this event has been fired",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -133,23 +156,33 @@
           }
         ]
       },
-      "name": "writtenApplication",
-      "type": "qx.event.type.Data"
-    },
-    "writtenApplications": {
       "location": {
         "start": {
           "line": 273,
           "column": 4,
-          "index": 7359
+          "index": 7173
         },
         "end": {
           "line": 273,
-          "column": 45,
-          "index": 7400
+          "column": 44,
+          "index": 7213
         }
-      },
+      }
+    },
+    "writtenApplications": {
+      "type": "qx.event.type.Data",
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fired after writing of all applications; data is an object containing an array,",
+          "     * each of which has previously been passed with `writeApplication`:",
+          "     *   maker {qx.tool.compiler.makers.Maker}",
+          "     *   target {qx.tool.compiler.targets.Target}",
+          "     *   appMeta {qx.tool.compiler.targets.meta.ApplicationMeta}",
+          "     *",
+          "     * Note that target.getAppMeta() will return null after this event has been fired",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -157,23 +190,62 @@
           }
         ]
       },
-      "name": "writtenApplications",
-      "type": "qx.event.type.Data"
-    },
-    "compilingClass": {
       "location": {
         "start": {
           "line": 284,
           "column": 4,
-          "index": 7751
+          "index": 7651
         },
         "end": {
           "line": 284,
-          "column": 40,
-          "index": 7787
+          "column": 45,
+          "index": 7692
         }
-      },
+      }
+    },
+    "writtenMetaData": {
+      "type": "qx.event.type.Data",
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fired after writing of all meta data; data is an object containing:",
+          "     *   maker {qx.tool.compiler.makers.Maker}",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Fired after writing of all meta data; data is an object containing:\n   maker {qx.tool.compiler.makers.Maker}</p>"
+          }
+        ]
+      },
+      "location": {
+        "start": {
+          "line": 290,
+          "column": 4,
+          "index": 7837
+        },
+        "end": {
+          "line": 290,
+          "column": 41,
+          "index": 7874
+        }
+      }
+    },
+    "compilingClass": {
+      "type": "qx.event.type.Data",
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fired when a class is about to be compiled.",
+          "     *",
+          "     * The event data is an object with the following properties:",
+          "     *",
+          "     * dbClassInfo: {Object} the newly populated class info",
+          "     * oldDbClassInfo: {Object} the previous populated class info",
+          "     * classFile - {ClassFile} the qx.tool.compiler.ClassFile instance",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -181,23 +253,32 @@
           }
         ]
       },
-      "name": "compilingClass",
-      "type": "qx.event.type.Data"
-    },
-    "compiledClass": {
       "location": {
         "start": {
-          "line": 294,
+          "line": 301,
           "column": 4,
-          "index": 8119
+          "index": 8225
         },
         "end": {
-          "line": 294,
-          "column": 39,
-          "index": 8154
+          "line": 301,
+          "column": 40,
+          "index": 8261
         }
-      },
+      }
+    },
+    "compiledClass": {
+      "type": "qx.event.type.Data",
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fired when a class is compiled.",
+          "     *",
+          "     * The event data is an object with the following properties:",
+          "     * dbClassInfo: {Object} the newly populated class info",
+          "     * oldDbClassInfo: {Object} the previous populated class info",
+          "     * classFile - {ClassFile} the qx.tool.compiler.ClassFile instance",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -205,23 +286,30 @@
           }
         ]
       },
-      "name": "compiledClass",
-      "type": "qx.event.type.Data"
-    },
-    "saveDatabase": {
       "location": {
         "start": {
-          "line": 302,
+          "line": 311,
           "column": 4,
-          "index": 8290
+          "index": 8593
         },
         "end": {
-          "line": 302,
-          "column": 38,
-          "index": 8324
+          "line": 311,
+          "column": 39,
+          "index": 8628
         }
-      },
+      }
+    },
+    "saveDatabase": {
+      "type": "qx.event.type.Data",
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fired when the database is been saved",
+          "     *",
+          "     *  data:",
+          "     * database: {Object} the database to save",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -229,23 +317,31 @@
           }
         ]
       },
-      "name": "saveDatabase",
-      "type": "qx.event.type.Data"
-    },
-    "checkEnvironment": {
       "location": {
         "start": {
-          "line": 311,
+          "line": 319,
           "column": 4,
-          "index": 8580
+          "index": 8764
         },
         "end": {
-          "line": 311,
-          "column": 42,
-          "index": 8618
+          "line": 319,
+          "column": 38,
+          "index": 8798
         }
-      },
+      }
+    },
+    "checkEnvironment": {
+      "type": "qx.event.type.Data",
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fired after all enviroment data is collected",
+          "     *",
+          "     * The event data is an object with the following properties:",
+          "     *  application {qx.tool.compiler.app.Application} the app",
+          "     *  enviroment: {Object} enviroment data",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -253,23 +349,27 @@
           }
         ]
       },
-      "name": "checkEnvironment",
-      "type": "qx.event.type.Data"
-    },
-    "making": {
       "location": {
         "start": {
-          "line": 316,
+          "line": 328,
           "column": 4,
-          "index": 8681
+          "index": 9054
         },
         "end": {
-          "line": 316,
-          "column": 33,
-          "index": 8710
+          "line": 328,
+          "column": 42,
+          "index": 9092
         }
-      },
+      }
+    },
+    "making": {
+      "type": "qx.event.type.Event",
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fired when making of apps begins",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -277,23 +377,27 @@
           }
         ]
       },
-      "name": "making",
-      "type": "qx.event.type.Event"
-    },
-    "made": {
       "location": {
         "start": {
-          "line": 321,
+          "line": 333,
           "column": 4,
-          "index": 8775
+          "index": 9155
         },
         "end": {
-          "line": 321,
-          "column": 31,
-          "index": 8802
+          "line": 333,
+          "column": 33,
+          "index": 9184
         }
-      },
+      }
+    },
+    "made": {
+      "type": "qx.event.type.Event",
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fired when making of apps is done.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -301,23 +405,32 @@
           }
         ]
       },
-      "name": "made",
-      "type": "qx.event.type.Event"
-    },
-    "minifyingApplication": {
       "location": {
         "start": {
-          "line": 331,
+          "line": 338,
           "column": 4,
-          "index": 9107
+          "index": 9249
         },
         "end": {
-          "line": 331,
-          "column": 46,
-          "index": 9149
+          "line": 338,
+          "column": 31,
+          "index": 9276
         }
-      },
+      }
+    },
+    "minifyingApplication": {
+      "type": "qx.event.type.Data",
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fired when minification begins.",
+          "     *",
+          "     * The event data is an object with the following properties:",
+          "     *  application {qx.tool.compiler.app.Application} the app being minified",
+          "     *  part: {String} the part being minified",
+          "     *  filename: {String} the part filename",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -325,23 +438,32 @@
           }
         ]
       },
-      "name": "minifyingApplication",
-      "type": "qx.event.type.Data"
-    },
-    "minifiedApplication": {
       "location": {
         "start": {
-          "line": 341,
+          "line": 348,
           "column": 4,
-          "index": 9455
+          "index": 9581
         },
         "end": {
-          "line": 341,
-          "column": 45,
-          "index": 9496
+          "line": 348,
+          "column": 46,
+          "index": 9623
         }
-      },
+      }
+    },
+    "minifiedApplication": {
+      "type": "qx.event.type.Data",
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fired when minification is done.",
+          "     *",
+          "     * The event data is an object with the following properties:",
+          "     *  application {qx.tool.compiler.app.Application} the app being minified",
+          "     *  part: {String} the part being minified",
+          "     *  filename: {String} the part filename",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -349,89 +471,195 @@
           }
         ]
       },
-      "name": "minifiedApplication",
-      "type": "qx.event.type.Data"
+      "location": {
+        "start": {
+          "line": 358,
+          "column": 4,
+          "index": 9929
+        },
+        "end": {
+          "line": 358,
+          "column": 45,
+          "index": 9970
+        }
+      }
     }
   },
   "members": {
     "__gauge": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 345,
+          "line": 362,
           "column": 4,
-          "index": 9520
+          "index": 9994
         },
         "end": {
-          "line": 345,
+          "line": 362,
           "column": 17,
-          "index": 9533
+          "index": 10007
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__makers": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 346,
+          "line": 363,
           "column": 4,
-          "index": 9539
+          "index": 10013
         },
         "end": {
-          "line": 346,
+          "line": 363,
           "column": 18,
-          "index": 9553
+          "index": 10027
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__libraries": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 347,
+          "line": 364,
           "column": 4,
-          "index": 9559
+          "index": 10033
         },
         "end": {
-          "line": 347,
+          "line": 364,
           "column": 21,
-          "index": 9576
+          "index": 10050
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__outputDirWasCreated": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
-          "line": 348,
+          "line": 365,
           "column": 4,
-          "index": 9582
+          "index": 10056
         },
         "end": {
-          "line": 348,
+          "line": 365,
           "column": 32,
-          "index": 9610
+          "index": 10084
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
+    },
+    "__metaDir": {
+      "jsdoc": {
+        "raw": [
+          "* @type{String} the path to the root of the meta files by classname "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": ""
+          }
+        ],
+        "@type": [
+          {
+            "name": "@type",
+            "body": "{String} the path to the root of the meta files by classname"
+          }
+        ]
+      },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 368,
+          "column": 4,
+          "index": 10168
+        },
+        "end": {
+          "line": 368,
+          "column": 19,
+          "index": 10183
+        }
+      },
+      "appearsIn": []
+    },
+    "__typescriptEnabled": {
+      "jsdoc": {
+        "raw": [
+          "* @type{Boolean} whether the typescript output is enabled "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": ""
+          }
+        ],
+        "@type": [
+          {
+            "name": "@type",
+            "body": "{Boolean} whether the typescript output is enabled"
+          }
+        ]
+      },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 371,
+          "column": 4,
+          "index": 10257
+        },
+        "end": {
+          "line": 371,
+          "column": 30,
+          "index": 10283
+        }
+      },
+      "appearsIn": []
+    },
+    "__typescriptFile": {
+      "jsdoc": {
+        "raw": [
+          "* @type{String} the name of the typescript file to generate "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": ""
+          }
+        ],
+        "@type": [
+          {
+            "name": "@type",
+            "body": "{String} the name of the typescript file to generate"
+          }
+        ]
+      },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 374,
+          "column": 4,
+          "index": 10359
+        },
+        "end": {
+          "line": 374,
+          "column": 26,
+          "index": 10381
+        }
+      },
+      "appearsIn": []
     },
     "process": {
-      "location": {
-        "start": {
-          "line": 353,
-          "column": 4,
-          "index": 9649
-        },
-        "end": {
-          "line": 526,
-          "column": 5,
-          "index": 16091
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "",
+          "     * @Override",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -445,27 +673,35 @@
           }
         ]
       },
-      "type": "function",
       "access": "public",
+      "location": {
+        "start": {
+          "line": 379,
+          "column": 4,
+          "index": 10420
+        },
+        "end": {
+          "line": 552,
+          "column": 5,
+          "index": 16862
+        }
+      },
+      "type": "function",
+      "params": [],
       "overriddenFrom": "qx.tool.cli.commands.Command",
       "appearsIn": [
         "qx.tool.cli.commands.Command"
       ]
     },
     "_loadConfigAndStartMaking": {
-      "location": {
-        "start": {
-          "line": 533,
-          "column": 4,
-          "index": 16226
-        },
-        "end": {
-          "line": 691,
-          "column": 5,
-          "index": 21128
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Loads the configuration and starts the make",
+          "     *",
+          "     * @return {Boolean} true if all makers succeeded",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -476,28 +712,64 @@
           {
             "name": "@return",
             "body": "{Boolean} true if all makers succeeded",
-            "type": "Boolean",
-            "description": " true if all makers succeeded"
+            "type": "boolean",
+            "description": "true if all makers succeeded"
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "createMakersFromConfig": {
+      "access": "protected",
       "location": {
         "start": {
-          "line": 699,
+          "line": 559,
           "column": 4,
-          "index": 21288
+          "index": 16997
         },
         "end": {
-          "line": 1354,
+          "line": 749,
           "column": 5,
-          "index": 42898
+          "index": 22728
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "__attachTypescriptWatcher": {
+      "jsdoc": null,
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 751,
+          "column": 4,
+          "index": 22735
+        },
+        "end": {
+          "line": 860,
+          "column": 5,
+          "index": 26257
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "watch"
+        }
+      ],
+      "appearsIn": []
+    },
+    "createMakersFromConfig": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Processes the configuration from a JSON data structure and creates a Maker",
+          "     *",
+          "     * @param data {Map}",
+          "     * @return {qx.tool.compiler.makers.Maker}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -507,35 +779,58 @@
         "@param": [
           {
             "name": "@param",
-            "body": "data {Map}"
+            "body": "data {Map}",
+            "paramName": "data",
+            "type": "Map<any, any>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Maker}",
-            "type": "Maker",
+            "body": "{qx.tool.compiler.makers.Maker}",
+            "type": "qx.tool.compiler.makers.Maker",
             "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "__checkDependencies": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1365,
+          "line": 868,
           "column": 4,
-          "index": 43243
+          "index": 26441
         },
         "end": {
-          "line": 1500,
+          "line": 1580,
           "column": 5,
-          "index": 48462
+          "index": 50182
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "data",
+          "type": "Map<any, any>"
+        }
+      ],
+      "returnType": {
+        "type": "qx.tool.compiler.makers.Maker"
+      },
+      "appearsIn": []
+    },
+    "__checkDependencies": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Checks the dependencies of the current library",
+          "     * @param  {qx.tool.compiler.app.Library[]} libs",
+          "     *    The list of libraries to check",
+          "     * @param {Object|*} packages",
+          "     *    If given, an object mapping library uris to library paths",
+          "     * @return {Promise<Array>} Array of error messages",
+          "     * @private",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -566,7 +861,7 @@
             "name": "@return",
             "body": "{Promise<Array>} Array of error messages",
             "type": "Promise<Array>",
-            "description": " Array of error messages"
+            "description": "Array of error messages"
           }
         ],
         "@private": [
@@ -576,23 +871,48 @@
           }
         ]
       },
-      "type": "function",
-      "access": "private"
-    },
-    "resolveTargetClass": {
+      "access": "private",
       "location": {
         "start": {
-          "line": 1508,
+          "line": 1591,
           "column": 4,
-          "index": 48650
+          "index": 50527
         },
         "end": {
-          "line": 1536,
+          "line": 1726,
           "column": 5,
-          "index": 49483
+          "index": 55746
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "libs",
+          "type": "qx.tool.compiler.app.Library[]"
+        },
+        {
+          "name": "packages",
+          "type": [
+            "Object",
+            "*"
+          ]
+        }
+      ],
+      "returnType": {
+        "type": "Promise<Array>"
+      },
+      "appearsIn": []
+    },
+    "resolveTargetClass": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Resolves the target class instance from the type name; accepts \"source\" or \"build\" or",
+          "     * a class name",
+          "     * @param type {String}",
+          "     * @returns {qx.tool.compiler.makers.Maker}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -602,35 +922,54 @@
         "@param": [
           {
             "name": "@param",
-            "body": "type {String}"
+            "body": "type {String}",
+            "paramName": "type",
+            "type": "string"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Maker}",
-            "type": "Maker",
+            "body": "{qx.tool.compiler.makers.Maker}",
+            "type": "qx.tool.compiler.makers.Maker",
             "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getMakers": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1543,
+          "line": 1734,
           "column": 4,
-          "index": 49581
+          "index": 55958
         },
         "end": {
-          "line": 1545,
+          "line": 1757,
           "column": 5,
-          "index": 49628
+          "index": 56577
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "type",
+          "type": "string"
+        }
+      ],
+      "returnType": {
+        "type": "qx.tool.compiler.makers.Maker"
+      },
+      "appearsIn": []
+    },
+    "getMakers": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the list of makers to make",
+          "     *",
+          "     * @return  {qx.tool.compiler.makers.Maker[]}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -640,29 +979,45 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Maker[]}",
-            "type": "Maker[]",
+            "body": "{qx.tool.compiler.makers.Maker[]}",
+            "type": "qx.tool.compiler.makers.Maker[]",
             "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getMaker": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1556,
+          "line": 1764,
           "column": 4,
-          "index": 50036
+          "index": 56699
         },
         "end": {
-          "line": 1565,
+          "line": 1766,
           "column": 5,
-          "index": 50273
+          "index": 56746
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "qx.tool.compiler.makers.Maker[]"
+      },
+      "appearsIn": []
+    },
+    "getMaker": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the one maker; this is for backwards compatibility with the compiler API, because it is",
+          "     * possible to define multiple targets and therefore have multiple makers.  This method will return",
+          "     * the one maker, when there is only one maker defined (ie one target), which is fine for any existing",
+          "     * configurations.",
+          "     *",
+          "     * @deprected",
+          "     * @return {qx.tool.compiler.makers.Maker}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -678,29 +1033,42 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Maker}",
-            "type": "Maker",
+            "body": "{qx.tool.compiler.makers.Maker}",
+            "type": "qx.tool.compiler.makers.Maker",
             "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getMakersForApp": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1573,
+          "line": 1777,
           "column": 4,
-          "index": 50440
+          "index": 57178
         },
         "end": {
-          "line": 1578,
+          "line": 1786,
           "column": 5,
-          "index": 50628
+          "index": 57415
         }
       },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "qx.tool.compiler.makers.Maker"
+      },
+      "appearsIn": []
+    },
+    "getMakersForApp": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns the makers for a given application name",
+          "     *",
+          "     * @param appName {String} the name of the application",
+          "     * @return {qx.tool.compiler.makers.Maker}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -713,35 +1081,52 @@
             "body": "appName {String} the name of the application",
             "paramName": "appName",
             "description": " the name of the application",
-            "type": "String"
+            "type": "string"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Maker}",
-            "type": "Maker",
+            "body": "{qx.tool.compiler.makers.Maker}",
+            "type": "qx.tool.compiler.makers.Maker",
             "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getLibraries": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 1585,
+          "line": 1794,
           "column": 4,
-          "index": 50735
+          "index": 57606
         },
         "end": {
-          "line": 1587,
+          "line": 1799,
           "column": 5,
-          "index": 50788
+          "index": 57794
         }
       },
+      "type": "function",
+      "params": [
+        {
+          "name": "appName",
+          "type": "string"
+        }
+      ],
+      "returnType": {
+        "type": "qx.tool.compiler.makers.Maker"
+      },
+      "appearsIn": []
+    },
+    "getLibraries": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns a list of libraries which are used",
+          "     *",
+          "     * @return {qx.tool.compiler.app.Library[]}",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -751,240 +1136,32 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Library[]}",
-            "type": "Library[]",
+            "body": "{qx.tool.compiler.app.Library[]}",
+            "type": "qx.tool.compiler.app.Library[]",
             "description": ""
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getQxOwner": {
-      "type": "function",
-      "name": "getQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
       "access": "public",
-      "overriddenFrom": "qx.tool.cli.commands.Command",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "qx.core.Object",
-            "desc": "Returns the value for qxOwner"
-          }
-        ]
-      }
-    },
-    "setQxOwner": {
-      "type": "function",
-      "name": "setQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.cli.commands.Command",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.core.Object",
-            "paramName": "value",
-            "desc": "Value for qxOwner"
-          }
-        ]
-      }
-    },
-    "resetQxOwner": {
-      "type": "function",
-      "name": "resetQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.cli.commands.Command",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxOwner</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ]
-      }
-    },
-    "getQxObjectId": {
-      "type": "function",
-      "name": "getQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.cli.commands.Command",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "[[ ObjectMethod Function ]]",
-            "desc": "Returns the value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "setQxObjectId": {
-      "type": "function",
-      "name": "setQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.cli.commands.Command",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "[[ ObjectMethod Function ]]",
-            "paramName": "value",
-            "desc": "Value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "resetQxObjectId": {
-      "type": "function",
-      "name": "resetQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.cli.commands.Command",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxObjectId</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ]
-      }
-    },
-    "getCompilerApi": {
-      "type": "function",
-      "name": "getCompilerApi",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.cli.commands.Command",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>compilerApi</code>.\n\nFor further details take a look at the property definition: {@link #compilerApi}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "qx.tool.cli.api.CompilerApi",
-            "desc": "Returns the value for compilerApi"
-          }
-        ]
-      }
-    },
-    "setCompilerApi": {
-      "type": "function",
-      "name": "setCompilerApi",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.cli.commands.Command",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>compilerApi</code>.\n\nFor further details take a look at the property definition: {@link #compilerApi}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.tool.cli.api.CompilerApi",
-            "paramName": "value",
-            "desc": "Value for compilerApi"
-          }
-        ]
-      }
-    },
-    "resetCompilerApi": {
-      "type": "function",
-      "name": "resetCompilerApi",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.tool.cli.commands.Command",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>compilerApi</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #compilerApi}."
-          }
-        ]
-      }
-    }
-  },
-  "defer": {
-    "location": {
-      "start": {
-        "line": 1590,
-        "column": 2,
-        "index": 50797
+      "location": {
+        "start": {
+          "line": 1806,
+          "column": 4,
+          "index": 57922
+        },
+        "end": {
+          "line": 1808,
+          "column": 5,
+          "index": 57975
+        }
       },
-      "end": {
-        "line": 1626,
-        "column": 3,
-        "index": 52758
-      }
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "qx.tool.compiler.app.Library[]"
+      },
+      "appearsIn": []
     }
   },
-  "descendants": [
-    "qx.tool.cli.commands.Deploy",
-    "qx.tool.cli.commands.Run",
-    "qx.tool.cli.commands.Serve"
-  ]
+  "properties": {}
 }

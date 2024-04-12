@@ -1,38 +1,50 @@
 {
+  "version": 0.3,
+  "lastModified": 1712910031017,
+  "lastModifiedIso": "2024-04-12T08:20:31.017Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/event/handler/Offline.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 25,
+      "column": 0,
+      "index": 620
+    },
+    "end": {
+      "line": 190,
+      "column": 3,
+      "index": 4807
+    }
+  },
   "className": "qx.event.handler.Offline",
-  "packageName": "qx.event.handler",
-  "name": "Offline",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * This class provides a handler for the online event.",
+      " *",
+      " * NOTE: Instances of this class must be disposed of after use",
+      " *",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>This class provides a handler for the online event.\n NOTE: Instances of this class must be disposed of after use</p>"
+      }
+    ]
+  },
   "superClass": "qx.core.Object",
   "interfaces": [
     "qx.event.IEventHandler",
     "qx.core.IDisposable"
   ],
-  "mixins": [],
-  "functionName": null,
-  "clazz": {
-    "location": {
-      "start": {
-        "line": 25,
-        "column": 0,
-        "index": 620
-      },
-      "end": {
-        "line": 190,
-        "column": 3,
-        "index": 4807
-      }
-    },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>This class provides a handler for the online event.\n NOTE: Instances of this class must be disposed of after use</p>"
-        }
-      ]
-    }
-  },
-  "type": "class",
   "construct": {
+    "type": "function",
+    "params": [
+      {
+        "name": "manager"
+      }
+    ],
     "location": {
       "start": {
         "line": 40,
@@ -44,40 +56,14 @@
         "column": 3,
         "index": 1198
       }
-    },
-    "jsdoc": {
-      "@description": [
-        {
-          "name": "@description",
-          "body": "<p>Create a new instance</p>"
-        }
-      ],
-      "@param": [
-        {
-          "name": "@param",
-          "body": "manager {qx.event.Manager} Event manager for the window to use",
-          "paramName": "manager",
-          "description": " Event manager for the window to use",
-          "type": "qx.event.Manager"
-        }
-      ]
     }
   },
   "statics": {
     "PRIORITY": {
-      "location": {
-        "start": {
-          "line": 57,
-          "column": 4,
-          "index": 1454
-        },
-        "end": {
-          "line": 57,
-          "column": 51,
-          "index": 1501
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "* @type {Integer} Priority of this handler "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -91,23 +77,26 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "SUPPORTED_TYPES": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 60,
+          "line": 57,
           "column": 4,
-          "index": 1553
+          "index": 1454
         },
         "end": {
-          "line": 63,
-          "column": 5,
-          "index": 1617
+          "line": 57,
+          "column": 51,
+          "index": 1501
         }
       },
+      "appearsIn": []
+    },
+    "SUPPORTED_TYPES": {
       "jsdoc": {
+        "raw": [
+          "* @type {Map} Supported event types "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -121,23 +110,26 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
-    },
-    "TARGET_CHECK": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 66,
+          "line": 60,
           "column": 4,
-          "index": 1677
+          "index": 1553
         },
         "end": {
-          "line": 66,
-          "column": 54,
-          "index": 1727
+          "line": 63,
+          "column": 5,
+          "index": 1617
         }
       },
+      "appearsIn": []
+    },
+    "TARGET_CHECK": {
       "jsdoc": {
+        "raw": [
+          "* @type {Integer} Which target check to use "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -151,23 +143,26 @@
           }
         ]
       },
-      "type": "function",
-      "access": "public"
-    },
-    "IGNORE_CAN_HANDLE": {
+      "access": "public",
       "location": {
         "start": {
-          "line": 69,
+          "line": 66,
           "column": 4,
-          "index": 1812
+          "index": 1677
         },
         "end": {
-          "line": 69,
-          "column": 27,
-          "index": 1835
+          "line": 66,
+          "column": 54,
+          "index": 1727
         }
       },
+      "appearsIn": []
+    },
+    "IGNORE_CAN_HANDLE": {
       "jsdoc": {
+        "raw": [
+          "* @type {Integer} Whether the method \"canHandleEvent\" must be called "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -181,12 +176,26 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "public"
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 69,
+          "column": 4,
+          "index": 1812
+        },
+        "end": {
+          "line": 69,
+          "column": 27,
+          "index": 1835
+        }
+      },
+      "appearsIn": []
     }
   },
   "members": {
     "__manager": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 79,
@@ -199,10 +208,11 @@
           "index": 2058
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__window": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 80,
@@ -215,10 +225,11 @@
           "index": 2078
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "__onNativeWrapper": {
+      "jsdoc": null,
+      "access": "private",
       "location": {
         "start": {
           "line": 81,
@@ -231,10 +242,15 @@
           "index": 2107
         }
       },
-      "type": "variable",
-      "access": "private"
+      "appearsIn": []
     },
     "canHandleEvent": {
+      "jsdoc": {
+        "raw": [
+          " interface implementation"
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 90,
@@ -247,15 +263,26 @@
           "index": 2382
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "public",
-      "overriddenFrom": "qx.event.IEventHandler",
+      "params": [
+        {
+          "name": "target"
+        },
+        {
+          "name": "type"
+        }
+      ],
       "appearsIn": [
         "qx.event.IEventHandler"
       ]
     },
     "registerEvent": {
+      "jsdoc": {
+        "raw": [
+          " interface implementation"
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 93,
@@ -268,15 +295,29 @@
           "index": 2504
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "public",
-      "overriddenFrom": "qx.event.IEventHandler",
+      "params": [
+        {
+          "name": "target"
+        },
+        {
+          "name": "type"
+        },
+        {
+          "name": "capture"
+        }
+      ],
       "appearsIn": [
         "qx.event.IEventHandler"
       ]
     },
     "unregisterEvent": {
+      "jsdoc": {
+        "raw": [
+          " interface implementation"
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 98,
@@ -289,15 +330,37 @@
           "index": 2628
         }
       },
-      "jsdoc": {},
       "type": "function",
-      "access": "public",
-      "overriddenFrom": "qx.event.IEventHandler",
+      "params": [
+        {
+          "name": "target"
+        },
+        {
+          "name": "type"
+        },
+        {
+          "name": "capture"
+        }
+      ],
       "appearsIn": [
         "qx.event.IEventHandler"
       ]
     },
     "_initObserver": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Connects the native online and offline event listeners.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Connects the native online and offline event listeners.</p>"
+          }
+        ]
+      },
+      "access": "protected",
       "location": {
         "start": {
           "line": 105,
@@ -310,18 +373,25 @@
           "index": 3058
         }
       },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "_stopObserver": {
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Disconnects the native online and offline event listeners.",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
-            "body": "<p>Connects the native online and offline event listeners.</p>"
+            "body": "<p>Disconnects the native online and offline event listeners.</p>"
           }
         ]
       },
-      "type": "function",
-      "access": "protected"
-    },
-    "_stopObserver": {
+      "access": "protected",
       "location": {
         "start": {
           "line": 124,
@@ -334,31 +404,19 @@
           "index": 3416
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Disconnects the native online and offline event listeners.</p>"
-          }
-        ]
-      },
       "type": "function",
-      "access": "protected"
+      "params": [],
+      "appearsIn": []
     },
     "_onNative": {
-      "location": {
-        "start": {
-          "line": 143,
-          "column": 4,
-          "index": 3584
-        },
-        "end": {
-          "line": 150,
-          "column": 6,
-          "index": 3792
-        }
-      },
       "jsdoc": {
+        "raw": [
+          "*",
+          "     * Native handler function which fires a qooxdoo event.",
+          "     * @signature function(domEvent)",
+          "     * @param domEvent {Event} Native DOM event",
+          "     "
+        ],
         "@description": [
           {
             "name": "@description",
@@ -381,10 +439,45 @@
           }
         ]
       },
-      "type": "variable",
-      "access": "protected"
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 143,
+          "column": 4,
+          "index": 3584
+        },
+        "end": {
+          "line": 150,
+          "column": 6,
+          "index": 3792
+        }
+      },
+      "appearsIn": []
     },
     "isOnline": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns whether the current window thinks its online or not.",
+          "     * @return {Boolean} <code>true</code> if its online",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns whether the current window thinks its online or not.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} <code>true</code> if its online",
+            "type": "boolean",
+            "description": "<code>true</code> if its online"
+          }
+        ]
+      },
+      "access": "public",
       "location": {
         "start": {
           "line": 162,
@@ -397,165 +490,17 @@
           "index": 4198
         }
       },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "<p>Returns whether the current window thinks its online or not.</p>"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{Boolean} <code>true</code> if its online",
-            "type": "Boolean",
-            "description": " <code>true</code> if its online"
-          }
-        ]
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "boolean"
       },
-      "type": "function",
-      "access": "public"
-    },
-    "getQxOwner": {
-      "type": "function",
-      "name": "getQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "qx.core.Object",
-            "desc": "Returns the value for qxOwner"
-          }
-        ]
-      }
-    },
-    "setQxOwner": {
-      "type": "function",
-      "name": "setQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "qx.core.Object",
-            "paramName": "value",
-            "desc": "Value for qxOwner"
-          }
-        ]
-      }
-    },
-    "resetQxOwner": {
-      "type": "function",
-      "name": "resetQxOwner",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxOwner</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
-          }
-        ]
-      }
-    },
-    "getQxObjectId": {
-      "type": "function",
-      "name": "getQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "get",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Gets the (computed) value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "type": "[[ ObjectMethod Function ]]",
-            "desc": "Returns the value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "setQxObjectId": {
-      "type": "function",
-      "name": "setQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "set",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Sets the user value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "type": "[[ ObjectMethod Function ]]",
-            "paramName": "value",
-            "desc": "Value for qxObjectId"
-          }
-        ]
-      }
-    },
-    "resetQxObjectId": {
-      "type": "function",
-      "name": "resetQxObjectId",
-      "abstract": false,
-      "mixin": false,
-      "inherited": true,
-      "access": "public",
-      "overriddenFrom": "qx.core.Object",
-      "property": "reset",
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Resets the user value of the property <code>qxObjectId</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
-          }
-        ]
-      }
+      "appearsIn": []
     }
   },
   "destruct": {
+    "type": "function",
+    "params": [],
     "location": {
       "start": {
         "line": 173,
@@ -567,23 +512,7 @@
         "column": 3,
         "index": 4549
       }
-    },
-    "jsdoc": {}
+    }
   },
-  "defer": {
-    "location": {
-      "start": {
-        "line": 187,
-        "column": 2,
-        "index": 4736
-      },
-      "end": {
-        "line": 189,
-        "column": 3,
-        "index": 4803
-      }
-    },
-    "jsdoc": {}
-  },
-  "descendants": []
+  "properties": {}
 }
