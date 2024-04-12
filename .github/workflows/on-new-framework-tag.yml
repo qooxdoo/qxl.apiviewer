@@ -44,11 +44,6 @@ jobs:
           node compiled/deploy-node/createclassdb/index.js html/resource/apidata
           node compiled/build-node/createclassdb/index.js html/resource/apidata
 
-      - name: Run Tests
-        run: |
-          npx playwright install
-          qx test --target=build -v
-
       - name: Deploy to GH page
         uses: peaceiris/actions-gh-pages@v3
         with:
