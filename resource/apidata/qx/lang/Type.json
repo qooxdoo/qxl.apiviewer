@@ -1,0 +1,757 @@
+{
+  "version": 0.3,
+  "lastModified": 1713033295674,
+  "lastModifiedIso": "2024-04-13T18:34:55.674Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/lang/Type.js",
+  "type": "bootstrap",
+  "location": {
+    "start": {
+      "line": 23,
+      "column": 0,
+      "index": 559
+    },
+    "end": {
+      "line": 182,
+      "column": 3,
+      "index": 5770
+    }
+  },
+  "className": "qx.lang.Type",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * Utility class with type check for all native JavaScript data types.",
+      " *",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>Utility class with type check for all native JavaScript data types.</p>"
+      }
+    ]
+  },
+  "statics": {
+    "getClass": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Get the internal class of the value. See",
+          "     * http://perfectionkills.com/instanceof-considered-harmful-or-how-to-write-a-robust-isarray/",
+          "     * for details.",
+          "     *",
+          "     * @signature function(value)",
+          "     * @param value {var} value to get the class for",
+          "     * @return {String} the internal class of the value",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Get the internal class of the value. See\n http://perfectionkills.com/instanceof-considered-harmful-or-how-to-write-a-robust-isarray/\n for details.</p>"
+          }
+        ],
+        "@signature": [
+          {
+            "name": "@signature",
+            "body": "function(value)"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "value {var} value to get the class for",
+            "paramName": "value",
+            "description": " value to get the class for",
+            "type": "var"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{String} the internal class of the value",
+            "type": "string",
+            "description": "the internal class of the value"
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 34,
+          "column": 4,
+          "index": 946
+        },
+        "end": {
+          "line": 34,
+          "column": 35,
+          "index": 977
+        }
+      },
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
+    },
+    "isString": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether the value is a string.",
+          "     *",
+          "     * @signature function(value)",
+          "     * @param value {var} Value to check.",
+          "     * @return {Boolean} Whether the value is a string.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Whether the value is a string.</p>"
+          }
+        ],
+        "@signature": [
+          {
+            "name": "@signature",
+            "body": "function(value)"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "value {var} Value to check.",
+            "paramName": "value",
+            "description": " Value to check.",
+            "type": "var"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} Whether the value is a string.",
+            "type": "boolean",
+            "description": "Whether the value is a string."
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 43,
+          "column": 4,
+          "index": 1177
+        },
+        "end": {
+          "line": 43,
+          "column": 35,
+          "index": 1208
+        }
+      },
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "isArray": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether the value is an array.",
+          "     *",
+          "     * @signature function(value)",
+          "     * @param value {var} Value to check.",
+          "     * @return {Boolean} Whether the value is an array.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Whether the value is an array.</p>"
+          }
+        ],
+        "@signature": [
+          {
+            "name": "@signature",
+            "body": "function(value)"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "value {var} Value to check.",
+            "paramName": "value",
+            "description": " Value to check.",
+            "type": "var"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} Whether the value is an array.",
+            "type": "boolean",
+            "description": "Whether the value is an array."
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 52,
+          "column": 4,
+          "index": 1408
+        },
+        "end": {
+          "line": 52,
+          "column": 33,
+          "index": 1437
+        }
+      },
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "isObject": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether the value is an object. Note that built-in types like Window are",
+          "     * not reported to be objects.",
+          "     *",
+          "     * @signature function(value)",
+          "     * @param value {var} Value to check.",
+          "     * @return {Boolean} Whether the value is an object.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Whether the value is an object. Note that built-in types like Window are\n not reported to be objects.</p>"
+          }
+        ],
+        "@signature": [
+          {
+            "name": "@signature",
+            "body": "function(value)"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "value {var} Value to check.",
+            "paramName": "value",
+            "description": " Value to check.",
+            "type": "var"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} Whether the value is an object.",
+            "type": "boolean",
+            "description": "Whether the value is an object."
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 62,
+          "column": 4,
+          "index": 1715
+        },
+        "end": {
+          "line": 62,
+          "column": 35,
+          "index": 1746
+        }
+      },
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "isFunction": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether the value is a function.",
+          "     *",
+          "     * @signature function(value)",
+          "     * @param value {var} Value to check.",
+          "     * @return {Boolean} Whether the value is a function.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Whether the value is a function.</p>"
+          }
+        ],
+        "@signature": [
+          {
+            "name": "@signature",
+            "body": "function(value)"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "value {var} Value to check.",
+            "paramName": "value",
+            "description": " Value to check.",
+            "type": "var"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} Whether the value is a function.",
+            "type": "boolean",
+            "description": "Whether the value is a function."
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 71,
+          "column": 4,
+          "index": 1950
+        },
+        "end": {
+          "line": 71,
+          "column": 39,
+          "index": 1985
+        }
+      },
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "isFunctionOrAsyncFunction": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether the value is a function or an async function.",
+          "     *",
+          "     * @signature function(value)",
+          "     * @param value {var} Value to check.",
+          "     * @return {Boolean} Whether the value is a function or an async function.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Whether the value is a function or an async function.</p>"
+          }
+        ],
+        "@signature": [
+          {
+            "name": "@signature",
+            "body": "function(value)"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "value {var} Value to check.",
+            "paramName": "value",
+            "description": " Value to check.",
+            "type": "var"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} Whether the value is a function or an async function.",
+            "type": "boolean",
+            "description": "Whether the value is a function or an async function."
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 80,
+          "column": 4,
+          "index": 2231
+        },
+        "end": {
+          "line": 80,
+          "column": 69,
+          "index": 2296
+        }
+      },
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "isRegExp": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether the value is a regular expression.",
+          "     *",
+          "     * @param value {var} Value to check.",
+          "     * @return {Boolean} Whether the value is a regular expression.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Whether the value is a regular expression.</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "value {var} Value to check.",
+            "paramName": "value",
+            "description": " Value to check.",
+            "type": "var"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} Whether the value is a regular expression.",
+            "type": "boolean",
+            "description": "Whether the value is a regular expression."
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 88,
+          "column": 4,
+          "index": 2486
+        },
+        "end": {
+          "line": 90,
+          "column": 5,
+          "index": 2557
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "value",
+          "type": "var"
+        }
+      ],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "isNumber": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether the value is a number.",
+          "     *",
+          "     * This function checks if the _type_ of the value is Number.",
+          "     * Global properties *NaN*, *-Infinity*, *+Infinity*,",
+          "     * *Number.POSITIVE_INFINITY* and *Number.NEGATIVE_INFINITY*",
+          "     * return true.",
+          "     *",
+          "     * @param value {var} Value to check.",
+          "     * @return {Boolean} Whether the value is a number.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Whether the value is a number.\n This function checks if the <em>type</em> of the value is Number.\n Global properties <em>NaN</em>, <em>-Infinity</em>, <em>+Infinity</em>,\n<em>Number.POSITIVE<em>INFINITY</em> and <em>Number.NEGATIVE</em>INFINITY</em>\n return true.</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "value {var} Value to check.",
+            "paramName": "value",
+            "description": " Value to check.",
+            "type": "var"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} Whether the value is a number.",
+            "type": "boolean",
+            "description": "Whether the value is a number."
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 103,
+          "column": 4,
+          "index": 2939
+        },
+        "end": {
+          "line": 113,
+          "column": 5,
+          "index": 3443
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "value",
+          "type": "var"
+        }
+      ],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "isBoolean": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether the value is a boolean.",
+          "     *",
+          "     * @param value {var} Value to check.",
+          "     * @return {Boolean} Whether the value is a boolean.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Whether the value is a boolean.</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "value {var} Value to check.",
+            "paramName": "value",
+            "description": " Value to check.",
+            "type": "var"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} Whether the value is a boolean.",
+            "type": "boolean",
+            "description": "Whether the value is a boolean."
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 121,
+          "column": 4,
+          "index": 3611
+        },
+        "end": {
+          "line": 131,
+          "column": 5,
+          "index": 4119
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "value",
+          "type": "var"
+        }
+      ],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "isDate": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether the value is a date.",
+          "     *",
+          "     * @param value {var} Value to check.",
+          "     * @return {Boolean} Whether the value is a date.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Whether the value is a date.</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "value {var} Value to check.",
+            "paramName": "value",
+            "description": " Value to check.",
+            "type": "var"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} Whether the value is a date.",
+            "type": "boolean",
+            "description": "Whether the value is a date."
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 139,
+          "column": 4,
+          "index": 4281
+        },
+        "end": {
+          "line": 149,
+          "column": 5,
+          "index": 4777
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "value",
+          "type": "var"
+        }
+      ],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "isError": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether the value is a Error.",
+          "     *",
+          "     * @param value {var} Value to check.",
+          "     * @return {Boolean} Whether the value is a Error.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Whether the value is a Error.</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "value {var} Value to check.",
+            "paramName": "value",
+            "description": " Value to check.",
+            "type": "var"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} Whether the value is a Error.",
+            "type": "boolean",
+            "description": "Whether the value is a Error."
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 157,
+          "column": 4,
+          "index": 4941
+        },
+        "end": {
+          "line": 167,
+          "column": 5,
+          "index": 5441
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "value",
+          "type": "var"
+        }
+      ],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "isPromise": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Whether the value is a Promise.",
+          "     *",
+          "     * checks if value exists and has a function 'then'",
+          "     *",
+          "     * @param value {var} Value to check.",
+          "     * @return {Boolean} Whether the value is a Promise.",
+          "     *",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Whether the value is a Promise.\n checks if value exists and has a function 'then'</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "value {var} Value to check.",
+            "paramName": "value",
+            "description": " Value to check.",
+            "type": "var"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} Whether the value is a Promise.",
+            "type": "boolean",
+            "description": "Whether the value is a Promise."
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 178,
+          "column": 4,
+          "index": 5679
+        },
+        "end": {
+          "line": 180,
+          "column": 5,
+          "index": 5762
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "value",
+          "type": "var"
+        }
+      ],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    }
+  },
+  "members": {},
+  "properties": {}
+}

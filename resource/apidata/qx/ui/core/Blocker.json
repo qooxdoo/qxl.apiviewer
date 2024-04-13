@@ -1,0 +1,1226 @@
+{
+  "version": 0.3,
+  "lastModified": 1713033294846,
+  "lastModifiedIso": "2024-04-13T18:34:54.846Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/ui/core/Blocker.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 28,
+      "column": 0,
+      "index": 808
+    },
+    "end": {
+      "line": 522,
+      "column": 3,
+      "index": 14177
+    }
+  },
+  "className": "qx.ui.core.Blocker",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * This class blocks events and can be included into all widgets.",
+      " *",
+      " * The {@link #block} and {@link #unblock} methods provided by this class can be used",
+      " * to block any event from the widget. When blocked,",
+      " * the blocker widget overlays the widget to block, including the padding area.",
+      " *",
+      " * @ignore(qx.ui.root.Abstract)",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>This class blocks events and can be included into all widgets.\n The {@link #block} and {@link #unblock} methods provided by this class can be used\n to block any event from the widget. When blocked,\n the blocker widget overlays the widget to block, including the padding area.</p>"
+      }
+    ],
+    "@ignore": [
+      {
+        "name": "@ignore",
+        "body": "qx.ui.root.Abstract"
+      }
+    ]
+  },
+  "superClass": "qx.core.Object",
+  "events": {
+    "blocked": {
+      "type": "qx.event.type.Event",
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fires after {@link #block} executed.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Fires after {@link #block} executed.</p>"
+          }
+        ]
+      },
+      "location": {
+        "start": {
+          "line": 35,
+          "column": 4,
+          "index": 951
+        },
+        "end": {
+          "line": 35,
+          "column": 34,
+          "index": 981
+        }
+      }
+    },
+    "unblocked": {
+      "type": "qx.event.type.Event",
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Fires after {@link #unblock} executed.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Fires after {@link #unblock} executed.</p>"
+          }
+        ]
+      },
+      "location": {
+        "start": {
+          "line": 40,
+          "column": 4,
+          "index": 1050
+        },
+        "end": {
+          "line": 40,
+          "column": 36,
+          "index": 1082
+        }
+      }
+    }
+  },
+  "construct": {
+    "type": "function",
+    "params": [
+      {
+        "name": "widget"
+      }
+    ],
+    "location": {
+      "start": {
+        "line": 48,
+        "column": 2,
+        "index": 1234
+      },
+      "end": {
+        "line": 75,
+        "column": 3,
+        "index": 1954
+      }
+    }
+  },
+  "properties": {
+    "color": {
+      "location": {
+        "start": {
+          "line": 87,
+          "column": 4,
+          "index": 2208
+        },
+        "end": {
+          "line": 93,
+          "column": 5,
+          "index": 2334
+        }
+      },
+      "json": {
+        "check": "Color",
+        "nullable": true,
+        "apply": "_applyColor",
+        "themeable": true
+      },
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Color of the blocker",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Color of the blocker</p>"
+          }
+        ]
+      },
+      "appearsIn": []
+    },
+    "opacity": {
+      "location": {
+        "start": {
+          "line": 98,
+          "column": 4,
+          "index": 2387
+        },
+        "end": {
+          "line": 103,
+          "column": 5,
+          "index": 2493
+        }
+      },
+      "json": {
+        "check": "Number",
+        "init": 1,
+        "apply": "_applyOpacity",
+        "themeable": true
+      },
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Opacity of the blocker",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Opacity of the blocker</p>"
+          }
+        ]
+      },
+      "appearsIn": []
+    },
+    "keepBlockerActive": {
+      "location": {
+        "start": {
+          "line": 120,
+          "column": 4,
+          "index": 3221
+        },
+        "end": {
+          "line": 123,
+          "column": 5,
+          "index": 3289
+        }
+      },
+      "json": {
+        "check": "Boolean",
+        "init": false
+      },
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * If this property is enabled, the blocker created with {@link #block}",
+          "     * will always stay activated. This means that the blocker then gets all keyboard",
+          "     * events, this is useful to block keyboard input on other widgets.",
+          "     * Take care that only one blocker instance will be kept active, otherwise your",
+          "     * browser will freeze.",
+          "     *",
+          "     * Setting this property to true is ignored, if the blocker is attached to a",
+          "     * widget with a focus handler, as this would mean that the focus handler",
+          "     * tries to activate the widget behind the blocker.",
+          "     *",
+          "     * fixes:",
+          "     *     https://github.com/qooxdoo/qooxdoo/issues/9449",
+          "     *     https://github.com/qooxdoo/qooxdoo/issues/8104",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>If this property is enabled, the blocker created with {@link #block}\n will always stay activated. This means that the blocker then gets all keyboard\n events, this is useful to block keyboard input on other widgets.\n Take care that only one blocker instance will be kept active, otherwise your\n browser will freeze.\n Setting this property to true is ignored, if the blocker is attached to a\n widget with a focus handler, as this would mean that the focus handler\n tries to activate the widget behind the blocker.\n fixes:\n     https://github.com/qooxdoo/qooxdoo/issues/9449\n     https://github.com/qooxdoo/qooxdoo/issues/8104</p>"
+          }
+        ]
+      },
+      "appearsIn": []
+    }
+  },
+  "members": {
+    "__blocker": {
+      "jsdoc": null,
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 133,
+          "column": 4,
+          "index": 3497
+        },
+        "end": {
+          "line": 133,
+          "column": 19,
+          "index": 3512
+        }
+      },
+      "appearsIn": []
+    },
+    "__blockerCount": {
+      "jsdoc": null,
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 134,
+          "column": 4,
+          "index": 3518
+        },
+        "end": {
+          "line": 134,
+          "column": 21,
+          "index": 3535
+        }
+      },
+      "appearsIn": []
+    },
+    "__activeElements": {
+      "jsdoc": null,
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 136,
+          "column": 4,
+          "index": 3542
+        },
+        "end": {
+          "line": 136,
+          "column": 26,
+          "index": 3564
+        }
+      },
+      "appearsIn": []
+    },
+    "__focusElements": {
+      "jsdoc": null,
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 137,
+          "column": 4,
+          "index": 3570
+        },
+        "end": {
+          "line": 137,
+          "column": 25,
+          "index": 3591
+        }
+      },
+      "appearsIn": []
+    },
+    "__timer": {
+      "jsdoc": null,
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 139,
+          "column": 4,
+          "index": 3598
+        },
+        "end": {
+          "line": 139,
+          "column": 17,
+          "index": 3611
+        }
+      },
+      "appearsIn": []
+    },
+    "_widget": {
+      "jsdoc": null,
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 141,
+          "column": 4,
+          "index": 3618
+        },
+        "end": {
+          "line": 141,
+          "column": 17,
+          "index": 3631
+        }
+      },
+      "appearsIn": []
+    },
+    "_isRoot": {
+      "jsdoc": null,
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 142,
+          "column": 4,
+          "index": 3637
+        },
+        "end": {
+          "line": 142,
+          "column": 18,
+          "index": 3651
+        }
+      },
+      "appearsIn": []
+    },
+    "__appearListener": {
+      "jsdoc": null,
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 144,
+          "column": 4,
+          "index": 3658
+        },
+        "end": {
+          "line": 144,
+          "column": 26,
+          "index": 3680
+        }
+      },
+      "appearsIn": []
+    },
+    "__onBoundsChange": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adjust html element size on layout resizes.",
+          "     *",
+          "     * @param e {qx.event.type.Data} event object",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Adjust html element size on layout resizes.</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "e {qx.event.type.Data} event object",
+            "paramName": "e",
+            "description": " event object",
+            "type": "qx.event.type.Data"
+          }
+        ]
+      },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 151,
+          "column": 4,
+          "index": 3811
+        },
+        "end": {
+          "line": 157,
+          "column": 5,
+          "index": 3948
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "e",
+          "type": "qx.event.type.Data"
+        }
+      ],
+      "appearsIn": []
+    },
+    "__onWidgetAppear": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Widget re-appears: Update blocker size/position and attach to (new) parent",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Widget re-appears: Update blocker size/position and attach to (new) parent</p>"
+          }
+        ]
+      },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 162,
+          "column": 4,
+          "index": 4053
+        },
+        "end": {
+          "line": 172,
+          "column": 5,
+          "index": 4397
+        }
+      },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "__onWidgetDisappear": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Remove the blocker if the widget disappears",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Remove the blocker if the widget disappears</p>"
+          }
+        ]
+      },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 177,
+          "column": 4,
+          "index": 4471
+        },
+        "end": {
+          "line": 182,
+          "column": 5,
+          "index": 4694
+        }
+      },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "_updateBlockerBounds": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * set the blocker's size and position",
+          "     * @param bounds {Map} Map with the new width, height, left and top values",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>set the blocker's size and position</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "bounds {Map} Map with the new width, height, left and top values",
+            "paramName": "bounds",
+            "description": " Map with the new width, height, left and top values",
+            "type": "Map<any, any>"
+          }
+        ]
+      },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 188,
+          "column": 4,
+          "index": 4839
+        },
+        "end": {
+          "line": 195,
+          "column": 5,
+          "index": 5067
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "bounds",
+          "type": "Map<any, any>"
+        }
+      ],
+      "appearsIn": []
+    },
+    "_applyColor": {
+      "jsdoc": {
+        "raw": [
+          " property apply"
+        ]
+      },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 198,
+          "column": 4,
+          "index": 5096
+        },
+        "end": {
+          "line": 201,
+          "column": 5,
+          "index": 5255
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "value"
+        },
+        {
+          "name": "old"
+        }
+      ],
+      "appearsIn": []
+    },
+    "_applyOpacity": {
+      "jsdoc": {
+        "raw": [
+          " property apply"
+        ]
+      },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 204,
+          "column": 4,
+          "index": 5284
+        },
+        "end": {
+          "line": 206,
+          "column": 5,
+          "index": 5366
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "value"
+        },
+        {
+          "name": "old"
+        }
+      ],
+      "appearsIn": []
+    },
+    "_onChangeTheme": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Handler for the theme change.",
+          "     * @signature function()",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Handler for the theme change.</p>"
+          }
+        ],
+        "@signature": [
+          {
+            "name": "@signature",
+            "body": "function()"
+          }
+        ]
+      },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 212,
+          "column": 4,
+          "index": 5455
+        },
+        "end": {
+          "line": 217,
+          "column": 6,
+          "index": 5606
+        }
+      },
+      "appearsIn": []
+    },
+    "__setBlockersStyle": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Set the style to all blockers (blocker and content blocker).",
+          "     *",
+          "     * @param key {String} The name of the style attribute.",
+          "     * @param value {String} The value.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Set the style to all blockers (blocker and content blocker).</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "key {String} The name of the style attribute.",
+            "paramName": "key",
+            "description": " The name of the style attribute.",
+            "type": "string"
+          },
+          {
+            "name": "@param",
+            "body": "value {String} The value.",
+            "paramName": "value",
+            "description": " The value.",
+            "type": "string"
+          }
+        ]
+      },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 225,
+          "column": 4,
+          "index": 5804
+        },
+        "end": {
+          "line": 232,
+          "column": 5,
+          "index": 6023
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "type": "string"
+        }
+      ],
+      "appearsIn": []
+    },
+    "_backupActiveWidget": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Backup the current active and focused widget.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Backup the current active and focused widget.</p>"
+          }
+        ]
+      },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 237,
+          "column": 4,
+          "index": 6099
+        },
+        "end": {
+          "line": 260,
+          "column": 5,
+          "index": 6722
+        }
+      },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "_restoreActiveWidget": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Restore the current active and focused widget.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Restore the current active and focused widget.</p>"
+          }
+        ]
+      },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 265,
+          "column": 4,
+          "index": 6799
+        },
+        "end": {
+          "line": 285,
+          "column": 5,
+          "index": 7348
+        }
+      },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "__createBlockerElement": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Creates the blocker element.",
+          "     *",
+          "     * @return {qx.html.Element} The blocker element",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Creates the blocker element.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{qx.html.Element} The blocker element",
+            "type": "qx.html.Element",
+            "description": "The blocker element"
+          }
+        ]
+      },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 292,
+          "column": 4,
+          "index": 7467
+        },
+        "end": {
+          "line": 294,
+          "column": 5,
+          "index": 7569
+        }
+      },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "qx.html.Element"
+      },
+      "appearsIn": []
+    },
+    "getBlockerElement": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Get/create the blocker element",
+          "     *",
+          "     * @param widget {qx.ui.core.Widget} The blocker will be added to this",
+          "     * widget's content element",
+          "     * @return {qx.html.Element} The blocker element",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Get/create the blocker element</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "widget {qx.ui.core.Widget} The blocker will be added to this\n widget's content element",
+            "paramName": "widget",
+            "description": " The blocker will be added to this\n widget's content element",
+            "type": "qx.ui.core.Widget"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{qx.html.Element} The blocker element",
+            "type": "qx.html.Element",
+            "description": "The blocker element"
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 303,
+          "column": 4,
+          "index": 7797
+        },
+        "end": {
+          "line": 320,
+          "column": 5,
+          "index": 8273
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "widget",
+          "type": "qx.ui.core.Widget"
+        }
+      ],
+      "returnType": {
+        "type": "qx.html.Element"
+      },
+      "appearsIn": []
+    },
+    "block": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Block all events from this widget by placing a transparent overlay widget,",
+          "     * which receives all events, exactly over the widget.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Block all events from this widget by placing a transparent overlay widget,\n which receives all events, exactly over the widget.</p>"
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 326,
+          "column": 4,
+          "index": 8437
+        },
+        "end": {
+          "line": 328,
+          "column": 5,
+          "index": 8473
+        }
+      },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "_block": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Adds the blocker to the appropriate element and includes it.",
+          "     *",
+          "     * @param zIndex {Number} All child widgets with a zIndex below this value will be blocked",
+          "     * @param blockContent {Boolean} append the blocker to the widget's content if true",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Adds the blocker to the appropriate element and includes it.</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "zIndex {Number} All child widgets with a zIndex below this value will be blocked",
+            "paramName": "zIndex",
+            "description": " All child widgets with a zIndex below this value will be blocked",
+            "type": "number"
+          },
+          {
+            "name": "@param",
+            "body": "blockContent {Boolean} append the blocker to the widget's content if true",
+            "paramName": "blockContent",
+            "description": " append the blocker to the widget's content if true",
+            "type": "boolean"
+          }
+        ]
+      },
+      "access": "protected",
+      "location": {
+        "start": {
+          "line": 336,
+          "column": 4,
+          "index": 8754
+        },
+        "end": {
+          "line": 381,
+          "column": 5,
+          "index": 10114
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "zIndex",
+          "type": "number"
+        },
+        {
+          "name": "blockContent",
+          "type": "boolean"
+        }
+      ],
+      "appearsIn": []
+    },
+    "isBlocked": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Returns whether the widget is blocked.",
+          "     *",
+          "     * @return {Boolean} Whether the widget is blocked.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns whether the widget is blocked.</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} Whether the widget is blocked.",
+            "type": "boolean",
+            "description": "Whether the widget is blocked."
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 388,
+          "column": 4,
+          "index": 10246
+        },
+        "end": {
+          "line": 390,
+          "column": 5,
+          "index": 10303
+        }
+      },
+      "type": "function",
+      "params": [],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "unblock": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Unblock the widget blocked by {@link #block}, but it takes care of",
+          "     * the amount of {@link #block} calls. The blocker is only removed if",
+          "     * the number of {@link #unblock} calls is identical to {@link #block} calls.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Unblock the widget blocked by {@link #block}, but it takes care of\n the amount of {@link #block} calls. The blocker is only removed if\n the number of {@link #unblock} calls is identical to {@link #block} calls.</p>"
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 397,
+          "column": 4,
+          "index": 10556
+        },
+        "end": {
+          "line": 412,
+          "column": 5,
+          "index": 10908
+        }
+      },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "forceUnblock": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Unblock the widget blocked by {@link #block}, but it doesn't take care of",
+          "     * the amount of {@link #block} calls. The blocker is directly removed.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Unblock the widget blocked by {@link #block}, but it doesn't take care of\n the amount of {@link #block} calls. The blocker is directly removed.</p>"
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 418,
+          "column": 4,
+          "index": 11088
+        },
+        "end": {
+          "line": 430,
+          "column": 5,
+          "index": 11367
+        }
+      },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "__unblock": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Unblock the widget blocked by {@link #block}.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Unblock the widget blocked by {@link #block}.</p>"
+          }
+        ]
+      },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 435,
+          "column": 4,
+          "index": 11443
+        },
+        "end": {
+          "line": 446,
+          "column": 5,
+          "index": 11910
+        }
+      },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    },
+    "blockContent": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Block direct child widgets with a zIndex below <code>zIndex</code>",
+          "     *",
+          "     * @param zIndex {Integer} All child widgets with a zIndex below this value",
+          "     *     will be blocked",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Block direct child widgets with a zIndex below <code>zIndex</code></p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "zIndex {Integer} All child widgets with a zIndex below this value\n     will be blocked",
+            "paramName": "zIndex",
+            "description": " All child widgets with a zIndex below this value\n     will be blocked",
+            "type": "Integer"
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 454,
+          "column": 4,
+          "index": 12121
+        },
+        "end": {
+          "line": 456,
+          "column": 5,
+          "index": 12182
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "zIndex",
+          "type": "Integer"
+        }
+      ],
+      "appearsIn": []
+    },
+    "__stopTabEvent": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Stops the passed \"Tab\" event.",
+          "     *",
+          "     * @param e {qx.event.type.KeySequence} event to stop.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Stops the passed \"Tab\" event.</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "e {qx.event.type.KeySequence} event to stop.",
+            "paramName": "e",
+            "description": " event to stop.",
+            "type": "qx.event.type.KeySequence"
+          }
+        ]
+      },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 463,
+          "column": 4,
+          "index": 12308
+        },
+        "end": {
+          "line": 467,
+          "column": 5,
+          "index": 12402
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "e",
+          "type": "qx.event.type.KeySequence"
+        }
+      ],
+      "appearsIn": []
+    },
+    "__activateBlockerElement": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Sets the blocker element to active.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Sets the blocker element to active.</p>"
+          }
+        ]
+      },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 472,
+          "column": 4,
+          "index": 12468
+        },
+        "end": {
+          "line": 491,
+          "column": 5,
+          "index": 13218
+        }
+      },
+      "type": "function",
+      "params": [],
+      "appearsIn": []
+    }
+  },
+  "destruct": {
+    "type": "function",
+    "params": [],
+    "location": {
+      "start": {
+        "line": 500,
+        "column": 2,
+        "index": 13414
+      },
+      "end": {
+        "line": 521,
+        "column": 3,
+        "index": 14173
+      }
+    }
+  },
+  "statics": {}
+}
