@@ -226,6 +226,7 @@ qx.Class.define("qxl.apiviewer.CreateClassDb", {
     getRequiredClasses(metaDb, opt) {
       let result = {};
       metaDb.getClassnames().forEach(classname => (result[classname] = true));
+      let includes = [];
       if (opt.includeToAPIViewer) {
         includes = this.expandClassnames(opt.includeToAPIViewer, result);
       }
