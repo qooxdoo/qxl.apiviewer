@@ -21,8 +21,8 @@
 qx.Class.define("qxl.apiviewer.dao.Event", {
   extend: qxl.apiviewer.dao.ClassItem,
 
-  construct(meta, clazz) {
-    this.base(arguments, meta, clazz, meta.name);
+  construct(meta, clazz, name) {
+    this.base(arguments, meta, clazz, name);
     this._type = meta.type;
   },
 

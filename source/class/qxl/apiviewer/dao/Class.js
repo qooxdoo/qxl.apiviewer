@@ -156,7 +156,7 @@ qx.Class.define("qxl.apiviewer.dao.Class", {
       if (meta.events) {
         for (let name in meta.events) {
           let data = meta.events[name];
-          let obj = new qxl.apiviewer.dao.Event(data, this);
+          let obj = new qxl.apiviewer.dao.Event(data, this, name);
           if (data.mixin) {
             this._mixinEvents.push(obj);
           } else {

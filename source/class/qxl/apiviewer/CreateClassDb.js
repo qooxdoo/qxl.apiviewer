@@ -5,15 +5,34 @@ qx.Class.define("qxl.apiviewer.CreateClassDb", {
   extend: qx.application.Basic,
 
   members: {
-    __verbose: false,
-
     /**
      * @Override
      */
     async main() {
-      super.main();
       try {
-        await this.__mainImpl();
+        let outputDir = path.join(
+          qx.util.LibraryManager.getInstance().get("qx", "resourceUri"),
+          qxl.apiviewer.ClassLoader.RESOURCEPATH
+        );
+        // We need the resource directory in the UI app, not the build app
+        outputDir = outputDir.replace(/-node\//, "/");
+        let verbose = false;
+        for (let i = 2; i < process.argv.length; i++) {
+          let arg = process.argv[i];
+          if (arg === "--verbose") {
+            verbose = true;
+          } else {
+            outputDir = arg;
+          }
+        }
+        let includeToAPIViewer = qx.core.Environment.get("qxl.apiviewer.include");
+        let excludeFromAPIViewer = qx.core.Environment.get("qxl.apiviewer.exclude");
+        await this.buildAPIData({
+          outputDir, 
+          verbose, 
+          includeToAPIViewer, 
+          excludeFromAPIViewer
+        });
       } catch (ex) {
         console.error(ex);
       }
@@ -22,24 +41,8 @@ qx.Class.define("qxl.apiviewer.CreateClassDb", {
     /**
      * Main
      */
-    async __mainImpl() {
-      let outputDir = path.join(
-        qx.util.LibraryManager.getInstance().get("qx", "resourceUri"),
-        qxl.apiviewer.ClassLoader.RESOURCEPATH
-      );
-      // We need the resource directory in the UI app, not the build app
-      outputDir = outputDir.replace(/-node\//, "/");
-
-      for (let arg of process.argv) {
-        if (arg === "--verbose") {
-          this.__verbose = true;
-        } else {
-          outputDir = arg;
-        }
-      }
-
+    async buildAPIData(opt) {
       qxl.apiviewer.ClassLoader.setBaseUri("compiled/meta/");
-
       const TYPES = {
         class: 1,
         mixin: 1,
@@ -50,7 +53,7 @@ qx.Class.define("qxl.apiviewer.CreateClassDb", {
       let res = {
         apiindex: {
           fullNames: [],
-          index: [],
+          index: {},
           types: [
             "doctree",
             "class",
@@ -69,6 +72,8 @@ qx.Class.define("qxl.apiviewer.CreateClassDb", {
       };
 
       function addToIndex(name, typeIdx, nameIdx) {
+        if (typeIdx === undefined)
+           return;
         if (!res.apiindex.index[name]) {
           res.apiindex.index[name] = [];
         }
@@ -80,7 +85,7 @@ qx.Class.define("qxl.apiviewer.CreateClassDb", {
         }
       }
 
-      await qx.tool.utils.Utils.makeDirs(outputDir);
+      await qx.tool.utils.Utils.makeDirs(opt.outputDir);
 
       let metaDb = new qx.tool.compiler.MetaDatabase();
       await metaDb.load();
@@ -88,7 +93,7 @@ qx.Class.define("qxl.apiviewer.CreateClassDb", {
       // We sort the result so that we can get a consistent ordering for loading classes, otherwise the order in
       //  which the filing system returns the files can cause classes to be loaded in a slightly different sequence;
       //  that would not cause a problem, except that the build is not 100% repeatable.
-      let classes = this.getRequiredClasses(metaDb);
+      let classes = this.getRequiredClasses(metaDb, opt);
       classes.sort();
 
       for (let classname of classes) {
@@ -109,10 +114,10 @@ qx.Class.define("qxl.apiviewer.CreateClassDb", {
 
         let src = cls.getMetaFile();
         let dest = path.relative(qxl.apiviewer.ClassLoader.getBaseUri(), src);
-        dest = path.join(outputDir, dest);
+        dest = path.join(opt.outputDir, dest);
         await qx.tool.utils.files.Utils.copyFile(src, dest);
 
-        if (this.__verbose) {
+        if (opt.verbose) {
           console.log(`APIVIEWER: analyse ${cls.getName()}`);
         }
         res.classes.push(cls.getName());
@@ -155,14 +160,14 @@ qx.Class.define("qxl.apiviewer.CreateClassDb", {
         });
       }
 
-      if (this.__verbose) {
+      if (opt.verbose) {
         console.log(`APIVIEWER: analysing done`);
       }
 
       for (let namespace in metaDb.getDatabase().libraries) {
         let libData = metaDb.getDatabase().libraries[namespace];
         const src = libData.sourceDir;
-        const dest = outputDir;
+        const dest = opt.outputDir;
         this.walkSync(src, file => {
           if (path.basename(file) != "__init__.js") {
             return;
@@ -190,8 +195,8 @@ qx.Class.define("qxl.apiviewer.CreateClassDb", {
       }
       res.classes.sort();
 
-      console.log("Writing output to " + outputDir + "/apiviewer.json");
-      await fs.promises.writeFile(outputDir + "/apiviewer.json", JSON.stringify(res, null, 2));
+      console.log("Writing output to " + opt.outputDir + "/apiviewer.json");
+      await fs.promises.writeFile(opt.outputDir + "/apiviewer.json", JSON.stringify(res, null, 2));
     },
 
     /**
@@ -218,27 +223,14 @@ qx.Class.define("qxl.apiviewer.CreateClassDb", {
      * @param {qx.tool.compiler.MetaDatabase} metaDb
      * @returns
      */
-    getRequiredClasses(metaDb) {
+    getRequiredClasses(metaDb, opt) {
       let result = {};
       metaDb.getClassnames().forEach(classname => (result[classname] = true));
-
-      let includes = [];
-      let includeToAPIViewer =
-        qx.core.Environment.get("qxl.apiviewer.include") || qx.core.Environment.get("includeToAPIViewer");
-      if (qx.core.Environment.get("includeFromAPIViewer")) {
-        console.error(`includeFromAPIViewer is deprecated, use qxl.apiviewer.include instead`);
+      if (opt.includeToAPIViewer) {
+        includes = this.expandClassnames(opt.includeToAPIViewer, result);
       }
-      if (includeToAPIViewer) {
-        includes = this.expandClassnames(includeToAPIViewer, result);
-      }
-
-      let excludeFromAPIViewer =
-        qx.core.Environment.get("qxl.apiviewer.exclude") || qx.core.Environment.get("excludeFromAPIViewer");
-      if (qx.core.Environment.get("excludeFromAPIViewer")) {
-        console.error(`excludeFromAPIViewer is deprecated, use qxl.apiviewer.exclude instead`);
-      }
-      if (excludeFromAPIViewer) {
-        this.expandClassnames(excludeFromAPIViewer, result).forEach(name => {
+      if (opt.excludeFromAPIViewer) {
+        this.expandClassnames(opt.excludeFromAPIViewer, result).forEach(name => {
           if (!includes.includes(name)) {
             delete result[name];
           }
