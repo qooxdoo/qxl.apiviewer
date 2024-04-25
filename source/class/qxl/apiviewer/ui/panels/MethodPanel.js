@@ -33,7 +33,7 @@ qx.Class.define("qxl.apiviewer.ui.panels.MethodPanel", {
      * @Override
      */
     canDisplayItem(dao) {
-      return dao instanceof qxl.apiviewer.dao.Method && !dao.isStatic();
+      return dao instanceof qxl.apiviewer.dao.Method && !dao.isStatic() || dao instanceof qxl.apiviewer.dao.PropertyMethod;
     },
   },
 });
