@@ -73,6 +73,60 @@ qx.Class.define("qxl.apiviewer.compile.CompilerApi", {
   }
 });
 
+qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
+  extend: qx.tool.cli.api.LibraryApi,
+  members: {
+    async load() {
+      let command = this.getCompilerApi().getCommand();
+      if (command instanceof qx.tool.cli.commands.Compile) {
+        command.addListener("writingApplication", async function(e) {
+          let appMeta = e.getData().appMeta;
+          let application = appMeta.getApplication();
+          let className = application.getClassName();
+          if (className !== "qxl.apiviewer.Application") {
+            return;
+          }
+          let command = this.getCompilerApi().getCommand();
+          let maker = command.getMakersForApp(application.getName())[0];
+          let analyser = maker.getAnalyser();
+          let lib = analyser.findLibrary("qxl.apiviewer");
+          const folder = path.join(lib.getRootDir(), lib.getSourcePath(), "qxl/apiviewer/dao");
+          // preload depend classes
+          require(path.join(folder, "Node.js"));
+          require(path.join(folder, "ClassItem.js"));
+          // load the rest
+          fs.readdirSync(folder).forEach(file => {
+            if (path.extname(file) === ".js") {
+              require(path.join(folder, file));
+            }
+          });
+          require(path.join(lib.getRootDir(), lib.getSourcePath(), "qxl/apiviewer/ClassLoader.js"));
+          require(path.join(lib.getRootDir(), lib.getSourcePath(), "qxl/apiviewer/CreateClassDb.js"));
+          require(path.join(lib.getRootDir(), lib.getSourcePath(), "qxl/apiviewer/RequestUtil.js"));
+          
+          let target = maker.getTarget();
+          let outputDir = target.getOutputDir();
+          outputDir = path.join(outputDir, "resource", qxl.apiviewer.ClassLoader.RESOURCEPATH);
+          let environment = appMeta.getEnvironment();
+          let excludeFromAPIViewer = environment["qxl.apiviewer.exclude"];
+          let includeToAPIViewer = environment["qxl.apiviewer.include"];
+          let verbose = command.argv.verbose;
+          let builder = new qxl.apiviewer.CreateClassDb;
+          await builder.buildAPIData({
+            outputDir, 
+            verbose, 
+            includeToAPIViewer, 
+            excludeFromAPIViewer
+          });
+  
+        }, this);
+      }
+      return this.base(arguments);
+    }
+  }
+});
+
 module.exports = {
+  LibraryApi: qxl.apiviewer.compile.LibraryApi,
   CompilerApi: qxl.apiviewer.compile.CompilerApi
 };
