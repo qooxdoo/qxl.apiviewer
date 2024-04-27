@@ -28,7 +28,7 @@
         "email": "Henner DOT Kollmann AT gmx DOT de"
       }
     ],
-    "version": "2.0.0",
+    "version": "2.0.1",
     "sourceViewUri": "https://github.com/qooxdoo/apiviewer/blob/%{qxGitBranch}/source/class/%{classFilePath}#L%{lineNumber}"
   },
   "provides": {
@@ -58,15 +58,15 @@
         "qx.module.Placement"
       ],
       "parts": {
-        "boot" : {
+        "boot": {
           "include": [
             "qx.*"
           ]
-        }, 
-        "tool" : {
+        },
+        "tool": {
           "include": [
             "qx.tool.*"
-         ]
+          ]
         }
       }
     }
