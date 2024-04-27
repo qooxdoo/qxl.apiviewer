@@ -1,5 +1,5 @@
 const fs = require("fs");
-const path = require("upath");
+const path = require("path");
 
 qx.Class.define("qxl.apiviewer.CreateClassDb", {
   extend: qx.application.Basic,
