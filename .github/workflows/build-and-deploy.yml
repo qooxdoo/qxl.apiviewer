@@ -13,7 +13,7 @@ jobs:
     if: "!(github.event.head_commit && contains(github.event.head_commit.message, 'ci skip'))"
 
     steps:
-      - uses: peter-evans/repository-dispatch@v1
+      - uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.REPOSITORY_DISPATCH }}
           event-type: "push-tag"

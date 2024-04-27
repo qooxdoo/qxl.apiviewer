@@ -20,7 +20,7 @@ jobs:
           echo "{version}={$version}" >> $GITHUB_OUTPUT
           echo "{destination_dir}={$dir}" >> $GITHUB_OUTPUT
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           persist-credentials: false
 
@@ -39,7 +39,7 @@ jobs:
         run: qx deploy --target=build -v --clean
 
       - name: Deploy to GH page
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./html
