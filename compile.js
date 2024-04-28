@@ -76,18 +76,24 @@ qx.Class.define("qxl.apiviewer.compile.CompilerApi", {
 qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
   extend: qx.tool.cli.api.LibraryApi,
   members: {
+
+    __getMakersForClass(className) {
+      let command = this.getCompilerApi().getCommand();
+      let makers = command.getMakers();
+      return makers.filter(maker => {
+        let res = maker.getApplications().find(app => app.getClassName() === className);
+        return res;
+      });
+    },
+
     async load() {
       let command = this.getCompilerApi().getCommand();
       if (command instanceof qx.tool.cli.commands.Compile) {
-        command.addListener("writingApplication", async function(e) {
-          let appMeta = e.getData().appMeta;
-          let application = appMeta.getApplication();
-          let className = application.getClassName();
-          if (className !== "qxl.apiviewer.Application") {
+        command.addListener("writtenMetaData", async function(e) {
+          let maker = this.__getMakersForClass("qxl.apiviewer.Application")[0];
+          if (!maker) {
             return;
           }
-          let command = this.getCompilerApi().getCommand();
-          let maker = command.getMakersForApp(application.getName())[0];
           let analyser = maker.getAnalyser();
           let lib = analyser.findLibrary("qxl.apiviewer");
           const folder = path.join(lib.getRootDir(), lib.getSourcePath(), "qxl/apiviewer/dao");
@@ -103,11 +109,10 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
           require(path.join(lib.getRootDir(), lib.getSourcePath(), "qxl/apiviewer/ClassLoader.js"));
           require(path.join(lib.getRootDir(), lib.getSourcePath(), "qxl/apiviewer/CreateClassDb.js"));
           require(path.join(lib.getRootDir(), lib.getSourcePath(), "qxl/apiviewer/RequestUtil.js"));
-          
           let target = maker.getTarget();
           let outputDir = target.getOutputDir();
           outputDir = path.join(outputDir, "resource", qxl.apiviewer.ClassLoader.RESOURCEPATH);
-          let environment = appMeta.getEnvironment();
+          let environment = maker.getEnvironment();
           let excludeFromAPIViewer = environment["qxl.apiviewer.exclude"];
           let includeToAPIViewer = environment["qxl.apiviewer.include"];
           let verbose = command.argv.verbose;
