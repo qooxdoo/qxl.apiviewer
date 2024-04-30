@@ -38,6 +38,11 @@ jobs:
       - name: Build API Viewer
         run: qx deploy --target=build -v --clean
 
+      - name: Create API data
+        run: |
+          node compiled/deploy-node/createclassdb/index.js html/resource/apidata
+          node compiled/build-node/createclassdb/index.js html/resource/apidata
+
       - name: Deploy to GH page
         uses: peaceiris/actions-gh-pages@v4
         with:
