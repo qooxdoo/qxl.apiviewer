@@ -1,0 +1,980 @@
+{
+  "version": 0.3,
+  "lastModified": 1714499371261,
+  "lastModifiedIso": "2024-04-30T17:49:31.261Z",
+  "classFilename": "../../../../../../../usr/local/lib/node_modules/@qooxdoo/framework/source/class/qx/data/marshal/Json.js",
+  "type": "class",
+  "location": {
+    "start": {
+      "line": 25,
+      "column": 0,
+      "index": 722
+    },
+    "end": {
+      "line": 497,
+      "column": 3,
+      "index": 17180
+    }
+  },
+  "className": "qx.data.marshal.Json",
+  "jsdoc": {
+    "raw": [
+      "*",
+      " * This class is responsible for converting json data to class instances",
+      " * including the creation of the classes.",
+      " * To retrieve the native data of created models use the methods",
+      " *   described in {@link qx.util.Serializer}.",
+      " "
+    ],
+    "@description": [
+      {
+        "name": "@description",
+        "body": "<p>This class is responsible for converting json data to class instances\n including the creation of the classes.\n To retrieve the native data of created models use the methods\n   described in {@link qx.util.Serializer}.</p>"
+      }
+    ]
+  },
+  "superClass": "qx.core.Object",
+  "interfaces": [
+    "qx.data.marshal.IMarshaler"
+  ],
+  "construct": {
+    "type": "function",
+    "params": [
+      {
+        "name": "delegate"
+      }
+    ],
+    "location": {
+      "start": {
+        "line": 33,
+        "column": 2,
+        "index": 982
+      },
+      "end": {
+        "line": 37,
+        "column": 3,
+        "index": 1053
+      }
+    }
+  },
+  "statics": {
+    "$$instance": {
+      "jsdoc": null,
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 40,
+          "column": 4,
+          "index": 1073
+        },
+        "end": {
+          "line": 40,
+          "column": 20,
+          "index": 1089
+        }
+      },
+      "appearsIn": []
+    },
+    "createModel": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Creates a qooxdoo object based on the given json data. This function",
+          "     * is just a static wrapper. If you want to configure the creation",
+          "     * process of the class, use {@link qx.data.marshal.Json} directly.",
+          "     *",
+          "     * @param data {Object} The object for which classes should be created.",
+          "     * @param includeBubbleEvents {Boolean} Whether the model should support",
+          "     *   the bubbling of change events or not.",
+          "     *",
+          "     * @return {qx.core.Object} An instance of the corresponding class.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Creates a qooxdoo object based on the given json data. This function\n is just a static wrapper. If you want to configure the creation\n process of the class, use {@link qx.data.marshal.Json} directly.</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "data {Object} The object for which classes should be created.",
+            "paramName": "data",
+            "description": " The object for which classes should be created.",
+            "type": "Record<any, any>"
+          },
+          {
+            "name": "@param",
+            "body": "includeBubbleEvents {Boolean} Whether the model should support\n   the bubbling of change events or not.",
+            "paramName": "includeBubbleEvents",
+            "description": " Whether the model should support\n   the bubbling of change events or not.",
+            "type": "boolean"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{qx.core.Object} An instance of the corresponding class.",
+            "type": "qx.core.Object",
+            "description": "An instance of the corresponding class."
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 53,
+          "column": 4,
+          "index": 1617
+        },
+        "end": {
+          "line": 62,
+          "column": 5,
+          "index": 1978
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "data",
+          "type": "Record<any, any>"
+        },
+        {
+          "name": "includeBubbleEvents",
+          "type": "boolean"
+        }
+      ],
+      "returnType": {
+        "type": "qx.core.Object"
+      },
+      "appearsIn": []
+    },
+    "legacyJsonHash": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Legacy json hash method used as default in Qooxdoo < v6.0.",
+          "     * You can go back to the old behaviour like this:",
+          "     *",
+          "     * <code>",
+          "     *  var marshaller = new qx.data.marshal.Json({",
+          "     *   getJsonHash: qx.data.marshal.Json.legacyJsonHash",
+          "     *  });",
+          "     * </code>",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Legacy json hash method used as default in Qooxdoo &lt; v6.0.\n You can go back to the old behaviour like this:\n <code>\n  var marshaller = new qx.data.marshal.Json({\n   getJsonHash: qx.data.marshal.Json.legacyJsonHash\n  });\n </code></p>"
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 74,
+          "column": 4,
+          "index": 2280
+        },
+        "end": {
+          "line": 79,
+          "column": 5,
+          "index": 2448
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "includeBubbleEvents"
+        }
+      ],
+      "appearsIn": []
+    }
+  },
+  "members": {
+    "__delegate": {
+      "jsdoc": null,
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 83,
+          "column": 4,
+          "index": 2472
+        },
+        "end": {
+          "line": 83,
+          "column": 20,
+          "index": 2488
+        }
+      },
+      "appearsIn": []
+    },
+    "__jsonToHash": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Converts a given object into a hash which will be used to identify the",
+          "     * classes under the namespace <code>qx.data.model</code>.",
+          "     *",
+          "     * @param data {Object} The JavaScript object from which the hash is",
+          "     *   required.",
+          "     * @param includeBubbleEvents {Boolean?false} Whether the model should",
+          "     *   support the bubbling of change events or not.",
+          "     * @return {String} The hash representation of the given JavaScript object.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Converts a given object into a hash which will be used to identify the\n classes under the namespace <code>qx.data.model</code>.</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "data {Object} The JavaScript object from which the hash is\n   required.",
+            "paramName": "data",
+            "description": " The JavaScript object from which the hash is\n   required.",
+            "type": "Record<any, any>"
+          },
+          {
+            "name": "@param",
+            "body": "includeBubbleEvents {Boolean?false} Whether the model should\n   support the bubbling of change events or not.",
+            "paramName": "includeBubbleEvents",
+            "description": " Whether the model should\n   support the bubbling of change events or not.",
+            "optional": true,
+            "defaultValue": "false",
+            "type": "Boolean"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{String} The hash representation of the given JavaScript object.",
+            "type": "string",
+            "description": "The hash representation of the given JavaScript object."
+          }
+        ]
+      },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 95,
+          "column": 4,
+          "index": 2961
+        },
+        "end": {
+          "line": 103,
+          "column": 5,
+          "index": 3266
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "data",
+          "type": "Record<any, any>"
+        },
+        {
+          "name": "includeBubbleEvents",
+          "type": "Boolean",
+          "optional": true,
+          "defaultValue": "false"
+        }
+      ],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
+    },
+    "__jsonToBestHash": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Get the \"most enhanced\" hash for a given object.  That is the hash for",
+          "     * the class that is most feature rich in respect of the bubble event",
+          "     * feature. If there are two equal classes available (defined), one with",
+          "     * and one without the bubble event feature, this method will return the",
+          "     * hash of the class that includes the bubble event.",
+          "     *",
+          "     * @param data {Object} The JavaScript object from which the hash is",
+          "     *   required.",
+          "     * @param includeBubbleEvents {Boolean} Whether the preferred model should",
+          "     *   support the bubbling of change events or not.",
+          "     *   If <code>null</code>, an automatic selection will take place which",
+          "     *   selects the \"best\" model currently available.",
+          "     * @return {String} The hash representation of the given JavaScript object.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Get the \"most enhanced\" hash for a given object.  That is the hash for\n the class that is most feature rich in respect of the bubble event\n feature. If there are two equal classes available (defined), one with\n and one without the bubble event feature, this method will return the\n hash of the class that includes the bubble event.</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "data {Object} The JavaScript object from which the hash is\n   required.",
+            "paramName": "data",
+            "description": " The JavaScript object from which the hash is\n   required.",
+            "type": "Record<any, any>"
+          },
+          {
+            "name": "@param",
+            "body": "includeBubbleEvents {Boolean} Whether the preferred model should\n   support the bubbling of change events or not.\n   If <code>null</code>, an automatic selection will take place which\n   selects the \"best\" model currently available.",
+            "paramName": "includeBubbleEvents",
+            "description": " Whether the preferred model should\n   support the bubbling of change events or not.\n   If <code>null</code>, an automatic selection will take place which\n   selects the \"best\" model currently available.",
+            "type": "boolean"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{String} The hash representation of the given JavaScript object.",
+            "type": "string",
+            "description": "The hash representation of the given JavaScript object."
+          }
+        ]
+      },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 120,
+          "column": 4,
+          "index": 4096
+        },
+        "end": {
+          "line": 138,
+          "column": 5,
+          "index": 4767
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "data",
+          "type": "Record<any, any>"
+        },
+        {
+          "name": "includeBubbleEvents",
+          "type": "boolean"
+        }
+      ],
+      "returnType": {
+        "type": "string"
+      },
+      "appearsIn": []
+    },
+    "toClass": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Creates for the given data the needed classes. The classes contain for",
+          "     * every key in the data a property. The classname is always the prefix",
+          "     * <code>qx.data.model</code> and the hash of the data created by",
+          "     * {@link #__jsonToHash}. Two objects containing the same keys will not",
+          "     * create two different classes. The class creation process also supports",
+          "     * the functions provided by its delegate.",
+          "     *",
+          "     * Important, please keep in mind that only valid JavaScript identifiers",
+          "     * can be used as keys in the data map. For convenience '-' in keys will",
+          "     * be removed (a-b will be ab in the end).",
+          "     *",
+          "     * @see qx.data.store.IStoreDelegate",
+          "     *",
+          "     * @param data {Object} The object for which classes should be created.",
+          "     * @param includeBubbleEvents {Boolean} Whether the model should support",
+          "     *   the bubbling of change events or not.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Creates for the given data the needed classes. The classes contain for\n every key in the data a property. The classname is always the prefix\n <code>qx.data.model</code> and the hash of the data created by\n {@link #__jsonToHash}. Two objects containing the same keys will not\n create two different classes. The class creation process also supports\n the functions provided by its delegate.\n Important, please keep in mind that only valid JavaScript identifiers\n can be used as keys in the data map. For convenience '-' in keys will\n be removed (a-b will be ab in the end).</p>"
+          }
+        ],
+        "@see": [
+          {
+            "name": "@see",
+            "body": "qx.data.store.IStoreDelegate"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "data {Object} The object for which classes should be created.",
+            "paramName": "data",
+            "description": " The object for which classes should be created.",
+            "type": "Record<any, any>"
+          },
+          {
+            "name": "@param",
+            "body": "includeBubbleEvents {Boolean} Whether the model should support\n   the bubbling of change events or not.",
+            "paramName": "includeBubbleEvents",
+            "description": " Whether the model should support\n   the bubbling of change events or not.",
+            "type": "boolean"
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 158,
+          "column": 4,
+          "index": 5678
+        },
+        "end": {
+          "line": 160,
+          "column": 5,
+          "index": 5778
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "data",
+          "type": "Record<any, any>"
+        },
+        {
+          "name": "includeBubbleEvents",
+          "type": "boolean"
+        }
+      ],
+      "appearsIn": [
+        "qx.data.marshal.IMarshaler"
+      ]
+    },
+    "__toClass": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Implementation of {@link #toClass} used for recursion.",
+          "     *",
+          "     * @param data {Object} The object for which classes should be created.",
+          "     * @param includeBubbleEvents {Boolean} Whether the model should support",
+          "     *   the bubbling of change events or not.",
+          "     * @param parentProperty {String|null} The name of the property the",
+          "     *   data will be stored in.",
+          "     * @param depth {Number} The depth of the data relative to the data's root.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Implementation of {@link #toClass} used for recursion.</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "data {Object} The object for which classes should be created.",
+            "paramName": "data",
+            "description": " The object for which classes should be created.",
+            "type": "Record<any, any>"
+          },
+          {
+            "name": "@param",
+            "body": "includeBubbleEvents {Boolean} Whether the model should support\n   the bubbling of change events or not.",
+            "paramName": "includeBubbleEvents",
+            "description": " Whether the model should support\n   the bubbling of change events or not.",
+            "type": "boolean"
+          },
+          {
+            "name": "@param",
+            "body": "parentProperty {String|null} The name of the property the\n   data will be stored in.",
+            "paramName": "parentProperty",
+            "description": " The name of the property the\n   data will be stored in.",
+            "type": [
+              "String",
+              "null"
+            ]
+          },
+          {
+            "name": "@param",
+            "body": "depth {Number} The depth of the data relative to the data's root.",
+            "paramName": "depth",
+            "description": " The depth of the data relative to the data's root.",
+            "type": "number"
+          }
+        ]
+      },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 172,
+          "column": 4,
+          "index": 6255
+        },
+        "end": {
+          "line": 300,
+          "column": 5,
+          "index": 10208
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "data",
+          "type": "Record<any, any>"
+        },
+        {
+          "name": "includeBubbleEvents",
+          "type": "boolean"
+        },
+        {
+          "name": "parentProperty",
+          "type": [
+            "String",
+            "null"
+          ]
+        },
+        {
+          "name": "depth",
+          "type": "number"
+        }
+      ],
+      "appearsIn": []
+    },
+    "__disposeItem": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Helper for disposing items of the created class.",
+          "     *",
+          "     * @param item {var} The item to dispose.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Helper for disposing items of the created class.</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "item {var} The item to dispose.",
+            "paramName": "item",
+            "description": " The item to dispose.",
+            "type": "var"
+          }
+        ]
+      },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 307,
+          "column": 4,
+          "index": 10340
+        },
+        "end": {
+          "line": 317,
+          "column": 5,
+          "index": 10619
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "item",
+          "type": "var"
+        }
+      ],
+      "appearsIn": []
+    },
+    "__createInstance": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Creates an instance for the given data hash.",
+          "     *",
+          "     * @param hash {String} The hash of the data for which an instance should",
+          "     *   be created.",
+          "     * @param parentProperty {String|null} The name of the property the data",
+          "     *   will be stored in.",
+          "     * @param depth {Number} The depth of the object relative to the data root.",
+          "     * @param data {Map} The data for which an instance should be created.",
+          "     * @return {qx.core.Object} An instance of the corresponding class.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Creates an instance for the given data hash.</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "hash {String} The hash of the data for which an instance should\n   be created.",
+            "paramName": "hash",
+            "description": " The hash of the data for which an instance should\n   be created.",
+            "type": "string"
+          },
+          {
+            "name": "@param",
+            "body": "parentProperty {String|null} The name of the property the data\n   will be stored in.",
+            "paramName": "parentProperty",
+            "description": " The name of the property the data\n   will be stored in.",
+            "type": [
+              "String",
+              "null"
+            ]
+          },
+          {
+            "name": "@param",
+            "body": "depth {Number} The depth of the object relative to the data root.",
+            "paramName": "depth",
+            "description": " The depth of the object relative to the data root.",
+            "type": "number"
+          },
+          {
+            "name": "@param",
+            "body": "data {Map} The data for which an instance should be created.",
+            "paramName": "data",
+            "description": " The data for which an instance should be created.",
+            "type": "Map<any, any>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{qx.core.Object} An instance of the corresponding class.",
+            "type": "qx.core.Object",
+            "description": "An instance of the corresponding class."
+          }
+        ]
+      },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 330,
+          "column": 4,
+          "index": 11132
+        },
+        "end": {
+          "line": 361,
+          "column": 5,
+          "index": 12197
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "hash",
+          "type": "string"
+        },
+        {
+          "name": "data",
+          "type": "Map<any, any>"
+        },
+        {
+          "name": "parentProperty",
+          "type": [
+            "String",
+            "null"
+          ]
+        },
+        {
+          "name": "depth",
+          "type": "number"
+        }
+      ],
+      "returnType": {
+        "type": "qx.core.Object"
+      },
+      "appearsIn": []
+    },
+    "__ignore": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Helper to decide if the delegate decides to ignore a data set.",
+          "     * @param hash {String} The property names.",
+          "     * @param parentProperty {String|null} The name of the property the data",
+          "     *   will be stored in.",
+          "     * @param depth {Number} The depth of the object relative to the data root.",
+          "     * @return {Boolean} <code>true</code> if the set should be ignored",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Helper to decide if the delegate decides to ignore a data set.</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "hash {String} The property names.",
+            "paramName": "hash",
+            "description": " The property names.",
+            "type": "string"
+          },
+          {
+            "name": "@param",
+            "body": "parentProperty {String|null} The name of the property the data\n   will be stored in.",
+            "paramName": "parentProperty",
+            "description": " The name of the property the data\n   will be stored in.",
+            "type": [
+              "String",
+              "null"
+            ]
+          },
+          {
+            "name": "@param",
+            "body": "depth {Number} The depth of the object relative to the data root.",
+            "paramName": "depth",
+            "description": " The depth of the object relative to the data root.",
+            "type": "number"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} <code>true</code> if the set should be ignored",
+            "type": "boolean",
+            "description": "<code>true</code> if the set should be ignored"
+          }
+        ]
+      },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 371,
+          "column": 4,
+          "index": 12595
+        },
+        "end": {
+          "line": 374,
+          "column": 5,
+          "index": 12748
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "hash",
+          "type": "string"
+        },
+        {
+          "name": "parentProperty",
+          "type": [
+            "String",
+            "null"
+          ]
+        },
+        {
+          "name": "depth",
+          "type": "number"
+        }
+      ],
+      "returnType": {
+        "type": "boolean"
+      },
+      "appearsIn": []
+    },
+    "toModel": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Creates for the given data the needed models. Be sure to have the classes",
+          "     * created with {@link #toClass} before calling this method. The creation",
+          "     * of the class itself is delegated to the {@link #__createInstance} method,",
+          "     * which could use the {@link qx.data.store.IStoreDelegate} methods, if",
+          "     * given.",
+          "     *",
+          "     * @param data {Object} The object for which models should be created.",
+          "     * @param includeBubbleEvents {Boolean?null} Whether the model should",
+          "     *   support the bubbling of change events or not.",
+          "     *   If omitted or <code>null</code>, an automatic selection will take place",
+          "     *   which selects the \"best\" model currently available.",
+          "     * @return {qx.core.Object} The created model object.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Creates for the given data the needed models. Be sure to have the classes\n created with {@link #toClass} before calling this method. The creation\n of the class itself is delegated to the {@link #__createInstance} method,\n which could use the {@link qx.data.store.IStoreDelegate} methods, if\n given.</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "data {Object} The object for which models should be created.",
+            "paramName": "data",
+            "description": " The object for which models should be created.",
+            "type": "Record<any, any>"
+          },
+          {
+            "name": "@param",
+            "body": "includeBubbleEvents {Boolean?null} Whether the model should\n   support the bubbling of change events or not.\n   If omitted or <code>null</code>, an automatic selection will take place\n   which selects the \"best\" model currently available.",
+            "paramName": "includeBubbleEvents",
+            "description": " Whether the model should\n   support the bubbling of change events or not.\n   If omitted or <code>null</code>, an automatic selection will take place\n   which selects the \"best\" model currently available.",
+            "optional": true,
+            "defaultValue": "null",
+            "type": "Boolean"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{qx.core.Object} The created model object.",
+            "type": "qx.core.Object",
+            "description": "The created model object."
+          }
+        ]
+      },
+      "access": "public",
+      "location": {
+        "start": {
+          "line": 390,
+          "column": 4,
+          "index": 13512
+        },
+        "end": {
+          "line": 392,
+          "column": 5,
+          "index": 13619
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "data",
+          "type": "Record<any, any>"
+        },
+        {
+          "name": "includeBubbleEvents",
+          "type": "Boolean",
+          "optional": true,
+          "defaultValue": "null"
+        }
+      ],
+      "returnType": {
+        "type": "qx.core.Object"
+      },
+      "appearsIn": [
+        "qx.data.marshal.IMarshaler"
+      ]
+    },
+    "__toModel": {
+      "jsdoc": {
+        "raw": [
+          "*",
+          "     * Implementation of {@link #toModel} used for recursion.",
+          "     *",
+          "     * @param data {Object} The object for which models should be created.",
+          "     * @param includeBubbleEvents {Boolean|null} Whether the model should",
+          "     *   support the bubbling of change events or not.",
+          "     *   If <code>null</code>, an automatic selection will take place which",
+          "     *   selects the \"best\" model currently available.",
+          "     * @param parentProperty {String|null} The name of the property the",
+          "     *   data will be stored in.",
+          "     * @param depth {Number} The depth of the data relative to the data's root.",
+          "     * @return {qx.core.Object} The created model object.",
+          "     "
+        ],
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Implementation of {@link #toModel} used for recursion.</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "data {Object} The object for which models should be created.",
+            "paramName": "data",
+            "description": " The object for which models should be created.",
+            "type": "Record<any, any>"
+          },
+          {
+            "name": "@param",
+            "body": "includeBubbleEvents {Boolean|null} Whether the model should\n   support the bubbling of change events or not.\n   If <code>null</code>, an automatic selection will take place which\n   selects the \"best\" model currently available.",
+            "paramName": "includeBubbleEvents",
+            "description": " Whether the model should\n   support the bubbling of change events or not.\n   If <code>null</code>, an automatic selection will take place which\n   selects the \"best\" model currently available.",
+            "type": [
+              "Boolean",
+              "null"
+            ]
+          },
+          {
+            "name": "@param",
+            "body": "parentProperty {String|null} The name of the property the\n   data will be stored in.",
+            "paramName": "parentProperty",
+            "description": " The name of the property the\n   data will be stored in.",
+            "type": [
+              "String",
+              "null"
+            ]
+          },
+          {
+            "name": "@param",
+            "body": "depth {Number} The depth of the data relative to the data's root.",
+            "paramName": "depth",
+            "description": " The depth of the data relative to the data's root.",
+            "type": "number"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{qx.core.Object} The created model object.",
+            "type": "qx.core.Object",
+            "description": "The created model object."
+          }
+        ]
+      },
+      "access": "private",
+      "location": {
+        "start": {
+          "line": 407,
+          "column": 4,
+          "index": 14289
+        },
+        "end": {
+          "line": 495,
+          "column": 5,
+          "index": 17172
+        }
+      },
+      "type": "function",
+      "params": [
+        {
+          "name": "data",
+          "type": "Record<any, any>"
+        },
+        {
+          "name": "includeBubbleEvents",
+          "type": [
+            "Boolean",
+            "null"
+          ]
+        },
+        {
+          "name": "parentProperty",
+          "type": [
+            "String",
+            "null"
+          ]
+        },
+        {
+          "name": "depth",
+          "type": "number"
+        }
+      ],
+      "returnType": {
+        "type": "qx.core.Object"
+      },
+      "appearsIn": []
+    }
+  },
+  "properties": {}
+}
