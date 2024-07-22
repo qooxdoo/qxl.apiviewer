@@ -56161,6 +56161,10 @@
         ],
         [
           3,
+          645
+        ],
+        [
+          3,
           653
         ],
         [
@@ -56191,6 +56195,10 @@
         ],
         [
           3,
+          645
+        ],
+        [
+          3,
           653
         ],
         [
@@ -56218,6 +56226,10 @@
         [
           3,
           628
+        ],
+        [
+          3,
+          645
         ],
         [
           3,
@@ -58630,12 +58642,6 @@
           627
         ]
       ],
-      "#__stylesheet": [
-        [
-          7,
-          627
-        ]
-      ],
       "#__addedPlaceholderRules": [
         [
           7,
@@ -60331,6 +60337,12 @@
       "qx.ui.form.IListItem": [
         [
           1,
+          645
+        ]
+      ],
+      "#changeReadOnly": [
+        [
+          5,
           645
         ]
       ],
@@ -72826,6 +72838,24 @@
           837
         ]
       ],
+      "#getCellEditorBlurAction": [
+        [
+          3,
+          837
+        ]
+      ],
+      "#setCellEditorBlurAction": [
+        [
+          3,
+          837
+        ]
+      ],
+      "#resetCellEditorBlurAction": [
+        [
+          3,
+          837
+        ]
+      ],
       "#getModalCellEditorPreOpenFunction": [
         [
           3,
@@ -73155,6 +73185,12 @@
         ]
       ],
       "#dataRowRenderer": [
+        [
+          6,
+          837
+        ]
+      ],
+      "#cellEditorBlurAction": [
         [
           6,
           837
@@ -75713,6 +75749,18 @@
         ]
       ],
       "#_onCellEditorModalWindowClose": [
+        [
+          4,
+          878
+        ]
+      ],
+      "#_onFocusinCellEditorAddBlurListener": [
+        [
+          4,
+          878
+        ]
+      ],
+      "#_onBlurCellEditorStopEditing": [
         [
           4,
           878
