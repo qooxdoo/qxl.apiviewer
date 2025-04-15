@@ -8,9 +8,6 @@ jobs:
     name: Publish tagged documentation
     runs-on: ubuntu-latest
     steps:
-      - name: Install Playwright Dependencies
-        uses: microsoft/playwright-github-action@v1
-
       - id: get_version
         run: |
           ref=${{ github.event.client_payload.ref }}
@@ -34,7 +31,8 @@ jobs:
       - name: add compiler
         run: |
           npm -g install @qooxdoo/framework@${{ steps.get_version.outputs.version }}
-
+          npx playwright install --with-deps
+          
       - name: Build API Viewer
         run: qx deploy --target=build -v --clean
 
