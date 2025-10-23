@@ -3,7 +3,7 @@ const path = require("path");
 const assert = require("assert").strict;
 
 qx.Class.define("qxl.apiviewer.compile.CompilerApi", {
-  extend: qx.tool.cli.api.CompilerApi,
+  extend: qx.tool.compiler.cli.api.CompilerApi,
 
   members: {
     async load() {
