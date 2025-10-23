@@ -11,7 +11,7 @@ qx.Class.define("qxl.apiviewer.compile.CompilerApi", {
         "changeCommand",
         function () {
           let command = this.getCommand();
-          if (command instanceof qx.tool.cli.commands.Test) {
+          if (command instanceof qx.tool.compiler.cli.commands.Test) {
             command.addListener("runTests", this.__appTesting, this);
             if (command.setNeedsServer) {
               command.setNeedsServer(true);
@@ -74,7 +74,7 @@ qx.Class.define("qxl.apiviewer.compile.CompilerApi", {
 });
 
 qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
-  extend: qx.tool.cli.api.LibraryApi,
+  extend: qx.tool.compiler.cli.api.LibraryApi,
   members: {
 
     __getMakersForClass(className) {
@@ -88,7 +88,7 @@ qx.Class.define("qxl.apiviewer.compile.LibraryApi", {
 
     async load() {
       let command = this.getCompilerApi().getCommand();
-      if (command instanceof qx.tool.cli.commands.Compile) {
+      if (command instanceof qx.tool.compiler.cli.commands.Compile) {
         command.addListener("writtenMetaData", async function(e) {
           let maker = this.__getMakersForClass("qxl.apiviewer.Application")[0];
           if (!maker) {
